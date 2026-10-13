@@ -8,3 +8,4 @@ results/.judge_cache.json
 experiments/**/run.log
 experiments/**/job.pid
 *.tmp
+experiments/**/logs/ckpt_*.json
