@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-10-13T23:22:02Z",
+ "updated_utc": "2026-10-13T23:25:02Z",
  "best_valid_by_ratio": {
   "h": 11,
   "n": 18,
@@ -137,21 +137,22 @@
    "nfree": 1,
    "seed": 1001,
    "stats": {
-    "evaluated": 115386,
+    "evaluated": 175390,
     "singular": 0,
-    "coll0": 91140,
-    "valid45": 932,
+    "coll0": 138582,
+    "valid45": 1424,
     "hits": 0
    },
    "valid_alpha_distribution": {
-    "11": 696,
-    "10": 226,
-    "12": 10
+    "11": 1060,
+    "10": 352,
+    "12": 12
    },
    "coll0_alpha_distribution": {
-    "11": 68713,
-    "10": 21464,
-    "12": 963
+    "11": 104337,
+    "10": 32755,
+    "12": 1489,
+    "13": 1
    },
    "best_valid_h": 10,
    "best_cost": {
@@ -166,26 +167,26 @@
    "nfree": 0,
    "seed": 1002,
    "stats": {
-    "evaluated": 110853,
+    "evaluated": 170857,
     "singular": 0,
-    "coll0": 70673,
-    "valid45": 707,
+    "coll0": 109160,
+    "valid45": 1051,
     "hits": 0
    },
    "valid_alpha_distribution": {
-    "11": 281,
-    "10": 425,
-    "12": 1
+    "11": 441,
+    "10": 607,
+    "12": 3
    },
    "coll0_alpha_distribution": {
-    "11": 31528,
-    "10": 39008,
-    "12": 137
+    "11": 49122,
+    "10": 59825,
+    "12": 213
    },
    "best_valid_h": 10,
    "best_cost": {
-    "cost": 2.807354922057604,
-    "n_indep_target_plus_1": 6,
+    "cost": 2.584962500721156,
+    "n_indep_target_plus_1": 5,
     "alpha": 10
    },
    "hits": []
