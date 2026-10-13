@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-10-13T23:19:02Z",
+ "updated_utc": "2026-10-13T23:22:02Z",
  "best_valid_by_ratio": {
   "h": 11,
   "n": 18,
@@ -108,20 +108,21 @@
    "nfree": 0,
    "seed": 1000,
    "stats": {
-    "evaluated": 60004,
+    "evaluated": 110549,
     "singular": 0,
-    "coll0": 38531,
-    "valid45": 388,
+    "coll0": 70829,
+    "valid45": 692,
     "hits": 0
    },
    "valid_alpha_distribution": {
-    "11": 188,
-    "10": 200
+    "11": 325,
+    "10": 366,
+    "12": 1
    },
    "coll0_alpha_distribution": {
-    "11": 17982,
-    "10": 20502,
-    "12": 47
+    "11": 32416,
+    "10": 38323,
+    "12": 90
    },
    "best_valid_h": 10,
    "best_cost": {
@@ -136,26 +137,26 @@
    "nfree": 1,
    "seed": 1001,
    "stats": {
-    "evaluated": 60004,
+    "evaluated": 115386,
     "singular": 0,
-    "coll0": 47206,
-    "valid45": 512,
+    "coll0": 91140,
+    "valid45": 932,
     "hits": 0
    },
    "valid_alpha_distribution": {
-    "11": 389,
-    "10": 118,
-    "12": 5
+    "11": 696,
+    "10": 226,
+    "12": 10
    },
    "coll0_alpha_distribution": {
-    "11": 35850,
-    "10": 10810,
-    "12": 546
+    "11": 68713,
+    "10": 21464,
+    "12": 963
    },
    "best_valid_h": 10,
    "best_cost": {
-    "cost": 4.523561956057013,
-    "n_indep_target_plus_1": 22,
+    "cost": 4.247927513443585,
+    "n_indep_target_plus_1": 18,
     "alpha": 10
    },
    "hits": []
@@ -165,25 +166,26 @@
    "nfree": 0,
    "seed": 1002,
    "stats": {
-    "evaluated": 60004,
+    "evaluated": 110853,
     "singular": 0,
-    "coll0": 38000,
-    "valid45": 380,
+    "coll0": 70673,
+    "valid45": 707,
     "hits": 0
    },
    "valid_alpha_distribution": {
-    "11": 156,
-    "10": 224
+    "11": 281,
+    "10": 425,
+    "12": 1
    },
    "coll0_alpha_distribution": {
-    "11": 17516,
-    "10": 20392,
-    "12": 92
+    "11": 31528,
+    "10": 39008,
+    "12": 137
    },
    "best_valid_h": 10,
    "best_cost": {
-    "cost": 3.0,
-    "n_indep_target_plus_1": 7,
+    "cost": 2.807354922057604,
+    "n_indep_target_plus_1": 6,
     "alpha": 10
    },
    "hits": []
@@ -193,26 +195,26 @@
    "nfree": 0,
    "seed": 1003,
    "stats": {
-    "evaluated": 7175,
+    "evaluated": 25177,
     "singular": 0,
-    "coll0": 4519,
-    "valid45": 42,
+    "coll0": 16361,
+    "valid45": 159,
     "hits": 0
    },
    "valid_alpha_distribution": {
-    "12": 38,
-    "13": 3,
-    "11": 1
+    "12": 136,
+    "13": 4,
+    "11": 19
    },
    "coll0_alpha_distribution": {
-    "12": 4042,
-    "13": 313,
-    "11": 164
+    "12": 14404,
+    "13": 706,
+    "11": 1251
    },
    "best_valid_h": 11,
    "best_cost": {
-    "cost": 5.857980995127572,
-    "n_indep_target_plus_1": 57,
+    "cost": 5.169925001442312,
+    "n_indep_target_plus_1": 35,
     "alpha": 11
    },
    "hits": []
