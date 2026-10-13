@@ -1,0 +1,71 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:*.arxiv.org)",
+      "WebFetch(domain:www.erdosproblems.com)",
+      "WebFetch(domain:erdosproblems.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:mathoverflow.net)",
+      "WebFetch(domain:math.stackexchange.com)",
+      "WebFetch(domain:oeis.org)",
+      "WebFetch(domain:www.combinatorics.org)",
+      "WebFetch(domain:link.springer.com)",
+      "WebFetch(domain:terrytao.wordpress.com)",
+      "WebFetch(domain:zbmath.org)",
+      "WebFetch(domain:api.semanticscholar.org)",
+      "Bash(bash scripts/status.sh)",
+      "Bash(bash scripts/preflight.sh)",
+      "Bash(bash scripts/jobs.sh)",
+      "Bash(python3 judge/judge.py *)",
+      "Bash(python3 scripts/new_claim.py *)",
+      "Bash(git status *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push)",
+      "Bash(git push origin *)",
+      "Bash(git push -u origin *)",
+      "Bash(git log *)",
+      "Bash(git diff *)"
+    ],
+    "deny": [
+      "Edit(/judge/**)",
+      "Edit(/GOAL.md)",
+      "Edit(/scripts/status.py)",
+      "Edit(/scripts/status.sh)",
+      "Edit(/.claude/settings.json)",
+      "Edit(/.claude/hooks/**)",
+      "Edit(/journal/START_TIME_UTC)",
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
+      "Bash(git push --force-with-lease *)",
+      "Bash(git filter-branch *)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|NotebookEdit|MultiEdit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/protect.py"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/reinject.py"
+          }
+        ]
+      }
+    ]
+  }
+}

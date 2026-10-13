@@ -1,0 +1,136 @@
+# START HERE: Erdős Problem #757
+
+This is the canonical summary. If another file disagrees with this one, this one wins (it already includes the corrections found on 13 Oct 2026).
+
+Tags used everywhere in this repo:
+- **[published]** refereed paper or arXiv preprint.
+- **[community]** unrefereed GitHub or forum material.
+- **[verified-here]** exact computation reproduced by `tests/test_known_facts.py`.
+- **[derived-here]** short argument from published theorems; re-check before relying on it.
+- **[heuristic]**, **[conjecture]**, **[refuted]**.
+
+## 1. The problem
+
+- A finite set $A\subset\mathbb R$ is a **(4,5)-set** if every 4 distinct points determine at least 5 distinct absolute differences. Equivalently, $|B-B|\ge 11$ for every 4-subset $B$.
+- $S$ is **Sidon** if all sums $x+y$ with $x\le y$ in $S$ are distinct. Equivalently, all positive differences in $S$ are distinct.
+- $h(A)$ is the size of the largest Sidon subset of $A$.
+- $f(n)=\min h(A)$ over $n$-point (4,5)-sets.
+- $c_*=\lim f(n)/n=\inf_n f(n)/n$. The limit exists by Ma–Tang Thm 1.5 (subadditivity plus Fekete).
+
+**Status.** $\tfrac{9}{17}\le c_*\le\tfrac47$, i.e. $0.52941\le c_*\le 0.57143$ [published: Ma–Tang, arXiv:2602.23282v2, 6 Mar 2026]. The problem is **open**, and the erdosproblems.com page (last edited 10 Apr 2026) lists exactly these bounds.
+
+**Invariances.**
+- We may assume $A\subset\mathbb Z$.
+- Every condition in the problem is a relation $a_1+a_2=a_3+a_4$, since $|x-y|=|z-w|$ iff $x+w=y+z$ or $x+z=y+w$. So the problem is invariant under **Freiman 2-isomorphisms**, and constructions may be built in $\mathbb Z^d$ and projected generically [derived-here].
+
+## 2. The reduction every known proof uses
+
+Let $H(A)$ be the 3-uniform hypergraph whose edges are the 3-term APs in $A$. For a (4,5)-set [published, Ma–Tang §2, Gyárfás–Lehel 1995]:
+
+1. $A$ is weak Sidon: the sums $x+y$ with $x<y$ are distinct.
+2. $h(A)=\alpha(H)=n-\tau(H)$. Sidon subsets are exactly the 3-AP-free subsets.
+3. The midpoint map is injective and never hits $\min A$ or $\max A$. So $e(S)\le|S|-2$ for every $S\subseteq A$ with $|S|\ge2$.
+4. $H$ is linear: two APs share at most one point.
+5. $H$ contains no $F_7=\{012,034,056,135,246\}$, which is AG(2,3) minus two points.
+
+**Lower bound 9/17.**
+- Henning–Yeo (Graphs Combin. 37 (2021) 867–890): if $H$ is linear and $F_7$-free, then $17\tau\le 5n+3m$.
+- Combined with $m\le n-2$ this gives $h\ge(9n+6)/17$.
+
+**Upper bound 4/7.**
+- $A_{\rm base}=\{0,136,200,243,246,249,272,286,298,323,400,528,596,1056\}$ has $h=8$ [published; verified-here].
+- Gluing $C=A\cup(qB+t)$, with $q$ generic and $t$ large, gives $h(C)\le h(A)+h(B)$ (Ma–Tang Lemma 3.6). So one finite example bounds $c_*$.
+- **$q$ must avoid every ratio $(a-a')/(b-b')$.** Integer scales often create parallelograms, which `judge/judge.py` rejects.
+
+## 3. The excess potential: one number for both directions [derived-here]
+
+Define $D(A):=17\,h(A)-9|A|$. Then:
+
+- $D(A)=\delta(A)+3\,(n-m)$, where:
+  - $\delta=5n+3m-17\tau\ge0$ is the Henning–Yeo slack;
+  - $n-m\ge2$ is the number of points that are **not** midpoints.
+
+  Hence $D\ge 6$.
+- $c_*=\tfrac{9}{17}+\tfrac{1}{17}\inf_A D(A)/|A|$. $D$ is subadditive under gluing.
+- **Values on the record sets:**
+  - $A_{\rm base}$: $n=14$, $m=12$, $\tau=6$, $\delta=4$, $D=10$, so $D/n=5/7$, which is exactly the 4/7 ratio.
+  - The 12-point sets: $D=11$.
+- **The two directions in terms of $D$:**
+  - **Beat 4/7** ⇔ find $A$ with $D(A)/|A|<5/7$. That requires almost every point to be a midpoint AND small Henning–Yeo slack.
+  - **Beat 9/17** ⇔ prove $D(A)\ge\varepsilon|A|-C$. Realizable hypergraphs would have to be "far from Henning–Yeo-tight on average".
+
+## 4. Where a better upper bound can and cannot live [derived-here]
+
+Beating 4/7 at size $n$ needs $h\le\lceil 4n/7\rceil-1$, i.e. $\tau=n-h$ with $17\tau\le5n+3m$ and $m\le n-2$.
+
+- **Impossible** for every $n\le15$ and for $n\in\{17,19,21,24,26,28\}$.
+- **Possible only with these parameters:**
+
+| $n$ | $h$ needed | $m$ needed | note |
+|---|---|---|---|
+| 16 | 9 | $\ge13$ (max 14) | |
+| 18 | 10 | $=16$ | fully saturated and Henning–Yeo-tight |
+| 20 | 11 | $=18$ | saturated |
+| 22 | 12 | $=20$ | saturated |
+| 23 | 13 | $\ge19$ | |
+| 25 | 14 | $\ge21$ | |
+| 27 | 15 | $\ge23$ | |
+| 29 | 16 | $\ge26$ | |
+| 30 | 17 | $\ge24$ | |
+
+The full table is printed by `python3 -m e757.fn_bounds`.
+
+## 5. Small values of $f(n)$ [derived-here]
+
+These follow from the Henning–Yeo lower bound, the known sets, monotonicity, and gluing.
+
+- **Exact:**
+  - $f(1),\dots,f(7)=1,2,2,3,4,4,5$;
+  - $f(9)=6$, $f(11)=7$, $f(12)=7$, $f(13)=8$, $f(14)=8$, $f(15)=9$, $f(17)=10$;
+  - $f(24)=14$, $f(26)=15$, $f(28)=16$.
+- **Open:**
+  - $f(8)\in\{5,6\}$, $f(10)\in\{6,7\}$;
+  - **$f(16)\in\{9,10\}$** (the value 9 would give a new record, 9/16);
+  - $f(18)\in\{10,11\}$, $f(19),f(20)\in\{11,12\}$, $f(21)\in\{12,13\}$, $12\le f(22)\le14$, $f(23)\in\{13,14\}$.
+
+## 6. Structure of the known record sets [verified-here]
+
+| Set | $n$ | $m$ | $h$ | $\tau$ | HY slack | $D$ | Rigid? |
+|---|---|---|---|---|---|---|---|
+| $A_{\rm base}$ (Ma–Tang) | 14 | 12 | 8 | 6 | 4 | 10 | yes |
+| 12-pt #1 (omega #9804) | 12 | 10 | 7 | 5 | 5 | 11 | yes |
+| 12-pt #2 (omega #9804) | 12 | 10 | 7 | 5 | 5 | 11 | yes |
+
+- **Midpoint-saturated.** Every non-extreme point is a midpoint ($m=n-2$).
+- **Affinely rigid.** The AP equations have rank $n-2$. So the labeled AP hypergraph determines the set up to $x\mapsto qx+t$, and `e757.saturated` rebuilds $A_{\rm base}$ from its hypergraph alone.
+- **The two 12-point sets** share an incidence pattern but are not affinely equivalent (different midpoint/order data).
+- **More facts about $A_{\rm base}$:**
+  - AP degrees: one vertex of degree 4 (the point 0), six of degree 3, seven of degree 2;
+  - no cut vertex;
+  - 143 maximum Sidon subsets;
+  - $\tau=\lfloor106/17\rfloor$, i.e. Henning–Yeo-tight after rounding.
+- **Saturated sets are discrete harmonic functions.** With $x_{\min}=0$ and $x_{\max}=1$, each $x_j$ is the probability that a random walk, jumping from $j$ to one of its two AP endpoints, reaches the max before the min.
+- **The Fibonacci example.** $\{F_3,F_4,\dots\}=\{2,3,5,8,\dots\}$ has $h=3n/5+O(1)$. Note that $\{1,2,3,5\}$ is NOT a (4,5)-set, so do not start at 1.
+- **Random saturated midpoint maps are almost never linear** (2 in 3000 at $n=16$). So generate maps edge by edge while keeping linearity.
+
+## 7. Settled: do not redo
+
+See `kb/dead_ends.md`. The highlights:
+- Chvátal–McDiarmid gives only 1/2.
+- Henning–Yeo gives 9/17.
+- Gluing.
+- Fibonacci gives 3/5.
+- Periodic chain constructions are capped at 3/5 [verified-here].
+- No 2-point extension of $A_{\rm base}$ beats 4/7 [community].
+- $21\tau(K)\le9|R|+5e_2+12e_1$ is refuted [community].
+- $F_7$ cannot be realized over $\mathbb Q$ under any midpoint labeling [verified-here; re-proves Gyárfás–Lehel].
+
+## 8. Reading order
+
+1. This file.
+2. `kb/RESEARCH_PLAN.md`.
+3. `kb/dead_ends.md`.
+4. `kb/open_questions.md`.
+5. `kb/known_results.md` (every fact with its source and its test).
+6. `kb/literature/part2_supplement.md`: the full proof chain, hypergraph transversal theory (including the "deficiency" proof technique), and AI/computational methods.
+7. `kb/literature/part1_literature_review.md`: history, neighbouring problems and bibliography, with inline corrections.

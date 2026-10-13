@@ -1,0 +1,20 @@
+name: ci
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: judge hash pinned
+        run: python -c "import hashlib,pathlib;h=hashlib.sha256(pathlib.Path('judge/judge.py').read_bytes()).hexdigest();assert pathlib.Path('judge/judge.sha256').read_text().split()[0]==h,'judge modified'"
+      - name: tests
+        run: python -m pytest -q
+      - name: judge every claim
+        run: python judge/judge.py --all
