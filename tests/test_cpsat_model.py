@@ -35,8 +35,11 @@ def test_min_alpha_matches_bruteforce(n, f7):
     assert C.is_ordered_midpoint_hypergraph(n, edges)
     assert alpha_of_edges(n, edges) == a
     assert (not f7) or C.is_f7_free(edges)
-    assert not C.brute_exists(n, a - 1, forbid_f7=f7)  # nothing better exists
-    assert C.brute_exists(n, a, forbid_f7=f7)
+    # nothing better exists.  For n = 9 only the F7-unrestricted search is run (about 40 s); it
+    # implies the F7-free statement because F7-free hypergraphs are a subset.
+    assert not C.brute_exists(n, a - 1, forbid_f7=f7 and n < 9)
+    if n < 9:
+        assert C.brute_exists(n, a, forbid_f7=f7)
 
 
 def test_symmetry_breaking_does_not_change_value():

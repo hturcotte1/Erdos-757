@@ -246,10 +246,12 @@ def evaluate(m, exact=True):
 
 # ------------------------------------------------------------------ fast float evaluation
 class FastEval:
-    def __init__(self, n):
+    def __init__(self, n, k=None):
         self.n = n
+        self.k = k  # if given, cost = log2(1 + #independent k-sets) (smooth surrogate), else alpha
         self.iu = np.triu_indices(n, 1)
         self.alpha_cache = {}
+        self.ic = IndepCounter(n) if k is not None and n <= 20 else None
 
     def solve(self, m):
         n = m.n
@@ -293,18 +295,23 @@ class FastEval:
         if a is None:
             if len(self.alpha_cache) > 200000:
                 self.alpha_cache.clear()
-            a = alpha_of_edges(m.n, m.edges())
+            if self.ic is not None:
+                h = self.ic.counts(m.edges())
+                a = (int(np.nonzero(h)[0].max()), math.log2(1 + int(h[self.k:].sum())))
+            else:
+                al = alpha_of_edges(m.n, m.edges())
+                a = (al, float(al))
             self.alpha_cache[k] = a
         return a
 
     def score(self, m, w=1.0, singular_pen=40.0):
         """Returns (score, alpha, collisions); alpha of the intended hypergraph (equals h when coll==0)."""
-        a = self.alpha(m)
+        a, cost = self.alpha(m)
         vals = self.solve(m)
         if vals is None:
-            return a + singular_pen, a, -1
+            return cost + singular_pen, a, -1
         c = self.collisions(vals)
-        return a + w * c, a, c
+        return cost + w * c, a, c
 
 
 # ------------------------------------------------------------------ moves
@@ -378,11 +385,11 @@ def exact_hit_check(m, target_h=None):
 
 # ------------------------------------------------------------------ the annealer
 class Runner:
-    def __init__(self, n, target, seed, nfree=0, w=1.0, seeds_from=None, log=None, ckpt=None, T0=0.7, T1=0.12,
-                 cycle=6000):
+    def __init__(self, n, target, seed, nfree=0, w=1.0, seeds_from=None, log=None, ckpt=None, T0=0.8, T1=0.15,
+                 cycle=20000):
         self.n, self.target, self.seed, self.nfree = n, target, seed, nfree
         self.rng = random.Random(seed)
-        self.fe = FastEval(n)
+        self.fe = FastEval(n, target + 1)
         self.w = w
         self.seeds_from = seeds_from or []  # list of (name, set)
         self.log = log or (lambda s: None)
@@ -396,6 +403,8 @@ class Runner:
         self.hits = []
         self.best_score_seen = {"alpha": 99}
         self.cycles = 0
+        self.best_cost = None   # lowest smooth cost among sum-collision-free states (float level)
+        self.on_hit = None
 
     # ---- helpers
     def initial(self):
@@ -420,12 +429,14 @@ class Runner:
                 return m
         return random_linear_map(self.n, self.rng, self.nfree)
 
-    def record(self, m, a, c):
+    def record(self, m, a, c, s=None):
         """Called for each evaluated state: bookkeeping, and exact verification of promising ones."""
         st = self.stats
         st["evaluated"] += 1
         if c == -1:
             st["singular"] += 1
+        if c == 0 and s is not None and (self.best_cost is None or s < self.best_cost["cost"]):
+            self.best_cost = {"cost": s, "n_indep_target_plus_1": round(2 ** s - 1), "alpha": a, "map": m.to_json()}
         if c == 0:
             st["coll0"] += 1
             self.coll0_alpha[a] = self.coll0_alpha.get(a, 0) + 1
@@ -444,6 +455,8 @@ class Runner:
                             self.dump()
                         if h * 7 < 4 * self.n:
                             self.hits.append((m.copy(), h, ints))
+                            if self.on_hit:
+                                self.on_hit(m.copy(), h, ints)
                             st["hits"] += 1
                             self.log(f"HIT h={h} n={self.n} set={ints}")
                             self.dump()
@@ -460,7 +473,7 @@ class Runner:
             return
         out = {"seed": self.seed, "n": self.n, "nfree": self.nfree, "stats": self.stats,
                "valid_alpha_distribution": self.valid_alpha, "coll0_alpha_distribution": self.coll0_alpha, "best": self.best,
-               "hits": [{"h": h, "set": s} for _, h, s in self.hits], "time": time.time()}
+               "best_cost": self.best_cost, "hits": [{"h": h, "set": st_} for _, h, st_ in self.hits], "time": time.time()}
         tmp = str(path) + ".tmp"
         with open(tmp, "w") as f:
             json.dump(out, f)
@@ -474,7 +487,7 @@ class Runner:
         while True:
             cur = self.initial()
             s, a, c = self.fe.score(cur, self.w)
-            self.record(cur, a, c)
+            self.record(cur, a, c, s)
             self.cycles += 1
             for it in range(self.cycle):
                 T = self.T0 * (self.T1 / self.T0) ** (it / self.cycle)
@@ -482,7 +495,7 @@ class Runner:
                 if q is None:
                     continue
                 s2, a2, c2 = self.fe.score(q, self.w)
-                self.record(q, a2, c2)
+                self.record(q, a2, c2, s2)
                 done += 1
                 if s2 <= s or self.rng.random() < math.exp((s - s2) / T):
                     cur, s, a, c = q, s2, a2, c2

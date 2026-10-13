@@ -152,6 +152,8 @@ class Model:
         self.e = {t: self.model.NewBoolVar("e%d_%d_%d" % t) for t in self.tri}
         self.ncuts = 0
         self.nf7 = 0
+        self.strong_cuts = True
+        self.eager_T = None
         M = self.model
         # (a) at most one edge per midpoint
         for j in range(1, n - 1):
@@ -199,9 +201,24 @@ class Model:
             M.AddBoolOr(pre + [a.Not(), b.Not(), eq])
             eq_prev = eq
 
-    def add_alpha_cut(self, I):
-        self.model.AddBoolOr([self.e[t] for t in itertools.combinations(sorted(I), 3)])
+    def add_alpha_cut(self, I, rhs=1):
+        """sum of e over triples inside I >= rhs.  Valid whenever rhs <= |I| - T, because
+        alpha(H) >= alpha(H[I]) >= |I| - e(I) (delete one vertex per edge inside I)."""
+        lits = [self.e[t] for t in itertools.combinations(sorted(I), 3)]
+        if rhs == 1:
+            self.model.AddBoolOr(lits)
+        else:
+            self.model.Add(sum(lits) >= rhs)
         self.ncuts += 1
+
+    def add_eager_alpha(self, T):
+        """Eager encoding of alpha <= T: every (T+1)-subset I of the vertices contains an edge, i.e.
+        OR_{i<j<k in I} e[i,j,k].  C(n, T+1) clauses; exact, so no alpha cuts are needed afterwards."""
+        lits_of = {t: self.e[t] for t in self.tri}
+        for I in itertools.combinations(range(self.n), T + 1):
+            self.model.AddBoolOr([lits_of[t] for t in itertools.combinations(I, 3)])
+        self.ncuts += 0
+        self.eager_T = T
 
     def add_nogood(self, edges):
         self.model.AddBoolOr([self.e[tuple(sorted(x))].Not() for x in edges])
@@ -250,19 +267,26 @@ def _cegar_step(mod, edges, T, rng, ncuts_per_iter, stats):
                 mod.add_nogood(c)
             stats["f7_cuts"] += len(copies)
             return "cut", None
-    a, _ = independent_sets(n, edges, 0, want_max=True)
+    a, Imax = independent_sets(n, edges, 0, want_max=True)
     if a <= T:
         return "ok", a
     sets = independent_sets(n, edges, T + 1, limit=ncuts_per_iter, rng=rng)
     for I in sets:
         mod.add_alpha_cut(I)
     stats["alpha_cuts"] += len(sets)
+    if mod.strong_cuts:
+        # counting cuts: e(I') >= |I'| - T for I' inside the independent set found
+        for s_ in range(T + 2, a + 1):
+            for _ in range(1 if s_ < a else 1):
+                sub = Imax if s_ == a else rng.sample(Imax, s_)
+                mod.add_alpha_cut(sub, rhs=s_ - T)
+                stats["alpha_cuts"] += 1
     return "cut", a
 
 
 def solve_min_alpha(n, m_min=0, forbid_f7=True, time_limit=600, m_exact=None, symmetry=True,
                     start_T=None, ncuts_per_iter=40, workers=4, verbose=False, seed=0, use_hy=False,
-                    m_max=None):
+                    m_max=None, eager=True):
     """Minimum alpha over ordered midpoint hypergraphs on n vertices (m >= m_min edges).
     Returns (alpha_min, witness_edges, stats).  stats['optimal'] tells whether alpha_min is proved
     optimal (the infeasibility of T = alpha_min - 1 was proved by UNSAT within the time limit);
@@ -283,6 +307,8 @@ def solve_min_alpha(n, m_min=0, forbid_f7=True, time_limit=600, m_exact=None, sy
     while True:
         tT = time.time()
         status = "?"
+        if eager and T < n:
+            mod.add_eager_alpha(T)
         if use_hy and forbid_f7 and m_exact is None:
             need = hy_m_need(n, T)
             if need > hy_added:  # monotone in decreasing T, so permanent
@@ -335,7 +361,8 @@ def solve_min_alpha(n, m_min=0, forbid_f7=True, time_limit=600, m_exact=None, sy
 
 
 def feasible_alpha_le(n, T, m_min=0, m_exact=None, forbid_f7=True, time_limit=600,
-                      symmetry=True, ncuts_per_iter=40, workers=4, seed=0, m_max=None, use_hy=False):
+                      symmetry=True, ncuts_per_iter=40, workers=4, seed=0, m_max=None, use_hy=False,
+                      eager=True):
     """Decide: is there a hypergraph with alpha <= T?  Returns ('SAT'|'UNSAT'|'UNKNOWN', edges, stats)."""
     t0 = time.time()
     rng = random.Random(seed)
@@ -344,6 +371,8 @@ def feasible_alpha_le(n, T, m_min=0, m_exact=None, forbid_f7=True, time_limit=60
     stats = {"alpha_cuts": 0, "f7_cuts": 0, "solves": 0}
     if use_hy and forbid_f7 and m_exact is None:
         mod.model.Add(mod.total >= hy_m_need(n, T))
+    if eager:
+        mod.add_eager_alpha(T)
     while True:
         left = time_limit - (time.time() - t0)
         if left <= 0:
