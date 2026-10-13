@@ -43,3 +43,17 @@ def test_extend_and_free_vertex_solve():
     v = solve_exact(mf)
     if v is not None:
         assert all(2 * v[j] == v[i] + v[k] for j, (i, k) in mf.mid.items())
+
+
+def test_nfree1_path_runs():
+    """Regression: free-vertex states (incl. record-extension seeds, also unsaturated ones) must score without error."""
+    from e757.anneal import Runner, map_is_complete
+    seeds = [(k, SETS[k]["set"]) for k in ("14", "12", "12b", "12c", "11", "10")]
+    for nf in (0, 1):
+        r = Runner(16, 9, 3 + nf, nfree=nf, seeds_from=seeds)
+        for _ in range(60):
+            m = r.initial()
+            assert map_is_complete(m)
+            assert len(m.free) == nf
+        r.run(iters=300)
+        assert r.stats["evaluated"] > 0

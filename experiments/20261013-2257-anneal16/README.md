@@ -40,5 +40,12 @@ harmonic values form a (4,5)-set with h <= 9 (9/16 < 4/7)? Secondary: n=18, h <=
   7 independent 10-sets (nfree 0). So alpha=9 is not even combinatorially reached yet; realizability is not the bottleneck so far.
 - Best alpha seen at n=16: 10 (ratio 5/8). No hit.
 
+## Incident (fixed)
+Workers 0,1,2 crashed within ~5 min with `KeyError` in `FastEval.solve`: `Runner.initial` extended the unsaturated 11-point
+record (m=8 < n-2) and the result had no equation for some vertex. Fix: only saturated seeds, `map_is_complete` check, test
+`test_nfree1_path_runs`. Workers 0,1,2 were restarted in place (seeds 3000, 2000, 3002; logs `run_w*_restart.log`, same
+`logs/ckpt_k.json`; `--no-merge`, `--k0`). Worker 3 (n=18) still runs the OLD code and may crash for the same reason; restart
+it the same way (`--configs 18:0 --k0 3 --no-merge --seed0 3003`).
+
 ## Results of the long run
 (to be filled in from best.json when the job ends; see run.log)

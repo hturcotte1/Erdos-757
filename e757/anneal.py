@@ -60,6 +60,12 @@ def map_from_set(A):
     return Map(len(A), lo, hi, mid)
 
 
+def map_is_complete(m):
+    """Exactly one equation for every vertex that is neither boundary nor free; linear."""
+    need = {v for v in range(m.n) if v not in (m.lo, m.hi)} - set(m.free)
+    return set(m.mid) == need and is_linear_map(m.mid)
+
+
 def is_linear_map(mid):
     used = set()
     for j, (i, k) in mid.items():
@@ -413,7 +419,7 @@ class Runner:
             name, A = self.rng.choice(self.seeds_from)
             m0 = map_from_set(A)
             extra = self.n - m0.n
-            if extra >= 0:
+            if extra >= 0 and len(m0.mid) == m0.n - 2:   # only saturated seeds (a free-vertex seed has no full map)
                 m = extend_map(m0, extra, self.rng) if extra else m0
                 if self.nfree:
                     # make a random interior vertex free (drop its equation)
@@ -426,7 +432,8 @@ class Runner:
                     q = propose(m, self.rng)
                     if q is not None:
                         m = q
-                return m
+                if map_is_complete(m):
+                    return m
         return random_linear_map(self.n, self.rng, self.nfree)
 
     def record(self, m, a, c, s=None):

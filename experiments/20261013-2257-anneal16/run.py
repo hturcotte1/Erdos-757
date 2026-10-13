@@ -80,14 +80,16 @@ if __name__ == "__main__":
     ap.add_argument("--seed0", type=int, default=1000)
     ap.add_argument("--every", type=float, default=180)
     ap.add_argument("--w", type=float, default=1.0)
+    ap.add_argument("--k0", type=int, default=0, help="worker index offset (to restart one crashed worker in place)")
+    ap.add_argument("--no-merge", action="store_true", help="restarted single workers: leave best.json to the main driver")
     a = ap.parse_args()
     (HERE / "logs").mkdir(exist_ok=True)
     t0 = time.time()
     cfgs = [tuple(map(int, c.split(":"))) for c in a.configs.split(",")]
-    procs = [mp.Process(target=worker, args=(k, n, nf, a.seed0 + k, a.seconds, a.w, t0)) for k, (n, nf) in enumerate(cfgs)]
+    procs = [mp.Process(target=worker, args=(a.k0 + k, n, nf, a.seed0 + k, a.seconds, a.w, t0)) for k, (n, nf) in enumerate(cfgs)]
     for p in procs:
         p.start()
     while any(p.is_alive() for p in procs):
         time.sleep(a.every)
-        merge(len(cfgs))
-    merge(len(cfgs))
+        merge(len(cfgs)) if not a.no_merge else None
+    merge(len(cfgs)) if not a.no_merge else None
