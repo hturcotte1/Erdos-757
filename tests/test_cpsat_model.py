@@ -35,7 +35,8 @@ def test_min_alpha_matches_bruteforce(n, f7):
     assert C.is_ordered_midpoint_hypergraph(n, edges)
     assert alpha_of_edges(n, edges) == a
     assert (not f7) or C.is_f7_free(edges)
-    assert a == C.brute_min_alpha(n, forbid_f7=f7)
+    assert not C.brute_exists(n, a - 1, forbid_f7=f7)  # nothing better exists
+    assert C.brute_exists(n, a, forbid_f7=f7)
 
 
 def test_symmetry_breaking_does_not_change_value():

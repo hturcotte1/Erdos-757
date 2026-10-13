@@ -494,3 +494,27 @@ class Runner:
             if (iters is not None and done >= iters) or (seconds is not None and time.time() - t0 > seconds):
                 self.dump()
                 return self.stats
+
+
+# ------------------------------------------------------------------ smooth hypergraph cost
+class IndepCounter:
+    """Counts independent sets of size k of the intended hypergraph (all 2^n subsets, vectorised).
+    N_k == 0  <=>  alpha < k.  Smooth surrogate for alpha (independent subsets of a big independent set count)."""
+
+    def __init__(self, n):
+        self.n = n
+        S = np.arange(1 << n, dtype=np.uint32)
+        self.S = S
+        pop = np.zeros(1 << n, dtype=np.int8)
+        for b in range(n):
+            pop += ((S >> b) & 1).astype(np.int8)
+        self.pop = pop
+
+    def counts(self, edges):
+        """Return (alpha, popcount histogram of independent sets)."""
+        bad = np.zeros(1 << self.n, dtype=bool)
+        for (i, j, k) in edges:
+            e = np.uint32((1 << i) | (1 << j) | (1 << k))
+            bad |= (self.S & e) == e
+        good = self.pop[~bad]
+        return np.bincount(good, minlength=self.n + 1)

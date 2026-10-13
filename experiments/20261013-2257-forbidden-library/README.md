@@ -86,3 +86,11 @@ meaning x_a+x_d=x_b+x_c is forced, for `extra_ap` = (a,b,c) is the forced unlist
 - n=7 diff rel=[1, 2, 4, 5] edges=[(0, 1, 4), (0, 3, 6), (1, 2, 3), (2, 5, 6), (3, 4, 5)]
 - n=7 extra_ap rel=[1, 3, 5] edges=[(0, 1, 4), (0, 3, 6), (1, 2, 3), (2, 5, 6), (3, 4, 5)]
 - n=7 extra_ap rel=[2, 3, 4] edges=[(0, 1, 4), (0, 3, 6), (1, 2, 3), (2, 5, 6), (3, 4, 5)]
+**Cross-check** [verified-here]: `crosscheck.py` ran all 2584 patterns (n=3..7): exact order feasibility
+agrees with the float LP `ordered_search._order_lp`, every exact certificate re-verifies, and realizable/not
+agrees with the independent LP+sympy `_exact_realization` path: 0 mismatches (3 min).
+
+**Conclusion.** The oracle works and is fast (ms per pattern). Library caveats: standing constraints are
+midpoint-injectivity and linearity (cores are minimal relative to that class); n <= 7 only. Larger cores
+(F7-type, 5 edges on 7 vertices appear here) will need n = 8..10; the enumeration scales as ~n! per n, so use
+the CEGAR loop to harvest cores lazily beyond n=8.

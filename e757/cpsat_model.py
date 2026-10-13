@@ -412,35 +412,39 @@ def enumerate_solutions(n, T, m_exact, callback=None, limit=None, time_limit=600
 # ----------------------------------------------------------------------------- brute force (tests)
 
 
-def brute_min_alpha(n, forbid_f7=True, m_min=0):
-    """Exhaustive DFS over all ordered midpoint hypergraphs (for tests, n <= 9).  Returns min alpha.
-    Uses: each added edge lowers alpha by at most 1."""
-    best = [n]
+def brute_exists(n, T, forbid_f7=True, m_min=0):
+    """Exhaustive DFS (tests, n <= 9): is there an ordered midpoint hypergraph with alpha <= T?
+    Pruning: each added edge lowers alpha by at most 1, so alpha(partial) - #undecided > T is dead."""
     mids = list(range(1, n - 1))
 
     def rec(idx, edges, used_pairs):
         undecided = len(mids) - idx
         if idx == len(mids):
             if len(edges) < m_min:
-                return
+                return False
             if forbid_f7 and not is_f7_free(edges):
-                return
-            a = alpha_of_edges(n, edges)
-            if a < best[0]:
-                best[0] = a
-            return
+                return False
+            return alpha_of_edges(n, edges) <= T
         if len(edges) + undecided < m_min:
-            return
-        if edges and alpha_of_edges(n, edges) - undecided >= best[0]:
-            return
+            return False
+        if alpha_of_edges(n, edges) - undecided > T:
+            return False
         j = mids[idx]
         for i in range(j):
             for k in range(j + 1, n):
                 p = ((1 << (i * n + j)) | (1 << (j * n + k)) | (1 << (i * n + k)))
                 if p & used_pairs:
                     continue
-                rec(idx + 1, edges + [(i, j, k)], used_pairs | p)
-        rec(idx + 1, edges, used_pairs)
+                if rec(idx + 1, edges + [(i, j, k)], used_pairs | p):
+                    return True
+        return rec(idx + 1, edges, used_pairs)
 
-    rec(0, [], 0)
-    return best[0]
+    return rec(0, [], 0)
+
+
+def brute_min_alpha(n, forbid_f7=True, m_min=0):
+    """Minimum alpha by repeated brute_exists (tests)."""
+    T = n
+    while T > 0 and brute_exists(n, T - 1, forbid_f7, m_min):
+        T -= 1
+    return T
