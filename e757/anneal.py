@@ -167,11 +167,15 @@ def is45_ints(ints):
 
 
 def solve_exact(m):
-    """Exact Fraction solution (list) of the state, or None if singular."""
+    """Exact Fraction solution (list) of the state, or None if singular. Integer (fraction-free) elimination."""
     n = m.n
-    bval = {m.lo: Fraction(0), m.hi: Fraction(1)}
+    Q = 1
     for v in m.free:
-        bval[v] = Fraction(m.pv[v])
+        Q = Q * Fraction(m.pv[v]).denominator // math.gcd(Q, Fraction(m.pv[v]).denominator)
+    bval = {m.lo: 0, m.hi: Q}
+    for v in m.free:
+        f = Fraction(m.pv[v])
+        bval[v] = int(f * Q)
     unknown = [v for v in range(n) if v not in bval]
     if set(m.mid) != set(unknown):
         raise ValueError("map must have one equation per non-boundary non-free vertex")
@@ -180,7 +184,7 @@ def solve_exact(m):
     rows = []
     for j in unknown:
         i, k = m.mid[j]
-        row = [Fraction(0)] * (size + 1)
+        row = [0] * (size + 1)
         row[col[j]] += 2
         for v in (i, k):
             if v in bval:
@@ -193,17 +197,23 @@ def solve_exact(m):
         if piv is None:
             return None
         rows[c], rows[piv] = rows[piv], rows[c]
-        p = rows[c][c]
-        rows[c] = [x / p for x in rows[c]]
+        pr = rows[c]
+        p = pr[c]
         for t in range(size):
             if t != c and rows[t][c] != 0:
                 f = rows[t][c]
-                rows[t] = [a - f * b for a, b in zip(rows[t], rows[c])]
+                r = [p * a - f * b for a, b in zip(rows[t], pr)]
+                g = 0
+                for x in r:
+                    g = math.gcd(g, x)
+                if g > 1:
+                    r = [x // g for x in r]
+                rows[t] = r
     vals = [None] * n
     for v, x in bval.items():
-        vals[v] = x
+        vals[v] = Fraction(x, Q)
     for v in unknown:
-        vals[v] = rows[col[v]][size]
+        vals[v] = Fraction(rows[col[v]][size], rows[col[v]][col[v]] * Q)
     return vals
 
 
@@ -419,7 +429,7 @@ class Runner:
         if c == 0:
             st["coll0"] += 1
             self.coll0_alpha[a] = self.coll0_alpha.get(a, 0) + 1
-            if a <= self.target + 1 or self.rng.random() < 0.02:
+            if a * 7 < 4 * self.n or a <= self.target or self.rng.random() < 0.01:
                 k = m.key() if not m.free else (m.key(), tuple(sorted(m.pv.items())))
                 if k not in self.seen_valid:
                     ok, h, ints, ev = exact_hit_check(m)

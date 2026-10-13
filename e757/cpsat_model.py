@@ -41,6 +41,12 @@ from .saturated import alpha_of_edges, is_linear
 # ----------------------------------------------------------------------------- combinatorics
 
 
+def hy_m_need(n, T):
+    """Henning-Yeo (linear + F7-free, [published]): 17*tau <= 5n + 3m.  A hypergraph with alpha <= T
+    has tau = n - alpha >= n - T, hence m >= ceil((17(n-T) - 5n)/3).  Valid only under F7-freeness."""
+    return max(0, -((5 * n - 17 * (n - T)) // 3))
+
+
 def triples(n):
     return [(i, j, k) for i in range(n) for j in range(i + 1, n) for k in range(j + 1, n)]
 
@@ -139,7 +145,7 @@ def independent_sets(n, edges, size, limit=50, rng=None, want_max=False):
 class Model:
     """Wrapper: CP-SAT model + variable table + cut bookkeeping."""
 
-    def __init__(self, n, m_min=0, m_exact=None, symmetry=True):
+    def __init__(self, n, m_min=0, m_exact=None, symmetry=True, m_max=None):
         self.n = n
         self.model = cp_model.CpModel()
         self.tri = triples(n)
@@ -158,8 +164,11 @@ class Model:
         total = sum(self.e.values())
         if m_exact is not None:
             M.Add(total == m_exact)
-        elif m_min > 0:
-            M.Add(total >= m_min)
+        else:
+            if m_min > 0:
+                M.Add(total >= m_min)
+            if m_max is not None:
+                M.Add(total <= m_max)
         self.total = total
         if symmetry:
             self._add_lex()
@@ -205,13 +214,13 @@ class Model:
             self.model.AddHint(self.e[t], 1 if t in es else 0)
 
 
-def build_model(n, m_min=0, m_exact=None, forbid_f7="lazy", symmetry=True):
+def build_model(n, m_min=0, m_exact=None, forbid_f7="lazy", symmetry=True, m_max=None):
     """Static part of the model (constraints (a), (b), m bounds, lex symmetry breaking).
     forbid_f7 'lazy' means F7 no-goods are added by the CEGAR loops; 'none' disables them.
     Returns a `Model` (attribute .model is the cp_model.CpModel)."""
     if forbid_f7 not in ("lazy", "none"):
         raise ValueError("forbid_f7 must be 'lazy' or 'none'")
-    mod = Model(n, m_min=m_min, m_exact=m_exact, symmetry=symmetry)
+    mod = Model(n, m_min=m_min, m_exact=m_exact, symmetry=symmetry, m_max=m_max)
     mod.forbid_f7 = forbid_f7
     return mod
 
@@ -252,23 +261,33 @@ def _cegar_step(mod, edges, T, rng, ncuts_per_iter, stats):
 
 
 def solve_min_alpha(n, m_min=0, forbid_f7=True, time_limit=600, m_exact=None, symmetry=True,
-                    start_T=None, ncuts_per_iter=40, workers=4, verbose=False, seed=0):
+                    start_T=None, ncuts_per_iter=40, workers=4, verbose=False, seed=0, use_hy=False,
+                    m_max=None):
     """Minimum alpha over ordered midpoint hypergraphs on n vertices (m >= m_min edges).
     Returns (alpha_min, witness_edges, stats).  stats['optimal'] tells whether alpha_min is proved
     optimal (the infeasibility of T = alpha_min - 1 was proved by UNSAT within the time limit);
     otherwise alpha_min is only an upper bound and stats['lower'] the proved lower bound.
-    Decreasing-T strategy: all cuts stay valid when T decreases."""
+    Decreasing-T strategy: all cuts stay valid when T decreases.
+    use_hy (needs forbid_f7): when testing alpha <= T also impose m >= hy_m_need(n, T), a consequence
+    of the PUBLISHED Henning-Yeo theorem; the result is then 'optimal modulo Henning-Yeo'.  With
+    use_hy=False the proof is by the solver alone."""
     t0 = time.time()
     rng = random.Random(seed)
     mod = build_model(n, m_min=m_min, m_exact=m_exact, forbid_f7="lazy" if forbid_f7 else "none",
-                      symmetry=symmetry)
+                      symmetry=symmetry, m_max=m_max)
     stats = {"alpha_cuts": 0, "f7_cuts": 0, "solves": 0, "optimal": False, "lower": 1,
-             "per_T": {}}
+             "per_T": {}, "use_hy": bool(use_hy and forbid_f7)}
+    hy_added = 0
     best_edges, best_alpha = None, None
     T = start_T if start_T is not None else n  # alpha <= n is always true
     while True:
         tT = time.time()
         status = "?"
+        if use_hy and forbid_f7 and m_exact is None:
+            need = hy_m_need(n, T)
+            if need > hy_added:  # monotone in decreasing T, so permanent
+                mod.model.Add(mod.total >= need)
+                hy_added = need
         while True:
             left = time_limit - (time.time() - t0)
             if left <= 0:
@@ -316,13 +335,15 @@ def solve_min_alpha(n, m_min=0, forbid_f7=True, time_limit=600, m_exact=None, sy
 
 
 def feasible_alpha_le(n, T, m_min=0, m_exact=None, forbid_f7=True, time_limit=600,
-                      symmetry=True, ncuts_per_iter=40, workers=4, seed=0):
+                      symmetry=True, ncuts_per_iter=40, workers=4, seed=0, m_max=None, use_hy=False):
     """Decide: is there a hypergraph with alpha <= T?  Returns ('SAT'|'UNSAT'|'UNKNOWN', edges, stats)."""
     t0 = time.time()
     rng = random.Random(seed)
     mod = build_model(n, m_min=m_min, m_exact=m_exact, forbid_f7="lazy" if forbid_f7 else "none",
-                      symmetry=symmetry)
+                      symmetry=symmetry, m_max=m_max)
     stats = {"alpha_cuts": 0, "f7_cuts": 0, "solves": 0}
+    if use_hy and forbid_f7 and m_exact is None:
+        mod.model.Add(mod.total >= hy_m_need(n, T))
     while True:
         left = time_limit - (time.time() - t0)
         if left <= 0:

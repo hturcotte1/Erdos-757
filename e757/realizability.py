@@ -386,7 +386,8 @@ def realize_exact(n, edges, tries=20, seed=0):
         if eps is None:
             g = list(g0)
         else:
-            g = [a + (eps * rnd.randint(1, 10 ** 6) / 10 ** 6) * b for a, b in zip(g0, u)]
+            s = eps * rnd.randint(1, 10 ** 6) / 10 ** 6
+            g = [a + s * b for a, b in zip(g0, u)]
         x = _gaps_to_x(g)
         if not all(x[t] < x[t + 1] for t in range(n - 1)):
             continue
