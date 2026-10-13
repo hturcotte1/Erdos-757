@@ -6,7 +6,8 @@ Lower bound (published route, Ma-Tang + Henning-Yeo):
     plus f(5) = 4: a linear 3-uniform hypergraph on 5 vertices has a 1-vertex transversal
     (three pairwise-intersecting triples on 5 points must share a point).
 Upper bound (constructions):
-    f(3) <= 2 (a 3-AP), f(12) <= 7 (12-point sets, omega issue #9804), f(14) <= 8 (A_base, Ma-Tang),
+    f(3) <= 2 (a 3-AP), f(8) <= 5, f(10) <= 6 (data/small_records.json, found by e757.ordered_search),
+    f(12) <= 7 (12-point sets, omega issue #9804), f(14) <= 8 (A_base, Ma-Tang),
     f(n) <= f(n+1) (delete a point), f(n+1) <= f(n) + 1 (add a generic point),
     f(a+b) <= f(a) + f(b) (gluing, Ma-Tang Lemma 3.6).
 Update KNOWN_UPPER when a new verified construction exists.
@@ -16,7 +17,7 @@ from __future__ import annotations
 import math
 from fractions import Fraction
 
-KNOWN_UPPER = {3: 2, 12: 7, 14: 8}
+KNOWN_UPPER = {3: 2, 8: 5, 10: 6, 12: 7, 14: 8}  # 8, 10: data/small_records.json
 KNOWN_LOWER_EXTRA = {5: 4}
 
 

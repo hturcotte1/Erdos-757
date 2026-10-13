@@ -84,14 +84,10 @@ The full table is printed by `python3 -m e757.fn_bounds`.
 
 These follow from the Henning–Yeo lower bound, the known sets, monotonicity, and gluing.
 
-- **Exact:**
-  - $f(1),\dots,f(7)=1,2,2,3,4,4,5$;
-  - $f(9)=6$, $f(11)=7$, $f(12)=7$, $f(13)=8$, $f(14)=8$, $f(15)=9$, $f(17)=10$;
-  - $f(24)=14$, $f(26)=15$, $f(28)=16$.
+- **Exact for every $n\le15$ and $n=17$:** $f(1),\dots,f(15)=1,2,2,3,4,4,5,5,6,6,7,7,8,8,9$ and $f(17)=10$; also $f(24)=14$, $f(26)=15$, $f(28)=16$. The sets attaining $f(8)=5$ and $f(10)=6$ were found on 13 Oct 2026 by `e757/ordered_search.py` [verified-here]; all small extremal sets are in `data/small_records.json`.
 - **Open:**
-  - $f(8)\in\{5,6\}$, $f(10)\in\{6,7\}$;
-  - **$f(16)\in\{9,10\}$** (the value 9 would give a new record, 9/16);
-  - $f(18)\in\{10,11\}$, $f(19),f(20)\in\{11,12\}$, $f(21)\in\{12,13\}$, $12\le f(22)\le14$, $f(23)\in\{13,14\}$.
+  - **$f(16)\in\{9,10\}$**: the first open case, and exactly where a new record (9/16) would live;
+  - $f(18)\in\{10,11\}$, $f(19),f(20)\in\{11,12\}$, $f(21),f(22)\in\{12,13\}$, $f(23)\in\{13,14\}$.
 
 ## 6. Structure of the known record sets [verified-here]
 
@@ -103,7 +99,7 @@ These follow from the Henning–Yeo lower bound, the known sets, monotonicity, a
 
 - **Midpoint-saturated.** Every non-extreme point is a midpoint ($m=n-2$).
 - **Affinely rigid.** The AP equations have rank $n-2$. So the labeled AP hypergraph determines the set up to $x\mapsto qx+t$, and `e757.saturated` rebuilds $A_{\rm base}$ from its hypergraph alone.
-- **The two 12-point sets** share an incidence pattern but are not affinely equivalent (different midpoint/order data).
+- **The two 12-point sets** share an incidence pattern but are not affinely equivalent (different midpoint/order data). A third, inequivalent 12-point set with $h=7$ is $\{0,269,385,467,501,511,521,523,535,538,549,575\}$ [verified-here].
 - **More facts about $A_{\rm base}$:**
   - AP degrees: one vertex of degree 4 (the point 0), six of degree 3, seven of degree 2;
   - no cut vertex;
@@ -132,5 +128,6 @@ See `kb/dead_ends.md`. The highlights:
 3. `kb/dead_ends.md`.
 4. `kb/open_questions.md`.
 5. `kb/known_results.md` (every fact with its source and its test).
-6. `kb/literature/part2_supplement.md`: the full proof chain, hypergraph transversal theory (including the "deficiency" proof technique), and AI/computational methods.
-7. `kb/literature/part1_literature_review.md`: history, neighbouring problems and bibliography, with inline corrections.
+6. `kb/notes/` (paper digests: Ma–Tang, Henning–Yeo, Gyárfás–Lehel, the omega thread, neighbouring problems) and `kb/methods/` (search engineering, proof and inequality testing).
+7. `kb/literature/part2_supplement.md`: the full proof chain, hypergraph transversal theory (including the "deficiency" proof technique), and AI/computational methods.
+8. `kb/literature/part1_literature_review.md`: history, neighbouring problems and bibliography, with inline corrections.

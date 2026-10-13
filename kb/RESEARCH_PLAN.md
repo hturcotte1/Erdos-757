@@ -9,6 +9,8 @@ Both tracks study the same objects: **realizable AP hypergraphs that are (nearly
 ## Phase 0: orientation (at most 1 hour)
 
 - Run `bash scripts/preflight.sh` and confirm that it prints `PREFLIGHT OK`.
+- Run `bash scripts/fetch_papers.sh`. For anything that fails, send the `scout` (in the background of later work) to fetch and digest it, starting with Gyárfás–Lehel 1995 into kb/notes/gyarfas_lehel_1995.md.
+- Dispatch a `worker` to build the CP-SAT/CEGAR engine from kb/methods/search_engineering.md, and validate it on n=12 and 14 (it must rediscover h=7 and h=8).
 - Write START_TIME (UTC) into `journal/STATE.md`.
 - Read `kb/00_START_HERE.md`, this file and `kb/dead_ends.md`.
 
@@ -19,7 +21,7 @@ Both tracks study the same objects: **realizable AP hypergraphs that are (nearly
 - Use canonical forms to remove isomorphic copies (networkx, pynauty or your own canonical labeling).
 - Store the results as `data/census_n{n}.jsonl.gz`.
 
-**P1.2 Decide $f(8)$ and $f(10)$ exactly.** Acceptance: either a judged construction, or an exhaustive certificate (script plus counts) accepted by the `referee`.
+**P1.2 (done before launch):** $f(8)=5$, $f(10)=6$ via `e757/ordered_search.py`. Next exact target: **$f(16)$**, which needs a faster search (see Track U).
 
 **P1.3 Two libraries** that feed both tracks:
 - *special pieces*: realizable configurations with high $\tau$;

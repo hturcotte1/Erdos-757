@@ -2,7 +2,8 @@
 name: falsifier
 description: Tries hard to break a candidate lemma, inequality, conjecture or heuristic about (4,5)-sets or their AP hypergraphs before anyone invests in a proof. Give it the exact statement, the precise class it should hold for, and any constants.
 tools: Read, Grep, Glob, Bash, Write
-model: inherit
+model: sonnet
+effort: high
 color: orange
 ---
 

@@ -19,7 +19,7 @@ $9/17\le c_*\le4/7$ (Ma–Tang 2026). Full context is in `kb/00_START_HERE.md`.
 | `e757/` | Exact-arithmetic toolkit (AP hypergraphs, realizability, midpoint maps, f(n) bounds, chains) |
 | `judge/` | Frozen independent verifier, with its SHA-256 pinned |
 | `scripts/` | `status.sh` (goal verdict), `preflight.sh`, `new_claim.py`, `start_job.sh`, `jobs.sh` |
-| `.claude/` | Hooks (protect frozen files, re-inject state after compaction), subagents (referee, scout, falsifier), skills (verify-claim, checkpoint), permissions |
+| `.claude/` | Hooks (protect frozen files, re-inject state after compaction), subagents (worker, summarizer, prover, referee, scout, falsifier), skills (verify-claim, e757-checkpoint), permissions |
 | `journal/` | STATE (current), LOG (append-only), START_TIME_UTC (the clock) |
 | `results/` | claims/, proofs/, reviews/, LEDGER.md, FINAL_REPORT.md |
 | `tests/` | Pins every verified fact and the safety rails (`python3 -m pytest -q`) |
@@ -30,6 +30,25 @@ $9/17\le c_*\le4/7$ (Ma–Tang 2026). Full context is in `kb/00_START_HERE.md`.
 2. Give the environment network access so it can install packages and read papers.
 3. Type `/goal `, paste the box from `GOAL.md`, and send. The first turns run preflight and start Phase 1.
 4. Watch progress in the commit history, `journal/STATE.md` and `results/LEDGER.md`.
+
+### How usage is conserved
+Fable is the orchestrator: it plans, does the key mathematical reasoning, and judges results.
+Execution is delegated:
+
+| Work | Subagent | Model |
+|---|---|---|
+| Code, experiments | `worker` | Sonnet |
+| Reading logs and files | `summarizer` | Haiku |
+| Literature | `scout` | Sonnet |
+| Counterexample hunting | `falsifier` | Sonnet |
+| Writing out proofs | `prover` | Opus |
+| Verification | `referee` | Opus, or Fable for the final check |
+
+Searches run as CPU jobs, which cost no tokens. The rules are in the "orchestrator" section of
+CLAUDE.md.
+
+If usage is still too high, pick a lower effort for Fable in the session (high instead of max)
+or lower `BUDGET_HOURS` in `GOAL.md`.
 
 The terminal instructions below are for running it locally instead.
 

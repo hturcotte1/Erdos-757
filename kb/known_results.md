@@ -31,6 +31,7 @@ Each row gives a tag, the statement, the source, and how it is checked (a test n
 | K25 | derived-here | $D(A)=17h-9n=\delta+3(n-m)\ge6$; $c_*=9/17+\inf D/(17n)$ | algebra on K5 + K8 | source |
 | K26 | derived-here | Every condition is Freiman-2-invariant, so constructions in $\mathbb Z^d$ are allowed | definitions | source |
 | K27 | published | Planar analogue (#135): Tao, arXiv:2409.01343 | Tao | source |
+| K29 | verified-here | $f(8)=5$, $f(10)=6$ (sets in data/small_records.json); hence $f(n)$ is known exactly for all $n\le15$ | e757.ordered_search + judge | `test_small_records` |
 | K28 | published | $f(n,4,5)=\tfrac56n+o(n)$ (anti-Ramsey context) | Bennett–Cushman–Dudek–Prałat; Joos–Mubayi | source |
 
 **Derivation of K10.** For the AP hypergraph of a (4,5)-set with maximum degree ≤2, apply Henning–Yeo's $k=3$ bound to each component, using $m_C\le n_C-2$. This gives $\tau\le(4n-3)/9$.

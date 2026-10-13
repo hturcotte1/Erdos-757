@@ -1,4 +1,4 @@
 # Installed by preflight if possible; the agent may add more here.
 python-sat
 ortools
-scipy
+

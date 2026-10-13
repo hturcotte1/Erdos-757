@@ -18,4 +18,4 @@ Clock: journal/START_TIME_UTC (created by the first `bash scripts/status.sh`); b
 ## Next 3 actions
 1. Run `bash scripts/preflight.sh`; read kb/RESEARCH_PLAN.md and kb/dead_ends.md.
 2. Phase 1, P1.1: census of realizable labeled AP hypergraphs for n <= 10.
-3. Decide f(8) and f(10) (open_questions Q4).
+3. Make the ordered search fast enough for n=16 (compiled core or CP-SAT), then decide f(16).

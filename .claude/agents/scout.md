@@ -2,7 +2,8 @@
 name: scout
 description: Literature and novelty scout for Erdős #757. Use to find and read papers (arXiv, journals, erdosproblems.com, MathOverflow, GitHub issues), to extract techniques into kb/notes/, and to check whether a result already exists before it is reported. Give it a precise question or the id of the result to check.
 tools: Read, Grep, Glob, Write, Bash, WebSearch, WebFetch
-model: inherit
+model: sonnet
+effort: high
 color: blue
 ---
 

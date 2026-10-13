@@ -148,12 +148,28 @@ def test_hy_feasibility():
 def test_fn_bounds():
     b = B.fn_bounds(40)
     exact = {n: lu[0] for n, lu in b.items() if lu[0] == lu[1]}
-    want = {1: 1, 2: 2, 3: 2, 4: 3, 5: 4, 6: 4, 7: 5, 9: 6, 11: 7, 12: 7, 13: 8, 14: 8, 15: 9,
-            17: 10, 24: 14, 26: 15, 28: 16}
+    want = {1: 1, 2: 2, 3: 2, 4: 3, 5: 4, 6: 4, 7: 5, 8: 5, 9: 6, 10: 6, 11: 7, 12: 7, 13: 8,
+            14: 8, 15: 9, 17: 10, 24: 14, 26: 15, 28: 16}
     assert exact == want
-    assert b[16] == (9, 10) and b[8] == (5, 6) and b[10] == (6, 7)
+    assert b[16] == (9, 10) and b[22] == (12, 13)
     for n, (lo, hi) in b.items():
         assert lo <= hi
+
+
+def test_small_records():
+    data = json.loads((REPO / "data" / "small_records.json").read_text())["sets"]
+    J = load_judge()
+    for key, d in data.items():
+        A = d["set"]
+        assert core.is_45_set(A), key
+        assert core.alpha(A) == d["h"] == B.fn_bounds(20)[len(A)][0], key
+    assert data["8"]["h"] == 5 and data["10"]["h"] == 6
+
+
+def test_ordered_search_small():
+    from e757.ordered_search import search
+    hits = search(8, 5, max_none=6, limit=1)
+    assert hits and hits[0]["h"] == 5 and core.is_45_set(hits[0]["set"])
 
 
 # ---------------------------------------------------------------- judge behaviour

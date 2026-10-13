@@ -2,7 +2,7 @@
 name: referee
 description: Adversarial referee for Erdős #757. Use for every candidate record construction (ratio below 4/7), every proof, every exhaustive-search certificate, and any lemma the main agent wants to rely on. Pass only the claim id and the file path; do not pass your own opinion of the claim.
 tools: Read, Grep, Glob, Bash, Write
-model: inherit
+model: opus
 effort: max
 color: red
 ---

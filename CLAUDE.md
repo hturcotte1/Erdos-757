@@ -13,6 +13,47 @@ it, but keep going.
 @kb/00_START_HERE.md
 @journal/STATE.md
 
+## You are the orchestrator (read this first: it is how the budget lasts)
+You run on the most capable and most expensive model. Spend your own tokens on judgment, and
+delegate execution to cheaper subagents.
+
+**Do yourself:**
+- choose directions and decide what to try next;
+- the key mathematical ideas: lemma statements, proof architecture, what a computation should
+  test;
+- read subagent summaries and decide what they mean;
+- review the crucial steps of proofs;
+- update journal/STATE.md.
+
+**Delegate by default:**
+
+| Task | Subagent | Model |
+|---|---|---|
+| Writing, debugging, optimizing or running code and experiments | `worker` | Sonnet |
+| Reading long logs, data or papers already on disk | `summarizer` | Haiku |
+| Finding or reading literature; novelty checks | `scout` | Sonnet |
+| Trying to break a candidate inequality or lemma | `falsifier` | Sonnet |
+| Turning your proof sketch into a full written proof | `prover` | Opus, max effort |
+| Verifying any claim | `referee` | Opus, max effort |
+
+For the final referee on a goal-deciding claim, pass `model: fable` in the Agent call.
+
+**Rules:**
+- **Specs:** every delegation gets a spec with Goal; Context files; Exact deliverables (with paths);
+  Acceptance checks; Time budget; and the return format "at most 200 words plus file paths".
+  Vague specs waste more tokens than they save.
+- **Parallelism:** independent tasks go out in one message as several foreground Agent calls.
+  They run in parallel and the turn ends with all their results.
+- **Ad-hoc agents:** when you spawn a general-purpose or ad-hoc agent, pass `model: sonnet`
+  (or `haiku` for pure reading) unless the task needs deep reasoning.
+- **Workflows:** in dynamic workflows, assign `sonnet` or `haiku` to the execution stages.
+- **Compute over thought:** if a question can be settled by computation, have a worker compute
+  it. CPU time is free; tokens are not.
+- **Large files:** never read a file over about 200 lines, or a raw log, into your own context.
+  Ask `summarizer`, or use grep/head.
+- **Small edits:** keep doing them yourself (STATE, LOG, small code fixes). Delegating a two-line
+  change costs more than it saves.
+
 ## First actions in a fresh session
 1. If journal/STATE.md still says "not started": run `bash scripts/preflight.sh`, read
    kb/RESEARCH_PLAN.md and kb/dead_ends.md, then begin Phase 0 of the plan.
@@ -67,6 +108,16 @@ update STATE, append LOG, run tests if e757/ changed, commit, push.
 - `e757/fn_bounds.py`: f(n) bounds and the Henning–Yeo feasibility table
   (`python3 -m e757.fn_bounds`).
 - `e757/chains.py`: periodic chain densities (exact).
+- `e757/ordered_search.py`: exhaustive search over (4,5)-sets by AP structure in sorted order,
+  with LP pruning.
+  - Finds every f(n) witness for n <= 12 in seconds; does not reach n = 14 within minutes in
+    pure Python.
+  - Porting it to compiled code or CP-SAT is the first Track U engineering task.
+- `data/small_records.json`: extremal sets for n = 8, 10, 11, 12 (three inequivalent) and 14.
+- `kb/notes/`: digests of the key papers and the community thread.
+- `kb/methods/`: recipes for search engineering and for proof and inequality testing.
+- `kb/literature/sources/`: Ma–Tang's verification script, the Lean statement, Tao's
+  constants-database entry.
 - `judge/judge.py`: the frozen independent verifier.
 - `scripts/new_claim.py`: save and judge a set.
 - `scripts/start_job.sh`, `scripts/jobs.sh`: background jobs.
@@ -80,7 +131,10 @@ Conventions:
 - You may pip-install what you need (python-sat, ortools, numba, ...). Record it in
   requirements-optional.txt.
 
-## Subagents (.claude/agents/)
+## Subagents (.claude/agents/; models as in the orchestrator table above)
+- `worker`: code, experiments, data.
+- `summarizer`: cheap reading.
+- `prover`: full proofs from your sketch; marks every gap as `GAP:`.
 - `referee`: adversarial verification of one claim (construction, proof, certificate, lemma).
   Writes `results/reviews/<id>__referee__<UTC>.md` starting with `VERDICT: ...`.
 - `scout`: literature, reading papers into kb/notes/, and novelty checks
