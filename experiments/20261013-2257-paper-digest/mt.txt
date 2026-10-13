@@ -1,0 +1,738 @@
+                                                         LARGEST SIDON SUBSETS IN WEAK SIDON SETS
+
+                                                                               JIE MA AND QUANYU TANG
+
+
+                                                 Abstract. A finite set S ⊂ R is called a Sidon set if all sums x + y with x, y ∈ S and x ≤ y
+                                                 are distinct, and a weak Sidon set if all sums x + y with x, y ∈ S and x < y are distinct. For
+                                                 a finite set A ⊂ R, let h(A) denote the maximum size of a Sidon subset of A, and define
+arXiv:2602.23282v2 [math.CO] 6 Mar 2026
+
+
+
+
+                                                                 g(n) := min{ h(A) : A ⊂ R, |A| = n, A is a weak Sidon set }.
+                                                 Sárközy and Sós asked whether the limit limn→∞ g(n)/n exists and, if so, to determine its
+                                                 value. We resolve this problem completely by determining g(n) exactly:
+                                                                                           
+                                                                                       n+1
+                                                                              g(n) =              for all n ≥ 1.
+                                                                                        2
+                                                 In particular, limn→∞ g(n)/n = 21 .
+                                                     We also investigate a related problem of Erdős concerning a local difference condition.
+                                                 A finite set A ⊂ R is called a (4, 5)-set if every 4-element subset of A determines at least
+                                                 five distinct values among its six pairwise absolute differences. Erdős asked for the optimal
+                                                 constant c∗ > 0 such that every (4, 5)-set of size n contains a Sidon subset of size at least
+                                                 c∗ n. Gyárfás and Lehel reduced this to an extremal problem of 3-uniform hypergraphs and
+                                                                1
+                                                 proved 12 + 141·76 ≤ c∗ ≤ 53 . We improve both bounds by establishing
+                                                                                          9         4
+                                                                                            ≤ c∗ ≤ ,
+                                                                                         17         7
+                                                 where the lower bound uses a reformulation of the extremal problem, and the upper bound
+                                                 follows from an explicit construction together with a convenient characterization of c∗ .
+
+
+
+
+                                                                                     1. Introduction
+                                             Throughout this paper, a finite set S ⊂ R is called a Sidon set if all pairwise sums x + y
+                                          with x, y ∈ S and x ≤ y are distinct. For a finite set A ⊂ R, let h(A) denote the maximum
+                                          cardinality of a Sidon subset of A.
+                                             Sidon sets are among the most intensively studied objects in additive combinatorics, owing
+                                          to their deep connections with extremal combinatorics, number theory, and discrete geometry;
+                                          see, e.g., [10]. Motivated by problems posed by Erdős and by Sárközy and Sós, we study the
+                                          asymptotic density of the largest Sidon subsets contained in sets that are close to being Sidon.
+                                          We consider this problem under two related but distinct notions of proximity to the Sidon
+                                          property, to be elaborated in the following two subsections.
+
+                                          1.1. A problem of Sárközy and Sós on weak Sidon sets. The first notion of proximity
+                                          to being Sidon that we consider arises naturally. A finite set A ⊂ R is called a weak Sidon set
+                                          if all sums x + y with x, y ∈ A and x < y are distinct; see, e.g., [8]. In [11, p. 247], Sárközy
+                                          and Sós asked how large a Sidon subset must be contained in a weak Sidon set. To state this
+                                          formally, for each positive integer n, define
+                                                           g(n) := min{ h(A) : A ⊂ R, |A| = n, A is a weak Sidon set }.
+
+                                            2020 Mathematics Subject Classification. Primary 11B30; Secondary 11B25, 11B34, 05C65.
+                                            Key words and phrases. sidon set, weak Sidon set, (4, 5)-set, arithmetic progression, transversal number.
+                                                                                               1
+2                                              J. MA AND Q. TANG
+
+They then explicitly posed the following problem.1
+Problem 1.1 (Sárközy and Sós [11], Problem 12). Prove that the limit limn→∞ g(n)
+                                                                             n exists and
+determine the limit.
+  Our main result of this paper resolves Problem 1.1 by proving the existence of the limit and
+determining the corresponding asymptotic constant.
+Theorem 1.2. The limit γ∗ := limn→∞ g(n)                         1
+                                     n exists and satisfies γ∗ = 2 .
+
+    In fact, we prove the following stronger statement, which determines g(n) exactly.
+Theorem 1.3. For every positive integer n,
+                                                          
+                                                       n+1
+                                                g(n) =      .
+                                                        2
+    We refer readers to Section 1.3 for the proof sketches of these results.
+1.2. A problem of Erdős on (4, 5)-sets. Our second notion of proximity to being Sidon,
+first studied by Erdős [4], is defined as follows. A finite set A ⊂ R is called a (4, 5)-set if for
+every choice of four distinct elements x1 , x2 , x3 , x4 ∈ A, one has2
+                                 
+                                  |xi − xj | : 1 ≤ i < j ≤ 4 ≥ 5.
+This concept is closely related to an anti-Ramsey problem (see [1, 7]). In [4, p. 231], Erdős
+posed the following problem, which is also listed as Problem #757 on Bloom’s website [2].
+Problem 1.4 (Erdős [4]). Let A ⊂ R be a (4, 5)-set of size n. Find the best constant c∗ > 0
+such that A must always contain a Sidon set of size at least c∗ n.
+For convenience, for each positive integer n, define
+                       f (n) := min{ h(A) : A ⊂ R, |A| = n, A is a (4, 5)-set }.
+Gyárfás and Lehel [5] proved that for all positive integers n,
+                                          
+                              1       1                    3
+                                +            n ≤ f (n) ≤ n + 1.                                                  (1)
+                              2 141 · 76                   5
+Their upper bound is constructed using an infinite sequence based on Fibonacci numbers, while
+the lower bound is reduced to a problem on the transversal number of certain 3-uniform linear
+hypergraphs.
+  In analogy with Theorem 1.2, we first prove that the limit limn→∞ f (n)n exists and equals
+the optimal constant c∗ in Problem 1.4.
+Theorem 1.5. The limit limn→∞ f (n)                               f (n)       f (n)
+                                n exists and satisfies c∗ = limn→∞ n = inf n≥1 n .
+
+  The bounds (1) of Gyárfás and Lehel [5] then correspond to 12 + 141·76
+                                                                    1
+                                                                         ≤ c∗ ≤ 35 . We improve
+both bounds as follows.
+Theorem 1.6. It holds that
+                                                    9       4
+                                                      ≤ c∗ ≤ .
+                                                   17       7
+    1The authors of [11] noted that the result of Gyárfás and Lehel [5] (which concerns (4, 5)-sets; see Section 1.2)
+may appear relevant to this problem. However, [5] does not directly yield progress on it, since a weak Sidon
+set need not be a (4, 5)-set; see Section 2.1.
+   2The notions of Sidon sets, (4, 5)-sets, and weak Sidon sets form a strict chain of implications; see Figure 2
+and the discussion in Section 2.1.
+                           LARGEST SIDON SUBSETS IN WEAK SIDON SETS                                    3
+
+  We point out that Theorem 1.5 is essential for the upper bound in Theorem 1.6. Once
+c∗ = inf n≥1 f (n)/n is established, any single finite (4, 5)-set A with a small enough ratio
+between its largest Sidon subset and |A| immediately yields an upper bound on c∗ .
+1.3. Proof strategy. We outline the main ideas behind the proofs of our results in this
+subsection. The proofs of the existence statement in Theorem 1.2 and Theorem 1.5 are both
+based on a subadditivity argument: we show that g(n) and f (n) are subadditive, and the
+existence of the limits then follows from Fekete’s lemma.
+   We first sketch the proof strategy for Theorem 1.6. For the upper bound c∗ ≤ 4/7, we
+construct an explicit 14-point (4, 5)-set whose largest Sidon subset has size 8, verified by
+exhaustive enumeration. Combined with the identity c∗ = inf n≥1 f (n)/n from Theorem 1.5,
+this already yields c∗ ≤ 4/7. For the lower bound c∗ ≥ 9/17, we build on the A.P.-hypergraph
+framework of Gyárfás and Lehel [5], which we now define below.
+Definition 1.7 (A.P.-hypergraph). Let A = {a1 , . . . , an } ⊂ R be a finite set, indexed so that
+a1 < · · · < an . The A.P.-hypergraph of A is the 3-uniform hypergraph H(A) = (V, E) on
+vertex set A whose edges are precisely the triples {ai , aj , ak } for which ai , aj , ak form a 3-term
+arithmetic progression, where 1 ≤ i < j < k ≤ n.
+   Let α(H) and τ (H) denote the independence number and the transversal number of a
+hypergraph H, respectively. When A is a (4, 5)-set, Sidon subsets of A correspond exactly to
+independent sets of H(A); in particular, h(A) = α(H(A)) (see Lemma 2.3). Since α(H(A)) +
+τ (H(A)) = |V (H(A))| = n, it is equivalent to working with the transversal number τ (H(A)).
+
+
+
+
+                       Figure 1. The 7-vertex 3-uniform hypergraph F7 .
+
+   Moreover, the condition of being a (4, 5)-set imposes strong structural restrictions on H(A).
+One can show that the hypergraph H(A) is linear, that different edges (corresponding to 3-term
+arithmetic progressions in A) have distinct middle points (with respect to the natural order
+on R), and that H(A) is F7 -free. Here and throughout,
+                                                           F7 denotes the 3-uniform hypergraph
+on vertex set {0, 1, 2, 3, 4, 5, 6} with E(F7 ) = {0, 1, 2}, {0, 3, 4}, {0, 5, 6}, {1, 3, 5}, {2, 4, 6} ,
+as illustrated in Figure 1. Gyárfás and Lehel [5, Theorem 3.2] combined this reduction with a
+transversal estimate to obtain the lower bound in (1). Using the same framework, but replacing
+their transversal estimate by the stronger inequality of Henning and Yeo [6, Theorem 7] for
+3-uniform linear F7 -free hypergraphs, we obtain the improved lower bound c∗ ≥ 9/17.
+   We now discuss Theorem 1.3. For the lower bound, let A be a weak Sidon set and pass to
+its A.P.-hypergraph H(A). Combining the general inequality |E(H(A))| ≤ |V (H(A))| − 2
+(see Lemma 2.4) with an upper bound on the transversal number of a 3-uniform hyper-
+graph due to Chvátal and McDiarmid [3] and        independently     Tuza [12] (see Theorem 4.6)
+gives h(A) ≥ |A|/2 + 1/2, and hence g(n) ≥ n+1
+                                                     
+                                                   2   . For the  matching    upper bound, for each
+k ≥ 2 we construct a weak Sidon set A2k+1 with |A2k+1 | = 2k + 1 and h(A2k+1 ) = k + 1
+(see Proposition 4.3 and Theorem 4.5), which gives g(2k + 1) ≤ k + 1. For even orders, any
+2k-element subset of A2k+1 is again weak Sidon and has largest Sidon subset of size at most
+4                                        J. MA AND Q. TANG
+
+k + 1, so g(2k) ≤ k + 1. Together with the lower bound, this gives g(n) = n+1
+                                                                               
+                                                                              2   for all n ≥ 1,
+where the cases n = 1, 2, 3 are immediate. In particular, γ∗ = 12 ; combined with the existence
+of the limit established earlier, this completes the proof of Theorem 1.2.
+
+1.4. Paper organization. Section 2 records the relationships among Sidon sets, (4, 5)-sets,
+and weak Sidon sets, and collects basic facts about A.P.-hypergraphs needed for our lower-
+bound arguments. Section 3 establishes the existence of the asymptotic constants γ∗ and c∗
+by proving the first
+                   assertion  of Theorem 1.2 and Theorem 1.5. Section 4 proves Theorem 1.3,
+namely, g(n) = n+1                  yields the second assertion of Theorem 1.2 that γ∗ = 12 .
+                       
+                     2   and  hence
+Section 5 proves Theorem 1.6, improving both bounds for c∗ .
+
+                                        2. Preliminaries
+2.1. Relations between Sidon sets, (4, 5)-sets, and weak Sidon sets. We first establish
+a general relation between Sidon sets, (4, 5)-sets, and weak Sidon sets, as illustrated in Figure 2.
+
+
+        Sidon sets            ⊊              (4, 5)-sets          ⊊            weak Sidon sets
+
+
+
+           Figure 2. Inclusions among Sidon sets, (4, 5)-sets, and weak Sidon sets.
+
+  We prove these implications in the following two propositions and give examples showing
+that the inclusions are strict.
+Proposition 2.1. Every Sidon set is a (4, 5)-set.
+Proof. Let S ⊂ R be a Sidon set, and let x1 , x2 , x3 , x4 ∈ S be four distinct elements. We claim
+that the six absolute differences |xi − xj | (1 ≤ i < j ≤ 4) are all distinct.
+   Suppose for contradiction that |xi − xj | = |xk − xℓ | for two distinct unordered pairs {i, j} ̸=
+{k, ℓ}. Swapping indices within each pair if necessary, we may assume xi > xj and xk > xℓ ,
+so that xi − xj = xk − xℓ . Rearranging gives
+                                         xi + xℓ = xk + xj .
+The unordered pairs {xi , xℓ } and {xk , xj } are distinct (otherwise one would have {xi , xj } =
+{xk , xℓ }, contradicting our choice of pairs), so this equality gives two different representations
+of the same sum using elements of S, contradicting that S is Sidon. This shows that all six
+absolute differences of any four distinct elements in S are distinct. So S is a (4, 5)-set.       □
+Proposition 2.2. Every (4, 5)-set is a weak Sidon set.
+Proof. Let A ⊂ R be a (4, 5)-set. Suppose, for a contradiction, that A is not weak Sidon. Then
+there exist four distinct elements a1 , a2 , a3 , a4 ∈ A such that
+                                         a1 + a4 = a2 + a3 .
+By rearranging if necessary, we may assume a1 < a2 < a3 < a4 . Then the above equality
+implies a4 − a3 = a2 − a1 , so among the six pairwise absolute differences of {a1 , a2 , a3 , a4 }, we
+have
+                    |a4 − a3 | = |a2 − a1 |   and     |a4 − a2 | = |a3 − a1 |.
+Thus at least two distinct values among the six differences are repeated, so there are at most
+four distinct absolute differences. This contradicts the (4, 5)-property.                   □
+                         LARGEST SIDON SUBSETS IN WEAK SIDON SETS                                  5
+
+   We remark that these two inclusions are strict. For example, the set {1, 2, 3, 5} is weak
+Sidon (its six sums x + y with x < y are 3, 4, 5, 6, 7, 8), but it is not a (4, 5)-set since its six
+pairwise absolute differences take only four distinct values. On the other hand, {1, 2, 3, 6} is a
+(4, 5)-set, but it is not Sidon since 1 + 3 = 2 + 2.
+2.2. A.P.-hypergraphs. We use the A.P.-hypergraph framework of Gyárfás and Lehel [5].
+For a finite set A ⊂ R, let H(A) be its A.P.-hypergraph (Definition 1.7). Throughout this
+paper, for a hypergraph H we write nH := |V (H)| and mH := |E(H)|, and let α(H) and τ (H)
+denote the independence number and transversal number of H, respectively.
+   The next three lemmas are stated in [5, p. 109] without proof. For completeness, we include
+full proofs. Moreover, we weaken the hypotheses in two of them: in fact, Lemmas 2.3 and 2.4
+hold for all weak Sidon sets, not only for (4, 5)-sets.
+   For the first lemma, the key observation is that, under the weak Sidon condition, the Sidon
+subsets are exactly those subsets that contain no 3-term arithmetic progression.
+Lemma 2.3. Let A be a weak Sidon set, and let H = H(A) be its A.P.-hypergraph. For a
+subset S ⊆ A, the following are equivalent:
+    (1) S is Sidon;
+    (2) S contains no 3-term arithmetic progression.
+In particular,
+                                        h(A) = α(H).
+Proof. If S contains a 3-term arithmetic progression {x − d, x, x + d} with d > 0, then
+                                    (x − d) + (x + d) = x + x,
+so S is not Sidon. Conversely, suppose that S is not Sidon. Then there exist u, v, x, y ∈ S such
+that u + v = x + y, but the two representations are different. Reordering within each pair if
+necessary, we may assume u ≤ v, x ≤ y with (u, v) ̸= (x, y).
+   We first claim that {u, v, x, y} cannot consist of four distinct elements. Indeed, if it did,
+write them as a < b < c < d. Since a is the smallest and d is the largest, the only way to split
+these four distinct numbers into two pairs with equal sum is a + d = b + c, which contradicts
+the fact that A is weak Sidon.
+   Hence {u, v, x, y} has at most three distinct elements. It cannot have only two distinct ele-
+ments either. Indeed, if the two values are a < b, then the only possibilities with nondecreasing
+order are (a, a), (a, b) and (b, b), whose sums are 2a, a + b, and 2b, respectively, and these are
+pairwise distinct. Thus u + v = x + y would force (u, v) = (x, y), contrary to our choice of the
+two representations. Therefore {u, v, x, y} has exactly three distinct elements, say a < b < c.
+It follows that the two representations must be
+                                          a + c = b + b,
+so a, b, c form a 3-term arithmetic progression. We have proved that S is Sidon if and only if
+S contains no 3-term arithmetic progression.
+   Finally, a subset of V (H) is independent in H if and only if it contains no edge of H, i.e.,
+no 3-term arithmetic progression from A. Therefore h(A) = α(H).                              □
+  The following lemma on weak Sidon sets will be used frequently in the sequel.
+Lemma 2.4. Let A be a weak Sidon set with |A| ≥ 2, and let H = H(A). For each edge
+e = {x − d, x, x + d} ∈ E(H) with d > 0, define its midpoint by µ(e) := x. Then the map
+µ : E(H) → A is injective. In particular,
+                                          mH ≤ nH − 2.
+6                                        J. MA AND Q. TANG
+
+Proof. Write A = {a1 , . . . , an } with a1 < · · · < an , so n = nH ≥ 2.
+  We first show that the map µ : E(H) → A is injective. Suppose for a contradiction that
+there exist two distinct edges e1 and e2 with the same midpoint x. In that case, let
+
+                      e1 = {x − d1 , x, x + d1 },     e2 = {x − d2 , x, x + d2 }
+
+for some distinct d1 , d2 > 0, and hence
+
+                        (x − d1 ) + (x + d1 ) = (x − d2 ) + (x + d2 ) = 2x.
+
+This gives two distinct representations of the same sum using four distinct elements of A,
+contradicting that A is weak Sidon.
+  Hence, the map µ : E(H) → A is injective. Also, µ(e) ∈ / {a1 , an } for every e ∈ E(H), since
+the midpoint of a nontrivial 3-term arithmetic progression lies strictly between its endpoints.
+Hence µ(E(H)) ⊆ A \ {a1 , an }. Therefore
+
+                        mH = |E(H)| = |µ(E(H))| ≤ |A| − 2 = nH − 2.                                □
+
+   As we mentioned earlier, the condition of being a (4, 5)-set imposes strong structural re-
+strictions on H(A). We say that a hypergraph is linear if any two distinct edges intersect in
+at most one vertex.
+
+Lemma 2.5. If A is a (4, 5)-set, then its A.P.-hypergraph H(A) is linear.
+
+Proof. Suppose, for a contradiction, that H(A) is not linear. Then there exist two distinct
+edges e1 , e2 with |e1 ∩ e2 | ≥ 2.
+  By Proposition 2.2 and Lemma 2.4, we conclude that e1 and e2 do not share their midpoint.
+Let the two common vertices be u < v, and set d := v − u > 0. Any 3-term arithmetic
+progression containing both u and v must be one of the triples
+                                                 
+                                            u+v
+                        {u − d, u, v},   u,     ,v ,      {u, v, v + d},
+                                             2
+
+according to whether the midpoint is u, u+v   2 , or v. Since e1 ̸= e2 , their third vertices are two
+distinct choices among u − d, u+v 2 , v + d, so e1 ∪ e2 consists of four points.
+   If the third vertices are u − d and v + d, then the four points form a 4-term arithmetic pro-
+gression {u − d, u, v, v + d}, which determines only three distinct pairwise absolute  differences.
+   Otherwise, one of the edges is {u − d, u, v} or {u, v, v + d} and the other is u, u+v   2 , v . In
+either case, among the six pairwise absolute differences we have
+                                                                u+v         u+v  d
+    |u − (u − d)| = |v − (v + d)| = |v − u| = d       and           −u = v−     = ,
+                                                                 2           2   2
+so there are at most four distinct values. This contradicts the fact that A is a (4, 5)-set. Hence
+H(A) is linear.                                                                                 □
+
+   We point out that the hypothesis in Lemma 2.5 cannot be weakened from (4, 5)-sets to weak
+Sidon sets. In fact, the A.P.-hypergraph of a weak Sidon set need not be linear. For example,
+let A = {1, 2, 3, 5}. Then A is a weak Sidon set. However, H(A) contains the two edges
+
+                                   {1, 2, 3}    and      {1, 3, 5},
+
+and these intersect in the two vertices {1, 3}. Thus H(A) is not linear.
+                         LARGEST SIDON SUBSETS IN WEAK SIDON SETS                               7
+
+                      3. Existence of the asymptotic constants
+   In this section we prove the existence of the limits defining γ∗ and c∗ by establishing the
+first assertion of Theorem 1.2 and Theorem 1.5. We will use the standard Fekete’s lemma for
+subadditive sequences.
+Lemma 3.1 (Fekete’s lemma). Let (ak )k≥1 be a sequence of real numbers such that am+n ≤
+am + an for all m, n ≥ 1. Then the limit limk→∞ ak /k exists and equals inf k≥1 ak /k.
+3.1. Weak Sidon sets: existence of the limit. We first treat the weak Sidon set problem
+and prove the first assertion of Theorem 1.2. The following lemma is straightforward.
+Lemma 3.2. If A ⊂ R is a weak Sidon set, then qA + t := {qa + t : a ∈ A} is a weak Sidon
+set for every q > 0 and t ∈ R. Moreover, h(qA + t) = h(A).
+Proof. The map x 7→ qx + t is a bijection on R that preserves all additive relations of the
+form x + y = u + v (up to scaling and translation). In particular, the sums of distinct pairs in
+A are distinct if and only if the corresponding sums in qA + t are distinct. Hence, the weak
+Sidon property is preserved. The statement h(qA + t) = h(A) follows similarly, since the Sidon
+property is also invariant under affine transformations.                                      □
+  Now we establish the key technical lemma needed in the proof of Theorem 1.2.
+Lemma 3.3. Let A, B ⊂ R be two finite weak Sidon sets. Then there exist q > 0 and t ∈ R
+such that the set
+                                       C := A ∪ (qB + t)
+is weak Sidon, satisfies |C| = |A| + |B|, and h(C) ≤ h(A) + h(B).
+Proof. By Lemma 3.2, we may translate A and B so that min A = min B = 0. Write DA :=
+max A and DB := max B. If |A| ≤ 1 or |B| ≤ 1, say |A| ≤ 1, fix any q > 0 and choose t such
+that DA < t and t > DA + qDB . Then A lies strictly to the left of qB + t, all mixed sums of
+the form t + (a + qb) with a ∈ A and b ∈ B are pairwise distinct, and each of them is strictly
+smaller than any sum within qB + t. It follows that C is weak Sidon with |C| = |A| + |B|.
+Moreover, any Sidon set S ⊆ C satisfies |S ∩ A| ≤ h(A) and |S ∩ (qB + t)| ≤ h(B), and hence
+h(C) ≤ h(A) + h(B). Therefore, we may assume |A|, |B| ≥ 2.
+  Consider the finite set
+                              a − a′
+                                                                  
+                                           ′         ′           ′
+                      R :=           : a, a ∈ A, b, b ∈ B, b ̸= b ⊂ R.
+                              b − b′
+Choose q > 0 with q ∈
+                    / R, and then choose a large integer t so that
+                                  t − DA > max{DA , qDB }.                                   (2)
+Define C := A ∪ (qB + t); we refer to either A or qB + t as a block. Condition (2) easily implies
+that A lies strictly to the left of qB + t, so the union is disjoint and |C| = |A| + |B|.
+  For later use, we call x + y a mixed sum if x ∈ A and y ∈ qB + t. Since A lies strictly to
+the left of qB + t, every mixed sum has the form
+                  a + (qb + t) = t + (a + qb)      for some a ∈ A and b ∈ B.
+Since min A = min B = 0, we have min{a + qb : a ∈ A, b ∈ B} = 0. By (2), we have
+max{a + qb : a ∈ A, b ∈ B} ≤ DA + qDB < t and max{a + a′ : a < a′ } ≤ 2DA < t. Hence,
+             t + min{a + qb : a ∈ A, b ∈ B} > max{a + a′ : a < a′ , a, a′ ∈ A},
+and
+          2t + min{q(b + b′ ) : b < b′ , b, b′ ∈ B} > t + max{a + qb : a ∈ A, b ∈ B}.
+8                                     J. MA AND Q. TANG
+
+This shows that every mixed sum is strictly larger than every sum of two distinct elements of
+A, and strictly smaller than every sum of two distinct elements of qB + t. In particular, sums
+of distinct elements of C coming from two different “types” of pairs cannot coincide.
+   It remains to rule out collisions between two mixed sums. Suppose
+                                a1 + (qb1 + t) = a2 + (qb2 + t).
+Then q(b1 − b2 ) = a2 − a1 . Since q ∈
+                                     / R, this forces b1 = b2 and a1 = a2 . Hence all mixed sums
+are pairwise distinct. Together with the fact that A and qB + t are weak Sidon, it follows that
+all sums x + y with x < y in C are distinct, i.e. C is weak Sidon.
+   Finally, let S ⊆ C be Sidon. Then S ∩ A and S ∩ (qB + t) are Sidon subsets of the two
+blocks, and therefore
+              |S| = |S ∩ A| + |S ∩ (qB + t)| ≤ h(A) + h(qB + t) = h(A) + h(B),
+where the last equality follows from Lemma 3.2. Taking the maximum over all Sidon subsets
+S ⊆ C gives h(C) ≤ h(A) + h(B).                                                        □
+    With this lemma, one can promptly derive the following result.
+Proposition 3.4. For all m, n ≥ 1 one has g(m + n) ≤ g(m) + g(n).
+Proof. Let A, B be weak Sidon sets with |A| = m, |B| = n, h(A) = g(m) and h(B) = g(n).
+Apply Lemma 3.3 to obtain a weak Sidon set C with |C| = m + n and h(C) ≤ h(A) + h(B).
+Since g(m + n) is the minimum of h(·) over all weak Sidon sets of size m + n, it follows that
+                               g(m + n) ≤ h(C) ≤ g(m) + g(n).                                 □
+    We can now complete the proof of the existence of the asymptotic constant γ∗ .
+Proof of the first assertion of Theorem 1.2. By Proposition 3.4, the sequence (g(n))n≥1 is sub-
+additive. Lemma 3.1 then implies that the limit limn→∞ g(n)/n exists.                        □
+3.2. (4, 5)-sets: existence of the limit. We now treat the (4, 5)-set setting using an approach
+analogous to that of the previous subsection.
+Lemma 3.5. Let A ⊂ R be finite, t ∈ R, and q > 0. Set qA + t := {qa + t : a ∈ A}. Then A
+is a (4, 5)-set if and only if qA + t is a (4, 5)-set, and h(qA + t) = h(A).
+Proof. For any x, y ∈ A we have |(qx + t) − (qy + t)| = q|x − y|, so for any four points of A,
+the six pairwise absolute differences are all rescaled by the same factor q. In particular, the
+number of distinct absolute differences is unchanged. Therefore A is a (4, 5)-set if and only if
+qA + t is a (4, 5)-set. By the same reasoning as in Lemma 3.2, we have h(qA + t) = h(A). □
+   In the next lemma, we combine two (4, 5)-sets by placing them on well-separated scales
+so that mixed differences cannot create new coincidences. The proof is analogous to that of
+Lemma 3.3, with suitable modifications.
+Lemma 3.6. Let A, B ⊂ R be two finite (4, 5)-sets. Then there exist q > 0 and t ∈ R such
+that the set
+                                        C := A ∪ (qB + t)
+is a (4, 5)-set, has |C| = |A| + |B|, and satisfies h(C) ≤ h(A) + h(B).
+Proof. By Lemma 3.5, we may translate A and B so that min A = min B = 0. Write DA :=
+max A and DB := max B. Consider the finite set
+                          a − a′
+                                                               
+                                       ′          ′           ′
+                   R :=          : a, a  ∈ A, b, b  ∈ B, b ̸
+                                                           = b    ⊂ R.
+                          b − b′
+                         LARGEST SIDON SUBSETS IN WEAK SIDON SETS                                  9
+
+Choose q > 0 with q ∈
+                    / R, and then choose t large enough so that
+                                    t − DA > max{DA , qDB }.                                    (3)
+Define C := A ∪ (qB + t). Similarly as before, we refer to either subset A or qB + t as a block.
+Condition (3) easily implies that A lies strictly to the left of qB + t, so the union is disjoint
+and |C| = |A| + |B|.
+   For later use, we call |x − y| a mixed difference if x ∈ A and y ∈ qB + t. Since A lies strictly
+to the left of qB + t, every mixed difference is positive and has the form (qb + t) − a with a ∈ A
+and b ∈ B. By (3),
+                             (qb + t) − a ≥ t − DA > max{DA , qDB }.
+On the other hand, every difference inside A has absolute value at most DA , and every difference
+inside qB + t has absolute value at most qDB . It follows that no mixed difference can coincide
+with a within-block difference.
+   Moreover, if two mixed differences coincide, say
+                                   qb1 + t − a1 = qb2 + t − a2 ,
+then q(b1 − b2 ) = a1 − a2 . Since q ∈ / R, this forces b1 = b2 and a1 = a2 . Thus all mixed
+differences are pairwise distinct.
+   We now verify that C is a (4, 5)-set. Let X ⊆ C with |X| = 4. If X is contained in one
+block, then X determines at least five distinct pairwise absolute differences, because this holds
+for A and for B, and the (4, 5)-property is preserved by Lemma 3.5.
+   Assume therefore that X meets both blocks. If X satisfies |X ∩ A| ∈ {1, 3}, then it con-
+tributes three mixed differences, which are pairwise distinct, and the triple in one block con-
+tributes at least two distinct within-block differences. Since mixed differences cannot coincide
+with within-block differences, X determines at least 3 + 2 = 5 distinct absolute differences.
+Otherwise, we must have |X ∩ A| = 2. Then it contributes four mixed differences, again
+pairwise distinct, together with one within-block difference from each side. Even if these two
+within-block differences coincide, we still obtain at least 4 + 1 = 5 distinct absolute differences.
+Hence every 4-subset of C determines at least five distinct pairwise absolute differences, so C
+is a (4, 5)-set.
+   Finally, let S ⊆ C be Sidon. Then S ∩ A and S ∩ (qB + t) are Sidon subsets of the two
+blocks, and therefore
+              |S| = |S ∩ A| + |S ∩ (qB + t)| ≤ h(A) + h(qB + t) = h(A) + h(B),
+where the last equality follows from Lemma 3.5. Taking the maximum over all Sidon subsets
+S ⊆ C gives h(C) ≤ h(A) + h(B).                                                        □
+  We are now ready to deduce the key subadditivity property of the extremal function f (n).
+Proposition 3.7. For all m, n ≥ 1 one has f (m + n) ≤ f (m) + f (n).
+Proof. Fix m, n ≥ 1. Choose a (4, 5)-set A with |A| = m and h(A) = f (m). Similarly, choose
+a (4, 5)-set B with |B| = n and h(B) = f (n). By Lemma 3.6, there exist q > 0 and t ∈ R such
+that C = A ∪ (qB + t) is a (4, 5)-set with |C| = m + n and h(C) ≤ h(A) + h(B) = f (m) + f (n).
+By the definition of f (m + n), we have
+                                f (m + n) ≤ h(C) ≤ f (m) + f (n).                                 □
+  We can now complete the proof of the existence of the limit limn→∞ f (n)/n.
+Proof of Theorem 1.5. By Proposition 3.7, the sequence (f (n))n≥1 is subadditive. Hence,
+Lemma 3.1 implies that the limit limn→∞ f (n)/n exists and equals inf n≥1 f (n)/n, which is
+precisely the optimal constant c∗ in Problem 1.4.                                        □
+10                                         J. MA AND Q. TANG
+
+                             4. Sidon subsets in weak Sidon sets
+   In Section 3 we established the first assertion of Theorem 1.2, so the constant γ∗ is well
+defined. In this section we prove Theorem 1.3 by establishing matching upper and lower
+bounds. In particular, this will imply the precise value of γ∗ and thus prove the second
+assertion of Theorem 1.2.
+
+4.1. Upper bound on g(n). We begin with the explicit definition of the weak Sidon sets
+required for our construction. For an integer n ≥ 2, define
+           Xi := 2 n−i 3 i   for 0 ≤ i ≤ n − 1,           Yi := 2 n−i+1 3 i        for 0 ≤ i ≤ n,
+and set
+                             A2n+1 := {X0 , . . . , Xn−1 } ∪ {Y0 , . . . , Yn }.
+Clearly, we have |A2n+1 | = 2n + 1.
+   First, we need to show that the sets A2n+1 are indeed weak Sidon. To proceed, we establish
+the following two lemmas, which say that sums in A2n+1 are essentially unique. For m ∈ Z>0 ,
+let v3 (m) denote the largest integer k ≥ 0 such that 3k | m.
+Lemma 4.1. Let a, b ∈ A2n+1 be distinct, and write S = a + b. Assume that v3 (a) ̸= v3 (b).
+Then the unordered pair {a, b} is uniquely determined by S.
+Proof. Let i := min{v3 (a), v3 (b)}. Since v3 (a) ̸= v3 (b), we have
+                             v3 (S) = v3 (a + b) = min{v3 (a), v3 (b)} = i.
+Thus i is uniquely determined by S.
+   Assume without loss of generality that v3 (a) = i < v3 (b). Then b ≡ 0 (mod 3i+1 ), whereas
+a ̸≡ 0 (mod 3i+1 ). Hence
+                                S = a + b ≡ a (mod 3i+1 ).
+In A2n+1 there are exactly two elements of 3-adic valuation i, namely Xi and Yi , and both are
+nonzero modulo 3i+1 . Moreover,
+                Xi ≡ 2 n−i · 3i    (mod 3i+1 ),         Yi ≡ 2 n−i+1 · 3i     (mod 3i+1 ),
+so Xi ̸≡ Yi (mod 3i+1 ). Since a ∈ {Xi , Yi } and Xi ̸≡ Yi (mod 3i+1 ), the congruence S ≡ a
+(mod 3i+1 ) determines a uniquely. Consequently b = S − a is uniquely determined, and hence
+the unordered pair {a, b} is uniquely determined by S.                                    □
+Lemma 4.2. Let a, b ∈ A2n+1 be distinct, and write S = a + b. Assume that v3 (a) = v3 (b).
+Then the unordered pair {a, b} is uniquely determined by S; moreover, there do not exist distinct
+c, d ∈ A2n+1 with v3 (c) ̸= v3 (d) such that S = c + d.
+Proof. Let i := v3 (a) = v3 (b). Since A2n+1 contains exactly two elements of 3-adic valuation i
+for 0 ≤ i ≤ n − 1, namely Xi and Yi , while the valuation n occurs only for Yn , the assumption
+a ̸= b forces i ≤ n − 1 and {a, b} = {Xi , Yi }. Hence
+                     S = a + b = Xi + Yi = 2 n−i 3i + 2 n−i+1 3i = 2 n−i 3i+1 .
+In particular, v3 (S) = i + 1, so i is uniquely determined by S as i = v3 (S) − 1. Thus any
+representation of S as a sum of two distinct elements of A2n+1 with equal 3-adic valuation
+must be the pair {Xi , Yi }. This proves the first assertion of this lemma.
+   It remains to rule out a representation S = c+d with c, d ∈ A2n+1 distinct and v3 (c) ̸= v3 (d).
+In that case one has
+                                v3 (S) = min{v3 (c), v3 (d)} = i + 1,
+                             LARGEST SIDON SUBSETS IN WEAK SIDON SETS                                  11
+
+so the summand of smaller 3-adic valuation has valuation i + 1. If i = n − 1, then this forces
+that summand to be Yn = S, so the other summand equals 0, contradicting 0 ∈       / A2n+1 . Hence
+we may assume i ≤ n − 2, so the smaller-valuation summand is either Xi+1 or Yi+1 .
+   If it is Yi+1 , then Yi+1 = 2 n−i 3i+1 = S, forcing the other summand to be 0, again contra-
+dicting 0 ∈ / A2n+1 . If it is Xi+1 , then Xi+1 = 2 n−i−1 3i+1 = S/2, forcing the other summand
+to equal S − Xi+1 = Xi+1 , contradicting distinctness. Hence no such representation exists. □
+  Now we can verify that the sets A2n+1 are indeed weak Sidon.
+Proposition 4.3. For every n ≥ 2, the set A2n+1 is a weak Sidon set.
+Proof. In this proof, we call a pair {a, b} ⊂ A2n+1 type 1 if v3 (a) ̸= v3 (b) and type 2 otherwise.
+For a contradiction, let a < b and c < d be two pairs of distinct elements of A2n+1 such that
+S := a + b = c + d. By Lemma 4.1 and the first assertion of Lemma 4.2, one of the pairs (say
+{a, b}) must be of type 1 and the other pair {c, d} of type 2. However, this contradicts the
+second assertion of Lemma 4.2. Hence all sums x + y with x < y in A2n+1 are distinct, i.e.
+A2n+1 is weak Sidon.                                                                              □
+  We require further properties of A2n+1 and its A.P.-hypergraph H(A2n+1 ). The next lemma
+characterizes all 3-term arithmetic progressions in A2n+1 .
+Lemma 4.4. All 3-term arithmetic progressions in A2n+1 are given by the following 2n − 1
+triples:
+       {Xi , Xi+1 , Yi }    for   0 ≤ i ≤ n − 2,    and    {Xi , Yi , Yi+1 }    for   0 ≤ i ≤ n − 1.
+Proof. Direct computation shows
+         Xi + Yi = 2 n−i 3i + 2 n−i+1 3i = 2 · 2 n−i−1 3i+1 = 2Xi+1            for 0 ≤ i ≤ n − 2,
+and
+            Xi + Yi+1 = 2 n−i 3i + 2 n−i 3i+1 = 4 · 2 n−i 3i = 2Yi for 0 ≤ i ≤ n − 1.
+Thus the listed 2n − 1 triples are indeed 3-term arithmetic progressions in A2n+1 .
+  Since A2n+1 is weak Sidon (by Proposition 4.3), Lemma 2.4 implies that the midpoint map
+on its A.P.-hypergraph H(A2n+1 ) is injective. Consequently,
+                       mH(A2n+1 ) ≤ nH(A2n+1 ) − 2 = |A2n+1 | − 2 = 2n − 1.
+Since we have already listed 2n − 1 distinct 3-term arithmetic progressions, no others exist. □
+  We need one more result before proving the main theorem of this subsection, which deter-
+mines the exact value of h(A2n+1 ).
+Theorem 4.5. For every n ≥ 2, the set A2n+1 satisfies h(A2n+1 ) = n + 1.
+Proof. By Proposition 4.3, A2n+1 is weak Sidon. Let H2n+1 = H(A2n+1 ) be its A.P.-hypergraph.
+Lemma 2.3 gives h(A2n+1 ) = α(H2n+1 ); hence it suffices to show α(H2n+1 ) = n + 1.
+   First, we prove the lower bound α(H2n+1 ) ≥ n + 1. We claim that the set {Y0 , . . . , Yn } is
+an independent set in H2n+1 (i.e., 3AP-free). Indeed, by Lemma 4.4 we observe that every
+3-term arithmetic progression in A2n+1 contains some Xi . Hence we have α(H2n+1 ) ≥ n + 1.
+   To show the upper bound α(H2n+1 ) ≤ n + 1, consider any 3AP-free T ⊆ A2n+1 . Write
+                                  U := { i ∈ {0, . . . , n − 1} : Xi ∈ T }.
+Decompose U into disjoint maximal intervals of consecutive integers:
+                    Gr
+              U=       ([sj , tj ] ∩ Z), where sj ≤ tj and tj + 1 < sj+1 .
+                           j=1
+12                                       J. MA AND Q. TANG
+
+Fix one such interval [s, t] and set ℓ := t − s + 1.
+  For each i with s ≤ i < i + 1 ≤ t we have i, i + 1 ∈ U , and hence Xi , Xi+1 ∈ T . By
+Lemma 4.4, the triple {Xi , Xi+1 , Yi } is a 3AP, and thus we must have Yi ∈
+                                                                           / T . Hence
+                                       Ys , Ys+1 , . . . , Yt−1 ∈
+                                                                / T.
+Moreover, the triple {Xt , Yt , Yt+1 } is a 3AP, so since Xt ∈ T we cannot have Yt , Yt+1 ∈ T
+simultaneously. Therefore at least one of Yt and Yt+1 is not in T . Consequently, the interval
+[s, t] forces at least ℓ distinct Y -vertices to be absent from T (namely, the ℓ − 1 vertices
+Ys , . . . , Yt−1 together with one of Yt or Yt+1 ).
+   Because the intervals are separated by at least one index, these forced exclusions coming
+from different intervals are disjoint. Hence U forces at least |U | vertices from {Y0 , . . . , Yn } to
+be absent from T . It follows that |T ∩ {Y0 , . . . , Yn }| ≤ (n + 1) − |U |. Therefore
+                                                                                   
+                     |T | = |U | + |T ∩ {Y0 , . . . , Yn }| ≤ |U | + (n + 1) − |U | = n + 1.
+Thus α(H2n+1 ) ≤ n + 1. This completes the proof that h(A2n+1 ) = α(H2n+1 ) = n + 1.  □
+                                                                           n+1 
+  With the preceding results in hand, we can derive the upper bound g(n) ≤ 2 as follows.
+
+Proof of the upper bound in Theorem 1.3. We prove that for every n ≥ 1,
+                                                  
+                                              n+1
+                                     g(n) ≤         .
+                                               2
+For odd n = 2k + 1 with k ≥ 2, Proposition 4.3 and Theorem 4.5 give that A2k+1 is weak
+Sidon and h(A2k+1 ) = k + 1. Hence
+                                                                   
+                                                       (2k + 1) + 1
+                     g(2k + 1) ≤ h(A2k+1 ) = k + 1 =                  .
+                                                            2
+For even n = 2k with k ≥ 2, let B be any (2k)-element subset of A2k+1 (obtained by deleting
+one element). Since the weak Sidon property is inherited by subsets, B is weak Sidon. More-
+over, any Sidon subset of B is also a Sidon subset of A2k+1 , so h(B) ≤ h(A2k+1 ) = k + 1.
+Therefore,
+                                                              
+                                                      (2k) + 1
+                           g(2k) ≤ h(B) ≤ k + 1 =                .
+                                                         2
+Finally, the remaining cases n ∈ {1, 2, 3} are immediate, and thus the stated upper bound
+holds for all n ≥ 1.                                                                    □
+
+4.2. Lower bound on g(n). To show the desired lower bound on γ∗ , we need the follow-
+ing upper bound on the transversal number of a 3-uniform hypergraph, due to Chvátal and
+McDiarmid [3] and independently Tuza [12] (see also [6, Theorem 1]).
+Theorem 4.6 ([3, 12]). Let H be a 3-uniform hypergraph. Then 4τ (H) ≤ nH + mH .
+ We now prove the lower bound in Theorem 1.3, namely g(n) ≥ n+1
+                                                                  
+                                                                 2   for all n ≥ 1.
+
+Proof of the lower bound in Theorem 1.3. Let A ⊂ R be any weak Sidon set of size n, and let
+H = H(A) be its A.P.-hypergraph. If n = 1, then h(A) = 1 = 12 n + 12 . So we may assume
+n ≥ 2. Then the following hold:
+     (1) H is 3-uniform;
+     (2) mH ≤ nH − 2 (by Lemma 2.4);
+     (3) h(A) = α(H) (by Lemma 2.3).
+                         LARGEST SIDON SUBSETS IN WEAK SIDON SETS                             13
+
+Then, using Theorem 4.6, we can derive that
+                             1              1                  1         1
+                    τ (H) ≤ (nH + mH ) ≤ nH + (nH − 2) = nH − .
+                             4              4                      2      2
+Hence                                          1        1 1           1   1 1
+           h(A) = α(H) = nH − τ (H) ≥ nH −         nH −      = nH + = n + .
+                                                 2       2       2      2   2 2
+Therefore, we have
+                                             1     1
+                          g(n) = min h(A) ≥ n +          for all n ≥ 1.
+                                  A          2     2
+Since g(n) is an integer, this implies
+                                                     
+                                                 n+1
+                                       g(n) ≥          ,
+                                                   2
+as desired.                                                                                   □
+  Together with the matching upper bound proved earlier, we obtain
+                                        
+                                     n+1
+                            g(n) =            for all n ≥ 1.
+                                      2
+This establishes Theorem 1.3. In particular, γ∗ = 12 . Combined with the existence statement
+established earlier, this completes the proof of Theorem 1.2.
+
+                                5. Sidon subsets in (4, 5)-sets
+  In this section we prove Theorem 1.6 by improving both the upper and lower bounds on c∗ .
+5.1. An improved upper bound on c∗ . We begin with a concrete 14-point (4, 5)-set whose
+largest Sidon subset has size 8. Let
+         Abase = {0, 136, 200, 243, 246, 249, 272, 286, 298, 323, 400, 528, 596, 1056} ⊂ Z.
+Lemma 5.1. The set Abase is a (4, 5)-set, and h(Abase ) = 8.
+Proof. Both assertions were verified by an exhaustive computer search using exact integer
+arithmetic; see the code repository cited in [9].
+Verification of the (4, 5)-property. The program enumerates all 14
+                                                                       
+                                                                      4 = 1001 four-element sub-
+sets B ⊆ Abase . For each such B = {x1 , x2 , x3 , x4 } it computes the set
+                                   { |xi − xj | : 1 ≤ i < j ≤ 4 }
+of the six pairwise absolute differences and checks that its cardinality is at least 5. Since no
+counterexample is found, Abase is a (4, 5)-set.
+Computation of h(Abase ). To determine the largest size of a Sidon subset, the program enu-
+merates all 214 = 16384 subsets S ⊆ Abase and tests whether S is Sidon by checking that all
+sums x + y with x ≤ y and x, y ∈ S are pairwise distinct. The maximum size encountered is
+8, and the script outputs the explicit Sidon subset
+                              {0, 136, 200, 243, 246, 298, 323, 528}.
+Thus h(Abase ) ≥ 8, while the exhaustive search shows that no larger Sidon subset exists.
+Therefore h(Abase ) = 8.                                                               □
+  With this example in hand, the upper bound c∗ ≤ 4/7 follows immediately from Theo-
+rem 1.5.
+14                                        J. MA AND Q. TANG
+
+
+Proof of the upper bound in Theorem 1.6. By Theorem 1.5 we have c∗ = inf n≥1 f (n)
+                                                                               n . Taking
+n = 14 and using Lemma 5.1, we obtain f (14) ≤ h(Abase ) = 8. Therefore
+                                          f (n)   f (14)   8   4
+                               c∗ = inf         ≤        ≤    = ,
+                                    n≥1     n       14     14  7
+as claimed.                                                                                   □
+5.2. An improved lower bound on c∗ . In the lower-bound direction, we follow the A.P.-
+hypergraph approach of Gyárfás and Lehel [5], but we strengthen the transversal estimate
+using a result of Henning and Yeo [6]. This result, well suited to our setting, does not appear
+to have been noted previously.
+   For a (4, 5)-set A, Gyárfás and Lehel [5, Proposition 2.6] showed that H(A) avoids the
+7-vertex configuration F7 shown in Figure 1.
+Lemma 5.2 ([5]). If A is a (4, 5)-set, then H(A) contains no subhypergraph isomorphic to F7 .
+  We invoke a transversal bound for 3-uniform linear F7 -free hypergraphs due to Henning and
+Yeo [6, Theorem 7].
+Theorem 5.3 ([6]). Let H be a 3-uniform linear hypergraph that contains no subhypergraph
+isomorphic to F7 . Then 17τ (H) ≤ 5nH + 3mH .
+     We are now ready to prove the improved lower bound for c∗ .
+Proof of the lower bound in Theorem 1.6. Let A be a (4, 5)-set of size n and let H = H(A).
+Since every (4, 5)-set is weak Sidon by Proposition 2.2, Lemma 2.3 gives h(A) = α(H). By
+definition, H is 3-uniform; by Lemmas 2.5 and 5.2, it is linear and F7 -free. Hence Theorem 5.3
+applies and gives
+                                    17τ (H) ≤ 5nH + 3mH .
+Using Lemma 2.4, we have mH ≤ nH − 2 (for |A| ≥ 2), and therefore
+                              17τ (H) ≤ 5nH + 3(nH − 2) ≤ 8nH .
+             8
+Thus τ (H) ≤ 17 nH . Since α(H) + τ (H) = nH for every hypergraph, it follows that
+                                                   8           9     9
+                          h(A) = α(H) ≥ nH −          nH = nH = n.
+                                                   17          17   17
+                      9
+Therefore h(A) ≥ 17     n for every (4, 5)-set A of size n ≥ 2, and taking the minimum over all
+                          9                                                            9
+such A yields f (n) ≥ 17    n for all n ≥ 2. For n = 1, we trivially have f (1) = 1 ≥ 17 . Hence
+        9                                                f (n)                      9
+f (n) ≥ 17 n for all n ≥ 1. Finally, using c∗ = inf n≥1 n , we conclude that c∗ ≥ 17 .        □
+
+Acknowledgements. We are grateful to Thomas Bloom for founding and maintaining the
+Erdős Problems website [2], and to Nat Sothanaphan for carefully reading an earlier version of
+this manuscript. The first author was supported by National Key Research and Development
+Program of China 2023YFA1010201, National Natural Science Foundation of China grant
+12125106, and Innovation Program for Quantum Science and Technology 2021ZD0302902.
+Declaration of AI usage. An AI assistant was used in the search for a construction of the set
+Abase in Lemma 5.1. This AI-assisted exploration first produced a 12-point example, yielding
+the improved upper bound c∗ ≤ 7/12, and subsequently, after several rounds of refinement, the
+14-point set Abase used in the paper, which yields the reported upper bound c∗ ≤ 4/7. The AI
+assistant also helped generate an initial draft of the code used in the exhaustive verification
+for Lemma 5.1. Except for the work related to Lemma 5.1, all proofs in this paper and their
+presentation were carried out by the human authors.
+                            LARGEST SIDON SUBSETS IN WEAK SIDON SETS                                      15
+
+                                              References
+ [1] P. Bennett, R. Cushman, A. Dudek, and P. Prałat, The Erdős–Gyárfás function f (n, 4, 5) = 56 n + o(n)—so
+     Gyárfás was right, J. Combin. Theory Ser. B 169 (2024), 253–297.
+ [2] T. F. Bloom, Erdős Problem #757, https://www.erdosproblems.com/757, accessed 2026-03-06.
+ [3] V. Chvátal and C. McDiarmid, Small transversals in hypergraphs, Combinatorica 12 (1992), 19–26.
+ [4] P. Erdős, Some old and new problems in various branches of combinatorics, Discrete Math. 165/166
+     (1997), 227–231.
+ [5] A. Gyárfás and J. Lehel, Linear sets with five distinct differences among any four elements, J. Combin.
+     Theory Ser. B 64 (1995), 108–118.
+ [6] M. A. Henning and A. Yeo, Affine Planes and Transversals in 3-Uniform Linear Hypergraphs, Graphs and
+     Combinatorics 37(3) (2021), 867–890.
+ [7] F. Joos and D. Mubayi, Ramsey theory constructions from hypergraph matchings, Proc. Amer. Math. Soc.
+     152(11) (2024), 4537–4550.
+ [8] P. M. Kayll, A note on weak Sidon sequences, Discrete Math. 299 (2005), 141–144.
+ [9] J. Ma and Q. Tang, ep757-45set-base-block-verification, GitHub repository, https://github.com/
+     QuanyuTang/ep757-45set-base-block-verification, accessed 2026-03-06.
+[10] K. O’Bryant, A complete annotated bibliography of work related to Sidon sequences, Electron. J. Combin.
+     (2004): #DS11.
+[11] A. Sárközy and V. T. Sós, On additive representative functions, in: The Mathematics of Paul Erdős I,
+     Springer, New York, 2013, pp. 233–262.
+[12] Zs. Tuza, Covering all cliques of a graph, Discrete Math. 86 (1990), 117–126.
+
+  School of Mathematical Sciences, University of Science and Technology of China, Hefei,
+Anhui 230026, and Yau Mathematical Sciences Center, Tsinghua University, Beijing 100084,
+China
+  Email address: jiema@ustc.edu.cn
+
+  School of Mathematics and Statistics, Xi’an Jiaotong University, Xi’an 710049, P. R. China
+  Email address: tang_quanyu@163.com
+

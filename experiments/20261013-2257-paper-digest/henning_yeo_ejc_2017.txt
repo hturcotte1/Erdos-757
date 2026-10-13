@@ -1,0 +1,1339 @@
+           Transversals and Independence in Linear
+           Hypergraphs with Maximum Degree Two
+
+                        Michael A. Henning1,∗                  Anders Yeo1,2
+                          1 Department of Pure and Applied Mathematics
+
+                                     University of Johannesburg
+                                  Auckland Park, 2006 South Africa
+                                         mahenning@uj.ac.za
+                       2 Department of Mathematics and Computer Science
+
+                                 University of Southern Denmark
+                              Campusvej 55, 5230 Odense M, Denmark
+                                        andersyeo@gmail.com
+
+          Submitted: May 24, 2016; Accepted: Jun 22, 2017; Published: Jun 30, 2017
+                        Mathematics Subject Classifications: 05C65
+
+
+
+                                              Abstract
+            For k ⩾ 2, let H be a k-uniform hypergraph on n vertices and m edges. Let S
+       be a set of vertices in a hypergraph H. The set S is a transversal if S intersects
+       every edge of H, while the set S is strongly independent if no two vertices in S
+       belong to a common edge. The transversal number, τ (H), of H is the minimum
+       cardinality of a transversal in H, and the strong independence number of H, α(H),
+       is the maximum cardinality of a strongly independent set in H. The hypergraph H
+       is linear if every two distinct edges of H intersect in at most one vertex. Let Hk be
+       the class of all connected, linear, k-uniform hypergraphs with maximum degree 2.
+       It is known [European J. Combin. 36 (2014), 231–236] that if H ∈ Hk , then
+       (k + 1)τ (H) ⩽ n + m, and there are only two hypergraphs that achieve equality in
+       the bound. In this paper, we prove a much more powerful result, and establish tight
+       upper bounds on τ (H) and tight lower bounds on α(H) that are achieved for infinite
+       families of hypergraphs. More precisely, if k ⩾ 3 is odd and H ∈ Hk has n vertices
+       and m edges, then we prove that k(k 2 − 3)τ (H) ⩽ (k − 2)(k + 1)n + (k − 1)2 m + k − 1
+       and k(k 2 − 3)α(H) ⩾ (k 2 + k − 4)n − (k − 1)2 m − (k − 1). Similar bounds are proven
+       in the case when k ⩾ 2 is even.
+
+       Keywords: Transversal; Hypergraph; Linear hypergraph; Strong independence
+       AMS subject classification: 05C65;05C69
+
+   ∗
+    Research supported in part by the South African National Research Foundation and the University
+of Johannesburg
+
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                     1
+1    Introduction
+In this paper, we study transversals and independence in hypergraphs. Hypergraphs
+are systems of sets which are conceived as natural extensions of graphs. A hypergraph
+H = (V, E) is a finite set V = V (H) of elements, called vertices, together with a finite
+multiset E = E(H) of subsets of V , called hyperedges or simply edges. The order of H is
+n(H) = |V | and the size of H is m(H) = |E|. The hypergraph H is said to be k-uniform
+if every edge of H is of size k. Every (simple) graph is a 2-uniform hypergraph. Thus
+graphs are special hypergraphs. The degree of a vertex v in H, denoted by dH (v), is the
+number of edges of H which contain v. A vertex of degree r in H is called a degree-r
+vertex. The rank of H is the maximum size of an edge in H. The hypergraph H is
+r-regular if dH (v) = r for all v ∈ V (H). The minimum and maximum degrees among the
+vertices of H is denoted by δ(H) and ∆(H), respectively. We use the standard notation
+[k] = {1, 2, . . . , k}.
+    Two vertices x and y of H are adjacent if there is an edge e of H such that {x, y} ⊆
+V (e). Two vertices x and y of H are connected if there is a sequence x = v0 , v1 , v2 . . . , vk =
+y of vertices of H in which vi−1 is adjacent to vi for i ∈ [k]. A connected hypergraph is
+a hypergraph in which every pair of vertices is connected. A maximal connected subhy-
+pergraph of H is a component of H. Thus, no edge in H contains vertices from different
+components.
+    For a subset X ⊆ V (H) of vertices in H, let H[X] denote the hypergraph induced
+by the vertices in X, in the sense that V (H[X]) = X and E(H[X]) = {e ∩ X | e ∈
+E(H) and |e ∩ X| ⩾ 1}; that is, E(H[X]) is obtained from E(H) by shrinking edges
+e ∈ E(H) that intersect X to the edges e ∩ X. For a subset X ⊂ V (H) of vertices in H,
+we define H − X to be the hypergraph obtained from H by deleting the vertices in X
+and all edges incident with X, and deleting all isolated vertices, if any, from the resulting
+hypergraph.
+    A subset T of vertices in a hypergraph H is a transversal (also called vertex cover or
+hitting set in many papers) if T intersects every edge of H. Equivalently, a set of vertices
+S is transversal in H if and only if V (H) \ S is a weakly independent set in H. That
+is, no edge lies completely within V (H) \ S. The transversal number τ (H) of H is the
+minimum size of a transversal in H. Transversals in hypergraphs are well studied in the
+literature (see, for example, [5, 6, 14, 18, 26, 30]).
+    A set S of vertices in a hypergraph H is strongly independent if no two vertices in S
+belong to a common edge. The strong independence number of H, which we denote by
+α(H), is the maximum cardinality of a strongly independent set in H. The independence
+number is one of the most fundamental and well-studied graph and hypergraph parameters
+(see, for example, [1, 2, 4, 9, 11, 10, 12, 13, 15, 16, 17, 21, 22, 23, 25, 27]).
+    A hypergraph H is called an intersecting hypergraph if every two distinct edges of H
+have a non-empty intersection, while H is called a linear hypergraph if every two distinct
+edges of H intersect in at most one vertex. Intersecting and linear hypergraphs are well
+studied in the literature (see, for example, [8, 20]).
+    Two edges in a graph G are independent if they are not adjacent in G. A set of
+
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                     2
+pairwise independent edges of G is called a matching in G, while a matching of maximum
+cardinality is a maximum matching. The number of edges in a maximum matching of G is
+the matching number of G which we denote by α0 (G). Matchings in graphs are extensively
+studied in the literature (see, for example, the classical book on matchings by Lovász and
+Plummer [24], and the excellent survey articles by Plummer [28] and Pulleyblank [29]).
+   Given a graph G, we define a hypergraph HG as follows. Let the edges of G become
+vertices in HG and the vertices of G become hyperedges in HG , containing all edges that
+are incident with that vertex in the graph. Thus, V (HG ) = E(G) and E(HG ) contains
+a hyperedge for every vertex v ∈ V (G) which consists of all elements of V (HG ) that
+correspond with edges incident with v in G. Therefore, n(HG ) = m(G) and m(HG ) =
+n(G). We call HG the dual hypergraph of G.
+
+
+2    Known Matching Results
+We shall need the following results by the authors [19] which establish a tight lower bound
+on the matching number of a graph in terms of its maximum degree, order, and size.
+
+Theorem 1. ([19]) If k ⩾ 2 is an even integer and G is a connected graph of order n,
+size m and maximum degree ∆(G) ⩽ k, then
+                                           n         m      1
+                             α0 (G) ⩾            +      −         ,
+                                        k(k + 1)   k + 1 k(k + 1)
+
+unless the following holds.
+ (a) G is k-regular and n = k + 1, in which case α0 (G) = n−1
+                                                           2
+                                                                   n
+                                                              = k(k+1)    m
+                                                                       + k+1 − k1 .
+ (b) G is k-regular and n = k + 3, in which case α0 (G) = n−1
+                                                           2
+                                                                   n
+                                                              = k(k+1)    m
+                                                                       + k+1      3
+                                                                             − k(k+1) .
+
+   Let k ⩾ 4 be even and let r ⩾ 1 be arbitrary and let ` = r(k−1)+1. Let X1 , X2 , . . . , X`
+be a number of vertex disjoint graphs such that each Xi where i ∈ [`] is either a single
+vertex or it is a Kk+1 where an arbitrary edge has been deleted. Let Y = {y1 , y2 , . . . , yr }
+and build the graph Gk,r as follows. Let Gk,r be obtained from the disjoint union of
+the graphs X1 , X2 , . . . , X` by adding to it the vertices in Y and furthermore, for every
+i ∈ [r], adding an edge from yi to a vertex in each graph X(i−1)(k−1)+1 , X(i−1)(k−1)+2 ,
+X(i−1)(k−1)+3 , . . . , X(i−1)(k−1)+k in such a way that no vertex degree becomes more than k.
+Let Gk,r be the family of all such graph Gk,r . When k = 4 and r = 2, an example of a
+graph G in the family Gk,r is illustrated in Figure 1, where G has order n = 21, size m = 35
+and matching number α0 (G) = 8.
+
+Proposition 2. ([19]) For k ⩾ 4 an even integer and r ⩾ 1 arbitrary, if G ∈ Gk,r has
+order n and size m, then
+                                           n         m      1
+                             α0 (G) =            +      −         .
+                                        k(k + 1)   k + 1 k(k + 1)
+
+
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                  3
+                              Figure 1: A graph G in the family G4,2
+
+Theorem 3. ([19]) If k ⩾ 3 is an odd integer and G is a connected graph of order n, size
+m, and with maximum degree ∆(G) ⩽ k, then
+                                        2          
+               0           k−1             k −k−2               k−1
+              α (G) ⩾       2
+                                    n+         2
+                                                        m−              .
+                         k(k − 3)           k(k − 3)         k(k 2 − 3)
+
+    For k ⩾ 3 odd, let Hk+2 be the graph of (odd) order k + 2 whose complement Hk+2 is
+isomorphic to P3 ∪ ( k−1
+                      2
+                          )P2 . We note that every vertex in Hk+2 has degree k, except for
+exactly one vertex, which has degree k − 1. We call the vertex of degree k − 1 in Hk+2
+the link vertex of Hk+2 .
+    For k ⩾ 3 odd and r ⩾ 1 arbitrary, let Tk,r be a tree with maximum degree at most k
+and with partite sets V1 and V2 , where |V2 | = r. Let Hk,r be obtained from Tk,r as follows:
+For every vertex x in V2 with dTk,r (x) < k, add k − dTk,r (x) copies of the subgraph Hk+2
+to Tk,r and in each added copy of Hk+2 , join the link vertex of Hk+2 to x. We note that
+every vertex in the resulting graph Hk,r has degree k, except possibly for vertices in the
+set V1 whose degrees belong to the set {1, 2, . . . , k}. Let Fk,r be the family of all such
+graphs Hk,r .
+    When k = 3 and r = 4, an example of a graph G in the family Fk,r is illustrated in
+Figure 2, where G has order n = 29, size m = 40 and matching number α0 (G) = 12.
+
+                                                                V1
+
+                                                                V2
+
+
+
+
+                             Figure 2: A graph G in the family F3,4
+
+
+Proposition 4. ([19]) For k ⩾ 3 an odd integer and r ⩾ 1 arbitrary, if G ∈ Fk,r has
+order n and size m, then
+                                      2         
+                 0         k−1           k −k−2             k−1
+               α (G) =      2
+                                    n+       2
+                                                     m−              .
+                         k(k − 3)        k(k − 3)         k(k 2 − 3)
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                               4
+3     Three Families of Hypergraphs
+In this section, we define three families of hypergraphs, Hk , Hk0 and Hk00 . For a hypergraph
+H with maximum degree at most 2 we let V1 (H) and V2 (H) denote the set of vertices in
+H of degree 1 and 2, respectively. Further, we let ni (H) = |Vi (H)| for i ∈ [2].
+
+3.1    The Family Hk
+Definition 5. Let Hk be the class of all connected, linear, k-uniform hypergraphs with
+maximum degree 2.
+    For a hypergraph H ∈ Hk we define a graph GH as follows. Let the vertices of GH be
+the edges of H and let the edges of GH correspond to the n2 (H) vertices of degree 2 in
+H: if a vertex of H is contained in the edges e and f of H, then the corresponding edge
+of the multigraph GH joins vertices e and f of GH . Thus, V (GH ) = E(H) and for every
+v ∈ V2 (H), contained in the two edges e and f , add an edge between e and f in GH . By
+the linearity of H, the multigraph GH is indeed a graph, called the dual graph of H. Since
+H is k-uniform and ∆(H) = 2, the maximum degree, ∆(GH ), in GH is at most k. Since
+H is connected, so too is GH . By construction, n(GH ) = m(H) and m(GH ) = n2 (H).
+We note that if H ∈ Hk is 2-regular, then the dual graph, GH , of H is k-regular.
+
+3.2    The Family H0k
+In order to define the family Hk0 , we first define a hypergraph, which we call Lk .
+The Hypergraph Lk . For k ⩾ 2, let Lk be the 2-regular, k-uniform hypergraph of
+size k+1 and order k(k+1)/2 defined inductively as follows. We define L2 = K3 and we de-
+fine L3 to be the hypergraph with V (L3 ) = {v1 , v2 , . . . , v6 } and let E(L3 ) = {e1 , e2 , e3 , e4 },
+where e1 = {v1 , v2 , v3 }, e2 = {v1 , v4 , v5 }, e3 = {v2 , v4 , v6 } and e4 = {v3 , v5 , v6 }. For k ⩾ 2,
+suppose the hypergraph Lk has been constructed and that E(Lk ) = {e1 , e2 , . . . , ek+1 }.
+Let Lk+2 be the hypergraph of order n(Lk ) + 2k + 3 with V (Lk+2 ) = V (Lk ) ∪ {v} ∪
+{u1 , u2 , . . . , uk+1 } ∪ {w1 , w2 , . . . , wk+1 } and with edge set E(Lk+2 ) = {f1 , f2 , . . . , fk+3 },
+where fi = ei ∪ {ui , wi } for i ∈ [k + 1] and where fk+2 = {v, u1 , . . . , uk+1 } and fk+3 =
+{v, w1 , . . . , wk+1 }. The hypergraphs L2 , L4 and L6 are illustrated in Figure 3(a), 3(b),
+and 3(c), respectively.
+    We shall need the following result from [7].
+Theorem 6. ([7]) For k ⩾ 2, the hypergraph Lk is the unique k-uniform, 2-regular, linear,
+intersecting hypergraph.
+Definition 7. Let Hk0 = Hk \ {Lk }.
+
+3.3    The Family H00k
+For a hypergraph H ∈ Hk , let α2 (H) be the maximum cardinality of a strongly indepen-
+dent set in H consisting only of degree-2 vertices in H. Every strongly independent set
+in H corresponds to a matching in the dual graph GH of H. Conversely, every matching
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                               5
+          (a) L2                      (b) L4                           (c) L6
+                           Figure 3: The hypergraphs L2 , L4 and L6 .
+
+M in the dual graph GH of H corresponds to a strongly independent set VM ⊆ V2 (H) in
+H. This immediately implies the following observation.
+
+Observation 8. If H ∈ Hk and GH is the dual graph of H, then α0 (GH ) = α2 (H).
+
+    The following result is well-known (see, for example, [7]). However, since it is central
+to our discussions, we give a short proof for completeness.
+
+Proposition 9. If H ∈ Hk and GH is the dual graph of H, then α0 (GH ) = |E(H)|−τ (H).
+
+Proof. Let H ∈ Hk and let GH be the dual graph of H. If M is a maximum matching,
+then the corresponding set VM ⊆ V2 (H) is a maximum strong independent set in V2 (H)
+by Observation 8. Therefore, VM covers 2|VM | distinct edges in H. Using an additional
+|E(H)| − 2|VM | vertices in H, one from each of the edges not covered by VH , we can
+extend the set VM to a transversal in H. Therefore, τ (H) ⩽ |VM | + (|E(H)| − 2|VM |) =
+|E(H)| − α0 (GH ), or, equivalently, α0 (GH ) ⩽ |E(H)| − τ (H).
+      Conversely, let T be a minimum transversal in H, and so, τ (H) = |T |. If a vertex
+x ∈ T covers only one hyperedge in H that is not covered by T \ {x}, then delete this
+vertex from T and the edge it covers from H. We continue this process removing r
+vertices from T , resulting in a set T 0 , and r associated edges from H, resulting in a
+hypergraph H 0 , until every vertex in T 0 covers two distinct edges in H 0 that are not
+covered by any other vertex of T 0 . Therefore, T 0 corresponds to a matching in GH , and
+|E(H)| = |E(H 0 )| + r = 2|T 0 | + r = 2|T 0 | + (|T | − |T 0 |) = |T 0 | + |T |. Thus, α0 (GH ) ⩾
+|T 0 | = |E(H)| − |T | = |E(H)| − τ (H). As observed earlier, α0 (GH ) ⩽ |E(H)| − τ (H).
+Consequently, α0 (GH ) = |E(H)| − τ (H).
+
+The Family Mk . Let Mk be the class of all connected, linear, k-uniform, 2-regular
+hypergraphs H with k + 3 edges. We note that Mk is a subclass of Hk . The dual
+graph, GH , of a hypergraph H ∈ Mk is a k-regular graph of order k + 3. We note
+that the complement GH of GH is a 2-regular graph on k + 3 vertices. Thus, GH can
+be constructed from Kk+3 by removing the edges of a cycle factor of Kk+3 . Using this
+approach, we observe that the number of non-isomporphic hypergraphs in Mk is equal
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                    6
+to the number of non-isomorphic cycle factors in Kk+3 . For example, |M4 | = 2 (the cycle
+factors in K7 are either a Hamilton cycle or the union of a 3-cycle and a 4-cycle) and
+|M6 | = 4 (consider cycle factors with cycle lengths (9), (6, 3), (5, 4) and (3, 3, 3)). We
+state this formally as follows.
+Observation 10. The following holds.
+ (a) If H ∈ Mk , then the dual graph of H is a k-regular graph of order k + 3.
+ (b) If G is a k-regular graph of order k + 3, then the dual hypergraph of G belongs to
+     Mk and has order k(k + 3)/2.
+Definition 11. Let Hk00 = Hk0 \ Mk = Hk \ (Mk ∪ {Lk }).
+
+4      Main Results
+In what follows, we adopt the following notation. If H ∈ Hk , we let H have order n and
+size m, and so n = n(H) and m = m(H). Further, we let ni = ni (H) for i ∈ [2], and so
+n1 and n2 denote the number of vertices of degree 1 and 2, respectively, in H. We note
+that km = n1 + 2n2 . We denote the number of components of a hypergraph H by c(H).
+
+4.1     Transversal Number
+Our first result establishes an upper bound on the transversal number of a connected,
+linear, k-uniform hypergraph with maximum degree 2 for k ⩾ 2 even.
+Theorem 12. For all even k ⩾ 2 the following holds.
+ (a) If H ∈ Hk , then τ (H) ⩽ kn+(k−1)m+k+1
+                                  k(k+1)
+                                            .
+ (b) If H ∈ Hk0 , then τ (H) ⩽ kn+(k−1)m+3
+                                  k(k+1)
+                                           .
+    (c) If H ∈ Hk00 , then τ (H) ⩽ kn+(k−1)m+1
+                                      k(k+1)
+                                               .
+
+Proof. Let k ⩾ 2 be even and let H ∈ Hk . Let GH be the dual graph of H. If H = Lk ,
+then, by Theorem 6, we note that m = k + 1 and GH is a k-regular graph of order k + 1.
+If H ∈ Mk , then m = k + 3 and, by Observation 10, the graph GH is a k-regular graph
+of order k + 3. If H ∈ Hk00 , then GH has maximum degree ∆(G) ⩽ k. Further, if GH is
+k-regular (and still H ∈ Hk00 ), then n(GH ) ∈
+                                             / {k + 1, k + 3}. In all cases, we note that GH
+is a connected graph of order n(GH ) = m and size m(GH ) = n2 . Let
+                                                      if H ∈ Hk00
+                                           
+                                           
+                                               1
+                                      θ=        3     if H ∈ Mk
+                                           
+                                               k + 1 if H = Lk .
+                                           
+
+
+      By Theorem 1 and our definition of θ, the following holds.
+                                              m        n2      θ
+                              α0 (GH ) ⩾            +      −         .
+                                           k(k + 1)   k + 1 k(k + 1)
+
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                              7
+    By Proposition 9, we note that the following therefore holds.
+
+             τ (H) = m − α0 (GH )
+                                                         
+                               m         n2          θ
+                   ⩽ m−              +         −
+                            k(k + 1) k + 1 k(k + 1)
+                                               
+                              1         n1 + 2n2        n2          θ
+                   =  1−                            −        +
+                           k(k + 1)         k          k + 1 k(k + 1)
+                                              2(k(k + 1) − 1) − k 2
+                                                                 
+                       k(k + 1) − 1                                           θ
+                   =     2
+                                      n1 +           2
+                                                                      n2 +          .
+                        k (k + 1)                   k (k + 1)              k(k + 1)
+
+    Simplifying and multiplying through with k 2 (k + 1) we obtain the following.
+
+                    k 2 (k + 1)τ (H) ⩽ (k 2 + k − 1)n1 + (k 2 + 2k − 2)n2 + kθ
+                                       = k 2 (n1 + n2 ) + (k − 1)(n1 + 2n2 ) + kθ
+                                       = k 2 n + (k − 1)(km) + kθ.
+This implies the desired result.
+
+   We discuss next the hypergraphs H ∈ Hk for k ⩾ 4 even that achieve the upper
+bound for the transversal number in the statement of Theorem 12. If H = Lk , then
+m(H) = k + 1 and n(H) = k(k + 1)/2, and the dual graph of H is the graph Kk+1 .
+Therefore, by Proposition 9,
+                                                      k   k+2   kn + (k − 1)m + k + 1
+          τ (H) = m(H) − α0 (Kk+1 ) = (k + 1) −         =     =                       ,
+                                                      2    2           k(k + 1)
+
+ and equality holds in the statement of Theorem 12(a). If H ∈ Mk , then m(H) = k + 3
+and n(H) = k(k + 3)/2. By Observation 10, the dual graph, GH , of H is a k-regular
+graph of order k + 3. Therefore, by Proposition 9,
+                                                     k+2   k+4   kn + (k − 1)m + 3
+           τ (H) = m(H) − α0 (GH ) = (k + 3) −           =     =                   ,
+                                                      2     2        k(k + 1)
+
+ and equality holds in the statement of Theorem 12(b). We show next that there is an
+infinite family of hypergraphs H ∈ Hk00 that satisfy
+                                               kn + (k − 1)m + 1
+                                     τ (H) =                     .
+                                                   k(k + 1)
+
+   For k ⩾ 4 an even integer and r ⩾ 1, let G be an arbitrary graph in the family Gk,r .
+We show that associated with the graph G, there exists a hypergraph H ∈ Hk00 for which
+equality holds in the statement of Theorem 12(c), constructed as follows. Let HG be the
+dual hypergraph of G, and so the edges of G become vertices in HG and the vertices of G
+become hyperedges in HG , containing all edges that are incident with that vertex in the
+graph. We note that n(HG ) = m(G) and m(HG ) = n(G).
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                              8
+    Since ∆(G) = k, we note that the rank of HG is k. We note further that the edges
+of size 1 in HG , if any, correspond to the pendant edges in G (that are incident with a
+vertex of degree 1). The edges of size 2 in HG , if any, correspond to vertices of degree 2
+in G (that have both neighbors in Y ). All other edges in HG have size k − 1 or k.
+    We now expand all edges of HG of size less than k to edges of size k by adding
+new vertices of degree 1 to each such edge. For example, if ev is an edge of size 1 in HG
+containing the vertex v, then we add k − 1 new vertices and expand the edge ev to an edge
+of size k that contains these new vertices and the vertex v. Let HGk denote the resulting
+                        even
+hypergraph, and let Hk,r     be the family of all such hypergraphs HGk . For example, given
+                                                                                        even
+the graph G ∈ G4,2 shown in Figure 1 we obtain the associated hypergraph H ∈ H4,2
+shown in Figure 4.
+
+
+
+
+                              even
+Figure 4: The hypergraph H ∈ H4,2  associated with the graph G ∈ G4,2 shown in
+Figure 1.
+
+                                                                       even
+Proposition 13. For k ⩾ 4 an even integer and r ⩾ 1 arbitrary, if H ∈ Hk,r  has order n
+and size m, then
+                                    kn + (k − 1)m + 1
+                            τ (H) =                    .
+                                          k(k + 1)
+                                                                                        even
+Proof. We consider the graph G ∈ Gk,r used to construct the hypergraph H ∈ Hk,r              , and
+           k
+so H = HG . Assume that when building the graph G, we have `1 single vertices and `2
+copies of Kk+1 ’s minus an edge in X1 , X2 , . . . , X` . We note that `1 + `2 = ` = r(k − 1) + 1
+and n(G) = r + `1 + `2 (k + 1). Further,
+
+                                                        2`1 + (k 2 − k + 2)`2 − 2
+                                              
+              0          k       `1 + `2 − 1    k
+            α (G) = r +     `2 =             +     `2 =                           .
+                         2          k−1         2               2(k − 1)
+
+The order of HGk is                                    2     
+                                      k                k +k+2
+                                   n(HG ) = k`1 +               `2 .
+                                                          2
+
+     Further, m(HGk ) = m(HG ) = n(G) = r + `1 + `2 (k + 1), implying that the size of HGk
+is
+                                                                 k2
+                                                                   
+                               k            k                                     1
+                            m(HG )=                  `1 +                 `2 −       .
+                                           k−1                  k−1              k−1
+
+
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                    9
+    We remark that the graph G ∈ Gk,r used to construct the hypergraph HGk ∈ Hk,r even
+                                                                                        is
+                                             k                           k             k
+in fact the dual graph (see Section 3.1) of HG . Therefore, letting H = HG , n = n(HG )
+and m = m(HGk ), and applying Proposition 9 to H and its dual graph G, we have
+
+                    τ (H) = m − α0 (G)
+                                           2                
+                                  k              k            1
+                          =            `1 +            `2 −
+                                k−1             k−1         k−1
+                                                 2                   
+                                       1            k −k+2             1
+                               −              `1 +               `2 −
+                                     k−1             2(k − 1)         k−1
+                                  2           
+                                   k +k−2
+                          = `1 +                 `2
+                                    2(k − 1)
+                                        
+                                   k+2
+                          = `1 +           `2
+                                     2
+
+and
+                                                    2         
+        kn + (k − 1)m + 1              k               k +k+2
+                                =               k`1 +              `2
+            k(k + 1)                k(k + 1)               2
+                                                              2           
+                                          k−1           k             k       1
+                                     +                       `1 +       `2 −
+                                         k(k + 1)      k−1          k−1      k−1
+                                              1
+                                        +
+                                           k(k + 1)
+                                             
+                                         k+2
+                                = `1 +          `2 .
+                                          2
+
+Equality therefore holds in the statement of Theorem 12(c).
+
+    Next we consider the case when k ⩾ 3 is odd.
+
+Theorem 14. For k ⩾ 3 an odd integer, if H ∈ Hk , then
+
+                                     (k − 2)(k + 1)n + (k − 1)2 m + k − 1
+                         τ (H) ⩽                                          .
+                                                  k(k 2 − 3)
+
+Proof. Let k ⩾ 3 be odd and let H ∈ Hk . Let GH be the dual graph of H and note that
+GH has maximum degree ∆(G) ⩽ k. Further, we note that GH is a connected graph of
+order n(GH ) = m and size m(GH ) = n2 . By Theorem 3, the following holds.
+                                                      2        
+                     0               k−1                k −k−2             k−1
+                   α (GH ) ⩾                        m+              n2 −            .
+                                   k(k 2 − 3)               2
+                                                         k(k − 3)        k(k 2 − 3)
+
+    By Proposition 9, we note that the following therefore holds.
+
+
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                            10
+       τ (H) = m − α0 (GH )
+                                            2                                 
+                             k−1                 k −k−2                   k−1
+             ⩽ m−                        m +                     n 2 −
+                           k(k 2 − 3)            k(k 2 − 3)             k(k 2 − 3)
+                                                 2                
+                          k−1           n1 + 2n2          k −k−2                  k−1
+             =   1−                                 −                    n2 +
+                       k(k 2 − 3)          k               k(k 2 − 3)          k(k 2 − 3)
+                3
+                                           2(k 3 − 4k + 1) − k(k 2 − k − 2)
+                                                                              
+                 k − 4k + 1                                                               k−1
+             =                     n 1 +                                           n2 +            .
+                  k 2 (k 2 − 3)                        k 2 (k 2 − 3)                    k(k 2 − 3)
+
+
+    Simplifying and multiplying through with k 2 (k 2 − 3) we obtain the following.
+
+       k 2 (k 2 − 3)τ (H) ⩽ (k 3 − 4k + 1)n1 + (k 3 + k 2 − 6k + 2)n2 + k(k − 1)
+                           = (k 3 − 2k)(n1 + n2 ) − (2k − 1)(n1 + 2n2 ) + k 2 · n2 + k(k − 1)
+                           = (k 3 − 2k)n − (2k − 1)(km) + k 2 · n2 + k(k − 1)
+                           = (k 3 − 2k)n − (2k − 1)(km) + k 2 (km − n) + k(k − 1)
+                           = k(k − 2)(k + 1)n + k(k − 1)2 m + k(k − 1).
+
+This implies the desired result.
+
+    We discuss next the hypergraphs H ∈ Hk for k ⩾ 3 odd that achieve the upper
+bound for the transversal number in the statement of Theorem 14. For k ⩾ 3 an even
+integer and r ⩾ 1, let G be an arbitrary graph in the family Fk,r . Analogously as with
+the case when k is even, we let HG be the dual hypergraph of G, and we let HGk be the
+hypergraph obtained from HG by expanding all edges of HG of size less than k to edges of
+size k by adding new vertices of degree 1 to each such edge. Let HGk denote the resulting
+                       odd
+hypergraph, and let Hk,r   be the family of all such hypergraphs HGk . For example, given
+                                                                                       odd
+the graph G ∈ F3,2 shown in Figure 5(a) we obtain the associated hypergraph H ∈ H3,2
+shown in Figure 5(b).
+                                                                      odd
+Proposition 15. For k ⩾ 3 an odd integer and r ⩾ 1 arbitrary, if H ∈ Hk,r has order n
+and size m, then
+                           (k − 2)(k + 1)n + (k − 1)2 m + k − 1
+                   τ (H) =                                       .
+                                         k(k 2 − 3)
+                                                                            odd
+Proof. We consider the graph G ∈ Fk,r used to construct the hypergraph H ∈ Hk,r , and
+         k
+so H = HG . Assume that ` copies of the graph Hk+2 were added when constructing the
+graph G. Thus, as observed in [19],
+
+                                     ` = (k − 1)|V2 | − |V1 | + 1.
+
+
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                           11
+                                                    V1
+
+                                              V2
+
+
+
+
+                                                                                              odd
+                       (a) G ∈ F3,2                                                  (b) H ∈ H3,2
+
+                                       odd
+         Figure 5: The hypergraph H ∈ H3,2 associated with the graph G ∈ F3,2 .
+
+
+Further, the order, size and matching number of G are as follows.
+              n(G)         = (k 2 + k − 1)|V2 | − (k + 1)|V1 | + (k + 2)
+              2m(G) = (k 3 + k 2 − k + 1)|V2 | − (k 2 + 2k − 1)|V1 | + (k 2 + 2k − 1)
+              2α0 (G) = (k 2 + 1)|V2 | − (k + 1)|V1 | + (k + 1).
+
+     For i ∈ [k], let n1,i be the number of vertices in V1 that have degree i in G. Thus, if
+[V1 , V2 ] denotes the set of edges between V1 and V2 in G, then
+           k
+           X                                k
+                                            X
+                  n1,i = |V1 |     and             i · n1,i = |[V1 , V2 ]| = k|V2 | − ` = |V1 | + |V2 | − 1.
+            i=1                              i=1
+
+
+    Recall that H = HGk , n = n(HGk ) and m = m(HGk ). The order of H is
+                                     k
+                                     X
+                  n = m(G) +               (k − i) · n1,i
+                                     i=1
+
+                                           k                    k
+                                                        !                        !
+                                           X                    X
+                     = m(G) + k                  n1,i       −         i · n1,i
+                                           i=1                  i=1
+
+                     = m(G) + (k − 1)|V1 | − |V2 | + 1
+                        3
+                        k + k2 − k − 1
+                                                   2              2         
+                                                     k +1            k + 2k + 1
+                     =                     |V2 | −          |V1 | +              .
+                               2                       2                 2
+
+    Further, H has size m = m(HGk ) = m(HG ) = n(G), and so
+
+                                 m = (k 2 + k − 1)|V2 | − (k + 1)|V1 | + (k + 2).
+
+
+
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                                   12
+    We remark that the graph G ∈ Fk,r used to construct the hypergraph HGk ∈ Hk,r  odd
+                                                                                       is
+                                             k
+in fact the dual graph (see Section 3.1) of HG . Therefore, applying Proposition 9 to H
+and its dual graph G, we have
+
+                      τ (H) = m − α0 (G)
+                                   (k 2 + k − 1)|V2 | − (k + 1)|V1 | + (k + 2)
+                                                                                 
+                             =
+                                   1
+                                      (k 2 + 1)|V2 | − (k + 1)|V1 | + (k + 1)
+                                                                              
+                                     −
+                                   2
+                                2                           
+                                k + 2k − 3                k+1             k+3
+                             =                 |V2 | −            |V1 | +
+                                     2                     2                2
+
+and
+
+      (k − 2)(k + 1)n + (k − 1)2 m + k − 1
+                    k(k 2 − 3)
+                               3
+                                   k + k2 − k − 1
+                                                             2                 2         
+              (k − 2)(k + 1)                                     k +1              k + 2k + 1
+        =                                             |V2 | −             |V1 | +
+                k(k 2 − 3)                2                        2                   2
+                    (k − 1)2
+                             
+                                (k 2 + k − 1)|V2 | − (k + 1)|V1 | + (k + 2)
+                                                                            
+               +       2
+                   k(k − 3)
+                  k−1
+                  +
+                k(k 2 − 3)
+          2                        
+          k + 2k − 3              k+1           k+3
+       =                |V2 | −         |V1 | +     .
+              2                    2             2
+
+Equality therefore holds in the statement of Theorem 14.
+
+4.2     Strong Independence Number
+In this section we establish a lower bound on the strong independence number of a con-
+nected, linear, k-uniform hypergraph H with maximum degree 2 for k ⩾ 2. For this
+purpose, we first establish a lower bound on a maximum strong independent set consist-
+ing only of degree-2 vertices in H.
+Theorem 16. For all even k ⩾ 2 the following holds.
+                                     2
+                                             2 −k(k+1)
+ (a) If H ∈ Hk , then α2 (H) ⩾ n1 +(k k+2)n
+                                        2 (k+1)        .
+                                            2
+                                         +2)n2 −3k
+ (b) If H ∈ Hk0 , then α2 (H) ⩾ n1 +(kk2 (k+1)     .
+                                            2
+                                          +2)n2 −k
+  (c) If H ∈ Hk00 , then α2 (H) ⩾ n1 +(k
+                                      k2 (k+1)
+                                                   .
+Proof. Let k ⩾ 2 be even and let H ∈ Hk , and let GH be the dual graph of H. We adopt
+the notation in the proof of Theorem 12. Analogously as in the proof of Theorem 12,
+                                              m        n2      θ
+                              α0 (GH ) ⩾            +      −         .
+                                           k(k + 1)   k + 1 k(k + 1)
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                       13
+    By Observation 8, we note that the following therefore holds.
+
+                     α2 (H) = α0 (GH )
+                                   m        n2         θ
+                              ⩾          +       −
+                                k(k + 1) k + 1 k(k + 1)
+                                                    
+                                     1        n1 + 2n2      n2      θ
+                              =                          +      −         .
+                                  k(k + 1)       k         k + 1 k(k + 1)
+
+    Multiplying through with k 2 (k + 1) we obtain the following.
+
+                               k 2 (k + 1)α2 (H) ⩾ n1 + (k 2 + 2)n2 − kθ.
+
+This implies the desired result.
+
+    We proceed further with the following simple lemma.1
+
+Lemma 17. ([3]) If H is a k-uniform hypergraph of order n and size m with δ(H) ⩾ 1
+and with c components, then (k − 1)m + c ⩾ n.
+
+Proof. Replace each hyperedge e ∈ E(H) by a star of k − 1 edges on the vertex set of e
+to produce a graph G. If H has c components, then so too does G. Since G has (k − 1)m
+edges, n vertices and c components, we have that (k − 1)m + c ⩾ n.
+
+    As a special case of Lemma 17, we note that if H is a connected k-uniform hypergraph
+of order n and size m, then (k − 1)m + 1 ⩾ n.
+
+Theorem 18. For all even k ⩾ 2 the following holds.
+ (a) If H ∈ Hk , then α(H) ⩾ (k+2)n−(k−1)m−(k+1)
+                                    k(k+1)
+                                                 .
+ (b) If H ∈ Hk0 , then α(H) ⩾ (k+2)n−(k−1)m−3
+                                   k(k+1)
+                                              .
+  (c) If H ∈ Hk00 , then α(H) ⩾ (k+2)n−(k−1)m−1
+                                     k(k+1)
+                                                .
+
+Proof. Let k ⩾ 2 be even and let H ∈ Hk00 be arbitrary. Let V1 (H) denote the set of all
+vertices of degree 1 in H, and let S be the set of all edges of H that contain at least
+one vertex in V1 (H). Let R be the vertices in H which belong to two edges of S, and let
+r = |R|. Let X = V (H) \ (V1 (H) ∪ R) and consider the hypergraph H[X] induced by the
+vertices in X. Let S 0 be the set of edges in H[X] of size less than k. We note that each edge
+in S 0 was obtained by shrinking an edge in S by removing from it vertices in V1 (H) ∪ R.
+We note that H[X] contains at most r + 1 components; that is, c(H[X]) ⩽ r + 1.
+   1
+     We have not been able to find the original source of this lemma, but as remarked in [3], “it definitely
+seems to have been known already at least in the early 1960’s.” For completeness, we provide the short
+proof given in [3].
+
+
+
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                             14
+   Let H 0 be obtained from H[X] by removing all edges in H[X] of size less than k.
+Equivalently, H 0 is obtained from H be removing all edges in S and all resulting isolated
+vertices. We note that H 0 has order
+                                      n(H 0 ) = n(H) − n1 (H) − r
+
+ and may possibly be the empty hypergraph. For every i = {0} ∪ [k − 1], let Ti denote
+the subset of edges of S which contain vertices from exactly i different components in H 0
+and let ti = |Ti |. We note that for i ∈ [k − 1] \ {1}, the removal of all edges in Ti from
+H[X] gives rise to at most (i − 1)ti additional components. Thus,
+                                                                  k−1
+                                                                  X
+                                   c(H 0 ) ⩽ c(H[X]) +                  (i − 1)ti .
+                                                                  i=2
+
+As observed earlier, c(H[X]) ⩽ r + 1, implying that
+                                     k−1
+                                     X
+                                           (i − 1)ti ⩾ c(H 0 ) − r − 1.
+                                     i=2
+
+
+   Every edge in Ti contains at most k − i vertices of degree 1 in H, and at least i vertices
+from different components of H 0 , in addition to possibly some vertices of R. Thus,
+                                               k−1
+                                                              !
+                                               X
+                      n1 (H) ⩽ k|S| −                i · ti       − 2r
+                                               i=1
+                                               k−1                 k−1
+                                                          !                           !
+                                               X                   X
+                               = k|S| −              ti       −          (i − 1)ti        − 2r + t0
+                                               i=0                 i=2
+
+                               ⩽ k|S| − |S| − (c(H 0 ) − r − 1) − 2r + t0
+                               = (k − 1)|S| − c(H 0 ) − r + t0 + 1.
+
+   We now obtain a strong independent set in H by taking a maximum strong indepen-
+dent set of degree-2 vertices in H 0 and adding to this set a vertex of degree one from each
+edge in S. Therefore the following holds by Theorem 16, as no component belongs to
+{Lk } ∪ Mk (recall that H ∈ Hk00 ).
+                                                     n1 (H 0 ) + (k 2 + 2)n2 (H 0 ) − k · c(H 0 )
+                α(H) ⩾ |S| + α2 (H 0 ) ⩾ |S| +                                                    .
+                                                                      k 2 (k + 1)
+
+    As n1 (H 0 ) + n2 (H 0 ) = n(H 0 ) = n(H) − n1 (H) − r, we note that
+                                    n2 (H 0 ) = n2 (H) − n1 (H 0 ) − r.
+
+Furthermore,
+                                     n1 (H 0 ) = k|S| − n1 (H) − 2r,
+ as the |S| edges in S each have k vertices and every vertex with degree 1 in H 0 belongs
+to an edge in S and does not have degree 1 in H and does not belong to R, and every
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                          15
+vertex in R counts two in k|S| − n1 (S) but does not belong to H 0 . The following now
+holds by the above observations.
+
+  k 2 (k + 1)α(H)
+    ⩾ k 2 (k + 1)|S| + n1 (H 0 ) + (k 2 + 2)n2 (H 0 ) − k · c(H 0 )
+    = k 2 (k + 1)|S| + n1 (H 0 ) + (k 2 + 2)(n2 (H) − r − n1 (H 0 )) − k · c(H 0 )
+    = k 2 (k + 1)|S| + n1 (H 0 )(1 − (k 2 + 2)) + (k 2 + 2)n2 (H) − (k 2 + 2)r − k · c(H 0 )
+    = k 2 (k + 1)|S| + (k|S| − n1 (H) − 2r)(−k 2 − 1) + (k 2 + 2)n2 (H) − (k 2 + 2)r − k · c(H 0 )
+    = (k 3 + k 2 − k 3 − k)|S| + n1 (H)(k 2 + 1) + (k 2 + 2)n2 (H) + k 2 r − k · c(H 0 )
+    = (k(k − 1)|S| − k · c(H 0 ) − kr + kt0 + k)
+            −kt0 + n1 (H)(k 2 + 1) + (k 2 + 2)n2 (H) + (k 2 + k)r − k
+    ⩾ (k · n1 (H)) − kt0 + n1 (H)(k 2 + 1) + (k 2 + 2)n2 (H) + (k 2 + k)r − k
+    = (k 2 + k + 1)n1 (H) + (k 2 + 2)n2 (H) + (k 2 + k)r − kt0 − k
+    = (k 2 + 2k)(n1 (H) + n2 (H)) − (k − 1)(n1 (H) + 2n2 (H)) + (k 2 + k)r − kt0 − k
+    = (k 2 + 2k)n(H) − (k − 1)(k · m(H)) + (k 2 + k)r − kt0 − k.
+
+    Note that every edge in T0 must contain a vertex from R. In particular, if r = 0, then
+t0 = 0. In this case, dividing though by k the above simplifies to the following.
+                         k(k + 1)α(H) ⩾ (k + 2)n(H) − (k − 1)m(H) − 1.
+
+Suppose that r ⩾ 1. We note that every edge in T0 contains at most k − 1 vertices from
+R, and so t0 ⩽ (k − 1)r. Dividing though by k above we get the following.
+
+            k(k + 1)α(H) ⩾ (k + 2)n(H) − (k − 1)m(H) + (k + 1)r − t0 − 1
+                             ⩾ (k + 2)n(H) − (k − 1)m(H) + (k + 1)r − (k − 1)r − 1
+                             = (k + 2)n(H) − (k − 1)m(H) + 2r − 1
+                             ⩾ (k + 2)n(H) − (k − 1)m(H) − 1.
+
+ This implies the theorem in the case when H ∈ Hk00 .
+   Suppose next that H ∈ Hk0 . If H ∈/ Mk , then as shown above we have k(k + 1)α(H) ⩾
+(k + 2)n(H) − (k − 1)m(H) − 1. Suppose, therefore, that H ∈ Mk . We note that, by
+Theorem 16,
+                                          n1 (H) + (k 2 + 2)n2 (H) − 3k
+                               α2 (H) ⩾                                 .
+                                                    k 2 (k + 1)
+
+    As H is 2-regular, we have α(H) = α2 (H) and n1 (H) = 0, and therefore n(H) =
+n2 (H) = k(k + 3)/2 and k · m(H) = 2n2 (H) = k(k + 3). Therefore,
+
+                                  (k 2 + 2)n2 (H) − 3k
+                        α(H) ⩾
+                                        k 2 (k + 1)
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                         16
+                                 k(k + 2)n2 (H) − 2(k − 1)n2 (H) − 3k
+                               =
+                                              k 2 (k + 1)
+                                 k(k + 2)n(H) − (k − 1)(k · m(H)) − 3k
+                               =
+                                                k 2 (k + 1)
+                                 (k + 2)n(H)| − (k − 1)m(H) − 3
+                               =                                 .
+                                             k(k + 1)
+  This implies the theorem in the case when H ∈ Hk0 .
+  Suppose finally that H ∈ Hk . From the above, it remains for us to consider the case
+when H = Lk . In this case Theorem 16 implies that
+                                       n1 (H) + (k 2 + 2)n2 (H) − k(k + 1)
+                            α2 (H) ⩾                                       .
+                                                     k 2 (k + 1)
+
+    As H is 2-regular, we have α(H) = α2 (H) and n1 (H) = 0, and therefore n(H) =
+n2 (H) = k(k + 1)/2 and k · m(H) = 2n2 (H) = k(k + 1). Analogous to the discussion in
+the previous argument,
+                                    (k + 2)n(H) − (k − 1)m(H) − (k + 1)
+                          α(H) ⩾                                        ,
+                                                 k(k + 1)
+
+    This implies the theorem in the case when H ∈ Hk .
+
+    We discuss next the hypergraphs H ∈ Hk for k ⩾ 2 even that achieve the lower bound
+for the strong independence number in the statement of Theorem 18. If H = Lk , then,
+by Observation 8 and Theorem 1(a), equality holds in the statement of Theorem 18(a).
+If H ∈ Mk , then, by Observation 10 and Theorem 1(b), equality holds in the statement
+of Theorem 18(b).
+    We show next that there is an infinite family of hypergraphs H ∈ Hk00 for which equality
+holds in the statement of Theorem 18(c). For k ⩾ 4 an even integer and r ⩾ 1, let G
+be an arbitrary graph in the family Gk,r , and let HGk be the associated hypergraph in the
+          even
+family Hk,r    . For each vertex v of degree 1 in HGk , we add k − 1 new vertices and an edge
+                                                            k
+(of size k) containing v and these new vertices. Let RG       denote the resulting hypergraph,
+                                                          k
+and let Rk,r be the family of all such hypergraphs RG .
+Proposition 19. For k ⩾ 4 an even integer and r ⩾ 1 arbitrary, if H ∈ Reven
+                                                                       k,r has order n
+and size m, then
+                                 (k + 2)n − (k − 1)m − 1
+                         α(H) =                            .
+                                          k(k + 1)
+Proof. Let G ∈ Gk,r be the graph and HGk ∈ Hk,r   even
+                                                       the associated hypergraph used to
+                                even                 k
+construct the hypergraph H ∈ Rk,r , and so H = RG .
+                            k
+    We show firstly that α(RG ) = n1 (HGk ) + α0 (G). Let S be a maximum independent
+              k
+set in H = RG that contains the maximum number of vertices of degree 1 in H. For
+each vertex v of degree 1 in HGk , let ev be the associated edge containing v that was
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                               17
+added to HGk when constructing H. We note that every vertex in ev different from v
+has degree 1 in H. Let v 0 be an arbitrary vertex in ev different from v. If v ∈ S or if
+S contains no vertex from ev , then the set (S \ {v}) ∪ {v 0 } is a maximum independent
+set containing more vertices of degree 1 than does S, a contradiction. Hence, the set S
+contains n1 (HGk ) vertices of degree 1, one from each edge added to HGk when constructing
+H. The remaining vertices of S belong to V (HG ) and have degree 2 in HGk , and so
+α(H) ⩽ n1 (HGk ) + α2 (HGk ). Conversely, every maximum independent set of degree-2
+vertices in HGk can be extended to an independent set in H by adding to it n1 (HGk ) vertices
+of degree 1, one vertex from each edge added to HGk when constructing H, implying that
+α(H) ⩾ n1 (HGk ) + α2 (HGk ). Consequently, α(H) = n1 (HGk ) + α2 (HGk ). We note that G is
+the dual graph of the hypergraph HGk ∈ Hk , and so, by Observation 8, α2 (HGk ) = α0 (G).
+Therefore, α(RG  k
+                   ) = n1 (HGk ) + α0 (G).
+    Let G be constructed from `1 single vertices and `2 copies of Kk+1 − e. Further, let `1,1
+and `1,2 be the number of single vertices of degree 1 and degree 2 in G, and let `2,1 and `2,2
+be the number of copies of Kk+1 − e joined to one or two vertices in Y , respectively. We
+note that (`1,1 +`1,2 )+(`2,1 +`2,2 ) = `1 +`2 = ` = r(k −1)+1 and n(G) = r +`1 +`2 (k +1).
+Recall that n = n(H) and m = m(H). We note that
+
+                                n            k ) + (k − 1)n (H k )
+                                        = n(HG             1  G
+
+                                m            k ) + n (H k )
+                                        = m(HG      1  G
+                                  k ) = (k − 1)`
+                             n1 (HG             1,1 + (k − 2)`1,2 + `2,1
+
+                                r       = `1,2 + `2,2 + 1
+
+Recall (see the proof of Proposition 13) that
+                                       k)
+                                    n(HG  = k`1 + 21 (k 2 + k + 2)`2
+                                       k) =  1             2
+                                                                  
+                                    m(HG    k−1 k`1 + k `2 − 1
+
+                                    α0 (G)    = r + 12 k`2 .
+We note that
+                                     1
+                                     k (`1,1 + 2`1,2 + `2,1 + `2,2 )
+                                        = k1 (` + `1,2 + 2`2,2 )
+                                             1
+                                       =     k (` + r − 1)
+                                             1
+                                       =     k ((r(k − 1) + 1) + r − 1)
+                                       = r.
+
+Thus,
+
+                                      
+   (k + 2)n − (k − 1)m − 1     k+2           k                   k
+                                                                    
+                           =              n(HG ) + (k − 1)n1 (HG   )
+           k(k + 1)           k(k + 1)
+                                        
+                                  k−1            k          k
+                                                               
+                            −               m(HG   ) + n1 (HG )
+                                k(k + 1)
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                               18
+                                      1
+                                −
+                                  k(k + 1)
+                                                       2                                   
+                                    k+2                     k +k+2                           k
+                               =                  k`1 +                     `2 + (k − 1)n1 (HG )
+                                  k(k + 1)                        2
+                                                                  2                              
+                                       k−1               k                 k             1          k
+                                −                               `1 +               `2 −      + n1 (HG )
+                                     k(k + 1)          k−1               k−1            k−1
+                                      1
+                                −
+                                  k(k + 1)
+                                                 
+                                  k(k + 2) − k
+                               =                    `1
+                                     k(k + 1)
+                                    3
+                                     k + k 2 + 4k + 4
+                                                          
+                                +                            `2
+                                          2k(k + 1)
+                                    2          
+                                      k −1               k
+                                +                 n1 (HG   )
+                                     k(k + 1)
+                                       2                        
+                                        k +4                k−1             k
+                               =`1 +               `2 +              n1 (HG   )
+                                           2k                 k
+                                                   2        
+                                                    k +4
+                               =(`1,1 + `1,2 ) +               (`2,1 + `2,2 )
+                                                      2k
+                                           
+                                     k−1
+                                +              ((k − 1)`1,1 + (k − 2)`1,2 + `2,1 )
+                                       k
+                                 2                       2              
+                                  k −k+1                     k − 2k + 2
+                               =                  `1,1 +                      `1,2
+                                        k                          2
+                                    2                        2        
+                                     k + 2k + 2                  k +4
+                                +                     `2,1 +               `2,1
+                                           2k                      2k
+                               =(k − 1)`1,1 + (k − 2)`1,2 + `2,1
+                                  1                                      1
+                                + (`1,1 + 2`1,2 + `2,1 + 2`2,2 ) + k(`2,1 + `2,2 )
+                                  k                                      2
+                                      k           1
+                               =n1 (HG  ) + r + k`
+                                                  2
+                               =n1 (HGk
+                                        ) + α0 (G)
+                               =α(H).
+
+    Next we consider the case when k ⩾ 3 is odd.
+Theorem 20. For k ⩾ 3 odd, if H ∈ Hk , then
+                                    (k − 1)n1 + (k 3 − k 2 − 2)n2 − k(k − 1)
+                         α2 (H) ⩾                                            .
+                                                  k 2 (k 2 − 3)
+Proof. Let k ⩾ 3 be odd and let H ∈ Hk . Let GH be the dual graph of H and note that
+GH has maximum degree ∆(G) ⩽ k. Further, we note that GH is a connected graph of
+order n(GH ) = m and size m(GH ) = n2 . By Theorem 3, the following holds.
+                                                      2        
+                     0               k−1                k −k−2             k−1
+                   α (GH ) ⩾                        m+              n2 −            .
+                                   k(k 2 − 3)               2
+                                                         k(k − 3)        k(k 2 − 3)
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                                19
+    By Observation 8, and noting that km = n1 + 2n2 , the following therefore holds.
+                                                                   2        
+                    0                k−1             n1 + 2n2          k −k−2             k−1
+        α2 (H) = α (GH ) ⩾                                          +              n2 −            .
+                                   k(k 2 − 3)           k                  2
+                                                                        k(k − 3)        k(k 2 − 3)
+
+    Multiplying through with k 2 (k 2 − 3), and simplifying, we obtain the following.
+                    k 2 (k 2 − 3)α2 (H) ⩾ (k − 1)n1 + (k 3 − k 2 − 2)n2 − k(k − 1).
+
+This implies the desired result.
+Theorem 21. For k ⩾ 3 odd, if H ∈ Hk , then
+                                 (k 2 + k − 4)n(H) − (k − 1)2 m(H) − (k − 1)
+                        α(H) ⩾                                               .
+                                                  k(k 2 − 3)
+Proof. Let k ⩾ 3 be odd and let H ∈ Hk . We follow the same notation as introduced in
+the proof of Theorem 18. Proceeding exactly as in the proof of Theorem 18, we have
+                              n1 (H) ⩽ (k − 1)|S| − c(H 0 ) − r + t0 + 1
+                              n1 (H 0 ) = k|S| − n1 (H) − 2r
+                              n2 (H 0 ) = n2 (H) − n1 (H 0 ) − r
+
+    The following holds by Theorem 20.
+                                         (k − 1)n1 (H 0 ) + (k 3 − k 2 − 2)n2 (H 0 ) − k(k − 1)c(H 0 )
+      α(H) ⩾ |S| + α2 (H 0 ) ⩾ |S| +                                                                   .
+                                                                  k 2 (k 2 − 3)
+
+Therefore,
+
+
+ k 2 (k 2 − 3)α(H) ⩾k 2 (k 2 − 3)|S| + (k − 1)n1 (H 0 ) + (k 3 − k 2 − 2)n2 (H 0 ) − k(k − 1)c(H 0 )
+                   =k 2 (k 2 − 3)|S| + (k − 1)n1 (H 0 ) + (k 3 − k 2 − 2)(n2 (H) − n1 (H 0 ) − r)
+                        − k(k − 1)c(H 0 )
+                   =k 2 (k 2 − 3)|S| + (−k 3 + k 2 + k + 1)n1 (H 0 )
+                        + (k 3 − k 2 − 2)n2 (H) − (k 3 − k 2 − 2)r − k(k − 1)c(H 0 )
+                   =k 2 (k 2 − 3)|S| + (−k 3 + k 2 + k + 1)(k|S| − n1 (H) − 2r)
+                        + (k 3 − k 2 − 2)n2 (H) − (k 3 − k 2 − 2)r − k(k − 1)c(H 0 )
+                   =(k 4 − 3k 2 − k 4 + k 3 + k 2 + k)|S| + (k 3 − k 2 − k − 1)n1 (H)
+                        + (k 3 − k 2 − 2)n2 (H) + (k 3 − k 2 − 2k)r − k(k − 1)c(H 0 )
+                   =k(k − 1)2 |S| + (k 3 − k 2 − k − 1)n1 (H)
+                        + (k 3 − k 2 − 2)n2 (H) + (k 3 − k 2 − 2k)r − k(k − 1)c(H 0 )
+                   =k(k − 1)((k − 1)|S| − c(H 0 ) − r + t0 + 1)
+                        − k(k − 1)t0 − k(k − 1) + (k 3 − k 2 − k − 1)n1 (H)
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                               20
+                      + (k 3 − k 2 − 2)n2 (H) + (k 3 − 3k)r
+                   ⩾k(k − 1)n1 (H) − k(k − 1)t0 − k(k − 1) + (k 3 − k 2 − k − 1)n1 (H)
+                      + (k 3 − k 2 − 2)n2 (H) + k(k 2 − 3)r
+                   =(k 3 − 2k − 1)n1 (H) + (k 3 − k 2 − 2)n2 (H)
+                      + k(k 2 − 3)r − k(k − 1)t0 − k(k − 1)
+                   =k(k 2 + k − 4)(n1 (H) + n2 (H)) − (k − 1)2 (n1 (H) + 2n2 (H))
+                      + k(k 2 − 3)r − k(k − 1)t0 − k(k − 1)
+                   =k(k 2 + k − 4)n(H) − k(k − 1)2 m(H) + k(k 2 − 3)r − k(k − 1)t0 − k(k − 1).
+Dividing through by k, the above simplifies to
+     k(k 2 − 3)α(H) ⩾ (k 2 + k − 4)n(H) − (k − 1)2 m(H) + (k 2 − 3)r − (k − 1)t0 − (k − 1).
+ As observed in the proof of Theorem 18, if r = 0, then t0 = 0, while if r ⩾ 1, then
+t0 ⩽ (k − 1)r. If r = 0, then the above simplifies to the following.
+                  k(k 2 − 3)α(H) ⩾ (k 2 + k − 4)n(H) − (k − 1)2 m(H) − (k − 1).
+If r ⩾ 1, then the above simplifies to the following.
+            k(k 2 − 3)α(H) ⩾(k 2 + k − 4)n(H) − (k − 1)2 m(H)
+                                + (k 2 − 3)r − (k − 1)2 r − (k − 1)
+                             =(k 2 + k − 4)n(H) − (k − 1)2 m(H) + 2(k − 2)r − (k − 1)
+                             ⩾k(k 2 + k − 4)n(H) − (k − 1)2 m(H) + k − 3
+                             ⩾k(k 2 + k − 4)n(H) − (k − 1)2 m(H)
+                             >k(k 2 + k − 4)n(H) − (k − 1)2 m(H) − (k − 1).
+
+This completes the proof of Theorem 21.
+
+    We show next that there is an infinite family of hypergraphs H ∈ Hk for which equality
+holds in the statement of Theorem 21. For k ⩾ 3 an odd integer and r ⩾ 1, let G be
+an arbitrary graph in the family Fk,r , and let HGk be the associated hypergraph in the
+          odd
+family Hk,r   . For each vertex v of degree 1 in HGk , we add k − 1 new vertices and an edge
+                                                          k
+(of size k) containing v and these new vertices. Let RG     denote the resulting hypergraph,
+           odd                                           k
+and let Rk,r be the family of all such hypergraphs RG .
+Proposition 22. For k ⩾ 3 an odd integer and r ⩾ 1 arbitrary, if H ∈ Rodd
+                                                                      k,r has order n
+and size m, then
+                               (k 2 + k − 4)n(H) − (k − 1)2 m(H) − (k − 1)
+                     α(H) =                                                .
+                                                k(k 2 − 3)
+Proof. Let G ∈ Fk,r be the graph and HGk ∈ Hk,r
+                                              odd
+                                                   the associated hypergraph used to
+                               odd               k
+construct the hypergraph H ∈ Rk,r , and so H = RG . Analogous to the proof of Propo-
+sition 19, we have that
+                                                   k
+                                       α(H) = n1 (HG ) + α0 (G).
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                  21
+For i ∈ [k], let n1,i be the number of vertices in V1 that have degree i in G. As shown in
+the proof of Proposition 13,
+                         k
+                         X                               k
+                                                         X
+                                n1,i = |V1 |   and              i · n1,i = |V1 | + |V2 | − 1,
+                          i=1                            i=1
+
+implying that
+                         k
+                         X                       k
+                                                 X              k
+                                                                X
+                 k
+            n1 (HG )=          (k − i)n1,i = k         n1,i −         i · n1,i = (k − 1)|V1 | − |V2 | + 1.
+                         i=1                     i=1            i=1
+
+
+    Recall that n = n(H) and m = m(H). We note that
+
+                                       n        k ) + (k − 1)n (H k )
+                                           = n(HG             1  G
+                                              k ) + n (H k )
+                                       m = m(HG      1  G
+
+
+    Recall (see the proof of Proposition 13) that
+                           3
+                           k + k2 − k − 1
+                                                    2             2         
+                k)                                   k +1            k + 2k + 1
+             n(HG       =                   |V2 | −         |V1 | +
+                                 2                      2                2
+            m(HG k ) = (k 2 + k − 1)|V | − (k + 1)|V | + (k + 2)
+                                      2             1
+
+            α0 (G) = 12 (k 2 + 1)|V2 | − (k + 1)|V1 | + (k + 1)
+                                                                
+
+Therefore,
+           (k 2 + k − 4)n − (k − 1)2 m − (k − 1)
+                           k(k 2 − 3)
+           2             
+             k +k−4                 k                         k
+                                                                  
+         =                    n(H   G ) +    (k −   1)n 1 (H  G )
+              k(k 2 − 3)
+                 (k − 1)2 
+                                                        
+                                       k              k
+          −                     m(H   G  )  +  n 1 (H G )
+                k(k 2 − 3)
+                k−1
+          −
+             k(k 2 − 3)
+           2               3
+                                  k + k2 − k − 1
+                                                                    2                 2          
+             k +k−4                                                   k +1                k + 2k + 1
+         =                                                  |V2 | −             |V1 | +
+              k(k 2 − 3)                     2                           2                     2
+                                                    2
+                                                     
+                            k
+                                        (k − 1)
+           +(k − 1)n1 (HG     ) −                          (k 2 + k − 1)|V2 | − (k + 1)|V1 |
+                                        k(k 2 − 3)
+                                k
+                                             k−1
+           +(k + 2) + n1 (HG      ) −
+                                          k(k 2 − 3)
+           5         3       2
+                                                          4
+                                                             k − k 3 − k 2 + 3k − 6
+                                                                                      
+             k − 2k − 2k − 3k + 6
+         =                                      |V2 | −                                  |V1 |
+                     2k(k 2 − 3)                                    2k(k 2 − 3)
+              3
+                k − k 2 − 3k + 3                        k 4 + k 3 − k 2 − 3k − 6
+                                     
+                                                k
+          +                             n  1 (H G  ) +
+                    k(k 2 − 3)                                  2k(k 2 − 3)
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                                 22
+           3                    2
+                                                                             k2 + k + 2
+                                                              
+            k +k−2                k −k+2                  k−1           k
+         =              |V2 | −                 |V1 | +            n1 (HG )+
+                 2k                     2k                  k                    2k
+           3                   2           
+            k +k−2                k −k+2                      k     1
+         =              |V2 | −                 |V1 | + n1 (HG  ) − ((k − 1)|V1 | − |V2 | + 1)
+                 2k                     2k                          k
+              2
+            k +k+2
+          +
+                 2k 
+                      k2 + 1
+                                             
+                k                          k+1           k+1
+         =n1 (HG ) +            |V2 | −          |V1 | +
+                         2                  2               2
+               k
+         =n1 (HG ) + α0 (G)
+         =α(H).
+
+This completes the proof of Proposition 22.
+
+
+5    Summary
+For small values of k ⩾ 3, the results in this paper are summarized in Table 1 and Table 2
+below.
+    k even                                 H has order n and size m.
+                       H ∈ Hk                       H ∈ Hk0                 H ∈ Hk00
+     k=4        20τ (H) ⩽ 4n + 3m + 5        20τ (H) ⩽ 4n + 3m + 3   20τ (H) ⩽ 4n + 3m + 1
+               20α(H) ⩾ 6n − 3m − 5         20α(H) ⩾ 6n − 3m − 3     20α(H) ⩾ 6n − 3m − 1
+     k=6        42τ (H) ⩽ 6n + 5m + 7        42τ (H) ⩽ 6n + 5m + 3   42τ (H) ⩽ 6n + 5m + 1
+               42α(H) ⩾ 8n − 5m − 7         42α(H) ⩾ 8n − 5m − 3     42α(H) ⩾ 8n − 5m − 1
+     k=8        72τ (H) ⩽ 8n + 7m + 9        72τ (H) ⩽ 8n + 7m + 3   72τ (H) ⩽ 8n + 7m + 1
+               72α(H) ⩾ 10n − 7m − 9        72α(H) ⩾ 10n − 7m − 3 72α(H) ⩾ 10n − 7m − 1
+                          Table 1. Results for small values of even k ⩾ 4
+
+
+
+                              k odd     H ∈ Hk has order n and size m.
+                              k=3           9τ (H) ⩽ 2n + 2m + 1
+                                            9α(H) ⩾ 4n − 2m − 1
+                              k=5           55τ (H) ⩽ 9n + 8m + 2
+                                           55α(H) ⩾ 13n − 8m − 2
+                              k=7         161τ (H) ⩽ 20n + 18m + 3
+                                          161α(H) ⩾ 26n − 18m − 3
+                          Table 2. Results for small values of odd k ⩾ 3
+
+    We have further shown that in each of the inequality statements involving the transver-
+sal number or the independence number, there is an infinite family of hypergraphs H ∈ Hk
+for which equality holds, implying that all the bounds are tight.
+
+
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                                     23
+References
+ [1] E. Berger and Z. Ran, A note on the edge cover number and independence number
+     in hypergraphs. Discrete Math. 308:2649–2654, 2008.
+ [2] P. Borowiecki, F. Göring, J. Harant, and D. Rautenbach. The potential of greed for
+     independence. J. Graph Theory 71(3):245–259, 2012.
+ [3] Cs. Bujtás, M. A. Henning and Zs. Tuza, Transversals and domination in uniform
+     hypergraphs. European J. Combin. 33:62–71, 2012.
+ [4] Y. Caro and A. Hansberg. New approach to the k-independence number of a graph.
+     Electron. J. Combin. 20(1):#P33, 2013.
+ [5] V. Chvátal and C. McDiarmid, Small transversals in hypergraphs. Combinatorica
+     12:19–26, 1992.
+ [6] E. J. Cockayne, S. T. Hedetniemi and P. J. Slater. Matchings and transversals in
+     hypergraphs, domination and independence-in trees. J. Combin. Theory B 27:78–80,
+     1979.
+ [7] M. Dorfling and M. A. Henning, Linear hypergraphs with large transversal number
+     and maximum degree two. European J. Combin. 36:231–236, 2014.
+ [8] P. Erdős, C. Ko, and R. Rado, Intersection theorems for systems of finite sets. Quart.
+     J. Math. Oxford 12(2):313–320, 1961.
+ [9] S. Fajtlowicz, Independence, clique size and maximum degree. Combinatorica 4:35–
+     38, 1984.
+[10] M. M. Halldórsson and E. Losievskaja, Independent sets in bounded-degree hyper-
+     graphs. Discrete Applied Math. 157(8):1773–1786, 2009.
+[11] J. Harant, A lower bound on independence in terms of degrees. Discrete Applied
+     Math. 159(10):966–970, 2011.
+[12] J. Harant and D. Rautenbach, Independence in connected graphs. Discrete Applied
+     Math. 159(1):79–86, 2011.
+[13] C. C. Heckman and R. Thomas, Independent sets in triangle-free cubic planar graphs.
+     J. Combin. Theory B 96:253–275, 2006.
+[14] M. A. Henning and C. Löwenstein, A characterization of the hypergraphs that achieve
+     equality in the Chvátal-McDiarmid Theorem. Discrete Math. 323:69–75, 2014.
+[15] M. A. Henning and C. Löwenstein, The Fano plane and the strong independence ratio
+     in hypergraphs of maximum degree three. J. Graph Theory 82(3):196–208, 2016.
+[16] M. A. Henning, C. Löwenstein, and D. Rautenbach, Independent sets and matchings
+     in subcubic graphs. Discrete Math. 312(11): 1900–1910, 2012.
+[17] M. A. Henning, C. Löwenstein, J. Southey, and A. Yeo, A new lower bound on the in-
+     dependence number of a graph and applications. Electron. J. Combin. 21(1):#P1.38,
+     2014.
+
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                             24
+[18] M. A. Henning and A. Yeo, Hypergraphs with large transversal number and with
+     edge sizes at least three. J. Graph Theory 59:326–348, 2008.
+[19] M. A. Henning and A. Yeo, Tight lower bounds on the matching number in a graph
+     with given maximum degree, manuscript. arXiv:1604.05020.
+[20] A. J. W. Hilton and E. C. Milner, Some intersection theorems for systems of finite
+     sets. Quart. J. Math. Oxford 18:369–384, 1967.
+[21] K. F. Jones, Independence in graphs with maximum degree four. J. Combin. Theory
+     B 37:254–269, 1984.
+[22] K. F. Jones, Size and independence in triangle-free graphs with maximum degree
+     three. J. Graph Theory 14:525–535, 1990.
+[23] B. K. Jose and Z. Tuza, Hypergraph domination and strong independence. Applicable
+     Analysis & Discrete Math. 3(2):347–358, 2009.
+[24] L. Lovász and M. D. Plummer, Matching Theory, North-Holland Mathematics Stud-
+     ies, vol. 121, Ann. Discrete Math., vol. 29, North-Holland, 1986.
+[25] A. Kostochka, D. Mubayi, and J. Verstraëte, On independent sets in hypergraphs.
+     Random Struct. Alg. 44:224–239, 2014.
+[26] F. C. Lai and G. J. Chang. An upper bound for the transversal numbers of 4-uniform
+     hypergraphs. J. Combin. Theory Ser. B 50:129–133, 1990.
+[27] C. Löwenstein, A. S. Pedersen, D. Rautenbach, and F. Regen, Independence, odd
+     girth, and average degree. J. Graph Theory 67(2):96–111, 2011.
+[28] M. Plummer, Factors and Factorization. 403–430. Handbook of Graph Theory ed. J.
+     L. Gross and J. Yellen. CRC Press, 2003, ISBN: 1-58488-092-2.
+[29] W. R. Pulleyblank, Matchings and Extension. 179–232. Handbook of Combinatorics
+     ed. R. L. Graham, M. Grötschel, L. Lovász. Elsevier Science B.V. 1995, ISBN 0-444-
+     82346-8.
+[30] S. Thomassé and A. Yeo, Total domination of graphs and small transversals of hy-
+     pergraphs. Combinatorica 27:473–487, 2007.
+[31] G. Zhou and Y. Li, Independence numbers of hypergraphs with sparse neighborhoods.
+     European J. Combin. 25:355–362, 2004.
+
+
+
+
+the electronic journal of combinatorics 24(2) (2017), #P2.50                           25
+
