@@ -2,7 +2,7 @@
 
 - **Citation:** A. Gyárfás, J. Lehel, J. Combin. Theory Ser. B 64 (1995) 108–118, doi:10.1006/jctb.1995.1028 (received 3 Dec 1993).
 - **Link:** author scan https://users.renyi.hu/~gyarfas/Cikkek/69_linset5.pdf (local copy `kb/literature/papers/gyarfas_lehel_1995.pdf`).
-- **Read from:** the local copy, in full, 11 pages. It is a **scanned image PDF with no text layer** (`pdftotext` gives nothing). The page images were read visually (renders in `experiments/20261013-2257-paper-digest/glh-*.png`). So every statement below is read off the actual paper, not from secondary sources. Statements marked [verified-here] are my own checks.
+- **Read from:** the local copy, in full, 11 pages. It is a **scanned image PDF with no text layer** (`pdftotext` gives nothing). The page images were read visually (regenerate with `pdftoppm -r 130 -png kb/literature/papers/gyarfas_lehel_1995.pdf glh`). So every statement below is read off the actual paper, not from secondary sources. Statements marked [verified-here] are my own checks.
 - **Paper length:** 11 pages: Intro and Theorems A, B (pp. 108–110); §2 properties of (4,5)-sets (pp. 110–113); §3 transversals (pp. 113–117); one corollary and the references (p. 118). There are no concluding remarks and no open-problem section.
 
 ## 0. What the paper does NOT contain
