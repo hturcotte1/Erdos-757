@@ -18,3 +18,5 @@ Before starting a direction, grep this file. When you abandon an approach, add a
 | D12 | The 2·3-smooth weak-Sidon construction of Ma–Tang | Its APs overlap in two points, so it is not linear and not (4,5) | Ma–Tang §4.1 |
 | D13 | Whole midpoint-depth layers; the shortest multiplicative recurrence | Recover only known bounds | omega #9804 |
 | D14 | Uniformly random midpoint maps | Almost never linear (2 in 3000 at $n=16$); generate maps with constraint propagation instead | [verified-here] |
+| D15 | Direct SAT/CP-SAT decision of alpha<=9 at n=16 (even with K30/K31/cores and a 30-way case split) | every sub-case exceeds 3000 s in CP-SAT and 600-700 s in glucose/cadical; pure-SAT UNSAT time grows from 2.4 s (n=12) to 256 s (n=13) | experiments/20261014-0450-n16-cases, experiments/20261014-0515-sat-indep |
+| D16 | Simulated annealing over saturated midpoint maps at n=16 (and 18) | ~4M states, 28,589 genuine (4,5)-sets, best h=10; alpha<=9 never reached even combinatorially | experiments/20261013-2257-anneal16/best.json |
