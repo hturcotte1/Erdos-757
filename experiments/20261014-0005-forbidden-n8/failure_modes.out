@@ -1,0 +1,22 @@
+(1, 'O(core 2 edges)') 1
+(2, 'O(core 2 edges)') 16
+(3, 'O(core 2 edges)') 78
+(4, 'O(core 2 edges)') 13
+(4, 'forced repeated difference') 1
+(5, 'O(core 2 edges)') 1425
+(5, 'O(core 4 edges)') 9
+(5, 'forced repeated difference') 54
+(6, 'O(core 2 edges)') 91
+(6, 'forced extra AP') 4
+(6, 'forced repeated difference') 5
+(7, 'O(core 2 edges)') 1267
+(7, 'O(core 4 edges)') 22
+(7, 'forced repeated difference') 41
+(8, 'O(core 2 edges)') 667
+(8, 'O(core 4 edges)') 28
+(8, 'forced repeated difference') 10
+(9, 'O(core 2 edges)') 127
+(9, 'O(core 4 edges)') 4
+(9, 'forced extra AP') 4
+(10, 'O(core 2 edges)') 3
+TOTAL {'O(core 2 edges)': 3688, 'forced repeated difference': 111, 'O(core 4 edges)': 63, 'forced extra AP': 8}

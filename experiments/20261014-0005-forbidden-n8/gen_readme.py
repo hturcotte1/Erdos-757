@@ -87,6 +87,31 @@ def lab_str(lab):
     return "; ".join(mid_str(e, m) for e, m in lab)
 
 
+def medial_triangle(lab):
+    import itertools
+    for (a, ma), (b, mb), (c, mc) in itertools.combinations(lab, 3):
+        s = [set(a) & set(b), set(a) & set(c), set(b) & set(c)]
+        if all(len(x) == 1 for x in s) and len(set.union(*s)) == 3:
+            corners = set.union(*s)
+            if not ({ma, mb, mc} & corners):
+                return True
+    return False
+
+
+def medial_4cycle(lab):
+    import itertools
+    if len(lab) != 4:
+        return False
+    for p in itertools.permutations(lab):
+        E = [set(x[0]) for x in p]
+        ok = all(len(E[i] & E[(i + 1) % 4]) == 1 for i in range(4)) and not (E[0] & E[2]) and not (E[1] & E[3])
+        if ok:
+            corners = set.union(*[E[i] & E[(i + 1) % 4] for i in range(4)])
+            if not ({x[1] for x in p} & corners):
+                return True
+    return False
+
+
 def verify_realization(n, rf, vals):
     want = {frozenset(e) for e in rf}
     pos = {v: i for i, v in enumerate(vals)}
@@ -119,6 +144,7 @@ def why(o):
 
 def main():
     lines = []
+    large = []
     stats = []
     by_h = OrderedDict()
     for c in cat["classes"]:
@@ -141,8 +167,20 @@ def main():
             else:
                 kinds = "/".join(k for k in "OED" if cnt[k])
                 verdict = f"FORBIDDEN in every order ({kinds})"
+            reason = ""
             if not c["mids_injective"]:
-                verdict += " [shared midpoint: a+b = c+d]"
+                reason = "two edges share a midpoint m: x_p+x_q = 2m = x_r+x_s, a parallelogram"
+            elif R == 0:
+                if medial_triangle(c["labeling"]):
+                    reason = "contains a medial triangle (K31)"
+                elif medial_4cycle(c["labeling"]):
+                    reason = "medial 4-cycle: Varignon, x_c+x_h = x_e+x_g"
+                elif all(o["verdict"] == "order-infeasible" and len(forbidden_core(n, [tuple(e) for e in o["rank_form"]], ("order",))) == 2
+                         for o in c["orders"]):
+                    reason = "every order violates monotone midpoints (K30)"
+                else:
+                    reason = "see orders"
+            verdict += (" -- " + reason) if reason else ""
             lines.append(f"| {hid}.{t+1} | {lab_str(c['labeling'])} | {'yes' if c['mids_injective'] else 'no'} | {tot} | "
                          f"{R} | {cnt['O']} | {cnt['E']} | {cnt['D']} | {verdict} |")
             stats.append({"hid": hid, "idx": t + 1, "n": n, "labeling": lab_str(c["labeling"]), "orders": tot,
@@ -151,6 +189,7 @@ def main():
             d = [f"**{hid}.{t+1}** `{lab_str(c['labeling'])}`"]
             realized = [o for o in c["orders"] if o["verdict"] == "realizable"]
             full = n <= 6
+            big = []   # details for the long file
             show = c["orders"] if full else (realized[:1] if realized else c["orders"][:3])
             for o in show:
                 inv = o["order"]
@@ -165,8 +204,14 @@ def main():
                 d.append(f"- ({tot} orders in total; first realizable shown{'' if realized else ', none realizable: first 3 orders shown'})")
             details.append("\n".join(d))
         lines.append("")
-        lines.extend(x + "\n" for x in details)
+        if n <= 6:
+            lines.extend(x + "\n" for x in details)
+        else:
+            large.append(f"### H{hid}: {NAMES[tuple(map(tuple, edges))]} ({n} vertices): orders\n")
+            large.append("Edges: " + ", ".join("{" + ",".join(L(v) for v in e) + "}" for e in edges) + ".\n")
+            large.extend(x + "\n" for x in details)
     open(OUT, "w").write("\n".join(lines))
+    open(OUT.replace(".md", "_orders_7_8_vertices.md"), "w").write("\n".join(large))
     json.dump(stats, open(OUT + ".stats.json", "w"), indent=0)
 
 

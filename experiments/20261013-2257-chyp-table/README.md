@@ -9,8 +9,8 @@ Engine: `e757/cpsat_model.py` (OR-tools CP-SAT).  Boolean e[i,j,k]; (a) at-most-
 (b) at-most-one edge per vertex pair, reflection lex-leader, lazy F7 no-goods (find all F7 copies in
 each solution, forbid them).  alpha <= T is encoded EAGERLY: every (T+1)-subset of vertices contains an
 edge (C(n,T+1) clauses).  This was ~15x faster than the lazy alpha-cut CEGAR loop that the spec suggested
-(n=14, T=8: 5 s vs 81-89 s; n=16 lazy did not converge in 10 min), so lazy alpha cuts remain in the module
-(`feasible_alpha_le(..., eager=False)` is not exposed; the loop code is `_cegar_step`) but eager is default.
+(n=14, T=8: 5 s vs 81-89 s; n=16, T=9 lazy did not converge in 10 min).  The lazy alpha-cut CEGAR
+loop is still in the module (`eager=False` in `solve_min_alpha` / `feasible_alpha_le`).
 T is decreased from n; each SAT answer gives T = alpha - 1.
 `use_hy=True` additionally imposes m >= ceil((17(n-T)-5n)/3) (consequence of the PUBLISHED Henning-Yeo
 inequality, valid only for F7-free): rows labelled "HY-assisted" depend on that theorem; "solver-only" rows do not.
@@ -40,6 +40,10 @@ HY-ASSISTED (F7-free): c_hyp(13)=8, c_hyp(14)=8, c_hyp(15)=9 (witnesses re-verif
 steps (13: T=7, 14: T=7, 15: T=8) are immediate consequences of Henning-Yeo (m_need > n-2), i.e. not
 independent solver proofs.  Since f(13)=8, f(14)=8, f(15)=9 are known, c_hyp(n)=f(n) there: c_hyp(13)=8 not 7.
 
+SOLVER-ONLY n=13 (no HY input): F7-free upper bound 8 found; the T=7 infeasibility was NOT proved in 1500 s
+(shared machine) -- so the solver alone cannot yet certify c_hyp(13)=8; HY does it instantly.  n=13 no-F7 and n=14
+solver-only were not completed.
+
 n=16, T=9 (F7-free, m >= 13 forced by HY): STATUS at hand-back: the run
 `run_feas.py 16 9 1 1 6000 4` was still running (log run.log; result file
 results/feas_n16_T9_f71_hy1_mNone.json appears when it finishes: result SAT => c_hyp(16)=9 and the witness
@@ -50,3 +54,17 @@ No conclusion on c_hyp(16) is claimed here.
 ## Conclusion
 Engine works and agrees with brute force for n<=9 and with the known f(n) up to n=15.  Eager alpha
 encoding is the right design.  c_hyp(16) is undecided at hand-back.
+
+## Table (solver-only n=5..12; time columns are wall-clock s on a loaded machine)
+| n | c_hyp (F7-free) | c_hyp (no F7) | min m (F7-free) | min m (no F7) | HY lower | f(n) known | time F7 / noF7 (s) |
+|---|---|---|---|---|---|---|---|
+| 5 | 4 | 4 | <=1 | <=1 | 4 | 4 | 0.0 / 0.0 |
+| 6 | 4 | 4 | 2 | 2 | 4 | 4 | 0.0 / 0.0 |
+| 7 | 5 | 4 | 2 | 5 | 5 | 5 | 0.3 / 0.0 |
+| 8 | 5 | 5 | 5 | 5 | 5 | 5 | 0.0 / 0.0 |
+| 9 | 6 | 6 | 3 | 3 | 6 | 6 | 0.8 / 0.8 |
+| 10 | 6 | 6 | <=7 | 6 | 6 | 6 | 0.4 / 0.5 |
+| 11 | 7 | 7 | <=6 | <=6 | 7 | 7 | 10.6 / 10.1 |
+| 12 | 7 | 7 | <=10 | <=10 | 7 | 7 | 6.3 / 6.4 |
+
+Jobs still running at hand-back: n=16 T=9 (pid in experiments/20261013-2257-chyp-table/job.pid; result file results/feas_n16_T9_f71_hy1_mNone.json) and the m_exact=14 sub-case (results/feas_n16_T9_f71_hy1_m14.json). To finish: run aggregate.py and check.py after they complete.

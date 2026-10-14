@@ -1,0 +1,10 @@
+n=5 two edges sharing a vertex [2 edges] kind=order: 1
+n=6 triangle [3 edges] kind=diff: 3
+n=6 two disjoint edges [2 edges] kind=order: 1
+n=7 star3+transversal [4 edges] kind=extra_ap: 4
+n=7 two triangles sharing two edges [4 edges] kind=extra_ap: 4
+n=7 two triangles sharing two edges [4 edges] kind=order: 4
+n=8 4-cycle [4 edges] kind=diff: 10
+n=8 4-cycle [4 edges] kind=order: 28
+n=8 triangle+pendant at corner [4 edges] kind=order: 9
+n=8 triangle+pendant at private vertex [4 edges] kind=order: 22

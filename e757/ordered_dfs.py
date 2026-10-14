@@ -40,6 +40,16 @@ size T+1 the whole subtree can be discarded.  (In particular, at a leaf R_f is e
 the exact test alpha > T.)  Also, every vertex of R \\ R_f is a forced none, so the budget
 check  nones_used + |R \\ R_f| <= (n-2) - m_min  is a further sound prune.
 
+Refined alpha pruning (`refine=True`, default; stronger than the rule above, also sound).  For r in
+R_f let F(r) be the list of currently feasible edges (i,r,k) (pairs unused, k > M[i]); every future edge
+with midpoint r is one of them.  For a vertex set S that contains no edge of E_cur put
+    K(S) = { r in S & R_f : some (i,r,k) in F(r) has {i,k} inside S }.
+Then S minus K(S) contains no edge of the final hypergraph: a future edge f inside S minus K(S) has its midpoint
+r_f in S & R_f and f is in F(r_f) and inside S, so r_f in K(S), i.e. r_f is not in S minus K(S) -
+contradiction; edges of E_cur are not inside S.  So alpha_final >= |S| - |K(S)|, and the subtree is
+discarded if some S has |S| - |K(S)| >= T+1.  (K(S) can only grow when S grows, which gives the
+branch-and-bound bound size + |candidates| - |K(chosen)|.)  S = V minus R_f gives the previous rule.
+
 Reflection j -> n-1-j maps (i,j,k) -> (n-1-k, n-1-j, n-1-i); it preserves (a)-(d) and alpha.  It is NOT
 used to prune the DFS (the DFS order is not reflection-compatible); `up_to_reflection=True` only
 filters leaves to one representative per orbit (sorted edge tuple <= its reflection), which is exact.
@@ -104,6 +114,40 @@ def _indep_search(by_v, cand, chosen, size, best, stop_at):
     return best
 
 
+def _indep_search2(by_v, pm, rf, cand, chosen, size, killed, best, stop_at):
+    """Like _indep_search but maximises |S| - |K(S)| (see the module docstring, refined pruning).
+    pm[r] = list of {i,k} masks of the feasible edges with midpoint r; rf = mask of such r."""
+    val = size - killed.bit_count()
+    if val > best:
+        best = val
+        if best >= stop_at:
+            return best
+    while cand:
+        if val + cand.bit_count() <= best:
+            return best
+        v = (cand & -cand).bit_length() - 1
+        cand &= cand - 1
+        cand2 = cand
+        for om in by_v[v]:
+            inter = om & chosen
+            if inter:
+                cand2 &= ~(om ^ inter)
+        ch2 = chosen | (1 << v)
+        k2 = killed
+        todo = ch2 & rf & ~killed
+        while todo:
+            r = (todo & -todo).bit_length() - 1
+            todo &= todo - 1
+            for m in pm[r]:
+                if m & ~ch2 == 0:
+                    k2 |= 1 << r
+                    break
+        best = _indep_search2(by_v, pm, rf, cand2, ch2, size + 1, k2, best, stop_at)
+        if best >= stop_at:
+            return best
+    return best
+
+
 def independence_number(n, edges, allowed=None, stop_at=None):
     """Exact alpha of the 3-graph `edges` on vertices 0..n-1 restricted to the vertex mask
     `allowed` (default all).  With stop_at, may return early once a set of that size is found."""
@@ -158,7 +202,7 @@ class Search:
 
     def __init__(self, n, T, m_min=0, m_exact=None, forbid_f7=False, monotone=True,
                  node_filter=None, use_hy=False, up_to_reflection=False, on_solution=None,
-                 limit=None, time_limit=None, lower_T=True):
+                 limit=None, time_limit=None, refine=True):
         self.n = n
         self.T = T
         self.forbid_f7 = forbid_f7
@@ -174,6 +218,7 @@ class Search:
         self.m_min = m_min
         self.m_exact = m_exact
         self.use_hy = use_hy
+        self.refine = refine
         self.nodes = self.leaves = self.solutions = 0
         self.stopped = False
         self.timed_out = False
@@ -237,9 +282,27 @@ class Search:
             return
         if len(edges) + (n - 1 - j) - forced_none < self._m_need():
             return  # not enough room left for m_min edges (same as the budget test; kept explicit)
-        allowed = ((1 << n) - 1) & ~rf_mask
-        if independence_number(n, edges, allowed, stop_at=self.T + 1) > self.T:
-            return
+        if self.refine and rf_mask:
+            pm = [[] for _ in range(n)]
+            for r in range(j, n - 1):
+                if not (rf_mask >> r) & 1:
+                    continue
+                for i in range(r):
+                    if (nb[r] >> i) & 1:
+                        continue
+                    lo = r if not self.monotone else max(r, M[i])
+                    ak = ((1 << n) - 1) & ~((1 << (lo + 1)) - 1) & ~(nb[i] | nb[r])
+                    while ak:
+                        k = (ak & -ak).bit_length() - 1
+                        ak &= ak - 1
+                        pm[r].append((1 << i) | (1 << k))
+            if _indep_search2(_edge_tables(n, edges), pm, rf_mask, (1 << n) - 1, 0, 0, 0, 0,
+                              self.T + 1) > self.T:
+                return
+        else:
+            allowed = ((1 << n) - 1) & ~rf_mask
+            if independence_number(n, edges, allowed, stop_at=self.T + 1) > self.T:
+                return
         if j == n - 1:
             self.leaves += 1
             if len(edges) < self._m_need():
@@ -314,13 +377,13 @@ class Search:
 
 def enumerate_solutions(n, T, m_min=0, m_exact=None, callback=None, forbid_f7=False,
                         monotone=True, up_to_reflection=False, use_hy=False, node_filter=None,
-                        limit=None, time_limit=None):
+                        limit=None, time_limit=None, refine=True):
     """Call callback(edges, alpha) for every member of O(n) with alpha <= T and >= m_min edges
     (== m_exact if given).  Returns stats dict (nodes, leaves, solutions, timed_out)."""
     s = Search(n, T, m_min=m_min, m_exact=m_exact, forbid_f7=forbid_f7, monotone=monotone,
                node_filter=node_filter, use_hy=use_hy, up_to_reflection=up_to_reflection,
                on_solution=(lambda e, a: callback(e, a)) if callback else None,
-               limit=limit, time_limit=time_limit)
+               limit=limit, time_limit=time_limit, refine=refine)
     s.run()
     return s.stats()
 
