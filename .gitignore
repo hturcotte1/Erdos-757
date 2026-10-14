@@ -13,3 +13,7 @@ experiments/**/logs/*.log
 e757/c/ordered_dfs
 experiments/20261014-0500-slack-landscape/results_*.jsonl
 experiments/20261014-0450-n16-cases/results/*_solutions.jsonl
+experiments/20261014-0550-n16-layered/results/*_solutions.jsonl
+experiments/20261014-0550-n16-layered/results/*_progress.json
+experiments/20261014-0610-extremal-census/results/*_solutions.jsonl
+experiments/20261014-0610-extremal-census/results/*_progress.json
