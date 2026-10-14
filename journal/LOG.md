@@ -79,3 +79,9 @@ Format for each work block:
 - meaning: the known records are a tiny sample; extremal sets at n=12 (and presumably 14) are abundant. The absence of any abstract alpha<=9 pattern at n=16 (three methods) is therefore the whole story for Track U.
 - evidence: experiments/20261014-0610-extremal-census/results/
 - decision: after the n=15 streams end (~08:00), run witness-mode sweeps at n=18,20,22; keep the (14,12) census running.
+
+## 2026-10-14T08:10Z U n=15 layer-1 streams finished (2 h each); sweep launched
+- result [heuristic]: class O' on 15 vertices with alpha<=9: m'=9 and m'=10 found NO solution in 2 h each (UNSAT not proven); m'=11 has >= 3,935 solutions (incomplete). So the degree bound deg(v)<=3 for a 16-point extremal hypergraph remains conditional (D15-type limitation).
+- launched: realizability-CEGAR sweep n=18 (eager), 20, 22, 23, 25 (hybrid), 1 h per size, 3 workers, resumable (experiments/20261014-0030-feasible-sizes/results). Witness mode only: a SAT answer would be a record candidate; TIMEOUT adds to the heuristic picture.
+- evidence: experiments/20261014-0550-n16-layered/results/n15_m*_progress.json, prod/run.log
+- decision: Track U stays open only through these witness-mode runs; main effort on verified partial results and the final report.

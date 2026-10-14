@@ -33,7 +33,7 @@ def h_exact(pts):
     """exact h = alpha (valid because pts is a (4,5)-set, hence weak Sidon); also returns a Sidon witness check"""
     return alpha(pts)
 
-def witness10(pts):
+def witness10(pts, target=10):
     """a 3-AP-free 10-subset that is genuinely Sidon (exact certificate for h>=10), or None"""
     pts = sorted(pts)
     edges = ap_edges(pts)
@@ -43,8 +43,8 @@ def witness10(pts):
     res = []
     def rec(i, cur, size):
         if res: return
-        if size + n - i < 10: return
-        if size == 10:
+        if size + n - i < target: return
+        if size == target:
             res.append(cur); return
         nxt = cur | (1 << i)
         if all(m & nxt != m for m in masks): rec(i+1, nxt, size+1)
@@ -130,6 +130,15 @@ def main():
         assert S is not None, (xs, ys)
         nwit += 1
     results['witness_certified'] = nwit
+    wit = {'pairs': [], 'generic_y': []}
+    for xs, ys, h in stored:
+        S = witness10(AF + [F(xs), F(ys)])
+        wit['pairs'].append({'x': xs, 'y': ys, 'S': [str(v) for v in S]})
+    for x in Px_ok:
+        S = witness10(AF + [x], target=9)
+        assert S is not None
+        wit['generic_y'].append({'x': str(x), 'y': 'generic (no AP with A u {x}); add y to S9', 'S9': [str(v) for v in S]})
+    json.dump(wit, open('/home/user/Erdos-757/experiments/20261014-0640-abase-extensions/witnesses.json', 'w'))
     results['n_stored'] = len(stored)
     results['stored'] = stored
     json.dump(results, open('/home/user/Erdos-757/experiments/20261014-0640-abase-extensions/results.json', 'w'))
