@@ -85,3 +85,7 @@ Format for each work block:
 - launched: realizability-CEGAR sweep n=18 (eager), 20, 22, 23, 25 (hybrid), 1 h per size, 3 workers, resumable (experiments/20261014-0030-feasible-sizes/results). Witness mode only: a SAT answer would be a record candidate; TIMEOUT adds to the heuristic picture.
 - evidence: experiments/20261014-0550-n16-layered/results/n15_m*_progress.json, prod/run.log
 - decision: Track U stays open only through these witness-mode runs; main effort on verified partial results and the final report.
+
+## 2026-10-14T09:25Z U sweep: n=18 witness search UNKNOWN after 1 h
+- result [heuristic]: realizability-CEGAR at (18, T=10, m=16) with K30/K31/cores found no witness and no refutation in 3600 s (3 workers). n=20 running. Census chain now on (14,12).
+- evidence: experiments/20261014-0030-feasible-sizes/results/n18_T10_m16.json
