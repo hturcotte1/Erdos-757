@@ -32,4 +32,4 @@ for tier in ('t1', 't2'):
                 s, e = sat_indep.decide(n, T, m, extra=ex, gl_constraints='LR', time_limit=900)
             print(tier, n, T, m, eng, s, round(time.time()-t0,1), flush=True)
             res['%s_%d_%s' % (tier, n, eng)] = s
-json.dump(res, open('validation.json', 'w'), indent=1)
+json.dump(res, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'validation.json'), 'w'), indent=1)
