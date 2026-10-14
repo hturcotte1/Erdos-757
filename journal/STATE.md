@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: running
-Last updated (UTC): 2026-10-14 05:05
+Last updated (UTC): 2026-10-14 05:55
 Phase/track: Phase 1 -> f(16) decision (relaunched after container restart 04:40 UTC); Track L design started
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
@@ -14,20 +14,19 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 - Abstract constant c_hyp(n) (ordered, linear, F7-free, no K30/K31) = f(n) for n=5..15 [verified-here, n=13..15 modulo HY]
   (experiments/20261013-2257-chyp-table/table.md)
 
-## Running jobs / agents (relaunched 04:50 UTC; the container restarted at 04:40 and killed all jobs)
-- CP-SAT worker: n=16 T=9 as a RESUMABLE case split (edge of vertex 1 x m in {13,14}) -> experiments/20261014-0450-n16-cases/results/*.json; then sweep n=18,20,22,23,25.
-- worker: HY slack landscape of O' and realizable class, n<=14 -> experiments/20261014-0500-slack-landscape
-- worker: independent recheck of the Q8 falsification -> experiments/referee/q8/report.md
-- DONE: n=8 catalogue (ACCEPTED by verifier, K33); Q8 NONE-FOUND (experiments/falsify/q8-omega-inequality); LP fit (experiments/20261014-0020-lp-fit); DFS engine (small-n cross-check only; n=16 needs ~1e14 nodes).
-- Annealer stopped (best h=10 at n=16 over 28k realizable sets).
+## Running jobs / agents
+- CP-SAT worker: LAYERED n=16 search (deletion-of-max lemma: enumerate O' on 15 vertices with alpha<=9, m'=9..13, then extend by vertex 15) -> experiments/20261014-0550-n16-layered/ (resumable streams). Direct 30-case split abandoned (all cases TIMEOUT 3000 s).
+- worker: independent pysat encoding of O' (e757/sat_indep.py) for the certificate + single-case timing.
+- DONE: slack landscape n<=14 (experiments/20261014-0500-slack-landscape): tau_max(n,n-2) = n/2-1 at even n<=14 in O' AND realizable; realizable = O' in every resolved cell.
+- DONE: Q8 confirmed (K34); n=8 catalogue (K33); LP fit; DFS engine (small-n cross-check only).
 
 ## Live hypotheses
 - [heuristic] Realizability is not the bottleneck at n=16 (21% of random linear saturated maps are (4,5)-sets); alpha is.
-- [conjecture] c_hyp(16) with K30 = 10, i.e. f(16) = 10. If so, the ordered class O' may beat 9/17 asymptotically -> abstract Track L theorem.
+- [verified-here] f(n) = ceil(n/2)+1 = HY bound for 6<=n<=15 and 17; HY = ceil(n/2)+1 up to n=23. Trivial GL bound tight at even n<=14. Two live hypotheses: (H1) HY stays tight at even n up to 22 (records at 16..22, c* <= 6/11) vs (H2) a wall at n=16 (f(16)=10, consistent with c*=4/7 and Q8). n=16 decides.
 - [community]+[heuristic] Q8 (7 tau(K) <= 3|R| + 2e_2 + 4e_1) survived ~570M states; with D empty it is h >= 4n/7, so all data is consistent with c* = 4/7 (which forces f(16)=10). Framework: kb/methods/trackL_inductive_framework.md.
 - [heuristic] Transversal reformulation: tau = min set T such that every midpoint j is in T or has a parent l(j) or r(j) in T (parent maps l<j<r; G_L, G_R are rooted forests).
 
 ## Next 3 actions
-1. n=16 case split: if all 30 cases UNSAT -> f(16)=10 modulo HY (certificate needs an independent encoding, e.g. pysat with a different alpha encoding, cross-checked at n<=12). If SAT -> realize exactly.
-2. Slack landscape -> pick an intermediate Q8-type target (a,b,c,d) with 3/7 < b/a < 8/17; falsify; then prover attempt with the forbidden cores.
-3. Checkpoint every 2 h (e757-checkpoint); all long jobs resumable.
+1. Layered n=16: read counts of 15-vertex extremal structures per m'; if small, finish the extension; realize every abstract n=16 solution exactly (record or f(16)=10).
+2. Certificate path: pysat second encoding cross-checks the n=15 counts; then verify-claim (type C) for whatever n=16 yields.
+3. Draft results/FINAL_REPORT.md as a living document at the next checkpoint; Track L target choice after n=16.
