@@ -134,3 +134,6 @@ Format for each work block:
 ## 2026-10-14T17:00Z P1 exact counts of extremal sets for n<=11 (K43)
 - result [verified-here]: saturated classes 1, 4, 66, 1262, 6644, 466,961 (n=6..11); non-saturated extremal patterns exist for all n<=11 (infinite families), none at n=12. n=13 skipped (CPU to the n=14 census).
 - evidence: experiments/20261014-1430-small-counts/
+
+## 2026-10-14T17:05Z P1 n=14 census relaunched with 4 workers
+- the resumable prefix-split driver was restarted with P=4 after the small-counts job ended (235/2537 prefixes already done; nothing lost beyond partial prefixes). Command in experiments/20261014-1005-census-dfs/README.md (P=4 now).
