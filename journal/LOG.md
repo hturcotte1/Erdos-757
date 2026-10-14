@@ -98,3 +98,8 @@ Format for each work block:
 - result [verified-here]: C DFS enumerates all class-O patterns at (12,10,alpha<=7): 2,226,490 labelled (1,113,245 up to reflection), 0 at m=9; after K31/4-edge-core filters 395,039; exact realization: 54,243 realizable (rigid) = affine classes of 12-point (4,5)-sets with h=7; all 5 known sets recovered; CP-SAT's 30,559 all present; judge passed 50. (14,12) estimated 55-70 h single-process: not launched.
 - evidence: experiments/20261014-1005-census-dfs/, results/proofs/L002-census-12-point-extremal-sets.md
 - decision: certificate L002 to referee; consider a prefix-split parallel DFS for (14,12).
+
+## 2026-10-14T11:20Z U/P1 sweep n=18,20,22 UNKNOWN; 14-point extremal sets are plentiful too
+- result [heuristic]: realizability-CEGAR witness searches at (18,10,16), (20,11,18), (22,12,20): UNKNOWN after 3600 s each (no record candidate, no refutation); n=23 running.
+- result [verified-here]: partial CP-SAT census at (14,12,alpha<=8): 1,474 abstract solutions in 2 h, 146 exactly realizable = 146 affine classes of 14-point (4,5)-sets with h=8 (A_base is one of many); judge spot check on 40: see this entry's command output in the main session (all PASS, h=8). Sets saved in experiments/20261014-0610-extremal-census/results/n14_realizable_sets_partial.json.
+- decision: (14,12) exact count via the prefix-split parallel DFS (worker); sweep continues at 23, 25 then ends.

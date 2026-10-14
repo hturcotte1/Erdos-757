@@ -31,6 +31,10 @@ static int mode_enum = 1, mode_min = 0, mode_count = 0, mode_est = 0;
 static long long nodes = 0, leaves = 0, solutions = 0;
 static int stopped = 0, timed_out = 0;
 static double t0;
+/* prefix split: pre=i-k,i-k,x,... fixes the choice at midpoints 1..plen (x = no edge); mode=prefixes depth=d prints
+ * every surviving node at level d+1 as "PRE <choices>" (same syntax), without searching below. */
+static int plen = 0, pre_i[MAXN], pre_k[MAXN], pdepth = 0, mode_pref = 0;
+static int cur_i[MAXN], cur_k[MAXN];
 
 /* edge stack */
 static int E_i[MAXN], E_j[MAXN], E_k[MAXN], ne = 0;
@@ -233,13 +237,22 @@ static void rec(int j, const State *s, int nones) {
         if (ne >= m_need() && (m_exact < 0 || ne == m_exact)) report_leaf();
         return;
     }
+    if (mode_pref && j == pdepth + 1) {
+        printf("PRE");
+        for (int l = 1; l <= pdepth; l++) { if (cur_k[l] < 0) printf("%sx", l > 1 ? "," : " "); else printf("%s%d-%d", l > 1 ? "," : " ", cur_i[l], cur_k[l]); }
+        printf("\n");
+        return;
+    }
     int budget = (n - 2) - (m_exact >= 0 ? m_exact : m_need());
     for (int i = 0; i < j; i++) {
         if ((s->nb[j] >> i) & 1) continue;
+        if (j <= plen && i != pre_i[j]) continue;
         int lo = mono ? (s->M[i] > j ? s->M[i] : j) : j;
         u32 ak = range_above(lo) & ~(s->nb[i] | s->nb[j]);
         while (ak) {
             int k = __builtin_ctz(ak); ak &= ak - 1;
+            if (j <= plen && k != pre_k[j]) continue;
+            cur_i[j] = i; cur_k[j] = k;
             push_edge(i, j, k);
             if (f7 && has_f7()) { pop_edge(); continue; }
             State s2 = *s;
@@ -253,7 +266,7 @@ static void rec(int j, const State *s, int nones) {
         }
         if (progress && j == 2 && i + 1 == 2) { /* nothing */ }
     }
-    if (nones + 1 <= budget) rec(j + 1, s, nones + 1);
+    if (nones + 1 <= budget && !(j <= plen && pre_k[j] != -1)) { cur_k[j] = -1; rec(j + 1, s, nones + 1); }
     if (progress && j <= 2) {
         printf("PROG level=%d midpoint=%d done t=%.1f nodes=%lld sols=%lld\n", j, j, now() - t0, nodes, solutions);
         fflush(stdout);
@@ -349,6 +362,15 @@ int main(int argc, char **argv) {
         else if (!strcmp(key, "probes")) probes = atoi(val);
         else if (!strcmp(key, "seed")) seed = atol(val);
         else if (!strcmp(key, "tl")) tl = atof(val);
+        else if (!strcmp(key, "depth")) pdepth = atoi(val);
+        else if (!strcmp(key, "pre")) {
+            char buf[512]; snprintf(buf, sizeof buf, "%s", val);
+            for (char *tok = strtok(buf, ","); tok; tok = strtok(NULL, ",")) {
+                plen++;
+                if (!strcmp(tok, "x")) { pre_i[plen] = -1; pre_k[plen] = -1; }
+                else if (sscanf(tok, "%d-%d", &pre_i[plen], &pre_k[plen]) != 2) { fprintf(stderr, "bad pre\n"); return 2; }
+            }
+        }
         else if (!strcmp(key, "mode")) snprintf(mode, sizeof mode, "%s", val);
         else { fprintf(stderr, "unknown key %s\n", key); return 2; }
     }
@@ -356,6 +378,7 @@ int main(int argc, char **argv) {
     if (T < 0) T = n;
     mode_enum = !strcmp(mode, "enum"); mode_min = !strcmp(mode, "min");
     mode_count = !strcmp(mode, "count"); mode_est = !strcmp(mode, "estimate");
+    mode_pref = !strcmp(mode, "prefixes");
     if (m_exact >= 0) m_min = m_exact;
     rng_s ^= (uint64_t)seed * 0x9E3779B97F4A7C15ULL; for (int t = 0; t < 10; t++) rnd();
     t0 = now();
