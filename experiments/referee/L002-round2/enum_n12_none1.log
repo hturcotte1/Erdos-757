@@ -1,0 +1,2 @@
+DONE n=12 T=7 maxnone=1 prune=1 split=-2 nodes=492821648 leaves=44909193 time=27.6
+COUNT m=10 alpha<=T: f7free=2226490 f7=451592

@@ -107,3 +107,8 @@ Format for each work block:
 ## 2026-10-14T11:30Z P1 (14,12) exact census launched (prefix-split C DFS); CP-SAT census chain stopped
 - launched: python3 -m e757.ordered_dfs_split 14 8 12 3 3 ... (2,537 depth-3 prefixes, 3 workers, resumable; est. 36-44 CPU-h; postprocess.py afterwards). Stopped the CP-SAT census chain (its (14,12) partial is harvested as K42; the (15,13) partial count was of marginal value).
 - evidence: experiments/20261014-1005-census-dfs/README.md, n14/run.log
+
+## 2026-10-14T13:00Z U census invariants: realizable and unrealizable extremal patterns are statistically alike
+- result [verified-here]: over the 395,196 K31/core-filtered (12,10,alpha<=7) patterns (54,243 realizable), ~65 statistics: max degree <= 4, colour classes (k-1,k) and no reflection symmetry hold for ALL patterns; the only invariants separating realizable from unrealizable are weak (at most one degree-1 vertex; deg(0)+deg(n-1) >= 3). Realizability looks 'random-like' (~14%) with respect to local structure.
+- launched: constrained (16,9,14) runs (glucose4, cadical153, CP-SAT x 2 tiers, 1 h each) -> experiments/20261014-1200-census-invariants/n16/*/run.log
+- evidence: experiments/20261014-1200-census-invariants/{README.md,tables.md}
