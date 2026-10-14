@@ -90,15 +90,21 @@ def main():
             for au in auts:
                 lab = tuple(sorted((tuple(sorted(au[v] for v in e)), au[mids[frozenset(e)]]) for e in edges))
                 if best is None or lab < best:
-                    best = lab
+                    best, bau = lab, au
             d = classes[best]
             if rfc not in d:
-                d[rfc] = perm
+                # re-express the order in the canonical vertex names: perm2[au[v]] = perm[v]
+                perm2 = [0] * nv
+                for v in range(nv):
+                    perm2[bau[v]] = perm[v]
+                d[rfc] = tuple(perm2)
         for lab, pats in sorted(classes.items()):
             rec = {"hid": hid, "n": nv, "edges": [list(e) for e in edges], "labeling": [[list(e), m] for e, m in lab],
                    "mids_injective": len({m for _, m in lab}) == len(lab), "orders": []}
             for rfc, perm in sorted(pats.items()):
                 inv = sorted(range(nv), key=lambda v: perm[v])   # inv[rank] = vertex
+                for e, m in lab:   # the order must be consistent with the displayed labeling
+                    assert sorted(e, key=lambda v: perm[v])[1] == m
                 if rfc not in cache:
                     if rec["mids_injective"] or True:
                         cache[rfc] = realize_exact(nv, list(rfc))
