@@ -337,3 +337,96 @@ def test_census_realizable_patterns_satisfy_clauses(n):
         passing += cheap
     # cores are complete up to 7 vertices, so the class O' coincides with the realizable patterns here
     assert passing == real_total, (n, passing, real_total)
+
+
+# ------------------------------------------------------------------------------------------
+# Gyarfas-Lehel colouring constraints (saturated case)
+# ------------------------------------------------------------------------------------------
+def _gl_direct_check(E, n, T):
+    """Direct check of the statement behind gl_constraints for a saturated pattern E (m = n-2)."""
+    left = {j: i for (i, j, k) in E}
+    right = {j: k for (i, j, k) in E}
+    assert sorted(left) == list(range(1, n - 1))
+    c = {0: 0}
+    for j in range(1, n - 1):  # parents are smaller, so ascending order works
+        c[j] = 1 - c[left[j]]
+    d = {n - 1: 0}
+    for j in range(n - 2, 0, -1):
+        d[j] = 1 - d[right[j]]
+    sl = sum(c.values())
+    sr = sum(d.values())
+    ok_l = n - T <= sl <= T - 1
+    ok_r = n - T <= sr <= T - 1
+    # both classes are transversals
+    for col, ends in ((c, "L"), (d, "R")):
+        for cls in (0, 1):
+            S = {v for v, x in col.items() if x == cls}
+            assert all(set(e) & S for e in E), (ends, cls)
+    return ok_l and ok_r
+
+
+def _min_T(E, n):
+    T = n
+    while T > 0 and chk_alpha(E, n, T - 1):
+        T -= 1
+    return T
+
+
+def test_gl_constraints_sound_on_records_and_census():
+    from e757.saturated import map_of_set
+    recs = json.load(open(os.path.join(ROOT, "data", "small_records.json")))["sets"]
+    items = []
+    for key, v in recs.items():
+        items.extend([v] if isinstance(v, dict) else v)
+    nsat = 0
+    for rec in items:
+        A = sorted(rec["set"])
+        n = len(A)
+        if rec["m"] != n - 2:
+            continue
+        nsat += 1
+        _, _, mid = map_of_set(A)
+        E = sorted((i, j, k) for j, (i, k) in mid.items())
+        T = rec["h"]
+        assert _gl_direct_check(E, n, T)
+        units = [(t, t in set(E)) for t in itertools.combinations(range(n), 3)]
+        for gl in ("L", "R", "LR"):
+            assert decide(n, T, n - 2, extra_unit=units, gl_constraints=gl)[0] == "SAT", (n, gl)
+    assert nsat >= 3
+    patterns = _pattern_generator(7)
+    from e757.realizability import realize_exact
+    cnt = 0
+    for n in range(4, 8):
+        for E in patterns(n):
+            E = list(E)
+            if len(E) != n - 2 or not realize_exact(n, E)[0]:
+                continue
+            cnt += 1
+            T = _min_T(E, n)
+            assert _gl_direct_check(E, n, T), (n, E, T)
+            units = [(t, t in set(E)) for t in itertools.combinations(range(n), 3)]
+            assert decide(n, T, n - 2, extra_unit=units, gl_constraints="LR")[0] == "SAT"
+            # one below the true alpha: the pattern is excluded by alpha (not tested for gl)
+    assert cnt >= 10
+
+
+def test_gl_constraints_do_not_change_min_alpha_saturated():
+    for n in range(8, 12):
+        res = {}
+        for gl in (False, "L", "R", "LR"):
+            T = n - 1
+            while True:
+                st, r = decide(n, T - 1, n - 2, gl_constraints=gl)
+                if st == "UNSAT":
+                    break
+                assert chk_all(r, n, T - 1)
+                T -= 1
+            res[gl] = T
+        assert len(set(res.values())) == 1, (n, res)
+    # the saturated min alpha is the table value or slightly larger
+    assert res[False] >= _table_cc()[11]
+
+
+def test_gl_requires_saturated():
+    with pytest.raises(ValueError):
+        decide(8, 5, 4, gl_constraints=True)
