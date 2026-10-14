@@ -112,3 +112,8 @@ Format for each work block:
 - result [verified-here]: over the 395,196 K31/core-filtered (12,10,alpha<=7) patterns (54,243 realizable), ~65 statistics: max degree <= 4, colour classes (k-1,k) and no reflection symmetry hold for ALL patterns; the only invariants separating realizable from unrealizable are weak (at most one degree-1 vertex; deg(0)+deg(n-1) >= 3). Realizability looks 'random-like' (~14%) with respect to local structure.
 - launched: constrained (16,9,14) runs (glucose4, cadical153, CP-SAT x 2 tiers, 1 h each) -> experiments/20261014-1200-census-invariants/n16/*/run.log
 - evidence: experiments/20261014-1200-census-invariants/{README.md,tables.md}
+
+## 2026-10-14T13:25Z U sweep finished: all record-feasible sizes UNKNOWN in witness mode
+- result [heuristic]: realizability-CEGAR witness searches with K30/K31/cores: n=18, 20, 22 (3600 s each), n=23 (m=19,20,21) and n=25 (m=21,22,23) (1200 s each): all UNKNOWN; no record candidate anywhere.
+- evidence: experiments/20261014-0030-feasible-sizes/results/*.json
+- decision: Track U witness searches exhausted for this run; remaining CPU to the (14,12) exact census and the constrained n=16 runs (results due ~13:40).

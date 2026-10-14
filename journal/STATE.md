@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: running
-Last updated (UTC): 2026-10-14 10:05
+Last updated (UTC): 2026-10-14 13:25
 Phase/track: Phase 1 censuses + Track U witness sweeps; Track L data-driven design (no proof idea yet)
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
@@ -15,10 +15,10 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
   (experiments/20261013-2257-chyp-table/table.md)
 
 ## Running jobs / agents
-- Sweep (realizability-CEGAR witness mode, 1 h/size, 3 workers): n=18 UNKNOWN; n=20 running; then 22, 23, 25 (experiments/20261014-0030-feasible-sizes/results).
-- Census chain: (12,10) partial: 30,559 abstract / 3,980 realizable classes (K40); (14,12) running (2 h limit), then (15,13) (experiments/20261014-0610-extremal-census).
-- worker (new): exhaustive (12,10) census with the C DFS engine (e757/c/ordered_dfs) + K31/cores filter + exact realization; (14,12) attempt.
-- DONE: L001 ACCEPTED (K13 verified); K30-K40; GL-tight lemmas (falsifier clean); inductive fit (K39); Q8 abstract failure (K38).
+- (14,12,alpha<=8) exact census: prefix-split C DFS, 3 workers, 20/2537 prefixes after 1.8 h under contention (experiments/20261014-1005-census-dfs/n14; resumable: rerun the README command after any restart; then postprocess.py).
+- Constrained (16,9,14) runs with census invariants: glucose4/cadical153/CP-SAT x 2 tiers, results in experiments/20261014-1200-census-invariants/n16/*/run.log (~13:40 UTC).
+- Referee round 3 on L002 (54,243 twelve-point extremal sets); rounds 1-2 reproduced everything independently (text fixes only).
+- DONE: sweep n=18..25 all UNKNOWN; L001 ACCEPTED; K30-K42.
 
 ## Live hypotheses
 - [heuristic] Realizability is not the bottleneck at n=16 (21% of random linear saturated maps are (4,5)-sets); alpha is.
@@ -28,6 +28,6 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 - [heuristic] Transversal reformulation: tau = min set T such that every midpoint j is in T or has a parent l(j) or r(j) in T (parent maps l<j<r; G_L, G_R are rooted forests).
 
 ## Next 3 actions
-1. Exact counts: exhaustive (12,10) abstract/realizable census (DFS); (14,12) if feasible. Record as verified counts.
-2. Harvest sweep outcomes (n=20..25) and the (14,12)/(15,13) census streams; update FINAL_REPORT.
-3. Track L: only if a concrete discharge idea for the (3,0,0) type with 5/6-edge cores appears; otherwise keep gathering exact structure data. Checkpoint every 2 h.
+1. Harvest the constrained n=16 outcomes; record SAT (realize+judge) / UNSAT (conditional theorem) / TIMEOUT.
+2. L002 ACCEPT -> LEDGER/K41 final; when the (14,12) census completes (tomorrow), run postprocess.py and write certificate L003 (exact number of 14-point extremal sets).
+3. Keep FINAL_REPORT current; checkpoint every 2-3 h. Budget end 2026-10-16 23:06 UTC.
