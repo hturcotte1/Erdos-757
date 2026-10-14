@@ -1,0 +1,110 @@
+[
+ {
+  "n": 8,
+  "T": 5,
+  "status": "SAT",
+  "seconds": 0.07,
+  "solver": "glucose4"
+ },
+ {
+  "n": 8,
+  "T": 4,
+  "status": "UNSAT",
+  "seconds": 0.02,
+  "solver": "glucose4",
+  "iterations": 1,
+  "f7_nogoods": 0,
+  "core_nogoods": 0,
+  "nclauses": 1796
+ },
+ {
+  "n": 9,
+  "T": 6,
+  "status": "SAT",
+  "seconds": 0.06,
+  "solver": "glucose4"
+ },
+ {
+  "n": 9,
+  "T": 5,
+  "status": "UNSAT",
+  "seconds": 0.06,
+  "solver": "glucose4",
+  "iterations": 1,
+  "f7_nogoods": 0,
+  "core_nogoods": 0,
+  "nclauses": 4428
+ },
+ {
+  "n": 10,
+  "T": 6,
+  "status": "SAT",
+  "seconds": 0.3,
+  "solver": "glucose4"
+ },
+ {
+  "n": 10,
+  "T": 5,
+  "status": "UNSAT",
+  "seconds": 0.05,
+  "solver": "glucose4",
+  "iterations": 1,
+  "f7_nogoods": 0,
+  "core_nogoods": 0,
+  "nclauses": 10350
+ },
+ {
+  "n": 11,
+  "T": 7,
+  "status": "SAT",
+  "seconds": 0.15,
+  "solver": "glucose4"
+ },
+ {
+  "n": 11,
+  "T": 6,
+  "status": "UNSAT",
+  "seconds": 6.21,
+  "solver": "glucose4",
+  "iterations": 1,
+  "f7_nogoods": 0,
+  "core_nogoods": 0,
+  "nclauses": 22506
+ },
+ {
+  "n": 12,
+  "T": 7,
+  "status": "SAT",
+  "seconds": 0.34,
+  "solver": "glucose4"
+ },
+ {
+  "n": 12,
+  "T": 6,
+  "status": "UNSAT",
+  "seconds": 2.39,
+  "solver": "glucose4",
+  "iterations": 1,
+  "f7_nogoods": 0,
+  "core_nogoods": 0,
+  "nclauses": 46398
+ },
+ {
+  "n": 13,
+  "T": 8,
+  "status": "SAT",
+  "seconds": 0.77,
+  "solver": "glucose4"
+ },
+ {
+  "n": 13,
+  "T": 7,
+  "status": "UNSAT",
+  "seconds": 255.7,
+  "solver": "glucose4",
+  "iterations": 1,
+  "f7_nogoods": 0,
+  "core_nogoods": 0,
+  "nclauses": 89947
+ }
+]

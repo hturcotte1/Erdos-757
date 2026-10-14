@@ -320,8 +320,11 @@ class _Run:
         rem = self.deadline - time.time()
         if rem <= 0:
             return None
-        if self.solver in ("cadical153", "cadical195", "cadical103", "cadical300"):
-            raise ValueError("time_limit needs an interruptible solver such as glucose4/maplechrono")
+        if self.solver.startswith(("cadical", "kissat", "lingeling", "cryptosat")):
+            # not interruptible through pysat: the limit is only checked between solver calls
+            # (wrap the process in `timeout` for a hard limit)
+            self.stats["time_limit_enforced"] = False
+            return self.s.solve()
         timer = threading.Timer(rem, lambda: self.s.interrupt())
         timer.start()
         try:

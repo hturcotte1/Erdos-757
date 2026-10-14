@@ -57,3 +57,8 @@ Format for each work block:
 - result: independent C re-implementation reproduces every Q8 count (A_base 3,253,568 valid states / 0 violations / 94,544 equalities; all seven records; 18 pool sets). Recorded as K34.
 - running: n=16 resumable case split (30 cases; experiments/20261014-0450-n16-cases), slack landscape n<=14 (experiments/20261014-0500-slack-landscape), independent pysat encoding of class O' (e757/sat_indep.py) for the certificate.
 - decision: Track L target = an inductive inequality of Q8 type; pick constants after the slack landscape.
+
+## 2026-10-14T05:50Z U/P1 n=16 case split abandoned; layered n=15 -> n=16 extension search
+- tried: 30-case CP-SAT split (vertex-1 edge x m) with K30/K31/cores; first 4 cases all TIMEOUT at 3000 s (experiments/20261014-0450-n16-cases/results/*.json).
+- observation [verified-here]: f(n) = ceil(n/2)+1 for 6 <= n <= 15 and n=17, which equals the Henning-Yeo bound exactly for 6 <= n <= 23 (python3 -m e757.fn_bounds); and in the abstract class O' the saturated extremal value is tau = n/2 - 1 at every even n <= 14, i.e. the trivial Gyarfas-Lehel bound h >= ceil((n+1)/2) is tight at even n <= 14 in both classes (experiments/20261014-0500-slack-landscape). So no lower-bound improvement exists for n <= 15; whether the wall appears at n=16 is exactly the open question.
+- decision: deletion-of-maximum lemma reduces the n=16 search to the n=15 extremal structures (alpha <= 9, m' = 9..13) plus a small extension step; dispatched to the CP-SAT worker as a resumable job. Sweep n=18..25 postponed.
