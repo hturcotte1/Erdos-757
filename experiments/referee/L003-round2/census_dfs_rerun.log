@@ -1,0 +1,12 @@
+n=6 m=4: DONE nodes=25 leaves=2 solutions=2 timed_out=0 time=0.00
+  [0 s]
+n=7 m=5: DONE nodes=141 leaves=10 solutions=10 timed_out=0 time=0.00
+  [0 s]
+n=8 m=6: DONE nodes=1474 leaves=260 solutions=260 timed_out=0 time=0.00
+  [0 s]
+n=9 m=7: DONE nodes=27208 leaves=8570 solutions=8570 timed_out=0 time=0.10
+  [0 s]
+n=10 m=8: DONE nodes=440201 leaves=79488 solutions=79488 timed_out=0 time=0.67
+  [1 s]
+n=11 m=9: DONE nodes=22336935 leaves=9871248 solutions=9871248 timed_out=0 time=29.64
+  [29 s]

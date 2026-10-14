@@ -1,0 +1,9 @@
+STATS n=10 k30=1 lin=1 r1=-1 leaves=338595 singular=0 fallback=0 orderfail=241715 notweakSidon=45468 not45=0 apbad=0 ok45=51412 printed=25706 symmetric=0 hhist 6:13288 7:38106 8:18
+elapsed .896001328 s
+STATS n=10 k30=0 lin=1 r1=-1 leaves=7887520 singular=0 fallback=0 orderfail=7790640 notweakSidon=45468 not45=0 apbad=0 ok45=51412 printed=25706 symmetric=0 hhist 6:13288 7:38106 8:18
+elapsed 4.612955160 s
+STATS n=10 k30=1 lin=0 r1=-1 leaves=51841968 singular=0 fallback=0 orderfail=34788108 notweakSidon=15348440 not45=1654008 apbad=0 ok45=51412 printed=25706 symmetric=0 hhist 6:13288 7:38106 8:18
+elapsed 22.511329041 s
+sat_n10_k0_l1.txt a4f5fcafbd8626b066961f8285b513c4  - 25706 0
+sat_n10_k1_l0.txt a4f5fcafbd8626b066961f8285b513c4  - 25706 0
+sat_n10_k1_l1.txt a4f5fcafbd8626b066961f8285b513c4  - 25706 0

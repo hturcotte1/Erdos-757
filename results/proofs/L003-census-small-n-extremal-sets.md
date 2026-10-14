@@ -1,27 +1,30 @@
 # Exact counts of extremal (4,5)-sets for n = 6..11
 CLAIM-TYPE: certificate (exhaustive enumeration with exact realization)
 TYPE: certificate
-STATUS: submitted (revised after referee round 1: dependencies, n-range wording, pre-filter attribution)
+STATUS: submitted (revised after referee rounds 1-2: dependencies, affine-equivalence wording, pre-filter and driver attribution)
 DEPENDS ON: K3-K6 [published] ((4,5) implies weak Sidon; h = alpha of the AP hypergraph; injective midpoints never at the extremes, so m <= n-2; linearity); K7 [published] (F7-free; imposed in the enumeration); K30 [verified-here] (monotone midpoints); K31-K33 [verified-here] (medial triangle and the forbidden cores with <= 4 edges, used by the pipeline as pre-filters at n=11: 3,263,957 of the 4,935,851 canonical saturated patterns were discarded by them without being realized; the referee's unfiltered recount over all 2,195,189,896 K30 midpoint maps at n=11 confirms the same 466,961 classes, results/reviews/L003-*__referee__20261014T181449Z.md); K8 [published] (Henning-Yeo, used to skip m below its minimum at n=10, 11); K24/K29 (f(6..11) = 4,5,5,6,6,7). The pipeline is the one certified in L002.
 
 ## Statement
 For n = 6, 7, 8, 9, 10, 11 the number of affine classes of SATURATED (m = n-2) n-point (4,5)-sets with h = f(n) is
-1, 4, 66, 1,262, 6,644, 466,961 respectively. For every n in 6..11 there also exist realizable non-saturated
-extremal patterns (m < n-2; their solution spaces have positive dimension, so each gives infinitely many affine
-classes of sets); hence the set of all extremal n-point (4,5)-sets is infinite for 6 <= n <= 11 (it is also infinite
-for n = 4, 5: {0,1,2,x} and {0,1,2,x,3x} for large x, and has one class for n = 1, 2, 3), and n = 12 is the smallest
-n >= 4 at which it is finite (L002: 54,243, no pattern at m = 9).
+1, 4, 66, 1,262, 6,644, 466,961 respectively. For every n in 6..11 there also exist realizable non-saturated extremal patterns (m < n-2). The AP equations of such a
+pattern have rank <= m <= n-3, so its realizations form a family of positive dimension modulo x -> qx+t, and each such
+pattern gives infinitely many affine classes. Hence, up to affine equivalence, the extremal n-point (4,5)-sets are:
+- infinitely many for 4 <= n <= 11 (for n = 4, 5: {0,1,2,x} and {0,1,2,x,3x}, any real x > 4);
+- exactly one for n = 1, 2, 3;
+- exactly 54,243 for n = 12 (L002: every extremal pattern is saturated, none at m = 9), the smallest n >= 4 with finitely
+  many affine classes.
 
 ## Proof
 1. (Reduction.) As in L002: an n-point (4,5)-set with h = f(n) has an AP pattern in class O (linear, F7-free,
    injective midpoints, K30) with alpha <= f(n) and 1 <= m <= n-2.
-2. (Enumeration.) For each n and each m from the Henning-Yeo minimum (K8) to n-2 (all m at n <= 9), the C DFS (e757/c/ordered_dfs, prefix-split driver with P=1) enumerates all
+2. (Enumeration.) For each n and each m from the Henning-Yeo minimum (K8) to n-2 (all m at n <= 9), the C DFS (e757/c/ordered_dfs; the prefix-split driver with P=1 only for (11,9)) enumerates all
    class-O patterns with exactly m edges and alpha <= f(n); counts (labelled and up to reflection) and the
    Henning-Yeo minimum m are in experiments/20261014-1430-small-counts/README.md and results/summary.json.
-3. (Exact realization, saturated case.) Saturated patterns surviving the K31 and <= 4-edge-core pre-filters are decided exactly (fastreal.py / realize_exact); the discarded ones are unrealizable by K31-K33, and the referee's unfiltered recount confirms the counts;
+3. (Exact realization, saturated case.) For n <= 10 every saturated pattern is decided exactly (fastreal.py / realize_exact); at n = 11 the K31 and <= 4-edge-core pre-filters were applied first and the surviving patterns decided exactly (the discarded ones are unrealizable by K31-K33, and both referee rounds' unfiltered recounts confirm the count);
    realizable saturated patterns are rigid (L002, M-matrix argument) and, up to reflection, in bijection with the
    affine classes; each realized set re-checked to be a (4,5)-set with the stored AP pattern and h = f(n); judge
-   spot check 20/20 for each n (50/50 at n=11, m=9).
+   spot checks: 20/20 per n over the realized sets (mostly non-saturated ones) and 50/50 saturated sets at n=11, m=9; the
+   referees' own spot checks (12/12, 26/26) cover saturated sets at every n.
 4. (Non-saturated case.) For each 6 <= n <= 11 at least one non-saturated pattern is realizable (exact counts for n <= 10;
    for n = 11 a sample of 300 patterns per m with 251/257/216 realizable at m = 6/7/8); a realizable pattern with
    m < n-2 has a solution space of dimension >= 1 after normalization, and a generic point of it is again a

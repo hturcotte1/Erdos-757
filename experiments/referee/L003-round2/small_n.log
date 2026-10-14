@@ -1,0 +1,10 @@
+n=1: extremal classes in [0,40]: 1 [(0,)]
+n=2: extremal classes in [0,40]: 1 [(0, 1)]
+n=3: extremal classes in [0,40]: 1 [(0, 1, 2)]
+n=4 family [0, 1, 2, 0] + t*[0, 0, 0, 1]: identically-equal distance pairs [((0, 1), (1, 2))]; roots [Fraction(1, 1), Fraction(2, 1), Fraction(3, 1), Fraction(4, 1)]; good for all t > 4
+   exact check t = 5..64: all (4,5), one AP, h = 3; 60 distinct affine classes
+n=5 family [0, 1, 2, 0, 0] + t*[0, 0, 0, 1, 3]: identically-equal distance pairs [((0, 1), (1, 2))]; roots [Fraction(-2, 1), Fraction(-1, 1), Fraction(-1, 2), Fraction(0, 1), Fraction(1, 3), Fraction(1, 2), Fraction(2, 3), Fraction(1, 1), Fraction(4, 3), Fraction(2, 1), Fraction(3, 1), Fraction(4, 1)]; good for all t > 4
+   exact check t = 5..64: all (4,5), one AP, h = 4; 60 distinct affine classes
+n=4: min h over (4,5)-subsets of [0,24] containing 0: 3 (f(n) = 3)
+n=5: min h over (4,5)-subsets of [0,24] containing 0: 4 (f(n) = 4)
+[0 s]
