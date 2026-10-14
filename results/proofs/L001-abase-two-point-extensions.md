@@ -1,0 +1,29 @@
+# No 2-point extension of A_base has a largest Sidon subset of size 9
+CLAIM-TYPE: certificate (exact computation with a case analysis)
+TYPE: certificate
+STATUS: submitted
+DEPENDS ON: K11 [published] (A_base is a (4,5)-set with h=8); K4 [published] (for weak Sidon sets h = alpha of the AP hypergraph); K5-K6 [published] (midpoint injectivity, linearity).
+
+## Statement
+Let $A=A_{\rm base}=\{0,136,200,243,246,249,272,286,298,323,400,528,596,1056\}$. For every pair of distinct reals
+$x,y\notin A$ such that $B=A\cup\{x,y\}$ is a (4,5)-set, $h(B)=10$. In particular no 16-point (4,5)-set
+containing $A_{\rm base}$ has $h\le 9$, i.e. $A_{\rm base}$ cannot be extended to a new record.
+(This upgrades K13 [community] to [verified-here]; the omega thread stated it with a ten-witness certificate.)
+
+## Proof (case analysis; every case decided by exact rational arithmetic)
+$h(B)\le h(A)+2=10$ trivially, so the content is $h(B)\ge10$. A 3-AP-free subset of $B$ of size 10 is exhibited in every case.
+Let $P_x$ be the finite set of reals that form a 3-AP with two points of $A$ (midpoints $(a+b)/2$ and endpoints $2b-a$, $a\ne b\in A$).
+Case T0: neither $x$ nor $y$ lies in any 3-AP of $B$. Then $S\cup\{x,y\}$ is 3-AP-free for a maximum Sidon subset $S$ of $A$: $h=10$.
+Case T1: $x\in P_x$ (by symmetry; $|P_x|=223$; exactly 50 values give a (4,5)-set $A\cup\{x\}$). Sub-case T1a: $y$ in no 3-AP of $A\cup\{x,y\}$: $h(B)=h(A\cup\{x\})+1=10$ (computed exactly for all 50 $x$). Sub-case T1b: $y$ in some 3-AP of $A\cup\{x,y\}$: $y$ ranges over a finite exact set; 11,774 candidate pairs, 1,743 of them (4,5)-sets, every one has $\alpha=10$ with an explicit 3-AP-free 10-subset stored in results.json.
+Case T2: $x,y\notin P_x$ but $\{a,x,y\}$ is a 3-AP for some $a\in A$ (3 roles). For each of the 42 lines $y=\lambda x+\mu$: at a generic point of the line the AP hypergraph of $B$ is the 12 APs of $A$ plus the one new AP, and its independence number is 10 (computed exactly on the labeled 16-vertex hypergraph); the 498 exceptional points (where two such lines meet, or a further AP appears) are all decided exactly and none is a (4,5)-set.
+These cases are exhaustive: either some new AP exists (then it involves $x$ or $y$ with two points of $A$, Case T1, or exactly $\{a,x,y\}$, Case T2) or none does (Case T0).
+
+## Computer-verified steps
+experiments/20261014-0640-abase-extensions/extend.py (exact Fractions; results.json), tests/test_abase_extensions.py (re-checks 50 stored extensions: (4,5) and h=10).
+Independent brute-force cross-check: bruteforce_check.py over all half-integer pairs in [-60,1120]: 589 non-generic (4,5) pairs, all contained in the stored set; 6,287 generic line points sampled 1-in-500 with Sidon 10-subsets found.
+
+## Sanity checks
+h(A_base)=8 (judge); the stored 1,743 (4,5)-sets all have 16 points, ratio 10/16 = 5/8 as in K13.
+
+## Falsifier report
+Not applicable (exhaustive case analysis); the brute-force check above plays that role.
