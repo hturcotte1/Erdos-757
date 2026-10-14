@@ -16,7 +16,7 @@ Each row gives a tag, the statement, the source, and how it is checked (a test n
 | K10 | published | Connected, linear, max degree 2: $18\tau\le4n+4m+2$, hence $h\ge(5n+3)/9$ for such AP hypergraphs | Henning–Yeo EJC 24(2) P2.50 (derivation here) | source |
 | K11 | published | $A_{\rm base}$ is a (4,5)-set with $h=8$ | Ma–Tang Lemma 5.1 | `test_abase` |
 | K12 | community | Two 12-point (4,5)-sets with $h=7$ | omega issue #9804 | `test_twelve_point_sets` |
-| K13 | community | Every 2-point extension of $A_{\rm base}$ that is a (4,5)-set has $h=10$ | omega issue #9804 | source (certificate in the issue) |
+| K13 | verified-here | Every 2-point extension of $A_{\rm base}$ that is a (4,5)-set has $h=10$ (hence every 15-, 16- or 17-point (4,5)-set containing $A_{\rm base}$ has $h\ge 9$, $=10$ at 16 points); extensions by four or more points are NOT covered. Certificate L001, four referee rounds, final ACCEPT with four independent verification methods. | results/proofs/L001-abase-two-point-extensions.md; experiments/20261014-0640-abase-extensions | `tests/test_abase_extensions.py`; results/reviews/L001-*__referee__20261014T095734Z.md |
 | K14 | community | $21\tau(K)\le9\|R\|+5e_2+12e_1$ is false | omega issue #9804 | source |
 | K15 | community | A minimal counterexample (for any constant $c$) has no cut vertex in its primal graph | omega issue #9804 | source |
 | K16 | published | Weak Sidon analogue solved: $g(n)=\lceil(n+1)/2\rceil$ | Ma–Tang Thm 1.3 | source |

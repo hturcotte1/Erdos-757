@@ -1,0 +1,2 @@
+isolated D points (ordered): 702 | unordered: 351 | (4,5): 0 | h distribution (MaxSAT): {9: 702}
+example: ['-1244', '1516']

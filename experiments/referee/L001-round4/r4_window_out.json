@@ -1,0 +1,51 @@
+[
+ {
+  "window_doubled": [
+   -600,
+   3400
+  ],
+  "valid singles": 3305,
+  "(4,5) pairs": 5185660,
+  "both points in 3-APs": 16566,
+  "line-generic": 15800,
+  "non-line-generic": 766,
+  "stored in window": 766,
+  "non-line-generic missing from stored": 0,
+  "stored-in-window not found": 0,
+  "pure-python re-check of sampled (4,5) decisions": [
+   83,
+   true
+  ],
+  "seconds": 14.0
+ },
+ {
+  "window_doubled": [
+   -120,
+   2241
+  ],
+  "valid singles": 1781,
+  "(4,5) pairs": 1455177,
+  "both points in 3-APs": 6876,
+  "line-generic": 6287,
+  "non-line-generic": 589,
+  "stored in window": 589,
+  "non-line-generic missing from stored": 0,
+  "stored-in-window not found": 0,
+  "seconds": 3.2
+ },
+ {
+  "window_doubled": [
+   -120,
+   2240
+  ],
+  "valid singles": 1781,
+  "(4,5) pairs": 1455177,
+  "both points in 3-APs": 6876,
+  "line-generic": 6287,
+  "non-line-generic": 589,
+  "stored in window": 589,
+  "non-line-generic missing from stored": 0,
+  "stored-in-window not found": 0,
+  "seconds": 3.2
+ }
+]

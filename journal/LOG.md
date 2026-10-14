@@ -89,3 +89,7 @@ Format for each work block:
 ## 2026-10-14T09:25Z U sweep: n=18 witness search UNKNOWN after 1 h
 - result [heuristic]: realizability-CEGAR at (18, T=10, m=16) with K30/K31/cores found no witness and no refutation in 3600 s (3 workers). n=20 running. Census chain now on (14,12).
 - evidence: experiments/20261014-0030-feasible-sizes/results/n18_T10_m16.json
+
+## 2026-10-14T10:00Z result L001 ACCEPTED (2-point extensions of A_base)
+- result [verified-here]: certificate L001 accepted at referee round 4 (rounds 1-3 verified the mathematics and demanded text fixes; round 4 added a Sidon-definition-only method over all of R^2). K13 and D6 upgraded; LEDGER row added. Scope: 2-point (hence 3-point) extensions only.
+- evidence: results/reviews/L001-abase-two-point-extensions__referee__*.md

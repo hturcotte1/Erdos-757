@@ -9,7 +9,7 @@ Before starting a direction, grep this file. When you abandon an approach, add a
 | D3 | Induction with a constant cost per avoided point | One-vertex amalgams $A_k$ have deficit growing like $k$ with $\|D\|=1$ | omega #9804 |
 | D4 | The inequality $21\tau(K)\le9\|R\|+5e_2+12e_1$ | Explicit 12-point counterexamples | omega #9804, K14 |
 | D5 | **Periodic chain constructions**, i.e. Fibonacci, tribonacci, Pisot recurrences $x_{j+b}=2x_j-x_{j-a}$, and multi-class periodic versions | Independence density ≥ 3/5 for every linear single-class chain with $a+b\le11$, every 2-class chain with span ≤8, and every 3-class chain with span ≤6 | [verified-here] `e757/chains.py`, `test_chain_densities` |
-| D6 | Adding two points to $A_{\rm base}$ | Every such (4,5) extension has $h=10$, ratio 5/8 | omega #9804, K13 |
+| D6 | Adding two points to $A_{\rm base}$ | Every such (4,5) extension has $h=10$, ratio 5/8 [verified-here, certificate L001 ACCEPTED]; adding four or more points is not excluded | results/proofs/L001-abase-two-point-extensions.md, K13 |
 | D7 | One-vertex amalgams and disjoint unions of records | They can never lower the ratio, because $h$ is subadditive | Ma–Tang Lemma 3.6 |
 | D8 | Searching for a better set with $n\le15$ or $n\in\{17,19,21,24,26,28\}$ | Impossible by Henning–Yeo | K23 |
 | D9 | Random sampling plus deletion (Alon–Erdős style) | Gives about 1/2 here | Part 1 §6 |

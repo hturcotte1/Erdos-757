@@ -1,7 +1,7 @@
-# No 2-point extension of A_base has a largest Sidon subset of size 9
+# No 2-point (4,5) extension of A_base has a largest Sidon subset of size 9
 CLAIM-TYPE: certificate (exact computation with a case analysis)
 TYPE: certificate
-STATUS: submitted (revised after referee rounds 1-3: wording, witnesses.json, independent brute force with exact keys, K3 hypothesis made explicit)
+STATUS: ACCEPTED by referee round 4 (results/reviews/L001-abase-two-point-extensions__referee__20261014T095734Z.md); revised after rounds 1-3: wording, witnesses.json, independent brute force with exact keys, K3 hypothesis made explicit)
 DEPENDS ON: K11 [published] (A_base is a (4,5)-set with h=8); K3 [published] ((4,5) ⊂ weak Sidon, so K4 applies to B); K4 [published] (for weak Sidon sets h = alpha of the AP hypergraph). K5-K6 [published] (midpoint injectivity, linearity) are explanatory only.
 
 ## Statement
