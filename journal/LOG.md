@@ -67,3 +67,9 @@ Format for each work block:
 - result [verified-here]: Q8 fails for abstract class O (+K30, K31, <=4-edge cores) at n=12 (K38: 60 of 18,180 census members, all at |D|=2, slack -1); every violator contains a >=5-edge forbidden core and is non-realizable. GL-tight structure lemmas (kb/notes/gl_tight_structure.md) survive ~80k flip instances. Census: >= 25,484 abstract (12,10,alpha<=7) solutions, D-empty Q8 slack exactly 1 for all of them (tau = 5 = floor(36/7)).
 - meaning: the 4/7 conjecture (Q8) needs the deeper forbidden cores; it is not an abstract linear/F7/midpoint statement. The n=15 streams m'=9,10 have found no solution in 50 min (UNSAT not yet proven); m'=11 has 2,282+ solutions.
 - decision: Track L = inductive Q8-type inequality WITH cores as the lemma source; Track U at n=16 awaits the census trend and the stream outcomes; final report is a living document.
+
+## 2026-10-14T07:35Z L inductive-inequality fit: abstract vs realizable
+- result: K39. Realizable data: b = 3/7 exactly at Q8 weights; abstract census needs b = 31/70, and every abstract violator contains a 5/6-edge core. Hard local type (3,0,0) dominates in both classes; what differs is frequency (7,456 abstract hypergraphs with irreducible tight states at |R|=11 vs 3 realizable states).
+- meaning: an abstract (core-free) proof can at best reach b = 31/70 on this data (and likely worse at larger n); a proof of Q8 itself must discharge the (3,0,0) type using 5- and 6-edge cores.
+- evidence: experiments/20261014-0700-inductive-fit/
+- decision: no prover attempt yet (no proof idea for the (3,0,0) discharge); continue harvesting exact data; after the n=15 streams end, run witness-mode sweeps at n=18, 20, 22.
