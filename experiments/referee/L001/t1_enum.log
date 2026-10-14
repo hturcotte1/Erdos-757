@@ -1,0 +1,9 @@
+|P| = 223
+|P_ok| = 50 time 0.3
+h(A u {x}) distribution: {9: 50}
+T1b candidate unordered pairs: 11774 time 0.6
+(4,5) pairs: 1743 time 5.8
+h distribution over (4,5) pairs: {10: 1743} time 11.4
+stored 1743 mine 1743 stored-mine 0 mine-stored 0
+(4,5) pairs with both points in P: 997
+done 11.4

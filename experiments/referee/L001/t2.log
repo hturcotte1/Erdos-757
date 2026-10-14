@@ -1,0 +1,42 @@
+T2 abstract alpha by a: {'0': 10, '136': 10, '200': 10, '243': 10, '246': 10, '249': 10, '272': 10, '286': 10, '298': 10, '323': 10, '400': 10, '528': 10, '596': 10, '1056': 10} time 0.6
+intersection points (ordered): 512 after filter: 498 unordered: 249
+intersection points that are (4,5): 0 ; points with >=2 APs through {x,y}: 498 of 498
+  line sample anomaly a_mid 136 -908086/1000003 272908902/1000003 13 False None
+  line sample anomaly a_mid 136 2672423/1000003 269328393/1000003 13 False None
+  line sample anomaly a_mid 136 -990254/1000003 272991070/1000003 13 False None
+  line sample anomaly a_mid 200 -120569/1000003 400121769/1000003 13 False None
+  line sample anomaly a_mid 200 -2570538/1000003 402571738/1000003 13 False None
+  line sample anomaly a_mid 200 -1956511/1000003 401957711/1000003 13 False None
+  line sample anomaly a_mid 243 2698019/1000003 483303439/1000003 13 False None
+  line sample anomaly a_mid 243 -1534950/1000003 487536408/1000003 13 False None
+  line sample anomaly a_mid 243 2097386/1000003 483904072/1000003 13 False None
+  line sample anomaly a_mid 246 549823/1000003 491451653/1000003 13 False None
+  line sample anomaly a_mid 246 2131313/1000003 489870163/1000003 13 False None
+  line sample anomaly a_mid 246 -1564629/1000003 493566105/1000003 13 False None
+  line sample anomaly a_mid 249 955153/1000003 497046341/1000003 13 False None
+  line sample anomaly a_mid 249 -2628413/1000003 500629907/1000003 13 False None
+  line sample anomaly a_mid 249 -209337/1000003 498210831/1000003 13 False None
+  line sample anomaly a_mid 272 -162853/1000003 544164485/1000003 13 False None
+  line sample anomaly a_mid 272 -988032/1000003 544989664/1000003 13 False None
+  line sample anomaly a_mid 272 -2211191/1000003 546212823/1000003 13 False None
+  line sample anomaly a_mid 286 1687799/1000003 570313917/1000003 13 False None
+  line sample anomaly a_mid 286 -11986/1000003 572013702/1000003 13 False None
+  line sample anomaly a_mid 286 1922980/1000003 570078736/1000003 13 False None
+  line sample anomaly a_mid 298 -1088178/1000003 597089966/1000003 13 False None
+  line sample anomaly a_mid 298 2796864/1000003 593204924/1000003 13 False None
+  line sample anomaly a_mid 298 -1007184/1000003 597008972/1000003 13 False None
+  line sample anomaly a_mid 323 2022937/1000003 643979001/1000003 13 False None
+  line sample anomaly a_mid 323 2530234/1000003 643471704/1000003 13 False None
+  line sample anomaly a_mid 323 1601861/1000003 644400077/1000003 13 False None
+  line sample anomaly a_mid 400 -2835806/1000003 802838206/1000003 13 False None
+  line sample anomaly a_mid 400 -651038/1000003 800653438/1000003 13 False None
+  line sample anomaly a_mid 400 1493423/1000003 798508977/1000003 13 False None
+  line sample anomaly a_mid 528 -1303563/1000003 1057306731/1000003 13 False None
+  line sample anomaly a_mid 528 2607085/1000003 1053396083/1000003 13 False None
+  line sample anomaly a_mid 528 -1987601/1000003 1057990769/1000003 13 False None
+  line sample anomaly a_mid 596 -1844272/1000003 1193847848/1000003 13 False None
+  line sample anomaly a_mid 596 -1039570/1000003 1193043146/1000003 13 False None
+  line sample anomaly a_mid 596 -2075061/1000003 1194078637/1000003 13 False None
+random generic line points: 126 anomalies: 36
+T1a random samples: 100 anomalies: 0
+T0 random samples: 50 anomalies: 0 time 2.8
