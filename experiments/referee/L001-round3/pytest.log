@@ -1,0 +1,6 @@
+plugins: anyio-4.15.1
+collected 2 items
+
+tests/test_abase_extensions.py ..                                        [100%]
+
+============================== 2 passed in 1.59s ===============================

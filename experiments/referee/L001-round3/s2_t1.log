@@ -1,0 +1,17 @@
+|P| (excluding A) = 223 | literal set {(a+b)/2, 2b-a : a != b} = 237 (of which in A: 14 )
+grid scan (1/2)Z in [-1100,2200] equals P: True
+|P_ok| = 50
+h(A u {x}) distribution (sat == brute): {9: 50}
+Q(x) scan==formula for 50 of 50 x;  T1b unordered candidate pairs: 11774
+(4,5) T1b pairs: 1743 | rejected by a single A u {v}: 9204 | rejected as pair: 827
+pure-python is45 confirms all accepted: True
+h distribution over (4,5) T1b pairs (sat == brute): {10: 1743}
+pairs with both points in P: 997
+results.json: stored 1743 distinct 1743 all h=10: True
+mine 1743 | mine - stored 0 | stored - mine 0
+authors summary fields: {'Px_size': 223, 'Px_45': 50, 'type1_pairs': 11774, 'type1_45': 1743, 'type1_generic_y': 50, 'type2_isect_pts': 498, 'type2_isect_45': 0, 'witness_certified': 1743, 'n_stored': 1743}
+witnesses.json pairs 1743 distinct 1743 == mine: True
+witnesses.json pair witnesses failing (Sidon 10-subset of a (4,5) B): 0
+witnesses.json generic_y: entries 50 x-set == P_ok: True failures: 0
+T1a random generic y (3 per x): {10: 150}
+time 37.9s

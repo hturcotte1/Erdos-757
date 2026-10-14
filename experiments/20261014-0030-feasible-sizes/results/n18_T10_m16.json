@@ -1,0 +1,1 @@
+{"n": 18, "T": 10, "m_exact": 16, "m_min": 0, "eager": true, "status": "UNKNOWN", "stats": {"alpha_cuts": 0, "f7_cuts": 0, "solves": 1, "rounds": 0, "learnt": 0, "fail_kinds": {}, "constraints": {"monotone": 50388, "medial": 82824, "cores": [200124, 755616]}, "model_built_s": 5.8, "time": 3600.1}, "wall_s": 3600.1}

@@ -1,0 +1,35 @@
+[A_base] n=14 h(base)=8 | constant-true relations 12 | distinct lines 1910 (X-only 815, Y-only 815, two-variable 280)
+[A_base] kept lines 379, pruned 1531, vertices of kept arrangement 46460
+[A_base] pruned-line test points that are valid (must be 0): 0
+[A_base] generic point: h = 10
+[A_base] kept-line generic points by line kind: {'X=c': {10: 50}, 'Y=c': {10: 50}, 'X+Y=s': {10: 2, 'invalid': 91}, 'X-Y=d': {'invalid': 158}, '1X-2Y': {10: 14}, '2X-1Y': {10: 14}}
+[A_base] vertices: 46460, outcome counts {'invalid': 42974, 10: 3486}
+[A_base] valid classes with h < h(base)+2 = 10: 0
+[A_base] valid vertices: 3486 ordered, 1743 unordered | == results.json stored set: True
+[A_base] values c of kept lines X=c: 50 (these are the admissible special single coordinates)
+[A_base] time 31.5s
+[control A_base-{0,246}] n=12 h(base)=8 | constant-true relations 5 | distinct lines 1462 (X-only 621, Y-only 621, two-variable 220)
+[control A_base-{0,246}] kept lines 373, pruned 1089, vertices of kept arrangement 46985
+[control A_base-{0,246}] pruned-line test points that are valid (must be 0): 0
+[control A_base-{0,246}] generic point: h = 10
+[control A_base-{0,246}] kept-line generic points by line kind: {'X=c': {10: 75, 9: 2}, 'Y=c': {10: 75, 9: 2}, 'X+Y=s': {10: 7, 'invalid': 66}, 'X-Y=d': {'invalid': 122}, '1X-2Y': {10: 12}, '2X-1Y': {10: 12}}
+[control A_base-{0,246}] vertices: 46985, outcome counts {'invalid': 39373, 10: 7284, 9: 326, 8: 2}
+[control A_base-{0,246}] valid classes with h < h(base)+2 = 10: 332
+[control A_base-{0,246}] (p,q) lies on 2 kept lines; detected as deficient: True; time 24.8s
+[control A_base-{243,249}] n=12 h(base)=8 | constant-true relations 8 | distinct lines 1307 (X-only 548, Y-only 548, two-variable 211)
+[control A_base-{243,249}] kept lines 320, pruned 987, vertices of kept arrangement 33951
+[control A_base-{243,249}] pruned-line test points that are valid (must be 0): 0
+[control A_base-{243,249}] generic point: h = 10
+[control A_base-{243,249}] kept-line generic points by line kind: {'X=c': {10: 51, 9: 4}, 'Y=c': {10: 51, 9: 4}, 'X+Y=s': {10: 3, 'invalid': 66, 9: 1}, 'X-Y=d': {'invalid': 116}, '1X-2Y': {10: 10, 9: 2}, '2X-1Y': {10: 10, 9: 2}}
+[control A_base-{243,249}] vertices: 33951, outcome counts {'invalid': 29977, 10: 3196, 9: 776, 8: 2}
+[control A_base-{243,249}] valid classes with h < h(base)+2 = 10: 791
+[control A_base-{243,249}] (p,q) lies on 3 kept lines; detected as deficient: True; time 18.5s
+[control A_base-{528,1056}] n=12 h(base)=8 | constant-true relations 9 | distinct lines 1270 (X-only 531, Y-only 531, two-variable 208)
+[control A_base-{528,1056}] kept lines 297, pruned 973, vertices of kept arrangement 29335
+[control A_base-{528,1056}] pruned-line test points that are valid (must be 0): 0
+[control A_base-{528,1056}] generic point: h = 10
+[control A_base-{528,1056}] kept-line generic points by line kind: {'X=c': {10: 40, 9: 5}, 'Y=c': {10: 40, 9: 5}, 'X+Y=s': {10: 1, 'invalid': 66, 9: 2}, 'X-Y=d': {'invalid': 114}, '1X-2Y': {10: 8, 9: 4}, '2X-1Y': {10: 8, 9: 4}}
+[control A_base-{528,1056}] vertices: 29335, outcome counts {'invalid': 26359, 10: 1658, 9: 1314, 8: 4}
+[control A_base-{528,1056}] valid classes with h < h(base)+2 = 10: 1338
+[control A_base-{528,1056}] (p,q) lies on 3 kept lines; detected as deficient: True; time 15.5s
+total time 90.4s

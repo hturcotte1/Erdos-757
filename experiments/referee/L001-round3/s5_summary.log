@@ -1,0 +1,4 @@
+files 1794 | verdict lines 1794 | exit code 0
+verdicts: {('PASS', 'NO-IMPROVEMENT'): 1794}
+n=14 h=8: 1 | n=15 h=9: 50 | n=16 h=10: 1743
+time 34.3s
