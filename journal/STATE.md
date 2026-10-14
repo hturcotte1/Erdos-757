@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: running
-Last updated (UTC): 2026-10-14 05:55
+Last updated (UTC): 2026-10-14 07:00
 Phase/track: Phase 1 -> f(16) decision (relaunched after container restart 04:40 UTC); Track L design started
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
@@ -15,18 +15,20 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
   (experiments/20261013-2257-chyp-table/table.md)
 
 ## Running jobs / agents
-- CP-SAT worker: LAYERED n=16 search (deletion-of-max lemma: enumerate O' on 15 vertices with alpha<=9, m'=9..13, then extend by vertex 15) -> experiments/20261014-0550-n16-layered/ (resumable streams). Direct 30-case split abandoned (all cases TIMEOUT 3000 s).
-- worker: independent pysat encoding of O' (e757/sat_indep.py) for the certificate + single-case timing.
-- DONE: slack landscape n<=14 (experiments/20261014-0500-slack-landscape): tau_max(n,n-2) = n/2-1 at even n<=14 in O' AND realizable; realizable = O' in every resolved cell.
-- DONE: Q8 confirmed (K34); n=8 catalogue (K33); LP fit; DFS engine (small-n cross-check only).
+- n=15 streams (class O', alpha<=9): m'=9, m'=10 no solution yet (UNSAT would give deg<=3 in any 16-point extremal H), m'=11 2,282+ solutions; 2 h limit ends ~08:00 (experiments/20261014-0550-n16-layered/results).
+- Extremal census chain: (12,10,alpha<=7) >= 25,484 abstract solutions so far (3 known realizable classes); then (14,12), (15,13) (experiments/20261014-0610-extremal-census).
+- worker: exact re-derivation of K13 (no 2-point extension of A_base reaches h=9) -> experiments/20261014-0640-abase-extensions.
+- falsifier (background tail): full-core classification of the abstract Q8 violators.
+- DONE this block: GL-tight structure lemmas (kb/notes/gl_tight_structure.md, falsifier NONE-FOUND); K35-K38; FINAL_REPORT living draft; D15-D16.
 
 ## Live hypotheses
 - [heuristic] Realizability is not the bottleneck at n=16 (21% of random linear saturated maps are (4,5)-sets); alpha is.
 - [verified-here] f(n) = ceil(n/2)+1 = HY bound for 6<=n<=15 and 17; HY = ceil(n/2)+1 up to n=23. Trivial GL bound tight at even n<=14. Two live hypotheses: (H1) HY stays tight at even n up to 22 (records at 16..22, c* <= 6/11) vs (H2) a wall at n=16 (f(16)=10, consistent with c*=4/7 and Q8). n=16 decides.
-- [community]+[heuristic] Q8 (7 tau(K) <= 3|R| + 2e_2 + 4e_1) survived ~570M states; with D empty it is h >= 4n/7, so all data is consistent with c* = 4/7 (which forces f(16)=10). Framework: kb/methods/trackL_inductive_framework.md.
+- [verified-here] Q8 holds on all realizable data (K34) but FAILS for the abstract class O even with K30/K31/<=4-edge cores (K38); every abstract violator contains a >=5-edge core. So c*=4/7 (if true) needs the deep forbidden configurations. Framework: kb/methods/trackL_inductive_framework.md.
+- [heuristic] Three independent methods (CP-SAT, glucose/cadical, annealing) never found an abstract alpha<=9 hypergraph at n=16, while n<=14 witnesses are found in seconds: the abstract class probably has none (f(16)=10), but no certificate is reachable with SAT in this run (D15).
 - [heuristic] Transversal reformulation: tau = min set T such that every midpoint j is in T or has a parent l(j) or r(j) in T (parent maps l<j<r; G_L, G_R are rooted forests).
 
 ## Next 3 actions
-1. Layered n=16: read counts of 15-vertex extremal structures per m'; if small, finish the extension; realize every abstract n=16 solution exactly (record or f(16)=10).
-2. Certificate path: pysat second encoding cross-checks the n=15 counts; then verify-claim (type C) for whatever n=16 yields.
-3. Draft results/FINAL_REPORT.md as a living document at the next checkpoint; Track L target choice after n=16.
+1. Harvest at ~08:00: m'=9/10 UNSAT? (-> degree bound lemma for 16-point extremal H), census counts at (12,10) and (14,12), extension certificate K13 -> [verified-here].
+2. Track L: LP-fit the best inductive (a,b,c,d) on abstract vs realizable data to state exactly what is provable without cores; then decide whether a prover attempt on a weaker Q8-type target with cores is worth it.
+3. Checkpoint every 2 h; keep FINAL_REPORT current; budget end 2026-10-16 23:06 UTC.
