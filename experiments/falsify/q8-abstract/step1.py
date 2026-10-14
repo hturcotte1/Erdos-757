@@ -17,4 +17,4 @@ if __name__=='__main__':
     H=Counter();V=[];S=0
     for h,v,s in out: H.update(h);V+=v;S+=s
     print('states',S,'violations',len(V)); print('min slack',min(H)); print(sorted(H.items())[:8])
-    json.dump({'n_hyp':len(rows),'states':S,'viol':V[:20],'hist':sorted(H.items())},open('step1_results.json','w'))
+    json.dump({'n_hyp':len(rows),'states':S,'viol':V,'hist':sorted(H.items())},open('step1_results.json','w'))
