@@ -45,3 +45,13 @@ then finalize.py 16 14 K and finalize.py 16 13 K.
 
 ## Results
 (see results/*progress.json, results/n16_m{13,14}_summary.json when they exist; filled in below by whoever reads them)
+
+## Update (06:25 UTC): redirect
+* Streams m'=12 and m'=13 were cancelled (never started: the xargs queue was killed); m'=9, 10, 11 keep running to
+  their 7200 s limit.  The N=12 layered cross-check (crosscheck12.sh) was killed (its first stream m'=5 gave no
+  solution in 6 min); the extremal census (experiments/20261014-0610-extremal-census/) replaces it as the n=12/14 sanity data.
+* Consequence to record IF m'=9 and m'=10 both finish EXHAUSTED with 0 solutions: apply the deletion lemma to any
+  vertex v (H-v is in O' on 15 vertices with 14-deg(v) edges and alpha <= 9), then every 16-vertex extremal H
+  with m=14 has deg(v) <= 3 for all v, so at least 10 vertices have degree exactly 3 (3m = 42 = sum of degrees
+  over 16 vertices with all degrees <= 3 and... see derivation by the coordinator).  NOT established: the streams are still running; if
+  CP-SAT cannot prove UNSAT within 2 h this is simply not available.
