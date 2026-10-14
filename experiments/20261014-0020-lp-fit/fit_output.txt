@@ -122,3 +122,18 @@ rows with D/n < 5/7: 0
 D histograms n>=14 (full random sets): [((14, 27), 310), ((14, 44), 190), ((16, 26), 96), ((16, 43), 392), ((16, 60), 12), ((18, 25), 5), ((18, 42), 403), ((18, 59), 91), ((18, 76), 1), ((20, 41), 1981), ((20, 58), 2449), ((20, 75), 66)]
 
 ## 4. Local structure around degree>=3 vertices in HY-near-tight rows (slack<=2)
+near-tight rows (slack<=2): 1706  by slack: {2: 1706}  by n: {6: 1706}
+signature of incident edges (sorted roles: L=left endpoint, M=midpoint, R=right endpoint) for deg>=3 vertices:
+# of deg>=3 neighbours of a deg>=3 vertex (primal graph) : {}
+most common degree profiles (d0,d1,d2,d3,d4p) in near-tight rows: [((0, 6, 0, 0, 0), 1706)]
+near-tight rows saturated: 0
+slack<=0: rows 0;  []
+slack<=1: rows 0;  []
+Traceback (most recent call last):
+  File "/home/user/Erdos-757/experiments/20261014-0020-lp-fit/fit.py", line 227, in <module>
+    r = Ab[0]; inc = vertex_types(r)
+                     ~~~~~~~~~~~~^^^
+  File "/home/user/Erdos-757/experiments/20261014-0020-lp-fit/fit.py", line 182, in vertex_types
+    n = r["n"]; edges = r["edges_list"]
+                        ~^^^^^^^^^^^^^^
+KeyError: 'edges_list'
