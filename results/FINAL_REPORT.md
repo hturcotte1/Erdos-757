@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report (living document; updated at every checkpoint)
 
-Last updated: 2026-10-14 06:00 UTC (elapsed about 7 of 72 budget hours). Status of the goal clauses at
+Last updated: 2026-10-14 06:55 UTC (elapsed about 7.8 of 72 budget hours). Status of the goal clauses at
 this update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted.
 
 ## 1. Result summary
@@ -31,7 +31,10 @@ $A_{\rm base}$) are unchanged by this run so far. The run produced the following
    deletion/avoidance state of all seven record sets (A_base: 3,253,568 states, 94,544 equalities),
    on about 560M sampled states of random saturated sets and on 752 gluings; two independent
    implementations agree on every count (K34). With no avoided points Q8 is exactly $h\ge 4n/7$, so it is
-   an inductive strengthening of the conjecture $c_*=4/7$. Evidence only.
+   an inductive strengthening of the conjecture $c_*=4/7$. Evidence only. **For the abstract class Q8 is false** (K38):
+   a 12-vertex ordered midpoint hypergraph that is linear, $F_7$-free, monotone, medial-free and clean of all
+   $\le4$-edge cores violates it by one; every abstract violator found contains a $\ge5$-edge forbidden core and is
+   non-realizable. So a proof of Q8 must use the deeper forbidden configurations: the arithmetic is essential.
 4. **Search engines** (e757/): exact realizability oracle with Farkas certificates
    (`realizability.py`), CP-SAT model of $O'$ with lazy/eager independence constraints
    (`cpsat_model.py`), an independent python-sat encoding (`sat_indep.py`), an exact DFS in Python and C
