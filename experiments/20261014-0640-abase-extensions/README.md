@@ -46,3 +46,10 @@ All unordered pairs of half-integers in [-60,1120] with A u {v} (4,5): 1,781 val
 in some AP and are not generic points of a T2 line: all 589 are in the stored set (0 missing). A further 6,287 (4,5) pairs
 are generic line points (exactly one new AP {a,x,y}); a 1/500 sample all had Sidon 10-subsets (no failure printed).
 (Note: 6,287 line-generic pairs is the same order as omega's 6,484 "pairs"; their count likely includes such pairs.)
+
+## Referee round 1 fixes (supersedes the brute-force paragraph above) [verified-here]
+* `witnesses.json`: explicit 3-AP-free (hence Sidon) 10-subset for each of the 1,743 (4,5) extension pairs, and a 3-AP-free 9-subset of A u {x} for each of the 50 generic-y cases (add y). `tests/test_abase_extensions.py` checks 50 stored 10-sets directly (10 points, subset of A u {x,y}, no a+b=2q) and all 50 S9.
+* `bruteforce_check.py` rewritten: no e757/extend.py imports, plain integers (coordinates doubled), window = half-integers in [-300,1699.5]
+  (3,305 valid singles, 5,185,660 (4,5) pairs). It finds a checked 3-AP-free + Sidon 10-subset for EVERY (4,5) pair (0 failures; also asserts h(A)=8 exhaustively),
+  all 15,800 line-generic pairs included; 766 non-line-generic pairs with both points in APs, 0 missing from results.json. Runtime 5 min (`brute.log`).
+  (The "stored total 1734" in the log is a display artifact: quarter-integer stored pairs collapse under int(); it does not affect the check.)
