@@ -68,3 +68,6 @@ encoding is the right design.  c_hyp(16) is undecided at hand-back.
 | 12 | 7 | 7 | <=10 | <=10 | 7 | 7 | 6.3 / 6.4 |
 
 Jobs still running at hand-back: n=16 T=9 (pid in experiments/20261013-2257-chyp-table/job.pid; result file results/feas_n16_T9_f71_hy1_mNone.json) and the m_exact=14 sub-case (results/feas_n16_T9_f71_hy1_m14.json). To finish: run aggregate.py and check.py after they complete.
+
+
+Follow-up (2026-10-14): the unconstrained n=16 jobs above were killed. The constrained n=16 decision (monotone K30, medial K31, forbidden cores) is in experiments/20261014-0030-n16-decision/; the sweep of other record-feasible sizes is in experiments/20261014-0030-feasible-sizes/.
