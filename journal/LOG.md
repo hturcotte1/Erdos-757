@@ -37,3 +37,9 @@ Format for each work block:
 - result [verified-here]: c_hyp(n) = 4,4,5,5,6,6,7,7 for n=5..12 (solver-only), = HY bound = f(n); F7-freeness matters only at n=7 (4 -> 5). n=13,14,15: 8,8,9 modulo Henning-Yeo (solver finds the witness; UNSAT below comes from HY). n=16 T=9 undecided after >1 h without K30.
 - evidence: experiments/20261013-2257-chyp-table/{table.md,witnesses.json,check.py}
 - decision: add K30/K31/cores as explicit clauses (sound: proved consequences of realizability) and rerun n=16; sweep n=18..25.
+
+## 2026-10-14T00:50Z U1 annealer stopped (superseded by exact methods)
+- tried: 4 annealing processes for ~95 min (n=16 saturated x2, n=16 one free vertex, n=18).
+- result [heuristic]: n=16: ~4.0M states evaluated, 28,589 genuine (4,5)-sets reached, exact h distribution 10/11/12 only, never 9; n=18: 3,196 genuine sets, best h=11. Realizability is cheap (~0.6-1.5% of visited states, ~20% of random linear maps), alpha is the obstacle.
+- evidence: experiments/20261013-2257-anneal16/best.json, README.md
+- decision: stop (load 15 on 4 cores); CPU goes to the exact CP-SAT decision at n=16 (experiments/20261014-0030-n16-decision) and the sweep n=18..25.

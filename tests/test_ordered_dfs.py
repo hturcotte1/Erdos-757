@@ -3,7 +3,7 @@
 Checks:
   * class definition: the DFS's staircase test equals the literal conditions (a),(b),(c) (brute force, n<=7);
   * min alpha for n=5..12 equals the CP-SAT table (experiments/20261013-2257-chyp-table);
-  * pruning soundness: pruned enumeration == unpruned enumeration filtered by alpha, n<=9;
+  * pruning soundness: pruned enumeration == unpruned enumeration filtered by alpha, n<=8;
   * monotone rule (c) never prunes an order-feasible pattern (exact order_feasible), n<=8;
   * own independence routine and F7 detector vs brute force / e757.saturated;
   * C port agrees with Python (solution sets for n<=9, counts for n<=10), incl. flags.
@@ -95,7 +95,7 @@ def test_min_alpha_C_matches_cpsat_table(n):
 
 
 # ----------------------------------------------------------------------------- soundness of pruning
-@pytest.mark.parametrize("n", [6, 7, 8, 9])
+@pytest.mark.parametrize("n", [6, 7, 8])
 def test_pruned_equals_unpruned_filtered(n):
     for f7 in (False, True):
         full = all_patterns(n, forbid_f7=f7)

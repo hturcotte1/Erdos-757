@@ -1,0 +1,53 @@
+rows: 1333217
+rows by src: {'sub_A_base': 12911, 'sub_rec8': 37, 'sub_rec10': 386, 'sub_rec11': 1024, 'sub_rec12': 2510, 'sub_rec12b': 2510, 'sub_rec12c': 2510, 'rand10': 500, 'randsub10': 61191, 'rand12': 500, 'randsub12': 83049, 'rand14': 500, 'randsub14': 90849, 'rand16': 500, 'randsub16': 94636, 'rand18': 500, 'randsub18': 96532, 'rand20': 4496, 'randsub20': 878076}
+rows by n: {6: 139108, 7: 137218, 8: 130915, 9: 117929, 10: 109779, 11: 100544, 12: 93929, 13: 88629, 14: 82157, 15: 78063, 16: 72620, 17: 69245, 18: 62543, 19: 46042, 20: 4496}
+saturated rows: 14738
+
+## 1. HY check
+rows with slack<0: 0  min slack: 2
+rows violating D = slack + 3(n-m): 0 (expected only where HY-derived identity is invalid: none)
+slack histogram (lowest 12): [(2, 1706), (3, 183), (4, 1069), (5, 1116), (6, 824), (7, 6075), (8, 947), (9, 3109), (10, 10297), (11, 3069), (12, 11738), (13, 3782)]
+
+min slack by n (all rows / saturated rows):
+  n=6: all min 2 (139108 rows); saturated min 8 (1 rows)
+  n=7: all min 7 (137218 rows); saturated min 16 (4 rows)
+  n=8: all min 4 (130915 rows); saturated min 7 (56 rows)
+  n=9: all min 3 (117929 rows); saturated min 15 (351 rows)
+  n=10: all min 3 (109779 rows); saturated min 6 (619 rows)
+  n=11: all min 5 (100544 rows); saturated min 14 (485 rows)
+  n=12: all min 4 (93929 rows); saturated min 5 (617 rows)
+  n=13: all min 4 (88629 rows); saturated min 13 (545 rows)
+  n=14: all min 4 (82157 rows); saturated min 4 (603 rows)
+  n=15: all min 5 (78063 rows); saturated min 12 (529 rows)
+  n=16: all min 11 (72620 rows); saturated min 20 (566 rows)
+  n=17: all min 13 (69245 rows); saturated min 28 (553 rows)
+  n=18: all min 16 (62543 rows); saturated min 19 (1094 rows)
+  n=19: all min 18 (46042 rows); saturated min 27 (4219 rows)
+  n=20: all min 35 (4496 rows); saturated min 35 (4496 rows)
+
+rows attaining min slack 2: 1706
+top 20 among n>=10 (lowest slack, then larger n; n<10 rows listed above are trivial small cases):
+  slack 3 n=10 m=7 tau=4 D=12 src=sub_A_base set=[0, 136, 200, 249, 272, 298, 400, 528, 596, 1056]
+  slack 3 n=10 m=7 tau=4 D=12 src=sub_A_base set=[0, 136, 246, 272, 298, 323, 400, 528, 596, 1056]
+  slack 3 n=10 m=7 tau=4 D=12 src=sub_A_base set=[0, 200, 243, 246, 249, 286, 298, 323, 400, 596]
+  slack 3 n=10 m=7 tau=4 D=12 src=sub_A_base set=[200, 243, 246, 249, 272, 286, 298, 323, 400, 528]
+  slack 3 n=10 m=7 tau=4 D=12 src=sub_rec11 set=[0, 2009010, 2901878, 3392944, 3705482, 3750000, 3794746, 3884010, 4018020, 7500000]
+  slack 3 n=10 m=7 tau=4 D=12 src=sub_rec12 set=[0, 269, 385, 467, 501, 521, 535, 538, 549, 575]
+  slack 3 n=10 m=7 tau=4 D=12 src=sub_rec12b set=[0, 178, 198, 218, 227, 235, 272, 276, 317, 436]
+  slack 3 n=10 m=7 tau=4 D=12 src=sub_rec12b set=[0, 178, 198, 227, 235, 272, 276, 317, 356, 436]
+  slack 3 n=10 m=7 tau=4 D=12 src=sub_rec12c set=[-168, -44, -24, -4, 39, 44, 49, 80, 102, 160]
+  slack 3 n=10 m=7 tau=4 D=12 src=sub_rec12c set=[-44, -24, -4, 0, 39, 44, 49, 80, 102, 160]
+  slack 4 n=14 m=12 tau=6 D=10 src=sub_A_base set=[0, 136, 200, 243, 246, 249, 272, 286, 298, 323, 400, 528, 596, 1056]
+  slack 4 n=13 m=8 tau=5 D=19 src=sub_A_base set=[136, 200, 243, 246, 249, 272, 286, 298, 323, 400, 528, 596, 1056]
+  slack 5 n=12 m=10 tau=5 D=11 src=sub_rec12 set=[0, 269, 385, 467, 501, 511, 521, 523, 535, 538, 549, 575]
+  slack 5 n=12 m=10 tau=5 D=11 src=sub_rec12b set=[0, 178, 198, 218, 227, 235, 272, 276, 287, 317, 356, 436]
+  slack 5 n=12 m=10 tau=5 D=11 src=sub_rec12c set=[-336, -168, -44, -24, -4, 0, 39, 44, 49, 80, 102, 160]
+  slack 5 n=12 m=10 tau=5 D=11 src=rand12 set=[0, 103, 119, 135, 142, 206, 256, 270, 284, 362, 370, 605]
+  slack 5 n=12 m=10 tau=5 D=11 src=rand12 set=[0, 182, 206, 230, 231, 256, 282, 358, 364, 460, 498, 638]
+  slack 5 n=11 m=6 tau=4 D=20 src=sub_A_base set=[0, 136, 200, 243, 246, 249, 272, 400, 528, 596, 1056]
+  slack 5 n=11 m=6 tau=4 D=20 src=sub_A_base set=[0, 136, 200, 243, 246, 249, 286, 323, 400, 596, 1056]
+  slack 5 n=11 m=6 tau=4 D=20 src=sub_A_base set=[0, 136, 200, 243, 246, 272, 286, 298, 528, 596, 1056]
+
+## 2. LP fits  tau <= a n + b m + sum c_i f_i   (min a+b ; then variants)
+- **none** const=False obj=ab: a=0.4286, b=0.0000; a+b=0.4286 -> alpha/n >= 1-a-b = 0.5714 (naive); tight rows 1; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **non_mid** const=False obj=ab: a=0.0000, b=0.0000, non_mid=3.5000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 3; exact max violation after rounding (den<=1000): +0.00000 (0)
