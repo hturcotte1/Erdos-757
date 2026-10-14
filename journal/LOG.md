@@ -52,3 +52,8 @@ Format for each work block:
   (4) Independent DFS engine e757/ordered_dfs.py (+C): agrees with CP-SAT for n=5..12 (n=12 in ~55 s, 30M nodes), but its n=16 estimate is ~1e14 nodes: not a certificate engine; small-n cross-check only.
 - observation: Q8 with D empty is exactly h >= 4n/7. The community candidate is an inductive strengthening of "c* = 4/7"; all our data is consistent with c* = 4/7 (which would force f(16)=10).
 - decision: relaunch n=16 as a resumable case split; verify Q8 independently; Track L to target an inductive inequality of Q8 type.
+
+## 2026-10-14T04:55Z L Q8 independently confirmed; n=16 case split and second encoding under way
+- result: independent C re-implementation reproduces every Q8 count (A_base 3,253,568 valid states / 0 violations / 94,544 equalities; all seven records; 18 pool sets). Recorded as K34.
+- running: n=16 resumable case split (30 cases; experiments/20261014-0450-n16-cases), slack landscape n<=14 (experiments/20261014-0500-slack-landscape), independent pysat encoding of class O' (e757/sat_indep.py) for the certificate.
+- decision: Track L target = an inductive inequality of Q8 type; pick constants after the slack landscape.
