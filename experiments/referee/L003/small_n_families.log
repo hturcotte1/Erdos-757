@@ -1,0 +1,3 @@
+n=4 family x=5..40: all (4,5) with h=f(n)=3: True; distinct affine classes: 36
+n=5 family x=5..40: all (4,5) with h=f(n)=4: True; distinct affine classes: 36
+n=3: h({a<b<c}) = 2 iff b-a = c-b (the only possible repeated difference), so all extremal sets ~ {0,1,2}

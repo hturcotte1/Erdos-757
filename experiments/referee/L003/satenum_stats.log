@@ -1,0 +1,13 @@
+# satenum STATS (n, T, lin, brute, float) -- see satenum.c
+STATS n=6 T=99 lin=0 brute=0 leaves=180 singular=0 orderfail=15 not45=163 ok45=2 apmismatch=0 out=2 maxval=14 maxdet=14 float=2 fl_reject=178 fl_pass=2 hhist 4:2
+STATS n=7 T=99 lin=0 brute=0 leaves=2684 singular=0 orderfail=585 not45=2091 ok45=8 apmismatch=0 out=8 maxval=28 maxdet=28 float=2 fl_reject=2676 fl_pass=8 hhist 5:8
+STATS n=8 T=99 lin=0 brute=0 leaves=55438 singular=0 orderfail=20868 not45=34438 ok45=132 apmismatch=0 out=132 maxval=62 maxdet=62 float=2 fl_reject=55306 fl_pass=132 hhist 5:132
+STATS n=9 T=99 lin=0 brute=0 leaves=1506374 singular=0 orderfail=803442 not45=700408 ok45=2524 apmismatch=0 out=2524 maxval=126 maxdet=126 float=2 fl_reject=1503850 fl_pass=2524 hhist 6:2524
+STATS n=10 T=6 lin=0 brute=0 leaves=51841968 singular=0 orderfail=34788108 not45=17002448 ok45=51412 apmismatch=0 out=13288 maxval=256 hhist 6:13288 7:38106 8:18
+STATS n=10 T=6 lin=0 brute=0 leaves=51841968 singular=0 orderfail=34788108 not45=17002448 ok45=51412 apmismatch=0 out=13288 maxval=256 maxdet=256 float=1 fl_reject=34788108 fl_pass=17053860 hhist 6:13288 7:38106 8:18
+STATS n=10 T=6 lin=0 brute=0 leaves=51841968 singular=0 orderfail=34788108 not45=17002448 ok45=51412 apmismatch=0 out=13288 maxval=254 maxdet=254 float=2 fl_reject=51790556 fl_pass=51412 hhist 6:13288 7:38106 8:18
+STATS n=11 T=7 lin=1 brute=0 leaves=13860888 singular=0 orderfail=11226432 not45=1427560 ok45=1206896 apmismatch=0 out=933922 maxval=510 maxdet=510 float=2 fl_reject=12653992 fl_pass=1206896 hhist 7:933922 8:272960 9:14
+STATS n=6 T=99 lin=0 brute=1 leaves=576 singular=0 orderfail=411 not45=163 ok45=2 apmismatch=0 out=2 maxval=16 maxdet=16 float=0 fl_reject=0 fl_pass=0 hhist 4:2
+STATS n=7 T=99 lin=0 brute=1 leaves=14400 singular=0 orderfail=12301 not45=2091 ok45=8 apmismatch=0 out=8 maxval=32 maxdet=32 float=0 fl_reject=0 fl_pass=0 hhist 5:8
+STATS n=8 T=99 lin=0 brute=1 leaves=518400 singular=0 orderfail=483830 not45=34438 ok45=132 apmismatch=0 out=132 maxval=64 maxdet=64 float=0 fl_reject=0 fl_pass=0 hhist 5:132
+STATS n=9 T=9 lin=0 brute=1 leaves=25401600 singular=0 orderfail=24698668 not45=700408 ok45=2524 apmismatch=0 out=2524 maxval=128 hhist 6:2524   [run 17:2x UTC with the first build of satenum.c (pure exact path, before maxdet/float options were added; 44.9 s)]
