@@ -1,0 +1,1 @@
+DONE nodes=425209182 leaves=2226490 solutions=0 timed_out=0 time=556.53
