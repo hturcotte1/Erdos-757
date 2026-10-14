@@ -1,4 +1,4 @@
-# Structure of Gyárfás–Lehel-tight hypergraphs [derived-here; to be falsified on data]
+# Structure of Gyárfás–Lehel-tight hypergraphs [derived-here; falsifier NONE-FOUND on ~80k flip instances, all records and 14,645 abstract (12,10) solutions: experiments/falsify/gl-tight-structure/report.md]
 
 Setting. $H$ an ordered midpoint hypergraph on $V=\{0,\dots,n-1\}$ (each interior $j$ the midpoint of at
 most one edge $(\ell(j),j,r(j))$ with $\ell(j)<j<r(j)$; linear). Saturated: every $j\in\{1,\dots,n-2\}$ is a
@@ -32,8 +32,8 @@ new tree, which also yields transversals), giving $0\le t_1-t_0\le1$.
 (true for $2k=16$ since $f(15)=9$), then every vertex lies in some minimum transversal of $H(A)$ (equivalently,
 every point is avoided by some maximum Sidon subset). If moreover no $(2k-2)$-point subset of $A$ has
 $h=k$ (for $2k=16$: $A$ contains no 14-point record), then every PAIR of vertices lies in a common minimum
-transversal: $\tau(H-u-v)=k-2$ and a $(k-2)$-transversal of $H-u-v$ plus $\{u,v\}$ is a minimum transversal.
-*Proof.* $h(A-v)\ge f(2k-1)=k+1=h(A)\ge h(A-v)$, so $\tau(H-v)=k-2$; add $v$. Same for pairs.
+transversal: $\tau(H-u-v)=k-3$ (since $\alpha(H-u-v)=k+1$ on $2k-2$ vertices) and a $(k-3)$-transversal of $H-u-v$ plus $\{u,v\}$ is a minimum transversal.
+*Proof.* $h(A-v)\ge f(2k-1)=k+1=h(A)\ge h(A-v)$, so $\tau(H-v)=(2k-1)-(k+1)=k-2$; add $v$. For pairs, $h(A-u-v)=k+1$ gives $\tau(H-u-v)=k-3$; add $u,v$.
 
 **Use.** Lemmas 1–3 are redundant for the SAT model but are strong implied constraints (Lemma 1 is the
 `gl_constraints` option of e757/sat_indep.py, K37). Lemma 2 gives one constraint per midpoint; Lemma 3
