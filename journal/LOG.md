@@ -130,3 +130,7 @@ Format for each work block:
 ## 2026-10-14T15:30Z result L002 ACCEPTED: exactly 54,243 twelve-point extremal sets
 - result [verified-here]: referee round 3 ACCEPT with a fourth independent pipeline (SAT enumeration + own C realizer); by-product: f(12) >= 7 without Henning-Yeo (alpha <= 6 UNSAT; every alpha <= 7 pattern saturated even with F7 allowed). K41/LEDGER/report updated.
 - evidence: results/reviews/L002-census-12-point-extremal-sets__referee__20261014T152552Z.md
+
+## 2026-10-14T17:00Z P1 exact counts of extremal sets for n<=11 (K43)
+- result [verified-here]: saturated classes 1, 4, 66, 1262, 6644, 466,961 (n=6..11); non-saturated extremal patterns exist for all n<=11 (infinite families), none at n=12. n=13 skipped (CPU to the n=14 census).
+- evidence: experiments/20261014-1430-small-counts/
