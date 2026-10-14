@@ -297,14 +297,13 @@ class Model:
         return len(clauses), lits
 
     def add_f7_eager(self):
-        """Forbid every copy of F7 up front: for each 7-subset of vertices and each of the 30
-        distinct labelings of F7 on it, NOT(all 5 triples are edges).  Returns #clauses."""
+        """Forbid every copy of F7 up front: for each 7-subset of vertices and each distinct
+        labeling of F7 on it (5040/|Aut|), NOT(all 5 triples are edges).  Returns #clauses."""
         F7 = [(0, 1, 2), (0, 3, 4), (0, 5, 6), (1, 3, 5), (2, 4, 6)]
         pats = set()
         for perm in itertools.permutations(range(7)):
             pats.add(frozenset(frozenset(perm[v] for v in blk) for blk in F7))
         pats = [[tuple(sorted(b)) for b in pat] for pat in pats]
-        assert len(pats) == 30
         cnt = 0
         for sub in itertools.combinations(range(self.n), 7):
             for pat in pats:
