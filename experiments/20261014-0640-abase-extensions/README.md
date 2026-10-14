@@ -51,5 +51,9 @@ are generic line points (exactly one new AP {a,x,y}); a 1/500 sample all had Sid
 * `witnesses.json`: explicit 3-AP-free (hence Sidon) 10-subset for each of the 1,743 (4,5) extension pairs, and a 3-AP-free 9-subset of A u {x} for each of the 50 generic-y cases (add y). `tests/test_abase_extensions.py` checks 50 stored 10-sets directly (10 points, subset of A u {x,y}, no a+b=2q) and all 50 S9.
 * `bruteforce_check.py` rewritten: no e757/extend.py imports, plain integers (coordinates doubled), window = half-integers in [-300,1699.5]
   (3,305 valid singles, 5,185,660 (4,5) pairs). It finds a checked 3-AP-free + Sidon 10-subset for EVERY (4,5) pair (0 failures; also asserts h(A)=8 exhaustively),
-  all 15,800 line-generic pairs included; 766 non-line-generic pairs with both points in APs, 0 missing from results.json. Runtime 5 min (`brute.log`).
-  (The "stored total 1734" in the log is a display artifact: quarter-integer stored pairs collapse under int(); it does not affect the check.)
+  all 15,800 line-generic pairs included. 16,566 window pairs have both points in 3-APs with points of A; of these 15,800 are
+  line-generic (exactly one new AP {a,x,y}) and 766 are NON-line-generic. Lookup in results.json uses exact Fraction keys
+  (round 2 fix; an earlier version used int(2*F(a)), which truncated quarter-integer values and gave a wrong stored count of 1,734).
+  Result: stored pairs 1,743 (all keys distinct), of which 766 lie in the window; all 766 were found by the brute force and
+  all 766 non-line-generic pairs are stored (0 missing, 0 stored-in-window unmatched). The other 977 stored pairs have a
+  coordinate outside the window or a non-half-integer coordinate. Runtime 5.7 min (`brute.log`).
