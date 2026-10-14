@@ -12,8 +12,6 @@ import itertools
 import json
 import os
 import random
-import subprocess
-import sys
 
 import pytest
 
@@ -23,32 +21,10 @@ from e757.realizability import order_feasible
 from e757.saturated import alpha_of_edges
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CBIN = os.path.join(ROOT, "e757", "c", "ordered_dfs")
 TABLE = os.path.join(ROOT, "experiments", "20261013-2257-chyp-table", "results")
 
 
-def _c_available():
-    if not os.path.exists(CBIN):
-        try:
-            subprocess.run(["bash", os.path.join(ROOT, "e757", "c", "build.sh")], check=True,
-                           capture_output=True, timeout=120)
-        except Exception:  # noqa: BLE001
-            return False
-    return os.path.exists(CBIN)
-
-
-def run_c(**kw):
-    """Run the C binary; returns (list of (alpha, edges), stats dict)."""
-    args = [CBIN] + ["%s=%s" % (k, int(v) if isinstance(v, bool) else v) for k, v in kw.items()]
-    out = subprocess.run(args, capture_output=True, text=True, timeout=600, check=True).stdout
-    sols, stats = [], {}
-    for line in out.splitlines():
-        if line.startswith("SOL"):
-            parts = line.split()
-            sols.append((int(parts[1]), tuple(tuple(int(x) for x in p.split(",")) for p in parts[2:])))
-        elif line.startswith("DONE"):
-            stats = dict(kv.split("=") for kv in line.split()[1:])
-    return sols, stats
+from e757.ordered_dfs_c import available as _c_available, run as run_c  # noqa: E402
 
 
 def all_patterns(n, **kw):
