@@ -1,8 +1,8 @@
-# Exact counts of extremal (4,5)-sets for n = 6..11
+# Exact counts of saturated extremal (4,5)-sets for n = 6..11 (and infinitude of the non-saturated families)
 CLAIM-TYPE: certificate (exhaustive enumeration with exact realization)
 TYPE: certificate
-STATUS: submitted (revised after referee rounds 1-2: dependencies, affine-equivalence wording, pre-filter and driver attribution)
-DEPENDS ON: K3-K6 [published] ((4,5) implies weak Sidon; h = alpha of the AP hypergraph; injective midpoints never at the extremes, so m <= n-2; linearity); K7 [published] (F7-free; imposed in the enumeration); K30 [verified-here] (monotone midpoints); K31-K33 [verified-here] (medial triangle and the forbidden cores with <= 4 edges, used by the pipeline as pre-filters at n=11: 3,263,957 of the 4,935,851 canonical saturated patterns were discarded by them without being realized; the referee's unfiltered recount over all 2,195,189,896 K30 midpoint maps at n=11 confirms the same 466,961 classes, results/reviews/L003-*__referee__20261014T181449Z.md); K8 [published] (Henning-Yeo, used to skip m below its minimum at n=10, 11); K24/K29 (f(6..11) = 4,5,5,6,6,7). The pipeline is the one certified in L002.
+STATUS: ACCEPTED by referee round 3 (results/reviews/L003-census-small-n-extremal-sets__referee__20261014T213511Z.md); revised after rounds 1-2
+DEPENDS ON: K3-K6 [published] ((4,5) implies weak Sidon; h = alpha of the AP hypergraph; injective midpoints never at the extremes, so m <= n-2; linearity); K7 [published] (F7-free; imposed in the enumeration); K30 [verified-here] (monotone midpoints); K31-K33 [verified-here] (medial triangle and the forbidden cores with <= 4 edges, used by the pipeline as pre-filters at n=11: 3,263,957 of the 4,935,851 canonical saturated patterns were discarded by them without being realized; the referee's unfiltered recount over all 2,195,189,896 K30 midpoint maps at n=11 confirms the same 466,961 classes, results/reviews/L003-*__referee__20261014T181449Z.md); K8 [published] (Henning-Yeo, used to skip m below its minimum at n=10, 11); K24 [derived-here] / K29 [verified-here] (f(6..11) = 4,5,5,6,6,7; not load-bearing: f(6..11) also follows from the published bound plus the sets found here). The pipeline is the one certified in L002.
 
 ## Statement
 For n = 6, 7, 8, 9, 10, 11 the number of affine classes of SATURATED (m = n-2) n-point (4,5)-sets with h = f(n) is
@@ -27,7 +27,7 @@ pattern gives infinitely many affine classes. Hence, up to affine equivalence, t
    referees' own spot checks (12/12, 26/26) cover saturated sets at every n.
 4. (Non-saturated case.) For each 6 <= n <= 11 at least one non-saturated pattern is realizable (exact counts for n <= 10;
    for n = 11 a sample of 300 patterns per m with 251/257/216 realizable at m = 6/7/8); a realizable pattern with
-   m < n-2 has a solution space of dimension >= 1 after normalization, and a generic point of it is again a
+   m < n-2 has a solution space of dimension >= 1 after normalization, and a generic point near the given realization is again a
    (4,5)-set with the same pattern (the failing points lie on finitely many proper subspaces), so it yields infinitely
    many affine classes. The n=8 record set (m=5) is such a case; the n=10 record set is one of the 6,644 saturated classes.
 

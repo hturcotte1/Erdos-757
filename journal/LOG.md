@@ -144,3 +144,7 @@ Format for each work block:
 
 ## 2026-10-14T21:05Z infra container restart (second); census relaunched
 - the container restarted ~21:03 UTC; the n=14 census died at 427/2537 prefixes (resumable) and the L003 round-3 referee died on a session usage limit (reset 19:40 UTC). Census relaunched (P=4, skips done prefixes); referee round 3 relaunched.
+
+## 2026-10-14T21:40Z result L003 ACCEPTED (saturated extremal counts n=6..11; infinite non-saturated families)
+- referee round 3 ACCEPT (third independent enumerator; own non-saturated witnesses). Editorial points applied (title 'saturated', tags, 'near the given realization', n=7 clamp note in K43).
+- evidence: results/reviews/L003-census-small-n-extremal-sets__referee__20261014T213511Z.md
