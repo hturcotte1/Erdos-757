@@ -14,7 +14,8 @@ from networkx.algorithms.isomorphism import GraphMatcher
 from e757.realizability import realize_exact
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else "catalogue.json"
-VMAX, EMAX = 8, 4
+import os
+VMAX, EMAX = int(os.environ.get("VMAX", 8)), 4
 
 
 def inc_graph(edges):
