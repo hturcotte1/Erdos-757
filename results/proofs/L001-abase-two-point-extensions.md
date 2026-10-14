@@ -8,7 +8,7 @@ DEPENDS ON: K11 [published] (A_base is a (4,5)-set with h=8); K4 [published] (fo
 Let $A=A_{\rm base}=\{0,136,200,243,246,249,272,286,298,323,400,528,596,1056\}$. For every pair of distinct reals
 $x,y\notin A$ such that $B=A\cup\{x,y\}$ is a (4,5)-set, $h(B)=10$. In particular no 16-point (4,5)-set
 containing $A_{\rm base}$ has $h\le 9$ (and, deleting a point, no 17-point one has $h\le 9$ either). The statement says
-nothing about extensions by three or more points: an 18-point (4,5)-set containing $A_{\rm base}$ with $h=10$ would
+nothing about extensions by four or more points: an 18-point (4,5)-set containing $A_{\rm base}$ with $h=10$ would
 still be a record (ratio $5/9<4/7$) and is NOT excluded here.
 (This upgrades K13 [community] to [verified-here]; the omega thread stated it with a ten-witness certificate.)
 
@@ -22,7 +22,7 @@ These cases are exhaustive: either some new AP exists (then it involves $x$ or $
 
 ## Computer-verified steps
 experiments/20261014-0640-abase-extensions/extend.py (exact Fractions; results.json), tests/test_abase_extensions.py (re-checks 50 stored extensions: (4,5) and h=10).
-Independent cross-check: bruteforce_check.py (plain integers, no e757 or extend.py imports) over all half-integer pairs in [-300, 1699.5]: 5,185,660 (4,5) pairs, every one with a verified 3-AP-free 10-subset (0 failures), including all 15,800 line-generic pairs; the 766 pairs with both points in APs are all contained in results.json; h(A_base)=8 re-checked exhaustively (5 minutes). The first referee round (results/reviews/L001-...__referee__20261014T080455Z.md) re-derived all counts with three implementations sharing no code with e757 (formula enumeration, CP-SAT on equal distances, a grid scan) and checked all 6,876 line pairs.
+Independent cross-check: bruteforce_check.py (plain integers, no e757 or extend.py imports) over all half-integer pairs in [-300, 1699.5]: 5,185,660 (4,5) pairs, every one with a verified 3-AP-free 10-subset (0 failures), including all 15,800 line-generic pairs; the 766 non-line-generic pairs (both points in 3-APs with points of $A$, not merely on a common line $\{a,x,y\}$) are all contained in results.json, with exact rational keys; h(A_base)=8 re-checked exhaustively (5 minutes). The first referee round (results/reviews/L001-...__referee__20261014T080455Z.md) re-derived all counts with three implementations sharing no code with e757 (formula enumeration, CP-SAT on equal distances, a grid scan) and checked all 6,876 line pairs.
 
 ## Sanity checks
 h(A_base)=8 (judge); the stored 1,743 (4,5)-sets all have 16 points, ratio 10/16 = 5/8 as in K13.

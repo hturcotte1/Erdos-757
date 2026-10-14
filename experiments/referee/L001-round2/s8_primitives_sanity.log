@@ -1,0 +1,13 @@
+n=8 is45=True h_brute=5 h_ilp=5 recorded=('8', 5)
+n=10 is45=True h_brute=6 h_ilp=6 recorded=('10', 6)
+n=11 is45=True h_brute=7 h_ilp=7 recorded=('11', 7)
+n=12 is45=True h_brute=7 h_ilp=7 recorded=('12', 7)
+n=14 is45=True h_brute=8 h_ilp=8 recorded=('14', 8)
+n=12 is45=True h_brute=7 h_ilp=7 recorded=('12b', 7)
+n=12 is45=True h_brute=7 h_ilp=7 recorded=('12c', 7)
+Fibonacci n=5 is45=True h_brute=4 h_ilp=4
+Fibonacci n=8 is45=True h_brute=6 h_ilp=6
+Fibonacci n=10 is45=True h_brute=7 h_ilp=7
+Fibonacci n=12 is45=True h_brute=8 h_ilp=8
+Fibonacci n=15 is45=True h_brute=10 h_ilp=10
+{1,2,3,5} is45: False | {2,3,5,8} is45: True

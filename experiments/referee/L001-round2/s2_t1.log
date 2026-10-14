@@ -1,0 +1,15 @@
+/home/user/Erdos-757/experiments/referee/L001-round2/s2_t1.py:4: SyntaxWarning: invalid escape sequence '\ '
+  - P = candidates(A) \ A, P_ok = {x in P : A u {x} is (4,5)}  (full C(15,4) check)
+|P| = 223  (all in 2Z after scaling by 4, i.e. in (1/2)Z): True
+|P_ok| = 50
+h(A u {x}) (brute, ilp) distribution: {(9, 9): 50}
+T1b unordered candidate pairs: 11774  t=2.1
+(4,5) T1b pairs (full 1820-quadruple test): 1743  t=8.6
+h brute-force distribution: {10: 1743}  t=38.1
+h ILP distribution: {10: 1743}  t=64.3
+pairs with both points in P: 997
+stored 1743 mine 1743 symmetric difference 0 | stored h values: {10}
+witnesses.json pairs == my set: True
+witnesses.json generic_y x-values == my P_ok: True
+T1a random generic y spot check (is45, h): {(True, 10): 150}
+time 67.3s

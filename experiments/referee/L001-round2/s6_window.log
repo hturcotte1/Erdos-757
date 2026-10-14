@@ -1,0 +1,13 @@
+valid singles: 3305
+  x index 0 total so far 3181 t=0
+  x index 500 total so far 1458572 t=3
+  x index 1000 total so far 2671470 t=6
+  x index 1500 total so far 3656416 t=9
+  x index 2000 total so far 4398457 t=11
+  x index 2500 total so far 4893268 t=14
+  x index 3000 total so far 5145206 t=16
+(4,5) pairs total: 5185660 | line-generic: 15800 | non-line-generic both-in-AP: 766
+non-line-generic both-in-AP pairs missing from results.json (exact comparison): 0 []
+authors truncated set size 1734 | exactly-half-integral stored pairs 1467 | spurious truncated keys 267
+pure-Python is45 on all non-line-generic pairs: True
+time 18.2s

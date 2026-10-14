@@ -1,0 +1,3 @@
+A0 = A_base - {0,246}: h(A0)=8 lines=1462 valid=373 vertices=46985 (4,5)-classes=3994 | classes with h<h0+2: 168 | pair (0,246) reported: True [('vertex', 8)] | t=21s
+A0 = A_base - {243,249}: h(A0)=8 lines=1307 valid=320 vertices=33951 (4,5)-classes=2128 | classes with h<h0+2: 402 | pair (243,249) reported: True [('vertex', 8)] | t=36s
+A0 = A_base - {528,1056}: h(A0)=8 lines=1270 valid=297 vertices=29335 (4,5)-classes=1608 | classes with h<h0+2: 679 | pair (528,1056) reported: True [('vertex', 8)] | t=50s

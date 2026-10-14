@@ -1,0 +1,10 @@
+non-parallel line pairs: 588 | distinct intersection points: 512
+after filtering x!=y, x,y notin A: 498
+intersection points that are (4,5): 0 | min #cross APs at them: 2
+denominators occurring: [1, 3]
+APs at random line points: {13}
+lines with (4,5) random points: 30 | lines with none: 12 [('a_mid', 136), ('a_mid', 200), ('a_mid', 243), ('a_mid', 246), ('a_mid', 249), ('a_mid', 272), ('a_mid', 286), ('a_mid', 298), ('a_mid', 323), ('a_mid', 400), ('a_mid', 528), ('a_mid', 596)]
+h at (4,5) random line points: {10}
+lines with mixed (4,5) outcomes among samples (should be none): []
+T0 random pairs (is45, h, #APs): {(True, 10, 12): 60}
+time 4.8s

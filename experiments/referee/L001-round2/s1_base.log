@@ -1,0 +1,35 @@
+A distinct, n=14; is45: True
+3-APs of A: 12 [(0, 136, 272), (0, 200, 400), (0, 298, 596), (0, 528, 1056), (136, 596, 1056), (200, 243, 286), (200, 249, 298), (243, 246, 249), (246, 272, 298), (246, 323, 400), (249, 286, 323), (272, 400, 528)]
+midpoints: [136, 200, 243, 246, 249, 272, 286, 298, 323, 400, 528, 596] | distinct: 12 | non-extreme points: True
+h(A) brute = 8 witness [Fraction(0, 1), Fraction(136, 1), Fraction(200, 1), Fraction(243, 1), Fraction(246, 1), Fraction(298, 1), Fraction(323, 1), Fraction(528, 1)] | ILP = 8
+number of maximum Sidon 8-subsets: 143
+Sidon 9-subsets: 0
+  h(A - {0}) brute=8 ILP=8
+  h(A - {136}) brute=8 ILP=8
+  h(A - {200}) brute=8 ILP=8
+  h(A - {243}) brute=8 ILP=8
+  h(A - {246}) brute=8 ILP=8
+  h(A - {249}) brute=8 ILP=8
+  h(A - {272}) brute=8 ILP=8
+  h(A - {286}) brute=8 ILP=8
+  h(A - {298}) brute=8 ILP=8
+  h(A - {323}) brute=8 ILP=8
+  h(A - {400}) brute=8 ILP=8
+  h(A - {528}) brute=8 ILP=8
+  h(A - {596}) brute=8 ILP=8
+  h(A - {1056}) brute=8 ILP=8
+  abstract H(A)+{0,X,Y}: has indep 10-set: True, has indep 11-set: False
+  abstract H(A)+{136,X,Y}: has indep 10-set: True, has indep 11-set: False
+  abstract H(A)+{200,X,Y}: has indep 10-set: True, has indep 11-set: False
+  abstract H(A)+{243,X,Y}: has indep 10-set: True, has indep 11-set: False
+  abstract H(A)+{246,X,Y}: has indep 10-set: True, has indep 11-set: False
+  abstract H(A)+{249,X,Y}: has indep 10-set: True, has indep 11-set: False
+  abstract H(A)+{272,X,Y}: has indep 10-set: True, has indep 11-set: False
+  abstract H(A)+{286,X,Y}: has indep 10-set: True, has indep 11-set: False
+  abstract H(A)+{298,X,Y}: has indep 10-set: True, has indep 11-set: False
+  abstract H(A)+{323,X,Y}: has indep 10-set: True, has indep 11-set: False
+  abstract H(A)+{400,X,Y}: has indep 10-set: True, has indep 11-set: False
+  abstract H(A)+{528,X,Y}: has indep 10-set: True, has indep 11-set: False
+  abstract H(A)+{596,X,Y}: has indep 10-set: True, has indep 11-set: False
+  abstract H(A)+{1056,X,Y}: has indep 10-set: True, has indep 11-set: False
+time 0.9s

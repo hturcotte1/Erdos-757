@@ -1,0 +1,4 @@
+witnesses.json pairs: 1743 failures: 0
+witnesses.json generic_y: 50 failures: 0
+results.json stored == witnesses.json pairs (exact): True 1743 1743
+judge files written: 255
