@@ -1,0 +1,6 @@
+census entries 54243 distinct classes 54243
+record_12 n 12 (4,5) True m 10 h_ilp 7 class in census True
+record_12b / omega ex.1 n 12 (4,5) True m 10 h_ilp 7 class in census True
+record_12c / omega ex.2 n 12 (4,5) True m 10 h_ilp 7 class in census True
+known classes pairwise distinct: True
+sample 2000 failures 0

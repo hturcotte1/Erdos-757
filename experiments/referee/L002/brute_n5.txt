@@ -1,0 +1,4 @@
+H n=5 m=0 alpha=5 count=1
+H n=5 m=1 alpha=4 count=10
+H n=5 m=2 alpha=4 count=11
+DONE n=5 m=-1 T=5 prune=0 order=0 nodes=36 leaves=22 f7rej=0 sols=0 cpu=0.0

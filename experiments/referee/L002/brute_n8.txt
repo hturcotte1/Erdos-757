@@ -1,0 +1,12 @@
+H n=8 m=0 alpha=8 count=1
+H n=8 m=1 alpha=7 count=56
+H n=8 m=2 alpha=6 count=252
+H n=8 m=2 alpha=7 count=616
+H n=8 m=3 alpha=6 count=4270
+H n=8 m=3 alpha=7 count=344
+H n=8 m=4 alpha=6 count=8301
+H n=8 m=5 alpha=5 count=1832
+H n=8 m=5 alpha=6 count=2356
+H n=8 m=6 alpha=5 count=260
+H n=8 m=6 alpha=6 count=26
+DONE n=8 m=-1 T=8 prune=0 order=0 nodes=23377 leaves=18504 f7rej=190 sols=0 cpu=0.0

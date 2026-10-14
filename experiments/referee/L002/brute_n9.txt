@@ -1,0 +1,17 @@
+H n=9 m=0 alpha=9 count=1
+H n=9 m=1 alpha=8 count=84
+H n=9 m=2 alpha=7 count=756
+H n=9 m=2 alpha=8 count=1386
+H n=9 m=3 alpha=6 count=208
+H n=9 m=3 alpha=7 count=19578
+H n=9 m=3 alpha=8 count=1548
+H n=9 m=4 alpha=6 count=5256
+H n=9 m=4 alpha=7 count=82019
+H n=9 m=4 alpha=8 count=172
+H n=9 m=5 alpha=6 count=74212
+H n=9 m=5 alpha=7 count=66750
+H n=9 m=6 alpha=6 count=69535
+H n=9 m=6 alpha=7 count=6420
+H n=9 m=7 alpha=6 count=8570
+H n=9 m=7 alpha=7 count=38
+DONE n=9 m=-1 T=9 prune=0 order=0 nodes=410087 leaves=340639 f7rej=4106 sols=0 cpu=0.9

@@ -1,0 +1,7 @@
+codes 2226490 distinct 2226490
+reflections missing from list: 0  self-symmetric: 0
+my realizable labelled lines: 108486  distinct canonical sets: 54243  multiplicity histogram: {2: 54243}
+theirs entries: 54243  distinct canonical: 54243
+theirs - mine: 0  mine - theirs: 0
+their flags: all h=7 True  all is_45 True  all rigid True
+max coordinate among canonical normalized sets: 1008

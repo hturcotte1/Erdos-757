@@ -103,3 +103,7 @@ Format for each work block:
 - result [heuristic]: realizability-CEGAR witness searches at (18,10,16), (20,11,18), (22,12,20): UNKNOWN after 3600 s each (no record candidate, no refutation); n=23 running.
 - result [verified-here]: partial CP-SAT census at (14,12,alpha<=8): 1,474 abstract solutions in 2 h, 146 exactly realizable = 146 affine classes of 14-point (4,5)-sets with h=8 (A_base is one of many); judge spot check on 40: see this entry's command output in the main session (all PASS, h=8). Sets saved in experiments/20261014-0610-extremal-census/results/n14_realizable_sets_partial.json.
 - decision: (14,12) exact count via the prefix-split parallel DFS (worker); sweep continues at 23, 25 then ends.
+
+## 2026-10-14T11:30Z P1 (14,12) exact census launched (prefix-split C DFS); CP-SAT census chain stopped
+- launched: python3 -m e757.ordered_dfs_split 14 8 12 3 3 ... (2,537 depth-3 prefixes, 3 workers, resumable; est. 36-44 CPU-h; postprocess.py afterwards). Stopped the CP-SAT census chain (its (14,12) partial is harvested as K42; the (15,13) partial count was of marginal value).
+- evidence: experiments/20261014-1005-census-dfs/README.md, n14/run.log

@@ -1,0 +1,9 @@
+H n=7 m=0 alpha=7 count=1
+H n=7 m=1 alpha=6 count=35
+H n=7 m=2 alpha=5 count=63
+H n=7 m=2 alpha=6 count=231
+H n=7 m=3 alpha=5 count=631
+H n=7 m=3 alpha=6 count=43
+H n=7 m=4 alpha=5 count=348
+H n=7 m=5 alpha=5 count=10
+DONE n=7 m=-1 T=7 prune=0 order=0 nodes=1839 leaves=1372 f7rej=10 sols=0 cpu=0.0
