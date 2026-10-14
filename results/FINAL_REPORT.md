@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report (living document; updated at every checkpoint)
 
-Last updated: 2026-10-14 08:00 UTC (elapsed about 9 of 72 budget hours). Status of the goal clauses at
+Last updated: 2026-10-14 10:05 UTC (elapsed about 11 of 72 budget hours). Status of the goal clauses at
 this update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted.
 
 ## 1. Result summary
@@ -43,7 +43,10 @@ $A_{\rm base}$) are unchanged by this run so far. The run produced the following
    inequivalent 12-point (4,5)-sets with $h=7$ (about 15% of the abstract solutions are realizable), so the three
    previously known ones are a tiny sample and realizability is not the bottleneck; the obstruction at $n=16$, if
    real, is combinatorial (no abstract solution was ever found by three independent methods).
-6. **Negative heuristic results.** Annealing over about 4 million saturated midpoint maps at $n=16$
+6. **Certificate L001 (referee ACCEPT after four rounds, four independent methods).** No 2-point (4,5) extension of
+   $A_{\rm base}$ has $h\le9$: all 1,743 non-generic extension pairs and all generic cases have $h=10$. This upgrades the
+   community fact K13; extensions by four or more points are not covered.
+7. **Negative heuristic results.** Annealing over about 4 million saturated midpoint maps at $n=16$
    (28,589 of them genuine (4,5)-sets) never produced a largest Sidon subset below 10; about 21% of random
    linear saturated maps are realizable, so realizability is not the obstacle at $n=16$, the independence
    number is.

@@ -1,8 +1,8 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: running
-Last updated (UTC): 2026-10-14 07:00
-Phase/track: Phase 1 -> f(16) decision (relaunched after container restart 04:40 UTC); Track L design started
+Last updated (UTC): 2026-10-14 10:05
+Phase/track: Phase 1 censuses + Track U witness sweeps; Track L data-driven design (no proof idea yet)
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
 ## Best verified results
@@ -15,11 +15,10 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
   (experiments/20261013-2257-chyp-table/table.md)
 
 ## Running jobs / agents
-- n=15 streams (class O', alpha<=9): m'=9, m'=10 no solution yet (UNSAT would give deg<=3 in any 16-point extremal H), m'=11 2,282+ solutions; 2 h limit ends ~08:00 (experiments/20261014-0550-n16-layered/results).
-- Extremal census chain: (12,10,alpha<=7) >= 25,484 abstract solutions so far (3 known realizable classes); then (14,12), (15,13) (experiments/20261014-0610-extremal-census).
-- worker: exact re-derivation of K13 (no 2-point extension of A_base reaches h=9) -> experiments/20261014-0640-abase-extensions.
-- falsifier (background tail): full-core classification of the abstract Q8 violators.
-- DONE this block: GL-tight structure lemmas (kb/notes/gl_tight_structure.md, falsifier NONE-FOUND); K35-K38; FINAL_REPORT living draft; D15-D16.
+- Sweep (realizability-CEGAR witness mode, 1 h/size, 3 workers): n=18 UNKNOWN; n=20 running; then 22, 23, 25 (experiments/20261014-0030-feasible-sizes/results).
+- Census chain: (12,10) partial: 30,559 abstract / 3,980 realizable classes (K40); (14,12) running (2 h limit), then (15,13) (experiments/20261014-0610-extremal-census).
+- worker (new): exhaustive (12,10) census with the C DFS engine (e757/c/ordered_dfs) + K31/cores filter + exact realization; (14,12) attempt.
+- DONE: L001 ACCEPTED (K13 verified); K30-K40; GL-tight lemmas (falsifier clean); inductive fit (K39); Q8 abstract failure (K38).
 
 ## Live hypotheses
 - [heuristic] Realizability is not the bottleneck at n=16 (21% of random linear saturated maps are (4,5)-sets); alpha is.
@@ -29,6 +28,6 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 - [heuristic] Transversal reformulation: tau = min set T such that every midpoint j is in T or has a parent l(j) or r(j) in T (parent maps l<j<r; G_L, G_R are rooted forests).
 
 ## Next 3 actions
-1. Harvest at ~08:00: m'=9/10 UNSAT? (-> degree bound lemma for 16-point extremal H), census counts at (12,10) and (14,12), extension certificate K13 -> [verified-here].
-2. Track L: LP-fit the best inductive (a,b,c,d) on abstract vs realizable data to state exactly what is provable without cores; then decide whether a prover attempt on a weaker Q8-type target with cores is worth it.
-3. Checkpoint every 2 h; keep FINAL_REPORT current; budget end 2026-10-16 23:06 UTC.
+1. Exact counts: exhaustive (12,10) abstract/realizable census (DFS); (14,12) if feasible. Record as verified counts.
+2. Harvest sweep outcomes (n=20..25) and the (14,12)/(15,13) census streams; update FINAL_REPORT.
+3. Track L: only if a concrete discharge idea for the (3,0,0) type with 5/6-edge cores appears; otherwise keep gathering exact structure data. Checkpoint every 2 h.
