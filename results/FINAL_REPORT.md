@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report (living document; updated at every checkpoint)
 
-Last updated: 2026-10-14 06:55 UTC (elapsed about 7.8 of 72 budget hours). Status of the goal clauses at
+Last updated: 2026-10-14 08:00 UTC (elapsed about 9 of 72 budget hours). Status of the goal clauses at
 this update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted.
 
 ## 1. Result summary
@@ -39,7 +39,11 @@ $A_{\rm base}$) are unchanged by this run so far. The run produced the following
    (`realizability.py`), CP-SAT model of $O'$ with lazy/eager independence constraints
    (`cpsat_model.py`), an independent python-sat encoding (`sat_indep.py`), an exact DFS in Python and C
    (`ordered_dfs.py`, `c/`), and a midpoint-map annealer (`anneal.py`). All cross-validated on $n\le 12$.
-5. **Negative heuristic results.** Annealing over about 4 million saturated midpoint maps at $n=16$
+5. **Extremal sets are plentiful (K40).** A time-limited census at $(12,10)$ already yields 3,980 affinely
+   inequivalent 12-point (4,5)-sets with $h=7$ (about 15% of the abstract solutions are realizable), so the three
+   previously known ones are a tiny sample and realizability is not the bottleneck; the obstruction at $n=16$, if
+   real, is combinatorial (no abstract solution was ever found by three independent methods).
+6. **Negative heuristic results.** Annealing over about 4 million saturated midpoint maps at $n=16$
    (28,589 of them genuine (4,5)-sets) never produced a largest Sidon subset below 10; about 21% of random
    linear saturated maps are realizable, so realizability is not the obstacle at $n=16$, the independence
    number is.

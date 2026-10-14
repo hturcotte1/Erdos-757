@@ -73,3 +73,9 @@ Format for each work block:
 - meaning: an abstract (core-free) proof can at best reach b = 31/70 on this data (and likely worse at larger n); a proof of Q8 itself must discharge the (3,0,0) type using 5- and 6-edge cores.
 - evidence: experiments/20261014-0700-inductive-fit/
 - decision: no prover attempt yet (no proof idea for the (3,0,0) discharge); continue harvesting exact data; after the n=15 streams end, run witness-mode sweeps at n=18, 20, 22.
+
+## 2026-10-14T08:00Z U/P1 census: thousands of 12-point extremal sets
+- result [verified-here]: K40. 3,980 affine classes of 12-point (4,5)-sets with h=7 from a partial abstract census (26,974 solutions, TIMEOUT); ~15% of abstract extremal patterns are realizable; 33 random ones re-judged by judge/judge.py: all PASS h=7.
+- meaning: the known records are a tiny sample; extremal sets at n=12 (and presumably 14) are abundant. The absence of any abstract alpha<=9 pattern at n=16 (three methods) is therefore the whole story for Track U.
+- evidence: experiments/20261014-0610-extremal-census/results/
+- decision: after the n=15 streams end (~08:00), run witness-mode sweeps at n=18,20,22; keep the (14,12) census running.
