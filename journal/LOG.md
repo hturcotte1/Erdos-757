@@ -137,3 +137,7 @@ Format for each work block:
 
 ## 2026-10-14T17:05Z P1 n=14 census relaunched with 4 workers
 - the resumable prefix-split driver was restarted with P=4 after the small-counts job ended (235/2537 prefixes already done; nothing lost beyond partial prefixes). Command in experiments/20261014-1005-census-dfs/README.md (P=4 now).
+
+## 2026-10-14T17:25Z kb novelty check of the census results: CLEAR
+- scout: OEIS has no match for 1,4,66,1262,6644; no prior enumeration of (4,5)-set extremal classes; K30/K31 not in the digests or threads (arXiv API 429 today; baseline scan of 10-13 used).
+- evidence: results/reviews/L002-census-12-point-extremal-sets__scout__20261014T171802Z.md

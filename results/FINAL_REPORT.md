@@ -46,7 +46,8 @@ $A_{\rm base}$) are unchanged by this run so far. The run produced the following
    inequivalent 14-point sets with $h=8$ ($A_{\rm base}$ is one of many); the exact $n=14$ count is being computed.
    For $n=6..11$ the saturated extremal classes number 1, 4, 66, 1,262, 6,644, 466,961, and non-saturated extremal
    patterns (infinite families) exist at every $n\le11$, so $n=12$ is the first size with finitely many extremal sets
-   (K43, certificate L003). About 14% of abstract extremal
+   (K43, certificate L003). A novelty scan (OEIS, arXiv baseline, the problem's forum thread, the omega issue) found no
+   prior enumeration of these sets and no prior statement of K30/K31 (NOVELTY: CLEAR, results/reviews/L002-*__scout__*.md). About 14% of abstract extremal
    patterns are realizable, so realizability is not the bottleneck; the obstruction at $n=16$, if real, is
    combinatorial (no abstract solution was ever found by three independent methods, and witness searches at
    $n=18,20,22$ found nothing either).
