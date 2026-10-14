@@ -1,0 +1,5 @@
+10.25 11.21 12.12 10/155 11013
+PROG level=2 midpoint=2 done t=60.0 nodes=4009984 sols=0
+DONE nodes=4009984 leaves=0 solutions=0 timed_out=1 time=60.04
+PROG level=2 midpoint=2 done t=60.0 nodes=82063360 sols=0
+DONE nodes=82063360 leaves=0 solutions=0 timed_out=1 time=60.00

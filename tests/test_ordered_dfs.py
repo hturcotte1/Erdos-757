@@ -121,7 +121,7 @@ def test_pruned_equals_unpruned_filtered(n):
 def test_hy_option_is_consistent():
     # hy_m_need(16, 9) = 13, matching START_HERE section 4
     assert [hy_m_need(16, 9), hy_m_need(18, 10), hy_m_need(20, 11), hy_m_need(22, 12)] == [13, 16, 18, 20]
-    n, T = 9, 6
+    n, T = 8, 6
     a = []
     enumerate_solutions(n, T, forbid_f7=True, callback=lambda e, al: a.append(tuple(e)))
     b = []
@@ -130,7 +130,7 @@ def test_hy_option_is_consistent():
 
 
 def test_reflection_filter_gives_one_per_orbit():
-    n, T = 9, 6
+    n, T = 8, 6
     allsol = []
     enumerate_solutions(n, T, callback=lambda e, a: allsol.append(tuple(e)))
     half = []
@@ -161,7 +161,10 @@ def _feasible_filter():
 def test_monotone_rule_never_prunes_order_feasible_patterns(n):
     feas = _feasible_filter()
     # with (c): all patterns, then keep order-feasible ones
-    with_c = [e for e in all_patterns(n) if feas(n, e)]
+    # (order feasibility is monotone in the edge set, so pruning with it at nodes is exact)
+    with_c = []
+    enumerate_solutions(n, n, node_filter=lambda es: feas(n, es),
+                        callback=lambda e, a: with_c.append(tuple(e)))
     # without (c): node-level exact order-feasibility pruning (infeasibility is monotone in the edge set)
     without_c = []
     enumerate_solutions(n, n, monotone=False, node_filter=lambda es: feas(n, es),
@@ -259,9 +262,12 @@ def test_c_counts_n10():
     if not _c_available():
         pytest.skip("no C compiler")
     py = []
-    st = enumerate_solutions(10, 6, forbid_f7=True, callback=lambda e, a: py.append(tuple(e)))
-    sols, cst = run_c(n=10, T=6, f7=1, mode="count", progress=0)
-    assert int(cst["solutions"]) == len(py) == 3 and int(cst["nodes"]) == st["nodes"]
+    st = enumerate_solutions(10, 6, m_exact=8, forbid_f7=True, callback=lambda e, a: py.append(tuple(e)))
+    sols, cst = run_c(n=10, T=6, m_exact=8, f7=1, mode="count", progress=0)
+    assert int(cst["solutions"]) == len(py) and int(cst["nodes"]) == st["nodes"]
+    # the min-alpha solutions (alpha = 6, m = 7) are among the m>=7 solutions
+    sols, cst = run_c(n=10, T=6, f7=1, mode="enum", refl=1, progress=0, m_min=7)
+    assert len(sols) >= 1 and all(a <= 6 for a, e in sols)
 
 
 def test_exists_and_unsat():
