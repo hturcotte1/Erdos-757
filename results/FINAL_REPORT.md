@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report (living document; updated at every checkpoint)
 
-Last updated: 2026-10-14 10:05 UTC (elapsed about 11 of 72 budget hours). Status of the goal clauses at
+Last updated: 2026-10-14 11:25 UTC (elapsed about 12 of 72 budget hours). Status of the goal clauses at
 this update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted.
 
 ## 1. Result summary
@@ -39,10 +39,13 @@ $A_{\rm base}$) are unchanged by this run so far. The run produced the following
    (`realizability.py`), CP-SAT model of $O'$ with lazy/eager independence constraints
    (`cpsat_model.py`), an independent python-sat encoding (`sat_indep.py`), an exact DFS in Python and C
    (`ordered_dfs.py`, `c/`), and a midpoint-map annealer (`anneal.py`). All cross-validated on $n\le 12$.
-5. **Extremal sets are plentiful (K40).** A time-limited census at $(12,10)$ already yields 3,980 affinely
-   inequivalent 12-point (4,5)-sets with $h=7$ (about 15% of the abstract solutions are realizable), so the three
-   previously known ones are a tiny sample and realizability is not the bottleneck; the obstruction at $n=16$, if
-   real, is combinatorial (no abstract solution was ever found by three independent methods).
+5. **Extremal sets are plentiful (K40-K42, certificate L002).** The exhaustive C-DFS census gives exactly
+   **54,243** affinely inequivalent 12-point (4,5)-sets with $h=7$ (2,226,490 abstract patterns, all exactly
+   realized or exactly refuted; L002, under referee review), and a partial census already gives at least 146
+   inequivalent 14-point sets with $h=8$ ($A_{\rm base}$ is one of many). About 14% of abstract extremal
+   patterns are realizable, so realizability is not the bottleneck; the obstruction at $n=16$, if real, is
+   combinatorial (no abstract solution was ever found by three independent methods, and witness searches at
+   $n=18,20,22$ found nothing either).
 6. **Certificate L001 (referee ACCEPT after four rounds, four independent methods).** No 2-point (4,5) extension of
    $A_{\rm base}$ has $h\le9$: all 1,743 non-generic extension pairs and all generic cases have $h=10$. This upgrades the
    community fact K13; extensions by four or more points are not covered.
