@@ -51,3 +51,33 @@ This measurement was made on a loaded machine.
     (from repo root) bash scripts/start_job.sh experiments/20261014-0515-sat-indep 14 python3 experiments/20261014-0515-sat-indep/run_cases.py 3000
 (`run_cases.py` skips existing JSONs, so rerunning resumes; status COMPLETE with n_solutions=0 means UNSAT, TIMEOUT cases
 need splitting. Use `python3 run_cases.py TL m k` to run one case. The time limit is enforced for glucose4 only.)
+
+## Gyarfas-Lehel colouring constraints (`gl_constraints=True|'L'|'R'|'LR'`, saturated m = n-2 only)
+Proof (also in the module docstring): for a saturated pattern the left graph G_L ({i,j} for each AP (i,j,k)) is a tree on
+{0..n-2} (each j>=1 has exactly one parent i<j), its proper 2-colouring c (c_0=0) makes both classes transversals of H, hence
+n-T <= sum c_v <= T-1 whenever alpha <= T (|class| >= tau >= n-T, classes sum to n-1). Same for G_R on {1..n-1} with d_{n-1}=0.
+Encoding: colour variables, x[i,j,k] -> (c_j xor c_i), totalizer atleast/atmost. [verified-here] soundness tests
+(`test_gl_constraints_*`): the saturated record patterns (direct check of both class sizes and transversality, and SAT with all
+edges fixed for L, R, LR), all 10 realizable saturated census patterns with n=4..7 at T = their alpha, and the saturated min alpha
+for n=8..11 is identical for none/L/R/LR.
+
+Timings (UNSAT at T = min alpha - 1, m = n-2, single process, machine loaded; `run_gl_timings.sh`, results/gl_timings.jsonl):
+
+| n,T,m | solver | none | L | R | LR |
+|---|---|---|---|---|---|
+| 11,6,9 | glucose4 | 4.7 s | 4.0 | 3.6 | 4.1 |
+| 11,6,9 | cadical195 | 3.7 | 3.2 | 2.9 | 3.2 |
+| 12,6,10 | glucose4 | 6.7 | 1.9 | 4.9 | 0.47 |
+| 12,6,10 | cadical195 | 3.9 | 0.34 | 2.6 | 0.39 |
+| 13,7,11 | glucose4 (150 s limit) | TIMEOUT | TIMEOUT | TIMEOUT | TIMEOUT |
+| 13,7,11 | cadical195 (180 s kill) | KILLED | - | - | KILLED |
+
+Speedups: n=11 about 1.1-1.2x; n=12 3.5x (L) to 14x (LR) with glucose4, 11x (L) with cadical; n=13 no solver finished within
+150-180 s with or without the constraints, so no factor can be given (the m-free decision of the first section took 256 s).
+Evidence so far is one instance per size and noisy (loaded machine) [heuristic].
+
+n=16, T=9, m=14, vertex 1 edge (0,1,2), variant LR, glucose4, 900 s: **TIMEOUT** (results/gl_n16_LR_glucose4.json). Not solved, so
+the 30-case run is NOT recommended as is (command, if wanted anyway, is in the section above; add gl_constraints="LR" to the
+enumerate_all call in run_cases.py first, only valid for m=14).
+Third variant ("class minus v is not a transversal"): skipped, no compact encoding found (it needs per-(v, edge) auxiliary
+variables, O(n^4)); it is only informative for the class of size exactly n-T.
