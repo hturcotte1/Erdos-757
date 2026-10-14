@@ -93,3 +93,8 @@ Format for each work block:
 ## 2026-10-14T10:00Z result L001 ACCEPTED (2-point extensions of A_base)
 - result [verified-here]: certificate L001 accepted at referee round 4 (rounds 1-3 verified the mathematics and demanded text fixes; round 4 added a Sidon-definition-only method over all of R^2). K13 and D6 upgraded; LEDGER row added. Scope: 2-point (hence 3-point) extensions only.
 - evidence: results/reviews/L001-abase-two-point-extensions__referee__*.md
+
+## 2026-10-14T10:40Z result exact census: 54,243 twelve-point extremal sets
+- result [verified-here]: C DFS enumerates all class-O patterns at (12,10,alpha<=7): 2,226,490 labelled (1,113,245 up to reflection), 0 at m=9; after K31/4-edge-core filters 395,039; exact realization: 54,243 realizable (rigid) = affine classes of 12-point (4,5)-sets with h=7; all 5 known sets recovered; CP-SAT's 30,559 all present; judge passed 50. (14,12) estimated 55-70 h single-process: not launched.
+- evidence: experiments/20261014-1005-census-dfs/, results/proofs/L002-census-12-point-extremal-sets.md
+- decision: certificate L002 to referee; consider a prefix-split parallel DFS for (14,12).
