@@ -212,3 +212,34 @@ def test_solve_realizable_sat_and_unsat():
     for n in (7, 8):
         st, info = C.solve_realizable(n, 4, monotone=True, medial=True, time_limit=60, workers=2)
         assert st == "UNSAT", (n, st)
+
+
+# ----------------------------------------------------------------------------- native enumeration / fast checks
+def test_native_enumeration_matches_bruteforce_and_lazy(tmp_path):
+    n, T, m = 7, 5, 5
+    cnt, status = C.enumerate_native(n, T, m, str(tmp_path / "s.jsonl"), monotone=False, medial=False,
+                                     core_max_edges=None, cores=None)
+    assert status == "EXHAUSTED"
+    got = {tuple(sorted(tuple(t) for t in json.loads(l))) for l in open(tmp_path / "s.jsonl")}
+    assert len(got) == cnt
+    assert got == set(_brute_all(n, T, m, forbid_f7=True))
+    # with K30 + K31 + cores<=4: equal to the lazy-loop enumeration
+    cnt2, status2 = C.enumerate_native(n, T, m, str(tmp_path / "s2.jsonl"), core_max_edges=4, cores=CORES)
+    c3, s3, st3 = C.enumerate_solutions(n, T, m, symmetry=False, monotone=True, medial=True, cores=CORES,
+                                        core_max_edges=4)
+    assert status2 == "EXHAUSTED" and st3 == "COMPLETE" and cnt2 == c3
+    assert {tuple(sorted(tuple(t) for t in json.loads(l))) for l in open(tmp_path / "s2.jsonl")} == \
+        {tuple(sorted(e)) for e, _ in s3}
+
+
+def test_fast_checker_agrees_with_reference():
+    rng = random.Random(5)
+    cores4 = [c for c in CORES if len(c["edges"]) <= 4]
+    pats = _all_patterns(8)
+    rng.shuffle(pats)
+    n_bad = 0
+    for edges in pats[:400]:
+        ref = not C.constraint_violations(8, edges, cores=cores4) and C.is_f7_free(edges)
+        assert C.satisfies_all(8, edges, cores=cores4) == ref, edges
+        n_bad += not ref
+    assert 0 < n_bad < 400

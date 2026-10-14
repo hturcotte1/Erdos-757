@@ -30,6 +30,7 @@ from __future__ import annotations
 
 import gzip
 import itertools
+import os
 import json
 import random
 import time
@@ -295,6 +296,23 @@ class Model:
                 lits += len(cl)
         return len(clauses), lits
 
+    def add_f7_eager(self):
+        """Forbid every copy of F7 up front: for each 7-subset of vertices and each of the 30
+        distinct labelings of F7 on it, NOT(all 5 triples are edges).  Returns #clauses."""
+        F7 = [(0, 1, 2), (0, 3, 4), (0, 5, 6), (1, 3, 5), (2, 4, 6)]
+        pats = set()
+        for perm in itertools.permutations(range(7)):
+            pats.add(frozenset(frozenset(perm[v] for v in blk) for blk in F7))
+        pats = [[tuple(sorted(b)) for b in pat] for pat in pats]
+        assert len(pats) == 30
+        cnt = 0
+        for sub in itertools.combinations(range(self.n), 7):
+            for pat in pats:
+                self.model.AddBoolOr([self.e[tuple(sub[x] for x in b)].Not() for b in pat])
+                cnt += 1
+        self.constraint_counts["f7_eager"] = cnt
+        return cnt
+
     def add_eager_alpha(self, T, sample=None, rng=None):
         """Eager encoding of alpha <= T: every (T+1)-subset I of the vertices contains an edge, i.e.
         OR_{i<j<k in I} e[i,j,k].  C(n, T+1) clauses; exact, so no alpha cuts are needed afterwards."""
@@ -324,10 +342,13 @@ def build_model(n, m_min=0, m_exact=None, forbid_f7="lazy", symmetry=True, m_max
     """Static part of the model (constraints (a), (b), m bounds, lex symmetry breaking).
     forbid_f7 'lazy' means F7 no-goods are added by the CEGAR loops; 'none' disables them.
     Returns a `Model` (attribute .model is the cp_model.CpModel)."""
-    if forbid_f7 not in ("lazy", "none"):
-        raise ValueError("forbid_f7 must be 'lazy' or 'none'")
+    if forbid_f7 not in ("lazy", "none", "eager"):
+        raise ValueError("forbid_f7 must be 'lazy', 'eager' or 'none'")
     mod = Model(n, m_min=m_min, m_exact=m_exact, symmetry=symmetry, m_max=m_max, **mopts)
     mod.forbid_f7 = forbid_f7
+    if forbid_f7 == "eager":
+        mod.add_f7_eager()
+        mod.forbid_f7 = "none"  # nothing left to do lazily
     return mod
 
 
@@ -531,6 +552,135 @@ def enumerate_solutions(n, T, m_exact, callback=None, limit=None, time_limit=600
         if fh:
             fh.close()
     return count, sols, status
+
+
+# ----------------------------------------------------------------------------- native enumeration
+
+
+def enumerate_native(n, T, m_exact, path, limit=None, time_limit=3600, progress_path=None,
+                     core_max_edges=4, cores=None, monotone=True, medial=True, setup=None,
+                     report_every=5000):
+    """Enumerate ALL solutions (no symmetry breaking) of: ordered midpoint hypergraph on n vertices,
+    exactly m_exact edges, alpha <= T (eager), F7 forbidden (eager), K30/K31/cores (core_max_edges).
+    Uses CP-SAT's enumerate_all_solutions (1 worker) and streams one JSON line (list of triples) per
+    solution to `path`, flushed per solution.  Returns (count, status) with status 'EXHAUSTED'
+    (all solutions listed), 'TIMEOUT' or 'LIMIT'.  A progress JSON is rewritten periodically."""
+    t0 = time.time()
+    mod = build_model(n, m_exact=m_exact, forbid_f7="eager", symmetry=False, monotone=monotone,
+                      medial=medial, cores=cores, core_max_edges=core_max_edges)
+    mod.add_eager_alpha(T)
+    if setup:
+        setup(mod)
+    built = time.time() - t0
+    tri = mod.tri
+    evars = [mod.e[t] for t in tri]
+    fh = open(path, "w")
+
+    def prog(status):
+        if progress_path:
+            json.dump({"n": n, "T": T, "m": m_exact, "count": cb.count, "status": status,
+                       "elapsed_s": round(time.time() - t0, 1), "build_s": round(built, 1),
+                       "constraints": mod.constraint_counts,
+                       "rate_per_s": round(cb.count / max(time.time() - t0 - built, 1e-9), 1)},
+                      open(progress_path + ".tmp", "w"))
+            os.replace(progress_path + ".tmp", progress_path)
+
+    class CB(cp_model.CpSolverSolutionCallback):
+        def __init__(self):
+            super().__init__()
+            self.count = 0
+            self.last = time.time()
+
+        def on_solution_callback(self):
+            fh.write(json.dumps([list(t) for t, v in zip(tri, evars) if self.Value(v)]) + "\n")
+            fh.flush()
+            self.count += 1
+            if limit and self.count >= limit:
+                self.hit_limit = True
+                self.StopSearch()
+            if self.count % report_every == 0 or time.time() - self.last > 30:
+                self.last = time.time()
+                prog("RUNNING")
+
+    cb = CB()
+    cb.hit_limit = False
+    prog("RUNNING")
+    solver = cp_model.CpSolver()
+    solver.parameters.enumerate_all_solutions = True
+    solver.parameters.num_workers = 1
+    solver.parameters.max_time_in_seconds = max(1.0, time_limit - built)
+    st = solver.Solve(mod.model, cb)
+    fh.close()
+    if cb.hit_limit:
+        status = "LIMIT"
+    elif st in (cp_model.OPTIMAL, cp_model.INFEASIBLE):
+        status = "EXHAUSTED"
+    else:
+        status = "TIMEOUT"
+    prog(status)
+    return cb.count, status
+
+
+# ----------------------------------------------------------------------------- fast pattern checks
+
+
+def core_hit(E, core):
+    """Does the edge set E (set of triples) contain an order-preserving image of the core's S (or its
+    reflection) that violates it?  (extra_ap cores: T absent from E.)  Backtracking over edges."""
+    v = core["n"]
+    for refl in (False, True):
+        if refl:
+            ed = [(v - 1 - k, v - 1 - j, v - 1 - i) for i, j, k in core["edges"]]
+            rel = None if core["relation"] is None else tuple(sorted(v - 1 - x for x in core["relation"]))
+        else:
+            ed = [tuple(x) for x in core["edges"]]
+            rel = None if core["relation"] is None else tuple(core["relation"])
+        ed = sorted(ed)
+
+        def rec(t, mp):
+            if t == len(ed):
+                # mp must be strictly increasing on its (all-core) domain
+                ks = sorted(mp)
+                if any(mp[a] >= mp[b] for a, b in zip(ks, ks[1:])):
+                    return False
+                if core["kind"] == "extra_ap" and tuple(mp[x] for x in rel) in E:
+                    return False
+                return True
+            for e in E:
+                nm = dict(mp)
+                ok = True
+                for a, b in zip(ed[t], e):
+                    if nm.setdefault(a, b) != b:
+                        ok = False
+                        break
+                if ok and len(set(nm.values())) == len(nm):
+                    if rec(t + 1, nm):
+                        return True
+            return False
+
+        if rec(0, {}):
+            return True
+    return False
+
+
+def satisfies_all(n, edges, cores=None, monotone=True, medial=True, f7=True):
+    """Fast check of linearity, midpoint injectivity, K30, K31, F7-freeness and the cores
+    (same semantics as the clause set).  Does NOT check alpha."""
+    if not is_ordered_midpoint_hypergraph(n, edges):
+        return False
+    if (monotone or medial) and C_viol_basic(n, edges, monotone, medial):
+        return False
+    if f7 and not is_f7_free(edges):
+        return False
+    E = {tuple(e) for e in edges}
+    for core in (cores or []):
+        if core["n"] <= n and core_hit(E, core):
+            return False
+    return True
+
+
+def C_viol_basic(n, edges, monotone, medial):
+    return constraint_violations(n, edges, monotone=monotone, medial=medial, cores=None)
 
 
 # ----------------------------------------------------------------------------- realizability CEGAR
