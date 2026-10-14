@@ -1,0 +1,4 @@
+n=12 T=5 mode=sat empty_j=None solver=cd15 result=UNSAT time=0.0 stats={'restarts': 3, 'conflicts': 2415, 'decisions': 3262, 'propagations': 63717}
+n=12 T=5 mode=nonsat empty_j=None solver=cd15 result=UNSAT time=0.0 stats={'restarts': 83, 'conflicts': 2019, 'decisions': 3094, 'propagations': 61900}
+n=12 T=6 mode=sat empty_j=None solver=cd15 result=UNSAT time=2.1 stats={'restarts': 1503, 'conflicts': 85338, 'decisions': 115975, 'propagations': 2861476}
+n=12 T=6 mode=nonsat empty_j=None solver=cd15 result=UNSAT time=3.0 stats={'restarts': 4744, 'conflicts': 137201, 'decisions': 196281, 'propagations': 4320112}

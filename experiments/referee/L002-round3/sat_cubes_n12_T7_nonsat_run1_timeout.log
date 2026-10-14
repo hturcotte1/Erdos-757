@@ -1,0 +1,24 @@
+slow cube 2 210 24.7s
+slow cube 2 216 20.4s
+slow cube 3 200 26.0s
+slow cube 3 210 30.4s
+slow cube 3 216 31.1s
+slow cube 3 None 28.6s
+slow cube 4 185 24.0s
+slow cube 4 200 26.9s
+slow cube 4 210 38.5s
+slow cube 4 216 36.1s
+slow cube 4 219 26.9s
+slow cube 4 None 35.5s
+slow cube 5 185 23.2s
+slow cube 5 200 35.1s
+slow cube 5 210 30.4s
+slow cube 5 216 30.9s
+slow cube 5 None 44.2s
+slow cube 6 185 24.0s
+slow cube 6 200 34.8s
+slow cube 6 210 30.9s
+slow cube 6 216 30.9s
+slow cube 6 None 31.9s
+slow cube 7 None 29.3s
+exit=124

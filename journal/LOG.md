@@ -117,3 +117,8 @@ Format for each work block:
 - result [heuristic]: realizability-CEGAR witness searches with K30/K31/cores: n=18, 20, 22 (3600 s each), n=23 (m=19,20,21) and n=25 (m=21,22,23) (1200 s each): all UNKNOWN; no record candidate anywhere.
 - evidence: experiments/20261014-0030-feasible-sizes/results/*.json
 - decision: Track U witness searches exhausted for this run; remaining CPU to the (14,12) exact census and the constrained n=16 runs (results due ~13:40).
+
+## 2026-10-14T14:25Z U constrained n=16 runs inconclusive; cadical killed
+- result [heuristic]: with the census invariants (tiers 1 and 2) plus colour balance, (16,9,14) is UNKNOWN in CP-SAT and TIMEOUT in glucose4 (3600 s each); cadical153 runs killed after ~2 h (uninterruptible, outran their limit). D15 extended: invariants do not make n=16 tractable.
+- evidence: experiments/20261014-1200-census-invariants/n16/*/run.log, README Outcomes
+- decision: Track U closed for this run; CPU to the (14,12) exact census; next deliverables: L002 ACCEPT, L003 (14-point census), final report.

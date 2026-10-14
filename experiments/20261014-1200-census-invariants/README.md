@@ -63,5 +63,7 @@ A SAT answer must be run through `scripts/new_claim.py` if realized. UNSAT under
 "no 16-point O' extremal structure with maxdeg<=4, deg(0)+deg(n-1)>=3, <=1 vertex of degree 1"; UNSAT under t2 is a statement conditional on the
 heuristic n=14 sample properties (not a theorem about f(16)).
 
-## Outcomes
-(pending)
+## Outcomes (read 2026-10-14 14:25 UTC)
+- (16, T=9, m=14) with tier-1 invariants (maxdeg<=4, deg(0)+deg(15)>=3, at most one degree-1 vertex) + G_L/G_R colour balance: CP-SAT UNKNOWN (3600 s), glucose4 TIMEOUT (3600 s), cadical153 still running at 14:25 and killed (uninterruptible in pysat; it had outrun its own limit).
+- (16, T=9, m=14) with tier-2 invariants (maxdeg<=4, no degree-1 vertex, deg(0),deg(15) in [2,4], near-end degrees in [2,4]) + balance: CP-SAT UNKNOWN, glucose4 TIMEOUT, cadical153 killed.
+- Conclusion [heuristic]: even with every universal invariant of the n=12 and n=14 censuses imposed, no engine finds a 16-vertex extremal structure or refutes one within an hour. The n=16 question stays open; Track U is closed for this run (dead end D15 extended).

@@ -1,0 +1,3 @@
+OUTER idx=0 c1-option=1 ((0, 1, 2)) inner_cubes=11 sat=0 result=UNSAT time=57.0
+OUTER idx=1 c1-option=2 ((0, 1, 3)) inner_cubes=11 sat=0 result=UNSAT time=96.1
+OUTER idx=2 c1-option=3 ((0, 1, 4)) inner_cubes=11 sat=0 result=UNSAT time=170.9

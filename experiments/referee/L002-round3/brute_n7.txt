@@ -1,0 +1,9 @@
+n=7 m=0 alpha=7 f7=0 count=1
+n=7 m=1 alpha=6 f7=0 count=35
+n=7 m=2 alpha=5 f7=0 count=63
+n=7 m=2 alpha=6 f7=0 count=231
+n=7 m=3 alpha=5 f7=0 count=631
+n=7 m=3 alpha=6 f7=0 count=43
+n=7 m=4 alpha=5 f7=0 count=348
+n=7 m=5 alpha=4 f7=1 count=10
+n=7 m=5 alpha=5 f7=0 count=10
