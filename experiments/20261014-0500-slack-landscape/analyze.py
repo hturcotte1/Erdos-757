@@ -9,15 +9,18 @@ W = {"op": {}, "real": {}}; status = {"op": {}, "real": {}}
 for c in R:
     for r in R[c]:
         status[c][(r["n"], r["m"])] = r
-        if r["status"] == "optimal":
+        if r["status"] in ("optimal", "range"):
             n, m, a = r["n"], r["m"], r["alpha"]
             W[c]["%d,%d" % (n, m)] = dict(n=n, m=m, alpha=a, tau=n - a, slack=5*n+3*m-17*(n-a), edges=r["edges"],
-                                          **({"set": r["set"]} if "set" in r else {}))
+                                          **({"status": r["status"]} if r["status"] != "optimal" else {}), **({"set": r["set"]} if "set" in r else {}))
 json.dump(W, open(here + "/witnesses.json", "w"))
 def cell(c, n, m):
     r = status[c].get((n, m))
     if r is None: return "."
-    if r["status"] != "optimal": return "?>=%d" % (n - r["alpha_ge"] + 0) if False else "t/o"
+    if r["status"] == "range":
+        lo, hi = n - r["alpha"], n - r["alpha_ge"]
+        return "%d-%d/%d-%d" % (lo, hi, 5*n+3*m-17*hi, 5*n+3*m-17*lo)
+    if r["status"] != "optimal": return "t/o"
     tau = n - r["alpha"]; s = 5*n+3*m-17*tau
     return "%d/%d" % (tau, s)
 ns = sorted({n for c in R for (n, m) in status[c]})
@@ -26,10 +29,10 @@ minslack = {}
 for c, title in (("op", "O' (abstract ordered class)"), ("real", "Realizable class")):
     out.append("\n### %s: tau_max/slack for each (n, m)\n" % title)
     mmax = max([n - 2 for n in ns] or [0])
-    out.append("| n \\ m | " + " | ".join(str(m) for m in range(1, mmax + 1)) + " | min slack (m) |")
-    out.append("|" + "---|" * (mmax + 2))
+    out.append("| n \\ m | " + " | ".join(str(m) for m in range(1, mmax + 1)) + " | min slack (m), exact cells | min slack, m>=n-4 |")
+    out.append("|" + "---|" * (mmax + 3))
     for n in ns:
-        row = []; best = None
+        row = []; best = None; best4 = None
         for m in range(1, mmax + 1):
             if m > n - 2: row.append(""); continue
             cs = cell(c, n, m)
@@ -38,10 +41,13 @@ for c, title in (("op", "O' (abstract ordered class)"), ("real", "Realizable cla
                 s = 5*n+3*m-17*(n-r["alpha"])
                 if best is None or s < best[0]: best = (s, [m])
                 elif s == best[0]: best[1].append(m)
+                if m >= n - 4:
+                    if best4 is None or s < best4[0]: best4 = (s, [m])
+                    elif s == best4[0]: best4[1].append(m)
             row.append(cs)
         minslack[(c, n)] = best
         row = [("**%s**" % x if best and x and x != "t/o" and x.endswith("/%d" % best[0]) else x) for x in row]
-        out.append("| %d | " % n + " | ".join(row) + " | %s |" % ("%d (m=%s)" % (best[0], ",".join(map(str, best[1]))) if best else "-"))
+        out.append("| %d | " % n + " | ".join(row) + " | %s |" % ("%d (m=%s)" % (best[0], ",".join(map(str, best[1]))) if best else "-") + (" %s |" % ("%d (m=%s)" % (best4[0], ",".join(map(str, best4[1]))) if best4 else "-")))
 out.append("\n### Gaps: (n,m) with strictly smaller tau_max in the realizable class\n")
 gaps = []
 for (n, m), r in sorted(status["real"].items()):
@@ -58,7 +64,7 @@ from e757.realizability import realize_exact
 S = []
 for c in ("op", "real"):
     for key, w in sorted(W[c].items(), key=lambda kv: tuple(map(int, kv[0].split(",")))):
-        if w["slack"] > 3: continue
+        if w["slack"] > 5: continue
         n, edges = w["n"], [tuple(e) for e in w["edges"]]
         roles = {v: [] for v in range(n)}
         for i, j, k in edges:
