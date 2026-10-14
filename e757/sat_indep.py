@@ -51,6 +51,17 @@ definition, so they only prune; the encoding uses auxiliary colour variables wit
 x[i,j,k] -> (c_j xor c_i) and totalizer cardinality bounds.  (Not valid in general for m < n-2, where the
 colouring of G_L is not total/unique; therefore ValueError unless m == n-2.)
 
+Extra invariant constraints (optional, extra=...; saturated case m == n-2 only for n_deg1_max)
+-----------------------------------------------------------------------------------------------
+`extra` is a dict, all keys optional (see experiments/20261014-1200-census-invariants/README.md).  They are NOT
+consequences of the definition: they are empirical structural properties of the realizable census sets,
+so an UNSAT answer under `extra` is only a conditional statement.  All keys are reflection symmetric.
+  maxdeg: int            every vertex lies in at most this many edges
+  deg_ends: (lo, hi)     deg(0) and deg(n-1) in [lo, hi]
+  deg_near_ends: (lo,hi) deg(1) and deg(n-2) in [lo, hi]
+  ends_sum_min: int      deg(0) + deg(n-1) >= this
+  n_deg1_max: int        at most this many vertices of degree <= 1 (needs saturation: then every degree >= 1)
+
 API
 ---
 decide(n, T, m, cores='hybrid', forbid_f7=True, extra_unit=None, time_limit=None, vertex1=None, ...)
@@ -220,7 +231,7 @@ def find_f7_copies(edges):
 # ----------------------------------------------------------------------------------------------
 class Encoding:
     def __init__(self, n, T, m, cores="hybrid", eager_max_v=7, forbid_f7=True, vertex1=None,
-                 extra_unit=None, card_encoding=EncType.seqcounter, gl_constraints=False):
+                 extra_unit=None, card_encoding=EncType.seqcounter, gl_constraints=False, extra=None):
         self.n, self.T, self.m = n, T, m
         self.triples = list(itertools.combinations(range(n), 3))
         self.var = {t: idx + 1 for idx, t in enumerate(self.triples)}
@@ -266,6 +277,9 @@ class Encoding:
             c = CardEnc.atmost(lits=lits, bound=T - 1, top_id=top, encoding=EncType.totalizer)
             cl.extend(c.clauses)
             top = max(top, c.nv)
+        # optional empirical invariants (conditional): see module docstring
+        if extra:
+            top = self._add_extra(cl, top, extra)
         # (a) midpoint injective
         by_mid = {}
         for (i, j, k) in self.triples:
@@ -336,6 +350,44 @@ class Encoding:
                 cl.extend(card.clauses)
                 self.nv_total = max(top, card.nv)
         self.clauses = cl
+
+    def _add_extra(self, cl, top, extra):
+        n, var = self.n, self.var
+        through = {v: [var[t] for t in self.triples if v in t] for v in range(n)}
+
+        def atmost(lits, b, top):
+            c = CardEnc.atmost(lits=lits, bound=b, top_id=top, encoding=EncType.seqcounter)
+            cl.extend(c.clauses)
+            return max(top, c.nv)
+
+        def atleast(lits, b, top, guard=None):
+            c = CardEnc.atleast(lits=lits, bound=b, top_id=top, encoding=EncType.seqcounter)
+            for q in c.clauses:
+                cl.append(list(q) + ([guard] if guard else []))
+            return max(top, c.nv)
+        if "maxdeg" in extra:
+            for v in range(n):
+                top = atmost(through[v], extra["maxdeg"], top)
+        for key, vs in (("deg_ends", (0, n - 1)), ("deg_near_ends", (1, n - 2))):
+            if key in extra:
+                lo, hi = extra[key]
+                for v in vs:
+                    top = atmost(through[v], hi, top)
+                    if lo > 0:
+                        top = atleast(through[v], lo, top)
+        if "ends_sum_min" in extra:
+            lits = through[0] + through[n - 1]
+            top = atleast(lits, extra["ends_sum_min"], top)
+        if "n_deg1_max" in extra:
+            if self.m != n - 2:
+                raise ValueError("n_deg1_max requires the saturated case")
+            u = {}
+            for v in range(n):
+                top += 1
+                u[v] = top
+                top = atleast(through[v], 2, top, guard=u[v])   # not u_v -> deg >= 2
+            top = atmost([u[v] for v in range(n)], extra["n_deg1_max"], top)
+        return top
 
 
 def _edges_of_model(enc, model):
@@ -421,10 +473,10 @@ class _Run:
 
 
 def decide(n, T, m, cores="hybrid", forbid_f7=True, extra_unit=None, time_limit=None, vertex1=None,
-           solver="glucose4", eager_max_v=7, gl_constraints=False):
+           solver="glucose4", eager_max_v=7, gl_constraints=False, extra=None):
     """Is there a pattern of O' with n vertices, exactly m edges (any number if m is None), alpha <= T?"""
     enc = Encoding(n, T, m, cores=cores, eager_max_v=eager_max_v, forbid_f7=forbid_f7, vertex1=vertex1,
-                   extra_unit=extra_unit, gl_constraints=gl_constraints)
+                   extra_unit=extra_unit, gl_constraints=gl_constraints, extra=extra)
     run = _Run(enc, solver, time_limit)
     status, edges = run.next_valid_model()
     stats = run.finish(status)
@@ -434,7 +486,7 @@ def decide(n, T, m, cores="hybrid", forbid_f7=True, extra_unit=None, time_limit=
 
 
 def enumerate_all(n, T, m, cores="hybrid", forbid_f7=True, extra_unit=None, time_limit=None, vertex1=None,
-                  solver="glucose4", eager_max_v=7, return_stats=False, max_solutions=None, gl_constraints=False):
+                  solver="glucose4", eager_max_v=7, return_stats=False, max_solutions=None, gl_constraints=False, extra=None):
     """All edge sets (sorted tuples of triples) of O' with n vertices, exactly m edges, alpha <= T.
 
     m must be an integer: the blocking clause (OR of the negations of the true edge variables) removes
@@ -443,7 +495,7 @@ def enumerate_all(n, T, m, cores="hybrid", forbid_f7=True, extra_unit=None, time
     if m is None:
         raise ValueError("enumerate_all needs a fixed m (blocking clauses are only sound for fixed m)")
     enc = Encoding(n, T, m, cores=cores, eager_max_v=eager_max_v, forbid_f7=forbid_f7, vertex1=vertex1,
-                   extra_unit=extra_unit, gl_constraints=gl_constraints)
+                   extra_unit=extra_unit, gl_constraints=gl_constraints, extra=extra)
     run = _Run(enc, solver, time_limit)
     sols = []
     status = "UNSAT"

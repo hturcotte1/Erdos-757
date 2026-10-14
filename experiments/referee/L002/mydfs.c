@@ -28,6 +28,8 @@
 typedef uint64_t u64;
 #define MAXN 16
 static int n, m_target = -1, T = -1, prune = 1, allm = 0, print = 0, f7 = 1, order = 0; /* 0 mrv 1 asc 2 desc */
+static int fastleaf = 0; /* 1: at leaves, exact bitset test alpha>=T+1 before the DP (exact either way) */
+static int mle = 0; /* 1: count leaves with at most m triples (any number of NONEs) */
 static int split_r1 = -1; /* if >=0: midpoint 1 restricted to the triple (0,1,split_r1); split_r1=0 means midpoint 1 is NONE */
 static int ntri, tri[MAXN * MAXN * MAXN][3], tid[MAXN][MAXN][MAXN];
 static int nopt[MAXN], opt[MAXN][64];           /* triples with midpoint j */
@@ -102,7 +104,9 @@ static void rec(u64 undec, u64 *opts, int nones_left) {
     }
     if (!undec) {
         leaves++;
-        if (!allm && ndec != m_target) return;
+        if (!allm && !mle && ndec != m_target) return;
+        if (mle && ndec > m_target) return;
+        if (fastleaf && !allm && alpha_ge(dec_tri, ndec)) return;
         if (f7 && has_f7(dec_tri, ndec)) { f7rej++; return; }
         int a = alpha_dp(dec_tri, ndec);
         if (allm) { hist[ndec][a]++; return; }
@@ -159,6 +163,8 @@ int main(int argc, char **argv) {
         else if (!strcmp(key, "allm")) allm = atoi(val); else if (!strcmp(key, "print")) print = atoi(val);
         else if (!strcmp(key, "f7")) f7 = atoi(val);
         else if (!strcmp(key, "split")) split_r1 = atoi(val);
+        else if (!strcmp(key, "mle")) mle = atoi(val);
+        else if (!strcmp(key, "fastleaf")) fastleaf = atoi(val);
         else if (!strcmp(key, "order")) order = !strcmp(val, "mrv") ? 0 : !strcmp(val, "asc") ? 1 : 2;
         else { fprintf(stderr, "unknown key %s\n", key); return 2; }
     }
@@ -189,7 +195,7 @@ int main(int argc, char **argv) {
         }
         if (idx != ns) { fprintf(stderr, "subset count mismatch\n"); return 3; }
     }
-    int budget = allm ? (n - 2) : (n - 2) - m_target;
+    int budget = (allm || mle) ? (n - 2) : (n - 2) - m_target;
     if (budget < 0) { fprintf(stderr, "m too large\n"); return 2; }
     u64 undec = 0, opts[MAXN] = {0};
     for (int j = 1; j <= n - 2; j++) { undec |= 1ULL << j; opts[j] = (nopt[j] == 64) ? ~0ULL : ((1ULL << nopt[j]) - 1); }

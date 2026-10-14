@@ -1,0 +1,12 @@
+{
+ "t1_n10_rec_forced": "SAT",
+ "t1_n10_refl_forced": "SAT",
+ "t1_12_glucose4": "SAT",
+ "t1_12_cpsat": "SAT",
+ "t1_14_glucose4": "SAT",
+ "t1_14_cpsat": "SAT",
+ "t2_n10_rec_forced": "SAT",
+ "t2_n10_refl_forced": "SAT",
+ "t2_14_glucose4": "SAT",
+ "t2_14_cpsat": "SAT"
+}

@@ -169,7 +169,11 @@ int main(int argc, char **argv) {
         if (!ok) { cnt_badstruct++; continue; }
         if (!is_linear()) { cnt_nonlinear++; continue; }
         if (!k30_ok()) { cnt_k30++; continue; }
+#ifdef NOF7REJECT
+        if (has_f7()) { cnt_f7++; }   /* counted, but still realized */
+#else
         if (has_f7()) { cnt_f7++; continue; }
+#endif
         int a = alpha_exact();
         alpha_hist[a]++;
         if (a > 7) { cnt_alpha_gt7++; continue; }

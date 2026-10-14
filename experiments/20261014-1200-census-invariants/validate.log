@@ -1,0 +1,11 @@
+n=10 record pattern ((0, 1, 6), (0, 4, 9), (1, 2, 5), (1, 7, 9), (2, 3, 4), (2, 6, 8), (3, 5, 7), (3, 8, 9))
+t1 n=10 record pattern forced rec SAT 0.3
+t1 n=10 record pattern forced refl SAT 0.7
+t1 12 7 10 glucose4 SAT 1.8
+t1 12 7 10 cpsat SAT 15.9
+t1 14 8 12 glucose4 SAT 9.1
+t1 14 8 12 cpsat SAT 519.9
+t2 n=10 record pattern forced rec SAT 0.1
+t2 n=10 record pattern forced refl SAT 0.1
+t2 14 8 12 glucose4 SAT 2.0
+t2 14 8 12 cpsat SAT 137.4
