@@ -493,6 +493,7 @@ def enumerate_solutions(n, T, m_exact, callback=None, limit=None, time_limit=600
     mod = build_model(n, m_exact=m_exact, forbid_f7="lazy" if forbid_f7 else "none",
                       symmetry=symmetry, **mopts)
     stats = {"alpha_cuts": 0, "f7_cuts": 0}
+    enumerate_solutions.last = {"constraints": dict(mod.constraint_counts)}
     mod.add_eager_alpha(T)  # exact encoding of alpha <= T (C(n,T+1) clauses)
     sols = None if out_path else []
     fh = gzip.open(out_path, "wt") if out_path else None
@@ -528,6 +529,155 @@ def enumerate_solutions(n, T, m_exact, callback=None, limit=None, time_limit=600
         if fh:
             fh.close()
     return count, sols, status
+
+
+# ----------------------------------------------------------------------------- realizability CEGAR
+
+
+def _learn_core(mod, S, T=None, max_embed=20000):
+    """Add the no-good 'not all of S (or T present)' for the pattern S found by the realizability
+    oracle, generalised to every strictly increasing re-embedding of S's support (and its
+    reflection) when C(n, v) <= max_embed.  Sound for any m: S forces a failure by itself.
+    For an extra-AP core the clause is NOT(all S) OR e[T]."""
+    n = mod.n
+    sup = sorted({v for e in S for v in e} | (set(T) if T else set()))
+    rl = {v: t for t, v in enumerate(sup)}
+    Sr = [tuple(rl[v] for v in e) for e in S]
+    Tr = tuple(rl[v] for v in T) if T else None
+    v = len(sup)
+    variants = {(tuple(sorted(Sr)), Tr)}
+    variants.add((tuple(sorted((v - 1 - k, v - 1 - j, v - 1 - i) for i, j, k in Sr)),
+                  None if Tr is None else tuple(sorted(v - 1 - x for x in Tr))))
+    from math import comb
+    added = 0
+    for Sv, Tv in variants:
+        if comb(n, v) <= max_embed:
+            embs = itertools.combinations(range(n), v)
+        elif Sv == tuple(sorted(Sr)):
+            embs = [tuple(sup)]  # only the instance found
+        else:
+            embs = [tuple(n - 1 - x for x in reversed(sup))]  # its reflection
+        for emb in embs:
+            cl = [mod.e[tuple(emb[x] for x in e)].Not() for e in Sv]
+            if Tv is not None:
+                cl.append(mod.e[tuple(emb[x] for x in Tv)])
+            mod.model.AddBoolOr(cl)
+            added += 1
+    return added
+
+
+def solve_realizable(n, T, m_exact=None, m_min=0, m_max=None, forbid_f7=True, time_limit=3600,
+                     workers=4, seed=0, eager=True, ncuts_per_iter=40, max_rounds=10**9,
+                     verbose=False, **mopts):
+    """CEGAR over REALIZABILITY: find an ordered midpoint hypergraph with alpha <= T (and the given
+    m range) that e757.realizability.realize_exact accepts.  Every failure is turned into a minimal
+    core (deletion filter) and learnt as a no-good (all re-embeddings).  Returns
+    (status, info) with status 'SAT' (info['edges'], info['set'] = verified integer set),
+    'UNSAT' (no realizable hypergraph exists in the searched class: all learnt clauses are
+    consequences of exact linear algebra) or 'UNKNOWN' (time limit)."""
+    from . import realizability as RZ
+    t0 = time.time()
+    rng = random.Random(seed)
+    mod = build_model(n, m_min=m_min, m_exact=m_exact, m_max=m_max,
+                      forbid_f7="lazy" if forbid_f7 else "none", **mopts)
+    stats = {"alpha_cuts": 0, "f7_cuts": 0, "solves": 0, "rounds": 0, "learnt": 0,
+             "fail_kinds": {}, "constraints": dict(mod.constraint_counts)}
+    if eager is True:
+        mod.add_eager_alpha(T)
+    elif eager:
+        mod.add_eager_alpha(T, sample=int(eager), rng=rng)
+    stats["model_built_s"] = round(time.time() - t0, 1)
+    info = {"stats": stats}
+    while True:
+        left = time_limit - (time.time() - t0)
+        if left <= 0 or stats["rounds"] >= max_rounds:
+            stats["time"] = round(time.time() - t0, 1)
+            return "UNKNOWN", info
+        r, edges = _solve(mod, left, workers=workers, seed=seed)
+        stats["solves"] += 1
+        if r == "UNSAT":
+            stats["time"] = round(time.time() - t0, 1)
+            return "UNSAT", info
+        if r == "UNKNOWN":
+            stats["time"] = round(time.time() - t0, 1)
+            return "UNKNOWN", info
+        kind, a = _cegar_step(mod, edges, T, rng, ncuts_per_iter, stats)
+        if kind == "cut":
+            continue
+        stats["rounds"] += 1
+        ok, cert = RZ.order_feasible(n, edges)
+        if ok is None:
+            raise RuntimeError("order_feasible inconclusive")
+        if not ok:
+            S = RZ.iis(n, edges)
+            Tx = None
+            fk = "order"
+        else:
+            fr = RZ.forced_relations(n, edges)
+            if fr["extra_ap"]:
+                rel = ("extra_ap", fr["extra_ap"][0])
+                S, Tx, fk = RZ.forbidden_core(n, edges, rel), tuple(fr["extra_ap"][0]), "extra_ap"
+            elif fr["diff"]:
+                S, Tx, fk = RZ.forbidden_core(n, edges, ("diff", tuple(fr["diff"][0]))), None, "diff"
+            else:
+                res = RZ.realize_exact(n, edges)
+                if res[0]:
+                    info.update(edges=[list(e) for e in edges], set=res[1], alpha=a)
+                    stats["time"] = round(time.time() - t0, 1)
+                    return "SAT", info
+                raise RuntimeError("realize_exact failed without a forced relation: %r" % (res[:2],))
+        stats["fail_kinds"][fk] = stats["fail_kinds"].get(fk, 0) + 1
+        stats["learnt"] += _learn_core(mod, S, Tx)
+        if verbose and stats["rounds"] % 10 == 0:
+            print("round", stats["rounds"], stats["fail_kinds"], "learnt", stats["learnt"],
+                  round(time.time() - t0), flush=True)
+
+
+# ----------------------------------------------------------------------------- independent checker
+
+
+def load_cores(*paths):
+    """Cores from data/forbidden_ordered_n*.json files."""
+    out = []
+    for p in paths:
+        out.extend(json.load(open(p))["cores"])
+    return out
+
+
+def constraint_violations(n, edges, monotone=True, medial=True, cores=None):
+    """Pure-python re-statement of the K30 / K31 / core constraints (independent of the clause
+    generator).  Returns a list of human-readable violations (empty = pattern satisfies all)."""
+    E = {tuple(e) for e in edges}
+    bad = []
+    if monotone:
+        for (i, j, k) in E:
+            for (i2, j2, k2) in E:
+                if i <= i2 and k <= k2 and (i, k) != (i2, k2) and not j < j2:
+                    bad.append(("monotone", (i, j, k), (i2, j2, k2)))
+    if medial:
+        for (a, b, c) in E:
+            for (a2, p, e) in E:
+                if a2 == a and e > c and p != b:
+                    for (c2, q, e2) in E:
+                        if c2 == c and e2 == e:
+                            bad.append(("medial", (a, b, c), (a, p, e), (c, q, e)))
+    for core in (cores or []):
+        v = core["n"]
+        if v > n:
+            continue
+        for refl in (False, True):
+            if refl:
+                ed = [(v - 1 - k, v - 1 - j, v - 1 - i) for i, j, k in core["edges"]]
+                rel = None if core["relation"] is None else sorted(v - 1 - x for x in core["relation"])
+            else:
+                ed = [tuple(x) for x in core["edges"]]
+                rel = core["relation"]
+            for emb in itertools.combinations(range(n), v):
+                if all(tuple(emb[x] for x in e) in E for e in ed):
+                    if core["kind"] == "extra_ap" and tuple(emb[x] for x in rel) in E:
+                        continue
+                    bad.append(("core", core["kind"], emb, tuple(map(tuple, ed))))
+    return bad
 
 
 # ----------------------------------------------------------------------------- brute force (tests)
