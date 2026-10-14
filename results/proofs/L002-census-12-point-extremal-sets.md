@@ -1,7 +1,7 @@
 # Exactly 54,243 twelve-point (4,5)-sets with h = 7 up to affine equivalence
 CLAIM-TYPE: certificate (exhaustive enumeration with exact realization)
 TYPE: certificate
-STATUS: submitted (revised after referee round 1: dependencies stated honestly, rigidity argument, engine commit pinned)
+STATUS: ACCEPTED by referee round 3 (results/reviews/L002-census-12-point-extremal-sets__referee__20261014T152552Z.md); revised after rounds 1-2 (dependencies, rigidity, commit provenance, realizer attribution, m<=8 provenance)
 DEPENDS ON: K3-K6 [published] ((4,5) implies weak Sidon; h = alpha of the AP hypergraph for weak Sidon sets; injective midpoints never at the extremes, so m <= n-2; linearity); K30 [verified-here] (monotone midpoints, one-line proof). The enumeration also imposes F7-freeness (K7 [published]) and the pipeline's pre-filters use K31 [verified-here] and the forbidden cores K32-K33 [verified-here] (each core is a proved forced relation, re-derived by an independent referee: experiments/referee/catalogue-n8/README.md); none of these is needed for the count: the first referee round realized ALL 2,226,490 patterns exactly and obtained the same 54,243 classes, and found that all 451,592 F7-containing patterns are unrealizable. Henning-Yeo (K8) and F7-freeness (K7) are not needed either: every linear, midpoint-injective, K30 pattern on 12 vertices with alpha <= 7 has exactly 10 edges even with F7 allowed (referee rounds 2-3: all 121 cubes UNSAT), and alpha <= 6 is UNSAT outright, so f(12) >= 7 follows without Henning-Yeo.
 
 ## Statement

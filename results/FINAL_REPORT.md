@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report (living document; updated at every checkpoint)
 
-Last updated: 2026-10-14 11:25 UTC (elapsed about 12 of 72 budget hours). Status of the goal clauses at
+Last updated: 2026-10-14 15:30 UTC (elapsed about 16.5 of 72 budget hours). Status of the goal clauses at
 this update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted.
 
 ## 1. Result summary
@@ -41,7 +41,8 @@ $A_{\rm base}$) are unchanged by this run so far. The run produced the following
    (`ordered_dfs.py`, `c/`), and a midpoint-map annealer (`anneal.py`). All cross-validated on $n\le 12$.
 5. **Extremal sets are plentiful (K40-K42, certificate L002).** The exhaustive C-DFS census gives exactly
    **54,243** affinely inequivalent 12-point (4,5)-sets with $h=7$ (2,226,490 abstract patterns, all exactly
-   realized or exactly refuted; L002, under referee review), and a partial census already gives at least 146
+   realized or exactly refuted; certificate L002, referee ACCEPT after three rounds with four independent
+   pipelines; as a by-product $f(12)\ge7$ holds without Henning–Yeo), and a partial census already gives at least 146
    inequivalent 14-point sets with $h=8$ ($A_{\rm base}$ is one of many). About 14% of abstract extremal
    patterns are realizable, so realizability is not the bottleneck; the obstruction at $n=16$, if real, is
    combinatorial (no abstract solution was ever found by three independent methods, and witness searches at
