@@ -1,0 +1,38 @@
+{
+ "N": 11,
+ "T": 7,
+ "M": 9,
+ "filter_counts": {
+  "canon": 4935851,
+  "k30": 4935851,
+  "k31": 3269771,
+  "c4": 1671894,
+  "call": 1301031
+ },
+ "n_tested": 1671894,
+ "n_realizable": 466961,
+ "n_rigid": 466961,
+ "n_affine_classes": 466961,
+ "unrealizable_reasons": {
+  "order-infeasible": 1067660,
+  "forced extra AP": 72327,
+  "forced repeated difference": 64946,
+  "(excluded by long core) order-infeasible": 339339,
+  "(excluded by long core) forced repeated difference": 15450,
+  "(excluded by long core) forced extra AP": 16074
+ },
+ "all_h_eq_T": true,
+ "all_45": true,
+ "realizable_all_in_full_core_set": true,
+ "record_beating": [],
+ "known_sets": {
+  "record_11": {
+   "pattern_in_realizable": false,
+   "affine_class_in_realized": false,
+   "h": 7
+  }
+ },
+ "n_fallback_to_realize_exact": 0,
+ "judge_pass_count": 50,
+ "judge_lines": 50
+}

@@ -1,0 +1,602 @@
+{
+ "exact": {
+  "n6_m1": {
+   "n": 6,
+   "f": 4,
+   "m": 1,
+   "saturated": false,
+   "labelled_patterns": 0,
+   "patterns_up_to_reflection": 0,
+   "realizable_patterns": 0,
+   "free_dims_minus2": [],
+   "reasons": {},
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 0.0
+  },
+  "n6_m2": {
+   "n": 6,
+   "f": 4,
+   "m": 2,
+   "saturated": false,
+   "labelled_patterns": 9,
+   "patterns_up_to_reflection": 6,
+   "realizable_patterns": 6,
+   "free_dims_minus2": [
+    2
+   ],
+   "reasons": {},
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 0.0
+  },
+  "n6_m3": {
+   "n": 6,
+   "f": 4,
+   "m": 3,
+   "saturated": false,
+   "labelled_patterns": 46,
+   "patterns_up_to_reflection": 23,
+   "realizable_patterns": 22,
+   "free_dims_minus2": [
+    1
+   ],
+   "reasons": {
+    "forced repeated difference": 1
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 0.1
+  },
+  "n6_m4": {
+   "n": 6,
+   "f": 4,
+   "m": 4,
+   "saturated": true,
+   "labelled_patterns": 2,
+   "patterns_up_to_reflection": 1,
+   "realizable_patterns": 1,
+   "free_dims_minus2": [
+    0
+   ],
+   "reasons": {},
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 0.0
+  },
+  "n7_m1": {
+   "n": 7,
+   "f": 5,
+   "m": 1,
+   "saturated": false,
+   "labelled_patterns": 0,
+   "patterns_up_to_reflection": 0,
+   "realizable_patterns": 0,
+   "free_dims_minus2": [],
+   "reasons": {},
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 0.0
+  },
+  "n7_m2": {
+   "n": 7,
+   "f": 5,
+   "m": 2,
+   "saturated": false,
+   "labelled_patterns": 63,
+   "patterns_up_to_reflection": 33,
+   "realizable_patterns": 33,
+   "free_dims_minus2": [
+    3
+   ],
+   "reasons": {},
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 0.1
+  },
+  "n7_m3": {
+   "n": 7,
+   "f": 5,
+   "m": 3,
+   "saturated": false,
+   "labelled_patterns": 631,
+   "patterns_up_to_reflection": 320,
+   "realizable_patterns": 313,
+   "free_dims_minus2": [
+    2
+   ],
+   "reasons": {
+    "forced repeated difference": 7
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 1.4
+  },
+  "n7_m4": {
+   "n": 7,
+   "f": 5,
+   "m": 4,
+   "saturated": false,
+   "labelled_patterns": 348,
+   "patterns_up_to_reflection": 175,
+   "realizable_patterns": 158,
+   "free_dims_minus2": [
+    1
+   ],
+   "reasons": {
+    "forced extra AP": 8,
+    "forced repeated difference": 5,
+    "order-infeasible": 4
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 0.9
+  },
+  "n7_m5": {
+   "n": 7,
+   "f": 5,
+   "m": 5,
+   "saturated": true,
+   "labelled_patterns": 10,
+   "patterns_up_to_reflection": 5,
+   "realizable_patterns": 4,
+   "free_dims_minus2": [
+    0
+   ],
+   "reasons": {
+    "forced extra AP": 1
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 0.0
+  },
+  "n8_m1": {
+   "n": 8,
+   "f": 5,
+   "m": 1,
+   "saturated": false,
+   "labelled_patterns": 0,
+   "patterns_up_to_reflection": 0,
+   "realizable_patterns": 0,
+   "free_dims_minus2": [],
+   "reasons": {},
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 0.0
+  },
+  "n8_m2": {
+   "n": 8,
+   "f": 5,
+   "m": 2,
+   "saturated": false,
+   "labelled_patterns": 0,
+   "patterns_up_to_reflection": 0,
+   "realizable_patterns": 0,
+   "free_dims_minus2": [],
+   "reasons": {},
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 0.0
+  },
+  "n8_m3": {
+   "n": 8,
+   "f": 5,
+   "m": 3,
+   "saturated": false,
+   "labelled_patterns": 0,
+   "patterns_up_to_reflection": 0,
+   "realizable_patterns": 0,
+   "free_dims_minus2": [],
+   "reasons": {},
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 0.0
+  },
+  "n8_m4": {
+   "n": 8,
+   "f": 5,
+   "m": 4,
+   "saturated": false,
+   "labelled_patterns": 0,
+   "patterns_up_to_reflection": 0,
+   "realizable_patterns": 0,
+   "free_dims_minus2": [],
+   "reasons": {},
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 0.0
+  },
+  "n8_m5": {
+   "n": 8,
+   "f": 5,
+   "m": 5,
+   "saturated": false,
+   "labelled_patterns": 1832,
+   "patterns_up_to_reflection": 916,
+   "realizable_patterns": 698,
+   "free_dims_minus2": [
+    1
+   ],
+   "reasons": {
+    "forced extra AP": 34,
+    "order-infeasible": 158,
+    "forced repeated difference": 26
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 8.0
+  },
+  "n8_m6": {
+   "n": 8,
+   "f": 5,
+   "m": 6,
+   "saturated": true,
+   "labelled_patterns": 260,
+   "patterns_up_to_reflection": 130,
+   "realizable_patterns": 66,
+   "free_dims_minus2": [
+    0
+   ],
+   "reasons": {
+    "forced extra AP": 15,
+    "order-infeasible": 46,
+    "forced repeated difference": 3
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 0.1
+  },
+  "n9_m1": {
+   "n": 9,
+   "f": 6,
+   "m": 1,
+   "saturated": false,
+   "labelled_patterns": 0,
+   "patterns_up_to_reflection": 0,
+   "realizable_patterns": 0,
+   "free_dims_minus2": [],
+   "reasons": {},
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.2,
+   "t_realize": 0.0
+  },
+  "n9_m2": {
+   "n": 9,
+   "f": 6,
+   "m": 2,
+   "saturated": false,
+   "labelled_patterns": 0,
+   "patterns_up_to_reflection": 0,
+   "realizable_patterns": 0,
+   "free_dims_minus2": [],
+   "reasons": {},
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.2,
+   "t_realize": 0.0
+  },
+  "n9_m3": {
+   "n": 9,
+   "f": 6,
+   "m": 3,
+   "saturated": false,
+   "labelled_patterns": 208,
+   "patterns_up_to_reflection": 110,
+   "realizable_patterns": 110,
+   "free_dims_minus2": [
+    4
+   ],
+   "reasons": {},
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.2,
+   "t_realize": 0.9
+  },
+  "n9_m4": {
+   "n": 9,
+   "f": 6,
+   "m": 4,
+   "saturated": false,
+   "labelled_patterns": 5256,
+   "patterns_up_to_reflection": 2628,
+   "realizable_patterns": 2536,
+   "free_dims_minus2": [
+    3
+   ],
+   "reasons": {
+    "forced repeated difference": 65,
+    "order-infeasible": 27
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.2,
+   "t_realize": 28.8
+  },
+  "n9_m5": {
+   "n": 9,
+   "f": 6,
+   "m": 5,
+   "saturated": false,
+   "labelled_patterns": 74212,
+   "patterns_up_to_reflection": 37151,
+   "realizable_patterns": 30866,
+   "free_dims_minus2": [
+    2
+   ],
+   "reasons": {
+    "forced extra AP": 718,
+    "forced repeated difference": 1512,
+    "order-infeasible": 4055
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 1.2,
+   "t_realize": 540.5
+  },
+  "n9_m6": {
+   "n": 9,
+   "f": 6,
+   "m": 6,
+   "saturated": false,
+   "labelled_patterns": 69535,
+   "patterns_up_to_reflection": 34771,
+   "realizable_patterns": 20938,
+   "free_dims_minus2": [
+    1
+   ],
+   "reasons": {
+    "forced repeated difference": 1990,
+    "forced extra AP": 2341,
+    "order-infeasible": 9502
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 1.2,
+   "t_realize": 506.8,
+   "sample_size": null
+  },
+  "n9_m7": {
+   "n": 9,
+   "f": 6,
+   "m": 7,
+   "saturated": true,
+   "labelled_patterns": 8570,
+   "patterns_up_to_reflection": 4296,
+   "realizable_patterns": 1262,
+   "free_dims_minus2": [
+    0
+   ],
+   "reasons": {
+    "order-infeasible": 2388,
+    "forced extra AP": 468,
+    "forced repeated difference": 178
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.2,
+   "t_realize": 4.7,
+   "sample_size": null
+  },
+  "n10_m7": {
+   "n": 10,
+   "f": 6,
+   "m": 7,
+   "saturated": false,
+   "labelled_patterns": 36210,
+   "patterns_up_to_reflection": 18105,
+   "realizable_patterns": 7105,
+   "free_dims_minus2": [
+    1
+   ],
+   "reasons": {
+    "forced repeated difference": 1141,
+    "order-infeasible": 9091,
+    "forced extra AP": 768
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 1.7,
+   "t_realize": 370.5,
+   "sample_size": null
+  },
+  "n10_m8": {
+   "n": 10,
+   "f": 6,
+   "m": 8,
+   "saturated": true,
+   "labelled_patterns": 79488,
+   "patterns_up_to_reflection": 39765,
+   "realizable_patterns": 6644,
+   "free_dims_minus2": [
+    0
+   ],
+   "reasons": {
+    "order-infeasible": 28767,
+    "forced extra AP": 2794,
+    "forced repeated difference": 1560
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 1.7,
+   "t_realize": 53.8,
+   "sample_size": null
+  },
+  "n11_m9": {
+   "n": 11,
+   "m": 9,
+   "saturated": true,
+   "labelled_patterns": 9871248,
+   "patterns_up_to_reflection": 4935851,
+   "realizable_patterns": 466961,
+   "free_dims_minus2": [
+    0
+   ]
+  }
+ },
+ "dfs_counts": {
+  "n9_m6": {
+   "n": 9,
+   "m": 6,
+   "labelled": 69535,
+   "up_to_reflection": 34771,
+   "nodes": 158976,
+   "t": 1.5
+  },
+  "n9_m7": {
+   "n": 9,
+   "m": 7,
+   "labelled": 8570,
+   "up_to_reflection": 4296,
+   "nodes": 27208,
+   "t": 0.1
+  },
+  "n10_m6": {
+   "n": 10,
+   "m": 6,
+   "labelled": 0,
+   "up_to_reflection": 0,
+   "nodes": 1785579,
+   "t": 1.7
+  },
+  "n10_m7": {
+   "n": 10,
+   "m": 7,
+   "labelled": 36210,
+   "up_to_reflection": 18105,
+   "nodes": 1369442,
+   "t": 2.0
+  },
+  "n10_m8": {
+   "n": 10,
+   "m": 8,
+   "labelled": 79488,
+   "up_to_reflection": 39765,
+   "nodes": 440201,
+   "t": 2.1
+  },
+  "n11_m5": {
+   "n": 11,
+   "m": 5,
+   "labelled": 0,
+   "up_to_reflection": 0,
+   "nodes": 147406660,
+   "t": 137.0
+  },
+  "n11_m6": {
+   "n": 11,
+   "m": 6,
+   "labelled": 208880,
+   "up_to_reflection": 104440,
+   "nodes": 146540477,
+   "t": 138.9
+  },
+  "n11_m7": {
+   "n": 11,
+   "m": 7,
+   "labelled": 8891530,
+   "up_to_reflection": 4445884,
+   "nodes": 135978871,
+   "t": 337.4
+  },
+  "n11_m8": {
+   "n": 11,
+   "m": 8,
+   "labelled": 26228370,
+   "reflection_symmetric": 146,
+   "up_to_reflection": 13114258,
+   "nodes": 88457576,
+   "t": 564.8
+  },
+  "n11_m9": {
+   "n": 11,
+   "m": 9,
+   "labelled": 9871248,
+   "reflection_symmetric": 454,
+   "up_to_reflection": 4935851,
+   "nodes": 22336935,
+   "t": 203.6
+  }
+ },
+ "sample": {
+  "n11_m6": {
+   "n": 11,
+   "f": 7,
+   "m": 6,
+   "saturated": false,
+   "labelled_patterns": 208880,
+   "patterns_up_to_reflection": 104440,
+   "realizable_patterns": 251,
+   "free_dims_minus2": [
+    3
+   ],
+   "reasons": {
+    "forced extra AP": 17,
+    "order-infeasible": 32
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.3,
+   "t_realize": 8.0,
+   "sample_size": 300
+  },
+  "n11_m7": {
+   "n": 11,
+   "f": 7,
+   "m": 7,
+   "saturated": false,
+   "labelled_patterns": 8891530,
+   "patterns_up_to_reflection": 4445884,
+   "realizable_patterns": 257,
+   "free_dims_minus2": [
+    2
+   ],
+   "reasons": {
+    "forced repeated difference": 29,
+    "order-infeasible": 14
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 9.7,
+   "sample_size": 300
+  },
+  "n11_m8": {
+   "n": 11,
+   "f": 7,
+   "m": 8,
+   "saturated": false,
+   "labelled_patterns": 26228370,
+   "patterns_up_to_reflection": 13114258,
+   "realizable_patterns": 216,
+   "free_dims_minus2": [
+    1
+   ],
+   "reasons": {
+    "forced repeated difference": 42,
+    "forced extra AP": 11,
+    "order-infeasible": 31
+   },
+   "all_h_eq_f": true,
+   "all_45": true,
+   "t_enum": 0.0,
+   "t_realize": 11.7,
+   "sample_size": 300
+  }
+ }
+}

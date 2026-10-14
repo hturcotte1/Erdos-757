@@ -1,0 +1,26 @@
+{
+ "n": 11,
+ "f": 7,
+ "m": 8,
+ "saturated": false,
+ "labelled_patterns": 300,
+ "patterns_up_to_reflection": 300,
+ "sample_size": 300,
+ "reflection_symmetric": 0,
+ "realizable_patterns": 216,
+ "reasons": {
+  "forced repeated difference": 42,
+  "forced extra AP": 11,
+  "order-infeasible": 31
+ },
+ "all_h_eq_f": true,
+ "all_45": true,
+ "free_dims_minus2": [
+  1
+ ],
+ "affine_classes_distinct_samples": 216,
+ "dfs_nodes": 864,
+ "t_enum": 0.0,
+ "t_realize": 11.7,
+ "fallback": 0
+}
