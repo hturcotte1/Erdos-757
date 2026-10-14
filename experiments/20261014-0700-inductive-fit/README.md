@@ -75,7 +75,7 @@ Observed hard types and counts (vertices of states with R nonempty):
   abstract violators have the same type distribution as realizable irreducible tight states (violators: 40% (3,0,0), 20% (1,1,0), 20% (2,1,0),
   10% (2,0,0), 10% (4,0,0); realizable: 25/63, 2/63, 12/63, 22/63, 2/63). The local types therefore cannot separate abstract from realizable;
   the difference is global: irreducible tight states are generic in the abstract class (7,456 census hypergraphs have one with |R|=11)
-  but occur in only 3 realizable states with |R|=11 (the 2 omega sets and one more), plus A_base itself (|R|=14) and 2 at |R|=8.
+  but occur in only 3 realizable states with |R|=11, plus A_base itself (|R|=14) and 2 at |R|=8.
   A discharging proof must handle (2,0,0),(3,0,0),(4,0,0),(1,1,0),(2,1,0),(3,1,0); (3,0,0) is the dominant type.
 
 ## Conclusion

@@ -40,3 +40,9 @@ K13 re-derived with exact computation: every (4,5)-set A_base u {x,y} has h = 10
 analysis above (referee should check completeness of the classification; `bruteforce_check.py` is an independent
 sanity test over half-integers in [-60,1120]).
 Test: `tests/test_abase_extensions.py` (50 sampled stored extensions: exact (4,5), alpha = 10).
+
+## Independent brute-force completeness check (brute.log, ~50 min) [verified-here]
+All unordered pairs of half-integers in [-60,1120] with A u {v} (4,5): 1,781 values. Among exact (4,5) pairs, 589 have both points
+in some AP and are not generic points of a T2 line: all 589 are in the stored set (0 missing). A further 6,287 (4,5) pairs
+are generic line points (exactly one new AP {a,x,y}); a 1/500 sample all had Sidon 10-subsets (no failure printed).
+(Note: 6,287 line-generic pairs is the same order as omega's 6,484 "pairs"; their count likely includes such pairs.)
