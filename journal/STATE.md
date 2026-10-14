@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: running
-Last updated (UTC): 2026-10-14 13:25
+Last updated (UTC): 2026-10-14 17:20
 Phase/track: Phase 1 censuses + Track U witness sweeps; Track L data-driven design (no proof idea yet)
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
@@ -15,10 +15,10 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
   (experiments/20261013-2257-chyp-table/table.md)
 
 ## Running jobs / agents
-- (14,12,alpha<=8) exact census: prefix-split C DFS, 3 workers, 20/2537 prefixes after 1.8 h under contention (experiments/20261014-1005-census-dfs/n14; resumable: rerun the README command after any restart; then postprocess.py).
-- Constrained (16,9,14) runs with census invariants: glucose4/cadical153/CP-SAT x 2 tiers, results in experiments/20261014-1200-census-invariants/n16/*/run.log (~13:40 UTC).
-- Referee round 3 on L002 (54,243 twelve-point extremal sets); rounds 1-2 reproduced everything independently (text fixes only).
-- DONE: sweep n=18..25 all UNKNOWN; L001 ACCEPTED; K30-K42.
+- (14,12,alpha<=8) exact census: prefix-split C DFS, now 4 workers (relaunched 17:05; 235+/2537 prefixes done; resumable: README command); then postprocess.py -> certificate L004.
+- referee: L003 (saturated extremal counts n=6..11: 1, 4, 66, 1262, 6644, 466961; infinite non-saturated families for n<=11).
+- scout: novelty check of the census results (OEIS, arXiv) -> results/reviews/L002-*__scout__*.md.
+- DONE: L001 ACCEPTED (K13), L002 ACCEPTED (K41: 54,243 twelve-point extremal sets; f(12)>=7 without HY), K30-K43; Track U closed (D15: n=16 undecidable with our tools; sweeps n=18..25 UNKNOWN).
 
 ## Live hypotheses
 - [heuristic] Realizability is not the bottleneck at n=16 (21% of random linear saturated maps are (4,5)-sets); alpha is.
@@ -28,6 +28,6 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 - [heuristic] Transversal reformulation: tau = min set T such that every midpoint j is in T or has a parent l(j) or r(j) in T (parent maps l<j<r; G_L, G_R are rooted forests).
 
 ## Next 3 actions
-1. Harvest the constrained n=16 outcomes; record SAT (realize+judge) / UNSAT (conditional theorem) / TIMEOUT.
-2. L002 ACCEPT -> LEDGER/K41 final; when the (14,12) census completes (tomorrow), run postprocess.py and write certificate L003 (exact number of 14-point extremal sets).
-3. Keep FINAL_REPORT current; checkpoint every 2-3 h. Budget end 2026-10-16 23:06 UTC.
+1. L003 verdict -> LEDGER; novelty note into FINAL_REPORT.
+2. When the n=14 census completes: postprocess, certificate L004 (exact number of 14-point extremal sets), referee.
+3. Keep FINAL_REPORT current; checkpoint every 2-3 h; budget end 2026-10-16 23:06 UTC (clause C).
