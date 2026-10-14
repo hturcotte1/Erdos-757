@@ -145,7 +145,8 @@ def independent_sets(n, edges, size, limit=50, rng=None, want_max=False):
 class Model:
     """Wrapper: CP-SAT model + variable table + cut bookkeeping."""
 
-    def __init__(self, n, m_min=0, m_exact=None, symmetry=True, m_max=None):
+    def __init__(self, n, m_min=0, m_exact=None, symmetry=True, m_max=None, monotone=False,
+                 medial=False, cores=None, core_max_edges=None, core_lit_budget=None):
         self.n = n
         self.model = cp_model.CpModel()
         self.tri = triples(n)
@@ -172,6 +173,13 @@ class Model:
             if m_max is not None:
                 M.Add(total <= m_max)
         self.total = total
+        self.constraint_counts = {}
+        if monotone:
+            self.constraint_counts["monotone"] = self.add_monotone()
+        if medial:
+            self.constraint_counts["medial"] = self.add_medial()
+        if cores:
+            self.constraint_counts["cores"] = self.add_cores(cores, core_max_edges, core_lit_budget)
         if symmetry:
             self._add_lex()
 
@@ -211,11 +219,92 @@ class Model:
             self.model.Add(sum(lits) >= rhs)
         self.ncuts += 1
 
-    def add_eager_alpha(self, T):
+    # ---- realizability consequences (exact, see kb/known_results.md K30, K31) -------------------
+    def add_monotone(self):
+        """K30 monotone midpoints: edges (i,j,k),(i',j',k') with i<=i', k<=k', (i,k)!=(i',k')
+        need j<j' (x_j=(x_i+x_k)/2 < (x_i'+x_k')/2).  Clause not both when j>=j'.  Returns #clauses."""
+        cnt = 0
+        for a in self.tri:
+            for b in self.tri:
+                if a[0] <= b[0] and a[2] <= b[2] and (a[0], a[2]) != (b[0], b[2]) and a[1] >= b[1]:
+                    self.model.AddBoolOr([self.e[a].Not(), self.e[b].Not()])
+                    cnt += 1
+        return cnt
+
+    def add_medial(self):
+        """K31 no medial triangle: edges (a,b,c),(a,p,e),(c,q,e), a<b<c, a<p<e, c<q<e (a,c,e are
+        endpoints of both edges they lie in).  x_q-x_p = x_b-x_a gives a repeated difference."""
+        n, cnt = self.n, 0
+        for a in range(n):
+            for c in range(a + 2, n):
+                for e in range(c + 1, n):
+                    for b in range(a + 1, c):
+                        for p in range(a + 1, e):
+                            if p in (b, c):
+                                continue
+                            for q in range(c + 1, e):
+                                self.model.AddBoolOr([self.e[(a, b, c)].Not(), self.e[(a, p, e)].Not(),
+                                                      self.e[(c, q, e)].Not()])
+                                cnt += 1
+        return cnt
+
+    def add_cores(self, cores, max_edges=None, lit_budget=None):
+        """Forbidden-pattern library (data/forbidden_ordered_n7.json, _n8.json).  For each core on v
+        ranks and each strictly increasing embedding of 0..v-1 into 0..n-1 (core and its reflection):
+          order / diff cores: clause NOT(all edges of S)   (sound: S forces order-infeasibility or a
+              parallelogram, i.e. a repeated difference);
+          extra_ap cores (S forces an AP T not in S): clause NOT(all S) OR e[T], because a pattern
+              that contains S AND lists T is not excluded by this core.
+        Returns (#clauses, #literals).  Cores with more than max_edges edges are skipped; if
+        lit_budget is given, cores are added by increasing size until the budget is exhausted."""
+        n = self.n
+        clauses = set()
+        lits = 0
+        order = sorted(cores, key=lambda c: (len(c["edges"]), c["n"]))
+        for c in order:
+            if max_edges is not None and len(c["edges"]) > max_edges:
+                continue
+            v = c["n"]
+            if v > n:
+                continue
+            variants = []
+            for refl in (False, True):
+                if refl:
+                    ed = [(v - 1 - k, v - 1 - j, v - 1 - i) for i, j, k in c["edges"]]
+                    rel = None if c["relation"] is None else sorted(v - 1 - x for x in c["relation"])
+                else:
+                    ed = [tuple(e) for e in c["edges"]]
+                    rel = c["relation"]
+                variants.append((tuple(sorted(ed)), tuple(rel) if rel else None))
+            new = set()
+            for ed, rel in set(variants):
+                for emb in itertools.combinations(range(n), v):
+                    S = tuple(sorted(tuple(emb[x] for x in e) for e in ed))
+                    T = tuple(emb[x] for x in rel) if (c["kind"] == "extra_ap") else None
+                    new.add((S, T))
+            if lit_budget is not None and lits + sum(len(S) + (T is not None) for S, T in new) > lit_budget:
+                break
+            for S, T in new:
+                if (S, T) in clauses:
+                    continue
+                clauses.add((S, T))
+                cl = [self.e[x].Not() for x in S]
+                if T is not None:
+                    cl.append(self.e[T])
+                self.model.AddBoolOr(cl)
+                lits += len(cl)
+        return len(clauses), lits
+
+    def add_eager_alpha(self, T, sample=None, rng=None):
         """Eager encoding of alpha <= T: every (T+1)-subset I of the vertices contains an edge, i.e.
         OR_{i<j<k in I} e[i,j,k].  C(n, T+1) clauses; exact, so no alpha cuts are needed afterwards."""
         lits_of = {t: self.e[t] for t in self.tri}
-        for I in itertools.combinations(range(self.n), T + 1):
+        if sample is None:
+            subsets = itertools.combinations(range(self.n), T + 1)
+        else:  # hybrid mode: a random sample of subsets (the rest comes from lazy cuts)
+            rng = rng or random.Random(0)
+            subsets = (tuple(sorted(rng.sample(range(self.n), T + 1))) for _ in range(sample))
+        for I in subsets:
             self.model.AddBoolOr([lits_of[t] for t in itertools.combinations(I, 3)])
         self.ncuts += 0
         self.eager_T = T
@@ -231,13 +320,13 @@ class Model:
             self.model.AddHint(self.e[t], 1 if t in es else 0)
 
 
-def build_model(n, m_min=0, m_exact=None, forbid_f7="lazy", symmetry=True, m_max=None):
+def build_model(n, m_min=0, m_exact=None, forbid_f7="lazy", symmetry=True, m_max=None, **mopts):
     """Static part of the model (constraints (a), (b), m bounds, lex symmetry breaking).
     forbid_f7 'lazy' means F7 no-goods are added by the CEGAR loops; 'none' disables them.
     Returns a `Model` (attribute .model is the cp_model.CpModel)."""
     if forbid_f7 not in ("lazy", "none"):
         raise ValueError("forbid_f7 must be 'lazy' or 'none'")
-    mod = Model(n, m_min=m_min, m_exact=m_exact, symmetry=symmetry, m_max=m_max)
+    mod = Model(n, m_min=m_min, m_exact=m_exact, symmetry=symmetry, m_max=m_max, **mopts)
     mod.forbid_f7 = forbid_f7
     return mod
 
@@ -286,7 +375,7 @@ def _cegar_step(mod, edges, T, rng, ncuts_per_iter, stats):
 
 def solve_min_alpha(n, m_min=0, forbid_f7=True, time_limit=600, m_exact=None, symmetry=True,
                     start_T=None, ncuts_per_iter=40, workers=4, verbose=False, seed=0, use_hy=False,
-                    m_max=None, eager=True):
+                    m_max=None, eager=True, **mopts):
     """Minimum alpha over ordered midpoint hypergraphs on n vertices (m >= m_min edges).
     Returns (alpha_min, witness_edges, stats).  stats['optimal'] tells whether alpha_min is proved
     optimal (the infeasibility of T = alpha_min - 1 was proved by UNSAT within the time limit);
@@ -298,7 +387,7 @@ def solve_min_alpha(n, m_min=0, forbid_f7=True, time_limit=600, m_exact=None, sy
     t0 = time.time()
     rng = random.Random(seed)
     mod = build_model(n, m_min=m_min, m_exact=m_exact, forbid_f7="lazy" if forbid_f7 else "none",
-                      symmetry=symmetry, m_max=m_max)
+                      symmetry=symmetry, m_max=m_max, **mopts)
     stats = {"alpha_cuts": 0, "f7_cuts": 0, "solves": 0, "optimal": False, "lower": 1,
              "per_T": {}, "use_hy": bool(use_hy and forbid_f7)}
     hy_added = 0
@@ -362,17 +451,19 @@ def solve_min_alpha(n, m_min=0, forbid_f7=True, time_limit=600, m_exact=None, sy
 
 def feasible_alpha_le(n, T, m_min=0, m_exact=None, forbid_f7=True, time_limit=600,
                       symmetry=True, ncuts_per_iter=40, workers=4, seed=0, m_max=None, use_hy=False,
-                      eager=True):
+                      eager=True, **mopts):
     """Decide: is there a hypergraph with alpha <= T?  Returns ('SAT'|'UNSAT'|'UNKNOWN', edges, stats)."""
     t0 = time.time()
     rng = random.Random(seed)
     mod = build_model(n, m_min=m_min, m_exact=m_exact, forbid_f7="lazy" if forbid_f7 else "none",
-                      symmetry=symmetry, m_max=m_max)
-    stats = {"alpha_cuts": 0, "f7_cuts": 0, "solves": 0}
+                      symmetry=symmetry, m_max=m_max, **mopts)
+    stats = {"alpha_cuts": 0, "f7_cuts": 0, "solves": 0, "constraints": dict(mod.constraint_counts)}
     if use_hy and forbid_f7 and m_exact is None:
         mod.model.Add(mod.total >= hy_m_need(n, T))
-    if eager:
+    if eager is True:
         mod.add_eager_alpha(T)
+    elif eager:  # hybrid: eager clauses for `eager` random (T+1)-subsets, the rest lazily
+        mod.add_eager_alpha(T, sample=int(eager), rng=rng)
     while True:
         left = time_limit - (time.time() - t0)
         if left <= 0:
@@ -390,7 +481,7 @@ def feasible_alpha_le(n, T, m_min=0, m_exact=None, forbid_f7=True, time_limit=60
 
 def enumerate_solutions(n, T, m_exact, callback=None, limit=None, time_limit=600,
                         forbid_f7=True, symmetry=True, out_path=None, ncuts_per_iter=40,
-                        workers=4, seed=0):
+                        workers=4, seed=0, **mopts):
     """Enumerate ALL hypergraphs with alpha <= T and exactly m_exact edges (up to reflection if
     symmetry=True: lex-minimal representatives).  Each found solution is blocked by
     OR(not e for e in solution), which is sound because m is fixed (a different solution with the
@@ -400,7 +491,7 @@ def enumerate_solutions(n, T, m_exact, callback=None, limit=None, time_limit=600
     t0 = time.time()
     rng = random.Random(seed)
     mod = build_model(n, m_exact=m_exact, forbid_f7="lazy" if forbid_f7 else "none",
-                      symmetry=symmetry)
+                      symmetry=symmetry, **mopts)
     stats = {"alpha_cuts": 0, "f7_cuts": 0}
     mod.add_eager_alpha(T)  # exact encoding of alpha <= T (C(n,T+1) clauses)
     sols = None if out_path else []
