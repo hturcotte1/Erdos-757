@@ -1,0 +1,22 @@
+{'12': 300, '14': 300, '16': 300} {'12': 300, '14': 300, '16': 300}
+{'src': 'random', 'n': 12, 'idx': 165, 'is45': True, 'aps': 10, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=385136 violQ8=0 violD4=0 eqQ8=17808 minslack=0 maxtau=6'}
+{'src': 'random', 'n': 12, 'idx': 77, 'is45': True, 'aps': 10, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=385920 violQ8=0 violD4=0 eqQ8=17568 minslack=0 maxtau=6'}
+{'src': 'random', 'n': 12, 'idx': 202, 'is45': True, 'aps': 10, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=386064 violQ8=0 violD4=0 eqQ8=17343 minslack=0 maxtau=6'}
+{'src': 'random', 'n': 12, 'idx': 24, 'is45': True, 'aps': 10, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=387824 violQ8=0 violD4=0 eqQ8=16747 minslack=0 maxtau=7'}
+{'src': 'random', 'n': 14, 'idx': 37, 'is45': True, 'aps': 12, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=3254912 violQ8=0 violD4=0 eqQ8=92176 minslack=0 maxtau=8'}
+{'src': 'random', 'n': 14, 'idx': 274, 'is45': True, 'aps': 12, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=3255264 violQ8=0 violD4=0 eqQ8=91646 minslack=0 maxtau=7'}
+{'src': 'random', 'n': 14, 'idx': 48, 'is45': True, 'aps': 12, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=3282736 violQ8=0 violD4=0 eqQ8=85560 minslack=0 maxtau=8'}
+{'src': 'random', 'n': 14, 'idx': 187, 'is45': True, 'aps': 12, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=3265344 violQ8=0 violD4=0 eqQ8=89048 minslack=0 maxtau=7'}
+{'src': 'random', 'n': 16, 'idx': 298, 'is45': True, 'aps': 14, 'saturated': True, 'distinct': True}
+{'src': 'random', 'n': 16, 'idx': 29, 'is45': True, 'aps': 14, 'saturated': True, 'distinct': True}
+{'src': 'adv', 'n': 12, 'idx': 259, 'is45': True, 'aps': 10, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=387072 violQ8=0 violD4=2 eqQ8=17022 minslack=0 maxtau=6'}
+{'src': 'adv', 'n': 12, 'idx': 109, 'is45': True, 'aps': 10, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=385584 violQ8=0 violD4=0 eqQ8=17456 minslack=0 maxtau=6'}
+{'src': 'adv', 'n': 12, 'idx': 19, 'is45': True, 'aps': 10, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=385424 violQ8=0 violD4=0 eqQ8=17634 minslack=0 maxtau=6'}
+{'src': 'adv', 'n': 12, 'idx': 44, 'is45': True, 'aps': 10, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=385008 violQ8=0 violD4=0 eqQ8=17863 minslack=0 maxtau=6'}
+{'src': 'adv', 'n': 14, 'idx': 222, 'is45': True, 'aps': 12, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=3257888 violQ8=0 violD4=0 eqQ8=91978 minslack=0 maxtau=7'}
+{'src': 'adv', 'n': 14, 'idx': 214, 'is45': True, 'aps': 12, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=3263360 violQ8=0 violD4=4 eqQ8=90553 minslack=0 maxtau=7'}
+{'src': 'adv', 'n': 14, 'idx': 35, 'is45': True, 'aps': 12, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=3260960 violQ8=0 violD4=48 eqQ8=93078 minslack=0 maxtau=7'}
+{'src': 'adv', 'n': 14, 'idx': 123, 'is45': True, 'aps': 12, 'saturated': True, 'distinct': True, 'sweep': 'RESULT valid=3261984 violQ8=0 violD4=0 eqQ8=91964 minslack=0 maxtau=8'}
+{'src': 'adv', 'n': 16, 'idx': 46, 'is45': True, 'aps': 14, 'saturated': True, 'distinct': True}
+{'src': 'adv', 'n': 16, 'idx': 282, 'is45': True, 'aps': 14, 'saturated': True, 'distinct': True}
+20 sets; 20 are (4,5)-sets; 20 saturated

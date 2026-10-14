@@ -1,0 +1,46 @@
+# Track L: the avoidance/deletion induction behind Q8-type inequalities [derived-here]
+
+Setting (omega issue #9804, kb/notes/omega_issue_9804.md). $A$ a (4,5)-set, $H=H(A)$ its AP
+hypergraph, $D\subseteq A$ independent ("avoided": forced INTO the Sidon set), $R=A\setminus D$,
+$K$ = clutter of inclusion-minimal traces $e\setminus D$ ($e\in E(H)$; sizes 1, 2, 3 counted by
+$e_1,e_2,e_3$). An independent set $I\supseteq D$ of $H$ is the same as $D\cup J$ with $J\subseteq R$
+containing no trace, so
+$$\alpha(H;\supseteq D)=|D|+|R|-\tau(K).$$
+A candidate inequality has the shape
+$$a\,\tau(K)\le b\,|R|+c\,e_2+d\,e_1\qquad(\ast)$$
+and with $D=\emptyset$ it reads $\tau(H)\le (b/a)\,n$, i.e. $h\ge(1-b/a)\,n$. Q8 is $(a,b,c,d)=(7,3,2,4)$:
+with $D=\emptyset$ it is exactly $h\ge 4n/7$, so **Q8 is an inductive strengthening of the conjecture
+$c_*=4/7$**. Henning–Yeo's constants correspond to $b/a=8/17$ (but HY uses $m$, not traces).
+
+## The two moves and when they are free
+Write $\Phi=b|R|+ce_2+de_1$. For $v\in R$ let $e_i(v)$ be the number of size-$i$ traces containing $v$.
+
+**Deletion** ($A'=A\setminus\{v\}$, $D'=D$; $v$ goes into the transversal): $\tau(K)\le1+\tau(K')$ and
+$\Phi'=\Phi-b-c\,e_2(v)-d\,e_1(v)$. The induction closes iff
+$$a\le b+c\,e_2(v)+d\,e_1(v).$$
+
+**Avoidance** ($D'=D\cup\{v\}$; legal iff $e_1(v)=0$): $\tau(K)\le\tau(K')$ (an independent set
+containing $D\cup\{v\}$ contains $D$), the size-3 traces through $v$ become pairs and the pairs
+through $v$ become singletons, so
+$$\Phi'=\Phi-b+c\,e_3(v)+(d-c)\,e_2(v),$$
+and the induction closes iff $c\,e_3(v)+(d-c)\,e_2(v)\le b$.
+
+Hence in a **minimal counterexample** to $(\ast)$ every $v\in R$ satisfies
+$$b+c\,e_2(v)+d\,e_1(v)<a\quad\text{and}\quad\bigl(e_1(v)\ge1\ \text{or}\ c\,e_3(v)+(d-c)\,e_2(v)>b\bigr).$$
+For Q8: $e_1(v)=0$ for all $v$ (so $e_1=0$), $e_2(v)\le1$ (the pair graph is a matching) and
+$2e_3(v)+2e_2(v)\ge4$, i.e. $e_3(v)+e_2(v)\ge2$. This reproduces omega's structural lemmas; their
+extra claim $(d_2,d_3)\in\{(0,2),(1,1),(1,2)\}$ (so $e_3(v)\le2$) must come from a finer argument.
+
+## Where realizability must enter
+The pure-graph case ($e_3=0$) of $(\ast)$ follows from Turán for Q8's constants:
+$\alpha(G)\ge v^2/(v+2e)\ge(4v-2e)/7$ always. The hard part is the 3-uniform part. An abstract
+(linear, $F_7$-free, injective midpoints) version of $(\ast)$ with $b/a<8/17$ can only be true if the
+class $O'$ is not HY-tight; the experiments/20261014-0500-slack-landscape data say how far from tight
+it is. Any proof below $8/17$ must use the forbidden cores (K30, K31, K33, data/forbidden_ordered_n*.json)
+or the exact harmonic structure of saturated sets.
+
+## How to choose weaker targets
+Any $(a,b,c,d)$ with $3/7<b/a<8/17$ and $d\ge a-b$ (singletons always deletable), tested first by the
+falsifier on all data, is a legitimate intermediate target; the free-move conditions above tell which
+local configurations survive in a minimal counterexample, and the discharging must kill those using
+the forbidden cores.

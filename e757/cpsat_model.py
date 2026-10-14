@@ -481,7 +481,7 @@ def feasible_alpha_le(n, T, m_min=0, m_exact=None, forbid_f7=True, time_limit=60
 
 def enumerate_solutions(n, T, m_exact, callback=None, limit=None, time_limit=600,
                         forbid_f7=True, symmetry=True, out_path=None, ncuts_per_iter=40,
-                        workers=4, seed=0, **mopts):
+                        workers=4, seed=0, setup=None, **mopts):
     """Enumerate ALL hypergraphs with alpha <= T and exactly m_exact edges (up to reflection if
     symmetry=True: lex-minimal representatives).  Each found solution is blocked by
     OR(not e for e in solution), which is sound because m is fixed (a different solution with the
@@ -493,6 +493,8 @@ def enumerate_solutions(n, T, m_exact, callback=None, limit=None, time_limit=600
     mod = build_model(n, m_exact=m_exact, forbid_f7="lazy" if forbid_f7 else "none",
                       symmetry=symmetry, **mopts)
     stats = {"alpha_cuts": 0, "f7_cuts": 0}
+    if setup:
+        setup(mod)  # e.g. case-split constraints
     enumerate_solutions.last = {"constraints": dict(mod.constraint_counts)}
     mod.add_eager_alpha(T)  # exact encoding of alpha <= T (C(n,T+1) clauses)
     sols = None if out_path else []
