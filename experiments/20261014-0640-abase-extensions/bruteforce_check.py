@@ -32,8 +32,13 @@ for a, b in itertools.combinations(A, 2):
 def single_ok(v):
     return all(dist_ok((v,) + t) for t in itertools.combinations(A, 3))
 R = json.load(open('results.json'))
-stored = {frozenset((int(2*F(a)), int(2*F(b)))) for a, b, h in R['stored']}
-vals = [v for v in range(-600, 3400) if v not in AS and single_ok(v)]
+stored = {frozenset((F(a), F(b))) for a, b, h in R['stored']}   # exact Fraction keys
+assert len(stored) == len(R['stored'])
+LO, HI = -600, 3400   # window in doubled coordinates: [LO, HI)
+def in_win(q): return (2*q).denominator == 1 and LO <= 2*q < HI
+stored_win = {k for k in stored if all(in_win(q) for q in k)}
+matched = set()
+vals = [v for v in range(LO, HI) if v not in AS and single_ok(v)]
 print('valid singles', len(vals), flush=True)
 IJ = [(i, j, abs(A[i]-A[j])) for i in range(n) for j in range(i+1, n)]
 def pair_ok(x, y):
@@ -68,8 +73,11 @@ for x, y in itertools.combinations(vals, 2):
     if not kxx and not kyy and cross == 1:
         nline += 1; continue                # generic point of a T2 line: witness checked above
     npairs += 1
-    if frozenset((x, y)) not in stored:
+    key = frozenset((F(x, 2), F(y, 2)))
+    if key in stored: matched.add(key)
+    if key not in stored:
         nmiss += 1
         if nmiss < 10: print('NOT STORED', x/2, y/2)
+print('both-points-in-APs (4,5) pairs:', npairs + nline)
 print('(4,5) pairs total', total45, '| witness failures', nwitfail, '| non-line-generic pairs with both points in APs', npairs,
-      '| missing from stored', nmiss, '| line-generic (4,5) pairs (all witnessed)', nline, '| stored total', len(stored))
+      '| missing from stored', nmiss, '| line-generic (4,5) pairs (all witnessed)', nline, '| stored total', len(stored), '| stored in window', len(stored_win), '| stored matched', len(matched), '| stored-in-window not matched', len(stored_win - matched))
