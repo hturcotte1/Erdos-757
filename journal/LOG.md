@@ -148,3 +148,6 @@ Format for each work block:
 ## 2026-10-14T21:40Z result L003 ACCEPTED (saturated extremal counts n=6..11; infinite non-saturated families)
 - referee round 3 ACCEPT (third independent enumerator; own non-saturated witnesses). Editorial points applied (title 'saturated', tags, 'near the given realization', n=7 clamp note in K43).
 - evidence: results/reviews/L003-census-small-n-extremal-sets__referee__20261014T213511Z.md
+
+## 2026-10-14T22:25Z infra third container restart; census relaunched (529/2537 done)
+- restarts at 04:40, 21:03 and 22:20 UTC; the last two followed idle gaps of 40-90 min between turns. The census is resumable at prefix granularity (<= 4 partial prefixes lost per restart). Relaunched with the README command.
