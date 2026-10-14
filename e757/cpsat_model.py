@@ -402,6 +402,7 @@ def enumerate_solutions(n, T, m_exact, callback=None, limit=None, time_limit=600
     mod = build_model(n, m_exact=m_exact, forbid_f7="lazy" if forbid_f7 else "none",
                       symmetry=symmetry)
     stats = {"alpha_cuts": 0, "f7_cuts": 0}
+    mod.add_eager_alpha(T)  # exact encoding of alpha <= T (C(n,T+1) clauses)
     sols = None if out_path else []
     fh = gzip.open(out_path, "wt") if out_path else None
     count = 0

@@ -37,7 +37,8 @@ def test_min_alpha_matches_bruteforce(n, f7):
     assert (not f7) or C.is_f7_free(edges)
     # nothing better exists.  For n = 9 only the F7-unrestricted search is run (about 40 s); it
     # implies the F7-free statement because F7-free hypergraphs are a subset.
-    assert not C.brute_exists(n, a - 1, forbid_f7=f7 and n < 9)
+    if n < 9 or not f7:
+        assert not C.brute_exists(n, a - 1, forbid_f7=f7 and n < 9)
     if n < 9:
         assert C.brute_exists(n, a, forbid_f7=f7)
 
@@ -49,19 +50,42 @@ def test_symmetry_breaking_does_not_change_value():
         assert a1 == a2
 
 
-def test_enumerate_counts_agree_with_and_without_symmetry():
-    # fixed m: solutions with symmetry are lex-min representatives of reflection orbits
-    n, T, m = 8, 5, 5
-    c_sym, s_sym, status1 = C.enumerate_solutions(n, T, m, symmetry=True)
-    c_all, s_all, status2 = C.enumerate_solutions(n, T, m, symmetry=False)
+def _brute_all(n, T, m, forbid_f7=True):
+    """All ordered midpoint hypergraphs with exactly m edges and alpha <= T (plain DFS)."""
+    out = []
+
+    def rec(j, edges, used):
+        if j == n - 1:
+            if len(edges) == m and alpha_of_edges(n, edges) <= T and (not forbid_f7 or C.is_f7_free(edges)):
+                out.append(tuple(sorted(edges)))
+            return
+        if len(edges) + (n - 1 - j) < m:
+            return
+        for i in range(j):
+            for k in range(j + 1, n):
+                p = (1 << (i * n + j)) | (1 << (j * n + k)) | (1 << (i * n + k))
+                if not p & used:
+                    rec(j + 1, edges + [(i, j, k)], used | p)
+        rec(j + 1, edges, used)
+
+    rec(1, [], 0)
+    return out
+
+
+@pytest.mark.parametrize("f7", [True, False])
+def test_enumerate_matches_bruteforce(f7):
+    n, T, m = 7, 5, 5
+    c_sym, s_sym, status1 = C.enumerate_solutions(n, T, m, symmetry=True, forbid_f7=f7)
+    c_all, s_all, status2 = C.enumerate_solutions(n, T, m, symmetry=False, forbid_f7=f7)
     assert status1 == status2 == "COMPLETE"
-    assert c_all > 0 and c_sym <= c_all <= 2 * c_sym
+    refl = lambda E: tuple(sorted((n - 1 - k, n - 1 - j, n - 1 - i) for i, j, k in E))  # noqa: E731
+    brute = set(_brute_all(n, T, m, forbid_f7=f7))
+    assert {tuple(sorted(E)) for E, _ in s_all} == brute
+    assert c_all == len(brute)
+    orbits = {min(E, refl(E)) for E in brute}
+    assert c_sym == len(orbits)
     for edges, a in s_all:
         assert a <= T and len(edges) == m and C.is_ordered_midpoint_hypergraph(n, edges)
-        assert C.is_f7_free(edges)
-    refl = lambda E: tuple(sorted((n - 1 - k, n - 1 - j, n - 1 - i) for i, j, k in E))  # noqa: E731
-    orbits = {min(tuple(sorted(E)), refl(E)) for E, _ in s_all}
-    assert len(orbits) == c_sym
 
 
 @pytest.mark.parametrize("key,n,h", [("12", 12, 7), ("14", 14, 8)])

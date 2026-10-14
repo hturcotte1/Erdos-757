@@ -1,5 +1,5 @@
 {
- "updated_utc": "2026-10-13T23:25:02Z",
+ "updated_utc": "2026-10-14T00:01:03Z",
  "best_valid_by_ratio": {
   "h": 11,
   "n": 18,
@@ -106,28 +106,28 @@
   {
    "n": 16,
    "nfree": 0,
-   "seed": 1000,
+   "seed": 3000,
    "stats": {
-    "evaluated": 110549,
+    "evaluated": 931228,
     "singular": 0,
-    "coll0": 70829,
-    "valid45": 692,
+    "coll0": 595575,
+    "valid45": 5810,
     "hits": 0
    },
    "valid_alpha_distribution": {
-    "11": 325,
-    "10": 366,
-    "12": 1
+    "10": 3198,
+    "11": 2600,
+    "12": 12
    },
    "coll0_alpha_distribution": {
-    "11": 32416,
-    "10": 38323,
-    "12": 90
+    "10": 326421,
+    "11": 268031,
+    "12": 1123
    },
    "best_valid_h": 10,
    "best_cost": {
-    "cost": 3.0,
-    "n_indep_target_plus_1": 7,
+    "cost": 2.321928094887362,
+    "n_indep_target_plus_1": 4,
     "alpha": 10
    },
    "hits": []
@@ -135,29 +135,29 @@
   {
    "n": 16,
    "nfree": 1,
-   "seed": 1001,
+   "seed": 2000,
    "stats": {
-    "evaluated": 175390,
+    "evaluated": 2132767,
     "singular": 0,
-    "coll0": 138582,
-    "valid45": 1424,
+    "coll0": 1685562,
+    "valid45": 16853,
     "hits": 0
    },
    "valid_alpha_distribution": {
-    "11": 1060,
-    "10": 352,
-    "12": 12
+    "11": 12654,
+    "10": 4016,
+    "12": 183
    },
    "coll0_alpha_distribution": {
-    "11": 104337,
-    "10": 32755,
-    "12": 1489,
+    "11": 1263396,
+    "10": 404044,
+    "12": 18121,
     "13": 1
    },
    "best_valid_h": 10,
    "best_cost": {
-    "cost": 4.247927513443585,
-    "n_indep_target_plus_1": 18,
+    "cost": 4.087462841250339,
+    "n_indep_target_plus_1": 16,
     "alpha": 10
    },
    "hits": []
@@ -165,23 +165,23 @@
   {
    "n": 16,
    "nfree": 0,
-   "seed": 1002,
+   "seed": 3002,
    "stats": {
-    "evaluated": 170857,
+    "evaluated": 928286,
     "singular": 0,
-    "coll0": 109160,
-    "valid45": 1051,
+    "coll0": 592873,
+    "valid45": 5926,
     "hits": 0
    },
    "valid_alpha_distribution": {
-    "11": 441,
-    "10": 607,
-    "12": 3
+    "11": 2708,
+    "10": 3211,
+    "12": 7
    },
    "coll0_alpha_distribution": {
-    "11": 49122,
-    "10": 59825,
-    "12": 213
+    "11": 268470,
+    "10": 323410,
+    "12": 993
    },
    "best_valid_h": 10,
    "best_cost": {
@@ -196,26 +196,27 @@
    "nfree": 0,
    "seed": 1003,
    "stats": {
-    "evaluated": 25177,
-    "singular": 0,
-    "coll0": 16361,
-    "valid45": 159,
+    "evaluated": 511813,
+    "singular": 4407,
+    "coll0": 324047,
+    "valid45": 3196,
     "hits": 0
    },
    "valid_alpha_distribution": {
-    "12": 136,
-    "13": 4,
-    "11": 19
+    "12": 2782,
+    "13": 101,
+    "11": 313
    },
    "coll0_alpha_distribution": {
-    "12": 14404,
-    "13": 706,
-    "11": 1251
+    "12": 282719,
+    "13": 10653,
+    "11": 30663,
+    "14": 12
    },
    "best_valid_h": 11,
    "best_cost": {
-    "cost": 5.169925001442312,
-    "n_indep_target_plus_1": 35,
+    "cost": 4.807354922057604,
+    "n_indep_target_plus_1": 27,
     "alpha": 11
    },
    "hits": []
