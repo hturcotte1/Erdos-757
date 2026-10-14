@@ -51,3 +51,74 @@ top 20 among n>=10 (lowest slack, then larger n; n<10 rows listed above are triv
 ## 2. LP fits  tau <= a n + b m + sum c_i f_i   (min a+b ; then variants)
 - **none** const=False obj=ab: a=0.4286, b=0.0000; a+b=0.4286 -> alpha/n >= 1-a-b = 0.5714 (naive); tight rows 1; exact max violation after rounding (den<=1000): +0.00000 (0)
 - **non_mid** const=False obj=ab: a=0.0000, b=0.0000, non_mid=3.5000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 3; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **deg(d2,d1)** const=False obj=ab: a=0.0000, b=0.0000, d2=3.0000, d1=1.0000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 14; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **deg(d1,d2,d3,d4p)** const=False obj=ab: a=0.0000, b=0.0000, d1=2.3333, d2=1.1667, d3=0.0000, d4p=0.0000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 13; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **comps** const=False obj=ab: a=0.0000, b=0.0000, comps=7.0000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 7; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **all(non_mid,d2,d1,comps)** const=False obj=ab: a=0.0000, b=0.0000, non_mid=3.5000, d2=0.0000, d1=0.0000, comps=0.0000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 68; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **mid_end2+parent_only** const=False obj=ab: a=0.0000, b=0.0000, mid_end2=1.0000, parent_only=1.5000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 15; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **mid_edge_deg1** const=False obj=ab: a=0.4286, b=0.0000, edges_mid_deg1=0.0000; a+b=0.4286 -> alpha/n >= 1-a-b = 0.5714 (naive); tight rows 1; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **d3+d4p** const=False obj=ab: a=0.3750, b=0.0000, d3=0.2500, d4p=0.2500; a+b=0.3750 -> alpha/n >= 1-a-b = 0.6250 (naive); tight rows 3; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **none** const=True obj=ab: a=0.0000, b=0.0000, const=7.0000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 7; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **non_mid** const=True obj=ab: a=0.0000, b=0.0000, non_mid=3.5000, const=0.0000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 3; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **deg(d2,d1)** const=True obj=ab: a=0.0000, b=0.0000, d2=3.0000, d1=1.0000, const=-0.0000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 14; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **deg(d1,d2,d3,d4p)** const=True obj=ab: a=0.0000, b=0.0000, d1=2.3333, d2=1.1667, d3=0.0000, d4p=0.0000, const=-0.0000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 13; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **comps** const=True obj=ab: a=0.0000, b=0.0000, comps=7.0000, const=0.0000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 7; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **all(non_mid,d2,d1,comps)** const=True obj=ab: a=0.0000, b=0.0000, non_mid=3.5000, d2=0.0000, d1=0.0000, comps=0.0000, const=0.0000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 68; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **mid_end2+parent_only** const=True obj=ab: a=0.0000, b=0.0000, mid_end2=1.0000, parent_only=1.5000, const=-0.0000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 15; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **mid_edge_deg1** const=True obj=ab: a=0.0000, b=0.0000, edges_mid_deg1=0.0000, const=7.0000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 25; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **d3+d4p** const=True obj=ab: a=0.0000, b=0.0000, d3=1.0000, d4p=1.0000, const=5.0000; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 25; exact max violation after rounding (den<=1000): +0.00000 (0)
+
+variant objective = mean RHS/n over saturated rows n>=14 (realistic densities):
+- **non_mid** const=False obj=mean: a=0.0000, b=0.2500, non_mid=1.5000; a+b=0.2500 -> alpha/n >= 1-a-b = 0.7500 (naive); tight rows 2; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **non_mid** const=True obj=mean: a=0.0000, b=0.2500, non_mid=0.2500, const=2.5000; a+b=0.2500 -> alpha/n >= 1-a-b = 0.7500 (naive); tight rows 3; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **deg(d2,d1)** const=False obj=mean: a=0.3929, b=0.0000, d2=0.0714, d1=0.0000; a+b=0.3929 -> alpha/n >= 1-a-b = 0.6071 (naive); tight rows 2; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **deg(d2,d1)** const=True obj=mean: a=0.2500, b=0.0000, d2=0.0000, d1=0.0000, const=2.5000; a+b=0.2500 -> alpha/n >= 1-a-b = 0.7500 (naive); tight rows 12; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **deg(d1,d2,d3,d4p)** const=False obj=mean: a=0.0000, b=0.0000, d1=0.4624, d2=0.4731, d3=0.4194, d4p=0.1720; a+b=0.0000 -> alpha/n >= 1-a-b = 1.0000 (naive); tight rows 14; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **deg(d1,d2,d3,d4p)** const=True obj=mean: a=0.0789, b=0.0000, d1=0.1579, d2=0.2105, d3=0.2368, d4p=0.1579, const=1.8421; a+b=0.0789 -> alpha/n >= 1-a-b = 0.9211 (naive); tight rows 7; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **comps** const=False obj=mean: a=0.2500, b=-0.0000, comps=2.5000; a+b=0.2500 -> alpha/n >= 1-a-b = 0.7500 (naive); tight rows 3; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **comps** const=True obj=mean: a=0.2500, b=-0.0000, comps=0.0000, const=2.5000; a+b=0.2500 -> alpha/n >= 1-a-b = 0.7500 (naive); tight rows 3; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **all(non_mid,d2,d1,comps)** const=False obj=mean: a=0.0000, b=0.2500, non_mid=1.5000, d2=-0.0000, d1=0.0000, comps=0.0000; a+b=0.2500 -> alpha/n >= 1-a-b = 0.7500 (naive); tight rows 8; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **all(non_mid,d2,d1,comps)** const=True obj=mean: a=0.0000, b=0.2500, non_mid=0.2500, d2=-0.0000, d1=0.0000, comps=0.0000, const=2.5000; a+b=0.2500 -> alpha/n >= 1-a-b = 0.7500 (naive); tight rows 12; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **mid_end2+parent_only** const=False obj=mean: a=-0.0000, b=0.2500, mid_end2=-0.0000, parent_only=1.5000; a+b=0.2500 -> alpha/n >= 1-a-b = 0.7500 (naive); tight rows 20; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **mid_end2+parent_only** const=True obj=mean: a=0.2500, b=0.0000, mid_end2=-0.0000, parent_only=-0.0000, const=2.5000; a+b=0.2500 -> alpha/n >= 1-a-b = 0.7500 (naive); tight rows 10; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **mid_edge_deg1** const=False obj=mean: a=0.4286, b=0.0000, edges_mid_deg1=0.0000; a+b=0.4286 -> alpha/n >= 1-a-b = 0.5714 (naive); tight rows 1; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **mid_edge_deg1** const=True obj=mean: a=0.2500, b=-0.0000, edges_mid_deg1=0.0000, const=2.5000; a+b=0.2500 -> alpha/n >= 1-a-b = 0.7500 (naive); tight rows 6; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **d3+d4p** const=False obj=mean: a=0.4000, b=0.0000, d3=0.0667, d4p=0.0000; a+b=0.4000 -> alpha/n >= 1-a-b = 0.6000 (naive); tight rows 2; exact max violation after rounding (den<=1000): +0.00000 (0)
+- **d3+d4p** const=True obj=mean: a=0.2500, b=0.0000, d3=-0.0000, d4p=0.0000, const=2.5000; a+b=0.2500 -> alpha/n >= 1-a-b = 0.7500 (naive); tight rows 12; exact max violation after rounding (den<=1000): +0.00000 (0)
+
+reference HY (5/17,3/17): max violation -2/17
+
+saturated rows only, no features (a n + b m + const):
+[0. 0. 7.] a+b = 0.0 tight 3
+exact: [Fraction(0, 1), Fraction(0, 1), Fraction(7, 1)] viol 0
+max tau/n over saturated rows: 3/7 0.42857142857142855 (argmax n: [14] )
+  saturated n=6: max tau = 2  (min h = 4, 4n/7 = 3.43)
+  saturated n=7: max tau = 2  (min h = 5, 4n/7 = 4.00)
+  saturated n=8: max tau = 3  (min h = 5, 4n/7 = 4.57)
+  saturated n=9: max tau = 3  (min h = 6, 4n/7 = 5.14)
+  saturated n=10: max tau = 4  (min h = 6, 4n/7 = 5.71)
+  saturated n=11: max tau = 4  (min h = 7, 4n/7 = 6.29)
+  saturated n=12: max tau = 5  (min h = 7, 4n/7 = 6.86)
+  saturated n=13: max tau = 5  (min h = 8, 4n/7 = 7.43)
+  saturated n=14: max tau = 6  (min h = 8, 4n/7 = 8.00)
+  saturated n=15: max tau = 6  (min h = 9, 4n/7 = 8.57)
+  saturated n=16: max tau = 6  (min h = 10, 4n/7 = 9.14)
+  saturated n=17: max tau = 6  (min h = 11, 4n/7 = 9.71)
+  saturated n=18: max tau = 7  (min h = 11, 4n/7 = 10.29)
+  saturated n=19: max tau = 7  (min h = 12, 4n/7 = 10.86)
+  saturated n=20: max tau = 7  (min h = 13, 4n/7 = 11.43)
+
+## 3. D = 17h-9n distribution on random saturated (4,5)-sets (src randN, full sets)
+| n | #sets | D min | D median | D max | min h | #D/n<5/7 | #h<4n/7 |
+|---|---|---|---|---|---|---|---|
+| 10 | 500 | 12 | 29.0 | 29 | 6 | 0 | 0 |
+| 12 | 500 | 11 | 28.0 | 45 | 7 | 0 | 0 |
+| 14 | 500 | 27 | 27.0 | 44 | 9 | 0 | 0 |
+| 16 | 500 | 26 | 43.0 | 60 | 10 | 0 | 0 |
+| 18 | 500 | 25 | 42.0 | 76 | 11 | 0 | 0 |
+| 20 | 4496 | 41 | 58.0 | 75 | 13 | 0 | 0 |
+min D/n over ALL rows: 5/7 n= 14 src sub_A_base [0, 136, 200, 243, 246, 249, 272, 286, 298, 323, 400, 528, 596, 1056]
+rows with D/n < 5/7: 0
+D histograms n>=14 (full random sets): [((14, 27), 310), ((14, 44), 190), ((16, 26), 96), ((16, 43), 392), ((16, 60), 12), ((18, 25), 5), ((18, 42), 403), ((18, 59), 91), ((18, 76), 1), ((20, 41), 1981), ((20, 58), 2449), ((20, 75), 66)]
+
+## 4. Local structure around degree>=3 vertices in HY-near-tight rows (slack<=2)
