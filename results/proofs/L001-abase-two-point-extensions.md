@@ -1,7 +1,7 @@
 # No 2-point extension of A_base has a largest Sidon subset of size 9
 CLAIM-TYPE: certificate (exact computation with a case analysis)
 TYPE: certificate
-STATUS: submitted (revised after referee round 1: wording; witnesses stored)
+STATUS: submitted (revised after referee round 1: wording; witnesses stored in witnesses.json; independent brute force)
 DEPENDS ON: K11 [published] (A_base is a (4,5)-set with h=8); K4 [published] (for weak Sidon sets h = alpha of the AP hypergraph); K5-K6 [published] (midpoint injectivity, linearity).
 
 ## Statement
@@ -22,7 +22,7 @@ These cases are exhaustive: either some new AP exists (then it involves $x$ or $
 
 ## Computer-verified steps
 experiments/20261014-0640-abase-extensions/extend.py (exact Fractions; results.json), tests/test_abase_extensions.py (re-checks 50 stored extensions: (4,5) and h=10).
-Cross-check: bruteforce_check.py over all half-integer pairs in [-60,1120]: 589 non-generic (4,5) pairs, all contained in the stored set; 6,287 generic line points (it shares the AP/Sidon helpers of extend.py, so it is a consistency check, not an independent one). The first referee round (results/reviews/L001-...__referee__20261014T080455Z.md) re-derived all counts with three implementations sharing no code with e757 (formula enumeration, CP-SAT on equal distances, a grid scan) and checked all 6,876 line pairs.
+Independent cross-check: bruteforce_check.py (plain integers, no e757 or extend.py imports) over all half-integer pairs in [-300, 1699.5]: 5,185,660 (4,5) pairs, every one with a verified 3-AP-free 10-subset (0 failures), including all 15,800 line-generic pairs; the 766 pairs with both points in APs are all contained in results.json; h(A_base)=8 re-checked exhaustively (5 minutes). The first referee round (results/reviews/L001-...__referee__20261014T080455Z.md) re-derived all counts with three implementations sharing no code with e757 (formula enumeration, CP-SAT on equal distances, a grid scan) and checked all 6,876 line pairs.
 
 ## Sanity checks
 h(A_base)=8 (judge); the stored 1,743 (4,5)-sets all have 16 points, ratio 10/16 = 5/8 as in K13.
