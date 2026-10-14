@@ -141,3 +141,6 @@ Format for each work block:
 ## 2026-10-14T17:25Z kb novelty check of the census results: CLEAR
 - scout: OEIS has no match for 1,4,66,1262,6644; no prior enumeration of (4,5)-set extremal classes; K30/K31 not in the digests or threads (arXiv API 429 today; baseline scan of 10-13 used).
 - evidence: results/reviews/L002-census-12-point-extremal-sets__scout__20261014T171802Z.md
+
+## 2026-10-14T21:05Z infra container restart (second); census relaunched
+- the container restarted ~21:03 UTC; the n=14 census died at 427/2537 prefixes (resumable) and the L003 round-3 referee died on a session usage limit (reset 19:40 UTC). Census relaunched (P=4, skips done prefixes); referee round 3 relaunched.
