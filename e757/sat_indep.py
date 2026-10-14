@@ -37,12 +37,28 @@ Encoding
   The same lazy loop handles the lazy cores.  Lazy no-goods are consequences of the definition, so
   UNSAT answers are sound, and every SAT model returned has passed all checks.
 
+Gyarfas-Lehel colouring constraints (optional, gl_constraints=...)
+-----------------------------------------------------------------
+Let H be the edge set, saturated (m = n-2): by (a) every vertex 1..n-2 is the midpoint of exactly one edge
+(i,j,k).  The left graph G_L has an edge {i,j} for every AP (i,j,k).  Orient i -> j: i < j and each j >= 1
+is the head of exactly one arc, so G_L is a tree on {0..n-2} (every j has a parent below it; n-1 vertices,
+n-2 edges) and n-1 is isolated.  A proper 2-colouring c of G_L (c_0 = 0, c_j = 1 - c_i) makes every AP
+bichromatic in (i,j), hence each colour class C_0, C_1 (inside {0..n-2}) meets every edge, i.e. is a
+transversal of H, so |C_b| >= tau(H) = n - alpha(H) >= n - T whenever alpha <= T.  Since
+|C_0| + |C_1| = n-1 this gives  n-T <= sum_{v=0}^{n-2} c_v <= T-1.  The same holds for the right graph G_R
+(edges {j,k}, tree on {1..n-1}, d_{n-1} = 0, d_j = 1 - d_k).  The constraints are consequences of the
+definition, so they only prune; the encoding uses auxiliary colour variables with
+x[i,j,k] -> (c_j xor c_i) and totalizer cardinality bounds.  (Not valid in general for m < n-2, where the
+colouring of G_L is not total/unique; therefore ValueError unless m == n-2.)
+
 API
 ---
 decide(n, T, m, cores='hybrid', forbid_f7=True, extra_unit=None, time_limit=None, vertex1=None, ...)
     -> ('SAT', sorted edge list) | ('UNSAT', stats) | ('TIMEOUT', stats).
     m=None means "any number of edges" (decision only).
 enumerate_all(n, T, m, ...) -> list of frozenset-like sorted edge tuples (all solutions, m fixed).
+gl_constraints (saturated case m = n-2 only): False | True ('L') | 'R' | 'LR' adds the Gyarfas-Lehel
+    colouring constraints, see below.
 vertex1: None (no assumption), 0 (vertex 1 is not a midpoint) or k>=2 (edge (0,1,k) is present and is
     the edge of vertex 1).  extra_unit: iterable of ((i,j,k), bool) forcing variables.
 """
@@ -204,7 +220,7 @@ def find_f7_copies(edges):
 # ----------------------------------------------------------------------------------------------
 class Encoding:
     def __init__(self, n, T, m, cores="hybrid", eager_max_v=7, forbid_f7=True, vertex1=None,
-                 extra_unit=None, card_encoding=EncType.seqcounter):
+                 extra_unit=None, card_encoding=EncType.seqcounter, gl_constraints=False):
         self.n, self.T, self.m = n, T, m
         self.triples = list(itertools.combinations(range(n), 3))
         self.var = {t: idx + 1 for idx, t in enumerate(self.triples)}
@@ -212,6 +228,44 @@ class Encoding:
         self.forbid_f7 = forbid_f7
         cl = []
         var = self.var
+        gl = {True: "L", False: "", None: ""}.get(gl_constraints, gl_constraints)
+        if gl and m != n - 2:
+            raise ValueError("gl_constraints requires the saturated case m == n-2")
+        top = self.nv
+        cvar, dvar = {}, {}
+        if "L" in gl:
+            for v in range(0, n - 1):
+                top += 1
+                cvar[v] = top
+        if "R" in gl:
+            for v in range(1, n):
+                top += 1
+                dvar[v] = top
+        if cvar:
+            cl.append([-cvar[0]])
+            for (i, j, k) in self.triples:
+                cl.append([-var[(i, j, k)], cvar[i], cvar[j]])
+                cl.append([-var[(i, j, k)], -cvar[i], -cvar[j]])
+            lits = [cvar[v] for v in range(0, n - 1)]
+            for c in (CardEnc.atleast(lits=lits, bound=n - T, top_id=top, encoding=EncType.totalizer),
+                      ):
+                cl.extend(c.clauses)
+                top = max(top, c.nv)
+            c = CardEnc.atmost(lits=lits, bound=T - 1, top_id=top, encoding=EncType.totalizer)
+            cl.extend(c.clauses)
+            top = max(top, c.nv)
+        if dvar:
+            cl.append([-dvar[n - 1]])
+            for (i, j, k) in self.triples:
+                cl.append([-var[(i, j, k)], dvar[j], dvar[k]])
+                cl.append([-var[(i, j, k)], -dvar[j], -dvar[k]])
+            lits = [dvar[v] for v in range(1, n)]
+            c = CardEnc.atleast(lits=lits, bound=n - T, top_id=top, encoding=EncType.totalizer)
+            cl.extend(c.clauses)
+            top = max(top, c.nv)
+            c = CardEnc.atmost(lits=lits, bound=T - 1, top_id=top, encoding=EncType.totalizer)
+            cl.extend(c.clauses)
+            top = max(top, c.nv)
         # (a) midpoint injective
         by_mid = {}
         for (i, j, k) in self.triples:
@@ -272,15 +326,15 @@ class Encoding:
                 t = tuple(t)
                 cl.append([var[t] if val else -var[t]])
         # exactly m edges
-        self.nv_total = self.nv
+        self.nv_total = top
         if m is not None:
             lits = list(range(1, self.nv + 1))
             if m < 0 or m > len(lits):
                 cl.append([])
             elif len(lits) > 0:
-                card = CardEnc.equals(lits=lits, bound=m, top_id=self.nv, encoding=card_encoding)
+                card = CardEnc.equals(lits=lits, bound=m, top_id=top, encoding=card_encoding)
                 cl.extend(card.clauses)
-                self.nv_total = max(self.nv, card.nv)
+                self.nv_total = max(top, card.nv)
         self.clauses = cl
 
 
@@ -367,10 +421,10 @@ class _Run:
 
 
 def decide(n, T, m, cores="hybrid", forbid_f7=True, extra_unit=None, time_limit=None, vertex1=None,
-           solver="glucose4", eager_max_v=7):
+           solver="glucose4", eager_max_v=7, gl_constraints=False):
     """Is there a pattern of O' with n vertices, exactly m edges (any number if m is None), alpha <= T?"""
     enc = Encoding(n, T, m, cores=cores, eager_max_v=eager_max_v, forbid_f7=forbid_f7, vertex1=vertex1,
-                   extra_unit=extra_unit)
+                   extra_unit=extra_unit, gl_constraints=gl_constraints)
     run = _Run(enc, solver, time_limit)
     status, edges = run.next_valid_model()
     stats = run.finish(status)
@@ -380,7 +434,7 @@ def decide(n, T, m, cores="hybrid", forbid_f7=True, extra_unit=None, time_limit=
 
 
 def enumerate_all(n, T, m, cores="hybrid", forbid_f7=True, extra_unit=None, time_limit=None, vertex1=None,
-                  solver="glucose4", eager_max_v=7, return_stats=False, max_solutions=None):
+                  solver="glucose4", eager_max_v=7, return_stats=False, max_solutions=None, gl_constraints=False):
     """All edge sets (sorted tuples of triples) of O' with n vertices, exactly m edges, alpha <= T.
 
     m must be an integer: the blocking clause (OR of the negations of the true edge variables) removes
@@ -389,7 +443,7 @@ def enumerate_all(n, T, m, cores="hybrid", forbid_f7=True, extra_unit=None, time
     if m is None:
         raise ValueError("enumerate_all needs a fixed m (blocking clauses are only sound for fixed m)")
     enc = Encoding(n, T, m, cores=cores, eager_max_v=eager_max_v, forbid_f7=forbid_f7, vertex1=vertex1,
-                   extra_unit=extra_unit)
+                   extra_unit=extra_unit, gl_constraints=gl_constraints)
     run = _Run(enc, solver, time_limit)
     sols = []
     status = "UNSAT"
