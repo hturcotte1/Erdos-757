@@ -52,6 +52,6 @@ then finalize.py 16 14 K and finalize.py 16 13 K.
   solution in 6 min); the extremal census (experiments/20261014-0610-extremal-census/) replaces it as the n=12/14 sanity data.
 * Consequence to record IF m'=9 and m'=10 both finish EXHAUSTED with 0 solutions: apply the deletion lemma to any
   vertex v (H-v is in O' on 15 vertices with 14-deg(v) edges and alpha <= 9), then every 16-vertex extremal H
-  with m=14 has deg(v) <= 3 for all v, so at least 10 vertices have degree exactly 3 (3m = 42 = sum of degrees
-  over 16 vertices with all degrees <= 3 and... see derivation by the coordinator).  NOT established: the streams are still running; if
+  with m=14 has deg(v) <= 3 for all v, so at least 10 vertices have degree exactly 3 (sum of degrees = 3m = 42; if a vertices have degree 3 and the rest <= 2 then
+  3a + 2(16-a) >= 42, i.e. a >= 10).  NOT established: the streams are still running; if
   CP-SAT cannot prove UNSAT within 2 h this is simply not available.
