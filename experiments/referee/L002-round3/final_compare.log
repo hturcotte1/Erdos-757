@@ -1,0 +1,3 @@
+SAT models: lines=2678082 distinct=2678082 f7=451592 f7free=2226490
+census=2226490 census-minus-SATfree=0 SATfree-minus-census=0
+reflection-closed=True self-symmetric=0 f7free_up_to_reflection=1113245

@@ -24,3 +24,5 @@ experiments/referee/**/*.raw.gz
 experiments/referee/**/*sorted*
 experiments/referee/**/*.gz
 experiments/referee/**/*_all.txt
+experiments/20261014-1430-small-counts/n11/results/
+experiments/20261014-1430-small-counts/n13/results/

@@ -1,0 +1,23 @@
+{
+ "n": 7,
+ "f": 5,
+ "m": 3,
+ "saturated": false,
+ "labelled_patterns": 631,
+ "patterns_up_to_reflection": 320,
+ "reflection_symmetric": 9,
+ "realizable_patterns": 313,
+ "reasons": {
+  "forced repeated difference": 7
+ },
+ "all_h_eq_f": true,
+ "all_45": true,
+ "free_dims_minus2": [
+  2
+ ],
+ "affine_classes_distinct_samples": 313,
+ "dfs_nodes": 1741,
+ "t_enum": 0.0,
+ "t_realize": 1.4,
+ "fallback": 0
+}

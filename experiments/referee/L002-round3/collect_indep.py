@@ -35,7 +35,7 @@ def emit(S, src):
         return
     seen.add(t)
     tally[src] = tally.get(src, 0) + 1
-    sys.stdout.write('12 ' + ' '.join(map(str, t)) + '\n')
+    sys.stdout.write('12 ' + ' '.join(map(str, t)) + ' # ' + src + '\n')
 
 
 def add(A, src, maxdrop=None):

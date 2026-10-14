@@ -122,3 +122,7 @@ Format for each work block:
 - result [heuristic]: with the census invariants (tiers 1 and 2) plus colour balance, (16,9,14) is UNKNOWN in CP-SAT and TIMEOUT in glucose4 (3600 s each); cadical153 runs killed after ~2 h (uninterruptible, outran their limit). D15 extended: invariants do not make n=16 tractable.
 - evidence: experiments/20261014-1200-census-invariants/n16/*/run.log, README Outcomes
 - decision: Track U closed for this run; CPU to the (14,12) exact census; next deliverables: L002 ACCEPT, L003 (14-point census), final report.
+
+## 2026-10-14T15:30Z result L002 ACCEPTED: exactly 54,243 twelve-point extremal sets
+- result [verified-here]: referee round 3 ACCEPT with a fourth independent pipeline (SAT enumeration + own C realizer); by-product: f(12) >= 7 without Henning-Yeo (alpha <= 6 UNSAT; every alpha <= 7 pattern saturated even with F7 allowed). K41/LEDGER/report updated.
+- evidence: results/reviews/L002-census-12-point-extremal-sets__referee__20261014T152552Z.md
