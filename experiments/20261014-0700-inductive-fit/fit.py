@@ -30,11 +30,13 @@ DS["ABS fresh class O' (K30,K31,cores)"] = tup([r for r in fresh if r['src'] == 
 absall = cen + cen500 + wit + fresh
 DS['ABS all'] = tup(absall)
 if hascore is not None:
-    ok = [r for i, r in enumerate(cen) if not hascore[i]]
-    ok500 = [r for r in cen500 if not hascore[cen_idx[r['name']]]]
-    DS["ABS census passing FULL cores (|D|<=2)"] = tup(ok)
-    DS["ABS census500 passing FULL cores, ALL D"] = tup(ok500)
-    DS["ABS O'-like: census-pass + census500-pass + witnesses(op) + fresh O'"] = tup(ok + ok500 + [r for r in wit if r['name'].startswith('op:')] + [r for r in fresh if r['src'] == 'fresh_Op'])
+    smp = [r for i, r in enumerate(cen) if str(i) in hascore]
+    ok = [r for i, r in enumerate(cen) if hascore.get(str(i)) is False]
+    ok500 = [r for r in cen500 if hascore.get(str(cen_idx[r['name']])) is False]
+    DS["ABS census sample (%d hyp., |D|<=2), NO core filter" % len(smp)] = tup(smp)
+    DS["ABS census sample passing FULL cores (%d hyp., |D|<=2)" % len(ok)] = tup(ok)
+    DS["ABS census500 passing FULL cores (%d hyp.), ALL D" % len(ok500)] = tup(ok500)
+    DS["ABS O'-like: core-passing census + witnesses(op) + fresh O'"] = tup(ok + ok500 + [r for r in wit if r['name'].startswith('op:')] + [r for r in fresh if r['src'] == 'fresh_Op'])
 Q8 = (F(3, 7), F(2, 7), F(4, 7))
 out = {}
 def q8slack(t): return 3 * t[1] + 2 * t[2] + 4 * t[3] - 7 * t[0]

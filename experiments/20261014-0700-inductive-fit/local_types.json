@@ -1,0 +1,85 @@
+{
+ "abstract_violators": {
+  "label": "abstract Q8-violating states (slack -1), one state per (hypergraph,tuple)",
+  "states": 91,
+  "states_with_R_empty_skipped": 0,
+  "vertices": 910,
+  "states_with_no_free_vertex": 91,
+  "irreducible_by_R_size": {
+   "10": 91
+  },
+  "types": {
+   "(1, 1, 0)": 182,
+   "(2, 0, 0)": 91,
+   "(2, 1, 0)": 182,
+   "(3, 0, 0)": 364,
+   "(4, 0, 0)": 91
+  },
+  "types_in_irreducible_states": {
+   "(1, 1, 0)": 182,
+   "(2, 0, 0)": 91,
+   "(2, 1, 0)": 182,
+   "(3, 0, 0)": 364,
+   "(4, 0, 0)": 91
+  }
+ },
+ "abstract_tight_examples": {
+  "label": "abstract slack-0 example states (one per hypergraph per tuple)",
+  "states": 8617,
+  "states_with_R_empty_skipped": 0,
+  "vertices": 89075,
+  "states_with_no_free_vertex": 7478,
+  "irreducible_by_R_size": {
+   "8": 18,
+   "9": 2,
+   "11": 7456,
+   "14": 2
+  },
+  "types": {
+   "(0, 0, 1)": 5740,
+   "(1, 0, 0)": 91,
+   "(1, 1, 0)": 7076,
+   "(2, 0, 0)": 26257,
+   "(2, 1, 0)": 8169,
+   "(3, 0, 0)": 38497,
+   "(3, 1, 0)": 1,
+   "(4, 0, 0)": 3244
+  },
+  "types_in_irreducible_states": {
+   "(1, 1, 0)": 6991,
+   "(2, 0, 0)": 26037,
+   "(2, 1, 0)": 8008,
+   "(3, 0, 0)": 38016,
+   "(3, 1, 0)": 1,
+   "(4, 0, 0)": 3153
+  }
+ },
+ "realizable_tight_all_equality_states": {
+  "label": "realizable record sets: ALL Q8-equality states",
+  "states": 148378,
+  "states_with_R_empty_skipped": 10782,
+  "vertices": 363796,
+  "states_with_no_free_vertex": 6,
+  "irreducible_by_R_size": {
+   "8": 2,
+   "11": 3,
+   "14": 1
+  },
+  "types": {
+   "(0, 0, 1)": 363725,
+   "(1, 1, 0)": 2,
+   "(2, 0, 0)": 24,
+   "(2, 1, 0)": 16,
+   "(3, 0, 0)": 27,
+   "(4, 0, 0)": 2
+  },
+  "types_in_irreducible_states": {
+   "(1, 1, 0)": 2,
+   "(2, 0, 0)": 22,
+   "(2, 1, 0)": 12,
+   "(3, 0, 0)": 25,
+   "(4, 0, 0)": 2
+  }
+ },
+ "realizable_random_tight_examples": null
+}
