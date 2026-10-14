@@ -1,0 +1,187 @@
+[
+ {
+  "cls": "op",
+  "n": 6,
+  "m": 2,
+  "tau": 2,
+  "slack": 2,
+  "degree_seq": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "nonmidpoints": 4,
+  "role_pattern": [
+   "L",
+   "L",
+   "M",
+   "R",
+   "M",
+   "R"
+  ],
+  "role_multiset": {
+   "L": 2,
+   "M": 2,
+   "R": 2
+  },
+  "component_sizes": [
+   3,
+   3
+  ],
+  "realizable": true,
+  "edges": [
+   [
+    0,
+    2,
+    3
+   ],
+   [
+    1,
+    4,
+    5
+   ]
+  ]
+ },
+ {
+  "cls": "op",
+  "n": 9,
+  "m": 3,
+  "tau": 3,
+  "slack": 3,
+  "degree_seq": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "nonmidpoints": 6,
+  "role_pattern": [
+   "L",
+   "L",
+   "L",
+   "M",
+   "M",
+   "R",
+   "R",
+   "M",
+   "R"
+  ],
+  "role_multiset": {
+   "L": 3,
+   "M": 3,
+   "R": 3
+  },
+  "component_sizes": [
+   3,
+   3,
+   3
+  ],
+  "realizable": true,
+  "edges": [
+   [
+    0,
+    3,
+    6
+   ],
+   [
+    1,
+    7,
+    8
+   ],
+   [
+    2,
+    4,
+    5
+   ]
+  ]
+ },
+ {
+  "cls": "op",
+  "n": 10,
+  "m": 7,
+  "tau": 4,
+  "slack": 3,
+  "degree_seq": [
+   3,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2
+  ],
+  "nonmidpoints": 3,
+  "role_pattern": [
+   "LL",
+   "LM",
+   "LM",
+   "LM",
+   "MR",
+   "LR",
+   "LM",
+   "MR",
+   "MRR",
+   "RR"
+  ],
+  "role_multiset": {
+   "LL": 1,
+   "LM": 4,
+   "MR": 2,
+   "LR": 1,
+   "MRR": 1,
+   "RR": 1
+  },
+  "component_sizes": [
+   10
+  ],
+  "realizable": false,
+  "edges": [
+   [
+    0,
+    1,
+    4
+   ],
+   [
+    0,
+    2,
+    8
+   ],
+   [
+    1,
+    3,
+    9
+   ],
+   [
+    2,
+    6,
+    7
+   ],
+   [
+    3,
+    4,
+    5
+   ],
+   [
+    5,
+    7,
+    8
+   ],
+   [
+    6,
+    8,
+    9
+   ]
+  ]
+ }
+]

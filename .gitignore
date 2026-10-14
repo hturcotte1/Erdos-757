@@ -11,3 +11,5 @@ experiments/**/job.pid
 experiments/**/logs/ckpt_*.json
 experiments/**/logs/*.log
 e757/c/ordered_dfs
+experiments/20261014-0500-slack-landscape/results_*.jsonl
+experiments/20261014-0450-n16-cases/results/*_solutions.jsonl

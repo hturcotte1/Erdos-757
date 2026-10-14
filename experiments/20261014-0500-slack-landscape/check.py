@@ -31,20 +31,16 @@ def check(cls, rec):
     for (i, j, k) in edges:
         for (a, b, c) in edges:
             if i <= a and k <= c and (i, k) != (a, c): assert j < b, "K30"
-    # own K31: edges {a,b,c},{a,p,e},{c,q,e} with a<c<e? general: shared endpoints, midpoints private
-    es = [set(e) for e in edges]
-    mids = {frozenset(e): e[1] for e in edges}
-    for e1, e2, e3 in itertools.combinations(edges, 3):
-        S = [set(e1), set(e2), set(e3)]
-        if len(set().union(*S)) == 6 and all(len(S[a] & S[b]) == 1 for a, b in [(0,1),(0,2),(1,2)]):
-            shared = [next(iter(S[a] & S[b])) for a, b in [(0,1),(0,2),(1,2)]]
-            if len(set(shared)) == 3:
-                # medial if every shared vertex is an endpoint (not midpoint) of both edges it lies on
-                ok = True
-                for (a, b), v in zip([(0,1),(0,2),(1,2)], shared):
-                    for e in (edges[[0,1,2][a]] if False else (e1,e2,e3)[a], (e1,e2,e3)[b]):
-                        if e[1] == v: ok = False
-                assert not ok, "K31 medial triangle"
+    # own K31: three edges, 6 vertices, pairwise sharing one vertex (3 distinct shared vertices),
+    # all three midpoints private (not shared)
+    for E3 in itertools.combinations(edges, 3):
+        S = [set(e) for e in E3]
+        if len(set().union(*S)) != 6: continue
+        sh = [S[0] & S[1], S[0] & S[2], S[1] & S[2]]
+        if all(len(x) == 1 for x in sh):
+            shared = set().union(*sh)
+            if len(shared) == 3:
+                assert any(e[1] in shared for e in E3), "K31 medial triangle"
     assert not constraint_violations(n, edges, cores=cores), "violations"
     a = alpha_brute(n, edges)
     assert a == rec["alpha"], ("alpha", a, rec["alpha"])
