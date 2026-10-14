@@ -2,7 +2,8 @@ import sys,json
 sys.path.insert(0,'/home/user/Erdos-757')
 from e757.cpsat_model import load_cores
 cores=load_cores('data/forbidden_ordered_n7.json','data/forbidden_ordered_n8.json')
-out=['12']
+N=sys.argv[2] if len(sys.argv)>2 else '12'
+out=[N]
 for c in cores:
     v=c['n']
     for refl in (False,True):

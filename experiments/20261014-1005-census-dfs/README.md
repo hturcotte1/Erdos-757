@@ -55,3 +55,20 @@ NOT launched (limit 6 h). Needs ~4x pruning or a prefix-split over >= 12 cores.
 ## Tests
 tests/test_census_counts.py: C DFS == Python DFS == CP-SAT native enumeration (K30, F7-free, no K31) for (7,5,5)=10,
 (8,6,5)=260, (8,6,6)=286 by default; with E757_SLOW=1 also (9,7,6)=8570 and (10,8,6)=79,488 (slowtest/run.log).
+
+## Follow-up: parallel prefix-split census for (14,12,alpha<=8)  [launched; not finished]
+Code: `mode=prefixes depth=k` and `pre=i-k,...` options in e757/c/ordered_dfs.c; driver e757/ordered_dfs_split.py
+(P niced processes, per-prefix `.jsonl.gz` + `.done` markers, resumable); post-processing postprocess.py (filter.c is now
+parametric in N; cores_n14.txt via dump_cores.py).
+Validation: k=2 split of (12,10,alpha<=7) gives 107 prefixes and exactly 2,226,490 solutions (187,004,606 nodes);
+postprocess.py on that split output reproduces 1,113,245 / 754,235 / 395,039 / 313,774 / 54,243 realizable /
+54,243 classes, 50/50 judge PASS (postprocess_validation_n12/). Tests: tests/test_census_counts.py
+(`test_prefix_split_small` always; `test_prefix_split_n12_m10` with E757_SLOW=1).
+Launch (2026-10-14 11:21 UTC): `bash scripts/start_job.sh experiments/20261014-1005-census-dfs/n14 24 python3 -m e757.ordered_dfs_split 14 8 12 3 3 experiments/20261014-1005-census-dfs/n14/results --refl --nice 10`
+(depth 3 = 2537 prefixes, P=3, `--refl` keeps one representative per reflection orbit). Resume after a restart: rerun the same
+command (finished prefixes are skipped). When n14/results/n14_m12_TOTAL.json exists run
+`python3 experiments/20261014-1005-census-dfs/postprocess.py 14 8 12 experiments/20261014-1005-census-dfs/n14/results n14_m12 3`.
+Expected enumeration cost 8e10-1e11 nodes = 36-44 CPU-hours at 0.65M nodes/s (unloaded); 3 niced workers got only ~25% CPU
+each while the sweep and another census ran, so expect finish ~03:00-06:00 UTC on 2026-10-15 if cores free up after
+~13:30 UTC (the 24 h limit ends 11:21 UTC on 10-15; rerun to resume). Post-processing estimate from (12,10) rates:
+filter ~0.2 ms per raw solution, realization ~2-4 ms per O' pattern / P; with ~1e6 solutions this is well under an hour.

@@ -57,3 +57,23 @@ def test_census_counts_agree(n, m, T, expected):
 @pytest.mark.skipif(not available(), reason="C binary unavailable")
 def test_c_binary_runs():
     assert len(count_dfs_c(7, 5, 5)) == 10
+
+
+def test_prefix_split_small(tmp_path):
+    """Prefix-split driver reproduces the unsplit solution set (n=9, m=7, T=6: 8570) for depth 2."""
+    from e757.ordered_dfs_split import run_split, iter_solutions
+    tot = run_split(9, 6, 7, 2, 2, str(tmp_path), nice=0, log=lambda s: None)
+    sols = {tuple(sorted(map(tuple, e))) for e in iter_solutions(str(tmp_path), "n9_m7")}
+    assert tot["solutions"] == len(sols) == 8570
+    assert sols == count_dfs_c(9, 7, 6)
+    # resumable: second call skips everything
+    tot2 = run_split(9, 6, 7, 2, 2, str(tmp_path), nice=0, log=lambda s: None)
+    assert tot2["solutions"] == 8570
+
+
+@pytest.mark.skipif(not SLOW, reason="E757_SLOW=1 (about 5 minutes)")
+def test_prefix_split_n12_m10(tmp_path):
+    """The (12,10,alpha<=7) census is reproduced exactly by the k=2 prefix split: 2,226,490 solutions."""
+    from e757.ordered_dfs_split import run_split
+    tot = run_split(12, 7, 10, 2, 2, str(tmp_path), log=lambda s: None)
+    assert tot["solutions"] == 2226490

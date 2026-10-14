@@ -1,0 +1,58 @@
+{
+ "N": 12,
+ "T": 7,
+ "M": 10,
+ "filter_counts": {
+  "canon": 1113245,
+  "k30": 1113245,
+  "k31": 754235,
+  "c4": 395039,
+  "call": 313774
+ },
+ "n_tested": 395039,
+ "n_realizable": 54243,
+ "n_rigid": 54243,
+ "n_affine_classes": 54243,
+ "unrealizable_reasons": {
+  "order-infeasible": 321304,
+  "forced extra AP": 10803,
+  "(excluded by long core) order-infeasible": 78299,
+  "forced repeated difference": 8689,
+  "(excluded by long core) forced extra AP": 1282,
+  "(excluded by long core) forced repeated difference": 1684
+ },
+ "all_h_eq_T": true,
+ "all_45": true,
+ "realizable_all_in_full_core_set": true,
+ "record_beating": [],
+ "known_sets": {
+  "record_12": {
+   "pattern_in_realizable": true,
+   "affine_class_in_realized": true,
+   "h": 7
+  },
+  "record_12b": {
+   "pattern_in_realizable": true,
+   "affine_class_in_realized": true,
+   "h": 7
+  },
+  "record_12c": {
+   "pattern_in_realizable": true,
+   "affine_class_in_realized": true,
+   "h": 7
+  },
+  "core.KNOWN: 12-point example 1 (omega issue #9804)": {
+   "pattern_in_realizable": true,
+   "affine_class_in_realized": true,
+   "h": 7
+  },
+  "core.KNOWN: 12-point example 2 (omega issue #9804)": {
+   "pattern_in_realizable": true,
+   "affine_class_in_realized": true,
+   "h": 7
+  }
+ },
+ "n_fallback_to_realize_exact": 0,
+ "judge_pass_count": 50,
+ "judge_lines": 50
+}

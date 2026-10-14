@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 #define MAXC 400
-#define NV 12
+#define NV 16
 typedef struct { int kind, v, ne; int ed[8][3]; int rel[3]; } Core;
 static Core cores[2*MAXC]; static int nc = 0;
 static int E[16][3], ne;
@@ -41,12 +41,12 @@ static int rec(const Core *c, int t) {
 static int core_hit(const Core *c) { for (int a = 0; a < 16; a++) mp[a] = -1; memset(used, 0, sizeof used); return rec(c, 0); }
 static int cmp3(const void *a, const void *b) { const int *x=a,*y=b; for (int t=0;t<3;t++) if (x[t]!=y[t]) return x[t]-y[t]; return 0; }
 int main(int argc, char **argv) {
-    FILE *f = fopen(argv[1], "r"); int N; fscanf(f, "%d", &N);
+    FILE *f = fopen(argv[1], "r"); int N; if (fscanf(f, "%d", &N) != 1) return 2;
     int kind, v, k;
     while (fscanf(f, "%d %d %d", &kind, &v, &k) == 3) {
         Core *c = &cores[nc]; c->kind = kind; c->v = v; c->ne = k;
-        for (int t = 0; t < k; t++) fscanf(f, "%d %d %d", &c->ed[t][0], &c->ed[t][1], &c->ed[t][2]);
-        if (kind) fscanf(f, "%d %d %d", &c->rel[0], &c->rel[1], &c->rel[2]);
+        for (int t = 0; t < k; t++) if (fscanf(f, "%d %d %d", &c->ed[t][0], &c->ed[t][1], &c->ed[t][2]) != 3) return 2;
+        if (kind) if (fscanf(f, "%d %d %d", &c->rel[0], &c->rel[1], &c->rel[2]) != 3) return 2;
         qsort(c->ed, k, sizeof c->ed[0], cmp3);
         nc++;
     }
