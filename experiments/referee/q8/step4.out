@@ -7,3 +7,4 @@
 12c 12 RESULT valid=384960 violQ8=0 violD4=1 eqQ8=17903 minslack=0 maxtau=6
 0..575 RESULT valid=385408 violQ8=0 violD4=10 eqQ8=17739 minslack=0 maxtau=6
 adv16#46 RESULT valid=27608128 violQ8=0 violD4=0 eqQ8=468354 minslack=0 maxtau=8 38 s
+random16#298 RESULT valid=27730784 violQ8=0 violD4=0 eqQ8=448648 minslack=0 maxtau=9 37 s
