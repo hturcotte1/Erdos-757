@@ -1,0 +1,50 @@
+{
+ "N": 14,
+ "T": 8,
+ "M": 12,
+ "filter_counts": {
+  "canon": 205529,
+  "k30": 205529,
+  "k31": 119844,
+  "c4": 46419,
+  "call": 34995
+ },
+ "n_tested": 46419,
+ "n_realizable": 2910,
+ "n_rigid": 2910,
+ "n_affine_classes": 2910,
+ "unrealizable_reasons": {
+  "forced repeated difference": 846,
+  "order-infeasible": 41751,
+  "forced extra AP": 912,
+  "(excluded by long core) order-infeasible": 11378,
+  "(excluded by long core) forced repeated difference": 13,
+  "(excluded by long core) forced extra AP": 33
+ },
+ "all_h_eq_T": true,
+ "all_45": true,
+ "realizable_all_in_full_core_set": true,
+ "record_beating": [],
+ "known_sets": {
+  "record_14": {
+   "pattern_in_realizable": true,
+   "affine_class_in_realized": true,
+   "h": 8
+  },
+  "core.KNOWN: A_base (Ma-Tang 14-point, h=8)": {
+   "pattern_in_realizable": true,
+   "affine_class_in_realized": true,
+   "h": 8
+  }
+ },
+ "n_fallback_to_realize_exact": 0,
+ "judge_pass_count": 50,
+ "judge_lines": 50,
+ "dfs_totals": {
+  "prefixes": 2537,
+  "solutions": 205529,
+  "nodes": 113454008923,
+  "refl": true,
+  "cpu_seconds": 277501.0
+ }
+}

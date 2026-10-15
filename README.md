@@ -24,6 +24,24 @@ $9/17\le c_*\le4/7$ (Ma–Tang 2026). Full context is in `kb/00_START_HERE.md`.
 | `results/` | claims/, proofs/, reviews/, LEDGER.md, FINAL_REPORT.md |
 | `tests/` | Pins every verified fact and the safety rails (`python3 -m pytest -q`) |
 
+## Results of the autonomous run (2026-10-13/16)
+
+Published bounds are unchanged: $9/17\le c_*\le4/7$. No set below 4/7 and no lower-bound proof were found
+(goal clauses A and B not met). Everything below is tagged in `kb/known_results.md` (rows K30-K45).
+- **Start with** `results/FINAL_REPORT.md` (definitive narrative) and `results/LEDGER.md` (verified results with evidence paths).
+- **Certificates (referee ACCEPT):** `results/proofs/L001`-`L004`, with the reviews in `results/reviews/`:
+  L001 no 2-point extension of A_base has $h\le9$; L002 exactly 54,243 twelve-point extremal sets;
+  L003 saturated extremal counts 1, 4, 66, 1262, 6644, 466961 for $n=6..11$; L004 exactly 2,910 saturated 14-point extremal sets.
+- **Exact values:** $f(n)=\lceil n/2\rceil+1$ for $6\le n\le15$ and $n=17$ (K35). The first open case is $f(16)\in\{9,10\}$ (Q1 in `kb/open_questions.md`).
+- **Census data:** `data/census_n14_m12_classes.jsonl.gz` (2,910 sets), `data/census_n14_m12_summary.json`,
+  `experiments/20261014-1005-census-dfs/results/realized_n12.json.gz` (54,243 sets); index in `data/README.md`.
+  Forbidden-configuration library: `data/forbidden_ordered_n7.json`, `data/forbidden_ordered_n8.json` (287 minimal cores).
+- **Lemmas:** monotone midpoints (K30), no medial triangle (K31), degree bound in Gyarfas-Lehel-tight hypergraphs (K44).
+- **Negative results:** `kb/dead_ends.md` D15-D21 (n=16 undecided by SAT/CP-SAT/annealing; Q8 false in the abstract class).
+- **Still running at the last update:** exhaustive DFS for the non-saturated $(14,11)$ case (`experiments/20261014-1005-census-dfs/n14m11dfs`).
+- **Reproduce:** every experiment folder has a `README.md` with the exact command; tests: `python3 -m pytest -q`.
+- **Audit of this documentation:** `experiments/20261015-2310-kb-audit/README.md`.
+
 ## Quick start (Claude Code on the web)
 
 1. Open claude.ai/code, start a session on `hturcotte1/Erdos-757`, and choose Fable at max effort.
