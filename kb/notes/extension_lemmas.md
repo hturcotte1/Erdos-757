@@ -51,7 +51,7 @@ directly to A ∪ {x} (n = 15, m = 13, tau would be 7: 119 <= 114 is false); equ
 would need both a and b universal in H(A). So a record extension needs exactly k = 2 new edges, i.e. m(C) = 14 and
 Henning-Yeo slack 3.
 
-**Falsifier report (2026-10-16 00:05 UTC; experiments/falsify/extension-lemmas/).** No lemma broken on ~11,000 sets
+**Falsifier report (2026-10-15 23:47 UTC; experiments/falsify/extension-lemmas/).** No lemma broken on ~11,000 sets
 (all stored extremal sets n = 6..14, A_base, Fibonacci prefixes): Lemma E 197,946 (set, a, t) triples with 0 formula
 failures plus a symbolic-t (4,5) check on 21,994 cases; Lemma U 5,443 universal vertices, 0 violations; no sampled
 14-point class has a universal vertex (U1). Universal extreme points do exist at n = 7, 9, 11 (and in Fibonacci
