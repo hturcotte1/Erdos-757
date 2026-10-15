@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: running
-Last updated (UTC): 2026-10-14 21:50
+Last updated (UTC): 2026-10-15 02:25
 Phase/track: Phase 1 censuses + Track U witness sweeps; Track L data-driven design (no proof idea yet)
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
@@ -15,7 +15,7 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
   (experiments/20261013-2257-chyp-table/table.md)
 
 ## Running jobs / agents
-- (14,12,alpha<=8) exact census: prefix-split C DFS, 4 workers; relaunched 21:03 after the second container restart (resumable); 517/2537 prefixes at 21:37; then postprocess.py -> certificate L004.
+- (14,12,alpha<=8) exact census: prefix-split C DFS, 4 workers; relaunched 22:22 after the third container restart (resumable); 954/2537 prefixes at 02:24 (~115/h, finish ~16:00 UTC 10-15); then postprocess.py -> certificate L004.
 - DONE: L001, L002, L003 ACCEPTED (K13, K41, K43); K30-K44; novelty CLEAR; Track U closed (D15; sweeps n=18..25 UNKNOWN); Track L: no proof idea (K38/K39 show cores are essential).
 
 ## Live hypotheses
