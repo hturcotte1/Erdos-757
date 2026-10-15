@@ -153,3 +153,5 @@ Format for each work block:
 - restarts at 04:40, 21:03 and 22:20 UTC; the last two followed idle gaps of 40-90 min between turns. The census is resumable at prefix granularity (<= 4 partial prefixes lost per restart). Relaunched with the README command.
 
 ## 2026-10-15T07:25Z infra fourth container restart (07:22, after a usage-limit pause); census relaunched at 1440/2537
+
+## 2026-10-15T16:30Z infra fifth container restart (16:29); census relaunched at 2316/2537
