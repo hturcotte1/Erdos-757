@@ -165,3 +165,7 @@ Format for each work block:
 
 ## 2026-10-15T20:45Z P1 (14,11) case: CP-SAT UNKNOWN after 7000 s; exhaustive DFS launched
 - CP-SAT (K30/K31/cores, eager alpha, lazy F7) could not decide whether a class-O' pattern with (14, m=11, alpha<=8) exists. Launched the resumable prefix-split DFS at (14,11,alpha<=8) with 3 workers (experiments/20261014-1005-census-dfs/n14m11dfs); if it completes within the budget, the n=14 extremal count becomes complete (2,910 saturated + whatever m=11 realizable patterns yield).
+
+## 2026-10-15T23:00Z result L004 ACCEPTED (2,910 saturated 14-point extremal classes)
+- referee: independent realization of all 205,529 patterns (no pre-filters) reproduces 2,910 classes and the failure breakdown; completeness re-checked on 719 prefixes + all outside cubes refuted + reflection identity on all prefixes (no full second enumeration, ~34 CPU-h). Editorial fixes applied; K45/LEDGER state the completeness scope.
+- evidence: results/reviews/L004-census-14-point-extremal-sets__referee__20261015T225426Z.md

@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report (living document; updated at every checkpoint)
 
-Last updated: 2026-10-15 18:45 UTC (elapsed about 43.7 of 72 budget hours). Status of the goal clauses at
+Last updated: 2026-10-15 23:00 UTC (elapsed about 48 of 72 budget hours). Status of the goal clauses at
 this update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted.
 
 ## 1. Result summary
@@ -43,8 +43,8 @@ $A_{\rm base}$) are unchanged by this run so far. The run produced the following
    **54,243** affinely inequivalent 12-point (4,5)-sets with $h=7$ (2,226,490 abstract patterns, all exactly
    realized or exactly refuted; certificate L002, referee ACCEPT after three rounds with four independent
    pipelines; as a by-product $f(12)\ge7$ holds without Henning–Yeo), and the completed $n=14$ census gives exactly **2,910** saturated 14-point sets with $h=8$ up to affine
-   equivalence ($A_{\rm base}$ is one of them; K45, certificate L004), a sharp drop from 54,243 at $n=12$; whether
-   non-saturated ($m=11$) extremal 14-point sets exist is being decided.
+   equivalence ($A_{\rm base}$ is one of them; K45, certificate L004, referee ACCEPT), a sharp drop from 54,243 at $n=12$; whether
+   non-saturated ($m=11$) extremal 14-point sets exist is open (CP-SAT UNKNOWN after 2 h; an exhaustive DFS is running).
    For $n=6..11$ the saturated extremal classes number 1, 4, 66, 1,262, 6,644, 466,961, and non-saturated extremal
    patterns (infinite families) exist at every $n\le11$, so $n=12$ is the first size with finitely many extremal sets
    (K43, certificate L003, referee ACCEPT after three rounds with three independent enumerators). The sequence of
