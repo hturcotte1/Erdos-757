@@ -16,7 +16,8 @@
 
 - `small_records.json`: extremal (4,5)-sets attaining f(n) for n = 8, 10, 11, 12 (three inequivalent), 14, exact integers.
   Generator: `e757/ordered_search.py`, 2026-10-13; checked by `judge/judge.py`; pinned by `tests/test_known_facts.py::test_small_records`.
-  Tag: [verified-here].
+  Schema: `{"description", "sets": {key: {"set": [ints], "n", "h", "m" (number of 3-APs)[, "source"]}}}` with keys "8", "10", "11", "12", "14" (A_base, Ma-Tang 2026),
+  "12b", "12c" (omega issue #9804). Tag: [verified-here] (K29).
 - `forbidden_ordered_n8.json`: same schema as the n7 file, for n = 8 only: 46,281 ordered patterns and the 243 new minimal
   forbidden cores at n = 8 (4 to 6 edges; 287 = 44 + 243 cores in total for n <= 8). Generator:
   `experiments/20261014-0005-forbidden-n8/` (K33), 2026-10-14. Tag: [verified-here].

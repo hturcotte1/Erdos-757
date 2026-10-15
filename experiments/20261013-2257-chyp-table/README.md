@@ -51,6 +51,11 @@ is a candidate abstract hypergraph for a 9/16 set (must then be realized with
 e757.saturated.solve_midpoint_map / ordered LP); UNSAT => c_hyp(16)=10 (modulo HY) and f(16)=10).
 No conclusion on c_hyp(16) is claimed here.
 
+Final status of the n = 16 run (added 2026-10-15 from the folder): `results/feas_n16_T9_*.json` does not exist and `results/feas16_m14.log` is
+empty (0 bytes); `run.log` has only the header (`started 2026-10-13T23:20:44Z max 2h`, `python3 experiments/20261013-2257-chyp-table/run_feas.py 16 9 1 1 6000 4`).
+The run left no result (journal/LOG.md 2026-10-14T00:15Z: "n=16 T=9 undecided after >1 h without K30"; background jobs of that night died
+in the 04:40 UTC container restart). So c_hyp(16) from this folder remains undecided [heuristic]; later work: experiments/20261014-0450-n16-cases, 20261014-0550-n16-layered.
+
 ## Conclusion
 Engine works and agrees with brute force for n<=9 and with the known f(n) up to n=15.  Eager alpha
 encoding is the right design.  c_hyp(16) is undecided at hand-back.
@@ -67,7 +72,7 @@ encoding is the right design.  c_hyp(16) is undecided at hand-back.
 | 11 | 7 | 7 | <=6 | <=6 | 7 | 7 | 10.6 / 10.1 |
 | 12 | 7 | 7 | <=10 | <=10 | 7 | 7 | 6.3 / 6.4 |
 
-Jobs still running at hand-back: n=16 T=9 (pid in experiments/20261013-2257-chyp-table/job.pid; result file results/feas_n16_T9_f71_hy1_mNone.json) and the m_exact=14 sub-case (results/feas_n16_T9_f71_hy1_m14.json). To finish: run aggregate.py and check.py after they complete.
+Jobs still running at hand-back: n=16 T=9 (pid in experiments/20261013-2257-chyp-table/job.pid; result file results/feas_n16_T9_f71_hy1_mNone.json) and the m_exact=14 sub-case (results/feas_n16_T9_f71_hy1_m14.json). To finish: run aggregate.py and check.py after they complete. [Update 2026-10-15: neither result file exists (only the empty `results/feas16_m14.log`); both runs left no result, see the 'Final status of the n = 16 run' paragraph above.]
 
 
 Follow-up (2026-10-14): the unconstrained n=16 jobs above were killed. The constrained n=16 decision (monotone K30, medial K31, forbidden cores) is in experiments/20261014-0030-n16-decision/; the sweep of other record-feasible sizes is in experiments/20261014-0030-feasible-sizes/.

@@ -64,5 +64,11 @@ results/n*_m*.json (per-(n,m) exact results; `_sample` = first-300 samples), res
 results/summary.json (aggregate), results/n11_m9_*.json/txt (pipeline summary; raw pipeline dir n11/results is gitignored), results/judge_spot*.
 tests/test_small_counts.py re-derives the n=8 and n=10 saturated counts (260/130/66; 79,488/39,765/6644) and checks that the n=8 (m=5, non-saturated pattern realizable) and n=10 (m=8, saturated class) record sets are among the extremal patterns/classes.
 
+## Conclusion
+[verified-here] Exact numbers of saturated extremal classes (h = f(n), m = n-2) up to affine equivalence: 1, 4, 66, 1,262, 6,644, 466,961 for n = 6..11 (with 54,243 at
+n = 12 from L002), plus the observation that non-saturated extremal families exist for every 6 <= n <= 11 and not for n = 12. This is certificate L003 (referee ACCEPT after
+3 rounds, results/reviews/L003-census-small-n-extremal-sets__referee__20261014T213511Z.md) and K43 in kb/known_results.md. n = 13 was not computed. No record-beating set
+exists in the data (every realized set has h = f(n)).
+
 Tags: all counts [verified-here] (exact C enumeration + exact rational realization); the necessary conditions used by the n=11 pipeline filter are K30-K33 [verified-here];
 "infinite family" is [derived-here] (positive-dimensional open solution set); n=13 estimates are [heuristic].

@@ -4,6 +4,10 @@ Question: which structural properties hold for ALL realizable extremal ordered m
 all known ones at n=14 (157), yet fail for some abstract-but-unrealizable pattern? Impose them on the n=16 search
 (T=9, m=14, saturated).
 
+Method in brief (details in Parts 1 and 2 below): compute about 65 statistics for every pattern in the realizable set R12 and in the abstract-but-unrealizable set
+U12 (Part 1, `stats.py` / `run_stats.py`), select invariants that hold for all realizable patterns (tiers t1 and t2), encode them as constraints for SAT / CP-SAT and
+run the (16, 9, 14) decision with three engines (Part 2 and 'n=16 runs'). Tags: statistics [verified-here]; the n=16 consequence [heuristic].
+
 ## Data (all exact, [verified-here] counts)
 - R12: 54,243 realizable (12,10,alpha<=7) patterns, `20261014-1005-census-dfs/results/realized_n12.json.gz` (edges in rank order).
 - U12: 340,796 unrealizable patterns = rows of `n12_m10_filtered.txt.gz` with k31=1 and c4=1 (395,039, the O' class) minus both

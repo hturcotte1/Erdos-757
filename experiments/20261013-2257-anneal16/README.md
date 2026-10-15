@@ -47,5 +47,26 @@ record (m=8 < n-2) and the result had no equation for some vertex. Fix: only sat
 `logs/ckpt_k.json`; `--no-merge`, `--k0`). Worker 3 (n=18) still runs the OLD code and may crash for the same reason; restart
 it the same way (`--configs 18:0 --k0 3 --no-merge --seed0 3003`).
 
-## Results of the long run
-(to be filled in from best.json when the job ends; see run.log)
+## Results of the long run [exact quantities verified-here; search statements heuristic]
+Source: `best.json` (last merge 2026-10-14T00:01:03Z; journal/LOG.md entry 2026-10-14T00:50Z records that the four processes
+were stopped after about 95 minutes because the machine was overloaded, so this was NOT the 6 h run requested in the command above).
+Command actually launched: the long-run command above (4 workers, seeds 1000+, `--configs 16:0,16:1,16:0,18:0`); workers 0, 1, 2 were restarted
+after the crash described under "Incident" with seeds 3000, 2000, 3002 (the `seed` fields of `best.json`).
+
+| worker | n | free vertices | seed | states evaluated | float collision-free | exact (4,5)-sets reached | exact h distribution of those | best h | hits (h*7 < 4n) |
+|---|---|---|---|---|---|---|---|---|---|
+| 0 | 16 | 0 | 3000 | 931,228 | 595,575 | 5,810 | 10: 3,198; 11: 2,600; 12: 12 | 10 | 0 |
+| 1 | 16 | 1 | 2000 | 2,132,767 | 1,685,562 | 16,853 | 10: 4,016; 11: 12,654; 12: 183 | 10 | 0 |
+| 2 | 16 | 0 | 3002 | 928,286 | 592,873 | 5,926 | 10: 3,211; 11: 2,708; 12: 7 | 10 | 0 |
+| 3 | 18 | 0 | 1003 | 511,813 (4,407 singular) | 324,047 | 3,196 | 11: 313; 12: 2,782; 13: 101 | 11 | 0 |
+
+Totals at n = 16: 3,992,281 states, 28,589 genuine (4,5)-sets. `best_valid_by_ratio` in `best.json` is an n = 18 set with h = 11
+(ratio 11/18 = 0.611). No state with alpha(E) <= 9 (n = 16) or <= 10 (n = 18) that is also a genuine (4,5)-set was reached.
+
+## Conclusion
+[heuristic] Pure hypergraph annealing over saturated midpoint maps found no 16-point set with h <= 9 and no 18-point set with
+h <= 10 in about 95 minutes; the exact h of all genuine sets found was 10 to 12 at n = 16 and 11 to 13 at n = 18 (h = 9 at n = 16,
+the value that would beat 4/7, was never reached). [verified-here] realizability is not the bottleneck (about 21% of random linear
+saturated maps at n = 16 are exact (4,5)-sets, see the smoke-test section); alpha is. Superseded by the exact CP-SAT / DFS methods
+(experiments/20261013-2257-chyp-table, experiments/20261014-0450-n16-cases, ...); recorded as dead end D16 in
+kb/dead_ends.md. No K-row is based on this folder.

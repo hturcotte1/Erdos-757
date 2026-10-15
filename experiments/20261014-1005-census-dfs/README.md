@@ -72,3 +72,34 @@ Expected enumeration cost 8e10-1e11 nodes = 36-44 CPU-hours at 0.65M nodes/s (un
 each while the sweep and another census ran, so expect finish ~03:00-06:00 UTC on 2026-10-15 if cores free up after
 ~13:30 UTC (the 24 h limit ends 11:21 UTC on 10-15; rerun to resume). Post-processing estimate from (12,10) rates:
 filter ~0.2 ms per raw solution, realization ~2-4 ms per O' pattern / P; with ~1e6 solutions this is well under an hour.
+
+## Final results and status (added 2026-10-15 from the files in this folder) [verified-here unless noted]
+### (14, 12, alpha <= 8): finished
+- Enumeration finished: `n14/results/n14_m12_TOTAL.json` = `{"prefixes": 2537, "solutions": 205529, "nodes": 113454008923, "refl": true, "cpu_seconds": 277501.0}`
+  (205,529 patterns up to reflection; the job was relaunched after container restarts, resumable by prefix).
+- Post-processing: `n14post/run.log` header `# started 2026-10-15T16:41:34Z max 4h`, command
+  `python3 experiments/20261014-1005-census-dfs/postprocess.py 14 8 12 experiments/20261014-1005-census-dfs/n14/results n14_m12 3`.
+  `n14/results/post/summary.json` and `filter_counts.json`: canonical 205,529; K30 205,529; K31 (medial-triangle-free) 119,844; cores with <= 4 edges 46,419;
+  all 287 cores 34,995. Of the 46,419 tested exactly: realizable 2,910 (all rigid, 2,910 affine classes); unrealizable 43,509 = 41,751 order-infeasible + 912 forced extra AP +
+  846 forced repeated difference; of these, 11,424 (= 46,419 - 34,995; 11,378 / 33 / 13 by kind, listed under "(excluded by long core)" in the JSON) are also excluded by
+  the 5-6 edge cores. `all_h_eq_T` and `all_45` true, `record_beating` empty, `n_fallback_to_realize_exact` 0,
+  judge spot check 50/50 PASS (`judge_pass_count` 50), `realizable_all_in_full_core_set` true. A_base's pattern and affine class are among the 2,910.
+- Statement: exactly 2,910 saturated (m = 12) 14-point (4,5)-sets with h = 8 up to affine equivalence = certificate results/proofs/L004-census-14-point-extremal-sets.md
+  (referee ACCEPT, results/reviews/L004-census-14-point-extremal-sets__referee__20261015T225426Z.md), K45 in kb/known_results.md. The 'timing' estimate above (55-70 h
+  single process) was beaten by the 3-4 worker split: 277,501 CPU-seconds (about 77 CPU-hours).
+- Git note: `n14/results/` is git-ignored (see `.gitignore`), so `n14_m12_TOTAL.json` and `post/` exist only on the machine that ran the job. Tracked copies of the K45
+  evidence are `data/census_n14_m12_classes.jsonl.gz` (the 2,910 classes) and `data/census_n14_m12_summary.json` (see data/README.md and experiments/20261015-2310-kb-audit/README.md, item 1).
+
+### (14, 11, alpha <= 8): open / running
+- CP-SAT attempt `n14_m11_decide.py` (log `n14m11/run.log`: `# started 2026-10-15T18:43:26Z max 3h`, command
+  `env PYTHONPATH=/home/user/Erdos-757 python3 experiments/20261014-1005-census-dfs/n14_m11_decide.py 7000`): `n14_m11_result.json` = UNKNOWN after 7000 s
+  (299 solves, 596 F7 cuts), dead end D21.
+- Exhaustive prefix-split DFS (`n14m11dfs/run.log`: `# started 2026-10-15T22:57:17Z max 26h`, command
+  `python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 10 --tag n14_m11`; 3,437 depth-3 prefixes, 4 workers).
+  At 23:10 UTC on 2026-10-15 (when this section was written) 68 of the 3,437 prefixes had a `.done` marker; the job was still running, so NO result exists for m = 11.
+  Resume after a restart: rerun the same command (finished prefixes are skipped). The m = 11 case is the only way a non-saturated extremal 14-point set could exist;
+  whether any exists is unknown.
+
+## Conclusion
+[verified-here] 54,243 (n = 12, L002) and 2,910 (n = 14, m = 12, L004) are exact counts of saturated extremal sets up to affine equivalence; no record-beating set
+exists at these sizes (7*7 = 49 >= 48 and 7*8 = 56 >= 56). The (14, 11) non-saturated case is not settled.
