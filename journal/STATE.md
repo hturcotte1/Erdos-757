@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: running
-Last updated (UTC): 2026-10-15 20:50
+Last updated (UTC): 2026-10-15 23:15
 Phase/track: Phase 1 censuses + Track U witness sweeps; Track L data-driven design (no proof idea yet)
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
@@ -27,6 +27,6 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 - [heuristic] Transversal reformulation: tau = min set T such that every midpoint j is in T or has a parent l(j) or r(j) in T (parent maps l<j<r; G_L, G_R are rooted forests).
 
 ## Next 3 actions
-1. L004 verdict -> LEDGER; if the (14,11) DFS completes: realize its patterns (postprocess.py with m=11) and finalize the n=14 count.
-2. Final report polish before the budget end (2026-10-16 23:06 UTC): sequence 1,4,66,1262,6644,466961,54243,?,2910; D15 evidence; leads.
-3. Keep re-arming the session waiter; relaunch jobs after container restarts.
+1. Documentation pass (workflow running): experiment READMEs, index READMEs, kb audit -> apply START_HERE/open_questions/known_results updates myself.
+2. If the (14,11) DFS completes: realize its patterns, finalize the n=14 count in L004/K45/report. Keep re-arming the session waiter; relaunch after restarts.
+3. T-2h (2026-10-16 ~21:00 UTC): final checkpoint, FINAL_REPORT final version, merge PR #1 into main, run status.sh.

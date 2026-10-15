@@ -169,3 +169,8 @@ Format for each work block:
 ## 2026-10-15T23:00Z result L004 ACCEPTED (2,910 saturated 14-point extremal classes)
 - referee: independent realization of all 205,529 patterns (no pre-filters) reproduces 2,910 classes and the failure breakdown; completeness re-checked on 719 prefixes + all outside cubes refuted + reflection identity on all prefixes (no full second enumeration, ~34 CPU-h). Editorial fixes applied; K45/LEDGER state the completeness scope.
 - evidence: results/reviews/L004-census-14-point-extremal-sets__referee__20261015T225426Z.md
+
+## 2026-10-15T23:15Z infra endgame plan: documentation pass, PR to main
+- user: budget stays 72 h (ends 2026-10-16 23:06 UTC); everything must be merged to main and fully documented by then.
+- opened PR #1 (claude/intelligent-pasteur-22z06m -> main), to be merged after the documentation pass (~T-2h).
+- launched a documentation workflow: missing experiment READMEs + index READMEs; kb consistency audit with proposed edits (verified by independent agents). The (14,11) DFS keeps running.
