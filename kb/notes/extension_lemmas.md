@@ -30,8 +30,13 @@ m - deg(a) edges; apply Henning-Yeo. QED.
 *Corollary U1.* A saturated extremal 14-point set (n = 14, m = 12, tau = 6) has NO universal vertex: 102 > 101 - 3 deg a.
 So Lemma E can never produce a 16-point record from one of the 2,910 classes of L004 (case T2 of the sweep is empty
 by theory; the sweep checks this on the data as well).
-*Corollary U2.* More generally a universal vertex needs 17 tau <= 5n + 3m - 5 - 3 deg a, i.e. Henning-Yeo slack
-delta = 5n + 3m - 17 tau >= 5 + 3 deg a >= 8. Record-type sets (small D, hence small slack) have no universal vertices.
+*Corollary U2.* More generally a universal vertex a needs 17 tau <= 5n + 3m - 5 - 3 deg a, i.e. Henning-Yeo slack
+delta = 5n + 3m - 17 tau >= 5 + 3 deg a; so delta >= 8 when deg a >= 1, and delta >= 5 for a vertex in no AP (such a
+vertex is trivially universal). Record-type sets (small D, hence small slack) have no universal vertices.
+*Remark (other roles; falsifier-checked).* Lemma E has a variant in which the new point x is the midpoint of a and
+the second new point y = 2x - a, for ANY vertex a (not necessarily extreme) and generic x: C is again a (4,5)-set with
+H(C) = H + {a, x, y} (a parallelogram {a, y, b, c} would need x to be the midpoint of b, c, which generic x is not),
+and h(C) = h(A) + 1 iff a is universal, h(A) + 2 otherwise.
 
 **Lemma Δ (degrees in a 16-point record set).** Let C be a 16-point (4,5)-set with h(C) = 9 (a record, 9/16 < 4/7),
 m = m(C). Then m ∈ {13, 14}, every 15-point subset is extremal (h = 9 = f(15)), no vertex is universal, and
@@ -40,7 +45,17 @@ m = m(C). Then m ∈ {13, 14}, every 15-point subset is extremal (h = 9 = f(15))
 9 = f(15) <= h(C - p) <= h(C) = 9, so tau(H) = 16 - 9 = 7 and tau(H - p) = 15 - 9 = 6; apply Henning-Yeo to H - p: 102 <= 75 + 3(m - deg p). QED.
 *Consequence for the sweep.* If C = A ∪ {x, y} with A one of the 2,910 saturated extremal classes, then
 m(C) = 12 + k with k ∈ {1, 2} new edges, every new edge contains x or y, and deg x, deg y <= 3 + k. With k = 1 the
-new edge is either {a, x, y} (Lemma E, excluded by U1) or {x, a, b} with y in no AP (then h(C) = h(A ∪ {x}) + 1, which
-is 9 only if h(A ∪ {x}) = 8, i.e. x is universal in H(A) + {x, a, b}: excluded by Lemma U with n = 15, m = 13,
-tau = 7: 119 > 70 + 36). So a record extension needs exactly k = 2 new edges, i.e. m(C) = 14 and
-Henning-Yeo slack 3. [derived-here; not yet cross-checked by an independent agent]
+new edge is either {a, x, y} in some role (Lemma E or its remark: h(C) = 9 only if a is universal in H(A), excluded by
+U1) or {x, a, b} with y in no AP: then h(C) = h(A ∪ {x}) + 1, and h(A ∪ {x}) = 8 is impossible by Henning-Yeo applied
+directly to A ∪ {x} (n = 15, m = 13, tau would be 7: 119 <= 114 is false); equivalently alpha(H(A) + {x, a, b}) = 8
+would need both a and b universal in H(A). So a record extension needs exactly k = 2 new edges, i.e. m(C) = 14 and
+Henning-Yeo slack 3.
+
+**Falsifier report (2026-10-16 00:05 UTC; experiments/falsify/extension-lemmas/).** No lemma broken on ~11,000 sets
+(all stored extremal sets n = 6..14, A_base, Fibonacci prefixes): Lemma E 197,946 (set, a, t) triples with 0 formula
+failures plus a symbolic-t (4,5) check on 21,994 cases; Lemma U 5,443 universal vertices, 0 violations; no sampled
+14-point class has a universal vertex (U1). Universal extreme points do exist at n = 7, 9, 11 (and in Fibonacci
+prefixes); Lemma E then yields (n + 2)-point sets with h + 1 = f(n + 2) exactly, never a record. The falsifier
+corrected an arithmetic slip in U2 (deg a >= 1 needed for delta >= 8) and two gaps in the consequence paragraph
+(wrong universality condition in the {x, a, b} case; the role "x midpoint of a, y" was missing); both fixed above.
+[verified-here on data; the lemmas themselves remain derived-here]
