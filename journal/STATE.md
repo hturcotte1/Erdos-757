@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: running
-Last updated (UTC): 2026-10-15 09:25
+Last updated (UTC): 2026-10-15 20:50
 Phase/track: Phase 1 censuses + Track U witness sweeps; Track L data-driven design (no proof idea yet)
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
@@ -15,8 +15,9 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
   (experiments/20261013-2257-chyp-table/table.md)
 
 ## Running jobs / agents
-- (14,12,alpha<=8) exact census: prefix-split C DFS, 4 workers; relaunched 07:22 after the fourth container restart (resumable); 1691/2537 prefixes at 09:23 (~125/h, finish ~16:30 UTC 10-15); then postprocess.py -> certificate L004.
-- DONE: L001, L002, L003 ACCEPTED (K13, K41, K43); K30-K44; novelty CLEAR; Track U closed (D15; sweeps n=18..25 UNKNOWN); Track L: no proof idea (K38/K39 show cores are essential).
+- (14,11,alpha<=8) exhaustive DFS (3 workers, 3437 prefixes, resumable; launched 20:42; cost comparable to the saturated census ~1e11 nodes): decides whether non-saturated extremal 14-point sets exist; CP-SAT was UNKNOWN after 7000 s. Relaunch after any restart with the command in its run.log.
+- referee: L004 (2,910 saturated 14-point extremal classes; K45).
+- DONE: (14,12) census complete (205,529 patterns, 2,910 realizable classes); L001-L003 ACCEPTED; K30-K45; novelty CLEAR; Track U closed (D15); Track L: no proof idea.
 
 ## Live hypotheses
 - [heuristic] Realizability is not the bottleneck at n=16 (21% of random linear saturated maps are (4,5)-sets); alpha is.
@@ -26,6 +27,6 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 - [heuristic] Transversal reformulation: tau = min set T such that every midpoint j is in T or has a parent l(j) or r(j) in T (parent maps l<j<r; G_L, G_R are rooted forests).
 
 ## Next 3 actions
-1. When the n=14 census completes: postprocess.py, certificate L004 (exact number of 14-point extremal sets), referee.
-2. Keep FINAL_REPORT current; checkpoint every 2-3 h; after any container restart rerun the census command from its README.
-3. Budget end 2026-10-16 23:06 UTC (clause C): final report already in place; final polish at the end.
+1. L004 verdict -> LEDGER; if the (14,11) DFS completes: realize its patterns (postprocess.py with m=11) and finalize the n=14 count.
+2. Final report polish before the budget end (2026-10-16 23:06 UTC): sequence 1,4,66,1262,6644,466961,54243,?,2910; D15 evidence; leads.
+3. Keep re-arming the session waiter; relaunch jobs after container restarts.
