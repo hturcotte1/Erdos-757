@@ -174,3 +174,6 @@ Format for each work block:
 - user: budget stays 72 h (ends 2026-10-16 23:06 UTC); everything must be merged to main and fully documented by then.
 - opened PR #1 (claude/intelligent-pasteur-22z06m -> main), to be merged after the documentation pass (~T-2h).
 - launched a documentation workflow: missing experiment READMEs + index READMEs; kb consistency audit with proposed edits (verified by independent agents). The (14,11) DFS keeps running.
+
+## 2026-10-15T23:35Z P1 CPU re-balanced: n=13 saturated census launched (3 workers); (14,11) DFS kept on 1 worker
+- the (14,11) DFS (79/3437 prefixes) cannot finish within the budget (projected 40+ h); the n=13 saturated count (estimated ~10 single-process hours) can. Both resumable.
