@@ -1,87 +1,100 @@
-# Erdős Problem #757: final report (living document; updated at every checkpoint)
+# Erdős Problem #757: final report of the autonomous run (2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC)
 
-Last updated: 2026-10-15 23:00 UTC (elapsed about 48 of 72 budget hours). Status of the goal clauses at
-this update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted.
+Last updated: 2026-10-15 23:10 UTC (elapsed about 48 of 72 budget hours). Status of the goal clauses at this
+update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted. The published bounds
+$9/17\le c_*\le4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set $A_{\rm base}$) are unchanged.
 
-## 1. Result summary
+## 1. Verified results (each with a referee-accepted certificate or an exact, re-verifiable computation)
 
-The published bounds $9/17\le c_*\le 4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set
-$A_{\rm base}$) are unchanged by this run so far. The run produced the following verified partial results
-(evidence paths in results/LEDGER.md and kb/known_results.md, rows K30–K34):
+**R1. Exact census of extremal 12-point sets (certificate L002, ACCEPT after three referee rounds, four independent
+pipelines).** Up to affine equivalence there are exactly **54,243** twelve-point (4,5)-sets with $h=7=f(12)$. Every such
+set has exactly 10 three-term APs and is affinely rigid. By-product: every linear, midpoint-injective, monotone pattern on
+12 vertices with $\alpha\le7$ is saturated even when $F_7$ is allowed, and $\alpha\le6$ is impossible, so $f(12)\ge7$ holds
+without Henning–Yeo. (kb/known_results.md K41; results/proofs/L002-census-12-point-extremal-sets.md.)
 
-1. **Exact structure of (4,5)-sets beyond the published lemmas** [verified-here, with one-line proofs]:
-   - **K30, monotone midpoints.** For APs $(i,j,k)$, $(i',j',k')$ in rank order with $i\le i'$, $k\le k'$,
-     $(i,k)\ne(i',k')$: $j<j'$.
-   - **K31, no medial triangle.** Three APs pairwise meeting in shared *endpoints* force a parallelogram
-     ($x_q-x_p=(x_c-x_a)/2=x_b-x_a$), so they never occur. Likewise the medial 4-cycle (Varignon) is
-     forbidden in every order (K33).
-   - **Forbidden-configuration library.** All ordered midpoint patterns on $\le 8$ vertices were classified
-     exactly (46,281 patterns at $n=8$: 16,568 realizable, 28,697 order-infeasible, 498 force an extra AP,
-     518 force a repeated difference), giving 287 minimal forbidden cores with $\le 6$ edges
-     (data/forbidden_ordered_n7.json, data/forbidden_ordered_n8.json). An independent referee re-derived
-     every verdict with its own oracle (experiments/referee/catalogue-n8).
-2. **The abstract constant.** Over the class $O'$ of ordered midpoint hypergraphs (linear, $F_7$-free,
-   K30, K31, core-free), the minimum independence number equals $f(n)$ for every $n=5,\dots,15$
-   (experiments/20261013-2257-chyp-table, experiments/20261014-0500-slack-landscape). In particular
-   $f(n)=\lceil n/2\rceil+1$ for $6\le n\le 15$ and $n=17$, which coincides with the Henning–Yeo bound
-   for every $6\le n\le 23$; the trivial Gyárfás–Lehel bound $h\ge\lceil (n+1)/2\rceil$ is already tight
-   at every even $n\le 14$. **No lower-bound improvement is possible below $n=16$**, abstractly or
-   arithmetically.
-3. **Q8 (the community's candidate inequality $7\tau(K)\le 3|R|+2e_2+4e_1$)** holds on every
-   deletion/avoidance state of all seven record sets (A_base: 3,253,568 states, 94,544 equalities),
-   on about 560M sampled states of random saturated sets and on 752 gluings; two independent
-   implementations agree on every count (K34). With no avoided points Q8 is exactly $h\ge 4n/7$, so it is
-   an inductive strengthening of the conjecture $c_*=4/7$. Evidence only. **For the abstract class Q8 is false** (K38):
-   a 12-vertex ordered midpoint hypergraph that is linear, $F_7$-free, monotone, medial-free and clean of all
-   $\le4$-edge cores violates it by one; every abstract violator found contains a $\ge5$-edge forbidden core and is
-   non-realizable. So a proof of Q8 must use the deeper forbidden configurations: the arithmetic is essential.
-4. **Search engines** (e757/): exact realizability oracle with Farkas certificates
-   (`realizability.py`), CP-SAT model of $O'$ with lazy/eager independence constraints
-   (`cpsat_model.py`), an independent python-sat encoding (`sat_indep.py`), an exact DFS in Python and C
-   (`ordered_dfs.py`, `c/`), and a midpoint-map annealer (`anneal.py`). All cross-validated on $n\le 12$.
-5. **Extremal sets are plentiful (K40-K42, certificate L002).** The exhaustive C-DFS census gives exactly
-   **54,243** affinely inequivalent 12-point (4,5)-sets with $h=7$ (2,226,490 abstract patterns, all exactly
-   realized or exactly refuted; certificate L002, referee ACCEPT after three rounds with four independent
-   pipelines; as a by-product $f(12)\ge7$ holds without Henning–Yeo), and the completed $n=14$ census gives exactly **2,910** saturated 14-point sets with $h=8$ up to affine
-   equivalence ($A_{\rm base}$ is one of them; K45, certificate L004, referee ACCEPT), a sharp drop from 54,243 at $n=12$; whether
-   non-saturated ($m=11$) extremal 14-point sets exist is open (CP-SAT UNKNOWN after 2 h; an exhaustive DFS is running).
-   For $n=6..11$ the saturated extremal classes number 1, 4, 66, 1,262, 6,644, 466,961, and non-saturated extremal
-   patterns (infinite families) exist at every $n\le11$, so $n=12$ is the first size with finitely many extremal sets
-   (K43, certificate L003, referee ACCEPT after three rounds with three independent enumerators). The sequence of
-   saturated extremal classes 1, 4, 66, 1262, 6644, 466961, 54243 ($n=6..12$) is not in the OEIS. A novelty scan (OEIS, arXiv baseline, the problem's forum thread, the omega issue) found no
-   prior enumeration of these sets and no prior statement of K30/K31 (NOVELTY: CLEAR, results/reviews/L002-*__scout__*.md). About 14% of abstract extremal
-   patterns are realizable, so realizability is not the bottleneck; the obstruction at $n=16$, if real, is
-   combinatorial (no abstract solution was ever found by three independent methods, and witness searches at
-   $n=18,20,22$ found nothing either).
-6. **Certificate L001 (referee ACCEPT after four rounds, four independent methods).** No 2-point (4,5) extension of
-   $A_{\rm base}$ has $h\le9$: all 1,743 non-generic extension pairs and all generic cases have $h=10$. This upgrades the
-   community fact K13; extensions by four or more points are not covered.
-7. **Negative heuristic results.** Annealing over about 4 million saturated midpoint maps at $n=16$
-   (28,589 of them genuine (4,5)-sets) never produced a largest Sidon subset below 10; about 21% of random
-   linear saturated maps are realizable, so realizability is not the obstacle at $n=16$, the independence
-   number is.
+**R2. Exact counts for $n\le11$ (certificate L003, ACCEPT after three rounds, three independent enumerators).** The
+numbers of affine classes of saturated ($m=n-2$) extremal sets are 1, 4, 66, 1,262, 6,644, 466,961 for $n=6,\dots,11$.
+For every $4\le n\le11$ there are infinitely many extremal sets up to affine equivalence (non-saturated patterns give
+positive-dimensional families; $n=4,5$: $\{0,1,2,x\}$, $\{0,1,2,x,3x\}$), one class each for $n\le3$, and $n=12$ is the
+smallest $n\ge4$ with finitely many. (K43; results/proofs/L003-census-small-n-extremal-sets.md.)
 
-## 2. The open case $n=16$ and how it decides the direction
+**R3. Exact census of saturated extremal 14-point sets (certificate L004, ACCEPT).** Exactly **2,910** affine classes of
+14-point (4,5)-sets with $h=8$ and $m=12$; $A_{\rm base}$ is one of them. Enumeration: 205,529 abstract patterns up to
+reflection over $1.13\cdot10^{11}$ DFS nodes; the referee realized all 205,529 patterns independently without the
+pipeline's pre-filters and reproduced the count; completeness was re-checked by sampling 28% of the prefixes plus
+consistency checks (not by a full second enumeration). Whether non-saturated ($m=11$, Henning–Yeo slack 1) extremal
+14-point sets exist is open: CP-SAT returned UNKNOWN after two hours and an exhaustive DFS is running (section 4).
+(K45; results/proofs/L004-census-14-point-extremal-sets.md.)
 
-Beating $4/7$ first becomes possible at $n=16$ ($h=9$, $m\in\{13,14\}$). Two hypotheses are consistent with
-all data: (H1) Henning–Yeo stays tight at even $n$ up to 22 (records at $n=16,18,20,22$, hence
-$c_*\le 6/11$); (H2) a wall appears at $n=16$ ($f(16)=10$, consistent with $c_*=4/7$ and Q8).
-Direct CP-SAT and pure-SAT attacks on $n=16$ time out (each of 30 sub-cases exceeds 3000 s). The running
-approach is layered: by the deletion-of-maximum lemma, a 16-vertex extremal hypergraph minus its maximum is a
-15-vertex member of $O'$ with $\alpha\le 9$ and $m'\in\{9,\dots,13\}$ whose non-midpoints are exactly the
-midpoints of the deleted vertex's edges; enumerate those and extend (experiments/20261014-0550-n16-layered).
+The sequence of saturated extremal classes for $n=6,\dots,14$ is therefore
+$1,\ 4,\ 66,\ 1262,\ 6644,\ 466961,\ 54243,\ ?,\ 2910$; it is not in the OEIS (novelty scan: results/reviews/L002-*__scout__*.md).
 
-## 3. Leads and recommended next steps
+**R4. No 2-point extension of $A_{\rm base}$ reaches $h\le9$ (certificate L001, ACCEPT after four rounds, four independent
+methods).** All 1,743 non-generic (4,5) extension pairs and all generic cases have $h=10$. This upgrades the community
+fact K13; extensions by four or more points are not covered. (results/proofs/L001-abase-two-point-extensions.md.)
 
-- Finish the layered $n=16$ enumeration; realize every abstract solution exactly (judge/judge.py). A
-  realizable one is a new record ($9/16$); none means $f(16)=10$ (certify with the two independent
-  encodings; the DFS cannot reach $n=16$).
-- If $f(16)=10$: the wall is arithmetic or abstract; the forbidden-core library (K30–K33) is the tool for an
-  inductive inequality of Q8 type (kb/methods/trackL_inductive_framework.md gives the exact free-move
-  conditions for any constants $(a,b,c,d)$).
-- If $f(16)=9$: run the same layered search at $n=18,20,22$.
-- Obtain the Henning–Yeo 2021 paper (closed access) for the structure of its equality cases.
+**R5. Structural lemmas with one-line proofs (K30, K31, K33, K44).** Monotone midpoints: for APs $(i,j,k)$,
+$(i',j',k')$ in rank order with $i\le i'$, $k\le k'$, $(i,k)\ne(i',k')$, one has $j<j'$. No medial triangle: three APs
+pairwise meeting in shared endpoints force a parallelogram, so they never occur; likewise the medial 4-cycle. Degree
+bound: in a Gyárfás–Lehel-tight saturated hypergraph on $n=2k$ vertices every vertex has degree $\le(23-k)/3$. A
+novelty scan found none of these in the literature or the problem's forum threads.
 
-## 4. Dead ends added this run
-See kb/dead_ends.md: direct CP-SAT/SAT at $n=16$ without structure; annealing at $n=16$; the unconstrained
-abstract class is too loose without K30/K31/cores.
+**R6. Forbidden-configuration library (K32, K33; independently re-derived, ACCEPT).** All ordered midpoint patterns on
+$\le8$ vertices classified exactly (46,281 at $n=8$: 16,568 realizable, 28,697 order-infeasible, 498 force an extra AP,
+518 force a repeated difference); 287 minimal forbidden cores with $\le6$ edges (data/forbidden_ordered_n7.json,
+data/forbidden_ordered_n8.json); catalogue of every $\le4$-edge configuration with every midpoint labeling
+(experiments/20261014-0005-forbidden-n8). The Pasch configuration is realizable in exactly one labeling.
+
+**R7. Where the trivial bound is tight (K35, K36).** $f(n)=\lceil n/2\rceil+1$ for $6\le n\le15$ and $n=17$, which equals the
+Henning–Yeo bound for every $6\le n\le23$; the Gyárfás–Lehel bound $h\ge\lceil(n+1)/2\rceil$ is already tight at every even
+$n\le14$. Hence no lower-bound improvement is possible below $n=16$, and in the abstract class the saturated extremal value
+is $\tau=n/2-1$ at every even $n\le14$, equal to the realizable value in every resolved cell.
+
+**R8. The community's candidate inequality Q8 (K34, K38, K39).** $7\tau(K)\le3|R|+2e_2+4e_1$ holds on every
+deletion/avoidance state of all record sets (A_base: 3,253,568 states) and on about 570M sampled states, with two
+independent implementations agreeing; with no avoided points it reads $h\ge4n/7$, i.e. it is an inductive strengthening of
+the conjecture $c_*=4/7$. It is **false for the abstract class**: a 12-vertex pattern that is linear, $F_7$-free, monotone,
+medial-free and clean of all $\le4$-edge cores violates it by one; every abstract violator contains a 5- or 6-edge
+forbidden core. On realizable data the best inductive constant is exactly $3/7$; on abstract data it is $31/70$. The
+dominant hard local type in any minimal counterexample is a vertex on three full traces. kb/methods/trackL_inductive_framework.md
+gives the exact free-move conditions for every $(a,b,c,d)$.
+
+## 2. The open case $n=16$ (negative results, D15, D16)
+
+Beating $4/7$ first becomes possible at $n=16$ ($h=9$, $m\in\{13,14\}$). Everything tried is consistent with a wall there:
+- the abstract class has no $\alpha\le9$ member that any method could find at $n=16$ (CP-SAT, glucose, cadical, annealing over
+  about 4 million maps with 28,589 genuine (4,5)-sets reached, constrained runs with all census invariants), while
+  $n\le14$ witnesses are found in seconds and about 14% of abstract extremal patterns are realizable at $n=12$ and $n=14$;
+- no witness at $n=18,20,22,23,25$ in one-hour realizability-CEGAR searches;
+- the number of saturated extremal classes drops from 54,243 ($n=12$) to 2,910 ($n=14$).
+No certificate is reachable: every n=16 sub-instance exceeds the solver limits, the exact DFS needs about $10^{14}$ nodes,
+and SAT UNSAT times grow from 2 s ($n=12$) to over 250 s ($n=13$). Two hypotheses remain: (H1) Henning–Yeo stays tight at
+even $n$ up to 22 (records at 16..22, $c_*\le6/11$); (H2) a wall at 16 ($f(16)=10$, consistent with $c_*=4/7$ and Q8). The
+evidence favours H2.
+
+## 3. Lower-bound track: why no proof was attempted
+
+Any improvement of $9/17$ must come from asymptotics (R7). The one candidate structure, a Q8-type inductive inequality,
+provably needs forbidden configurations with $\ge5$ edges (R8), and no discharge argument for the dominant local type was
+found; the Henning–Yeo 2021 paper (closed access, no preprint) was not obtainable, so its tightness structure is unknown.
+The ingredients are recorded for a future attempt: the free-move framework, the forbidden-core library, the GL-tight
+structure lemmas (kb/notes/gl_tight_structure.md; falsifier NONE-FOUND on about 80,000 instances), and the role statistics
+of near-tight configurations (experiments/20261014-0020-lp-fit, experiments/20261014-0700-inductive-fit).
+
+## 4. Running at the time of writing and how to continue
+
+- Exhaustive DFS at $(14,11,\alpha\le8)$ (experiments/20261014-1005-census-dfs/n14m11dfs; resumable; relaunch with the
+  command in its run.log). Completion decides whether 2,910 is the total number of extremal 14-point classes.
+- Recommended next steps: (i) a dedicated exact engine for $n=16$ (SAT with symbolic symmetry breaking and the
+  deletion-lemma case structure, or a distributed DFS of about $10^{14}$ nodes); (ii) if $f(16)=10$ is confirmed, the
+  abstract wall is combinatorial and the Q8-type induction with 5/6-edge cores is the natural proof program;
+  (iii) obtain Henning–Yeo 2021 for its equality cases; (iv) submit the census sequence to the OEIS.
+
+## 5. Infrastructure built (e757/, all tested)
+Exact realizability oracle with Farkas certificates (realizability.py); CP-SAT model of the ordered-midpoint class
+(cpsat_model.py, with monotone/medial/core constraints and a realizability-CEGAR); independent python-sat encoding
+(sat_indep.py, with Gyárfás–Lehel colouring constraints); exact C DFS with resumable prefix split (c/ordered_dfs.c,
+ordered_dfs_split.py); midpoint-map annealer (anneal.py). The frozen judge (judge/judge.py) was used for every spot check.
+
+## 6. Dead ends added (kb/dead_ends.md D15, D16)
+Direct SAT/CP-SAT at $n=16$ (with or without structure, with or without census invariants); annealing at $n=16$ and $18$.
