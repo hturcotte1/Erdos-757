@@ -1,0 +1,4 @@
+done 107/107 (skipped 0) sols+=1113245 nodes+=1.87e+08 elapsed 271s
+TOTAL {"prefixes": 107, "solutions": 1113245, "nodes": 187004606, "refl": true, "cpu_seconds": 270.2}
+L002 labelled 2226490 orbits 1113245 alpha<=7 all: True
+split --refl output 1113245 all canonical: True distinct 1113245 equal to L002 orbit set: True

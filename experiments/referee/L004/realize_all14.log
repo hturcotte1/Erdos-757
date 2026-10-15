@@ -1,0 +1,27 @@
+patterns 205529
+filtered lines 205529
+0 7s {'order': 1}
+20000 17s {'order': 19100, 'ok': 403, 'extraAP': 337, 'not45': 161}
+40000 29s {'order': 37377, 'ok': 1073, 'extraAP': 872, 'not45': 679}
+60000 38s {'order': 56625, 'ok': 1277, 'extraAP': 1125, 'not45': 974}
+80000 48s {'order': 75786, 'ok': 1534, 'extraAP': 1502, 'not45': 1179}
+100000 59s {'order': 94809, 'ok': 1925, 'extraAP': 1853, 'not45': 1414}
+120000 67s {'order': 114282, 'ok': 2102, 'extraAP': 2080, 'not45': 1537}
+140000 78s {'order': 133604, 'ok': 2336, 'extraAP': 2342, 'not45': 1719}
+160000 86s {'order': 153182, 'ok': 2499, 'extraAP': 2514, 'not45': 1806}
+180000 95s {'order': 172825, 'ok': 2623, 'extraAP': 2666, 'not45': 1887}
+200000 104s {'order': 192415, 'ok': 2823, 'extraAP': 2816, 'not45': 1947}
+ALL canonical patterns: {'order': 197763, 'ok': 2910, 'extraAP': 2877, 'not45': 1979}
+determinants: {'det_nonzero': 205529}
+O' subset (k30&k31&c4): {'order': 41751, 'ok': 2910, 'extraAP': 912, 'not45': 846} sum 46419
+  of which excluded by a long core (call=0): {'order': 11378, 'extraAP': 33, 'not45': 13}
+realizable: 2910 (h, alpha, is45) histogram: {(8, 8, True): 2910}
+realizable outside O' (would contradict the pre-filters): 0
+realizable failing some long core (call=0): 0
+distinct normal forms: 2910
+census realizable entries: 2910
+patterns: mine-census 0 census-mine 0
+normal-form disagreements on common patterns: 0
+normal forms: mine-census 0 census-mine 0
+A_base normal form among mine: True
+time 107s
