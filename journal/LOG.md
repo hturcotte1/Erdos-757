@@ -159,3 +159,6 @@ Format for each work block:
 ## 2026-10-15T16:42Z P1 n=14 census enumeration COMPLETE
 - result: 205,529 class-O (14,12,alpha<=8) patterns up to reflection; 113,454,008,923 DFS nodes; 277,501 CPU-s across five relaunches (resumable prefix split). Post-processing (K31/core filters, exact realization, affine classes, judge spot check) launched.
 - evidence: experiments/20261014-1005-census-dfs/n14/results/n14_m12_TOTAL.json
+
+## 2026-10-15T18:45Z result n=14 census: 2,910 saturated extremal classes (K45, L004 submitted)
+- 205,529 patterns -> 119,844 K31-free -> 46,419 after <=4-edge cores -> 2,910 realizable (rigid) = 2,910 affine classes; A_base present; judge 50/50. Open: the m=11 case (HY slack 1) - a CP-SAT decision run launched.
