@@ -95,7 +95,7 @@ These follow from the Henning–Yeo lower bound, the known sets, monotonicity, a
 - **Open:**
   - **$f(16)\in\{9,10\}$**: the first open case, and exactly where a new record (9/16) would live; undecided after exhaustive solver attempts (Q1, D15, D16); the data lean to $f(16)=10$ [heuristic];
   - $f(18)\in\{10,11\}$, $f(19),f(20)\in\{11,12\}$, $f(21),f(22)\in\{12,13\}$, $f(23)\in\{13,14\}$.
-- **Extremal-set counts [verified-here].** Saturated extremal affine classes for $n=6,\dots,14$: 1, 4, 66, 1262, 6644, 466961, 54243, (n=13 not computed), 2910 (K41, K43, K45; certificates L002, L003, L004). For $4\le n\le11$ there are also non-saturated extremal families (infinitely many classes); $n=12$ is the smallest $n\ge4$ with finitely many. Whether 2,910 is the complete count at $n=14$ depends on the open $(14,11)$ case (Q11).
+- **Extremal-set counts [verified-here].** Saturated extremal affine classes for $n=6,\dots,14$: 1, 4, 66, 1262, 6644, 466961, 54243, (n=13 open: Q12, D22), 2910 (K41, K43, K45; certificates L002, L003, L004). For $4\le n\le11$ there are also non-saturated extremal families (infinitely many classes); $n=12$ is the smallest $n\ge4$ with finitely many. Whether 2,910 is the complete count at $n=14$ depends on the open $(14,11)$ case (Q11).
 
 ## 6. Structure of the known record sets [verified-here]
 
