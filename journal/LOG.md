@@ -185,6 +185,6 @@ Format for each work block:
 - kb/notes/extension_lemmas.md: Lemma E (one-edge 2-point extension; h rises by 1 iff the vertex is universal), Lemma U (HY obstruction: universal vertices need slack >= 5 + 3 deg), Lemma Δ (16-point record: deg <= m - 9, every 15-subset extremal). Falsifier: HOLDS-ON-DATA on ~11k sets; U2 slip and two gaps in the sweep-consequence paragraph corrected. Universal extreme points at n = 7, 9, 11 give (n+2, f(n+2)) sets, never records.
 - evidence: experiments/falsify/extension-lemmas/README.md
 
-## 2026-10-15T23:55Z P1 n=13 saturated census STOPPED (infeasible, D22); (14,11) DFS relaunched on 2 workers
+## 2026-10-15T23:50Z P1 n=13 saturated census STOPPED (infeasible, D22); (14,11) DFS relaunched on 2 workers
 - 8/1811 prefixes held 54,717,717 class-O patterns (HY slack 13 at (13,11,5)); projected ~10^9 patterns; realization step impossible in this run. Partial counts in experiments/20261015-2330-census-n13/partial_summary.json; streams deleted. Q12 opened.
 - CPU now: extension sweep (2 procs, ~1100/2910 done at 23:47) + (14,11) DFS (2 workers, resumable, 79 prefixes done).
