@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: running
-Last updated (UTC): 2026-10-15 23:15
+Last updated (UTC): 2026-10-15 23:45
 Phase/track: Phase 1 censuses + Track U witness sweeps; Track L data-driven design (no proof idea yet)
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
@@ -15,9 +15,9 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
   (experiments/20261013-2257-chyp-table/table.md)
 
 ## Running jobs / agents
-- (14,11,alpha<=8) exhaustive DFS (3 workers, 3437 prefixes, resumable; launched 20:42; cost comparable to the saturated census ~1e11 nodes): decides whether non-saturated extremal 14-point sets exist; CP-SAT was UNKNOWN after 7000 s. Relaunch after any restart with the command in its run.log.
-- referee: L004 (2,910 saturated 14-point extremal classes; K45).
-- DONE: (14,12) census complete (205,529 patterns, 2,910 realizable classes); L001-L003 ACCEPTED; K30-K45; novelty CLEAR; Track U closed (D15); Track L: no proof idea.
+- (14,11,alpha<=8) exhaustive DFS (4 workers, 3437 prefixes, resumable; relaunch: python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 10 --tag n14_m11): decides whether non-saturated extremal 14-point sets exist (Q11).
+- Documentation pass DONE (experiments READMEs + index; kb audit applied to START_HERE, LEDGER, FINAL_REPORT). PR #1 open to main; merge ~T-2h.
+- DONE: L001-L004 ACCEPTED (K13, K41, K43, K45); K30-K45; novelty CLEAR (K30/K31, L002/L003); Track U closed (D15-D21); Track L: no proof idea.
 
 ## Live hypotheses
 - [heuristic] Realizability is not the bottleneck at n=16 (21% of random linear saturated maps are (4,5)-sets); alpha is.

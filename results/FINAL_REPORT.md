@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report of the autonomous run (2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC)
 
-Last updated: 2026-10-15 23:10 UTC (elapsed about 48 of 72 budget hours). Status of the goal clauses at this
+Last updated: 2026-10-15 23:45 UTC (elapsed about 48.7 of 72 budget hours). Status of the goal clauses at this
 update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted. The published bounds
 $9/17\le c_*\le4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set $A_{\rm base}$) are unchanged.
 
@@ -37,7 +37,7 @@ fact K13; extensions by four or more points are not covered. (results/proofs/L00
 $(i',j',k')$ in rank order with $i\le i'$, $k\le k'$, $(i,k)\ne(i',k')$, one has $j<j'$. No medial triangle: three APs
 pairwise meeting in shared endpoints force a parallelogram, so they never occur; likewise the medial 4-cycle. Degree
 bound: in a Gyárfás–Lehel-tight saturated hypergraph on $n=2k$ vertices every vertex has degree $\le(23-k)/3$. A
-novelty scan found none of these in the literature or the problem's forum threads.
+novelty scan of 2026-10-14 (OEIS, the erdosproblems forum thread, the omega issue, the repo digests; Ma–Tang and Gyárfás–Lehel were not re-read in full) found K30 and K31 absent; K33 and K44 were not scanned.
 
 **R6. Forbidden-configuration library (K32, K33; independently re-derived, ACCEPT).** All ordered midpoint patterns on
 $\le8$ vertices classified exactly (46,281 at $n=8$: 16,568 realizable, 28,697 order-infeasible, 498 force an extra AP,
@@ -65,7 +65,7 @@ Beating $4/7$ first becomes possible at $n=16$ ($h=9$, $m\in\{13,14\}$). Everyth
 - the abstract class has no $\alpha\le9$ member that any method could find at $n=16$ (CP-SAT, glucose, cadical, annealing over
   about 4 million maps with 28,589 genuine (4,5)-sets reached, constrained runs with all census invariants), while
   $n\le14$ witnesses are found in seconds and about 14% of abstract extremal patterns are realizable at $n=12$ and $n=14$;
-- no witness at $n=18,20,22,23,25$ in one-hour realizability-CEGAR searches;
+- no witness at $n=18,20,22$ (3600 s each) and $n=23,25$ (1200 s per $m$ value) in realizability-CEGAR searches, all UNKNOWN; at $n=15$ no class-O' pattern with $\alpha\le9$ and $m'\in\{9,10\}$ was found in 2 h (no UNSAT proof either), and the census invariants (max degree $\le4$, balanced colour classes, no reflection symmetry hold for all 395,196 filtered $(12,10)$ patterns) do not make $n=16$ tractable;
 - the number of saturated extremal classes drops from 54,243 ($n=12$) to 2,910 ($n=14$).
 No certificate is reachable: every n=16 sub-instance exceeds the solver limits, the exact DFS needs about $10^{14}$ nodes,
 and SAT UNSAT times grow from 2 s ($n=12$) to over 250 s ($n=13$). Two hypotheses remain: (H1) Henning–Yeo stays tight at
@@ -79,12 +79,13 @@ provably needs forbidden configurations with $\ge5$ edges (R8), and no discharge
 found; the Henning–Yeo 2021 paper (closed access, no preprint) was not obtainable, so its tightness structure is unknown.
 The ingredients are recorded for a future attempt: the free-move framework, the forbidden-core library, the GL-tight
 structure lemmas (kb/notes/gl_tight_structure.md; falsifier NONE-FOUND on about 80,000 instances), and the role statistics
-of near-tight configurations (experiments/20261014-0020-lp-fit, experiments/20261014-0700-inductive-fit).
+of near-tight configurations (experiments/20261014-0020-lp-fit: over 1,333,217 realizable AP hypergraphs the Henning–Yeo slack is never negative and is at least 3 for $n\ge10$; the exact frontier $\tau\le(33/119)n+(3/17)m$ holds on all rows and no row has $D/n<5/7$; experiments/20261014-0700-inductive-fit).
 
 ## 4. Running at the time of writing and how to continue
 
-- Exhaustive DFS at $(14,11,\alpha\le8)$ (experiments/20261014-1005-census-dfs/n14m11dfs; resumable; relaunch with the
-  command in its run.log). Completion decides whether 2,910 is the total number of extremal 14-point classes.
+- Exhaustive DFS at $(14,11,\alpha\le8)$ (experiments/20261014-1005-census-dfs/n14m11dfs; resumable; relaunch with
+  `python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 10 --tag n14_m11`,
+  3,437 depth-3 prefixes). Completion decides whether 2,910 is the total number of extremal 14-point classes.
 - Recommended next steps: (i) a dedicated exact engine for $n=16$ (SAT with symbolic symmetry breaking and the
   deletion-lemma case structure, or a distributed DFS of about $10^{14}$ nodes); (ii) if $f(16)=10$ is confirmed, the
   abstract wall is combinatorial and the Q8-type induction with 5/6-edge cores is the natural proof program;

@@ -1,6 +1,6 @@
 # START HERE: Erdős Problem #757
 
-This is the canonical summary. If another file disagrees with this one, this one wins (it already includes the corrections found on 13 Oct 2026).
+This is the canonical summary. If another file disagrees with this one, this one wins (it includes the corrections found on 13 Oct 2026 and the status update of 15 Oct 2026; the results of the autonomous run are in results/FINAL_REPORT.md and results/LEDGER.md).
 
 Tags used everywhere in this repo:
 - **[published]** refereed paper or arXiv preprint.
@@ -19,6 +19,8 @@ Tags used everywhere in this repo:
 
 **Status.** $\tfrac{9}{17}\le c_*\le\tfrac47$, i.e. $0.52941\le c_*\le 0.57143$ [published: Ma–Tang, arXiv:2602.23282v2, 6 Mar 2026]. The problem is **open**, and the erdosproblems.com page (last edited 10 Apr 2026) lists exactly these bounds.
 
+**Autonomous run, 2026-10-13/16 [verified-here].** No improvement of either bound was found. The run produced exact small-case results (section 5), three referee-accepted census certificates (L002 to L004) and one extension certificate (L001), and the structural lemmas K30, K31, K44; see results/FINAL_REPORT.md.
+
 **Invariances.**
 - We may assume $A\subset\mathbb Z$.
 - Every condition in the problem is a relation $a_1+a_2=a_3+a_4$, since $|x-y|=|z-w|$ iff $x+w=y+z$ or $x+z=y+w$. So the problem is invariant under **Freiman 2-isomorphisms**, and constructions may be built in $\mathbb Z^d$ and projected generically [derived-here].
@@ -32,6 +34,8 @@ Let $H(A)$ be the 3-uniform hypergraph whose edges are the 3-term APs in $A$. Fo
 3. The midpoint map is injective and never hits $\min A$ or $\max A$. So $e(S)\le|S|-2$ for every $S\subseteq A$ with $|S|\ge2$.
 4. $H$ is linear: two APs share at most one point.
 5. $H$ contains no $F_7=\{012,034,056,135,246\}$, which is AG(2,3) minus two points.
+6. (Monotone midpoints, K30 [verified-here].) If $(i,j,k)$ and $(i',j',k')$ are APs with $i\le i'$, $k\le k'$ and $(i,k)\ne(i',k')$ in rank order, then $j<j'$.
+7. (No medial triangle, K31 [verified-here].) Three APs $\{a,b,c\},\{a,p,e\},\{c,q,e\}$ with midpoints $b,p,q$ never occur in a (4,5)-set (they force $x_a+x_q=x_b+x_p$).
 
 **Lower bound 9/17.**
 - Henning–Yeo (Graphs Combin. 37 (2021) 867–890): if $H$ is linear and $F_7$-free, then $17\tau\le 5n+3m$.
@@ -55,6 +59,7 @@ Define $D(A):=17\,h(A)-9|A|$. Then:
 - **Values on the record sets:**
   - $A_{\rm base}$: $n=14$, $m=12$, $\tau=6$, $\delta=4$, $D=10$, so $D/n=5/7$, which is exactly the 4/7 ratio.
   - The 12-point sets: $D=11$.
+  - Every one of the 54,243 extremal 12-point classes has $m=10$, $\delta=5$, $D=11$ (K41); every one of the 2,910 saturated extremal 14-point classes has $m=12$, $\delta=4$, $D=10$ (K45) [derived-here from the counts].
 - **The two directions in terms of $D$:**
   - **Beat 4/7** ⇔ find $A$ with $D(A)/|A|<5/7$. That requires almost every point to be a midpoint AND small Henning–Yeo slack.
   - **Beat 9/17** ⇔ prove $D(A)\ge\varepsilon|A|-C$. Realizable hypergraphs would have to be "far from Henning–Yeo-tight on average".
@@ -80,14 +85,17 @@ Beating 4/7 at size $n$ needs $h\le\lceil 4n/7\rceil-1$, i.e. $\tau=n-h$ with $1
 
 The full table is printed by `python3 -m e757.fn_bounds`.
 
+Status of the feasible sizes [heuristic]: $n=16$ undecided (Q1; no pattern with $\alpha\le9$ found by CP-SAT, SAT or annealing; no certificate reachable, D15); $n=18,20,22,23,25$ searched in witness mode for 1200 to 3600 s each, UNKNOWN (D18). Degree bound in Gyárfás–Lehel-tight saturated hypergraphs (K44): $\deg\le5$ for $n\in\{12,14,16\}$, $\deg\le4$ for $n\in\{18,20,22\}$ [derived-here].
+
 ## 5. Small values of $f(n)$ [derived-here]
 
 These follow from the Henning–Yeo lower bound, the known sets, monotonicity, and gluing.
 
-- **Exact for every $n\le15$ and $n=17$:** $f(1),\dots,f(15)=1,2,2,3,4,4,5,5,6,6,7,7,8,8,9$ and $f(17)=10$; also $f(24)=14$, $f(26)=15$, $f(28)=16$. The sets attaining $f(8)=5$ and $f(10)=6$ were found on 13 Oct 2026 by `e757/ordered_search.py` [verified-here]; all small extremal sets are in `data/small_records.json`.
+- **Exact for every $n\le15$ and $n=17$:** $f(1),\dots,f(15)=1,2,2,3,4,4,5,5,6,6,7,7,8,8,9$ and $f(17)=10$; also $f(24)=14$, $f(26)=15$, $f(28)=16$. The sets attaining $f(8)=5$ and $f(10)=6$ were found on 13 Oct 2026 by `e757/ordered_search.py` [verified-here]; all small extremal sets are in `data/small_records.json`. Pattern: $f(n)=\lceil n/2\rceil+1$ for $6\le n\le15$ and $n=17$, equal to the Henning–Yeo bound for every $6\le n\le23$ (K35) [verified-here].
 - **Open:**
-  - **$f(16)\in\{9,10\}$**: the first open case, and exactly where a new record (9/16) would live;
+  - **$f(16)\in\{9,10\}$**: the first open case, and exactly where a new record (9/16) would live; undecided after exhaustive solver attempts (Q1, D15, D16); the data lean to $f(16)=10$ [heuristic];
   - $f(18)\in\{10,11\}$, $f(19),f(20)\in\{11,12\}$, $f(21),f(22)\in\{12,13\}$, $f(23)\in\{13,14\}$.
+- **Extremal-set counts [verified-here].** Saturated extremal affine classes for $n=6,\dots,14$: 1, 4, 66, 1262, 6644, 466961, 54243, (n=13 not computed), 2910 (K41, K43, K45; certificates L002, L003, L004). For $4\le n\le11$ there are also non-saturated extremal families (infinitely many classes); $n=12$ is the smallest $n\ge4$ with finitely many. Whether 2,910 is the complete count at $n=14$ depends on the open $(14,11)$ case (Q11).
 
 ## 6. Structure of the known record sets [verified-here]
 
@@ -98,8 +106,8 @@ These follow from the Henning–Yeo lower bound, the known sets, monotonicity, a
 | 12-pt #2 (omega #9804) | 12 | 10 | 7 | 5 | 5 | 11 | yes |
 
 - **Midpoint-saturated.** Every non-extreme point is a midpoint ($m=n-2$).
-- **Affinely rigid.** The AP equations have rank $n-2$. So the labeled AP hypergraph determines the set up to $x\mapsto qx+t$, and `e757.saturated` rebuilds $A_{\rm base}$ from its hypergraph alone.
-- **The two 12-point sets** share an incidence pattern but are not affinely equivalent (different midpoint/order data). A third, inequivalent 12-point set with $h=7$ is $\{0,269,385,467,501,511,521,523,535,538,549,575\}$ [verified-here].
+- **Affinely rigid.** The AP equations have rank $n-2$. So the labeled AP hypergraph determines the set up to $x\mapsto qx+t$, and `e757.saturated` rebuilds $A_{\rm base}$ from its hypergraph alone. Not every extremal set is saturated: for $n\le11$ there are positive-dimensional families (K43; the $n=8$ record set is one), but all 54,243 extremal 12-point classes and all 2,910 saturated 14-point classes are rigid (K41, K45).
+- **The record 12-point sets are a small sample**: there are exactly 54,243 affine classes of 12-point (4,5)-sets with $h=7$ (K41), including the two omega sets (which share an incidence pattern but are not affinely equivalent) and the third set $\{0,269,385,467,501,511,521,523,535,538,549,575\}$ [verified-here].
 - **More facts about $A_{\rm base}$:**
   - AP degrees: one vertex of degree 4 (the point 0), six of degree 3, seven of degree 2;
   - no cut vertex;
@@ -117,7 +125,8 @@ See `kb/dead_ends.md`. The highlights:
 - Gluing.
 - Fibonacci gives 3/5.
 - Periodic chain constructions are capped at 3/5 [verified-here].
-- No 2-point extension of $A_{\rm base}$ beats 4/7 [community].
+- No 2-point extension of $A_{\rm base}$ beats 4/7 [verified-here] (certificate L001, K13).
+- Q8 ($7\tau\le3|R|+2e_2+4e_1$) is false for the abstract class and needs forbidden cores with $\ge5$ edges (K38, K39, D17); direct SAT/CP-SAT/annealing decisions of $\alpha\le9$ at $n=16$ do not terminate (D15, D16, D20, D21); witness sweeps at $n=18..25$ UNKNOWN (D18).
 - $21\tau(K)\le9|R|+5e_2+12e_1$ is refuted [community].
 - $F_7$ cannot be realized over $\mathbb Q$ under any midpoint labeling [verified-here; re-proves Gyárfás–Lehel].
 
@@ -131,3 +140,4 @@ See `kb/dead_ends.md`. The highlights:
 6. `kb/notes/` (paper digests: Ma–Tang, Henning–Yeo, Gyárfás–Lehel, the omega thread, neighbouring problems) and `kb/methods/` (search engineering, proof and inequality testing).
 7. `kb/literature/part2_supplement.md`: the full proof chain, hypergraph transversal theory (including the "deficiency" proof technique), and AI/computational methods.
 8. `kb/literature/part1_literature_review.md`: history, neighbouring problems and bibliography, with inline corrections.
+9. results/FINAL_REPORT.md and results/LEDGER.md (what the autonomous run established); kb/methods/trackL_inductive_framework.md; kb/notes/gl_tight_structure.md; data/README.md (census files).
