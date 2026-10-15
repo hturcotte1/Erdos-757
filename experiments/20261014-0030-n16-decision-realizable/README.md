@@ -18,8 +18,8 @@ folder). The job pid file contains 5786.
 
 ## Result
 None. `run.log` contains only the two header lines (no `DONE` line) and no result JSON was ever written. The job was
-one of the background jobs that died in the container restart around 04:40 UTC on 2026-10-14 without saving anything
-(journal/LOG.md, entry 2026-10-14T04:50Z: "all background jobs died (n=16 CP-SAT decision m=13/m=14, realizable-CEGAR,
+one of the background jobs that ended without saving anything: ended by the 2 h limit (`timeout 2h` from 00:44:18Z, i.e. by about 02:44 UTC) or by the
+container restart around 04:40 UTC on 2026-10-14; no result written (journal/LOG.md, entry 2026-10-14T04:50Z: "all background jobs died (n=16 CP-SAT decision m=13/m=14, realizable-CEGAR,
 sweep at n=18) with no results saved").
 
 ## Conclusion
@@ -29,5 +29,5 @@ TIMEOUT), experiments/20261014-0550-n16-layered, experiments/20261014-1200-censu
 experiments/20261014-0030-feasible-sizes; see dead end D15 in kb/dead_ends.md (which cites other folders).
 
 ## Open issues
-- The folder does not show whether the job was killed after 4 minutes or after 4 hours; only the LOG entry above says it
+- The folder does not show when the job ended (within the 2 hour `timeout` of `scripts/start_job.sh`, or at the restart); only the LOG entry above says it
   died with the restart (the restart time is quoted there as "~04:40 UTC").

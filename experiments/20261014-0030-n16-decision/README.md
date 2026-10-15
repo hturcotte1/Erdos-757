@@ -29,7 +29,7 @@ Clause counts: n=16 monotone 24752, medial 36400; n=12: 4290 / 4488; cores see r
 NONE. `results/` holds only `n16_T9_m13_solutions.jsonl.gz` and `n16_T9_m14_solutions.jsonl.gz`, both 0 bytes (truncated gzip streams: `zcat`
 reports "unexpected end of file"); `m13.log` and `m14.log` are empty; no `n16_T9_m*.json` result file exists. `run.log` header:
 `# started 2026-10-14T00:31:37Z max 2h`, `# command: bash -c python3 experiments/20261014-0030-n16-decision/run_decide.py 16 9 13 6500 2 > .../m13.log 2>&1 & python3 .../run_decide.py 16 9 14 6500 2 > .../m14.log 2>&1 & wait`.
-Both solver runs died in the container restart around 04:40 UTC on 2026-10-14 without saving anything (journal/LOG.md, entry 2026-10-14T04:50Z).
+Both solver runs ended without saving anything: they were started under `timeout 2h` (00:31:37Z, so the wrapper ends them by about 02:32 UTC), and journal/LOG.md (entry 2026-10-14T04:50Z) lists them among the jobs that died in the container restart around 04:40 UTC. The folder cannot distinguish the two: ended by the 2 h limit or the restart; no result written.
 The third job mentioned above (`run_realizable.py 13 14 6500 2`) has its own folder, experiments/20261014-0030-n16-decision-realizable, also with no result.
 
 ## Conclusion
@@ -44,4 +44,4 @@ Third job (started 00:44 UTC): `run_realizable.py 13 14 6500 2` = solve_realizab
 same constraints; log experiments/20261014-0030-n16-decision-realizable/run.log, result
 results/realizable_n16_T9_m13_14.json.  Sweep job: experiments/20261014-0030-feasible-sizes/ (run.log,
 results/n{18,20,22,23,25}_T*.json; n=18 eager, others hybrid eager sample 20000 + lazy cuts).
-Status at hand-back (00:50 UTC): all three n=16 / sweep jobs still running; no result yet. (Final state: see Results below; the jobs died at the 04:40 UTC restart.)
+Status at hand-back (00:50 UTC): all three n=16 / sweep jobs still running; no result yet. (Final state: see Results below; the jobs ended by the 2 h limit or the restart, no result written.)

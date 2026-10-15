@@ -66,7 +66,7 @@ Totals at n = 16: 3,992,281 states, 28,589 genuine (4,5)-sets. `best_valid_by_ra
 ## Conclusion
 [heuristic] Pure hypergraph annealing over saturated midpoint maps found no 16-point set with h <= 9 and no 18-point set with
 h <= 10 in about 95 minutes; the exact h of all genuine sets found was 10 to 12 at n = 16 and 11 to 13 at n = 18 (h = 9 at n = 16,
-the value that would beat 4/7, was never reached). [verified-here] realizability is not the bottleneck (about 21% of random linear
-saturated maps at n = 16 are exact (4,5)-sets, see the smoke-test section); alpha is. Superseded by the exact CP-SAT / DFS methods
+the value that would beat 4/7, was never reached). [heuristic] realizability is not the bottleneck; alpha is (the count behind this is exact, [verified-here]: 519/2500 = 20.8% of random linear
+saturated maps at n = 16 are exact (4,5)-sets, see the smoke-test section; the interpretation is from a random sample). Superseded by the exact CP-SAT / DFS methods
 (experiments/20261013-2257-chyp-table, experiments/20261014-0450-n16-cases, ...); recorded as dead end D16 in
 kb/dead_ends.md. No K-row is based on this folder.

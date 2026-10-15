@@ -41,7 +41,7 @@ probably the console output of that directly launched run (the folder does not s
 For all realizable sets `all_h_equal_T` and `all_45` are true in the two census JSONs (h = 7 resp. 8, every set
 passes `is_45_set`). `results/n14_realizable_sets_partial.json` holds 157 realizable 14-point integer sets (146 after
 identifying reflections), `results_sets_n12.json` 4,448 sets and `results_sets_n14.json` 146 sets.
-`known_sets` in the census JSONs reports that none of the five known 12-point sets and neither `record_14` nor A_base
+`known_sets` in the census JSONs reports that none of the known 12-point sets (three distinct sets, listed under five keys in the JSON) and neither `record_14` nor A_base
 occurs among the enumerated patterns: the partial enumerations are samples of the extremal patterns, not covers.
 No n = 15 census file exists: the chain was stopped by hand while the n = 15 stage was still enumerating
 (journal/LOG.md, entry that launches the prefix-split job: "Stopped the CP-SAT census chain ... the (15,13) partial

@@ -86,7 +86,7 @@ filter ~0.2 ms per raw solution, realization ~2-4 ms per O' pattern / P; with ~1
   judge spot check 50/50 PASS (`judge_pass_count` 50), `realizable_all_in_full_core_set` true. A_base's pattern and affine class are among the 2,910.
 - Statement: exactly 2,910 saturated (m = 12) 14-point (4,5)-sets with h = 8 up to affine equivalence = certificate results/proofs/L004-census-14-point-extremal-sets.md
   (referee ACCEPT, results/reviews/L004-census-14-point-extremal-sets__referee__20261015T225426Z.md), K45 in kb/known_results.md. The 'timing' estimate above (55-70 h
-  single process) was beaten by the 3-4 worker split: 277,501 CPU-seconds (about 77 CPU-hours).
+  single process) was about right in CPU terms (277,501 CPU-seconds, about 77 CPU-hours); the 3-4 worker split only reduced the wall-clock time.
 - Git note: `n14/results/` is git-ignored (see `.gitignore`), so `n14_m12_TOTAL.json` and `post/` exist only on the machine that ran the job. Tracked copies of the K45
   evidence are `data/census_n14_m12_classes.jsonl.gz` (the 2,910 classes) and `data/census_n14_m12_summary.json` (see data/README.md and experiments/20261015-2310-kb-audit/README.md, item 1).
 
@@ -97,6 +97,7 @@ filter ~0.2 ms per raw solution, realization ~2-4 ms per O' pattern / P; with ~1
 - Exhaustive prefix-split DFS (`n14m11dfs/run.log`: `# started 2026-10-15T22:57:17Z max 26h`, command
   `python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 10 --tag n14_m11`; 3,437 depth-3 prefixes, 4 workers).
   At 23:10 UTC on 2026-10-15 (when this section was written) 68 of the 3,437 prefixes had a `.done` marker; the job was still running, so NO result exists for m = 11.
+  Relaunch command (resumable; finished prefixes are skipped): `python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 10 --tag n14_m11` (3,437 depth-3 prefixes).
   Resume after a restart: rerun the same command (finished prefixes are skipped). The m = 11 case is the only way a non-saturated extremal 14-point set could exist;
   whether any exists is unknown.
 

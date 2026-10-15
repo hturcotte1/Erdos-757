@@ -64,4 +64,5 @@ experiments/20261014-0550-n16-layered). The engine itself underlies certificates
 
 ## Open issues (could not be determined from the files)
 - The exact arguments (T, m_min, m_exact, f7, progress, tl) of the n = 16 estimator and rate runs are not recorded.
+- `run_timings.py`'s docstring says "n=13 and n=16 are separate jobs, see README", but this README mentions no n = 13 job and the folder holds no n = 13 file: that job left no trace.
 - Why the two 60 s probes differ by about 20x in node count.

@@ -38,7 +38,7 @@ Top-level cases finished: 4 / 30.  UNSAT: 0, SAT: 0, TIMEOUT (split further): 4.
   about 3000 s with 0 solutions (`case_m13_k0.json`: wall 3000.1 s, 1 worker, constraints monotone 24,752 / medial 36,400 / cores 590,460 clauses
   (2,495,376 literals)). The cases k = 5, 6, 7, 8 of m = 13 left empty `case_m13_k*_solutions.jsonl` files (0 bytes; presumably started but never finished).
   No case file for m = 14 exists. All result files are time-stamped 05:37 on 2026-10-14.
-- The aggregate block above (rewritten by `aggregate.py` on 2026-10-15) is the final state: 0 UNSAT, 0 SAT, 4 TIMEOUT, 0 realizable sets.
+- The aggregate block above is the final state (it equals what `aggregate.py` prints from the four case JSONs): 0 UNSAT, 0 SAT, 4 TIMEOUT, 0 realizable sets.
 - The case split was abandoned (journal/LOG.md, entry 2026-10-14T05:50Z "n=16 case split abandoned"); the sweep that `run_all.sh` would have run
   afterwards was started separately (experiments/20261014-0030-feasible-sizes).
 

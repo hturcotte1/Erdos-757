@@ -9,7 +9,7 @@ Some folders hold large raw dumps; `.gitignore` excludes a few logs (`rerun/*.lo
 
 | folder | claim | round | verdict (review file in results/reviews/) | what the scratch holds |
 |---|---|---|---|---|
-| `L001/` | L001-abase-two-point-extensions (K13: every (4,5)-set A_base + {x,y} has h = 10) | 1 | NEEDS-WORK (`..__referee__20261014T080455Z.md`); first problem P1: the Statement overclaimed (16-point and 17-point corollary) | three independent implementations without e757/judge (formula-based enumeration, 3-AP scan, CP-SAT check), `t1_out.json` |
+| `L001/` | L001-abase-two-point-extensions (K13: every (4,5)-set A_base + {x,y} has h = 10) | 1 | NEEDS-WORK (`..__referee__20261014T080455Z.md`); first problem P1: the Statement overclaimed in the clause "no 16-point (4,5)-set containing A_base has h <= 9, i.e. A_base cannot be extended to a new record" (the 17-point corollary does hold, as the referee notes) | three independent implementations without e757/judge (formula-based enumeration, 3-AP scan, CP-SAT check), `t1_out.json` |
 | `L001-round2/` | same | 2 | NEEDS-WORK (`..__20261014T084239Z.md`); "no mathematical problem", textual problems (self-contradictory scope sentence) | steps s1..s9 scripts and logs, judge runs on claim files |
 | `L001-round3/` | same | 3 | NEEDS-WORK (`..__20261014T091937Z.md`); "no mathematical or computational problem", a false sentence about the first referee round, which round 2 had required to be fixed, was still unchanged | steps s1..s7, frozen-judge runs (`s5_*`), `pytest.log` |
 | `L001-round4/` | same | 4 | ACCEPT (`..__20261014T095734Z.md`) | r4_* scripts (cases, locus, window, title check, controls), `judge_run.log` |
