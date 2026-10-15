@@ -177,3 +177,6 @@ Format for each work block:
 
 ## 2026-10-15T23:35Z P1 CPU re-balanced: n=13 saturated census launched (3 workers); (14,11) DFS kept on 1 worker
 - the (14,11) DFS (79/3437 prefixes) cannot finish within the budget (projected 40+ h); the n=13 saturated count (estimated ~10 single-process hours) can. Both resumable.
+
+## 2026-10-15T23:40Z P1 (14,11) DFS stopped at 79/3437 prefixes (0 solutions so far) to free a CPU
+- the machine has 4 cores; the n=13 saturated census (3 workers) and the new Track U sweep (2-point extensions of all 2,910 saturated extremal 14-point classes, experiments/20261015-2340-ext14-all) have priority. The (14,11) case stays open (Q11); relaunch command in experiments/20261014-1005-census-dfs/README.md.
