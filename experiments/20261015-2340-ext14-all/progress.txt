@@ -1,1 +1,1 @@
-100/2910 classes done, 60s elapsed this run
+200/2910 classes done, 121s elapsed this run

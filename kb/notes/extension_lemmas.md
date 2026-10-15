@@ -1,6 +1,6 @@
 # Two-point extensions and universal vertices [derived-here]
 
-Written 2026-10-15 23:50 UTC while the sweep experiments/20261015-2340-ext14-all (2-point extensions of all 2,910
+Written 2026-10-15 23:40 UTC while the sweep experiments/20261015-2340-ext14-all (2-point extensions of all 2,910
 saturated extremal 14-point classes, the L001 case analysis applied to every class) was running. All statements are
 short consequences of published facts (K3-K6: in a (4,5)-set, Sidon subsets = 3-AP-free subsets, midpoints are injective
 and never extreme; Henning-Yeo 17 tau <= 5n + 3m for linear F7-free 3-graphs). Re-check before relying on them.
