@@ -162,3 +162,6 @@ Format for each work block:
 
 ## 2026-10-15T18:45Z result n=14 census: 2,910 saturated extremal classes (K45, L004 submitted)
 - 205,529 patterns -> 119,844 K31-free -> 46,419 after <=4-edge cores -> 2,910 realizable (rigid) = 2,910 affine classes; A_base present; judge 50/50. Open: the m=11 case (HY slack 1) - a CP-SAT decision run launched.
+
+## 2026-10-15T20:45Z P1 (14,11) case: CP-SAT UNKNOWN after 7000 s; exhaustive DFS launched
+- CP-SAT (K30/K31/cores, eager alpha, lazy F7) could not decide whether a class-O' pattern with (14, m=11, alpha<=8) exists. Launched the resumable prefix-split DFS at (14,11,alpha<=8) with 3 workers (experiments/20261014-1005-census-dfs/n14m11dfs); if it completes within the budget, the n=14 extremal count becomes complete (2,910 saturated + whatever m=11 realizable patterns yield).

@@ -26,3 +26,4 @@ experiments/referee/**/*.gz
 experiments/referee/**/*_all.txt
 experiments/20261014-1430-small-counts/n11/results/
 experiments/20261014-1430-small-counts/n13/results/
+experiments/20261014-1005-census-dfs/n14m11dfs/results/

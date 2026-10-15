@@ -1,0 +1,9 @@
+{
+ "n": 14,
+ "T": 8,
+ "m_exact": 11,
+ "result": "UNKNOWN",
+ "edges": null,
+ "stats": "{'alpha_cuts': 0, 'f7_cuts': 596, 'solves': 299, 'constraints': {'monotone': 11011, 'medial': 14014, 'cores': (485771, 1977976)}, 'time': 7000.08}",
+ "wall": 7000.1
+}
