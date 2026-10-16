@@ -11,6 +11,9 @@ from multiprocessing import Pool
 C2 = None
 
 def ndist(q):
+    if len(q) == 4:
+        a, b, c, d = q
+        return len({abs(a - b), abs(a - c), abs(a - d), abs(b - c), abs(b - d), abs(c - d)})
     return len({abs(u - v) for u, v in itertools.combinations(q, 2)})
 
 def ap_triples(P):

@@ -216,3 +216,5 @@ Format for each work block:
 ## 2026-10-16T03:30Z kb documentation audit 2 applied (69 verified fixes, 30 files) + post-audit corrections; Track U sweep 12 -> 14 launched
 - audit (4 auditors, 95 findings each verified by a fresh agent, 1 applier): stale Q11/Q12 rows, 395,196 vs 395,039 mislabel, 14% vs 13.7%/6.3% realizable fractions, K40/K42 superseded marks, D15/Q1 overstatements softened, R9 LaTeX corruption fixed, index rows added, results/proofs/README index. My corrections after a safety review: tau_max(12,9) <= 4 (not =4), LEDGER kept verified-only (lemma row removed), "4,970,208" qualified as T1b pairs.
 - new sweep experiments/20261016-0330-ext12-all: L001/L005 case analysis on all 54,243 extremal 12-point classes with target h <= 8; any hit is a non-saturated extremal 14-point set (Q11). 3 processes at nice 5; DFS (14,11) continues at nice 10 (238/3437 prefixes at 03:27).
+
+## 2026-10-16T04:23Z infra full test suite green (142 passed, 1 skipped) after the audit; 12->14 sweep at 8,000/54,243 (about 2.8 classes/s, ETA ~09:00 UTC); (14,11) DFS at 249/3437

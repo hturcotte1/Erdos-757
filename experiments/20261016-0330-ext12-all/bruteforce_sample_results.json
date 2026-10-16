@@ -1,0 +1,24 @@
+[
+ {
+  "class": 8532,
+  "span": 508,
+  "window": [
+   -127,
+   635
+  ],
+  "valid_singles": 563,
+  "singles_in_Px_brute": 22,
+  "singles_in_Px_extend_in_window": 22,
+  "singles_match": true,
+  "pairs45_brute": 122548,
+  "t1b_brute": 256,
+  "t1b_extend_in_window": 256,
+  "t1b_extend_outside_window": 377,
+  "t1b_match": true,
+  "t2like_pairs_brute": 2031,
+  "t2like_sample_min_h": 9,
+  "t1b_brute_min_h": 9,
+  "extend_n_t1b_45": 633,
+  "secs": 9.9
+ }
+]
