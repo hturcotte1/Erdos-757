@@ -32,3 +32,4 @@ experiments/20261015-2340-ext14-all/progress.txt
 experiments/20261015-2340-ext14-all/x
 experiments/20261015-2340-ext14-all/results.jsonl
 experiments/20261015-2330-census-n13/results/*.jsonl.gz
+experiments/20261015-2340-ext14-all/bruteforce_sample.log
