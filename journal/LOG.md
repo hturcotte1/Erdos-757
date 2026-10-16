@@ -192,3 +192,9 @@ Format for each work block:
 ## 2026-10-16T00:10Z U result: 2-point extension sweep of all 2,910 saturated extremal 14-point classes: no record (L005 submitted)
 - extend_all.py (L001 case analysis per class, exact arithmetic): 141,153 (4,5) single extensions, 4,970,208 (4,5) 2-point extensions, 122,220 T2 lines, all h = 10; T2 pre-check false for all classes (as Lemma U1 predicts). A_base class (index 2440) reproduces L001 exactly. 1,844 s wall on 2 processes.
 - evidence: experiments/20261015-2340-ext14-all/README.md, results.json; certificate results/proofs/L005-ext14-all-two-point-extensions.md. Verification workflow (referee #1, brute-force sample, scout) launched 00:09.
+
+## 2026-10-16T01:20Z U L005 referee round 1: NEEDS-WORK (text only); scout CLEAR; brute force 0 failures; rounds 2+3 launched
+- referee #1 confirmed the statement by two independent complete checks (Route L: exact deficient locus over R^2; Route C: independent case analysis), all seven per-class counters reproduced for all 2,910 classes; CP-SAT 4,420 extensions, judge 16/16. Five text problems fixed (498 count, m=12 evidence pointer, cross-check stub, K4 attribution, "T2 empty" wording) plus the K6 argument for line intersections.
+- brute-force sample (41 classes, full window): 105,720,197 (4,5) pairs, 0 failures; tests/test_ext14_all.py passes. Scout: NOVELTY CLEAR (omega #9804 covers A_base only).
+- (14,11) DFS stopped at 130/3437 prefixes (0 patterns) to give the referees the CPU; relaunch after.
+- evidence: results/reviews/L005-ext14-all-two-point-extensions__referee__20261016T011417Z.md, __scout__20261016T002432Z.md
