@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report of the autonomous run (2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC)
 
-Last updated: 2026-10-16 01:45 UTC (elapsed about 50.6 of 72 budget hours). Status of the goal clauses at this
+Last updated: 2026-10-16 02:00 UTC (elapsed about 50.9 of 72 budget hours). Status of the goal clauses at this
 update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted. The published bounds
 $9/17\le c_*\le4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set $A_{\rm base}$) are unchanged.
 
@@ -71,6 +71,14 @@ $a\pm t$ (generic $t$) at an extreme point $a$, or $x$ and $2x-a$ at any point $
 lies in every maximum Sidon subset (then $D$ drops by 1); Lemma U: such a vertex forces Henning–Yeo slack $\ge5+3\deg a$, so
 record-type sets have none; Lemma Δ: in a 16-point record every 15-point subset is extremal, no vertex is universal and
 $\deg p\le m-9$, and a two-point extension of a saturated extremal 14-set can be a record only with exactly two new APs.
+
+**R10. Structure of the 2,910 saturated extremal 14-point classes (K47).** AP degrees are 2, 3 or 4 only (never 5, though
+K44 allows it), in three degree sequences ($3^82^6$: 700 classes; $4\,3^62^7$, the $A_{\rm base}$ type: 1,270; $4^23^42^8$: 940);
+137 to 150 maximum Sidon subsets per class; no class is mirror-symmetric and no two are mirror images; **no class contains an
+extremal 12-point subset** (all 91 two-point deletions keep $h=8$), so the 14-point extremal sets are not two-point extensions
+of 12-point extremal sets, just as (R9) 16-point records cannot be two-point extensions of saturated 14-point extremal sets;
+the Gyárfás–Lehel tree colourings have classes of sizes 6 and 7 in every class (Lemma 1 of kb/notes/gl_tight_structure.md);
+no universal vertex (Lemma U1). Evidence: experiments/20261016-0150-structure-2910/ (12.9 s), tests/test_structure_2910.py.
 
 ## 2. The open case $n=16$ (negative results, D15, D16, L005)
 

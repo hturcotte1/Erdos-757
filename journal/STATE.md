@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: running
-Last updated (UTC): 2026-10-16 01:45
+Last updated (UTC): 2026-10-16 02:00
 Phase/track: endgame (budget ends 2026-10-16 23:06 UTC): verify L005, document everything, merge PR #1 to main
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
@@ -12,6 +12,7 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 - L001-L004 ACCEPTED (K13, K41, K43, K45): A_base 2-pt extensions; 54,243 extremal 12-pt classes; saturated counts n=6..11; 2,910 saturated extremal 14-pt classes
 - K30 monotone midpoints, K31 no medial triangle, K44 degree bound [verified-here]; K32-K39 census/abstract facts
 - L005 ACCEPTED x2 (01:37; K46): no 16-point (4,5)-set with h<=9 contains a saturated extremal 14-point set (all 2,910 classes, 4,970,208 (4,5) 2-extensions, all h=10); scout CLEAR.
+- K47 structural census of the 2,910 classes [verified-here]: degrees in {2,3,4}, 3 degree sequences, 137-150 max Sidon subsets, no mirror symmetry, no extremal 12-point subset, GL balance everywhere.
 - kb/notes/extension_lemmas.md [derived-here, falsifier HOLDS-ON-DATA]: Lemma E (one-edge extension, h+1 iff universal vertex), Lemma U (HY obstruction to universal vertices), Lemma Δ (16-point record: deg <= m-9; exactly 2 new APs in a 2-pt extension).
 
 ## Running jobs / agents
@@ -25,6 +26,6 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 - [verified-here] Q8 holds on realizable data (K34) but fails abstractly without >=5-edge cores (K38/K39); Track L has no proof idea.
 
 ## Next 3 actions
-1. Decide the next research block (candidates: 4-point extensions of the 2,910 classes = 18-point records; 2-point extensions of any (14,11) class; structural statistics of the 2,910 classes). Keep documenting.
+1. CPU stays on the (14,11) DFS (4 workers); check its rate at each checkpoint; if it finishes, postprocess and certify the m=11 case (completes L004/L005). Tokens: documentation audit near the end.
 2. Keep the (14,11) DFS running on spare cores; re-arm the session waiter; relaunch after any container restart.
 3. ~21:00 UTC: final checkpoint (STATE, LOG, FINAL_REPORT), merge PR #1 into main, run status.sh. Budget end 23:06 UTC.

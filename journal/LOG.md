@@ -203,3 +203,7 @@ Format for each work block:
 - referees #2 and #3 (fresh, parallel): ACCEPT; independent checks: exact deficient locus over R^2 (Route F, 100 classes) and full line-arrangement enumeration with Sidon-definition h (13 classes); authors' code reproduced on 14 and 31 classes; judge 12/12, 7/7. Non-blocking remarks applied (K8 citation, wording). K46, LEDGER, START_HERE, FINAL_REPORT R9, Q1 updated.
 - evidence: results/reviews/L005-ext14-all-two-point-extensions__referee__20261016T013746Z.md, __referee__20261016T013731Z.md
 - (14,11) DFS relaunched with 4 workers.
+
+## 2026-10-16T02:00Z P1 K47: structural census of the 2,910 saturated extremal 14-point classes
+- degrees in {2,3,4} (3 degree sequences: 700/1270/940), 137-150 maximum Sidon subsets (7 values), 0 mirror-symmetric classes, 0 classes with an extremal 12-point subset (all 91 pair deletions keep h=8), GL colouring sizes {6,7} in all classes, 0 universal vertices, all connected. 12.9 s. Test added.
+- evidence: experiments/20261016-0150-structure-2910/README.md, results.json; tests/test_structure_2910.py
