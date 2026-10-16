@@ -67,9 +67,10 @@ share an AP) gives 17 (tau - 1) <= 5 (n - 2) + 3 (m - deg p - deg q + eps), i.e.
   deg p + deg q - eps <= m - (17 tau - 5 n - 7) / 3.
 At (14, 12, tau = 6): deg p + deg q - eps <= 11/3, so <= 3: since every vertex of a saturated extremal 14-point class has degree
 >= 2 (K47), an extremal 12-point subset could only arise by deleting two ADJACENT degree-2 vertices (eps = 1); K47 shows that
-no such deletion works in any of the 2,910 classes. At (12, 10, tau = 5): deg p + deg q - eps <= 14/3, so <= 4, which allows
+no such deletion works in any of the 2,910 classes. At (12, 10, tau = 5): deg p + deg q - eps <= 10 - 18/3 = 4, which allows
 any two degree-2 vertices, consistent with the 49.5% of classes that do contain an extremal 10-point subset (K49). At
-(16, 14, tau = 7) a hypothetical record: an extremal 14-point subset would need deg p + deg q - eps <= 14 - 36/3 = 2, so
-the deleted pair would consist of two degree-1 vertices or a degree-1 and an adjacent degree-2 vertex; combined with K46
+(16, m, tau = 7) a hypothetical record: an extremal 14-point subset would need deg p + deg q - eps <= m - 32/3, i.e. <= 3 for
+m = 14 and <= 2 for m = 13, so the deleted pair has small degrees (for m = 14: two degree-1 vertices, a degree-1 and a degree-2 vertex,
+or two adjacent degree-2 vertices, or a degree-1 with an adjacent degree-3 vertex); combined with K46
 (no saturated extremal 14-subset at all) this says a 16-point record contains at most (14,11)-type extremal subsets, through
-such low-degree pairs. [derived-here; arithmetic checked by hand only]
+such low-degree pairs. [derived-here; arithmetic re-checked 08:55 UTC; falsifier run requested]
