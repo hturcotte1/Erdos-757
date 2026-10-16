@@ -221,6 +221,6 @@ Format for each work block:
 
 ## 2026-10-16T05:26Z infra checkpoint: 12->14 sweep at 27,000/54,243 (no hit reported so far), (14,11) DFS at 276/3437 (0 patterns); session up 3 h without restart
 
-## 2026-10-16T07:20Z U result: 2-point extension sweep of all 54,243 extremal 12-point classes: no 14-point set with h<=8 (L006 submitted)
+## 2026-10-16T07:05Z U result: 2-point extension sweep of all 54,243 extremal 12-point classes: no 14-point set with h<=8 (L006 submitted)
 - 1,887,566 (4,5) single extensions (all h=8), 51,264,727 (4,5) T1b pairs (all h=9), 1,952,748 T2 lines (all alpha=9), 19,247,288 line intersections (none (4,5)); no universal vertex in any class (Lemma U predicts it). So every 12-point subset of any extremal 14-point set has h=8; Q11 stays open but any (14,11) extremal set contains no extremal 12-point subset. 12,668 s on 3 processes.
-- evidence: experiments/20261016-0330-ext12-all/README.md, summary.json; data/ext12_all_rows.jsonl.gz; certificate results/proofs/L006-ext12-all-two-point-extensions.md; test tests/test_ext12_all.py. Referee #1 + scout workflow launched 07:15.
+- evidence: experiments/20261016-0330-ext12-all/README.md, summary.json; data/ext12_all_rows.jsonl.gz; certificate results/proofs/L006-ext12-all-two-point-extensions.md; test tests/test_ext12_all.py. Referee #1 + scout workflow launched 07:05.
