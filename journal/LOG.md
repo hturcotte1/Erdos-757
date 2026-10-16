@@ -198,3 +198,8 @@ Format for each work block:
 - brute-force sample (41 classes, full window): 105,720,197 (4,5) pairs, 0 failures; tests/test_ext14_all.py passes. Scout: NOVELTY CLEAR (omega #9804 covers A_base only).
 - (14,11) DFS stopped at 130/3437 prefixes (0 patterns) to give the referees the CPU; relaunch after.
 - evidence: results/reviews/L005-ext14-all-two-point-extensions__referee__20261016T011417Z.md, __scout__20261016T002432Z.md
+
+## 2026-10-16T01:45Z result L005 ACCEPTED x2 (K46): no 16-point (4,5)-set with h<=9 contains a saturated extremal 14-point set
+- referees #2 and #3 (fresh, parallel): ACCEPT; independent checks: exact deficient locus over R^2 (Route F, 100 classes) and full line-arrangement enumeration with Sidon-definition h (13 classes); authors' code reproduced on 14 and 31 classes; judge 12/12, 7/7. Non-blocking remarks applied (K8 citation, wording). K46, LEDGER, START_HERE, FINAL_REPORT R9, Q1 updated.
+- evidence: results/reviews/L005-ext14-all-two-point-extensions__referee__20261016T013746Z.md, __referee__20261016T013731Z.md
+- (14,11) DFS relaunched with 4 workers.

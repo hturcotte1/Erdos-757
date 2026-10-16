@@ -28,8 +28,8 @@ This is exactly case T2 of certificate L001 (42 lines for A_base, all with alpha
 *Proof.* alpha(H - a) = alpha(H) - 1 gives tau(H - a) = tau(H); H - a is linear and F7-free on n - 1 vertices with
 m - deg(a) edges; apply Henning-Yeo. QED.
 *Corollary U1.* A saturated extremal 14-point set (n = 14, m = 12, tau = 6) has NO universal vertex: 102 > 101 - 3 deg a.
-So Lemma E can never produce a 16-point record from one of the 2,910 classes of L004 (case T2 of the sweep is empty
-by theory; the sweep checks this on the data as well).
+So Lemma E can never produce a 16-point record from one of the 2,910 classes of L004 (no T2 line of the sweep is deficient,
+by theory; the sweep confirms it on the data: all 122,220 line hypergraphs have alpha = 10).
 *Corollary U2.* More generally a universal vertex a needs 17 tau <= 5n + 3m - 5 - 3 deg a, i.e. Henning-Yeo slack
 delta = 5n + 3m - 17 tau >= 5 + 3 deg a; so delta >= 8 when deg a >= 1, and delta >= 5 for a vertex in no AP (such a
 vertex is trivially universal). Record-type sets (small D, hence small slack) have no universal vertices.

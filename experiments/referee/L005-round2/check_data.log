@@ -1,0 +1,5 @@
+{"bad": [], "n": 2910, "distinct_normal_forms": 2910, "n_max_sidon_range": [137, 150], "n_max_sidon_sum": 417955, "classes_with_nonempty_core": 0, "mismatch_with_results_jsonl": [], "abase_index": 2440, "rows": 2910, "classes_ids_ok": true, "single_range": [32, 61], "single_sum": 141153, "t1b45_sum": 4970208, "t1b45_range": [854, 2496], "t1pairs_sum": 33283559, "n2ext_sum": 4970208, "isect_range": [480, 498], "isect_sum": 1444980, "isect45_sum": 0, "lines_sum": 122220, "line_h_values": [10], "min_h_values": [10], "records_total": 0, "hA_values": [8], "precheck_true": 0, "hist_consistency_fail": []}
+
+real	0m15.539s
+user	0m15.420s
+sys	0m0.020s

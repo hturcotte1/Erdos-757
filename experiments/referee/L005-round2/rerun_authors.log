@@ -1,0 +1,16 @@
+picked [634, 700, 1428, 1494, 1524, 1599, 1660, 2235, 2294, 2440, 2564, 2634, 2677, 2701]
+634 n_t1b_45 1853 t1_pairs 12223 isect 498 min_h 10 diff [] 1.3s
+700 n_t1b_45 1978 t1_pairs 12663 isect 494 min_h 10 diff [] 1.3s
+1428 n_t1b_45 1858 t1_pairs 11653 isect 498 min_h 10 diff [] 1.5s
+1494 n_t1b_45 2141 t1_pairs 12557 isect 498 min_h 10 diff [] 1.5s
+1524 n_t1b_45 854 t1_pairs 7305 isect 482 min_h 10 diff [] 0.8s
+1599 n_t1b_45 1271 t1_pairs 9773 isect 498 min_h 10 diff [] 1.2s
+1660 n_t1b_45 2390 t1_pairs 14152 isect 498 min_h 10 diff [] 1.4s
+2235 n_t1b_45 2176 t1_pairs 12822 isect 498 min_h 10 diff [] 1.3s
+2294 n_t1b_45 1758 t1_pairs 11578 isect 498 min_h 10 diff [] 1.2s
+2440 n_t1b_45 1743 t1_pairs 11774 isect 498 min_h 10 diff [] 1.2s
+2564 n_t1b_45 2496 t1_pairs 13928 isect 498 min_h 10 diff [] 1.6s
+2634 n_t1b_45 1715 t1_pairs 11417 isect 496 min_h 10 diff [] 1.2s
+2677 n_t1b_45 1601 t1_pairs 10969 isect 498 min_h 10 diff [] 1.2s
+2701 n_t1b_45 1307 t1_pairs 9656 isect 498 min_h 10 diff [] 1.1s
+classes with differences: 0

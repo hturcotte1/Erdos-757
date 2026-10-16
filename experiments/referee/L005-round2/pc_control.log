@@ -1,0 +1,3 @@
+{"removed": 0, "nS": 96, "selftest_bad": 0, "flagged_whole": [[0, 1, 0], [1, 0, 0]], "expected_flagged_present": true, "n_D_points": 2600, "n_D_points_45": 36, "h_of_45_points": [9], "secs": 9.8}
+{"removed": 272, "nS": 69, "selftest_bad": 0, "flagged_whole": [[0, 1, 3264], [1, 0, 3264]], "expected_flagged_present": true, "n_D_points": 3782, "n_D_points_45": 68, "h_of_45_points": [9], "secs": 9.6}
+{"removed": 1056, "nS": 57, "selftest_bad": 0, "flagged_whole": [[0, 1, 11040], [0, 1, 12672], [1, 0, 11040], [1, 0, 12672]], "expected_flagged_present": true, "n_D_points": 6102, "n_D_points_45": 110, "h_of_45_points": [9], "secs": 10.9}

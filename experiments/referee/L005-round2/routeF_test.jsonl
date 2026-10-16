@@ -1,0 +1,1 @@
+{"class": 2440, "h": 8, "nS": 143, "selftest_points": 3934, "selftest_bad": 0, "n_lines_K_S0": 565, "n_whole": 1, "whole": {"excluded": 1, "witnessed": 0, "flagged": []}, "whole_examples": [], "n_candidates": 198382, "n_fraction_candidates": 0, "n_D_points": 702, "n_isolated_not_on_whole": 702, "n_D_points_45": 0, "D_points_45": [], "secs": 7.3}

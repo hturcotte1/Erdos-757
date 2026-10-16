@@ -19,7 +19,7 @@ Tags used everywhere in this repo:
 
 **Status.** $\tfrac{9}{17}\le c_*\le\tfrac47$, i.e. $0.52941\le c_*\le 0.57143$ [published: Ma–Tang, arXiv:2602.23282v2, 6 Mar 2026]. The problem is **open**, and the erdosproblems.com page (last edited 10 Apr 2026) lists exactly these bounds.
 
-**Autonomous run, 2026-10-13/16 [verified-here].** No improvement of either bound was found. The run produced exact small-case results (section 5), three referee-accepted census certificates (L002 to L004) and one extension certificate (L001), and the structural lemmas K30, K31, K44; see results/FINAL_REPORT.md.
+**Autonomous run, 2026-10-13/16 [verified-here].** No improvement of either bound was found. The run produced exact small-case results (section 5), three referee-accepted census certificates (L002 to L004) and two extension certificates (L001, L005), and the structural lemmas K30, K31, K44; see results/FINAL_REPORT.md.
 
 **Invariances.**
 - We may assume $A\subset\mathbb Z$.
@@ -93,7 +93,7 @@ These follow from the Henning–Yeo lower bound, the known sets, monotonicity, a
 
 - **Exact for every $n\le15$ and $n=17$:** $f(1),\dots,f(15)=1,2,2,3,4,4,5,5,6,6,7,7,8,8,9$ and $f(17)=10$; also $f(24)=14$, $f(26)=15$, $f(28)=16$. The sets attaining $f(8)=5$ and $f(10)=6$ were found on 13 Oct 2026 by `e757/ordered_search.py` [verified-here]; all small extremal sets are in `data/small_records.json`. Pattern: $f(n)=\lceil n/2\rceil+1$ for $6\le n\le15$ and $n=17$, equal to the Henning–Yeo bound for every $6\le n\le23$ (K35) [verified-here].
 - **Open:**
-  - **$f(16)\in\{9,10\}$**: the first open case, and exactly where a new record (9/16) would live; undecided after exhaustive solver attempts (Q1, D15, D16); the data lean to $f(16)=10$ [heuristic];
+  - **$f(16)\in\{9,10\}$**: the first open case, and exactly where a new record (9/16) would live; undecided after exhaustive solver attempts (Q1, D15, D16); no saturated extremal 14-point set extends to a 16-point record (K46, L005); the data lean to $f(16)=10$ [heuristic];
   - $f(18)\in\{10,11\}$, $f(19),f(20)\in\{11,12\}$, $f(21),f(22)\in\{12,13\}$, $f(23)\in\{13,14\}$.
 - **Extremal-set counts [verified-here].** Saturated extremal affine classes for $n=6,\dots,14$: 1, 4, 66, 1262, 6644, 466961, 54243, (n=13 open: Q12, D22), 2910 (K41, K43, K45; certificates L002, L003, L004). For $4\le n\le11$ there are also non-saturated extremal families (infinitely many classes); $n=12$ is the smallest $n\ge4$ with finitely many. Whether 2,910 is the complete count at $n=14$ depends on the open $(14,11)$ case (Q11).
 
@@ -125,7 +125,7 @@ See `kb/dead_ends.md`. The highlights:
 - Gluing.
 - Fibonacci gives 3/5.
 - Periodic chain constructions are capped at 3/5 [verified-here].
-- No 2-point extension of $A_{\rm base}$ beats 4/7 [verified-here] (certificate L001, K13).
+- No 2-point extension of $A_{\rm base}$ beats 4/7 [verified-here] (certificate L001, K13); more generally no 16-point (4,5)-set with $h\le9$ contains any saturated extremal 14-point set [verified-here] (certificate L005, K46): a 16-point record, if one exists, has only non-saturated ($m=11$, Q11) extremal 14-point subsets or none.
 - Q8 ($7\tau\le3|R|+2e_2+4e_1$) is false for the abstract class and needs forbidden cores with $\ge5$ edges (K38, K39, D17); direct SAT/CP-SAT/annealing decisions of $\alpha\le9$ at $n=16$ do not terminate (D15, D16, D20, D21); witness sweeps at $n=18..25$ UNKNOWN (D18).
 - $21\tau(K)\le9|R|+5e_2+12e_1$ is refuted [community].
 - $F_7$ cannot be realized over $\mathbb Q$ under any midpoint labeling [verified-here; re-proves Gyárfás–Lehel].
