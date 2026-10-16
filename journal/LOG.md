@@ -261,3 +261,10 @@ Format for each work block:
 - plan: final checkpoint and merge of PR #1 into main at about 20:30 UTC; status run after the budget ends at 23:06 UTC.
 
 ## 2026-10-16T18:20Z infra FINAL CHECKPOINT: STATE, FINAL_REPORT final; (14,11) DFS at 706/3437 prefixes (0 patterns); merging PR #1 into main now
+
+## 2026-10-16T18:20Z infra PR #1 MERGED into main (merge commit d08efc4dcb2b0c9f24e90d97127381cef244d213); branch head 17fdc91 is contained in main
+- any later commit on the branch (log lines, final (14,11) count) goes to main through a small follow-up PR before the budget ends, if the session is alive.
+
+## 2026-10-16T20:17Z infra checkpoint: (14,11) DFS at 850/3437 prefixes (0 patterns); main = PR #1 merge d08efc4; waiting for the budget end (23:06 UTC)
+
+## 2026-10-16T22:15Z infra END OF RUN: (14,11) DFS at 1030/3437 prefixes (0 patterns; resumable); follow-up PR with the post-merge log lines opened and merged; status run after 23:06 UTC closes the run under clause C

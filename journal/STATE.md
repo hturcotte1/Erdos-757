@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: final checkpoint (budget ends 2026-10-16 23:06 UTC); PR #1 merged into main at about 18:25 UTC
-Last updated (UTC): 2026-10-16 18:20
+Last updated (UTC): 2026-10-16 22:15
 Phase/track: endgame complete; research closed for this run (results/FINAL_REPORT.md is the deliverable)
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
@@ -13,7 +13,7 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 - kb/notes/extension_lemmas.md: Lemmas E, U, Δ, Δ' [derived-here; falsifier HOLDS-ON-DATA].
 
 ## Running jobs / agents
-- (14,11,alpha<=8) DFS, 4 workers, 706/3437 prefixes done at 18:20, 0 patterns; resumable (relaunch command in experiments/20261014-1005-census-dfs/README.md); Q11 stays open.
+- (14,11,alpha<=8) DFS, 4 workers, 1030/3437 prefixes done at 22:14, 0 patterns; resumable (relaunch command in experiments/20261014-1005-census-dfs/README.md); Q11 stays open.
 - No agents running. All documentation audited three times (last: 18:10 UTC, 114 verified fixes).
 
 ## Live hypotheses
