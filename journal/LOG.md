@@ -207,3 +207,6 @@ Format for each work block:
 ## 2026-10-16T01:47Z P1 K47: structural census of the 2,910 saturated extremal 14-point classes
 - degrees in {2,3,4} (3 degree sequences: 700/1270/940), 137-150 maximum Sidon subsets (7 values), 0 mirror-symmetric classes, 0 classes with an extremal 12-point subset (all 91 pair deletions keep h=8), GL colouring sizes {6,7} in all classes, 0 universal vertices, all connected. 12.9 s. Test added.
 - evidence: experiments/20261016-0150-structure-2910/README.md, results.json; tests/test_structure_2910.py
+
+## 2026-10-16T02:02Z infra sixth container restart (about 01:55); (14,11) DFS relaunched at 139/3437; documentation audit workflow relaunched
+- DFS rate on 4 workers: about 36 prefixes/h (130 -> 139 in 15 min), so the (14,11) case cannot complete in the remaining 21 h; it keeps the otherwise idle cores busy and stays resumable.
