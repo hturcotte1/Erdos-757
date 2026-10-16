@@ -244,6 +244,6 @@ Format for each work block:
 
 ## 2026-10-16T10:46Z infra checkpoint: n=16 deletion-constrained CP-SAT runs (m=13, m=14) started 09:03, 3.5 h limit each (end ~12:35); soundness test at n=14: A_base and 60 census classes satisfy the analogous constraints (soundness_n14.json), the encoding agrees with direct computation on 145 cases (encoding_test.json), and the n=14 model with the constraints is SAT (4 abstract solutions; result_n14test.json); session up without restart since 02:20
 
-## 2026-10-16T12:40Z U n=16 deletion-constrained CP-SAT: UNKNOWN for m=13 and m=14 after 3.5 h each (D24)
+## 2026-10-16T12:34Z U n=16 deletion-constrained CP-SAT: UNKNOWN for m=13 and m=14 after 3.5 h each (D24)
 - no solution, no refutation; soundness of the constraints verified on A_base + 60 census classes and 145 encoding comparisons. Q1 stays open. (14,11) DFS relaunched on 4 workers (431/3437 prefixes).
 - evidence: experiments/20261016-0850-n16-deletion-cpsat/README.md, results.json
