@@ -1,0 +1,22 @@
+{
+ "n": 16,
+ "T": 9,
+ "m_min": 14,
+ "m_max": 14,
+ "pair_mode": "eq11",
+ "workers": 2,
+ "tag": "m14",
+ "time_limit": 12600.0,
+ "model_built_s": 4.9,
+ "last_cpsat_status": "UNKNOWN",
+ "status": "UNKNOWN",
+ "wall_s": 12600.0,
+ "stats": {
+  "alpha_cuts": 0,
+  "f7_cuts": 0,
+  "solves": 1,
+  "rounds": 0,
+  "learnt": 0,
+  "fail_kinds": {}
+ }
+}
