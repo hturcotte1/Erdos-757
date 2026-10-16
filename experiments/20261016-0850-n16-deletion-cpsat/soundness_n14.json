@@ -1,0 +1,15 @@
+{
+ "A_base": {
+  "ok": true,
+  "m": 12,
+  "npairs_witness": 91,
+  "npairs_via_m": 0
+ },
+ "census_sample": {
+  "n": 60,
+  "ok": 60,
+  "npairs_via_m_values": [
+   0
+  ]
+ }
+}
