@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report of the autonomous run (2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC)
 
-Last updated: 2026-10-16 02:00 UTC (elapsed about 50.9 of 72 budget hours). Status of the goal clauses at this
+Last updated: 2026-10-16 01:47 UTC (elapsed about 50.7 of 72 budget hours). Status of the goal clauses at this
 update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted. The published bounds
 $9/17\le c_*\le4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set $A_{\rm base}$) are unchanged.
 
