@@ -1,7 +1,7 @@
 # No 14-point (4,5)-set with h <= 8 contains an extremal 12-point set
 CLAIM-TYPE: certificate (exact computation with a case analysis, applied to a complete census)
 TYPE: certificate
-STATUS: submitted 2026-10-16 07:03 UTC; revised 07:50 UTC after referee round 1 (NEEDS-WORK, text fixes only: results/reviews/L006-ext12-all-two-point-extensions__referee__20261016T073619Z.md; novelty CLEAR: __scout__20261016T070619Z.md); referee rounds 2 and 3 requested
+STATUS: submitted 2026-10-16 07:03 UTC; revised 07:38 UTC after referee round 1 (NEEDS-WORK, text fixes only: results/reviews/L006-ext12-all-two-point-extensions__referee__20261016T073619Z.md; novelty CLEAR: __scout__20261016T070619Z.md); referee rounds 2 and 3 requested
 DEPENDS ON: L002 [verified-here, ACCEPTED] (the 54,243 classes of experiments/20261014-1005-census-dfs/results/realized_n12.json.gz are ALL 12-point (4,5)-sets with h = 7 up to affine equivalence; all have m = 10, and the class-O census has no pattern at m = 9); L001 [verified-here, ACCEPTED] (the case analysis T0/T1/T2 for two-point extensions); L005 [verified-here, ACCEPTED] (the same analysis applied to the 2,910 saturated 14-point classes; this certificate is its 12-point analogue with the same code structure); K3-K6 [published]. Not load-bearing: Lemma U of kb/notes/extension_lemmas.md [derived-here] predicts the outcome of case T2.
 
 ## Statement
