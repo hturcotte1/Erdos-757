@@ -1,0 +1,10 @@
+{"classes": 41, "pairs": 410, "h_hist": {"10": 410}, "hA_all_8_by_cpsat": true}
+
+real	0m4.848s
+user	0m4.417s
+sys	0m0.060s
+{"classes": 401, "pairs": 4010, "h_hist": {"10": 4010}, "hA_all_8_by_cpsat": true}
+
+real	0m38.146s
+user	0m37.373s
+sys	0m0.080s
