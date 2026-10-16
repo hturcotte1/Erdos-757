@@ -1,0 +1,5 @@
+classes 150 counter mismatches vs stored rows: [] 0
+h(A u x)=8 for all admissible singles: True
+h(B)=9 (Sidon 9-subset exhibited) for all (4,5) T1b pairs: True
+every a avoided by a max Sidon subset: True
+totals: singles 5226 t1b 141848 t2 pts 53196 secs 105

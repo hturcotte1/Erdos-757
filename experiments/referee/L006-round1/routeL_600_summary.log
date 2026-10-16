@@ -1,0 +1,13 @@
+classes requested 600 done 600 all requested done: True
+known sets included: True
+all A (4,5): True  h values: [7]
+n_max_sidon equal to stored rows: True
+lines per T (min,max): 312 410
+deficient points total 387482 per class min/max 196 2048
+deficient (4,5) points total: 0
+classes with common deficient lines: 68 total common lines 72 generic-(4,5) common lines: 0
+common line directions (a,b) of a*x+b*y=c: {(1, 1): 64, (0, 1): 4, (1, 0): 4}
+max secs 6.3 total secs 2582
+known class 20392 {'h': 7, 'n_max_sidon': 62, 'n_common_lines': 0, 'n_points': 570, 'n_points_45': 0, 'secs': 4.2}
+known class 23942 {'h': 7, 'n_max_sidon': 60, 'n_common_lines': 1, 'n_points': 1304, 'n_points_45': 0, 'secs': 4.4}
+known class 18917 {'h': 7, 'n_max_sidon': 60, 'n_common_lines': 0, 'n_points': 672, 'n_points_45': 0, 'secs': 3.5}

@@ -34,7 +34,7 @@ Acceptance check on known sets: `python3 extend12_all.py x x 1 --known`.
 (2) Brute force (bruteforce_sample.py; plain integer enumeration of ALL integer pairs x<y in the window [min-span, max+span] in x4 coordinates, (4,5) tested from scratch,
 new APs of B found directly; then compared with extend12_all): the 3 known sets and 3 random classes (seed 757: 12070, 25977, 34895). In all 6: the set of (4,5) singles in P_x equals
 extend12_all's (in window), the brute T1b (4,5) pair set (pairs with a new AP through a P_x point and the other point in an AP) equals extend12_all's T1b set restricted to the window
-(256-975 pairs per class; 121-129 further extend12_all pairs lie outside the window; also class 8532 with a smaller window), brute-force h of all T1b pairs is 9, and a 2,000-pair sample of
+(256-975 pairs per class; 106-130 further extend12_all pairs lie outside the window; also class 8532 with a smaller window), brute-force h of all T1b pairs is 9, and a 2,000-pair sample of
 the 24k-37k T2-type (4,5) pairs all have h = 9. Brute (4,5) pair counts 9.6M to 20.3M per class. Logs bf_known.log, bf_random.log; json bruteforce_sample_results*.json
 (bruteforce_sample_results.json is the known-sets run). Caveat: the brute force imports extend12_all only for the h routine (h_exact_B) and for the comparison.
 
