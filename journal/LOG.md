@@ -218,3 +218,5 @@ Format for each work block:
 - new sweep experiments/20261016-0330-ext12-all: L001/L005 case analysis on all 54,243 extremal 12-point classes with target h <= 8; any hit is a non-saturated extremal 14-point set (Q11). 3 processes at nice 5; DFS (14,11) continues at nice 10 (238/3437 prefixes at 03:27).
 
 ## 2026-10-16T04:23Z infra full test suite green (142 passed, 1 skipped) after the audit; 12->14 sweep at 8,000/54,243 (about 2.8 classes/s, ETA ~09:00 UTC); (14,11) DFS at 249/3437
+
+## 2026-10-16T05:26Z infra checkpoint: 12->14 sweep at 27,000/54,243 (no hit reported so far), (14,11) DFS at 276/3437 (0 patterns); session up 3 h without restart
