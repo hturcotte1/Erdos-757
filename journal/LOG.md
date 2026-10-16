@@ -255,3 +255,7 @@ Format for each work block:
 ## 2026-10-16T16:12Z U CNF/CaDiCaL n=16 with deletion constraints: TIMEOUT (3.5 h) for m=13 and m=14; D24 extended
 - 134,077 vars / 840,722 clauses (m=13), 182,785 / 940,476 (m=14); encoding test 145/145 agree; no abstract solution. Q1 open. Research closed for this run; endgame: final audit, checkpoint, merge PR #1, status after 23:06.
 - evidence: experiments/20261016-1240-n16-cnf-witness/README.md, results.json
+
+## 2026-10-16T18:15Z kb final documentation audit applied (123 findings, each verified by a fresh agent; 114 applied, 8 duplicates skipped, CLAUDE.md untouched) and safety-reviewed
+- safety review of the 911-line diff: no code behaviour changed (48 docstring/comment lines), no LEDGER number changed, K46-K49 and LEDGER rows intact, one tag upgrade (ideas_backlog 14, grounded in L006), scope widenings grounded in L006; STATE 35 lines.
+- plan: final checkpoint and merge of PR #1 into main at about 20:30 UTC; status run after the budget ends at 23:06 UTC.
