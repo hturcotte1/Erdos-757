@@ -1,0 +1,10 @@
+{
+ "n": 16,
+ "T": 9,
+ "m": 13,
+ "tag": "m13",
+ "solver": "cadical195",
+ "vars": 134077,
+ "clauses": 840722,
+ "status": "RUNNING"
+}

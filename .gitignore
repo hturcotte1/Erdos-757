@@ -38,3 +38,4 @@ experiments/20261016-0330-ext12-all/results.jsonl
 experiments/20261016-0330-ext12-all/*.log
 experiments/20261016-0330-ext12-all/results.json
 experiments/20261016-0850-n16-deletion-cpsat/*.log
+experiments/20261016-1240-n16-cnf-witness/*.log

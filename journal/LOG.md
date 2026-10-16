@@ -249,3 +249,5 @@ Format for each work block:
 - evidence: experiments/20261016-0850-n16-deletion-cpsat/README.md, results.json
 
 ## 2026-10-16T12:35Z U CNF/CaDiCaL variant of the n=16 deletion-constrained model launched (experiments/20261016-1240-n16-cnf-witness; 3.5 h per instance, m=13 and m=14), alongside the (14,11) DFS
+
+## 2026-10-16T14:32Z infra checkpoint: CNF/CaDiCaL n=16 instances running since 12:40 (limit 3.5 h, end ~16:10); (14,11) DFS at 484/3437 (0 patterns); session up 12 h without restart
