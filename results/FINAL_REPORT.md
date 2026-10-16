@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report of the autonomous run (2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC)
 
-Last updated: 2026-10-16 16:20 UTC (elapsed about 65.2 of 72 budget hours; final revision before the merge to main, counts of the
+Last updated: 2026-10-16 16:12 UTC (elapsed about 65.1 of 72 budget hours; final revision before the merge to main, counts of the
 still-running (14,11) search refreshed at the final checkpoint). Status of the goal clauses: (A) no new record set; (B) no new
 lower-bound proof; (C) the budget ends at 23:06 UTC with this report in place. The published bounds
 $9/17\le c_*\le4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set $A_{\rm base}$) are unchanged.
@@ -125,7 +125,7 @@ of near-tight configurations (experiments/20261014-0020-lp-fit: over 1,333,217 r
 - Exhaustive DFS at $(14,11,\alpha\le8)$ (experiments/20261014-1005-census-dfs/n14m11dfs; resumable; relaunch with
   `python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 10 --tag n14_m11`,
   3,437 depth-3 prefixes; 0 patterns in every finished prefix). Progress: 130 prefixes done at 2026-10-16 01:18 UTC, 431 at 08:49 UTC
-  (then paused 3.5 h for the solver runs of D24), 490 at 16:20 UTC on 4 workers; measured rate 22 to 36 prefixes/h, so the remaining
+  (then paused 3.5 h for the solver runs of D24), 558 at 16:12 UTC on 4 workers; measured rate 22 to 36 prefixes/h, so the remaining
   prefixes need roughly 90 to 130 hours of wall time and the case stays open (Q11; final count at the end of the run in
   journal/LOG.md and section 4 of this report). Completion decides whether 2,910 is the total number of extremal 14-point classes and,
   with R9 and R11, whether any 16-point record can contain an extremal 14-point subset at all.
