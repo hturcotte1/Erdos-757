@@ -59,3 +59,17 @@ prefixes); Lemma E then yields (n + 2)-point sets with h + 1 = f(n + 2) exactly,
 corrected an arithmetic slip in U2 (deg a >= 1 needed for delta >= 8) and two gaps in the consequence paragraph
 (wrong universality condition in the {x, a, b} case; the role "x midpoint of a, y" was missing); both fixed above.
 [verified-here on data; the lemmas themselves remain derived-here]
+
+**Lemma Δ' (deletion version; Henning-Yeo bound on which pairs can leave an extremal subset) [derived-here].** Let A be an
+n-point (4,5)-set with h(A) = f(n), m APs, tau = n - f(n), and suppose A - p - q is extremal with f(n-2) = f(n) - 1 (so
+tau(H - p - q) = tau - 1). Henning-Yeo applied to H - p - q (n - 2 vertices, m - deg p - deg q + eps edges, eps = 1 if p, q
+share an AP) gives 17 (tau - 1) <= 5 (n - 2) + 3 (m - deg p - deg q + eps), i.e.
+  deg p + deg q - eps <= m - (17 tau - 5 n - 7) / 3.
+At (14, 12, tau = 6): deg p + deg q - eps <= 11/3, so <= 3: since every vertex of a saturated extremal 14-point class has degree
+>= 2 (K47), an extremal 12-point subset could only arise by deleting two ADJACENT degree-2 vertices (eps = 1); K47 shows that
+no such deletion works in any of the 2,910 classes. At (12, 10, tau = 5): deg p + deg q - eps <= 14/3, so <= 4, which allows
+any two degree-2 vertices, consistent with the 49.5% of classes that do contain an extremal 10-point subset (K49). At
+(16, 14, tau = 7) a hypothetical record: an extremal 14-point subset would need deg p + deg q - eps <= 14 - 36/3 = 2, so
+the deleted pair would consist of two degree-1 vertices or a degree-1 and an adjacent degree-2 vertex; combined with K46
+(no saturated extremal 14-subset at all) this says a 16-point record contains at most (14,11)-type extremal subsets, through
+such low-degree pairs. [derived-here; arithmetic checked by hand only]
