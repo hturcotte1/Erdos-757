@@ -36,8 +36,13 @@ $D\ge\varepsilon n-C$ (START_HERE §3).
 
 ## Where arithmetic can enter (the unused hypotheses)
 - **Hereditary sparsity** $e(S)\le|S|-2$ for every $S$: Henning–Yeo uses only the global count.
-- **Realizability:** a forbidden-configuration list beyond $F_7$ (generate it with
-  `e757.core.realize` and the CEGAR no-goods).
+- **Realizability:** a forbidden-configuration list beyond $F_7$. The library for $n\le8$ exists:
+  287 minimal forbidden cores with up to 6 edges (44 for $n\le7$, 243 new at $n=8$), in
+  `data/forbidden_ordered_n7.json` and `data/forbidden_ordered_n8.json`, generated with
+  `e757/realizability.py` (exact, with Farkas certificates); K32, K33, Q7 [verified-here]. The Q8
+  inductive inequality ($7\tau(K)\le3|R|+2e_2+4e_1$) is false for the abstract class that excludes
+  only $\le4$-edge cores, so any Q8-type route needs cores with $\ge5$ edges (K38, K39, D17)
+  [verified-here]. Cores for 9 and 10 vertices are not computed.
 - **Order:** a midpoint lies strictly between its endpoints. So the leftmost and rightmost points
   are never midpoints, and in any induced subset its own extremes are not midpoints of APs inside
   the subset.
@@ -48,6 +53,7 @@ $D\ge\varepsilon n-C$ (START_HERE §3).
 | Set | n | m | τ | h | HY slack | D |
 |---|---|---|---|---|---|---|
 | $A_{\rm base}$ | 14 | 12 | 6 | 8 | 4 | 10 |
-| 12-pt sets (three) | 12 | 10 | 5 | 7 | 5 | 11 |
+| 12-pt sets (all 54,243 classes, K41; the three known sets included) | 12 | 10 | 5 | 7 | 5 | 11 |
+| 14-pt saturated extremal sets (all 2,910 classes, K45; $A_{\rm base}$ among them) | 14 | 12 | 6 | 8 | 4 | 10 |
 | n=10 record | 10 | 8 | 4 | 6 | 6 | 12 |
 | n=8 record | 8 | 5 | 3 | 5 | 4 | 13 |

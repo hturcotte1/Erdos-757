@@ -2,6 +2,8 @@
 
 Tag: [verified-here] (exact integer/bitmask computation on every class; no heuristics).
 
+Feeds: K47 (kb/known_results.md; LEDGER row K47; results/FINAL_REPORT.md R10). Regression test: tests/test_structure_2910.py (test_three_classes_match_stored_rows re-runs three classes, indices 0, 1000 and 2440, and compares them with the stored rows; test_summary_distributions checks the stored summary distributions).
+
 ## Question
 Descriptive statistics for the 2,910 affine classes of saturated (m=12) 14-point (4,5)-sets with h=8
 (K45, `data/census_n14_m12_classes.jsonl.gz`): degrees, counts of maximum Sidon sets / minimum

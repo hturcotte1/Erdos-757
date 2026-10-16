@@ -1,7 +1,7 @@
 # Two-point extensions and universal vertices [derived-here]
 
 Written 2026-10-15 23:40 UTC while the sweep experiments/20261015-2340-ext14-all (2-point extensions of all 2,910
-saturated extremal 14-point classes, the L001 case analysis applied to every class) was running. All statements are
+saturated extremal 14-point classes, the L001 case analysis applied to every class) was running. The sweep has since finished [verified-here]: all 4,970,208 (4,5) two-point extensions of the 2,910 classes have h = 10, so no 16-point (4,5)-set with h <= 9 contains one of these classes (K46, certificate L005, referee ACCEPT x2 on 2026-10-16 01:37 UTC, scout CLEAR; see results/LEDGER.md). The structural census K47 [verified-here] also finds 0 universal vertices in all 2,910 classes, confirming Corollary U1 on the data. The lemmas below are
 short consequences of published facts (K3-K6: in a (4,5)-set, Sidon subsets = 3-AP-free subsets, midpoints are injective
 and never extreme; Henning-Yeo 17 tau <= 5n + 3m for linear F7-free 3-graphs). Re-check before relying on them.
 
@@ -21,7 +21,7 @@ i.e. 2a = b + c, impossible since a is extreme), so it has >= 5 distinct differe
 have 6 distinct differences unless the three old points form an AP, then 5. So C is a (4,5)-set with H(C) = H + e,
 e = {y, a, x}. Independent sets of H + e: if both x, y are in I then a is not, so |I| <= alpha(H - a) + 2; otherwise
 |I| <= alpha(H) + 1. Both bounds are attained. QED.
-This is exactly case T2 of certificate L001 (42 lines for A_base, all with alpha = 10).
+Lemma E (a extreme) and its Remark below (a any vertex, x the midpoint of a and y; symmetrically y the midpoint of a and x) are the generic parts of case T2 of certificate L001. The 3 roles x 14 points = 42 lines for A_base split as 2 (a extreme and the midpoint of x and y: this lemma) + 28 (a an endpoint, x or y the midpoint: the Remark) + 12 (a non-extreme, hence a midpoint of some b, c in A, and the midpoint of x and y: every point of such a line gives a parallelogram {x, y, b, c} with x + y = b + c = 2a, so there is no (4,5)-set). The labeled hypergraph H(A_base) + {a, x, y} has alpha = 10 on all 42 lines (for the 12 parallelogram lines this is a statement about the abstract hypergraph only).
 
 **Lemma U (Henning-Yeo obstruction to universal vertices).** If a is universal in H(A) then
   17 tau(H) <= 5(n - 1) + 3(m - deg a).
@@ -49,10 +49,10 @@ new edge is either {a, x, y} in some role (Lemma E or its remark: h(C) = 9 only 
 U1) or {x, a, b} with y in no AP: then h(C) = h(A ∪ {x}) + 1, and h(A ∪ {x}) = 8 is impossible by Henning-Yeo applied
 directly to A ∪ {x} (n = 15, m = 13, tau would be 7: 119 <= 114 is false); equivalently alpha(H(A) + {x, a, b}) = 8
 would need both a and b universal in H(A). So a record extension needs exactly k = 2 new edges, i.e. m(C) = 14 and
-Henning-Yeo slack 3.
+Henning-Yeo slack 3. [verified-here] K46/L005 (experiments/20261015-2340-ext14-all/results.json) rules this out for every one of the 2,910 saturated extremal classes: every (4,5) two-point extension of every class has h = 10, so none reaches h <= 9 (4,970,208 enumerated (4,5) T1b pairs, plus the 141,153 single-extension and 122,220 T2-line cases, all with h = 10). Hence a 16-point record contains no saturated extremal 14-point subset, and any 14-point subset of a record with h = 8 has m = 11 (Q11, still open).
 
 **Falsifier report (2026-10-15 23:47 UTC; experiments/falsify/extension-lemmas/).** No lemma broken on ~11,000 sets
-(all stored extremal sets n = 6..14, A_base, Fibonacci prefixes): Lemma E 197,946 (set, a, t) triples with 0 formula
+(the 7 sets of data/small_records.json; realized extremal AP patterns for n = 6..8 in full and for n = 9, 10 capped at 1,200 random per (n, m) file; 724 sampled sets at n = 11 (m = 6, 7, 8); 1,500 random of the 54,243 twelve-point classes; 150 random of the 2,910 fourteen-point classes; A_base; Fibonacci prefixes n = 8, 10, 12, 14; not covered: n = 13 and the 466,961 saturated n = 11 classes, which are not on disk): Lemma E 197,946 (set, a, t) triples with 0 formula
 failures plus a symbolic-t (4,5) check on 21,994 cases; Lemma U 5,443 universal vertices, 0 violations; no sampled
 14-point class has a universal vertex (U1). Universal extreme points do exist at n = 7, 9, 11 (and in Fibonacci
 prefixes); Lemma E then yields (n + 2)-point sets with h + 1 = f(n + 2) exactly, never a record. The falsifier

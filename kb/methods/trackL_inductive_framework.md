@@ -36,8 +36,7 @@ The pure-graph case ($e_3=0$) of $(\ast)$ follows from Turán for Q8's constants
 $\alpha(G)\ge v^2/(v+2e)\ge(4v-2e)/7$ always. The hard part is the 3-uniform part. An abstract
 (linear, $F_7$-free, injective midpoints) version of $(\ast)$ with $b/a<8/17$ can only be true if the
 class $O'$ is not HY-tight; the experiments/20261014-0500-slack-landscape data say how far from tight
-it is. Any proof below $8/17$ must use the forbidden cores (K30, K31, K33, data/forbidden_ordered_n*.json)
-or the exact harmonic structure of saturated sets.
+it is. Any proof below $8/17$ must use forbidden cores or the exact harmonic structure of saturated sets. Cores with at most 4 edges (K30, K31, K33 and the $\le4$-edge members of data/forbidden_ordered_n*.json) are not enough for Q8-type targets: Q8 itself ($b/a=3/7$) is false for the abstract class satisfying all of them, and every abstract violator found (89 hypergraphs of the $n=12$, $m=10$ census, all of tuple type $(\tau,|R|,e_2,e_1)=(5,10,2,0)$) contains a 5- or 6-edge core (K38, K39, D17) [verified-here]. Those larger cores are in the same files, data/forbidden_ordered_n7.json and n8.json. On that census the abstract class with $\le4$-edge cores forces only $b\ge31/70<8/17$ at Q8's $(c,d)$, so targets with $31/70\le b/a<8/17$ are not excluded by these data (K39) [heuristic: finite samples]. At Q8's constants, the dominant local type that is neither freely deletable nor avoidable is a vertex on three full traces, $(e_3,e_2,e_1)=(3,0,0)$, about 40% of the vertices of the irreducible states (40% for the abstract violators, 25 of 63 for the realizable ones, about 46% for the abstract slack-0 states; K39, experiments/20261014-0700-inductive-fit/README.md) [verified-here counts; heuristic as a statement about all sets].
 
 ## How to choose weaker targets
 Any $(a,b,c,d)$ with $3/7<b/a<8/17$ and $d\ge a-b$ (singletons always deletable), tested first by the

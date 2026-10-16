@@ -26,7 +26,9 @@ order check (scipy HiGHS) and an alpha bound near the leaves. Measured speed (13
 - exhaustively refutes n=13, h=7 only slowly (timed out after 3 min);
 - did not find a 14-point h=8 set within 3 min.
 
-## CEGAR with CP-SAT (recommended next engine)
+## CEGAR with CP-SAT (built: e757/cpsat_model.py, e757/realizability.py; no decision reached)
+
+**Status [verified-here for the facts; heuristic for the interpretation].** This engine is implemented and was run, with K30/K31 and the forbidden cores. It has not decided any open case. Variants of the procedure below (eager alpha clauses, lazy F7 cuts; also a separate pysat encoding) never reached SAT or UNSAT for the $n=16$, $\alpha\le9$ decision: every sub-case timed out (D15). The witness-mode searches at $n=18,20,22,23,25$ all returned UNKNOWN. In those nine runs the realizability half of the loop (step 5) was never exercised, because the solver returned no candidate hypergraph within the time limit (D18). The $(14,11,\alpha\le8)$ case was UNKNOWN after 7000 s and was replaced by the prefix-split DFS (D21, Q11). UNKNOWN is not a refutation. Do not repeat these runs without a stronger engine: symmetry breaking, Gyárfás–Lehel colouring constraints, or a compiled search. The decision procedure for $f(16)=9$ at the end of this section is therefore still a plan, not a result (Q1, Q2; kb/ideas_backlog.md idea 4).
 Variables: $e_{ijk}\in\{0,1\}$ for $i<j<k$, meaning $j$ is the midpoint of $\{i,j,k\}$.
 1. **Midpoints:** $\sum_{i,k}e_{ijk}\le1$ for each $j$ (and $=1$ for the saturated sizes);
    $\sum e\ge m_{\rm need}$.
@@ -49,7 +51,16 @@ requires logging every cut and re-checking the cuts independently. Remember the 
 caveats: forced coincidences and (4,5) need their own no-goods.
 
 ## Faster alternatives
-- Port the DFS to C/C++/Rust, or to numba. Bitset linearity checks plus incremental Gaussian
+- [verified-here] DONE 2026-10-14 for the combinatorial class-O DFS (`e757/ordered_dfs.py`, which
+  has no LP step): C port `e757/c/ordered_dfs.c` (wrapper `e757/ordered_dfs_c.py`, bitmask edge
+  tests), about 50x faster than the Python version at $n=10$ with identical node counts for
+  $n\le10$, plus the resumable prefix-split driver `e757/ordered_dfs_split.py`. It produced the
+  censuses K41, K43 and K45 (K45: 113,454,008,923 nodes, 277,501 CPU-s at $(14,12,\alpha\le8)$).
+  [heuristic] A direct $n=16$ enumeration is estimated at $6\times10^{13}$ to $1.2\times10^{14}$
+  DFS calls (two estimator runs a factor 2 apart), so it was not attempted; see
+  `experiments/20261014-0005-ordered-dfs`. The LP-based `e757/ordered_search.py` was not ported,
+  and realizability is checked after the DFS (exact realization), not inside it. Still open:
+  prune inside the DFS with incremental Gaussian
   elimination over rationals (or mod a large prime, then verify) can replace the LP for saturated
   patterns, since the solution is unique.
 - **Saturated patterns are random-walk harmonic functions.** With $x_0=0$ and $x_{n-1}=1$ the

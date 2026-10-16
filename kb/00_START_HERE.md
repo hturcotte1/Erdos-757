@@ -19,7 +19,7 @@ Tags used everywhere in this repo:
 
 **Status.** $\tfrac{9}{17}\le c_*\le\tfrac47$, i.e. $0.52941\le c_*\le 0.57143$ [published: Ma–Tang, arXiv:2602.23282v2, 6 Mar 2026]. The problem is **open**, and the erdosproblems.com page (last edited 10 Apr 2026) lists exactly these bounds.
 
-**Autonomous run, 2026-10-13/16 [verified-here].** No improvement of either bound was found. The run produced exact small-case results (section 5), three referee-accepted census certificates (L002 to L004) and two extension certificates (L001, L005), and the structural lemmas K30, K31, K44; see results/FINAL_REPORT.md.
+**Autonomous run, 2026-10-13/16 [verified-here].** No improvement of either bound was found. The run produced exact small-case results (section 5), three referee-accepted census certificates (L002 to L004) and two extension certificates (L001, L005), and the structural lemmas K30, K31 [verified-here] and K44 [derived-here], the K47 structural census of the 2,910 saturated extremal 14-point classes [verified-here], and the extension lemmas E, U, Δ of kb/notes/extension_lemmas.md [derived-here], which are consistent with, but not load-bearing for, K46 (certificate L005: no 16-point (4,5)-set with h ≤ 9 contains a saturated extremal 14-point set); see results/FINAL_REPORT.md.
 
 **Invariances.**
 - We may assume $A\subset\mathbb Z$.
@@ -95,7 +95,7 @@ These follow from the Henning–Yeo lower bound, the known sets, monotonicity, a
 - **Open:**
   - **$f(16)\in\{9,10\}$**: the first open case, and exactly where a new record (9/16) would live; undecided after exhaustive solver attempts (Q1, D15, D16); no saturated extremal 14-point set extends to a 16-point record (K46, L005); the data lean to $f(16)=10$ [heuristic];
   - $f(18)\in\{10,11\}$, $f(19),f(20)\in\{11,12\}$, $f(21),f(22)\in\{12,13\}$, $f(23)\in\{13,14\}$.
-- **Extremal-set counts [verified-here].** Saturated extremal affine classes for $n=6,\dots,14$: 1, 4, 66, 1262, 6644, 466961, 54243, (n=13 open: Q12, D22), 2910 (K41, K43, K45; certificates L002, L003, L004). For $4\le n\le11$ there are also non-saturated extremal families (infinitely many classes); $n=12$ is the smallest $n\ge4$ with finitely many. Whether 2,910 is the complete count at $n=14$ depends on the open $(14,11)$ case (Q11).
+- **Extremal-set counts [verified-here].** Saturated extremal affine classes for $n=6,\dots,14$: 1, 4, 66, 1262, 6644, 466961, 54243, (n=13 open: Q12, D22), 2910 (K41, K43, K45; certificates L002, L003, L004; for the saturated $n=14$ count (L004) the referee realized all 205,529 enumerated patterns independently but re-checked the completeness of the enumeration only on 28% of the prefixes (719 of 2,537; 8.8% of the DFS nodes) plus consistency checks, not by a full second enumeration; structure of the 2,910 classes: K47). For $4\le n\le11$ there are also non-saturated extremal families (infinitely many classes); $n=12$ is the smallest $n\ge4$ with finitely many. Whether 2,910 is the complete count at $n=14$ depends on the open $(14,11)$ case (Q11).
 
 ## 6. Structure of the known record sets [verified-here]
 
@@ -124,9 +124,9 @@ See `kb/dead_ends.md`. The highlights:
 - Henning–Yeo gives 9/17.
 - Gluing.
 - Fibonacci gives 3/5.
-- Periodic chain constructions are capped at 3/5 [verified-here].
+- Periodic chain constructions have independence density $\ge3/5$ in every case tested, so none of the tested ones beats 4/7 (D5, K22). Tested range, linear chains only: single-class with $a\ne b$, $a+b\le11$; 2-class with span $\le8$; 3-class with span $\le6$ (span $=\max_c(a_c+b_c)$; non-linear chains are not valid (4,5)-set hypergraphs, and some of them have density $1/2$). This is not a theorem [verified-here for the tested range; `test_chain_densities` covers only single-class $a+b\le8$].
 - No 2-point extension of $A_{\rm base}$ beats 4/7 [verified-here] (certificate L001, K13); more generally no 16-point (4,5)-set with $h\le9$ contains any saturated extremal 14-point set [verified-here] (certificate L005, K46): a 16-point record, if one exists, has only non-saturated ($m=11$, Q11) extremal 14-point subsets or none.
-- Q8 ($7\tau\le3|R|+2e_2+4e_1$) is false for the abstract class and needs forbidden cores with $\ge5$ edges (K38, K39, D17); direct SAT/CP-SAT/annealing decisions of $\alpha\le9$ at $n=16$ do not terminate (D15, D16, D20, D21); witness sweeps at $n=18..25$ UNKNOWN (D18).
+- Q8 ($7\tau\le3|R|+2e_2+4e_1$) is false for the abstract class and needs forbidden cores with $\ge5$ edges (K38, K39, D17); direct SAT/CP-SAT/annealing decisions of $\alpha\le9$ at $n=16$ do not terminate (D15, D16, D20; D21 is the separate CP-SAT run on the $(14,11)$ case); witness sweeps at $n=18..25$ UNKNOWN (D18).
 - $21\tau(K)\le9|R|+5e_2+12e_1$ is refuted [community].
 - $F_7$ cannot be realized over $\mathbb Q$ under any midpoint labeling [verified-here; re-proves Gyárfás–Lehel].
 
@@ -140,4 +140,4 @@ See `kb/dead_ends.md`. The highlights:
 6. `kb/notes/` (paper digests: Ma–Tang, Henning–Yeo, Gyárfás–Lehel, the omega thread, neighbouring problems) and `kb/methods/` (search engineering, proof and inequality testing).
 7. `kb/literature/part2_supplement.md`: the full proof chain, hypergraph transversal theory (including the "deficiency" proof technique), and AI/computational methods.
 8. `kb/literature/part1_literature_review.md`: history, neighbouring problems and bibliography, with inline corrections.
-9. results/FINAL_REPORT.md and results/LEDGER.md (what the autonomous run established); kb/methods/trackL_inductive_framework.md; kb/notes/gl_tight_structure.md; data/README.md (census files).
+9. results/FINAL_REPORT.md and results/LEDGER.md (what the autonomous run established); kb/methods/trackL_inductive_framework.md; kb/notes/gl_tight_structure.md; kb/notes/extension_lemmas.md (Lemmas E, U, Δ on two-point extensions, universal vertices and the degree bound for a 16-point record [derived-here, falsifier HOLDS-ON-DATA]; predicts the T2 outcome in K46 but is not load-bearing for L005); data/README.md (census files).

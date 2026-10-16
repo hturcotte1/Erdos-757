@@ -1,7 +1,7 @@
 # Exact counts of saturated extremal (4,5)-sets for n = 6..11 (and infinitude of the non-saturated families)
 CLAIM-TYPE: certificate (exhaustive enumeration with exact realization)
 TYPE: certificate
-STATUS: ACCEPTED by referee round 3 (results/reviews/L003-census-small-n-extremal-sets__referee__20261014T213511Z.md); revised after rounds 1-2
+STATUS: ACCEPTED by referee round 3 (results/reviews/L003-census-small-n-extremal-sets__referee__20261014T213511Z.md); revised after rounds 1-2; editorial fixes after the round-3 ACCEPT (title qualified with 'saturated', tags and a 'not load-bearing' note on K24/K29, 'near the given realization'), per the round-3 Problems E1 to E3
 DEPENDS ON: K3-K6 [published] ((4,5) implies weak Sidon; h = alpha of the AP hypergraph; injective midpoints never at the extremes, so m <= n-2; linearity); K7 [published] (F7-free; imposed in the enumeration); K30 [verified-here] (monotone midpoints); K31-K33 [verified-here] (medial triangle and the forbidden cores with <= 4 edges, used by the pipeline as pre-filters at n=11: 3,263,957 of the 4,935,851 canonical saturated patterns were discarded by them without being realized; the referee's unfiltered recount over all 2,195,189,896 K30 midpoint maps at n=11 confirms the same 466,961 classes, results/reviews/L003-*__referee__20261014T181449Z.md); K8 [published] (Henning-Yeo, used to skip m below its minimum at n=10, 11); K24 [derived-here] / K29 [verified-here] (f(6..11) = 4,5,5,6,6,7; not load-bearing: f(6..11) also follows from the published bound plus the sets found here). The pipeline is the one certified in L002.
 
 ## Statement

@@ -22,23 +22,27 @@ $9/17\le c_*\le4/7$ (Ma–Tang 2026). Full context is in `kb/00_START_HERE.md`.
 | `.claude/` | Hooks (protect frozen files, re-inject state after compaction), subagents (worker, summarizer, prover, referee, scout, falsifier), skills (verify-claim, e757-checkpoint), permissions |
 | `journal/` | STATE (current), LOG (append-only), START_TIME_UTC (the clock) |
 | `results/` | claims/, proofs/, reviews/, LEDGER.md, FINAL_REPORT.md |
+| `data/` | Census and record data (the 2,910 saturated 14-point classes, small records, forbidden-core libraries); index in `data/README.md` |
+| `experiments/` | One folder per experiment, each with a README; index in `experiments/README.md`, sub-indexes for `falsify/` and `referee/` |
 | `tests/` | Pins every verified fact and the safety rails (`python3 -m pytest -q`) |
 
 ## Results of the autonomous run (2026-10-13/16)
 
 Published bounds are unchanged: $9/17\le c_*\le4/7$. No set below 4/7 and no lower-bound proof were found
-(goal clauses A and B not met). Everything below is tagged in `kb/known_results.md` (rows K30-K45).
+(goal clauses A and B not met). Everything below is tagged in `kb/known_results.md` (rows K30-K47).
 - **Start with** `results/FINAL_REPORT.md` (definitive narrative) and `results/LEDGER.md` (verified results with evidence paths).
-- **Certificates (referee ACCEPT):** `results/proofs/L001`-`L004`, with the reviews in `results/reviews/`:
+- **Certificates (referee ACCEPT):** `results/proofs/L001`-`L005`, with the reviews in `results/reviews/`:
   L001 no 2-point extension of A_base has $h\le9$; L002 exactly 54,243 twelve-point extremal sets;
-  L003 saturated extremal counts 1, 4, 66, 1262, 6644, 466961 for $n=6..11$; L004 exactly 2,910 saturated 14-point extremal sets.
+  L003 saturated extremal counts 1, 4, 66, 1262, 6644, 466961 for $n=6..11$; L004 exactly 2,910 saturated 14-point extremal sets;
+  L005 (K46) no 16-point (4,5)-set with $h\le9$ contains a saturated extremal 14-point set (the L001 case analysis applied to all 2,910 classes: all 141,153 single (4,5) extensions, 4,970,208 enumerated (4,5) T1b pairs and 122,220 line hypergraphs give $h=10$; two referee ACCEPTs after one text-only NEEDS-WORK round; scout CLEAR).
 - **Exact values:** $f(n)=\lceil n/2\rceil+1$ for $6\le n\le15$ and $n=17$ (K35). The first open case is $f(16)\in\{9,10\}$ (Q1 in `kb/open_questions.md`).
 - **Census data:** `data/census_n14_m12_classes.jsonl.gz` (2,910 sets), `data/census_n14_m12_summary.json`,
   `experiments/20261014-1005-census-dfs/results/realized_n12.json.gz` (54,243 sets); index in `data/README.md`.
   Forbidden-configuration library: `data/forbidden_ordered_n7.json`, `data/forbidden_ordered_n8.json` (287 minimal cores).
-- **Lemmas:** monotone midpoints (K30), no medial triangle (K31), degree bound in Gyarfas-Lehel-tight hypergraphs (K44).
-- **Negative results:** `kb/dead_ends.md` D15-D21 (n=16 undecided by SAT/CP-SAT/annealing; Q8 false in the abstract class).
-- **Still running at the last update:** exhaustive DFS for the non-saturated $(14,11)$ case (`experiments/20261014-1005-census-dfs/n14m11dfs`).
+  L005 sweep data: `experiments/20261015-2340-ext14-all/results.json` (one row per class of the 2,910); K47 structure census: `experiments/20261016-0150-structure-2910/results.json`.
+- **Lemmas:** monotone midpoints (K30), no medial triangle (K31), degree bound in Gyarfas-Lehel-tight hypergraphs (K44). K47 [verified-here]: in the 2,910 saturated extremal 14-point classes the AP degrees are 2, 3 or 4, there are 137 to 150 maximum Sidon subsets per class, no class contains a 12-point subset with $h=7$, and no vertex lies in every maximum Sidon subset (`tests/test_structure_2910.py`). Extension lemmas in `kb/notes/extension_lemmas.md` [derived-here; falsifier found no counterexample on about 11,000 sets and fixed two gaps in the Lemma Delta consequence paragraph, `experiments/falsify/extension-lemmas`]: Lemma E (one-edge extension raises $h$ by 1, instead of 2, exactly when the vertex lies in every maximum Sidon subset), Lemma U (Henning-Yeo obstruction to such vertices; none occurs in the 2,910 classes), Lemma Delta (in a 16-point record every 15-point subset is extremal and $\deg p\le m-9$).
+- **Negative results:** `kb/dead_ends.md` D15-D22 (n=16 undecided by SAT/CP-SAT/annealing; Q8 false in the abstract class; exact saturated census at n=13 infeasible with the L002/L004 pipeline, D22 / Q12).
+- **Still running at the last update (2026-10-16, about 02:55 UTC):** exhaustive DFS for the non-saturated $(14,11)$ case (`experiments/20261014-1005-census-dfs/n14m11dfs`; 4 workers, resumable by prefix). 169 of its 3,437 depth-3 prefixes were finished, every one with 0 patterns. At the measured 30 to 36 prefixes per hour it needs roughly 90 to 110 more hours, but the budget ends at 2026-10-16 23:06 UTC (about 20 h later), so it will not finish, Q11 stays open, and no claim rests on this partial coverage [heuristic: rate projection]. The saturated $n=13$ census was started and stopped as infeasible (D22, Q12 in `kb/`).
 - **Reproduce:** every experiment folder has a `README.md` with the exact command; tests: `python3 -m pytest -q`.
 - **Audit of this documentation:** `experiments/20261015-2310-kb-audit/README.md`.
 

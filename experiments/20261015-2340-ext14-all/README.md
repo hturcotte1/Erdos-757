@@ -1,5 +1,7 @@
 # 2-point extensions of all 2,910 saturated extremal 14-point (4,5)-sets  [verified-here]
 
+Status: evidence folder of certificate L005 (results/proofs/L005-ext14-all-two-point-extensions.md; K46 in kb/known_results.md; LEDGER row K46/L005). Referee ACCEPT x2 (results/reviews/L005-ext14-all-two-point-extensions__referee__20261016T013746Z.md and results/reviews/L005-ext14-all-two-point-extensions__referee__20261016T013731Z.md) after one text-only NEEDS-WORK round (results/reviews/L005-ext14-all-two-point-extensions__referee__20261016T011417Z.md); scout NOVELTY: CLEAR (results/reviews/L005-ext14-all-two-point-extensions__scout__20261016T002432Z.md); regression test tests/test_ext14_all.py (re-runs the per-class routine on classes 0 and 2440). The brute-force cross-check is described at the end of this file.
+
 Question: for each class A in data/census_n14_m12_classes.jsonl.gz (n=14, m=12, h=8), is there a
 (4,5)-set B = A u {x,y} (x,y real, not in A) with h(B) <= 9? Such a B would be a 16-point record (9/16 < 4/7).
 
