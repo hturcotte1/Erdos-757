@@ -247,3 +247,5 @@ Format for each work block:
 ## 2026-10-16T12:34Z U n=16 deletion-constrained CP-SAT: UNKNOWN for m=13 and m=14 after 3.5 h each (D24)
 - no solution, no refutation; soundness of the constraints verified on A_base + 60 census classes and 145 encoding comparisons. Q1 stays open. (14,11) DFS relaunched on 4 workers (431/3437 prefixes).
 - evidence: experiments/20261016-0850-n16-deletion-cpsat/README.md, results.json
+
+## 2026-10-16T12:38Z U CNF/CaDiCaL variant of the n=16 deletion-constrained model launched (experiments/20261016-1240-n16-cnf-witness; 3.5 h per instance, m=13 and m=14), alongside the (14,11) DFS
