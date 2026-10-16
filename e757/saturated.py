@@ -3,7 +3,8 @@ Midpoint maps: the hypergraph-first way to search for (4,5)-sets.
 
 Background (see kb/00_START_HERE.md, sections 2 and 6):
 * A (4,5)-set is weak Sidon, so each point is the midpoint of at most one 3-AP.
-* Every known record set is midpoint-saturated: every point except min and max is a midpoint.
+* A_base, the n = 10 record and the 12-point records are midpoint-saturated (every point except min and max is a midpoint, m = n-2), but not every
+  extremal set is: the n = 8 and n = 11 records of data/small_records.json have m = 5 < 6 and m = 8 < 9 (K18, K43).
 * Such a set is described by a midpoint map  mid[j] = (i, k)  meaning  x_j = (x_i + x_k) / 2.
 
 Fix x[lo] = 0 and x[hi] = 1. If the linear system has a unique solution, it is the

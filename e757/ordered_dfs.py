@@ -2,7 +2,7 @@
 Independent exact DFS over the abstract ordered-midpoint class O(n).  [verified-here when tests pass]
 
 Purpose: a second implementation (independent of e757.cpsat_model) for deciding questions such as
-"is there a member of O(n) with >= m_min edges and alpha <= T?" (the f(16) certificate needs two
+"is there a member of O(n) with >= m_min edges and alpha <= T?" (a certificate for f(16), which is still open (Q1, D15), would need two
 independent engines).  It imports nothing from e757.cpsat_model; e757.saturated.alpha_of_edges and
 e757.realizability are used only by tests / cross-checks.
 

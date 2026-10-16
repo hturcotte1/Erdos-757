@@ -14,7 +14,7 @@ Up to affine equivalence (translation, scaling, reflection) there are exactly 54
 4. (Counting classes.) Realizable patterns are affine invariants of their (rigid) realizations, and reflection has been quotiented out, so the 54,243 realizable patterns are in bijection with the affine classes of 12-point (4,5)-sets with $h=7$. The three previously known inequivalent 12-point sets (data/small_records.json '12' and the two omega sets in e757/core.py KNOWN; five names in the knowledge base for three sets) are among the classes. The frozen judge passed 50 random sets (PASS NO-IMPROVEMENT, h=7).
 
 ## Computer-verified steps
-experiments/20261014-1005-census-dfs/ (README.md with commands and timings; results/; fastreal.py is the exact realizer used); e757/c/ordered_dfs.c; tests/test_census_counts.py (DFS and CP-SAT enumeration agree on (9,7,alpha<=6) and (10,8,alpha<=6)).
+experiments/20261014-1005-census-dfs/ (README.md with commands and timings; results/; fastreal.py is the exact realizer used); e757/c/ordered_dfs.c; tests/test_census_counts.py (C DFS, Python DFS (n<=9) and CP-SAT enumeration agree on (7,5,alpha<=5), (8,6,alpha<=5) and (8,6,alpha<=6) in the default run, and on (9,7,alpha<=6) and (10,8,alpha<=6) only with E757_SLOW=1; the k=2 prefix split reproduces the 2,226,490 patterns of (12,10,alpha<=7) only with E757_SLOW=1, test_prefix_split_n12_m10).
 
 ## Sanity checks
 f(12)=7 [derived-here, K24]; the three inequivalent known 12-point sets are recovered; no class has h<7 (impossible by HY) and none has h>7 by construction.

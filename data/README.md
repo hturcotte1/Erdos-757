@@ -6,7 +6,9 @@
 - Describe each file in this README: generator script, command, date, counts, schema.
 
 ## Files
-(listing completed 2026-10-15)
+(listing completed 2026-10-16)
+
+- `ext12_all_rows.jsonl.gz` (added 2026-10-16, 2.4 MB): one row per affine class of the 54,243 extremal 12-point (4,5)-sets of certificate L002 (K41), with the results of the two-point-extension sweep of certificate L006 (K48: within the L001/L005 case analysis, whose completeness is inherited and not re-proved, every (4,5) two-point extension has h = 9). The `class` field of a row is the index of that class in the list `realized_n12.json.gz` of `experiments/20261014-1005-census-dfs/results/`, and `set` is its sorted integer representative (equal to sorted(that record's `set`) in every row). Rows are NOT in class order: they are stored in the order the parallel sweep finished them (`imap_unordered`; identical to the git-ignored `results.jsonl`), and each class 0 to 54,242 occurs exactly once. Keys: `class`, `set`, `hA` (7 in every row), `n_max_sidon` (48 to 63), `in_all_max_sidon` ([] in every row), `t2_precheck` (false in every row), `Px_size` (candidate points x forming a new 3-AP with two points of A, before the (4,5) filter), `n_single_45` ((4,5) single extensions, 21 to 46), `t1_pairs` (candidate T1b pairs examined before the (4,5) filter), `n_t1b_45` ((4,5) T1b pairs, 424 to 1,395), `t2_lines` (36), `t2_line_h` ([9]), `t2_isect_pts`, `t2_isect_45` (0), `hist` (histogram of h over the evaluated T1a, T1b and T2 values), `min_h` (9 in every row), `records` ([] in every row), `n_2ext` (= `n_t1b_45` + `t2_isect_45`), `secs` (wall seconds for the class). Totals over the rows: 1,887,566 single and 51,264,727 T1b (4,5) extensions, 19,247,288 line-intersection points (none a (4,5)-set), 55,105,041 evaluated h values (all equal to 9), min h = 9 in all 54,243 classes. Generator: `experiments/20261016-0330-ext12-all/extend12_all.py` (exact command in that README; its uncompressed `results.json` and `results.jsonl` are git-ignored, this file is the tracked copy of the rows, `summary.json` there holds the totals). Pinned by `tests/test_ext12_all.py`. Tag: [verified-here].
 
 - `forbidden_ordered_n7.json`: ordered linear midpoint-injective AP patterns for n<=7: per-n class counts
   (realizable / order-infeasible / forced extra AP / forced repeated difference) and the 44 minimal forbidden
@@ -32,8 +34,7 @@
 
 ## Census data that lives under experiments/ (not duplicated here)
 - n = 14 two-point extensions (K46, L005): `experiments/20261015-2340-ext14-all/results.json` (keys `summary` and `classes`, one row per class of
-  `census_n14_m12_classes.jsonl.gz` in the same order; 141,153 (4,5) single-point extensions and 4,970,208 (4,5) two-point extensions with both new points in new 3-APs (case T1b) in total, minimum h = 10 in all cases including the one-edge lines (T2)
-  2,910 classes; per-class rows also in `results.jsonl`). Independent brute-force cross-check on 41 classes: `bruteforce_sample_results.json`
+  `census_n14_m12_classes.jsonl.gz` in the same order; 141,153 (4,5) single-point extensions and 4,970,208 (4,5) two-point extensions with both new points in new 3-APs (case T1b) in total, minimum h = 10 in all cases including the one-edge lines (T2), over all 2,910 classes; per-class rows also in `results.jsonl`). Independent brute-force cross-check on 41 classes: `bruteforce_sample_results.json`
   (all pairs on a bounded half-integer grid window; 105,720,197 (4,5) pairs, 0 failures). Tracked. [verified-here]
 - n = 14 structure census (K47): `experiments/20261016-0150-structure-2910/results.json` (keys `summary` and `rows`; 2,910 rows in census order with degree
   sequence, number of maximum Sidon subsets, symmetry, cut vertices, gaps). Tracked. [verified-here]
@@ -44,5 +45,6 @@
 - n = 6..11 saturated counts (K43, L003): `experiments/20261014-1430-small-counts/results/` (per-(n,m) pattern files and
   `summary.json`). The raw n = 11 pipeline directory `n11/results` is git-ignored; its summary
   `results/n11_m9_postprocess_summary.json` is tracked. [verified-here]
+- Extremal (n-2)- and (n-1)-point subsets, n = 6..12 (K49): `experiments/20261016-0840-extremal-subsets/results.json` (keys `F`, `per_source`, `per_size`, `small_records`: counts and distributions per (n, m)). Tracked; its n = 11, m = 9 input (`experiments/20261014-1430-small-counts/n11/results/post/real_*.json.gz`, 418 files) is git-ignored. [verified-here]
 - n = 14, m = 11 (the open non-saturated case): DFS output in `experiments/20261014-1005-census-dfs/n14m11dfs/results/`
-  (git-ignored; resumable job, 130 of 3,437 prefixes done at 2026-10-16 01:15 UTC, every finished prefix has 0 solutions; at roughly 30 to 36 prefixes per hour it cannot finish within the budget, so there is no result and Q11 stays open). [heuristic: no claim]
+  (git-ignored; resumable job, 558 of 3,437 prefixes done at 2026-10-16 16:12 UTC, every finished prefix has 0 solutions; at roughly 22 to 36 prefixes per hour it cannot finish within the budget (ends 2026-10-16 23:06 UTC), so there is no result and Q11 stays open). [heuristic: no claim]

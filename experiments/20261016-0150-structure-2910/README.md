@@ -55,6 +55,6 @@ Every saturated extremal 14-point class is 2-connected-like (no weak cut vertex)
 maximum degree 3 or 4 (K44 allows 5, never attained), has 137-150 maximum Sidon sets, is mirror-asymmetric
 (so the 2,910 classes correspond to 5,820 labelled order-pattern/oriented sets), satisfies Lemma 1 exactly, and
 has no vertex common to all maximum Sidon subsets. Notably none contains a 12-point (4,5)-set with h=7:
-every 12-point subset already has h=8, so the 14-point records do not arise by adding two points to a
-12-point record. Number of maximum Sidon sets equals the number of minimum transversals by complementation
+every 12-point subset already has h=8, so the saturated 14-point records do not arise by adding two points to a
+12-point record (K48/L006 proves the same for every extremal 14-point set, including a non-saturated (14,11) one if one exists, Q11). Number of maximum Sidon sets equals the number of minimum transversals by complementation
 (the table counts them independently, via the independent-set and the transversal bitmasks, and they agree).

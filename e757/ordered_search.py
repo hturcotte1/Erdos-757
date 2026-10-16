@@ -18,6 +18,13 @@ Leaves are realized exactly (Fractions), checked for (4,5) exactly, and h is com
 This is a correct but plain Python DFS. Expected reach: complete enumeration for n <= 10-11, and
 randomized / restricted runs (seeded with partial structures) beyond that. For n >= 14 rewrite the
 core in a compiled language or drive it with CP-SAT; keep the exact leaf check.
+(Done since: the exhaustive abstract DFS is e757.ordered_dfs, ported to C as e757/c/ordered_dfs.c
+(wrappers e757.ordered_dfs_c and the prefix-split driver e757.ordered_dfs_split); the solver engines are
+e757.cpsat_model (CEGAR with CP-SAT) and e757.sat_indep (SAT); exact realization is e757.realizability
+(the census pipelines also use the experiment-local fastreal.py, with realizability as fallback).
+The C DFS plus exact realization gave the exhaustive census results K41, K43 and K45 (saturated classes,
+certificates L002 to L004; K42 is a partial CP-SAT census, superseded by K45). The (14, m = 11) case is
+still open (Q11), and n = 16 remains undecided (Q1, D15).)
 
 Example:
     from e757.ordered_search import search
@@ -114,7 +121,13 @@ def search(n, target_alpha, max_none=0, limit=None, seed=0, order=None, time_che
     hypergraph has independence number <= target_alpha and at most max_none non-midpoints.
 
     order: sequence of interior vertices in the order they are decided (default 1..n-2).
-    Exhaustive for the given parameters (up to LP numerical tolerance in pruning)."""
+    Meant to cover every midpoint pattern for the given parameters, but NOT a certified enumeration
+    [heuristic]: pruning uses float LPs (HiGHS, threshold 1e-9), and a leaf is realized by perturbing one
+    LP interior point with at most `tries=8` random attempts (patterns with free parameters only), so a
+    realizable pattern can be missed. For certified exhaustive counts enumerate the abstract patterns with
+    the exact C DFS (e757/c/ordered_dfs, wrapper e757.ordered_dfs_c; pure-Python twin: e757.ordered_dfs) and
+    realize each pattern afterwards with exact arithmetic (e757.realizability.realize_exact; the censuses
+    L002-L004 used the experiment-local equivalent fastreal.py, cross-checked against it)."""
     rng = random.Random(seed)
     interior = list(order) if order is not None else list(range(1, n - 1))
     edges = []

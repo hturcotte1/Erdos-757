@@ -13,7 +13,7 @@ Command (repo root): `nice -n 5 python3 experiments/20261016-0840-extremal-subse
 Runtime about 131 s wall (2 processes). No randomness. Log: `run.log`.
 
 Data used: n = 6..10 all `n<n>_m<m>_real.json.gz` in `experiments/20261014-1430-small-counts/results/` (one integer representative per realizable pattern);
-n = 11: m = 9 from the 418 `n11/results/post/real_*.json.gz` (all 466,961 saturated classes), m = 6,7,8 from the `n11_m*_sample_real.json.gz` (first 300 DFS-order patterns only);
+n = 11: m = 9 from the 418 `n11/results/post/real_*.json.gz` (all 466,961 saturated classes; this directory is git-ignored and absent from a clean clone, so `stats.py` can rebuild that row only after the L003 n = 11 pipeline in `experiments/20261014-1430-small-counts/run_all.sh` has been re-run; `tests/test_extremal_subsets.py` does not use it, and the row's output is stored in the tracked `results.json`), m = 6,7,8 from the `n11_m*_sample_real.json.gz` (first 300 DFS-order patterns only);
 n = 12: `realized_n12.json.gz` (all 54,243 classes).
 
 ## Results (all realized classes at each size)
@@ -47,5 +47,5 @@ Example (n = 12, saturated class, positive case): A = [0, 18, 19, 36, 38, 53, 58
 ## Conclusion
 "Extremal sets are not two-point extensions of extremal sets" is NOT a general pattern at small n: at n = 6..9 and 11 every stored class has an extremal (n-2)-subset,
 at n = 10 99.7% of saturated classes (6,625 of 6,644; 85% of the m = 7 family representatives) and at n = 12 49.5% (26,852 of 54,243; 27,391 have none). The property first fails to be universal at n = 10 and the
-fraction drops at n = 12; K47 (0 of 2,910 at n = 14) and L006 (none at n = 14, 16) are thus consistent with a downward trend as n approaches the wall,
+fraction drops at n = 12; K47 (0 of 2,910 saturated classes at n = 14), K48/L006 (no extremal 14-point set at all, saturated or not, contains an extremal 12-point set) and K46/L005 (n = 16: no 16-point set with h <= 9 contains a saturated extremal 14-point set; the non-saturated case, Q11, is open) are thus consistent with a downward trend as n approaches the wall,
 but this is only 3 data points for even n [heuristic]. The counts above are [verified-here] for the stored classes; non-saturated rows are pattern counts of one representative each.

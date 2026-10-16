@@ -26,7 +26,7 @@ Added (derived-here, from HY on vertex-deleted subhypergraphs + f(15)=9 + L005/K
    (each order-infeasible, 20,020 learnt no-goods), so the model is satisfiable in the abstract sense; A_base itself is accepted by the fixed-edge test above.
    The spec asked for a SAT answer within 10 minutes: only abstract-SAT was reached, no realizable 14-point set within 600 s. (solver_n14test.log, result_n14test.json)
 
-## Runs (n=16, T=9, 2 workers each in parallel, 12,600 s each, CP-SAT; started 09:03 UTC)
+## Runs (n=16, T=9, 2 workers each in parallel, 12,600 s each, CP-SAT; started 09:03 UTC)  [verified-here for the recorded statuses and times; the solver_*.log files, the only source of the LP-iteration and restart counts below, are git-ignored]
 commands: bash scripts/start_job.sh experiments/20261016-0850-n16-deletion-cpsat 4.5 python3 .../model16.py solve 16 9 {14 14|13 13} 12600 2 {m14|m13} eq11
 - m=14: UNKNOWN (CP-SAT status UNKNOWN at time limit, 9.2M LP iterations, 7.7k restarts); no abstract solution found.
 - m=13: UNKNOWN (1.53M conflicts, 7.5M LP iterations); no abstract solution found.
@@ -35,4 +35,4 @@ No set was found, so nothing was judged; no INFEASIBLE proof either. (result_m13
 ## Conclusion [heuristic]
 The deletion constraints do not make CP-SAT decide n=16 in 3.5 h with 2 workers per case: both cases UNKNOWN, no solution, no refutation.
 f(16) remains undecided. Pure feasibility with no objective gives little bound progress; presolve fixed only 1-11 of 3243 variables.
-Suggested: a prefix split (as D15) combined with these constraints, or a SAT solver (cadical) with the witness vectors as a cardinality-encoded CNF.
+Suggested: a prefix split (as D15) combined with these constraints, or a SAT solver (cadical) with the witness vectors as a cardinality-encoded CNF. The CNF/CaDiCaL variant was run afterwards (experiments/20261016-1240-n16-cnf-witness; kb/dead_ends.md D24): TIMEOUT at 12,600 s for both m = 13 and m = 14, no answer. A prefix split / cube-and-conquer combined with these constraints is still untried.

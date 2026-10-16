@@ -17,7 +17,12 @@ reflection lex-leader constraint.  Lazy cuts:
   * F7 cut: after each solution, find every F7 copy and add "not all 5 edges".
 Why CP-SAT and not pysat: the cut pool is small (hundreds to few thousands of clauses), CP-SAT's
 presolve + LNS + multi-worker portfolio handle the cardinality/lex constraints natively, and
-re-solving from scratch with a solution hint was fast enough for the sizes needed (n <= 16).
+re-solving from scratch with a solution hint was fast enough only for small sizes: the solver-only exact
+min-alpha table runs to n = 12 in seconds (experiments/20261013-2257-chyp-table), but at n = 13 the T = 7
+infeasibility was not proved in 1500 s, some tau_max cells stayed unresolved in CP-SAT ((12,9), (14,11) and
+the realizable (13,11); K36), and the CP-SAT census at (14,12) is only partial (K42; the complete census K45
+used the C DFS). At n = 16 and for (14,11,alpha<=8) no CP-SAT decision terminated within the budgets tried
+(3000 s per sub-case up to 3.5 h; D15, D21, D24) [heuristic].
 
 Reflection symmetry j -> n-1-j: (i,j,k) -> (n-1-k, n-1-j, n-1-i).  The reflected hypergraph is again
 an ordered midpoint hypergraph with the same alpha, same m, same F7-freeness (and, for real sets,

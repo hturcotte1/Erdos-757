@@ -32,7 +32,7 @@ Only lower-bound proofs use the `CLAIM: c* >= r` line. status.sh reads it, and i
 exactly that form, with r a fraction like `5/9` or a decimal. Lemmas and certificates use
 `CLAIM-TYPE:` lines or prose instead.
 
-## Index (as of 2026-10-16 02:17 UTC)
+## Index (as of 2026-10-16 16:40 UTC)
 
 Ids: `P###-slug` for lower-bound proofs, `L###-slug` for lemmas and certificates. No lower-bound proof (`CLAIM: c* >= r`) exists yet; `bash scripts/status.sh` prints `lower_bound_proofs: none`. Review files are in `results/reviews/`.
 
@@ -43,3 +43,4 @@ Ids: `P###-slug` for lower-bound proofs, `L###-slug` for lemmas and certificates
 | L003-census-small-n-extremal-sets | saturated extremal class counts 1, 4, 66, 1262, 6644, 466961 for n = 6..11; infinitely many extremal sets for 4 <= n <= 11 (K43) | certificate | ACCEPTED, round 3 | L003-census-small-n-extremal-sets__referee__20261014T213511Z.md | [verified-here] |
 | L004-census-14-point-extremal-sets | exactly 2,910 saturated (m = 12) 14-point (4,5)-sets with h = 8; the m = 11 case is open (K45) | certificate | ACCEPTED, round 1; completeness re-checked by sampling | L004-census-14-point-extremal-sets__referee__20261015T225426Z.md | [verified-here] |
 | L005-ext14-all-two-point-extensions | no 16-point (4,5)-set with h <= 9 contains a saturated extremal 14-point set (K46); depends on L004 and L001 | certificate | ACCEPTED, rounds 2 and 3 (after NEEDS-WORK round 1) | L005-ext14-all-two-point-extensions__referee__20261016T013746Z.md and __referee__20261016T013731Z.md; scout CLEAR: L005-ext14-all-two-point-extensions__scout__20261016T002432Z.md | [verified-here] |
+| L006-ext12-all-two-point-extensions | no 14-point (4,5)-set with h <= 8 contains an extremal 12-point set; every 12-point subset of every extremal 14-point set has h = 8 (K48); depends on L002 and L001 (same analysis as L005) | certificate | ACCEPTED, rounds 2 and 3 (after NEEDS-WORK round 1) | L006-ext12-all-two-point-extensions__referee__20261016T083111Z.md and __referee__20261016T081040Z.md; scout CLEAR: L006-ext12-all-two-point-extensions__scout__20261016T070619Z.md | [verified-here] |

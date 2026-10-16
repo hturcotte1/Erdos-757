@@ -69,7 +69,7 @@ decide(n, T, m, cores='hybrid', forbid_f7=True, extra_unit=None, time_limit=None
     m=None means "any number of edges" (decision only).
 enumerate_all(n, T, m, ...) -> list of frozenset-like sorted edge tuples (all solutions, m fixed).
 gl_constraints (saturated case m = n-2 only): False | True ('L') | 'R' | 'LR' adds the Gyarfas-Lehel
-    colouring constraints, see below.
+    colouring constraints, described in the section above.
 vertex1: None (no assumption), 0 (vertex 1 is not a midpoint) or k>=2 (edge (0,1,k) is present and is
     the edge of vertex 1).  extra_unit: iterable of ((i,j,k), bool) forcing variables.
 """
