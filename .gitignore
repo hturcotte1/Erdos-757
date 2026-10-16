@@ -36,3 +36,4 @@ experiments/20261015-2340-ext14-all/bruteforce_sample.log
 experiments/20261016-0330-ext12-all/progress.txt
 experiments/20261016-0330-ext12-all/results.jsonl
 experiments/20261016-0330-ext12-all/*.log
+experiments/20261016-0330-ext12-all/results.json
