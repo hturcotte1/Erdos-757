@@ -1,0 +1,3 @@
+classes 32 counter mismatches vs stored rows: []
+all singles h=8 (Sidon 8-subset exhibited): True ; all T1b (4,5) pairs h=9 (Sidon 9-subset exhibited): True
+totals: singles 1060 T1b (4,5) pairs 28090 isect pts 11316 isect (4,5) 0

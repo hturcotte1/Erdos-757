@@ -12,11 +12,11 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 - L001-L004 ACCEPTED (K13, K41, K43, K45): A_base 2-pt extensions; 54,243 extremal 12-pt classes; saturated counts n=6..11; 2,910 saturated extremal 14-pt classes
 - K30 monotone midpoints, K31 no medial triangle [verified-here]; K44 degree bound [derived-here]; K32-K39 census/abstract facts
 - L005 ACCEPTED x2 (01:37; K46): no 16-point (4,5)-set with h<=9 contains a saturated extremal 14-point set (all 2,910 classes, 4,970,208 (4,5) 2-extensions, all h=10); scout CLEAR.
+- L006 ACCEPTED x2 (08:31; K48): no 14-point (4,5)-set with h<=8 contains an extremal 12-point set (54,243 classes; 51,264,727 T1b pairs all h=9); scout CLEAR.
 - K47 structural census of the 2,910 classes [verified-here]: degrees in {2,3,4}, 3 degree sequences, 137-150 max Sidon subsets, no mirror symmetry, no extremal 12-point subset, GL balance everywhere.
 - kb/notes/extension_lemmas.md [derived-here, falsifier HOLDS-ON-DATA]: Lemma E (one-edge extension, h+1 iff universal vertex), Lemma U (HY obstruction to universal vertices), Lemma Δ (16-point record: deg <= m-9; exactly 2 new APs in a 2-pt extension).
 
 ## Running jobs / agents
-- L006 SUBMITTED 07:03 (no 14-point (4,5)-set with h<=8 contains an extremal 12-point set; 54,243 classes, 51,264,727 T1b pairs all h=9): referee #1 + scout workflow running; then fixes, referees #2+#3, LEDGER/K48.
 - (14,11,alpha<=8) DFS, 4 workers, restarted 02:26:29 UTC after the 7th container restart (max 20 h; relaunch: python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 10 --tag n14_m11); 150/3437 prefixes done at 02:26, 0 patterns; about 36 prefixes/h (LOG 02:02Z), so it will not finish in the run (Q11 open).
   - Documentation-audit workflow (missing experiment READMEs, index READMEs, kb consistency audit with proposed edits verified by independent agents; LOG 23:15Z) relaunched 02:02 and resumed 02:26 UTC (LOG); apply its accepted edits before the final checkpoint.
 - STOPPED: n=13 saturated census (infeasible: 54.7M patterns in 8/1811 prefixes; D22, Q12).

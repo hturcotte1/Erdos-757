@@ -1,0 +1,8 @@
+Route X rows 54243 distinct classes 54243 all 0..54242: True
+flags (deficient (4,5) pairs or h(A u x)=7 with A u x (4,5)): 0
+classes with nonempty core (vertex in every maximum Sidon set): 0
+x with empty G_x (after parallelogram filter): 0
+spot classes (c % 25 == 0, slow Y_x recomputation + per-pair Sidon re-verification): 2170
+deficient ordered pairs (x in P_x, x passing the filter) tested for (4,5): 1716162
+n_maxT range 48 63 ; P_x range 136 167
+n_maxT == stored n_max_sidon: True ; Px == stored Px_size: True

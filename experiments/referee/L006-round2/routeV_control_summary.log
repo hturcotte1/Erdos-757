@@ -1,0 +1,7 @@
+Abase-minus-243-249 hA 8 target 10 n_deficient 791 min_h 8 | (u,v) is a deficient vertex: True | (u,v) on a deficient line: [([1, 0, -243], 9), ([0, 1, -243], 9), ([1, 0, -249], 9), ([0, 1, -249], 9)]
+Abase-minus-0-1056 hA 8 target 10 n_deficient 818 min_h 8 | (u,v) is a deficient vertex: True | (u,v) on a deficient line: [([1, 0, 0], 9), ([0, 1, 0], 9), ([1, 0, -1056], 9), ([0, 1, -1056], 9)]
+Abase-minus-136-596 hA 8 target 10 n_deficient 2853 min_h 8 | (u,v) is a deficient vertex: True | (u,v) on a deficient line: [([1, 0, -136], 9), ([0, 1, -136], 9), ([1, 0, -596], 9), ([0, 1, -596], 9), ([1, -2, 1056], 9), ([2, -1, -1056], 9)]
+Abase-minus-286-400 hA 8 target 10 n_deficient 667 min_h 8 | (u,v) is a deficient vertex: True | (u,v) on a deficient line: [([1, 0, -400], 9), ([0, 1, -400], 9), ([1, 0, -286], 9), ([0, 1, -286], 9)]
+Abase-minus-246-528 hA 8 target 10 n_deficient 738 min_h 8 | (u,v) is a deficient vertex: True | (u,v) on a deficient line: [([1, 0, -528], 9), ([0, 1, -528], 9), ([1, 0, -246], 9), ([0, 1, -246], 9)]
+Abase-minus-200-298 hA 8 target 10 n_deficient 614 min_h 8 | (u,v) is a deficient vertex: True | (u,v) on a deficient line: [([1, 0, -200], 9), ([0, 1, -200], 9), ([1, 0, -298], 9), ([0, 1, -298], 9)]
+Abase-minus-272-323 hA 8 target 10 n_deficient 630 min_h 8 | (u,v) is a deficient vertex: True | (u,v) on a deficient line: [([1, 0, -272], 9), ([0, 1, -272], 9), ([1, 0, -323], 9), ([0, 1, -323], 9)]

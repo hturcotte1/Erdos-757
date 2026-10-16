@@ -1,0 +1,2 @@
+n=12 census: 54243 classes; (4,5): 54243 ; m=10: 54243 ; h=7: 54243 ; no universal vertex: 54243 ; #max Sidon = stored n_max_sidon: 54243 ; 70s
+n=14 saturated census: 2910 classes; h=8: 2910 ; all 91 two-point deletions keep h=8: 2910 ; #max Sidon range 137 150 ; 81s

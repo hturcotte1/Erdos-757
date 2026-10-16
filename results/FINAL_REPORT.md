@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report of the autonomous run (2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC)
 
-Last updated: 2026-10-16 02:50 UTC (elapsed about 51.7 of 72 budget hours). Status of the goal clauses at this
+Last updated: 2026-10-16 08:40 UTC (elapsed about 57.6 of 72 budget hours). Status of the goal clauses at this
 update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted. The published bounds
 $9/17\le c_*\le4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set $A_{\rm base}$) are unchanged.
 
@@ -90,6 +90,9 @@ extremal 12-point subset** (all 91 two-point deletions keep $h=8$), so the 14-po
 of 12-point extremal sets, just as (R9) 16-point records cannot be two-point extensions of saturated 14-point extremal sets;
 the Gyárfás–Lehel tree colourings have classes of sizes 6 and 7 in every class (Lemma 1 of kb/notes/gl_tight_structure.md);
 no universal vertex (Lemma U1). Evidence: experiments/20261016-0150-structure-2910/ (12.9 s), tests/test_structure_2910.py.
+
+**R11. No extremal 14-point set contains an extremal 12-point set (certificate L006, ACCEPTED by two fresh referees at 08:31 UTC after a text-only NEEDS-WORK round; novelty CLEAR).** The L001/L005 two-point-extension analysis applied to all 54,243 extremal 12-point classes (R-L002): 1,887,566 (4,5) single extensions (all $h=8$), 51,264,727 (4,5) two-point extensions with both new points in new APs (all $h=9$), 1,952,748 one-edge lines (all $\alpha=9$); referee round 3 confirmed the whole census independently with a Sidon-definition-only method. Hence every 12-point subset of every extremal 14-point set has $h=8$, and a non-saturated $(14,11)$ extremal set, if one exists (Q11), contains no extremal 12-point subset. Together with R9 and R10: at sizes 12, 14 and 16 no extremal or record set is a two-point extension of a smaller extremal set.
+Evidence: experiments/20261016-0330-ext12-all/ (README, summary.json), data/ext12_all_rows.jsonl.gz, results/proofs/L006-ext12-all-two-point-extensions.md, tests/test_ext12_all.py.
 
 ## 2. The open case $n=16$ (negative results, D15, D16, L005)
 

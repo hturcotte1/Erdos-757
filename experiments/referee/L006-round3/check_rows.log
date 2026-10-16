@@ -1,0 +1,8 @@
+census entries 54243 rows 54243
+set mismatches 0
+row anomalies 0 []
+totals {'single': 1887566, 't1b': 51264727, 'isect_pts': 19247288, 'isect45': 0, 'evaluated': 55105041, 'n2ext': 51264727}
+ranges {'n_single_45': [21, 46], 'n_t1b_45': [424, 1395], 'n_max_sidon': [48, 63], 't2_isect_pts': [334, 356], 'Px_size': [136, 167], 't1_pairs': [3356, 7502]}
+summary.json {'classes_processed': 54243, 'total_2ext_45': 51264727, 'total_t1b_45': 51264727, 'total_t2_isect_45': 0, 'total_single_45': 1887566, 'single_45_min_max': [21, 46], 'n_max_sidon_min_max': [48, 63], 'hist_min_h': {'9': 54243}, 'classes_min_h_le_8': 0, 'classes_with_record_candidates': 0, 'classes_t2_precheck_true': 0, 'all_hA_7': True}
+ALL QUOTED TOTALS/RANGES CONFIRMED
+rerun ids (64): [2, 3, 49, 141, 277, 418, 769, 933, 1801, 2859, 2994, 4168, 10782, 11092, 11223, 11784, 13878, 14495, 15992, 16676, 16812, 18058, 18917, 19319, 20392, 20577, 20724, 20781, 21721, 21726, 22868, 23942, 25112, 25237, 27121, 30076, 30488, 30615, 30954, 30965, 34432, 34894, 36474, 37566, 37941, 37968, 40131, 42535, 43067, 44675, 45142, 46647, 47183, 48192, 48213, 51612, 52074, 52881, 54034, 54136, 54163, 54240, 54241, 54242]

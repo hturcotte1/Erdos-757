@@ -1,0 +1,13 @@
+A_base-{0,136,596}: u or v in P_x(A): False; flagged: False; deficient (4,5) pairs flagged: 126; core: [4224]
+A_base-{0,136,1056}: u or v in P_x(A): False; flagged: False; deficient (4,5) pairs flagged: 109; core: [2384]
+A_base-{0,272,528}: u or v in P_x(A): True; flagged: True; deficient (4,5) pairs flagged: 33; core: []
+A_base-{0,400,528}: u or v in P_x(A): True; flagged: True; deficient (4,5) pairs flagged: 17; core: []
+A_base-{0,596,1056}: u or v in P_x(A): False; flagged: False; deficient (4,5) pairs flagged: 90; core: [544]
+A_base-{136,0,596}: u or v in P_x(A): True; flagged: True; deficient (4,5) pairs flagged: 126; core: [4224]
+A_base-{136,0,1056}: u or v in P_x(A): True; flagged: True; deficient (4,5) pairs flagged: 109; core: [2384]
+A_base-{136,243,596}: u or v in P_x(A): True; flagged: True; deficient (4,5) pairs flagged: 63; core: []
+A_base-{136,272,528}: u or v in P_x(A): True; flagged: True; deficient (4,5) pairs flagged: 132; core: [4224]
+A_base-{136,272,596}: u or v in P_x(A): True; flagged: True; deficient (4,5) pairs flagged: 84; core: []
+A_base-{136,272,1056}: u or v in P_x(A): True; flagged: True; deficient (4,5) pairs flagged: 130; core: [2112]
+A_base-{136,298,596}: u or v in P_x(A): True; flagged: True; deficient (4,5) pairs flagged: 66; core: []
+controls 12 all (case (i)) detected: True ; case (ii) controls: 3

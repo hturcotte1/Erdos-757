@@ -1,0 +1,3 @@
+ILP h on 1005 sample extensions from 201 classes: {'vertex': {'9': 402}, 'T1a-generic': {'9': 201}, 'T2-xmid-generic': {'9': 201}, 'T2-amin-generic': {'9': 201}}
+non-9 values: []
+control A_base (14 points): ILP h = 8 (published value 8)
