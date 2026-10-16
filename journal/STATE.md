@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: running
-Last updated (UTC): 2026-10-16 00:25
+Last updated (UTC): 2026-10-16 00:10
 Phase/track: endgame (budget ends 2026-10-16 23:06 UTC): verify L005, document everything, merge PR #1 to main
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
@@ -11,7 +11,7 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 - Exact f(n) for n <= 15, n = 17 (START_HERE section 5) [derived-here]
 - L001-L004 ACCEPTED (K13, K41, K43, K45): A_base 2-pt extensions; 54,243 extremal 12-pt classes; saturated counts n=6..11; 2,910 saturated extremal 14-pt classes
 - K30 monotone midpoints, K31 no medial triangle, K44 degree bound [verified-here]; K32-K39 census/abstract facts
-- L005 SUBMITTED (00:15): no 16-point (4,5)-set with h<=9 contains a saturated extremal 14-point set (all 2,910 classes, 4,970,208 (4,5) 2-extensions, all h=10). Referee #1 + brute-force cross-check + scout running (workflow).
+- L005 SUBMITTED (00:07): no 16-point (4,5)-set with h<=9 contains a saturated extremal 14-point set (all 2,910 classes, 4,970,208 (4,5) 2-extensions, all h=10). Referee #1 + brute-force cross-check + scout running (workflow).
 - kb/notes/extension_lemmas.md [derived-here, falsifier HOLDS-ON-DATA]: Lemma E (one-edge extension, h+1 iff universal vertex), Lemma U (HY obstruction to universal vertices), Lemma Δ (16-point record: deg <= m-9; exactly 2 new APs in a 2-pt extension).
 
 ## Running jobs / agents

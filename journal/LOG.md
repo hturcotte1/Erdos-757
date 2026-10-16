@@ -189,6 +189,6 @@ Format for each work block:
 - 8/1811 prefixes held 54,717,717 class-O patterns (HY slack 13 at (13,11,5)); projected ~10^9 patterns; realization step impossible in this run. Partial counts in experiments/20261015-2330-census-n13/partial_summary.json; streams deleted. Q12 opened.
 - CPU now: extension sweep (2 procs, ~1100/2910 done at 23:47) + (14,11) DFS (2 workers, resumable, 79 prefixes done).
 
-## 2026-10-16T00:25Z U result: 2-point extension sweep of all 2,910 saturated extremal 14-point classes: no record (L005 submitted)
+## 2026-10-16T00:10Z U result: 2-point extension sweep of all 2,910 saturated extremal 14-point classes: no record (L005 submitted)
 - extend_all.py (L001 case analysis per class, exact arithmetic): 141,153 (4,5) single extensions, 4,970,208 (4,5) 2-point extensions, 122,220 T2 lines, all h = 10; T2 pre-check false for all classes (as Lemma U1 predicts). A_base class (index 2440) reproduces L001 exactly. 1,844 s wall on 2 processes.
-- evidence: experiments/20261015-2340-ext14-all/README.md, results.json; certificate results/proofs/L005-ext14-all-two-point-extensions.md. Verification workflow (referee #1, brute-force sample, scout) launched 00:20.
+- evidence: experiments/20261015-2340-ext14-all/README.md, results.json; certificate results/proofs/L005-ext14-all-two-point-extensions.md. Verification workflow (referee #1, brute-force sample, scout) launched 00:09.

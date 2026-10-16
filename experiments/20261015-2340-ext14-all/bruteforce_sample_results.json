@@ -1,0 +1,52 @@
+{
+ "span_div": 4,
+ "wall_secs": 30.7,
+ "classes": [
+  {
+   "class": 2440,
+   "set": [
+    0,
+    136,
+    200,
+    243,
+    246,
+    249,
+    272,
+    286,
+    298,
+    323,
+    400,
+    528,
+    596,
+    1056
+   ],
+   "window_doubled": [
+    -528,
+    2640
+   ],
+   "window": [
+    -264.0,
+    1320.0
+   ],
+   "span_div": 4,
+   "n_S8": 143,
+   "valid_singles_all": 2500,
+   "singles_in_Px": 39,
+   "pairs45": 2918899,
+   "cross_ap_pairs": 10549,
+   "explicit_verified": 14836,
+   "fallbacks": 0,
+   "failures": 0,
+   "secs": 30.6,
+   "stored_n_single_45": 50,
+   "stored_n_t1b_45": 1743,
+   "recomputed_extend_all_singles": 50,
+   "singles_inside_window_extend_all": 39,
+   "singles_noninteger_doubled": 0,
+   "singles_outside_window": 11,
+   "singles_match_inside": true
+  }
+ ],
+ "total_pairs45": 2918899,
+ "total_failures": 0
+}

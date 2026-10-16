@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report of the autonomous run (2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC)
 
-Last updated: 2026-10-16 00:25 UTC (elapsed about 49.3 of 72 budget hours). Status of the goal clauses at this
+Last updated: 2026-10-16 00:10 UTC (elapsed about 49.1 of 72 budget hours). Status of the goal clauses at this
 update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted. The published bounds
 $9/17\le c_*\le4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set $A_{\rm base}$) are unchanged.
 
@@ -59,7 +59,7 @@ forbidden core. On realizable data the best inductive constant is exactly $3/7$;
 dominant hard local type in any minimal counterexample is a vertex on three full traces. kb/methods/trackL_inductive_framework.md
 gives the exact free-move conditions for every $(a,b,c,d)$.
 
-**R9. No 16-point record contains a saturated extremal 14-point set (certificate L005, submitted 2026-10-16 00:15 UTC; referee round 1 running).**
+**R9. No 16-point record contains a saturated extremal 14-point set (certificate L005, submitted 2026-10-16 00:07 UTC; referee round 1 running).**
 The refereed L001 case analysis (two-point extensions of $A_{m base}$) was applied to all 2,910 saturated extremal 14-point
 classes of R-L004: 141,153 (4,5) single extensions, 4,970,208 (4,5) two-point extensions, $122{,}220$ generic one-edge lines,
 all with $h=10$; no class has a point lying in every maximum Sidon subset (137 to 150 such subsets per class). Hence every

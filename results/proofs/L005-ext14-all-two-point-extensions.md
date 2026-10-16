@@ -1,7 +1,7 @@
 # No 16-point (4,5)-set with h <= 9 contains a saturated extremal 14-point set
 CLAIM-TYPE: certificate (exact computation with a case analysis, applied to a complete census)
 TYPE: certificate
-STATUS: submitted (2026-10-16 00:15 UTC)
+STATUS: submitted (2026-10-16 00:07 UTC)
 DEPENDS ON: L004 [verified-here, ACCEPTED] (the 2,910 classes of data/census_n14_m12_classes.jsonl.gz are ALL saturated 14-point (4,5)-sets with h = 8 up to affine equivalence); L001 [verified-here, ACCEPTED] (the case analysis T0/T1/T2 for two-point extensions; this certificate applies it to every class); K3-K6 [published] (a (4,5)-set is weak Sidon, its Sidon subsets are its 3-AP-free subsets, midpoints are injective and never extreme). Not load-bearing: Lemma U1 of kb/notes/extension_lemmas.md [derived-here] predicts the outcome of case T2.
 
 ## Statement
