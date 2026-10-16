@@ -1,18 +1,19 @@
 # Erdős Problem #757: final report of the autonomous run (2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC)
 
-Last updated: 2026-10-16 08:45 UTC (elapsed about 57.6 of 72 budget hours). Status of the goal clauses at this
-update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted. The published bounds
+Last updated: 2026-10-16 16:20 UTC (elapsed about 65.2 of 72 budget hours; final revision before the merge to main, counts of the
+still-running (14,11) search refreshed at the final checkpoint). Status of the goal clauses: (A) no new record set; (B) no new
+lower-bound proof; (C) the budget ends at 23:06 UTC with this report in place. The published bounds
 $9/17\le c_*\le4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set $A_{\rm base}$) are unchanged.
 
 ## 1. Verified results (each with a referee-accepted certificate or an exact, re-verifiable computation)
 
 Tags (CLAUDE.md integrity rule 6; they follow kb/known_results.md and results/LEDGER.md):
-- R1 (K41, L002), R2 (K43, L003), R3 (K45, L004), R4 (K13, L001), R6 (K32, K33), R9 (the certificate L005, K46) and R10 (K47) are [verified-here].
+- R1 (K41, L002), R2 (K43, L003), R3 (K45, L004), R4 (K13, L001), R6 (K32, K33), R9 (the certificate L005, K46), R10 (K47), R11 (L006, K48) and R12 (K49, exact counts) are [verified-here]; the trend read into R12 is [heuristic].
 - R7 (K35, K36) is [verified-here] as arithmetic and exact computation. The exact values f(n) it relies on use the published Henning–Yeo bound and are [derived-here] (K24).
 - In R5, K30, K31 and K33 are [verified-here]. The degree bound K44 is [derived-here].
 - In R8, K34 and K38 are [verified-here]; K34 is evidence on data, not a proof of Q8. K39 is [verified-here] for its exact optima on the stated data sets. Reading them as predictions, including the sentence on the dominant hard local type in any minimal counterexample, is [heuristic]. The free-move conditions of kb/methods/trackL_inductive_framework.md are [derived-here].
-- In R9, the lemmas E, U, Δ of kb/notes/extension_lemmas.md are [derived-here] (falsifier HOLDS-ON-DATA on about 11,000 sets).
-- In sections 2 and 3, these are [heuristic]: the hypotheses H1 and H2, "the evidence favours H2", "everything tried is consistent with a wall", "no certificate is reachable", and the interpretation of unfinished or failed searches (D15 to D22). The exact counts quoted there keep their own tags:
+- In R9, the lemmas E, U, Δ and Δ′ of kb/notes/extension_lemmas.md are [derived-here] (falsifier HOLDS-ON-DATA on about 11,000 sets, and Δ′ on all stored censuses).
+- In sections 2 and 3, these are [heuristic]: the hypotheses H1 and H2, "the evidence favours H2", "everything tried is consistent with a wall", "no certificate is reachable", and the interpretation of unfinished or failed searches (D15 to D24). The exact counts quoted there keep their own tags:
   - the drop from 54,243 to 2,910 classes, and the R9 bullet, are [verified-here];
   - the slack statistics on the 1,333,217-row dataset of experiments/20261014-0020-lp-fit are [verified-here] as counts on that dataset, while its fitted frontier is [heuristic];
   - the Gyárfás–Lehel structure lemmas (kb/notes/gl_tight_structure.md) are [derived-here].
@@ -96,7 +97,7 @@ Evidence: experiments/20261016-0330-ext12-all/ (README, summary.json), data/ext1
 
 **R12. The two-point-extension structure fades towards the wall (K49).** The fraction of extremal classes that contain an extremal subset two points smaller is 100% at $n=6,7,8,9,11$, 99.7% at $n=10$ (6,625 of 6,644), 49.5% at $n=12$ (26,852 of 54,243) and 0% at $n=14$ (K47, K48); no 16-point record can contain a saturated extremal 14-set (K46). Exact counts on the stored censuses; the trend itself is three even-$n$ data points [heuristic]. Evidence: experiments/20261016-0840-extremal-subsets/, tests/test_extremal_subsets.py.
 
-## 2. The open case $n=16$ (negative results, D15, D16, L005)
+## 2. The open case $n=16$ (negative results, D15, D16, D24, L005, L006)
 
 Beating $4/7$ first becomes possible at $n=16$ ($h=9$, $m\in\{13,14\}$). Everything tried is consistent with a wall there:
 - the abstract class has no $\alpha\le9$ member that any method could find at $n=16$ (CP-SAT, glucose, cadical, annealing over
@@ -123,29 +124,35 @@ of near-tight configurations (experiments/20261014-0020-lp-fit: over 1,333,217 r
 
 - Exhaustive DFS at $(14,11,\alpha\le8)$ (experiments/20261014-1005-census-dfs/n14m11dfs; resumable; relaunch with
   `python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 10 --tag n14_m11`,
-  3,437 depth-3 prefixes; 0 patterns in every finished prefix (all `*.jsonl.gz` empty). Count of `.done` markers: 130 when stopped at
-  2026-10-16 01:18 UTC, 139 at 02:03 UTC, 150 at the relaunch of 02:26 UTC after the seventh container restart (journal/LOG.md,
-  2026-10-16T02:26Z), 161 at 02:50 UTC; running on 4 workers. Measured rate about 22 to 36 prefixes/h (journal/LOG.md 2026-10-16T02:02Z;
-  `.done` timestamps), so the remaining prefixes need roughly 90 to 150 hours of wall time and it cannot finish before the budget
-  ends at 2026-10-16 23:06 UTC; refresh these counts at the final checkpoint). Completion decides whether 2,910 is the total number of extremal 14-point
-  classes and, with R9, whether any 16-point record can contain an extremal 14-point subset at all.
+  3,437 depth-3 prefixes; 0 patterns in every finished prefix). Progress: 130 prefixes done at 2026-10-16 01:18 UTC, 431 at 08:49 UTC
+  (then paused 3.5 h for the solver runs of D24), 490 at 16:20 UTC on 4 workers; measured rate 22 to 36 prefixes/h, so the remaining
+  prefixes need roughly 90 to 130 hours of wall time and the case stays open (Q11; final count at the end of the run in
+  journal/LOG.md and section 4 of this report). Completion decides whether 2,910 is the total number of extremal 14-point classes and,
+  with R9 and R11, whether any 16-point record can contain an extremal 14-point subset at all.
 - The saturated census at $n=13$ was started and stopped as infeasible (D22, Q12): 8 of 1,811 prefixes already hold
   54,717,717 abstract patterns (Henning–Yeo slack 13 at $(13,11,5)$); a realizability-aware enumerator is needed.
-- Recommended next steps: (i) a dedicated exact engine for $n=16$ (SAT with symbolic symmetry breaking and the
-  deletion-lemma case structure of Lemma Δ, or a distributed DFS of about $10^{14}$ nodes); (ii) if $f(16)=10$ is confirmed, the
+- Recommended next steps: (i) a dedicated exact engine for $n=16$: cube-and-conquer on the first midpoint edges with the deletion
+  constraints of D24 (CP-SAT and CaDiCaL both time out on the monolithic instance), or a distributed DFS of about $10^{14}$ nodes; (ii) if $f(16)=10$ is confirmed, the
   abstract wall is combinatorial and the Q8-type induction with 5/6-edge cores is the natural proof program;
   (iii) obtain Henning–Yeo 2021 for its equality cases (Lemma U shows how the equality structure constrains universal
   vertices); (iv) submit the census sequence to the OEIS; (v) four-point extensions of the 2,910 classes (an 18-point set
-  with $h=10$ would be a record) and two-point extensions of any $(14,11)$ classes found.
+  with $h=10$ would be a record; by the midpoint accounting at least one new point must be a new extreme) and two-point extensions
+  of any $(14,11)$ classes found; (vi) a realizability-aware enumerator for the $n=13$ census (D22).
 - Repository state: all work of this run is on branch claude/intelligent-pasteur-22z06m (remote origin). PR #1 (to main, opened 2026-10-15 23:07 UTC) was still open and unmerged at the time of writing; it is to be merged at about 21:00 UTC on 2026-10-16, after the final checkpoint and before the budget ends at 2026-10-16 23:06 UTC (update this line after the merge).
 
-## 5. Infrastructure built (e757/, all tested)
+## 5. Infrastructure built (e757/, all tested; 142 tests green plus the regression tests of R9 to R12)
 Exact realizability oracle with Farkas certificates (realizability.py); CP-SAT model of the ordered-midpoint class
 (cpsat_model.py, with monotone/medial/core constraints and a realizability-CEGAR); independent python-sat encoding
 (sat_indep.py, with Gyárfás–Lehel colouring constraints); exact C DFS with resumable prefix split (c/ordered_dfs.c,
-ordered_dfs_split.py); midpoint-map annealer (anneal.py). The frozen judge (judge/judge.py) was used for every spot check.
+ordered_dfs_split.py); midpoint-map annealer (anneal.py). Experiment-level tools: the exact two-point-extension sweepers
+(experiments/20261015-2340-ext14-all/extend_all.py, experiments/20261016-0330-ext12-all/extend12_all.py, with plain-integer
+brute-force cross-checkers), the structural census (experiments/20261016-0150-structure-2910/stats.py,
+experiments/20261016-0840-extremal-subsets/stats.py) and the deletion-constrained $n=16$ models
+(experiments/20261016-0850-n16-deletion-cpsat/model16.py, experiments/20261016-1240-n16-cnf-witness/build_cnf.py).
+The frozen judge (judge/judge.py) was used for every spot check.
 
-## 6. Dead ends added (kb/dead_ends.md D15 to D22)
+## 6. Dead ends added (kb/dead_ends.md D15 to D24)
 Direct SAT/CP-SAT at $n=16$ (with or without structure, with or without census invariants); annealing at $n=16$ and $18$;
 Q8 for the abstract class (D17); witness sweeps $n=18..25$ (D18); the layered $15\to16$ search (D19); D20, D21 (solver variants);
-the pattern-first saturated census at $n=13$ (D22).
+the pattern-first saturated census at $n=13$ (D22); two-point extensions of smaller extremal sets as a route to records (D23: R4, R9,
+R10, R11); CP-SAT and CaDiCaL at $n=16$ with the Henning–Yeo deletion constraints (D24).
