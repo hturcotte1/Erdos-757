@@ -241,3 +241,5 @@ Format for each work block:
 ## 2026-10-16T08:49Z U last n=16 attempt launched: CP-SAT with Henning-Yeo deletion constraints (Lemma Δ/Δ', L005)
 - (14,11) DFS stopped at 431/3437 prefixes (0 patterns) to give CP-SAT the cores. Model: class O' at n=16, m in {13,14}, alpha=9 witness, for every vertex an independent 9-set avoiding it (f(15)=9), for every pair either an independent 9-set avoiding both or m(C-p-q)=11 exactly (HY + K46). Soundness test at n=14 first (A_base and 20 census classes must satisfy the analogous constraints). 3.5 h per run; CEGAR realization of any solution; judge on any realizable set.
 - experiments/20261016-0850-n16-deletion-cpsat/
+
+## 2026-10-16T10:46Z infra checkpoint: n=16 deletion-constrained CP-SAT runs (m=13, m=14) started 09:03, 3.5 h limit each (end ~12:35); soundness test at n=14 passed per the worker's interim files (result_n14test.json); session up without restart since 02:20

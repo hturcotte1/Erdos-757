@@ -156,7 +156,9 @@ def solve(n, T, m_min, m_max, time_limit, workers, tag, pair_mode, seed=0, log_e
         s.parameters.random_seed = seed + stats["solves"]
         s.parameters.log_search_progress = True
         s.parameters.log_to_stdout = False
-        s.log_callback = log
+        import re as _re
+        keep = _re.compile(r"^(#\d|#Bound|#Done|#Model|Starting|Search stats|CpSolverResponse|status|best_bound|objective|walltime|#Boolean|\s*\d+ (full|first))")
+        s.log_callback = lambda msg: (log(msg) if keep.match(msg) else None)
         st = s.Solve(mod.model)
         stats["solves"] += 1
         res["last_cpsat_status"] = s.StatusName(st)

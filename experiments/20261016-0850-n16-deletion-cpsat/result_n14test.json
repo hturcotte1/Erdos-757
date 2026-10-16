@@ -1,0 +1,24 @@
+{
+ "n": 14,
+ "T": 8,
+ "m_min": 12,
+ "m_max": 12,
+ "pair_mode": "ge9",
+ "workers": 3,
+ "tag": "n14test",
+ "time_limit": 600.0,
+ "model_built_s": 5.4,
+ "last_cpsat_status": "OPTIMAL",
+ "status": "UNKNOWN",
+ "wall_s": 599.1,
+ "stats": {
+  "alpha_cuts": 0,
+  "f7_cuts": 42,
+  "solves": 39,
+  "rounds": 4,
+  "learnt": 20020,
+  "fail_kinds": {
+   "order": 4
+  }
+ }
+}
