@@ -227,6 +227,6 @@ Format for each work block:
 
 ## 2026-10-16T07:38Z U L006 referee round 1: NEEDS-WORK (text only; math and computation confirmed: exact deficient locus on 600 classes, 314 classes reproduced byte for byte); scout CLEAR. Fixes applied; referees #2 and #3 launched.
 
-## 2026-10-16T08:40Z result L006 ACCEPTED x2 (K48): no 14-point (4,5)-set with h<=8 contains an extremal 12-point set
+## 2026-10-16T08:33Z result L006 ACCEPTED x2 (K48): no 14-point (4,5)-set with h<=8 contains an extremal 12-point set
 - referees #2 and #3 (fresh, parallel): ACCEPT. #2: unmodified code reproduced on 437 further classes; Route V line-arrangement check reproduces the T1b pair sets exactly on 201 classes; CP-SAT 1,005 extensions. #3: full-census Sidon-definition confirmation (0 deficient extensions in all 54,243 classes), exact deficient locus on 429 classes. Editorial remarks applied (K7/K8 in DEPENDS ON, intersection-count scope, "where the computation is load-bearing" remark, run-time note). K48, LEDGER, START_HERE, FINAL_REPORT R11, Q11, STATE updated.
 - evidence: results/reviews/L006-ext12-all-two-point-extensions__referee__20261016T081040Z.md, __referee__20261016T083111Z.md
