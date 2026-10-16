@@ -1,0 +1,206 @@
+{
+ "m13": {
+  "n": 16,
+  "T": 9,
+  "m": 13,
+  "tag": "m13",
+  "solver": "cadical195",
+  "vars": 134077,
+  "clauses": 840722,
+  "status": "TIMEOUT",
+  "wall_s": 12600,
+  "note": "killed by timeout 12600 (cadical running, no answer)"
+ },
+ "m14": {
+  "n": 16,
+  "T": 9,
+  "m": 14,
+  "tag": "m14",
+  "solver": "cadical195",
+  "vars": 182785,
+  "clauses": 940476,
+  "status": "TIMEOUT",
+  "wall_s": 12600,
+  "note": "killed by timeout 12600 (cadical running, no answer)"
+ },
+ "encoding_test": {
+  "compared": 145,
+  "all_agree": true,
+  "feasible": 65,
+  "infeasible": 80,
+  "patterns": 12,
+  "breakdown": [
+   [
+    8,
+    "ge9",
+    null,
+    true,
+    1
+   ],
+   [
+    9,
+    "eq11",
+    null,
+    true,
+    6
+   ],
+   [
+    9,
+    "ge",
+    9,
+    true,
+    6
+   ],
+   [
+    9,
+    "ge",
+    10,
+    true,
+    6
+   ],
+   [
+    9,
+    "eq",
+    11,
+    true,
+    6
+   ],
+   [
+    9,
+    "eq",
+    12,
+    true,
+    6
+   ],
+   [
+    9,
+    "none",
+    null,
+    true,
+    6
+   ],
+   [
+    10,
+    "eq11",
+    null,
+    false,
+    11
+   ],
+   [
+    10,
+    "ge",
+    9,
+    true,
+    11
+   ],
+   [
+    10,
+    "ge",
+    10,
+    false,
+    8
+   ],
+   [
+    10,
+    "eq",
+    11,
+    false,
+    11
+   ],
+   [
+    10,
+    "eq",
+    12,
+    false,
+    12
+   ],
+   [
+    10,
+    "none",
+    null,
+    true,
+    12
+   ],
+   [
+    9,
+    "eq11",
+    null,
+    false,
+    6
+   ],
+   [
+    9,
+    "ge",
+    9,
+    false,
+    6
+   ],
+   [
+    9,
+    "ge",
+    10,
+    false,
+    6
+   ],
+   [
+    9,
+    "eq",
+    11,
+    false,
+    6
+   ],
+   [
+    9,
+    "eq",
+    12,
+    false,
+    6
+   ],
+   [
+    9,
+    "none",
+    null,
+    false,
+    6
+   ],
+   [
+    10,
+    "eq11",
+    null,
+    true,
+    1
+   ],
+   [
+    10,
+    "ge",
+    10,
+    true,
+    4
+   ],
+   [
+    10,
+    "eq",
+    11,
+    true,
+    1
+   ],
+   [
+    10,
+    "ge",
+    9,
+    false,
+    1
+   ]
+  ]
+ },
+ "fullcheck_n14": {
+  "abase": false,
+  "reflected": true,
+  "incremental": [
+   true,
+   true
+  ],
+  "vars": 64459,
+  "clauses": 344582
+ }
+}

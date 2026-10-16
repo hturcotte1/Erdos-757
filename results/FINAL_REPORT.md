@@ -105,7 +105,7 @@ Beating $4/7$ first becomes possible at $n=16$ ($h=9$, $m\in\{13,14\}$). Everyth
 - no witness at $n=18,20,22$ (3600 s each) and $n=23,25$ (1200 s per $m$ value) in realizability-CEGAR searches, all UNKNOWN; at $n=15$ no class-O' pattern with $\alpha\le9$ and $m'\in\{9,10\}$ was found in 2 h (no UNSAT proof either), and the census invariants (max degree $\le4$, balanced colour classes, no reflection symmetry hold for all 395,039 filtered $(12,10)$ patterns and for the 157 partial $(14,12)$ realizable patterns) do not make $n=16$ tractable;
 - the number of saturated extremal classes drops from 54,243 ($n=12$) to 2,910 ($n=14$);
 - none of the 2,910 saturated extremal 14-point sets extends by two points to a 16-point set with $h\le9$ (R9, L005): a 16-point record would have to be built on non-saturated 14-point extremal subsets (if any exist, Q11) or contain no extremal 14-point subset at all.
-No certificate was reachable in this run: the n=16 sub-instances tried exceed the solver limits (including a final CP-SAT run with the Henning–Yeo deletion constraints of Lemma Δ, UNKNOWN after 3.5 h per case, D24), the exact DFS needs about $10^{14}$ nodes,
+No certificate was reachable in this run: the n=16 sub-instances tried exceed the solver limits (including final CP-SAT and CaDiCaL runs with the Henning–Yeo deletion constraints of Lemma Δ, UNKNOWN or TIMEOUT after 3.5 h per case and solver, D24), the exact DFS needs about $10^{14}$ nodes,
 and SAT UNSAT times grow from 2 s ($n=12$) to over 250 s ($n=13$). Two hypotheses remain: (H1) Henning–Yeo stays tight at
 even $n$ up to 22 (records at 16..22, $c_*\le6/11$); (H2) a wall at 16 ($f(16)=10$, consistent with $c_*=4/7$ and Q8). The
 evidence favours H2.
