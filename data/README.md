@@ -32,7 +32,7 @@
 
 ## Census data that lives under experiments/ (not duplicated here)
 - n = 14 two-point extensions (K46, L005): `experiments/20261015-2340-ext14-all/results.json` (keys `summary` and `classes`, one row per class of
-  `census_n14_m12_classes.jsonl.gz` in the same order; 141,153 (4,5) single-point and 4,970,208 (4,5) two-point extensions in total, minimum h = 10 in all
+  `census_n14_m12_classes.jsonl.gz` in the same order; 141,153 (4,5) single-point extensions and 4,970,208 (4,5) two-point extensions with both new points in new 3-APs (case T1b) in total, minimum h = 10 in all cases including the one-edge lines (T2)
   2,910 classes; per-class rows also in `results.jsonl`). Independent brute-force cross-check on 41 classes: `bruteforce_sample_results.json`
   (all pairs on a bounded half-integer grid window; 105,720,197 (4,5) pairs, 0 failures). Tracked. [verified-here]
 - n = 14 structure census (K47): `experiments/20261016-0150-structure-2910/results.json` (keys `summary` and `rows`; 2,910 rows in census order with degree
