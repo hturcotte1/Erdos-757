@@ -73,4 +73,4 @@ any two degree-2 vertices, consistent with the 49.5% of classes that do contain 
 m = 14 and <= 2 for m = 13, so the deleted pair has small degrees (for m = 14: two degree-1 vertices, a degree-1 and a degree-2 vertex,
 or two adjacent degree-2 vertices, or a degree-1 with an adjacent degree-3 vertex); combined with K46
 (no saturated extremal 14-subset at all) this says a 16-point record contains at most (14,11)-type extremal subsets, through
-such low-degree pairs. [derived-here; arithmetic re-checked 08:44 UTC; falsifier run requested]
+such low-degree pairs. [derived-here; falsifier HOLDS-ON-DATA (experiments/falsify/deletion-lemma/): 0 violations on all 54,243 twelve-point classes (deleted pairs leaving h = 6 have d = deg p + deg q - eps in {2, 3}, bound 4), the 6,644 saturated 10-point and 66 saturated 8-point classes (bound attained at n = 8), and the 2,910 fourteen-point classes (18,330 adjacent degree-2 pairs, all with d = 3 = bound, none leaving h = 7); the four numeric bounds re-derived.]
