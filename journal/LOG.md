@@ -262,5 +262,5 @@ Format for each work block:
 
 ## 2026-10-16T18:20Z infra FINAL CHECKPOINT: STATE, FINAL_REPORT final; (14,11) DFS at 706/3437 prefixes (0 patterns); merging PR #1 into main now
 
-## 2026-10-16T18:22Z infra PR #1 MERGED into main (merge commit d08efc4dcb2b0c9f24e90d97127381cef244d213); branch head 17fdc91 is contained in main
+## 2026-10-16T18:20Z infra PR #1 MERGED into main (merge commit d08efc4dcb2b0c9f24e90d97127381cef244d213); branch head 17fdc91 is contained in main
 - any later commit on the branch (log lines, final (14,11) count) goes to main through a small follow-up PR before the budget ends, if the session is alive.
