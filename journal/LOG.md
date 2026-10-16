@@ -212,3 +212,7 @@ Format for each work block:
 - DFS rate on 4 workers: about 36 prefixes/h (130 -> 139 in 15 min), so the (14,11) case cannot complete in the remaining 21 h; it keeps the otherwise idle cores busy and stays resumable.
 
 ## 2026-10-16T02:26Z infra seventh container restart (about 02:20); (14,11) DFS relaunched at 150/3437; audit workflow resumed
+
+## 2026-10-16T03:30Z kb documentation audit 2 applied (69 verified fixes, 30 files) + post-audit corrections; Track U sweep 12 -> 14 launched
+- audit (4 auditors, 95 findings each verified by a fresh agent, 1 applier): stale Q11/Q12 rows, 395,196 vs 395,039 mislabel, 14% vs 13.7%/6.3% realizable fractions, K40/K42 superseded marks, D15/Q1 overstatements softened, R9 LaTeX corruption fixed, index rows added, results/proofs/README index. My corrections after a safety review: tau_max(12,9) <= 4 (not =4), LEDGER kept verified-only (lemma row removed), "4,970,208" qualified as T1b pairs.
+- new sweep experiments/20261016-0330-ext12-all: L001/L005 case analysis on all 54,243 extremal 12-point classes with target h <= 8; any hit is a non-saturated extremal 14-point set (Q11). 3 processes at nice 5; DFS (14,11) continues at nice 10 (238/3437 prefixes at 03:27).
