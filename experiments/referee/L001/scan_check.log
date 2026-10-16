@@ -1,0 +1,8 @@
+A: |P_scan| 223 |P_ok_scan| 50 equal to formula sets: True True range of P -1056 2112 t 0.8
+B: y-range -1912 3824 grid size 22947 singles (4,5): 22196 t 1.9
+B: (4,5) pairs with x in P_ok and y in an AP of B: 1743 ; equal to my T1b set: True ; equal to stored: True ; grid y isolated (T1a-type, (4,5)): 1097115 t 14.7
+C: valid singles 1781
+C: (4,5) pairs 1455177 ; both-in-AP non-line-generic 589 ; line-generic 6287 t 30.5
+C: non-line-generic pairs missing from stored: 0
+C: direct h over all 6876 both-in-AP (4,5) grid pairs: {10: 6876}
+C: 400 sampled numpy (4,5) decisions confirmed by full check; done t 53.4

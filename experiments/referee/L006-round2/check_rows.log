@@ -1,0 +1,11 @@
+census entries 54243 rows 54243
+set mismatches 0
+per-row invariant failures {}
+total n_single_45 1887566 range (21, 46)
+total n_t1b_45 51264727 range (424, 1395)
+total t2_isect_pts 19247288 range (334, 356)
+total t2_isect_45 0
+n_max_sidon range (48, 63) Px_size range (136, 167) t1_pairs total 324091360
+T2 line hypergraphs 1952748 = 54243*36 -> 1952748
+evaluated values (hist sum) 55105041
+summary.json: {'classes_processed': 54243, 'total_2ext_45': 51264727, 'total_t1b_45': 51264727, 'total_t2_isect_45': 0, 'total_single_45': 1887566, 'single_45_min_max': [21, 46], 'n_max_sidon_min_max': [48, 63], 'hist_min_h': {'9': 54243}, 'classes_min_h_le_8': 0, 'classes_with_record_candidates': 0, 'classes_t2_precheck_true': 0, 'all_hA_7': True}

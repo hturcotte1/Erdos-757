@@ -1,0 +1,5 @@
+# Frozen judge, read-only: python3 judge/judge.py experiments/referee/L002-round3/spot/*.json  (2026-10-14 ~14:50 UTC)
+# r3L002s00..s14 = 15 random census classes; r3L002s15..s19 = 5 random independent-source h=7 sets (check C)
+JUDGE: PASS NO-IMPROVEMENT r3L002s00 n=12 h=7 ratio=7/12 (0.583333) vs 4/7=0.571429
+  ... identical lines for r3L002s01 .. r3L002s19 ...
+20/20 PASS NO-IMPROVEMENT, h=7; exit=0

@@ -1,0 +1,22 @@
+{
+ "classes_processed": 54243,
+ "total_2ext_45": 51264727,
+ "total_t1b_45": 51264727,
+ "total_t2_isect_45": 0,
+ "total_single_45": 1887566,
+ "single_45_min_max": [
+  21,
+  46
+ ],
+ "n_max_sidon_min_max": [
+  48,
+  63
+ ],
+ "hist_min_h": {
+  "9": 54243
+ },
+ "classes_min_h_le_8": 0,
+ "classes_with_record_candidates": 0,
+ "classes_t2_precheck_true": 0,
+ "all_hA_7": true
+}

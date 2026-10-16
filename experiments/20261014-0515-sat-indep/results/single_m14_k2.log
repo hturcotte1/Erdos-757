@@ -1,0 +1,1 @@
+{"n": 16, "T": 9, "m": 14, "nvars": 15848, "nclauses": 530609, "iterations": 1, "f7_nogoods": 0, "core_nogoods": 0, "solver": "glucose4", "build_time": 0.2908344268798828, "status": "TIMEOUT", "time": 600.0806956291199, "n_solutions": 0, "wall": 603.0, "solutions": []}

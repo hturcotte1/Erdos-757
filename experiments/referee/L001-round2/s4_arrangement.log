@@ -1,0 +1,23 @@
+formal relations constant & true (pure-A relations, i.e. A's own coincidences): 12
+lines: 1910 | X-only: 815 | Y-only: 815 | two-variable: 280
+two-variable coefficient patterns: [(1, -2), (1, -1), (1, 1), (2, -1)]
+CX == CY: True | |CX| = 815
+valid special single values: |validX| = 50 | validX == validY: True
+validX == P_ok of step 2 (scaled back): True
+valid lines: 379
+R0/R1 done t=11.0
+vertices of the valid-line arrangement: 46460
+admissible vertices (coordinates distinct, not in A, not on an invalid single line): 30904
+(4,5) vertices (ordered): 3486  t=36.0
+(4,5) vertices (unordered): 1743
+h distribution over (4,5) vertices: {10: 1743}
+(4,5) vertex set == step-2 T1b (4,5) set: True | sizes 1743 1743
+   ('R0-generic-plane', 'h=10') 5
+   ('R1-X-only', 'h=10') 100
+   ('R1-Y-only', 'h=10') 100
+   ('R1-two(1, -1)', 'not45') 316
+   ('R1-two(1, -2)', 'h=10') 28
+   ('R1-two(1, 1)', 'h=10') 4
+   ('R1-two(1, 1)', 'not45') 182
+   ('R1-two(2, -1)', 'h=10') 28
+time 65.0s

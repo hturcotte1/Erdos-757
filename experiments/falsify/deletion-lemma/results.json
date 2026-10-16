@@ -1,0 +1,209 @@
+[
+ {
+  "label": "T1 n=12 all 54243 classes",
+  "n": 12,
+  "sets": 54243,
+  "sets_with_extremal_pair": 26852,
+  "dist_ext_pairs_d": {
+   "2": 11944,
+   "3": 31364
+  },
+  "dist_other_pairs_(d,hsub)": {
+   "(3, 7)": 269509,
+   "(4, 7)": 1284281,
+   "(5, 7)": 1698008,
+   "(6, 7)": 275295,
+   "(7, 7)": 9637
+  },
+  "h_vs_hsub": {
+   "(7, 6)": 43308,
+   "(7, 7)": 3536730
+  },
+  "bounds_seen_(m,h,bound)": {
+   "(10, 7, '4')": 54243
+  },
+  "violations": 0,
+  "first_violation": []
+ },
+ {
+  "label": "T2 n=10 m=8 (6644 sets)",
+  "n": 10,
+  "sets": 6644,
+  "sets_with_extremal_pair": 6625,
+  "dist_ext_pairs_d": {
+   "2": 1494,
+   "3": 22536
+  },
+  "dist_other_pairs_(d,hsub)": {
+   "(3, 6)": 21219,
+   "(4, 6)": 135923,
+   "(5, 6)": 109145,
+   "(6, 6)": 8663
+  },
+  "h_vs_hsub": {
+   "(6, 5)": 24030,
+   "(6, 6)": 274950
+  },
+  "bounds_seen_(m,h,bound)": {
+   "(8, 6, '13/3')": 6644
+  },
+  "violations": 0,
+  "first_violation": []
+ },
+ {
+  "label": "T2 n=8 m=6 (66 sets)",
+  "n": 8,
+  "sets": 66,
+  "sets_with_extremal_pair": 66,
+  "dist_ext_pairs_d": {
+   "2": 29,
+   "3": 439,
+   "4": 166
+  },
+  "dist_other_pairs_(d,hsub)": {
+   "(4, 5)": 981,
+   "(5, 5)": 233
+  },
+  "h_vs_hsub": {
+   "(5, 4)": 634,
+   "(5, 5)": 1214
+  },
+  "bounds_seen_(m,h,bound)": {
+   "(6, 5, '14/3')": 66
+  },
+  "violations": 0,
+  "first_violation": []
+ },
+ {
+  "label": "T2 n=10 m=7 (7105 sets)",
+  "n": 10,
+  "sets": 7105,
+  "sets_with_extremal_pair": 6056,
+  "dist_ext_pairs_d": {
+   "2": 12112
+  },
+  "dist_other_pairs_(d,hsub)": {
+   "(3, 6)": 98843,
+   "(4, 6)": 170963,
+   "(5, 6)": 37807
+  },
+  "h_vs_hsub": {
+   "(6, 5)": 12112,
+   "(6, 6)": 307613
+  },
+  "bounds_seen_(m,h,bound)": {
+   "(7, 6, '10/3')": 7105
+  },
+  "violations": 0,
+  "first_violation": []
+ },
+ {
+  "label": "T2 n=8 m=5 (698 sets)",
+  "n": 8,
+  "sets": 698,
+  "sets_with_extremal_pair": 698,
+  "dist_ext_pairs_d": {
+   "2": 2258,
+   "3": 1663
+  },
+  "dist_other_pairs_(d,hsub)": {
+   "(3, 5)": 9177,
+   "(4, 5)": 6446
+  },
+  "h_vs_hsub": {
+   "(5, 4)": 3921,
+   "(5, 5)": 15623
+  },
+  "bounds_seen_(m,h,bound)": {
+   "(5, 5, '11/3')": 698
+  },
+  "violations": 0,
+  "first_violation": []
+ },
+ {
+  "label": "T2 n=9 m=7 (1262 sets)",
+  "n": 9,
+  "sets": 1262,
+  "sets_with_extremal_pair": 1262,
+  "dist_ext_pairs_d": {
+   "2": 294,
+   "3": 8639,
+   "4": 22777,
+   "5": 2579
+  },
+  "dist_other_pairs_(d,hsub)": {
+   "(4, 6)": 1577,
+   "(5, 6)": 8698,
+   "(6, 6)": 868
+  },
+  "h_vs_hsub": {
+   "(6, 5)": 34289,
+   "(6, 6)": 11143
+  },
+  "bounds_seen_(m,h,bound)": {
+   "(7, 6, '22/3')": 1262
+  },
+  "violations": 0,
+  "first_violation": []
+ },
+ {
+  "label": "T2 n=9 m=6 (20938 sets)",
+  "n": 9,
+  "sets": 20938,
+  "sets_with_extremal_pair": 20938,
+  "dist_ext_pairs_d": {
+   "1": 594,
+   "2": 58792,
+   "3": 300823,
+   "4": 71495
+  },
+  "dist_other_pairs_(d,hsub)": {
+   "(3, 6)": 19193,
+   "(4, 6)": 240373,
+   "(5, 6)": 62498
+  },
+  "h_vs_hsub": {
+   "(6, 5)": 431704,
+   "(6, 6)": 322064
+  },
+  "bounds_seen_(m,h,bound)": {
+   "(6, 6, '19/3')": 20938
+  },
+  "violations": 0,
+  "first_violation": []
+ },
+ {
+  "label": "T3 n=14 2910 classes",
+  "n": 14,
+  "sets": 2910,
+  "sets_with_extremal_pair": 0,
+  "dist_ext_pairs_d": {},
+  "dist_other_pairs_(d,hsub)": {
+   "(3, 8)": 18330,
+   "(4, 8)": 78481,
+   "(5, 8)": 124290,
+   "(6, 8)": 39924,
+   "(7, 8)": 3068,
+   "(8, 8)": 717
+  },
+  "h_vs_hsub": {
+   "(8, 8)": 264810
+  },
+  "bounds_seen_(m,h,bound)": {
+   "(12, 8, '11/3')": 2910
+  },
+  "violations": 0,
+  "first_violation": [],
+  "adjacent_deg2_pairs_d": {
+   "3": 18330
+  },
+  "all_pairs_d": {
+   "3": 18330,
+   "4": 78481,
+   "5": 124290,
+   "6": 39924,
+   "7": 3068,
+   "8": 717
+  }
+ }
+]

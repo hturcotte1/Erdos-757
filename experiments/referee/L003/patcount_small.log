@@ -1,0 +1,5 @@
+PATCOUNT n=9 T=6 m=5 leaves=141322 alpha<=T: f7free=74212 (sym 90, up to refl 37151) f7=360
+PATCOUNT n=9 T=6 m=6 leaves=78045 alpha<=T: f7free=69535 (sym 7, up to refl 34771) f7=2090
+PATCOUNT n=9 T=6 m=7 leaves=10264 alpha<=T: f7free=8570 (sym 22, up to refl 4296) f7=1656
+PATCOUNT n=10 T=6 m=7 leaves=1971480 alpha<=T: f7free=36210 (sym 0, up to refl 18105) f7=2370
+PATCOUNT n=10 T=6 m=8 leaves=338595 alpha<=T: f7free=79488 (sym 42, up to refl 39765) f7=11946

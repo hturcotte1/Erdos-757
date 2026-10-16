@@ -5,8 +5,11 @@ Notation: $n$ vertices, $m$ edges, $\tau$ = transversal number, $\alpha=n-\tau$ 
 
 ## 1. *Affine Planes and Transversals in 3-Uniform Linear Hypergraphs*, Graphs Combin. 37 (2021) 867–890 [published]
 
-Only the abstract was available (paywall). Get the PDF for the equality analysis: Q6 in
-kb/open_questions.md depends on it.
+Only the abstract is available (paywall; full-text hunt on 2026-10-13 failed: Springer, UJ and SDU portals,
+Unpaywall, OpenAlex, zbMATH, arXiv). See the dedicated note `henning_yeo_2021_affine.md` for the
+abstract, what the reference list shows, independently computed facts ($F_7$ is exactly the minimal
+violator of $17\tau\le5n+3m$; $L(13)$ has slack 2) and what is missing. Q6 in kb/open_questions.md
+still depends on the PDF.
 
 - **Context:**
   - $4\tau\le n+m$ (Tuza 1990; Chvátal–McDiarmid 1992);

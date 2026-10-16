@@ -1,0 +1,6 @@
+n=7: raw 2364 = sum of multiplicities 2364; classes up to reflection 1752
+RAW   counts: {'R(empty)': 1, 'R': 1311, 'O': 1006, 'D': 24, 'E': 22}  (R total incl. empty = 1312)
+DEDUP counts: {'R(empty)': 1, 'R': 864, 'O': 855, 'D': 14, 'E': 18}   2s
+n=8: raw 46281 = sum of multiplicities 46281; classes up to reflection 39208
+RAW   counts: {'R(empty)': 1, 'R': 16567, 'O': 28697, 'D': 518, 'E': 498}  (R total incl. empty = 16568)
+DEDUP counts: {'R(empty)': 1, 'R': 12292, 'O': 26095, 'D': 382, 'E': 438}   52s

@@ -1,0 +1,42 @@
+control c1: A_base - {0,246} | (u,v) detected: True | h(A_base) = 8 < h(A')+2 = 10
+    reported deficient point ('-323', '0') (4,5): True h = 9 deficient: True
+    reported deficient point ('-249', '0') (4,5): True h = 9 deficient: True
+    reported deficient point ('-243', '0') (4,5): True h = 9 deficient: True
+    reported deficient point ('-196', '246') (4,5): True h = 9 deficient: True
+    reported deficient point ('-144', '77') (4,5): True h = 9 deficient: True
+control c1: A_base - {243,249} | (u,v) detected: True | h(A_base) = 8 < h(A')+2 = 10
+    reported deficient point ('-932', '-323') (4,5): True h = 9 deficient: True
+    reported deficient point ('-846', '-323') (4,5): True h = 9 deficient: True
+    reported deficient point ('-778', '-246') (4,5): True h = 9 deficient: True
+    reported deficient point ('-772', '-286') (4,5): True h = 9 deficient: True
+    reported deficient point ('-692', '-246') (4,5): True h = 9 deficient: True
+control c1: A_base - {528,1056} | (u,v) detected: True | h(A_base) = 8 < h(A')+2 = 10
+    reported deficient point ('-192', '992') (4,5): True h = 9 deficient: True
+    reported deficient point ('-149', '949') (4,5): True h = 9 deficient: True
+    reported deficient point ('-143', '943') (4,5): True h = 9 deficient: True
+    reported deficient point ('-69', '869') (4,5): True h = 9 deficient: True
+    reported deficient point ('168', '379/2') (4,5): True h = 9 deficient: True
+control c1: A_base - {136,596} | (u,v) detected: True | h(A_base) = 8 < h(A')+2 = 10
+    reported deficient point ('-1863', '1863') (4,5): True h = 9 deficient: True
+    reported deficient point ('-1826', '1826') (4,5): True h = 9 deficient: True
+    reported deficient point ('-1628', '-286') (4,5): True h = 9 deficient: True
+    reported deficient point ('-1554', '-249') (4,5): True h = 9 deficient: True
+    reported deficient point ('-1267', '1863') (4,5): True h = 9 deficient: True
+control c2: A_base - {0} | X=u valid whole line reported: True | at (u,t) generic: (4,5) True h = 9 < h(A'')+2 = 10
+    reported deficient point ('-323', '0') (4,5): True h = 9 deficient: True
+    reported deficient point ('-246', '0') (4,5): True h = 9 deficient: True
+    reported deficient point ('-243', '0') (4,5): True h = 9 deficient: True
+    reported deficient point ('0', '-323') (4,5): True h = 9 deficient: True
+    reported deficient point ('0', '-246') (4,5): True h = 9 deficient: True
+control c2: A_base - {246} | X=u valid whole line reported: True | at (u,t) generic: (4,5) True h = 9 < h(A'')+2 = 10
+    reported deficient point ('-323', '246') (4,5): True h = 9 deficient: True
+    reported deficient point ('-249', '246') (4,5): True h = 9 deficient: True
+    reported deficient point ('-246', '246') (4,5): True h = 9 deficient: True
+    reported deficient point ('-243', '246') (4,5): True h = 9 deficient: True
+    reported deficient point ('243/2', '246') (4,5): True h = 9 deficient: True
+control c2: A_base - {1056} | X=u valid whole line reported: True | at (u,t) generic: (4,5) True h = 9 < h(A'')+2 = 10
+    reported deficient point ('-1652', '-528') (4,5): True h = 9 deficient: True
+    reported deficient point ('-1192', '-528') (4,5): True h = 9 deficient: True
+    reported deficient point ('-920', '920') (4,5): True h = 9 deficient: True
+    reported deficient point ('-528', '-1652') (4,5): True h = 9 deficient: True
+    reported deficient point ('-528', '-1192') (4,5): True h = 9 deficient: True

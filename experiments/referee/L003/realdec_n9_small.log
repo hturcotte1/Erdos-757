@@ -1,0 +1,2 @@
+{"n": 9, "m": 3, "labelled": 208, "up_to_reflection": 110, "f7": 0, "f7_free": 110, "realizable": 110, "reasons": {}, "undecided": 0, "f7_realizable": 0, "h_hist": {"6": 110}, "witness_missing": 0}
+{"n": 9, "m": 4, "labelled": 5256, "up_to_reflection": 2628, "f7": 0, "f7_free": 2628, "realizable": 2536, "reasons": {"forced repeated difference": 65, "order-infeasible": 27}, "undecided": 0, "f7_realizable": 0, "h_hist": {"6": 2536}, "witness_missing": 0}

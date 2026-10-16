@@ -1,0 +1,2 @@
+S 4 0 4 7 8 9 14
+STATS n=6 k30=0 lin=0 r1=-1 leaves=576 singular=0 fallback=0 orderfail=411 notweakSidon=113 not45=50 apbad=0 ok45=2 printed=1 symmetric=0 hhist 4:2

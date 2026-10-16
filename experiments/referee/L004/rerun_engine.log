@@ -1,0 +1,21 @@
+224 0-4,0-6,2-10 sols 43 nodes 16758767 stored 16758767 leaves 43 43 SAME
+269 0-4,0-8,2-10 sols 52 nodes 17633208 stored 17633208 leaves 53 53 SAME
+582 0-5,0-8,1-12 sols 65 nodes 23810095 stored 23810095 leaves 119 119 SAME
+739 0-5,1-6,1-13 sols 0 nodes 8557106 stored 8557106 leaves 0 0 SAME
+1116 0-6,1-10,1-13 sols 0 nodes 6569595 stored 6569595 leaves 0 0 SAME
+1468 0-8,0-10,1-12 sols 3 nodes 18218733 stored 18218733 leaves 53 53 SAME
+1545 0-8,1-4,0-13 sols 42 nodes 19000998 stored 19000998 leaves 68 68 SAME
+1574 0-8,1-5,1-13 sols 0 nodes 7430548 stored 7430548 leaves 0 0 SAME
+1650 0-8,1-10,2-8 sols 32 nodes 18888019 stored 18888019 leaves 60 60 SAME
+1747 0-9,0-13,1-4 sols 22 nodes 22726589 stored 22726589 leaves 84 84 SAME
+1837 0-9,1-7,1-13 sols 0 nodes 8350118 stored 8350118 leaves 0 0 SAME
+1885 0-9,1-11,2-6 sols 9 nodes 30416194 stored 30416194 leaves 77 77 SAME
+1962 0-10,0-13,2-7 sols 0 nodes 12298223 stored 12298223 leaves 157 157 SAME
+2024 0-10,1-6,2-10 sols 2 nodes 10715513 stored 10715513 leaves 54 54 SAME
+2130 0-11,0-13,1-7 sols 0 nodes 12071489 stored 12071489 leaves 104 104 SAME
+2251 0-11,1-10,2-5 sols 40 nodes 7086015 stored 7086015 leaves 71 71 SAME
+2283 0-12,0-13,1-9 sols 0 nodes 7192006 stored 7192006 leaves 359 359 SAME
+2381 0-12,1-9,2-4 sols 0 nodes 5978432 stored 5978432 leaves 121 121 SAME
+2432 0-13,1-4,2-8 sols 0 nodes 5115347 stored 5115347 leaves 6 6 SAME
+2454 0-13,1-6,1-7 sols 0 nodes 12477834 stored 12477834 leaves 0 0 SAME
+rerun prefixes 20 differences 0 time 550

@@ -1,4 +1,8 @@
-"""Pins every [verified-here] and [derived-here] fact in kb/known_results.md, plus the safety rails
+"""Pins facts K3, K7, K11, K12, K17-K24 and K29 of kb/known_results.md (K22 only for single-class
+chains with a != b and a + b <= 8). K13 and K30-K49 are backed by the tests, experiment folders,
+certificates and referee reviews named in their Check column (K44 only by a check on the records
+in the main session), and rows whose Check is "source" are pinned by no test. Also pins the
+safety rails
 (judge, hook, status script). Run: python3 -m pytest -q"""
 import hashlib
 import importlib.util

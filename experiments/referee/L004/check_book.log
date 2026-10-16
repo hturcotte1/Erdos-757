@@ -1,0 +1,8 @@
+prefixes in file: 2537 distinct: 2537
+pchk: 205529 patterns
+sum solutions 205529 sum nodes 113454008923 sum time 277501.1 TOTAL file {'prefixes': 2537, 'solutions': 205529, 'nodes': 113454008923, 'refl': True, 'cpu_seconds': 277501.0}
+patterns checked 205529 alpha histogram {8: 205529} symmetric 415
+flag failures {}
+distinct canonical keys 205529 of 205529 ; distinct labelled 205529
+per-prefix: zero-solution prefixes 744 max 4306
+PROBLEMS {}

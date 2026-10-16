@@ -1,0 +1,11 @@
+[{"class": 2440, "control": "PC2", "removed": [2988], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 2988], [1, 0, 2988]], "n_pts_45": 40}]
+[{"class": 2440, "control": "PC2", "removed": [2988], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 2988], [1, 0, 2988]], "n_pts_45": 40}, {"class": 0, "control": "PC2", "removed": [1524], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 1524], [1, 0, 1524]], "n_pts_45": 66}]
+[{"class": 2440, "control": "PC2", "removed": [2988], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 2988], [1, 0, 2988]], "n_pts_45": 40}, {"class": 0, "control": "PC2", "removed": [1524], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 1524], [1, 0, 1524]], "n_pts_45": 66}, {"class": 777, "control": "PC2", "removed": [16872], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 16872], [1, 0, 16872]], "n_pts_45": 48}]
+[{"class": 0, "control": "PC2", "removed": [1524], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 1524], [1, 0, 1524]], "n_pts_45": 66}, {"class": 777, "control": "PC2", "removed": [16872], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 16872], [1, 0, 16872]], "n_pts_45": 48}, {"class": 1500, "control": "PC2", "removed": [3396], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 3396], [1, 0, 3396]], "n_pts_45": 60}]
+[{"class": 777, "control": "PC2", "removed": [16872], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 16872], [1, 0, 16872]], "n_pts_45": 48}, {"class": 1500, "control": "PC2", "removed": [3396], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 3396], [1, 0, 3396]], "n_pts_45": 60}, {"class": 2909, "control": "PC2", "removed": [4560], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 4560], [1, 0, 4560]], "n_pts_45": 70}]
+[{"class": 1500, "control": "PC2", "removed": [3396], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 3396], [1, 0, 3396]], "n_pts_45": 60}, {"class": 2909, "control": "PC2", "removed": [4560], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 4560], [1, 0, 4560]], "n_pts_45": 70}, {"class": 1234, "control": "PC2", "removed": [1296], "h_Aprime": 8, "found": true, "flagged": [[0, 1, 1296], [1, 0, 1296]], "n_pts_45": 34}]
+controls 6 all found: True
+
+real	0m19.808s
+user	0m19.093s
+sys	0m0.048s

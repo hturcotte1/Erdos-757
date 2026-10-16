@@ -1,0 +1,1551 @@
+{
+ "F": {
+  "2": 2,
+  "3": 2,
+  "4": 3,
+  "5": 4,
+  "6": 4,
+  "7": 5,
+  "8": 5,
+  "9": 6,
+  "10": 6,
+  "11": 7,
+  "12": 7
+ },
+ "per_source": {
+  "n6_m2": {
+   "n": 6,
+   "m": 2,
+   "saturated": false,
+   "source": "all realizable patterns, one integer representative each",
+   "classes": 6,
+   "with_ext_n2": 6,
+   "dist_pairs": {
+    "6": 6
+   },
+   "with_ext_n1": 6,
+   "dist_singles": {
+    "6": 6
+   },
+   "all_singles_extremal": true,
+   "example_n2": {
+    "set": [
+     0,
+     237612609,
+     475225218,
+     615236366,
+     834490358,
+     1053744350
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     237612609,
+     475225218,
+     615236366,
+     834490358,
+     1053744350
+    ],
+    "deleted_idx": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  },
+  "n6_m3": {
+   "n": 6,
+   "m": 3,
+   "saturated": false,
+   "source": "all realizable patterns, one integer representative each",
+   "classes": 22,
+   "with_ext_n2": 22,
+   "dist_pairs": {
+    "9": 22
+   },
+   "with_ext_n1": 22,
+   "dist_singles": {
+    "6": 22
+   },
+   "all_singles_extremal": true,
+   "example_n2": {
+    "set": [
+     0,
+     935610130,
+     1871220260,
+     2320769931,
+     4641539862,
+     8347469594
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     935610130,
+     1871220260,
+     2320769931,
+     4641539862,
+     8347469594
+    ],
+    "deleted_idx": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  },
+  "n6_m4": {
+   "n": 6,
+   "m": 4,
+   "saturated": true,
+   "source": "all saturated classes",
+   "classes": 1,
+   "with_ext_n2": 1,
+   "dist_pairs": {
+    "12": 1
+   },
+   "with_ext_n1": 1,
+   "dist_singles": {
+    "6": 1
+   },
+   "all_singles_extremal": true,
+   "example_n2": {
+    "set": [
+     0,
+     4,
+     7,
+     8,
+     9,
+     14
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     4,
+     7,
+     8,
+     9,
+     14
+    ],
+    "deleted_idx": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  },
+  "n7_m2": {
+   "n": 7,
+   "m": 2,
+   "saturated": false,
+   "source": "all realizable patterns, one integer representative each",
+   "classes": 33,
+   "with_ext_n2": 33,
+   "dist_pairs": {
+    "12": 33
+   },
+   "with_ext_n1": 33,
+   "dist_singles": {
+    "1": 33
+   },
+   "all_singles_extremal": false,
+   "example_n2": {
+    "set": [
+     0,
+     983745229,
+     1967490458,
+     2743744246,
+     3688460798,
+     4633177350,
+     5637649673
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      6
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     983745229,
+     1967490458,
+     2743744246,
+     3688460798,
+     4633177350,
+     5637649673
+    ],
+    "deleted_idx": [
+     6
+    ]
+   }
+  },
+  "n7_m3": {
+   "n": 7,
+   "m": 3,
+   "saturated": false,
+   "source": "all realizable patterns, one integer representative each",
+   "classes": 313,
+   "with_ext_n2": 313,
+   "dist_pairs": {
+    "15": 154,
+    "16": 159
+   },
+   "with_ext_n1": 313,
+   "dist_singles": {
+    "1": 313
+   },
+   "all_singles_extremal": false,
+   "example_n2": {
+    "set": [
+     0,
+     6780926630,
+     13561853260,
+     16346513481,
+     32693026962,
+     58605127294,
+     64342413222
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      6
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     6780926630,
+     13561853260,
+     16346513481,
+     32693026962,
+     58605127294,
+     64342413222
+    ],
+    "deleted_idx": [
+     6
+    ]
+   }
+  },
+  "n7_m4": {
+   "n": 7,
+   "m": 4,
+   "saturated": false,
+   "source": "all realizable patterns, one integer representative each",
+   "classes": 158,
+   "with_ext_n2": 158,
+   "dist_pairs": {
+    "18": 59,
+    "19": 99
+   },
+   "with_ext_n1": 158,
+   "dist_singles": {
+    "1": 7,
+    "3": 151
+   },
+   "all_singles_extremal": false,
+   "example_n2": {
+    "set": [
+     0,
+     8823458180,
+     17646916360,
+     33686118607,
+     67372237214,
+     125921016248,
+     251842032496
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      6
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     8823458180,
+     17646916360,
+     33686118607,
+     67372237214,
+     125921016248,
+     251842032496
+    ],
+    "deleted_idx": [
+     2,
+     3,
+     6
+    ]
+   }
+  },
+  "n7_m5": {
+   "n": 7,
+   "m": 5,
+   "saturated": true,
+   "source": "all saturated classes",
+   "classes": 4,
+   "with_ext_n2": 4,
+   "dist_pairs": {
+    "20": 4
+   },
+   "with_ext_n1": 4,
+   "dist_singles": {
+    "5": 4
+   },
+   "all_singles_extremal": false,
+   "example_n2": {
+    "set": [
+     0,
+     4,
+     7,
+     8,
+     9,
+     14,
+     20
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     4,
+     7,
+     8,
+     9,
+     14,
+     20
+    ],
+    "deleted_idx": [
+     0,
+     1,
+     2,
+     4,
+     6
+    ]
+   }
+  },
+  "n8_m5": {
+   "n": 8,
+   "m": 5,
+   "saturated": false,
+   "source": "all realizable patterns, one integer representative each",
+   "classes": 698,
+   "with_ext_n2": 698,
+   "dist_pairs": {
+    "5": 267,
+    "6": 431
+   },
+   "with_ext_n1": 698,
+   "dist_singles": {
+    "8": 698
+   },
+   "all_singles_extremal": true,
+   "example_n2": {
+    "set": [
+     0,
+     3221635455,
+     6443270910,
+     7984756243,
+     15969512486,
+     28717389517,
+     57434779034,
+     108426287158
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      2,
+      7
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     3221635455,
+     6443270910,
+     7984756243,
+     15969512486,
+     28717389517,
+     57434779034,
+     108426287158
+    ],
+    "deleted_idx": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  "n8_m6": {
+   "n": 8,
+   "m": 6,
+   "saturated": true,
+   "source": "all saturated classes",
+   "classes": 66,
+   "with_ext_n2": 66,
+   "dist_pairs": {
+    "9": 26,
+    "10": 40
+   },
+   "with_ext_n1": 66,
+   "dist_singles": {
+    "8": 66
+   },
+   "all_singles_extremal": true,
+   "example_n2": {
+    "set": [
+     0,
+     9,
+     10,
+     18,
+     20,
+     26,
+     31,
+     52
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      7
+     ],
+     [
+      1,
+      3
+     ],
+     [
+      1,
+      4
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     9,
+     10,
+     18,
+     20,
+     26,
+     31,
+     52
+    ],
+    "deleted_idx": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ]
+   }
+  },
+  "n9_m3": {
+   "n": 9,
+   "m": 3,
+   "saturated": false,
+   "source": "all realizable patterns, one integer representative each",
+   "classes": 110,
+   "with_ext_n2": 110,
+   "dist_pairs": {
+    "9": 110
+   },
+   "with_ext_n1": 0,
+   "dist_singles": {
+    "0": 110
+   },
+   "all_singles_extremal": false,
+   "example_n2": {
+    "set": [
+     0,
+     1676946779,
+     3353893558,
+     4990893946,
+     6660326898,
+     8329759850,
+     10010697023,
+     11650796334,
+     13290895645
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ]
+    ]
+   },
+   "example_n1": null
+  },
+  "n9_m4": {
+   "n": 9,
+   "m": 4,
+   "saturated": false,
+   "source": "all realizable patterns, one integer representative each",
+   "classes": 2536,
+   "with_ext_n2": 2536,
+   "dist_pairs": {
+    "9": 1124,
+    "12": 1412
+   },
+   "with_ext_n1": 0,
+   "dist_singles": {
+    "0": 2536
+   },
+   "all_singles_extremal": false,
+   "example_n2": {
+    "set": [
+     0,
+     2979236670,
+     5958473340,
+     7993745229,
+     15987490458,
+     28995744246,
+     31728460798,
+     34520933121,
+     37313405444
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      2
+     ]
+    ]
+   },
+   "example_n1": null
+  },
+  "n9_m5": {
+   "n": 9,
+   "m": 5,
+   "saturated": false,
+   "source": "all realizable patterns, one integer representative each",
+   "classes": 30866,
+   "with_ext_n2": 30866,
+   "dist_pairs": {
+    "12": 1383,
+    "13": 3998,
+    "14": 3879,
+    "15": 14798,
+    "16": 6808
+   },
+   "with_ext_n1": 6282,
+   "dist_singles": {
+    "0": 24584,
+    "1": 6282
+   },
+   "all_singles_extremal": false,
+   "example_n2": {
+    "set": [
+     0,
+     3337463315,
+     6674926630,
+     8038994199,
+     16077988398,
+     28818513481,
+     57637026962,
+     108599127294,
+     111672413222
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      5
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     3337463315,
+     6674926630,
+     8038994199,
+     16077988398,
+     28818513481,
+     57637026962,
+     108599127294,
+     111672413222
+    ],
+    "deleted_idx": [
+     8
+    ]
+   }
+  },
+  "n9_m6": {
+   "n": 9,
+   "m": 6,
+   "saturated": false,
+   "source": "all realizable patterns, one integer representative each",
+   "classes": 20938,
+   "with_ext_n2": 20938,
+   "dist_pairs": {
+    "17": 234,
+    "18": 2769,
+    "19": 2059,
+    "20": 4568,
+    "21": 4305,
+    "22": 4293,
+    "23": 2488,
+    "24": 222
+   },
+   "with_ext_n1": 16780,
+   "dist_singles": {
+    "0": 4158,
+    "1": 14398,
+    "2": 2382
+   },
+   "all_singles_extremal": false,
+   "example_n2": {
+    "set": [
+     0,
+     16188916360,
+     32377832720,
+     62418847697,
+     124837695394,
+     233486474428,
+     466972948856,
+     901568064992,
+     1803136129984
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      3
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     16188916360,
+     32377832720,
+     62418847697,
+     124837695394,
+     233486474428,
+     466972948856,
+     901568064992,
+     1803136129984
+    ],
+    "deleted_idx": [
+     3,
+     8
+    ]
+   }
+  },
+  "n9_m7": {
+   "n": 9,
+   "m": 7,
+   "saturated": true,
+   "source": "all saturated classes",
+   "classes": 1262,
+   "with_ext_n2": 1262,
+   "dist_pairs": {
+    "23": 12,
+    "24": 75,
+    "25": 149,
+    "26": 342,
+    "27": 249,
+    "29": 177,
+    "30": 258
+   },
+   "with_ext_n1": 1237,
+   "dist_singles": {
+    "0": 25,
+    "1": 37,
+    "2": 525,
+    "3": 366,
+    "4": 309
+   },
+   "all_singles_extremal": false,
+   "example_n2": {
+    "set": [
+     0,
+     9,
+     10,
+     18,
+     20,
+     26,
+     31,
+     52,
+     95
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     9,
+     10,
+     18,
+     20,
+     26,
+     31,
+     52,
+     95
+    ],
+    "deleted_idx": [
+     6,
+     8
+    ]
+   }
+  },
+  "n10_m7": {
+   "n": 10,
+   "m": 7,
+   "saturated": false,
+   "source": "all realizable patterns, one integer representative each",
+   "classes": 7105,
+   "with_ext_n2": 6056,
+   "dist_pairs": {
+    "0": 1049,
+    "2": 6056
+   },
+   "with_ext_n1": 7105,
+   "dist_singles": {
+    "10": 7105
+   },
+   "all_singles_extremal": true,
+   "example_n2": {
+    "set": [
+     0,
+     104580945043,
+     209161890086,
+     259735625460,
+     519471250920,
+     934361556797,
+     1868723113594,
+     3528284337102,
+     7056568674204,
+     13853401722948
+    ],
+    "deleted_pairs_idx": [
+     [
+      3,
+      9
+     ],
+     [
+      8,
+      9
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     104580945043,
+     209161890086,
+     259735625460,
+     519471250920,
+     934361556797,
+     1868723113594,
+     3528284337102,
+     7056568674204,
+     13853401722948
+    ],
+    "deleted_idx": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  },
+  "n10_m8": {
+   "n": 10,
+   "m": 8,
+   "saturated": true,
+   "source": "all saturated classes",
+   "classes": 6644,
+   "with_ext_n2": 6625,
+   "dist_pairs": {
+    "0": 19,
+    "1": 82,
+    "2": 889,
+    "3": 2150,
+    "4": 2079,
+    "5": 1146,
+    "6": 279
+   },
+   "with_ext_n1": 6644,
+   "dist_singles": {
+    "10": 6644
+   },
+   "all_singles_extremal": true,
+   "example_n2": {
+    "set": [
+     0,
+     18,
+     19,
+     36,
+     38,
+     53,
+     58,
+     106,
+     116,
+     194
+    ],
+    "deleted_pairs_idx": [
+     [
+      2,
+      3
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      6,
+      8
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     18,
+     19,
+     36,
+     38,
+     53,
+     58,
+     106,
+     116,
+     194
+    ],
+    "deleted_idx": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   }
+  },
+  "n11_m6": {
+   "n": 11,
+   "m": 6,
+   "saturated": false,
+   "source": "first 300 DFS-order patterns (sample), realizable ones, one integer rep each",
+   "classes": 251,
+   "with_ext_n2": 251,
+   "dist_pairs": {
+    "8": 75,
+    "9": 176
+   },
+   "with_ext_n1": 0,
+   "dist_singles": {
+    "0": 251
+   },
+   "all_singles_extremal": false,
+   "example_n2": {
+    "set": [
+     0,
+     1463118335,
+     2926236670,
+     3923215891,
+     7846431782,
+     14229745229,
+     28459490458,
+     53992744246,
+     55393460798,
+     56853933121,
+     58314405444
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      3
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      2,
+      7
+     ]
+    ]
+   },
+   "example_n1": null
+  },
+  "n11_m7": {
+   "n": 11,
+   "m": 7,
+   "saturated": false,
+   "source": "first 300 DFS-order patterns (sample), realizable ones, one integer rep each",
+   "classes": 257,
+   "with_ext_n2": 257,
+   "dist_pairs": {
+    "8": 9,
+    "9": 107,
+    "10": 84,
+    "11": 29,
+    "12": 28
+   },
+   "with_ext_n1": 28,
+   "dist_singles": {
+    "0": 229,
+    "1": 28
+   },
+   "all_singles_extremal": false,
+   "example_n2": {
+    "set": [
+     0,
+     108186312599,
+     216372625198,
+     261125559780,
+     522251119560,
+     936315926521,
+     1872631853042,
+     3528891080886,
+     7057782161772,
+     13854438763764,
+     13941454479332
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      10
+     ],
+     [
+      1,
+      10
+     ],
+     [
+      2,
+      10
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     108186312599,
+     216372625198,
+     261125559780,
+     522251119560,
+     936315926521,
+     1872631853042,
+     3528891080886,
+     7057782161772,
+     13854438763764,
+     13941454479332
+    ],
+    "deleted_idx": [
+     10
+    ]
+   }
+  },
+  "n11_m8": {
+   "n": 11,
+   "m": 8,
+   "saturated": false,
+   "source": "first 300 DFS-order patterns (sample), realizable ones, one integer rep each",
+   "classes": 216,
+   "with_ext_n2": 216,
+   "dist_pairs": {
+    "10": 2,
+    "11": 5,
+    "12": 40,
+    "13": 47,
+    "14": 44,
+    "15": 46,
+    "16": 22,
+    "17": 10
+   },
+   "with_ext_n1": 18,
+   "dist_singles": {
+    "0": 198,
+    "1": 18
+   },
+   "all_singles_extremal": false,
+   "example_n2": {
+    "set": [
+     0,
+     212657279603,
+     425314559206,
+     528219250920,
+     1056438501840,
+     1900219724077,
+     3800439448154,
+     7388221616705,
+     14351128674204,
+     28702257348408,
+     56876295445896
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      6
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      2,
+      5
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     101951063650,
+     203902127300,
+     253341744067,
+     506683488134,
+     911415912618,
+     1822831825236,
+     3543712586822,
+     6580741685510,
+     13161483371020,
+     26119064614740
+    ],
+    "deleted_idx": [
+     3
+    ]
+   }
+  },
+  "n11_m9": {
+   "n": 11,
+   "m": 9,
+   "saturated": true,
+   "source": "all 466,961 saturated classes",
+   "classes": 466961,
+   "with_ext_n2": 466961,
+   "dist_pairs": {
+    "12": 62,
+    "13": 340,
+    "14": 992,
+    "15": 5420,
+    "16": 12101,
+    "17": 26605,
+    "18": 38606,
+    "19": 64525,
+    "20": 57202,
+    "21": 68341,
+    "22": 67164,
+    "23": 50042,
+    "24": 26583,
+    "25": 16235,
+    "26": 16212,
+    "27": 9092,
+    "28": 5334,
+    "29": 1874,
+    "30": 231
+   },
+   "with_ext_n1": 178655,
+   "dist_singles": {
+    "0": 288306,
+    "1": 171248,
+    "2": 7407
+   },
+   "all_singles_extremal": false,
+   "example_n2": {
+    "set": [
+     0,
+     27,
+     35,
+     54,
+     70,
+     73,
+     113,
+     146,
+     226,
+     265,
+     417
+    ],
+    "deleted_pairs_idx": [
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      4
+     ],
+     [
+      1,
+      8
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     27,
+     35,
+     54,
+     70,
+     73,
+     113,
+     146,
+     226,
+     265,
+     417
+    ],
+    "deleted_idx": [
+     8
+    ]
+   }
+  },
+  "n12_m10": {
+   "n": 12,
+   "m": 10,
+   "saturated": true,
+   "source": "all 54,243 saturated classes",
+   "classes": 54243,
+   "with_ext_n2": 26852,
+   "dist_pairs": {
+    "0": 27391,
+    "1": 12587,
+    "2": 12074,
+    "3": 2191
+   },
+   "with_ext_n1": 54243,
+   "dist_singles": {
+    "12": 54243
+   },
+   "all_singles_extremal": true,
+   "example_n2": {
+    "set": [
+     0,
+     18,
+     19,
+     36,
+     38,
+     53,
+     58,
+     106,
+     116,
+     194,
+     330,
+     544
+    ],
+    "deleted_pairs_idx": [
+     [
+      8,
+      11
+     ],
+     [
+      10,
+      11
+     ]
+    ]
+   },
+   "example_n1": {
+    "set": [
+     0,
+     18,
+     19,
+     36,
+     38,
+     53,
+     58,
+     106,
+     116,
+     194,
+     330,
+     544
+    ],
+    "deleted_idx": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ]
+   }
+  }
+ },
+ "per_size": [
+  {
+   "n": 6,
+   "f_n": 4,
+   "f_n_minus_1": 4,
+   "f_n_minus_2": 3,
+   "classes": 29,
+   "with_ext_n2": 29,
+   "with_ext_n1": 29,
+   "saturated_classes": 1,
+   "saturated_with_ext_n2": 1,
+   "saturated_with_ext_n1": 1
+  },
+  {
+   "n": 7,
+   "f_n": 5,
+   "f_n_minus_1": 4,
+   "f_n_minus_2": 4,
+   "classes": 508,
+   "with_ext_n2": 508,
+   "with_ext_n1": 508,
+   "saturated_classes": 4,
+   "saturated_with_ext_n2": 4,
+   "saturated_with_ext_n1": 4
+  },
+  {
+   "n": 8,
+   "f_n": 5,
+   "f_n_minus_1": 5,
+   "f_n_minus_2": 4,
+   "classes": 764,
+   "with_ext_n2": 764,
+   "with_ext_n1": 764,
+   "saturated_classes": 66,
+   "saturated_with_ext_n2": 66,
+   "saturated_with_ext_n1": 66
+  },
+  {
+   "n": 9,
+   "f_n": 6,
+   "f_n_minus_1": 5,
+   "f_n_minus_2": 5,
+   "classes": 55712,
+   "with_ext_n2": 55712,
+   "with_ext_n1": 24299,
+   "saturated_classes": 1262,
+   "saturated_with_ext_n2": 1262,
+   "saturated_with_ext_n1": 1237
+  },
+  {
+   "n": 10,
+   "f_n": 6,
+   "f_n_minus_1": 6,
+   "f_n_minus_2": 5,
+   "classes": 13749,
+   "with_ext_n2": 12681,
+   "with_ext_n1": 13749,
+   "saturated_classes": 6644,
+   "saturated_with_ext_n2": 6625,
+   "saturated_with_ext_n1": 6644
+  },
+  {
+   "n": 11,
+   "f_n": 7,
+   "f_n_minus_1": 6,
+   "f_n_minus_2": 6,
+   "classes": 467685,
+   "with_ext_n2": 467685,
+   "with_ext_n1": 178701,
+   "saturated_classes": 466961,
+   "saturated_with_ext_n2": 466961,
+   "saturated_with_ext_n1": 178655
+  },
+  {
+   "n": 12,
+   "f_n": 7,
+   "f_n_minus_1": 7,
+   "f_n_minus_2": 6,
+   "classes": 54243,
+   "with_ext_n2": 26852,
+   "with_ext_n1": 54243,
+   "saturated_classes": 54243,
+   "saturated_with_ext_n2": 26852,
+   "saturated_with_ext_n1": 54243
+  }
+ ],
+ "small_records": {
+  "8": {
+   "n": 8,
+   "h": 5,
+   "m": 5,
+   "n_ext_pairs": 6,
+   "n_ext_singles": 8,
+   "pairs_idx": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     5
+    ],
+    [
+     0,
+     6
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     3,
+     5
+    ]
+   ]
+  },
+  "10": {
+   "n": 10,
+   "h": 6,
+   "m": 8,
+   "n_ext_pairs": 3,
+   "n_ext_singles": 10,
+   "pairs_idx": [
+    [
+     0,
+     4
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     8
+    ]
+   ]
+  },
+  "11": {
+   "n": 11,
+   "h": 7,
+   "m": 8,
+   "n_ext_pairs": 16,
+   "n_ext_singles": 1,
+   "pairs_idx": [
+    [
+     0,
+     4
+    ],
+    [
+     0,
+     10
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     4
+    ],
+    [
+     1,
+     7
+    ]
+   ]
+  },
+  "12": {
+   "n": 12,
+   "h": 7,
+   "m": 10,
+   "n_ext_pairs": 3,
+   "n_ext_singles": 12,
+   "pairs_idx": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     9
+    ],
+    [
+     5,
+     7
+    ]
+   ]
+  },
+  "12b": {
+   "n": 12,
+   "h": 7,
+   "m": 10,
+   "n_ext_pairs": 2,
+   "n_ext_singles": 12,
+   "pairs_idx": [
+    [
+     3,
+     8
+    ],
+    [
+     8,
+     10
+    ]
+   ]
+  },
+  "12c": {
+   "n": 12,
+   "h": 7,
+   "m": 10,
+   "n_ext_pairs": 2,
+   "n_ext_singles": 12,
+   "pairs_idx": [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     5
+    ]
+   ]
+  }
+ }
+}

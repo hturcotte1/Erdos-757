@@ -1,0 +1,5 @@
+class 729 v = 168 h(A) = 8 h(A u v) = 8 v in P_x: True A u v is (4,5): False e.g. failing (0, 104, 272)
+class 857 v = 272 h(A) = 8 h(A u v) = 8 v in P_x: True A u v is (4,5): False e.g. failing (0, 152, 424)
+class 960 v = 376 h(A) = 8 h(A u v) = 8 v in P_x: True A u v is (4,5): False e.g. failing (0, 184, 560)
+class 1951 v = 360 h(A) = 8 h(A u v) = 8 v in P_x: True A u v is (4,5): False e.g. failing (0, 152, 512)
+class 2437 v = 344 h(A) = 8 h(A u v) = 8 v in P_x: True A u v is (4,5): False e.g. failing (0, 112, 456)

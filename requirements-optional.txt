@@ -1,4 +1,14 @@
 # Installed by preflight if possible; the agent may add more here.
+# NOTE: "optional" is historical. Test modules import these packages at module level, so a missing package
+# aborts `python3 -m pytest` with collection errors: python-sat is imported by e757/sat_indep.py
+# (tests/test_sat_indep.py, tests/test_extra_invariants.py); ortools by e757/cpsat_model.py and e757/cpsat_extra.py
+# (tests/test_cpsat_model.py, tests/test_census_counts.py, tests/test_extra_invariants.py). Install this file before
+# running the suite (CI currently installs only requirements.txt).
+# Not a pip package: gcc builds e757/c/ordered_dfs (bash e757/c/build.sh; e757.ordered_dfs_c.available() also builds it
+# on first use). Tests that use the binary in tests/test_ordered_dfs.py (4 tests) and tests/test_small_counts.py (whole
+# module) skip without it, but tests/test_census_counts.py::test_census_counts_agree and ::test_prefix_split_small
+# need it and fail (RuntimeError) without it.
+# numba (named as an example in CLAUDE.md) is not imported anywhere in the repository.
 python-sat
 ortools
 

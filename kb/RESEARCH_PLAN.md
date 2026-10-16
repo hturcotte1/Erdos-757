@@ -16,12 +16,12 @@ Both tracks study the same objects: **realizable AP hypergraphs that are (nearly
 
 ## Phase 1: exact small cases (target 6–12 hours; data for both tracks)
 
-**P1.1 Census.** Enumerate the abstract candidates on $n\le10$–$12$ vertices: 3-uniform hypergraphs that are linear and $F_7$-free, satisfy $e(S)\le|S|-2$ for every $S$, and admit an injective midpoint labeling.
+**P1.1 Census.** [Status 2026-10-16: DONE in a restricted form, and extended beyond the original $n\le10$–$12$ target. What was enumerated is not every abstract candidate but the class-O patterns (linear, injective midpoints, K30-monotone, $F_7$-free) with $\alpha\le f(n)$, each realized exactly. Results, as affine classes of extremal sets [verified-here]: saturated classes for $n=6..11$ are 1, 4, 66, 1262, 6644, 466961 (K43/L003; `experiments/20261014-1430-small-counts/results/`); $n=12$ has 54,243 classes, which is every extremal 12-point set (K41/L002; `experiments/20261014-1005-census-dfs/results/realized_n12.json.gz`); $n=14$ has 2,910 saturated classes (K45/L004; `data/census_n14_m12_classes.jsonl.gz`). The output name `data/census_n{n}.jsonl.gz` stated below was not used; see `data/README.md` for the actual files. $n=13$ was not completed: the pattern-first pipeline is infeasible there (D22, Q12) [verified-here for the partial counts]. The non-saturated $(14,11)$ case is still running and open (Q11; 0 patterns in the 558 of 3,437 prefixes finished at 2026-10-16 16:12 UTC, not expected to finish in this run) [heuristic: no claim].] Enumerate the abstract candidates on $n\le10$–$12$ vertices: 3-uniform hypergraphs that are linear and $F_7$-free, satisfy $e(S)\le|S|-2$ for every $S$, and admit an injective midpoint labeling.
 - For each one, decide realizability with `e757.core.realize` or `e757.saturated`.
 - Use canonical forms to remove isomorphic copies (networkx, pynauty or your own canonical labeling).
 - Store the results as `data/census_n{n}.jsonl.gz`.
 
-**P1.2 (done before launch):** $f(8)=5$, $f(10)=6$ via `e757/ordered_search.py`. Next exact target: **$f(16)$**, which needs a faster search (see Track U).
+**P1.2 (done before launch):** $f(8)=5$, $f(10)=6$ via `e757/ordered_search.py`. Next exact target: **$f(16)$**, which needs a faster search (see Track U). [Status 2026-10-16: attempted and still undecided; direct CP-SAT, SAT and CaDiCaL decisions (CP-SAT and CaDiCaL also with the Henning–Yeo deletion constraints, 3.5 h per case at $m=13$ and $m=14$) ended UNKNOWN or TIMEOUT, and annealing found no set with $h\le9$ (Q1, D15, D16, D24; `experiments/20261016-0850-n16-deletion-cpsat/results.json`, `experiments/20261016-1240-n16-cnf-witness/results.json`); $f(16)\in\{9,10\}$ stays open [verified-here for the recorded run statuses; heuristic for the interpretation; no claim about $f(16)$].]
 
 **P1.3 Two libraries** that feed both tracks:
 - *special pieces*: realizable configurations with high $\tau$;
@@ -45,11 +45,11 @@ Both tracks study the same objects: **realizable AP hypergraphs that are (nearly
 
 **U3 Program search.** Evolve generator programs that output sets or midpoint maps, scored by exact $h/n$, in the FunSearch / AlphaEvolve style. All scoring must go through exact code.
 
-**U4 Lattice/Freiman constructions** in $\mathbb Z^2$ and $\mathbb Z^3$: AP structures with long-range edges, projected generically. One-dimensional periodic chains are capped at 3/5 (see dead ends), so long-range structure is required.
+**U4 Lattice/Freiman constructions** in $\mathbb Z^2$ and $\mathbb Z^3$: AP structures with long-range edges, projected generically. One-dimensional periodic chains have independence density $\ge3/5$ in every case tested (D5: single-class $a+b\le11$, 2-class span $\le8$, 3-class span $\le6$; not a theorem), so long-range structure is the working hypothesis. [Status 2026-10-16: U4 untested, never started; see kb/ideas_backlog.md idea 2.]
 
 **U5 Amalgamation.** Combine records by sharing 2 or more vertices or an edge. One-vertex amalgams and disjoint unions cannot lower the ratio. Always re-check (4,5) exactly, with generic parameters.
 
-**U milestone.** Any judged set with ratio $<4/7$ meets goal clause (A). Secondary milestone: decide $f(16)$.
+**U milestone.** Any judged set with ratio $<4/7$ meets goal clause (A). Secondary milestone: decide $f(16)$. [Status 2026-10-16: clause (A) is not met: no set with ratio $<4/7$ has been found or judged (`bash scripts/status.sh`: claims_total 0, new_record_claims none, upper_bound_success NO) [verified-here]. $f(16)$ is still undecided (Q1) [verified-here for the recorded timeouts]. U1 (annealing, D16) never reached $\alpha\le9$ at $n=16$. U2 (SAT/CP-SAT/CEGAR witness searches, D15, D18, D24) returned neither a witness nor a refutation in any instance run (TIMEOUT or UNKNOWN), so these runs are inconclusive, not nonexistence results [heuristic]. U3 was not run: no LLM-written generator programs were run (kb/ideas_backlog.md idea 10; the annealing in D16 is U1, not U3). U4 was never started (see U4 above and kb/ideas_backlog.md idea 2).]
 
 ## Track L: beat 9/17 (prove $D(A)\ge\varepsilon|A|-C$)
 

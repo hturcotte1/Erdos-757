@@ -1,0 +1,6 @@
+sha256 extend12_all.py b4600c1e2966e76aaa1a8a38f36c811cf5ef495ec36d1bbe6a71f7b53d968db0
+classes 40 [0, 1, 7, 100, 199, 279, 418, 6457, 8742, 11223, 11415, 12070, 15115, 16812, 18917, 19428, 20392, 23942, 25237, 25977, 26883, 29101, 30076, 30954, 30965, 33737, 34495, 34895, 35897, 36474, 36745, 38437, 43511, 44635, 46367, 47725, 48192, 48213, 54136, 54241]
+rerun: 40/40 classes identical to stored rows (all fields except secs); 8.7s
+known 12 class 20392 invariant counters equal: True {'n_max_sidon': 62, 'n_single_45': 34, 'n_t1b_45': 893, 'Px_size': 159, 't2_isect_pts': 356, 'min_h': 9}
+known 12b class 23942 invariant counters equal: True {'n_max_sidon': 60, 'n_single_45': 35, 'n_t1b_45': 933, 'Px_size': 156, 't2_isect_pts': 350, 'min_h': 9}
+known 12c class 18917 invariant counters equal: True {'n_max_sidon': 60, 'n_single_45': 36, 'n_t1b_45': 974, 'Px_size': 151, 't2_isect_pts': 348, 'min_h': 9}

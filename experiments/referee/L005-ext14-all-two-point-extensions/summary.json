@@ -1,0 +1,200 @@
+{
+ "routeC_classes": 2910,
+ "routeC_ids_complete": true,
+ "routeC_counter_mismatches_vs_stored": 0,
+ "routeC_classes_with_any_deficiency": 0,
+ "routeC_sums": {
+  "Px_size": 648605,
+  "n_single_45": 141153,
+  "t1_pairs": 33283559,
+  "n_t1b_45": 4970208,
+  "t2_isect_pts": 1444980,
+  "t2_isect_45": 0,
+  "n_max_sidon": 417955
+ },
+ "routeC_t1b_h_histogram": {
+  "10": 4970208
+ },
+ "routeC_cpu_secs": 3062,
+ "routeL_classes_with_extra_witnessed_whole_lines": {
+  "729": [
+   31,
+   2,
+   [
+    [
+     [
+      0,
+      1,
+      2016
+     ],
+     [
+      "Y",
+      "0",
+      "1248",
+      "3264"
+     ]
+    ],
+    [
+     [
+      1,
+      0,
+      2016
+     ],
+     [
+      "X",
+      "0",
+      "1248",
+      "3264"
+     ]
+    ]
+   ]
+  ],
+  "857": [
+   31,
+   2,
+   [
+    [
+     [
+      0,
+      1,
+      3264
+     ],
+     [
+      "Y",
+      "0",
+      "1824",
+      "5088"
+     ]
+    ],
+    [
+     [
+      1,
+      0,
+      3264
+     ],
+     [
+      "X",
+      "0",
+      "1824",
+      "5088"
+     ]
+    ]
+   ]
+  ],
+  "960": [
+   31,
+   2,
+   [
+    [
+     [
+      0,
+      1,
+      4512
+     ],
+     [
+      "Y",
+      "0",
+      "2208",
+      "6720"
+     ]
+    ],
+    [
+     [
+      1,
+      0,
+      4512
+     ],
+     [
+      "X",
+      "0",
+      "2208",
+      "6720"
+     ]
+    ]
+   ]
+  ],
+  "1951": [
+   31,
+   2,
+   [
+    [
+     [
+      0,
+      1,
+      4320
+     ],
+     [
+      "Y",
+      "0",
+      "1824",
+      "6144"
+     ]
+    ],
+    [
+     [
+      1,
+      0,
+      4320
+     ],
+     [
+      "X",
+      "0",
+      "1824",
+      "6144"
+     ]
+    ]
+   ]
+  ],
+  "2437": [
+   31,
+   2,
+   [
+    [
+     [
+      0,
+      1,
+      4128
+     ],
+     [
+      "Y",
+      "0",
+      "1344",
+      "5472"
+     ]
+    ],
+    [
+     [
+      1,
+      0,
+      4128
+     ],
+     [
+      "X",
+      "0",
+      "1344",
+      "5472"
+     ]
+    ]
+   ]
+  ]
+ },
+ "routeL_duplicate_rows_disagreeing": 0,
+ "routeL_classes": 2910,
+ "routeL_ids_complete": true,
+ "routeL_anomalies": 0,
+ "routeL_isolated_points_range": [
+  174,
+  1350
+ ],
+ "routeL_isolated_points_total": 1176308,
+ "routeL_pts45_total": 0,
+ "routeL_nS_matches_stored": true,
+ "routeL_selftested_classes": 30,
+ "routeL_cpu_secs": 4578,
+ "abase_2440": {
+  "nS": 143,
+  "n_whole": 29,
+  "n_isolated_pts": 702,
+  "n_pts_45": 0
+ }
+}

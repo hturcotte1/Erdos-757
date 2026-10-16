@@ -1,0 +1,16 @@
+5 f7 4 1 False True 0.0
+5 nof7 4 1 False True 0.0
+6 f7 4 2 True True 0.0
+6 nof7 4 2 True True 0.0
+7 f7 5 2 True True 0.3
+7 nof7 4 5 True True 0.0
+8 f7 5 5 True True 0.0
+8 nof7 5 5 True True 0.0
+9 f7 6 3 True True 0.8
+9 nof7 6 3 True True 0.8
+10 f7 6 7 False True 0.4
+10 nof7 6 6 True True 0.5
+11 f7 7 6 False True 10.6
+11 nof7 7 6 False True 10.1
+12 f7 7 10 False True 6.3
+12 nof7 7 10 False True 6.4

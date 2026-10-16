@@ -1,0 +1,25 @@
+A_base n = 14 distinct = True
+(4,5): py True np True
+3-APs: 12 ; midpoints == interior points: True
+AP degrees: [4, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2]
+sum-collision sets in A: 12 all of size 3: True
+h(A): sat 8 brute 8 #max 143 | pure-python: Sidon 9-subsets 0 , Sidon 8-subsets 143
+every a avoided by some max Sidon set: True
+points in all 143 max Sidon sets: []
+alpha(H(A)+{a,X,Y}) over a: [10] {'0': 10, '136': 10, '200': 10, '243': 10, '246': 10, '249': 10, '272': 10, '286': 10, '298': 10, '323': 10, '400': 10, '528': 10, '596': 10, '1056': 10}
+{1,2,3,5} (4,5)? False | {2,3,5,8} (4,5)? True | {1,2,3,6} (4,5)? True Sidon? False
+Fibonacci n=5: (4,5) True, h_sat 4, h_brute 4
+Fibonacci n=8: (4,5) True, h_sat 6, h_brute 6
+Fibonacci n=10: (4,5) True, h_sat 7, h_brute 7
+Fibonacci n=12: (4,5) True, h_sat 8, h_brute 8
+Fibonacci n=15: (4,5) True, h_sat 10, h_brute 10
+Fibonacci n=18: (4,5) True, h_sat 12, h_brute 12
+small_records 8: n=8 (4,5) True, h_sat 5, h_brute 5, recorded h 5
+small_records 10: n=10 (4,5) True, h_sat 6, h_brute 6, recorded h 6
+small_records 11: n=11 (4,5) True, h_sat 7, h_brute 7, recorded h 7
+small_records 12: n=12 (4,5) True, h_sat 7, h_brute 7, recorded h 7
+small_records 14: n=14 (4,5) True, h_sat 8, h_brute 8, recorded h 8
+small_records 12b: n=12 (4,5) True, h_sat 7, h_brute 7, recorded h 7
+small_records 12c: n=12 (4,5) True, h_sat 7, h_brute 7, recorded h 7
+induced subsets of A_base: Sidon==3-AP-free on all 16384: True
+time 0.5s

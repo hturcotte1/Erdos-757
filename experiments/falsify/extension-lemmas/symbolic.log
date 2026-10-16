@@ -1,0 +1,13 @@
+Lemma E symbolic (t large): extreme a tested 21994 failures 0 []
+control (non-extreme midpoint a): tested 21994 sets showing <5 distinct diffs 21994
+universal extreme vertices (n, h, deg a, family): count
+(7, 5, 0, 'extremal') 55  -> C: (n+2,h+1)=(9,6); f(n+2)=6; D(A)=22 D(C)=21
+(7, 5, 1, 'extremal') 176  -> C: (n+2,h+1)=(9,6); f(n+2)=6; D(A)=22 D(C)=21
+(7, 5, 2, 'extremal') 27  -> C: (n+2,h+1)=(9,6); f(n+2)=6; D(A)=22 D(C)=21
+(8, 6, 1, 'fib') 2  -> C: (n+2,h+1)=(10,7); f(n+2)=6; D(A)=30 D(C)=29
+(9, 6, 0, 'extremal') 60  -> C: (n+2,h+1)=(11,7); f(n+2)=7; D(A)=21 D(C)=20
+(9, 6, 1, 'extremal') 678  -> C: (n+2,h+1)=(11,7); f(n+2)=7; D(A)=21 D(C)=20
+(9, 6, 2, 'extremal') 564  -> C: (n+2,h+1)=(11,7); f(n+2)=7; D(A)=21 D(C)=20
+(10, 7, 1, 'fib') 2  -> C: (n+2,h+1)=(12,8); f(n+2)=7; D(A)=29 D(C)=28
+(11, 7, 0, 'extremal') 7  -> C: (n+2,h+1)=(13,8); f(n+2)=8; D(A)=20 D(C)=19
+(12, 8, 1, 'fib') 2  -> C: (n+2,h+1)=(14,9); f(n+2)=8; D(A)=28 D(C)=27

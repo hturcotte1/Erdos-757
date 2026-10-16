@@ -1,0 +1,13 @@
+n=8 m=0 alpha=8 f7=0 count=1
+n=8 m=1 alpha=7 f7=0 count=56
+n=8 m=2 alpha=6 f7=0 count=252
+n=8 m=2 alpha=7 f7=0 count=616
+n=8 m=3 alpha=6 f7=0 count=4270
+n=8 m=3 alpha=7 f7=0 count=344
+n=8 m=4 alpha=6 f7=0 count=8301
+n=8 m=5 alpha=5 f7=0 count=1832
+n=8 m=5 alpha=5 f7=1 count=80
+n=8 m=5 alpha=6 f7=0 count=2356
+n=8 m=6 alpha=5 f7=0 count=260
+n=8 m=6 alpha=5 f7=1 count=110
+n=8 m=6 alpha=6 f7=0 count=26

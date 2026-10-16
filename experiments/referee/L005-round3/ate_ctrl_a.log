@@ -1,0 +1,2 @@
+CONTROL class 2440 minus 0 hA 8 n_deficits 52 first [('line', '(1, 0, Fraction(0, 1))', '0', '-1560/7', 9), ('line', '(0, 1, Fraction(0, 1))', '999/7', '0', 9), ('point', '0', '541/2', 9)] 13.1 s
+CONTROL class 2440 minus 249 hA 8 n_deficits 53 first [('line', '(1, 0, Fraction(249, 1))', '249', '-2180/7', 9), ('line', '(0, 1, Fraction(249, 1))', '13756/7', '249', 9), ('point', '919/2', '249', 9)] 10.7 s

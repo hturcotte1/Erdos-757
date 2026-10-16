@@ -1,0 +1,12 @@
+STATS n=9 k30=0 lin=0 r1=-1 leaves=25401600 singular=0 fallback=0 orderfail=24698668 notweakSidon=613728 not45=86680 apbad=0 ok45=2524 printed=1262 symmetric=0 hhist 6:2524
+elapsed 7.689012555 s
+STATS n=9 k30=0 lin=1 r1=-1 leaves=138208 singular=0 fallback=0 orderfail=134076 notweakSidon=1608 not45=0 apbad=0 ok45=2524 printed=1262 symmetric=0 hhist 6:2524
+elapsed .102770584 s
+STATS n=9 k30=1 lin=0 r1=-1 leaves=1506374 singular=0 fallback=0 orderfail=803442 notweakSidon=613728 not45=86680 apbad=0 ok45=2524 printed=1262 symmetric=0 hhist 6:2524
+elapsed .577200971 s
+STATS n=9 k30=1 lin=1 r1=-1 leaves=10264 singular=0 fallback=0 orderfail=6132 notweakSidon=1608 not45=0 apbad=0 ok45=2524 printed=1262 symmetric=0 hhist 6:2524
+elapsed .029938630 s
+sat_n9_k0_l0.txt 5473dde0e25611aadf994ceceb39f07b  -
+sat_n9_k0_l1.txt b15babd9f1029c7fea3e3f6ddaf16133  -
+sat_n9_k1_l0.txt 641416e3655f87948e72b21a02f25104  -
+sat_n9_k1_l1.txt 23eb875d50e771de58c22847c57d5d72  -

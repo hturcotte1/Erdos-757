@@ -1,0 +1,10 @@
+8 8 RESULT valid=5536 violQ8=0 violD4=0 eqQ8=600 minslack=0 maxtau=4
+10 10 RESULT valid=45488 violQ8=0 violD4=0 eqQ8=3449 minslack=0 maxtau=5
+11 11 RESULT valid=136416 violQ8=0 violD4=0 eqQ8=7022 minslack=0 maxtau=5
+12 12 RESULT valid=385408 violQ8=0 violD4=10 eqQ8=17739 minslack=0 maxtau=6
+14 14 RESULT valid=3253568 violQ8=0 violD4=0 eqQ8=94544 minslack=0 maxtau=7
+12b 12 RESULT valid=384960 violQ8=0 violD4=1 eqQ8=17903 minslack=0 maxtau=6
+12c 12 RESULT valid=384960 violQ8=0 violD4=1 eqQ8=17903 minslack=0 maxtau=6
+0..575 RESULT valid=385408 violQ8=0 violD4=10 eqQ8=17739 minslack=0 maxtau=6
+adv16#46 RESULT valid=27608128 violQ8=0 violD4=0 eqQ8=468354 minslack=0 maxtau=8 38 s
+random16#298 RESULT valid=27730784 violQ8=0 violD4=0 eqQ8=448648 minslack=0 maxtau=9 37 s

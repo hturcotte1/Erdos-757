@@ -1,0 +1,3 @@
+EST_LEVELS 1:0 2:11 3:162 4:2.51e+03 5:4.17e+04 6:6.88e+05 7:1.09e+07 8:1.46e+08 9:1.21e+09 10:3.49e+09 11:2.39e+09 12:4.49e+04 13:0
+EST probes=2000 est_calls=8.275e+10 stderr=1.72e+10 est_surviving=7.247e+09
+DONE nodes=0 leaves=0 solutions=0 timed_out=0 time=20.94

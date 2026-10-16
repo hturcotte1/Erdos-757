@@ -1,0 +1,12 @@
+PAT n=6 T=4 K30+lin leaves=2 f7_rejected=0 alpha_rejected=0 labelled=2 symmetric=0 up_to_reflection=1
+  [0 s]
+PAT n=7 T=5 K30+lin leaves=20 f7_rejected=10 alpha_rejected=0 labelled=10 symmetric=0 up_to_reflection=5
+  [0 s]
+PAT n=8 T=5 K30+lin leaves=396 f7_rejected=110 alpha_rejected=26 labelled=260 symmetric=0 up_to_reflection=130
+  [0 s]
+PAT n=9 T=6 K30+lin leaves=10264 f7_rejected=1656 alpha_rejected=38 labelled=8570 symmetric=22 up_to_reflection=4296
+  [0 s]
+PAT n=10 T=6 K30+lin leaves=338595 f7_rejected=36188 alpha_rejected=222919 labelled=79488 symmetric=42 up_to_reflection=39765
+  [1 s]
+PAT n=11 T=7 K30+lin leaves=13860888 f7_rejected=1038288 alpha_rejected=2951352 labelled=9871248 symmetric=454 up_to_reflection=4935851
+  [24 s]

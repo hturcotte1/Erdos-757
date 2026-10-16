@@ -1,0 +1,10 @@
+Route V classes done 229 of 229 ; distinct 229
+k=7 for all: True ; n_maxT == stored n_max_sidon for all: True
+deficient points: total 163082 min/max 250 1968
+deficient (4,5) points: total 0
+classes with common deficient lines 79 ; lines 84 ; generically (4,5) lines 0
+common line shapes (a,b) of a x + b y = c: {(1, 1): 74, (0, 1): 5, (1, 0): 5} ; generic min ndist values Counter({4: 84})
+overlap with round-1 Route L: 80 classes; equal common-line sets 80 ; equal deficient-point counts 12
+point-count differences (class, V, L, #common lines): [(1, 1176, 1236, 1), (962, 552, 612, 1), (1388, 1040, 1106, 1), (6457, 724, 770, 1), (7153, 652, 666, 1), (9295, 840, 856, 1), (11223, 1094, 1150, 1), (11234, 870, 926, 1), (12146, 796, 792, 1), (12763, 970, 1018, 1), (13157, 620, 666, 1), (13248, 958, 964, 2), (14986, 700, 714, 1), (15192, 756, 812, 1), (16221, 680, 726, 1), (16793, 754, 812, 1), (16812, 1218, 1246, 1), (17617, 578, 634, 1), (17852, 1010, 1064, 1), (18136, 624, 654, 1)]
+known classes: [(18917, 672, 0, 0), (20392, 570, 0, 0), (23942, 1256, 1, 0)]
+max secs 8.3

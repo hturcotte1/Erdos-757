@@ -1,0 +1,1 @@
+{"n": 13, "T": 8, "m": 8, "count": 850, "status": "RUNNING", "elapsed_s": 262.3, "build_s": 17.1, "constraints": {"monotone": 7007, "medial": 8151, "cores": [221364, 900900], "f7_eager": 720720}, "rate_per_s": 3.5}

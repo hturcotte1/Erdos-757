@@ -1,0 +1,22 @@
+{"n": 11, "T": 6, "m": 9, "vertex1": null, "variant": "none", "solver": "glucose4", "status": "UNSAT", "seconds": 4.7, "limit": 60.0}
+{"n": 11, "T": 6, "m": 9, "vertex1": null, "variant": "none", "solver": "cadical195", "status": "UNSAT", "seconds": 3.67, "limit": 60.0}
+{"n": 11, "T": 6, "m": 9, "vertex1": null, "variant": "L", "solver": "glucose4", "status": "UNSAT", "seconds": 4.03, "limit": 60.0}
+{"n": 11, "T": 6, "m": 9, "vertex1": null, "variant": "L", "solver": "cadical195", "status": "UNSAT", "seconds": 3.17, "limit": 60.0}
+{"n": 11, "T": 6, "m": 9, "vertex1": null, "variant": "R", "solver": "glucose4", "status": "UNSAT", "seconds": 3.55, "limit": 60.0}
+{"n": 11, "T": 6, "m": 9, "vertex1": null, "variant": "R", "solver": "cadical195", "status": "UNSAT", "seconds": 2.94, "limit": 60.0}
+{"n": 11, "T": 6, "m": 9, "vertex1": null, "variant": "LR", "solver": "glucose4", "status": "UNSAT", "seconds": 4.05, "limit": 60.0}
+{"n": 11, "T": 6, "m": 9, "vertex1": null, "variant": "LR", "solver": "cadical195", "status": "UNSAT", "seconds": 3.16, "limit": 60.0}
+{"n": 12, "T": 6, "m": 10, "vertex1": null, "variant": "none", "solver": "glucose4", "status": "UNSAT", "seconds": 6.72, "limit": 60.0}
+{"n": 12, "T": 6, "m": 10, "vertex1": null, "variant": "none", "solver": "cadical195", "status": "UNSAT", "seconds": 3.88, "limit": 60.0}
+{"n": 12, "T": 6, "m": 10, "vertex1": null, "variant": "L", "solver": "glucose4", "status": "UNSAT", "seconds": 1.9, "limit": 60.0}
+{"n": 12, "T": 6, "m": 10, "vertex1": null, "variant": "L", "solver": "cadical195", "status": "UNSAT", "seconds": 0.34, "limit": 60.0}
+{"n": 12, "T": 6, "m": 10, "vertex1": null, "variant": "R", "solver": "glucose4", "status": "UNSAT", "seconds": 4.87, "limit": 60.0}
+{"n": 12, "T": 6, "m": 10, "vertex1": null, "variant": "R", "solver": "cadical195", "status": "UNSAT", "seconds": 2.62, "limit": 60.0}
+{"n": 12, "T": 6, "m": 10, "vertex1": null, "variant": "LR", "solver": "glucose4", "status": "UNSAT", "seconds": 0.47, "limit": 60.0}
+{"n": 12, "T": 6, "m": 10, "vertex1": null, "variant": "LR", "solver": "cadical195", "status": "UNSAT", "seconds": 0.39, "limit": 60.0}
+{"n": 13, "T": 7, "m": 11, "vertex1": null, "variant": "none", "solver": "glucose4", "status": "TIMEOUT", "seconds": 150.45, "limit": 150.0}
+{"n": 13, "T": 7, "m": 11, "vertex1": null, "variant": "L", "solver": "glucose4", "status": "TIMEOUT", "seconds": 150.3, "limit": 150.0}
+{"n": 13, "T": 7, "m": 11, "vertex1": null, "variant": "R", "solver": "glucose4", "status": "TIMEOUT", "seconds": 150.51, "limit": 150.0}
+{"n": 13, "T": 7, "m": 11, "vertex1": null, "variant": "LR", "solver": "glucose4", "status": "TIMEOUT", "seconds": 150.41, "limit": 150.0}
+{"n":13,"T":7,"variant":"none","solver":"cadical195","status":"KILLED","limit":150}
+{"n":13,"T":7,"variant":"LR","solver":"cadical195","status":"KILLED","limit":150}

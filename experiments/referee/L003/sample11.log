@@ -1,0 +1,10 @@
+DONE nodes=326390 leaves=89493 solutions=300 timed_out=0 time=0.34
+{"n": 11, "m": 6, "labelled": 300, "up_to_reflection": 300, "f7": 0, "f7_free": 300, "realizable": 251, "reasons": {"forced extra AP": 17, "order-infeasible": 32}, "undecided": 0, "f7_realizable": 0, "h_hist": {"7": 251}, "witness_missing": 0}
+DONE nodes=6613 leaves=2163 solutions=300 timed_out=0 time=0.01
+{"n": 11, "m": 7, "labelled": 300, "up_to_reflection": 300, "f7": 0, "f7_free": 300, "realizable": 257, "reasons": {"forced repeated difference": 29, "order-infeasible": 14}, "undecided": 0, "f7_realizable": 0, "h_hist": {"7": 257}, "witness_missing": 0}
+DONE nodes=864 leaves=300 solutions=300 timed_out=0 time=0.00
+{"n": 11, "m": 8, "labelled": 300, "up_to_reflection": 300, "f7": 0, "f7_free": 300, "realizable": 216, "reasons": {"forced repeated difference": 42, "forced extra AP": 11, "order-infeasible": 31}, "undecided": 0, "f7_realizable": 0, "h_hist": {"7": 216}, "witness_missing": 0}
+
+real	0m12.866s
+user	0m13.033s
+sys	0m0.228s

@@ -1,0 +1,41 @@
+{
+ "res": {
+  "8": {
+   "count": 1000,
+   "status": "LIMIT",
+   "stats": {
+    "tested": 1000,
+    "L1": 2000,
+    "L2_flip": 1736,
+    "L2_noflip": 4200,
+    "L2_skip_rn": 4702,
+    "L2_skip_inT": 1362
+   }
+  },
+  "10": {
+   "count": 1000,
+   "status": "LIMIT",
+   "stats": {
+    "tested": 1000,
+    "L1": 2000,
+    "L2_noflip": 5735,
+    "L2_skip_rn": 5570,
+    "L2_flip": 3047,
+    "L2_skip_inT": 1648
+   }
+  },
+  "12": {
+   "count": 400,
+   "status": "LIMIT",
+   "stats": {
+    "tested": 400,
+    "L1": 800,
+    "L2_flip": 1684,
+    "L2_noflip": 3242,
+    "L2_skip_rn": 2154,
+    "L2_skip_inT": 920
+   }
+  }
+ },
+ "failures": []
+}

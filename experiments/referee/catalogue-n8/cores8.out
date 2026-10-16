@@ -1,0 +1,6 @@
+n=7: 39 minimal cores (mine), kinds {'extra_ap': 16, 'diff': 17, 'order': 6}, by #edges {4: 12, 5: 27}  2s
+library: 39 cores at n=7; mine - theirs: 0; theirs - mine: 0
+CORES EQUAL: True
+n=8: 243 minimal cores (mine), kinds {'order': 134, 'diff': 87, 'extra_ap': 22}, by #edges {4: 69, 5: 83, 6: 91}  46s
+library: 243 cores at n=8; mine - theirs: 0; theirs - mine: 0
+CORES EQUAL: True

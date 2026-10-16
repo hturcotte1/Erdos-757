@@ -1,0 +1,8 @@
+type1 done 22.091549158096313
+done 24.914395093917847
+{'hdist': {'10': 1793}, 'type1_pairs': 11774, 'type1_45': 1743, 'type1_generic_y': 50, 'type2_isect_45': 0, 'type2_isect_pts': 498, 'Px_size': 223, 'Px_45': 50, 'witness_certified': 1743, 'n_stored': 1743}
+type2 line h: [10]
+
+real	0m28.912s
+user	0m28.397s
+sys	0m0.073s

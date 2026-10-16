@@ -1,0 +1,22 @@
+DONE split=11 n=12 m=9 T=7 prune=0 order=0 nodes=51998365 leaves=42990701 f7rej=0 sols=0 cpu=3.3
+wall 3 s
+DONE split=10 n=12 m=9 T=7 prune=0 order=0 nodes=147823152 leaves=125810852 f7rej=0 sols=0 cpu=9.3
+wall 10 s
+DONE split=9 n=12 m=9 T=7 prune=0 order=0 nodes=246822571 leaves=213248022 f7rej=0 sols=0 cpu=15.1
+wall 15 s
+DONE split=8 n=12 m=9 T=7 prune=0 order=0 nodes=348617387 leaves=302965349 f7rej=0 sols=0 cpu=20.6
+wall 22 s
+DONE split=7 n=12 m=9 T=7 prune=0 order=0 nodes=445958613 leaves=388607038 f7rej=0 sols=0 cpu=29.4
+wall 30 s
+DONE split=6 n=12 m=9 T=7 prune=0 order=0 nodes=525225517 leaves=458415439 f7rej=0 sols=0 cpu=31.3
+wall 32 s
+DONE split=5 n=12 m=9 T=7 prune=0 order=0 nodes=571724094 leaves=499330782 f7rej=0 sols=0 cpu=36.4
+wall 38 s
+DONE split=4 n=12 m=9 T=7 prune=0 order=0 nodes=563906107 leaves=494193604 f7rej=0 sols=0 cpu=32.8
+wall 34 s
+DONE split=3 n=12 m=9 T=7 prune=0 order=0 nodes=455721564 leaves=401788948 f7rej=0 sols=0 cpu=28.7
+wall 29 s
+DONE split=2 n=12 m=9 T=7 prune=0 order=0 nodes=101974497 leaves=90440098 f7rej=0 sols=0 cpu=7.8
+wall 9 s
+DONE split=0 n=12 m=9 T=7 prune=0 order=0 nodes=429036730 leaves=371783607 f7rej=0 sols=0 cpu=31.6
+wall 32 s

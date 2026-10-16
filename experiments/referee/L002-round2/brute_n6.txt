@@ -1,0 +1,12 @@
+n=6 m=0 T=6 f7free=1 f7=0
+n=6 m=1 T=5 f7free=20 f7=0
+n=6 m=1 T=6 f7free=20 f7=0
+n=6 m=2 T=4 f7free=9 f7=0
+n=6 m=2 T=5 f7free=75 f7=0
+n=6 m=2 T=6 f7free=75 f7=0
+n=6 m=3 T=4 f7free=46 f7=0
+n=6 m=3 T=5 f7free=46 f7=0
+n=6 m=3 T=6 f7free=46 f7=0
+n=6 m=4 T=4 f7free=2 f7=0
+n=6 m=4 T=5 f7free=2 f7=0
+n=6 m=4 T=6 f7free=2 f7=0

@@ -1,0 +1,4 @@
+DONE cubes=1260 sat_cubes=226 models=10226 f7clauses=0 lazy=0 time=0.3
+n=9 models 10226 F7-free 8570 F7 1656 max alpha 6
+DONE cubes=2016 sat_cubes=454 models=91434 f7clauses=0 lazy=0 time=4.4
+n=10 models 91434 F7-free 79488 F7 11946 max alpha 6

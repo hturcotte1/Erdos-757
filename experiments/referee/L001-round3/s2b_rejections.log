@@ -1,0 +1,3 @@
+distinct coordinates in T1b pairs: 1609 | single (4,5) py==np on all: True | singles (4,5): 1068
+pairs with both singles (4,5): 2570 | accepted (py): 1743 | py/np disagreements: 0
+time 53.5s

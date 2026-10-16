@@ -1,0 +1,3 @@
+437 437 110.7689847946167
+{'classes_processed': 437, 'total_2ext_45': 411976, 'total_t1b_45': 411976, 'total_t2_isect_45': 0, 'total_single_45': 15173, 'single_45_min_max': [21, 45], 'n_max_sidon_min_max': [48, 63], 'hist_min_h': {'9': 437}, 'classes_min_h_le_8': 0, 'classes_with_record_candidates': 0, 'classes_t2_precheck_true': 0, 'all_hA_7': True}
+exit 0

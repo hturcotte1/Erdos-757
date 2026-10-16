@@ -1,0 +1,3 @@
+A: (8, 12)
+A u {x}, x in P_ok: {9: 50}
+T1b (4,5) pairs (h_dfs, h_cpsat) counts: {(10, 10): 1743} time 5.0

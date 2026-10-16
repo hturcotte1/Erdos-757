@@ -1,0 +1,6 @@
+Route V vs stored rows and authors pair sets: 201/201 classes agree on every check
+total (4,5) vertex pairs compared exactly: 188413 ; (4,5) generic line points evaluated: 19110
+h histogram over all evaluated (4,5) types (vertices ordered + generic line points): {'9': 395936}
+vertices tested: 1064239 status: {'ok': 376826, 'not45': 634846, 'nondistinct': 52567}
+lines per class: 843 .. 1255 ; pure-AP D lines: [26] ; generic-(4,5) D lines: [26]
+secs per class: 2.5 .. 9.4

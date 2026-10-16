@@ -1,0 +1,17 @@
+4.3: 3 orders, 0 O
+4.4 O-order [(0, 1, 3), (1, 4, 5), (2, 3, 5)]: 2-edge infeasible sub-pattern exists: True
+4.4 O-order [(0, 1, 4), (0, 2, 3), (1, 3, 5)]: 2-edge infeasible sub-pattern exists: True
+4.4 O-order [(0, 1, 5), (0, 2, 3), (1, 3, 4)]: 2-edge infeasible sub-pattern exists: True
+4.4: 11 orders, 3 O
+4.5 O-order [(0, 1, 5), (0, 3, 4), (1, 2, 3)]: 2-edge infeasible sub-pattern exists: True
+4.5: 5 orders, 1 O
+4.6 O-order [(0, 1, 2), (0, 4, 5), (1, 3, 5)]: 2-edge infeasible sub-pattern exists: True
+4.6 O-order [(0, 1, 2), (1, 4, 5), (2, 3, 5)]: 2-edge infeasible sub-pattern exists: True
+4.6 O-order [(0, 1, 3), (0, 4, 5), (1, 2, 5)]: 2-edge infeasible sub-pattern exists: True
+4.6 O-order [(0, 1, 3), (0, 4, 5), (2, 3, 5)]: 2-edge infeasible sub-pattern exists: True
+4.6 O-order [(0, 1, 4), (0, 3, 5), (1, 2, 5)]: 2-edge infeasible sub-pattern exists: True
+4.6 O-order [(0, 1, 5), (0, 2, 4), (1, 3, 4)]: 2-edge infeasible sub-pattern exists: True
+4.6 O-order [(0, 1, 5), (0, 2, 4), (2, 3, 5)]: 2-edge infeasible sub-pattern exists: True
+4.6 O-order [(0, 1, 5), (0, 3, 4), (1, 2, 4)]: 2-edge infeasible sub-pattern exists: True
+4.6: 15 orders, 8 O
+TOTAL failing orders of 4.3-4.6: 12 (claimed 12); all K30 (2-edge) : True

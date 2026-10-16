@@ -1,0 +1,126 @@
+
+== 4.7 medial triangle (FORBIDDEN claimed): labeling [('a', 'c', 'b'), ('a', 'e', 'd'), ('b', 'f', 'd')]  (vertices abcdef)
+   distinct ordered patterns up to reflection: 2  verdicts {'D': 1, 'O': 1}   expected {'total': 2, 'O': 1, 'D': 1}
+   order a c b e f d  rank-form [(0, 1, 2), (0, 3, 5), (2, 4, 5)] : D  forced: x_a+x_f = x_c+x_e  i.e. c-a = f-e;  derivation: (1/2)*[a+b-2c] + (1/2)*[a+d-2e] + (-1/2)*[b+d-2f]
+   order a c b f e d  rank-form [(0, 1, 2), (0, 4, 5), (2, 3, 5)] : O  Farkas: (-1)*[a+b-2c] + (-1)*[a+d-2e] + (1)*[b+d-2f] = 2*(c-a) + 2*(e-f) > 0 but LHS = 0
+   MATCH: True
+
+== 8.15 medial 4-cycle (FORBIDDEN claimed): labeling [('a', 'c', 'b'), ('a', 'e', 'd'), ('b', 'g', 'f'), ('d', 'h', 'f')]  (vertices abcdefgh)
+   distinct ordered patterns up to reflection: 43  verdicts {'D': 10, 'O': 33}   expected {'total': 43, 'O': 33, 'D': 10}
+   order a c b e d g h f  rank-form [(0, 1, 2), (0, 3, 4), (2, 5, 7), (4, 6, 7)] : D  forced: x_c+x_h = x_e+x_g  i.e. e-c = h-g;  derivation: (-1/2)*[a+b-2c] + (1/2)*[a+d-2e] + (1/2)*[b+f-2g] + (-1/2)*[d+f-2h]
+   order a c b e d h g f  rank-form [(0, 1, 2), (0, 3, 4), (2, 6, 7), (4, 5, 7)] : O  Farkas: (-1)*[a+b-2c] + (-1)*[a+d-2e] + (-1)*[b+f-2g] + (1)*[d+f-2h] = 2*(c-a) + 2*(e-b) + 2*(g-h) > 0 but LHS = 0
+   order a c b e g d h f  rank-form [(0, 1, 2), (0, 3, 5), (2, 4, 7), (5, 6, 7)] : D  forced: x_c+x_h = x_e+x_g  i.e. e-c = h-g;  derivation: (-1/2)*[a+b-2c] + (1/2)*[a+d-2e] + (1/2)*[b+f-2g] + (-1/2)*[d+f-2h]
+   order a c b e g f h d  rank-form [(0, 1, 2), (0, 3, 7), (2, 4, 5), (5, 6, 7)] : D  forced: x_c+x_h = x_e+x_g  i.e. e-c = h-g;  derivation: (-1/2)*[a+b-2c] + (1/2)*[a+d-2e] + (1/2)*[b+f-2g] + (-1/2)*[f+d-2h]
+   order a c b g e d h f  rank-form [(0, 1, 2), (0, 4, 5), (2, 3, 7), (5, 6, 7)] : O  Farkas: (-1)*[a+b-2c] + (-1)*[a+d-2e] + (1)*[b+f-2g] + (-1)*[d+f-2h] = 2*(c-a) + 2*(e-g) + 2*(h-d) > 0 but LHS = 0
+   order a c b g f e h d  rank-form [(0, 1, 2), (0, 5, 7), (2, 3, 4), (4, 6, 7)] : D  forced: x_c+x_h = x_g+x_e  i.e. g-c = h-e;  derivation: (-1/2)*[a+b-2c] + (1/2)*[a+d-2e] + (1/2)*[b+f-2g] + (-1/2)*[f+d-2h]
+   order a c b g f h e d  rank-form [(0, 1, 2), (0, 6, 7), (2, 3, 4), (4, 5, 7)] : O  Farkas: (-1)*[a+b-2c] + (-1)*[a+d-2e] + (-1)*[b+f-2g] + (1)*[f+d-2h] = 2*(c-a) + 2*(g-b) + 2*(e-h) > 0 but LHS = 0
+   order a c e b d g h f  rank-form [(0, 1, 3), (0, 2, 4), (3, 5, 7), (4, 6, 7)] : D  forced: x_c+x_h = x_e+x_g  i.e. e-c = h-g;  derivation: (-1/2)*[a+b-2c] + (1/2)*[a+d-2e] + (1/2)*[b+f-2g] + (-1/2)*[d+f-2h]
+   order a c e b d h g f  rank-form [(0, 1, 3), (0, 2, 4), (3, 6, 7), (4, 5, 7)] : O  Farkas: (-1)*[b+f-2g] + (1)*[d+f-2h] = 1*(d-b) + 2*(g-h) > 0 but LHS = 0
+   order a e c b d h g f  rank-form [(0, 1, 4), (0, 2, 3), (3, 6, 7), (4, 5, 7)] : O  Farkas: (-1)*[b+f-2g] + (1)*[d+f-2h] = 1*(d-b) + 2*(g-h) > 0 but LHS = 0
+   order a c f g b e h d  rank-form [(0, 1, 4), (0, 5, 7), (2, 3, 4), (2, 6, 7)] : D  forced: x_c+x_h = x_g+x_e  i.e. g-c = h-e;  derivation: (-1/2)*[a+b-2c] + (1/2)*[a+d-2e] + (1/2)*[f+b-2g] + (-1/2)*[f+d-2h]
+   order a c f g b h e d  rank-form [(0, 1, 4), (0, 6, 7), (2, 3, 4), (2, 5, 7)] : O  Farkas: (-1)*[a+d-2e] + (1)*[f+d-2h] = 1*(c-a) + 1*(f-c) + 2*(e-h) > 0 but LHS = 0
+   order a c f e g b h d  rank-form [(0, 1, 5), (0, 3, 7), (2, 4, 5), (2, 6, 7)] : D  forced: x_c+x_h = x_e+x_g  i.e. e-c = h-g;  derivation: (-1/2)*[a+b-2c] + (1/2)*[a+d-2e] + (1/2)*[f+b-2g] + (-1/2)*[f+d-2h]
+   order a c f g h b e d  rank-form [(0, 1, 5), (0, 6, 7), (2, 3, 5), (2, 4, 7)] : O  Farkas: (-1)*[a+d-2e] + (1)*[f+d-2h] = 1*(c-a) + 1*(f-c) + 2*(b-h) + 2*(e-b) > 0 but LHS = 0
+   order a c f h g b e d  rank-form [(0, 1, 5), (0, 6, 7), (2, 3, 7), (2, 4, 5)] : O  Farkas: (-1)*[a+b-2c] + (-1)*[a+d-2e] + (1)*[f+d-2h] + (-1)*[f+b-2g] = 2*(c-a) + 2*(g-h) + 2*(e-b) > 0 but LHS = 0
+   order a f c g b e h d  rank-form [(0, 1, 6), (0, 2, 7), (3, 4, 6), (3, 5, 7)] : D  forced: x_f+x_e = x_c+x_b  i.e. c-f = e-b;  derivation: (-1/2)*[a+h-2f] + (1/2)*[a+d-2c] + (1/2)*[g+h-2b] + (-1/2)*[g+d-2e]
+   order a f g c b e h d  rank-form [(0, 1, 6), (0, 2, 7), (3, 4, 7), (3, 5, 6)] : O  Farkas: (1)*[c+d-2b] + (-1)*[c+h-2e] = 2*(e-b) + 1*(d-h) > 0 but LHS = 0
+   order a f c g e b h d  rank-form [(0, 1, 6), (0, 3, 7), (2, 4, 6), (2, 5, 7)] : D  forced: x_f+x_b = x_g+x_e  i.e. g-f = b-e;  derivation: (-1/2)*[a+h-2f] + (1/2)*[a+d-2g] + (1/2)*[c+h-2e] + (-1/2)*[c+d-2b]
+   order a f g c e b h d  rank-form [(0, 1, 6), (0, 3, 7), (2, 4, 7), (2, 5, 6)] : O  Farkas: (1)*[g+d-2e] + (-1)*[g+h-2b] = 2*(b-e) + 1*(d-h) > 0 but LHS = 0
+   order a f c e g b h d  rank-form [(0, 1, 6), (0, 4, 7), (2, 3, 6), (2, 5, 7)] : O  Farkas: (1)*[a+h-2f] + (-1)*[a+d-2g] + (1)*[c+h-2e] + (1)*[c+d-2b] = 2*(c-f) + 2*(g-e) + 2*(h-b) > 0 but LHS = 0
+   order a f g e c b h d  rank-form [(0, 1, 6), (0, 4, 7), (2, 3, 7), (2, 5, 6)] : O  Farkas: (-1)*[a+d-2c] + (1)*[g+d-2e] = 1*(f-a) + 1*(g-f) + 2*(c-e) > 0 but LHS = 0
+   order a f e c g b h d  rank-form [(0, 1, 6), (0, 5, 7), (2, 3, 6), (2, 4, 7)] : O  Farkas: (-1)*[a+d-2b] + (1)*[e+d-2g] = 1*(f-a) + 1*(e-f) + 2*(b-g) > 0 but LHS = 0
+   order a f e g c b h d  rank-form [(0, 1, 6), (0, 5, 7), (2, 3, 7), (2, 4, 6)] : O  Farkas: (-1)*[a+d-2b] + (1)*[e+d-2g] = 1*(f-a) + 1*(e-f) + 2*(c-g) + 2*(b-c) > 0 but LHS = 0
+   order a f c g b h e d  rank-form [(0, 1, 7), (0, 2, 6), (3, 4, 6), (3, 5, 7)] : O  Farkas: (1)*[a+d-2f] + (-1)*[a+e-2c] = 2*(c-f) + 1*(d-e) > 0 but LHS = 0
+   order a f g c b h e d  rank-form [(0, 1, 7), (0, 2, 6), (3, 4, 7), (3, 5, 6)] : O  Farkas: (1)*[c+d-2b] + (-1)*[c+e-2h] = 2*(h-b) + 1*(d-e) > 0 but LHS = 0
+   order a f c g h b e d  rank-form [(0, 1, 7), (0, 3, 6), (2, 4, 6), (2, 5, 7)] : O  Farkas: (1)*[a+d-2f] + (-1)*[a+e-2g] = 2*(c-f) + 2*(g-c) + 1*(d-e) > 0 but LHS = 0
+   order a f g c h b e d  rank-form [(0, 1, 7), (0, 3, 6), (2, 4, 7), (2, 5, 6)] : O  Farkas: (1)*[g+d-2h] + (-1)*[g+e-2b] = 2*(b-h) + 1*(d-e) > 0 but LHS = 0
+   order a f c h g b e d  rank-form [(0, 1, 7), (0, 4, 6), (2, 3, 6), (2, 5, 7)] : O  Farkas: (-1)*[a+e-2g] + (1)*[c+e-2h] = 1*(f-a) + 1*(c-f) + 2*(g-h) > 0 but LHS = 0
+   order a f g h c b e d  rank-form [(0, 1, 7), (0, 4, 6), (2, 3, 7), (2, 5, 6)] : O  Farkas: (-1)*[a+e-2c] + (1)*[g+d-2h] = 1*(f-a) + 1*(g-f) + 2*(c-h) + 1*(d-e) > 0 but LHS = 0
+   order a f h c g b e d  rank-form [(0, 1, 7), (0, 5, 6), (2, 3, 6), (2, 4, 7)] : O  Farkas: (-1)*[a+e-2b] + (1)*[h+d-2g] = 1*(f-a) + 1*(h-f) + 2*(b-g) + 1*(d-e) > 0 but LHS = 0
+   order a f h g c b e d  rank-form [(0, 1, 7), (0, 5, 6), (2, 3, 7), (2, 4, 6)] : O  Farkas: (-1)*[a+e-2b] + (1)*[h+e-2c] = 1*(f-a) + 1*(h-f) + 2*(b-c) > 0 but LHS = 0
+   order a f c e g h b d  rank-form [(0, 2, 6), (0, 3, 7), (1, 4, 6), (1, 5, 7)] : D  forced: x_c+x_h = x_e+x_g  i.e. e-c = h-g;  derivation: (-1/2)*[a+b-2c] + (1/2)*[a+d-2e] + (1/2)*[f+b-2g] + (-1/2)*[f+d-2h]
+   order a f c e h g b d  rank-form [(0, 2, 6), (0, 3, 7), (1, 4, 7), (1, 5, 6)] : O  Farkas: (1)*[f+d-2h] + (-1)*[f+b-2g] = 2*(g-h) + 1*(d-b) > 0 but LHS = 0
+   order a f c h e g b d  rank-form [(0, 2, 6), (0, 4, 7), (1, 3, 7), (1, 5, 6)] : O  Farkas: (-1)*[a+d-2e] + (1)*[f+d-2h] = 1*(f-a) + 2*(e-h) > 0 but LHS = 0
+   order a f c g h e b d  rank-form [(0, 2, 6), (0, 5, 7), (1, 3, 6), (1, 4, 7)] : O  Farkas: (-1)*[a+d-2e] + (1)*[f+d-2h] = 1*(f-a) + 2*(e-h) > 0 but LHS = 0
+   order a f c h g e b d  rank-form [(0, 2, 6), (0, 5, 7), (1, 3, 7), (1, 4, 6)] : O  Farkas: (-1)*[a+d-2e] + (1)*[f+d-2h] = 1*(f-a) + 2*(g-h) + 2*(e-g) > 0 but LHS = 0
+   order a f e c h g b d  rank-form [(0, 2, 7), (0, 3, 6), (1, 4, 7), (1, 5, 6)] : O  Farkas: (1)*[f+d-2h] + (-1)*[f+b-2g] = 2*(g-h) + 1*(d-b) > 0 but LHS = 0
+   order a f e h c g b d  rank-form [(0, 2, 7), (0, 4, 6), (1, 3, 7), (1, 5, 6)] : O  Farkas: (-1)*[a+b-2c] + (1)*[f+d-2h] = 1*(f-a) + 2*(c-h) + 1*(d-b) > 0 but LHS = 0
+   order a f h c g e b d  rank-form [(0, 2, 7), (0, 5, 6), (1, 3, 6), (1, 4, 7)] : O  Farkas: (-1)*[a+b-2e] + (1)*[f+d-2g] = 1*(f-a) + 2*(e-g) + 1*(d-b) > 0 but LHS = 0
+   order a f h g c e b d  rank-form [(0, 2, 7), (0, 5, 6), (1, 3, 7), (1, 4, 6)] : O  Farkas: (-1)*[a+b-2e] + (1)*[f+b-2c] = 1*(f-a) + 2*(e-c) > 0 but LHS = 0
+   order a f h c e g b d  rank-form [(0, 3, 6), (0, 4, 7), (1, 2, 7), (1, 5, 6)] : O  Farkas: (-1)*[a+b-2c] + (1)*[f+d-2h] = 1*(f-a) + 2*(c-h) + 1*(d-b) > 0 but LHS = 0
+   order a f h e c g b d  rank-form [(0, 3, 7), (0, 4, 6), (1, 2, 7), (1, 5, 6)] : O  Farkas: (-1)*[a+d-2e] + (1)*[f+d-2h] = 1*(f-a) + 2*(e-h) > 0 but LHS = 0
+   order a f h e g c b d  rank-form [(0, 3, 7), (0, 5, 6), (1, 2, 7), (1, 4, 6)] : O  Farkas: (-1)*[a+d-2e] + (-1)*[a+b-2c] + (1)*[f+d-2h] + (1)*[f+b-2g] = 2*(f-a) + 2*(e-h) + 2*(c-g) > 0 but LHS = 0
+   MATCH: True
+
+== 10.6 Pasch K30 (FORBIDDEN claimed): labeling [('b', 'a', 'c'), ('a', 'd', 'e'), ('b', 'f', 'd'), ('e', 'c', 'f')]  (vertices abcdef)
+   distinct ordered patterns up to reflection: 1  verdicts {'O': 1}   expected {'total': 1, 'O': 1}
+   order b a f c d e  rank-form [(0, 1, 3), (0, 2, 4), (1, 4, 5), (2, 3, 5)] : O  Farkas: (-1)*[a+e-2d] + (1)*[f+e-2c] = 1*(f-a) + 2*(d-c) > 0 but LHS = 0
+   MATCH: True
+
+== 4.3 cyclic corner midpoints (REALIZABLE claimed): labeling [('b', 'a', 'c'), ('a', 'd', 'e'), ('d', 'b', 'f')]  (vertices abcdef)
+   distinct ordered patterns up to reflection: 3  verdicts {'R': 3}   expected {'total': 3, 'R': 3}
+   order c a d b e f  rank-form [(0, 1, 3), (1, 2, 4), (2, 3, 5)] : R  realization c=0, a=78, d=127, b=156, e=176, f=185
+   order c a d b f e  rank-form [(0, 1, 3), (1, 2, 5), (2, 3, 4)] : R  realization c=0, a=804, d=1399, b=1608, f=1817, e=1994
+   order c a f b d e  rank-form [(0, 1, 3), (1, 4, 5), (2, 3, 4)] : R  realization c=0, a=95, f=102, b=190, d=278, e=461
+   MATCH: True
+
+== 4.6 one corner midpoint (REALIZABLE claimed): labeling [('b', 'a', 'c'), ('a', 'e', 'd'), ('b', 'f', 'd')]  (vertices abcdef)
+   distinct ordered patterns up to reflection: 15  verdicts {'R': 7, 'O': 8}   expected {'total': 15, 'R': 7, 'O': 8}
+   order c a e b f d  rank-form [(0, 1, 2), (0, 3, 4), (2, 4, 5)] : R  realization c=0, a=59, e=118, b=278, f=556, d=994
+   order b a c f e d  rank-form [(0, 1, 2), (0, 3, 5), (1, 4, 5)] : R  realization b=0, a=118, c=236, f=1325, e=1384, d=2650
+   order b a c e f d  rank-form [(0, 1, 2), (0, 4, 5), (1, 3, 5)] : O  Farkas: (-1)*[b+d-2f] + (1)*[a+d-2e] = 1*(a-b) + 2*(f-e) > 0 but LHS = 0
+   order c a e d f b  rank-form [(0, 1, 2), (0, 4, 5), (2, 3, 4)] : R  realization c=0, a=10, e=20, d=69, f=118, b=236
+   order c a b e f d  rank-form [(0, 1, 2), (1, 3, 5), (2, 4, 5)] : R  realization c=0, a=254, b=508, e=539, f=666, d=824
+   order c a b f e d  rank-form [(0, 1, 2), (1, 4, 5), (2, 3, 5)] : O  Farkas: (-1)*[c+b-2a] + (-1)*[a+d-2e] + (1)*[b+d-2f] = 1*(a-c) + 2*(e-f) > 0 but LHS = 0
+   order b a f c e d  rank-form [(0, 1, 3), (0, 2, 5), (1, 4, 5)] : R  realization b=0, a=10, f=17, c=20, e=22, d=34
+   order b a e c f d  rank-form [(0, 1, 3), (0, 4, 5), (1, 2, 5)] : O  Farkas: (-1)*[b+d-2f] + (1)*[a+d-2e] = 1*(a-b) + 2*(c-e) + 2*(f-c) > 0 but LHS = 0
+   order b f a c e d  rank-form [(0, 1, 3), (0, 4, 5), (2, 3, 5)] : O  Farkas: (-1)*[b+d-2e] + (1)*[a+d-2c] = 1*(f-b) + 1*(a-f) + 2*(e-c) > 0 but LHS = 0
+   order b a f e c d  rank-form [(0, 1, 4), (0, 2, 5), (1, 3, 5)] : R  realization b=0, a=1074, f=1231, e=1768, c=2148, d=2462
+   order b f a e d c  rank-form [(0, 1, 4), (0, 2, 5), (2, 3, 4)] : R  realization b=0, f=549, a=682, e=890, d=1098, c=1364
+   order b a e f c d  rank-form [(0, 1, 4), (0, 3, 5), (1, 2, 5)] : O  Farkas: (-1)*[b+d-2f] + (1)*[a+d-2e] = 1*(a-b) + 2*(f-e) > 0 but LHS = 0
+   order b a f e d c  rank-form [(0, 1, 5), (0, 2, 4), (1, 3, 4)] : O  Farkas: (1)*[b+c-2a] + (-1)*[b+d-2f] = 2*(f-a) + 1*(c-d) > 0 but LHS = 0
+   order b f a e c d  rank-form [(0, 1, 5), (0, 2, 4), (2, 3, 5)] : O  Farkas: (1)*[b+d-2f] + (-1)*[b+c-2a] = 2*(a-f) + 1*(d-c) > 0 but LHS = 0
+   order b a e f d c  rank-form [(0, 1, 5), (0, 3, 4), (1, 2, 4)] : O  Farkas: (-1)*[b+d-2f] + (1)*[a+d-2e] = 1*(a-b) + 2*(f-e) > 0 but LHS = 0
+   MATCH: True
+
+== 10.5 Pasch (REALIZABLE claimed): labeling [('b', 'a', 'c'), ('a', 'd', 'e'), ('d', 'b', 'f'), ('e', 'c', 'f')]  (vertices abcdef)
+   distinct ordered patterns up to reflection: 3  verdicts {'R': 1, 'O': 2}   expected {'total': 3, 'R': 1, 'O': 2}
+   order f b a c d e  rank-form [(0, 1, 3), (0, 2, 5), (1, 4, 5), (2, 3, 4)] : R  realization f=0, b=4, a=7, c=8, d=9, e=14
+   order f b a d c e  rank-form [(0, 1, 3), (0, 4, 5), (1, 2, 4), (2, 3, 5)] : O  Farkas: (-1)*[f+e-2c] + (1)*[a+e-2d] = 1*(b-f) + 1*(a-b) + 2*(c-d) > 0 but LHS = 0
+   order f c a b d e  rank-form [(0, 1, 3), (0, 4, 5), (1, 2, 5), (2, 3, 4)] : O  Farkas: (-1)*[f+e-2d] + (1)*[c+e-2a] + (-1)*[a+d-2b] = 1*(c-f) + 3*(b-a) + 1*(d-b) > 0 but LHS = 0
+   MATCH: True
+
+== whole census TRIANGLE: 60 ordered patterns, {'O': 28, 'D': 10, 'R': 22}   expected {'total': 60, 'R': 22, 'O': 28, 'D': 10}
+   MATCH: True
+
+== whole census PASCH: 15 ordered patterns, {'O': 13, 'E': 1, 'R': 1}   expected {'total': 15, 'R': 1, 'O': 13, 'E': 1}
+   MATCH: True
+
+== whole census TWO EDGES SHARING A VERTEX: 9 ordered patterns, {'R': 6, 'O': 2, 'D': 1}   expected {'total': 9, 'R': 6, 'O': 2, 'D': 1}
+   MATCH: True
+
+== whole census TWO DISJOINT EDGES: 7 ordered patterns, {'R': 6, 'O': 1}   expected {'total': 7, 'R': 6, 'O': 1}
+   MATCH: True
+
+== Pasch realization [0, 4, 7, 8, 9, 14]: APs [(0, 1, 3), (0, 2, 5), (1, 4, 5), (2, 3, 4)] == [(0, 1, 3), (0, 2, 5), (1, 4, 5), (2, 3, 4)]: True; (4,5): True; h = 4
+
+== per-order comparison with catalogue.json.gz: 67 patterns, 0 mismatches
+
+== injective labelings forbidden in every order (from catalogue.json.gz):
+   count 9 by hid {4: 1, 5: 2, 6: 2, 7: 1, 8: 1, 9: 1, 10: 1}
+   hid 4 n=6 labeling [[[0, 1, 2], 2], [[0, 3, 4], 4], [[1, 3, 5], 5]] orders 2 {'forced repeated difference': 1, 'order-infeasible': 1} medial-triangle: True
+   hid 5 n=8 labeling [[[0, 1, 2], 2], [[0, 3, 4], 4], [[0, 5, 6], 0], [[1, 3, 7], 7]] orders 48 {'forced repeated difference': 21, 'order-infeasible': 27} medial-triangle: True
+   hid 5 n=8 labeling [[[0, 1, 2], 2], [[0, 3, 4], 4], [[0, 5, 6], 5], [[1, 3, 7], 7]] orders 120 {'forced repeated difference': 33, 'order-infeasible': 87} medial-triangle: True
+   hid 6 n=7 labeling [[[0, 1, 2], 0], [[0, 3, 4], 4], [[0, 5, 6], 6], [[1, 3, 5], 1]] orders 10 {'forced repeated difference': 5, 'order-infeasible': 5} medial-triangle: True
+   hid 6 n=7 labeling [[[0, 1, 2], 2], [[0, 3, 4], 4], [[0, 5, 6], 6], [[1, 3, 5], 1]] orders 18 {'order-infeasible': 14, 'forced extra AP': 4} medial-triangle: True
+   hid 7 n=8 labeling [[[0, 1, 2], 1], [[0, 3, 4], 4], [[1, 5, 6], 5], [[2, 3, 7], 7]] orders 104 {'forced repeated difference': 41, 'order-infeasible': 63} medial-triangle: True
+   hid 8 n=8 labeling [[[0, 1, 2], 2], [[0, 3, 4], 4], [[1, 5, 6], 6], [[3, 5, 7], 7]] orders 43 {'forced repeated difference': 10, 'order-infeasible': 33} medial-triangle: False
+   hid 9 n=7 labeling [[[0, 1, 2], 0], [[0, 3, 4], 4], [[1, 5, 6], 6], [[2, 3, 5], 3]] orders 12 {'order-infeasible': 8, 'forced extra AP': 4} medial-triangle: True
+   hid 10 n=6 labeling [[[0, 1, 2], 0], [[0, 3, 4], 3], [[1, 3, 5], 5], [[2, 4, 5], 2]] orders 1 {'order-infeasible': 1} medial-triangle: False
+
+== catalogue: 11 configurations, 145 labelings, 75 injective
+
+== n=8 library: 243 cores, kinds {'diff': 87, 'order': 134, 'extra_ap': 22}, edge counts {4: 69, 5: 83, 6: 91}, counts_by_n {'8': {'realizable': 16568, 'order-infeasible': 28697, 'forced repeated difference': 518, 'forced extra AP': 498, 'total': 46281}}
+   sampled 40 cores: 0 failures (forced relation, minimality, linearity, full support)
+
+ALL CHECKS MATCH: True

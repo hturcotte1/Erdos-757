@@ -1,0 +1,5 @@
+n=1 box [0,0]: min h = 1; normal forms with h=min: 1 [(0,)]
+n=2 box [0,30]: min h = 2; normal forms with h=min: 1 [(0, 1)]
+n=3 box [0,30]: min h = 2; normal forms with h=min: 1 [(0, 1, 2)]
+n=4 box [0,30]: min h = 3; normal forms with h=min: 206 [(0, 1, 2, 5), (0, 1, 2, 6), (0, 1, 2, 7)]
+n=5 box [0,30]: min h = 4; normal forms with h=min: 3579 [(0, 1, 2, 5, 8), (0, 1, 2, 5, 9), (0, 1, 2, 5, 10)]

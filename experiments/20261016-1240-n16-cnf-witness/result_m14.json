@@ -1,0 +1,12 @@
+{
+ "n": 16,
+ "T": 9,
+ "m": 14,
+ "tag": "m14",
+ "solver": "cadical195",
+ "vars": 182785,
+ "clauses": 940476,
+ "status": "TIMEOUT",
+ "wall_s": 12600,
+ "note": "killed by timeout 12600 (cadical running, no answer)"
+}

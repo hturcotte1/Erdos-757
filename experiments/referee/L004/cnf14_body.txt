@@ -1,0 +1,20 @@
+tri = list(itertools.combinations(range(n), 3))
+var = {t: q + 1 for q, t in enumerate(tri)}
+cls = []
+bymid = {j: [t for t in tri if t[1] == j] for j in range(1, n - 1)}
+for j, ts in bymid.items():
+    cls.append([var[t] for t in ts])
+    for a, b in itertools.combinations(ts, 2):
+        cls.append([-var[a], -var[b]])
+for a, b in itertools.combinations(range(n), 2):
+    ts = [t for t in tri if a in t and b in t]
+    for s, u in itertools.combinations(ts, 2):
+        if s[1] != u[1]:
+            cls.append([-var[s], -var[u]])
+for s in tri:
+    for u in tri:
+        if s[1] < u[1] and s[0] >= u[0] and s[2] >= u[2]:
+            cls.append([-var[s], -var[u]])
+for S in itertools.combinations(range(n), T + 1):
+    cls.append([var[t] for t in itertools.combinations(S, 3)])
+# any triple whose middle is an extreme vertex cannot exist (middle is 1..n-2 automatically since i<j<k)

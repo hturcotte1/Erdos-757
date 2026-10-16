@@ -1,0 +1,6 @@
+n=10 T=6 mode=sat split=None solver=g4 models=91434 time=9.9
+m=8 f7=0 count=79488
+m=8 f7=1 count=11946
+n=10 T=7 mode=sat split=None solver=g4 models=338504 time=21.4
+m=8 f7=0 count=302316
+m=8 f7=1 count=36188

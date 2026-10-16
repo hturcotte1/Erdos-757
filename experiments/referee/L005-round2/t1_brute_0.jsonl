@@ -1,0 +1,3 @@
+{"class": 2440, "counters_mine_vs_stored": {"Px_size": [223, 223], "n_single_45": [50, 50], "t1_pairs": [11774, 11774], "n_t1b_45": [1743, 1743]}, "counters_equal": true, "sample": 20, "h_hist_pure": {"10": 20}, "secs": 1.2}
+{"class": 1524, "counters_mine_vs_stored": {"Px_size": [208, 208], "n_single_45": [32, 32], "t1_pairs": [7305, 7305], "n_t1b_45": [854, 854]}, "counters_equal": true, "sample": 20, "h_hist_pure": {"10": 20}, "secs": 1.0}
+{"class": 403, "counters_mine_vs_stored": {"Px_size": [229, 229], "n_single_45": [47, 47], "t1_pairs": [11403, 11403], "n_t1b_45": [1638, 1638]}, "counters_equal": true, "sample": 20, "h_hist_pure": {"10": 20}, "secs": 1.3}

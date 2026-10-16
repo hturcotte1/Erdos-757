@@ -1,0 +1,4 @@
+lines=395039 badstruct=0 nonlinear=0 k30fail=0 f7=0 alpha>7=0
+alpha_hist: 7:395039
+singular=0 divfail=0 residfail=0 order_infeasible=321304 extra_ap=10803 not45=8689 realizable=54243
+h_hist: 7:54243

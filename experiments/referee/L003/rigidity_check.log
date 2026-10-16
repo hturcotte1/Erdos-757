@@ -1,0 +1,6 @@
+n=4 maps checked=4 det range [3, 4], bound 2^(n-2)=4
+n=5 maps checked=36 det range [4, 8], bound 2^(n-2)=8
+n=6 maps checked=576 det range [5, 16], bound 2^(n-2)=16
+n=7 maps checked=14400 det range [6, 32], bound 2^(n-2)=32
+n=8 maps checked=200000 det range [7, 64], bound 2^(n-2)=64
+weak Sidon random sets tested=9432, with a repeated AP midpoint=0

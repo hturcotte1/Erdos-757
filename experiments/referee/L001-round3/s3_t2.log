@@ -1,0 +1,9 @@
+line pairs: 861 parallel: 273 non-parallel: 588 | distinct intersection points: 512
+after removing x=y and x or y in A: 498 | (4,5): 0 | min #cross APs: 2 | denominators: [1, 3]
+intersection points whose 4-set {a,a',x,y} has >= 5 distances (should be 0): 0
+intersection points with a coordinate in P (would be T1 anyway): 42
+lines with (4,5) generic points: 30 | h values there: [10]
+lines with no (4,5) generic point: [('a_mid', '136'), ('a_mid', '200'), ('a_mid', '243'), ('a_mid', '246'), ('a_mid', '249'), ('a_mid', '272'), ('a_mid', '286'), ('a_mid', '298'), ('a_mid', '323'), ('a_mid', '400'), ('a_mid', '528'), ('a_mid', '596')]
+lines with mixed outcomes among 8 samples: 0
+T0 random pairs (12 APs each): {10: 100}
+time 4.8s

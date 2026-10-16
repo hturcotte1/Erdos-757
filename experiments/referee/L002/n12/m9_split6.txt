@@ -1,0 +1,1 @@
+DONE split=6 n=12 m=9 T=7 prune=1 order=0 nodes=178692069 leaves=433900 f7rej=0 sols=0 cpu=18.3

@@ -1,0 +1,4 @@
+glue A_base u (q*12 + t): n=26 (4,5) True | h_def(SAT, all sum collisions) 15 | alpha(3-AP only) 15 | h(A)+h(B) = 15 | witness Sidon True
+glue A_base u (q*12b + t): n=26 (4,5) True | h_def(SAT, all sum collisions) 15 | alpha(3-AP only) 15 | h(A)+h(B) = 15 | witness Sidon True
+glue A_base u (q*14 + t): n=28 (4,5) True | h_def(SAT, all sum collisions) 16 | alpha(3-AP only) 16 | h(A)+h(B) = 16 | witness Sidon True
+time 0.0s

@@ -1,0 +1,21 @@
+H n=10 m=0 alpha=10 count=1
+H n=10 m=1 alpha=9 count=120
+H n=10 m=2 alpha=8 count=1890
+H n=10 m=2 alpha=9 count=2772
+H n=10 m=3 alpha=7 count=2080
+H n=10 m=3 alpha=8 count=69690
+H n=10 m=3 alpha=9 count=5160
+H n=10 m=4 alpha=7 count=81158
+H n=10 m=4 alpha=8 count=502844
+H n=10 m=4 alpha=9 count=1720
+H n=10 m=5 alpha=7 count=1259878
+H n=10 m=5 alpha=8 count=811178
+H n=10 m=6 alpha=7 count=2962473
+H n=10 m=6 alpha=8 count=260972
+H n=10 m=7 alpha=6 count=36210
+H n=10 m=7 alpha=7 count=1865474
+H n=10 m=7 alpha=8 count=16478
+H n=10 m=8 alpha=6 count=79488
+H n=10 m=8 alpha=7 count=222828
+H n=10 m=8 alpha=8 count=91
+DONE n=10 m=-1 T=10 prune=0 order=0 nodes=9645626 leaves=8290001 f7rej=107496 sols=0 cpu=48.3

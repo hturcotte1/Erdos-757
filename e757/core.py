@@ -13,11 +13,11 @@ alpha(A)                 largest Sidon subset size h(A) = independence number of
                          (valid for weak Sidon sets, in particular (4,5)-sets)
 ap_rank_report(A)        rank of the AP equation system; solution dim 2 means the AP
                          hypergraph determines A up to x -> q*x + t ("affinely rigid")
-realize(edges_with_mid, n)
+realize(labeled_edges, n, tries=20, seed=0)
                          try to realize an abstract labeled hypergraph (each edge given as
                          (endpoint, midpoint, endpoint) on vertices 0..n-1) as the exact
                          AP-hypergraph of a (4,5)-set of integers, using a generic point of
-                         the solution space. Returns the integer set or a failure reason.
+                         the solution space. Returns (True, sorted_integer_list) or (False, reason).
 
 Run this file directly to reproduce the checks quoted in the Part 2 supplement.
 """

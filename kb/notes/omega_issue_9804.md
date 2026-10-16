@@ -35,12 +35,13 @@ It claims no solution. The data are exact and reproducible.
 ## Open candidate: $7\tau(K)\le 3|R|+2e_2+4e_1$
 - It is tight on the amalgam traces.
 - No violation was found over all deletion/avoidance states of both 12-point sets. That is one
-  isomorphism class of evidence.
+  isomorphism class of evidence. [Update 2026-10-16, [verified-here]: this inequality is Q8 in kb/open_questions.md. Our exact checks (two independent implementations) found no violation on all $3^n$ deletion/avoidance states of the seven record sets and on about 570M further sampled states of random saturated (4,5)-sets and gluings (K34; evidence, not proof). Q8 is false for the abstract class of linear, $F_7$-free, monotone (K30), medial-free (K31) hypergraphs free of all cores with at most 4 edges: an explicit 12-vertex violator with $D=\{2,8\}$ gives $35>34$. That violator is not realizable and contains a 6-edge forbidden core, so Q8 remains open for realizable sets (K38, K39, D17; experiments/falsify/q8-abstract/counterexample.json). With $D=\emptyset$ Q8 reads $h\ge 4n/7$.]
 - In a minimal counterexample:
   - the pair graph is a matching;
   - the local types are $(d_2,d_3)\in\{(0,2),(1,1),(1,2)\}$.
 
-## Extension certificate for $A_{\rm base}$
+## Extension certificate for $A_{\rm base}$ [community]
+- Status: the statement in the next bullet ($h=10$ for every 2-point (4,5) extension) was independently re-proved here as certificate L001 / K13 [verified-here], 2026-10-14 (results/proofs/L001-abase-two-point-extensions.md; referee ACCEPT after 4 rounds). Only that statement is upgraded. The counts below (124 triples, 6,484 pairs, 6,609 extensions) are omega's and remain [community]. They are not comparable to L001's counts (1,743 non-generic (4,5) pairs plus generic cases). The $3^{14}$-state bullet also remains [community]. K34 re-ran Q8 on $A_{\rm base}$ and reports 3,253,568 valid states but 94,544 equalities, not omega's 99,153.
 - For any two distinct reals $x,y$ with $A_{\rm base}\cup\{x,y\}$ a (4,5)-set, $h=10$ exactly.
 - Covered: 124 compatible triples, 6,484 pairs, 6,609 extensions.
 - Ten-witness certificate: every extension has an independent 10-set containing both new points.

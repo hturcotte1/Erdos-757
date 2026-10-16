@@ -1,0 +1,8 @@
+OUTER idx=0 c1-option=1 ((0, 1, 2)) inner_cubes=11 sat=0 result=UNSAT time=57.0
+OUTER idx=1 c1-option=2 ((0, 1, 3)) inner_cubes=11 sat=0 result=UNSAT time=96.1
+OUTER idx=2 c1-option=3 ((0, 1, 4)) inner_cubes=11 sat=0 result=UNSAT time=170.9
+OUTER idx=3 c1-option=4 ((0, 1, 5)) inner_cubes=11 sat=0 result=UNSAT time=179.1
+OUTER idx=4 c1-option=5 ((0, 1, 6)) inner_cubes=11 sat=0 result=UNSAT time=167.1
+OUTER idx=5 c1-option=6 ((0, 1, 7)) inner_cubes=11 sat=0 result=UNSAT time=125.2
+OUTER idx=6 c1-option=7 ((0, 1, 8)) inner_cubes=11 sat=0 result=UNSAT time=73.3
+exit=0

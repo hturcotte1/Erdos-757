@@ -1,0 +1,23 @@
+  [26 s] bash -c nice -n 10 ./satcheck 11 1 1 | gzip > sat_n11_k1_l1.txt.gz
+STATS n=11 k30=1 lin=1 r1=-1 leaves=13860888 singular=0 fallback=0 orderfail=11226432 notweakSidon=1427560 not45=0 apbad=0 ok45=1206896 printed=603448 symmetric=0 hhist 7:933922 8:272960 9:14
+  [340 s] bash -c nice -n 10 ./satcheck 11 0 1 | gzip > sat_n11_k0_l1.txt.gz
+STATS n=11 k30=0 lin=1 r1=-1 leaves=582628416 singular=0 fallback=0 orderfail=579993960 notweakSidon=1427560 not45=0 apbad=0 ok45=1206896 printed=603448 symmetric=0 hhist 7:933922 8:272960 9:14
+  [189 s] bash -c nice -n 10 ./satcheck 11 1 0 2 | gzip > sat_n11_k1_l0_r2.txt.gz
+STATS n=11 k30=1 lin=0 r1=2 leaves=445565785 singular=0 fallback=0 orderfail=340593262 notweakSidon=98885953 not45=6086570 apbad=0 ok45=0 printed=0 symmetric=0 hhist
+  [187 s] bash -c nice -n 10 ./satcheck 11 1 0 3 | gzip > sat_n11_k1_l0_r3.txt.gz
+STATS n=11 k30=1 lin=0 r1=3 leaves=394290286 singular=0 fallback=0 orderfail=306775956 notweakSidon=81595565 not45=5734072 apbad=0 ok45=184693 printed=144244 symmetric=0 hhist 7:142710 8:41982 9:1
+  [166 s] bash -c nice -n 10 ./satcheck 11 1 0 4 | gzip > sat_n11_k1_l0_r4.txt.gz
+STATS n=11 k30=1 lin=0 r1=4 leaves=343014787 singular=0 fallback=0 orderfail=270576158 notweakSidon=66406397 not45=5792572 apbad=0 ok45=239660 printed=164856 symmetric=0 hhist 7:188698 8:50962
+  [146 s] bash -c nice -n 10 ./satcheck 11 1 0 5 | gzip > sat_n11_k1_l0_r5.txt.gz
+STATS n=11 k30=1 lin=0 r1=5 leaves=291739288 singular=0 fallback=0 orderfail=232287404 notweakSidon=53907921 not45=5303586 apbad=0 ok45=240377 printed=141149 symmetric=0 hhist 7:187237 8:53134 9:6
+  [118 s] bash -c nice -n 10 ./satcheck 11 1 0 6 | gzip > sat_n11_k1_l0_r6.txt.gz
+STATS n=11 k30=1 lin=0 r1=6 leaves=240769960 singular=0 fallback=0 orderfail=192661582 notweakSidon=43391102 not45=4518505 apbad=0 ok45=198771 printed=93332 symmetric=0 hhist 7:154480 8:44290 9:1
+  [97 s] bash -c nice -n 10 ./satcheck 11 1 0 7 | gzip > sat_n11_k1_l0_r7.txt.gz
+STATS n=11 k30=1 lin=0 r1=7 leaves=190610001 singular=0 fallback=0 orderfail=152246422 notweakSidon=34552583 not45=3667106 apbad=0 ok45=143890 printed=45967 symmetric=0 hhist 7:111464 8:32425 9:1
+  [71 s] bash -c nice -n 10 ./satcheck 11 1 0 8 | gzip > sat_n11_k1_l0_r8.txt.gz
+STATS n=11 k30=1 lin=0 r1=8 leaves=141913505 singular=0 fallback=0 orderfail=111817661 notweakSidon=27142020 not45=2848261 apbad=0 ok45=105563 printed=13900 symmetric=0 hhist 7:81211 8:24350 9:2
+  [49 s] bash -c nice -n 10 ./satcheck 11 1 0 9 | gzip > sat_n11_k1_l0_r9.txt.gz
+STATS n=11 k30=1 lin=0 r1=9 leaves=95444316 singular=0 fallback=0 orderfail=72208882 notweakSidon=20976594 not45=2197744 apbad=0 ok45=61096 printed=0 symmetric=0 hhist 7:44262 8:16831 9:3
+  [29 s] bash -c nice -n 10 ./satcheck 11 1 0 10 | gzip > sat_n11_k1_l0_r10.txt.gz
+STATS n=11 k30=1 lin=0 r1=10 leaves=51841968 singular=0 fallback=0 orderfail=34788108 notweakSidon=15348440 not45=1672574 apbad=0 ok45=32846 printed=0 symmetric=0 hhist 7:23860 8:8986
+DONE

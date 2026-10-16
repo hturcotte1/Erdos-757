@@ -1,0 +1,2 @@
+['RESULT valid=3253568 violQ8=0 violD4=0 eqQ8=94544 minslack=0 maxtau=7', 'HIST 0:94544 1:131346 2:84128 3:305817 4:311463 5:175228 6:458577 7:358812']
+python crosscheck of dumped states: 326 checked, mismatches 0

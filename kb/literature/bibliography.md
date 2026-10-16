@@ -12,10 +12,16 @@
 - Henning, Yeo, *Transversals and Independence in Linear Hypergraphs with Maximum Degree Two*, EJC 24(2) P2.50: https://www.combinatorics.org/ojs/index.php/eljc/article/view/v24i2p50
 - Dorfling, Henning, *Linear hypergraphs with large transversal number and maximum degree two*, Eur. J. Combin. 36 (2014) 231–236
 - Henning, Yeo, *Lower bounds on Tuza constants for transversals in linear uniform hypergraphs*, DAM 304 (2021) 12–22
+- Henning, Yeo, *Hypergraphs with large transversal number and with edge sizes at least three*, J. Graph Theory 59 (2008) 326–348, and *Hypergraphs with large transversal number*, Discrete Math. 313 (2013) 959–966 (equality cases of $4\tau\le n+m$, $6\tau\le2n+m$; cited by HY 2021); Henning, Löwenstein, DM 323 (2014) 69–75 (arXiv:1401.4851)
+- zbMATH Open record of HY 2021: Zbl 1470.05066 (no review text); full text NOT obtained, see kb/notes/henning_yeo_2021_affine.md
+- Sidorenko, *Exact values of Turán numbers*, Mat. Zametki 42 (1987) 751–760; Chvátal, Hanson, *Degrees and matchings*, JCTB 20 (1976) 128–138 (both cited by Gyárfás–Lehel); Lovász, Plummer, *Matching Theory* (1986)
 - Henning, Yeo, *Transversals in Linear Uniform Hypergraphs* (book, Springer 2020): https://link.springer.com/978-3-030-46561-2
 - Chvátal, McDiarmid, *Small transversals in hypergraphs*, Combinatorica 12 (1992) 19–26; Tuza, *Covering all cliques of a graph*, Discrete Math. 86 (1990) 117–126
 
 ## Community and formal
+- Tao optimization-constants database, constant 5b: https://teorth.github.io/optimizationproblems/constants/5b.html
+- Erdős Problem a Day progress log (entry for #757, 12 Aug 2026): https://erdosproblemaday.com/progress
+- Ma–Tang author PDF mirror: http://staff.ustc.edu.cn/~jiema/Sidon-subset-arXiv.pdf
 - the-omega-institute/trureturing issue #9804: https://github.com/the-omega-institute/trureturing/issues/9804
 - formal-conjectures 757.lean: https://github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/757.lean
 - Justin Sun Prize JSP-000621 issue #49: https://github.com/TheJustinSunPrize/awards/issues/49

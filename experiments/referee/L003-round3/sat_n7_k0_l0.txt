@@ -1,0 +1,5 @@
+S 0 4 7 8 9 14 20
+S 0 8 9 14 16 18 28
+S 0 5 6 7 10 14 23
+S 0 8 11 14 16 18 28
+STATS n=7 T=5 k30=0 lin=0 chunk=-1 leaves=14400 singular=0 fallback=0 orderfail=12301 apextra=957 apextra_but45=0 not45=1134 notws=668 ok45=8 hT=8 out=4 sym=0 maxX=32 hist 5:8

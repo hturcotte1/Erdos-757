@@ -1,0 +1,6 @@
+census classes 2910
+after small sources {'A_base': 1, 'cpsat_n14': 146, 'anneal': 3060, 'q8_random_sets.json': 36300, 'q8_adv_sets.json': 36300}
+after lpfit {'A_base': 1, 'cpsat_n14': 146, 'anneal': 3060, 'q8_random_sets.json': 36300, 'q8_adv_sets.json': 36300, 'lpfit_n14': 892, 'lpfit_n16': 17504, 'lpfit_n17': 1506552, 'lpfit_n18': 40441}
+candidates 1808461 by source {'A_base': 1, 'cpsat_n14': 146, 'anneal': 3060, 'q8_random_sets.json': 36300, 'q8_adv_sets.json': 36300, 'lpfit_n14': 892, 'lpfit_n16': 17504, 'lpfit_n17': 1506552, 'lpfit_n18': 40441, 'abase_ext': 167265}
+(m, h or not45) tally for m >= 11: [((11, 10), 8134), ((11, 11), 14), ((11, 9), 8558), ((12, 10), 294), ((12, 8), 147), ((12, 9), 1521)]
+m=12 h=8: 147 sets, in census classes: 147, sources {'A_base': 1, 'cpsat_n14': 146}

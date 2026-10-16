@@ -1,0 +1,8 @@
+{"set": [2, 3, 5, 8, 13, 21, 34], "h": 5, "nS": 3, "universal": [2, 3, 34], "n_whole": 78, "n_flagged": 21, "flagged_types": [[0, 1], [1, -2], [1, 0], [1, 1], [2, -1]], "n_pts": 5436, "P45_isolated": 42, "routeC_def45": 176, "t1a_def": 6, "ok_U": true, "ok_U2": true, "ok_i": true, "miss_iii": 0, "miss_iv": 0, "ok": true}
+{"set": [2, 3, 5, 8, 13, 21, 34, 55, 89], "h": 6, "nS": 8, "universal": [3], "n_whole": 39, "n_flagged": 3, "flagged_types": [[1, -2], [1, 1], [2, -1]], "n_pts": 13348, "P45_isolated": 185, "routeC_def45": 219, "t1a_def": 0, "ok_U": true, "ok_U2": true, "ok_i": true, "miss_iii": 0, "miss_iv": 0, "ok": true}
+{"set": [2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233], "h": 7, "nS": 19, "universal": [], "n_whole": 25, "n_flagged": 0, "flagged_types": [], "n_pts": 10062, "P45_isolated": 99, "routeC_def45": 99, "t1a_def": 0, "ok_U": true, "ok_U2": true, "ok_i": true, "miss_iii": 0, "miss_iv": 0, "ok": true}
+PC4 all ok: True
+
+real	0m4.997s
+user	0m4.695s
+sys	0m0.024s

@@ -1,0 +1,9 @@
+{'name': 'glue {0,1,2} u (13/7*{0,1,2}+50)', 'n': 6, 'm': 2, 'h': 4, 'dimV': 4, 'I': ('None', '7'), 'roots_in_I': 9, 'checked_members': 7, 'distinct_classes': 7}
+{'name': 'sat6 [0, 4, 7, 8, 9, 14] + point 332599/7919', 'n': 7, 'm': 4, 'h': 5, 'dimV': 3, 'I': ('None', '39595'), 'roots_in_I': 11, 'checked_members': 7, 'distinct_classes': 7}
+{'name': 'sat8 [0, 4, 7, 8, 9, 14, 20, 40] + point 950281/7919', 'n': 9, 'm': 6, 'h': 6, 'dimV': 3, 'I': ('None', '158380'), 'roots_in_I': 22, 'checked_members': 7, 'distinct_classes': 7}
+{'name': 'sat10 [0, 10, 11, 20, 22, 29, 34, 48, 85, 170] + point 4038691/7919', 'n': 11, 'm': 8, 'h': 7, 'dimV': 3, 'I': ('None', '673115'), 'roots_in_I': 37, 'checked_members': 7, 'distinct_classes': 7}
+{'name': 'own search (25 tries) [0, 268323, 273292, 336646, 400000, 536646, 568323, 800000]', 'n': 8, 'm': 5, 'h': 5, 'dimV': 3, 'I': ('-9938/7', '31677'), 'roots_in_I': 4, 'checked_members': 7, 'distinct_classes': 7}
+{'name': 'own search (1839 tries) [0, 6500000, 6866028, 7704131, 8168936, 8542234, 8633741, 8725248, 10584468, 13000000]', 'n': 10, 'm': 7, 'h': 6, 'dimV': 3, 'I': ('-366028/5', '746596/3'), 'roots_in_I': 8, 'checked_members': 7, 'distinct_classes': 7}
+{'name': 'record n=8 [0, 3733252, 5866626, 6666565, 6933008, 7199451, 7466504, 8000000]', 'n': 8, 'm': 5, 'h': 5, 'dimV': 3, 'I': ('-266443', '267053'), 'roots_in_I': 4, 'checked_members': 7, 'distinct_classes': 7}
+{'name': 'record n=11 [0, 2009010, 2901878, 3392944, 3459949, 3705482, 3750000, 3794746, 3884010, 4018020, 7500000]', 'n': 11, 'm': 8, 'h': 7, 'dimV': 3, 'I': ('-222590/7', '111865/3'), 'roots_in_I': 3, 'checked_members': 7, 'distinct_classes': 7}
+ALL_OK 8

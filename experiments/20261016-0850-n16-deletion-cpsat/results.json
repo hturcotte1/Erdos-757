@@ -1,0 +1,206 @@
+{
+ "n16_m13": {
+  "status": "UNKNOWN",
+  "cpsat": "UNKNOWN",
+  "wall_s": 12600.1,
+  "workers": 2,
+  "conflicts": 1533916,
+  "abstract_solutions": 0
+ },
+ "n16_m14": {
+  "status": "UNKNOWN",
+  "cpsat": "UNKNOWN",
+  "wall_s": 12600.0,
+  "workers": 2,
+  "abstract_solutions": 0
+ },
+ "n14_test": {
+  "status": "UNKNOWN (time 600s, 3 workers) but 4 abstract solutions, all order-infeasible (not realizable)",
+  "rounds": 4,
+  "wall_s": 599.1
+ },
+ "soundness_n14": {
+  "A_base": {
+   "ok": true,
+   "m": 12,
+   "npairs_witness": 91,
+   "npairs_via_m": 0
+  },
+  "census_sample": {
+   "n": 60,
+   "ok": 60,
+   "npairs_via_m_values": [
+    0
+   ]
+  }
+ },
+ "encoding_test": {
+  "compared": 145,
+  "feasible": 65,
+  "all_agree": true,
+  "breakdown": [
+   [
+    8,
+    "ge9",
+    null,
+    true,
+    1
+   ],
+   [
+    9,
+    "eq11",
+    null,
+    true,
+    6
+   ],
+   [
+    9,
+    "ge",
+    9,
+    true,
+    6
+   ],
+   [
+    9,
+    "ge",
+    10,
+    true,
+    6
+   ],
+   [
+    9,
+    "eq",
+    11,
+    true,
+    6
+   ],
+   [
+    9,
+    "eq",
+    12,
+    true,
+    6
+   ],
+   [
+    9,
+    "none",
+    null,
+    true,
+    6
+   ],
+   [
+    10,
+    "eq11",
+    null,
+    false,
+    11
+   ],
+   [
+    10,
+    "ge",
+    9,
+    true,
+    11
+   ],
+   [
+    10,
+    "ge",
+    10,
+    false,
+    8
+   ],
+   [
+    10,
+    "eq",
+    11,
+    false,
+    11
+   ],
+   [
+    10,
+    "eq",
+    12,
+    false,
+    12
+   ],
+   [
+    10,
+    "none",
+    null,
+    true,
+    12
+   ],
+   [
+    9,
+    "eq11",
+    null,
+    false,
+    6
+   ],
+   [
+    9,
+    "ge",
+    9,
+    false,
+    6
+   ],
+   [
+    9,
+    "ge",
+    10,
+    false,
+    6
+   ],
+   [
+    9,
+    "eq",
+    11,
+    false,
+    6
+   ],
+   [
+    9,
+    "eq",
+    12,
+    false,
+    6
+   ],
+   [
+    9,
+    "none",
+    null,
+    false,
+    6
+   ],
+   [
+    10,
+    "eq11",
+    null,
+    true,
+    1
+   ],
+   [
+    10,
+    "ge",
+    10,
+    true,
+    4
+   ],
+   [
+    10,
+    "eq",
+    11,
+    true,
+    1
+   ],
+   [
+    10,
+    "ge",
+    9,
+    false,
+    1
+   ]
+  ]
+ },
+ "judged_sets": 0
+}

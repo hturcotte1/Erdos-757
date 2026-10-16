@@ -1,0 +1,7 @@
+H n=6 m=0 alpha=6 count=1
+H n=6 m=1 alpha=5 count=20
+H n=6 m=2 alpha=4 count=9
+H n=6 m=2 alpha=5 count=66
+H n=6 m=3 alpha=4 count=46
+H n=6 m=4 alpha=4 count=2
+DONE n=6 m=-1 T=6 prune=0 order=0 nodes=210 leaves=144 f7rej=0 sols=0 cpu=0.0

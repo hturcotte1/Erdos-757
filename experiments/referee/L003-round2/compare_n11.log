@@ -1,0 +1,3 @@
+n=11 f=7: my classes with h=f: 466961 (my class h-histogram {7: 466961, 8: 136480, 9: 7}); census records 466961 in 418 files -> 466961 classes
+  mine - census = 0, census - mine = 0
+  round-1 classes with h=f: 466961; mine - r1 = 0, r1 - mine = 0

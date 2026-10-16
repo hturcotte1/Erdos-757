@@ -1,0 +1,1 @@
+{"n": 8, "T": 6, "m": 2, "count": 252, "status": "EXHAUSTED", "elapsed_s": 0.2, "build_s": 0.1, "constraints": {"monotone": 336, "medial": 168, "cores": [522, 1880], "f7_eager": 3360}, "rate_per_s": 2339.5}

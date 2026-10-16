@@ -1,0 +1,15 @@
+n=6 f=4: my classes with h=f: 1 (my class h-histogram {4: 1}); census records 1 in 1 files -> 1 classes
+  mine - census = 0, census - mine = 0
+  round-1 classes with h=f: 1; mine - r1 = 0, r1 - mine = 0
+n=7 f=5: my classes with h=f: 4 (my class h-histogram {5: 4}); census records 4 in 1 files -> 4 classes
+  mine - census = 0, census - mine = 0
+  round-1 classes with h=f: 4; mine - r1 = 0, r1 - mine = 0
+n=8 f=5: my classes with h=f: 66 (my class h-histogram {5: 66}); census records 66 in 1 files -> 66 classes
+  mine - census = 0, census - mine = 0
+  round-1 classes with h=f: 66; mine - r1 = 0, r1 - mine = 0
+n=9 f=6: my classes with h=f: 1262 (my class h-histogram {6: 1262}); census records 1262 in 1 files -> 1262 classes
+  mine - census = 0, census - mine = 0
+  round-1 classes with h=f: 1262; mine - r1 = 0, r1 - mine = 0
+n=10 f=6: my classes with h=f: 6644 (my class h-histogram {6: 6644, 7: 19053, 8: 9}); census records 6644 in 1 files -> 6644 classes
+  mine - census = 0, census - mine = 0
+  round-1 classes with h=f: 6644; mine - r1 = 0, r1 - mine = 0

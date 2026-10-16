@@ -1,0 +1,31 @@
+{
+ "summary": {
+  "records": {
+   "not_saturated": 2,
+   "tested": 7,
+   "L1": 14,
+   "L2_skip_inT": 19,
+   "L2_flip": 31,
+   "L2_skip_rn": 34,
+   "L2_noflip": 60
+  },
+  "witnesses": {
+   "tested": 10,
+   "L1": 20,
+   "L2_skip_inT": 22,
+   "L2_noflip": 58,
+   "L2_skip_rn": 46,
+   "L2_flip": 34
+  },
+  "census": {
+   "tested": 14645,
+   "L1": 29290,
+   "L2_skip_inT": 41769,
+   "L2_noflip": 118276,
+   "L2_flip": 66388,
+   "L2_skip_rn": 66467
+  }
+ },
+ "failures": [],
+ "nfail": 0
+}
