@@ -230,3 +230,7 @@ Format for each work block:
 ## 2026-10-16T08:33Z result L006 ACCEPTED x2 (K48): no 14-point (4,5)-set with h<=8 contains an extremal 12-point set
 - referees #2 and #3 (fresh, parallel): ACCEPT. #2: unmodified code reproduced on 437 further classes; Route V line-arrangement check reproduces the T1b pair sets exactly on 201 classes; CP-SAT 1,005 extensions. #3: full-census Sidon-definition confirmation (0 deficient extensions in all 54,243 classes), exact deficient locus on 429 classes. Editorial remarks applied (K7/K8 in DEPENDS ON, intersection-count scope, "where the computation is load-bearing" remark, run-time note). K48, LEDGER, START_HERE, FINAL_REPORT R11, Q11, STATE updated.
 - evidence: results/reviews/L006-ext12-all-two-point-extensions__referee__20261016T081040Z.md, __referee__20261016T083111Z.md
+
+## 2026-10-16T08:45Z P1 K49: extremal (n-2)-subsets of extremal classes, n = 6..14
+- 100% at n = 6..9 and 11; 6,625/6,644 at n = 10; 26,852/54,243 at n = 12; 0/2,910 at n = 14 (K47). Odd n: extremal (n-1)-subsets only in 1,237/1,262 (n=9) and 178,655/466,961 (n=11). Test added.
+- evidence: experiments/20261016-0840-extremal-subsets/README.md, results.json; tests/test_extremal_subsets.py
