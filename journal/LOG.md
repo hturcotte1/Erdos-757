@@ -237,3 +237,7 @@ Format for each work block:
 
 ## 2026-10-16T08:46Z kb Lemma Δ' (deletion-version HY degree bound) falsifier HOLDS-ON-DATA; arithmetic confirmed
 - evidence: experiments/falsify/deletion-lemma/README.md, results.json
+
+## 2026-10-16T08:55Z U last n=16 attempt launched: CP-SAT with Henning-Yeo deletion constraints (Lemma Δ/Δ', L005)
+- (14,11) DFS stopped at 431/3437 prefixes (0 patterns) to give CP-SAT the cores. Model: class O' at n=16, m in {13,14}, alpha=9 witness, for every vertex an independent 9-set avoiding it (f(15)=9), for every pair either an independent 9-set avoiding both or m(C-p-q)=11 exactly (HY + K46). Soundness test at n=14 first (A_base and 20 census classes must satisfy the analogous constraints). 3.5 h per run; CEGAR realization of any solution; judge on any realizable set.
+- experiments/20261016-0850-n16-deletion-cpsat/
