@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report of the autonomous run (2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC)
 
-Last updated: 2026-10-15 23:45 UTC (elapsed about 48.7 of 72 budget hours). Status of the goal clauses at this
+Last updated: 2026-10-16 00:25 UTC (elapsed about 49.3 of 72 budget hours). Status of the goal clauses at this
 update: (A) no new record set; (B) no new lower-bound proof; (C) budget not yet exhausted. The published bounds
 $9/17\le c_*\le4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set $A_{\rm base}$) are unchanged.
 
@@ -59,14 +59,27 @@ forbidden core. On realizable data the best inductive constant is exactly $3/7$;
 dominant hard local type in any minimal counterexample is a vertex on three full traces. kb/methods/trackL_inductive_framework.md
 gives the exact free-move conditions for every $(a,b,c,d)$.
 
-## 2. The open case $n=16$ (negative results, D15, D16)
+**R9. No 16-point record contains a saturated extremal 14-point set (certificate L005, submitted 2026-10-16 00:15 UTC; referee round 1 running).**
+The refereed L001 case analysis (two-point extensions of $A_{m base}$) was applied to all 2,910 saturated extremal 14-point
+classes of R-L004: 141,153 (4,5) single extensions, 4,970,208 (4,5) two-point extensions, $122{,}220$ generic one-edge lines,
+all with $h=10$; no class has a point lying in every maximum Sidon subset (137 to 150 such subsets per class). Hence every
+14-point subset with $h=8$ of a hypothetical 16-point set with $h=9$ is non-saturated ($m=11$, the open case Q11).
+Evidence: experiments/20261015-2340-ext14-all/ (README, results.json), results/proofs/L005-ext14-all-two-point-extensions.md.
+Supporting theory [derived-here, falsifier-checked on about 11,000 sets]: kb/notes/extension_lemmas.md. Lemma E: adding
+$a\pm t$ (generic $t$) at an extreme point $a$, or $x$ and $2x-a$ at any point $a$, gives a (4,5)-set with $h+1$ exactly when $a$
+lies in every maximum Sidon subset (then $D$ drops by 1); Lemma U: such a vertex forces Henning–Yeo slack $\ge5+3\deg a$, so
+record-type sets have none; Lemma Δ: in a 16-point record every 15-point subset is extremal, no vertex is universal and
+$\deg p\le m-9$, and a two-point extension of a saturated extremal 14-set can be a record only with exactly two new APs.
+
+## 2. The open case $n=16$ (negative results, D15, D16, L005)
 
 Beating $4/7$ first becomes possible at $n=16$ ($h=9$, $m\in\{13,14\}$). Everything tried is consistent with a wall there:
 - the abstract class has no $\alpha\le9$ member that any method could find at $n=16$ (CP-SAT, glucose, cadical, annealing over
   about 4 million maps with 28,589 genuine (4,5)-sets reached, constrained runs with all census invariants), while
   $n\le14$ witnesses are found in seconds and about 14% of abstract extremal patterns are realizable at $n=12$ and $n=14$;
 - no witness at $n=18,20,22$ (3600 s each) and $n=23,25$ (1200 s per $m$ value) in realizability-CEGAR searches, all UNKNOWN; at $n=15$ no class-O' pattern with $\alpha\le9$ and $m'\in\{9,10\}$ was found in 2 h (no UNSAT proof either), and the census invariants (max degree $\le4$, balanced colour classes, no reflection symmetry hold for all 395,196 filtered $(12,10)$ patterns) do not make $n=16$ tractable;
-- the number of saturated extremal classes drops from 54,243 ($n=12$) to 2,910 ($n=14$).
+- the number of saturated extremal classes drops from 54,243 ($n=12$) to 2,910 ($n=14$);
+- none of the 2,910 saturated extremal 14-point sets extends by two points to a 16-point set with $h\le9$ (R9, L005): a 16-point record would have to be built on non-saturated 14-point extremal subsets (if any exist, Q11) or contain no extremal 14-point subset at all.
 No certificate is reachable: every n=16 sub-instance exceeds the solver limits, the exact DFS needs about $10^{14}$ nodes,
 and SAT UNSAT times grow from 2 s ($n=12$) to over 250 s ($n=13$). Two hypotheses remain: (H1) Henning–Yeo stays tight at
 even $n$ up to 22 (records at 16..22, $c_*\le6/11$); (H2) a wall at 16 ($f(16)=10$, consistent with $c_*=4/7$ and Q8). The
@@ -85,11 +98,17 @@ of near-tight configurations (experiments/20261014-0020-lp-fit: over 1,333,217 r
 
 - Exhaustive DFS at $(14,11,\alpha\le8)$ (experiments/20261014-1005-census-dfs/n14m11dfs; resumable; relaunch with
   `python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 10 --tag n14_m11`,
-  3,437 depth-3 prefixes). Completion decides whether 2,910 is the total number of extremal 14-point classes.
+  3,437 depth-3 prefixes; 79 done with 0 patterns by 2026-10-15 23:40 UTC, now running on 2 cores; projected over 100 CPU-hours
+  in total, so it will not finish in this run). Completion decides whether 2,910 is the total number of extremal 14-point
+  classes and, with R9, whether any 16-point record can contain an extremal 14-point subset at all.
+- The saturated census at $n=13$ was started and stopped as infeasible (D22, Q12): 8 of 1,811 prefixes already hold
+  54,717,717 abstract patterns (Henning–Yeo slack 13 at $(13,11,5)$); a realizability-aware enumerator is needed.
 - Recommended next steps: (i) a dedicated exact engine for $n=16$ (SAT with symbolic symmetry breaking and the
-  deletion-lemma case structure, or a distributed DFS of about $10^{14}$ nodes); (ii) if $f(16)=10$ is confirmed, the
+  deletion-lemma case structure of Lemma Δ, or a distributed DFS of about $10^{14}$ nodes); (ii) if $f(16)=10$ is confirmed, the
   abstract wall is combinatorial and the Q8-type induction with 5/6-edge cores is the natural proof program;
-  (iii) obtain Henning–Yeo 2021 for its equality cases; (iv) submit the census sequence to the OEIS.
+  (iii) obtain Henning–Yeo 2021 for its equality cases (Lemma U shows how the equality structure constrains universal
+  vertices); (iv) submit the census sequence to the OEIS; (v) four-point extensions of the 2,910 classes (an 18-point set
+  with $h=10$ would be a record) and two-point extensions of any $(14,11)$ classes found.
 
 ## 5. Infrastructure built (e757/, all tested)
 Exact realizability oracle with Farkas certificates (realizability.py); CP-SAT model of the ordered-midpoint class
@@ -97,5 +116,7 @@ Exact realizability oracle with Farkas certificates (realizability.py); CP-SAT m
 (sat_indep.py, with Gyárfás–Lehel colouring constraints); exact C DFS with resumable prefix split (c/ordered_dfs.c,
 ordered_dfs_split.py); midpoint-map annealer (anneal.py). The frozen judge (judge/judge.py) was used for every spot check.
 
-## 6. Dead ends added (kb/dead_ends.md D15, D16)
-Direct SAT/CP-SAT at $n=16$ (with or without structure, with or without census invariants); annealing at $n=16$ and $18$.
+## 6. Dead ends added (kb/dead_ends.md D15 to D22)
+Direct SAT/CP-SAT at $n=16$ (with or without structure, with or without census invariants); annealing at $n=16$ and $18$;
+Q8 for the abstract class (D17); witness sweeps $n=18..25$ (D18); the layered $15\to16$ search (D19); D20, D21 (solver variants);
+the pattern-first saturated census at $n=13$ (D22).
