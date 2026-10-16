@@ -235,5 +235,5 @@ Format for each work block:
 - 100% at n = 6..9 and 11; 6,625/6,644 at n = 10; 26,852/54,243 at n = 12; 0/2,910 at n = 14 (K47). Odd n: extremal (n-1)-subsets only in 1,237/1,262 (n=9) and 178,655/466,961 (n=11). Test added.
 - evidence: experiments/20261016-0840-extremal-subsets/README.md, results.json; tests/test_extremal_subsets.py
 
-## 2026-10-16T09:00Z kb Lemma Δ' (deletion-version HY degree bound) falsifier HOLDS-ON-DATA; arithmetic confirmed
+## 2026-10-16T08:46Z kb Lemma Δ' (deletion-version HY degree bound) falsifier HOLDS-ON-DATA; arithmetic confirmed
 - evidence: experiments/falsify/deletion-lemma/README.md, results.json
