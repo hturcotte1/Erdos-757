@@ -1,10 +1,10 @@
 # f(18) = 11: every 18-point (4,5)-set has a Sidon subset of size 11, and I11 holds on the class C up to 18 vertices
 CLAIM-TYPE: lemma + certificate (computer-assisted proof, third step of the L007/L008 induction; every enumeration and extension used in the proof was run on all labelled graphs by the prover's own programs, and the falsifier's numbers were reproduced or corrected)
 TYPE: certificate
-STATUS: submitted 2026-10-17 08:10 UTC (prover draft; not yet refereed)
+STATUS: submitted 2026-10-17 08:10 UTC; referee round 1 ACCEPT (results/reviews/L009-f18-equals-11__referee__20261017T091817Z.md: whole labelled pipeline reproduced byte for byte; Lemma R confirmed without the rebuild by complete nauty genbg enumerations, 38 and 80 classes with exactly 2 and 6 in C); novelty CLEAR (__scout__20261017T081631Z.md); editorial fixes (L008 status, C5/C6 labels) applied 09:20 UTC; Henning-Yeo (K8) is load-bearing only for the window-cell lists; referee rounds 2 and 3 requested
 DEPENDS ON:
 - L007 [verified-here, ACCEPTED by referee rounds 1, 2 and 3; K51]: Lemma A (I11 on $C$ for $n\le13$), Theorem 1 ((14,11) ⇒ $\tau\le5$), Lemma D (exhaustiveness of the canonical-growth enumerators, with brute-force validation, computation C0), Lemma F (the $F_7$ test, C3), and the counts of its computations C2, C3 (the 159 connected linear (13,8,≥5) graphs and the 637 connected linear (10,7,≥4) graphs; all 159 contain $F_7$).
-- L008 [submitted; referee round 1 in progress at the time of writing]: Corollary 3 (I11 on $C$ for every $n\le16$), which contains its Lemma A′ ($n\le15$) and Theorem 1 ($n=16$). **This certificate is conditional on the acceptance of L008.**
+- L008 [verified-here, ACCEPTED by referee rounds 1, 2 and 3 (one on the strongest model); K52]: Corollary 3 (I11 on $C$ for every $n\le16$), which contains its Lemma A′ ($n\le15$) and Theorem 1 ($n=16$). **L008 is accepted, so this certificate is no longer conditional on it.**
 - K3–K7 [published] (Ma–Tang Props 2.1, 2.2, Lemmas 2.3–2.5; Gyárfás–Lehel Prop 2.6): the AP pattern of a (4,5)-set lies in $C$ and $h=\alpha$ (Step 8.1).
 - K8 [published] (Henning–Yeo 2021 Thm 7 as cited in Ma–Tang Thm 5.3; full text not obtained, kb/notes/henning_yeo_2021_affine.md): Steps 1, 2.1, 3.1, 3.2, 4.1.
 - Not used: K24/K35 (the bound $f(18)\le11$ is re-proved by an explicit set, Step 8.2), K30, K31, the forbidden cores, L002–L006 (the census of L004 appears only in a consistency check, C5).
@@ -26,7 +26,7 @@ $C$ denotes the class $O^+$ of L007 and L008: 3-graphs that are (P1) linear, (P2
 
 **Corollary 4.** The sizes $n\le30$ at which a set beating $4/7$ is still arithmetically possible are now $n=20,22,23,25,27,29,30$; $f(17)=10$ (known) and $f(19)\in\{11,12\}$ are unchanged by this certificate.
 
-Tags: **[verified-here] conditional on referee acceptance of L008 and of this certificate** (until then [derived-here], computer-assisted). Scope: nothing is claimed for $n\ge19$.
+Tags: **[verified-here] conditional on referee acceptance of this certificate** (L008 is accepted; until then [derived-here], computer-assisted). Scope: nothing is claimed for $n\ge19$.
 
 ## Proof
 
@@ -73,7 +73,7 @@ Case (iii): $G=C_{10}\sqcup E\sqcup E'$, $C_{10}$ connected linear (10,7,≥4) w
 5.4 (Edges at $w$.) By (P1) two edges at $w$ meet only in $w$, so the pairs are disjoint, and no pair lies inside an edge of $T-w$; each $c_j,d_j$ lies in exactly one edge at $w$, so its degree in $T-w$ is at most $3-1=2$. $\square$
 
 ### Step 6. Using Lemma R: the complete lists of the tight graphs
-6.1 For each component type $(n_c,m_c,\tau_c)$ of 5.2–5.3, every component of $T-w$ is a connected linear 3-graph in $C$ with $\Delta\le3$ and $\tau=\tau_c$, hence (0.4) isomorphic to one of the outputs of `enum_conn n_c m_c τ_c 3` that lie in $C$ (C4: lists `rerun/filt_*.txt`, SURVIVOR lines); for the type (3,1,1) the single labelled edge (0,1,2) is used (every single edge is isomorphic to it). So $T-w$ is isomorphic to a disjoint union $G'_0$ of such outputs, one for each component, placed on consecutive vertex blocks (`combine.py`: the inputs `rerun/inT14.txt`, 55,803 graphs, and `rerun/inT17.txt`, 70,855 graphs). By 5.4 and 0.5, $T$ is isomorphic to an extension of one of these inputs by a new vertex with $\tau(T)=7$ [resp. 6], i.e. to a hit of C5 [resp. C6]; and since $T$ is connected and in $C$, to a hit that is connected and in $C$. These hits are exactly the lists `indep/T17_conn.txt` (112,144 graphs) and `indep/T14_conn.txt` (8,694 graphs).
+6.1 For each component type $(n_c,m_c,\tau_c)$ of 5.2–5.3, every component of $T-w$ is a connected linear 3-graph in $C$ with $\Delta\le3$ and $\tau=\tau_c$, hence (0.4) isomorphic to one of the outputs of `enum_conn n_c m_c τ_c 3` that lie in $C$ (C4: lists `rerun/filt_*.txt`, SURVIVOR lines); for the type (3,1,1) the single labelled edge (0,1,2) is used (every single edge is isomorphic to it). So $T-w$ is isomorphic to a disjoint union $G'_0$ of such outputs, one for each component, placed on consecutive vertex blocks (`combine.py`: the inputs `rerun/inT14.txt`, 55,803 graphs, and `rerun/inT17.txt`, 70,855 graphs). By 5.4 and 0.5, $T$ is isomorphic to an extension of one of these inputs by a new vertex with $\tau(T)=7$ [resp. 6], i.e. to a hit of C6 [resp. C5]; and since $T$ is connected and in $C$, to a hit that is connected and in $C$. These hits are exactly the lists `indep/T17_conn.txt` (112,144 graphs) and `indep/T14_conn.txt` (8,694 graphs).
 6.2 No isomorphism test is used in 6.1 (all labelled components and all labelled inputs are processed); the isomorphism classes reported in C5, C6 are descriptive.
 
 ### Step 7. Proof of Theorem 3
