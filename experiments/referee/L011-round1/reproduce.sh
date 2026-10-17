@@ -31,13 +31,21 @@ rm -f logs/cells.txt
 #    connected (21,12,>=8) Delta<=3 (tau prune only) and connected (21,13,>=8), (20,14,>=8) Delta<=3 (tau + F7 prune)
 TAU0=8 CMODE=0 ./bin/rgenbg -q -c -Z1 -d1:3 -D3:3 21 12 36:36 > out/g_21_12_8_d3.txt 2> logs/g_21_12_8.err
 TAU0=8 CMODE=1 ./bin/rgenbg -q -c -Z1 -d1:3 -D3:3 21 13 39:39 > out/gC_21_13_8_direct.txt 2> logs/gC_21_13_8_direct.err
-TAU0=8 CMODE=1 ./bin/rgenbg -q -c -Z1 -d1:3 -D3:3 20 14 42:42 > out/gC_20_14_8_direct.txt 2> logs/gC_20_14_8_direct.err
+# (unsplit (20,14,8) run: stopped by a 1500 s timeout, not used); the complete (20,14,8) search is the 400-part split run:
+seq 0 399 > out/x20_queue.txt; rm -f logs/x20_split_q.txt; for w in 1 2 3; do bash src/x20_queue.sh $w & done; wait   # (the review's run did parts 0-22 first with src/x20_direct.sh)
+for p in $(seq 0 399); do grep -q 'RSUM.* out=0 out_bad=0 genbg_count=0' out/x20split_$p.err || echo "part $p incomplete"; done
+# split sanity checks: (13,9,>=5) and (17,13,>=7) CMODE=1, 50 parts each, against the unsplit class lists
+rm -f out/splittest.txt out/splittest2.txt; for p in $(seq 0 49); do TAU0=5 ./bin/rgenbg -q -c -Z1 -d1:3 -D3:3 -X-5 13 9 27:27 $p/50 >> out/splittest.txt 2>/dev/null; TAU0=7 CMODE=1 ./bin/rgenbg -q -c -Z1 -d1:3 -D3:3 -X-5 17 13 39:39 $p/50 >> out/splittest2.txt 2>/dev/null; done
+python3 -I src/cmpcls.py 13 out/splittest.txt G out/g_13_9_5_d3.txt G; python3 -I src/cmpcls.py 17 out/splittest2.txt G out/gC_17_13_7.txt G
 # 6. class-level rebuild/extension steps with the referee's own programs (inputs = disjoint unions of genbg class reps;
 #    C = components in C, all = every Delta<=3 class), filters, definitional certificates; then class comparison with the
-#    prover's labelled hit files (src/hitclasses.sh; C6 comparison as in the review)
+#    prover's labelled hit files (src/hitclasses.sh)
 bash src/classlevel.sh > logs/classlevel.txt
 bash src/hitclasses.sh
 # 7. witness C22 from the definitions (+ the frozen judge on a scratch copy)
 python3 -I src/witness.py
-# 8. re-run of the prover's pipeline from copies (C1-C5, C7, inputs of C6/C8; C6 part00, C8 part03; C2 (19,11,7))
-bash src/rerun_prover.sh; bash src/rerun_heavy_a.sh; bash src/rerun_heavy_b.sh
+# 8. re-run of the prover's pipeline from copies (C1-C5, C7, all four parts of C6 and C8 with filters, C2 (19,11,7))
+bash src/rerun_prover.sh; bash src/rerun_heavy_a.sh; bash src/rerun_heavy_b.sh; bash src/rerun_heavy_c.sh; bash src/rerun_heavy_d.sh
+# labelled cross-check rext vs ext_indep5 on random labelled prover inputs: see the review, check 6 (logs/labelled_crosscheck.txt)
+# prover's enum_conn (copy, built by src/rerun_prover.sh) vs genbg on all small cells
+bash src/test_enum_conn.sh

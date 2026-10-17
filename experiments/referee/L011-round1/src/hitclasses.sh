@@ -13,8 +13,10 @@ cls prover_x20 20 zcat $P/hitsX20.txt.gz
 cls ref_x20 20 cat out/ext_x20_C.txt
 cls prover_x21 21 zcat $P/hitsX21.txt.gz
 cls ref_x21 21 cat out/ext_x21_C.txt
+cls prover_c6 21 zcat $P/hits21_17.txt.gz
+cls ref_c6 21 cat out/ext_c6_C.txt
 cls prover_c8 22 zcat $P/hits22_16.txt.gz
 cls ref_c8 22 cat out/ext_c8_C.txt
-for s in c4 x20 x21 c8; do
+for s in c4 x20 x21 c6 c8; do
   if cmp -s out/cls_prover_$s.txt out/cls_ref_$s.txt; then echo "$s: class sets IDENTICAL"; else echo "$s: class sets DIFFER: $(comm -23 out/cls_prover_$s.txt out/cls_ref_$s.txt | wc -l) prover-only, $(comm -13 out/cls_prover_$s.txt out/cls_ref_$s.txt | wc -l) referee-only"; fi
 done
