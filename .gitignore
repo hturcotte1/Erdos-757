@@ -54,3 +54,7 @@ experiments/prover/L009/indep/*.txt
 experiments/prover/L009/rerun/*.txt
 experiments/20261017-0705-n19-n20-via-i11/*.txt
 experiments/20261017-0705-n19-n20-via-i11/*.control
+experiments/referee/L008-round2/rerun/
+experiments/referee/L008-round2/data_tests/
+experiments/referee/L008-round3/out/
+experiments/referee/L008-round3/rerun/
