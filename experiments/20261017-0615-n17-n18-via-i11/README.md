@@ -1,4 +1,4 @@
-# I11 on class O for n = 17 and n = 18   RESULT: HOLDS (computer-assisted, [derived-here], needs referee).  No (18,16,8) pattern: f(18) = 11 within O.
+# I11 on class O for n = 17 and n = 18   RESULT: HOLDS (computer-assisted, [derived-here]; certified as L009 / K53 [verified-here], referee ACCEPT x3 on 2026-10-17).  No (18,16,8) pattern: f(18) = 11 within O.  Correction (L009 Step 9.1): of the 8 classes of connected (17,13,7) deg<=3 counted below (G17_classes.json), only 6 are connected; classes 0 and 1 are an edge plus a (14,12,6) graph (the build does not test connectivity), i.e. duplicates of the '[(14,12,6)+AP]' input, so the final step's 10 inputs are a superset; the conclusion is unchanged.
 
 Class O = linear, F7-free, injective ordered midpoints (so e(S) <= |S|-2 on every subset).  slack = 3n+2m-11tau.  Assumed: Henning-Yeo; I11 on O for n <= 16 (L007, L008).
 No survivor, no RECORD_CANDIDATE.json, `new_claim.py` not run.  Lemma used throughout (a violator H with slack s<=-1, all smaller members satisfy I11): tau(H-v)=tau-1 for every v,

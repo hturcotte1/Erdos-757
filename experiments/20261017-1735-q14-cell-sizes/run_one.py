@@ -4,7 +4,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 os.environ.setdefault('CELLDIR', os.path.join(HERE, 'out', 'cells'))
 os.environ.setdefault('ENGINELOG', os.path.join(HERE, 'out', 'engine.log'))
 sys.path.insert(0, HERE)
-import engine
+import engine, streamdirect
+_orig = engine.direct
+engine.direct = lambda n, m, t, D: (streamdirect.direct(n, m, t, D) if n >= 13 else _orig(n, m, t, D))
 key = tuple(map(int, sys.argv[1:5])); t0 = time.time()
 reps = engine.cell(*key)
 secs = round(time.time() - t0, 1)

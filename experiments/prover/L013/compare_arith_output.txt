@@ -1,0 +1,3 @@
+violator cells n=23..27: mine 25, worker 25, common 25
+only mine: [] only worker: []
+differences in (slack, dmax, open/empty): []

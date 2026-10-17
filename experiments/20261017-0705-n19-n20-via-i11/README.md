@@ -1,7 +1,9 @@
-# I11 on class O for n = 19 and n = 20   RESULT: HOLDS (computer-assisted, [derived-here], needs referee).  No (20,18,9) pattern: f(20) = 12 within O.
+# I11 on class O for n = 19 and n = 20   RESULT: HOLDS (computer-assisted, [derived-here]; certified as L010 / K54 [verified-here], referee ACCEPT x3 on 2026-10-17; see results/proofs/L010-f20-equals-12.md and results/LEDGER.md).  No (20,18,9) pattern: f(20) = 12 within O.
+
+Correction found by the certificate (L010 Step 9): the slack-3 list for (17,9) below (7 partitions) omitted three decompositions containing an isolated vertex (10 are needed; two of the missing ones, [(16,9,6),I] and [(13,8,5),AP,I], are empty, and the third, [(10,7,4),AP,AP,I], gives no connected member of the class, L010 C4), so the rebuild of connected (18,12,7) was incomplete as a proof; the conclusion is unchanged.  The 176 'classes' of that rebuild are all disconnected (see Validation).
 
 Class O, slack and the vertex-deletion lemma as in ../20261017-0615-n17-n18-via-i11/README.md (violator H with slack s<=-1, I11 known below n: tau(H-v)=tau-1, deg(v)<=floor((8+s)/2), slack(H-v)=s+8-2deg(v);
-components of members of O have slack>=0).  Assumed: HY; I11 on O for n<=18 (L007-L009) when treating n=19, and for n<=19 when treating n=20.  No survivor, no RECORD_CANDIDATE.json, `new_claim.py` not run; nothing committed.
+components of members of O have slack>=0).  Assumed: HY; I11 on O for n<=18 (L007-L009) when treating n=19, and for n<=19 when treating n=20.  No survivor, no RECORD_CANDIDATE.json, `new_claim.py` not run; this folder is committed.
 
 ## Window cells (connected, m<=n-2, n<=2m+1, least violating tau = floor((3n+2m)/11)+1 <= min(HY, m))
 | n | cell (n,m,tau) | slack | deg bound | decision |

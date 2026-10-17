@@ -5,9 +5,22 @@
 # (tests/test_cpsat_model.py, tests/test_census_counts.py, tests/test_extra_invariants.py). Install this file before
 # running the suite (CI currently installs only requirements.txt).
 # Not a pip package: gcc builds e757/c/ordered_dfs (bash e757/c/build.sh; e757.ordered_dfs_c.available() also builds it
-# on first use). Tests that use the binary in tests/test_ordered_dfs.py (4 tests) and tests/test_small_counts.py (whole
-# module) skip without it, but tests/test_census_counts.py::test_census_counts_agree and ::test_prefix_split_small
-# need it and fail (RuntimeError) without it.
+# on first use). Tests that use the binary in tests/test_ordered_dfs.py (4 test functions, 16 collected items) and
+# tests/test_small_counts.py (whole module) skip without it, but tests/test_census_counts.py::test_census_counts_agree
+# and ::test_prefix_split_small need it and fail (RuntimeError) without it.
+# tests/test_l007_cells.py and tests/test_l008_cells.py also need gcc (they compile
+# experiments/falsify/i11-inequality/conn_dfs2.c and experiments/20261017-0300-n16-via-i11/conn_dfs3.c into a temporary
+# directory) and skip cleanly without it.
+# nauty 2.8.8 (genbg, labelg and the library) is a system/source build, not a pip package, and no test, script or e757 module
+# needs it: only the referee and prover reproduction scripts of L008-L013 compile it, from the unpacked pynauty-2.8.8.1 sdist
+# (e.g. experiments/referee/L009-round1/reproduce.sh, experiments/prover/L012/reproduce.sh). The I11 cell engine (engine.py in
+# experiments/prover/L012, experiments/prover/L013, experiments/20261017-1720-i11-n26 and experiments/20261017-1735-q14-cell-sizes)
+# calls a nauty-built bin/canon: committed at experiments/prover/L012/bin/canon, linked as bin/ by the two experiment folders and
+# rebuilt by the L013 reproduce script.
+# numpy, scipy, sympy and networkx come from requirements.txt. Imports in e757/: sympy in core.py (module level) and in
+# ordered_search.py (inside a function); numpy in anneal.py (module level); numpy and scipy together as the optional LP pruning
+# in ordered_search.py (inside try/except). networkx is imported only by experiment and certificate scripts, e.g.
+# experiments/prover/L007/indep/iso_compare.py.
 # numba (named as an example in CLAUDE.md) is not imported anywhere in the repository.
 python-sat
 ortools

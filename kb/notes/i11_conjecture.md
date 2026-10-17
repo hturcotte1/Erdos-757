@@ -8,7 +8,7 @@ AP hypergraph H(A)). Then 11 tau <= 3 n + 2 m. Equivalently, with slack s(H) = 3
 **Why it matters.** Henning-Yeo [published] gives 17 tau <= 5n + 3m for all linear F7-free 3-graphs, hence
 h >= (9n + 6)/17 and c* >= 9/17. I11 is strictly stronger for saturated sets (m = n - 2): tau <= (5n - 4)/11, so
 h >= (6n + 4)/11 and c* >= 6/11 = 0.5454... > 9/17 = 0.5294... (goal clause B would follow from a proof of I11 in
-general). It also gives f(16) >= 10, f(18) >= 11, f(20) >= 12, f(22) >= 13, i.e. no record set at n = 16, 18, 20, 22;
+general). Within the proved range n <= 22 (see 'What is proved' below) it gives f(16) >= 10, f(18) >= 11, f(20) >= 12, f(22) >= 13, i.e. no record set at n = 16, 18, 20, 22 [verified-here, L007-L011];
 the first size where I11 allows a record is n = 23 (h = 13 >= (138+4)/11 = 12.9).
 
 **Evidence [verified-here, experiments/falsify/i11-inequality].** 0 violations on: every subset of the seven stored

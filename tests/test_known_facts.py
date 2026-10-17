@@ -1,7 +1,10 @@
 """Pins facts K3, K7, K11, K12, K17-K24 and K29 of kb/known_results.md (K22 only for single-class
-chains with a != b and a + b <= 8). K13 and K30-K49 are backed by the tests, experiment folders,
+chains with a != b and a + b <= 8). K13 and K30-K56 are backed by the tests, experiment folders,
 certificates and referee reviews named in their Check column (K44 only by a check on the records
-in the main session), and rows whose Check is "source" are pinned by no test. Also pins the
+in the main session; K51 and K52 also by the cell regressions tests/test_l007_cells.py and
+tests/test_l008_cells.py; of K52-K55 only the exact values f(16), f(18), f(20), f(22) are pinned
+here, in test_fn_bounds; K56 is pinned by no test), and rows whose Check is "source" are pinned by
+no test. Also pins the
 safety rails
 (judge, hook, status script). Run: python3 -m pytest -q"""
 import hashlib

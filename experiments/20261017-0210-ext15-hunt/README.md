@@ -36,7 +36,7 @@ per-file attempt counts in data/attempts.jsonl.
 
 ## Results [verified-here: every listed set is exactly realized and checked; counts of patterns are heuristic samples]
 Sets: data/ext15_sets.jsonl.gz, one JSON per line: set (primitive integers, up to 53 bits), edges (rank triples), m, deg_seq, n_max_sidon, universal,
-n_ext_admissible, ext_degx_dist, min_h_ext, cover_min, n_min_covers, covers, cover_ext. 2337 distinct patterns (distinct up to reflection; each is a
+n_ext_admissible, ext_degx_dist, min_h_ext, cover_min (3 for the m = 11 rows, null for m = 12), n_min_covers, covers, n_record_ext (number of admissible one-point extensions x with h(B+x) = 9; 0 in every row), cover_ext (present only in the 748 m = 11 rows: counts patterns / prefiltered / realizable and up to 5 sets for the abstract one-point extensions built from the minimal covers), src (basename of the pattern file of origin). 2337 distinct patterns (distinct up to reflection; each is a
 positive-dimensional family, we keep one random point), all with h = alpha = 9 = f(15), all (4,5)-sets.
 
 | m | realizable sets | patterns tested (DFS output sample) | realizable fraction | max degree 3 / 4 / 5 | #max Sidon 9-sets (min/med/max) | universal vertex |
@@ -72,5 +72,5 @@ Extremal 15-point sets with m = 11, 12 are plentiful (>= 2337 patterns found in 
 sets per 10 minutes at the end), but none extends to a 16-point record, and for m=12 and m=11 this is explained combinatorially (no small cover / midpoint
 injectivity). The sample is non-uniform (DFS output near productive prefixes), so it says nothing about the full cell counts. m = 9, 10 were not explored in
 any meaningful way here. The float-LP prefilter may have discarded a few feasible patterns (heuristic loss only).
-Data not committed (instruction). Next step: apply test (b) as a DFS prune/necessary condition: a 15-point B can be part of a record only if some
+Data are committed: `data/ext15_sets.jsonl.gz` (2,337 rows; byte-identical to the repository-level `data/ext15_sets.jsonl.gz`), `data/pats_raw.tar.gz` and `results.json` are tracked; the logs (`jobs_dfs/run.log`, `jobs_work/run.log`) and `data/attempts.jsonl` are git-ignored. Next step: apply test (b) as a DFS prune/necessary condition: a 15-point B can be part of a record only if some
 <= (14 - m)-pair set covers all its maximum Sidon 9-subsets and survives the midpoint count; for m=12 even the cover step already fails on 1589/1589.

@@ -1,4 +1,4 @@
-# f(16) via I11: is there a class-O pattern with n=16, m=14, tau>=7 ?   RESULT: EMPTY (computer-assisted, [derived-here], needs referee)
+# f(16) via I11: is there a class-O pattern with n=16, m=14, tau>=7 ?   RESULT: EMPTY (computer-assisted, [derived-here]; certified as L008 / K52 [verified-here], referee ACCEPT x3 on 2026-10-17, results/proofs/L008-f16-equals-10.md)
 
 Class O = ordered midpoint hypergraphs (linear, F7-free, injective midpoints, hence e(S) <= |S|-2 for every vertex subset S).  Every (4,5)-set gives a
 member of O with h = alpha = n - tau.  A 16-point (4,5)-set with h = 9 would be a member of O with n=16, tau=7.  Notation: slack = 3n+2m-11tau.

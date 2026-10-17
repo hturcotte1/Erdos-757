@@ -4,7 +4,10 @@ Provable bounds on f(n) = min { h(A) : A an n-point (4,5)-set }, and where 4/7 c
 Lower bound (published route, Ma-Tang + Henning-Yeo):
     17 tau <= 5n + 3m,  m <= n - 2   =>   h = n - tau >= n - floor((8n - 6) / 17)   (n >= 2)
     plus f(5) = 4: a linear 3-uniform hypergraph on 5 vertices has a 1-vertex transversal
-    (three pairwise-intersecting triples on 5 points must share a point).
+      (three pairwise-intersecting triples on 5 points must share a point).
+    plus the certified exact values f(16) = 10, f(18) = 11, f(20) = 12, f(22) = 13
+      (EXACT_VALUES_VERIFIED below; computer-assisted certificates L008-L011, K52-K55, each accepted by
+      three referees [verified-here]), which exceed the Henning-Yeo bound (9, 10, 11, 12) at those n.
 Upper bound (constructions):
     f(3) <= 2 (a 3-AP), f(8) <= 5, f(10) <= 6 (data/small_records.json, found by e757.ordered_search),
     f(12) <= 7 (12-point sets, omega issue #9804), f(14) <= 8 (A_base, Ma-Tang),
@@ -20,8 +23,12 @@ from fractions import Fraction
 KNOWN_UPPER = {3: 2, 8: 5, 10: 6, 12: 7, 14: 8}  # 8, 10: data/small_records.json
 KNOWN_LOWER_EXTRA = {5: 4}
 # Exact values proved by computer-assisted, referee-accepted certificates (lower bound beyond Henning-Yeo; the
-# matching upper bound is in KNOWN_UPPER or follows by monotonicity/gluing).  Add 18 and 20 only after L009/L010 are accepted.
+# matching upper bound is in KNOWN_UPPER or follows by monotonicity/gluing).  Each entry is a certificate accepted by three
+# referees (kb/known_results.md K52-K55, results/LEDGER.md); add a new entry only after its certificate is accepted.
 #   16: 10  -- certificate L008 (results/proofs/L008-f16-equals-10.md, K52): f(16) = 10; witness A_base + {-323, 5000}.
+#   18: 11  -- certificate L009 (results/proofs/L009-f18-equals-11.md, K53).
+#   20: 12  -- certificate L010 (results/proofs/L010-f20-equals-12.md, K54).
+#   22: 13  -- certificate L011 (results/proofs/L011-f22-equals-13.md, K55): no (4,5)-set with at most 22 points beats 4/7.
 EXACT_VALUES_VERIFIED = {16: 10, 18: 11, 20: 12, 22: 13}  # L008/K52, L009/K53, L010/K54, L011/K55 (referee ACCEPT x3 each)
 
 
@@ -72,13 +79,15 @@ def f_lower(n):
 
 
 def is_closed(n):
-    """True if f(n) is known exactly by a verified certificate (EXACT_VALUES_VERIFIED); such n cannot host a record
-    beating 4/7 beyond what the exact value allows."""
+    """True if f(n) is known exactly by a verified certificate (EXACT_VALUES_VERIFIED).  For every current entry
+    (n = 16, 18, 20, 22) f(n) = ceil(4n/7) = 10, 11, 12, 13, so no n-point (4,5)-set has h/n < 4/7 there."""
     return n in EXACT_VALUES_VERIFIED
 
 
 def beat_feasibility(n):
     """Can an n-point (4,5)-set have h/n < 4/7 without contradicting Henning-Yeo?
+    Henning-Yeo only: EXACT_VALUES_VERIFIED is not consulted, so n = 16, 18, 20, 22 still report possible = True although
+    they are closed by the certificates L008-L011 (use is_closed(n); the __main__ table prints CLOSED for them).
     Returns (possible, h_needed, tau_needed, min_m_needed)."""
     h = math.ceil(Fraction(4 * n, 7)) - 1
     tau = n - h

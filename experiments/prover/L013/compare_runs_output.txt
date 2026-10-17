@@ -1,0 +1,14 @@
+mine: 167 cells (out/cells)
+L012 (out/l012cells/cells): 119 cells, 105 common with mine; count differences: []; representative-set differences: []; only in L012: 14; only in mine: 62
+   only in L012: [(3, 1, 1, 4), (8, 5, 3, 4), (10, 7, 4, 4), (11, 6, 4, 4), (12, 10, 5, 4), (13, 8, 5, 4), (14, 7, 5, 4), (14, 12, 6, 4), (15, 11, 6, 4), (17, 8, 6, 4), (18, 12, 7, 4), (19, 16, 8, 4), (21, 13, 8, 4), (22, 17, 9, 4)]
+   recursion branches compared: 22; differences (d, tp, S', decompositions, inputs, ext counters, connected hits): []
+W2324 (/home/user/Erdos-757/experiments/20261017-1645-i11-n23-n24/out/cells): 125 cells, 125 common with mine; count differences: []; representative-set differences: []; only in W2324: 0; only in mine: 42
+   only in W2324: []
+   recursion branches compared: 43; differences (d, tp, S', decompositions, inputs, ext counters, connected hits): []
+W25 (out/w25/cells25): 150 cells, 150 common with mine; count differences: []; representative-set differences: []; only in W25: 0; only in mine: 17
+   only in W25: []
+   recursion branches compared: 66; differences (d, tp, S', decompositions, inputs, ext counters, connected hits): []
+W26 (/home/user/Erdos-757/experiments/20261017-1720-i11-n26/out/cells): 167 cells, 167 common with mine; count differences: []; representative-set differences: []; only in W26: 0; only in mine: 0
+   only in W26: []
+   recursion branches compared: 83; differences (d, tp, S', decompositions, inputs, ext counters, connected hits): []
+W2324table (table /home/user/Erdos-757/experiments/20261017-1645-i11-n23-n24/cells_table.tsv): 125 cells, 125 common with mine; count differences: []; only in table: []

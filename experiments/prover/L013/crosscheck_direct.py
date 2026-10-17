@@ -14,6 +14,7 @@ t0 = time.time(); reps = engine.cell(*key); secs = round(time.time() - t0, 1)
 info = [json.loads(l[5:]) for l in open(os.path.join(d, 'cell_%d_%d_%d_D%d.txt' % key)) if l.startswith('INFO ')][0]
 assert info['route'] == 'direct'
 mainf = os.path.join(main_dir, 'cell_%d_%d_%d_D%d.txt' % key)
+while not (os.path.exists(mainf) and any(l.startswith('INFO ') for l in open(mainf))): time.sleep(30)   # wait for the main run's file
 main_reps = [engine.parse_edges(l) for l in open(mainf) if l.startswith('FOUND:')]
 main_info = [json.loads(l[5:]) for l in open(mainf) if l.startswith('INFO ')][0]
 A = set(tuple(map(tuple, r)) for r in reps); Bm = set(tuple(map(tuple, r)) for r in main_reps)

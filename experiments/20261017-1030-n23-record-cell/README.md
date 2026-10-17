@@ -1,7 +1,7 @@
 # The record cell (23,21,10): 23-point (4,5)-set with h = 13   RESULT: partial.  Degree-4 case EMPTY (no realizable pattern); maxdeg-3 case NOT decided.
 
-[derived-here, computer-assisted, needs a referee.]  Class C = linear, F7-free, e(S) <= |S|-2 on every subset (hereditary).  Assumed: HY; I11 on C for n <= 22 (L007-L011).
-No realizable pattern found, so no RECORD_CANDIDATE.json and `new_claim.py` was not run.  Nothing committed.
+[derived-here, computer-assisted; certified in part as L012 / K56 (results/proofs/L012-n23-record-no-degree-4.md; referee ACCEPT x3 on 2026-10-17: results/reviews/L012-n23-record-no-degree-4__referee__20261017T162634Z.md, __referee__20261017T172032Z.md, __referee__20261017T171553Z.md; scout NOVELTY: CLEAR): Theorems 1-3 there are the degree bound, the empty cells (23,19,10) and (23,20,10), and the 699 unrealizable degree-4 classes; the maximum-degree-3 case is open (Q14).]  Class C = linear, F7-free, e(S) <= |S|-2 on every subset (hereditary).  Assumed: HY; I11 on C for n <= 22 (L007-L011, ACCEPTED x3).
+No realizable pattern found, so no RECORD_CANDIDATE.json and `new_claim.py` was not run.  This folder is committed (the large `out/` directory is git-ignored).
 
 ## 1. What I11 (n <= 22) gives for H = (23,21,10)  (confirms the coordinator's computation)
 For every v: tau(H-v) in {9,10}; tau'=10 would need 110 <= 108-2d, false, so tau'=9 and slack(H-v) = 9-2d >= 0, d <= 4.  Sum of degrees 63 over 23 vertices, so max degree D in {3,4}

@@ -35,6 +35,10 @@ if __name__ == '__main__':
     print('    n <= 22: %d violator cells (n,m,tau), %d distinct (n,m)  [L011 Step 1: 29 window cells with n <= 22]' % (tot, len(tot_nm)))
     two = [(n, m) for (n, m) in sorted(tot_nm) if sum(1 for c in violator_cells(n) if c['m'] == m) > 1]
     print('    (n,m) with more than one violating tau, n <= 22:', two)
+    print('    window table (m, 3n+2m, lo = floor((3n+2m)/11)+1, 5n+3m, hy = min(floor((5n+3m)/17), m)); a violator needs lo <= tau <= hy:')
+    for n in range(23, 28):
+        print('    n=%d: ' % n + '; '.join('m=%d: %d,%d,%d,%d%s' % (m, 3 * n + 2 * m, (3 * n + 2 * m) // 11 + 1, 5 * n + 3 * m, min((5 * n + 3 * m) // 17, m),
+              ' *' if (3 * n + 2 * m) // 11 + 1 <= min((5 * n + 3 * m) // 17, m) else '') for m in range(ceil_div(n - 1, 2), n - 1)))
     open_cells = {}
     for n in range(23, 28):
         cs = violator_cells(n)

@@ -1,7 +1,9 @@
-# I11 on class O for n = 21 and n = 22   RESULT: HOLDS (computer-assisted, [derived-here], needs referee).  (22,20,10) is impossible by counting: f(22) = 13 within O.
+# I11 on class O for n = 21 and n = 22   RESULT: HOLDS (computer-assisted, [derived-here]; certified as L011 / K55 [verified-here], referee ACCEPT x3 on 2026-10-17).  (22,20,10) is impossible by counting: f(22) = 13 within O.
+
+Correction found by the certificate (L011 Step 13.2): the rebuilt lists below described as connected (20,14,8) ('18 classes') and connected (21,13,8) ('176 classes') consist of disconnected graphs; there is no connected member of class O (= C in L011) with maximum degree 3 at (20,14,8) or (21,13,8) (L011 Lemmas X20, X21); the conclusion is unchanged.
 
 Setting, lemma and tools as in ../20261017-0705-n19-n20-via-i11/README.md (violator H with slack s<=-1; I11 known below n: tau(H-v)=tau-1, deg(v)<=floor((8+s)/2), slack(H-v)=s+8-2deg(v)).  Assumed: HY; I11 on O for n<=20 (n=21), n<=21 (n=22).
-No survivor, no RECORD_CANDIDATE.json, `new_claim.py` not run; nothing committed.  Large intermediates are in out/ (git-ignored).
+No survivor, no RECORD_CANDIDATE.json, `new_claim.py` not run.  This README, the scripts and the JSON results are committed (28 tracked files); the *.txt class lists and inputs, the *.log files and out/ (large intermediates) are git-ignored.
 
 ## Correction applied (isolated vertices)
 An isolated vertex has slack 3 (n=1,m=0,tau=0).  `parts.py` now includes the cell (1,0,0) for slack lists with k>=3 and `parts_bf.py` regenerates every list by an independent brute force

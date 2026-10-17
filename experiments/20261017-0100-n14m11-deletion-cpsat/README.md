@@ -29,5 +29,5 @@ m=11: CP-SAT status UNKNOWN at 10,800 s (2 workers, nice 5, shared with the 4-wo
 no abstract solution, no INFEASIBLE. Q11 is NOT decided by this run (result_m11.json, solver_m11.log, results.json). Nothing was realized, so new_claim.py was not run.
 
 ## Conclusion
-The deletion constraints (b),(c) (the (c) witnesses are the new strong ones) did not let CP-SAT decide the (14,11) cell in 3 h with 2 workers, as for n=16 (D24). Q11 stays open; the DFS is unaffected.
+The deletion constraints (b),(c) (the (c) witnesses are the new strong ones) did not let CP-SAT decide the (14,11) cell in 3 h with 2 workers, as for n=16 (D24). Q11 was NOT decided by this run; it was closed later on 2026-10-17 by certificate L007 (K51, referee ACCEPT x3): the (14,11) cell is empty, by a computer-assisted slack argument (exhaustive enumeration of Henning-Yeo window cells) that does not rely on this CP-SAT run or on the DFS (the DFS was stopped at 1,081 of 3,437 prefixes, 0 patterns). The suggestion below was not pursued.
 Suggested: cube-and-conquer on the first midpoint-prefix (the DFS's 3,437 prefixes) with these constraints, giving each cube a short CP-SAT/CaDiCaL budget.

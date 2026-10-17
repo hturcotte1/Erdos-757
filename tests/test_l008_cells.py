@@ -3,7 +3,10 @@
 Compiles the falsifier's connected-linear-3-graph enumerator conn_dfs3.c with gcc -O2 and checks
   * cells (15,9,6) and (16,8,6) are empty (2,056,435 and 19,103 nodes),
   * the connected (12,10,5), max-degree-3 labelled count is 145,033 (about 50 s),
-and checks the witness A_base + {-323, 5000} is a (4,5)-set with h = 10, and that e757.fn_bounds marks n = 16 closed.
+and checks the witness A_base + {-323, 5000} is a (4,5)-set with h = 10, and that e757.fn_bounds marks n = 16, 18, 20
+and 22 closed (EXACT_VALUES_VERIFIED, certificates L008-L011, K52-K55; only the fn_bounds entries of L009-L011 are
+pinned here, not their cell enumerations) and n = 23 not closed (f(23) in {13, 14}, 'n=23: possible' in
+python3 -m e757.fn_bounds).
 Skipped cleanly without gcc.  The 186M-node cell (15,10,6) is deliberately not run.
 """
 import re
