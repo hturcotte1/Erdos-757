@@ -96,7 +96,7 @@ Evidence: experiments/20261016-0330-ext12-all/ (README, summary.json), data/ext1
 
 **R12. The two-point-extension structure fades towards the wall (K49).** The fraction of extremal classes that contain an extremal subset two points smaller is 100% at $n=6,7,8,9,11$, 99.7% of the saturated classes at $n=10$ (6,625 of 6,644; 12,681 of 13,749, i.e. 92.2%, if the 7,105 stored non-saturated representatives are included), 49.5% at $n=12$ (26,852 of 54,243) and 0% at $n=14$ (K47, K48); no 16-point record can contain a saturated extremal 14-set (K46). Exact counts on the stored censuses; the trend itself is three even-$n$ data points [heuristic]. Evidence: experiments/20261016-0840-extremal-subsets/, tests/test_extremal_subsets.py.
 
-**R13. $f(16)=10$: no 16-point (4,5)-set beats $4/7$ (certificate L008, ACCEPTED by three referees, one on the strongest model; novelty CLEAR).** The extension run (2026-10-17) found that the inequality I11: $11\tau\le3n+2m$ holds on all data (equality on $A_{\rm base}$) and, via a window-cell induction on the class of linear $F_7$-free 3-graphs with $e(S)\le|S|-2$, proved it for $n\le16$: a 16-point record would have $m=14$ and every AP-degree $\le3$, and every way of re-inserting a degree-3 vertex into the possible 15-vertex remainders creates an $F_7$ or breaks midpoint injectivity. The same induction closed Q11 (certificate L007, K51: no non-saturated extremal 14-point set; 2,910 is the complete count) gives $f(18)=11$ (L009) and $f(20)=12$ (L010), each ACCEPTED by three referees, so no record exists at $n=16,18,20$; the same method has emptied the cells at $n=21,22$ (certificate L011, pending referees), which would make 23 the smallest size at which a record is possible. I11 in general is a conjecture (kb/notes/i11_conjecture.md) that would give $c_*\ge6/11$. Evidence: results/proofs/L007-L010, experiments/falsify/i11-inequality/, experiments/20261017-*-via-i11/.
+**R13. $f(16)=10$: no 16-point (4,5)-set beats $4/7$ (certificate L008, ACCEPTED by three referees, one on the strongest model; novelty CLEAR).** The extension run (2026-10-17) found that the inequality I11: $11\tau\le3n+2m$ holds on all data (equality on $A_{\rm base}$) and, via a window-cell induction on the class of linear $F_7$-free 3-graphs with $e(S)\le|S|-2$, proved it for $n\le16$: a 16-point record would have $m=14$ and every AP-degree $\le3$, and every way of re-inserting a degree-3 vertex into the possible 15-vertex remainders creates an $F_7$ or breaks midpoint injectivity. The same induction closed Q11 (certificate L007, K51: no non-saturated extremal 14-point set; 2,910 is the complete count) gives $f(18)=11$ (L009) and $f(20)=12$ (L010), each ACCEPTED by three referees, so no record exists at $n=16,18,20$; and the same method emptied the cells at $n=21,22$ (certificate L011, ACCEPTED by three referees), so 23 is the smallest size at which a record is possible. I11 in general is a conjecture (kb/notes/i11_conjecture.md) that would give $c_*\ge6/11$. Evidence: results/proofs/L007-L010, experiments/falsify/i11-inequality/, experiments/20261017-*-via-i11/.
 
 ## 2. The case $n=16$: closed by R13 (earlier negative results D15, D16, D24, L005, L006)
 
@@ -171,7 +171,7 @@ classes, 1.33M realizable rows, Fibonacci prefixes, gluings, extensions, the abs
 $C$ (linear $F_7$-free 3-graphs with $e(S)\le|S|-2$ on every subset) are essential: abstract counterexamples exist without
 either (kb/notes/i11_conjecture.md).
 
-**The window-cell induction** [verified-here, certificates L007–L010 ACCEPTED by three referees each; L011 round 1 ACCEPT].
+**The window-cell induction** [verified-here, certificates L007–L011 ACCEPTED by three referees each].
 Slack is additive over components and $C$ is hereditary, so a violator has a connected violating component in one of finitely
 many Henning–Yeo "window cells" $(n,m,\tau)$. I11 at $n-1$ bounds every degree of a hypothetical violator at $n$ (often to
 $\le3$ or $\le2$), which either kills the cell by degree counting or reduces it to re-inserting one vertex into the few
@@ -181,7 +181,7 @@ with definitional $F_7$ and $e(S)\le|S|-2$ filters, byte-for-byte reproduction o
 Results:
 - L007 (K51): no non-saturated extremal 14-point set; the 2,910 classes of L004 are all extremal 14-point sets (Q11 closed).
 - L008 (K52): $f(16)=10$; no 16-point (4,5)-set beats $4/7$ (the open case Q1 closed). Witness: $A_{\rm base}\cup\{-323,5000\}$.
-- L009 (K53): $f(18)=11$. L010 (K54): $f(20)=12$. L011 (pending rounds 2–3): I11 on $C$ for $n\le22$, $f(22)=13$.
+- L009 (K53): $f(18)=11$. L010 (K54): $f(20)=12$. L011 (K55): I11 on $C$ for $n\le22$, $f(22)=13$ (all ACCEPTED by three referees).
   Hence no (4,5)-set with at most 22 points beats $4/7$; the first record cells I11 allows are $(23,21,10)$, $(25,23,11)$,
   $(30,27,13)$, $(30,28,13)$, $(32,29,14)$, $(32,30,14)$, $(34,32,15)$.
 - L012 (in preparation): a 23-point record, if one exists, has every AP-degree $\le3$: the degree-4 case leaves 699 abstract
@@ -195,5 +195,5 @@ Results:
 $c_*\ge6/11$ (goal clause B); the induction proves it only for $n\le22$ and gives no asymptotic argument. On the upper-bound
 side, any set beating $4/7$ has at least 23 points, and the natural next target is the degree-3 case of $(23,21,10)$.
 
-**Tags.** The certificates L007–L010 and their K-rows are [verified-here]; L011 and L012 are [derived-here, computer-assisted]
-until their referee rounds finish; I11 in general is [conjecture]; the implication $c_*\ge6/11$ is conditional on it.
+**Tags.** The certificates L007–L011 and their K-rows are [verified-here]; L012 is [derived-here, computer-assisted]
+until its referee rounds finish; I11 in general is [conjecture]; the implication $c_*\ge6/11$ is conditional on it.

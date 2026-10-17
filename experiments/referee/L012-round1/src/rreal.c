@@ -25,7 +25,7 @@ static u64 inv(u64 a) { return pw(a, P - 2); }
 static int n, m, E[40][3], ord[40], used[40], PRINT, mu[40];
 static u64 R[40][40];   /* pivot rows (normalised: R[k][piv[k]] = 1) */
 static int piv[40], ispiv[40];
-static u64 c_asg, c_sing, c_dist, c_real, c_nodes;
+static u64 c_asg, c_sing, c_dist, c_real, c_nodes, c_target; static int HAVE_T; static u64 TGT[40];
 static u64 INV2;
 static int cmpu(const void *a, const void *b) { u64 x = *(const u64 *)a, y = *(const u64 *)b; return x < y ? -1 : x > y; }
 static void leaf(void) {
@@ -51,6 +51,10 @@ static void leaf(void) {
         while (lo <= hi) { int md = (lo + hi) / 2; if (s[md] == t) { if (md != i && md != k) aps++; break; } if (s[md] < t) lo = md + 1; else hi = md - 1; }
     }
     if (aps < m) { fprintf(stderr, "fewer APs than edges (%d < %d)\n", aps, m); exit(8); }
+    if (aps == m && HAVE_T) { int uv[2], nu = 0; for (int c = 0; c < n; c++) if (!used[c]) { if (nu < 2) uv[nu] = c; nu++; }
+        u64 den = inv((z[uv[1]] + P - z[uv[0]]) % P); int eq = 1;
+        for (int c = 0; c < n; c++) if ((z[c] + P - z[uv[0]]) % P * den % P != TGT[c]) { eq = 0; break; }
+        if (eq) c_target++; }
     if (aps == m) { c_real++; if (PRINT) { int uv[2], nu = 0; for (int c = 0; c < n; c++) if (!used[c]) { if (nu < 2) uv[nu] = c; nu++; }
             u64 den = inv((z[uv[1]] + P - z[uv[0]]) % P);
             printf("REAL u=%d v=%d mu=", uv[0], uv[1]); for (int k = 0; k < m; k++) printf("%d%s", mu[k], k + 1 < m ? "," : "");
@@ -82,7 +86,8 @@ int main(int argc, char **argv) {
     if (!(4.0 * H < (double)P)) { fprintf(stderr, "bound 4H=%g not < p\n", 4 * H); return 9; }
     static char line[1 << 15]; u64 G = 0, TA = 0, TS = 0, TD = 0, TR = 0, RG = 0;
     while (fgets(line, sizeof line, stdin)) {
-        m = 0;
+        m = 0; HAVE_T = 0; c_target = 0;
+        { char *bar = strchr(line, '|'); if (bar) { *bar = 0; char *q = bar + 1; for (int c = 0; c < 40; c++) { char *nx; TGT[c] = strtoull(q, &nx, 10); if (nx == q) break; q = nx; if (*q == ',') q++; } HAVE_T = 1; } }
         if (strchr(line, '(')) { char *p = line; while ((p = strchr(p, '('))) { if (sscanf(p, "(%d,%d,%d)", &E[m][0], &E[m][1], &E[m][2]) == 3) m++; p++; } }
         else { char *p = line; int k, mm; if (sscanf(p, "%d%n", &mm, &k) != 1) continue; p += k;
             for (int i = 0; i < mm; i++) { if (sscanf(p, "%d %d %d%n", &E[i][0], &E[i][1], &E[i][2], &k) != 3) return 2; p += k; } m = mm; }
@@ -93,8 +98,8 @@ int main(int argc, char **argv) {
         memset(used, 0, sizeof used); memset(ispiv, 0, sizeof ispiv);
         c_asg = c_sing = c_dist = c_real = c_nodes = 0; G++;
         dfs(0);
-        printf("STAT graph=%llu assignments=%llu singular=%llu distinct=%llu realizations=%llu nodes=%llu\n",
-               (unsigned long long)G, (unsigned long long)c_asg, (unsigned long long)c_sing, (unsigned long long)c_dist, (unsigned long long)c_real, (unsigned long long)c_nodes);
+        printf("STAT graph=%llu assignments=%llu singular=%llu distinct=%llu realizations=%llu nodes=%llu target_found=%llu\n",
+               (unsigned long long)G, (unsigned long long)c_asg, (unsigned long long)c_sing, (unsigned long long)c_dist, (unsigned long long)c_real, (unsigned long long)c_nodes, (unsigned long long)c_target);
         fflush(stdout);
         TA += c_asg; TS += c_sing; TD += c_dist; TR += c_real; if (c_real) RG++;
     }
