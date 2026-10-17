@@ -19,12 +19,12 @@ and disjoint unions of these (gluing A_base with itself: (28,24,12), slack 0). T
 tau <= a n + b m over the data has vertices (0,1), (3/11, 2/11) = I11, (3/7, 0).
 
 **What is proved.** On the class C of linear F7-free 3-graphs with e(S) <= |S| - 2 on every vertex subset (which contains
-every AP hypergraph of a (4,5)-set, K3-K7), I11 holds for all n <= 16: certificate L007 (n <= 14, via the window cells
-and the (14,11,6) analysis) and certificate L008 (n = 15, 16: the cells (15,9,6), (15,10,6), (16,8,6) are empty even in
-the connected linear class, (16,13,7) is impossible and (16,14,7) is empty). The method is inductive: I11 at n - 1 bounds
-the degrees in a hypothetical violator at n, which makes the remaining enumeration finite and small. The next window
-cells are (17,12,7) and (18,16,8) (the n = 18 record cell); they are being attacked with the same method
-(experiments/20261017-0615-n17-n18-via-i11).
+every AP hypergraph of a (4,5)-set, K3-K7), I11 holds for all n <= 22: certificates L007 (n <= 14), L008 (n = 15, 16),
+L009 (n = 17, 18), L010 (n = 19, 20), all ACCEPTED by three referees, and L011 (n = 21, 22; referee round 1 ACCEPT).
+Consequences: f(16) = 10, f(18) = 11, f(20) = 12, f(22) = 13; no (4,5)-set with at most 22 points beats 4/7. The method is inductive: I11 at n - 1 bounds
+the degrees in a hypothetical violator at n, which makes the remaining enumeration finite and small. The method cannot reach n = 23: the record cell (23,21,10) has slack +1, so I11 holds there and there is nothing to
+refute; the first I11-allowed record cells are (23,21,10), (25,23,11), (30,27,13), (30,28,13), (32,29,14), (32,30,14),
+(34,32,15). At (23,21,10) the degree-4 case is excluded by realizability (L012 in preparation); the degree-3 case is open (Q14).
 
 **What a proof must use.** Both hypotheses of C are essential: a connected linear F7-free 3-graph with (9,8,4) has slack -1
 (it has m > n - 2, so it violates e(S) <= |S| - 2), and a linear (14,11,6) graph containing F7 has slack -2
