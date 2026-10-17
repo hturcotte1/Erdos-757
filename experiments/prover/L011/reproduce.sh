@@ -1,6 +1,7 @@
 #!/bin/bash
 # Reproduction of every computation cited in results/proofs/L011-f22-equals-13.md (run from this directory; about 1.5 CPU-hours for
-# the main steps plus about 1.5 CPU-hours for the cross-checks).  Large files go to out/ (git-ignored).  Uses as inputs the prover's
+# the main steps plus about 2 CPU-hours for the cross-checks; in the run reported there the C6 and C8 extensions were split into
+# four consecutive parts of the input file, run in parallel, and the outputs concatenated).  Large files go to out/ (git-ignored).  Uses as inputs the prover's
 # enumerations of L008 (mine_12_10_5_deg3, mine_15_11_6_deg3) and L009 (T14_conn, T17_conn); see those folders' reproduce.sh.
 set -e
 F=/home/user/Erdos-757/experiments/20261017-0825-n21-n22-via-i11
@@ -10,6 +11,8 @@ cd indep; gcc -O2 -Wall -o enum_conn enum_conn.c; gcc -O2 -Wall -o ext_indep5 ex
 gcc -O2 -o bin/ext_vertex2 $F/ext_vertex2.c
 # --- C1: arithmetic (window cells, slack cells, decompositions by two generators, record cells)
 python3 decomp22.py > decomp22_output.txt
+python3 compare_parts.py > compare_parts_output.txt; python3 check_falsifier_rebuilds.py > check_falsifier_rebuilds_output.txt
+diff indep/ext_indep4.c indep/ext_indep5.c > indep/ext_indep5.diff || true
 # --- C2: enumerations
 bash indep/run_cells.sh small > indep/run_cells_small.log; bash indep/run_cells.sh long1 > indep/run_cells_long1.log; bash indep/run_cells.sh long2 > indep/run_cells_long2.log
 for c in 6_3_2 8_5_3 8_6_3 9_4_3 10_7_4 10_8_4 11_7_4 13_8_5 13_9_5 14_8_5 16_10_6 19_11_7; do python3 compare_found.py out/cell_$c.txt -- $F/K_$c.txt | tail -n 1; done
@@ -52,6 +55,7 @@ python3 combine.py out/in22_16_c.txt AP out/filt_8_5_3.txt:SURVIVOR out/filt_10_
 cat out/in22_16_a.txt out/in22_16_b.txt out/in22_16_c.txt > out/in22_16_all.txt
 ./indep/ext_indep5 21 8 3 < out/in22_16_all.txt > out/hits22_16.txt; tail -n 1 out/hits22_16.txt
 ./indep/filter_hits2 HIT notau < out/hits22_16.txt > out/filt22_16.txt; tail -n 1 out/filt22_16.txt; python3 hit_types.py out/hits22_16.txt 13 21
+for f in hits22_16 hitsX20 hitsX21; do grep '^HIT' out/$f.txt | shuf -n 2000 --random-source=<(yes 2026) > out/tau_sample_$f.txt; ./indep/filter_hits HIT < out/tau_sample_$f.txt | tail -n 1; done
 # --- C9: cross-checks with the falsifier's ext_vertex2 on random samples, and tau-free controls
 python3 sample.py out/sX20.txt 1 out/inX20_all.txt:1500; python3 sample.py out/sX21.txt 2 out/inX21_1.txt:368 out/inX21_all.txt:632
 python3 sample.py out/s21_17.txt 3 out/in21_17_a.txt:500 out/in21_17_b.txt:500 out/in21_17_c.txt:500
@@ -59,5 +63,6 @@ python3 sample.py out/s22_16.txt 4 out/in22_16_a.txt:500 out/in22_16_b.txt:500 o
 ./crosscheck.sh X20 19 7; ./crosscheck.sh X21 20 7; ./crosscheck.sh 21_17 20 8; ./crosscheck.sh 22_16 21 8; cat out/cross_*.done
 for spec in "inX20_all 19 11 cX20" "inX21_all 20 12 cX21" "in21_17_all 20 13 c21_17" "in22_16_all 21 14 c22_16" "in21_12 20 15 c21_12"; do
   set -- $spec; python3 control22.py out/$1.txt $2 3000 $3 out/control_$4.txt; ./indep/filter_hits HIT < out/control_$4.txt | tail -n 1; done
+(python3 control_tau_split.py out/control_c21_12.txt 21 7; python3 control_tau_split.py out/control_cX20.txt 20 7) > control_tau_split_output.txt
 # --- C10: witness for f(22) <= 13 (plain Python and e757.core; then the frozen verifier on the claim-format copy)
 python3 witness_22.py; python3 claimfmt.py; python3 /home/user/Erdos-757/judge/judge.py witness_check/W22-f22-witness.json

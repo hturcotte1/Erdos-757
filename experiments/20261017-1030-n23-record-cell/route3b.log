@@ -1,0 +1,16 @@
+  direct DFS (3, 1, 1, 3) nodes 2 labelled 1 classes F7-free e(S)ok 1
+CELL (3, 1, 1, 3) classes 1 secs 0.0
+  direct DFS (11, 9, 4, 3) nodes 4082280 labelled 779142 classes F7-free e(S)ok 1216
+CELL (11, 9, 4, 3) classes 1216 secs 50.3
+  direct DFS (12, 10, 5, 3) nodes 56801671 labelled 145033 classes F7-free e(S)ok 149
+CELL (12, 10, 5, 3) classes 149 secs 10.1
+  direct DFS (10, 8, 4, 3) nodes 304091 labelled 23277 classes F7-free e(S)ok 63
+CELL (10, 8, 4, 3) classes 63 secs 1.6
+  direct DFS (4, 2, 1, 3) nodes 4 labelled 0 classes F7-free e(S)ok 0
+CELL (4, 2, 1, 3) classes 0 secs 0.0
+  direct DFS (8, 6, 3, 3) nodes 2351 labelled 313 classes F7-free e(S)ok 3
+CELL (8, 6, 3, 3) classes 3 secs 0.0
+  direct DFS (6, 4, 2, 3) nodes 44 labelled 2 classes F7-free e(S)ok 1
+CELL (6, 4, 2, 3) classes 1 secs 0.0
+  direct DFS (13, 10, 5, 3) nodes 241898228 labelled 6996786 classes F7-free e(S)ok 6683
+CELL (13, 10, 5, 3) classes 6683 secs 498.3

@@ -57,7 +57,8 @@ def direct(n,m,t,D):
         subprocess.run('nice -n 10 ./conn_dfs3 %d %d %d %d 0 0 > %s'%(n,m,t,D,f),shell=True,check=True)
     txt=open(f).read(); last=txt.strip().splitlines()[-1]
     nodes=int(re.search(r'nodes=(\d+)',last).group(1)); found=int(re.search(r'found=(\d+)',last).group(1))
-    reps=iso_dedupe(g for g in parse_found(txt) if not find_f7(g))
+    reps0=iso_dedupe(parse_found(txt))
+    reps=[g for g in reps0 if not find_f7(g)]
     reps=[g for g in reps if sub_ok(g,n)]
     log('  direct DFS',(n,m,t,D),'nodes',nodes,'labelled',found,'classes F7-free e(S)ok',len(reps))
     return reps
@@ -83,7 +84,11 @@ def run_ext(Gs,nG,T,d,epdeg,tag):
     with open(inp,'w') as f:
         for es in Gs: f.write("%d "%len(es)+" ".join("%d %d %d"%tuple(e) for e in es)+"\n")
     t0=time.time()
-    subprocess.run('nice -n 10 ./ext3 %d %d %d %d < %s > %s'%(nG,T,d,epdeg,inp,outf),shell=True,check=True)
+    if os.path.exists(inp+'.done') and open(inp+'.done').read()==open(inp).read() and os.path.exists(outf) and 'SUMMARY' in open(outf).read()[-400:]:
+        log('  EXT cached',tag)
+    else:
+        subprocess.run('nice -n 10 ./ext3d %d %d %d %d < %s > %s'%(nG,T,d,epdeg,inp,outf),shell=True,check=True)
+        open(inp+'.done','w').write(open(inp).read())
     last=open(outf).read().strip().splitlines()[-1]
     log('  EXT',tag,last,'secs',round(time.time()-t0,1))
     return list(parse_hits(open(outf).read())),last

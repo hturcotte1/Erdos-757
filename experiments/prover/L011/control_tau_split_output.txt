@@ -1,0 +1,2 @@
+out/control_c21_12.txt extensions 3000 | with tau = 8: 1 | of these in C: 0 | in C and connected: 0
+out/control_cX20.txt extensions 3000 | with tau = 8: 1 | of these in C: 1 | in C and connected: 0

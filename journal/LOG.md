@@ -337,3 +337,5 @@ Format for each work block:
 
 ## 2026-10-17T11:45Z result L010 ACCEPTED x3 (K54): f(20) = 12; no 20-point (4,5)-set beats 4/7; I11 on C for n <= 20. K54, LEDGER, START_HERE, FINAL_REPORT, fn_bounds ({16:10, 18:11, 20:12}) and tests updated.
 - evidence: results/reviews/L010-f20-equals-12__referee__20261017T114101Z.md, __referee__20261017T105333Z.md
+
+## 2026-10-17T12:10Z result L011 SUBMITTED (I11 on C for n <= 22; f(22) = 13; new explicit witness B12 ∪ (5000 + 15·B10) judged h = 13): prover's labelled pipeline; finding: the connected (20,14,8) and (21,13,8) members of C with Δ<=3 do not exist (the falsifier's "18/176 connected classes" were disconnected repeats); (21,17,9): 52,164 hits all F7; (22,16,9): 2,512,163 hits = 2,432,146 F7 + 80,017 e(S); 0 survivors. Referee #1 + scout launched.
