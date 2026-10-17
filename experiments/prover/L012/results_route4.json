@@ -1,0 +1,135 @@
+{
+ "route": "4",
+ "decompositions": [
+  [
+   [
+    22,
+    17,
+    9
+   ]
+  ],
+  [
+   [
+    10,
+    7,
+    4
+   ],
+   [
+    12,
+    10,
+    5
+   ]
+  ],
+  [
+   [
+    8,
+    5,
+    3
+   ],
+   [
+    14,
+    12,
+    6
+   ]
+  ],
+  [
+   [
+    3,
+    1,
+    1
+   ],
+   [
+    19,
+    16,
+    8
+   ]
+  ]
+ ],
+ "types": [
+  [
+   [
+    [
+     22,
+     17,
+     9
+    ]
+   ],
+   [
+    95
+   ],
+   95
+  ],
+  [
+   [
+    [
+     10,
+     7,
+     4
+    ],
+    [
+     12,
+     10,
+     5
+    ]
+   ],
+   [
+    5,
+    221
+   ],
+   1105
+  ],
+  [
+   [
+    [
+     8,
+     5,
+     3
+    ],
+    [
+     14,
+     12,
+     6
+    ]
+   ],
+   [
+    2,
+    11
+   ],
+   22
+  ],
+  [
+   [
+    [
+     3,
+     1,
+     1
+    ],
+    [
+     19,
+     16,
+     8
+    ]
+   ],
+   [
+    1,
+    956
+   ],
+   956
+  ]
+ ],
+ "inputs": 2178,
+ "ext": {
+  "graphs": 2178,
+  "bad_tau": 0,
+  "tg_too_small": 0,
+  "searched": 2178,
+  "max_min_covers": 2418,
+  "nodes": 1822642633,
+  "hits_F7free": 101954,
+  "hits_in_C": 14290
+ },
+ "hits_in_C": 14290,
+ "filt": "SUMMARY tag=HIT NV=23 total=14290 bad_labels=0 linear=14290 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=14290 survivors_connected=14290 wrong_tau_dropped=0 connected_all=14290 tau_range=[-1,-1] maxdeg_max=4",
+ "classes": 699,
+ "secs": 624.0
+}

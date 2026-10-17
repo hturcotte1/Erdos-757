@@ -1,0 +1,222 @@
+{
+ "census14": {
+  "classes": 2910,
+  "in_cell": 2910,
+  "distinct_patterns": 9,
+  "cell_size": 11
+ },
+ "census12": {
+  "classes": 54243,
+  "in_cell": 54243,
+  "distinct_patterns": 195,
+  "cell_size": 221
+ },
+ "labelled_lists": [
+  {
+   "cell": [
+    14,
+    12,
+    6,
+    3
+   ],
+   "engine_classes": 2,
+   "labelled": 8694,
+   "labelled_classes": 2,
+   "equal": true
+  },
+  {
+   "cell": [
+    17,
+    13,
+    7,
+    3
+   ],
+   "engine_classes": 6,
+   "labelled": 112144,
+   "labelled_classes": 6,
+   "equal": true
+  },
+  {
+   "cell": [
+    15,
+    11,
+    6,
+    3
+   ],
+   "engine_classes": 19,
+   "labelled": 15335,
+   "labelled_classes": 19,
+   "equal": true
+  },
+  {
+   "cell": [
+    12,
+    10,
+    5,
+    3
+   ],
+   "engine_classes": 149,
+   "labelled": 107931,
+   "labelled_classes": 149,
+   "equal": true
+  },
+  {
+   "cell": [
+    10,
+    8,
+    4,
+    3
+   ],
+   "engine_classes": 63,
+   "labelled": 18559,
+   "labelled_classes": 63,
+   "equal": true
+  },
+  {
+   "cell": [
+    13,
+    9,
+    5,
+    3
+   ],
+   "engine_classes": 84,
+   "labelled": 37244,
+   "labelled_classes": 84,
+   "equal": true
+  },
+  {
+   "cell": [
+    16,
+    10,
+    6,
+    3
+   ],
+   "engine_classes": 16,
+   "labelled": 5448,
+   "labelled_classes": 16,
+   "equal": true
+  },
+  {
+   "cell": [
+    11,
+    7,
+    4,
+    3
+   ],
+   "engine_classes": 35,
+   "labelled": 7433,
+   "labelled_classes": 35,
+   "equal": true
+  },
+  {
+   "cell": [
+    14,
+    8,
+    5,
+    3
+   ],
+   "engine_classes": 9,
+   "labelled": 1274,
+   "labelled_classes": 9,
+   "equal": true
+  },
+  {
+   "cell": [
+    8,
+    6,
+    3,
+    3
+   ],
+   "engine_classes": 3,
+   "labelled": 211,
+   "labelled_classes": 3,
+   "equal": true
+  },
+  {
+   "cell": [
+    9,
+    4,
+    3,
+    3
+   ],
+   "engine_classes": 1,
+   "labelled": 4,
+   "labelled_classes": 1,
+   "equal": true
+  },
+  {
+   "cell": [
+    10,
+    7,
+    4,
+    3
+   ],
+   "engine_classes": 4,
+   "labelled": 368,
+   "labelled_classes": 4,
+   "equal": true
+  },
+  {
+   "cell": [
+    8,
+    5,
+    3,
+    3
+   ],
+   "engine_classes": 2,
+   "labelled": 86,
+   "labelled_classes": 2,
+   "equal": true
+  },
+  {
+   "cell": [
+    6,
+    3,
+    2,
+    3
+   ],
+   "engine_classes": 1,
+   "labelled": 6,
+   "labelled_classes": 1,
+   "equal": true
+  }
+ ],
+ "empty_cells": [
+  {
+   "cell": [
+    19,
+    11,
+    7,
+    3
+   ],
+   "classes": 0
+  },
+  {
+   "cell": [
+    20,
+    14,
+    8,
+    3
+   ],
+   "classes": 0
+  },
+  {
+   "cell": [
+    21,
+    13,
+    8,
+    4
+   ],
+   "classes": 0
+  },
+  {
+   "cell": [
+    18,
+    12,
+    7,
+    4
+   ],
+   "classes": 0
+  }
+ ]
+}

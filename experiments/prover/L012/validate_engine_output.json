@@ -1,0 +1,222 @@
+[
+ {
+  "cell": [
+   10,
+   7,
+   4,
+   4
+  ],
+  "recursion_classes": 5,
+  "direct_classes": 5,
+  "equal": true
+ },
+ {
+  "cell": [
+   8,
+   6,
+   3,
+   3
+  ],
+  "recursion_classes": 3,
+  "direct_classes": 3,
+  "equal": true
+ },
+ {
+  "cell": [
+   9,
+   5,
+   3,
+   3
+  ],
+  "recursion_classes": 6,
+  "direct_classes": 6,
+  "equal": true
+ },
+ {
+  "cell": [
+   12,
+   6,
+   4,
+   3
+  ],
+  "recursion_classes": 4,
+  "direct_classes": 4,
+  "equal": true
+ },
+ {
+  "cell": [
+   15,
+   7,
+   5,
+   3
+  ],
+  "recursion_classes": 2,
+  "direct_classes": 2,
+  "equal": true
+ },
+ {
+  "cell": [
+   14,
+   8,
+   5,
+   3
+  ],
+  "recursion_classes": 9,
+  "direct_classes": 9,
+  "equal": true
+ },
+ {
+  "cell": [
+   11,
+   7,
+   4,
+   3
+  ],
+  "recursion_classes": 35,
+  "direct_classes": 35,
+  "equal": true
+ },
+ {
+  "cell": [
+   10,
+   8,
+   4,
+   3
+  ],
+  "recursion_classes": 63,
+  "direct_classes": 63,
+  "equal": true
+ },
+ {
+  "cell": [
+   13,
+   9,
+   5,
+   3
+  ],
+  "recursion_classes": 84,
+  "direct_classes": 84,
+  "equal": true
+ },
+ {
+  "cell": [
+   11,
+   8,
+   4,
+   3
+  ],
+  "recursion_classes": 471,
+  "direct_classes": 471,
+  "equal": true
+ },
+ {
+  "cell": [
+   16,
+   10,
+   6,
+   3
+  ],
+  "recursion_classes": 16,
+  "direct_classes": 16,
+  "equal": true
+ },
+ {
+  "cell": [
+   12,
+   7,
+   4,
+   2
+  ],
+  "recursion_classes": 15,
+  "direct_classes": 15,
+  "equal": true
+ },
+ {
+  "cell": [
+   13,
+   8,
+   4,
+   2
+  ],
+  "recursion_classes": 23,
+  "direct_classes": 23,
+  "equal": true
+ },
+ {
+  "cell": [
+   15,
+   9,
+   5,
+   2
+  ],
+  "recursion_classes": 91,
+  "direct_classes": 91,
+  "equal": true
+ },
+ {
+  "cell": [
+   18,
+   10,
+   6,
+   2
+  ],
+  "recursion_classes": 67,
+  "direct_classes": 67,
+  "equal": true
+ },
+ {
+  "cell": [
+   12,
+   10,
+   5,
+   4
+  ],
+  "recursion_classes": 221,
+  "direct_classes": 221,
+  "equal": true
+ },
+ {
+  "cell": [
+   14,
+   9,
+   5,
+   3
+  ],
+  "recursion_classes": 1060,
+  "direct_classes": 1060,
+  "equal": true
+ },
+ {
+  "cell": [
+   17,
+   10,
+   6,
+   3
+  ],
+  "recursion_classes": 339,
+  "direct_classes": 339,
+  "equal": true
+ },
+ {
+  "cell": [
+   16,
+   9,
+   5,
+   2
+  ],
+  "recursion_classes": 166,
+  "direct_classes": 166,
+  "equal": true
+ },
+ {
+  "cell": [
+   19,
+   10,
+   6,
+   2
+  ],
+  "recursion_classes": 128,
+  "direct_classes": 128,
+  "equal": true
+ }
+]

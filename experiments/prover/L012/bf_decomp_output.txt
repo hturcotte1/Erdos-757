@@ -1,0 +1,1 @@
+checked 29 (N, M, S) triples; differences: []

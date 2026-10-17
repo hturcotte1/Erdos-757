@@ -17,13 +17,14 @@ import sys, os, re, math, itertools, subprocess, time, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from decomp22 import slack_cells
 HERE = os.path.dirname(os.path.abspath(__file__))
-B = os.path.join(HERE, 'bin'); OUT = os.path.join(HERE, 'out', 'cells'); os.makedirs(OUT, exist_ok=True)
-ENUM = os.path.join(HERE, '..', 'L011', 'indep', 'enum_conn')
-MD = 10; NPROC = int(os.environ.get('NPROC', '3'))
+B = os.path.join(HERE, 'bin'); OUT = os.environ.get('CELLDIR', os.path.join(HERE, 'out', 'cells')); os.makedirs(OUT, exist_ok=True)
+LOGF = os.environ.get('ENGINELOG', os.path.join(HERE, 'out', 'engine.log'))
+ENUM = os.path.join(HERE, 'bin', 'enum_conn')   # compiled from indep/enum_conn.c = L007's enum_conn.c (the main run used the identical L011 binary)
+MD = int(os.environ.get('MD', '10')); NPROC = int(os.environ.get('NPROC', '3'))
 MEMO = {}; LOG = []
 def log(*a):
     s = ' '.join(str(x) for x in a); print(s, flush=True); LOG.append(s)
-    with open(os.path.join(HERE, 'out', 'engine.log'), 'a') as f: f.write(s + '\n')
+    with open(LOGF, 'a') as f: f.write(s + '\n')
 def parse_edges(l):
     return [tuple(map(int, t.split(','))) for t in re.findall(r'\((\d+,\d+,\d+)\)', l)]
 def pieces(N, S):
@@ -99,7 +100,7 @@ def direct(n, m, t, D):
     return reps, dict(route='direct', enum=last, labelled=len(found), in_C_tau_exact=len(surv), filt=summ)
 def ext_parallel(inputs, NG, TG, T, d, EP, tag):
     """run ext_d on the input lines (split into NPROC chunks); returns the HIT lines and the summed counters."""
-    inp = os.path.join(HERE, 'out', 'tmp_in_%s' % tag)
+    inp = os.path.join(OUT, 'tmp_in_%s' % tag)
     chunks = [inputs[i::NPROC] for i in range(NPROC)] if len(inputs) >= 50 * NPROC else [inputs]
     procs = []
     for i, ch in enumerate(chunks):

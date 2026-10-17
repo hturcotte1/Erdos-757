@@ -345,3 +345,5 @@ Format for each work block:
 - next: certificate L012 for the degree-4 exclusion (prover), referees; the D=3 case recorded as open question Q14.
 
 ## 2026-10-17T14:25Z result L011 referee round 1: ACCEPT (independent genbg pipeline; direct searches confirm the two new "no connected member" lemmas; K8 not needed at n = 21, 22); scout CLEAR. Step 6.4 wording fixed; referees #2 and #3 (fable) launched.
+
+## 2026-10-17T14:55Z result L012 SUBMITTED (a 23-point record would have all AP-degrees <= 3; the 699 degree-4 classes in C are all unrealizable: exact realization of the saturated midpoint systems, 27,206,877 assignments, 6,051,773 distinct-valued, 0 with exactly 21 APs; a maximum-principle lemma shows the midpoint systems are nonsingular). Referee #1 + scout launched.

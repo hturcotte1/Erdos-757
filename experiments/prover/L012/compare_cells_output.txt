@@ -1,0 +1,15 @@
+prover cells 119 | falsifier cells 119 | common 119 | different counts []
+only prover: []
+only falsifier: []
+(22, 17, 9, 4) prover 95 falsifier 95
+(19, 16, 8, 4) prover 956 falsifier 956
+(14, 12, 6, 4) prover 11 falsifier 11
+(12, 10, 5, 4) prover 221 falsifier 221
+(10, 7, 4, 4) prover 5 falsifier 5
+(8, 5, 3, 4) prover 2 falsifier 2
+(21, 13, 8, 4) prover 0 falsifier 0
+(18, 12, 7, 4) prover 0 falsifier 0
+(21, 14, 8, 3) prover 299 falsifier 299
+(18, 13, 7, 3) prover 2544 falsifier 2544
+(15, 12, 6, 3) prover 10617 falsifier 10617
+(15, 11, 6, 4) prover 30 falsifier 30
