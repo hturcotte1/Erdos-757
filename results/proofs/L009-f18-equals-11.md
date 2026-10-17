@@ -26,7 +26,7 @@ $C$ denotes the class $O^+$ of L007 and L008: 3-graphs that are (P1) linear, (P2
 
 **Corollary 4.** The sizes $n\le30$ at which a set beating $4/7$ is still arithmetically possible are now $n=20,22,23,25,27,29,30$; $f(17)=10$ (known) and $f(19)\in\{11,12\}$ are unchanged by this certificate.
 
-Tags: **[verified-here] conditional on referee acceptance of this certificate** (L008 is accepted; until then [derived-here], computer-assisted). Scope: nothing is claimed for $n\ge19$.
+Tags: **[verified-here]** (this certificate and L008 ACCEPTED by three referees, see STATUS; computer-assisted). Scope: nothing is claimed for $n\ge19$.
 
 ## Proof
 

@@ -32,7 +32,7 @@ $O$ is the class of *ordered midpoint patterns* (kb/00_START_HERE.md §2; experi
 
 **Lemma A (I11 below 14 vertices).** Every $H\in O^+$ with $n\le13$ satisfies $11\,\tau(H)\le3n+2m$.
 
-Tags: Theorems 1, 2, Corollaries 3, 4 and Lemma A are **[verified-here] conditional on referee acceptance** (until then [derived-here], computer-assisted). Scope: nothing is claimed for $n\ge15$; the remarks of Step 9 (I11 on $O^+$ for $n\le15$ and its consequence for 16-point sets) are explicitly **not** certified here.
+Tags: Theorems 1, 2, Corollaries 3, 4 and Lemma A are **[verified-here]** (ACCEPTED by three referees, see STATUS; computer-assisted). Scope: nothing is claimed for $n\ge15$; the remarks of Step 9 (I11 on $O^+$ for $n\le15$ and its consequence for 16-point sets) are explicitly **not** certified here.
 
 ## Proof
 

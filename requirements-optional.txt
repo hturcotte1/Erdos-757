@@ -14,8 +14,9 @@
 # nauty 2.8.8 (genbg, labelg and the library) is a system/source build, not a pip package, and no test, script or e757 module
 # needs it: only the referee and prover reproduction scripts of L008-L013 compile it, from the unpacked pynauty-2.8.8.1 sdist
 # (e.g. experiments/referee/L009-round1/reproduce.sh, experiments/prover/L012/reproduce.sh). The I11 cell engine (engine.py in
-# experiments/prover/L012, experiments/prover/L013, experiments/20261017-1720-i11-n26 and experiments/20261017-1735-q14-cell-sizes)
-# calls a nauty-built bin/canon: committed at experiments/prover/L012/bin/canon, linked as bin/ by the two experiment folders and
+# experiments/prover/L012, experiments/prover/L013, experiments/20261017-1030-n23-record-cell, experiments/20261017-1645-i11-n23-n24,
+# experiments/20261017-1720-i11-n26 and experiments/20261017-1735-q14-cell-sizes)
+# calls a nauty-built bin/canon: committed at experiments/prover/L012/bin/canon, linked as bin/ by the three 2026-10-17 i11/q14 experiment folders and
 # rebuilt by the L013 reproduce script.
 # numpy, scipy, sympy and networkx come from requirements.txt. Imports in e757/: sympy in core.py (module level) and in
 # ordered_search.py (inside a function); numpy in anneal.py (module level); numpy and scipy together as the optional LP pruning

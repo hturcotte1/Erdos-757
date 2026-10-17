@@ -24,14 +24,21 @@ batch 2 was stopped after its first four cells and its remaining cells were run 
 
 ## Results
 - All twelve top-level cells (23,13,9,2), (23,14,9,3), (23,20,10,3), (24,12,9,2), (24,13,9,3), (24,18,10,3), (25,16,10,2),
-  (25,17,10,3), (25,22,11,3), (26,14,10,2), (26,15,10,3), (26,21,11,3) are EMPTY (`top_results.jsonl`); six more cells are excluded by
-  counting. Hence I11 holds on C for n <= 26.
+  (25,17,10,3), (25,22,11,3), (26,14,10,2), (26,15,10,3), (26,21,11,3) are EMPTY (`top_results.jsonl`, `top_table_output.txt`,
+  `top_types_output.txt`); six more cells are excluded by counting (`arith13_output.txt`). Hence I11 holds on C for n <= 26.
 - 167 cells computed (105 direct, 62 recursion; 91 non-empty; 30,855 classes): `cells_table.tsv`, `cells_summary_output.txt`,
-  tracked lists `cells.tar.gz`. Audit: 0 problems (`check_cells_output.txt`).
+  tracked lists `cells.tar.gz`. Audit: 0 problems (`check_cells_output.txt`; 2,039 decompositions equal to the independent generator,
+  bad_tau = 0 in all 83 branches); all lists are distinct canonical forms (`canon_fixed_points_output.txt`).
 - Identical (representatives and branch counters) to L012's lists on all 105 common cells and to the worker's 167 cells
   (`compare_runs_output.txt`); arithmetic identical to the worker's (`compare_arith_output.txt`).
-- Direct-enumeration cross-checks: `crosscheck_direct.jsonl`. Extension-step validation: `ext_validate_output.txt`.
-  Positive controls: `abase_control_output.txt`, `check_cells_D4_output.txt`, `positive_control.jsonl`.
+- Direct-enumeration cross-checks (`crosscheck_direct.jsonl`, summary by `c6_table.py`): every completed comparison EQUAL, including
+  the top-level cells (23,13,9,2), (24,12,9,2), (26,14,10,2), (24,13,9,3) (no connected linear graph at all) and the non-empty
+  recursion cells (22,11,7,2) (52 classes) and (23,13,8,2) (12 classes).
+- Final extension steps re-validated without pruning and with an independent filter, brute force on sampled inputs
+  (`ext_validate_output.txt`, `ext_validate_sub_output.txt`): at the top level every extension with the required tau is disconnected.
+- Positive controls: A_base and all 2,910 census patterns are in cell(14,12,6,4) (`abase_control_output.txt`); random members of C
+  are found in their cells (`positive_control.jsonl`).
+- Load-bearing lists resting on the recursion alone: `load_bearing_output.txt`.
 - n = 27: the cell (27,25,12,3) needs cell(23,21,10,3) (Q14) in the engine's recursion (`n27_remark_output.txt`).
 
 ## Conclusion

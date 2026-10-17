@@ -23,7 +23,7 @@ Conventions and the classes $O^+$, $O$ are those of L007: a 3-graph is linear if
 
 **Corollary 4.** The sizes $n\le30$ at which a set beating $4/7$ can still exist are now $n=18,20,22,23,25,27,29,30$ (the table of kb/00_START_HERE.md §4 without $n=16$); $f(17)=10$ was already known and is consistent with $f(16)=10\le f(17)$; $f(18)\in\{10,11\}$ is unchanged.
 
-Tags: Theorems 1, 2, Lemma A′ and Corollaries 3, 4 are **[verified-here] conditional on referee acceptance of this certificate** (L007 is accepted; until then [derived-here], computer-assisted). Scope: nothing is claimed for $n\ge17$.
+Tags: Theorems 1, 2, Lemma A′ and Corollaries 3, 4 are **[verified-here]** (this certificate and L007 ACCEPTED by three referees, see STATUS; computer-assisted). Scope: nothing is claimed for $n\ge17$.
 
 ## Proof
 

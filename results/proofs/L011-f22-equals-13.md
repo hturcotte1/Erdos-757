@@ -27,7 +27,7 @@ is a 22-point (4,5)-set with $h=13$. Hence $f(22)=13$ (Henning–Yeo alone gives
 
 **Remark 5 (what I11 cannot exclude).** The method refutes violations of I11 only. A cell $(n,m,\tau)$ that beats $4/7$ ($h=n-\tau\le\lceil4n/7\rceil-1$), satisfies $m\le n-2$, $\tau\le m$, K8, and has I11 slack $\ge0$ is not excluded even by I11 for all $n$. For $n\le40$ these are exactly (`decomp22.py` part (d)): (23,21,10) $s=1$; (25,23,11) $s=0$; (30,27,13) $s=1$; (30,28,13) $s=3$; (32,29,14) $s=0$; (32,30,14) $s=2$; (34,32,15) $s=1$; (36,34,16) $s=0$; (37,33,16) $s=1$; (37,34,16) $s=3$; (37,35,16) $s=5$; (39,35,17) $s=0$; (39,36,17) $s=2$; (39,37,17) $s=4$; there are none for $n\le22$ and none for $n\in\{24,26,27,28,29,31,33,35,38,40\}$ (at $n=27,29,31,33,35,38,40$ K8 allows record cells, but all have negative I11 slack). The first, (23,21,10), is saturated ($m=n-2$) with $h=13<\tfrac47\cdot23$; excluding it needs an inequality strictly stronger than I11.
 
-Tags: Theorems 1, 2 and Corollary 3 **[verified-here] conditional on referee acceptance of this certificate** (L007–L010 are accepted), computer-assisted; Remarks 4, 5 [derived-here] (arithmetic from Theorem 1, K8 and `decomp22.py`). Scope: nothing is claimed for $n\ge23$.
+Tags: Theorems 1, 2 and Corollary 3 **[verified-here]** (this certificate and L007–L010 ACCEPTED by three referees, see STATUS), computer-assisted; Remarks 4, 5 [derived-here] (arithmetic from Theorem 1, K8 and `decomp22.py`). Scope: nothing is claimed for $n\ge23$.
 
 ## Proof
 

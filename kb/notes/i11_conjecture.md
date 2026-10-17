@@ -24,8 +24,8 @@ L009 (n = 17, 18), L010 (n = 19, 20) and L011 (n = 21, 22), all ACCEPTED by thre
 Consequences: f(16) = 10, f(18) = 11, f(20) = 12, f(22) = 13; no (4,5)-set with at most 22 points beats 4/7. The method is inductive: I11 at n - 1 bounds
 the degrees in a hypothetical violator at n, which makes the remaining enumeration finite and small. The method does not decide the record at n = 23: the record cell (23,21,10) has slack +1, so I11 holds there and there is nothing to
 refute. The induction itself continues: by computation with the unchanged L012 engine, I11 holds on C for n = 23, 24, 25, 26 as well
-(experiments/20261017-1645-i11-n23-n24, experiments/20261017-1720-i11-n26; every violator cell empty; [verified-here] as a computation,
-certificate L013 in preparation), and it cannot pass n = 27 without Q14: the violator cell (27,25,12) forces a degree-3 vertex whose
+(experiments/20261017-1645-i11-n23-n24, experiments/20261017-1720-i11-n26; every violator cell empty; [verified-here] as an unrefereed computation;
+certificate L013 submitted 2026-10-17 18:17 UTC, refereeing next), and it cannot pass n = 27 without Q14: the violator cell (27,25,12) forces a degree-3 vertex whose
 deletion leaves (26,22) with slack 1, and [(23,21,10), AP] is one of its three decompositions; the first I11-allowed record cells are (23,21,10), (25,23,11), (30,27,13), (30,28,13), (32,29,14), (32,30,14),
 (34,32,15). At (23,21,10) the degree-4 case is excluded by realizability (L012, ACCEPTED x3, K56); the degree-3 case is open (Q14).
 
