@@ -1,0 +1,6 @@
+enum_conn N=5 M=3 T0=2 DMAX=1000 calls=52 found=0
+enum_conn N=8 M=4 T0=3 DMAX=1000 calls=265 found=0
+enum_conn N=10 M=6 T0=4 DMAX=1000 calls=15580 found=0
+enum_conn N=11 M=5 T0=4 DMAX=1000 calls=249 found=0
+enum_conn N=13 M=7 T0=5 DMAX=1000 calls=23256 found=0
+enum_conn N=12 M=9 T0=5 DMAX=1000 calls=34515249 found=0
