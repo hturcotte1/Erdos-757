@@ -1,0 +1,8 @@
+9030878fcd3a18a1 results/proofs/L007-no-nonsaturated-extremal-14-point-sets.md
+d9ca727e09ec2b86 experiments/falsify/i11-inequality/conn_dfs2.c
+a19ea62df6538922 experiments/falsify/i11-inequality/conn_dfs2_all.c
+4c19fbe4e71b29a3 experiments/falsify/i11-inequality/ext_vertex_all.c
+c561cdf173a67b41 experiments/prover/L007/indep/enum_conn.c
+a46fe47ee698cec2 experiments/prover/L007/indep/ext_indep.c
+7d8da1a13c1669fb experiments/prover/L007/indep/f7check.py
+325060f22b2f19ce e757/cpsat_model.py

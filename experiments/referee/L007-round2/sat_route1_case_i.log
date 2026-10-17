@@ -1,0 +1,5 @@
+13 8 5 None True d0= 3 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 333316, 'secs': 239.64}
+13 8 5 None True d0= 4 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 334000, 'secs': 10.49}
+13 8 5 None True d0= 5 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 334920, 'secs': 2.24}
+13 8 5 None True d0= 6 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 336080, 'secs': 1.75}
+CASE_I UNSAT None {} 259.7 s {"n": 13, "m": 8, "t": 5, "D": null, "f7free": true, "per_d0": {"3": {"result": "UNSAT", "iters": 1, "cuts": 0, "f7_clauses": 333316, "secs": 239.64}, "4": {"result": "UNSAT", "iters": 1, "cuts": 0, "f7_clauses": 334000, "secs": 10.49}, "5": {"result": "UNSAT", "iters": 1, "cuts": 0, "f7_clauses": 334920, "secs": 2.24}, "6": {"result": "UNSAT", "iters": 1, "cuts": 0, "f7_clauses": 336080, "secs": 1.75}}}

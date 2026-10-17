@@ -288,3 +288,6 @@ Format for each work block:
 
 ## 2026-10-17T04:59Z P1 CP-SAT (14,11) with deletion constraints: UNKNOWN after 10,800 s (D21 extended); superseded by L007's slack argument (referees #2/#3 running)
 - evidence: experiments/20261017-0100-n14m11-deletion-cpsat/README.md, results.json
+
+## 2026-10-17T05:12Z U record hunt (one-point extensions of extremal 15-point sets): 2,337 realizable sets (m=11: 748, m=12: 1,589), NO record; K50 (non-saturated extremal 15-point sets exist, judged C001/C002), D26
+- evidence: experiments/20261017-0210-ext15-hunt/README.md, results.json; data/ext15_sets.jsonl.gz; results/claims/C001-*, C002-*
