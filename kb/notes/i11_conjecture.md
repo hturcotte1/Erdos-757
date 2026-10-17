@@ -20,11 +20,11 @@ tau <= a n + b m over the data has vertices (0,1), (3/11, 2/11) = I11, (3/7, 0).
 
 **What is proved.** On the class C of linear F7-free 3-graphs with e(S) <= |S| - 2 on every vertex subset (which contains
 every AP hypergraph of a (4,5)-set, K3-K7), I11 holds for all n <= 22: certificates L007 (n <= 14), L008 (n = 15, 16),
-L009 (n = 17, 18), L010 (n = 19, 20), all ACCEPTED by three referees, and L011 (n = 21, 22; referee round 1 ACCEPT).
+L009 (n = 17, 18), L010 (n = 19, 20) and L011 (n = 21, 22), all ACCEPTED by three referees.
 Consequences: f(16) = 10, f(18) = 11, f(20) = 12, f(22) = 13; no (4,5)-set with at most 22 points beats 4/7. The method is inductive: I11 at n - 1 bounds
 the degrees in a hypothetical violator at n, which makes the remaining enumeration finite and small. The method cannot reach n = 23: the record cell (23,21,10) has slack +1, so I11 holds there and there is nothing to
 refute; the first I11-allowed record cells are (23,21,10), (25,23,11), (30,27,13), (30,28,13), (32,29,14), (32,30,14),
-(34,32,15). At (23,21,10) the degree-4 case is excluded by realizability (L012 in preparation); the degree-3 case is open (Q14).
+(34,32,15). At (23,21,10) the degree-4 case is excluded by realizability (L012; referee round 1 ACCEPT, rounds 2 and 3 running); the degree-3 case is open (Q14).
 
 **What a proof must use.** Both hypotheses of C are essential: a connected linear F7-free 3-graph with (9,8,4) has slack -1
 (it has m > n - 2, so it violates e(S) <= |S| - 2), and a linear (14,11,6) graph containing F7 has slack -2
@@ -33,5 +33,5 @@ m <= n - 2 the only connected linear 3-graph violating I11 is F7 itself (L007 re
 would be a Henning-Yeo-style discharging/induction argument on C; the equality cases above show what the extremal
 structures must look like (A_base-type components and disjoint APs).
 
-**Status tags.** The inequality in general: [conjecture]. For n <= 16 on C: [verified-here] (L007, L008 once accepted).
+**Status tags.** The inequality in general: [conjecture]. For n <= 22 on C: [verified-here] (L007-L011).
 The implication c* >= 6/11: conditional on the conjecture.
