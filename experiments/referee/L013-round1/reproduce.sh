@@ -30,7 +30,11 @@ python3 src/compare_cells.py out/g2 out/prover_cells/cells 400 > logs/compare_D2
 ./src/run_genbg_cells.sh out/keys_D3_small.txt out/g3 300 > logs/genbg_D3.txt
 ./src/run_tprune_cells.sh out/keys_tp.txt out/g3 1500 > logs/tprune_D3.txt
 ./src/run_tprune_cells.sh out/keys_tp2.txt out/g3 1200 > logs/tprune_D3b.txt
-python3 src/compare_cells.py out/g3 out/prover_cells/cells 20000 > logs/compare_D3.txt
+printf '20 11 7 3\n' > out/keys_tp3.txt; ./src/run_tprune_cells.sh out/keys_tp3.txt out/g3 900 > logs/tprune_D3c.txt
+python3 src/compare_cells.py out/g3 out/prover_cells/cells 400 > logs/compare_D3.txt
+python3 src/iso_compare.py 15 out/g3/cell_15_12_6_D3.txt out/prover_cells/cells/cell_15_12_6_D3.txt > logs/vf2_15_12_6.txt
+mkdir -p out/g4; printf '14 12 6 4\n' > out/keys_tp4.txt; ./src/run_tprune_cells.sh out/keys_tp4.txt out/g4 900 > logs/tprune_D4.txt   # C8(a) control
+python3 src/iso_compare.py 14 out/g4/cell_14_12_6_D4.txt $P/out/cells_D4/cell_14_12_6_D4.txt
 # 5. own extension program: validation against brute force, then every top-level branch and the 5 residual cells
 ./src/run_validate.sh > logs/validate_myext.txt
 for b in "23 14 9 2 8" "23 14 9 3 8" "23 20 10 3 9" "24 12 9 2 8" "24 13 9 2 8" "24 13 9 3 8" "24 18 10 3 9" "25 17 10 3 9" "25 22 11 3 10" "26 15 10 2 9" "26 15 10 3 9" "26 21 11 3 10" "23 13 9 2 8" "25 16 10 2 9" "26 14 10 2 9" "23 15 9 2 8" "23 15 9 3 8" "24 14 9 2 8" "24 14 9 3 8" "21 18 9 3 8" "24 19 10 3 9" "25 18 10 3 9"; do set -- $b
@@ -45,6 +49,10 @@ for b in "24 14 9 2 8 3" "24 14 9 3 8 3" "23 15 9 2 8 3" "23 15 9 3 8 3" "23 14 
 # 7. one recursion level of non-empty recursion cells with the own extension program + VF2 reduction
 python3 src/build_inputs.py out/prover_cells/cells 17 14 7 3 6 > out/inputs/in_17_14_7_d3.txt
 ./bin/myext2 16 7 3 3 < out/inputs/in_17_14_7_d3.txt > out/ext/rec_17_14_7_d3.txt; python3 src/iso_compare.py 17 out/ext/rec_17_14_7_d3.txt out/prover_cells/cells/cell_17_14_7_D3.txt
-./src/run_rec.sh > logs/rec_check.txt
+./src/run_rec.sh > logs/rec_check.txt; ./src/run_rec2.sh > logs/rec_check2.txt
+# 9. the independent bottom-up engine (reads no prover file): all twelve top-level cells and the C9 cells
+python3 src/myengine.py 18 12 7 3 21 13 8 3 20 14 8 3 17 13 7 3 24 18 10 3 25 17 10 3 > logs/myengine_run1.txt
+python3 src/myengine.py 23 20 10 3 25 22 11 3 26 21 11 3 > logs/myengine_run2.txt     # about 45 min on a loaded machine
+python3 src/vf2_engine_all.py > logs/vf2_engine_all.txt   # 29 non-empty engine cells, all VF2-identical
 # 8. reproducibility: prover lists vs L012 and worker lists (exact FOUND-line sets)
 python3 src/compare_lists.py > logs/compare_lists.txt
