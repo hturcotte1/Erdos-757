@@ -348,5 +348,5 @@ Format for each work block:
 
 ## 2026-10-17T15:28Z result L012 SUBMITTED (a 23-point record would have all AP-degrees <= 3; the 699 degree-4 classes in C are all unrealizable: exact realization of the saturated midpoint systems, 27,206,877 assignments, 6,051,773 distinct-valued, 0 with exactly 21 APs; a maximum-principle lemma shows the midpoint systems are nonsingular). Referee #1 + scout launched.
 
-## 2026-10-17T16:05Z result L011 ACCEPTED x3 (K55): f(22) = 13; I11 on C for n <= 22; no (4,5)-set with at most 22 points beats 4/7. K55, LEDGER, START_HERE, FINAL_REPORT, fn_bounds ({16:10, 18:11, 20:12, 22:13}) and tests updated.
+## 2026-10-17T15:51Z result L011 ACCEPTED x3 (K55): f(22) = 13; I11 on C for n <= 22; no (4,5)-set with at most 22 points beats 4/7. K55, LEDGER, START_HERE, FINAL_REPORT, fn_bounds ({16:10, 18:11, 20:12, 22:13}) and tests updated.
 - evidence: results/reviews/L011-f22-equals-13__referee__20261017T154609Z.md, __referee__20261017T150941Z.md
