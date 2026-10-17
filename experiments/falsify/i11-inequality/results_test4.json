@@ -1,0 +1,156 @@
+{
+ "rows": 1333217,
+ "violations": 0,
+ "min_slack": 0,
+ "equality": [
+  {
+   "n": 6,
+   "m": 2,
+   "tau": 2,
+   "saturated": false,
+   "rows": 1706
+  },
+  {
+   "n": 9,
+   "m": 3,
+   "tau": 3,
+   "saturated": false,
+   "rows": 155
+  },
+  {
+   "n": 10,
+   "m": 7,
+   "tau": 4,
+   "saturated": false,
+   "rows": 28
+  },
+  {
+   "n": 12,
+   "m": 4,
+   "tau": 4,
+   "saturated": false,
+   "rows": 14
+  },
+  {
+   "n": 13,
+   "m": 8,
+   "tau": 5,
+   "saturated": false,
+   "rows": 1
+  },
+  {
+   "n": 14,
+   "m": 12,
+   "tau": 6,
+   "saturated": true,
+   "rows": 1
+  },
+  {
+   "n": 15,
+   "m": 5,
+   "tau": 5,
+   "saturated": false,
+   "rows": 1
+  }
+ ],
+ "min_slack_by_n": {
+  "6": [
+   0,
+   "sub_A_base"
+  ],
+  "7": [
+   3,
+   "sub_A_base"
+  ],
+  "8": [
+   1,
+   "sub_A_base"
+  ],
+  "9": [
+   0,
+   "sub_A_base"
+  ],
+  "10": [
+   0,
+   "sub_A_base"
+  ],
+  "11": [
+   1,
+   "sub_A_base"
+  ],
+  "12": [
+   0,
+   "randsub18"
+  ],
+  "13": [
+   0,
+   "sub_A_base"
+  ],
+  "14": [
+   0,
+   "sub_A_base"
+  ],
+  "15": [
+   0,
+   "randsub20"
+  ],
+  "16": [
+   4,
+   "randsub18"
+  ],
+  "17": [
+   5,
+   "randsub20"
+  ],
+  "18": [
+   7,
+   "randsub20"
+  ],
+  "19": [
+   8,
+   "randsub20"
+  ],
+  "20": [
+   19,
+   "rand20"
+  ]
+ },
+ "low_slack_random_n_ge13": [
+  [
+   [
+    13,
+    9,
+    5,
+    2
+   ],
+   1
+  ],
+  [
+   [
+    14,
+    7,
+    5,
+    1
+   ],
+   1
+  ],
+  [
+   [
+    15,
+    6,
+    5,
+    2
+   ],
+   4
+  ],
+  [
+   [
+    15,
+    5,
+    5,
+    0
+   ],
+   1
+  ]
+ ]
+}
