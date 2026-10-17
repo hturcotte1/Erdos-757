@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report of the autonomous run (2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC)
 
-Last updated: 2026-10-17 08:37 UTC (48-hour extension granted by the user after the 72-hour budget; the extension results are R13 and the certificates L007 to L010; main holds the state of 2026-10-16 22:15 UTC until the next merge). Status of the goal clauses: (A) no new record set; (B) no new
+Last updated: 2026-10-17 14:30 UTC (48-hour extension granted by the user after the 72-hour budget; the extension results are R13 and section 7; main holds the state of 2026-10-16 22:15 UTC until the final merge of the extension). Status of the goal clauses: (A) no new record set; (B) no new
 lower-bound proof; (C) the budget ends at 23:06 UTC with this report in place. The published bounds
 $9/17\le c_*\le4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set $A_{\rm base}$) are unchanged.
 
@@ -157,3 +157,43 @@ Direct SAT/CP-SAT at $n=16$ (with or without structure, with or without census i
 Q8 for the abstract class (D17); witness sweeps $n=18..25$ (D18); the layered $15\to16$ search (D19); D20, D21 (solver variants);
 the pattern-first saturated census at $n=13$ (D22); two-point extensions of smaller extremal sets as a route to records (D23: R4, R9,
 R10, R11); CP-SAT and CaDiCaL at $n=16$ with the Henning–Yeo deletion constraints (D24).
+
+## 7. The 48-hour extension (2026-10-17/18): the I11 induction
+
+The user extended the run by 48 hours after the 72-hour budget (GOAL.md and the status script are unchanged, so the status
+block keeps reporting clause C). The extension turned a data-driven conjecture into a chain of exact results.
+
+**The inequality I11** [conjecture in general]: for the AP hypergraph of every (4,5)-set, $11\tau\le3n+2m$ (slack $s=3n+2m-11\tau\ge0$).
+It is strictly stronger than Henning–Yeo for saturated sets ($h\ge(6n+4)/11$, so $c_*\ge6/11$ would follow from a proof)
+and it is tight: equality on $A_{\rm base}$ $(14,12,6)$, on $(3,1,1)$, $(10,7,4)$, $(12,4,4)$, $(13,8,5)$ and their disjoint unions.
+The falsifier found no violation on any data (experiments/falsify/i11-inequality: all subsets of all 2,910 and 54,243 census
+classes, 1.33M realizable rows, Fibonacci prefixes, gluings, extensions, the abstract censuses). Both hypotheses of the class
+$C$ (linear $F_7$-free 3-graphs with $e(S)\le|S|-2$ on every subset) are essential: abstract counterexamples exist without
+either (kb/notes/i11_conjecture.md).
+
+**The window-cell induction** [verified-here, certificates L007–L010 ACCEPTED by three referees each; L011 round 1 ACCEPT].
+Slack is additive over components and $C$ is hereditary, so a violator has a connected violating component in one of finitely
+many Henning–Yeo "window cells" $(n,m,\tau)$. I11 at $n-1$ bounds every degree of a hypothetical violator at $n$ (often to
+$\le3$ or $\le2$), which either kills the cell by degree counting or reduces it to re-inserting one vertex into the few
+connected low-slack graphs of the smaller cell, themselves rebuilt recursively from even smaller slack cells. Every enumeration
+was done by at least three independently written generators (canonical BFS-growth DFS, nauty genbg orderly generation, SAT),
+with definitional $F_7$ and $e(S)\le|S|-2$ filters, byte-for-byte reproduction of all outputs and $\tau$-lowered controls.
+Results:
+- L007 (K51): no non-saturated extremal 14-point set; the 2,910 classes of L004 are all extremal 14-point sets (Q11 closed).
+- L008 (K52): $f(16)=10$; no 16-point (4,5)-set beats $4/7$ (the open case Q1 closed). Witness: $A_{\rm base}\cup\{-323,5000\}$.
+- L009 (K53): $f(18)=11$. L010 (K54): $f(20)=12$. L011 (pending rounds 2–3): I11 on $C$ for $n\le22$, $f(22)=13$.
+  Hence no (4,5)-set with at most 22 points beats $4/7$; the first record cells I11 allows are $(23,21,10)$, $(25,23,11)$,
+  $(30,27,13)$, $(30,28,13)$, $(32,29,14)$, $(32,30,14)$, $(34,32,15)$.
+- L012 (in preparation): a 23-point record, if one exists, has every AP-degree $\le3$: the degree-4 case leaves 699 abstract
+  classes in $C$, none of them realizable (exact realization of the rigid saturated systems); the degree-3 case is open (Q14).
+- By-products: K50 (non-saturated extremal 15-point sets exist, with 11 and 12 APs; two judged examples C001, C002);
+  D25 (the ordered DFS cannot clear the 15-point cells: $\sim8\cdot10^{13}$ nodes each, which the unordered slack method
+  reduced to minutes); D26 (no record among one-point extensions of 2,337 sampled extremal 15-point sets); the CP-SAT
+  attempt at $(14,11)$ with deletion constraints, UNKNOWN (D21), superseded by L007.
+
+**What this means for the problem.** The bounds $9/17\le c_*\le4/7$ are unchanged. A proof of I11 in general would give
+$c_*\ge6/11$ (goal clause B); the induction proves it only for $n\le22$ and gives no asymptotic argument. On the upper-bound
+side, any set beating $4/7$ has at least 23 points, and the natural next target is the degree-3 case of $(23,21,10)$.
+
+**Tags.** The certificates L007–L010 and their K-rows are [verified-here]; L011 and L012 are [derived-here, computer-assisted]
+until their referee rounds finish; I11 in general is [conjecture]; the implication $c_*\ge6/11$ is conditional on it.
