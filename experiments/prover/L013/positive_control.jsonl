@@ -1,0 +1,1 @@
+{"cell": [16, 11, 6, 3], "cell_classes": 3238, "tries": 20000, "members_generated": 12, "distinct_classes_generated": 11, "found_in_cell": 12, "missing": 0, "rejected": {"tau": 3378, "incomplete": 15919, "F7": 505, "P3": 186}, "seed": 1, "secs": 13.5}

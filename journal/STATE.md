@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: EXTENSION (+48 h granted by the user 2026-10-17 00:5x UTC; ends about 2026-10-18 23:06 UTC); GOAL.md unchanged (protected), status.sh shows clause C
-Last updated (UTC): 2026-10-17 17:40
+Last updated (UTC): 2026-10-17 17:31
 Phase/track: extension: the I11 induction chain is complete and refereed: L007 (Q11 closed, K51), L008 (f(16)=10, K52), L009 (f(18)=11, K53), L010 (f(20)=12, K54), L011 (f(22)=13, K55) ACCEPTED x3 each; no (4,5)-set with <= 22 points beats 4/7. L012 (n=23 record cell: all AP-degrees <= 3) ACCEPTED x3 (K56); the degree-3 case is open (Q14). Probes DONE [verified-here as a computation, not refereed]: I11 holds on C for n = 23, 24, 25, 26 (all twelve violator cells empty in the L012 engine; experiments/20261017-1645-i11-n23-n24, -1720-i11-n26). Prover writing L013 (I11 on C for n <= 26). By-product: the tight cell (21,18,9) with Delta<=3 is EMPTY, so one of the five (22,18) slack-3 decompositions of the degree-3 record case is void. Obstruction at n = 27: the remainder (26,22) of (27,25,12) decomposes as [(23,21,10), AP], i.e. needs Q14.
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
@@ -15,7 +15,7 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
 ## Running jobs / agents
 - (14,11,alpha<=8) DFS, 4 workers at nice 19, 1041/3437 prefixes at 00:57, 0 patterns; resumable (relaunch: python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 19 --tag n14_m11).
-- workflows: doc-audit-extension (5 auditors -> verify -> apply; review its diff before committing). Prover: results/proofs/L013 (2.5 h cap). Worker: experiments/20261017-1740-q14-cell-sizes (sizes of the slack-5 cells (15,13,6), (18,14,7), (21,15,8) etc. that cell(23,21,10,3) needs; NPROC=1, nice 19, 3 h cap). DONE: falsifier agent (I11, n=16..23 cells); e757/fn_bounds knows f(16)=10, f(18)=11, f(20)=12, f(22)=13; L007 x3 ACCEPT; I11 falsifier; CP-SAT (14,11) UNKNOWN (D21); probe (D25); record hunt (D26, K50); (16,14,7) decision; (14,11) DFS stopped at 1,081/3,437 (superseded by L007).
+- workflows: doc-audit-extension (5 auditors -> verify -> apply; review its diff before committing). Prover: results/proofs/L013 (2.5 h cap). Worker: experiments/20261017-1735-q14-cell-sizes (sizes of the slack-5 cells (15,13,6), (18,14,7), (21,15,8) etc. that cell(23,21,10,3) needs; NPROC=1, nice 19, 3 h cap). DONE: falsifier agent (I11, n=16..23 cells); e757/fn_bounds knows f(16)=10, f(18)=11, f(20)=12, f(22)=13; L007 x3 ACCEPT; I11 falsifier; CP-SAT (14,11) UNKNOWN (D21); probe (D25); record hunt (D26, K50); (16,14,7) decision; (14,11) DFS stopped at 1,081/3,437 (superseded by L007).
 - Documentation audited three times in the first 72 h (last 2026-10-16 18:10 UTC); main = merge 414628a.
 
 ## Live hypotheses
