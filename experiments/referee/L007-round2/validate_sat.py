@@ -7,6 +7,7 @@ from sat_ref import solve_cell, components
 from f7_ref import det_A, is_linear
 NMAX = int(sys.argv[1]) if len(sys.argv) > 1 else 9
 CONN = sys.argv[2] if len(sys.argv) > 2 else "lazy"
+LEX = len(sys.argv) > 3 and sys.argv[3] == "lex"
 def tau(n, es):
     for k in range(n + 1):
         for S in itertools.combinations(range(n), k):
@@ -22,7 +23,7 @@ for n in range(3, NMAX + 1):
             for D in (1, 2, 3, None):
                 for f7free in (False, True):
                     want = any(c for (mm, tt, dd, ff), c in bf.items() if mm == m and tt >= t and (D is None or dd <= D) and (not f7free or ff == 0))
-                    r, edges, info = solve_cell(n, m, t, D, f7free, conn=CONN)
+                    r, edges, info = solve_cell(n, m, t, D, f7free, conn=CONN, lexleader=LEX)
                     got = (r == 'SAT')
                     ok = (got == want)
                     if got:

@@ -1,0 +1,6 @@
+{"n": 8, "m": 4, "tau0": 3, "opts": [], "sat": false, "edges": null, "secs": 0.1}
+  wall 1 s
+{"n": 10, "m": 6, "tau0": 4, "opts": [], "sat": false, "edges": null, "secs": 24.5}
+  wall 26 s
+{"n": 11, "m": 5, "tau0": 4, "opts": [], "sat": false, "edges": null, "secs": 96.3}
+  wall 98 s

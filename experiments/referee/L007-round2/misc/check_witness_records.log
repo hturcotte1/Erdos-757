@@ -1,0 +1,8 @@
+W (4,5): True (1001 four-subsets)
+W APs: 11 [(0, 323, 646), (323, 523, 723), (323, 621, 919), (323, 851, 1379), (523, 566, 609), (523, 572, 621), (566, 569, 572), (569, 595, 621), (569, 646, 723), (572, 609, 646), (595, 723, 851)]
+W h (Sidon definition, all subsets): 9
+A_base (Ma-Tang 14-point, h=8): (4,5)=True n=14 m=12 h=8 tau=6 I11 slack=0
+12-point example 1 (omega issue #9804): (4,5)=True n=12 m=10 h=7 tau=5 I11 slack=1
+12-point example 2 (omega issue #9804): (4,5)=True n=12 m=10 h=7 tau=5 I11 slack=1
+W: (4,5)=True n=14 m=11 h=9 tau=5 I11 slack=9
+Fibonacci F_3..F_16: (4,5)=True n=14 m=11 h=9 tau=5 I11 slack=9

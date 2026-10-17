@@ -1,0 +1,12 @@
+maxdeg=100 n=15 m=9 tau0=6 nodes=2459440 found=0
+  wall 1 s
+maxdeg=100 n=16 m=8 tau0=6 nodes=19144 found=0
+  wall 0 s
+maxdeg=100 n=15 m=10 tau0=6 nodes=186011577 found=0
+  wall 142 s
+enum_conn N=15 M=9 T0=6 DMAX=1000 calls=2534511 found=0
+  wall 0 s
+enum_conn N=16 M=8 T0=6 DMAX=1000 calls=18778 found=0
+  wall 0 s
+enum_conn N=15 M=10 T0=6 DMAX=1000 calls=216656914 found=0
+  wall 69 s

@@ -1,0 +1,5 @@
+(12,10,tau>=5,D<=3): referee classes=197  conn_dfs2_all outputs=145033 classes=197  enum_conn outputs=145033 classes=197  OK  [61.3s]
+(13,9,tau>=5,D<=100): referee classes=156  conn_dfs2_all outputs=80876 classes=156  enum_conn outputs=80876 classes=156  OK  [40.6s]
+(13,10,tau>=6,D<=100): referee classes=0  conn_dfs2_all outputs=0 classes=0  enum_conn outputs=0 classes=0  OK  [42.1s]
+(13,8,tau>=4,D<=3): referee classes=1997  conn_dfs2_all outputs=1147893 classes=1997  enum_conn outputs=1147893 classes=1997  OK  [45.7s]
+mismatching cells: 0

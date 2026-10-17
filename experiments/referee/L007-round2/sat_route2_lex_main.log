@@ -1,0 +1,2 @@
+14 11 6 3 True d0= 3 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 721588, 'secs': 62.51}
+ROUTE II LEX main UNSAT None iso D14: None hasF7: None 70.8 s {"n": 14, "m": 11, "t": 6, "D": 3, "f7free": true, "per_d0": {"3": {"result": "UNSAT", "iters": 1, "cuts": 0, "f7_clauses": 721588, "secs": 62.51}}}

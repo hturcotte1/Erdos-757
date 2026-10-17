@@ -1,0 +1,3 @@
+enum_conn N=15 M=9 T0=6 DMAX=1000 calls=2534511 found=0
+enum_conn N=16 M=8 T0=6 DMAX=1000 calls=18778 found=0
+enum_conn N=15 M=10 T0=6 DMAX=1000 calls=216656914 found=0

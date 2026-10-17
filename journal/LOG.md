@@ -291,3 +291,7 @@ Format for each work block:
 
 ## 2026-10-17T05:12Z U record hunt (one-point extensions of extremal 15-point sets): 2,337 realizable sets (m=11: 748, m=12: 1,589), NO record; K50 (non-saturated extremal 15-point sets exist, judged C001/C002), D26
 - evidence: experiments/20261017-0210-ext15-hunt/README.md, results.json; data/ext15_sets.jsonl.gz; results/claims/C001-*, C002-*
+
+## 2026-10-17T05:20Z U+L MAJOR: the cell (16,14,7) is EMPTY in class O (computer-assisted, pending referee): f(16) = 10, no 16-point (4,5)-set beats 4/7
+- falsifier agent (experiments/20261017-0300-n16-via-i11): with I11 on O for n <= 15 (L007 + the empty window cells (15,9,6), (15,10,6)), a (16,13,7) pattern is impossible (deg <= 2, sum deg 39 > 32) and a (16,14,7) pattern has max degree 3; deleting a degree-3 vertex leaves a slack-1 (15,11,6) graph = connected (15,11,6) [49 iso classes, 22 F7-free; 50,606 labelled] or (12,10,5) + AP [150 F7-free classes, 149 after e(S) <= |S|-2]; all vertex re-insertions with tau >= 7: case A 18 hits (all violate e(S) <= |S|-2), case B 218 hits on the classes / 173,687 on all labelled graphs (all contain F7); 0 survivors. Cross-checks: conn_dfs3 = conn_dfs2 on 4 cells, independent numpy extension check, move-closure and random-search closure of the 49 classes, all 39,309 realizable max-degree-3 12-point classes among the 150.
+- next: certificate L008 (prover), referee x3 (final one on the strongest model), scout.

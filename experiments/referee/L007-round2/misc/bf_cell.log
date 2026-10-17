@@ -1,0 +1,6 @@
+bf_cell n=10 m=6 t=4 nodes=14908931 labelled=0
+  wall 10 s
+bf_cell n=11 m=5 t=4 nodes=2300156 labelled=0
+  wall 3 s
+bf_cell n=10 m=7 t=4 nodes=150569981 labelled=6652800
+  wall 87 s

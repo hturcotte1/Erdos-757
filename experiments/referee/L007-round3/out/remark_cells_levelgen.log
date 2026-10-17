@@ -1,0 +1,3 @@
+15 9 6 100 :: FINAL N=15 M=9 T0=6 DMAX=100 F7PRUNE=0 classes=0 labelled=0 [.44130 s]
+16 8 6 100 :: FINAL N=16 M=8 T0=6 DMAX=100 F7PRUNE=0 classes=0 labelled=0 [.01218 s]
+15 10 6 100 :: FINAL N=15 M=10 T0=6 DMAX=100 F7PRUNE=0 classes=0 labelled=0 [5.9501 s]

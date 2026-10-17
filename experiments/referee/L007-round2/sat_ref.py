@@ -38,6 +38,41 @@ def f7_copies(n, allowed=None):
                     out.append(frozenset(E + [T1, T2]))
     return out
 
+
+def lex_symmetries(n, d0):
+    """Vertex permutations (involutions) preserving the d0-symmetry-break: within-pair swaps (2i-1 2i), swaps of
+    consecutive pairs (2i-1 2i+1)(2i 2i+2), and transpositions of consecutive free vertices (u u+1), u >= 2d0+1."""
+    sy = []
+    def perm_from(pairs):
+        p = list(range(n))
+        for a, b in pairs: p[a], p[b] = b, a
+        return p
+    for i in range(1, d0 + 1): sy.append(perm_from([(2 * i - 1, 2 * i)]))
+    for i in range(1, d0): sy.append(perm_from([(2 * i - 1, 2 * i + 1), (2 * i, 2 * i + 2)]))
+    for u in range(2 * d0 + 1, n - 1): sy.append(perm_from([(u, u + 1)]))
+    return sy
+
+def add_lexleader(s, x, pool, T, n, d0):
+    """For each symmetry sigma (an involution on vertices, mapping allowed triples to allowed triples), add
+    X <=_lex sigma(X) where X = (x_e) in the fixed order T and sigma(X)_e = x_{sigma(e)}.  Sound: the lex-least
+    element of the orbit of any solution under the generated group satisfies every such constraint."""
+    for k, p in enumerate(lex_symmetries(n, d0)):
+        img = {e: tuple(sorted(p[v] for v in e)) for e in T}
+        if any(img[e] not in x for e in T):
+            continue
+        prev = None   # literal 'prefix equal so far' (None = true)
+        for e in T:
+            f = img[e]
+            if f == e: continue
+            a, b = x[e], x[f]
+            # prefix-equal -> a <= b
+            s.add_clause(([-prev] if prev else []) + [-a, b])
+            q = pool.id(('lexeq', k, e))
+            # prefix-equal and a == b -> q   (only this direction is needed)
+            s.add_clause(([-prev] if prev else []) + [a, b, q])
+            s.add_clause(([-prev] if prev else []) + [-a, -b, q])
+            prev = q
+
 def components(n, edges):
     par = list(range(n))
     def f(a):
@@ -52,7 +87,7 @@ def components(n, edges):
     return list(comp.values())
 
 def solve_cell(n, m, t, D=None, f7free=False, d0s=None, solver='cadical153', verbose=False, extra=None,
-               allowed=None, conn_vertices=None, sb=True, timeout_note='', conn='lazy'):
+               allowed=None, conn_vertices=None, sb=True, timeout_note='', conn='lazy', lexleader=False, collect=None):
     """Returns ('UNSAT', info) if no graph exists, else ('SAT', edges)."""
     T = [e for e in itertools.combinations(range(n), 3) if (allowed is None or allowed(e))]
     if d0s is None:
@@ -112,6 +147,8 @@ def solve_cell(n, m, t, D=None, f7free=False, d0s=None, solver='cadical153', ver
             for mask in range(1, 1 << n, 2):
                 if mask == (1 << n) - 1: continue
                 s.add_clause([x[e] for e in T if any(mask >> v & 1 for v in e) and not all(mask >> v & 1 for v in e)])
+        if lexleader and d0 is not None:
+            add_lexleader(s, x, pool, T, n, d0)
         if extra: extra(s, x, pool, T)
         iters = 0; cuts = 0
         while True:
@@ -122,6 +159,8 @@ def solve_cell(n, m, t, D=None, f7free=False, d0s=None, solver='cadical153', ver
             edges = [e for e in T if x[e] in model]
             comps = components(n, edges)
             if len(comps) == 1:
+                if collect is not None:
+                    collect.append((d0, edges)); s.add_clause([-x[e] for e in edges]); continue
                 res = 'SAT'; break
             for C in comps:
                 cl = [x[e] for e in T if (set(e) & C) and not set(e) <= C]

@@ -1,0 +1,34 @@
+{
+ "partA": {
+  "sets": [
+   "rec_8",
+   "rec_10",
+   "rec_11",
+   "rec_12",
+   "rec_14",
+   "rec_12b",
+   "rec_12c",
+   "W",
+   "Fib_F3_F16"
+  ],
+  "subsets_tested": 64756,
+  "lemmaA_violations": 0,
+  "fourteen_point_m11_sets": 2,
+  "thm1_violations": 0
+ },
+ "partB": {
+  "classes": 2910,
+  "subsets_tested": 305550,
+  "lemmaA_violations": 0
+ },
+ "partC": {
+  "classes": [
+   2000,
+   2200
+  ],
+  "sets_m11": 57324,
+  "h_hist": {
+   "9": 57324
+  }
+ }
+}
