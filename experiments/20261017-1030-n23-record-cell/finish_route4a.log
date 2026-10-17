@@ -1,0 +1,18 @@
+raw hits 10286
+iso classes 699
+orderable classes 699 10.567310333251953
+progress 0 699 {'assignments': 25401, 'solvable': 25401, 'distinct': 6275, 'noextra': 0, 'exact_ok': 0} 12
+progress 50 699 {'assignments': 2265851, 'solvable': 2265851, 'distinct': 542551, 'noextra': 0, 'exact_ok': 0} 128
+progress 100 699 {'assignments': 4323728, 'solvable': 4323728, 'distinct': 1078144, 'noextra': 0, 'exact_ok': 0} 254
+progress 150 699 {'assignments': 6240864, 'solvable': 6240864, 'distinct': 1572833, 'noextra': 0, 'exact_ok': 0} 348
+progress 200 699 {'assignments': 8277536, 'solvable': 8277536, 'distinct': 1882560, 'noextra': 0, 'exact_ok': 0} 441
+progress 250 699 {'assignments': 10098105, 'solvable': 10098105, 'distinct': 2224416, 'noextra': 0, 'exact_ok': 0} 531
+progress 300 699 {'assignments': 12173748, 'solvable': 12173748, 'distinct': 2572564, 'noextra': 0, 'exact_ok': 0} 637
+progress 350 699 {'assignments': 14033502, 'solvable': 14033502, 'distinct': 2909944, 'noextra': 0, 'exact_ok': 0} 719
+progress 400 699 {'assignments': 15992299, 'solvable': 15992299, 'distinct': 3277710, 'noextra': 0, 'exact_ok': 0} 807
+progress 450 699 {'assignments': 17671108, 'solvable': 17671108, 'distinct': 3710925, 'noextra': 0, 'exact_ok': 0} 891
+progress 500 699 {'assignments': 19335353, 'solvable': 19335353, 'distinct': 4123359, 'noextra': 0, 'exact_ok': 0} 990
+progress 550 699 {'assignments': 21244775, 'solvable': 21244775, 'distinct': 4606234, 'noextra': 0, 'exact_ok': 0} 1111
+progress 600 699 {'assignments': 23321796, 'solvable': 23321796, 'distinct': 5104203, 'noextra': 0, 'exact_ok': 0} 1233
+progress 650 699 {'assignments': 25333791, 'solvable': 25333791, 'distinct': 5598442, 'noextra': 0, 'exact_ok': 0} 1343
+10286 699 699 0 {'assignments': 27206877, 'solvable': 27206877, 'distinct': 6051773, 'noextra': 0, 'exact_ok': 0}
