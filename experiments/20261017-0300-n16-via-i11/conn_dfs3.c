@@ -41,6 +41,7 @@ static int bad_sub(int ne){ // S may be taken as a union of edges containing the
 static void rec(int ne,int v,int cur,long lastkey){
   nodes++;
   int r=m-ne;
+  if(ne==SD && K<0){ cnt++; return; }
   if(ne==SD && K>1){ cnt++; if(cnt%K!=I) return; }
   if(ne>=1){ int k=tau0-r-1; if(k>=0){ uint32_t all=(1u<<ne)-1; if(cover_le(all,k,ne)) return; } }
   if(ne==m){ if(v==n){ found++; printf("FOUND:"); for(int i=0;i<m;i++){ printf(" ("); int f=1; for(int x=0;x<n;x++) if(E[i]>>x&1){printf(f?"%d":",%d",x);f=0;} printf(")"); } printf("\n"); fflush(stdout);} return; }
@@ -72,4 +73,4 @@ static void rec(int ne,int v,int cur,long lastkey){
 int main(int argc,char**argv){ n=atoi(argv[1]); m=atoi(argv[2]); tau0=atoi(argv[3]); maxdeg=atoi(argv[4]); useF7=atoi(argv[5]); useSub=atoi(argv[6]);
   if(argc>8){ K=atoi(argv[7]); I=atoi(argv[8]); }
   rec(0,1,0,-1);
-  printf("DONE maxdeg=%d f7=%d sub=%d n=%d m=%d tau0=%d split=%d/%d nodes=%llu found=%llu pruned_f7=%llu pruned_sub=%llu\n",maxdeg,useF7,useSub,n,m,tau0,I,K,nodes,found,pr_f7,pr_sub); return 0; }
+  printf("DONE cnt=%llu maxdeg=%d f7=%d sub=%d n=%d m=%d tau0=%d split=%d/%d nodes=%llu found=%llu pruned_f7=%llu pruned_sub=%llu\n",cnt,maxdeg,useF7,useSub,n,m,tau0,I,K,nodes,found,pr_f7,pr_sub); return 0; }

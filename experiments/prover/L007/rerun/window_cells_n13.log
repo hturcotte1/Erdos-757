@@ -1,0 +1,12 @@
+maxdeg=100 n=5 m=3 tau0=2 nodes=16 found=0
+  wall .015910049 s
+maxdeg=100 n=8 m=4 tau0=3 nodes=151 found=0
+  wall .011831118 s
+maxdeg=100 n=10 m=6 tau0=4 nodes=8448 found=0
+  wall .015488629 s
+maxdeg=100 n=11 m=5 tau0=4 nodes=197 found=0
+  wall .012075488 s
+maxdeg=100 n=13 m=7 tau0=5 nodes=19596 found=0
+  wall .015972472 s
+maxdeg=100 n=12 m=9 tau0=5 nodes=18326058 found=0
+  wall 6.032150526 s
