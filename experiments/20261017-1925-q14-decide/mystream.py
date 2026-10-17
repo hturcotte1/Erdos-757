@@ -5,8 +5,8 @@ import engine
 def direct(n, m, t, D):
     key = (n, m, t, D); B = engine.B
     sf = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'out', 'stream_%d_%d_%d_D%d' % key)
-    cmd = ('set -o pipefail; %s %d %d %d %d 1 | tee >(tail -n 1 > %s.last) | grep "^FOUND:" | tee >(wc -l > %s.nfound) | %s FOUND %d tau %d'
-           ' | tee >(tail -n 1 > %s.summ) | grep "^SURVIVOR:" | tee >(wc -l > %s.nsurv) | tee >(grep -vc "#conn=1$" > %s.nbadconn)'
+    cmd = ('set -o pipefail; %s %d %d %d %d 1 | tee >(tail -n 1 > %s.last) | (grep "^FOUND:" || true) | tee >(wc -l > %s.nfound) | %s FOUND %d tau %d'
+           ' | tee >(tail -n 1 > %s.summ) | (grep "^SURVIVOR:" || true) | tee >(wc -l > %s.nsurv) | tee >(grep -vc "#conn=1$" > %s.nbadconn; true)'
            ' | cut -d"#" -f1 | %s %d | sort -u -S 1G > %s.keys'
            % (engine.ENUM, n, m, t, D, sf, sf, os.path.join(B, 'filt'), n, t, sf, sf, sf, os.path.join(B, 'canon'), n, sf))
     subprocess.run(['bash', '-c', cmd], check=True); time.sleep(1)
@@ -51,8 +51,8 @@ def recurse(n, m, t, D):
                 for ci in range(NP):
                     base = os.path.join(engine.OUT, 'tmp_%s_c%d' % (tag, ci)); bases.append(base)
                     open(base + '.in', 'w').write('\n'.join(inputs[ci::NP]) + '\n')
-                    cmd = ('set -o pipefail; %s %d %d %d %d %d < %s.in | tee >(grep "^SUMMARY" > %s.extsum) | grep "^HIT:" | tee >(wc -l > %s.nhit)'
-                           ' | %s HIT %d %s | tee >(tail -n 1 > %s.filtsum) | grep "^SURVIVOR:.*#conn=1$" | tee >(wc -l > %s.nsurv)'
+                    cmd = ('set -o pipefail; %s %d %d %d %d %d < %s.in | tee >(grep "^SUMMARY" > %s.extsum) | (grep "^HIT:" || true) | tee >(wc -l > %s.nhit)'
+                           ' | %s HIT %d %s | tee >(tail -n 1 > %s.filtsum) | (grep "^SURVIVOR:.*#conn=1$" || true) | tee >(wc -l > %s.nsurv)'
                            ' | cut -d"#" -f1 | %s %d | sort -u -S 1G > %s.keys'
                            % (os.path.join(B, 'ext_d'), n - 1, tp, t, d, d - 1, base, base, base, os.path.join(B, 'filt'), n, mode, base, base, os.path.join(B, 'canon'), n, base))
                     procs.append(subprocess.Popen(['bash', '-c', cmd]))
