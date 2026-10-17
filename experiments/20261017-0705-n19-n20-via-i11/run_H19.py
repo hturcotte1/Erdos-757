@@ -16,9 +16,10 @@ print('G (18,12,7) candidates',len(Gs),flush=True); STATS['H19_G_candidates']=le
 inp='in_H19.txt'
 with open(inp,'w') as f:
     for es in Gs: f.write("%d "%len(es)+" ".join("%d %d %d"%tuple(e) for e in es)+"\n")
-for T,tag in ((8,'main'),(7,'control')):
-    subprocess.run('nice -n 10 ./ext_vertex2 18 %d 3 < %s > hits_H19.%s.txt'%(T,inp,tag),shell=True,check=True)
-    last=open('hits_H19.%s.txt'%tag).read().strip().splitlines()[-1]; print(T,last); STATS['H19_ext_'+tag]=last
+subprocess.run('nice -n 10 ./ext_vertex2 18 8 3 < %s > hits_H19.main.txt'%inp,shell=True,check=True)
+last=open('hits_H19.main.txt').read().strip().splitlines()[-1]; print(8,last); STATS['H19_ext_main']=last
+subprocess.run('nice -n 10 ./ext_vertex2 18 7 3 < %s | head -4000 > hits_H19.control.txt'%inp,shell=True)
 subprocess.run('nice -n 10 python3 post.py hits_H19.main.txt 19 post_H19.json > post_H19.log 2>&1',shell=True)
 print(open('post_H19.log').read()); STATS['H19_post']=json.load(open('post_H19.json'))['summary']
+subprocess.run('nice -n 10 python3 post.py hits_H19.control.txt 19 post_H19_control.json > post_H19_control.log 2>&1',shell=True); STATS['H19_control']=json.load(open('post_H19_control.json'))['summary']; print(STATS['H19_control'])
 json.dump(STATS,open('stats_H19.json','w'),indent=1)

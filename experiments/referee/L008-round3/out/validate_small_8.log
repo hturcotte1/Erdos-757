@@ -1,0 +1,3 @@
+n=8 D=3: brute-force total connected spanning linear graphs = 192360; cells so far 14, mismatches 0
+n=8 D=100: brute-force total connected spanning linear graphs = 192360; cells so far 28, mismatches 0
+DONE cells=28 nonempty=22 mismatches=0

@@ -1,0 +1,279 @@
+{
+ "question": "Does I11 hold on class O for n=19 and n=20 (given n<=18, resp. n<=19)?",
+ "verdict": "HOLDS for n=19 and n=20 (computer-assisted, [derived-here], needs referee); (20,18,9) impossible by degree counting, so no 20-point (4,5)-set with h=11 (f(20)=12 within O)",
+ "window_cells": [
+  {
+   "cell": "(19,9,7)",
+   "slack": -2,
+   "deg_bound": 3
+  },
+  {
+   "cell": "(19,14,8)",
+   "slack": -3,
+   "deg_bound": 2
+  },
+  {
+   "cell": "(19,15,8)",
+   "slack": -1,
+   "deg_bound": 3
+  },
+  {
+   "cell": "(20,12,8)",
+   "slack": -4,
+   "deg_bound": 2
+  },
+  {
+   "cell": "(20,13,8)",
+   "slack": -2,
+   "deg_bound": 3
+  },
+  {
+   "cell": "(20,18,9)",
+   "slack": -3,
+   "deg_bound": 2
+  }
+ ],
+ "n19": {
+  "c_19_9_7": {
+   "dfs_unrestricted_nodes": 8550,
+   "found": 0
+  },
+  "c_19_14_8": {
+   "argument": "deg<=2 but sum deg=42>38",
+   "result": "impossible"
+  },
+  "c_19_15_8": {
+   "slack": -1,
+   "deg3_vertices_at_least": 7,
+   "G": "(18,12,7) slack 1",
+   "partitions": [
+    [
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      12,
+      10,
+      5
+     ]
+    ],
+    [
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      15,
+      11,
+      6
+     ]
+    ],
+    [
+     [
+      10,
+      7,
+      4
+     ],
+     [
+      8,
+      5,
+      3
+     ]
+    ],
+    [
+     [
+      18,
+      12,
+      7
+     ]
+    ]
+   ],
+   "classes": {
+    "c12_10_5_kept": 149,
+    "c15_11_6_kept": 19,
+    "c10_7_4": 4,
+    "c8_5_3": 2
+   },
+   "connected_18_12_7": {
+    "maxdeg2_dfs_nodes": 16616566,
+    "found": 0,
+    "deg3_route": "X-w=(17,9,6) slack 3; 7 partitions; Gprime_candidates=51; extensions=3053913; hits=4251; F7=1555; eS_killed=11; classes_kept=176",
+    "partitions_17_9_3": [
+     [
+      [
+       3,
+       1,
+       1,
+       0
+      ],
+      [
+       3,
+       1,
+       1,
+       0
+      ],
+      [
+       3,
+       1,
+       1,
+       0
+      ],
+      [
+       8,
+       6,
+       3,
+       3
+      ]
+     ],
+     [
+      [
+       3,
+       1,
+       1,
+       0
+      ],
+      [
+       3,
+       1,
+       1,
+       0
+      ],
+      [
+       11,
+       7,
+       4,
+       3
+      ]
+     ],
+     [
+      [
+       3,
+       1,
+       1,
+       0
+      ],
+      [
+       8,
+       5,
+       3,
+       1
+      ],
+      [
+       6,
+       3,
+       2,
+       2
+      ]
+     ],
+     [
+      [
+       3,
+       1,
+       1,
+       0
+      ],
+      [
+       14,
+       8,
+       5,
+       3
+      ]
+     ],
+     [
+      [
+       8,
+       5,
+       3,
+       1
+      ],
+      [
+       9,
+       4,
+       3,
+       2
+      ]
+     ],
+     [
+      [
+       11,
+       6,
+       4,
+       1
+      ],
+      [
+       6,
+       3,
+       2,
+       2
+      ]
+     ],
+     [
+      [
+       17,
+       9,
+       6,
+       3
+      ]
+     ]
+    ]
+   },
+   "final": {
+    "G_candidates": 352,
+    "extensions": 4306086,
+    "hits_tau_ge_8": 2140,
+    "with_F7": 2056,
+    "F7free_killed_by_eS": 84,
+    "survivors": 0,
+    "numpy_crosscheck": "40 graphs, 243 hits, python==C",
+    "control_T7_sample4000": {
+     "with_F7": 12,
+     "killed_by_eS": 255,
+     "survivors": 3733
+    }
+   },
+   "result": "EMPTY"
+  }
+ },
+ "n20": {
+  "c_20_12_8": {
+   "maxdeg2_nodes": 6278507,
+   "found": 0,
+   "note": "deg<=2 by I11 n<=19 and slack -4"
+  },
+  "c_20_13_8": {
+   "slack": -2,
+   "maxdeg2": {
+    "nodes": 79682223,
+    "found": 0
+   },
+   "maxdeg3": "G=(19,10,7) slack 0: [AP,AP,AP,(10,7,4)] [AP,AP,(13,8,5)] [AP,(16,9,6)] [(19,10,7)]",
+   "C10_3AP": {
+    "graphs": 4,
+    "extensions": 571849,
+    "hits_tau_ge_8": 72,
+    "with_F7": 72,
+    "survivors": 0
+   },
+   "C13_AP_AP": "all 159 connected (13,8,5) contain F7",
+   "c16_9_6": "none (2.3M nodes, earlier folder)",
+   "c19_10_7": {
+    "maxdeg3_nodes": 2310245,
+    "found": 0
+   },
+   "result": "EMPTY"
+  },
+  "c_20_18_9": {
+   "argument": "deg<=2 but sum deg=54>40",
+   "result": "impossible"
+  },
+  "record_candidate": false
+ }
+}

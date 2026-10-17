@@ -1,0 +1,13 @@
+A_base: n=14 m=12 tau=6 h=alpha=8 linear=True midpoints_injective_interior=True F7=False P3_violations=0 I11_violations=0 min_slack(|S|>=3)=0 tau>6_at_16=0 h_mismatches=0/40
+C16: n=16 m=13 tau=6 h=alpha=10 linear=True midpoints_injective_interior=True F7=False P3_violations=0 I11_violations=0 min_slack(|S|>=3)=0 tau>6_at_16=0 h_mismatches=0/40
+record_12: n=12 m=10 tau=5 h=alpha=7 linear=True midpoints_injective_interior=True F7=False P3_violations=0 I11_violations=0 min_slack(|S|>=3)=0 tau>6_at_16=0 h_mismatches=0/40
+record_12b: n=12 m=10 tau=5 h=alpha=7 linear=True midpoints_injective_interior=True F7=False P3_violations=0 I11_violations=0 min_slack(|S|>=3)=0 tau>6_at_16=0 h_mismatches=0/40
+record_12c: n=12 m=10 tau=5 h=alpha=7 linear=True midpoints_injective_interior=True F7=False P3_violations=0 I11_violations=0 min_slack(|S|>=3)=0 tau>6_at_16=0 h_mismatches=0/40
+record_8: n=8 m=5 tau=3 h=alpha=5 linear=True midpoints_injective_interior=True F7=False P3_violations=0 I11_violations=0 min_slack(|S|>=3)=0 tau>6_at_16=0 h_mismatches=0/40
+record_10: n=10 m=8 tau=4 h=alpha=6 linear=True midpoints_injective_interior=True F7=False P3_violations=0 I11_violations=0 min_slack(|S|>=3)=0 tau>6_at_16=0 h_mismatches=0/40
+record_11: n=11 m=8 tau=4 h=alpha=7 linear=True midpoints_injective_interior=True F7=False P3_violations=0 I11_violations=0 min_slack(|S|>=3)=0 tau>6_at_16=0 h_mismatches=0/40
+Fibonacci F3..F18: n=16 m=13 tau=6 h=alpha=10 linear=True midpoints_injective_interior=True F7=False P3_violations=0 I11_violations=0 min_slack(|S|>=3)=0 tau>6_at_16=0 h_mismatches=0/40
+Fibonacci F3..F17: n=15 m=12 tau=5 h=alpha=10 linear=True midpoints_injective_interior=True F7=False P3_violations=0 I11_violations=0 min_slack(|S|>=3)=0 tau>6_at_16=0 h_mismatches=0/40
+gluing n=26: APs 22
+gluing: 60 random 16-subsets, violations of tau<=6 or I11: 0
+census n14 m12: 400 classes checked, m=12 and tau=6 failures: 0

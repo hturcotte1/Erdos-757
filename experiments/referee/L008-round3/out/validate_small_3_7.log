@@ -1,0 +1,11 @@
+n=3 D=3: brute-force total connected spanning linear graphs = 1; cells so far 3, mismatches 0
+n=3 D=100: brute-force total connected spanning linear graphs = 1; cells so far 6, mismatches 0
+n=4 D=3: brute-force total connected spanning linear graphs = 0; cells so far 7, mismatches 0
+n=4 D=100: brute-force total connected spanning linear graphs = 0; cells so far 8, mismatches 0
+n=5 D=3: brute-force total connected spanning linear graphs = 15; cells so far 12, mismatches 0
+n=5 D=100: brute-force total connected spanning linear graphs = 15; cells so far 16, mismatches 0
+n=6 D=3: brute-force total connected spanning linear graphs = 150; cells so far 24, mismatches 0
+n=6 D=100: brute-force total connected spanning linear graphs = 150; cells so far 32, mismatches 0
+n=7 D=3: brute-force total connected spanning linear graphs = 4125; cells so far 45, mismatches 0
+n=7 D=100: brute-force total connected spanning linear graphs = 4125; cells so far 58, mismatches 0
+DONE cells=58 nonempty=40 mismatches=0

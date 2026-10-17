@@ -1,0 +1,232 @@
+{
+ "partitions_17_9_3": [
+  [
+   [
+    3,
+    1,
+    1,
+    0
+   ],
+   [
+    3,
+    1,
+    1,
+    0
+   ],
+   [
+    3,
+    1,
+    1,
+    0
+   ],
+   [
+    8,
+    6,
+    3,
+    3
+   ]
+  ],
+  [
+   [
+    3,
+    1,
+    1,
+    0
+   ],
+   [
+    3,
+    1,
+    1,
+    0
+   ],
+   [
+    11,
+    7,
+    4,
+    3
+   ]
+  ],
+  [
+   [
+    3,
+    1,
+    1,
+    0
+   ],
+   [
+    8,
+    5,
+    3,
+    1
+   ],
+   [
+    6,
+    3,
+    2,
+    2
+   ]
+  ],
+  [
+   [
+    3,
+    1,
+    1,
+    0
+   ],
+   [
+    14,
+    8,
+    5,
+    3
+   ]
+  ],
+  [
+   [
+    8,
+    5,
+    3,
+    1
+   ],
+   [
+    9,
+    4,
+    3,
+    2
+   ]
+  ],
+  [
+   [
+    11,
+    6,
+    4,
+    1
+   ],
+   [
+    6,
+    3,
+    2,
+    2
+   ]
+  ],
+  [
+   [
+    17,
+    9,
+    6,
+    3
+   ]
+  ]
+ ],
+ "cell_3_1_1_dfs": {
+  "nodes": 2,
+  "found": 1
+ },
+ "cell_3_1_1": {
+  "labelled": 1,
+  "with_F7": 0,
+  "F7free_iso_classes": 1,
+  "killed_by_eS": 0,
+  "kept": 1
+ },
+ "cell_8_6_3_dfs": {
+  "nodes": 2351,
+  "found": 313
+ },
+ "cell_8_6_3": {
+  "labelled": 313,
+  "with_F7": 102,
+  "F7free_iso_classes": 3,
+  "killed_by_eS": 0,
+  "kept": 3
+ },
+ "cell_11_7_4_dfs": {
+  "nodes": 196337,
+  "found": 7615
+ },
+ "cell_11_7_4": {
+  "labelled": 7615,
+  "with_F7": 182,
+  "F7free_iso_classes": 35,
+  "killed_by_eS": 0,
+  "kept": 35
+ },
+ "cell_8_5_3_dfs": {
+  "nodes": 889,
+  "found": 86
+ },
+ "cell_8_5_3": {
+  "labelled": 86,
+  "with_F7": 0,
+  "F7free_iso_classes": 2,
+  "killed_by_eS": 0,
+  "kept": 2
+ },
+ "cell_6_3_2_dfs": {
+  "nodes": 22,
+  "found": 6
+ },
+ "cell_6_3_2": {
+  "labelled": 6,
+  "with_F7": 0,
+  "F7free_iso_classes": 1,
+  "killed_by_eS": 0,
+  "kept": 1
+ },
+ "cell_14_8_5_dfs": {
+  "nodes": 1415650,
+  "found": 1274
+ },
+ "cell_14_8_5": {
+  "labelled": 1274,
+  "with_F7": 0,
+  "F7free_iso_classes": 9,
+  "killed_by_eS": 0,
+  "kept": 9
+ },
+ "cell_9_4_3_dfs": {
+  "nodes": 125,
+  "found": 4
+ },
+ "cell_9_4_3": {
+  "labelled": 4,
+  "with_F7": 0,
+  "F7free_iso_classes": 1,
+  "killed_by_eS": 0,
+  "kept": 1
+ },
+ "cell_11_6_4_dfs": {
+  "nodes": 11716,
+  "found": 0
+ },
+ "cell_11_6_4": {
+  "labelled": 0,
+  "with_F7": 0,
+  "F7free_iso_classes": 0,
+  "killed_by_eS": 0,
+  "kept": 0
+ },
+ "cell_17_9_6_dfs": {
+  "nodes": 2004128,
+  "found": 0
+ },
+ "cell_17_9_6": {
+  "labelled": 0,
+  "with_F7": 0,
+  "F7free_iso_classes": 0,
+  "killed_by_eS": 0,
+  "kept": 0
+ },
+ "Gprime_17_9_6": 51,
+ "X18_deg3_ext": {
+  "graphs": 51,
+  "summary": "SUMMARY graphs=51 tested=3053913 hits=4251",
+  "secs": 7.6
+ },
+ "X18_deg3_classes": {
+  "labelled": 4251,
+  "with_F7": 1555,
+  "F7free_iso_classes": 187,
+  "killed_by_eS": 11,
+  "kept": 176
+ }
+}

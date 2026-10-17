@@ -10,3 +10,5 @@ cell_11_6_4 {'labelled': 0, 'with_F7': 0, 'F7free_iso_classes': 0, 'killed_by_eS
 cell_17_9_6 {'labelled': 0, 'with_F7': 0, 'F7free_iso_classes': 0, 'killed_by_eS': 0, 'kept': 0}
 G prime candidates 51
 X18_deg3 SUMMARY graphs=51 tested=3053913 hits=4251
+X18_deg3_classes {'labelled': 4251, 'with_F7': 1555, 'F7free_iso_classes': 187, 'killed_by_eS': 11, 'kept': 176}
+secs 228.93649172782898

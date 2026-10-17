@@ -1,0 +1,122 @@
+{
+ "A_base": {
+  "n": 14,
+  "m": 12,
+  "h": 8,
+  "lin": true,
+  "inj": true,
+  "f7": false,
+  "p3": 0,
+  "i11": 0,
+  "bad16": 0,
+  "hbad": 0
+ },
+ "C16": {
+  "n": 16,
+  "m": 13,
+  "h": 10,
+  "lin": true,
+  "inj": true,
+  "f7": false,
+  "p3": 0,
+  "i11": 0,
+  "bad16": 0,
+  "hbad": 0
+ },
+ "rec12": {
+  "n": 12,
+  "m": 10,
+  "h": 7,
+  "lin": true,
+  "inj": true,
+  "f7": false,
+  "p3": 0,
+  "i11": 0,
+  "bad16": 0,
+  "hbad": 0
+ },
+ "rec12b": {
+  "n": 12,
+  "m": 10,
+  "h": 7,
+  "lin": true,
+  "inj": true,
+  "f7": false,
+  "p3": 0,
+  "i11": 0,
+  "bad16": 0,
+  "hbad": 0
+ },
+ "rec12c": {
+  "n": 12,
+  "m": 10,
+  "h": 7,
+  "lin": true,
+  "inj": true,
+  "f7": false,
+  "p3": 0,
+  "i11": 0,
+  "bad16": 0,
+  "hbad": 0
+ },
+ "rec8": {
+  "n": 8,
+  "m": 5,
+  "h": 5,
+  "lin": true,
+  "inj": true,
+  "f7": false,
+  "p3": 0,
+  "i11": 0,
+  "bad16": 0,
+  "hbad": 0
+ },
+ "rec10": {
+  "n": 10,
+  "m": 8,
+  "h": 6,
+  "lin": true,
+  "inj": true,
+  "f7": false,
+  "p3": 0,
+  "i11": 0,
+  "bad16": 0,
+  "hbad": 0
+ },
+ "rec11": {
+  "n": 11,
+  "m": 8,
+  "h": 7,
+  "lin": true,
+  "inj": true,
+  "f7": false,
+  "p3": 0,
+  "i11": 0,
+  "bad16": 0,
+  "hbad": 0
+ },
+ "fib16": {
+  "n": 16,
+  "m": 13,
+  "h": 10,
+  "lin": true,
+  "inj": true,
+  "f7": false,
+  "p3": 0,
+  "i11": 0,
+  "bad16": 0,
+  "hbad": 0
+ },
+ "fib15": {
+  "n": 15,
+  "m": 12,
+  "h": 10,
+  "lin": true,
+  "inj": true,
+  "f7": false,
+  "p3": 0,
+  "i11": 0,
+  "bad16": 0,
+  "hbad": 0
+ }
+}
