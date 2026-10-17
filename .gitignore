@@ -60,3 +60,4 @@ experiments/referee/L008-round3/out/
 experiments/referee/L008-round3/rerun/
 experiments/referee/L008-round2/out/
 experiments/referee/L008-round*/**/tmp_*
+experiments/referee/*/out/
