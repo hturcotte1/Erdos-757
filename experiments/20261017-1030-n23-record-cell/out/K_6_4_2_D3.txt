@@ -1,3 +1,0 @@
-FOUND: (0,1,2) (0,3,4) (1,3,5) (2,4,5)
-FOUND: (0,1,2) (0,3,4) (1,4,5) (2,3,5)
-DONE cnt=0 maxdeg=3 f7=0 sub=0 n=6 m=4 tau0=2 split=0/1 nodes=44 found=2 pruned_f7=0 pruned_sub=0
