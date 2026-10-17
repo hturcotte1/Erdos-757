@@ -39,3 +39,10 @@ experiments/20261016-0330-ext12-all/*.log
 experiments/20261016-0330-ext12-all/results.json
 experiments/20261016-0850-n16-deletion-cpsat/*.log
 experiments/20261016-1240-n16-cnf-witness/*.log
+experiments/20261017-0210-ext15-hunt/pats/
+experiments/20261017-0210-ext15-hunt/data/done_*.flag
+experiments/20261017-0210-ext15-hunt/data/seen.txt
+experiments/20261017-0210-ext15-hunt/data/attempts.jsonl
+experiments/20261017-0210-ext15-hunt/data/ext15_sets.jsonl
+experiments/20261017-0210-ext15-hunt/*.log
+experiments/20261017-0210-ext15-hunt/jobs_*/
