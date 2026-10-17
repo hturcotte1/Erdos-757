@@ -8,7 +8,7 @@ AP hypergraph H(A)). Then 11 tau <= 3 n + 2 m. Equivalently, with slack s(H) = 3
 **Why it matters.** Henning-Yeo [published] gives 17 tau <= 5n + 3m for all linear F7-free 3-graphs, hence
 h >= (9n + 6)/17 and c* >= 9/17. I11 is strictly stronger for saturated sets (m = n - 2): tau <= (5n - 4)/11, so
 h >= (6n + 4)/11 and c* >= 6/11 = 0.5454... > 9/17 = 0.5294... (goal clause B would follow from a proof of I11 in
-general). Within the proved range n <= 22 (see 'What is proved' below) it gives f(16) >= 10, f(18) >= 11, f(20) >= 12, f(22) >= 13, i.e. no record set at n = 16, 18, 20, 22 [verified-here, L007-L011];
+general). Within the proved range n <= 26 (see 'What is proved' below) it gives f(16) >= 10, f(18) >= 11, f(20) >= 12, f(22) >= 13, i.e. no record set at n = 16, 18, 20, 22 [verified-here, L007-L011];
 the first size where I11 allows a record is n = 23 (h = 13 >= (138+4)/11 = 12.9).
 
 **Evidence [verified-here, experiments/falsify/i11-inequality].** 0 violations on: every subset of the seven stored
@@ -19,8 +19,8 @@ and disjoint unions of these (gluing A_base with itself: (28,24,12), slack 0). T
 tau <= a n + b m over the data has vertices (0,1), (3/11, 2/11) = I11, (3/7, 0).
 
 **What is proved.** On the class C of linear F7-free 3-graphs with e(S) <= |S| - 2 on every vertex subset (which contains
-every AP hypergraph of a (4,5)-set, K3-K7), I11 holds for all n <= 22: certificates L007 (n <= 14), L008 (n = 15, 16),
-L009 (n = 17, 18), L010 (n = 19, 20) and L011 (n = 21, 22), all ACCEPTED by three referees.
+every AP hypergraph of a (4,5)-set, K3-K7), I11 holds for all n <= 26: certificates L007 (n <= 14), L008 (n = 15, 16),
+L009 (n = 17, 18), L010 (n = 19, 20), L011 (n = 21, 22) and L013 (n = 23, 24, 25, 26), all ACCEPTED by three referees (K51-K55, K57).
 Consequences: f(16) = 10, f(18) = 11, f(20) = 12, f(22) = 13; no (4,5)-set with at most 22 points beats 4/7. The method is inductive: I11 at n - 1 bounds
 the degrees in a hypothetical violator at n, which makes the remaining enumeration finite and small. The method does not decide the record at n = 23: the record cell (23,21,10) has slack +1, so I11 holds there and there is nothing to
 refute. The induction itself continues to n = 26 (L013, K57, ACCEPTED x3; first found by the worker runs experiments/20261017-1645-i11-n23-n24 and
