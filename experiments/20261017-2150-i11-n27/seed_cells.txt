@@ -181,3 +181,17 @@ cell_9_5_3_D3.txt
 cell_9_6_3_D2.txt
 cell_9_6_3_D3.txt
 cell_9_7_3_D2.txt
+cell_10_7_4_D4.txt
+cell_11_6_4_D4.txt
+cell_12_10_5_D4.txt
+cell_13_8_5_D4.txt
+cell_14_12_6_D4.txt
+cell_14_7_5_D4.txt
+cell_15_11_6_D4.txt
+cell_17_8_6_D4.txt
+cell_18_12_7_D4.txt
+cell_19_16_8_D4.txt
+cell_21_13_8_D4.txt
+cell_22_17_9_D4.txt
+cell_3_1_1_D4.txt
+cell_8_5_3_D4.txt
