@@ -178,6 +178,7 @@ Results:
 - L009 (K53): $f(18)=11$. L010 (K54): $f(20)=12$. L011 (K55): I11 on $C$ for $n\le22$, $f(22)=13$ (all ACCEPTED by three referees).
   Hence no (4,5)-set with at most 22 points beats $4/7$; the first record cells I11 allows are $(23,21,10)$, $(25,23,11)$,
   $(30,27,13)$, $(30,28,13)$, $(32,29,14)$, $(32,30,14)$, $(34,32,15)$.
+- L013 (K57, ACCEPTED by three referees): I11 on $C$ for $n\le26$ (four more induction steps with the L012 engine; no new $f(n)$).
 - L012 (K56, ACCEPTED by three referees): a 23-point record, if one exists, has every AP-degree $\le3$: the degree-4 case leaves 699 abstract
   classes in $C$, none of them realizable (exact realization of the rigid saturated systems); the degree-3 case is open (Q14).
 - By-products: K50 (non-saturated extremal 15-point sets exist, with 11 and 12 APs; two judged examples C001, C002);
@@ -186,7 +187,7 @@ Results:
   attempt at $(14,11)$ with deletion constraints, UNKNOWN (D21), superseded by L007.
 
 **What this means for the problem.** The bounds $9/17\le c_*\le4/7$ are unchanged. A proof of I11 in general would give
-$c_*\ge6/11$ (goal clause B); the induction proves it only for $n\le22$ and gives no asymptotic argument. On the upper-bound
+$c_*\ge6/11$ (goal clause B); the induction proves it only for $n\le26$ and gives no asymptotic argument. On the upper-bound
 side, any set beating $4/7$ has at least 23 points, and the natural next target is the degree-3 case of $(23,21,10)$.
 
-**Tags.** The certificates L007–L012 and their K-rows K51–K56 are [verified-here] (three referees each); I11 in general is [conjecture]; the implication $c_*\ge6/11$ is conditional on it.
+**Tags.** The certificates L007–L013 and their K-rows K51–K57 are [verified-here] (three referees each); I11 in general is [conjecture]; the implication $c_*\ge6/11$ is conditional on it.

@@ -1,0 +1,62 @@
+cell (20,12,7,3) branch d=2 tp=6 S=11: (19,10) engine 78 brute force 78 EQUAL
+cell (20,12,7,3) branch d=2 tp=7 S=0: (19,10) engine 4 brute force 4 EQUAL
+cell (20,12,7,3) branch d=3 tp=6 S=9: (19,9) engine 48 brute force 48 EQUAL
+cell (19,12,7,3) branch d=2 tp=6 S=8: (18,10) engine 40 brute force 40 EQUAL
+cell (19,12,7,3) branch d=3 tp=6 S=6: (18,9) engine 25 brute force 25 EQUAL
+cell (18,12,7,3) branch d=2 tp=6 S=5: (17,10) engine 17 brute force 17 EQUAL
+cell (18,12,7,3) branch d=3 tp=6 S=3: (17,9) engine 10 brute force 10 EQUAL
+cell (17,11,6,3) branch d=2 tp=5 S=11: (16,9) engine 37 brute force 37 EQUAL
+cell (17,11,6,3) branch d=2 tp=6 S=0: (16,9) engine 3 brute force 3 EQUAL
+cell (17,11,6,3) branch d=3 tp=5 S=9: (16,8) engine 30 brute force 30 EQUAL
+cell (16,11,6,3) branch d=3 tp=5 S=6: (15,8) engine 15 brute force 15 EQUAL
+cell (15,11,6,3) branch d=3 tp=5 S=3: (14,8) engine 6 brute force 6 EQUAL
+cell (21,15,8,3) branch d=3 tp=7 S=7: (20,12) engine 44 brute force 44 EQUAL
+cell (20,15,8,3) branch d=3 tp=7 S=4: (19,12) engine 16 brute force 16 EQUAL
+cell (14,12,6,3) branch d=3 tp=5 S=2: (13,9) engine 2 brute force 2 EQUAL
+cell (15,12,6,3) branch d=3 tp=5 S=5: (14,9) engine 7 brute force 7 EQUAL
+cell (17,13,7,3) branch d=3 tp=6 S=2: (16,10) engine 5 brute force 5 EQUAL
+cell (18,14,7,3) branch d=3 tp=6 S=7: (17,11) engine 19 brute force 19 EQUAL
+cell (17,14,7,3) branch d=3 tp=6 S=4: (16,11) engine 7 brute force 7 EQUAL
+cell (15,13,6,3) branch d=3 tp=5 S=7: (14,10) engine 6 brute force 6 EQUAL
+cell (22,18,9,3) branch d=3 tp=8 S=5: (21,15) engine 20 brute force 20 EQUAL
+cell (21,18,9,3) branch d=3 tp=8 S=2: (20,15) engine 5 brute force 5 EQUAL
+cell (19,17,8,3) branch d=3 tp=7 S=5: (18,14) engine 6 brute force 6 EQUAL
+cell (20,12,7,2) branch d=2 tp=6 S=11: (19,10) engine 78 brute force 78 EQUAL
+cell (20,12,7,2) branch d=2 tp=7 S=0: (19,10) engine 4 brute force 4 EQUAL
+cell (19,12,7,2) branch d=2 tp=6 S=8: (18,10) engine 40 brute force 40 EQUAL
+cell (18,12,7,2) branch d=2 tp=6 S=5: (17,10) engine 17 brute force 17 EQUAL
+cell (17,11,6,2) branch d=2 tp=5 S=11: (16,9) engine 37 brute force 37 EQUAL
+cell (17,11,6,2) branch d=2 tp=6 S=0: (16,9) engine 3 brute force 3 EQUAL
+cell (20,11,7,3) branch d=2 tp=6 S=9: (19,9) engine 48 brute force 48 EQUAL
+cell (20,11,7,3) branch d=3 tp=6 S=7: (19,8) engine 18 brute force 18 EQUAL
+cell (19,11,7,3) branch d=2 tp=6 S=6: (18,9) engine 25 brute force 25 EQUAL
+cell (19,11,7,3) branch d=3 tp=6 S=4: (18,8) engine 11 brute force 11 EQUAL
+cell (21,14,8,3) branch d=2 tp=7 S=7: (20,12) engine 44 brute force 44 EQUAL
+cell (21,14,8,3) branch d=3 tp=7 S=5: (20,11) engine 30 brute force 30 EQUAL
+cell (20,14,8,3) branch d=3 tp=7 S=2: (19,11) engine 9 brute force 9 EQUAL
+cell (18,13,7,3) branch d=3 tp=6 S=5: (17,10) engine 17 brute force 17 EQUAL
+cell (20,11,7,2) branch d=2 tp=6 S=9: (19,9) engine 48 brute force 48 EQUAL
+cell (19,11,7,2) branch d=2 tp=6 S=6: (18,9) engine 25 brute force 25 EQUAL
+cell (21,13,8,4) branch d=2 tp=7 S=5: (20,11) engine 30 brute force 30 EQUAL
+cell (21,13,8,4) branch d=3 tp=7 S=3: (20,10) engine 14 brute force 14 EQUAL
+cell (21,13,8,4) branch d=4 tp=7 S=1: (20,9) engine 4 brute force 4 EQUAL
+cell (18,12,7,4) branch d=2 tp=6 S=5: (17,10) engine 17 brute force 17 EQUAL
+cell (18,12,7,4) branch d=3 tp=6 S=3: (17,9) engine 10 brute force 10 EQUAL
+cell (18,12,7,4) branch d=4 tp=6 S=1: (17,8) engine 4 brute force 4 EQUAL
+cell (15,11,6,4) branch d=3 tp=5 S=3: (14,8) engine 6 brute force 6 EQUAL
+cell (15,11,6,4) branch d=4 tp=5 S=1: (14,7) engine 3 brute force 3 EQUAL
+cell (22,17,9,4) branch d=3 tp=8 S=3: (21,14) engine 16 brute force 16 EQUAL
+cell (22,17,9,4) branch d=4 tp=8 S=1: (21,13) engine 7 brute force 7 EQUAL
+cell (14,12,6,4) branch d=3 tp=5 S=2: (13,9) engine 2 brute force 2 EQUAL
+cell (14,12,6,4) branch d=4 tp=5 S=0: (13,8) engine 2 brute force 2 EQUAL
+cell (19,16,8,4) branch d=3 tp=7 S=3: (18,13) engine 7 brute force 7 EQUAL
+cell (19,16,8,4) branch d=4 tp=7 S=1: (18,12) engine 4 brute force 4 EQUAL
+cell (23,21,10,4) branch d=3 tp=9 S=3: (22,18) engine 5 brute force 5 EQUAL
+cell (23,21,10,4) branch d=4 tp=9 S=1: (22,17) engine 4 brute force 4 EQUAL
+SUMMARY branches 55 decompositions 1039 differences 0
+The decompositions of (22,18) with total slack 3:
+    [(1, 0, 0), (21, 18, 9)]
+    [(3, 1, 1), (19, 17, 8)]
+    [(8, 6, 3), (14, 12, 6)]
+    [(10, 8, 4), (12, 10, 5)]
+    [(22, 18, 9)]

@@ -1,0 +1,4 @@
+(14,12,6): 2910 realizable classes, 2910 with max degree <= 4; in cell(14,12,6,4) of this run: 2910 of them (9 of the 11 classes of the list occur)
+(14,12,6): 2910 realizable classes, 700 with max degree <= 3; in cell(14,12,6,3) of this run: 700 of them (2 of the 2 classes of the list occur)
+(12,10,5): 54243 realizable classes, 54243 with max degree <= 4; in cell(12,10,5,4) of this run: 54243 of them (195 of the 221 classes of the list occur)
+(12,10,5): 54243 realizable classes, 39309 with max degree <= 3; in cell(12,10,5,3) of this run: 39309 of them (126 of the 149 classes of the list occur)
