@@ -19,3 +19,4 @@
 {"cell": "22 13 8 3", "status": "STOPPED by the prover after about 1 minute (time budget), not a result"}
 {"cell": [26, 14, 10, 2], "main_route": "recurse", "main_classes": 0, "direct_classes": 0, "equal": true, "direct_enum": "enum_conn N=26 M=14 T0=10 DMAX=2 calls=12082557 found=0", "direct_labelled": 0, "direct_in_C": 0, "direct_secs": 11.6}
 {"cell": [24, 13, 9, 3], "main_route": "recurse", "main_classes": 0, "direct_classes": 0, "equal": true, "direct_enum": "enum_conn N=24 M=13 T0=9 DMAX=3 calls=273640425 found=0", "direct_labelled": 0, "direct_in_C": 0, "direct_secs": 380.3}
+{"cell": "25 16 10 2", "status": "TIMEOUT at the 2,700 s cap (machine load 8-9), no result"}

@@ -1,2 +1,3 @@
 cell	classes	seconds	route	inputs	bad_tau	ext_nodes
 (15,13,6,3)	OOM_KILLED_after_about_10min (engine.direct of sub-cell (14,10,5,3): python RSS 13.8 GB, cgroup OOM, rc137)	-	-	-	-	-
+(14,10,5,3)	45229	2116.3	direct(streamed)	0	0	0

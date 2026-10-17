@@ -62,7 +62,7 @@
       1x(4,2,1)[DONE=0] + 1x(16,10,6)[DONE=16]
       1x(4,2,1)[DONE=0] + 2x(8,5,3)[DONE=2]
       1x(4,2,1)[DONE=0] + 1x(6,3,2)[DONE=1] + 1x(10,7,4)[DONE=4]
-      1x(3,1,1)[DONE=1] + 1x(17,11,6)[NOT COMPUTED]
+      1x(3,1,1)[DONE=1] + 1x(17,11,6)[DONE=45669]
       1x isolated + 1x(3,1,1)[DONE=1] + 1x(16,11,6)[DONE=3238]
       2x isolated + 1x(3,1,1)[DONE=1] + 1x(15,11,6)[DONE=19]
       1x(3,1,1)[DONE=1] + 1x(8,6,3)[DONE=3] + 1x(9,5,3)[DONE=6]
@@ -75,7 +75,7 @@
       1x(3,1,1)[DONE=1] + 1x(6,3,2)[DONE=1] + 1x(11,8,4)[DONE=471]
       1x isolated + 1x(3,1,1)[DONE=1] + 1x(6,3,2)[DONE=1] + 1x(10,8,4)[DONE=63]
       1x(3,1,1)[DONE=1] + 1x(4,2,1)[DONE=0] + 1x(13,9,5)[DONE=84]
-      2x(3,1,1)[DONE=1] + 1x(14,10,5)[NOT COMPUTED]
+      2x(3,1,1)[DONE=1] + 1x(14,10,5)[DONE=45229]
       1x isolated + 2x(3,1,1)[DONE=1] + 1x(13,10,5)[DONE=6683]
       2x isolated + 2x(3,1,1)[DONE=1] + 1x(12,10,5)[DONE=149]
       2x(3,1,1)[DONE=1] + 1x(6,4,2)[DONE=1] + 1x(8,6,3)[DONE=3]
@@ -83,7 +83,7 @@
       3x(3,1,1)[DONE=1] + 1x(11,9,4)[NOT COMPUTED]
 === cell (18,14,7) Delta<=3
   branch d=3 tau'=6 remainder (17,11) slack 7: 19 decompositions
-      1x(17,11,6)[NOT COMPUTED]
+      1x(17,11,6)[DONE=45669]
       1x isolated + 1x(16,11,6)[DONE=3238]
       2x isolated + 1x(15,11,6)[DONE=19]
       1x(8,6,3)[DONE=3] + 1x(9,5,3)[DONE=6]
@@ -96,7 +96,7 @@
       1x(6,3,2)[DONE=1] + 1x(11,8,4)[DONE=471]
       1x isolated + 1x(6,3,2)[DONE=1] + 1x(10,8,4)[DONE=63]
       1x(4,2,1)[DONE=0] + 1x(13,9,5)[DONE=84]
-      1x(3,1,1)[DONE=1] + 1x(14,10,5)[NOT COMPUTED]
+      1x(3,1,1)[DONE=1] + 1x(14,10,5)[DONE=45229]
       1x isolated + 1x(3,1,1)[DONE=1] + 1x(13,10,5)[DONE=6683]
       2x isolated + 1x(3,1,1)[DONE=1] + 1x(12,10,5)[DONE=149]
       1x(3,1,1)[DONE=1] + 1x(6,4,2)[DONE=1] + 1x(8,6,3)[DONE=3]
@@ -104,7 +104,7 @@
       2x(3,1,1)[DONE=1] + 1x(11,9,4)[NOT COMPUTED]
 === cell (15,13,6) Delta<=3
   branch d=3 tau'=5 remainder (14,10) slack 7: 6 decompositions
-      1x(14,10,5)[NOT COMPUTED]
+      1x(14,10,5)[DONE=45229]
       1x isolated + 1x(13,10,5)[DONE=6683]
       2x isolated + 1x(12,10,5)[DONE=149]
       1x(6,4,2)[DONE=1] + 1x(8,6,3)[DONE=3]

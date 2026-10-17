@@ -6,9 +6,12 @@ for f in engine.py decomp22.py run_cells.py; do cp $S/$f .; done
 [ -e bin ] || ln -s ../prover/L012/bin bin
 [ -e out/seeded ] || { cp $S/out/cells/cell_* out/cells/; ls out/cells > out/seeded; }   # 167 cell files (1645 + cells25 + n26 run)
 python3 decomps.py > decompositions.txt
+# step 0 (needed because engine.direct OOM-killed on the sub-cell (14,10,5,3), 57.9M labelled graphs): streamed direct enumeration, timeout 50 min.
+# (First attempt of cell (15,13,6,3) via the plain engine died at 13.8 GB, see progress.tsv; this was run by hand in the session with the same command.)
+[ -e out/cells/cell_14_10_5_D3.txt ] || nice -n 19 timeout 3000 python3 direct_stream.py 14 10 5 3 > out/stream_14_10_5.log 2>&1
 export CELLDIR=$PWD/out/cells ENGINELOG=$PWD/out/engine.log NPROC=1 MD=10
 left() { echo $(( (DEADLINE - $(date +%s)) / 60 )); }
-START=$(date +%s); DEADLINE=$(( START + 3*3600 - 600 ))
+DEADLINE=$(date -d "2026-10-17 20:22:00 UTC" +%s)   # task started 17:32 UTC, 3 h wall budget, 10 min margin for write-up
 runc() { # timeout_min n m tau D   (min(timeout, remaining))
   [ $1 -gt $(left) ] && set -- $(left) "${@:2}"
   nice -n 19 timeout $(( $1 * 60 )) python3 run_one.py $2 $3 $4 $5 > out/run_$2_$3_$4.log 2>&1
