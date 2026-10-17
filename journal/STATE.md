@@ -1,8 +1,8 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: EXTENSION (+48 h granted by the user 2026-10-17 00:5x UTC; ends about 2026-10-18 23:06 UTC); GOAL.md unchanged (protected), status.sh shows clause C
-Last updated (UTC): 2026-10-17 10:23
-Phase/track: extension: the I11 induction chain. L007 (Q11 closed, K51), L008 (f(16)=10, K52), L009 (f(18)=11, K53) ACCEPTED x3 each. L010 (f(20)=12): round 1 ACCEPT, rounds 2/3 running. L011 (I11 to n<=22, f(22)=13): prover writing. Falsifier agent attacking the first I11-allowed record cell (23,21,10).
+Last updated (UTC): 2026-10-17 12:33
+Phase/track: extension: the I11 induction chain. L007 (Q11 closed, K51), L008 (f(16)=10, K52), L009 (f(18)=11, K53), L010 (f(20)=12, K54) ACCEPTED x3 each. L011 (I11 to n<=22, f(22)=13) SUBMITTED, referee #1 + scout running. Falsifier agent attacking the first I11-allowed record cell (23,21,10).
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
 ## Best verified results (details: results/LEDGER.md, kb/known_results.md K30-K49)
@@ -15,7 +15,7 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
 ## Running jobs / agents
 - (14,11,alpha<=8) DFS, 4 workers at nice 19, 1041/3437 prefixes at 00:57, 0 patterns; resumable (relaunch: python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 19 --tag n14_m11).
-- workflow: L010 referees #2/#3. prover: L011. falsifier agent: (23,21,10) (experiments/20261017-1030-n23-record-cell). DONE: n=16..22 window cells all empty (L008-L011); e757/fn_bounds knows f(16)=10, f(18)=11; L007 x3 ACCEPT; I11 falsifier; CP-SAT (14,11) UNKNOWN (D21); probe (D25); record hunt (D26, K50); (16,14,7) decision; (14,11) DFS stopped at 1,081/3,437 (superseded by L007).
+- workflow: L011 referee #1 + scout. falsifier agent: (23,21,10) (experiments/20261017-1030-n23-record-cell). DONE: n=16..22 window cells all empty (L008-L011); e757/fn_bounds knows f(16)=10, f(18)=11, f(20)=12; L007 x3 ACCEPT; I11 falsifier; CP-SAT (14,11) UNKNOWN (D21); probe (D25); record hunt (D26, K50); (16,14,7) decision; (14,11) DFS stopped at 1,081/3,437 (superseded by L007).
 - Documentation audited three times in the first 72 h (last 2026-10-16 18:10 UTC); main = merge 414628a.
 
 ## Live hypotheses
