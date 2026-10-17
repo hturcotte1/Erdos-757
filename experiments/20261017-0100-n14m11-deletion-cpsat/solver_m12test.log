@@ -1,0 +1,3 @@
+# model built in 14.7s; constraints {'monotone': 11011, 'medial': 14014, 'cores': (485771, 1977976)}; n=14 T=8 m=12
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.29s

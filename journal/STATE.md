@@ -1,8 +1,8 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
-Status: final checkpoint (budget ends 2026-10-16 23:06 UTC); PR #1 merged into main at about 18:25 UTC
-Last updated (UTC): 2026-10-16 22:15
-Phase/track: endgame complete; research closed for this run (results/FINAL_REPORT.md is the deliverable)
+Status: EXTENSION (+48 h granted by the user 2026-10-17 00:5x UTC; ends about 2026-10-18 23:06 UTC); GOAL.md unchanged (protected), status.sh shows clause C
+Last updated (UTC): 2026-10-17 01:00
+Phase/track: extension plan: (1) conjecture I11 11tau<=3n+2m falsify+document; (2) degree-3 route to f(16) via the (15,9,6)/(15,10,6) cells; (3) f(16) if (2) allows; (4) Q11 background; (5) hedge 4-point extensions
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
 ## Best verified results (details: results/LEDGER.md, kb/known_results.md K30-K49)
@@ -13,15 +13,16 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 - kb/notes/extension_lemmas.md: Lemmas E, U, Δ, Δ' [derived-here; falsifier HOLDS-ON-DATA].
 
 ## Running jobs / agents
-- (14,11,alpha<=8) DFS, 4 workers, 1030/3437 prefixes done at 22:14, 0 patterns; resumable (relaunch command in experiments/20261014-1005-census-dfs/README.md); Q11 stays open.
-- No agents running. All documentation audited three times (last: 18:10 UTC, 114 verified fixes).
+- (14,11,alpha<=8) DFS, 4 workers at nice 19, 1041/3437 prefixes at 00:57, 0 patterns; resumable (relaunch: python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 19 --tag n14_m11).
+- falsifier: I11 on all data + abstract class (experiments/falsify/i11-inequality); worker: CP-SAT (14,11) with deletion constraints (experiments/20261017-0100-n14m11-deletion-cpsat); worker: DFS cost probe for cells (15,9,alpha<=9), (15,10,alpha<=9) (experiments/20261017-0105-probe-n15-cells).
+- Documentation audited three times in the first 72 h (last 2026-10-16 18:10 UTC); main = merge 414628a.
 
 ## Live hypotheses
 - [heuristic] Wall at n=16 (f(16)=10): no abstract alpha<=9 pattern found by any solver, even with the Henning-Yeo deletion constraints (D15, D16, D24); a record would need a (14,11) extremal subset containing no extremal 12-subset (K48), or no extremal 14-subset at all.
 - [verified-here] f(n) = ceil(n/2)+1 = HY bound for 6<=n<=15 and 17 (K35). (H1) HY tight at even n<=22 vs (H2) wall at 16.
 - [verified-here] Q8 holds on realizable data (K34) but fails abstractly without >=5-edge cores (K38/K39); Track L has no proof idea.
 
-## Next 3 actions (for a future run)
-1. Cube-and-conquer at n=16 with the deletion constraints of D24, or a distributed exact DFS (~10^14 nodes); finish the (14,11) DFS (resumable).
-2. Four-point extensions of the 2,910 classes (18-point records; one new point must be a new extreme) and two-point extensions of any (14,11) classes.
-3. Realizability-aware enumerator for the n=13 census (D22); obtain Henning-Yeo 2021 for its equality structure (Lemma U).
+## Next 3 actions
+1. Read the probe: if the (15,9)/(15,10) cells cost <= ~60 CPU-h, run them with the existing engine (prefix split) and realize survivors; else build the unordered degree-bounded generator (nauty) with validation on (12,10) -> 54,243 and (14,12,Δ<=3) -> 700.
+2. Record I11 as [conjecture] with its data coverage and implications (c* >= 6/11, f(16) = 10) in kb/; if the CP-SAT (14,11) run is INFEASIBLE, certificate L007 + referees.
+3. Checkpoint every 2-3 h; final report/merge again before 2026-10-18 23:06 UTC.
