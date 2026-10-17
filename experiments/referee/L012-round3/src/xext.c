@@ -24,7 +24,6 @@ static uint32_t E[48]; static int ne, neG;
 static int deg[32];
 static uint32_t covers[MAXC]; static int K;
 static int P; static uint32_t pm[MAXP]; static int pa[MAXP], pb[MAXP];
-static unsigned char *kills;   /* kills[p*K + c] = pair p disjoint from cover c */
 static int chosen[8], nch; static uint32_t usedv;
 static unsigned long long nhits, nf7, np3, nsurv, nsurvconn, ntauok, nodes;
 static int pair_in_edge(int a, int b) { uint32_t pm2 = (1u << a) | (1u << b); for (int i = 0; i < neG; i++) if ((E[i] & pm2) == pm2) return 1; return 0; }
@@ -91,36 +90,36 @@ static void emit(void) {
     printf("HIT:"); for (int i = 0; i < ne; i++) { int v[3], k = 0; for (uint32_t r = E[i]; r; r &= r - 1) v[k++] = __builtin_ctz(r); printf(" (%d,%d,%d)", v[0], v[1], v[2]); }
     printf(" #conn=%d #tauok=%d #maxdeg=%d\n", cn, tauok, dmax);
 }
-static void complete(int start, const unsigned char *excl) {
+
+/* ---- search with bitsets.  Covers are re-indexed in order of increasing number of admissible killing pairs (static), and the
+   branching cover is the first alive one in this order.  alive: W words over covers; excl: EW words over pairs. */
+static int W, EW; static uint64_t *killb;   /* killb[p*W + w] */
+static uint64_t alivebuf[12][MAXC / 64 + 1]; static uint64_t exclbuf[12][MAXP / 64 + 1];
+static void complete(int start, const uint64_t *excl) {
     if (nch == D) { emit(); return; }
     for (int p = start; p < P; p++) {
-        if (excl[p] || (pm[p] & usedv)) continue;
+        if ((excl[p >> 6] >> (p & 63) & 1) || (pm[p] & usedv)) continue;
         E[ne++] = pm[p] | (1u << NG); usedv |= pm[p]; chosen[nch++] = p;
         complete(p + 1, excl);
         nch--; usedv &= ~pm[p]; ne--;
     }
 }
-static void search(const unsigned char *alive, const unsigned char *excl) {
+static void search(const uint64_t *alive, const uint64_t *excl) {
     nodes++;
-    /* pick the alive cover with the fewest available killing pairs */
-    int best = -1, bestcnt = 1 << 30;
-    for (int c = 0; c < K; c++) {
-        if (!alive[c]) continue;
-        int cnt = 0; for (int p = 0; p < P; p++) if (kills[(size_t)p * K + c] && !excl[p] && !(pm[p] & usedv)) cnt++;
-        if (cnt < bestcnt) { bestcnt = cnt; best = c; if (cnt == 0) break; }
-    }
-    if (best < 0) { complete(0, excl); return; }
-    if (nch == D || bestcnt == 0) return;
-    unsigned char *ex2 = malloc(P), *al2 = malloc(K); memcpy(ex2, excl, P);
+    int c0 = -1; for (int w = 0; w < W; w++) if (alive[w]) { c0 = w * 64 + __builtin_ctzll(alive[w]); break; }
+    if (c0 < 0) { complete(0, excl); return; }
+    if (nch == D) return;
+    uint64_t *ex2 = exclbuf[nch + 1], *al2 = alivebuf[nch + 1];
+    memcpy(ex2, excl, sizeof(uint64_t) * EW);
     for (int p = 0; p < P; p++) {
-        if (!kills[(size_t)p * K + best] || ex2[p] || (pm[p] & usedv)) continue;
+        if (!(killb[(size_t)p * W + (c0 >> 6)] >> (c0 & 63) & 1)) continue;
+        if ((ex2[p >> 6] >> (p & 63) & 1) || (pm[p] & usedv)) continue;
         E[ne++] = pm[p] | (1u << NG); usedv |= pm[p]; chosen[nch++] = p;
-        for (int c = 0; c < K; c++) al2[c] = alive[c] && !kills[(size_t)p * K + c];
+        for (int w = 0; w < W; w++) al2[w] = alive[w] & ~killb[(size_t)p * W + w];
         search(al2, ex2);
         nch--; usedv &= ~pm[p]; ne--;
-        ex2[p] = 1;
+        ex2[p >> 6] |= 1ull << (p & 63);
     }
-    free(ex2); free(al2);
 }
 int main(int argc, char **argv) {
     if (argc < 5) { fprintf(stderr, "usage: xext NG T d EP < inputs\n"); return 1; }
@@ -149,12 +148,20 @@ int main(int argc, char **argv) {
             if (deg[a] > EP || deg[b] > EP || pair_in_edge(a, b)) continue;
             pa[P] = a; pb[P] = b; pm[P] = (1u << a) | (1u << b); P++;
         }
-        kills = malloc((size_t)P * K);
-        for (int q = 0; q < P; q++) for (int c = 0; c < K; c++) kills[(size_t)q * K + c] = !(covers[c] & pm[q]);
-        unsigned char *alive = malloc(K), *excl = calloc(P, 1); memset(alive, 1, K);
+        /* static killer counts and re-indexing of covers (ascending) */
+        { static int kc[MAXC], ord[MAXC]; static uint32_t cov2[MAXC];
+          for (int c = 0; c < K; c++) { kc[c] = 0; for (int q = 0; q < P; q++) if (!(covers[c] & pm[q])) kc[c]++; ord[c] = c; }
+          for (int i = 1; i < K; i++) { int x = ord[i], j = i - 1; while (j >= 0 && kc[ord[j]] > kc[x]) { ord[j + 1] = ord[j]; j--; } ord[j + 1] = x; }
+          for (int i = 0; i < K; i++) cov2[i] = covers[ord[i]];
+          memcpy(covers, cov2, sizeof(uint32_t) * K); }
+        W = (K + 63) / 64; EW = (P + 63) / 64;
+        killb = calloc((size_t)P * W, sizeof(uint64_t));
+        for (int q = 0; q < P; q++) for (int c = 0; c < K; c++) if (!(covers[c] & pm[q])) killb[(size_t)q * W + (c >> 6)] |= 1ull << (c & 63);
+        uint64_t *alive = alivebuf[0], *excl = exclbuf[0]; memset(alive, 0, sizeof(uint64_t) * W); memset(excl, 0, sizeof(uint64_t) * EW);
+        for (int c = 0; c < K; c++) alive[c >> 6] |= 1ull << (c & 63);
         nch = 0; usedv = 0;
         search(alive, excl);
-        free(alive); free(excl); free(kills);
+        free(killb);
     }
     printf("SUMMARY graphs=%llu bad_tau=%llu nodes=%llu hits=%llu contain_F7=%llu F7free_P3_violated=%llu survivors=%llu survivors_connected=%llu survivors_tau_ok=%llu\n",
            graphs, badtau, nodes, nhits, nf7, np3, nsurv, nsurvconn, ntauok);

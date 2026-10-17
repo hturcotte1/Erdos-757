@@ -1,0 +1,110 @@
+VERDICT: ACCEPT
+
+# Referee report: L012-n23-record-no-degree-4 (round 3)
+
+- **Claim reviewed:** `results/proofs/L012-n23-record-no-degree-4.md` as committed in b28e546 (2026-10-17 16:29:50 UTC; SHA-256 844bd776…). The file did not change during this review.
+- **Programs read:** `experiments/prover/L012/` (`engine.py`, `route.py`, `decomp22.py`, `arith23.py`, `indep/ext_d.c`, `indep/filt.c`, `indep/canon.c`, `indep/realize.c`), the falsifier folder `experiments/20261017-1030-n23-record-cell/README.md`, and the round-1 report. Apart from `bin/canon` (used only as the *object* of the relabelling-invariance test in check 7) I ran none of the prover's programs: every number below comes from programs written for this round.
+- **Referee workspace:** `experiments/referee/L012-round3/` (sources in `src/`, binaries in `bin/`, large files in `out/`, logs in `logs/`; `out/`, `bin/` and `logs/` are git-ignored). Resources: about 1 h 40 min wall time, `nice 5`, at most 2 heavy processes at a time.
+
+## Summary
+
+The certificate claims: (i) a 23-point (4,5)-set with $h=13$ has a saturated AP pattern $(23,21,10)$ with every degree $\le3$ (Theorem 1); (ii) the cells $(23,19,10)$ and $(23,20,10)$ are empty in $C$ (Theorem 2); (iii) exactly 699 classes of $C$ have $(23,21,10)$, $\Delta\le4$ and a degree-4 vertex, and (iv) none of them is realized by a set with an injective midpoint map (Theorem 3).
+
+I re-derived every step of the argument by hand (degree bound from I11 at $n=22$, Step 1, Lemma E, the extension criterion of 3.5 and its exclusion scheme, the normal form of a realization, Lemma N) and re-did the load-bearing computations with new programs using different methods:
+
+- **Exact realization** (`src/bareal.c`): fraction-free Gauss–Jordan (Bareiss) over the integers in 64-bit arithmetic with overflow checks and exact-division checks, no modular arithmetic, midpoint assignments enumerated vertex by vertex, every solution re-certified against all equations. On the 699 classes it gives the prover's numbers class by class (27,206,877 assignments, 0 singular, 6,051,773 distinct-valued, **0 realizations**, minimum extra APs 4 for 675 classes and 6 for 24). Controls: $F_7$ (negative, 0 of 54 assignments), $A_{\rm base}$ (948 of 1,596, all re-verified with Fractions, $A_{\rm base}$ among them), all 2,910 saturated extremal 14-point classes (every class realizable, its own set found, 2,671,044 realizations, 27,536 re-verified exactly).
+- **Route 4 and route 20** (`src/xext.c`): new extension enumerator (cover re-ordering, bitset kill search, no $F_7$ pruning), own centre-based $F_7$ test, **(P3) by brute force over all $2^{21}$ edge subsets**, $\tau$ by brute force, union-find connectivity; inputs rebuilt by me from the cell lists (identical as sets to the prover's). Route 4: 552,560 extensions with $\tau\ge10$, 450,606 contain $F_7$, 87,664 more violate (P3), **14,290 survivors**, all connected with $\tau=10$ and $\Delta=4$, forming exactly **699** classes (igraph/BLISS canonical forms, convention verified by a relabelling test), all matched to the prover's 699 and all 699 hit (VF2 confirms 150/150 sampled matches). Route 20: 128 extensions, 44 contain $F_7$, 84 violate (P3), **0 survivors**.
+- **Arithmetic and decompositions** (`src/arith.py`): own brute force with isolated vertices (with and without K8) reproduces the lists of Steps 1, 4.2, 8.1, every one of the 36 engine branches, and Remark 5.
+- **Cell lists**: 22 directly-enumerated cells re-enumerated with unmodified genbg plus my own filter (`src/gcells.c`), all counts equal; the top recursion level of the two largest cells, $(22,17,9,4)$ and $(19,16,8,4)$, recomputed with `xext` from the next-lower lists (check 8); closure test on all degree-4 deletions of the 699 (1,940 deletions, 3,880 components, 0 failures); pairwise non-isomorphism of the 699 by BLISS and by VF2; nauty relabelling invariance.
+
+I found no mathematical or computational error. The remarks in "Problems found" are editorial.
+
+## Dependencies and hypotheses
+
+- **L011 Theorem 1** (I11 on $C$ for $n\le22$) is ACCEPTED in three rounds. $C$ is defined without connectivity, and L011's proof covers disconnected members through its component argument (L011 0.3), so Step 0.3 may apply it to $H-v$ (possibly disconnected, possibly with isolated vertices) and Lemma E to components. The isolated vertex has slack 3 and is included in every decomposition list where $S'\ge3$ (verified in check 1).
+- **L007 Lemma D** (`enum_conn`): used only for the directly-enumerated cells ($m\le10$). The source is byte-identical to L007's (`md5` db76da72… in both folders). Independently, 22 direct cells are confirmed by genbg here (check 6) and 94 by round 1.
+- **K8 (Henning–Yeo)** is applied to 3-uniform, linear, $F_7$-free hypergraphs (members of $C$) in Step 1 and in the engine's empty-cell rule; both uses are legitimate, and my decomposition lists are the same with or without K8.
+- **K3–K7**: the AP hypergraph of a (4,5)-set is in $C$ and $h=n-\tau$; the injectivity of the midpoint map is re-proved in 6.1 (checked: $a+c=a'+c'$ gives the two coincidences $c-c'=a'-a$ and $c'-a=c-a'$ among the six differences of $\{a,a',c',c\}$).
+
+## Step-by-step audit
+
+| Step | Content | Status |
+|---|---|---|
+| 0.1–0.2 | additivity, heredity of $C$, $\tau(H)-1\le\tau(H-v)\le\tau(H)$, I11 for $n\le22$ | correct |
+| 0.3 | $11\tau(H-v)\le66+2(m-d)\le108<110$ forces $\tau(H-v)=9$; $99\le66+2(m-d)$ gives $d\le m-17$; also excludes isolated vertices ($\tau(H-v)=\tau(H)$ would be 10) | correct, re-derived (`arith.py`) |
+| 0.4–0.6 | transfer under isomorphism; edges at a maximum-degree vertex (disjoint pairs, not inside an edge, endpoint degree $\le\Delta-1$); $m=n-2$ forces connectivity | correct |
+| 1–2 | $m\in\{19,20,21\}$, $\Delta\le2,3,4$, slacks $-3,-1,1$; $(23,19,10)$: $57>46$ | correct |
+| 3.2–3.4 | Lemma E and the engine; $d\in[\lceil3m/n\rceil,D]$, $t'\in\{t-1,t\}$ with $S'\ge0$, component cells with maximum degree $d$, endpoint bound $d-1$, multisets for repeated types, `filt` re-checks, `bad_tau` aborts | correct (code audited; all 36 branch sets and decomposition lists verified in check 1) |
+| 3.5 | extension criterion when $\tau(G)=t-1$; exclusion scheme produces each $d$-set once; $F_7$ pruning sound by heredity | correct (proved; `xext` with a different cover order agrees on every count) |
+| 4 | route 20: 4 decompositions, 864 inputs, none in $C$ | correct (checks 1, 4, 5). Remark: $H$ need not be assumed connected here; the (P3) failure of all 84 $F_7$-free extensions is counted before any connectivity filter |
+| 5 | route 4: 2,178 inputs, 14,290 extensions in $C$, 699 classes | correct (check 4) |
+| 6.1 | normal form $x_u=0$, $x_v=1$, $\{u,v\}$ the extremes | correct |
+| 6.2 | Lemma N: a non-zero homogeneous solution has a maximum level set $S\not\ni u,v$ with $\mu^{-1}(S)\subseteq E(S)$, so $e(S)\ge|S|$, against (P3) | correct; numerically, 0 singular systems in 27.2 M + 4.6 M + 1.6 K instances |
+| 6.3 | enumerate all injective $\mu$, exact solve, distinct values, exactly $m$ APs; sufficiency and necessity of the test | correct (a passing $\mu$ *is* a realization even if $u,v$ are not the extremes, and every realization gives a passing $\mu$) |
+| 7 | assembly; $n_2+2n_3=40$ gives $n_3\ge17$ | correct |
+| 8, Remarks 4–5, Step 9 | descriptive / open | decomposition counts 5 and 2 and the 14 record cells re-derived; falsifier figures flagged as not re-derived |
+
+## Checks performed (commands from `experiments/referee/L012-round3/`)
+
+### 1. Arithmetic, decompositions, engine branches — `python3 src/arith.py out/cells` (`logs/arith.txt`)
+- $m\in\{19,20,21\}$; maximum degrees 2, 3, 4; slacks of $H$: $-3,-1,1$; $3m=57>46$ for $m=19$; a degree-3 vertex forced for $m=20$; slack of $H-v$ at $d=\Delta$ is 1 in all three cases; for $\Delta\le3$ and no isolated vertex, $n_3\in[17,20]$.
+- Brute force over multisets of connected types (constraints: $1\le m\le n-2$, $n\le2m+1$, $1\le\tau\le m$, slack in $[0,S]$; K8 optional) plus isolated vertices: $(22,17;1)$: 4 decompositions, $(22,18;3)$: 5, $(22,19;5)$: 2, identical to the proof's lists, identical with and without K8.
+- All 36 recursion branches recorded in the prover's cell files (`INFO` json): the set of $(d,t')$ branches equals $\{(d,t'):\lceil3m/n\rceil\le d\le D,\ t'\in\{t-1,t\},\ S'\ge0\}$ for every recursive cell, and every branch's decomposition list equals my brute force: `engine branches checked: 36, mismatches: 0`.
+- Remark 5: the 14 record cells for $n\le40$ with the stated slacks.
+
+### 2. Validity of the cell representatives and the route inputs — `python3 src/build_inputs.py 4|20 out/cells`
+Every representative of the seven D4 cells (1, 956, 2, 11, 5, 221, 95 classes) and the seven D3 cells (1, 227, 2, 2, 4, 149, 37) re-checked with my Python: linear, $F_7$-free (centre test), (P3) by brute force over edge subsets, connected, $\Delta\le D$, and $\tau$ by brute force for $n\le14$ ($\tau$ of the larger ones is checked in C: `bin/chk` on the 699 and on all $H-v$ in check 9, and `xext` rejects any input with $\tau\ne9$: `bad_tau=0`). Inputs: 2,178 (route 4) and 864 (route 20), **identical as sets of lines to the prover's** `out/route4_inputs.txt` and `out/route20_inputs.txt`.
+
+### 3. Exact realization, re-implemented independently — `src/bareal.c`
+**Method.** Midpoint assignments $\mu$ are enumerated vertex by vertex (each vertex is one of the two unmatched vertices or the midpoint of one of its own unassigned edges); the $(n-2)\times(n-2)$ system is solved by fraction-free Gauss–Jordan elimination over the integers (`__builtin_*_overflow` checks; every division by the previous pivot checked to be exact; the diagonal checked to be constant $=D$); the vector $y=Dx$ with $y_u=0$, $y_v=D$ is re-certified against every equation $2y_{\mu(e)}=y_a+y_c$ before use, so a reported solution is correct whatever the algorithm did. Then distinct values and the number of 3-APs (binary search on the sorted values). Shares nothing with `realize.c` (modular Gauss–Jordan mod $2^{61}-1$, edge-by-edge DFS) or `rreal.c` (incremental elimination mod $2^{31}-1$).
+
+**Results** (`out/bareal_699_{a,b}.txt`, two halves, 0.6 s per class):
+- `TOTAL graphs=350 assignments=13793913 singular=0 divfail=0 verifyfail=0 distinct=3035380 realizations=0` and `graphs=349 assignments=13412964 singular=0 ... distinct=3016393 realizations=0`: in total **27,206,877 assignments, 0 singular, 6,051,773 distinct-valued, 0 realizations**; per class (assignments, distinct, realizations) equal to the prover's `out/realize_r4_part0{0,1}.txt` on all 699 lines (`per-class mismatches: 0`); 22,785 to 49,606 assignments per class, at least 1,656 distinct-valued; minimum number of extra APs over distinct-valued solutions: 4 for 675 classes, 6 for 24 (as C5).
+- The SDR count per class is the number of leaves of a vertex-ordered DFS here and of an edge-ordered DFS in `realize.c`; their agreement on all 699 classes confirms that both enumerate all injective $\mu$.
+- **Negative control** $F_7$ ($n=7$, $m=5$, saturated): 54 assignments, 24 distinct-valued, 0 realizations (min extra APs 2).
+- **Positive control $A_{\rm base}$**: `assignments=1596 distinct=1413 realizations=948`; all 948 re-solved exactly with Fractions (distinct, AP set $=$ edge set), 948 distinct normalised sets, exactly one equal to $A_{\rm base}$ normalised or its reflection; 569 of the 948 are (4,5)-sets (`out/abase_real.txt`).
+- **Two-sided control, $n=14$ census** (`python3 src/census14_control.py data/census_n14_m12_classes.jsonl.gz ./bin/bareal`, `logs/census14_control.txt`): for all 2,910 classes the AP pattern is recomputed from the set and compared with the stored edges; `TOTAL graphs=2910 assignments=4608505 singular=0 ... realizations=2671044 realizable_graphs=2910`; `own set found for 2910 of 2910`; 27,536 printed realizations re-verified with Fractions. 2,671,044 is the prover's and round 1's number.
+
+### 4. Route 4 with my own extension program — `./bin/xext 22 10 4 3 < out/my_r4_inputs.txt` (`out/xext_r4.txt`, 14 min)
+**Method** (`src/xext.c`): $\tau(G)$ and all 9-covers by brute force over index arrays; admissible pairs; kill search with exclusion on the first alive cover **after re-indexing the covers by increasing number of admissible killing pairs** (a different search tree from `ext_d`, which uses the input order); no pruning; each complete 4-set is tested by my centre-based $F_7$ test, by **(P3) brute force over all $2^{21}$ nonempty edge subsets in Gray-code order** ($|V(F)|\ge|F|+2$), union-find connectivity, and $\tau(H)=10$ exactly by brute force.
+
+**Validation** (`python3 src/bf_xext.py`, `logs/validate_xext.txt`): against a Python brute force over all $d$-sets of disjoint admissible pairs with exact $\tau$ and the same filters, identical (hits, $F_7$, (P3)-violated, survivors) in 9 cases covering $d\in\{2,3,4\}$, endpoint bounds 1–3, inputs with an AP component and with an isolated vertex: (8,5,3) $d=4$: 8/8/0/0, $d=3$: 28/22/6/0; (10,7,4) $d=4$: 455/264/191/0, $d=3$: 2/2/0/0; AP+(8,5,3) $d=3$: 28/22/6/0, $d=4$: 1,598/428/36/1,134; $I$+(10,7,4) $d=4$: 4,616/1,489/3,127/0; (12,10,5) $d=3$: 0; (6,3,2)+(8,5,3) $d=2$: 0. (A tenth case, (6,3,2)+(8,5,3) with $d=4$, 16,792 hits, was stopped before the Python brute force finished.) The route-4 counts of the prover (552,560 / 450,606 / 87,664 / 14,290) are themselves reproduced below, with a different (P3) algorithm.
+
+**Result:** `SUMMARY graphs=2178 bad_tau=0 nodes=2250311635 hits=552560 contain_F7=450606 F7free_P3_violated=87664 survivors=14290 survivors_connected=14290 survivors_tau_ok=14290`; every survivor has $\Delta=4$.
+
+**Classes** (`python3 src/analyze_ext.py out/xext_r4.txt 23 out/r4_699.txt out/my_r4_survivors.txt`, `logs/analyze_r4.txt`): igraph/BLISS canonical forms of the 2-coloured incidence graph, with the canonical edge list as the form (equal forms imply isomorphic by construction; the permutation convention was established by a relabelling test, `logs/igraph_convention.txt`: 753 random relabellings, 0 mismatches): `connected survivors 14290 -> distinct BLISS classes 699 ; representatives 699 ; UNMATCHED survivors 0 ; representatives hit 699 of 699`; `VF2 confirmation on a sample of matches: 150 of 150`. So Theorem 3(a) holds given the cell lists, with a third implementation of every step.
+
+### 5. Route 20 — `./bin/xext 22 10 3 2 < out/my_r20_inputs.txt`
+`SUMMARY graphs=864 bad_tau=0 hits=128 contain_F7=44 F7free_P3_violated=84 survivors=0`. The prover reports 84 $F_7$-free extensions and none in $C$; round 1 reports 128/44/84/0. Theorem 2 holds given the cells.
+
+### 6. Direct cells by unmodified genbg + own filter — `src/direct_cells.sh`, `src/gcells.c` (`logs/direct_cells.txt`, `out/g_*.txt`)
+`genbg -q -c -Z1 -d1:3 -D<D>:3 n m 3m:3m | gcells n m t D` (graph6 parsed here; filters: linear, $F_7$ centre test, (P3) brute force, exact $\tau$, connectivity, $\Delta$). Class counts equal to the prover's cell files for all 22 cells that have one: (8,5,3,3/4) 2, 2; (10,7,4,3/4) 4, 5; (12,10,5,3/4) 149, 221 (from 13,440 and 94,633 bicoloured graphs); (6,3,2,2/3) 1; (9,4,3,3) 1; (8,6,3,3) 3; (10,8,4,3) 63; (11,7,4,3) 35; (11,6,4,3/4) 0, 0; (13,8,5,3/4) 0, 0 (the 9 resp. 22 linear graphs with $\tau=5$ all contain $F_7$ — consistent with L011 C3); (13,9,5,3) 84; (14,8,5,3) 9; (16,9,5,2) 166; (16,10,6,3) 16 (from 236,382); (14,9,5,3) 1,060; (17,10,6,3) 339 (from 142,142); (19,10,6,2) 128. Four of the six route-4 input cells and five of the six route-20 input cells are thus confirmed by direct enumeration; $(14,12,6,\cdot)$ needs pruning hooks (round 1, 11 and 2 classes) and $(19,16,8,4)$, $(22,17,9,4)$ are recursive (check 8).
+
+### 7. Canonical forms and isomorphism — `python3 src/iso_check.py classes|relabel ...` (`logs/iso_classes_699.txt`, `logs/relabel_699.txt`)
+- The prover's `canon.c` prints the hypergraph relabelled by nauty's canonical labelling with the two colour cells kept apart; equal outputs therefore imply isomorphism **by construction**, so de-duplication cannot lose a class even if nauty were not canonical; nauty's canonicity only affects the exact counts.
+- Relabelling invariance of `bin/canon`: 3 random relabellings of each of the 699 classes give the original output in all cases (`graphs whose canon output varies: 0`); 699 distinct nauty outputs $=$ 699 distinct BLISS forms.
+- The 699 are pairwise non-isomorphic by two further methods: 699 distinct BLISS forms; and, within the 634 buckets of a cheap invariant (degree sequence, neighbour-degree multisets, WL hash), all 68 pairs with equal invariants are non-isomorphic by networkx VF2.
+- Degree statistics of the 699 (my `bin/chk`): six degree sequences; 2, 3, 4 vertices of degree 4 in 227, 402, 70 classes; 1 or 2 vertices of degree 1 in 630, 69 classes (as C4).
+
+### 8. Top recursion level of the two large cells, with my tools (`src/build_branch_inputs.py`, `xext`, `analyze_ext.py`)
+Inputs rebuilt from my decompositions and the prover's next-lower lists (counts equal to the engine's INFO: 14,241 and 261 for $(22,17,9,4)$, 13,456 and 261 for $(19,16,8,4)$).
+BRANCH_RESULTS_PLACEHOLDER
+
+### 9. Closure of the 699 — `python3 src/closure.py out/r4_699.txt out/cells`; `./bin/chk 23 9 < out/closure_Hv.txt` (`logs/closure_699.txt`)
+For every class and **every** vertex of degree 4 (the engine used one vertex per class): the components of $H-v$ form one of the four decompositions of Step 4.2 and each component is BLISS-isomorphic to a representative of the corresponding D4 cell; $\tau(H-v)=9$ for all. `classes 699 degree-4 deletions 1940 components checked 3880 failures 0`; decompositions met: AP+(19,16,8): 888, (10,7,4)+(12,10,5): 858, (8,5,3)+(14,12,6): 194 (no deletion leaves a connected graph, so no surviving extension of the 95 connected $(22,17,9,4)$ inputs exists); `tau_range=[9,9] tau_equals_want=1940`, all 1,940 in $C$.
+
+### 10. Properties of the 699 — `./bin/chk 23 10 < out/r4_699.txt` (`out/chk_699.txt`)
+`total=699 linear=699 contain_F7=0 P3_violated=0 in_C=699 connected=699 tau_range=[10,10] tau_equals_want=699 maxdeg_max=4` ((P3) by brute force over edge subsets, $\tau$ by brute force over vertex subsets).
+
+## Problems found (in order of severity)
+
+No error affecting any theorem was found. The items below are editorial.
+
+1. **Status and conditional wording (editorial).** The STATUS line says "referee rounds 2 and 3 requested" and the Tags line still reads "conditional on referee acceptance of this certificate and of L011"; L011 is accepted and this is the third report. The conditional can be dropped when the result is recorded.
+2. **Role of nauty (clarification).** Step 3.4 and the header call the canonical forms load-bearing for completeness. As `canon.c` prints an isomorphic copy of its input, equal outputs imply isomorphism by construction and the reduction to representatives cannot lose a class; nauty's canonicity matters only for the exact class counts, now confirmed independently by BLISS and VF2 (check 7) and by round 1.
+3. **Step 4.1 (remark).** The route-20 argument does not need $H$ connected, and the proof does not claim it; it may be worth noting that $H$ is connected anyway ($s(H)=-1<0$ and I11 on components), or that the (P3) failure of the 84 $F_7$-free extensions is counted before any connectivity filter.
+4. **Step 6.3 (remark).** The a posteriori integer check already makes the modular computation rigorous; the Hadamard bound $|D|,|y_i|\le6^{(n-2)/2}<1.5\cdot10^8$ shows a priori that the symmetric lift is exact, and also that 64-bit fraction-free elimination cannot overflow (which is what my implementation relies on, with explicit overflow checks).
+5. **Scope (no action).** The maximum-degree-3 case (Remark 4) stays open; Step 8.2 quotes falsifier figures that are not re-derived, and the prover says so.
+
+## Independence statement
+The conclusions above rest on: my own arithmetic and decomposition brute force; my own realizer (Bareiss, vertex-ordered enumeration) with negative and two-sided positive controls; my own extension enumerator with brute-force (P3), validated against a Python brute force; igraph/BLISS and networkx VF2 for isomorphism (no nauty, except as the object of the invariance test); unmodified genbg for the direct cells. The recursive cells below the top level of $(22,17,9,4)$ and $(19,16,8,4)$ — $(21,14,8,3)$, $(18,13,7,3)$, $(15,12,6,3)$, $(17,13,7,3)$, $(14,12,6,\cdot)$, $(15,11,6,\cdot)$, $(18,12,7,4)$, $(21,13,8,4)$, $(20,14,8,3)$ and the smaller ones — are not recomputed here; they were recomputed by round 1 (genbg with pruning hooks and top-level recomputation of all 23 recursive cells) and agree with the falsifier's independent engine on all 119 common cells. My closure test (check 9) and check 8 are consistent with them.

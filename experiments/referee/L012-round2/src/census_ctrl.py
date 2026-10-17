@@ -9,8 +9,8 @@ def aps_of(s):
             if t % 2 == 0 and t // 2 in pos: E.append((i, pos[t // 2], k))
     return E
 def stream(n, lines):
-    p = subprocess.Popen(['./out/rz', str(n), 'print'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
-    p.stdin.write(''.join(lines)); p.stdin.close()
+    fn = 'out/ctrl_in_%d.txt' % n; open(fn, 'w').write(''.join(lines))
+    p = subprocess.Popen(['nice', '-n', '5', './out/rz', str(n), 'print'], stdin=open(fn), stdout=subprocess.PIPE, text=True)
     cur = []
     for l in p.stdout:
         if l.startswith('REAL'):
