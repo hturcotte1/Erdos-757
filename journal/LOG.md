@@ -325,3 +325,5 @@ Format for each work block:
 ## 2026-10-17T08:58Z e757 fn_bounds knows f(16) = 10 (EXACT_VALUES_VERIFIED, L008/K52); tests/test_l008_cells.py (5 tests, ~55 s) added; full suite green (17 min)
 
 ## 2026-10-17T09:20Z result L009 referee round 1: ACCEPT (labelled pipeline reproduced byte for byte; Lemma R confirmed independently by complete nauty genbg enumerations: 38 and 80 classes, exactly 2 and 6 in C); scout CLEAR. Editorial fixes applied; referees #2 and #3 (fable) launched.
+
+## 2026-10-17T09:55Z result L010 referee round 1: ACCEPT (conditional on L009; independent genbg component lists, own extension program, direct genbg confirmation of the 9 connected (18,12,>=7) classes); scout CLEAR. Editorial fixes applied; rounds 2-3 after L009's.
