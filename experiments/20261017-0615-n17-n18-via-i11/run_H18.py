@@ -7,7 +7,6 @@ for c in C14:
     es,n=union([(14,[tuple(e) for e in c]),(3,[(0,1,2)])]); assert n==17; Gs.append(es)
 print('G (17,13,7) candidates: from G17',nconn,'+ C14+AP',len(C14),flush=True)
 STATS['H18_inputs']=dict(G17_classes=nconn,C14_plus_AP=len(C14))
-subprocess.run('nice -n 10 python3 - <<"X"\nX',shell=True)
 # extension, but keep ALL hits (not only F7-free) for the F7/e(S)/orderability accounting
 inp='in_H18.txt'
 with open(inp,'w') as f:
