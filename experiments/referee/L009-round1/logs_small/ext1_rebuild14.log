@@ -1,0 +1,1 @@
+EXT1 N=13 TARGET=6 MAXDEG=3 graphs=147 tau(G)_range=[5,5] tested=184099 tau(H)-tau(G): 0:183839 1:260 | hits(tau>=TARGET)=260 hits_in_C=17 hits_in_C_connected=17

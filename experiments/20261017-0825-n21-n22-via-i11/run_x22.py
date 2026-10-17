@@ -5,6 +5,7 @@ import itertools
 t0=time.time()
 cache={}
 def cl(key):
+    if key==(1,0,0): return [[]]   # isolated vertex
     if key not in cache: cache[key]=cell_classes(*key)
     return cache[key]
 P=parts(20,10,3); print(len(P),'partitions of (20,10) slack 3'); STATS['partitions_20_10_3']=[[c[:4] for c in p] for p in P]

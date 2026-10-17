@@ -9,6 +9,7 @@ def cells(s,nmax):
             if v%11: continue
             t=v//11
             if 1<=t<=m and 17*t<=5*n+3*m: out.append((n,m,t,s))
+    if s==3: out.append((1,0,0,3))   # isolated vertex: slack 3
     return out
 def parts(N,M,S,nmax=None):
     nmax=nmax or N
