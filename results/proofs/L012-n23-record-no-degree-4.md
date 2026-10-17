@@ -1,10 +1,10 @@
 # A 23-point (4,5)-set with h = 13 (ratio 13/23 < 4/7) must have a saturated AP pattern with every AP-degree at most 3
 CLAIM-TYPE: lemma + certificate (computer-assisted partial result on the first I11-allowed record cell (23,21,10); class-level recursive enumeration with nauty canonical forms, so an isomorphism test IS load-bearing here, unlike L007–L011; and a new exact realization test for saturated patterns)
 TYPE: certificate
-STATUS: submitted 2026-10-17 15:27 UTC (no referee round yet)
+STATUS: submitted 2026-10-17 15:27 UTC; referee round 1 ACCEPT (results/reviews/L012-n23-record-no-degree-4__referee__20261017T162634Z.md: independent exact realization test class by class with positive and negative controls; own extension, filter and VF2 isomorphism pipeline reproduces the 699 classes; genbg re-enumeration of 104 cells); novelty CLEAR (__scout__20261017T153400Z.md); the 'conditional on L011' wording updated 16:35 UTC (L011 is ACCEPTED x3); referee rounds 2 and 3 requested
 DEPENDS ON:
 - L007–L010 [verified-here, each ACCEPTED by referee rounds 1–3; K51–K54]: I11 on $C$ for $n\le20$; L007 Lemma D (completeness of the canonical-growth enumerator `enum_conn`) and Lemma F (the $F_7$ test).
-- L011 [verified-here, ACCEPTED by referee rounds 1, 2 and 3; K55]: Theorem 1 there, I11 on $C$ for $n\le22$. **This certificate is conditional on the acceptance of L011.**
+- L011 [verified-here, ACCEPTED by referee rounds 1, 2 and 3; K55]: Theorem 1 there, I11 on $C$ for $n\le22$. **This certificate is no longer conditional (L011 is ACCEPTED x3).**
 - K3–K7 [published, Ma–Tang §2, Gyárfás–Lehel]: the AP hypergraph of a (4,5)-set lies in $C$; $h=\alpha=n-\tau$; the midpoint map of a (4,5)-set is injective and never hits $\min A$ or $\max A$ (re-proved in Step 6.1). K8 [published] (Henning–Yeo, $17\tau\le5n+3m$): Step 1 and the component types of Step 3.
 - nauty 2.8.8 (B. McKay, A. Piperno; sources unmodified, read from experiments/referee/L010-round1/out/dl/pynauty-2.8.8.1/src/nauty2_8_8) [published software]: canonical labelling, used to keep one representative per isomorphism class (load-bearing; validated in C6).
 - Used only as controls, not load-bearing: the census data of L002 (54,243 realizable 12-point classes) and L004 (2,910 saturated extremal 14-point classes), the labelled lists of L008–L011, and the falsifier's logs (experiments/20261017-1030-n23-record-cell/, below F).

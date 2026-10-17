@@ -350,3 +350,5 @@ Format for each work block:
 
 ## 2026-10-17T15:51Z result L011 ACCEPTED x3 (K55): f(22) = 13; I11 on C for n <= 22; no (4,5)-set with at most 22 points beats 4/7. K55, LEDGER, START_HERE, FINAL_REPORT, fn_bounds ({16:10, 18:11, 20:12, 22:13}) and tests updated.
 - evidence: results/reviews/L011-f22-equals-13__referee__20261017T154609Z.md, __referee__20261017T150941Z.md
+
+## 2026-10-17T16:35Z result L012 referee round 1: ACCEPT (independent exact realization test on all 699 classes with controls; own VF2 pipeline reproduces route 4; genbg re-enumeration of 104 cells); scout CLEAR (the omega 23-point set has h = 14, not a record). Wording fix; referees #2 and #3 (fable) launched.

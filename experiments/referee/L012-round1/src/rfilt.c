@@ -10,7 +10,7 @@
 #include <string.h>
 #include <stdint.h>
 static int nv, ne, ed[64][3];
-static int inG[4000][64][3], mG[4000];
+static int inG[40000][32][3], mG[40000];
 static int lin(void) { for (int i = 0; i < ne; i++) for (int j = i + 1; j < ne; j++) { int c = 0;
     for (int a = 0; a < 3; a++) for (int b = 0; b < 3; b++) c += ed[i][a] == ed[j][b]; if (c > 1) return 0; } return 1; }
 static int edge_id[32][32][32];
