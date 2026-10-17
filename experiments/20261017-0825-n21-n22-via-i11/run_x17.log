@@ -9,3 +9,6 @@ cell_16_10_6 {'labelled': 12394, 'with_F7': 6946, 'F7free_iso_classes': 16, 'kil
 cell_9_4_3 {'labelled': 4, 'with_F7': 0, 'F7free_iso_classes': 1, 'killed_by_eS': 0, 'kept': 1}
 cell_13_8_5 {'labelled': 106, 'with_F7': 106, 'F7free_iso_classes': 0, 'killed_by_eS': 0, 'kept': 0}
 cell_11_6_4 {'labelled': 0, 'with_F7': 0, 'F7free_iso_classes': 0, 'killed_by_eS': 0, 'kept': 0}
+cell_19_11_7 {'labelled': 1623, 'with_F7': 1623, 'F7free_iso_classes': 0, 'killed_by_eS': 0, 'kept': 0}
+G prime (19,11,7) candidates 174
+X20_deg3 SUMMARY graphs=174 tested=12865097 hits=3965

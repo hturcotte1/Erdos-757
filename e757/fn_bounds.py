@@ -19,6 +19,10 @@ from fractions import Fraction
 
 KNOWN_UPPER = {3: 2, 8: 5, 10: 6, 12: 7, 14: 8}  # 8, 10: data/small_records.json
 KNOWN_LOWER_EXTRA = {5: 4}
+# Exact values proved by computer-assisted, referee-accepted certificates (lower bound beyond Henning-Yeo; the
+# matching upper bound is in KNOWN_UPPER or follows by monotonicity/gluing).  Add 18 and 20 only after L009/L010 are accepted.
+#   16: 10  -- certificate L008 (results/proofs/L008-f16-equals-10.md, K52): f(16) = 10; witness A_base + {-323, 5000}.
+EXACT_VALUES_VERIFIED = {16: 10}
 
 
 def hy_max_tau(n, m=None):
@@ -35,8 +39,14 @@ def fn_bounds(N=60):
         L[n] = n - hy_max_tau(n)
     for n, v in KNOWN_LOWER_EXTRA.items():
         L[n] = max(L[n], v)
+    for n, v in EXACT_VALUES_VERIFIED.items():
+        if n <= N:
+            L[n] = max(L[n], v)
     U = {n: n for n in range(1, N + 1)}
     for n, v in KNOWN_UPPER.items():
+        if n <= N:
+            U[n] = min(U[n], v)
+    for n, v in EXACT_VALUES_VERIFIED.items():
         if n <= N:
             U[n] = min(U[n], v)
     changed = True
@@ -56,6 +66,17 @@ def fn_bounds(N=60):
     return {n: (L[n], U[n]) for n in range(1, N + 1)}
 
 
+def f_lower(n):
+    """Best known lower bound on f(n) (Henning-Yeo plus the verified exact values)."""
+    return fn_bounds(max(n, 2))[n][0]
+
+
+def is_closed(n):
+    """True if f(n) is known exactly by a verified certificate (EXACT_VALUES_VERIFIED); such n cannot host a record
+    beating 4/7 beyond what the exact value allows."""
+    return n in EXACT_VALUES_VERIFIED
+
+
 def beat_feasibility(n):
     """Can an n-point (4,5)-set have h/n < 4/7 without contradicting Henning-Yeo?
     Returns (possible, h_needed, tau_needed, min_m_needed)."""
@@ -71,4 +92,9 @@ if __name__ == "__main__":
     print("open :", {n: lu for n, lu in b.items() if lu[0] < lu[1]})
     for n in range(12, 41):
         ok, h, tau, m = beat_feasibility(n)
-        print(f"n={n:2d}: {'possible' if ok else 'EXCLUDED'}  need h<={h} tau>={tau} m>={m} (max {n-2})")
+        status = 'possible' if ok else 'EXCLUDED'
+        note = ""
+        if ok and is_closed(n):
+            status = 'CLOSED'
+            note = f"  [f({n}) = {EXACT_VALUES_VERIFIED[n]} exactly, L008: h<={h} impossible]"
+        print(f"n={n:2d}: {status}  need h<={h} tau>={tau} m>={m} (max {n-2}){note}")

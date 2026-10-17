@@ -8,3 +8,5 @@ G candidates 2
 SUMMARY graphs=2 tested=642638 hits=100
 {'hits': 100, 'with_F7': 94, 'F7free_killed_by_eS': 6, 'F7free_eS_ok_not_orderable': 0, 'survivors': 0}
 
+{'hits': 3000, 'with_F7': 2, 'F7free_killed_by_eS': 0, 'F7free_eS_ok_not_orderable': 0, 'survivors': 2998}
+
