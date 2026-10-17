@@ -89,7 +89,10 @@ def solve_cell(n, m, t, D=None, f7free=False, d0s=None, solver='cadical153', ver
             for i in range(len(lits)):
                 for j in range(i + 1, len(lits)): s.add_clause([-lits[i], -lits[j]])
         # exactly m edges
-        for c in CardEnc.equals([x[e] for e in T], m, vpool=pool, encoding=EncType.seqcounter).clauses: s.add_clause(c)
+        if m > len(T):
+            s.add_clause([pool.id('false_lit')]); s.add_clause([-pool.id('false_lit')])
+        else:
+            for c in CardEnc.equals([x[e] for e in T], m, vpool=pool, encoding=EncType.seqcounter).clauses: s.add_clause(c)
         # tau >= t
         if t >= 1:
             for S in itertools.combinations(range(n), t - 1):
