@@ -268,3 +268,7 @@ Format for each work block:
 ## 2026-10-16T20:17Z infra checkpoint: (14,11) DFS at 850/3437 prefixes (0 patterns); main = PR #1 merge d08efc4; waiting for the budget end (23:06 UTC)
 
 ## 2026-10-16T22:15Z infra END OF RUN: (14,11) DFS at 1030/3437 prefixes (0 patterns; resumable); follow-up PR with the post-merge log lines opened and merged; status run after 23:06 UTC closes the run under clause C
+
+## 2026-10-17T00:05Z infra RUN EXTENDED by the user by 48 h (to about 2026-10-18 23:06 UTC); GOAL.md and the 72 h budget there are protected and unchanged, so status.sh keeps reporting clause C; the extension plan (journal/STATE.md, next section) is executed under /goal
+- plan (judged by a 3-proposer/2-judge workflow): (1) falsify and document the conjectured inequality I11: 11 tau <= 3n + 2m for AP hypergraphs of (4,5)-sets (equality on A_base; implies c* >= 6/11 and f(16) = 10 if true); (2) unordered isomorph-free census engine with max degree 3 to clear the cells (15,9,6) and (15,10,6), which would force m = 14 and max degree 3 in any 16-point record; (3) decide f(16) only if (2) succeeds and a timing probe allows; (4) Q11 in the background: (14,11) DFS relaunched at nice 19 on 4 workers (1,041/3,437 prefixes) plus a CP-SAT attempt with the deletion constraints; (5) hedge: abstract-first 4-point extensions.
+- the user has no access to Henning-Yeo 2021.
