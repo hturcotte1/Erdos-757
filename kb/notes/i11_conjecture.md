@@ -1,6 +1,6 @@
 # Conjecture I11: 11 tau <= 3n + 2m for the AP hypergraph of every (4,5)-set [conjecture]
 
-Written 2026-10-17 06:20 UTC. Statement, evidence, what is proved, and what a proof would need.
+Written 2026-10-17 06:12 UTC. Statement, evidence, what is proved, and what a proof would need.
 
 **Statement.** Let A be a (4,5)-set with n points, m three-term APs and h(A) = n - tau (tau = transversal number of the
 AP hypergraph H(A)). Then 11 tau <= 3 n + 2 m. Equivalently, with slack s(H) = 3n + 2m - 11 tau: s >= 0.

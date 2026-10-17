@@ -1,8 +1,8 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: EXTENSION (+48 h granted by the user 2026-10-17 00:5x UTC; ends about 2026-10-18 23:06 UTC); GOAL.md unchanged (protected), status.sh shows clause C
-Last updated (UTC): 2026-10-17 05:40
-Phase/track: extension: I11 (11tau<=3n+2m) verified on data and on the abstract class for n<=15; L007 (Q11 closed) referee #1 ACCEPT, #2/#3 running; (16,14,7) EMPTY => f(16)=10 pending certificate L008 (prover writing) and referees
+Last updated (UTC): 2026-10-17 06:13
+Phase/track: extension: L007 ACCEPTED x3 (Q11 closed, K51); L008 (f(16)=10) SUBMITTED, referee #1 + scout running; falsifier agent attacking the next window cells (17,12,7) and (18,16,8) (the n=18 record cell) with the same method
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
 ## Best verified results (details: results/LEDGER.md, kb/known_results.md K30-K49)
@@ -15,7 +15,7 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
 ## Running jobs / agents
 - (14,11,alpha<=8) DFS, 4 workers at nice 19, 1041/3437 prefixes at 00:57, 0 patterns; resumable (relaunch: python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 19 --tag n14_m11).
-- prover: writing L008 (f(16)=10); workflow: L007 referees #2/#3; DONE: I11 falsifier, CP-SAT (14,11) UNKNOWN (D21), probe (D25), record hunt (D26, K50), (16,14,7) decision (experiments/20261017-0300-n16-via-i11).
+- workflow: L008 referee #1 + scout; falsifier agent: cells (17,12,7), (18,16,8) (experiments/20261017-0615-n17-n18-via-i11). DONE: L007 x3 ACCEPT; I11 falsifier; CP-SAT (14,11) UNKNOWN (D21); probe (D25); record hunt (D26, K50); (16,14,7) decision; (14,11) DFS stopped at 1,081/3,437 (superseded by L007).
 - Documentation audited three times in the first 72 h (last 2026-10-16 18:10 UTC); main = merge 414628a.
 
 ## Live hypotheses
@@ -24,6 +24,6 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 - [verified-here] Q8 holds on realizable data (K34) but fails abstractly without >=5-edge cores (K38/K39); Track L has no proof idea.
 
 ## Next 3 actions
-1. L007: referees #2/#3 -> LEDGER K51, Q11 closed in kb. L008 (f(16)=10): referee #1 + scout, fixes, referees #2/#3 (final on the strongest model) -> LEDGER, K52, START_HERE section 5, FINAL_REPORT.
-2. Then: I11 at n=17..18 abstractly (window cells (18,16,8)? etc.) = f(18) question; and record I11 as a conjecture note (kb/notes/i11_conjecture.md) with its equality structure and implications (c* >= 6/11).
+1. L008 (f(16)=10): referee #1 + scout, fixes, referees #2/#3 (final on the strongest model) -> LEDGER, K52, START_HERE section 5, FINAL_REPORT; regression test.
+2. If (17,12,7) and (18,16,8) are empty: f(18) = 11 (certificate L009, referees); I11 conjecture note written (kb/notes/i11_conjecture.md).
 3. Checkpoint every 2-3 h; final report + merge to main before 2026-10-18 23:06 UTC.
