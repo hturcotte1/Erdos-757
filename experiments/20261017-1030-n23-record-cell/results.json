@@ -1,0 +1,208 @@
+{
+ "target": "23-point (4,5)-set with h=13: pattern (23,21,10), saturated, I11 slack +1",
+ "derivation": {
+  "tau_prime": "H-v: tau'=9 (tau'=10 would need 110<=108-2d), d<=4, slack(H-v)=9-2d; sum deg 63 over 23 vertices => max degree D in {3,4}",
+  "other_cells_with_h13": "HY: m>=19; I11 (n=23 not proven) allows only m>=21; (23,19,10) slack -3 impossible by counting (deg<=2, sum 57>46); (23,20,10) slack -1: route20 below"
+ },
+ "route4": {
+  "case": "H has a degree-4 vertex v: G=H-v=(22,17,9), slack 1, maxdeg<=4, 4 new pairs with endpoints of G-degree<=3",
+  "partitions": [
+   [
+    [
+     3,
+     1,
+     1,
+     0
+    ],
+    [
+     19,
+     16,
+     8,
+     1
+    ]
+   ],
+   [
+    [
+     10,
+     7,
+     4,
+     0
+    ],
+    [
+     12,
+     10,
+     5,
+     1
+    ]
+   ],
+   [
+    [
+     14,
+     12,
+     6,
+     0
+    ],
+    [
+     8,
+     5,
+     3,
+     1
+    ]
+   ],
+   [
+    [
+     22,
+     17,
+     9,
+     1
+    ]
+   ]
+  ],
+  "cell_classes": {
+   "(19,16,8,D4)": 956,
+   "(22,17,9,D4)": 95,
+   "(14,12,6,D4)": 11,
+   "(12,10,5,D4)": 221,
+   "(10,7,4,D4)": 5,
+   "(8,5,3,D4)": 2,
+   "(21,13,8,D4) connected": 0,
+   "(18,12,7,D4) connected": 0
+  },
+  "consistency": {
+   "census_n14_2910_in_11_classes": true,
+   "realizable_n12_54243_in_221_classes": true
+  },
+  "G_candidates": 2178,
+  "G_distinct_iso": 2178,
+  "final_ext": {
+   "halves": [
+    {
+     "graphs": 1089,
+     "kill_nodes": 4425950725,
+     "finals_after_F7": 19483,
+     "hits_after_hall": 10286
+    },
+    {
+     "graphs": 1089,
+     "kill_nodes": 6243289683,
+     "finals_after_F7": 82471,
+     "hits_after_hall": 4004
+    }
+   ]
+  },
+  "iso_classes_of_H": 699,
+  "F7": 0,
+  "eS_ok": 699,
+  "orderable_SAT": 699,
+  "realization": {
+   "midpoint_assignments": 27206877,
+   "solvable": 27206877,
+   "distinct_values": 6051773,
+   "exactly_21_APs": 0,
+   "realized": 0,
+   "note": "two identical runs on the two halves (the halves give the same 699 classes)"
+  },
+  "result": "no realizable (23,21,10) with a degree-4 vertex"
+ },
+ "route20": {
+  "cell": "(23,20,10), slack -1",
+  "G": "(22,17,9) maxdeg<=3",
+  "G_candidates": 864,
+  "final_ext": "finals_after_F7=84, hits_after_hall=0",
+  "result": "empty"
+ },
+ "route3": {
+  "case": "maxdeg(H)=3 (>=17 vertices of degree 3): G=(22,18,9) slack 3",
+  "partitions": [
+   [
+    [
+     3,
+     1,
+     1,
+     0
+    ],
+    [
+     19,
+     17,
+     8,
+     3
+    ]
+   ],
+   [
+    [
+     14,
+     12,
+     6,
+     0
+    ],
+    [
+     8,
+     6,
+     3,
+     3
+    ]
+   ],
+   [
+    [
+     21,
+     18,
+     9,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     3
+    ]
+   ],
+   [
+    [
+     12,
+     10,
+     5,
+     1
+    ],
+    [
+     10,
+     8,
+     4,
+     2
+    ]
+   ],
+   [
+    [
+     22,
+     18,
+     9,
+     3
+    ]
+   ]
+  ],
+  "status": "NOT DECIDED (out of reach with this method)",
+  "evidence": {
+   "knuth_ordered_dfs_n23_T13_m21_maxdeg3_f7_refl": "est_calls 2.5e24 +- 2.3e24 (30 probes, 703 s)",
+   "engine_cell_sizes": {
+    "(11,9,4,D3) slack 7": "1,216 classes",
+    "(13,10,5,D3) slack 4": "7.0M labelled, 6,683 classes",
+    "(15,12,6,D3) slack 3": "10,617 classes",
+    "(14,9,5,D3) slack 5": "1,060 classes",
+    "(14,10,5,D3) slack 6": "57.9M labelled graphs (5.4 GB), 646M DFS nodes"
+   },
+   "reason": "each degree-3 deletion raises the slack by 2; the cells of slack >=4 needed have 1e4..1e8 classes and the re-insertion products are 1e6+ graphs"
+  }
+ },
+ "crosschecks": {
+  "ext3d_vs_numpy": "d=3: 30 G 399=399, 10 G 156=156; d=4: 2 G (18 vertices) 778=778",
+  "ext3d_vs_ext3": "identical HIT sets on 3 G (1836 hits)",
+  "ext3_vs_ext_vertex2": "cases of n16 folder: 18 and 218 hits reproduced; F7-free copies consistent",
+  "engine_regression": {
+   "(14,12,6,3)": 2,
+   "(15,11,6,3)": 19,
+   "(17,13,7,3)": 6
+  },
+  "realizer_control": "A_base graph: 948 exact realizations (assignments 1596)",
+  "min_nonzero_AP_residual_sample": 8.5e-06
+ },
+ "record_candidate": false
+}
