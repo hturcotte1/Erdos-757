@@ -1,0 +1,9 @@
+# model built in 26.1s; constraints {'monotone': 11011, 'medial': 14014, 'cores': (485771, 1977976), 'f7_eager': 1441440}; n=14 T=8 m=11
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.71s
+#Model  42.84s var:1823/1823 constraints:167612/167612
+Starting search at 42.85s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  58.18s var:1822/1823 constraints:166249/167612
+#Model 100.58s var:1821/1823 constraints:165261/167612

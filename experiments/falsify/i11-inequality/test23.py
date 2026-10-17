@@ -19,7 +19,12 @@ def gen_abs12():
     seen=set()
     for l in gzip.open(ROOT+'/experiments/20261014-1005-census-dfs/results/n12_m10_all.jsonl.gz','rt'):
         yield line(12,json.loads(l))
-g={'n14':gen_n14,'n12':gen_n12,'n12s5000':lambda:gen_n12(5000),'small':gen_small,'abs12':gen_abs12}[which]
+def gen_abs14():
+    for l in gzip.open(ROOT+'/experiments/20261014-1005-census-dfs/n14/results/post/filtered.txt.gz','rt'):
+        t=l.split()[4:]
+        E=[tuple(map(int,x.split(','))) for x in t]
+        yield line(14,E)
+g={'abs14':gen_abs14,'n14':gen_n14,'n12':gen_n12,'n12s5000':lambda:gen_n12(5000),'small':gen_small,'abs12':gen_abs12}[which]
 j=run_c(g())
 s=summarize(j,which); s['secs']=time.time()-t0
 json.dump(s,open(HERE+'/results_%s.json'%which,'w'),indent=1)

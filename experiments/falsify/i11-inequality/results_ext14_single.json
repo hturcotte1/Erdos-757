@@ -1,0 +1,174 @@
+{
+ "tag": "ext14_single",
+ "inputs": 141153,
+ "subsets": 4625301504,
+ "violations": 0,
+ "min_slack": 0,
+ "slack_values_lowest": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "equality_cases": [
+  {
+   "n": 3,
+   "m": 1,
+   "tau": 1,
+   "count": 1834989,
+   "first_input": 0,
+   "first_mask": 22
+  },
+  {
+   "n": 6,
+   "m": 2,
+   "tau": 2,
+   "count": 5942966,
+   "first_input": 0,
+   "first_mask": 252
+  },
+  {
+   "n": 9,
+   "m": 3,
+   "tau": 3,
+   "count": 2808877,
+   "first_input": 0,
+   "first_mask": 3068
+  },
+  {
+   "n": 10,
+   "m": 7,
+   "tau": 4,
+   "count": 493410,
+   "first_input": 0,
+   "first_mask": 3070
+  },
+  {
+   "n": 12,
+   "m": 4,
+   "tau": 4,
+   "count": 41618,
+   "first_input": 30,
+   "first_mask": 28158
+  },
+  {
+   "n": 13,
+   "m": 8,
+   "tau": 5,
+   "count": 157259,
+   "first_input": 0,
+   "first_mask": 32764
+  },
+  {
+   "n": 14,
+   "m": 12,
+   "tau": 6,
+   "count": 141153,
+   "first_input": 0,
+   "first_mask": 32766
+  }
+ ],
+ "slack1_to_5": [
+  {
+   "n": 1,
+   "m": 0,
+   "tau": 0,
+   "slack": 3,
+   "count": 2117295
+  },
+  {
+   "n": 4,
+   "m": 1,
+   "tau": 1,
+   "slack": 3,
+   "count": 22019868
+  },
+  {
+   "n": 6,
+   "m": 3,
+   "tau": 2,
+   "slack": 2,
+   "count": 2201873
+  },
+  {
+   "n": 7,
+   "m": 2,
+   "tau": 2,
+   "slack": 3,
+   "count": 42540471
+  },
+  {
+   "n": 8,
+   "m": 5,
+   "tau": 3,
+   "slack": 1,
+   "count": 867104
+  },
+  {
+   "n": 9,
+   "m": 4,
+   "tau": 3,
+   "slack": 2,
+   "count": 6492623
+  },
+  {
+   "n": 10,
+   "m": 3,
+   "tau": 3,
+   "slack": 3,
+   "count": 5785051
+  },
+  {
+   "n": 10,
+   "m": 8,
+   "tau": 4,
+   "slack": 2,
+   "count": 6561
+  },
+  {
+   "n": 11,
+   "m": 6,
+   "tau": 4,
+   "slack": 1,
+   "count": 1267727
+  },
+  {
+   "n": 11,
+   "m": 7,
+   "tau": 4,
+   "slack": 3,
+   "count": 3426148
+  },
+  {
+   "n": 12,
+   "m": 5,
+   "tau": 4,
+   "slack": 2,
+   "count": 238626
+  },
+  {
+   "n": 13,
+   "m": 4,
+   "tau": 4,
+   "slack": 3,
+   "count": 4813
+  },
+  {
+   "n": 13,
+   "m": 9,
+   "tau": 5,
+   "slack": 2,
+   "count": 844735
+  },
+  {
+   "n": 14,
+   "m": 8,
+   "tau": 5,
+   "slack": 3,
+   "count": 11371
+  }
+ ],
+ "secs": 102.47133898735046
+}

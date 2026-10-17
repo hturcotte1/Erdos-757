@@ -15,6 +15,7 @@ from ortools.sat.python import cp_model
 from e757.cpsat_model import build_model, load_cores, _cegar_step, _learn_core
 from e757 import realizability as RZ
 
+F7MODE = os.environ.get("F7MODE", "eager")
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -88,7 +89,7 @@ def solve(m, time_limit, workers, tag, n=14, T=8, seed=0):
     t0 = time.time()
     rng = random.Random(seed)
     cores = load_cores(REPO + "/data/forbidden_ordered_n7.json", REPO + "/data/forbidden_ordered_n8.json")
-    mod = build_model(n, m_exact=m, forbid_f7="lazy", monotone=True, medial=True, cores=cores, core_lit_budget=2_000_000)
+    mod = build_model(n, m_exact=m, forbid_f7=F7MODE, monotone=True, medial=True, cores=cores, core_lit_budget=2_000_000)
     mod.add_eager_alpha(T)
     add_constraints(mod, T)
     logf = open(os.path.join(HERE, "solver_%s.log" % tag), "a")

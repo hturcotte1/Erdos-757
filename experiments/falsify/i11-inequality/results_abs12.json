@@ -1,0 +1,136 @@
+{
+ "tag": "abs12",
+ "inputs": 2226490,
+ "subsets": 9119703040,
+ "violations": 0,
+ "min_slack": 0,
+ "slack_values_lowest": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "equality_cases": [
+  {
+   "n": 3,
+   "m": 1,
+   "tau": 1,
+   "count": 22264900,
+   "first_input": 0,
+   "first_mask": 11
+  },
+  {
+   "n": 6,
+   "m": 2,
+   "tau": 2,
+   "count": 45655602,
+   "first_input": 0,
+   "first_mask": 126
+  },
+  {
+   "n": 9,
+   "m": 3,
+   "tau": 3,
+   "count": 4942748,
+   "first_input": 0,
+   "first_mask": 3454
+  },
+  {
+   "n": 10,
+   "m": 7,
+   "tau": 4,
+   "count": 1498714,
+   "first_input": 0,
+   "first_mask": 1791
+  }
+ ],
+ "slack1_to_5": [
+  {
+   "n": 1,
+   "m": 0,
+   "tau": 0,
+   "slack": 3,
+   "count": 26717880
+  },
+  {
+   "n": 4,
+   "m": 1,
+   "tau": 1,
+   "slack": 3,
+   "count": 200384100
+  },
+  {
+   "n": 6,
+   "m": 3,
+   "tau": 2,
+   "slack": 2,
+   "count": 24750234
+  },
+  {
+   "n": 7,
+   "m": 2,
+   "tau": 2,
+   "slack": 3,
+   "count": 178915318
+  },
+  {
+   "n": 8,
+   "m": 5,
+   "tau": 3,
+   "slack": 1,
+   "count": 8238988
+  },
+  {
+   "n": 8,
+   "m": 6,
+   "tau": 3,
+   "slack": 3,
+   "count": 113686
+  },
+  {
+   "n": 9,
+   "m": 4,
+   "tau": 3,
+   "slack": 2,
+   "count": 21865184
+  },
+  {
+   "n": 10,
+   "m": 3,
+   "tau": 3,
+   "slack": 3,
+   "count": 361040
+  },
+  {
+   "n": 10,
+   "m": 8,
+   "tau": 4,
+   "slack": 2,
+   "count": 528272
+  },
+  {
+   "n": 11,
+   "m": 6,
+   "tau": 4,
+   "slack": 1,
+   "count": 603416
+  },
+  {
+   "n": 11,
+   "m": 7,
+   "tau": 4,
+   "slack": 3,
+   "count": 12649380
+  },
+  {
+   "n": 12,
+   "m": 10,
+   "tau": 5,
+   "slack": 1,
+   "count": 2226490
+  }
+ ],
+ "secs": 188.2085325717926
+}

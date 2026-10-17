@@ -1,0 +1,11 @@
+cell 15 9 11 prefixes 4591 sampled 10 list time 1.6
+{"idx": 229, "prefix": "0-3,1-10,2-13", "nodes": 8003584, "solutions": 115, "timed_out": 1, "time_wall": 60.0, "wall": 60.0278205871582}
+{"idx": 1147, "prefix": "0-5,1-10,0-12", "nodes": 5898240, "solutions": 17, "timed_out": 1, "time_wall": 60.03, "wall": 60.04499268531799}
+{"idx": 688, "prefix": "0-4,1-10,2-5", "nodes": 5255168, "solutions": 0, "timed_out": 1, "time_wall": 60.04, "wall": 60.05101728439331}
+{"idx": 2065, "prefix": "0-7,x,0-14", "nodes": 8323072, "solutions": 62, "timed_out": 1, "time_wall": 60.01, "wall": 60.01984095573425}
+{"idx": 1606, "prefix": "0-6,1-11,2-4", "nodes": 6025216, "solutions": 0, "timed_out": 1, "time_wall": 60.02, "wall": 60.04770016670227}
+{"idx": 2524, "prefix": "0-9,0-12,2-9", "nodes": 5771264, "solutions": 8, "timed_out": 1, "time_wall": 60.01, "wall": 60.036165714263916}
+{"idx": 2983, "prefix": "0-10,1-8,0-13", "nodes": 5283840, "solutions": 0, "timed_out": 1, "time_wall": 60.03, "wall": 60.03930139541626}
+{"idx": 3442, "prefix": "0-12,1-4,2-14", "nodes": 7933952, "solutions": 416, "timed_out": 1, "time_wall": 60.03, "wall": 60.0360107421875}
+{"idx": 3901, "prefix": "0-14,1-7,2-14", "nodes": 8585216, "solutions": 252, "timed_out": 1, "time_wall": 60.02, "wall": 60.02374505996704}
+{"idx": 4360, "prefix": "x,1-5,0-8", "nodes": 17494016, "solutions": 0, "timed_out": 1, "time_wall": 60.01, "wall": 60.015787839889526}

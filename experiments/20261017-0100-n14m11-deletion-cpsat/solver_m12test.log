@@ -1,3 +1,394 @@
 # model built in 14.7s; constraints {'monotone': 11011, 'medial': 14014, 'cores': (485771, 1977976)}; n=14 T=8 m=12
 Starting CP-SAT solver v9.15.6755
 Starting presolve at 0.29s
+#Model  80.36s var:1823/1823 constraints:140626/140626
+Starting search at 80.37s with 3 workers.
+2 full problem subsolvers: [default_lp, no_lp]
+1 first solution subsolver: [fj]
+#Model 118.10s var:1820/1823 constraints:138362/140626
+#1     118.20s no_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818        338    17'168         6            8'506     12'634     694'099      1'841'191
+       'no_lp':  1'818      6'217    33'703        25            8'523     18'488     905'755      2'154'544
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 6217
+branches: 33703
+propagations: 905755
+integer_propagations: 2154544
+restarts: 25
+lp_iterations: 0
+walltime: 118.426
+usertime: 118.426
+deterministic_time: 28.7565
+gap_integral: 0
+solution_fingerprint: 0x94670d5486cd0110
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.47s
+#Model  86.07s var:1823/1823 constraints:140628/140628
+Starting search at 86.09s with 3 workers.
+2 full problem subsolvers: [default_lp, no_lp]
+1 first solution subsolver: [fj]
+#Model 106.09s var:1820/1823 constraints:138364/140628
+#1     112.21s no_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      2'141    21'517        14            8'517     14'435     772'004      1'950'420
+       'no_lp':  1'818      7'183    38'171        49            8'550     19'467     956'787      2'252'631
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 7183
+branches: 38171
+propagations: 956787
+integer_propagations: 2252631
+restarts: 49
+lp_iterations: 0
+walltime: 112.398
+usertime: 112.398
+deterministic_time: 29.6422
+gap_integral: 0
+solution_fingerprint: 0xf0db89bd0940e52f
+# abstract solution round 1: edges=[(0, 1, 3), (0, 2, 8), (1, 4, 9), (1, 5, 12), (2, 3, 4), (3, 8, 12), (5, 6, 9), (5, 10, 11), (6, 7, 10), (7, 11, 13), (8, 9, 10), (10, 12, 13)]
+# learnt core kind=order total learnt=2
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.12s
+#Model  16.34s var:1823/1823 constraints:140630/140630
+Starting search at 16.34s with 3 workers.
+2 full problem subsolvers: [default_lp, no_lp]
+1 first solution subsolver: [fj]
+#Model  26.77s var:1820/1823 constraints:138366/140630
+#Model  27.17s var:1819/1823 constraints:137894/140630
+#Model  31.55s var:1818/1823 constraints:136662/140630
+#1      31.95s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      2'572    28'273        25            8'532     14'851     766'448      1'968'785
+       'no_lp':  1'818     15'769    58'226        90            8'596     28'062   1'276'513      2'695'215
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 2572
+branches: 28273
+propagations: 766448
+integer_propagations: 1968785
+restarts: 25
+lp_iterations: 22843
+walltime: 32.0251
+usertime: 32.0251
+deterministic_time: 33.2948
+gap_integral: 0
+solution_fingerprint: 0x5de5b70674492e47
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.12s
+#Model  15.14s var:1823/1823 constraints:140632/140632
+Starting search at 15.14s with 3 workers.
+2 full problem subsolvers: [default_lp, no_lp]
+1 first solution subsolver: [fj]
+#Model  25.35s var:1820/1823 constraints:138368/140632
+#Model  25.89s var:1819/1823 constraints:137136/140632
+#1      27.79s no_lp
+#Model  27.88s var:1818/1823 constraints:135773/140632
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      1'617    22'615        18            8'521     13'918     751'361      1'939'280
+       'no_lp':  1'818     12'451    60'229        90            8'593     24'745   1'189'376      2'586'459
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 12451
+branches: 60229
+propagations: 1189376
+integer_propagations: 2586459
+restarts: 90
+lp_iterations: 0
+walltime: 27.976
+usertime: 27.976
+deterministic_time: 31.1885
+gap_integral: 0
+solution_fingerprint: 0x460c4bf1ad098d5c
+# abstract solution round 2: edges=[(0, 1, 11), (0, 2, 13), (1, 9, 13), (2, 3, 5), (3, 4, 9), (3, 11, 13), (4, 5, 7), (4, 6, 8), (5, 12, 13), (6, 7, 10), (7, 8, 12), (9, 10, 12)]
+# learnt core kind=order total learnt=730
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.10s
+#Model  16.38s var:1823/1823 constraints:141141/141141
+Starting search at 16.39s with 3 workers.
+2 full problem subsolvers: [default_lp, no_lp]
+1 first solution subsolver: [fj]
+#Model  26.22s var:1820/1823 constraints:138877/141141
+#1      27.30s no_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818        307    16'841         6            8'506     12'599     693'057      1'835'145
+       'no_lp':  1'818      5'166    28'335        13            8'511     17'429     863'809      2'063'285
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 5166
+branches: 28335
+propagations: 863809
+integer_propagations: 2063285
+restarts: 13
+lp_iterations: 0
+walltime: 27.4119
+usertime: 27.4119
+deterministic_time: 30.6834
+gap_integral: 0
+solution_fingerprint: 0xa7265156ce5176fb
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.10s
+#Model  16.43s var:1823/1823 constraints:141142/141142
+Starting search at 16.44s with 3 workers.
+2 full problem subsolvers: [default_lp, no_lp]
+1 first solution subsolver: [fj]
+#Model  25.25s var:1820/1823 constraints:138878/141142
+#Model  26.46s var:1819/1823 constraints:137515/141142
+#1      27.07s no_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818        542    18'152         9            8'511     12'835     704'712      1'852'392
+       'no_lp':  1'818      5'443    29'041        15            8'513     17'710     876'942      2'080'984
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 5443
+branches: 29041
+propagations: 876942
+integer_propagations: 2080984
+restarts: 15
+lp_iterations: 0
+walltime: 27.1717
+usertime: 27.1717
+deterministic_time: 29.3031
+gap_integral: 0
+solution_fingerprint: 0xf23924156a06b4f9
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.14s
+#Model  16.64s var:1823/1823 constraints:141143/141143
+Starting search at 16.65s with 3 workers.
+2 full problem subsolvers: [default_lp, no_lp]
+1 first solution subsolver: [fj]
+#1      27.34s no_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818         18    14'846         0            8'499     12'304     677'813      1'802'550
+       'no_lp':  1'818      5'767    30'362        16            8'514     18'025     894'800      2'129'870
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 5767
+branches: 30362
+propagations: 894800
+integer_propagations: 2129870
+restarts: 16
+lp_iterations: 0
+walltime: 27.4872
+usertime: 27.4872
+deterministic_time: 28.271
+gap_integral: 0
+solution_fingerprint: 0x6611da77c5e57495
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.16s
+#Model  17.75s var:1823/1823 constraints:141145/141145
+Starting search at 17.75s with 3 workers.
+2 full problem subsolvers: [default_lp, no_lp]
+1 first solution subsolver: [fj]
+#Model  31.21s var:1820/1823 constraints:138881/141145
+#1      31.74s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      1'037    20'098         4            8'505     13'309     694'603      1'827'302
+       'no_lp':  1'818      5'019    26'969        16            8'514     17'287     874'398      2'103'302
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 1037
+branches: 20098
+propagations: 694603
+integer_propagations: 1827302
+restarts: 4
+lp_iterations: 2635
+walltime: 31.8356
+usertime: 31.8356
+deterministic_time: 29.7486
+gap_integral: 0
+solution_fingerprint: 0xe1517d393038945d
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.14s
+#Model  19.50s var:1823/1823 constraints:141146/141146
+Starting search at 19.51s with 3 workers.
+2 full problem subsolvers: [default_lp, no_lp]
+1 first solution subsolver: [fj]
+#Model  31.92s var:1820/1823 constraints:138882/141146
+#1      31.97s no_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818         52    15'224         1            8'501     12'339     679'805      1'807'608
+       'no_lp':  1'818      2'510    26'600        19            8'517     14'779     751'280      1'928'509
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 2510
+branches: 26600
+propagations: 751280
+integer_propagations: 1928509
+restarts: 19
+lp_iterations: 0
+walltime: 32.1101
+usertime: 32.1101
+deterministic_time: 27.8762
+gap_integral: 0
+solution_fingerprint: 0xdf2f19ce95d6e536
+# abstract solution round 3: edges=[(0, 1, 12), (0, 4, 13), (1, 2, 8), (1, 11, 13), (2, 3, 6), (2, 9, 11), (3, 5, 7), (4, 8, 10), (5, 6, 8), (5, 10, 11), (6, 7, 9), (10, 12, 13)]
+# learnt core kind=order total learnt=758
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.10s
+#Model  18.26s var:1823/1823 constraints:141164/141164
+Starting search at 18.27s with 3 workers.
+2 full problem subsolvers: [default_lp, no_lp]
+1 first solution subsolver: [fj]
+#Model  31.89s var:1820/1823 constraints:138900/141164
+#1      34.09s no_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818        536    17'751         7            8'514     12'831     701'740      1'854'188
+       'no_lp':  1'818     16'561    54'219        34            8'532     28'745   1'295'747      2'667'599
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 16561
+branches: 54219
+propagations: 1295747
+integer_propagations: 2667599
+restarts: 34
+lp_iterations: 0
+walltime: 34.2173
+usertime: 34.2173
+deterministic_time: 32.4035
+gap_integral: 0
+solution_fingerprint: 0x8f4cc25edd493b06
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.11s
+#Model  18.05s var:1823/1823 constraints:141165/141165
+Starting search at 18.06s with 3 workers.
+2 full problem subsolvers: [default_lp, no_lp]
+1 first solution subsolver: [fj]
+#Model  31.72s var:1820/1823 constraints:138901/141165
+#1      32.91s no_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818        102    15'875         2            8'503     12'391     682'557      1'816'617
+       'no_lp':  1'818     10'600    42'116        28            8'526     22'814   1'072'730      2'350'480
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 10600
+branches: 42116
+propagations: 1072730
+integer_propagations: 2350480
+restarts: 28
+lp_iterations: 0
+walltime: 33.0709
+usertime: 33.0709
+deterministic_time: 30.7491
+gap_integral: 0
+solution_fingerprint: 0xf2f57c1e339f3f91
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.12s
+#Model  18.92s var:1823/1823 constraints:141166/141166
+Starting search at 18.93s with 3 workers.
+2 full problem subsolvers: [default_lp, no_lp]
+1 first solution subsolver: [fj]
+#Model  31.82s var:1820/1823 constraints:138902/141166
+#1      31.89s no_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818         87    15'410         1            8'501     12'374     681'256      1'810'946
+       'no_lp':  1'818      2'476    23'961        10            8'508     14'745     762'187      1'928'095
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 2476
+branches: 23961
+propagations: 762187
+integer_propagations: 1928095
+restarts: 10
+lp_iterations: 0
+walltime: 31.9789
+usertime: 31.9789
+deterministic_time: 29.1016
+gap_integral: 0
+solution_fingerprint: 0xcd796d72023728b2
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.18s
+#Model  18.05s var:1823/1823 constraints:141168/141168
+Starting search at 18.05s with 3 workers.
+2 full problem subsolvers: [default_lp, no_lp]
+1 first solution subsolver: [fj]
+#Model  32.00s var:1820/1823 constraints:138904/141168
+#1      34.30s no_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818        411    17'318         7            8'510     12'704     698'077      1'843'395
+       'no_lp':  1'818     15'091    50'495        25            8'523     27'268   1'220'715      2'529'810
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 411
+branches: 17318
+propagations: 698077
+integer_propagations: 1843395
+restarts: 7
+lp_iterations: 8580
+walltime: 34.4301
+usertime: 34.4301
+deterministic_time: 31.7023
+gap_integral: 0
+solution_fingerprint: 0xe5668d3a5e0afe4b
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.13s
+CpSolverResponse summary:
+status: UNKNOWN
+objective: NA
+best_bound: NA
+integers: 0
+booleans: 0
+conflicts: 0
+branches: 0
+propagations: 0
+integer_propagations: 0
+restarts: 0
+lp_iterations: 0
+walltime: 11.36
+usertime: 11.36
+deterministic_time: 0.952091
+gap_integral: 0
+# FINAL UNKNOWN
