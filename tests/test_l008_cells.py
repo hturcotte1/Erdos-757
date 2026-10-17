@@ -61,13 +61,15 @@ def test_witness_n16_h10():
 
 def test_f16_closed_in_fn_bounds():
     assert B.f_lower(16) == 10 and B.fn_bounds(20)[16] == (10, 10)
-    assert B.is_closed(16) and not B.is_closed(18)
-    assert B.fn_bounds(20)[18][0] == 10 and B.fn_bounds(20)[18][1] == 11  # f(18), f(20) still open
+    assert B.is_closed(16) and B.is_closed(18) and not B.is_closed(20)
+    assert B.fn_bounds(20)[18] == (11, 11) and B.fn_bounds(20)[20] == (11, 12)  # f(18) = 11 (L009); f(20) still open here
     assert B.beat_feasibility(16) == (True, 9, 7, 13)  # HY-only feasibility unchanged (backwards compatible)
     out = subprocess.run([sys.executable, "-m", "e757.fn_bounds"], cwd=REPO, capture_output=True, text=True,
                          check=True).stdout
     line16 = [l for l in out.splitlines() if l.startswith("n=16")][0]
     assert line16.startswith("n=16: CLOSED")
     line18 = [l for l in out.splitlines() if l.startswith("n=18")][0]
-    assert line18.startswith("n=18: possible")
+    assert line18.startswith("n=18: CLOSED")
+    line20 = [l for l in out.splitlines() if l.startswith("n=20")][0]
+    assert line20.startswith("n=20: possible")
     assert "16: 10" in out.splitlines()[0]

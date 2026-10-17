@@ -96,5 +96,5 @@ if __name__ == "__main__":
         note = ""
         if ok and is_closed(n):
             status = 'CLOSED'
-            note = f"  [f({n}) = {EXACT_VALUES_VERIFIED[n]} exactly, L008: h<={h} impossible]"
+            note = f"  [f({n}) = {EXACT_VALUES_VERIFIED[n]} exactly, verified exact value (kb/known_results.md K52/K53): h<={h} impossible]"
         print(f"n={n:2d}: {status}  need h<={h} tau>={tau} m>={m} (max {n-2}){note}")
