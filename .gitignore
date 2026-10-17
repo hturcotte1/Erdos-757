@@ -46,3 +46,5 @@ experiments/20261017-0210-ext15-hunt/data/attempts.jsonl
 experiments/20261017-0210-ext15-hunt/data/ext15_sets.jsonl
 experiments/20261017-0210-ext15-hunt/*.log
 experiments/20261017-0210-ext15-hunt/jobs_*/
+experiments/20261017-0300-n16-via-i11/*_part*.txt
+experiments/20261017-0300-n16-via-i11/*.log
