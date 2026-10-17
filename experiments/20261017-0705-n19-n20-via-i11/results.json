@@ -239,7 +239,14 @@
      "survivors": 3733
     }
    },
-   "result": "EMPTY"
+   "result": "EMPTY",
+   "validation": {
+    "direct_dfs_slices": 351,
+    "skipped": 5,
+    "found": 318,
+    "F7free": 0,
+    "note": "none of the 176 reconstructed classes is connected"
+   }
   }
  },
  "n20": {

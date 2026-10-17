@@ -36,6 +36,8 @@ sed -n 's/^\(FOUND:.*\) AUT=.*$/\1 (12,13,14)/p' out/bfs_12_10_5_d3.txt > out/in
 sed -n 's/^\(FOUND:.*\) AUT=.*$/\1/p' out/bfs_15_11_6_d3.txt > out/inputB_classes.txt
 sed -n 's/^\(FOUND:.*\) AUT=.*$/\1/p' out/bfs_15_11_6_d3_ALL.txt > out/inputALL_classes.txt
 for c in A B ALL; do ./bin/ext_r2 EXT 15 7 3 < out/input${c}_classes.txt > out/ext_${c}.txt; tail -1 out/ext_${c}.txt; done
+bash src/cmp_enumconn.sh > out/cmp_enumconn.log 2>&1   # enum_conn vs bfs_enum class sets, n = 10..12 (stopped by a 590 s timeout in the review run)
+python3 src/examples.py
 # --- 4. validation of delete-a-degree-3-vertex-and-extend against direct enumeration (5 small analogues)
 bash src/ext_validate.sh
 # --- 5. Lemma A' re-checked with and without Henning-Yeo (all cells n <= 15 with lo <= m; (15,13,>=7) times out at 900 s)
@@ -43,8 +45,9 @@ bash src/hyfree_driver.sh > out/hyfree_summary.log 2>&1
 python3 src/cells.py 16
 # --- 6. controls for the F7 / P3 / tau detectors (mine and the prover's)
 python3 src/make_controls.py; ./bin/ext_r2 FILTER 0 v < controls/controls.txt; $P/indep/filter_hits FOUND < controls/controls.txt | tail -1
-# --- 7. re-runs of the proof's own programs (recompiled from the sources copied to rerun/src): see rerun/README.txt
+# --- 7. re-runs of the proof's own programs: commands in rerun/README.txt (run from rerun/)
 # --- 8. realizable data: every induced subset of the record sets, Fibonacci, gluings, census classes, 15- and 16-point sets
+python3 src/make_basic_sets.py
 ./bin/i11_sets < data_tests/basic_sets.txt; ./bin/i11_sets < data_tests/census14.txt > data_tests/census14_results.txt
 ./bin/i11_sets < data_tests/census12.txt > data_tests/census12_results.txt; ./bin/i11_sets < data_tests/ext15.txt > data_tests/ext15_results.txt
 ./bin/ext16 < data_tests/ext15.txt > data_tests/ext16_sets.txt; ./bin/i11_sets < data_tests/ext16_sets.txt > data_tests/ext16_results.txt

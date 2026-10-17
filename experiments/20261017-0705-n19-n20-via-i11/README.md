@@ -32,7 +32,7 @@ numpy cross-check (`crosscheck_ext2.py`, 40 graphs): 243 = 243 hits.  Control wi
 => empty.  With (20,12,8) and (20,18,9): **I11 holds for n=20**; no 20-point (4,5)-set with h=11 (f(20)=12 for O).
 
 ## Validation
-`validate_generic.py` samples random slices of the direct DFS for connected (18,12,7), maxdeg 3 and checks that every F7-free e(S)-ok graph found is isomorphic to one of the 176 reconstructed classes: VALIDATE_X18.
+`validate_generic.py` samples random slices of the direct DFS for connected (18,12,7), maxdeg 3 and checks that every F7-free e(S)-ok graph found is isomorphic to one of the 176 reconstructed classes: a sample of 351 slices (5 slow slices skipped, 40 s limit) of the direct DFS found 318 connected graphs, all containing F7; none F7-free, consistent with the reconstruction in which **none of the 176 classes is connected** (they are disconnected graphs, i.e. covered by the other partitions; connected F7-free e(S)-ok (18,12,7) graphs with maxdeg 3 do not exist in the reconstruction).  This is a weak check (about 1.6% of the slices).
 (The reconstruction trick and the earlier cells were validated in the n16 and n17/n18 folders.)
 
 ## What the referee must check
