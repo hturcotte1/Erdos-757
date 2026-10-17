@@ -1,0 +1,2 @@
+13 8 5 None False d0= 3 {'result': 'SAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.67}
+CASE_I_NOF7 SAT [(0, 1, 2), (0, 3, 4), (0, 5, 6), (1, 10, 12), (2, 9, 11), (3, 7, 8), (4, 5, 8), (4, 6, 7)] {'tau': 5, 'hasF7': True, 'linear': True, 'comps': 1} 0.7 s {"n": 13, "m": 8, "t": 5, "D": null, "f7free": false, "per_d0": {"3": {"result": "SAT", "iters": 1, "cuts": 0, "f7_clauses": 0, "secs": 0.67}}}
