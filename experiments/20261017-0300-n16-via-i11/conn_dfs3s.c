@@ -37,12 +37,11 @@ static int bad_sub(int ne){ // S may be taken as a union of edges containing the
     int c=0; for(int i=0;i<ne;i++) if((E[i]&U)==E[i]) c++;
     if(c>=__builtin_popcount(U)-1) return 1; }
   return 0; }
+#define SLICE(ne1) ((ne1)==SD && K!=1 ? (++cnt, K<0 ? 0 : (cnt%K==I)) : 1)
 #define CHK(ne1) (!(useF7&&has_f7(ne1)&&++pr_f7) && !(useSub&&bad_sub(ne1)&&++pr_sub))
 static void rec(int ne,int v,int cur,long lastkey){
   nodes++;
   int r=m-ne;
-  if(ne==SD && K<0){ cnt++; return; }
-  if(ne==SD && K>1){ cnt++; if(cnt%K!=I) return; }
   if(ne>=1){ int k=tau0-r-1; if(k>=0){ uint32_t all=(1u<<ne)-1; if(cover_le(all,k,ne)) return; } }
   if(ne==m){ if(v==n){ found++; printf("FOUND:"); for(int i=0;i<m;i++){ printf(" ("); int f=1; for(int x=0;x<n;x++) if(E[i]>>x&1){printf(f?"%d":",%d",x);f=0;} printf(")"); } printf("\n"); fflush(stdout);} return; }
   if(v>n || v+2*r<n) return;
@@ -54,19 +53,19 @@ static void rec(int ne,int v,int cur,long lastkey){
     if(nn==2){ long key=2L*1000000; if(key<lastkey) continue;
       uint32_t e=(1u<<cur)|(1u<<v)|(1u<<(v+1));
       E[ne]=e; deg[cur]++;deg[v]++;deg[v+1]++;
-      if(CHK(ne+1)) rec(ne+1,v+2,cur,key);
+      if(CHK(ne+1) && SLICE(ne+1)) rec(ne+1,v+2,cur,key);
       deg[cur]--;deg[v]--;deg[v+1]--; }
     else if(nn==1){
       for(int o=cur+1;o<v;o++){ long key=1L*1000000+o*1000; if(key<lastkey) continue; if(deg[o]>=maxdeg) continue;
         uint32_t e=(1u<<cur)|(1u<<o)|(1u<<v); if(!linear_ok(e,ne)) continue;
         E[ne]=e; deg[cur]++;deg[o]++;deg[v]++;
-        if(CHK(ne+1)) rec(ne+1,v+1,cur,key);
+        if(CHK(ne+1) && SLICE(ne+1)) rec(ne+1,v+1,cur,key);
         deg[cur]--;deg[o]--;deg[v]--; } }
     else {
       for(int o1=cur+1;o1<v;o1++) for(int o2=o1+1;o2<v;o2++){ long key=o1*1000+o2; if(key<lastkey) continue; if(deg[o1]>=maxdeg||deg[o2]>=maxdeg) continue;
         uint32_t e=(1u<<cur)|(1u<<o1)|(1u<<o2); if(!linear_ok(e,ne)) continue;
         E[ne]=e; deg[cur]++;deg[o1]++;deg[o2]++;
-        if(CHK(ne+1)) rec(ne+1,v,cur,key);
+        if(CHK(ne+1) && SLICE(ne+1)) rec(ne+1,v,cur,key);
         deg[cur]--;deg[o1]--;deg[o2]--; } }
   }
 }

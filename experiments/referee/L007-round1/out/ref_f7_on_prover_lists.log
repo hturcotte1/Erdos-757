@@ -1,0 +1,6 @@
+rerun/c4_hits.txt {'graphs': 3186, 'linear': 3186, 'contain_F7': 3186, 'F7_free': 0}
+rerun/c4_indep_hits.txt {'graphs': 3186, 'linear': 3186, 'contain_F7': 3186, 'F7_free': 0}
+rerun/c2_13_8_5.txt {'graphs': 159, 'linear': 159, 'contain_F7': 159, 'F7_free': 0}
+rerun/c2_10_7_4.txt {'graphs': 637, 'linear': 637, 'contain_F7': 126, 'F7_free': 511}
+rerun/enum_14_11_6_3.txt {'graphs': 998, 'linear': 998, 'contain_F7': 998, 'F7_free': 0}
+/home/user/Erdos-757/experiments/falsify/i11-inequality/conn2_all_14_11_6_deg3.txt {'graphs': 998, 'linear': 998, 'contain_F7': 998, 'F7_free': 0}

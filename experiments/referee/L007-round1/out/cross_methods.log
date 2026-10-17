@@ -1,0 +1,2 @@
+cell (11, 7, 4, 1000) ref_enum outputs 3606 classes 40 | conn_dfs2_all outputs 8786 classes 40 | ref classes in other 40 | other classes in ref 40 AGREE
+cell (13, 9, 5, 1000) ref_enum outputs 36515 classes 156 | conn_dfs2_all outputs 80876 classes 156 | ref classes in other 156 | other classes in ref 156 AGREE

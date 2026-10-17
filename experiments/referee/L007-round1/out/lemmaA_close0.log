@@ -1,0 +1,12 @@
+#END N=5 M=3 T0=2 DMAX=1000 close=0 nodes=2 out=0
+  21 ms
+#END N=8 M=4 T0=3 DMAX=1000 close=0 nodes=49 out=0
+  37 ms
+#END N=10 M=6 T0=4 DMAX=1000 close=0 nodes=2193 out=0
+  11 ms
+#END N=11 M=5 T0=4 DMAX=1000 close=0 nodes=79 out=0
+  25 ms
+#END N=13 M=7 T0=5 DMAX=1000 close=0 nodes=6003 out=0
+  30 ms
+#END N=12 M=9 T0=5 DMAX=1000 close=0 nodes=5931500 out=0
+  1007 ms

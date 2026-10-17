@@ -283,3 +283,5 @@ Format for each work block:
 
 ## 2026-10-17T03:41Z result L007 SUBMITTED (prover, no GAP lines; every enumeration re-run and re-implemented independently; the 998 degree-3 graphs are all one graph: two F7's joined by an edge); referee #1 + scout workflow launched
 - the prover also found the window cell (5,3,2) missing from the falsifier's list (empty by hand and by both enumerators) and widened the class to all linear F7-free 3-graphs with e(S) <= |S| - 2 (no ordering needed).
+
+## 2026-10-17T04:37Z result L007 referee round 1: ACCEPT (third independent enumerator; HY not even needed for Lemma A: for n<=13, m<=n-2 the only connected linear 3-graph violating I11 is F7); scout CLEAR. Two text fixes applied; referees #2 and #3 launched.

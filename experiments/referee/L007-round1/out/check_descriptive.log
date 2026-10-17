@@ -1,0 +1,4 @@
+hits 3186 from (13,8,5): 954 from F7-containing (10,7,4): 1386 from F7-free (10,7,4): 846 of which every F7 copy uses 13: 846
+maxdeg 3: 1180 maxdeg 4: 2006 other: 0
+all maxdeg-3 hits isomorphic to D14: True
+referee Route-I hits with maxdeg 3: 588 all isomorphic to D14: True
