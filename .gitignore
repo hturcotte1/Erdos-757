@@ -48,3 +48,5 @@ experiments/20261017-0210-ext15-hunt/*.log
 experiments/20261017-0210-ext15-hunt/jobs_*/
 experiments/20261017-0300-n16-via-i11/*_part*.txt
 experiments/20261017-0300-n16-via-i11/*.log
+experiments/20261017-0615-n17-n18-via-i11/*.log
+experiments/referee/L008-round1/out/
