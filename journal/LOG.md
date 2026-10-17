@@ -299,3 +299,5 @@ Format for each work block:
 ## 2026-10-17T06:00Z result L007 ACCEPTED x3 (K51): no non-saturated extremal 14-point set; Q11 CLOSED; 2,910 is the complete count of extremal 14-point classes
 - referees #2 (CaDiCaL route, all cells UNSAT without any enumerated list) and #3 (own canonical generator; result also holds without the degree bound; Lemma A without HY). K51, LEDGER, Q11, START_HERE updated.
 - evidence: results/reviews/L007-no-nonsaturated-extremal-14-point-sets__referee__20261017T055829Z.md, __referee__20261017T053731Z.md
+
+## 2026-10-17T06:20Z result L008 SUBMITTED (f(16) = 10; prover, no GAP lines; independent re-implementations of the enumerations and the extension step; new explicit witness A_base ∪ {-323, 5000} with h = 10); referee #1 + scout launched; falsifier agent continues to the cells (17,12,7) and (18,16,8) (the n = 18 record cell); kb/notes/i11_conjecture.md written
