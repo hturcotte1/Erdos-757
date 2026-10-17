@@ -284,3 +284,8 @@
 {"file": "r_m12_000063_s33.pat", "m": 12, "found": 150, "new": 100, "realizable": 8, "fail": {"order-infeasible(fast-LP)": 90, "forced repeated difference": 2}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-12,4-11", "timed_out": 0}
 {"file": "r_m12_000065_s33.pat", "m": 12, "found": 29, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-13,1-10,2-14,3-13,4-12,5-9", "timed_out": 0}
 {"file": "r_m12_000066_s33.pat", "m": 12, "found": 24, "new": 24, "realizable": 2, "fail": {"order-infeasible(fast-LP)": 22}, "prefix": "0-9,1-5,2-12,2-13,4-10,5-8,6-11", "timed_out": 0}
+{"file": "r_m11_000069_s33.pat", "m": 11, "found": 57, "new": 51, "realizable": 5, "fail": {"order-infeasible(fast-LP)": 46}, "prefix": "0-3,1-4,x,3-5,2-12,3-8", "timed_out": 0}
+{"file": "r_m11_000070_s33.pat", "m": 11, "found": 32, "new": 32, "realizable": 9, "fail": {"order-infeasible(fast-LP)": 23}, "prefix": "0-3,1-4,x,3-5,2-12,4-11", "timed_out": 0}
+{"file": "r_m12_000067_s33.pat", "m": 12, "found": 1911, "new": 100, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 100}, "prefix": "0-12,1-5,2-7,1-11,3-6", "timed_out": 1}
+{"file": "r_m12_000068_s33.pat", "m": 12, "found": 230, "new": 100, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 100}, "prefix": "0-9,0-11,1-10,3-6,2-7,x,6-9", "timed_out": 0}
+{"file": "r_m12_000071_s33.pat", "m": 12, "found": 80, "new": 80, "realizable": 12, "fail": {"order-infeasible(fast-LP)": 66, "forced repeated difference": 2}, "prefix": "0-4,0-10,2-11,2-12,4-13,5-7", "timed_out": 0}
