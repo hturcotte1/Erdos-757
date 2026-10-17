@@ -1,0 +1,25 @@
+  direct DFS (3, 1, 1, 3) nodes 2 labelled 1 classes F7-free e(S)ok 1
+CELL (3, 1, 1, 3) classes 1 secs 0.0
+  direct DFS (10, 8, 4, 3) nodes 304091 labelled 23277 classes F7-free e(S)ok 63
+CELL (10, 8, 4, 3) classes 63 secs 1.2
+  direct DFS (13, 9, 5, 3) nodes 28645697 labelled 43382 classes F7-free e(S)ok 84
+CELL (13, 9, 5, 3) classes 84 secs 3.6
+  RECURSE (14, 12, 6, 3) d=3 tau'=5 slack'=2 partitions=2 G-prime=147
+  EXT cached c_14_12_6_D3_d3_tp5
+  EXT c_14_12_6_D3_d3_tp5 SUMMARY graphs=147 skipped_tauG_low=0 unconstrained=0 max_min_covers=78 kill_nodes=178597 finals_after_F7=36 hits_after_hall=17 secs 0.0
+  RESULT (14, 12, 6, 3) connected iso classes 2
+CELL (14, 12, 6, 3) classes 2 secs 4.8
+  direct DFS (11, 8, 4, 3) nodes 1168079 labelled 208448 classes F7-free e(S)ok 471
+CELL (11, 8, 4, 3) classes 471 secs 14.1
+  direct DFS (10, 7, 4, 3) nodes 87918 labelled 494 classes F7-free e(S)ok 4
+CELL (10, 7, 4, 3) classes 4 secs 0.0
+  direct DFS (4, 2, 1, 3) nodes 4 labelled 0 classes F7-free e(S)ok 0
+CELL (4, 2, 1, 3) classes 0 secs 0.0
+  direct DFS (8, 5, 3, 3) nodes 889 labelled 86 classes F7-free e(S)ok 2
+CELL (8, 5, 3, 3) classes 2 secs 0.0
+  direct DFS (6, 4, 2, 3) nodes 44 labelled 2 classes F7-free e(S)ok 1
+CELL (6, 4, 2, 3) classes 1 secs 0.0
+  direct DFS (6, 3, 2, 3) nodes 22 labelled 6 classes F7-free e(S)ok 1
+CELL (6, 3, 2, 3) classes 1 secs 0.0
+  direct DFS (8, 6, 3, 3) nodes 2351 labelled 313 classes F7-free e(S)ok 3
+CELL (8, 6, 3, 3) classes 3 secs 0.0
