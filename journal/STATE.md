@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: EXTENSION (+48 h granted by the user 2026-10-17 00:5x UTC; ends about 2026-10-18 23:06 UTC); GOAL.md unchanged (protected), status.sh shows clause C
-Last updated (UTC): 2026-10-17 19:30
+Last updated (UTC): 2026-10-17 20:18
 Phase/track: extension: the I11 induction chain is complete and refereed: L007 (Q11 closed, K51), L008 (f(16)=10, K52), L009 (f(18)=11, K53), L010 (f(20)=12, K54), L011 (f(22)=13, K55) ACCEPTED x3 each; no (4,5)-set with <= 22 points beats 4/7. L012 (n=23 record cell: all AP-degrees <= 3) ACCEPTED x3 (K56); the degree-3 case is open (Q14). Probes DONE [verified-here as a computation, not refereed]: I11 holds on C for n = 23, 24, 25, 26 (all twelve violator cells empty in the L012 engine; experiments/20261017-1645-i11-n23-n24, -1720-i11-n26). Certificate L013 (I11 on C for n <= 26; Theorem 1 + Corollary 2, no GAP) SUBMITTED 19:09 UTC (results/proofs/L013-i11-on-C-n-le-26.md); workflow verify-l013-round1 (referee #1 opus + scout) running. By-product: the tight cell (21,18,9) with Delta<=3 is EMPTY, so one of the five (22,18) slack-3 decompositions of the degree-3 record case is void. Obstruction at n = 27: the remainder (26,22) of (27,25,12) decomposes as [(23,21,10), AP], i.e. needs Q14.
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
