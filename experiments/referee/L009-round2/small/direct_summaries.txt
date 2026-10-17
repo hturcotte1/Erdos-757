@@ -1,0 +1,7 @@
+d17_p0.err: R2SUMMARY TAU0=7 F7PRUNE=1 out=5 inC=5 f7=0 p3bad=0 prune_tau=588854154 prune_f7=8128 prune1_calls=667491240 cpu=302.4 tau_hist: 7:5
+d17_p1.err: R2SUMMARY TAU0=7 F7PRUNE=1 out=1 inC=1 f7=0 p3bad=0 prune_tau=621005374 prune_f7=8642 prune1_calls=702335017 cpu=329.7 tau_hist: 7:1
+d17_single.err: R2SUMMARY TAU0=7 F7PRUNE=1 out=6 inC=6 f7=0 p3bad=0 prune_tau=1209859528 prune_f7=16765 prune1_calls=1369817177 cpu=646.3 tau_hist: 7:6
+d17_tauonly.err: R2SUMMARY TAU0=7 F7PRUNE=0 out=80 inC=6 f7=74 p3bad=1 prune_tau=1214540235 prune_f7=0 prune1_calls=1375191893 cpu=658.9 tau_hist: 7:80
+d_14_12_6.err: R2SUMMARY TAU0=6 F7PRUNE=0 out=38 inC=2 f7=36 p3bad=9 prune_tau=15519363 prune_f7=0 prune1_calls=25613990 cpu=18.1 tau_hist: 6:38
+d_14_12_6_f7p.err: R2SUMMARY TAU0=6 F7PRUNE=1 out=2 inC=2 f7=0 p3bad=0 prune_tau=15370960 prune_f7=3579 prune1_calls=25379713 cpu=18.7 tau_hist: 6:2
+d_17_12_7.err: R2SUMMARY TAU0=7 F7PRUNE=0 out=1 inC=0 f7=1 p3bad=0 prune_tau=67811135 prune_f7=0 prune1_calls=74219500 cpu=28.7 tau_hist: 7:1

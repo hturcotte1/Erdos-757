@@ -327,3 +327,6 @@ Format for each work block:
 ## 2026-10-17T09:20Z result L009 referee round 1: ACCEPT (labelled pipeline reproduced byte for byte; Lemma R confirmed independently by complete nauty genbg enumerations: 38 and 80 classes, exactly 2 and 6 in C); scout CLEAR. Editorial fixes applied; referees #2 and #3 (fable) launched.
 
 ## 2026-10-17T09:55Z result L010 referee round 1: ACCEPT (conditional on L009; independent genbg component lists, own extension program, direct genbg confirmation of the 9 connected (18,12,>=7) classes); scout CLEAR. Editorial fixes applied; rounds 2-3 after L009's.
+
+## 2026-10-17T10:20Z result L009 ACCEPTED x3 (K53): f(18) = 11; no 18-point (4,5)-set beats 4/7; I11 on C for n <= 18. K53, LEDGER, START_HERE, FINAL_REPORT, fn_bounds (EXACT_VALUES_VERIFIED {16:10, 18:11}) updated; L010 referees #2/#3 launched.
+- evidence: results/reviews/L009-f18-equals-11__referee__20261017T101446Z.md, __referee__20261017T095942Z.md

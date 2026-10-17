@@ -1,0 +1,89 @@
+{
+ "question": "Does I11 hold on class O for n=21, 22?",
+ "verdict": "HOLDS for n=21 and n=22 (computer-assisted, [derived-here], needs referee); (22,20,10) impossible by degree counting => no 22-point (4,5)-set with h=12 (f(22)=13 within O)",
+ "corrections_applied": "isolated vertices (slack 3) included in every slack>=3 component list; brute-force check of all lists used: results_parts_check.json (all EQUAL); affected list here: (20,10,7) slack 3 (10 -> 14 partitions; G' candidates 51 -> 55)",
+ "window_cells": [
+  {
+   "cell": "(21,11,8)",
+   "slack": -3,
+   "deg_bound": 2,
+   "sum_deg": 33,
+   "vertices": 21
+  },
+  {
+   "cell": "(21,12,8)",
+   "slack": -1,
+   "deg_bound": 3,
+   "sum_deg": 36,
+   "vertices": 21
+  },
+  {
+   "cell": "(21,16,9)",
+   "slack": -4,
+   "deg_bound": 2,
+   "sum_deg": 48,
+   "vertices": 21
+  },
+  {
+   "cell": "(21,17,9)",
+   "slack": -2,
+   "deg_bound": 3,
+   "sum_deg": 51,
+   "vertices": 21
+  },
+  {
+   "cell": "(22,15,9)",
+   "slack": -3,
+   "deg_bound": 2,
+   "sum_deg": 45,
+   "vertices": 22
+  },
+  {
+   "cell": "(22,16,9)",
+   "slack": -1,
+   "deg_bound": 3,
+   "sum_deg": 48,
+   "vertices": 22
+  },
+  {
+   "cell": "(22,20,10)",
+   "slack": -4,
+   "deg_bound": 2,
+   "sum_deg": 60,
+   "vertices": 22
+  }
+ ],
+ "n21": {
+  "c_21_11_8": {
+   "maxdeg2_nodes": 220119,
+   "found": 0
+  },
+  "c_21_12_8": {
+   "maxdeg2_nodes": 7299871,
+   "found": 0,
+   "deg3": "G=(20,9,7) slack 1; 4 partitions (only [4AP,(8,5,3)] nonempty: (11,6,4),(14,7,5),(17,8,6) have no graphs); 2 G; 642,638 extensions; 100 hits (tau>=8): 94 F7, 6 e(S), 0 survive; control tau>=7: 2998/3000 survive; numpy 100=100"
+  },
+  "c_21_16_9": "impossible: sum deg 48 > 42",
+  "c_21_17_9": {
+   "G": "(20,14,8) slack 0: [AP,AP,C14(2 classes)] [AP,C17(8)] [C10,C10] [connected (20,14,8)]",
+   "connected_20_14_8": "maxdeg2 impossible (sum deg 42>40); deg3: G'=(19,11,7) slack 2, 9 partitions; cell classes: (10,8,4) 63, (13,9,5) 84, (16,10,6) 16, (6,3,2) 1, (9,4,3) 1, (8,5,3) 2, (19,11,7) none (1,623 labelled all contain F7); 174 G'; 12,865,097 extensions; 3,965 hits (3,408 F7 labelled; 13 e(S)) -> 18 classes",
+   "final": "38 G; 2,692,668 extensions; 36 hits tau>=9, all contain F7; survivors 0; numpy 36=36 (38 G) and 12=12; control tau>=8: 2,894/3,000 survive",
+   "result": "EMPTY"
+  }
+ },
+ "n22": {
+  "c_22_15_9": "impossible: sum deg 45 > 44",
+  "c_22_20_10": "impossible: sum deg 60 > 44 (the n=22 record cell)",
+  "c_22_16_9": {
+   "G": "(21,13,8) slack 1; 7 partitions: [3AP,(12,10,5)] 149 classes; [2AP,(15,11,6)] 19; [AP,C10,(8,5,3)] 8; [AP,(18,12,7)] none; [C10,(11,6,4)] none; [C13,(8,5,3)] none (F7); connected (21,13,8)",
+   "connected_21_13_8": {
+    "maxdeg2_nodes": 125635032,
+    "found": 0,
+    "deg3": "G'=(20,10,7) slack 3, 14 partitions (with isolated vertices), 55 G'; 12,751,175 extensions; 6,470 hits -> 330 iso classes, 143 F7, 11 e(S), 176 kept"
+   },
+   "final": "352 G; 22,406,124 extensions; 5,944 hits tau>=9: 5,860 F7, 84 e(S), 0 survive; numpy 15 G: 271=271; control tau>=8 (150 sampled): 148 survive",
+   "result": "EMPTY"
+  }
+ },
+ "record_candidate": false
+}
