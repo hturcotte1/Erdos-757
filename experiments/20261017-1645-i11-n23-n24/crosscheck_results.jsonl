@@ -1,0 +1,6 @@
+{"cell": [20, 11, 7, 2], "recursion_route": true, "recursion_classes": 1, "direct_classes": 1, "equal": true, "direct_secs": 7.9}
+{"cell": [17, 11, 6, 2], "recursion_route": true, "recursion_classes": 114, "direct_classes": 114, "equal": true, "direct_secs": 25.9}
+{"cell": [21, 11, 7, 2], "recursion_route": true, "recursion_classes": 36, "direct_classes": 36, "equal": true, "direct_secs": 22.0}
+{"cell": [19, 12, 7, 2], "recursion_route": true, "recursion_classes": 1, "direct_classes": 1, "equal": true, "direct_secs": 69.0}
+{"cell": [20, 12, 7, 2], "recursion_route": true, "recursion_classes": 38, "direct_classes": 38, "equal": true, "direct_secs": 184.2}
+{"cell": [20, 11, 7, 3], "recursion_route": true, "recursion_classes": 45, "direct_classes": 45, "equal": true, "direct_secs": 186.0}
