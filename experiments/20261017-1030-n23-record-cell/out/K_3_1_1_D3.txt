@@ -1,0 +1,2 @@
+FOUND: (0,1,2)
+DONE cnt=0 maxdeg=3 f7=0 sub=0 n=3 m=1 tau0=1 split=0/1 nodes=2 found=1 pruned_f7=0 pruned_sub=0
