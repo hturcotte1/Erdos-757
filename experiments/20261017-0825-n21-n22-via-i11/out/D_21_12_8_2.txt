@@ -1,1 +1,0 @@
-DONE cnt=0 maxdeg=2 f7=0 sub=0 n=21 m=12 tau0=8 split=0/1 nodes=7299871 found=0 pruned_f7=0 pruned_sub=0
