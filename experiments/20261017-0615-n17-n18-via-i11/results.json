@@ -1,0 +1,564 @@
+{
+ "question": "Does I11 (11 tau <= 3n+2m) hold on class O for n=17 and n=18 (given n<=16)?",
+ "verdict": "HOLDS for n=17 and n=18 (computer-assisted, [derived-here], needs referee); no (18,16,8) pattern, so no 18-point (4,5)-set with h=10 (f(18)=11)",
+ "windows": {
+  "window_cells_n<=18": [
+   [
+    5,
+    3,
+    2,
+    2,
+    -1
+   ],
+   [
+    8,
+    4,
+    3,
+    3,
+    -1
+   ],
+   [
+    10,
+    6,
+    4,
+    4,
+    -2
+   ],
+   [
+    11,
+    5,
+    4,
+    4,
+    -1
+   ],
+   [
+    12,
+    9,
+    5,
+    5,
+    -1
+   ],
+   [
+    13,
+    7,
+    5,
+    5,
+    -2
+   ],
+   [
+    14,
+    11,
+    6,
+    6,
+    -2
+   ],
+   [
+    15,
+    9,
+    6,
+    6,
+    -3
+   ],
+   [
+    15,
+    10,
+    6,
+    6,
+    -1
+   ],
+   [
+    16,
+    8,
+    6,
+    6,
+    -2
+   ],
+   [
+    16,
+    13,
+    7,
+    7,
+    -3
+   ],
+   [
+    16,
+    14,
+    7,
+    7,
+    -1
+   ],
+   [
+    17,
+    12,
+    7,
+    7,
+    -2
+   ],
+   [
+    18,
+    10,
+    7,
+    7,
+    -3
+   ],
+   [
+    18,
+    11,
+    7,
+    7,
+    -1
+   ],
+   [
+    18,
+    16,
+    8,
+    8,
+    -2
+   ]
+  ],
+  "slack0_cells_n<=17": [
+   [
+    3,
+    1,
+    1
+   ],
+   [
+    10,
+    7,
+    4
+   ],
+   [
+    13,
+    8,
+    5
+   ],
+   [
+    14,
+    12,
+    6
+   ],
+   [
+    16,
+    9,
+    6
+   ],
+   [
+    17,
+    13,
+    7
+   ]
+  ],
+  "n17": {
+   "H": [
+    17,
+    12,
+    7
+   ],
+   "slack": -2,
+   "G": [
+    16,
+    9,
+    6
+   ],
+   "partitions": [
+    [
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      10,
+      7,
+      4
+     ]
+    ],
+    [
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      13,
+      8,
+      5
+     ]
+    ],
+    [
+     [
+      16,
+      9,
+      6
+     ]
+    ]
+   ]
+  },
+  "n18": {
+   "H": [
+    18,
+    16,
+    8
+   ],
+   "slack": -2,
+   "G": [
+    17,
+    13,
+    7
+   ],
+   "partitions": [
+    [
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      14,
+      12,
+      6
+     ]
+    ],
+    [
+     [
+      17,
+      13,
+      7
+     ]
+    ]
+   ]
+  }
+ },
+ "n17": {
+  "cell": "(17,12,7)",
+  "slack": -2,
+  "deg_bound": 3,
+  "G": "(16,9,6) slack 0",
+  "partitions": [
+   [
+    [
+     3,
+     1,
+     1
+    ],
+    [
+     3,
+     1,
+     1
+    ],
+    [
+     10,
+     7,
+     4
+    ]
+   ],
+   [
+    [
+     3,
+     1,
+     1
+    ],
+    [
+     13,
+     8,
+     5
+    ]
+   ],
+   [
+    [
+     16,
+     9,
+     6
+    ]
+   ]
+  ],
+  "connected_16_9_6": {
+   "deg3_nodes": 2316873,
+   "unrestricted_nodes": 2763175,
+   "found": 0
+  },
+  "C13_plus_AP": {
+   "labelled": 159,
+   "with_F7": 159,
+   "F7free_classes": 0
+  },
+  "C10_plus_2AP": {
+   "labelled": 637,
+   "with_F7": 126,
+   "F7free_iso_classes": 5,
+   "ext_graphs": 5,
+   "extensions": 169560,
+   "hits_tau_ge_7": 32,
+   "hits_with_F7": 32,
+   "survivors": 0,
+   "numpy_crosscheck_hits": 32
+  },
+  "result": "EMPTY"
+ },
+ "n18": {
+  "window_cells": [
+   [
+    18,
+    10,
+    7,
+    "slack -3"
+   ],
+   [
+    18,
+    11,
+    7,
+    "slack -1"
+   ],
+   [
+    18,
+    16,
+    8,
+    "slack -2"
+   ]
+  ],
+  "note": "the caller's list missed (18,10,7) and (18,11,7)",
+  "cell_18_10_7": {
+   "unrestricted_nodes": 3322249,
+   "found": 0,
+   "maxdeg2_nodes": 208172
+  },
+  "cell_18_11_7": {
+   "maxdeg3_nodes": 316932284,
+   "found": 0,
+   "note": "maxdeg<=3 valid because I11 holds for n<=17 and slack -1 gives deg<=3"
+  },
+  "cell_18_16_8": {
+   "slack": -2,
+   "deg_bound": 3,
+   "deg3_vertices_at_least": 12,
+   "G": "(17,13,7) slack 0",
+   "partitions": [
+    [
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      14,
+      12,
+      6
+     ]
+    ],
+    [
+     [
+      17,
+      13,
+      7
+     ]
+    ]
+   ],
+   "C14": {
+    "route": "G'=(13,9,5) slack 2 = AP+(10,8,4) or connected (13,9,5); + deg-3 vertex w",
+    "classes_10_8_4": 63,
+    "classes_13_9_5": 84,
+    "Gprime_candidates": 147,
+    "extensions": 184099,
+    "ext_hits": 260,
+    "F7": 224,
+    "eS_killed": 5,
+    "final_F7free_eS_ok_classes": 2,
+    "consistency": "all 700 realizable census classes with maxdeg<=3 are isomorphic to one of the 2 classes",
+    "direct_dfs_slices": {
+     "slices": 1412,
+     "found": 3369,
+     "F7free_eS_ok": 96,
+     "all_in_classes": true,
+     "classes_hit": [
+      0,
+      1
+     ]
+    }
+   },
+   "G17": {
+    "route": "G'=(16,10,6) slack 2: AP+AP+(10,8,4) | AP+(13,9,5) | (10,7,4)+(6,3,2) | (8,5,3)+(8,5,3) | connected (16,10,6)",
+    "component_classes": {
+     "c6_3_2": 1,
+     "c8_5_3": 2,
+     "c10_7_4": 4,
+     "c10_8_4": 63,
+     "c13_9_5": 84,
+     "c16_10_6": 16
+    },
+    "Gprime_candidates": 170,
+    "extensions": 2357887,
+    "ext_hits": 1521,
+    "F7": 1350,
+    "eS_killed": 13,
+    "final_F7free_eS_ok_classes": 8,
+    "direct_dfs_slices": {
+     "slices": 62,
+     "found": 735,
+     "F7free_eS_ok": 26,
+     "all_in_classes": true,
+     "classes_hit": [
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    }
+   },
+   "final_extension": {
+    "G_graphs": 10,
+    "extensions": 44570,
+    "hits_tau_ge_8": 0,
+    "numpy_crosscheck_hits": 0,
+    "control_T7_hits": 44570,
+    "control_survivors_of_2000_sampled": 1628
+   },
+   "result": "EMPTY (no extension even reaches tau=8)"
+  },
+  "record_candidate": false
+ },
+ "stats": {
+  "stats_C14.json": {
+   "cell_10_8_4_dfs": {
+    "nodes": 304091,
+    "found": 23277
+   },
+   "cell_10_8_4": {
+    "labelled": 23277,
+    "with_F7": 4673,
+    "F7free_iso_classes": 64,
+    "killed_by_eS": 1,
+    "kept": 63
+   },
+   "cell_13_9_5_dfs": {
+    "nodes": 28645697,
+    "found": 43382
+   },
+   "cell_13_9_5": {
+    "labelled": 43382,
+    "with_F7": 6101,
+    "F7free_iso_classes": 85,
+    "killed_by_eS": 1,
+    "kept": 84
+   },
+   "C14_ext": {
+    "graphs": 147,
+    "summary": "SUMMARY graphs=147 tested=184099 hits=260",
+    "secs": 0.4
+   },
+   "C14_classes": {
+    "labelled": 260,
+    "with_F7": 224,
+    "F7free_iso_classes": 7,
+    "killed_by_eS": 5,
+    "kept": 2
+   },
+   "C14_final_classes": 2,
+   "census_consistency": {
+    "realizable_maxdeg_le3": 700,
+    "found": 700
+   }
+  },
+  "stats_G17.json": {
+   "cell_6_3_2_dfs": {
+    "nodes": 22,
+    "found": 6
+   },
+   "cell_6_3_2": {
+    "labelled": 6,
+    "with_F7": 0,
+    "F7free_iso_classes": 1,
+    "killed_by_eS": 0,
+    "kept": 1
+   },
+   "cell_8_5_3_dfs": {
+    "nodes": 889,
+    "found": 86
+   },
+   "cell_8_5_3": {
+    "labelled": 86,
+    "with_F7": 0,
+    "F7free_iso_classes": 2,
+    "killed_by_eS": 0,
+    "kept": 2
+   },
+   "cell_10_7_4_dfs": {
+    "nodes": 87918,
+    "found": 494
+   },
+   "cell_10_7_4": {
+    "labelled": 494,
+    "with_F7": 126,
+    "F7free_iso_classes": 4,
+    "killed_by_eS": 0,
+    "kept": 4
+   },
+   "cell_10_8_4_dfs": {
+    "nodes": 304091,
+    "found": 23277
+   },
+   "cell_10_8_4": {
+    "labelled": 23277,
+    "with_F7": 4673,
+    "F7free_iso_classes": 64,
+    "killed_by_eS": 1,
+    "kept": 63
+   },
+   "cell_13_9_5_dfs": {
+    "nodes": 28645697,
+    "found": 43382
+   },
+   "cell_13_9_5": {
+    "labelled": 43382,
+    "with_F7": 6101,
+    "F7free_iso_classes": 85,
+    "killed_by_eS": 1,
+    "kept": 84
+   },
+   "cell_16_10_6_dfs": {
+    "nodes": 181703105,
+    "found": 12394
+   },
+   "cell_16_10_6": {
+    "labelled": 12394,
+    "with_F7": 6946,
+    "F7free_iso_classes": 16,
+    "killed_by_eS": 0,
+    "kept": 16
+   },
+   "Gprime_candidates": 170,
+   "G17_ext": {
+    "graphs": 170,
+    "summary": "SUMMARY graphs=170 tested=2357887 hits=1521",
+    "secs": 6.8
+   },
+   "G17_classes": {
+    "labelled": 1521,
+    "with_F7": 1350,
+    "F7free_iso_classes": 21,
+    "killed_by_eS": 13,
+    "kept": 8
+   },
+   "G17_final_classes": 8
+  },
+  "stats_H18.json": {
+   "H18_inputs": {
+    "G17_classes": 8,
+    "C14_plus_AP": 2
+   },
+   "H18_ext": "SUMMARY graphs=10 tested=44570 hits=0",
+   "H18_post": {
+    "hits": 0,
+    "with_F7": 0,
+    "F7free_killed_by_eS": 0,
+    "F7free_eS_ok_not_orderable": 0,
+    "survivors": 0
+   }
+  }
+ }
+}

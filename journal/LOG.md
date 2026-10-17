@@ -301,3 +301,7 @@ Format for each work block:
 - evidence: results/reviews/L007-no-nonsaturated-extremal-14-point-sets__referee__20261017T055829Z.md, __referee__20261017T053731Z.md
 
 ## 2026-10-17T06:12Z result L008 SUBMITTED (f(16) = 10; prover, no GAP lines; independent re-implementations of the enumerations and the extension step; new explicit witness A_base ∪ {-323, 5000} with h = 10); referee #1 + scout launched; falsifier agent continues to the cells (17,12,7) and (18,16,8) (the n = 18 record cell); kb/notes/i11_conjecture.md written
+
+## 2026-10-17T06:40Z U+L MAJOR: the window cells at n = 17 and 18 are EMPTY in class O (computer-assisted, pending referee): I11 holds on O for n <= 18 and f(18) = 11; no 18-point (4,5)-set beats 4/7
+- falsifier agent (experiments/20261017-0615-n17-n18-via-i11): n=17: (17,12,7) [slack -2] empty (G = (16,9,6): connected none in 2.3M nodes; (13,8,5)+AP both contain F7; (10,7,4)+2AP: 169,560 extensions, 32 hits, all F7). n=18: (18,10,7) empty (no degree bound, 3.3M nodes), (18,11,7) empty (max degree 3, 317M nodes), (18,16,8): G = H - v is connected (17,13,7) [8 classes, rebuilt from slack-2 (16,10,6) graphs by the degree-3-vertex argument, confirmed by 62 direct-DFS slices] or (14,12,6)+AP [2 classes; all 700 realizable max-degree-3 census classes land in them]; 44,570 extensions, 0 with tau >= 8; tau >= 7 control non-vacuous; numpy cross-checks agree.
+- consequence: records are impossible at n = 16 and 18; the next feasible sizes are 20, 22, 23 (START_HERE section 4). Next: certificate L009 (prover), referees.
