@@ -62,3 +62,12 @@ for (n, m, k) in [(18, 12, 1), (17, 9, 3), (19, 10, 0), (16, 9, 0), (17, 13, 0),
     d1 = decomps(n, m, k, True); d2 = decomps(n, m, k, False)
     print(" (%d,%d) slack %d: %d decompositions (identical without HY: %s)" % (n, m, k, len(d1), d1 == d2))
     for d in d1: print("    ", d, " tau sum", sum(c[2] for c in d))
+
+print("== Without HY: cells at n=19,20 with s<0 that survive the degree lemma (d <= floor((s+8)/2), need >= 0) and counting")
+for n in (19, 20):
+    for m in range(ceil((n-1)/2), n - 1):
+        for t in range((3*n + 2*m)//11 + 1, m + 1):
+            s = slack(n, m, t); dmax = (s + 8)//2
+            if dmax < 0: continue                      # no vertex can exist
+            if 3*m > n*dmax: continue                  # sum of degrees too large
+            print("  survives without HY: (%d,%d,%d) s=%d dmax=%d HY-ok=%s" % (n, m, t, s, dmax, hy_ok(n, m, t)))

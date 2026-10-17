@@ -1,0 +1,37 @@
+  direct DFS (3, 1, 1, 3) nodes 2 labelled 1 classes F7-free e(S)ok 1
+CELL (3, 1, 1, 3) classes 1 secs 0.0
+  direct DFS (10, 8, 4, 3) nodes 304091 labelled 23277 classes F7-free e(S)ok 63
+CELL (10, 8, 4, 3) classes 63 secs 1.9
+  direct DFS (13, 9, 5, 3) nodes 28645697 labelled 43382 classes F7-free e(S)ok 84
+CELL (13, 9, 5, 3) classes 84 secs 3.0
+  RECURSE (14, 12, 6, 3) d=3 tau'=5 slack'=2 partitions=2 G-prime=147
+  EXT c_14_12_6_D3_d3_tp5 SUMMARY graphs=147 skipped_tauG_low=0 unconstrained=0 max_min_covers=78 kill_nodes=178597 finals_after_F7=36 hits_after_hall=17 secs 0.3
+  RESULT (14, 12, 6, 3) connected iso classes 2
+CELL (14, 12, 6, 3) classes 2 secs 5.3
+(14, 12, 6, 3) 2
+  direct DFS (8, 6, 3, 3) nodes 2351 labelled 313 classes F7-free e(S)ok 3
+CELL (8, 6, 3, 3) classes 3 secs 0.0
+  direct DFS (10, 7, 4, 3) nodes 87918 labelled 494 classes F7-free e(S)ok 4
+CELL (10, 7, 4, 3) classes 4 secs 0.0
+  direct DFS (11, 7, 4, 3) nodes 196337 labelled 7615 classes F7-free e(S)ok 35
+CELL (11, 7, 4, 3) classes 35 secs 0.6
+  direct DFS (13, 8, 5, 3) nodes 1079194 labelled 106 classes F7-free e(S)ok 0
+CELL (13, 8, 5, 3) classes 0 secs 0.0
+  direct DFS (8, 5, 3, 3) nodes 889 labelled 86 classes F7-free e(S)ok 2
+CELL (8, 5, 3, 3) classes 2 secs 0.0
+  direct DFS (6, 3, 2, 3) nodes 22 labelled 6 classes F7-free e(S)ok 1
+CELL (6, 3, 2, 3) classes 1 secs 0.0
+  direct DFS (14, 8, 5, 3) nodes 1415650 labelled 1274 classes F7-free e(S)ok 9
+CELL (14, 8, 5, 3) classes 9 secs 0.1
+  RECURSE (15, 11, 6, 3) d=3 tau'=5 slack'=3 partitions=6 G-prime=53
+  EXT c_15_11_6_D3_d3_tp5 SUMMARY graphs=53 skipped_tauG_low=0 unconstrained=0 max_min_covers=99 kill_nodes=490066 finals_after_F7=2398 hits_after_hall=2332 secs 0.5
+  RESULT (15, 11, 6, 3) connected iso classes 19
+CELL (15, 11, 6, 3) classes 19 secs 1.3
+(15, 11, 6, 3) 19
+  direct DFS (16, 10, 6, 3) nodes 181703105 labelled 12394 classes F7-free e(S)ok 16
+CELL (16, 10, 6, 3) classes 16 secs 0.8
+  RECURSE (17, 13, 7, 3) d=3 tau'=6 slack'=2 partitions=5 G-prime=170
+  EXT c_17_13_7_D3_d3_tp6 SUMMARY graphs=170 skipped_tauG_low=0 unconstrained=0 max_min_covers=234 kill_nodes=1933479 finals_after_F7=171 hits_after_hall=130 secs 5.7
+  RESULT (17, 13, 7, 3) connected iso classes 6
+CELL (17, 13, 7, 3) classes 6 secs 6.4
+(17, 13, 7, 3) 6

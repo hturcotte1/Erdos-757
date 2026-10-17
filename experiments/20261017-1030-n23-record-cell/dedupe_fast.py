@@ -8,11 +8,23 @@ from e757.cpsat_model import find_f7
 from post import sub_ok
 nm=lambda a,b:a['t']==b['t']
 comp_buckets={}; comp_list=[]
+import igraph
+def canon_key(es):
+    """exact canonical form of the incidence graph (BLISS via igraph)"""
+    vs=sorted({v for e in es for v in e}); mp={v:i for i,v in enumerate(vs)}; nv=len(vs); m=len(es)
+    edges=[]
+    for k,e in enumerate(es):
+        for v in e: edges.append((mp[v],nv+k))
+    g=igraph.Graph(n=nv+m,edges=edges)
+    col=[0]*nv+[1]*m
+    perm=g.canonical_permutation(color=col)
+    gc=g.permute_vertices(perm)
+    return (nv,m,tuple(sorted((min(a,b),max(a,b)) for a,b in gc.get_edgelist())))
+_ids={}
 def comp_id(es):
-    G=graph(es); h=nx.weisfeiler_lehman_graph_hash(G,node_attr='t',iterations=6); b=comp_buckets.setdefault(h,[])
-    for cid,H in b:
-        if nx.is_isomorphic(G,H,node_match=nm): return cid
-    cid=len(comp_list); comp_list.append(es); b.append((cid,G)); return cid
+    k=canon_key(es)
+    if k not in _ids: _ids[k]=len(_ids); comp_list.append(es)
+    return _ids[k]
 def components(es):
     # union-find on vertices
     par={}

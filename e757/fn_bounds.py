@@ -22,7 +22,7 @@ KNOWN_LOWER_EXTRA = {5: 4}
 # Exact values proved by computer-assisted, referee-accepted certificates (lower bound beyond Henning-Yeo; the
 # matching upper bound is in KNOWN_UPPER or follows by monotonicity/gluing).  Add 18 and 20 only after L009/L010 are accepted.
 #   16: 10  -- certificate L008 (results/proofs/L008-f16-equals-10.md, K52): f(16) = 10; witness A_base + {-323, 5000}.
-EXACT_VALUES_VERIFIED = {16: 10, 18: 11}  # L008/K52, L009/K53 (referee ACCEPT x3 each)
+EXACT_VALUES_VERIFIED = {16: 10, 18: 11, 20: 12}  # L008/K52, L009/K53, L010/K54 (referee ACCEPT x3 each)
 
 
 def hy_max_tau(n, m=None):
@@ -96,5 +96,5 @@ if __name__ == "__main__":
         note = ""
         if ok and is_closed(n):
             status = 'CLOSED'
-            note = f"  [f({n}) = {EXACT_VALUES_VERIFIED[n]} exactly, verified exact value (kb/known_results.md K52/K53): h<={h} impossible]"
+            note = f"  [f({n}) = {EXACT_VALUES_VERIFIED[n]} exactly, verified exact value (kb/known_results.md K52-K54): h<={h} impossible]"
         print(f"n={n:2d}: {status}  need h<={h} tau>={tau} m>={m} (max {n-2}){note}")
