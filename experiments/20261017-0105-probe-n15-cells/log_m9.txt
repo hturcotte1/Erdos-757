@@ -1,0 +1,1 @@
+cell 15 9 9 prefixes 4592 sampled 40 list time 1.4
