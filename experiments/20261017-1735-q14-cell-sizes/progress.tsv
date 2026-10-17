@@ -4,3 +4,7 @@ cell	classes	seconds	route	inputs	bad_tau	ext_nodes
 (15,13,6,3)	949522	725.1	recurse	53280	0	27975933
 VALIDATION(not a new cell): (17,11,6,3) recomputed with streamed recurse == engine file (45669 classes, sets equal)	45669	72.5	recurse(streamed)	795	0	6633853
 (20,12,7,3)	15465	180.1	recurse(streamed)	1164	0	24337617
+(18,14,7,3)	799342	1240.3	recurse(streamed)	102916	0	423459880
+(19,17,8,3)	29898	877.4	recurse(streamed)	1750910	0	614929842
+(21,15,8,3)	232759	1901.5	recurse(streamed)	121532	0	1971945618
+(22,18,9,3)	KILLED_by_timeout_2400s (partial: ext_d had read 34.5% of the 2,014,413 inputs = 85.6 MB of 248.2 MB, 2118 s CPU; inside decomposition [(3,1,1),(18,14,7)])	>2400	recurse(streamed)	2014413	0	-
