@@ -2,7 +2,10 @@ VERDICT: ACCEPT
 
 # Referee report: L012-n23-record-no-degree-4 (round 2)
 
-- **Claim reviewed:** `results/proofs/L012-n23-record-no-degree-4.md` at commit b28e546 (SHA-256 844bd776…089518344). The file did not change during the review.
+- **Claim reviewed:** `results/proofs/L012-n23-record-no-degree-4.md` at commit b28e546 (SHA-256 844bd776…089518344).
+  - During the review it was updated in d6d4fa8 (17:20 UTC; SHA-256 4f3bfe2e…3e04b4bae).
+  - `git diff b28e546` shows only two changed lines, the STATUS line (line 4) and the Tags line (line 28). The mathematics and every number are identical.
+  - This verdict applies to both versions.
 - **Programs read:** `experiments/prover/L012/` (engine.py, route.py, decomp22.py, indep/canon.c, indep/realize.c, reproduce.sh, outputs) and the falsifier's README.
   - I ran none of the prover's programs, except its `bin/canon`, which was under test (check 7).
   - All evidence below comes from programs I wrote. They differ from both the prover's and round 1's in method.
@@ -144,7 +147,7 @@ All commands are run from `experiments/referee/L012-round2/`. Outputs are quoted
 - `src/bf_xr.py` against a Python brute force (all $d$-sets of disjoint admissible pairs, $\tau$ by subset search): 22 cases covering $d=2,3,4$, endpoint bounds 1–3, constrained and free mode, an isolated vertex and an AP component. **2,341 hits, 0 mismatches, no duplicates.**
 - `src/bf_fr.py` and `src/bf_fr_dense.py`: 800 random 3-graphs on 7–9 vertices, with planted $F_7$ copies and dense linear graphs. $F_7$ by exhaustive embedding, (P3) over all subsets, $\tau$ exact. Outcomes 175 nonlinear, 269 $F_7$, 45 (P3)-violated, 311 survivors; **0 mismatches**.
 
-### 4. Not used: anything of the prover's except its data
+### 4. Data taken from the prover
 
 My routes and cells use only the tracked `cells.tar.gz` (component representatives), checked as follows:
 - every representative used by the routes passes `fr`: in $C$, connected, stated $\tau$, $\Delta\le D$;
@@ -227,7 +230,7 @@ This is consistent with L011. It is not a proof of it.
 
 No error affecting Theorems 1–3, Remark 4 or Remark 5 was found. The items below are editorial and need no further review.
 
-1. **Residual "conditional" wording (editorial).** The round-1 fix updated the DEPENDS ON line to "no longer conditional (L011 is ACCEPTED x3)". The Tags line still reads "Theorems 1–3 **[verified-here] conditional on referee acceptance of this certificate and of L011**". The condition on L011 is met, so the two lines should be made consistent when the result is recorded.
+1. **Residual "conditional" wording (editorial; resolved in d6d4fa8).** The round-1 fix updated the DEPENDS ON line to "no longer conditional (L011 is ACCEPTED x3)". The Tags line still reads "Theorems 1–3 **[verified-here] conditional on referee acceptance of this certificate and of L011**". The condition on L011 is met, so the two lines should be made consistent when the result is recorded. The current version (d6d4fa8) has already done this: its Tags line reads "[verified-here] (L011 is ACCEPTED x3; …)". No action is left.
 2. **The role of nauty is overstated (clarification, as in round 1).** The CLAIM-TYPE header and Step 3.4 call the canonical forms load-bearing for completeness. They are not: `canon` prints the graph relabelled by nauty's labelling, so equal outputs imply isomorphic inputs whatever nauty does, and de-duplication cannot lose a class. Canonicity matters only for the exact counts (699, 95, 956, …). Those are now confirmed with BLISS (checks 5–7) as well as VF2 (round 1).
 3. **HY is not needed (optional remark).** Step 1 derives $m\ge19$ from K8. The degree bound 0.3 alone already excludes $m\le18$: for $m\le16$ no vertex can satisfy $d\le m-17$; for $m=17,18$ we get $3m>23(m-17)$. HY enters only as the engine's valid trivially-empty rule. Saying so would make the dependency list shorter.
 4. **Lift in 6.3 (optional, as in round 1).** Hadamard gives $\lvert D\rvert,\lvert y_i\rvert\le6^{21/2}<1.5\cdot10^8\ll p/2$, so the symmetric lift is correct a priori. The a-posteriori integer check already makes the computation rigorous.
