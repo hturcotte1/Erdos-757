@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: EXTENSION (+48 h granted by the user 2026-10-17 00:5x UTC; ends about 2026-10-18 23:06 UTC); GOAL.md unchanged (protected), status.sh shows clause C
-Last updated (UTC): 2026-10-17 21:00
+Last updated (UTC): 2026-10-17 21:45
 Phase/track: extension: the I11 induction chain is complete and refereed: L007 (Q11 closed, K51), L008 (f(16)=10, K52), L009 (f(18)=11, K53), L010 (f(20)=12, K54), L011 (f(22)=13, K55) ACCEPTED x3 each; no (4,5)-set with <= 22 points beats 4/7. L012 (n=23 record cell: all AP-degrees <= 3) ACCEPTED x3 (K56); the degree-3 case is open (Q14). Probes DONE [verified-here as a computation, not refereed]: I11 holds on C for n = 23, 24, 25, 26 (all twelve violator cells empty in the L012 engine; experiments/20261017-1645-i11-n23-n24, -1720-i11-n26). Certificate L013 (I11 on C for n <= 26; Theorem 1 + Corollary 2, no GAP) SUBMITTED 19:09 UTC (results/proofs/L013-i11-on-C-n-le-26.md); referee #1 ACCEPT (editorial fixes applied), scout CLEAR; workflow verify-l013-round2 (referee #2 opus + #3 fable) running. By-product: the tight cell (21,18,9) with Delta<=3 is EMPTY, so one of the five (22,18) slack-3 decompositions of the degree-3 record case is void. Obstruction at n = 27: the remainder (26,22) of (27,25,12) decomposes as [(23,21,10), AP], i.e. needs Q14.
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
@@ -15,7 +15,7 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
 ## Running jobs / agents
 - No (14,11,alpha<=8) DFS is running: it was stopped (last logged progress 1,081/3,437 prefixes, 0 patterns) and is superseded by L007/K51 (Q11 closed).
-- Documentation audit of the extension DONE (103 fixes + safety-review fix-ups, 18:25 UTC). Earlier: (5 auditors -> verify -> apply; review its diff before committing). Workflow verify-l013-round1. Q14 probe DONE: every cell for the degree-3 record case computed except (22,18,9,3) (2.0M inputs, about 70 CPU-min); worker experiments/20261017-1925-q14-decide finishing it, then cell(23,21,10,3) and the L012 realization test (3 h cap). This decides whether a 23-point record exists (f(23) in {13,14}). DONE: falsifier agent (I11, n=16..23 cells); e757/fn_bounds knows f(16)=10, f(18)=11, f(20)=12, f(22)=13; L007 x3 ACCEPT; I11 falsifier; CP-SAT (14,11) UNKNOWN (D21); probe (D25); record hunt (D26, K50); (16,14,7) decision; (14,11) DFS stopped at 1,081/3,437 (superseded by L007).
+- Documentation audit of the extension DONE (103 fixes + safety-review fix-ups, 18:25 UTC). Earlier: (5 auditors -> verify -> apply; review its diff before committing). Workflow verify-l013-round1. Q14 DECIDED by computation (unrefereed): cell(23,21,10,3) is EMPTY (experiments/20261017-1925-q14-decide; cell(22,18,9,3) = 94,513 classes), so with L012 no 23-point (4,5)-set has h = 13: f(23) = 14, no record at n <= 24, first open record size 25. Prover writing certificate L014 (re-running all cells from scratch); then referees x3 + scout. DONE: falsifier agent (I11, n=16..23 cells); e757/fn_bounds knows f(16)=10, f(18)=11, f(20)=12, f(22)=13; L007 x3 ACCEPT; I11 falsifier; CP-SAT (14,11) UNKNOWN (D21); probe (D25); record hunt (D26, K50); (16,14,7) decision; (14,11) DFS stopped at 1,081/3,437 (superseded by L007).
 - Documentation audited three times in the first 72 h (last 2026-10-16 18:10 UTC); main = merge 414628a.
 
 ## Live hypotheses
@@ -26,4 +26,4 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 ## Next 3 actions
 1. L013 (I11 on C for n <= 25/26): prover -> referee #1 + scout -> fixes -> referees #2/#3 (fable) -> K57, LEDGER, i11 note, FINAL_REPORT.
 2. Final documentation audit workflow (find/verify/apply + safety review), FINAL_REPORT final version, STATE; then PR to main and merge (extension ends 2026-10-18 23:06 UTC; merge with margin, target <= 20:00 UTC on 10-18, earlier if everything is done).
-3. Q14 decision: if cell(23,21,10,3) is empty or non-realizable: certificate L014 (f(23) = 14; prover plus referees x3) and then I11 at n = 27 (f(27) = 16 would follow); if a realization appears: submit it through scripts/new_claim.py (clause A).
+3. L014 (f(23) = 14): prover -> referee #1 + scout -> fixes -> referees #2/#3 (fable) -> K58, LEDGER, START_HERE, fn_bounds EXACT_VALUES_VERIFIED[23] = 14, FINAL_REPORT. Then, if time: I11 at n = 27 via cell(26,22,11,3) (f(27) = 16 would follow). Merge to main with margin (target <= 20:00 UTC 10-18).
