@@ -1,0 +1,249 @@
+{
+ "top_level": [
+  {
+   "cell": [
+    26,
+    14,
+    10,
+    2
+   ],
+   "classes": 0,
+   "secs": 0.1,
+   "MD": 10,
+   "celldir": "/home/user/Erdos-757/experiments/20261017-1720-i11-n26/out/cells"
+  },
+  {
+   "cell": [
+    26,
+    15,
+    10,
+    3
+   ],
+   "classes": 0,
+   "secs": 0.8,
+   "MD": 10,
+   "celldir": "/home/user/Erdos-757/experiments/20261017-1720-i11-n26/out/cells"
+  },
+  {
+   "cell": [
+    26,
+    21,
+    11,
+    3
+   ],
+   "classes": 0,
+   "secs": 295.4,
+   "MD": 10,
+   "celldir": "/home/user/Erdos-757/experiments/20261017-1720-i11-n26/out/cells"
+  }
+ ],
+ "new_cells": [
+  {
+   "cell": [
+    26,
+    14,
+    10,
+    2
+   ],
+   "classes": 0,
+   "route": "recurse",
+   "secs": 0.1,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    26,
+    15,
+    10,
+    3
+   ],
+   "classes": 0,
+   "route": "recurse",
+   "secs": 0.8,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    26,
+    21,
+    11,
+    3
+   ],
+   "classes": 0,
+   "route": "recurse",
+   "secs": 295.4,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    25,
+    12,
+    9,
+    2
+   ],
+   "classes": 0,
+   "route": "recurse",
+   "secs": 0.1,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    25,
+    12,
+    9,
+    3
+   ],
+   "classes": 0,
+   "route": "recurse",
+   "secs": 0.2,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    25,
+    13,
+    9,
+    2
+   ],
+   "classes": 0,
+   "route": "recurse",
+   "secs": 0.4,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    25,
+    18,
+    10,
+    3
+   ],
+   "classes": 0,
+   "route": "recurse",
+   "secs": 264.6,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    24,
+    15,
+    9,
+    3
+   ],
+   "classes": 0,
+   "route": "recurse",
+   "secs": 117.2,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    23,
+    12,
+    8,
+    3
+   ],
+   "classes": 0,
+   "route": "recurse",
+   "secs": 14.7,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    23,
+    13,
+    8,
+    2
+   ],
+   "classes": 12,
+   "route": "recurse",
+   "secs": 37.1,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    22,
+    11,
+    7,
+    2
+   ],
+   "classes": 52,
+   "route": "recurse",
+   "secs": 35.4,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    15,
+    7,
+    4,
+    2
+   ],
+   "classes": 5,
+   "route": "direct",
+   "secs": 0.0,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    12,
+    6,
+    3,
+    2
+   ],
+   "classes": 7,
+   "route": "direct",
+   "secs": 0.0,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    9,
+    4,
+    2,
+    2
+   ],
+   "classes": 1,
+   "route": "direct",
+   "secs": 0.0,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    9,
+    5,
+    2,
+    2
+   ],
+   "classes": 0,
+   "route": "direct",
+   "secs": 0.0,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    6,
+    3,
+    1,
+    2
+   ],
+   "classes": 0,
+   "route": "direct",
+   "secs": 0.0,
+   "bad_tau": 0
+  },
+  {
+   "cell": [
+    6,
+    4,
+    1,
+    2
+   ],
+   "classes": 0,
+   "route": "direct",
+   "secs": 0.0,
+   "bad_tau": 0
+  }
+ ],
+ "total_bad_tau": 0,
+ "n_new": 17,
+ "n_seeded": 150
+}
