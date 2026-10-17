@@ -33,7 +33,7 @@ for c in "5 3 2" "8 4 3" "10 6 4" "11 5 4" "12 9 5" "13 7 5" "15 9 6" "16 8 6" "
 TAU0=6 bin/genbg_r3 -q -c -Z1 -d1:3 -D3:3 14 11 33:33 > out/g_14_11_6_d3.txt; TAU0=6 bin/genbg_r3 -q -c -Z1 -d1:3 -D11:3 14 11 33:33 > out/g_14_11_6_nodeg.txt   # 1, 3
 TAU0=6 F7PRUNE=1 bin/genbg_r3 -u -q -c -Z1 -d1:3 -D11:3 14 11 33:33   # 0
 # 4. brute-force validation (labelled, no symmetry reduction) of genbg_r3 and enum_conn on all cells n<=8
-python3 scripts/validate_small.py 3 8
+python3 scripts/validate_small.py 3 9
 # 5. my definitional extension + filter pipeline (class level), and the route without Step 4
 python3 scripts/r3_extend.py A out/g_12_10_5_d3.txt > out/r3_hits_A.txt; python3 scripts/r3_extend.py B out/g_15_11_6_d3.txt > out/r3_hits_B.txt
 TAU0=6 bin/genbg_r3 -q -Z1 -d0:3 -D3:3 15 11 33:33 > out/g_15_11_6_d3_ALL.txt     # 261 (any connectivity)

@@ -50,3 +50,21 @@ def extend(Gs,nG,T,tag):
     STATS[tag+'_ext']=dict(graphs=len(Gs),summary=last,secs=round(time.time()-t0,1)); print(tag,last,flush=True)
     hits=[[tuple(map(int,t.split(','))) for t in re.findall(r'\(([\d,]+)\)',l)] for l in open(out) if l.startswith('HIT:')]
     return dedupe(hits,nG+1,tag+'_classes')
+
+def gprime_list(parts_list,cache_cl):
+    """parts_list: list of partitions (each a list of cells (n,m,t,s)); cache_cl(key)->class list; returns all disjoint unions (identical cells -> multisets)."""
+    import itertools
+    out=[]
+    for p in parts_list:
+        groups={}
+        for c in p: groups.setdefault(c[:3],[]).append(c)
+        gl=[]
+        for key,cs in groups.items():
+            cls=cache_cl(key)
+            gl.append((key,cls,list(itertools.combinations_with_replacement(range(len(cls)),len(cs)))))
+        for combo in itertools.product(*[g[2] for g in gl]):
+            pp=[]
+            for (key,cls,_),idxs in zip(gl,combo):
+                for i in idxs: pp.append((key[0],cls[i]))
+            es,n=union(pp); out.append(es)
+    return out

@@ -61,3 +61,7 @@ experiments/referee/L008-round3/rerun/
 experiments/referee/L008-round2/out/
 experiments/referee/L008-round*/**/tmp_*
 experiments/referee/*/out/
+experiments/prover/L010/out/
+/*.tar.gz
+/*.tgz
+experiments/referee/*/nauty_build/
