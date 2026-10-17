@@ -1,0 +1,140 @@
+cell_10_5_3_D2.txt mine=4
+cell_10_5_3_D3.txt mine=6
+cell_10_6_3_D2.txt mine=5
+cell_10_6_3_D3.txt mine=43 MD9_14_10_5=43 EQUAL
+cell_10_7_3_D2.txt mine=0
+cell_10_7_4_D2.txt mine=0
+cell_10_7_4_D3.txt mine=4 MD9_14_10_5=4 EQUAL MD9_13_10_5=4 EQUAL MD9_12_10_5=4 EQUAL
+cell_10_7_4_D4.txt mine=5
+cell_10_8_4_D2.txt mine=0
+cell_10_8_4_D3.txt mine=63
+cell_11_5_3_D2.txt mine=2
+cell_11_6_4_D2.txt mine=0
+cell_11_6_4_D3.txt mine=0
+cell_11_6_4_D4.txt mine=0
+cell_11_7_4_D2.txt mine=4
+cell_11_7_4_D3.txt mine=35 MD9_14_10_5=35 EQUAL MD9_13_10_5=35 EQUAL MD9_12_10_5=35 EQUAL
+cell_11_8_4_D2.txt mine=0
+cell_11_8_4_D3.txt mine=471
+cell_11_9_4_D2.txt mine=0
+cell_11_9_4_D3.txt mine=1216
+cell_12_10_5_D2.txt mine=0
+cell_12_10_5_D3.txt mine=149 MD9_12_10_5=149 EQUAL
+cell_12_10_5_D4.txt mine=221
+cell_12_6_4_D2.txt mine=2
+cell_12_6_4_D3.txt mine=4
+cell_12_7_4_D2.txt mine=15
+cell_12_7_4_D3.txt mine=97 MD9_14_10_5=97 EQUAL MD9_13_10_5=97 EQUAL
+cell_12_8_4_D2.txt mine=5
+cell_13_10_5_D2.txt mine=0
+cell_13_10_5_D3.txt mine=6683 MD9_13_10_5=6683 EQUAL
+cell_13_6_4_D2.txt mine=2
+cell_13_6_4_D3.txt mine=3
+cell_13_7_4_D2.txt mine=22
+cell_13_7_4_D3.txt mine=104 MD9_14_10_5=104 EQUAL
+cell_13_8_4_D2.txt mine=23
+cell_13_8_5_D2.txt mine=0
+cell_13_8_5_D3.txt mine=0
+cell_13_8_5_D4.txt mine=0
+cell_13_9_5_D2.txt mine=0
+cell_13_9_5_D3.txt mine=84
+cell_14_10_5_D2.txt mine=0
+cell_14_12_6_D3.txt mine=2
+cell_14_12_6_D4.txt mine=11
+cell_14_7_5_D2.txt mine=0
+cell_14_7_5_D3.txt mine=0
+cell_14_7_5_D4.txt mine=0
+cell_14_8_5_D2.txt mine=1
+cell_14_8_5_D3.txt mine=9
+cell_14_9_5_D2.txt mine=19
+cell_14_9_5_D3.txt mine=1060
+cell_15_11_6_D2.txt mine=0
+cell_15_11_6_D3.txt mine=19
+cell_15_11_6_D4.txt mine=30
+cell_15_12_6_D3.txt mine=10617
+cell_15_7_5_D2.txt mine=1
+cell_15_7_5_D3.txt mine=2
+cell_15_8_5_D2.txt mine=11
+cell_15_8_5_D3.txt mine=59
+cell_15_9_5_D2.txt mine=91
+cell_16_10_6_D2.txt mine=0
+cell_16_10_6_D3.txt mine=16
+cell_16_11_6_D2.txt mine=0
+cell_16_11_6_D3.txt mine=3238
+cell_16_8_5_D2.txt mine=14
+cell_16_8_5_D3.txt mine=55
+cell_16_9_5_D2.txt mine=166
+cell_16_9_6_D2.txt mine=0
+cell_16_9_6_D3.txt mine=0
+cell_17_10_6_D2.txt mine=6
+cell_17_10_6_D3.txt mine=339
+cell_17_11_6_D2.txt mine=114
+cell_17_11_6_D3.txt mine=45669
+cell_17_13_7_D3.txt mine=6
+cell_17_14_7_D3.txt mine=1708
+cell_17_8_6_D3.txt mine=0
+cell_17_8_6_D4.txt mine=0
+cell_17_9_6_D2.txt mine=0
+cell_17_9_6_D3.txt mine=0
+cell_18_10_6_D2.txt mine=67
+cell_18_12_7_D2.txt mine=0
+cell_18_12_7_D3.txt mine=0
+cell_18_12_7_D4.txt mine=0
+cell_18_13_7_D3.txt mine=2544
+cell_18_9_6_D2.txt mine=5
+cell_18_9_6_D3.txt mine=22
+cell_19_10_6_D2.txt mine=128
+cell_19_10_7_D2.txt mine=0
+cell_19_10_7_D3.txt mine=0
+cell_19_11_7_D2.txt mine=0
+cell_19_11_7_D3.txt mine=0
+cell_19_12_7_D2.txt mine=1
+cell_19_12_7_D3.txt mine=833
+cell_19_16_8_D4.txt mine=956
+cell_19_9_6_D2.txt mine=4
+cell_19_9_6_D3.txt mine=13
+cell_20_10_7_D3.txt mine=0
+cell_20_11_7_D2.txt mine=1
+cell_20_11_7_D3.txt mine=45
+cell_20_12_7_D2.txt mine=38
+cell_20_12_7_D3.txt mine=15465
+cell_20_14_8_D3.txt mine=0
+cell_20_15_8_D3.txt mine=953
+cell_21_13_8_D4.txt mine=0
+cell_21_14_8_D3.txt mine=299
+cell_21_18_9_D3.txt mine=0
+cell_22_17_9_D4.txt mine=95
+cell_3_1_1_D2.txt mine=1
+cell_3_1_1_D3.txt mine=1 MD9_14_10_5=1 EQUAL MD9_13_10_5=1 EQUAL MD9_12_10_5=1 EQUAL
+cell_3_1_1_D4.txt mine=1
+cell_4_2_1_D2.txt mine=0
+cell_4_2_1_D3.txt mine=0 MD9_14_10_5=0 EQUAL MD9_13_10_5=0 EQUAL
+cell_5_2_1_D2.txt mine=1
+cell_5_2_1_D3.txt mine=1 MD9_14_10_5=1 EQUAL
+cell_5_3_1_D2.txt mine=0
+cell_6_3_2_D2.txt mine=1
+cell_6_3_2_D3.txt mine=1 MD9_14_10_5=1 EQUAL MD9_13_10_5=1 EQUAL
+cell_6_4_2_D2.txt mine=1
+cell_6_4_2_D3.txt mine=1 MD9_14_10_5=1 EQUAL MD9_13_10_5=1 EQUAL
+cell_7_3_2_D2.txt mine=1
+cell_7_3_2_D3.txt mine=1 MD9_14_10_5=1 EQUAL
+cell_7_4_2_D2.txt mine=1
+cell_7_4_2_D3.txt mine=2 MD9_14_10_5=2 EQUAL
+cell_7_5_2_D2.txt mine=0
+cell_7_5_2_D3.txt mine=1 MD9_14_10_5=1 EQUAL
+cell_8_4_2_D2.txt mine=2
+cell_8_5_3_D2.txt mine=1
+cell_8_5_3_D3.txt mine=2 MD9_14_10_5=2 EQUAL MD9_13_10_5=2 EQUAL
+cell_8_5_3_D4.txt mine=2
+cell_8_6_3_D2.txt mine=0
+cell_8_6_3_D3.txt mine=3 MD9_14_10_5=3 EQUAL MD9_13_10_5=3 EQUAL MD9_12_10_5=3 EQUAL
+cell_9_4_3_D2.txt mine=1
+cell_9_4_3_D3.txt mine=1
+cell_9_5_3_D2.txt mine=3
+cell_9_5_3_D3.txt mine=6 MD9_14_10_5=6 EQUAL
+cell_9_6_3_D2.txt mine=2
+cell_9_6_3_D3.txt mine=21 MD9_14_10_5=21 EQUAL MD9_13_10_5=21 EQUAL
+cell_9_7_3_D2.txt mine=0
+SUMMARY vs MD9_14_10_5: common cells 17, equal 17, different 0
+SUMMARY vs MD9_13_10_5: common cells 11, equal 11, different 0
+SUMMARY vs MD9_12_10_5: common cells 5, equal 5, different 0
