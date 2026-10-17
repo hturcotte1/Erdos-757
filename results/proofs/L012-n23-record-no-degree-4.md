@@ -1,7 +1,7 @@
 # A 23-point (4,5)-set with h = 13 (ratio 13/23 < 4/7) must have a saturated AP pattern with every AP-degree at most 3
 CLAIM-TYPE: lemma + certificate (computer-assisted partial result on the first I11-allowed record cell (23,21,10); class-level recursive enumeration with nauty canonical forms, so an isomorphism test IS load-bearing here, unlike L007–L011; and a new exact realization test for saturated patterns)
 TYPE: certificate
-STATUS: submitted 2026-10-17 15:27 UTC; referee round 1 ACCEPT (results/reviews/L012-n23-record-no-degree-4__referee__20261017T162634Z.md: independent exact realization test class by class with positive and negative controls; own extension, filter and VF2 isomorphism pipeline reproduces the 699 classes; genbg re-enumeration of 104 cells); novelty CLEAR (__scout__20261017T153400Z.md); the 'conditional on L011' wording updated 16:35 UTC (L011 is ACCEPTED x3); referee rounds 2 and 3 requested
+STATUS: submitted 2026-10-17 15:27 UTC; referee round 1 ACCEPT (results/reviews/L012-n23-record-no-degree-4__referee__20261017T162634Z.md: independent exact realization test class by class with positive and negative controls; own extension, filter and VF2 isomorphism pipeline reproduces the 699 classes; genbg re-enumeration of 104 cells); referee round 3 ACCEPT (__referee__20261017T171553Z.md: Bareiss integer realizer, brute-force (P3) and tau, BLISS/VF2 isomorphism, unmodified genbg; editorial remarks only, applied 17:40 UTC); novelty CLEAR (__scout__20261017T153400Z.md); referee round 2 running
 DEPENDS ON:
 - L007–L010 [verified-here, each ACCEPTED by referee rounds 1–3; K51–K54]: I11 on $C$ for $n\le20$; L007 Lemma D (completeness of the canonical-growth enumerator `enum_conn`) and Lemma F (the $F_7$ test).
 - L011 [verified-here, ACCEPTED by referee rounds 1, 2 and 3; K55]: Theorem 1 there, I11 on $C$ for $n\le22$. **This certificate is no longer conditional (L011 is ACCEPTED x3).**
@@ -25,7 +25,7 @@ $C$ is the class of L007–L011: 3-graphs that are (P1) linear, (P2) $F_7$-free 
 
 **Remark 5 (reference).** The I11-allowed record cells $(n,m,\tau)$ for $n\le40$ (L011 Remark 5, re-derived in C1): (23,21,10) $s=1$; (25,23,11) $s=0$; (30,27,13) $s=1$; (30,28,13) $s=3$; (32,29,14) $s=0$; (32,30,14) $s=2$; (34,32,15) $s=1$; (36,34,16) $s=0$; (37,33,16) $s=1$; (37,34,16) $s=3$; (37,35,16) $s=5$; (39,35,17) $s=0$; (39,36,17) $s=2$; (39,37,17) $s=4$.
 
-Tags: Theorems 1–3 **[verified-here] conditional on referee acceptance of this certificate and of L011**, computer-assisted; Remark 4 is a statement of what is open; Remark 5 [derived-here] (arithmetic). Scope: nothing is claimed about the maximum-degree-3 case or about $n\ge24$.
+Tags: Theorems 1–3 **[verified-here]** (L011 is ACCEPTED x3; this certificate: referee rounds 1 and 3 ACCEPT, round 2 pending), computer-assisted; Remark 4 is a statement of what is open; Remark 5 [derived-here] (arithmetic). Scope: nothing is claimed about the maximum-degree-3 case or about $n\ge24$.
 
 ## Proof
 
