@@ -322,4 +322,4 @@ Format for each work block:
 
 ## 2026-10-17T08:56Z result L010 SUBMITTED (f(20) = 12; I11 on C for n <= 20): prover found and repaired an omission in the falsifier's slack-3 decomposition list for (17,9) (isolated vertices have slack 3 and were missing: 3 more partitions, two empty, one giving 368 inputs and no connected graph in C); conclusion unchanged; (19,15,8): 2,904,650,722 extensions, 1,124,981 hits, none in C; (20,13,8): 6,624 hits all F7. Referee #1 + scout launched; falsifier told to include isolated vertices in slack >= 3 partitions for n = 21, 22.
 
-## 2026-10-17T09:20Z e757 fn_bounds knows f(16) = 10 (EXACT_VALUES_VERIFIED, L008/K52); tests/test_l008_cells.py (5 tests, ~55 s) added; full suite green (17 min)
+## 2026-10-17T08:58Z e757 fn_bounds knows f(16) = 10 (EXACT_VALUES_VERIFIED, L008/K52); tests/test_l008_cells.py (5 tests, ~55 s) added; full suite green (17 min)

@@ -12,3 +12,5 @@ cell_11_6_4 {'labelled': 0, 'with_F7': 0, 'F7free_iso_classes': 0, 'killed_by_eS
 cell_19_11_7 {'labelled': 1623, 'with_F7': 1623, 'F7free_iso_classes': 0, 'killed_by_eS': 0, 'kept': 0}
 G prime (19,11,7) candidates 174
 X20_deg3 SUMMARY graphs=174 tested=12865097 hits=3965
+X20_deg3_classes {'labelled': 3965, 'with_F7': 3408, 'F7free_iso_classes': 31, 'killed_by_eS': 13, 'kept': 18}
+G (20,14,8) candidates 38
