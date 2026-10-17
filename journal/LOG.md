@@ -285,3 +285,6 @@ Format for each work block:
 - the prover also found the window cell (5,3,2) missing from the falsifier's list (empty by hand and by both enumerators) and widened the class to all linear F7-free 3-graphs with e(S) <= |S| - 2 (no ordering needed).
 
 ## 2026-10-17T04:37Z result L007 referee round 1: ACCEPT (third independent enumerator; HY not even needed for Lemma A: for n<=13, m<=n-2 the only connected linear 3-graph violating I11 is F7); scout CLEAR. Two text fixes applied; referees #2 and #3 launched.
+
+## 2026-10-17T05:05Z P1 CP-SAT (14,11) with deletion constraints: UNKNOWN after 10,800 s (D21 extended); superseded by L007's slack argument (referees #2/#3 running)
+- evidence: experiments/20261017-0100-n14m11-deletion-cpsat/README.md, results.json

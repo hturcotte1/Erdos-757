@@ -52,7 +52,7 @@ def components(n, edges):
     return list(comp.values())
 
 def solve_cell(n, m, t, D=None, f7free=False, d0s=None, solver='cadical153', verbose=False, extra=None,
-               allowed=None, conn_vertices=None, sb=True, timeout_note=''):
+               allowed=None, conn_vertices=None, sb=True, timeout_note='', conn='lazy'):
     """Returns ('UNSAT', info) if no graph exists, else ('SAT', edges)."""
     T = [e for e in itertools.combinations(range(n), 3) if (allowed is None or allowed(e))]
     if d0s is None:
@@ -107,6 +107,11 @@ def solve_cell(n, m, t, D=None, f7free=False, d0s=None, solver='cadical153', ver
         for cp in F7:
             if any(e not in x or e in fixed_false for e in cp): continue
             s.add_clause([-x[e] for e in cp]); nf7 += 1
+        if conn == 'eager':
+            # one clause per vertex set S with 0 in S, S != [n]: some chosen triple meets S and its complement
+            for mask in range(1, 1 << n, 2):
+                if mask == (1 << n) - 1: continue
+                s.add_clause([x[e] for e in T if any(mask >> v & 1 for v in e) and not all(mask >> v & 1 for v in e)])
         if extra: extra(s, x, pool, T)
         iters = 0; cuts = 0
         while True:

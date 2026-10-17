@@ -71,56 +71,7 @@
   ]
  },
  "lists": {
-  "rerun/ext_vertex_hits.txt": {
-   "graphs": 3186,
-   "distinct": 3186,
-   "linear": 3186,
-   "contain_F7": 3186,
-   "F7_free": 0
-  },
-  "rerun/ext_indep_hits_mine_input.txt": {
-   "graphs": 3186,
-   "distinct": 3186,
-   "linear": 3186,
-   "contain_F7": 3186,
-   "F7_free": 0
-  },
-  "rerun/conn_all_13_8_5.txt": {
-   "graphs": 159,
-   "distinct": 159,
-   "linear": 159,
-   "contain_F7": 159,
-   "F7_free": 0
-  },
-  "rerun/conn_all_10_7_4.txt": {
-   "graphs": 637,
-   "distinct": 637,
-   "linear": 637,
-   "contain_F7": 126,
-   "F7_free": 511
-  },
-  "rerun/mine_13_8_5.txt": {
-   "graphs": 159,
-   "distinct": 159,
-   "linear": 159,
-   "contain_F7": 159,
-   "F7_free": 0
-  },
-  "rerun/mine_10_7_4.txt": {
-   "graphs": 637,
-   "distinct": 637,
-   "linear": 637,
-   "contain_F7": 126,
-   "F7_free": 511
-  },
-  "/home/user/Erdos-757/experiments/falsify/i11-inequality/conn2_all_14_11_6_deg3.txt": {
-   "graphs": 998,
-   "distinct": 998,
-   "linear": 998,
-   "contain_F7": 998,
-   "F7_free": 0
-  },
-  "/home/user/Erdos-757/experiments/prover/L007/rerun/conn2_all_14_11_6_deg3.txt": {
+  "rerun/mine_14_11_6_deg3.txt": {
    "graphs": 998,
    "distinct": 998,
    "linear": 998,

@@ -1,0 +1,23 @@
+5 3 2 None False d0= 1 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.0}
+5 3 2 None False d0= 2 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.0}
+WINDOW CELL (5, 3, 2) UNSAT 0.0 s
+   control (5, 3, 1) UNSAT None
+8 4 3 None False d0= 1 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.01}
+8 4 3 None False d0= 2 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.01}
+8 4 3 None False d0= 3 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.01}
+WINDOW CELL (8, 4, 3) UNSAT 0.0 s
+   control (8, 4, 2) SAT [(0, 1, 2), (0, 3, 4), (1, 6, 7), (2, 3, 5)]
+10 6 4 None False d0= 1 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.06}
+10 6 4 None False d0= 2 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.12}
+10 6 4 None False d0= 3 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.05}
+10 6 4 None False d0= 4 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.05}
+WINDOW CELL (10, 6, 4) UNSAT 0.3 s
+   control (10, 6, 3) SAT [(0, 1, 2), (0, 3, 4), (1, 6, 7), (2, 8, 9), (3, 7, 9), (4, 5, 6)]
+11 5 4 None False d0= 1 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.12}
+11 5 4 None False d0= 2 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.29}
+11 5 4 None False d0= 3 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.2}
+11 5 4 None False d0= 4 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.15}
+11 5 4 None False d0= 5 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.1}
+WINDOW CELL (11, 5, 4) UNSAT 0.9 s
+   control (11, 5, 3) SAT [(0, 1, 2), (0, 3, 4), (1, 7, 8), (2, 9, 10), (3, 5, 6)]
+13 7 5 None False d0= 1 {'result': 'UNSAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 0.68}

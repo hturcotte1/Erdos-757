@@ -7,3 +7,22 @@ Starting search at 42.85s with 2 workers.
 1 first solution subsolver: [fj]
 #Model  58.18s var:1822/1823 constraints:166249/167612
 #Model 100.58s var:1821/1823 constraints:165261/167612
+Search stats     Bools  Conflicts   Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818  1'361'597  3'458'184     5'440          228'572  1'637'332  72'006'991    115'728'336
+CpSolverResponse summary:
+status: UNKNOWN
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 1361597
+branches: 3458184
+propagations: 72006991
+integer_propagations: 115728336
+restarts: 5440
+lp_iterations: 4577122
+walltime: 10774
+usertime: 10774
+deterministic_time: 9237.34
+gap_integral: 0
+# FINAL UNKNOWN
