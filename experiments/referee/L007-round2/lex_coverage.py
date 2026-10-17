@@ -16,7 +16,7 @@ for arg in sys.argv[1:]:
     n, m, t, D = map(int, arg.split(','))
     txt = subprocess.run(['./rerun/conn_dfs2_all', str(n), str(m), str(t), str(D)], capture_output=True, text=True).stdout
     auth = [[tuple(sorted(map(int, q.split(',')))) for q in re.findall(r'\(([0-9,]+)\)', l)] for l in txt.splitlines() if l.startswith('FOUND:')]
-    for lex in ((False, True) if n <= 10 else (True,)):
+    for lex in (True,):
         col = []
         solve_cell(n, m, t, D=(D if D < 100 else None), conn='eager', lexleader=lex, collect=col)
         A = classes(auth); B = classes([e for _, e in col])
