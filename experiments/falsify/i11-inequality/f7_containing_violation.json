@@ -1,0 +1,64 @@
+{
+ "description": "Linear 3-graph, 14 vertices, 11 edges, tau=6, I11 slack -2. Contains F7, so NOT an F7-free/(4,5)-set pattern; shows I11 is false for linear 3-graphs in general (F7-freeness is essential). Not a counterexample to Erdos 757.",
+ "n": 14,
+ "m": 11,
+ "tau": 6,
+ "edges": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   2,
+   3,
+   4
+  ],
+  [
+   3,
+   5,
+   6
+  ],
+  [
+   4,
+   7,
+   8
+  ],
+  [
+   4,
+   9,
+   10
+  ],
+  [
+   7,
+   9,
+   11
+  ],
+  [
+   8,
+   9,
+   12
+  ],
+  [
+   10,
+   11,
+   12
+  ],
+  [
+   0,
+   3,
+   13
+  ],
+  [
+   1,
+   5,
+   13
+  ],
+  [
+   2,
+   6,
+   13
+  ]
+ ],
+ "I11_slack": -2
+}

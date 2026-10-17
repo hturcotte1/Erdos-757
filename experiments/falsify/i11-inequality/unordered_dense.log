@@ -1,0 +1,20 @@
+== 9 8 4
+exit 0
+maxdeg=100 n=9 m=8 tau0=4 nodes=70874 found=708
+== 10 12 5
+exit 0
+maxdeg=100 n=10 m=12 tau0=5 nodes=5990769 found=1892
+== 11 10 5
+exit 0
+maxdeg=100 n=11 m=10 tau0=5 nodes=37073309 found=620
+== 12 14 6
+exit 124
+== 13 13 6
+exit 124
+== 11 16 6
+exit 0
+maxdeg=100 n=11 m=16 tau0=6 nodes=803469543 found=0
+== 12 20 7
+exit 0
+maxdeg=100 n=12 m=20 tau0=7 nodes=1133239765 found=0
+== 13 18 7

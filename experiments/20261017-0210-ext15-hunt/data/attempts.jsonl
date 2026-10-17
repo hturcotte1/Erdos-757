@@ -1,0 +1,276 @@
+{"file": "m12_p03006.pat", "m": 12, "found": 8163, "new": 150, "realizable": 0, "fail": {"order-infeasible": 150}, "timed_out": 1}
+{"file": "m11_p04379.pat", "m": 11, "found": 5, "new": 5, "realizable": 0, "fail": {"order-infeasible": 5}, "timed_out": 1}
+{"file": "m12_p03665.pat", "m": 12, "found": 21635, "new": 150, "realizable": 0, "fail": {"order-infeasible": 148, "forced repeated difference": 2}, "timed_out": 1}
+{"file": "m11_p02176.pat", "m": 11, "found": 3, "new": 3, "realizable": 0, "fail": {"order-infeasible": 3}, "timed_out": 1}
+{"file": "m12_p02700.pat", "m": 12, "found": 7523, "new": 150, "realizable": 0, "fail": {"order-infeasible": 150}, "timed_out": 1}
+{"file": "m11_p02290.pat", "m": 11, "found": 0, "new": 0, "realizable": 0, "fail": {}, "timed_out": 1}
+{"file": "m12_p00235.pat", "m": 12, "found": 13364, "new": 150, "realizable": 0, "fail": {"order-infeasible": 150}, "timed_out": 1}
+{"file": "m11_p04589.pat", "m": 11, "found": 0, "new": 0, "realizable": 0, "fail": {}, "timed_out": 1}
+{"file": "m12_p04130.pat", "m": 12, "found": 0, "new": 0, "realizable": 0, "fail": {}, "timed_out": 1}
+{"file": "m11_p02643.pat", "m": 11, "found": 7, "new": 7, "realizable": 0, "fail": {"order-infeasible": 7}, "timed_out": 1}
+{"file": "m9_p04163.pat", "m": 9, "found": 0, "new": 0, "realizable": 0, "fail": {}, "timed_out": 1}
+{"file": "m10_p00687.pat", "m": 10, "found": 0, "new": 0, "realizable": 0, "fail": {}, "timed_out": 1}
+{"file": "m12_p04371.pat", "m": 12, "found": 0, "new": 0, "realizable": 0, "fail": {}, "timed_out": 1}
+{"file": "m11_p01011.pat", "m": 11, "found": 0, "new": 0, "realizable": 0, "fail": {}, "timed_out": 1}
+{"file": "m12_p02100.pat", "m": 12, "found": 85, "new": 85, "realizable": 0, "fail": {"order-infeasible": 85}, "timed_out": 1}
+{"file": "r_m11_000001_s7.pat", "m": 11, "found": 1, "new": 1, "realizable": 0, "fail": {"order-infeasible": 1}, "timed_out": 0}
+{"file": "r_m11_000002_s7.pat", "m": 11, "found": 2, "new": 2, "realizable": 1, "fail": {"order-infeasible": 1}, "timed_out": 0}
+{"file": "r_m12_000003_s7.pat", "m": 12, "found": 32, "new": 32, "realizable": 0, "fail": {"order-infeasible": 32}, "timed_out": 0}
+{"file": "r_m12_000004_s7.pat", "m": 12, "found": 3, "new": 3, "realizable": 0, "fail": {"order-infeasible": 3}, "timed_out": 0}
+{"file": "r_m12_000005_s7.pat", "m": 12, "found": 16, "new": 16, "realizable": 0, "fail": {"order-infeasible": 16}, "timed_out": 0}
+{"file": "r_m12_000006_s7.pat", "m": 12, "found": 59, "new": 59, "realizable": 8, "fail": {"order-infeasible": 44, "forced repeated difference": 7}, "timed_out": 0}
+{"file": "r_m11_000007_s7.pat", "m": 11, "found": 3, "new": 3, "realizable": 0, "fail": {"order-infeasible": 2, "forced extra AP": 1}, "timed_out": 0}
+{"file": "r_m12_000008_s7.pat", "m": 12, "found": 17, "new": 17, "realizable": 0, "fail": {"order-infeasible": 17}, "timed_out": 0}
+{"file": "r_m12_000009_s7.pat", "m": 12, "found": 3, "new": 3, "realizable": 1, "fail": {"forced extra AP": 1, "order-infeasible": 1}, "timed_out": 0}
+{"file": "r_m12_000010_s7.pat", "m": 12, "found": 157, "new": 157, "realizable": 2, "fail": {"order-infeasible": 155}, "timed_out": 0}
+{"file": "r_m11_000011_s7.pat", "m": 11, "found": 1, "new": 1, "realizable": 0, "fail": {"order-infeasible": 1}, "timed_out": 0}
+{"file": "r_m12_000012_s7.pat", "m": 12, "found": 44, "new": 44, "realizable": 0, "fail": {"order-infeasible": 44}, "timed_out": 0}
+{"file": "r_m12_000013_s7.pat", "m": 12, "found": 3, "new": 3, "realizable": 0, "fail": {"order-infeasible": 3}, "timed_out": 0}
+{"file": "r_m12_000001_s11.pat", "m": 12, "found": 2, "new": 2, "realizable": 0, "fail": {"order-infeasible": 2}, "timed_out": 0}
+{"file": "m10_p00687.pat", "m": 10, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-4,1-10,2-4", "timed_out": 1}
+{"file": "m11_p01011.pat", "m": 11, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-5,1-3,0-6", "timed_out": 1}
+{"file": "m11_p02176.pat", "m": 11, "found": 3, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-8,0-12,2-5", "timed_out": 1}
+{"file": "m11_p02290.pat", "m": 11, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-8,1-6,0-12", "timed_out": 1}
+{"file": "m11_p02643.pat", "m": 11, "found": 7, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-9,1-6,2-8", "timed_out": 1}
+{"file": "m11_p04379.pat", "m": 11, "found": 5, "new": 0, "realizable": 0, "fail": {}, "prefix": "x,1-5,2-8", "timed_out": 1}
+{"file": "m11_p04589.pat", "m": 11, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "x,x,2-13", "timed_out": 1}
+{"file": "m12_p00235.pat", "m": 12, "found": 13364, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-3,1-11,2-8", "timed_out": 1}
+{"file": "m12_p02100.pat", "m": 12, "found": 85, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-8,0-9,2-8", "timed_out": 1}
+{"file": "m12_p02700.pat", "m": 12, "found": 7523, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-9,1-10,2-11", "timed_out": 1}
+{"file": "m12_p03006.pat", "m": 12, "found": 8163, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-10,1-9,2-11", "timed_out": 1}
+{"file": "m12_p03665.pat", "m": 12, "found": 21635, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-13,1-5,2-11", "timed_out": 1}
+{"file": "m12_p04130.pat", "m": 12, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "x,0-8,1-8", "timed_out": 1}
+{"file": "m12_p04371.pat", "m": 12, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "x,1-6,1-13", "timed_out": 1}
+{"file": "m9_p04163.pat", "m": 9, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "x,0-8,2-11", "timed_out": 1}
+{"file": "r_m11_000001_s7.pat", "m": 11, "found": 1, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-4,0-9,0-14,2-6,2-7,3-9,6-11", "timed_out": 0}
+{"file": "r_m11_000002_s7.pat", "m": 11, "found": 2, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-4,1-6,2-4,x,1-9,5-11,3-13", "timed_out": 0}
+{"file": "r_m11_000007_s7.pat", "m": 11, "found": 3, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-5,0-14,1-11,3-7,3-13,4-8,6-12,7-10", "timed_out": 0}
+{"file": "r_m11_000011_s7.pat", "m": 11, "found": 1, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-7,0-14,2-8,3-10,2-11,5-8", "timed_out": 0}
+{"file": "r_m12_000001_s11.pat", "m": 12, "found": 2, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-10,x,3-12,3-13,4-8,4-9,3-14,5-12,6-11", "timed_out": 0}
+{"file": "r_m12_000003_s7.pat", "m": 12, "found": 32, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-10,1-5,1-7,3-5,0-11,4-10,0-12", "timed_out": 0}
+{"file": "r_m12_000004_s7.pat", "m": 12, "found": 3, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-5,1-12,2-11,0-13,3-10,6-9,6-11", "timed_out": 0}
+{"file": "r_m12_000005_s7.pat", "m": 12, "found": 16, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,0-10,0-12,1-14,4-11,3-13,5-8", "timed_out": 0}
+{"file": "r_m12_000006_s7.pat", "m": 12, "found": 59, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-14,1-12,2-7,2-8,3-8,3-9,5-10", "timed_out": 0}
+{"file": "r_m12_000008_s7.pat", "m": 12, "found": 17, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-5,1-9,0-13,2-8,3-6,2-10,4-12,5-10", "timed_out": 0}
+{"file": "r_m12_000009_s7.pat", "m": 12, "found": 3, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-3,0-14,2-9,3-6,4-7,5-8,6-11,1-14", "timed_out": 0}
+{"file": "r_m12_000010_s7.pat", "m": 12, "found": 157, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-5,0-10,1-4,2-5,3-11,1-14,4-8", "timed_out": 0}
+{"file": "r_m12_000012_s7.pat", "m": 12, "found": 44, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-10,1-8,2-6,3-7,2-10,0-14,1-11,5-9", "timed_out": 0}
+{"file": "r_m12_000013_s7.pat", "m": 12, "found": 3, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-10,x,2-8,3-7,0-12,0-13,6-8,5-11", "timed_out": 0}
+{"file": "r_m12_000001_s21.pat", "m": 12, "found": 181, "new": 181, "realizable": 0, "fail": {"order-infeasible": 181}, "prefix": "0-4,0-14,2-11,3-9,4-8,3-10,6-9", "timed_out": 0}
+{"file": "r_m12_000002_s21.pat", "m": 12, "found": 9, "new": 9, "realizable": 0, "fail": {"forced repeated difference": 8, "order-infeasible": 1}, "prefix": "0-4,0-6,2-14,3-11,4-6,3-13,5-11", "timed_out": 0}
+{"file": "r_m12_000003_s21.pat", "m": 12, "found": 5, "new": 5, "realizable": 1, "fail": {"order-infeasible": 4}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-13,5-13,6-11", "timed_out": 0}
+{"file": "r_m12_000004_s21.pat", "m": 12, "found": 12, "new": 12, "realizable": 0, "fail": {"order-infeasible": 12}, "prefix": "0-6,1-13,2-12,3-11,4-13,5-8,6-11", "timed_out": 0}
+{"file": "r_m11_000007_s21.pat", "m": 11, "found": 5, "new": 5, "realizable": 0, "fail": {"order-infeasible": 5}, "prefix": "0-11,1-8,2-11,0-13,3-6,4-7,3-10", "timed_out": 0}
+{"file": "r_m12_000005_s21.pat", "m": 12, "found": 58, "new": 58, "realizable": 6, "fail": {"order-infeasible": 49, "forced repeated difference": 2, "forced extra AP": 1}, "prefix": "0-7,1-12,2-9,3-10,4-8,1-13,3-12", "timed_out": 0}
+{"file": "r_m12_000006_s21.pat", "m": 12, "found": 35, "new": 35, "realizable": 4, "fail": {"order-infeasible": 31}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-12,6-9,x", "timed_out": 0}
+{"file": "r_m12_000008_s21.pat", "m": 12, "found": 413, "new": 200, "realizable": 6, "fail": {"order-infeasible": 191, "forced repeated difference": 3}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-11,x", "timed_out": 0}
+{"file": "r_m11_000009_s21.pat", "m": 11, "found": 2, "new": 2, "realizable": 0, "fail": {"order-infeasible": 2}, "prefix": "0-6,1-12,2-8,3-12,4-7,5-8,3-13", "timed_out": 0}
+{"file": "r_m12_000010_s21.pat", "m": 12, "found": 3, "new": 3, "realizable": 0, "fail": {"order-infeasible": 3}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-7,3-11,1-13", "timed_out": 0}
+{"file": "r_m11_000013_s21.pat", "m": 11, "found": 8, "new": 8, "realizable": 4, "fail": {"order-infeasible": 4}, "prefix": "0-6,0-9,2-6,1-12,0-14,4-9,5-8", "timed_out": 0}
+{"file": "r_m12_000011_s21.pat", "m": 12, "found": 36, "new": 36, "realizable": 0, "fail": {"order-infeasible": 36}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-13,6-12", "timed_out": 0}
+{"file": "r_m12_000012_s21.pat", "m": 12, "found": 181, "new": 181, "realizable": 0, "fail": {"order-infeasible": 181}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-12,6-11", "timed_out": 0}
+{"file": "r_m12_000014_s21.pat", "m": 12, "found": 102, "new": 102, "realizable": 0, "fail": {"order-infeasible": 102}, "prefix": "0-7,1-12,2-9,3-10,4-8,0-13,4-12", "timed_out": 0}
+{"file": "r_m12_000015_s21.pat", "m": 12, "found": 39, "new": 39, "realizable": 0, "fail": {"order-infeasible": 39}, "prefix": "0-6,1-12,x,2-6,4-11,5-8,5-10", "timed_out": 0}
+{"file": "r_m12_000016_s21.pat", "m": 12, "found": 347, "new": 200, "realizable": 1, "fail": {"order-infeasible": 199}, "prefix": "0-6,1-5,2-11,3-10,0-12,5-9,6-11", "timed_out": 0}
+{"file": "r_m12_000017_s21.pat", "m": 12, "found": 18, "new": 18, "realizable": 0, "fail": {"order-infeasible": 18}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-13,x,7-10", "timed_out": 0}
+{"file": "r_m12_000018_s21.pat", "m": 12, "found": 203, "new": 200, "realizable": 5, "fail": {"order-infeasible": 187, "forced extra AP": 8}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-11,5-10", "timed_out": 0}
+{"file": "r_m12_000019_s21.pat", "m": 12, "found": 1, "new": 1, "realizable": 0, "fail": {"order-infeasible": 1}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-13,6-10,7-12", "timed_out": 0}
+{"file": "r_m12_000020_s21.pat", "m": 12, "found": 616, "new": 200, "realizable": 2, "fail": {"order-infeasible": 198}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-9,2-11", "timed_out": 0}
+{"file": "r_m12_000021_s21.pat", "m": 12, "found": 156, "new": 156, "realizable": 0, "fail": {"order-infeasible": 156}, "prefix": "0-6,1-5,2-11,3-10,0-12,4-7,5-9", "timed_out": 1}
+{"file": "r_m12_000022_s21.pat", "m": 12, "found": 617, "new": 200, "realizable": 0, "fail": {"order-infeasible": 200}, "prefix": "0-6,1-5,2-11,3-10,0-12,x,0-14", "timed_out": 0}
+{"file": "r_m12_000023_s21.pat", "m": 12, "found": 2, "new": 2, "realizable": 1, "fail": {"order-infeasible": 1}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-7,4-9,2-13,6-10", "timed_out": 0}
+{"file": "r_m12_000024_s21.pat", "m": 12, "found": 372, "new": 200, "realizable": 0, "fail": {"order-infeasible": 200}, "prefix": "0-9,1-6,2-8,3-7,0-13,4-8,5-11", "timed_out": 0}
+{"file": "r_m11_000026_s21.pat", "m": 11, "found": 25, "new": 25, "realizable": 2, "fail": {"order-infeasible": 23}, "prefix": "0-6,0-9,2-6,1-12,0-14,4-9,x", "timed_out": 0}
+{"file": "r_m12_000025_s21.pat", "m": 12, "found": 8, "new": 8, "realizable": 0, "fail": {"order-infeasible": 8}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-13,5-12,x", "timed_out": 0}
+{"file": "r_m12_000027_s21.pat", "m": 12, "found": 1, "new": 1, "realizable": 0, "fail": {"order-infeasible": 1}, "prefix": "0-12,1-9,2-5,1-13,0-14,4-11,3-13,7-9", "timed_out": 0}
+{"file": "r_m12_000028_s21.pat", "m": 12, "found": 10, "new": 10, "realizable": 0, "fail": {"order-infeasible": 10}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-12,3-13", "timed_out": 0}
+{"file": "r_m12_000029_s21.pat", "m": 12, "found": 114, "new": 114, "realizable": 0, "fail": {"order-infeasible": 114}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-12,2-13", "timed_out": 0}
+{"file": "r_m12_000030_s21.pat", "m": 12, "found": 1, "new": 1, "realizable": 0, "fail": {"order-infeasible": 1}, "prefix": "0-5,x,0-10,2-8,4-11,2-14,5-9", "timed_out": 0}
+{"file": "r_m12_000031_s21.pat", "m": 12, "found": 335, "new": 200, "realizable": 1, "fail": {"order-infeasible": 199}, "prefix": "0-6,1-5,2-11,3-10,0-12,5-8,6-10", "timed_out": 0}
+{"file": "r_m12_000032_s21.pat", "m": 12, "found": 459, "new": 200, "realizable": 0, "fail": {"order-infeasible": 200}, "prefix": "0-7,1-12,2-9,3-10,4-8,0-13,5-10", "timed_out": 0}
+{"file": "r_m12_000033_s21.pat", "m": 12, "found": 13, "new": 13, "realizable": 1, "fail": {"order-infeasible": 12}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-14,3-12", "timed_out": 0}
+{"file": "r_m12_000034_s21.pat", "m": 12, "found": 107, "new": 107, "realizable": 0, "fail": {"order-infeasible": 107}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-11,5-9", "timed_out": 0}
+{"file": "r_m12_000035_s21.pat", "m": 12, "found": 24, "new": 24, "realizable": 0, "fail": {"order-infeasible": 24}, "prefix": "0-6,1-5,2-11,3-10,0-12,5-9,5-11,0-14", "timed_out": 0}
+{"file": "r_m12_000036_s21.pat", "m": 12, "found": 20, "new": 20, "realizable": 1, "fail": {"order-infeasible": 19}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-14,4-13", "timed_out": 0}
+{"file": "r_m12_000037_s21.pat", "m": 12, "found": 2, "new": 2, "realizable": 0, "fail": {"order-infeasible": 2}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-12,6-10,7-12,0-13", "timed_out": 0}
+{"file": "r_m12_000038_s21.pat", "m": 12, "found": 212, "new": 200, "realizable": 0, "fail": {"order-infeasible": 200}, "prefix": "0-7,1-12,2-9,3-10,4-8,0-14,6-12", "timed_out": 0}
+{"file": "r_m12_000039_s21.pat", "m": 12, "found": 15, "new": 15, "realizable": 4, "fail": {"order-infeasible": 9, "forced repeated difference": 2}, "prefix": "0-7,1-3,0-11,2-5,0-13,0-14,5-12", "timed_out": 0}
+{"file": "r_m12_000040_s21.pat", "m": 12, "found": 376, "new": 200, "realizable": 0, "fail": {"order-infeasible": 200}, "prefix": "0-6,1-5,2-11,3-10,0-12,4-8,5-9", "timed_out": 1}
+{"file": "r_m12_000041_s21.pat", "m": 12, "found": 19, "new": 19, "realizable": 0, "fail": {"order-infeasible": 19}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-11,5-12,x", "timed_out": 0}
+{"file": "r_m12_000042_s21.pat", "m": 12, "found": 403, "new": 200, "realizable": 6, "fail": {"order-infeasible": 193, "forced repeated difference": 1}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-12,x", "timed_out": 0}
+{"file": "r_m11_000044_s21.pat", "m": 11, "found": 11, "new": 11, "realizable": 4, "fail": {"order-infeasible": 7}, "prefix": "0-6,0-9,2-6,1-12,0-14,4-7,3-10", "timed_out": 0}
+{"file": "r_m12_000043_s21.pat", "m": 12, "found": 30, "new": 30, "realizable": 0, "fail": {"order-infeasible": 30}, "prefix": "0-7,1-12,2-9,3-10,4-8,x,6-12", "timed_out": 0}
+{"file": "r_m12_000045_s21.pat", "m": 12, "found": 107, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-11,5-9", "timed_out": 0}
+{"file": "r_m12_000046_s21.pat", "m": 12, "found": 86, "new": 86, "realizable": 1, "fail": {"order-infeasible": 84, "forced extra AP": 1}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-13,x", "timed_out": 0}
+{"file": "r_m12_000047_s21.pat", "m": 12, "found": 173, "new": 173, "realizable": 1, "fail": {"order-infeasible": 172}, "prefix": "0-6,1-5,2-11,3-10,0-12,4-7,5-8", "timed_out": 0}
+{"file": "r_m12_000048_s21.pat", "m": 12, "found": 53, "new": 53, "realizable": 0, "fail": {"order-infeasible": 53}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-11,2-14,x", "timed_out": 0}
+{"file": "r_m12_000049_s21.pat", "m": 12, "found": 94, "new": 94, "realizable": 4, "fail": {"order-infeasible": 90}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-9,6-10", "timed_out": 0}
+{"file": "r_m12_000050_s21.pat", "m": 12, "found": 17, "new": 17, "realizable": 0, "fail": {"order-infeasible": 13, "forced repeated difference": 4}, "prefix": "0-7,1-3,0-11,2-5,0-13,2-9,4-9", "timed_out": 0}
+{"file": "r_m12_000051_s21.pat", "m": 12, "found": 1, "new": 1, "realizable": 0, "fail": {"order-infeasible": 1}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-10,2-14,6-9,4-11", "timed_out": 0}
+{"file": "r_m12_000052_s21.pat", "m": 12, "found": 43, "new": 43, "realizable": 0, "fail": {"order-infeasible": 43}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-12,3-13", "timed_out": 0}
+{"file": "r_m12_000053_s21.pat", "m": 12, "found": 14, "new": 14, "realizable": 0, "fail": {"order-infeasible": 13, "forced extra AP": 1}, "prefix": "0-9,0-12,2-6,3-10,4-13,5-9,6-8", "timed_out": 0}
+{"file": "r_m12_000054_s21.pat", "m": 12, "found": 134, "new": 134, "realizable": 2, "fail": {"order-infeasible": 132}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-11,2-14", "timed_out": 0}
+{"file": "m10_p00687.pat", "m": 10, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-4,1-10,2-4", "timed_out": 1}
+{"file": "m11_p01011.pat", "m": 11, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-5,1-3,0-6", "timed_out": 1}
+{"file": "m11_p02176.pat", "m": 11, "found": 3, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-8,0-12,2-5", "timed_out": 1}
+{"file": "m11_p02290.pat", "m": 11, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-8,1-6,0-12", "timed_out": 1}
+{"file": "m11_p02643.pat", "m": 11, "found": 7, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-9,1-6,2-8", "timed_out": 1}
+{"file": "m11_p04379.pat", "m": 11, "found": 5, "new": 0, "realizable": 0, "fail": {}, "prefix": "x,1-5,2-8", "timed_out": 1}
+{"file": "m11_p04589.pat", "m": 11, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "x,x,2-13", "timed_out": 1}
+{"file": "m12_p00235.pat", "m": 12, "found": 13364, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-3,1-11,2-8", "timed_out": 1}
+{"file": "m12_p02100.pat", "m": 12, "found": 85, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-8,0-9,2-8", "timed_out": 1}
+{"file": "m12_p02700.pat", "m": 12, "found": 7523, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-9,1-10,2-11", "timed_out": 1}
+{"file": "m12_p03006.pat", "m": 12, "found": 8163, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-10,1-9,2-11", "timed_out": 1}
+{"file": "m12_p03665.pat", "m": 12, "found": 21635, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-13,1-5,2-11", "timed_out": 1}
+{"file": "m12_p04130.pat", "m": 12, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "x,0-8,1-8", "timed_out": 1}
+{"file": "m12_p04371.pat", "m": 12, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "x,1-6,1-13", "timed_out": 1}
+{"file": "m9_p04163.pat", "m": 9, "found": 0, "new": 0, "realizable": 0, "fail": {}, "prefix": "x,0-8,2-11", "timed_out": 1}
+{"file": "r_m11_000001_s7.pat", "m": 11, "found": 1, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-4,0-9,0-14,2-6,2-7,3-9,6-11", "timed_out": 0}
+{"file": "r_m11_000002_s7.pat", "m": 11, "found": 2, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-4,1-6,2-4,x,1-9,5-11,3-13", "timed_out": 0}
+{"file": "r_m11_000007_s21.pat", "m": 11, "found": 5, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-11,1-8,2-11,0-13,3-6,4-7,3-10", "timed_out": 0}
+{"file": "r_m11_000007_s7.pat", "m": 11, "found": 3, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-5,0-14,1-11,3-7,3-13,4-8,6-12,7-10", "timed_out": 0}
+{"file": "r_m11_000009_s21.pat", "m": 11, "found": 2, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-12,2-8,3-12,4-7,5-8,3-13", "timed_out": 0}
+{"file": "r_m11_000011_s7.pat", "m": 11, "found": 1, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-7,0-14,2-8,3-10,2-11,5-8", "timed_out": 0}
+{"file": "r_m11_000013_s21.pat", "m": 11, "found": 8, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,0-9,2-6,1-12,0-14,4-9,5-8", "timed_out": 0}
+{"file": "r_m11_000026_s21.pat", "m": 11, "found": 25, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,0-9,2-6,1-12,0-14,4-9,x", "timed_out": 0}
+{"file": "r_m11_000044_s21.pat", "m": 11, "found": 11, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,0-9,2-6,1-12,0-14,4-7,3-10", "timed_out": 0}
+{"file": "r_m12_000001_s11.pat", "m": 12, "found": 2, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-10,x,3-12,3-13,4-8,4-9,3-14,5-12,6-11", "timed_out": 0}
+{"file": "r_m12_000001_s21.pat", "m": 12, "found": 181, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-4,0-14,2-11,3-9,4-8,3-10,6-9", "timed_out": 0}
+{"file": "r_m12_000002_s21.pat", "m": 12, "found": 9, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-4,0-6,2-14,3-11,4-6,3-13,5-11", "timed_out": 0}
+{"file": "r_m12_000003_s21.pat", "m": 12, "found": 5, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-13,5-13,6-11", "timed_out": 0}
+{"file": "r_m12_000003_s7.pat", "m": 12, "found": 32, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-10,1-5,1-7,3-5,0-11,4-10,0-12", "timed_out": 0}
+{"file": "r_m12_000004_s21.pat", "m": 12, "found": 12, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-13,2-12,3-11,4-13,5-8,6-11", "timed_out": 0}
+{"file": "r_m12_000004_s7.pat", "m": 12, "found": 3, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-5,1-12,2-11,0-13,3-10,6-9,6-11", "timed_out": 0}
+{"file": "r_m12_000005_s21.pat", "m": 12, "found": 58, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,1-13,3-12", "timed_out": 0}
+{"file": "r_m12_000005_s7.pat", "m": 12, "found": 16, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,0-10,0-12,1-14,4-11,3-13,5-8", "timed_out": 0}
+{"file": "r_m12_000006_s21.pat", "m": 12, "found": 35, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-12,6-9,x", "timed_out": 0}
+{"file": "r_m12_000006_s7.pat", "m": 12, "found": 59, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-14,1-12,2-7,2-8,3-8,3-9,5-10", "timed_out": 0}
+{"file": "r_m12_000008_s21.pat", "m": 12, "found": 413, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-11,x", "timed_out": 0}
+{"file": "r_m12_000008_s7.pat", "m": 12, "found": 17, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-5,1-9,0-13,2-8,3-6,2-10,4-12,5-10", "timed_out": 0}
+{"file": "r_m12_000009_s7.pat", "m": 12, "found": 3, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-3,0-14,2-9,3-6,4-7,5-8,6-11,1-14", "timed_out": 0}
+{"file": "r_m12_000010_s21.pat", "m": 12, "found": 3, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-7,3-11,1-13", "timed_out": 0}
+{"file": "r_m12_000010_s7.pat", "m": 12, "found": 157, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-5,0-10,1-4,2-5,3-11,1-14,4-8", "timed_out": 0}
+{"file": "r_m12_000011_s21.pat", "m": 12, "found": 36, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-13,6-12", "timed_out": 0}
+{"file": "r_m12_000012_s21.pat", "m": 12, "found": 181, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-12,6-11", "timed_out": 0}
+{"file": "r_m12_000012_s7.pat", "m": 12, "found": 44, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-10,1-8,2-6,3-7,2-10,0-14,1-11,5-9", "timed_out": 0}
+{"file": "r_m12_000013_s7.pat", "m": 12, "found": 3, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-10,x,2-8,3-7,0-12,0-13,6-8,5-11", "timed_out": 0}
+{"file": "r_m12_000014_s21.pat", "m": 12, "found": 102, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,0-13,4-12", "timed_out": 0}
+{"file": "r_m12_000015_s21.pat", "m": 12, "found": 39, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-12,x,2-6,4-11,5-8,5-10", "timed_out": 0}
+{"file": "r_m12_000016_s21.pat", "m": 12, "found": 347, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-5,2-11,3-10,0-12,5-9,6-11", "timed_out": 0}
+{"file": "r_m12_000017_s21.pat", "m": 12, "found": 18, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-13,x,7-10", "timed_out": 0}
+{"file": "r_m12_000018_s21.pat", "m": 12, "found": 203, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-11,5-10", "timed_out": 0}
+{"file": "r_m12_000019_s21.pat", "m": 12, "found": 1, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-13,6-10,7-12", "timed_out": 0}
+{"file": "r_m12_000020_s21.pat", "m": 12, "found": 616, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-9,2-11", "timed_out": 0}
+{"file": "r_m12_000021_s21.pat", "m": 12, "found": 156, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-5,2-11,3-10,0-12,4-7,5-9", "timed_out": 1}
+{"file": "r_m12_000022_s21.pat", "m": 12, "found": 617, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-5,2-11,3-10,0-12,x,0-14", "timed_out": 0}
+{"file": "r_m12_000023_s21.pat", "m": 12, "found": 2, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-7,4-9,2-13,6-10", "timed_out": 0}
+{"file": "r_m12_000024_s21.pat", "m": 12, "found": 372, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-9,1-6,2-8,3-7,0-13,4-8,5-11", "timed_out": 0}
+{"file": "r_m12_000025_s21.pat", "m": 12, "found": 8, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-13,5-12,x", "timed_out": 0}
+{"file": "r_m12_000027_s21.pat", "m": 12, "found": 1, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-12,1-9,2-5,1-13,0-14,4-11,3-13,7-9", "timed_out": 0}
+{"file": "r_m12_000028_s21.pat", "m": 12, "found": 10, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-12,3-13", "timed_out": 0}
+{"file": "r_m12_000029_s21.pat", "m": 12, "found": 114, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-12,2-13", "timed_out": 0}
+{"file": "r_m12_000030_s21.pat", "m": 12, "found": 1, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-5,x,0-10,2-8,4-11,2-14,5-9", "timed_out": 0}
+{"file": "r_m12_000031_s21.pat", "m": 12, "found": 335, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-5,2-11,3-10,0-12,5-8,6-10", "timed_out": 0}
+{"file": "r_m12_000032_s21.pat", "m": 12, "found": 459, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,0-13,5-10", "timed_out": 0}
+{"file": "r_m12_000033_s21.pat", "m": 12, "found": 13, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-14,3-12", "timed_out": 0}
+{"file": "r_m12_000034_s21.pat", "m": 12, "found": 107, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-11,5-9", "timed_out": 0}
+{"file": "r_m12_000035_s21.pat", "m": 12, "found": 24, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-5,2-11,3-10,0-12,5-9,5-11,0-14", "timed_out": 0}
+{"file": "r_m12_000036_s21.pat", "m": 12, "found": 20, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-14,4-13", "timed_out": 0}
+{"file": "r_m12_000037_s21.pat", "m": 12, "found": 2, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-12,6-10,7-12,0-13", "timed_out": 0}
+{"file": "r_m12_000038_s21.pat", "m": 12, "found": 212, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,0-14,6-12", "timed_out": 0}
+{"file": "r_m12_000039_s21.pat", "m": 12, "found": 15, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-3,0-11,2-5,0-13,0-14,5-12", "timed_out": 0}
+{"file": "r_m12_000040_s21.pat", "m": 12, "found": 376, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-5,2-11,3-10,0-12,4-8,5-9", "timed_out": 1}
+{"file": "r_m12_000041_s21.pat", "m": 12, "found": 19, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-11,5-12,x", "timed_out": 0}
+{"file": "r_m12_000042_s21.pat", "m": 12, "found": 403, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-12,x", "timed_out": 0}
+{"file": "r_m12_000043_s21.pat", "m": 12, "found": 30, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,x,6-12", "timed_out": 0}
+{"file": "r_m12_000045_s21.pat", "m": 12, "found": 107, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-11,5-9", "timed_out": 0}
+{"file": "r_m12_000046_s21.pat", "m": 12, "found": 86, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-13,x", "timed_out": 0}
+{"file": "r_m12_000047_s21.pat", "m": 12, "found": 173, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,1-5,2-11,3-10,0-12,4-7,5-8", "timed_out": 0}
+{"file": "r_m12_000048_s21.pat", "m": 12, "found": 53, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-11,2-14,x", "timed_out": 0}
+{"file": "r_m12_000049_s21.pat", "m": 12, "found": 94, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-9,6-10", "timed_out": 0}
+{"file": "r_m12_000050_s21.pat", "m": 12, "found": 17, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-3,0-11,2-5,0-13,2-9,4-9", "timed_out": 0}
+{"file": "r_m12_000051_s21.pat", "m": 12, "found": 1, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-10,2-14,6-9,4-11", "timed_out": 0}
+{"file": "r_m12_000052_s21.pat", "m": 12, "found": 43, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-12,3-13", "timed_out": 0}
+{"file": "r_m12_000053_s21.pat", "m": 12, "found": 14, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-9,0-12,2-6,3-10,4-13,5-9,6-8", "timed_out": 0}
+{"file": "r_m12_000054_s21.pat", "m": 12, "found": 134, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-11,2-14", "timed_out": 0}
+{"file": "r_m12_000055_s21.pat", "m": 12, "found": 213, "new": 133, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 132, "forced repeated difference": 1}, "prefix": "0-6,1-5,2-11,3-10,0-12,5-11,6-10", "timed_out": 0}
+{"file": "r_m12_000056_s21.pat", "m": 12, "found": 26, "new": 26, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 26}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-10,4-11,2-13", "timed_out": 0}
+{"file": "r_m12_000057_s21.pat", "m": 12, "found": 156, "new": 156, "realizable": 1, "fail": {"order-infeasible(fast-LP)": 155}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-11,4-9", "timed_out": 0}
+{"file": "r_m12_000058_s21.pat", "m": 12, "found": 233, "new": 200, "realizable": 1, "fail": {"order-infeasible(fast-LP)": 199}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-12,5-11", "timed_out": 0}
+{"file": "r_m12_000059_s21.pat", "m": 12, "found": 3, "new": 3, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 3}, "prefix": "0-7,1-3,0-11,2-5,0-13,4-12,3-14,6-9,5-12", "timed_out": 0}
+{"file": "r_m12_000060_s21.pat", "m": 12, "found": 10, "new": 10, "realizable": 3, "fail": {"order-infeasible(fast-LP)": 6, "forced repeated difference": 1}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-9,6-12,3-14", "timed_out": 0}
+{"file": "r_m12_000061_s21.pat", "m": 12, "found": 44, "new": 44, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 44}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-11,6-12,1-13", "timed_out": 0}
+{"file": "r_m12_000062_s21.pat", "m": 12, "found": 9, "new": 9, "realizable": 2, "fail": {"order-infeasible(fast-LP)": 7}, "prefix": "0-13,1-10,2-14,3-13,4-12,5-8,6-11,7-9", "timed_out": 0}
+{"file": "r_m12_000063_s21.pat", "m": 12, "found": 8, "new": 8, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 8}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-11,2-14,7-12", "timed_out": 0}
+{"file": "r_m12_000064_s21.pat", "m": 12, "found": 592, "new": 200, "realizable": 1, "fail": {"order-infeasible(fast-LP)": 199}, "prefix": "0-6,1-5,2-11,3-10,0-12,4-9,4-11", "timed_out": 0}
+{"file": "r_m12_000065_s21.pat", "m": 12, "found": 1320, "new": 200, "realizable": 3, "fail": {"order-infeasible(fast-LP)": 197}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-10,2-11", "timed_out": 0}
+{"file": "r_m11_000066_s21.pat", "m": 11, "found": 1, "new": 1, "realizable": 1, "fail": {}, "prefix": "0-6,0-9,2-6,1-12,0-14,4-8,2-11", "timed_out": 0}
+{"file": "r_m12_000067_s21.pat", "m": 12, "found": 12, "new": 12, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 12}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-9,3-12,0-14", "timed_out": 0}
+{"file": "r_m12_000068_s21.pat", "m": 12, "found": 623, "new": 200, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 200}, "prefix": "0-6,1-5,2-11,3-10,0-12,5-8,5-9", "timed_out": 0}
+{"file": "r_m12_000069_s21.pat", "m": 12, "found": 21, "new": 21, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 21}, "prefix": "0-7,1-12,2-9,3-10,4-8,1-13,6-11,6-12", "timed_out": 0}
+{"file": "r_m12_000070_s21.pat", "m": 12, "found": 4, "new": 4, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 4}, "prefix": "0-4,1-3,0-12,3-11,0-13,2-12,4-9,5-11", "timed_out": 0}
+{"file": "r_m12_000071_s21.pat", "m": 12, "found": 12, "new": 12, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 12}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-14,x", "timed_out": 0}
+{"file": "r_m12_000072_s21.pat", "m": 12, "found": 2, "new": 2, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 2}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-11,2-13,x,5-10", "timed_out": 0}
+{"file": "r_m12_000073_s21.pat", "m": 12, "found": 24, "new": 24, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 24}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-13,5-9", "timed_out": 0}
+{"file": "r_m12_000074_s21.pat", "m": 12, "found": 98, "new": 98, "realizable": 33, "fail": {"order-infeasible(fast-LP)": 59, "forced repeated difference": 6}, "prefix": "0-8,x,2-7,2-8,0-10,4-9,6-8,5-9", "timed_out": 0}
+{"file": "r_m12_000075_s21.pat", "m": 12, "found": 136, "new": 136, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 136}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-13,6-11", "timed_out": 0}
+{"file": "r_m12_000076_s21.pat", "m": 12, "found": 782, "new": 200, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 200}, "prefix": "0-6,1-5,2-11,3-10,0-12,4-7,0-14", "timed_out": 0}
+{"file": "r_m12_000077_s21.pat", "m": 12, "found": 357, "new": 200, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 200}, "prefix": "0-8,x,2-7,2-8,0-10,1-9,4-9", "timed_out": 0}
+{"file": "r_m12_000078_s21.pat", "m": 12, "found": 534, "new": 200, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 200}, "prefix": "0-11,1-8,2-10,0-12,3-8,4-7,0-13", "timed_out": 0}
+{"file": "r_m12_000079_s21.pat", "m": 12, "found": 1, "new": 1, "realizable": 0, "fail": {"forced extra AP": 1}, "prefix": "0-7,0-12,1-5,3-14,4-9,5-7,4-10", "timed_out": 0}
+{"file": "r_m11_000001_s33.pat", "m": 11, "found": 7, "new": 7, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 7}, "prefix": "0-6,0-9,2-6,1-12,0-14,5-8", "timed_out": 0}
+{"file": "r_m11_000003_s33.pat", "m": 11, "found": 2, "new": 2, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 2}, "prefix": "0-6,0-9,2-6,1-12,0-14,4-11", "timed_out": 0}
+{"file": "r_m11_000004_s33.pat", "m": 11, "found": 51, "new": 18, "realizable": 3, "fail": {"order-infeasible(fast-LP)": 14, "forced extra AP": 1}, "prefix": "0-6,0-9,2-6,1-12,0-14,4-9", "timed_out": 0}
+{"file": "r_m11_000005_s33.pat", "m": 11, "found": 1, "new": 1, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 1}, "prefix": "0-6,0-13,1-11,2-12,4-7,5-8,6-10", "timed_out": 0}
+{"file": "r_m12_000002_s33.pat", "m": 12, "found": 216, "new": 100, "realizable": 1, "fail": {"order-infeasible(fast-LP)": 98, "forced repeated difference": 1}, "prefix": "0-8,x,2-7,2-8,0-10,0-13,6-8", "timed_out": 0}
+{"file": "r_m11_000010_s33.pat", "m": 11, "found": 7, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,0-9,2-6,1-12,0-14,5-8", "timed_out": 0}
+{"file": "r_m12_000006_s33.pat", "m": 12, "found": 1442, "new": 100, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 100}, "prefix": "0-8,x,2-7,2-8,0-10", "timed_out": 1}
+{"file": "r_m12_000007_s33.pat", "m": 12, "found": 20, "new": 20, "realizable": 6, "fail": {"order-infeasible(fast-LP)": 14}, "prefix": "0-12,1-13,2-6,x,4-10", "timed_out": 0}
+{"file": "r_m12_000008_s33.pat", "m": 12, "found": 175, "new": 100, "realizable": 6, "fail": {"order-infeasible(fast-LP)": 94}, "prefix": "0-10,1-11,2-9,1-14,3-12,4-11", "timed_out": 0}
+{"file": "r_m12_000009_s33.pat", "m": 12, "found": 1361, "new": 91, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 91}, "prefix": "0-8,x,2-7,2-8,0-10,0-13", "timed_out": 0}
+{"file": "r_m12_000011_s33.pat", "m": 12, "found": 496, "new": 100, "realizable": 4, "fail": {"order-infeasible(fast-LP)": 93, "forced extra AP": 2, "forced repeated difference": 1}, "prefix": "0-7,1-3,0-11,2-5,0-13,4-8", "timed_out": 1}
+{"file": "r_m12_000012_s33.pat", "m": 12, "found": 1905, "new": 94, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 94}, "prefix": "0-8,x,2-7,2-8,0-10", "timed_out": 1}
+{"file": "r_m12_000013_s33.pat", "m": 12, "found": 121, "new": 100, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 99, "forced repeated difference": 1}, "prefix": "0-5,0-6,0-14,2-7,2-13,4-10,3-12", "timed_out": 0}
+{"file": "r_m11_000014_s33.pat", "m": 11, "found": 34, "new": 22, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 22}, "prefix": "0-6,0-9,2-6,1-12,0-14", "timed_out": 1}
+{"file": "r_m11_000016_s33.pat", "m": 11, "found": 2, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,0-9,2-6,1-12,0-14,4-11", "timed_out": 0}
+{"file": "r_m12_000015_s33.pat", "m": 12, "found": 95, "new": 86, "realizable": 33, "fail": {"order-infeasible(fast-LP)": 52, "forced extra AP": 1}, "prefix": "0-13,1-10,2-14,3-13,4-12", "timed_out": 0}
+{"file": "r_m12_000017_s33.pat", "m": 12, "found": 4894, "new": 100, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 100}, "prefix": "0-6,1-5,2-11,3-10,0-12,4-11", "timed_out": 1}
+{"file": "r_m11_000018_s33.pat", "m": 11, "found": 486, "new": 300, "realizable": 21, "fail": {"order-infeasible(fast-LP)": 277, "forced repeated difference": 2}, "prefix": "0-3,1-4,x,3-5,2-12", "timed_out": 1}
+{"file": "r_m12_000019_s33.pat", "m": 12, "found": 3943, "new": 92, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 92}, "prefix": "0-7,1-12,2-9,3-10,4-8", "timed_out": 1}
+{"file": "r_m11_000020_s33.pat", "m": 11, "found": 486, "new": 117, "realizable": 2, "fail": {"order-infeasible(fast-LP)": 112, "forced repeated difference": 3}, "prefix": "0-3,1-4,x,3-5,2-12", "timed_out": 1}
+{"file": "r_m12_000021_s33.pat", "m": 12, "found": 4697, "new": 93, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 93}, "prefix": "0-7,1-12,2-9,3-10,4-8", "timed_out": 1}
+{"file": "r_m12_000022_s33.pat", "m": 12, "found": 31, "new": 31, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 31}, "prefix": "0-10,1-11,2-9,1-14,3-12,3-13", "timed_out": 0}
+{"file": "r_m11_000023_s33.pat", "m": 11, "found": 11, "new": 11, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 10, "forced extra AP": 1}, "prefix": "0-6,0-9,2-6,1-12,0-14,5-9", "timed_out": 0}
+{"file": "r_m12_000024_s33.pat", "m": 12, "found": 1929, "new": 98, "realizable": 2, "fail": {"order-infeasible(fast-LP)": 96}, "prefix": "0-7,1-12,2-9,3-10,4-8,1-13", "timed_out": 0}
+{"file": "r_m12_000025_s33.pat", "m": 12, "found": 448, "new": 100, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 100}, "prefix": "0-7,1-12,2-9,3-10,4-8,2-11,2-13", "timed_out": 0}
+{"file": "r_m11_000026_s33.pat", "m": 11, "found": 486, "new": 44, "realizable": 1, "fail": {"order-infeasible(fast-LP)": 42, "forced repeated difference": 1}, "prefix": "0-3,1-4,x,3-5,2-12", "timed_out": 1}
+{"file": "r_m11_000028_s33.pat", "m": 11, "found": 1, "new": 1, "realizable": 1, "fail": {}, "prefix": "0-9,1-13,2-6,3-7,2-14,5-13", "timed_out": 0}
+{"file": "r_m12_000027_s33.pat", "m": 12, "found": 49, "new": 49, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 49}, "prefix": "0-9,1-13,0-14,3-13,4-11,5-10,6-8", "timed_out": 0}
+{"file": "r_m12_000029_s33.pat", "m": 12, "found": 1617, "new": 87, "realizable": 2, "fail": {"order-infeasible(fast-LP)": 85}, "prefix": "0-8,x,2-7,2-8,0-10", "timed_out": 1}
+{"file": "r_m11_000030_s33.pat", "m": 11, "found": 480, "new": 12, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 12}, "prefix": "0-3,1-4,x,3-5,2-12", "timed_out": 1}
+{"file": "r_m11_000033_s33.pat", "m": 11, "found": 42, "new": 42, "realizable": 3, "fail": {"order-infeasible(fast-LP)": 34, "forced repeated difference": 5}, "prefix": "0-3,1-4,x,3-5,2-12,3-9", "timed_out": 0}
+{"file": "r_m12_000031_s33.pat", "m": 12, "found": 451, "new": 100, "realizable": 11, "fail": {"order-infeasible(fast-LP)": 88, "forced extra AP": 1}, "prefix": "0-12,1-5,2-7,1-11,3-6,4-7,5-8", "timed_out": 0}
+{"file": "r_m12_000032_s33.pat", "m": 12, "found": 4710, "new": 88, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 88}, "prefix": "0-7,1-12,2-9,3-10,4-8", "timed_out": 1}
+{"file": "r_m12_000034_s33.pat", "m": 12, "found": 3652, "new": 100, "realizable": 6, "fail": {"order-infeasible(fast-LP)": 94}, "prefix": "0-7,1-12,2-9,3-10,4-8,5-9", "timed_out": 1}
+{"file": "r_m11_000036_s33.pat", "m": 11, "found": 16, "new": 11, "realizable": 1, "fail": {"order-infeasible(fast-LP)": 10}, "prefix": "0-6,0-9,2-6,1-12,0-14,4-8", "timed_out": 0}
+{"file": "r_m12_000035_s33.pat", "m": 12, "found": 6754, "new": 99, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 98, "forced repeated difference": 1}, "prefix": "0-6,1-5,2-11,3-10,0-12,4-11", "timed_out": 0}
+{"file": "r_m11_000038_s33.pat", "m": 11, "found": 24, "new": 24, "realizable": 5, "fail": {"order-infeasible(fast-LP)": 12, "forced repeated difference": 7}, "prefix": "0-3,1-4,x,3-5,2-12,4-7", "timed_out": 0}
+{"file": "r_m12_000037_s33.pat", "m": 12, "found": 1979, "new": 83, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 83}, "prefix": "0-8,x,2-7,2-8,0-10", "timed_out": 1}
+{"file": "r_m12_000039_s33.pat", "m": 12, "found": 115, "new": 100, "realizable": 4, "fail": {"order-infeasible(fast-LP)": 93, "forced repeated difference": 2, "forced extra AP": 1}, "prefix": "0-7,1-3,0-11,2-5,0-13,1-8,3-14", "timed_out": 0}
+{"file": "r_m11_000040_s33.pat", "m": 11, "found": 14, "new": 14, "realizable": 1, "fail": {"order-infeasible(fast-LP)": 13}, "prefix": "0-6,0-9,2-6,1-12,0-14,5-7", "timed_out": 0}
+{"file": "r_m12_000041_s33.pat", "m": 12, "found": 62, "new": 50, "realizable": 9, "fail": {"order-infeasible(fast-LP)": 38, "forced extra AP": 1, "forced repeated difference": 2}, "prefix": "0-7,1-12,2-9,3-10,4-8,3-14", "timed_out": 0}
+{"file": "r_m11_000042_s33.pat", "m": 11, "found": 35, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,0-9,2-6,1-12,0-14", "timed_out": 1}
+{"file": "r_m12_000043_s33.pat", "m": 12, "found": 672, "new": 77, "realizable": 3, "fail": {"order-infeasible(fast-LP)": 74}, "prefix": "0-10,1-11,2-9,1-14,3-12", "timed_out": 1}
+{"file": "r_m12_000044_s33.pat", "m": 12, "found": 1691, "new": 100, "realizable": 7, "fail": {"order-infeasible(fast-LP)": 91, "forced repeated difference": 1, "forced extra AP": 1}, "prefix": "0-7,1-5,2-8,2-14,x", "timed_out": 1}
+{"file": "r_m11_000045_s33.pat", "m": 11, "found": 51, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,0-9,2-6,1-12,0-14,4-9", "timed_out": 0}
+{"file": "r_m12_000046_s33.pat", "m": 12, "found": 2854, "new": 86, "realizable": 2, "fail": {"order-infeasible(fast-LP)": 83, "forced extra AP": 1}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-11", "timed_out": 0}
+{"file": "r_m11_000047_s33.pat", "m": 11, "found": 45, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,0-9,2-6,1-12,0-14", "timed_out": 1}
+{"file": "r_m11_000048_s33.pat", "m": 11, "found": 590, "new": 70, "realizable": 15, "fail": {"order-infeasible(fast-LP)": 55}, "prefix": "0-3,1-4,x,3-5,2-12", "timed_out": 1}
+{"file": "r_m11_000049_s33.pat", "m": 11, "found": 48, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-6,0-9,2-6,1-12,0-14", "timed_out": 1}
+{"file": "r_m11_000051_s33.pat", "m": 11, "found": 16, "new": 0, "realizable": 0, "fail": {}, "prefix": "0-3,1-4,x,3-5,2-12,1-13", "timed_out": 0}
+{"file": "r_m12_000050_s33.pat", "m": 12, "found": 531, "new": 100, "realizable": 39, "fail": {"order-infeasible(fast-LP)": 49, "forced extra AP": 10, "forced repeated difference": 2}, "prefix": "0-14,1-11,2-14,3-13,4-9", "timed_out": 0}
+{"file": "r_m12_000052_s33.pat", "m": 12, "found": 654, "new": 86, "realizable": 0, "fail": {"order-infeasible(fast-LP)": 85, "forced repeated difference": 1}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-13", "timed_out": 0}
+{"file": "r_m12_000053_s33.pat", "m": 12, "found": 178, "new": 100, "realizable": 1, "fail": {"order-infeasible(fast-LP)": 99}, "prefix": "0-7,1-12,2-9,3-10,4-8,x,6-8", "timed_out": 0}
+{"file": "r_m12_000054_s33.pat", "m": 12, "found": 1032, "new": 89, "realizable": 3, "fail": {"order-infeasible(fast-LP)": 86}, "prefix": "0-7,1-12,2-9,3-10,4-8,4-12", "timed_out": 0}
+{"file": "r_m12_000055_s33.pat", "m": 12, "found": 9, "new": 7, "realizable": 5, "fail": {"forced extra AP": 2}, "prefix": "0-14,1-11,2-14,3-13,4-9,4-11", "timed_out": 0}
+{"file": "r_m11_000056_s33.pat", "m": 11, "found": 627, "new": 42, "realizable": 8, "fail": {"order-infeasible(fast-LP)": 34}, "prefix": "0-3,1-4,x,3-5,2-12", "timed_out": 1}

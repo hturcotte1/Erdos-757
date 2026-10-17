@@ -1,0 +1,1 @@
+maxdeg=100 n=12 m=20 tau0=7 nodes=1133239765 found=0

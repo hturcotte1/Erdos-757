@@ -1,0 +1,97 @@
+{
+ "ud_10_12_5.txt": {
+  "found_labelled": 1892,
+  "f7_free": 0,
+  "example_f7_free": null,
+  "done": true
+ },
+ "ud_11_10_5.txt": {
+  "found_labelled": 620,
+  "f7_free": 0,
+  "example_f7_free": null,
+  "done": true
+ },
+ "ud_11_16_6.txt": {
+  "found_labelled": 0,
+  "f7_free": 0,
+  "example_f7_free": null,
+  "done": true
+ },
+ "ud_12_14_6.txt": {
+  "found_labelled": 0,
+  "f7_free": 0,
+  "example_f7_free": null,
+  "done": false
+ },
+ "ud_12_20_7.txt": {
+  "found_labelled": 0,
+  "f7_free": 0,
+  "example_f7_free": null,
+  "done": true
+ },
+ "ud_13_13_6.txt": {
+  "found_labelled": 0,
+  "f7_free": 0,
+  "example_f7_free": null,
+  "done": false
+ },
+ "ud_13_18_7.txt": {
+  "found_labelled": 0,
+  "f7_free": 0,
+  "example_f7_free": null,
+  "done": false
+ },
+ "ud_9_8_4.txt": {
+  "found_labelled": 708,
+  "f7_free": 128,
+  "example_f7_free": [
+   [
+    0,
+    1,
+    2
+   ],
+   [
+    0,
+    3,
+    4
+   ],
+   [
+    1,
+    3,
+    5
+   ],
+   [
+    1,
+    4,
+    6
+   ],
+   [
+    2,
+    7,
+    8
+   ],
+   [
+    3,
+    6,
+    7
+   ],
+   [
+    4,
+    5,
+    7
+   ],
+   [
+    5,
+    6,
+    8
+   ]
+  ],
+  "done": true
+ },
+ "conn2_all_14_11_6_deg3.txt": {
+  "found_labelled": 998,
+  "f7_free": 0,
+  "example_f7_free": null,
+  "done": true
+ }
+}
