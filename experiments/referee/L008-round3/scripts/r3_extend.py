@@ -76,6 +76,7 @@ for G in graphs:
                 H = G + [(p1[0], p1[1], NH-1), (p2[0], p2[1], NH-1), (p3[0], p3[1], NH-1)]
                 if tau_ge7(H):
                     tot_hits += 1
+                    print('HIT: ' + ' '.join('(%d,%d,%d)' % tuple(sorted(e)) for e in H))
                     f7 = contains_f7(H); ok3 = p3_ok(H)
                     f7hits += f7; p3bad += (not ok3)
                     if not f7 and ok3:

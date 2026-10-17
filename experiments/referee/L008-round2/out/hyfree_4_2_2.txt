@@ -1,1 +1,0 @@
-SUMMARY bfs_enum N=4 M=2 T0=2 DMAX=100 CONN=1 classes=0 labelled=0 children=0

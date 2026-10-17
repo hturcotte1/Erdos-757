@@ -58,3 +58,5 @@ experiments/referee/L008-round2/rerun/
 experiments/referee/L008-round2/data_tests/
 experiments/referee/L008-round3/out/
 experiments/referee/L008-round3/rerun/
+experiments/referee/L008-round2/out/
+experiments/referee/L008-round*/**/tmp_*

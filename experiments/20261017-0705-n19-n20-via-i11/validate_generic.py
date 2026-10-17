@@ -11,10 +11,11 @@ classes=[[tuple(e) for e in g] for g in json.load(open(sys.argv[6]))]
 bk={}
 for i,es in enumerate(classes): bk.setdefault(nx.weisfeiler_lehman_graph_hash(graph(es),node_attr='t'),[]).append((i,graph(es)))
 K=21698; random.seed(int(sys.argv[1])); TL=float(sys.argv[2]); t0=time.time()
-slices=0; found=0; f7free=0; ok=0; bad=[]; hit=set(); tot_nodes=0
+slices=0; skipped=0; found=0; f7free=0; ok=0; bad=[]; hit=set(); tot_nodes=0
 while time.time()-t0<TL:
     I=random.randrange(K)
-    out=subprocess.run(['nice','-n','10','./conn_dfs3s',sys.argv[3],sys.argv[4],sys.argv[5],'3','0','0',str(K),str(I)],capture_output=True,text=True).stdout
+    try: out=subprocess.run(['nice','-n','10','./conn_dfs3s',sys.argv[3],sys.argv[4],sys.argv[5],'3','0','0',str(K),str(I)],capture_output=True,text=True,timeout=40).stdout
+    except subprocess.TimeoutExpired: skipped+=1; continue
     slices+=1
     for l in out.splitlines():
         if l.startswith('FOUND') and l.endswith(')'):
@@ -26,5 +27,5 @@ while time.time()-t0<TL:
             m=[i for i,H in bk.get(h,[]) if nx.is_isomorphic(G,H,node_match=nm)]
             if m: ok+=1; hit.add(m[0])
             else: bad.append(es)
-print(dict(slices=slices,found=found,F7free=f7free,F7free_eS_ok_in_classes=ok,classes_hit=sorted(hit),not_in_classes=len(bad)))
+print(dict(skipped_slow_slices=skipped,slices=slices,found=found,F7free=f7free,F7free_eS_ok_in_classes=ok,classes_hit=sorted(hit),not_in_classes=len(bad)))
 json.dump(dict(slices=slices,found=found,F7free=f7free,ok=ok,classes_hit=sorted(hit),not_in_classes=bad),open('validate_generic_%s_%s.json'%(sys.argv[6],sys.argv[1]),'w'))

@@ -1,2 +1,0 @@
-FOUND: (0,1,6) (0,4,5) (1,2,3) (2,4,6) (3,5,6) AUT=12 TAU=3
-SUMMARY bfs_enum N=7 M=5 T0=3 DMAX=100 CONN=1 classes=1 labelled=420 children=39

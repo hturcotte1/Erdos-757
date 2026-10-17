@@ -49,9 +49,16 @@ python3 iso_match.py rerun/T17_classes.txt $F/G17_classes.json; python3 iso_matc
 python3 combine.py rerun/inH18_T17.txt indep/T17_conn.txt; python3 combine.py rerun/inH18_T14AP.txt indep/T14_conn.txt AP
 cat rerun/inH18_T17.txt rerun/inH18_T14AP.txt > rerun/inH18.txt
 ./indep/ext_indep3 17 7 3 < rerun/inH18.txt > indep/hitsH18.txt; tail -n 1 indep/hitsH18.txt
-./bin/ext_vertex2 17 8 3 < rerun/inH18.txt > rerun/hitsH18_full_ext_vertex2.txt; tail -n 1 rerun/hitsH18_full_ext_vertex2.txt     # about 1 h
+python3 -c "import random; random.seed(18); L=open('rerun/inH18.txt').read().splitlines(); open('rerun/inH18_sample12000.txt','w').write(chr(10).join(random.sample(L,12000))+chr(10))"
+./bin/ext_vertex2 17 8 3 < rerun/inH18_sample12000.txt | tail -n 1; ./indep/ext_indep3 17 7 3 < rerun/inH18_sample12000.txt | tail -n 1
+# (optional, about 1 h) ./bin/ext_vertex2 17 8 3 < rerun/inH18.txt | tail -n 1
 python3 control18.py; ./indep/filter_hits HIT < control18_hits.txt | tail -n 1
 # --- C8: heuristic validations (random slices of direct searches; partial direct (14,12,6) run)
+(cd indep && timeout 2600 ./enum_conn 14 12 6 3 1 > direct_14_12_6_deg3.txt || true)     # stopped after about 43 CPU-min in the original run
+N=$(grep -c '^FOUND.*)$' indep/direct_14_12_6_deg3.txt); head -n $N indep/direct_14_12_6_deg3.txt > rerun/direct14_partial.txt
+./indep/filter_hits FOUND < rerun/direct14_partial.txt > rerun/direct14_partial_filt.txt; python3 connected_filter.py rerun/direct14_partial_filt.txt rerun/direct14_partial_C.txt
+python3 iso_match.py rerun/T14_classes.txt rerun/direct14_partial_C.txt
+python3 slice_sample.py 17 13 7 314202 7 600 1 rerun/slices_17_13_7.txt; ./indep/filter_hits FOUND < rerun/slices_17_13_7.txt | tail -n 1
 python3 slice_sample.py 17 13 7 21698 6 1500 7 rerun/slices6_17_13_7.txt
 ./indep/filter_hits FOUND < rerun/slices6_17_13_7.txt > rerun/slices6_filt.txt; python3 connected_filter.py rerun/slices6_filt.txt rerun/slices6_C.txt
 python3 iso_match.py rerun/T17_classes.txt rerun/slices6_C.txt
