@@ -36,7 +36,8 @@ zcat $P/indep/T17_conn.txt.gz | ./bin/canon 17 | awk '{print $1}' | sort -u > ou
 python3 src/build_final_inputs.py
 ./bin/ext1 17 8 3 < out/in18_classlevel.txt > out/x18.txt
 # --- 7. direct genbg enumeration of connected linear (17,13,tau>=7), Delta<=3 (two parts, about 1 CPU-hour in total)
-./src/run_direct17.sh   # part 0 (and part 1 via src/run_direct17_part1.sh)
+./src/run_direct17.sh  # runs part 0/2 and part 1/2 sequentially (here they ran in parallel: part 0 by this script, part 1 by src/run_direct17_part1.sh)
+cat out/g_17_13_7_part0.txt out/g_17_13_7_part1.txt > out/g_17_13_7_all.txt; grep "C=1" out/g_17_13_7_all.txt | ./bin/canon 17 | awk "{print \$1}" | sort -u > out/d17C.cls; cmp out/d17C.cls out/x17C.cls && cmp out/d17C.cls out/pT17.cls && echo "direct17 == rebuild == prover"
 # --- 8. the prover's labelled pipeline C2-C7 re-run with outputs under out/pr
 (cd out/pr && ../../src/rerun_prover.sh > rerun.log 2>&1)
 # --- 9. witness A_18 and filter controls

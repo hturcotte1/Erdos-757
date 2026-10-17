@@ -69,3 +69,4 @@ experiments/prover/*/out/
 experiments/20261017-0825-n21-n22-via-i11/*.txt
 experiments/20261017-0825-n21-n22-via-i11/out/
 experiments/20261017-0825-n21-n22-via-i11/*.log
+experiments/referee/*/logs*/
