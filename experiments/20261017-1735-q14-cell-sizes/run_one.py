@@ -7,6 +7,8 @@ sys.path.insert(0, HERE)
 import engine, streamdirect
 _orig = engine.direct
 engine.direct = lambda n, m, t, D: (streamdirect.direct(n, m, t, D) if n >= 13 else _orig(n, m, t, D))
+_orig_rec = engine.recurse
+engine.recurse = lambda n, m, t, D: (streamdirect.recurse(n, m, t, D) if n >= 17 else _orig_rec(n, m, t, D))
 key = tuple(map(int, sys.argv[1:5])); t0 = time.time()
 reps = engine.cell(*key)
 secs = round(time.time() - t0, 1)

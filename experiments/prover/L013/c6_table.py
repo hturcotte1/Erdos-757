@@ -13,5 +13,6 @@ for r in rows:
                % (k + (r['main_classes'], r['direct_classes'], 'EQUAL' if r['equal'] else 'DIFFERENT', format(int(calls), ','), format(int(found), ','), r['direct_in_C'], r['direct_secs'])))
 print('\n'.join(out))
 neq = sum(1 for r in rows if 'equal' in r and r['equal'])
-print('%d cells, %d of them EQUAL, %d with n >= 22, %d non-empty (%s)' % (len(seen), neq, sum(1 for k in seen if k[0] >= 22),
-      sum(1 for r in rows if r.get('main_classes', 0) > 0), ', '.join('(%d,%d,%d,%d)' % tuple(r['cell']) for r in rows if r.get('main_classes', 0) > 0)))
+unfinished = ['(%s)' % ','.join(r['cell'].split()) for r in rows if 'status' in r]
+print('%d completed comparisons, %d of them EQUAL, %d with n >= 22, %d non-empty (%s); %d further runs did not finish (%s) and are not used' % (len(seen), neq, sum(1 for k in seen if k[0] >= 22),
+      sum(1 for r in rows if r.get('main_classes', 0) > 0), ', '.join('(%d,%d,%d,%d)' % tuple(r['cell']) for r in rows if r.get('main_classes', 0) > 0), len(unfinished), ', '.join(unfinished)))

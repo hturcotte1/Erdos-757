@@ -15,3 +15,55 @@ def direct(n, m, t, D):
     keys = [l for l in open(sf + '.keys').read().splitlines() if l]
     reps = [engine.canon_to_edges(k) for k in sorted(keys)]
     return reps, dict(route='direct(streamed)', enum=rd('.last'), labelled=nfound, in_C_tau_exact=nsurv, filt=rd('.summ'))
+
+import math, itertools
+def recurse(n, m, t, D):
+    """Memory/disk-streaming twin of engine.recurse (same branches, decompositions, inputs, ext_d call, filt modes; the HIT lines are piped
+    ext_d -> filt -> canon -> sort -u instead of being held in Python lists / .out files).  NPROC is ignored (one ext_d process)."""
+    info = dict(route='recurse(streamed)', branches=[]); keyfiles = []; nconn = 0; B = engine.B
+    for d in range(max(1, math.ceil(3 * m / n)), D + 1):
+        for tp in (t - 1, t):
+            Sp = 3 * (n - 1) + 2 * (m - d) - 11 * tp
+            if Sp < 0 or tp < 0: continue
+            decs = engine.decompositions(n - 1, m - d, Sp); inputs = []; dec_info = []
+            for dec in decs:
+                groups = {}
+                for c in dec: groups[c] = groups.get(c, 0) + 1
+                gl = []
+                for typ, k in sorted(groups.items()):
+                    cls = engine.cell(typ[0], typ[1], typ[2], d)
+                    gl.append((typ, cls, list(itertools.combinations_with_replacement(range(len(cls)), k))))
+                size = 1
+                for g in gl: size *= len(g[2])
+                dec_info.append([list(dec), size])
+                for combo in itertools.product(*[g[2] for g in gl]):
+                    es = []; off = 0
+                    for (typ, cls, _), idxs in zip(gl, combo):
+                        for i in idxs:
+                            es += [tuple(v + off for v in e) for e in cls[i]]; off += typ[0]
+                    assert off == n - 1
+                    inputs.append('%d ' % len(es) + ' '.join('%d %d %d' % e for e in es))
+            br = dict(d=d, tp=tp, Sp=Sp, decompositions=len(decs), inputs=len(inputs), dec=dec_info)
+            if inputs:
+                tag = '%d_%d_%d_D%d_d%d_tp%d' % (n, m, t, D, d, tp); base = os.path.join(engine.OUT, 'tmp_%s' % tag)
+                open(base + '.in', 'w').write('\n'.join(inputs) + '\n'); mode = 'notau' if tp == t - 1 else 'tau %d' % t
+                cmd = ('set -o pipefail; %s %d %d %d %d %d < %s.in | tee >(grep "^SUMMARY" > %s.extsum) | grep "^HIT:" | tee >(wc -l > %s.nhit)'
+                       ' | %s HIT %d %s | tee >(tail -n 1 > %s.filtsum) | grep "^SURVIVOR:.*#conn=1$" | tee >(wc -l > %s.nsurv)'
+                       ' | cut -d"#" -f1 | %s %d | sort -u -S 1G > %s.keys'
+                       % (os.path.join(B, 'ext_d'), n - 1, tp, t, d, d - 1, base, base, base, os.path.join(B, 'filt'), n, mode, base, base, os.path.join(B, 'canon'), n, base))
+                subprocess.run(['bash', '-c', cmd], check=True); time.sleep(1)
+                rd = lambda ext: open(base + ext).read().strip()
+                tot = {}
+                for kv in rd('.extsum').split()[1:]:
+                    k, v = kv.split('='); tot[k] = int(v)
+                if tot.get('bad_tau', 0): raise RuntimeError('bad_tau in %s' % br)
+                br['ext'] = tot; br['hits_in_C'] = int(rd('.nhit').split()[0]); br['filt'] = rd('.filtsum'); nconn += int(rd('.nsurv').split()[0])
+                keyfiles.append(base + '.keys')
+                for ext in ('.in', '.extsum', '.nhit', '.filtsum', '.nsurv'): os.remove(base + ext)
+            info['branches'].append(br)
+            engine.log('  BRANCH', (n, m, t, D), 'd=%d tp=%d S\'=%d decompositions=%d inputs=%d' % (d, tp, Sp, len(decs), len(inputs)), br.get('ext', ''))
+    info['connected_hits'] = nconn
+    keys = set()
+    for kf in keyfiles:
+        keys.update(l for l in open(kf).read().splitlines() if l); os.remove(kf)
+    return [engine.canon_to_edges(k) for k in sorted(keys)], info

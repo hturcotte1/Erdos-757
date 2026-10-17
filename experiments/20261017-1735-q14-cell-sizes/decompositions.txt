@@ -26,7 +26,7 @@
       1x(3,1,1)[DONE=1] + 1x(8,6,3)[DONE=3] + 1x(10,8,4)[DONE=63]
       1x(3,1,1)[DONE=1] + 1x(6,4,2)[DONE=1] + 1x(12,10,5)[DONE=149]
       1x(3,1,1)[DONE=1] + 1x(4,2,1)[DONE=0] + 1x(14,12,6)[DONE=2]
-      2x(3,1,1)[DONE=1] + 1x(15,13,6)[NOT COMPUTED]
+      2x(3,1,1)[DONE=1] + 1x(15,13,6)[DONE=949522]
 === cell (19,17,8) Delta<=3
   branch d=3 tau'=7 remainder (18,14) slack 5: 6 decompositions
       1x(18,14,7)[NOT COMPUTED]
@@ -34,7 +34,7 @@
       1x(8,6,3)[DONE=3] + 1x(10,8,4)[DONE=63]
       1x(6,4,2)[DONE=1] + 1x(12,10,5)[DONE=149]
       1x(4,2,1)[DONE=0] + 1x(14,12,6)[DONE=2]
-      1x(3,1,1)[DONE=1] + 1x(15,13,6)[NOT COMPUTED]
+      1x(3,1,1)[DONE=1] + 1x(15,13,6)[DONE=949522]
 === cell (21,15,8) Delta<=3
   branch d=3 tau'=7 remainder (20,12) slack 7: 44 decompositions
       1x(20,12,7)[NOT COMPUTED]
@@ -80,7 +80,7 @@
       2x isolated + 2x(3,1,1)[DONE=1] + 1x(12,10,5)[DONE=149]
       2x(3,1,1)[DONE=1] + 1x(6,4,2)[DONE=1] + 1x(8,6,3)[DONE=3]
       2x(3,1,1)[DONE=1] + 1x(4,2,1)[DONE=0] + 1x(10,8,4)[DONE=63]
-      3x(3,1,1)[DONE=1] + 1x(11,9,4)[NOT COMPUTED]
+      3x(3,1,1)[DONE=1] + 1x(11,9,4)[DONE=1216]
 === cell (18,14,7) Delta<=3
   branch d=3 tau'=6 remainder (17,11) slack 7: 19 decompositions
       1x(17,11,6)[DONE=45669]
@@ -101,7 +101,7 @@
       2x isolated + 1x(3,1,1)[DONE=1] + 1x(12,10,5)[DONE=149]
       1x(3,1,1)[DONE=1] + 1x(6,4,2)[DONE=1] + 1x(8,6,3)[DONE=3]
       1x(3,1,1)[DONE=1] + 1x(4,2,1)[DONE=0] + 1x(10,8,4)[DONE=63]
-      2x(3,1,1)[DONE=1] + 1x(11,9,4)[NOT COMPUTED]
+      2x(3,1,1)[DONE=1] + 1x(11,9,4)[DONE=1216]
 === cell (15,13,6) Delta<=3
   branch d=3 tau'=5 remainder (14,10) slack 7: 6 decompositions
       1x(14,10,5)[DONE=45229]
@@ -109,4 +109,4 @@
       2x isolated + 1x(12,10,5)[DONE=149]
       1x(6,4,2)[DONE=1] + 1x(8,6,3)[DONE=3]
       1x(4,2,1)[DONE=0] + 1x(10,8,4)[DONE=63]
-      1x(3,1,1)[DONE=1] + 1x(11,9,4)[NOT COMPUTED]
+      1x(3,1,1)[DONE=1] + 1x(11,9,4)[DONE=1216]

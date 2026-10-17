@@ -21,9 +21,9 @@ runc() { # timeout_min n m tau D   (min(timeout, remaining))
 }
 
 ok=1
-for c in "15 13 6" "18 14 7" "21 15 8"; do runc 50 $c 3 || ok=0; done
+for c in "15 13 6" "18 14 7" "21 15 8"; do [ -e out/cells/cell_$(echo $c | tr " " _)_D3.txt ] && continue; runc 50 $c 3 || ok=0; done
 if [ $ok -eq 1 ]; then
-  runc 30 19 17 8 3
+  [ -e out/cells/cell_19_17_8_D3.txt ] || runc 30 19 17 8 3
   t=$(left); [ $t -gt 60 ] && t=60; [ $t -gt 5 ] && runc $t 22 18 9 3
   t=$(left); [ $t -gt 5 ] && runc $t 23 21 10 3
 fi

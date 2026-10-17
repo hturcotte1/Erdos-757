@@ -15,7 +15,7 @@ gcc -O2 -Wall -o bin/realize $S/realize.c; gcc -O2 -Wall -o bin/realize_extra $S
 gcc -O2 -DWORDSIZE=64 -DMAXN=64 -I$NB -I$ND -o bin/canon $S/canon.c $ND/nauty.c $ND/nautil.c $ND/naugraph.c $ND/schreier.c $ND/naurng.c
 for b in enum_conn filt ext_d realize realize_extra canon; do cmp bin/$b ../L012/bin/$b && echo "$b identical to ../L012/bin/$b"; done > build_check_output.txt
 cp ../L012/engine.py ../L012/decomp22.py . ; diff engine.py ../L012/engine.py; diff decomp22.py ../L012/decomp22.py; diff ../L012/indep/enum_conn.c ../L007/indep/enum_conn.c
-sha256sum bin/* engine.py decomp22.py >> build_check_output.txt
+sha256sum bin/* engine.py decomp22.py ../L012/indep/*.c >> build_check_output.txt
 # --- C1: arithmetic (window cells, degree bounds, counting, record cells, lower bounds) and the n = 27 remark
 python3 arith13.py > arith13_output.txt
 python3 n27_remark.py > n27_remark_output.txt
@@ -31,19 +31,19 @@ python3 top_table.py out/cells $T > top_table_output.txt; python3 top_types.py o
 python3 verifier_unit_tests.py > verifier_unit_tests_output.txt; python3 canon_fixed_points.py out/cells > canon_fixed_points_output.txt
 nice -n 19 python3 check_cells.py out/cells 10 > check_cells_output.txt
 python3 cells_summary.py out/cells > cells_summary_output.txt
-# --- C5/C9: known counts, comparisons with L012's cell lists and the worker's runs (representative sets and branch counters), arithmetic comparison
+# --- C5/C10: known counts, comparisons with L012's cell lists and the worker's runs (representative sets and branch counters), arithmetic comparison
 mkdir -p out/l012cells out/w25 out/w26; tar xzf ../L012/cells.tar.gz -C out/l012cells; tar xzf $W1/cells25.tar.gz -C out/w25; tar xzf $W2/cells26.tar.gz -C out/w26
 for k in 12_10_5_D3 10_7_4_D3 22_17_9_D3 19_16_8_D3; do echo "cell($k): mine $(grep -c '^FOUND' out/cells/cell_$k.txt), L012 $(grep -c '^FOUND' out/l012cells/cells/cell_$k.txt)"; done > known_counts_output.txt || true
 python3 compare_arith.py > compare_arith_output.txt
 python3 compare_runs.py out/cells L012=out/l012cells/cells W2324=$W1/out/cells W25=out/w25/cells25 W26=$W2/out/cells tsv:W2324table=$W1/cells_table.tsv > compare_runs_output.txt
 # --- C6: direct enumeration of recursion cells (MD = 99, fresh directories); then load_bearing.py (which load-bearing lists rest on the recursion only)
-rm -f crosscheck_direct.jsonl; bash run_crosscheck1.sh; bash run_crosscheck2.sh; bash run_crosscheck2b.sh; bash run_crosscheck2c.sh; bash run_crosscheck3.sh; bash run_crosscheck4.sh; bash run_crosscheck5.sh
+rm -f crosscheck_direct.jsonl; bash run_crosscheck1.sh; bash run_crosscheck2.sh; bash run_crosscheck2b.sh; bash run_crosscheck2c.sh; bash run_crosscheck3.sh; bash run_crosscheck4.sh; bash run_crosscheck5.sh; bash run_crosscheck6.sh
 python3 load_bearing.py > load_bearing_output.txt
 # --- C7: re-validation of the final extension steps (noprune + pure-Python filter on all inputs; brute force on 3 sampled inputs per branch)
 bash run_ext_validate.sh
 # --- C8: positive controls (A_base and the 2,910 census patterns in cell(14,12,6,4); random members of C in recursion cells)
 rm -rf out/cells_D4/* out/engine_D4.log top_results_D4.jsonl; CELLDIR=$PWD/out/cells_D4 ENGINELOG=$PWD/out/engine_D4.log NPROC=1 TOPJSONL=$PWD/top_results_D4.jsonl python3 run_top.py 14 12 6 4 > out/run_D4.log 2>&1
 python3 check_cells.py out/cells_D4 10 > check_cells_D4_output.txt; python3 abase_control.py > abase_control_output.txt
-rm -f positive_control.jsonl; bash run_positive.sh
+rm -f positive_control.jsonl; bash run_positive.sh; bash run_positive2.sh
 # --- tracked copy of the cell lists
 tar czf cells.tar.gz -C out cells

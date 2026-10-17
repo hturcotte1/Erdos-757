@@ -20,3 +20,6 @@
 {"cell": [26, 14, 10, 2], "main_route": "recurse", "main_classes": 0, "direct_classes": 0, "equal": true, "direct_enum": "enum_conn N=26 M=14 T0=10 DMAX=2 calls=12082557 found=0", "direct_labelled": 0, "direct_in_C": 0, "direct_secs": 11.6}
 {"cell": [24, 13, 9, 3], "main_route": "recurse", "main_classes": 0, "direct_classes": 0, "equal": true, "direct_enum": "enum_conn N=24 M=13 T0=9 DMAX=3 calls=273640425 found=0", "direct_labelled": 0, "direct_in_C": 0, "direct_secs": 380.3}
 {"cell": "25 16 10 2", "status": "TIMEOUT at the 2,700 s cap (machine load 8-9), no result"}
+{"cell": "24 14 9 3", "status": "TIMEOUT at the 2,400 s cap (machine load 8-9), no result"}
+{"cell": "26 15 10 3", "status": "TIMEOUT at the 1,320 s cap, no result"}
+{"cell": "23 14 9 3", "status": "TIMEOUT at the 3,600 s cap, no result"}
