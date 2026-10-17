@@ -13,7 +13,8 @@ def sub_ok(es,n):
     S=np.arange(1<<n,dtype=np.int64); c=np.zeros(1<<n,dtype=np.int32)
     for e in es:
         mk=sum(1<<v for v in e); c+= ((S&mk)==mk)
-    pc=np.array([bin(x).count('1') for x in range(1<<n)],dtype=np.int32) if n<=16 else None
+    pc=np.zeros(1<<n,dtype=np.int32)
+    for b in range(n): pc+=((S>>b)&1).astype(np.int32)
     bad=(c>0)&(c>pc-2)
     return not bad.any()
 def orderings(es,n,limit=1):
