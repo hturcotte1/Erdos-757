@@ -307,3 +307,5 @@ Format for each work block:
 - consequence: records are impossible at n = 16 and 18; the next feasible sizes are 20, 22, 23 (START_HERE section 4). Next: certificate L009 (prover), referees.
 
 ## 2026-10-17T07:05Z U next: prover writing L009 (f(18) = 11); falsifier agent continues to the window cells at n = 19 and 20 (the n = 20 record cell (20,18,9)) in experiments/20261017-0705-n19-n20-via-i11
+
+## 2026-10-17T07:17Z result L008 referee round 1: ACCEPT (byte-for-byte reproduction; nauty genbg independent generation agrees; independent pipeline 0 survivors; witness h=10 by judge); scout CLEAR. Two editorial fixes; referees #2 and #3 (the latter on the strongest model) launched.

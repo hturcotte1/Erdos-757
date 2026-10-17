@@ -1,7 +1,7 @@
 # f(16) = 10: every 16-point (4,5)-set has a Sidon subset of size 10, so no 16-point (4,5)-set beats the ratio 4/7
 CLAIM-TYPE: lemma + certificate (computer-assisted proof: the L007 method one level up; every enumeration and every extension computation that the proof uses was run by two independently written programs)
 TYPE: certificate
-STATUS: submitted 2026-10-17 06:09 UTC (prover draft; not yet refereed)
+STATUS: submitted 2026-10-17 06:09 UTC; referee round 1 ACCEPT (results/reviews/L008-f16-equals-10__referee__20261017T070236Z.md: every computation reproduced byte for byte, nauty genbg gives the same isomorphism classes, independent pipeline 0 survivors); novelty CLEAR (__scout__20261017T061250Z.md); two editorial fixes applied 07:17 UTC; referee rounds 2 and 3 requested
 DEPENDS ON:
 - L007 [verified-here, ACCEPTED by referee rounds 1, 2 and 3; K51]: its Lemma A (I11 on $O^+$ for $n\le13$), its Theorem 1 (every $H\in O^+$ with $(n,m)=(14,11)$ has $\tau\le5$), its Lemma D (computation C0: exhaustiveness of the canonical-growth enumerators, validated against brute force), its Lemma F (computation C3: the $F_7$ test), and its computation C6 (no connected linear 3-graph in the cells (15,9,6), (15,10,6), (16,8,6), by two programs). Everything of L007 is used except its Corollaries 3 and 4.
 - K3–K7 [published] (Ma–Tang Props 2.1, 2.2, Lemmas 2.3–2.5; Gyárfás–Lehel Prop 2.6): the AP pattern of a (4,5)-set lies in $O\subseteq O^+$ and $h=\alpha$ (Step 7.1).
@@ -45,7 +45,7 @@ With $\mathrm{lo}(n,m)=\lfloor(3n+2m)/11\rfloor+1$ and $\mathrm{hy}(n,m)=\lfloor
 2.1 Let $H\in O^+$, $n\le15$, and suppose $s(H)<0$. As in L007 Step 2.1–2.2, some component $C\in O^+$ has $s(C)<0$, $n_C\ge3$, $m_C\ge1$, and $(n_C,m_C,\tau(C))$ lies in a window cell with $n_C\le15$: $\tau(C)\ge\mathrm{lo}$.
 2.2 If $n_C\le13$: impossible by L007 Lemma A (applied to $C$).
 2.3 If $(n_C,m_C)=(14,11)$: $\tau(C)\ge6$ contradicts L007 Theorem 1 ($C\in O^+$ has $\tau\le5$).
-2.4 If $(n_C,m_C)\in\{(15,9),(15,10)\}$: $C$ is a connected linear 3-graph with $\tau\ge6$, and there is none (L007 computation C6: `conn_dfs2 15 9 6` → 2,459,440 nodes, found 0; `conn_dfs2 15 10 6` → 186,011,577 nodes, found 0; independently `enum_conn 15 9 6` → found 0 and `enum_conn 15 10 6` → found 0).
+2.4 If $(n_C,m_C)\in\{(15,9),(15,10)\}$: $C$ is a connected linear 3-graph with $\tau\ge6$, and there is none (these two cells are NOT part of L007's certified statement, which L007 lists as an uncertified remark; they were verified independently by L007 referee rounds 1 and 3 and by L008 referee round 1 with nauty genbg; L007 computation C6: `conn_dfs2 15 9 6` → 2,459,440 nodes, found 0; `conn_dfs2 15 10 6` → 186,011,577 nodes, found 0; independently `enum_conn 15 9 6` → found 0 and `enum_conn 15 10 6` → found 0).
 2.5 Hence $s(H)\ge0$. $\square$
 
 ### Step 3. Lemma B′ (degrees at 16 vertices)
@@ -76,7 +76,7 @@ Let $H$ be as in Step 3, $v$ a vertex of degree 3, $G:=H-v$.
 | 14 | 7 | [7,12] | (14,7,5) |
 | 15 | 0 | [7,13] | (15,11,6) |
 
-($\tau=(3n+2m-1)/11$. All eight cells also satisfy $\tau\le m$ and K8: (8,5,3) $51\le55$; (11,6,4) $68\le73$; (12,10,5) $85\le90$; (14,7,5) $85\le91$; (15,11,6) $102\le108$; (14,12,6) $102\le106$; and L007's three. `decomp.py` part (b), which tries every $\tau$ from 0 to $m$ instead of solving the congruence, prints the same two lists, as does the falsifier's `slack_cells.py`.)
+($\tau=(3n+2m-1)/11$. All nine cells also satisfy $\tau\le m$ and K8: (8,5,3) $51\le55$; (11,6,4) $68\le73$; (12,10,5) $85\le90$; (14,7,5) $85\le91$; (15,11,6) $102\le108$; (14,12,6) $102\le106$; and L007's three. `decomp.py` part (b), which tries every $\tau$ from 0 to $m$ instead of solving the congruence, prints the same two lists, as does the falsifier's `slack_cells.py`.)
 4.4 (Decompositions.) The component types must add up to $(n,m)=(15,11)$ with exactly one slack-1 type. Slack-1 type (15,11,6): nothing remains. (14,7,5): remainder (1,4), and no slack-0 type has 1 vertex. (12,10,5): remainder (3,1) = (3,1,1). (11,6,4): remainder (4,5); the only slack-0 type with at most 4 vertices is (3,1,1), leaving (1,4): impossible. (8,5,3): remainder (7,6); slack-0 types with at most 7 vertices: only (3,1,1), leaving (4,5), then (1,4): impossible. Hence (`decomp.py` part (c), an exhaustive search over all multisets of slack-0, slack-1 and isolated-vertex types with total slack exactly 1, confirms):
 (A) $G=R\sqcup E$ with $R$ a connected linear 3-graph with $(n,m,\tau)=(12,10,5)$ and $E$ a single edge, or
 (B) $G$ is a connected linear 3-graph with $(n,m,\tau)=(15,11,6)$.

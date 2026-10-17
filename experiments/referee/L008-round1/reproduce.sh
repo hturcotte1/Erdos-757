@@ -71,3 +71,7 @@ sed -e "s/        for (int v = 0; v < 15; v++) if (deg\[v\] == 0 || deg\[v\] > 3
 (cd out && ../bin/ref_ext_c C < genbg_15_11_6_d3_ALL.txt > refext_ALL.txt && tail -n1 refext_ALL.txt && ../bin/ref_filter HIT 16 < refext_ALL.txt | tail -1)
 # 7. heuristic local search for I11 / Theorem-1 violations in O+ (not a proof)
 python3 scripts/hillclimb_falsify.py 7 150
+# 8. optional: Henning-Yeo-free Lemma A' (all connected cells n<=15 with lo <= m, no degree bound)
+for c in "14 7 6" "14 8 6" "14 9 6" "14 10 6" "14 12 7" "15 7 6" "15 8 6" "15 11 7" "15 12 7"; do set -- $c; TAU0=$3 nauty_build/genbg_tau -c -Z1 -d1:3 -D$2:3 $1 $2 $((3*$2)):$((3*$2)) > out/hyfree_$1_$2_$3.txt; done
+for I in 0 1 2; do TAU0=7 nauty_build/genbg_tau -c -Z1 -d1:3 -D13:3 15 13 39:39 $I/3 > out/hyfree_15_13_7_part$I.txt; done
+for c in 4,2,2 5,2,2 5,3,2 6,3,3 6,4,3 7,3,3 7,4,3 7,5,3 8,4,3 8,5,4 8,6,4 9,4,4 9,5,4 9,6,4 9,7,4 10,5,4 10,6,4 10,7,5 10,8,5 11,5,4 11,6,5 11,7,5 11,8,5 11,9,5 12,6,5 12,7,5 12,8,5 12,9,5 12,10,6 13,6,5 13,7,5 13,8,6 13,9,6 13,10,6 13,11,6; do IFS=, read n m t <<< "$c"; TAU0=$t nauty_build/genbg_tau -q -c -Z1 -d1:3 -D$m:3 $n $m $((3*m)):$((3*m)) > out/hyfree_small_${n}_${m}_${t}.txt; done
