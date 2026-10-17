@@ -19,6 +19,7 @@ gcc -O3 -march=native -o bin/ext16 src/ext16.c
 for n in 3 4 5 6 7 8; do for D in 3 100; do ./bin/bf_lab $n $D; done; done > out/bf_lab_n3_8.txt
 ./bin/bf_lab 9 3 > out/bf_lab_n9_D3.txt; ./bin/bf_lab 9 100 > out/bf_lab_n9_Dinf.txt
 python3 src/compare_bf.py out/bf_lab_n3_8.txt out/bf_lab_n9_D3.txt out/bf_lab_n9_Dinf.txt       # 390 cells, 0 mismatches
+python3 src/bf_vs_proof_enums.py out/bf_lab_n3_8.txt out/bf_lab_n9_D3.txt out/bf_lab_n9_Dinf.txt   # enum_conn and conn_dfs3 (rerun/bin) vs brute force: 328, 0 mismatches
 # --- 2. the proof's enumerations C2, C3 by generate-and-deduplicate, and comparison with the prover's/falsifier's lists
 ./bin/bfs_enum 12 10 5 3 1 1 > out/bfs_12_10_5_d3.txt                 # 197 classes
 ./bin/bfs_enum 15 11 6 3 1 1 > out/bfs_15_11_6_d3.txt                 # 49 classes

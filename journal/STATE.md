@@ -1,8 +1,8 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: EXTENSION (+48 h granted by the user 2026-10-17 00:5x UTC; ends about 2026-10-18 23:06 UTC); GOAL.md unchanged (protected), status.sh shows clause C
-Last updated (UTC): 2026-10-17 06:13
-Phase/track: extension: L007 ACCEPTED x3 (Q11 closed, K51); L008 (f(16)=10) SUBMITTED, referee #1 + scout running; falsifier agent attacking the next window cells (17,12,7) and (18,16,8) (the n=18 record cell) with the same method
+Last updated (UTC): 2026-10-17 08:25
+Phase/track: extension: the I11 induction chain. L007 ACCEPTED x3 (Q11 closed, K51). L008 (f(16)=10): referee #1 ACCEPT + scout CLEAR, referees #2 (opus) and #3 (fable) running. L009 (f(18)=11) SUBMITTED, referee #1 + scout running. L010 (f(20)=12): prover writing. Falsifier agent on n = 21, 22 (the n = 22 record cell).
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
 ## Best verified results (details: results/LEDGER.md, kb/known_results.md K30-K49)
@@ -15,7 +15,7 @@ Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
 ## Running jobs / agents
 - (14,11,alpha<=8) DFS, 4 workers at nice 19, 1041/3437 prefixes at 00:57, 0 patterns; resumable (relaunch: python3 -m e757.ordered_dfs_split 14 8 11 3 4 experiments/20261014-1005-census-dfs/n14m11dfs/results --refl --nice 19 --tag n14_m11).
-- workflow: L008 referee #1 + scout; falsifier agent: cells (17,12,7), (18,16,8) (experiments/20261017-0615-n17-n18-via-i11). DONE: L007 x3 ACCEPT; I11 falsifier; CP-SAT (14,11) UNKNOWN (D21); probe (D25); record hunt (D26, K50); (16,14,7) decision; (14,11) DFS stopped at 1,081/3,437 (superseded by L007).
+- workflows: L008 referees #2/#3; L009 referee #1 + scout. prover: L010. falsifier agent: n = 21, 22 (experiments/20261017-0825-n21-n22-via-i11). DONE: (16,14,7) empty; n=17/18 cells empty (L009); n=19/20 cells empty (L010 pending); L007 x3 ACCEPT; I11 falsifier; CP-SAT (14,11) UNKNOWN (D21); probe (D25); record hunt (D26, K50); (16,14,7) decision; (14,11) DFS stopped at 1,081/3,437 (superseded by L007).
 - Documentation audited three times in the first 72 h (last 2026-10-16 18:10 UTC); main = merge 414628a.
 
 ## Live hypotheses
