@@ -1,0 +1,164 @@
+cell (23, 21, 10, 3): 0 classes, route recurse, 409.8 s
+  branch d=3 t'=9 S'=3: 5 decompositions, 133804 inputs
+      (22,18,9): 94513
+      (21,18,9) + (1,0,0): 0
+      (10,8,4) + (12,10,5): 9387
+      (8,6,3) + (14,12,6): 6
+      (3,1,1) + (19,17,8): 29898
+    ext_d: graphs=133804 bad_tau=0 tg_too_small=0 searched=133804 max_min_covers=1638 nodes=48029683 hits_F7free=4249 hits_in_C=0 | HIT lines 0
+    filt: SUMMARY tag=HIT NV=23 total=0 bad_labels=0 linear=0 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=0 survivors_connected=0 wrong_tau_dropped=0 connected_all=0 tau_range=[99,-1] maxdeg_max=0
+    filt: SUMMARY tag=HIT NV=23 total=0 bad_labels=0 linear=0 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=0 survivors_connected=0 wrong_tau_dropped=0 connected_all=0 tau_range=[99,-1] maxdeg_max=0
+  connected_hits 0
+cell (22, 18, 9, 3): 94513 classes, route recurse, 2725.4 s
+  branch d=3 t'=8 S'=5: 20 decompositions, 2014413 inputs
+      (21,15,8): 232759
+      (20,15,8) + (1,0,0): 953
+      (10,8,4) + (11,7,4): 2205
+      (10,7,4) + (11,8,4): 1884
+      (10,7,4) + (10,8,4) + (1,0,0): 252
+      (9,5,3) + (12,10,5): 894
+      (8,6,3) + (13,9,5): 252
+      (8,5,3) + (13,10,5): 13366
+      (8,5,3) + (12,10,5) + (1,0,0): 298
+      (7,3,2) + (14,12,6): 2
+      (6,4,2) + (15,11,6): 19
+      (6,3,2) + (15,12,6): 10617
+      (6,3,2) + (14,12,6) + (1,0,0): 2
+      (4,2,1) + (17,13,7): 0
+      (3,1,1) + (18,14,7): 799342
+      (3,1,1) + (17,14,7) + (1,0,0): 1708
+      (3,1,1) + (8,6,3) + (10,8,4): 189
+      (3,1,1) + (6,4,2) + (12,10,5): 149
+      (3,1,1) + (4,2,1) + (14,12,6): 0
+      (3,1,1) + (3,1,1) + (15,13,6): 949522
+    ext_d: graphs=2014413 bad_tau=0 tg_too_small=0 searched=2014413 max_min_covers=954 nodes=5238536047 hits_F7free=3470939 hits_in_C=3042157 | HIT lines 3042157
+    filt: SUMMARY tag=HIT NV=22 total=1523419 bad_labels=0 linear=1523419 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=1523419 survivors_connected=1122534 wrong_tau_dropped=0 connected_all=1122534 tau_range=[-1,-1] maxdeg_max=3
+    filt: SUMMARY tag=HIT NV=22 total=1518738 bad_labels=0 linear=1518738 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=1518738 survivors_connected=1117090 wrong_tau_dropped=0 connected_all=1117090 tau_range=[-1,-1] maxdeg_max=3
+  connected_hits 2239624
+cell (19, 17, 8, 3): 29898 classes, route recurse, 943.4 s
+  branch d=3 t'=7 S'=5: 6 decompositions, 1750910 inputs
+      (18,14,7): 799342
+      (17,14,7) + (1,0,0): 1708
+      (8,6,3) + (10,8,4): 189
+      (6,4,2) + (12,10,5): 149
+      (4,2,1) + (14,12,6): 0
+      (3,1,1) + (15,13,6): 949522
+    ext_d: graphs=1750910 bad_tau=0 tg_too_small=0 searched=1750910 max_min_covers=318 nodes=614929842 hits_F7free=666240 hits_in_C=519189 | HIT lines 519189
+    filt: SUMMARY tag=HIT NV=19 total=519189 bad_labels=0 linear=519189 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=519189 survivors_connected=519189 wrong_tau_dropped=0 connected_all=519189 tau_range=[-1,-1] maxdeg_max=3
+  connected_hits 519189
+cell (21, 15, 8, 3): 232759 classes, route recurse, 2694.4 s
+  branch d=3 t'=7 S'=7: 44 decompositions, 121532 inputs
+      (20,12,7): 15465
+      (19,12,7) + (1,0,0): 833
+      (18,12,7) + (1,0,0) + (1,0,0): 0
+      (10,5,3) + (10,7,4): 24
+      (9,6,3) + (11,6,4): 0
+      (9,5,3) + (11,7,4): 210
+      (9,5,3) + (10,7,4) + (1,0,0): 24
+      (9,4,3) + (11,8,4): 471
+      (9,4,3) + (10,8,4) + (1,0,0): 63
+      (8,6,3) + (12,6,4): 12
+      (8,6,3) + (11,6,4) + (1,0,0): 0
+      (8,5,3) + (12,7,4): 194
+      (8,5,3) + (11,7,4) + (1,0,0): 70
+      (8,5,3) + (10,7,4) + (1,0,0) + (1,0,0): 8
+      (7,4,2) + (13,8,5): 0
+      (7,3,2) + (13,9,5): 84
+      (6,4,2) + (14,8,5): 9
+      (6,4,2) + (13,8,5) + (1,0,0): 0
+      (6,3,2) + (14,9,5): 1060
+      (6,3,2) + (13,9,5) + (1,0,0): 84
+      (6,3,2) + (6,4,2) + (8,5,3): 2
+      (6,3,2) + (6,3,2) + (8,6,3): 3
+      (4,2,1) + (16,10,6): 0
+      (4,2,1) + (8,5,3) + (8,5,3): 0
+      (4,2,1) + (6,3,2) + (10,7,4): 0
+      (3,1,1) + (17,11,6): 45669
+      (3,1,1) + (16,11,6) + (1,0,0): 3238
+      (3,1,1) + (15,11,6) + (1,0,0) + (1,0,0): 19
+      (3,1,1) + (8,6,3) + (9,5,3): 18
+      (3,1,1) + (8,5,3) + (9,6,3): 42
+      (3,1,1) + (8,5,3) + (8,6,3) + (1,0,0): 6
+      (3,1,1) + (7,4,2) + (10,7,4): 8
+      (3,1,1) + (7,3,2) + (10,8,4): 63
+      (3,1,1) + (6,4,2) + (11,7,4): 35
+      (3,1,1) + (6,4,2) + (10,7,4) + (1,0,0): 4
+      (3,1,1) + (6,3,2) + (11,8,4): 471
+      (3,1,1) + (6,3,2) + (10,8,4) + (1,0,0): 63
+      (3,1,1) + (4,2,1) + (13,9,5): 0
+      (3,1,1) + (3,1,1) + (14,10,5): 45229
+      (3,1,1) + (3,1,1) + (13,10,5) + (1,0,0): 6683
+      (3,1,1) + (3,1,1) + (12,10,5) + (1,0,0) + (1,0,0): 149
+      (3,1,1) + (3,1,1) + (6,4,2) + (8,6,3): 3
+      (3,1,1) + (3,1,1) + (4,2,1) + (10,8,4): 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (11,9,4): 1216
+    ext_d: graphs=121532 bad_tau=0 tg_too_small=0 searched=121532 max_min_covers=567 nodes=1971945618 hits_F7free=34397572 hits_in_C=33962901 | HIT lines 33962901
+    filt: SUMMARY tag=HIT NV=21 total=33962901 bad_labels=0 linear=33962901 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=33962901 survivors_connected=6140404 wrong_tau_dropped=0 connected_all=6140404 tau_range=[-1,-1] maxdeg_max=3
+  connected_hits 6140404
+cell (18, 14, 7, 3): 799342 classes, route recurse, 1522.9 s
+  branch d=3 t'=6 S'=7: 19 decompositions, 102916 inputs
+      (17,11,6): 45669
+      (16,11,6) + (1,0,0): 3238
+      (15,11,6) + (1,0,0) + (1,0,0): 19
+      (8,6,3) + (9,5,3): 18
+      (8,5,3) + (9,6,3): 42
+      (8,5,3) + (8,6,3) + (1,0,0): 6
+      (7,4,2) + (10,7,4): 8
+      (7,3,2) + (10,8,4): 63
+      (6,4,2) + (11,7,4): 35
+      (6,4,2) + (10,7,4) + (1,0,0): 4
+      (6,3,2) + (11,8,4): 471
+      (6,3,2) + (10,8,4) + (1,0,0): 63
+      (4,2,1) + (13,9,5): 0
+      (3,1,1) + (14,10,5): 45229
+      (3,1,1) + (13,10,5) + (1,0,0): 6683
+      (3,1,1) + (12,10,5) + (1,0,0) + (1,0,0): 149
+      (3,1,1) + (6,4,2) + (8,6,3): 3
+      (3,1,1) + (4,2,1) + (10,8,4): 0
+      (3,1,1) + (3,1,1) + (11,9,4): 1216
+    ext_d: graphs=102916 bad_tau=0 tg_too_small=0 searched=102916 max_min_covers=189 nodes=423459880 hits_F7free=23585689 hits_in_C=23297430 | HIT lines 23297430
+    filt: SUMMARY tag=HIT NV=18 total=23297430 bad_labels=0 linear=23297430 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=23297430 survivors_connected=12792445 wrong_tau_dropped=0 connected_all=12792445 tau_range=[-1,-1] maxdeg_max=3
+  connected_hits 12792445
+cell (15, 13, 6, 3): 949522 classes, route recurse, 720.4 s
+  branch d=3 t'=5 S'=7: 6 decompositions, 53280 inputs
+      (14,10,5): 45229
+      (13,10,5) + (1,0,0): 6683
+      (12,10,5) + (1,0,0) + (1,0,0): 149
+      (6,4,2) + (8,6,3): 3
+      (4,2,1) + (10,8,4): 0
+      (3,1,1) + (11,9,4): 1216
+    ext_d: graphs=53280 bad_tau=0 tg_too_small=0 searched=53280 max_min_covers=63 nodes=27975933 hits_F7free=10509530 hits_in_C=10366934 | HIT lines 10366934
+    filt: SUMMARY tag=HIT NV=15 total=10366934 bad_labels=0 linear=10366934 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=10366934 survivors_connected=10366934 wrong_tau_dropped=0 connected_all=10366934 tau_range=[-1,-1] maxdeg_max=3
+  connected_hits 10366934
+cell (14, 10, 5, 3): 45229 classes, route direct, 1925.1 s
+    enum_conn N=14 M=10 T0=5 DMAX=3 calls=1082357094 found=57909266
+    SUMMARY tag=FOUND NV=14 total=57909266 bad_labels=0 linear=57909266 contain_F7=868901 P3_violated=5355 F7free_and_P3_violated=2484 survivors=57037881 survivors_connected=57037881 wrong_tau_dropped=0 connected_all=57909266 tau_range=[5,5] maxdeg_max=3
+cell (21, 18, 9, 3): 0 classes, route recurse, 12.3 s
+  branch d=3 t'=8 S'=2: 5 decompositions, 3213 inputs
+      (20,15,8): 953
+      (10,7,4) + (10,8,4): 252
+      (8,5,3) + (12,10,5): 298
+      (6,3,2) + (14,12,6): 2
+      (3,1,1) + (17,14,7): 1708
+    ext_d: graphs=3213 bad_tau=0 tg_too_small=0 searched=3213 max_min_covers=933 nodes=4060923 hits_F7free=1008 hits_in_C=0 | HIT lines 0
+    filt: SUMMARY tag=HIT NV=21 total=0 bad_labels=0 linear=0 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=0 survivors_connected=0 wrong_tau_dropped=0 connected_all=0 tau_range=[99,-1] maxdeg_max=0
+  connected_hits 0
+cell (23, 21, 10, 4): 699 classes, route recurse, 927.5 s
+  branch d=3 t'=9 S'=3: 5 decompositions, 133804 inputs
+      (22,18,9): 94513
+      (21,18,9) + (1,0,0): 0
+      (10,8,4) + (12,10,5): 9387
+      (8,6,3) + (14,12,6): 6
+      (3,1,1) + (19,17,8): 29898
+    ext_d: graphs=133804 bad_tau=0 tg_too_small=0 searched=133804 max_min_covers=1638 nodes=48029683 hits_F7free=4249 hits_in_C=0 | HIT lines 0
+    filt: SUMMARY tag=HIT NV=23 total=0 bad_labels=0 linear=0 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=0 survivors_connected=0 wrong_tau_dropped=0 connected_all=0 tau_range=[99,-1] maxdeg_max=0
+    filt: SUMMARY tag=HIT NV=23 total=0 bad_labels=0 linear=0 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=0 survivors_connected=0 wrong_tau_dropped=0 connected_all=0 tau_range=[99,-1] maxdeg_max=0
+  branch d=4 t'=9 S'=1: 4 decompositions, 2178 inputs
+      (22,17,9): 95
+      (10,7,4) + (12,10,5): 1105
+      (8,5,3) + (14,12,6): 22
+      (3,1,1) + (19,16,8): 956
+    ext_d: graphs=2178 bad_tau=0 tg_too_small=0 searched=2178 max_min_covers=2418 nodes=1822642633 hits_F7free=101954 hits_in_C=14290 | HIT lines 14290
+    filt: SUMMARY tag=HIT NV=23 total=7208 bad_labels=0 linear=7208 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=7208 survivors_connected=7208 wrong_tau_dropped=0 connected_all=7208 tau_range=[-1,-1] maxdeg_max=4
+    filt: SUMMARY tag=HIT NV=23 total=7082 bad_labels=0 linear=7082 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=7082 survivors_connected=7082 wrong_tau_dropped=0 connected_all=7082 tau_range=[-1,-1] maxdeg_max=4
+  connected_hits 14290

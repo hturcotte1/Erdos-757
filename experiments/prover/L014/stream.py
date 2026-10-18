@@ -13,7 +13,8 @@ What is the same (line by line as in engine.py):
     blocks), the same chunking (inputs[i::NPROC] if len >= 50*NPROC, else one chunk), the same call `ext_d (n-1) t' t d (d-1)`,
     the same counters (summed; max for max_min_covers), RuntimeError on bad_tau != 0, the same filter call (`filt HIT n notau` for
     t' = t-1, `filt HIT n tau t` for t' = t), keep SURVIVOR lines flagged #conn=1, canonical forms, one per distinct form.
-What differs: the lines flow through a shell pipeline (bash, set -o pipefail; every exit code checked) and the distinct canonical
+What differs: the lines flow through a shell pipeline (bash, set -o pipefail; every exit code checked; since 22:33 UTC each
+chunk pipeline of recurse runs in its own session, `setsid -w`, which only affects CPU scheduling) and the distinct canonical
 forms are collected by an awk hash of the distinct lines and `LC_ALL=C sort -u` instead of Python lists:
   ext_d ... < chunk.in | awk(HIT lines to stdout, other lines to chunk.extsum) | filt HIT n MODE | awk(SURVIVOR lines to stdout,
   other lines to chunk.filtsum) | awk(keep lines ending '#conn=1') | cut -d'#' -f1 | canon n | awk(first occurrence of each line) | LC_ALL=C sort -u > chunk.keys
@@ -103,7 +104,7 @@ def recurse(n, m, t, D):
                            " | cut -d'#' -f1 | %s %d 2>> %s.err | awk '!s[$0]++' | LC_ALL=C sort -u -S %s -T %s > %s.keys"
                            % (os.path.join(B, 'ext_d'), n - 1, tp, t, d, d - 1, b, b, b, os.path.join(B, 'filt'), n, mode, b,
                               os.path.join(B, 'canon'), n, b, SORTMEM, WORK, b))
-                    procs.append((b, subprocess.Popen(['bash', '-c', 'set -o pipefail; ' + cmd])))
+                    procs.append((b, subprocess.Popen(['setsid', '-w', 'bash', '-c', 'set -o pipefail; ' + cmd])))   # own session per chunk (CPU share under sched_autogroup); setsid -w returns the pipeline's exit code
                 for b, p in procs:
                     if p.wait() != 0: raise RuntimeError('pipeline failed %s: %s' % (b, open(b + '.err').read()[-2000:]))
                 tot = {}; nh = 0; fl = []

@@ -1,0 +1,8 @@
+(1) A_base: 12 three-term APs; equal to L012 abase_pattern.txt: True; linear True, F7 False, (P3) True, tau 6, connected True, max degree 4
+    cell(14,12,6,4) of this run: 11 classes; canonical form of A_base among them: True (class index 3)
+(2) cell(23,21,10,4) of this run: 699 classes; L012 route4_classes.txt.gz: 699 classes; FOUND-line sets equal: True
+    recomputed canonical forms: 699 and 699 distinct, sets equal: True
+    branch d=3 tp=9 S'=3 decompositions=5 inputs=133804 ext={'graphs': 133804, 'bad_tau': 0, 'tg_too_small': 0, 'searched': 133804, 'max_min_covers': 1638, 'nodes': 48029683, 'hits_F7free': 4249, 'hits_in_C': 0} hits_in_C=0
+    branch d=4 tp=9 S'=1 decompositions=4 inputs=2178 ext={'graphs': 2178, 'bad_tau': 0, 'tg_too_small': 0, 'searched': 2178, 'max_min_covers': 2418, 'nodes': 1822642633, 'hits_F7free': 101954, 'hits_in_C': 14290} hits_in_C=14290
+    connected_hits 14290
+    maximum degrees of the classes: {4: 699}

@@ -39,6 +39,7 @@ cell_13_8_5_D4.txt mine=0
 cell_13_9_5_D2.txt mine=0
 cell_13_9_5_D3.txt mine=84
 cell_14_10_5_D2.txt mine=0
+cell_14_10_5_D3.txt mine=45229 MD9_14_10_5=45229 EQUAL
 cell_14_12_6_D3.txt mine=2
 cell_14_12_6_D4.txt mine=11
 cell_14_7_5_D2.txt mine=0
@@ -135,6 +136,6 @@ cell_9_5_3_D3.txt mine=6 MD9_14_10_5=6 EQUAL
 cell_9_6_3_D2.txt mine=2
 cell_9_6_3_D3.txt mine=21 MD9_14_10_5=21 EQUAL MD9_13_10_5=21 EQUAL
 cell_9_7_3_D2.txt mine=0
-SUMMARY vs MD9_14_10_5: common cells 17, equal 17, different 0
+SUMMARY vs MD9_14_10_5: common cells 18, equal 18, different 0
 SUMMARY vs MD9_13_10_5: common cells 11, equal 11, different 0
 SUMMARY vs MD9_12_10_5: common cells 5, equal 5, different 0

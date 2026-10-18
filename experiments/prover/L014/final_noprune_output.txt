@@ -1,0 +1,10 @@
+pruned (regenerated inputs, two parts):
+SUMMARY graphs=66874 bad_tau=0 tg_too_small=0 searched=66874 max_min_covers=1562 nodes=29333623 hits_F7free=117 hits_in_C=0
+SUMMARY graphs=66930 bad_tau=0 tg_too_small=0 searched=66930 max_min_covers=1638 nodes=18696060 hits_F7free=4132 hits_in_C=0
+noprune (two parts):
+SUMMARY graphs=66874 bad_tau=0 tg_too_small=0 searched=66874 max_min_covers=1562 nodes=30047295 hits_all=3641 printed=3641
+SUMMARY graphs=66930 bad_tau=0 tg_too_small=0 searched=66930 max_min_covers=1638 nodes=19062632 hits_all=7345 printed=7345
+filt HIT 23 notau on all unpruned extensions:
+SUMMARY tag=HIT NV=23 total=10986 bad_labels=0 linear=10986 contain_F7=6737 P3_violated=10986 F7free_and_P3_violated=4249 survivors=0 survivors_connected=0 wrong_tau_dropped=0 connected_all=6162 tau_range=[-1,-1] maxdeg_max=3
+HIT lines in the pruned re-run:
+0

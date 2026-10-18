@@ -10,7 +10,7 @@ for k in sys.argv[2:]:
         if l.startswith('FOUND:'): reps += 1
         elif l.startswith('INFO '): info = json.loads(l[5:])
     if info['route'] == 'direct':
-        print('| (%d,%d,%d,%d) | %s | direct | %s labelled | %s | - | %s | - | %s |' % (key + ('{:,}'.format(reps), '{:,}'.format(info['labelled']), info['enum'].split('calls=')[1].split()[0] + ' calls', '{:,}'.format(info['in_C_tau_exact']), info.get('secs'))))
+        print('| (%d,%d,%d,%d) | %s | direct | %s labelled | %s | - | %s | - | %s |' % (key + ('{:,}'.format(reps), '{:,}'.format(info['labelled']), '{:,}'.format(int(info['enum'].split('calls=')[1].split()[0])) + ' `enum_conn` calls', '{:,}'.format(info['in_C_tau_exact']), info.get('secs'))))
         continue
     inp = sum(b['inputs'] for b in info['branches']); nodes = sum(b.get('ext', {}).get('nodes', 0) for b in info['branches'])
     f7 = sum(b.get('ext', {}).get('hits_F7free', 0) for b in info['branches']); inc = sum(b.get('ext', {}).get('hits_in_C', 0) for b in info['branches'])

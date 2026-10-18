@@ -1,0 +1,146 @@
+(3,1,1,2) direct classes=1 secs=0.0 enum_conn N=3 M=1 T0=1 DMAX=2 calls=4 found=1 labelled=1 in_C_tau=1
+(3,1,1,3) direct classes=1 secs=0.0 enum_conn N=3 M=1 T0=1 DMAX=3 calls=4 found=1 labelled=1 in_C_tau=1
+(3,1,1,4) direct classes=1 secs=0.0 enum_conn N=3 M=1 T0=1 DMAX=4 calls=4 found=1 labelled=1 in_C_tau=1
+(4,2,1,2) direct classes=0 secs=0.0 enum_conn N=4 M=2 T0=1 DMAX=2 calls=13 found=0 labelled=0 in_C_tau=0
+(4,2,1,3) direct classes=0 secs=0.0 enum_conn N=4 M=2 T0=1 DMAX=3 calls=13 found=0 labelled=0 in_C_tau=0
+(5,2,1,2) direct classes=1 secs=0.0 enum_conn N=5 M=2 T0=1 DMAX=2 calls=13 found=3 labelled=3 in_C_tau=3
+(5,2,1,3) direct classes=1 secs=0.0 enum_conn N=5 M=2 T0=1 DMAX=3 calls=13 found=3 labelled=3 in_C_tau=3
+(5,3,1,2) direct classes=0 secs=0.0 enum_conn N=5 M=3 T0=1 DMAX=2 calls=52 found=0 labelled=0 in_C_tau=0
+(6,3,2,2) direct classes=1 secs=0.0 enum_conn N=6 M=3 T0=2 DMAX=2 calls=52 found=6 labelled=6 in_C_tau=6
+(6,3,2,3) direct classes=1 secs=0.0 enum_conn N=6 M=3 T0=2 DMAX=3 calls=52 found=6 labelled=6 in_C_tau=6
+(6,4,2,2) direct classes=1 secs=0.0 enum_conn N=6 M=4 T0=2 DMAX=2 calls=144 found=2 labelled=2 in_C_tau=2
+(6,4,2,3) direct classes=1 secs=0.0 enum_conn N=6 M=4 T0=2 DMAX=3 calls=144 found=2 labelled=2 in_C_tau=2
+(7,3,2,2) direct classes=1 secs=0.0 enum_conn N=7 M=3 T0=2 DMAX=2 calls=52 found=9 labelled=9 in_C_tau=9
+(7,3,2,3) direct classes=1 secs=0.0 enum_conn N=7 M=3 T0=2 DMAX=3 calls=52 found=9 labelled=9 in_C_tau=9
+(7,4,2,2) direct classes=1 secs=0.0 enum_conn N=7 M=4 T0=2 DMAX=2 calls=265 found=14 labelled=14 in_C_tau=14
+(7,4,2,3) direct classes=2 secs=0.0 enum_conn N=7 M=4 T0=2 DMAX=3 calls=328 found=31 labelled=31 in_C_tau=31
+(7,5,2,2) direct classes=0 secs=0.0 enum_conn N=7 M=5 T0=2 DMAX=2 calls=515 found=0 labelled=0 in_C_tau=0
+(7,5,2,3) direct classes=1 secs=0.0 enum_conn N=7 M=5 T0=2 DMAX=3 calls=916 found=27 labelled=27 in_C_tau=18
+(8,4,2,2) direct classes=2 secs=0.0 enum_conn N=8 M=4 T0=2 DMAX=2 calls=265 found=36 labelled=36 in_C_tau=36
+(8,5,3,2) direct classes=1 secs=0.0 enum_conn N=8 M=5 T0=3 DMAX=2 calls=1065 found=26 labelled=26 in_C_tau=26
+(8,5,3,3) direct classes=2 secs=0.0 enum_conn N=8 M=5 T0=3 DMAX=3 calls=2162 found=86 labelled=86 in_C_tau=86
+(8,5,3,4) direct classes=2 secs=0.0 enum_conn N=8 M=5 T0=3 DMAX=4 calls=2162 found=86 labelled=86 in_C_tau=86
+(8,6,3,2) direct classes=0 secs=0.0 enum_conn N=8 M=6 T0=3 DMAX=2 calls=1475 found=0 labelled=0 in_C_tau=0
+(8,6,3,3) direct classes=3 secs=0.1 enum_conn N=8 M=6 T0=3 DMAX=3 calls=7349 found=313 labelled=313 in_C_tau=211
+(9,4,3,2) direct classes=1 secs=0.0 enum_conn N=9 M=4 T0=3 DMAX=2 calls=173 found=4 labelled=4 in_C_tau=4
+(9,4,3,3) direct classes=1 secs=0.0 enum_conn N=9 M=4 T0=3 DMAX=3 calls=173 found=4 labelled=4 in_C_tau=4
+(9,5,3,2) direct classes=3 secs=0.0 enum_conn N=9 M=5 T0=3 DMAX=2 calls=1423 found=114 labelled=114 in_C_tau=114
+(9,5,3,3) direct classes=6 secs=0.0 enum_conn N=9 M=5 T0=3 DMAX=3 calls=2972 found=278 labelled=278 in_C_tau=278
+(9,6,3,2) direct classes=2 secs=0.1 enum_conn N=9 M=6 T0=3 DMAX=2 calls=3661 found=16 labelled=16 in_C_tau=16
+(9,6,3,3) direct classes=21 secs=0.1 enum_conn N=9 M=6 T0=3 DMAX=3 calls=19555 found=2409 labelled=2409 in_C_tau=2333
+(9,7,3,2) direct classes=0 secs=0.0 enum_conn N=9 M=7 T0=3 DMAX=2 calls=3925 found=0 labelled=0 in_C_tau=0
+(10,5,3,2) direct classes=4 secs=0.0 enum_conn N=10 M=5 T0=3 DMAX=2 calls=1203 found=174 labelled=174 in_C_tau=174
+(10,5,3,3) direct classes=6 secs=0.1 enum_conn N=10 M=5 T0=3 DMAX=3 calls=2414 found=360 labelled=360 in_C_tau=360
+(10,6,3,2) direct classes=5 secs=0.0 enum_conn N=10 M=6 T0=3 DMAX=2 calls=6321 found=270 labelled=270 in_C_tau=270
+(10,6,3,3) direct classes=43 secs=0.2 enum_conn N=10 M=6 T0=3 DMAX=3 calls=29490 found=5965 labelled=5965 in_C_tau=5965
+(10,7,3,2) direct classes=0 secs=0.0 enum_conn N=10 M=7 T0=3 DMAX=2 calls=11025 found=0 labelled=0 in_C_tau=0
+(10,7,4,2) direct classes=0 secs=0.0 enum_conn N=10 M=7 T0=4 DMAX=2 calls=11025 found=0 labelled=0 in_C_tau=0
+(10,7,4,3) direct classes=4 secs=0.0 enum_conn N=10 M=7 T0=4 DMAX=3 calls=199787 found=494 labelled=494 in_C_tau=368
+(10,7,4,4) direct classes=5 secs=0.1 enum_conn N=10 M=7 T0=4 DMAX=4 calls=220291 found=637 labelled=637 in_C_tau=511
+(10,8,4,2) direct classes=0 secs=0.0 enum_conn N=10 M=8 T0=4 DMAX=2 calls=11025 found=0 labelled=0 in_C_tau=0
+(10,8,4,3) direct classes=63 secs=0.4 enum_conn N=10 M=8 T0=4 DMAX=3 calls=896011 found=23277 labelled=23277 in_C_tau=18559
+(11,5,3,2) direct classes=2 secs=0.2 enum_conn N=11 M=5 T0=3 DMAX=2 calls=561 found=90 labelled=90 in_C_tau=90
+(11,6,4,2) direct classes=0 secs=0.0 enum_conn N=11 M=6 T0=4 DMAX=2 calls=7159 found=0 labelled=0 in_C_tau=0
+(11,6,4,3) direct classes=0 secs=0.0 enum_conn N=11 M=6 T0=4 DMAX=3 calls=16727 found=0 labelled=0 in_C_tau=0
+(11,6,4,4) direct classes=0 secs=0.1 enum_conn N=11 M=6 T0=4 DMAX=4 calls=16727 found=0 labelled=0 in_C_tau=0
+(11,7,4,2) direct classes=4 secs=0.0 enum_conn N=11 M=7 T0=4 DMAX=2 calls=24269 found=368 labelled=368 in_C_tau=368
+(11,7,4,3) direct classes=35 secs=0.1 enum_conn N=11 M=7 T0=4 DMAX=3 calls=331134 found=7615 labelled=7615 in_C_tau=7433
+(11,8,4,2) direct classes=0 secs=0.0 enum_conn N=11 M=8 T0=4 DMAX=2 calls=30537 found=0 labelled=0 in_C_tau=0
+(11,8,4,3) direct classes=471 secs=4.1 enum_conn N=11 M=8 T0=4 DMAX=3 calls=2616202 found=208448 labelled=208448 in_C_tau=198892
+(11,9,4,2) direct classes=0 secs=0.0 enum_conn N=11 M=9 T0=4 DMAX=2 calls=30537 found=0 labelled=0 in_C_tau=0
+(11,9,4,3) direct classes=1216 secs=18.5 enum_conn N=11 M=9 T0=4 DMAX=3 calls=11939569 found=779142 labelled=779142 in_C_tau=715733
+(12,6,4,2) direct classes=2 secs=0.0 enum_conn N=12 M=6 T0=4 DMAX=2 calls=5141 found=72 labelled=72 in_C_tau=72
+(12,6,4,3) direct classes=4 secs=0.0 enum_conn N=12 M=6 T0=4 DMAX=3 calls=11271 found=186 labelled=186 in_C_tau=186
+(12,7,4,2) direct classes=15 secs=0.1 enum_conn N=12 M=7 T0=4 DMAX=2 calls=36047 found=2354 labelled=2354 in_C_tau=2354
+(12,7,4,3) direct classes=97 secs=0.3 enum_conn N=12 M=7 T0=4 DMAX=3 calls=358930 found=23746 labelled=23746 in_C_tau=23746
+(12,8,4,2) direct classes=5 secs=0.0 enum_conn N=12 M=8 T0=4 DMAX=2 calls=82209 found=236 labelled=236 in_C_tau=236
+(12,10,5,2) direct classes=0 secs=0.0 enum_conn N=12 M=10 T0=5 DMAX=2 calls=86293 found=0 labelled=0 in_C_tau=0
+(12,10,5,3) direct classes=149 secs=30.9 enum_conn N=12 M=10 T0=5 DMAX=3 calls=166011023 found=145033 labelled=145033 in_C_tau=107931
+(12,10,5,4) direct classes=221 secs=107.1 enum_conn N=12 M=10 T0=5 DMAX=4 calls=507552058 found=272136 labelled=272136 in_C_tau=183463
+(13,6,4,2) direct classes=2 secs=0.1 enum_conn N=13 M=6 T0=4 DMAX=2 calls=1839 found=81 labelled=81 in_C_tau=81
+(13,6,4,3) direct classes=3 secs=0.0 enum_conn N=13 M=6 T0=4 DMAX=3 calls=3773 found=153 labelled=153 in_C_tau=153
+(13,7,4,2) direct classes=22 secs=0.1 enum_conn N=13 M=7 T0=4 DMAX=2 calls=35468 found=4342 labelled=4342 in_C_tau=4342
+(13,7,4,3) direct classes=104 secs=0.5 enum_conn N=13 M=7 T0=4 DMAX=3 calls=256759 found=28368 labelled=28368 in_C_tau=28368
+(13,8,4,2) direct classes=23 secs=0.2 enum_conn N=13 M=8 T0=4 DMAX=2 calls=157336 found=5052 labelled=5052 in_C_tau=5052
+(13,8,5,2) direct classes=0 secs=0.0 enum_conn N=13 M=8 T0=5 DMAX=2 calls=157336 found=0 labelled=0 in_C_tau=0
+(13,8,5,3) direct classes=0 secs=0.3 enum_conn N=13 M=8 T0=5 DMAX=3 calls=1562736 found=106 labelled=106 in_C_tau=0
+(13,8,5,4) direct classes=0 secs=0.9 enum_conn N=13 M=8 T0=5 DMAX=4 calls=1773159 found=159 labelled=159 in_C_tau=0
+(13,9,5,2) direct classes=0 secs=0.0 enum_conn N=13 M=9 T0=5 DMAX=2 calls=249728 found=0 labelled=0 in_C_tau=0
+(13,9,5,3) direct classes=84 secs=11.7 enum_conn N=13 M=9 T0=5 DMAX=3 calls=48929071 found=43382 labelled=43382 in_C_tau=37244
+(13,10,5,2) direct classes=0 secs=0.0 enum_conn N=13 M=10 T0=5 DMAX=2 calls=249728 found=0 labelled=0 in_C_tau=0
+(13,10,5,3) direct classes=6683 secs=299.3 enum_conn N=13 M=10 T0=5 DMAX=3 calls=540269278 found=6996786 labelled=6996786 in_C_tau=6631557
+(14,7,5,2) direct classes=0 secs=0.1 enum_conn N=14 M=7 T0=5 DMAX=2 calls=7636 found=0 labelled=0 in_C_tau=0
+(14,7,5,3) direct classes=0 secs=0.0 enum_conn N=14 M=7 T0=5 DMAX=3 calls=17800 found=0 labelled=0 in_C_tau=0
+(14,7,5,4) direct classes=0 secs=0.0 enum_conn N=14 M=7 T0=5 DMAX=4 calls=17800 found=0 labelled=0 in_C_tau=0
+(14,8,5,2) direct classes=1 secs=0.2 enum_conn N=14 M=8 T0=5 DMAX=2 calls=203402 found=44 labelled=44 in_C_tau=44
+(14,8,5,3) direct classes=9 secs=0.7 enum_conn N=14 M=8 T0=5 DMAX=3 calls=1662246 found=1274 labelled=1274 in_C_tau=1274
+(14,9,5,2) direct classes=19 secs=0.2 enum_conn N=14 M=9 T0=5 DMAX=2 calls=607334 found=6792 labelled=6792 in_C_tau=6792
+(14,9,5,3) direct classes=1060 secs=33.0 enum_conn N=14 M=9 T0=5 DMAX=3 calls=66403824 found=761773 labelled=761773 in_C_tau=750072
+(14,10,5,2) direct classes=0 secs=0.1 enum_conn N=14 M=10 T0=5 DMAX=2 calls=728838 found=0 labelled=0 in_C_tau=0
+(14,10,5,3) direct classes=45229 secs=1925.1 enum_conn N=14 M=10 T0=5 DMAX=3 calls=1082357094 found=57909266 labelled=57909266 in_C_tau=57037881
+(14,12,6,3) recurse classes=2 secs=0.1 | d=3 tp=5 S=2 decs=2 inputs=147 nodes=39230 F7free=36 in_C=17 bad_tau=0 | connected_hits=17
+(14,12,6,4) recurse classes=11 secs=0.1 | d=3 tp=5 S=2 decs=2 inputs=147 nodes=39230 F7free=36 in_C=17 bad_tau=0 | d=4 tp=5 S=0 decs=2 inputs=5 nodes=49077 F7free=341 in_C=150 bad_tau=0 | connected_hits=167
+(15,7,5,2) direct classes=1 secs=0.0 enum_conn N=15 M=7 T0=5 DMAX=2 calls=3156 found=21 labelled=21 in_C_tau=21
+(15,7,5,3) direct classes=2 secs=0.0 enum_conn N=15 M=7 T0=5 DMAX=3 calls=6686 found=42 labelled=42 in_C_tau=42
+(15,8,5,2) direct classes=11 secs=0.1 enum_conn N=15 M=8 T0=5 DMAX=2 calls=173621 found=1496 labelled=1496 in_C_tau=1496
+(15,8,5,3) direct classes=59 secs=1.1 enum_conn N=15 M=8 T0=5 DMAX=3 calls=1149942 found=13693 labelled=13693 in_C_tau=13693
+(15,9,5,2) direct classes=91 secs=2.7 enum_conn N=15 M=9 T0=5 DMAX=2 calls=1007565 found=53188 labelled=53188 in_C_tau=53188
+(15,11,6,2) recurse classes=0 secs=0.0 | connected_hits=0
+(15,11,6,3) recurse classes=19 secs=0.4 | d=3 tp=5 S=3 decs=6 inputs=53 nodes=132266 F7free=2398 in_C=2332 bad_tau=0 | connected_hits=440
+(15,11,6,4) recurse classes=30 secs=0.5 | d=3 tp=5 S=3 decs=6 inputs=53 nodes=132266 F7free=2398 in_C=2332 bad_tau=0 | d=4 tp=5 S=1 decs=3 inputs=2 nodes=70948 F7free=3006 in_C=2880 bad_tau=0 | connected_hits=1052
+(15,12,6,3) recurse classes=10617 secs=9.0 | d=3 tp=5 S=5 decs=7 inputs=1683 nodes=2168344 F7free=160091 in_C=141229 bad_tau=0 | connected_hits=141212
+(15,13,6,3) recurse classes=949522 secs=720.4 | d=3 tp=5 S=7 decs=6 inputs=53280 nodes=27975933 F7free=10509530 in_C=10366934 bad_tau=0 | connected_hits=10366934
+(16,8,5,2) direct classes=14 secs=0.2 enum_conn N=16 M=8 T0=5 DMAX=2 calls=88811 found=2928 labelled=2928 in_C_tau=2928
+(16,8,5,3) direct classes=55 secs=1.2 enum_conn N=16 M=8 T0=5 DMAX=3 calls=462275 found=15384 labelled=15384 in_C_tau=15384
+(16,9,5,2) direct classes=166 secs=5.4 enum_conn N=16 M=9 T0=5 DMAX=2 calls=1137553 found=121886 labelled=121886 in_C_tau=121886
+(16,9,6,2) direct classes=0 secs=0.1 enum_conn N=16 M=9 T0=6 DMAX=2 calls=294491 found=0 labelled=0 in_C_tau=0
+(16,9,6,3) direct classes=0 secs=0.5 enum_conn N=16 M=9 T0=6 DMAX=3 calls=2341695 found=0 labelled=0 in_C_tau=0
+(16,10,6,2) direct classes=0 secs=0.9 enum_conn N=16 M=10 T0=6 DMAX=2 calls=4414301 found=0 labelled=0 in_C_tau=0
+(16,10,6,3) direct classes=16 secs=107.6 enum_conn N=16 M=10 T0=6 DMAX=3 calls=213228218 found=12394 labelled=12394 in_C_tau=5448
+(16,11,6,2) recurse classes=0 secs=0.0 | connected_hits=0
+(16,11,6,3) recurse classes=3238 secs=4.6 | d=3 tp=5 S=6 decs=15 inputs=240 nodes=1635000 F7free=182847 in_C=181678 bad_tau=0 | connected_hits=79318
+(17,8,6,3) direct classes=0 secs=0.1 enum_conn N=17 M=8 T0=6 DMAX=3 calls=7664 found=0 labelled=0 in_C_tau=0
+(17,8,6,4) direct classes=0 secs=0.0 enum_conn N=17 M=8 T0=6 DMAX=4 calls=7664 found=0 labelled=0 in_C_tau=0
+(17,9,6,2) direct classes=0 secs=0.2 enum_conn N=17 M=9 T0=6 DMAX=2 calls=270617 found=0 labelled=0 in_C_tau=0
+(17,9,6,3) direct classes=0 secs=0.5 enum_conn N=17 M=9 T0=6 DMAX=3 calls=1831721 found=0 labelled=0 in_C_tau=0
+(17,10,6,2) direct classes=6 secs=2.4 enum_conn N=17 M=10 T0=6 DMAX=2 calls=6376993 found=996 labelled=996 in_C_tau=996
+(17,10,6,3) direct classes=339 secs=137.1 enum_conn N=17 M=10 T0=6 DMAX=3 calls=221830817 found=206753 labelled=206753 in_C_tau=201719
+(17,11,6,2) recurse classes=114 secs=0.2 | d=2 tp=5 S=11 decs=37 inputs=333 nodes=4687 F7free=2746 in_C=2746 bad_tau=0 | d=2 tp=6 S=0 decs=3 inputs=0 | connected_hits=2644
+(17,11,6,3) recurse classes=45669 secs=70.7 | d=2 tp=5 S=11 decs=37 inputs=333 nodes=4687 F7free=2746 in_C=2746 bad_tau=0 | d=2 tp=6 S=0 decs=3 inputs=0 | d=3 tp=5 S=9 decs=30 inputs=462 nodes=6629166 F7free=2475129 in_C=2473416 bad_tau=0 | connected_hits=1373145
+(17,13,7,3) recurse classes=6 secs=0.3 | d=3 tp=6 S=2 decs=5 inputs=170 nodes=363615 F7free=171 in_C=130 bad_tau=0 | connected_hits=113
+(17,14,7,3) recurse classes=1708 secs=9.3 | d=3 tp=6 S=4 decs=7 inputs=10162 nodes=10334321 F7free=71488 in_C=28913 bad_tau=0 | connected_hits=28913
+(18,9,6,2) direct classes=5 secs=0.3 enum_conn N=18 M=9 T0=6 DMAX=2 calls=159871 found=738 labelled=738 in_C_tau=738
+(18,9,6,3) direct classes=22 secs=1.6 enum_conn N=18 M=9 T0=6 DMAX=3 calls=859359 found=4476 labelled=4476 in_C_tau=4476
+(18,10,6,2) direct classes=67 secs=10.6 enum_conn N=18 M=10 T0=6 DMAX=2 calls=6282499 found=33792 labelled=33792 in_C_tau=33792
+(18,12,7,2) recurse classes=0 secs=0.1 | d=2 tp=6 S=5 decs=17 inputs=34 nodes=123 F7free=0 in_C=0 bad_tau=0 | connected_hits=0
+(18,12,7,3) recurse classes=0 secs=0.4 | d=2 tp=6 S=5 decs=17 inputs=34 nodes=123 F7free=0 in_C=0 bad_tau=0 | d=3 tp=6 S=3 decs=10 inputs=55 nodes=607180 F7free=3029 in_C=2882 bad_tau=0 | connected_hits=0
+(18,12,7,4) recurse classes=0 secs=2.9 | d=2 tp=6 S=5 decs=17 inputs=34 nodes=123 F7free=0 in_C=0 bad_tau=0 | d=3 tp=6 S=3 decs=10 inputs=55 nodes=607180 F7free=3029 in_C=2882 bad_tau=0 | d=4 tp=6 S=1 decs=4 inputs=2 nodes=463214 F7free=6156 in_C=5886 bad_tau=0 | connected_hits=0
+(18,13,7,3) recurse classes=2544 secs=14.6 | d=3 tp=6 S=5 decs=17 inputs=2099 nodes=14114830 F7free=257033 in_C=237511 bad_tau=0 | connected_hits=62050
+(18,14,7,3) recurse classes=799342 secs=1522.9 | d=3 tp=6 S=7 decs=19 inputs=102916 nodes=423459880 F7free=23585689 in_C=23297430 bad_tau=0 | connected_hits=12792445
+(19,9,6,2) direct classes=4 secs=0.7 enum_conn N=19 M=9 T0=6 DMAX=2 calls=42277 found=702 labelled=702 in_C_tau=702
+(19,9,6,3) direct classes=13 secs=0.9 enum_conn N=19 M=9 T0=6 DMAX=3 calls=180439 found=2763 labelled=2763 in_C_tau=2763
+(19,10,6,2) direct classes=128 secs=34.9 enum_conn N=19 M=10 T0=6 DMAX=2 calls=4003639 found=94336 labelled=94336 in_C_tau=94336
+(19,10,7,2) direct classes=0 secs=0.1 enum_conn N=19 M=10 T0=7 DMAX=2 calls=297385 found=0 labelled=0 in_C_tau=0
+(19,10,7,3) direct classes=0 secs=1.2 enum_conn N=19 M=10 T0=7 DMAX=3 calls=1987634 found=0 labelled=0 in_C_tau=0
+(19,11,7,2) recurse classes=0 secs=0.1 | d=2 tp=6 S=6 decs=25 inputs=52 nodes=5234 F7free=13 in_C=13 bad_tau=0 | connected_hits=0
+(19,11,7,3) recurse classes=0 secs=0.5 | d=2 tp=6 S=6 decs=25 inputs=52 nodes=5234 F7free=13 in_C=13 bad_tau=0 | d=3 tp=6 S=4 decs=11 inputs=18 nodes=591231 F7free=7311 in_C=7065 bad_tau=0 | connected_hits=0
+(19,12,7,2) recurse classes=1 secs=0.3 | d=2 tp=6 S=8 decs=40 inputs=238 nodes=4072 F7free=126 in_C=126 bad_tau=0 | connected_hits=11
+(19,12,7,3) recurse classes=833 secs=12.9 | d=2 tp=6 S=8 decs=40 inputs=238 nodes=4072 F7free=126 in_C=126 bad_tau=0 | d=3 tp=6 S=6 decs=25 inputs=275 nodes=6821385 F7free=284919 in_C=283390 bad_tau=0 | connected_hits=32966
+(19,16,8,4) recurse classes=956 secs=22.9 | d=3 tp=7 S=3 decs=7 inputs=13456 nodes=11625484 F7free=6085 in_C=4649 bad_tau=0 | d=4 tp=7 S=1 decs=4 inputs=261 nodes=53738678 F7free=26452 in_C=14038 bad_tau=0 | connected_hits=18687
+(19,17,8,3) recurse classes=29898 secs=943.4 | d=3 tp=7 S=5 decs=6 inputs=1750910 nodes=614929842 F7free=666240 in_C=519189 bad_tau=0 | connected_hits=519189
+(20,10,7,3) direct classes=0 secs=0.4 enum_conn N=20 M=10 T0=7 DMAX=3 calls=1015272 found=0 labelled=0 in_C_tau=0
+(20,11,7,2) recurse classes=1 secs=0.2 | d=2 tp=6 S=9 decs=48 inputs=117 nodes=33935 F7free=1355 in_C=1355 bad_tau=0 | connected_hits=55
+(20,11,7,3) recurse classes=45 secs=5.0 | d=2 tp=6 S=9 decs=48 inputs=117 nodes=33935 F7free=1355 in_C=1355 bad_tau=0 | d=3 tp=6 S=7 decs=18 inputs=31 nodes=1786993 F7free=184395 in_C=184103 bad_tau=0 | connected_hits=5317
+(20,12,7,2) recurse classes=38 secs=0.7 | d=2 tp=6 S=11 decs=78 inputs=640 nodes=53696 F7free=6132 in_C=6132 bad_tau=0 | d=2 tp=7 S=0 decs=4 inputs=0 | connected_hits=1242
+(20,12,7,3) recurse classes=15465 secs=163.7 | d=2 tp=6 S=11 decs=78 inputs=640 nodes=53696 F7free=6132 in_C=6132 bad_tau=0 | d=2 tp=7 S=0 decs=4 inputs=0 | d=3 tp=6 S=9 decs=48 inputs=524 nodes=24283921 F7free=4631250 in_C=4628963 bad_tau=0 | connected_hits=820161
+(20,14,8,3) recurse classes=0 secs=0.8 | d=3 tp=7 S=2 decs=9 inputs=174 nodes=1641103 F7free=557 in_C=516 bad_tau=0 | connected_hits=0
+(20,15,8,3) recurse classes=953 secs=41.5 | d=3 tp=7 S=4 decs=16 inputs=11244 nodes=61314509 F7free=123893 in_C=80273 bad_tau=0 | connected_hits=28171
+(21,13,8,4) recurse classes=0 secs=3.6 | d=2 tp=7 S=5 decs=30 inputs=43 nodes=1493 F7free=0 in_C=0 bad_tau=0 | d=3 tp=7 S=3 decs=14 inputs=55 nodes=1947713 F7free=3770 in_C=3512 bad_tau=0 | d=4 tp=7 S=1 decs=4 inputs=2 nodes=2055072 F7free=11268 in_C=10800 bad_tau=0 | connected_hits=0
+(21,14,8,3) recurse classes=299 secs=37.5 | d=2 tp=7 S=7 decs=44 inputs=211 nodes=761 F7free=0 in_C=0 bad_tau=0 | d=3 tp=7 S=5 decs=30 inputs=2202 nodes=52175235 F7free=357093 in_C=336840 bad_tau=0 | connected_hits=13264
+(21,15,8,3) recurse classes=232759 secs=2694.4 | d=3 tp=7 S=7 decs=44 inputs=121532 nodes=1971945618 F7free=34397572 in_C=33962901 bad_tau=0 | connected_hits=6140404
+(21,18,9,3) recurse classes=0 secs=12.3 | d=3 tp=8 S=2 decs=5 inputs=3213 nodes=4060923 F7free=1008 in_C=0 bad_tau=0 | connected_hits=0
+(22,17,9,4) recurse classes=95 secs=156.2 | d=3 tp=8 S=3 decs=16 inputs=14241 nodes=70008219 F7free=29919 in_C=27322 bad_tau=0 | d=4 tp=8 S=1 decs=7 inputs=261 nodes=248410456 F7free=130912 in_C=115270 bad_tau=0 | connected_hits=3778
+(22,18,9,3) recurse classes=94513 secs=2725.4 | d=3 tp=8 S=5 decs=20 inputs=2014413 nodes=5238536047 F7free=3470939 in_C=3042157 bad_tau=0 | connected_hits=2239624
+(23,21,10,3) recurse classes=0 secs=409.8 | d=3 tp=9 S=3 decs=5 inputs=133804 nodes=48029683 F7free=4249 in_C=0 bad_tau=0 | connected_hits=0
+(23,21,10,4) recurse classes=699 secs=927.5 | d=3 tp=9 S=3 decs=5 inputs=133804 nodes=48029683 F7free=4249 in_C=0 bad_tau=0 | d=4 tp=9 S=1 decs=4 inputs=2178 nodes=1822642633 F7free=101954 in_C=14290 bad_tau=0 | connected_hits=14290
+SUMMARY cells 145 (direct 107, recurse 38), classes 2246025, ext_d branch calls 52, total bad_tau 0

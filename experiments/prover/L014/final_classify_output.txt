@@ -1,0 +1,1 @@
+SUMMARY hits=10986 nonlinear=0 F7=6737 F7free_P3_violated=4249 members_of_C=0 disconnected=4824 F7free_connected=280

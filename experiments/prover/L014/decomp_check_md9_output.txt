@@ -1,0 +1,10 @@
+cell (12,10,5,3) branch d=3 tp=4 S=3: (11,7) engine 3 brute force 3 EQUAL
+cell (13,10,5,3) branch d=3 tp=4 S=6: (12,7) engine 7 brute force 7 EQUAL
+cell (14,10,5,3) branch d=3 tp=4 S=9: (13,7) engine 15 brute force 15 EQUAL
+SUMMARY branches 3 decompositions 25 differences 0
+The decompositions of (22,18) with total slack 3:
+    [(1, 0, 0), (21, 18, 9)]
+    [(3, 1, 1), (19, 17, 8)]
+    [(8, 6, 3), (14, 12, 6)]
+    [(10, 8, 4), (12, 10, 5)]
+    [(22, 18, 9)]
