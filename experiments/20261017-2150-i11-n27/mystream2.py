@@ -36,9 +36,13 @@ def recurse(n, m, t, D):
             if inputs:
                 tag = '%d_%d_%d_D%d_d%d_tp%d' % (n, m, t, D, d, tp); mode = 'notau' if tp == t - 1 else 'tau %d' % t
                 CH = int(os.environ.get('CHUNK', '25000')); cdir = os.path.join(engine.OUT, '..', 'chunks', tag); os.makedirs(cdir, exist_ok=True)
-                nchunks = (len(inputs) + CH - 1) // CH; tot = {}; nh = 0; filts = []
+                nchunks = (len(inputs) + CH - 1) // CH; tot = {}; nh = 0; filts = []; skipped = False
                 for ci in range(nchunks):
                     base = os.path.join(cdir, 'c%05d' % ci)
+                    if not os.path.exists(base + '.meta.json') and os.environ.get('WORKER'):
+                        # worker mode (added 2026-10-20): claim the chunk with an O_EXCL file, else skip it; the cell is assembled by a later run without WORKER
+                        try: os.close(os.open(base + '.claim', os.O_CREAT | os.O_EXCL | os.O_WRONLY))
+                        except FileExistsError: skipped = True; continue
                     if not os.path.exists(base + '.meta.json'):
                         t1 = time.time()
                         open(base + '.in', 'w').write('\n'.join(inputs[ci * CH:(ci + 1) * CH]) + '\n')
@@ -58,9 +62,11 @@ def recurse(n, m, t, D):
                         json.dump(meta, open(base + '.meta.json', 'w'))
                         engine.log('  CHUNK', tag, ci + 1, '/', nchunks, 'secs', meta['secs'], 'hits_in_C', meta['nhit'], 'conn', meta['nsurv'], 'bad_tau', ext.get('bad_tau'))
                         with open(os.path.join(engine.OUT, '..', 'chunk_progress.tsv'), 'a') as cf: cf.write('%s\t%d/%d\t%s\t%d\t%d\t%d\n' % (tag, ci + 1, nchunks, meta['secs'], meta['ninputs'], meta['nhit'], meta['nsurv']))
+                    if os.environ.get('WORKER') and os.path.exists(base + '.claim'): os.remove(base + '.claim')
                     meta = json.load(open(base + '.meta.json'))
                     for k, v in meta['ext'].items(): tot[k] = tot.get(k, 0) + v if k != 'max_min_covers' else max(tot.get(k, 0), v)
                     nh += meta['nhit']; filts.append(meta['filt']); nconn += meta['nsurv']; keyfiles.append(base + '.keys.gz')
+                if skipped: raise RuntimeError('WORKER_DONE_SKIPPED_CHUNKS')
                 if tot.get('bad_tau', 0): raise RuntimeError('bad_tau in %s' % br)
                 br['ext'] = tot; br['hits_in_C'] = nh; br['filt'] = filts; br['chunks'] = nchunks
             info['branches'].append(br)
