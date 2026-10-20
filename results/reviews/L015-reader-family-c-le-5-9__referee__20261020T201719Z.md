@@ -87,7 +87,7 @@ The Provenance section is honest, but it is incomplete. It does not record the s
 - 4.1: two disjoint equal-length pairs would give a relation on four distinct points. Two equal-length pairs sharing a point give a 3-AP with that point as middle.
 - 4.2: three equal-length pairs would pairwise intersect, so they form a star or a triangle. Both are impossible.
 - 4.3: $c_1+2c_2=6$ and $c_1+c_2\le4$ give $c_2\ge2$. Two different 3-APs inside a 4-set share 2 points, which contradicts linearity.
-- So "no relation on 4 distinct points + linear AP hypergraph ⟹ (4,5)" holds for every finite real set. I tested both directions numerically on 47,000+ sets (r6).
+- So "no relation on 4 distinct points + linear AP hypergraph ⟹ (4,5)" holds for every finite real set. I tested both directions numerically on about 48,000 sets (r6).
 
 **Step 5.**
 - 5.1: correct.
@@ -116,7 +116,7 @@ The Provenance section is honest, but it is incomplete. It does not record the s
 
 All of these are my own code in experiments/referee/L015-round1/. I used exact `int`/`Fraction`, and the only libraries were ortools and pysat. Everything ran under `nice -n 10 timeout …`, one process at a time. `run_all.sh` reruns everything.
 
-1. `python3 -I r1_facts_O.py > r1_facts_O.log`: **SUMMARY: 0 failures** (50 PASS).
+1. `python3 -I r1_facts_O.py > r1_facts_O.log`: **SUMMARY: 0 failures** (49 PASS).
    - F1: primality by trial division. F3: the 269-adic valuations of $y(x)$ are 0 on $O^\circ$ and 1 at 0 and 269.
    - F4: by enumerating all ordered quadruples in $O^4$ (not by grouping sums): 36 ordered relations in 9 classes, all of the form $(u,u,v,w)$, with point sets exactly $e_1..e_9$. The repeated sums are exactly as listed in 0.4; the middles are $O^\circ$; the edges are linear and none contains both 0 and 269. The literal (4,5) test on $O$ gives min 5.
    - F5: over every position subset $T$ with $|T|\le3$. F6: for $d\le30$.
