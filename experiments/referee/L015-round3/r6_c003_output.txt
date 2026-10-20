@@ -1,0 +1,28 @@
+OK   claim set entries are JSON integers (no floats/strings)
+OK   claim set has 65 distinct entries
+OK   claim set == my I_6 = 269^6 S_6 (as a set)
+OK   claim set is sorted
+OK   witness: 37 distinct points, subset of the set
+OK   witness Sidon by definition (703 distinct sums)
+OK   claimed_h = 37
+OK   37/65 < 4/7 exactly (37*7=259 < 4*65=260)
+OK   claimed ratio = 37/65
+gcd of claim set = 1 (the set is the raw 269^6-scaling; min = 0 , max = 101921535994725989 = 269^7 ? True )
+K  n    h    ratio      ratio-5/9        <4/7
+0  11   7    7/11       8/99             False
+1  20   12   3/5        2/45             False
+2  29   17   17/29      8/261            False
+3  38   22   11/19      4/171            False
+4  47   27   27/47      8/423            False
+5  56   32   4/7        1/63             False
+6  65   37   37/65      8/585            True
+7  74   42   21/37      4/333            True
+8  83   47   47/83      8/747            True
+9  92   52   13/23      2/207            True
+10 101  57   57/101     8/909            True
+11 110  62   31/55      4/495            True
+OK   K=5 ratio equals 4/7 exactly
+OK   ratio - 5/9 = 8/(9(11+9K)) for K<200
+OK   smallest K below 4/7 is 6
+ALL C003 CHECKS OK
+r6 exit=0

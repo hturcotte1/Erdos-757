@@ -1,0 +1,6 @@
+(1) planted p = a+b-c (copies 0, 2, 3) in S_3: relations 37 (S_3 alone: 36), on 4 distinct points: 1
+(2) min |B-B|: {1,2,3,5} -> 9  {0,1,3,7} -> 13  S_3 + planted point -> 9
+(3) generic solver: h(A_base) = 8 (expected 8)
+(3) generic solver: h(12-pt record #3) = 7 (expected 7)
+(3) generic solver: h({1..9}) = 5 (expected 5)
+ALL CONTROLS OK

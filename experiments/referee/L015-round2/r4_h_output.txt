@@ -6,7 +6,7 @@ K=4 n=47 constraints=45 (sizes [3]) | DP h=27 (max frontier 6, max states 45, 0.
 K=5 n=56 constraints=54 (sizes [3]) | DP h=32 (max frontier 6, max states 45, 0.0s) OK | cadical195: >=32 SAT (model Sidon=True, |T|=32), >=33 UNSAT (0.0s) OK | glucose4: >=32 SAT (model Sidon=True, |T|=32), >=33 UNSAT (0.0s) OK
 K=6 n=65 constraints=63 (sizes [3]) | DP h=37 (max frontier 6, max states 45, 0.0s) OK | cadical195: >=37 SAT (model Sidon=True, |T|=37), >=38 UNSAT (0.1s) OK | glucose4: >=37 SAT (model Sidon=True, |T|=37), >=38 UNSAT (0.0s) OK
 K=7 n=74 constraints=72 (sizes [3]) | DP h=42 (max frontier 6, max states 45, 0.0s) OK | cadical195: >=42 SAT (model Sidon=True, |T|=42), >=43 UNSAT (0.1s) OK | glucose4: >=42 SAT (model Sidon=True, |T|=42), >=43 UNSAT (0.1s) OK
-K=8 n=83 constraints=81 (sizes [3]) | DP h=47 (max frontier 6, max states 45, 0.0s) OK | cadical195: >=47 SAT (model Sidon=True, |T|=47), >=48 UNSAT (0.3s) OK | glucose4: >=47 SAT (model Sidon=True, |T|=47), >=48 UNSAT (0.1s) OK
+K=8 n=83 constraints=81 (sizes [3]) | DP h=47 (max frontier 6, max states 45, 0.1s) OK | cadical195: >=47 SAT (model Sidon=True, |T|=47), >=48 UNSAT (0.4s) OK | glucose4: >=47 SAT (model Sidon=True, |T|=47), >=48 UNSAT (0.1s) OK
 K=9 n=92 constraints=90 (sizes [3]) | DP h=52 (max frontier 6, max states 45, 0.1s) OK
 K=10 n=101 constraints=99 (sizes [3]) | DP h=57 (max frontier 6, max states 45, 0.1s) OK
 K=11 n=110 constraints=108 (sizes [3]) | DP h=62 (max frontier 6, max states 45, 0.1s) OK
@@ -15,8 +15,8 @@ K=13 n=128 constraints=126 (sizes [3]) | DP h=72 (max frontier 6, max states 45,
 K=14 n=137 constraints=135 (sizes [3]) | DP h=77 (max frontier 6, max states 45, 0.2s) OK
 K=15 n=146 constraints=144 (sizes [3]) | DP h=82 (max frontier 6, max states 45, 0.2s) OK
 K=16 n=155 constraints=153 (sizes [3]) | DP h=87 (max frontier 6, max states 45, 0.3s) OK
-K=17 n=164 constraints=162 (sizes [3]) | DP h=92 (max frontier 6, max states 45, 0.4s) OK
-K=18 n=173 constraints=171 (sizes [3]) | DP h=97 (max frontier 6, max states 45, 0.4s) OK
+K=17 n=164 constraints=162 (sizes [3]) | DP h=92 (max frontier 6, max states 45, 0.3s) OK
+K=18 n=173 constraints=171 (sizes [3]) | DP h=97 (max frontier 6, max states 45, 0.3s) OK
 K=19 n=182 constraints=180 (sizes [3]) | DP h=102 (max frontier 6, max states 45, 0.4s) OK
-K=20 n=191 constraints=189 (sizes [3]) | DP h=107 (max frontier 6, max states 45, 0.4s) OK
+K=20 n=191 constraints=189 (sizes [3]) | DP h=107 (max frontier 6, max states 45, 0.5s) OK
 ALL R4 h CHECKS OK

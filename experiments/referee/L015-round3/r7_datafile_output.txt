@@ -1,0 +1,11 @@
+keys in file: [0, 1, 2, 3, 4, 5, 6, 7, 8] | top-level keys: ['definition', 'family', 'readings_checked_equal', 'source']
+K=0 n=11 file==my I_K: True; other fields: {'K': 0, 'n': 11, 'scale': 1, 'gcd_of_integers': 1, 'scale_is_269_pow_K': True}
+K=1 n=20 file==my I_K: True; other fields: {'K': 1, 'n': 20, 'scale': 269, 'gcd_of_integers': 1, 'scale_is_269_pow_K': True}
+K=2 n=29 file==my I_K: True; other fields: {'K': 2, 'n': 29, 'scale': 72361, 'gcd_of_integers': 1, 'scale_is_269_pow_K': True}
+K=3 n=38 file==my I_K: True; other fields: {'K': 3, 'n': 38, 'scale': 19465109, 'gcd_of_integers': 1, 'scale_is_269_pow_K': True}
+K=4 n=47 file==my I_K: True; other fields: {'K': 4, 'n': 47, 'scale': 5236114321, 'gcd_of_integers': 1, 'scale_is_269_pow_K': True}
+K=5 n=56 file==my I_K: True; other fields: {'K': 5, 'n': 56, 'scale': 1408514752349, 'gcd_of_integers': 1, 'scale_is_269_pow_K': True}
+K=6 n=65 file==my I_K: True; other fields: {'K': 6, 'n': 65, 'scale': 378890468381881, 'gcd_of_integers': 1, 'scale_is_269_pow_K': True}
+K=7 n=74 file==my I_K: True; other fields: {'K': 7, 'n': 74, 'scale': 101921535994725989, 'gcd_of_integers': 1, 'scale_is_269_pow_K': True}
+K=8 n=83 file==my I_K: True; other fields: {'K': 8, 'n': 83, 'scale': 27416893182581291041, 'gcd_of_integers': 1, 'scale_is_269_pow_K': True}
+DATAFILE OK
