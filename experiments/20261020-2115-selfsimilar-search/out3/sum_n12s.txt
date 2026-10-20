@@ -1,0 +1,1 @@
+#SUMMARY seeds 3000 pairs 26507638 hits 0 mingrowth 12/2
