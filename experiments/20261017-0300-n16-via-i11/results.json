@@ -1,0 +1,164 @@
+{
+ "question": "exists class-O pattern with n=16,m=14,tau>=7 ?  (f(16)=9 iff yes)",
+ "decision": "EMPTY (relative to HY, I11 on O for n<=15, correctness of conn_dfs3/ext_vertex2/find_f7)",
+ "reduction": {
+  "slack0": [
+   [
+    3,
+    1,
+    1
+   ],
+   [
+    10,
+    7,
+    4
+   ],
+   [
+    13,
+    8,
+    5
+   ],
+   [
+    14,
+    12,
+    6
+   ]
+  ],
+  "slack1": [
+   [
+    8,
+    5,
+    3
+   ],
+   [
+    11,
+    6,
+    4
+   ],
+   [
+    12,
+    10,
+    5
+   ],
+   [
+    14,
+    7,
+    5
+   ],
+   [
+    15,
+    11,
+    6
+   ]
+  ],
+  "partitions": [
+   [
+    [
+     12,
+     10,
+     5
+    ],
+    [
+     3,
+     1,
+     1
+    ]
+   ],
+   [
+    [
+     15,
+     11,
+     6
+    ]
+   ]
+  ]
+ },
+ "step1": {
+  "caseA_R12": {
+   "cmd": "conn_dfs3 12 10 5 3 0 0",
+   "labelled": 145033,
+   "nodes": 56801671,
+   "secs_approx": 39,
+   "with_F7": 36916,
+   "F7free_iso_classes": 150,
+   "killed_by_eS": 1,
+   "kept": 149,
+   "consistency": {
+    "realizable_maxdeg_le3": 39309,
+    "all_isomorphic_to_a_class": 39309,
+    "sampled_abstract": 14813,
+    "all_ok": 14813
+   }
+  },
+  "caseB_conn15": {
+   "cmd": "conn_dfs3s 15 11 6 3 0 0 2 {0,1}",
+   "labelled": 50606,
+   "found_split": [
+    26041,
+    24565
+   ],
+   "nodes": [
+    1909545133,
+    1892258847
+   ],
+   "cpu_min_each": 32.4,
+   "wall_min": 85,
+   "iso_classes": 49,
+   "F7free_iso_classes": 22,
+   "moves_closure": {
+    "valid_neighbours": 885,
+    "in_classes": 885,
+    "missing": 0
+   },
+   "note": "an earlier run with a buggy slicing rule (inconsistent partition) found only 47 classes; the moves-closure test detected 25 missing neighbours; fixed (SLICE macro) and rerun; K=3 partition check on (12,10,5): 46829+51125+47079=145033"
+  }
+ },
+ "step2": {
+  "caseA": {
+   "graphs": 149,
+   "extensions": 74916,
+   "hits_tau_ge_7": 18
+  },
+  "caseB_classes": {
+   "graphs": 49,
+   "extensions": 154309,
+   "hits": 218
+  },
+  "caseB_all_labelled": {
+   "graphs": 50606,
+   "extensions": 159914042,
+   "hits": 173687
+  },
+  "numpy_crosscheck": {
+   "caseB_classes49_hits": 218,
+   "caseA_sample40_hits": 8,
+   "all_equal": true
+  }
+ },
+ "step3": {
+  "caseA": {
+   "hits": 18,
+   "with_F7": 0,
+   "F7free_killed_by_eS": 18,
+   "F7free_eS_ok_not_orderable": 0,
+   "survivors": 0
+  },
+  "caseB_classes": {
+   "hits": 218,
+   "with_F7": 218,
+   "F7free_killed_by_eS": 0,
+   "F7free_eS_ok_not_orderable": 0,
+   "survivors": 0
+  },
+  "caseB_all_labelled": {
+   "hits": 173687,
+   "with_F7": 173687,
+   "F7free_killed_by_eS": 0,
+   "F7free_eS_ok_not_orderable": 0,
+   "survivors": 0
+  },
+  "caseA_eS_violation": "each of the 18 hits has a 13-vertex subset spanning 13 edges (e(S)=|S|)"
+ },
+ "survivors": 0,
+ "record_candidate": false
+}

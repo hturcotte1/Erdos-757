@@ -1,0 +1,2 @@
+14-point subsets with m = 11 obtained this way: 291 h values: [9]
+witness (normalized): [0, 323, 523, 566, 569, 572, 595, 609, 621, 646, 723, 851, 919, 1379] is (4,5): True m = 11 h = 9

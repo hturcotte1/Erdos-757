@@ -1,0 +1,82 @@
+{
+ "controls": {
+  "labelled_F7_copies_on_7": 420,
+  "pos_F7": [
+   true,
+   true,
+   true
+  ],
+  "pos_F7_relabelled": [
+   true,
+   true,
+   true
+  ],
+  "pos_AG23": [
+   true,
+   true,
+   true
+  ],
+  "pos_AG23_minus1": [
+   true,
+   true,
+   true
+  ],
+  "pos_AG23_minus2": [
+   true,
+   true,
+   true
+  ],
+  "pos_D14": [
+   true,
+   true,
+   true
+  ],
+  "neg_Fano": [
+   false,
+   false,
+   true
+  ],
+  "neg_Fano_minus2lines": [
+   false,
+   false,
+   true
+  ],
+  "neg_F7_minus_edge": [
+   false,
+   false,
+   true
+  ],
+  "neg_L13": [
+   false,
+   false,
+   true
+  ],
+  "neg_cycle5": [
+   false,
+   false,
+   true
+  ],
+  "neg_star4": [
+   false,
+   false,
+   true
+  ],
+  "all_linear_5edge_spanning_7": [
+   1050,
+   420
+  ],
+  "random_agreement": [
+   400,
+   63
+  ]
+ },
+ "lists": {
+  "rerun/mine_14_11_6_deg3.txt": {
+   "graphs": 998,
+   "distinct": 998,
+   "linear": 998,
+   "contain_F7": 998,
+   "F7_free": 0
+  }
+ }
+}

@@ -1,0 +1,10 @@
+cell (13, 9, 5, 3) (direct): original engine 84 classes in 8.8 s, streamed main run 84 classes: representative sets EQUAL; enum/labelled/in_C counters (43382, 37244) EQUAL
+cell (11, 8, 4, 3) (direct): original engine 471 classes in 4.8 s, streamed main run 471 classes: representative sets EQUAL; enum/labelled/in_C counters (208448, 198892) EQUAL
+cell (14, 9, 5, 3) (direct): original engine 1060 classes in 36.4 s, streamed main run 1060 classes: representative sets EQUAL; enum/labelled/in_C counters (761773, 750072) EQUAL
+cell (14, 12, 6, 3) (recurse): original engine 2 classes in 0.1 s, streamed main run 2 classes: representative sets EQUAL; branches 1, branch data and connected_hits (17) EQUAL
+cell (17, 11, 6, 3) (recurse): original engine 45669 classes in 89.3 s, streamed main run 45669 classes: representative sets EQUAL; branches 3, branch data and connected_hits (1373145) EQUAL
+cell (20, 12, 7, 3) (recurse): original engine 15465 classes in 188.4 s, streamed main run 15465 classes: representative sets EQUAL; branches 3, branch data and connected_hits (820161) EQUAL
+cell (15, 12, 6, 3) (recurse): original engine 10617 classes in 8.3 s, streamed main run 10617 classes: representative sets EQUAL; branches 1, branch data and connected_hits (141212) EQUAL
+cell (21, 18, 9, 3) (recurse): original engine 0 classes in 6.2 s, streamed main run 0 classes: representative sets EQUAL; branches 1, branch data and connected_hits (0) EQUAL
+cell (17, 14, 7, 3) (recurse): original engine 1708 classes in 6.3 s, streamed main run 1708 classes: representative sets EQUAL; branches 1, branch data and connected_hits (28913) EQUAL
+SUMMARY all compared cells equal: True

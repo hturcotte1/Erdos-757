@@ -4,7 +4,7 @@
 $h=n-\tau$. A transversal inequality $\tau\le an+bm+\dots$, combined with
 $m\le n-2$, gives $h\ge(1-a-b)n-O(1)$. To beat 9/17 you need, for realizable AP hypergraphs,
 something like $17\tau\le(8-\varepsilon)n+O(1)$. Equivalently, using the excess $D=17h-9n$, prove
-$D\ge\varepsilon n-C$ (START_HERE §3).
+$D\ge\varepsilon n-C$ (START_HERE §3). The best-supported concrete candidate so far is I11, $11\tau\le3n+2m$ (kb/notes/i11_conjecture.md). With $m\le n-2$ it gives $17\tau\le\frac{85}{11}n-\frac{68}{11}$, i.e. $\varepsilon=3/11$ (equivalently $D\ge(3n+68)/11$). I11 is [conjecture] in general. Its falsifier run (experiments/falsify/i11-inequality/README.md, HOLDS-ON-DATA) and the computer-assisted window-cell induction of certificates L007-L011 (I11 verified on the abstract class for $n\le22$ [verified-here]; no general proof) illustrate workflow steps 2 and 4 below. The stronger $\tau\le3n/7$ (the 4/7 conjecture) is also consistent with the same data (README §0).
 
 ## Workflow for any candidate inequality
 1. **State it exactly**: class, constants, which subsets it is claimed for (all induced
@@ -49,7 +49,7 @@ $D\ge\varepsilon n-C$ (START_HERE §3).
 - **Rigidity:** in saturated sets the pattern determines the set. Many patterns are forced to be
   non-realizable (coincidences).
 
-## Sanity values to check any inequality against
+## Sanity values to check any inequality against [verified-here for the single sets, recomputed from data/small_records.json with e757.core; the all-classes rows are derived-here exact arithmetic on K41, K45]
 | Set | n | m | τ | h | HY slack | D |
 |---|---|---|---|---|---|---|
 | $A_{\rm base}$ | 14 | 12 | 6 | 8 | 4 | 10 |

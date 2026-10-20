@@ -1,0 +1,2 @@
+TOTAL inputs 3213
+(21,18,9,3) branch d=3 t'=8: 3213 inputs; ext_d noprune SUMMARY graphs=3213 bad_tau=0 tg_too_small=0 searched=3213 max_min_covers=933 nodes=4150006 hits_all=5078 printed=5078; pyverify: {'total': 5078, 'disconnected': 4662, 'nonlinear': 0, 'F7': 416, 'P3': 0, 'degree': 0, 'wrong_tau': 0, 'member': 0, 'tau_checked': 5078}

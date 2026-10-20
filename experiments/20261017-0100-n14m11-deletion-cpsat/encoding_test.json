@@ -1,0 +1,28 @@
+{
+ "compared": 63,
+ "all_agree": true,
+ "breakdown": [
+  [
+   7,
+   false,
+   21
+  ],
+  [
+   8,
+   true,
+   8
+  ],
+  [
+   9,
+   false,
+   21
+  ],
+  [
+   8,
+   false,
+   13
+  ]
+ ],
+ "patterns": 21,
+ "note": "breakdown rows are [T, model_feasible, count]"
+}

@@ -1,0 +1,9 @@
+cell_12_10_5 {'labelled': 145033, 'with_F7': 36916, 'F7free_iso_classes': 150, 'killed_by_eS': 1, 'kept': 149}
+cell_10_7_4 {'labelled': 494, 'with_F7': 126, 'F7free_iso_classes': 4, 'killed_by_eS': 0, 'kept': 4}
+cell_8_5_3 {'labelled': 86, 'with_F7': 0, 'F7free_iso_classes': 2, 'killed_by_eS': 0, 'kept': 2}
+cell_15_11_6_reused {'labelled': 49, 'with_F7': 27, 'F7free_iso_classes': 22, 'killed_by_eS': 3, 'kept': 19}
+G (18,12,7) candidates 352
+8 SUMMARY graphs=352 tested=4306086 hits=2140
+{'hits': 2140, 'with_F7': 2056, 'F7free_killed_by_eS': 84, 'F7free_eS_ok_not_orderable': 0, 'survivors': 0}
+
+{'hits': 4000, 'with_F7': 12, 'F7free_killed_by_eS': 255, 'F7free_eS_ok_not_orderable': 0, 'survivors': 3733}

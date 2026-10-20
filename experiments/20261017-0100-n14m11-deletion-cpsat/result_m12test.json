@@ -1,0 +1,24 @@
+{
+ "n": 14,
+ "T": 8,
+ "m": 12,
+ "workers": 3,
+ "tag": "m12test",
+ "time_limit": 600.0,
+ "model_built_s": 14.7,
+ "num_vars_hint": 2015,
+ "num_constraints": 551981,
+ "last_cpsat_status": "UNKNOWN",
+ "status": "UNKNOWN",
+ "wall_s": 599.3,
+ "stats": {
+  "alpha_cuts": 0,
+  "f7_cuts": 14,
+  "solves": 14,
+  "rounds": 3,
+  "learnt": 758,
+  "fail_kinds": {
+   "order": 3
+  }
+ }
+}

@@ -1,0 +1,3 @@
+9,6,3,100 lex {'sat_solutions': 56, 'sat_classes': 24, 'authors_outputs': 2582, 'authors_classes': 24, 'all_author_classes_covered': True, 'no_extra_classes': True}
+10,7,4,100 lex {'sat_solutions': 17, 'sat_classes': 6, 'authors_outputs': 637, 'authors_classes': 6, 'all_author_classes_covered': True, 'no_extra_classes': True}
+13,8,5,100 lex {'sat_solutions': 7, 'sat_classes': 2, 'authors_outputs': 159, 'authors_classes': 2, 'all_author_classes_covered': True, 'no_extra_classes': True}

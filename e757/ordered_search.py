@@ -23,8 +23,10 @@ core in a compiled language or drive it with CP-SAT; keep the exact leaf check.
 e757.cpsat_model (CEGAR with CP-SAT) and e757.sat_indep (SAT); exact realization is e757.realizability
 (the census pipelines also use the experiment-local fastreal.py, with realizability as fallback).
 The C DFS plus exact realization gave the exhaustive census results K41, K43 and K45 (saturated classes,
-certificates L002 to L004; K42 is a partial CP-SAT census, superseded by K45). The (14, m = 11) case is
-still open (Q11), and n = 16 remains undecided (Q1, D15).)
+certificates L002 to L004; K42 is a partial CP-SAT census, superseded by K45). The (14, m = 11) case
+was not decided by these engines (the DFS was stopped at 1,081 of 3,437 prefixes; CP-SAT: D21) and is
+closed by certificate L007 (K51, Q11 closed); n = 16 was not decided by them either (D15) and is settled
+by certificate L008 (f(16) = 10, K52, Q1 closed). Both closures use the I11 window-cell induction.)
 
 Example:
     from e757.ordered_search import search

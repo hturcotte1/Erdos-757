@@ -1,0 +1,6 @@
+{"cell": [16, 11, 6, 3], "cell_classes": 3238, "tries": 150000, "members_generated": 70, "distinct_classes_generated": 57, "found_in_cell": 70, "missing": 0, "rejected": {"tau": 24972, "incomplete": 119524, "F7": 4026, "P3": 1408}, "seed": 11, "secs": 96.0}
+{"cell": [15, 12, 6, 3], "cell_classes": 10617, "tries": 150000, "members_generated": 28, "distinct_classes_generated": 28, "found_in_cell": 28, "missing": 0, "rejected": {"incomplete": 121933, "tau": 21902, "P3": 2823, "F7": 3314}, "seed": 12, "secs": 100.1}
+{"cell": [18, 13, 7, 3], "cell_classes": 2544, "tries": 200000, "members_generated": 3, "distinct_classes_generated": 3, "found_in_cell": 3, "missing": 0, "rejected": {"incomplete": 161201, "tau": 30409, "P3": 3078, "F7": 5309}, "seed": 13, "secs": 157.1}
+{"cell": [17, 14, 7, 3], "cell_classes": 1708, "tries": 400000, "members_generated": 0, "distinct_classes_generated": 0, "found_in_cell": 0, "missing": 0, "rejected": {"incomplete": 331459, "tau": 53433, "P3": 8070, "F7": 7038}, "seed": 21, "secs": 300.2}
+{"cell": [20, 15, 8, 3], "cell_classes": 953, "tries": 400000, "members_generated": 0, "distinct_classes_generated": 0, "found_in_cell": 0, "missing": 0, "rejected": {"incomplete": 328442, "tau": 56215, "F7": 7546, "P3": 7797}, "seed": 22, "secs": 390.4}
+{"cell": "21 14 8 3 100 400000 23", "status": "TIMEOUT at the 480 s cap, nothing reported"}

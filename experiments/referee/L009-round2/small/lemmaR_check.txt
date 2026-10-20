@@ -1,0 +1,2 @@
+T17_reps.txt : all checks pass; component types of T-w over all degree-3 vertices w: {((6, 3, 2), (10, 7, 4)): 12, ((16, 10, 6),): 8, ((8, 5, 3), (8, 5, 3)): 6, ((3, 1, 1), (13, 9, 5)): 4}
+in18_T14reps.txt : all checks pass; component types of T-w over all degree-3 vertices w: {((13, 9, 5),): 16}

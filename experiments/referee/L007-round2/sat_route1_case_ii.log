@@ -1,0 +1,2 @@
+CASE_II d0=3 UNSAT None {} f7_clauses=53866 28.8 s
+CASE_II d0=4 UNSAT None {} f7_clauses=55144 11.7 s

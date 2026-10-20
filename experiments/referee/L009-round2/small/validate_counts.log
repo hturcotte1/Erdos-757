@@ -1,0 +1,5 @@
+cell (9,7,tau>=3,D<=3): classes genbg=29 enum_conn=29 | enum_conn==genbg yes | labelled bf2=5526360 genbg_sum_n!/aut=5526360 equal=yes | TAU0=3 F7PRUNE=0 out=29 inC=24 f7=4 p3bad=1 prune_tau=0 prune_f7=0  [35.0 s]
+cell (9,7,tau>=4,D<=7): classes genbg=0 enum_conn=0 | enum_conn==genbg yes | labelled bf2=0 genbg_sum_n!/aut=0 equal=yes | TAU0=4 F7PRUNE=0 out=0 inC=0 f7=0 p3bad=0 prune_tau=164 prune_f7=0  [42.4 s]
+cell (9,6,tau>=3,D<=6): classes genbg=24 enum_conn=24 | enum_conn==genbg yes | labelled bf2=4049640 genbg_sum_n!/aut=4049640 equal=yes | TAU0=3 F7PRUNE=0 out=24 inC=22 f7=2 p3bad=0 prune_tau=13 prune_f7=0  [25.5 s]
+cell (9,5,tau>=3,D<=5): classes genbg=6 enum_conn=6 | enum_conn==genbg yes | labelled bf2=619920 genbg_sum_n!/aut=619920 equal=yes | TAU0=3 F7PRUNE=0 out=6 inC=6 f7=0 p3bad=0 prune_tau=18 prune_f7=0  [7.0 s]
+cell (10,5,tau>=4,D<=5): classes genbg=0 enum_conn=0 | enum_conn==genbg yes | labelled bf2=0 genbg_sum_n!/aut=0 equal=yes | TAU0=4 F7PRUNE=0 out=0 inC=0 f7=0 p3bad=0 prune_tau=27 prune_f7=0  [63.1 s]

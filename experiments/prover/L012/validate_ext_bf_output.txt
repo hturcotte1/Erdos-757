@@ -1,0 +1,15 @@
+v_8_5_3 8 3 4 4 3: ext_d hits_all=152 bf SUMMARY bf hits 152 | identical sets: True
+v_8_5_3 8 3 4 2 1: ext_d hits_all=0 bf SUMMARY bf hits 0 | identical sets: True
+v_8_5_3 8 3 3 4 2: ext_d hits_all=108 bf SUMMARY bf hits 108 | identical sets: True
+v_10_7_4 10 4 5 4 3: ext_d hits_all=2272 bf SUMMARY bf hits 2272 | identical sets: True
+v_10_7_4 10 4 4 2 2: ext_d hits_all=2842 bf SUMMARY bf hits 2842 | identical sets: True
+v_8_5_3 8 3 3 2 2: ext_d hits_all=1616 bf SUMMARY bf hits 1616 | identical sets: True
+v_ap853 11 4 5 4 3: ext_d hits_all=67524 bf SUMMARY bf hits 67524 | identical sets: True
+v_ap853 11 4 5 3 2: ext_d hits_all=1170 bf SUMMARY bf hits 1170 | identical sets: True
+v_apap853_s5 14 5 6 4 3: ext_d hits_all=10497 bf SUMMARY bf hits 10497 | identical sets: True
+v_iso1074s 11 4 5 4 3: ext_d hits_all=35762 bf SUMMARY bf hits 35762 | identical sets: True
+v_iso1074s 11 4 5 3 2: ext_d hits_all=1430 bf SUMMARY bf hits 1430 | identical sets: True
+v_d2_10_5_3 10 3 4 2 1: ext_d hits_all=2100 bf SUMMARY bf hits 2100 | identical sets: True
+v_d2_11_5_3 11 3 4 2 1: ext_d hits_all=7500 bf SUMMARY bf hits 7500 | identical sets: True
+v_d2_10_5_3 10 3 4 2 2: ext_d hits_all=11280 bf SUMMARY bf hits 11280 | identical sets: True
+v_d2_11_5_3 11 3 4 3 2: ext_d hits_all=200640 bf SUMMARY bf hits 200640 | identical sets: True

@@ -1,0 +1,2 @@
+14 11 6 3 False d0= 3 {'result': 'SAT', 'iters': 1, 'cuts': 0, 'f7_clauses': 0, 'secs': 2.42}
+ROUTE II LEX control SAT [(0, 1, 2), (0, 3, 4), (0, 5, 6), (1, 4, 6), (1, 12, 13), (2, 3, 5), (7, 10, 13), (7, 11, 12), (8, 9, 13), (8, 10, 12), (9, 10, 11)] iso D14: True hasF7: True 2.4 s {"n": 14, "m": 11, "t": 6, "D": 3, "f7free": false, "per_d0": {"3": {"result": "SAT", "iters": 1, "cuts": 0, "f7_clauses": 0, "secs": 2.42}}}

@@ -1,0 +1,63 @@
+{
+ "cells": {
+  "22_18_9_D3": {
+   "classes": 94513,
+   "secs": 2762.8,
+   "inputs": 2014413,
+   "decompositions": 20,
+   "ext_nodes": 5238536047,
+   "bad_tau": 0,
+   "hits_F7free": 3470939,
+   "hits_in_C_raw": 3042157,
+   "connected_hits": 2239624,
+   "canon_sha256_16": "9a6e1794e8b55fd4"
+  },
+  "23_21_10_D3": {
+   "classes": 0,
+   "secs": 481.2,
+   "inputs": 133804,
+   "decompositions": 5,
+   "inputs_by_decomposition": {
+    "[(22,18,9)]": 94513,
+    "[(21,18,9),iso]": 0,
+    "[(10,8,4),(12,10,5)]": 9387,
+    "[(8,6,3),(14,12,6)]": 6,
+    "[(3,1,1),(19,17,8)]": 29898
+   },
+   "ext_nodes": 48029683,
+   "bad_tau": 0,
+   "hits_F7free": 4249,
+   "hits_in_C_raw": 0,
+   "connected_hits": 0
+  }
+ },
+ "sanity": {
+  "10_8_4_D3": {
+   "reference": 63,
+   "plain": 63,
+   "stream": 63,
+   "identical": true
+  },
+  "17_11_6_D3": {
+   "reference": 45669,
+   "stream": 45669,
+   "identical": true
+  },
+  "19_16_8_D3": {
+   "reference": 227,
+   "plain": 227,
+   "stream": 227,
+   "identical": true
+  },
+  "23_21_10_D3_plain_engine": {
+   "classes": 0,
+   "secs": 1047
+  }
+ },
+ "control_abase": {
+  "assignments": 1596,
+  "distinct": 1413,
+  "realizations": 948
+ },
+ "conclusion": "cell(23,21,10,3) is EMPTY"
+}

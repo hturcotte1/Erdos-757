@@ -1,0 +1,4 @@
+TOTAL graphs=349 assignments=13753002 singular=0 liftfail=0 distinct=3025103 realizations=0 realizable_graphs=0
+[236 s]
+TOTAL graphs=350 assignments=13453875 singular=0 liftfail=0 distinct=3026670 realizations=0 realizable_graphs=0
+[238 s]

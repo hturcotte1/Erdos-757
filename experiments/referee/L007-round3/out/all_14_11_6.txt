@@ -1,0 +1,15 @@
+level 1: 1
+level 2: candidates=3 classes=1
+level 3: candidates=9 classes=3
+level 4: candidates=63 classes=10
+level 5: candidates=372 classes=37
+level 6: candidates=2369 classes=209
+level 7: candidates=19660 classes=1465
+level 8: candidates=168807 classes=12529
+level 9: candidates=1524618 classes=99531
+level 10: candidates=11566958 classes=87720
+level 11: candidates=8263142 classes=3
+CLASS aut=48 tau=6 maxdeg=4 : (0,1,2) (1,3,4) (0,3,5) (0,4,6) (2,5,6) (2,4,7) (1,5,7) (3,6,7) (0,8,9) (8,10,11) (9,12,13)
+CLASS aut=24 tau=6 maxdeg=4 : (0,1,2) (0,4,5) (4,6,7) (0,6,8) (0,7,9) (5,8,9) (1,3,10) (2,3,11) (1,11,12) (2,10,13) (3,12,13)
+CLASS aut=4 tau=6 maxdeg=3 : (0,1,2) (0,3,5) (1,3,6) (2,4,7) (0,6,8) (1,5,9) (3,8,9) (2,10,11) (4,10,12) (4,11,13) (7,12,13)
+FINAL N=14 M=11 T0=6 DMAX=100 F7PRUNE=0 classes=3 labelled=27243216000

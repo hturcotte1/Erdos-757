@@ -1,0 +1,9 @@
+1c1,2
+< /* ext_indep4.c (= ext_indep3.c with MAXT 65536 and Gosper-hack enumeration of the (TG-1)- and TG-subsets; for 18/19-vertex inputs, certificate L010)
+---
+> /* ext_indep5.c (= ext_indep4.c with MAXT 262144, for 20/21-vertex inputs with TG = 8, certificate L011)
+>    ext_indep4.c (= ext_indep3.c with MAXT 65536 and Gosper-hack enumeration of the (TG-1)- and TG-subsets; for 18/19-vertex inputs, certificate L010)
+16c17
+< #define MAXT 65536
+---
+> #define MAXT 262144

@@ -1,0 +1,26 @@
+{
+ "W": {
+  "n": 14,
+  "distinct": true,
+  "is45": true,
+  "m": 11,
+  "h_brute": 9,
+  "h_cpsat": 9
+ },
+ "Fib_F3_F16": {
+  "n": 14,
+  "distinct": true,
+  "is45": true,
+  "m": 11,
+  "h_brute": 9,
+  "h_cpsat": 9
+ },
+ "A_base": {
+  "n": 14,
+  "distinct": true,
+  "is45": true,
+  "m": 12,
+  "h_brute": 8,
+  "h_cpsat": 8
+ }
+}

@@ -1,0 +1,10 @@
+cell (14, 12, 6, 3): direct route STOPPED by the prover after 24 min wall (lowest-priority session; enum_conn had printed almost nothing): no result
+cell (17, 11, 6, 2): main run (recurse) 114 classes; direct 114 classes (enum_conn N=17 M=11 T0=6 DMAX=2 calls=17166363 found=148594, 148594 labelled, 148594 in C with tau = t; 75.8 s): EQUAL
+cell (15, 11, 6, 2): main run (recurse) 0 classes; direct 0 classes (enum_conn N=15 M=11 T0=6 DMAX=2 calls=2159789 found=0, 0 labelled, 0 in C with tau = t; 0.4 s): EQUAL
+cell (16, 11, 6, 2): main run (recurse) 0 classes; direct 0 classes (enum_conn N=16 M=11 T0=6 DMAX=2 calls=6538033 found=0, 0 labelled, 0 in C with tau = t; 4.9 s): EQUAL
+cell (18, 12, 7, 2): main run (recurse) 0 classes; direct 0 classes (enum_conn N=18 M=12 T0=7 DMAX=2 calls=59956083 found=0, 0 labelled, 0 in C with tau = t; 94.3 s): EQUAL
+cell (19, 11, 7, 2): main run (recurse) 0 classes; direct 0 classes (enum_conn N=19 M=11 T0=7 DMAX=2 calls=9786805 found=0, 0 labelled, 0 in C with tau = t; 42.4 s): EQUAL
+cell (20, 11, 7, 2): main run (recurse) 1 classes; direct 1 classes (enum_conn N=20 M=11 T0=7 DMAX=2 calls=10044317 found=248, 248 labelled, 248 in C with tau = t; 23.3 s): EQUAL
+cell (19, 12, 7, 2): main run (recurse) 1 classes; direct 1 classes (enum_conn N=19 M=12 T0=7 DMAX=2 calls=138607639 found=128, 128 labelled, 128 in C with tau = t; 296.4 s): EQUAL
+cell (20, 12, 7, 2): main run (recurse) 38 classes; direct 38 classes (enum_conn N=20 M=12 T0=7 DMAX=2 calls=220920767 found=21664, 21664 labelled, 21664 in C with tau = t; 852.5 s): EQUAL
+cell (20, 11, 7, 3): main run (recurse) 45 classes; direct 45 classes (enum_conn N=20 M=11 T0=7 DMAX=3 calls=242976218 found=21482, 21482 labelled, 21482 in C with tau = t; 439.4 s): EQUAL

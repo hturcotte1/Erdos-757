@@ -1,0 +1,6 @@
+#END N=15 M=9 T0=6 DMAX=1000 close=1 nodes=751270 out=0
+   0 s
+#END N=16 M=8 T0=6 DMAX=1000 close=1 nodes=6054 out=0
+   0 s
+#END N=15 M=10 T0=6 DMAX=1000 close=1 nodes=63242928 out=0
+   11 s

@@ -1,0 +1,6 @@
+PY assignments=33047 singular=0 distinct=8626 realizations=0
+STAT graph=1 assignments=33047 singular=0 liftfail=0 distinct=8626 realizations=0
+PY assignments=33079 singular=0 distinct=8655 realizations=0
+STAT graph=1 assignments=33079 singular=0 liftfail=0 distinct=8655 realizations=0
+PY assignments=39428 singular=0 distinct=10063 realizations=0
+STAT graph=1 assignments=39428 singular=0 liftfail=0 distinct=10063 realizations=0

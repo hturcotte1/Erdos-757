@@ -1,0 +1,22 @@
+{
+ "n": 14,
+ "T": 8,
+ "m": 11,
+ "workers": 2,
+ "tag": "m11",
+ "time_limit": 10800.0,
+ "model_built_s": 26.1,
+ "num_vars_hint": 2015,
+ "num_constraints": 1993421,
+ "last_cpsat_status": "UNKNOWN",
+ "status": "UNKNOWN",
+ "wall_s": 10800.2,
+ "stats": {
+  "alpha_cuts": 0,
+  "f7_cuts": 0,
+  "solves": 1,
+  "rounds": 0,
+  "learnt": 0,
+  "fail_kinds": {}
+ }
+}

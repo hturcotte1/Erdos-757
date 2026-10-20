@@ -1,0 +1,4 @@
+L008 mine_15_11_6_deg3: SUMMARY tag=FOUND NV=15 total=50606 bad_labels=0 linear=50606 contain_F7=34613 P3_violated=2896 F7free_and_P3_violated=658 survivors=15335 survivors_connected=15335 wrong_tau_dropped=0 connected_all=50606 tau_range=[6,6] maxdeg_max=3
+  classes: L008 direct 19, this run 19, IDENTICAL
+L008 mine_12_10_5_deg3: SUMMARY tag=FOUND NV=12 total=145033 bad_labels=0 linear=145033 contain_F7=36916 P3_violated=4084 F7free_and_P3_violated=186 survivors=107931 survivors_connected=107931 wrong_tau_dropped=0 connected_all=145033 tau_range=[5,5] maxdeg_max=3
+  classes: L008 direct 149, this run 149, IDENTICAL

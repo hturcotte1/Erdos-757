@@ -1,0 +1,14 @@
+7 partitions of (17,9) slack 3
+cell_3_1_1 {'labelled': 1, 'with_F7': 0, 'F7free_iso_classes': 1, 'killed_by_eS': 0, 'kept': 1}
+cell_8_6_3 {'labelled': 313, 'with_F7': 102, 'F7free_iso_classes': 3, 'killed_by_eS': 0, 'kept': 3}
+cell_11_7_4 {'labelled': 7615, 'with_F7': 182, 'F7free_iso_classes': 35, 'killed_by_eS': 0, 'kept': 35}
+cell_8_5_3 {'labelled': 86, 'with_F7': 0, 'F7free_iso_classes': 2, 'killed_by_eS': 0, 'kept': 2}
+cell_6_3_2 {'labelled': 6, 'with_F7': 0, 'F7free_iso_classes': 1, 'killed_by_eS': 0, 'kept': 1}
+cell_14_8_5 {'labelled': 1274, 'with_F7': 0, 'F7free_iso_classes': 9, 'killed_by_eS': 0, 'kept': 9}
+cell_9_4_3 {'labelled': 4, 'with_F7': 0, 'F7free_iso_classes': 1, 'killed_by_eS': 0, 'kept': 1}
+cell_11_6_4 {'labelled': 0, 'with_F7': 0, 'F7free_iso_classes': 0, 'killed_by_eS': 0, 'kept': 0}
+cell_17_9_6 {'labelled': 0, 'with_F7': 0, 'F7free_iso_classes': 0, 'killed_by_eS': 0, 'kept': 0}
+G prime candidates 51
+X18_deg3 SUMMARY graphs=51 tested=3053913 hits=4251
+X18_deg3_classes {'labelled': 4251, 'with_F7': 1555, 'F7free_iso_classes': 187, 'killed_by_eS': 11, 'kept': 176}
+secs 228.93649172782898

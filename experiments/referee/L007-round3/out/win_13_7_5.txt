@@ -1,0 +1,8 @@
+level 1: 1
+level 2: candidates=3 classes=1
+level 3: candidates=9 classes=3
+level 4: candidates=62 classes=8
+level 5: candidates=249 classes=16
+level 6: candidates=730 classes=7
+level 7: candidates=556 classes=0
+FINAL N=13 M=7 T0=5 DMAX=100 F7PRUNE=0 classes=0 labelled=0

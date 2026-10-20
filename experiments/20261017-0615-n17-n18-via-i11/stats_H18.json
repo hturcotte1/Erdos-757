@@ -1,0 +1,14 @@
+{
+ "H18_inputs": {
+  "G17_classes": 8,
+  "C14_plus_AP": 2
+ },
+ "H18_ext": "SUMMARY graphs=10 tested=44570 hits=0",
+ "H18_post": {
+  "hits": 0,
+  "with_F7": 0,
+  "F7free_killed_by_eS": 0,
+  "F7free_eS_ok_not_orderable": 0,
+  "survivors": 0
+ }
+}

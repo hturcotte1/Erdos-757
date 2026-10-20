@@ -1,0 +1,36 @@
+(a) h = 13 => tau = 10; P3: m <= 21; K8: 170 <= 115 + 3m  <=>  m >= 19
+(b) m = 19: I11 slack of H = -3; tau(H-v) = 10 possible for degrees [] (none); tau(H-v) = 9 and 99 <= 66 + 2(19 - d) => d <= 2; degree sum 3m = 57 vs 2n = 46, impossible
+      a vertex of degree 1: H - v = (22, 18, 9), slack 3
+      a vertex of degree 2: H - v = (22, 17, 9), slack 1
+(b) m = 20: I11 slack of H = -1; tau(H-v) = 10 possible for degrees [] (none); tau(H-v) = 9 and 99 <= 66 + 2(20 - d) => d <= 3; degree sum 3m = 60 vs 2n = 46, max degree 3 forced
+      a vertex of degree 1: H - v = (22, 19, 9), slack 5
+      a vertex of degree 2: H - v = (22, 18, 9), slack 3
+      a vertex of degree 3: H - v = (22, 17, 9), slack 1
+(b) m = 21: I11 slack of H = 1; tau(H-v) = 10 possible for degrees [] (none); tau(H-v) = 9 and 99 <= 66 + 2(21 - d) => d <= 4; degree sum 3m = 63 vs 2n = 46, ok
+      a vertex of degree 1: H - v = (22, 20, 9), slack 7
+      a vertex of degree 2: H - v = (22, 19, 9), slack 5
+      a vertex of degree 3: H - v = (22, 18, 9), slack 3
+      a vertex of degree 4: H - v = (22, 17, 9), slack 1
+(c) (22,17) slack 1 [routes 4 and 20: G = H - v, d(v) = 4 resp. 3]: G1 4, G2 4, engine 4, EQUAL
+        [(3, 1, 1), (19, 16, 8)]
+        [(8, 5, 3), (14, 12, 6)]
+        [(10, 7, 4), (12, 10, 5)]
+        [(22, 17, 9)]
+(c) (22,18) slack 3 [open route 3: G = H - v, d(v) = 3, m = 21]: G1 5, G2 5, engine 5, EQUAL
+        [(1, 0, 0), (21, 18, 9)]
+        [(3, 1, 1), (19, 17, 8)]
+        [(8, 6, 3), (14, 12, 6)]
+        [(10, 8, 4), (12, 10, 5)]
+        [(22, 18, 9)]
+(c) (22,19) slack 5 [m = 21, d(v) = 2 (not used)]: G1 2, G2 2, engine 2, EQUAL
+        [(1, 0, 0), (21, 19, 9)]
+        [(22, 19, 9)]
+(d) record cells (n, m, tau, slack) with I11 slack >= 0, n <= 40:
+    n=23: [(23, 21, 10, 1)]
+    n=25: [(25, 23, 11, 0)]
+    n=30: [(30, 27, 13, 1), (30, 28, 13, 3)]
+    n=32: [(32, 29, 14, 0), (32, 30, 14, 2)]
+    n=34: [(34, 32, 15, 1)]
+    n=36: [(36, 34, 16, 0)]
+    n=37: [(37, 33, 16, 1), (37, 34, 16, 3), (37, 35, 16, 5)]
+    n=39: [(39, 35, 17, 0), (39, 36, 17, 2), (39, 37, 17, 4)]

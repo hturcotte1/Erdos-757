@@ -1,0 +1,37 @@
+=== n = 26: violator cells (n, m, tau), slack s<0, K8 window, connected ===
+(26,14,10) slack -4: tau(H-v)=tau possible for degrees none; tau(H-v)=tau-1 needs d <= 2; OPEN: Delta <= 2 (3m=42 <= 52)
+      degree 1: H-v = (25,13,9) slack 2
+      degree 2: H-v = (25,12,9) slack 0
+(26,15,10) slack -2: tau(H-v)=tau possible for degrees none; tau(H-v)=tau-1 needs d <= 3; OPEN: Delta <= 3 (3m=45 <= 78)
+      degree 1: H-v = (25,14,9) slack 4
+      degree 2: H-v = (25,13,9) slack 2
+      degree 3: H-v = (25,12,9) slack 0
+(26,19,11) slack -5: tau(H-v)=tau possible for degrees none; tau(H-v)=tau-1 needs d <= 1; excluded by counting: 3m=57 > dmax*n=26
+(26,20,11) slack -3: tau(H-v)=tau possible for degrees none; tau(H-v)=tau-1 needs d <= 2; excluded by counting: 3m=60 > dmax*n=52
+(26,21,11) slack -1: tau(H-v)=tau possible for degrees none; tau(H-v)=tau-1 needs d <= 3; OPEN: Delta <= 3 (3m=63 <= 78)
+      degree 1: H-v = (25,20,10) slack 5
+      degree 2: H-v = (25,19,10) slack 3
+      degree 3: H-v = (25,18,10) slack 1
+open cells n=26: [(14, 10, 2), (15, 10, 3), (21, 11, 3)]
+=== n = 27: violator cells (n, m, tau), slack s<0, K8 window, connected ===
+(27,13,10) slack -3: tau(H-v)=tau possible for degrees none; tau(H-v)=tau-1 needs d <= 2; OPEN: Delta <= 2 (3m=39 <= 54)
+      degree 1: H-v = (26,12,9) slack 3
+      degree 2: H-v = (26,11,9) slack 1
+(27,14,10) slack -1: tau(H-v)=tau possible for degrees none; tau(H-v)=tau-1 needs d <= 3; OPEN: Delta <= 3 (3m=42 <= 81)
+      degree 1: H-v = (26,13,9) slack 5
+      degree 2: H-v = (26,12,9) slack 3
+      degree 3: H-v = (26,11,9) slack 1
+(27,18,11) slack -4: tau(H-v)=tau possible for degrees none; tau(H-v)=tau-1 needs d <= 2; OPEN: Delta <= 2 (3m=54 <= 54)
+      degree 1: H-v = (26,17,10) slack 2
+      degree 2: H-v = (26,16,10) slack 0
+(27,19,11) slack -2: tau(H-v)=tau possible for degrees none; tau(H-v)=tau-1 needs d <= 3; OPEN: Delta <= 3 (3m=57 <= 81)
+      degree 1: H-v = (26,18,10) slack 4
+      degree 2: H-v = (26,17,10) slack 2
+      degree 3: H-v = (26,16,10) slack 0
+(27,23,12) slack -5: tau(H-v)=tau possible for degrees none; tau(H-v)=tau-1 needs d <= 1; excluded by counting: 3m=69 > dmax*n=27
+(27,24,12) slack -3: tau(H-v)=tau possible for degrees none; tau(H-v)=tau-1 needs d <= 2; excluded by counting: 3m=72 > dmax*n=54
+(27,25,12) slack -1: tau(H-v)=tau possible for degrees none; tau(H-v)=tau-1 needs d <= 3; OPEN: Delta <= 3 (3m=75 <= 81)
+      degree 1: H-v = (26,24,11) slack 5
+      degree 2: H-v = (26,23,11) slack 3
+      degree 3: H-v = (26,22,11) slack 1
+open cells n=27: [(13, 10, 2), (14, 10, 3), (18, 11, 2), (19, 11, 3), (25, 12, 3)]

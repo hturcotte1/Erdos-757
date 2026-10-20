@@ -1,0 +1,14 @@
+window (21, 11, 8) slack -3 deg bound 2
+window (21, 12, 8) slack -1 deg bound 3
+window (21, 16, 9) slack -4 deg bound 2
+window (21, 17, 9) slack -2 deg bound 3
+window (22, 15, 9) slack -3 deg bound 2
+window (22, 16, 9) slack -1 deg bound 3
+window (22, 20, 10) slack -4 deg bound 2
+window (23, 13, 9) slack -4 deg bound 2
+window (23, 14, 9) slack -2 deg bound 3
+window (23, 19, 10) slack -3 deg bound 2
+window (23, 20, 10) slack -1 deg bound 3
+record cell n=21 h=11 tau=10: impossible by HY (m<=n-2)
+record cell n=22 h=12 tau=10: HY needs m>=20; I11 slack at each allowed m: [(20, -4)]
+record cell n=23 h=13 tau=10: HY needs m>=19; I11 slack at each allowed m: [(19, -3), (20, -1), (21, 1)]

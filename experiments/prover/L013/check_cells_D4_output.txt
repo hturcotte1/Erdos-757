@@ -1,0 +1,1 @@
+SUMMARY {"celldir": "out/cells_D4", "cells": 7, "recursion_cells": 1, "direct_cells": 6, "representatives_verified": 165, "branches": 2, "decompositions_checked": 4, "problems": 0, "nonempty_cells": 6}

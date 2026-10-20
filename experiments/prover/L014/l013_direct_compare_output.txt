@@ -1,0 +1,4 @@
+cell_17_11_6_D2.txt mine=114 L013direct=114 EQUAL
+cell_20_11_7_D3.txt mine=45 L013direct=45 EQUAL
+cell_20_12_7_D2.txt mine=38 L013direct=38 EQUAL
+SUMMARY vs L013direct: common cells 3, equal 3, different 0

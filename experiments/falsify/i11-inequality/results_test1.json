@@ -1,0 +1,1213 @@
+{
+ "8": {
+  "tag": "small_records 8",
+  "inputs": 1,
+  "subsets": 256,
+  "violations": 0,
+  "min_slack": 0,
+  "slack_values_lowest": [
+   0,
+   1,
+   2,
+   3,
+   5,
+   6
+  ],
+  "equality_cases": [
+   {
+    "n": 3,
+    "m": 1,
+    "tau": 1,
+    "count": 5,
+    "first_input": 0,
+    "first_mask": 56
+   },
+   {
+    "n": 6,
+    "m": 2,
+    "tau": 2,
+    "count": 2,
+    "first_input": 0,
+    "first_mask": 123
+   }
+  ],
+  "slack1_to_5": [
+   {
+    "n": 1,
+    "m": 0,
+    "tau": 0,
+    "slack": 3,
+    "count": 8
+   },
+   {
+    "n": 4,
+    "m": 1,
+    "tau": 1,
+    "slack": 3,
+    "count": 25
+   },
+   {
+    "n": 6,
+    "m": 3,
+    "tau": 2,
+    "slack": 2,
+    "count": 4
+   },
+   {
+    "n": 7,
+    "m": 2,
+    "tau": 2,
+    "slack": 3,
+    "count": 1
+   },
+   {
+    "n": 8,
+    "m": 5,
+    "tau": 3,
+    "slack": 1,
+    "count": 1
+   }
+  ],
+  "n": 8,
+  "edges": [
+   [
+    0,
+    1,
+    6
+   ],
+   [
+    1,
+    2,
+    7
+   ],
+   [
+    2,
+    3,
+    6
+   ],
+   [
+    3,
+    4,
+    5
+   ],
+   [
+    4,
+    6,
+    7
+   ]
+  ]
+ },
+ "10": {
+  "tag": "small_records 10",
+  "inputs": 1,
+  "subsets": 1024,
+  "violations": 0,
+  "min_slack": 0,
+  "slack_values_lowest": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "equality_cases": [
+   {
+    "n": 3,
+    "m": 1,
+    "tau": 1,
+    "count": 8,
+    "first_input": 0,
+    "first_mask": 28
+   },
+   {
+    "n": 6,
+    "m": 2,
+    "tau": 2,
+    "count": 10,
+    "first_input": 0,
+    "first_mask": 95
+   }
+  ],
+  "slack1_to_5": [
+   {
+    "n": 1,
+    "m": 0,
+    "tau": 0,
+    "slack": 3,
+    "count": 10
+   },
+   {
+    "n": 4,
+    "m": 1,
+    "tau": 1,
+    "slack": 3,
+    "count": 56
+   },
+   {
+    "n": 6,
+    "m": 3,
+    "tau": 2,
+    "slack": 2,
+    "count": 7
+   },
+   {
+    "n": 7,
+    "m": 2,
+    "tau": 2,
+    "slack": 3,
+    "count": 12
+   },
+   {
+    "n": 8,
+    "m": 5,
+    "tau": 3,
+    "slack": 1,
+    "count": 3
+   },
+   {
+    "n": 10,
+    "m": 8,
+    "tau": 4,
+    "slack": 2,
+    "count": 1
+   }
+  ],
+  "n": 10,
+  "edges": [
+   [
+    0,
+    1,
+    6
+   ],
+   [
+    0,
+    4,
+    9
+   ],
+   [
+    1,
+    2,
+    5
+   ],
+   [
+    1,
+    7,
+    9
+   ],
+   [
+    2,
+    3,
+    4
+   ],
+   [
+    2,
+    6,
+    8
+   ],
+   [
+    3,
+    5,
+    7
+   ],
+   [
+    3,
+    8,
+    9
+   ]
+  ]
+ },
+ "11": {
+  "tag": "small_records 11",
+  "inputs": 1,
+  "subsets": 2048,
+  "violations": 0,
+  "min_slack": 0,
+  "slack_values_lowest": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "equality_cases": [
+   {
+    "n": 3,
+    "m": 1,
+    "tau": 1,
+    "count": 8,
+    "first_input": 0,
+    "first_mask": 134
+   },
+   {
+    "n": 6,
+    "m": 2,
+    "tau": 2,
+    "count": 10,
+    "first_input": 0,
+    "first_mask": 686
+   },
+   {
+    "n": 10,
+    "m": 7,
+    "tau": 4,
+    "count": 1,
+    "first_input": 0,
+    "first_mask": 2031
+   }
+  ],
+  "slack1_to_5": [
+   {
+    "n": 1,
+    "m": 0,
+    "tau": 0,
+    "slack": 3,
+    "count": 11
+   },
+   {
+    "n": 4,
+    "m": 1,
+    "tau": 1,
+    "slack": 3,
+    "count": 64
+   },
+   {
+    "n": 6,
+    "m": 3,
+    "tau": 2,
+    "slack": 2,
+    "count": 8
+   },
+   {
+    "n": 7,
+    "m": 2,
+    "tau": 2,
+    "slack": 3,
+    "count": 26
+   },
+   {
+    "n": 8,
+    "m": 5,
+    "tau": 3,
+    "slack": 1,
+    "count": 2
+   },
+   {
+    "n": 9,
+    "m": 4,
+    "tau": 3,
+    "slack": 2,
+    "count": 3
+   }
+  ],
+  "n": 11,
+  "edges": [
+   [
+    0,
+    1,
+    9
+   ],
+   [
+    0,
+    6,
+    10
+   ],
+   [
+    1,
+    2,
+    7
+   ],
+   [
+    2,
+    3,
+    8
+   ],
+   [
+    2,
+    4,
+    9
+   ],
+   [
+    3,
+    5,
+    9
+   ],
+   [
+    5,
+    7,
+    8
+   ],
+   [
+    6,
+    8,
+    9
+   ]
+  ]
+ },
+ "12": {
+  "tag": "small_records 12",
+  "inputs": 1,
+  "subsets": 4096,
+  "violations": 0,
+  "min_slack": 0,
+  "slack_values_lowest": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "equality_cases": [
+   {
+    "n": 3,
+    "m": 1,
+    "tau": 1,
+    "count": 10,
+    "first_input": 0,
+    "first_mask": 22
+   },
+   {
+    "n": 6,
+    "m": 2,
+    "tau": 2,
+    "count": 19,
+    "first_input": 0,
+    "first_mask": 438
+   },
+   {
+    "n": 9,
+    "m": 3,
+    "tau": 3,
+    "count": 2,
+    "first_input": 0,
+    "first_mask": 1967
+   },
+   {
+    "n": 10,
+    "m": 7,
+    "tau": 4,
+    "count": 1,
+    "first_input": 0,
+    "first_mask": 3935
+   }
+  ],
+  "slack1_to_5": [
+   {
+    "n": 1,
+    "m": 0,
+    "tau": 0,
+    "slack": 3,
+    "count": 12
+   },
+   {
+    "n": 4,
+    "m": 1,
+    "tau": 1,
+    "slack": 3,
+    "count": 90
+   },
+   {
+    "n": 6,
+    "m": 3,
+    "tau": 2,
+    "slack": 2,
+    "count": 14
+   },
+   {
+    "n": 7,
+    "m": 2,
+    "tau": 2,
+    "slack": 3,
+    "count": 72
+   },
+   {
+    "n": 8,
+    "m": 5,
+    "tau": 3,
+    "slack": 1,
+    "count": 6
+   },
+   {
+    "n": 8,
+    "m": 6,
+    "tau": 3,
+    "slack": 3,
+    "count": 1
+   },
+   {
+    "n": 9,
+    "m": 4,
+    "tau": 3,
+    "slack": 2,
+    "count": 12
+   },
+   {
+    "n": 10,
+    "m": 3,
+    "tau": 3,
+    "slack": 3,
+    "count": 1
+   },
+   {
+    "n": 10,
+    "m": 8,
+    "tau": 4,
+    "slack": 2,
+    "count": 2
+   },
+   {
+    "n": 11,
+    "m": 6,
+    "tau": 4,
+    "slack": 1,
+    "count": 1
+   },
+   {
+    "n": 11,
+    "m": 7,
+    "tau": 4,
+    "slack": 3,
+    "count": 5
+   },
+   {
+    "n": 12,
+    "m": 10,
+    "tau": 5,
+    "slack": 1,
+    "count": 1
+   }
+  ],
+  "n": 12,
+  "edges": [
+   [
+    0,
+    1,
+    9
+   ],
+   [
+    1,
+    2,
+    4
+   ],
+   [
+    2,
+    3,
+    10
+   ],
+   [
+    3,
+    4,
+    8
+   ],
+   [
+    3,
+    6,
+    11
+   ],
+   [
+    4,
+    5,
+    6
+   ],
+   [
+    4,
+    9,
+    11
+   ],
+   [
+    5,
+    7,
+    8
+   ],
+   [
+    6,
+    8,
+    10
+   ],
+   [
+    7,
+    10,
+    11
+   ]
+  ]
+ },
+ "14": {
+  "tag": "small_records 14",
+  "inputs": 1,
+  "subsets": 16384,
+  "violations": 0,
+  "min_slack": 0,
+  "slack_values_lowest": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "equality_cases": [
+   {
+    "n": 3,
+    "m": 1,
+    "tau": 1,
+    "count": 12,
+    "first_input": 0,
+    "first_mask": 56
+   },
+   {
+    "n": 6,
+    "m": 2,
+    "tau": 2,
+    "count": 35,
+    "first_input": 0,
+    "first_mask": 123
+   },
+   {
+    "n": 9,
+    "m": 3,
+    "tau": 3,
+    "count": 13,
+    "first_input": 0,
+    "first_mask": 8161
+   },
+   {
+    "n": 10,
+    "m": 7,
+    "tau": 4,
+    "count": 4,
+    "first_input": 0,
+    "first_mask": 4092
+   },
+   {
+    "n": 13,
+    "m": 8,
+    "tau": 5,
+    "count": 1,
+    "first_input": 0,
+    "first_mask": 16382
+   },
+   {
+    "n": 14,
+    "m": 12,
+    "tau": 6,
+    "count": 1,
+    "first_input": 0,
+    "first_mask": 16383
+   }
+  ],
+  "slack1_to_5": [
+   {
+    "n": 1,
+    "m": 0,
+    "tau": 0,
+    "slack": 3,
+    "count": 14
+   },
+   {
+    "n": 4,
+    "m": 1,
+    "tau": 1,
+    "slack": 3,
+    "count": 132
+   },
+   {
+    "n": 6,
+    "m": 3,
+    "tau": 2,
+    "slack": 2,
+    "count": 14
+   },
+   {
+    "n": 7,
+    "m": 2,
+    "tau": 2,
+    "slack": 3,
+    "count": 220
+   },
+   {
+    "n": 8,
+    "m": 5,
+    "tau": 3,
+    "slack": 1,
+    "count": 6
+   },
+   {
+    "n": 9,
+    "m": 4,
+    "tau": 3,
+    "slack": 2,
+    "count": 40
+   },
+   {
+    "n": 10,
+    "m": 3,
+    "tau": 3,
+    "slack": 3,
+    "count": 22
+   },
+   {
+    "n": 11,
+    "m": 6,
+    "tau": 4,
+    "slack": 1,
+    "count": 9
+   },
+   {
+    "n": 11,
+    "m": 7,
+    "tau": 4,
+    "slack": 3,
+    "count": 21
+   },
+   {
+    "n": 12,
+    "m": 5,
+    "tau": 4,
+    "slack": 2,
+    "count": 2
+   },
+   {
+    "n": 13,
+    "m": 9,
+    "tau": 5,
+    "slack": 2,
+    "count": 6
+   }
+  ],
+  "n": 14,
+  "edges": [
+   [
+    0,
+    1,
+    6
+   ],
+   [
+    0,
+    2,
+    10
+   ],
+   [
+    0,
+    8,
+    12
+   ],
+   [
+    0,
+    11,
+    13
+   ],
+   [
+    1,
+    12,
+    13
+   ],
+   [
+    2,
+    3,
+    7
+   ],
+   [
+    2,
+    5,
+    8
+   ],
+   [
+    3,
+    4,
+    5
+   ],
+   [
+    4,
+    6,
+    8
+   ],
+   [
+    4,
+    9,
+    10
+   ],
+   [
+    5,
+    7,
+    9
+   ],
+   [
+    6,
+    10,
+    11
+   ]
+  ]
+ },
+ "12b": {
+  "tag": "small_records 12b",
+  "inputs": 1,
+  "subsets": 4096,
+  "violations": 0,
+  "min_slack": 0,
+  "slack_values_lowest": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "equality_cases": [
+   {
+    "n": 3,
+    "m": 1,
+    "tau": 1,
+    "count": 10,
+    "first_input": 0,
+    "first_mask": 14
+   },
+   {
+    "n": 6,
+    "m": 2,
+    "tau": 2,
+    "count": 20,
+    "first_input": 0,
+    "first_mask": 246
+   },
+   {
+    "n": 10,
+    "m": 7,
+    "tau": 4,
+    "count": 2,
+    "first_input": 0,
+    "first_mask": 2815
+   }
+  ],
+  "slack1_to_5": [
+   {
+    "n": 1,
+    "m": 0,
+    "tau": 0,
+    "slack": 3,
+    "count": 12
+   },
+   {
+    "n": 4,
+    "m": 1,
+    "tau": 1,
+    "slack": 3,
+    "count": 90
+   },
+   {
+    "n": 6,
+    "m": 3,
+    "tau": 2,
+    "slack": 2,
+    "count": 12
+   },
+   {
+    "n": 7,
+    "m": 2,
+    "tau": 2,
+    "slack": 3,
+    "count": 79
+   },
+   {
+    "n": 8,
+    "m": 5,
+    "tau": 3,
+    "slack": 1,
+    "count": 5
+   },
+   {
+    "n": 9,
+    "m": 4,
+    "tau": 3,
+    "slack": 2,
+    "count": 13
+   },
+   {
+    "n": 11,
+    "m": 7,
+    "tau": 4,
+    "slack": 3,
+    "count": 7
+   },
+   {
+    "n": 12,
+    "m": 10,
+    "tau": 5,
+    "slack": 1,
+    "count": 1
+   }
+  ],
+  "n": 12,
+  "edges": [
+   [
+    0,
+    1,
+    10
+   ],
+   [
+    0,
+    3,
+    11
+   ],
+   [
+    1,
+    2,
+    3
+   ],
+   [
+    1,
+    4,
+    7
+   ],
+   [
+    2,
+    5,
+    6
+   ],
+   [
+    2,
+    9,
+    11
+   ],
+   [
+    3,
+    8,
+    10
+   ],
+   [
+    4,
+    6,
+    9
+   ],
+   [
+    5,
+    7,
+    9
+   ],
+   [
+    7,
+    10,
+    11
+   ]
+  ]
+ },
+ "12c": {
+  "tag": "small_records 12c",
+  "inputs": 1,
+  "subsets": 4096,
+  "violations": 0,
+  "min_slack": 0,
+  "slack_values_lowest": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "equality_cases": [
+   {
+    "n": 3,
+    "m": 1,
+    "tau": 1,
+    "count": 10,
+    "first_input": 0,
+    "first_mask": 28
+   },
+   {
+    "n": 6,
+    "m": 2,
+    "tau": 2,
+    "count": 20,
+    "first_input": 0,
+    "first_mask": 63
+   },
+   {
+    "n": 10,
+    "m": 7,
+    "tau": 4,
+    "count": 2,
+    "first_input": 0,
+    "first_mask": 4062
+   }
+  ],
+  "slack1_to_5": [
+   {
+    "n": 1,
+    "m": 0,
+    "tau": 0,
+    "slack": 3,
+    "count": 12
+   },
+   {
+    "n": 4,
+    "m": 1,
+    "tau": 1,
+    "slack": 3,
+    "count": 90
+   },
+   {
+    "n": 6,
+    "m": 3,
+    "tau": 2,
+    "slack": 2,
+    "count": 12
+   },
+   {
+    "n": 7,
+    "m": 2,
+    "tau": 2,
+    "slack": 3,
+    "count": 79
+   },
+   {
+    "n": 8,
+    "m": 5,
+    "tau": 3,
+    "slack": 1,
+    "count": 5
+   },
+   {
+    "n": 9,
+    "m": 4,
+    "tau": 3,
+    "slack": 2,
+    "count": 13
+   },
+   {
+    "n": 11,
+    "m": 7,
+    "tau": 4,
+    "slack": 3,
+    "count": 7
+   },
+   {
+    "n": 12,
+    "m": 10,
+    "tau": 5,
+    "slack": 1,
+    "count": 1
+   }
+  ],
+  "n": 12,
+  "edges": [
+   [
+    0,
+    1,
+    5
+   ],
+   [
+    1,
+    2,
+    9
+   ],
+   [
+    1,
+    4,
+    11
+   ],
+   [
+    2,
+    3,
+    4
+   ],
+   [
+    2,
+    5,
+    7
+   ],
+   [
+    3,
+    6,
+    10
+   ],
+   [
+    4,
+    8,
+    10
+   ],
+   [
+    5,
+    9,
+    11
+   ],
+   [
+    6,
+    7,
+    8
+   ],
+   [
+    7,
+    10,
+    11
+   ]
+  ]
+ },
+ "ALL": {
+  "tag": "all 7 small_records sets",
+  "inputs": 7,
+  "subsets": 32000,
+  "violations": 0,
+  "min_slack": 0,
+  "slack_values_lowest": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "equality_cases": [
+   {
+    "n": 3,
+    "m": 1,
+    "tau": 1,
+    "count": 63,
+    "first_input": 0,
+    "first_mask": 56
+   },
+   {
+    "n": 6,
+    "m": 2,
+    "tau": 2,
+    "count": 116,
+    "first_input": 0,
+    "first_mask": 123
+   },
+   {
+    "n": 9,
+    "m": 3,
+    "tau": 3,
+    "count": 15,
+    "first_input": 3,
+    "first_mask": 1967
+   },
+   {
+    "n": 10,
+    "m": 7,
+    "tau": 4,
+    "count": 10,
+    "first_input": 2,
+    "first_mask": 2031
+   },
+   {
+    "n": 13,
+    "m": 8,
+    "tau": 5,
+    "count": 1,
+    "first_input": 4,
+    "first_mask": 16382
+   },
+   {
+    "n": 14,
+    "m": 12,
+    "tau": 6,
+    "count": 1,
+    "first_input": 4,
+    "first_mask": 16383
+   }
+  ],
+  "slack1_to_5": [
+   {
+    "n": 1,
+    "m": 0,
+    "tau": 0,
+    "slack": 3,
+    "count": 79
+   },
+   {
+    "n": 4,
+    "m": 1,
+    "tau": 1,
+    "slack": 3,
+    "count": 547
+   },
+   {
+    "n": 6,
+    "m": 3,
+    "tau": 2,
+    "slack": 2,
+    "count": 71
+   },
+   {
+    "n": 7,
+    "m": 2,
+    "tau": 2,
+    "slack": 3,
+    "count": 489
+   },
+   {
+    "n": 8,
+    "m": 5,
+    "tau": 3,
+    "slack": 1,
+    "count": 28
+   },
+   {
+    "n": 8,
+    "m": 6,
+    "tau": 3,
+    "slack": 3,
+    "count": 1
+   },
+   {
+    "n": 9,
+    "m": 4,
+    "tau": 3,
+    "slack": 2,
+    "count": 81
+   },
+   {
+    "n": 10,
+    "m": 3,
+    "tau": 3,
+    "slack": 3,
+    "count": 23
+   },
+   {
+    "n": 10,
+    "m": 8,
+    "tau": 4,
+    "slack": 2,
+    "count": 3
+   },
+   {
+    "n": 11,
+    "m": 6,
+    "tau": 4,
+    "slack": 1,
+    "count": 10
+   },
+   {
+    "n": 11,
+    "m": 7,
+    "tau": 4,
+    "slack": 3,
+    "count": 40
+   },
+   {
+    "n": 12,
+    "m": 5,
+    "tau": 4,
+    "slack": 2,
+    "count": 2
+   },
+   {
+    "n": 12,
+    "m": 10,
+    "tau": 5,
+    "slack": 1,
+    "count": 3
+   },
+   {
+    "n": 13,
+    "m": 9,
+    "tau": 5,
+    "slack": 2,
+    "count": 6
+   }
+  ]
+ },
+ "_secs": 0.047272682189941406
+}

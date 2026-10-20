@@ -1,0 +1,1 @@
+EXT_R2 NG=17 TMIN=8 MAXDEG=3 inputs=8 tau(G) in [7,7] extensions=43224 hits=0 tau(H)-tau(G) histogram: 0:43224 1:0

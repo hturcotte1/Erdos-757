@@ -1,0 +1,4 @@
+out/route4_classes_only.txt classes 699 distinct canonical forms 699 | relabelling invariance: True | pairs with equal degree sequence 88000 all non-isomorphic (VF2): True
+out/cells/cell_14_12_6_D4.txt classes 11 distinct canonical forms 11 | relabelling invariance: True | pairs with equal degree sequence 11 all non-isomorphic (VF2): True
+out/cells/cell_12_10_5_D4.txt classes 221 distinct canonical forms 221 | relabelling invariance: True | pairs with equal degree sequence 7946 all non-isomorphic (VF2): True
+out/cells/cell_19_16_8_D4.txt classes 956 distinct canonical forms 956 | relabelling invariance: True | pairs with equal degree sequence 131324 all non-isomorphic (VF2): True

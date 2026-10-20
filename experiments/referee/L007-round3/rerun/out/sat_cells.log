@@ -1,0 +1,3 @@
+{"n": 8, "m": 4, "tau0": 3, "opts": [], "sat": false, "edges": null, "secs": 0.2}
+{"n": 10, "m": 6, "tau0": 4, "opts": [], "sat": false, "edges": null, "secs": 41.2}
+{"n": 11, "m": 5, "tau0": 4, "opts": [], "sat": false, "edges": null, "secs": 172.9}

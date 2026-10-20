@@ -1,0 +1,21 @@
+Fibonacci 2..6765 is a (4,5)-set: True
+gluings tested: 400
+
+SUMMARY name: graphs | I11 violations | min slack (n,m,tau at min) | n=18 with tau>=8
+  A_base subsets                              16278 | 0 | 0 (3, 1, 1) | 0
+  small_records[8] subsets                      219 | 0 | 0 (3, 1, 1) | 0
+  small_records[10] subsets                     968 | 0 | 0 (3, 1, 1) | 0
+  small_records[11] subsets                    1981 | 0 | 0 (3, 1, 1) | 0
+  small_records[12] subsets                    4017 | 0 | 0 (3, 1, 1) | 0
+  small_records[12b] subsets                   4017 | 0 | 0 (3, 1, 1) | 0
+  small_records[12c] subsets                   4017 | 0 | 0 (3, 1, 1) | 0
+  Fibonacci windows                             136 | 0 | 2 (6, 3, 2) | 0
+  Fibonacci random subsets                    20000 | 0 | 0 (6, 2, 2) | 0
+  census14 full                                2910 | 0 | 0 (14, 12, 6) | 0
+  census14 minus a point                      40740 | 0 | 0 (13, 8, 5) | 0
+  census14 random subsets                     29100 | 0 | 0 (12, 4, 4) | 0
+  ext12 (54,243 extremal 12-point sets)       54243 | 0 | 1 (12, 10, 5) | 0
+  ext15 full                                   2337 | 0 | 1 (15, 11, 6) | 0
+  ext15 minus a point                         35055 | 0 | 1 (14, 7, 5) | 0
+  A_18 subsets of size >= 10                 106762 | 0 | 0 (12, 4, 4) | 0
+  gluings n<=18                                 400 | 0 | 1 (18, 12, 7) | 0

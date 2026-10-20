@@ -1,27 +1,30 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
-Status: final checkpoint (budget ends 2026-10-16 23:06 UTC); PR #1 merged into main at about 18:25 UTC
-Last updated (UTC): 2026-10-16 22:15
-Phase/track: endgame complete; research closed for this run (results/FINAL_REPORT.md is the deliverable)
+Status: EXTENSION (+48 h granted by the user 2026-10-17 00:5x UTC; ends about 2026-10-18 23:06 UTC); GOAL.md unchanged (protected), status.sh shows clause C
+Last updated (UTC): 2026-10-20 16:10
+Phase/track: extension: the I11 induction chain is complete and refereed: L007 (Q11 closed, K51), L008 (f(16)=10, K52), L009 (f(18)=11, K53), L010 (f(20)=12, K54), L011 (f(22)=13, K55) ACCEPTED x3 each; no (4,5)-set with <= 22 points beats 4/7. L012 (n=23 record cell: all AP-degrees <= 3) ACCEPTED x3 (K56); the degree-3 case is open (Q14). Probes DONE [verified-here as a computation, not refereed]: I11 holds on C for n = 23, 24, 25, 26 (all twelve violator cells empty in the L012 engine; experiments/20261017-1645-i11-n23-n24, -1720-i11-n26). Certificate L013 (I11 on C for n <= 26) ACCEPTED x3, K57. By-product: the tight cell (21,18,9) with Delta<=3 is EMPTY, so one of the five (22,18) slack-3 decompositions of the degree-3 record case is void. Obstruction at n = 27: the remainder (26,22) of (27,25,12) decomposes as [(23,21,10), AP], i.e. needs Q14.
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
-## Best verified results (details: results/LEDGER.md, kb/known_results.md K30-K49)
+## Best verified results (details: results/LEDGER.md, kb/known_results.md K30-K56)
 - Upper: c* <= 4/7 via A_base, n=14, h=8 [published, Ma-Tang 2026]; Lower: c* >= 9/17 [published, via Henning-Yeo 2021]. Neither improved.
-- Exact f(n) for n <= 15, n = 17 (START_HERE section 5) [derived-here]
+- Exact f(n) for n <= 18, n = 20, 22, 24, 26, 28 (START_HERE section 5): f(16), f(18), f(20), f(22) = 10, 11, 12, 13 [verified-here] (L008-L011, K52-K55; hence no (4,5)-set with <= 22 points beats 4/7), the others [derived-here]; open: f(19) in {11,12}, f(21) in {12,13}, f(23) in {13,14} (first record-possible size), f(25), f(27), f(29), ...
 - L001-L006 ACCEPTED (K13, K41, K43, K45, K46, K48): A_base 2-pt extensions; 54,243 extremal 12-pt classes; saturated counts n=6..11; 2,910 saturated extremal 14-pt classes; no 16-pt record contains a saturated extremal 14-pt set; no extremal 14-pt set contains an extremal 12-pt set.
 - K30 monotone midpoints, K31 no medial triangle, K44 degree bound; K47 structure of the 2,910 classes; K49 extremal (n-2)-subset trend (100% -> 99.7% -> 49.5% -> 0%).
 - kb/notes/extension_lemmas.md: Lemmas E, U, Δ, Δ' [derived-here; falsifier HOLDS-ON-DATA].
+- I11: 11 tau <= 3n + 2m holds on ALL data (0 violations; equality at (3,1,1),(10,7,4),(12,4,4),(13,8,5),(14,12,6)) and is proved on the abstract class C for n<=22 by window-cell induction [verified-here, computer-assisted; L007-L011 each ACCEPTED x3]; implies c* >= 6/11 if true in general [conjecture]. L007 (K51): no non-saturated (14,11) extremal set (Q11 closed; 2,910 complete up to the L004 completeness caveat). f(16) = 10, f(18) = 11, f(20) = 12, f(22) = 13 [verified-here; L008-L011, K52-K55]: no (4,5)-set with <= 22 points beats 4/7. K50: non-saturated extremal 15-point sets exist (judged C001/C002).
 
 ## Running jobs / agents
-- (14,11,alpha<=8) DFS, 4 workers, 1030/3437 prefixes done at 22:14, 0 patterns; resumable (relaunch command in experiments/20261014-1005-census-dfs/README.md); Q11 stays open.
-- No agents running. All documentation audited three times (last: 18:10 UTC, 114 verified fixes).
+- No (14,11,alpha<=8) DFS is running: it was stopped (last logged progress 1,081/3,437 prefixes, 0 patterns) and is superseded by L007/K51 (Q11 closed).
+- RESUMED 2026-10-20 16:10 UTC ('Continue with /goal'): workflow verify-l014-round1 (referee #1 opus + scout) running; PR of the current branch state to main in progress. Before the pause (2026-10-18 00:35 UTC), after the L014 prover finished: results/proofs/L014-f23-equals-14.md SUBMITTED 00:30 UTC (f(23) = 14: Theorem 1 cell(23,21,10,3) empty, Theorem 2 with explicit witness C23, Corollary 3 no record at n <= 24; no GAP; UNREFEREED, referee rounds not launched). n = 27 probe DONE at its cap (experiments/20261017-2150-i11-n27): (27,13,10,2), (27,18,11,2), (27,14,10,3), (27,19,11,3) empty; cell(24,16,9,3) = 39,568; cell(25,19,10,3) 46% done (about 4.7 core-hours left, resumable with run_heavy.sh); (26,22,11,3), (27,25,12,3) not started; I11 at n = 27 UNDECIDED. No agents running. DONE: documentation audit of the extension (103 fixes + safety-review fix-ups, 18:25 UTC); L013 round 1 ACCEPT + scout CLEAR; Q14 decided by computation (unrefereed): cell(23,21,10,3) EMPTY (experiments/20261017-1925-q14-decide; cell(22,18,9,3) = 94,513 classes), so with L012 no 23-point (4,5)-set has h = 13, f(23) = 14, no record at n <= 24, first open record size 25 (certificate L014 submitted, unrefereed); earlier: falsifier agent (I11 cells n=16..23); fn_bounds knows f(16..22 even); L007-L012 ACCEPT x3; CP-SAT (14,11) UNKNOWN (D21); probe D25; record hunt D26/K50; (14,11) DFS stopped at 1,081/3,437 (superseded by L007).
+- Documentation audited three times in the first 72 h (last 2026-10-16 18:10 UTC); main = merge 414628a.
 
 ## Live hypotheses
-- [heuristic] Wall at n=16 (f(16)=10): no abstract alpha<=9 pattern found by any solver, even with the Henning-Yeo deletion constraints (D15, D16, D24); a record would need a (14,11) extremal subset containing no extremal 12-subset (K48), or no extremal 14-subset at all.
-- [verified-here] f(n) = ceil(n/2)+1 = HY bound for 6<=n<=15 and 17 (K35). (H1) HY tight at even n<=22 vs (H2) wall at 16.
-- [verified-here] Q8 holds on realizable data (K34) but fails abstractly without >=5-edge cores (K38/K39); Track L has no proof idea.
+- [verified-here] Settled (computer-assisted, referee ACCEPT x3 each): f(16)=10, f(18)=11, f(20)=12, f(22)=13 (L008-L011, K52-K55), so no (4,5)-set with <= 22 points beats 4/7. The former 'wall at n=16' is real and proved: each value is exactly 1 above the Henning-Yeo bound n-floor((8n-6)/17) = 9, 10, 11, 12 (K35), so the former hypothesis (H1) 'Henning-Yeo tight at even n <= 22' fails and (H2) 'wall at 16' holds. The solver attempts D15, D16, D24 (never terminated) are superseded by the I11 window-cell induction [verified-here on class C for n <= 22; I11 itself is still [conjecture] in general]. First open record cell: (23,21,10), max-degree-3 case (degree 4 excluded by L012/K56; Q14).
+- [verified-here] f(n) = ceil(n/2)+1 = HY bound for 6<=n<=15 and 17 (K35). Resolved: HY is NOT tight at even n = 16, 18, 20, 22, where f(n) = n/2+2 (K52-K55), one above the HY bound ceil(n/2)+1.
+- [verified-here] Q8 holds on realizable data (K34) but fails abstractly without >=5-edge cores (K38/K39). Track L: the live target is I11 (kb/notes/i11_conjecture.md; [conjecture] in general). It is [verified-here] on the abstract class C (linear F7-free 3-graphs with e(S) <= |S|-2) for n <= 22 (L007-L011, K51-K55, referee-accepted x3 each), and computed but not yet refereed for n = 23..26 (experiments/20261017-1645-i11-n23-n24, experiments/20261017-1720-i11-n26; L013 in preparation). The window-cell induction cannot pass n = 27 without Q14 (degree-3 case of (23,21,10)); there is no proof idea for general n.
 
-## Next 3 actions (for a future run)
-1. Cube-and-conquer at n=16 with the deletion constraints of D24, or a distributed exact DFS (~10^14 nodes); finish the (14,11) DFS (resumable).
-2. Four-point extensions of the 2,910 classes (18-point records; one new point must be a new extreme) and two-point extensions of any (14,11) classes.
-3. Realizability-aware enumerator for the n=13 census (D22); obtain Henning-Yeo 2021 for its equality structure (Lemma U).
+## Next 3 actions
+(The user's pause instruction of 2026-10-17 was lifted on 2026-10-20 16:07 UTC with 'Continue with /goal'.)
+1. L013 DONE (K57).
+2. Final documentation audit workflow (find/verify/apply + safety review), FINAL_REPORT final version, STATE; then PR to main and merge (extension ends 2026-10-18 23:06 UTC; merge with margin, target <= 20:00 UTC on 10-18, earlier if everything is done).
+3. L014 (f(23) = 14): referee #1 + scout RUNNING -> fixes -> referees #2/#3 (fable) -> K58, LEDGER, START_HERE, fn_bounds EXACT_VALUES_VERIFIED[23] = 14, FINAL_REPORT. Then, if time: I11 at n = 27 via cell(26,22,11,3) (f(27) = 16 would follow). Merge to main with margin (target <= 20:00 UTC 10-18).

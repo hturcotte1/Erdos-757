@@ -1,0 +1,4 @@
+cell(12_10_5_D3): mine 149, L012 149, lists identical
+cell(10_7_4_D3): mine 4, L012 4, lists identical
+cell(22_17_9_D3): mine 37, L012 37, lists identical
+cell(19_16_8_D3): mine 227, L012 227, lists identical

@@ -1,0 +1,103 @@
+(a) violator cells (n, m, tau): slack s, dmax, status; rests (d, (n-1, m-d, tau-1), slack of H - v)
+    n <= 22: 29 violator cells (n,m,tau), 29 distinct (n,m)  [L011 Step 1: 29 window cells with n <= 22]
+    (n,m) with more than one violating tau, n <= 22: []
+    window table (m, 3n+2m, lo = floor((3n+2m)/11)+1, 5n+3m, hy = min(floor((5n+3m)/17), m)); a violator needs lo <= tau <= hy:
+    n=23: m=11: 91,9,148,8; m=12: 93,9,151,8; m=13: 95,9,154,9 *; m=14: 97,9,157,9 *; m=15: 99,10,160,9; m=16: 101,10,163,9; m=17: 103,10,166,9; m=18: 105,10,169,9; m=19: 107,10,172,10 *; m=20: 109,10,175,10 *; m=21: 111,11,178,10
+    n=24: m=12: 96,9,156,9 *; m=13: 98,9,159,9 *; m=14: 100,10,162,9; m=15: 102,10,165,9; m=16: 104,10,168,9; m=17: 106,10,171,10 *; m=18: 108,10,174,10 *; m=19: 110,11,177,10; m=20: 112,11,180,10; m=21: 114,11,183,10; m=22: 116,11,186,10
+    n=25: m=12: 99,10,161,9; m=13: 101,10,164,9; m=14: 103,10,167,9; m=15: 105,10,170,10 *; m=16: 107,10,173,10 *; m=17: 109,10,176,10 *; m=18: 111,11,179,10; m=19: 113,11,182,10; m=20: 115,11,185,10; m=21: 117,11,188,11 *; m=22: 119,11,191,11 *; m=23: 121,12,194,11
+    n=26: m=13: 104,10,169,9; m=14: 106,10,172,10 *; m=15: 108,10,175,10 *; m=16: 110,11,178,10; m=17: 112,11,181,10; m=18: 114,11,184,10; m=19: 116,11,187,11 *; m=20: 118,11,190,11 *; m=21: 120,11,193,11 *; m=22: 122,12,196,11; m=23: 124,12,199,11; m=24: 126,12,202,11
+    n=27: m=13: 107,10,174,10 *; m=14: 109,10,177,10 *; m=15: 111,11,180,10; m=16: 113,11,183,10; m=17: 115,11,186,10; m=18: 117,11,189,11 *; m=19: 119,11,192,11 *; m=20: 121,12,195,11; m=21: 123,12,198,11; m=22: 125,12,201,11; m=23: 127,12,204,12 *; m=24: 129,12,207,12 *; m=25: 131,12,210,12 *
+  n=23: 4 violator cells; (n,m) with more than one violating tau: []
+    (23,13,9) s=-4 dmax=2 tau(H-v)=tau possible for d in []; OPEN (3m=39 <= dmax*n=46)
+        rests: [(1, (22, 12, 8), 2), (2, (22, 11, 8), 0)]
+    (23,14,9) s=-2 dmax=3 tau(H-v)=tau possible for d in []; OPEN (3m=42 <= dmax*n=69)
+        rests: [(1, (22, 13, 8), 4), (2, (22, 12, 8), 2), (3, (22, 11, 8), 0)]
+    (23,19,10) s=-3 dmax=2 tau(H-v)=tau possible for d in []; EMPTY by counting (3m=57 > dmax*n=46)
+    (23,20,10) s=-1 dmax=3 tau(H-v)=tau possible for d in []; OPEN (3m=60 <= dmax*n=69)
+        rests: [(1, (22, 19, 9), 5), (2, (22, 18, 9), 3), (3, (22, 17, 9), 1)]
+  OPEN cells n=23 (n,m,tau,Delta): [(23, 13, 9, 2), (23, 14, 9, 3), (23, 20, 10, 3)]
+  n=24: 4 violator cells; (n,m) with more than one violating tau: []
+    (24,12,9) s=-3 dmax=2 tau(H-v)=tau possible for d in []; OPEN (3m=36 <= dmax*n=48)
+        rests: [(1, (23, 11, 8), 3), (2, (23, 10, 8), 1)]
+    (24,13,9) s=-1 dmax=3 tau(H-v)=tau possible for d in []; OPEN (3m=39 <= dmax*n=72)
+        rests: [(1, (23, 12, 8), 5), (2, (23, 11, 8), 3), (3, (23, 10, 8), 1)]
+    (24,17,10) s=-4 dmax=2 tau(H-v)=tau possible for d in []; EMPTY by counting (3m=51 > dmax*n=48)
+    (24,18,10) s=-2 dmax=3 tau(H-v)=tau possible for d in []; OPEN (3m=54 <= dmax*n=72)
+        rests: [(1, (23, 17, 9), 4), (2, (23, 16, 9), 2), (3, (23, 15, 9), 0)]
+  OPEN cells n=24 (n,m,tau,Delta): [(24, 12, 9, 2), (24, 13, 9, 3), (24, 18, 10, 3)]
+  n=25: 5 violator cells; (n,m) with more than one violating tau: []
+    (25,15,10) s=-5 dmax=1 tau(H-v)=tau possible for d in []; EMPTY by counting (3m=45 > dmax*n=25)
+    (25,16,10) s=-3 dmax=2 tau(H-v)=tau possible for d in []; OPEN (3m=48 <= dmax*n=50)
+        rests: [(1, (24, 15, 9), 3), (2, (24, 14, 9), 1)]
+    (25,17,10) s=-1 dmax=3 tau(H-v)=tau possible for d in []; OPEN (3m=51 <= dmax*n=75)
+        rests: [(1, (24, 16, 9), 5), (2, (24, 15, 9), 3), (3, (24, 14, 9), 1)]
+    (25,21,11) s=-4 dmax=2 tau(H-v)=tau possible for d in []; EMPTY by counting (3m=63 > dmax*n=50)
+    (25,22,11) s=-2 dmax=3 tau(H-v)=tau possible for d in []; OPEN (3m=66 <= dmax*n=75)
+        rests: [(1, (24, 21, 10), 4), (2, (24, 20, 10), 2), (3, (24, 19, 10), 0)]
+  OPEN cells n=25 (n,m,tau,Delta): [(25, 16, 10, 2), (25, 17, 10, 3), (25, 22, 11, 3)]
+  n=26: 5 violator cells; (n,m) with more than one violating tau: []
+    (26,14,10) s=-4 dmax=2 tau(H-v)=tau possible for d in []; OPEN (3m=42 <= dmax*n=52)
+        rests: [(1, (25, 13, 9), 2), (2, (25, 12, 9), 0)]
+    (26,15,10) s=-2 dmax=3 tau(H-v)=tau possible for d in []; OPEN (3m=45 <= dmax*n=78)
+        rests: [(1, (25, 14, 9), 4), (2, (25, 13, 9), 2), (3, (25, 12, 9), 0)]
+    (26,19,11) s=-5 dmax=1 tau(H-v)=tau possible for d in []; EMPTY by counting (3m=57 > dmax*n=26)
+    (26,20,11) s=-3 dmax=2 tau(H-v)=tau possible for d in []; EMPTY by counting (3m=60 > dmax*n=52)
+    (26,21,11) s=-1 dmax=3 tau(H-v)=tau possible for d in []; OPEN (3m=63 <= dmax*n=78)
+        rests: [(1, (25, 20, 10), 5), (2, (25, 19, 10), 3), (3, (25, 18, 10), 1)]
+  OPEN cells n=26 (n,m,tau,Delta): [(26, 14, 10, 2), (26, 15, 10, 3), (26, 21, 11, 3)]
+  n=27: 7 violator cells; (n,m) with more than one violating tau: []
+    (27,13,10) s=-3 dmax=2 tau(H-v)=tau possible for d in []; OPEN (3m=39 <= dmax*n=54)
+        rests: [(1, (26, 12, 9), 3), (2, (26, 11, 9), 1)]
+    (27,14,10) s=-1 dmax=3 tau(H-v)=tau possible for d in []; OPEN (3m=42 <= dmax*n=81)
+        rests: [(1, (26, 13, 9), 5), (2, (26, 12, 9), 3), (3, (26, 11, 9), 1)]
+    (27,18,11) s=-4 dmax=2 tau(H-v)=tau possible for d in []; OPEN (3m=54 <= dmax*n=54)
+        rests: [(1, (26, 17, 10), 2), (2, (26, 16, 10), 0)]
+    (27,19,11) s=-2 dmax=3 tau(H-v)=tau possible for d in []; OPEN (3m=57 <= dmax*n=81)
+        rests: [(1, (26, 18, 10), 4), (2, (26, 17, 10), 2), (3, (26, 16, 10), 0)]
+    (27,23,12) s=-5 dmax=1 tau(H-v)=tau possible for d in []; EMPTY by counting (3m=69 > dmax*n=27)
+    (27,24,12) s=-3 dmax=2 tau(H-v)=tau possible for d in []; EMPTY by counting (3m=72 > dmax*n=54)
+    (27,25,12) s=-1 dmax=3 tau(H-v)=tau possible for d in []; OPEN (3m=75 <= dmax*n=81)
+        rests: [(1, (26, 24, 11), 5), (2, (26, 23, 11), 3), (3, (26, 22, 11), 1)]
+  OPEN cells n=27 (n,m,tau,Delta): [(27, 13, 10, 2), (27, 14, 10, 3), (27, 18, 11, 2), (27, 19, 11, 3), (27, 25, 12, 3)]
+(b) record cells (h <= ceil(4n/7)-1, m <= n-2, tau <= m, K8) and their I11 slack, n <= 30:
+    n=16 (h<=9): [(13, 7), (14, 7)] ; I11-allowed: []
+    n=18 (h<=10): [(16, 8)] ; I11-allowed: []
+    n=20 (h<=11): [(18, 9)] ; I11-allowed: []
+    n=22 (h<=12): [(20, 10)] ; I11-allowed: []
+    n=23 (h<=13): [(19, 10), (20, 10), (21, 10)] ; I11-allowed: [(23, 21, 10, 1)]
+    n=25 (h<=14): [(21, 11), (22, 11), (23, 11)] ; I11-allowed: [(25, 23, 11, 0)]
+    n=27 (h<=15): [(23, 12), (24, 12), (25, 12)] ; I11-allowed: []
+    n=29 (h<=16): [(26, 13), (27, 13)] ; I11-allowed: []
+    n=30 (h<=17): [(24, 13), (25, 13), (26, 13), (27, 13), (28, 13)] ; I11-allowed: [(30, 27, 13, 1), (30, 28, 13, 3)]
+(c) lower bounds h >= n - floor((3n+2(n-2))/11) [I11, m <= n-2] and h >= n - floor((5n+3(n-2))/17) [K8], n = 3..30:
+    n=3: I11 2, K8 2
+    n=4: I11 3, K8 3
+    n=5: I11 4, K8 3  <-- differ
+    n=6: I11 4, K8 4
+    n=7: I11 5, K8 5
+    n=8: I11 5, K8 5
+    n=9: I11 6, K8 6
+    n=10: I11 6, K8 6
+    n=11: I11 7, K8 7
+    n=12: I11 7, K8 7
+    n=13: I11 8, K8 8
+    n=14: I11 8, K8 8
+    n=15: I11 9, K8 9
+    n=16: I11 10, K8 9  <-- differ
+    n=17: I11 10, K8 10
+    n=18: I11 11, K8 10  <-- differ
+    n=19: I11 11, K8 11
+    n=20: I11 12, K8 11  <-- differ
+    n=21: I11 12, K8 12
+    n=22: I11 13, K8 12  <-- differ
+    n=23: I11 13, K8 13
+    n=24: I11 14, K8 14
+    n=25: I11 14, K8 14
+    n=26: I11 15, K8 15
+    n=27: I11 16, K8 15  <-- differ
+    n=28: I11 16, K8 16
+    n=29: I11 17, K8 16  <-- differ
+    n=30: I11 17, K8 17
+(d) degree bounds in the I11-allowed record cells, from I11 at n-1:
+    (23,21,10) s=1: possible degrees [1, 2, 3, 4] (tau(H-v)=tau possible for []); so Delta <= 4 and tau(H-v) = 9 for every v
+    (25,23,11) s=0: possible degrees [1, 2, 3, 4] (tau(H-v)=tau possible for []); so Delta <= 4 and tau(H-v) = 10 for every v

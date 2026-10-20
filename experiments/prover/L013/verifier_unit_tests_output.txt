@@ -1,0 +1,12 @@
+F7                                       verdict F7             expected F7             OK
+Fano plane                               verdict P3             expected P3             OK
+A_base pattern (14,12,6), D=4            verdict None           expected None           OK
+A_base pattern with t=5                  verdict tau            expected tau            OK
+A_base pattern with D=3                  verdict degree         expected degree         OK
+two disjoint edges                       verdict disconnected   expected disconnected   OK
+non-linear                               verdict nonlinear      expected nonlinear      OK
+F7 relabelled plus a pendant edge        verdict F7             expected F7             OK
+3x3 grid (6 lines)                       verdict None           expected None           OK
+AG(2,3) minus one parallel class         verdict P3             expected P3             OK
+AG(2,3) minus a class contains F7: False (expected False: F7 needs all four parallel classes)
+failures: 0

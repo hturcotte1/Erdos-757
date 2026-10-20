@@ -1,0 +1,82 @@
+{
+ "cell_6_3_2_dfs": {
+  "nodes": 22,
+  "found": 6
+ },
+ "cell_6_3_2": {
+  "labelled": 6,
+  "with_F7": 0,
+  "F7free_iso_classes": 1,
+  "killed_by_eS": 0,
+  "kept": 1
+ },
+ "cell_8_5_3_dfs": {
+  "nodes": 889,
+  "found": 86
+ },
+ "cell_8_5_3": {
+  "labelled": 86,
+  "with_F7": 0,
+  "F7free_iso_classes": 2,
+  "killed_by_eS": 0,
+  "kept": 2
+ },
+ "cell_10_7_4_dfs": {
+  "nodes": 87918,
+  "found": 494
+ },
+ "cell_10_7_4": {
+  "labelled": 494,
+  "with_F7": 126,
+  "F7free_iso_classes": 4,
+  "killed_by_eS": 0,
+  "kept": 4
+ },
+ "cell_10_8_4_dfs": {
+  "nodes": 304091,
+  "found": 23277
+ },
+ "cell_10_8_4": {
+  "labelled": 23277,
+  "with_F7": 4673,
+  "F7free_iso_classes": 64,
+  "killed_by_eS": 1,
+  "kept": 63
+ },
+ "cell_13_9_5_dfs": {
+  "nodes": 28645697,
+  "found": 43382
+ },
+ "cell_13_9_5": {
+  "labelled": 43382,
+  "with_F7": 6101,
+  "F7free_iso_classes": 85,
+  "killed_by_eS": 1,
+  "kept": 84
+ },
+ "cell_16_10_6_dfs": {
+  "nodes": 181703105,
+  "found": 12394
+ },
+ "cell_16_10_6": {
+  "labelled": 12394,
+  "with_F7": 6946,
+  "F7free_iso_classes": 16,
+  "killed_by_eS": 0,
+  "kept": 16
+ },
+ "Gprime_candidates": 170,
+ "G17_ext": {
+  "graphs": 170,
+  "summary": "SUMMARY graphs=170 tested=2357887 hits=1521",
+  "secs": 6.8
+ },
+ "G17_classes": {
+  "labelled": 1521,
+  "with_F7": 1350,
+  "F7free_iso_classes": 21,
+  "killed_by_eS": 13,
+  "kept": 8
+ },
+ "G17_final_classes": 8
+}

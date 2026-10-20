@@ -1,0 +1,10 @@
+cell	classes	seconds	route	inputs	bad_tau	ext_nodes
+(22,18,9,3)	94513	2762.8	recurse(streamed)	2014413	0	5238536047
+(23,21,10,3)	FIRST_ATTEMPT_aborted_by_pipeline_rc1	-	recurse(streamed)	133804	0	48029683
+(23,21,10,3)	0	481.2	recurse(streamed)	133804	0	48029683
+(23,21,10,3)	0	481.2	recurse(streamed, patched grep||true; rerun of the aborted first attempt)	133804	0	48029683
+SANITY (10,8,4,3) plain L012 engine and streamed pipeline	63 == reference (identical sets)	0.4	direct	-	-	-
+SANITY (19,16,8,3) plain L012 engine (8 s) and streamed pipeline (8.4 s)	227 == reference (identical sets)	8.4	recurse	13456	0	11625484
+SANITY (17,11,6,3) streamed pipeline	45669 == reference (identical sets)	39.4	recurse(streamed)	795	0	6633853
+SANITY (23,21,10,3) plain unmodified L012 engine.py (NPROC=2, load ~8)	0 (RESULT (23, 21, 10, 3) 0)	1047	recurse (plain)	133804	0	-
+CONTROL A_base pattern realize 14	assignments=1596 distinct=1413 realizations=948	-	bin/realize	-	-	-

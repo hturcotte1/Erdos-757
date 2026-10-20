@@ -1,0 +1,7 @@
+  d=3 t'=9 [(22, 18, 9)]: recomputed 94513, recorded 94513
+  d=3 t'=9 [(21, 18, 9), (1, 0, 0)]: recomputed 0, recorded 0
+  d=3 t'=9 [(10, 8, 4), (12, 10, 5)]: recomputed 9387, recorded 9387
+  d=3 t'=9 [(8, 6, 3), (14, 12, 6)]: recomputed 6, recorded 6
+  d=3 t'=9 [(3, 1, 1), (19, 17, 8)]: recomputed 29898, recorded 29898
+branch d=3 t'=9 S'=3: inputs recomputed 133804, recorded 133804
+ALL EQUAL

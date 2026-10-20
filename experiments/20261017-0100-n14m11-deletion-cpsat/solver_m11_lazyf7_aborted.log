@@ -1,0 +1,1437 @@
+# model built in 7.2s; constraints {'monotone': 11011, 'medial': 14014, 'cores': (485771, 1977976)}; n=14 T=8 m=11
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.15s
+#Model  18.75s var:1823/1823 constraints:140626/140626
+Starting search at 18.75s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      33.62s fj_restart_obj(batch:1 lin{mvs:6'124 evals:2'494} #w_updates:519 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      2'439    23'845        23            8'522     14'723     778'182      1'980'629
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 2439
+branches: 23845
+propagations: 778182
+integer_propagations: 1980629
+restarts: 23
+lp_iterations: 13761
+walltime: 33.6806
+usertime: 33.6806
+deterministic_time: 21.082
+gap_integral: 0
+solution_fingerprint: 0x2293f52c91cf3ff9
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.14s
+#Model  18.01s var:1823/1823 constraints:140628/140628
+Starting search at 18.01s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  29.95s var:1822/1823 constraints:139640/140628
+#Model  43.55s var:1821/1823 constraints:138277/140628
+#1      86.52s fj_restart_perturb(batch:3 lin{mvs:31'772 evals:8'765} #w_updates:4'203 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     39'402   124'886       247            8'757     51'608   2'175'477      4'121'467
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 39402
+branches: 124886
+propagations: 2175477
+integer_propagations: 4121467
+restarts: 247
+lp_iterations: 133006
+walltime: 86.5973
+usertime: 86.5973
+deterministic_time: 61.9972
+gap_integral: 0
+solution_fingerprint: 0x5b578f0f586fcac6
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.12s
+#Model  19.14s var:1823/1823 constraints:140630/140630
+Starting search at 19.14s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      28.54s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      1'569    24'446        13            8'511     13'848     725'065      1'894'570
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 1569
+branches: 24446
+propagations: 725065
+integer_propagations: 1894570
+restarts: 13
+lp_iterations: 7887
+walltime: 28.5863
+usertime: 28.5863
+deterministic_time: 17.6471
+gap_integral: 0
+solution_fingerprint: 0xdd5e60c30179c335
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.16s
+#Model  18.85s var:1823/1823 constraints:140632/140632
+Starting search at 18.86s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      30.06s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      3'049    25'806        13            8'511     15'314     767'894      1'951'245
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 3049
+branches: 25806
+propagations: 767894
+integer_propagations: 1951245
+restarts: 13
+lp_iterations: 8216
+walltime: 30.1214
+usertime: 30.1214
+deterministic_time: 18.806
+gap_integral: 0
+solution_fingerprint: 0xe1dae38d7c3b7ceb
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.13s
+#Model  18.83s var:1823/1823 constraints:140634/140634
+Starting search at 18.84s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      31.32s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      3'316    30'275        28            8'526     15'584     819'297      2'038'293
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 3316
+branches: 30275
+propagations: 819297
+integer_propagations: 2038293
+restarts: 28
+lp_iterations: 17368
+walltime: 31.3744
+usertime: 31.3744
+deterministic_time: 20.4894
+gap_integral: 0
+solution_fingerprint: 0x3dadfaa7da1d087b
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.11s
+#Model  18.69s var:1823/1823 constraints:140636/140636
+Starting search at 18.70s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      35.30s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     11'677    44'825        34            8'534     23'901   1'153'209      2'443'931
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 11677
+branches: 44825
+propagations: 1153209
+integer_propagations: 2443931
+restarts: 34
+lp_iterations: 38080
+walltime: 35.3744
+usertime: 35.3744
+deterministic_time: 24.1259
+gap_integral: 0
+solution_fingerprint: 0xbe22d31e4f82896f
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.16s
+#Model  19.67s var:1823/1823 constraints:140638/140638
+Starting search at 19.67s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      23.52s fj_restart_perturb(batch:1 lin{mvs:6'011 evals:2'536} #w_updates:612 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818         17    14'812         0            8'498     12'298     677'160      1'812'188
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 17
+branches: 14812
+propagations: 677160
+integer_propagations: 1812188
+restarts: 0
+lp_iterations: 29
+walltime: 27.2645
+usertime: 27.2645
+deterministic_time: 14.1218
+gap_integral: 0
+solution_fingerprint: 0xfd5f0a30ca7f5b03
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.14s
+#Model  21.98s var:1823/1823 constraints:140640/140640
+Starting search at 21.99s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      41.25s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      7'165    36'403        31            8'530     19'423     983'556      2'265'096
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 7165
+branches: 36403
+propagations: 983556
+integer_propagations: 2265096
+restarts: 31
+lp_iterations: 30757
+walltime: 41.305
+usertime: 41.305
+deterministic_time: 22.9806
+gap_integral: 0
+solution_fingerprint: 0x5f38e5dc0b62a74b
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.13s
+#Model  23.00s var:1823/1823 constraints:140642/140642
+Starting search at 23.01s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      33.27s fj_restart_perturb_obj(batch:1 lin{mvs:3'543 evals:2'214} #w_updates:417 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818         17    14'812         0            8'498     12'298     677'160      1'812'188
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 17
+branches: 14812
+propagations: 677160
+integer_propagations: 1812188
+restarts: 0
+lp_iterations: 23
+walltime: 33.593
+usertime: 33.593
+deterministic_time: 16.1679
+gap_integral: 0
+solution_fingerprint: 0xfeb73433959725b3
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.22s
+#Model  23.27s var:1823/1823 constraints:140644/140644
+Starting search at 23.27s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      39.69s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      3'147    26'463        19            8'518     15'429     789'164      1'994'302
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 3147
+branches: 26463
+propagations: 789164
+integer_propagations: 1994302
+restarts: 19
+lp_iterations: 15278
+walltime: 39.7562
+usertime: 39.7562
+deterministic_time: 19.824
+gap_integral: 0
+solution_fingerprint: 0x36ca778d89303875
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.16s
+#Model  26.00s var:1823/1823 constraints:140646/140646
+Starting search at 26.00s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  47.43s var:1822/1823 constraints:139283/140646
+#1      51.76s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      9'042    46'567        52            8'553     21'321   1'076'852      2'430'115
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 9042
+branches: 46567
+propagations: 1076852
+integer_propagations: 2430115
+restarts: 52
+lp_iterations: 42469
+walltime: 51.8255
+usertime: 51.8255
+deterministic_time: 25.2697
+gap_integral: 0
+solution_fingerprint: 0xe352fd7f68bb909
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.15s
+#Model  26.95s var:1823/1823 constraints:140648/140648
+Starting search at 26.95s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  53.60s var:1822/1823 constraints:139660/140648
+#Model  94.53s var:1821/1823 constraints:138297/140648
+#1      98.56s fj_restart_perturb(batch:1 lin{mvs:8'913 evals:2'783} #w_updates:785 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     33'089    92'678       136            8'641     45'291   1'924'008      3'659'769
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 33089
+branches: 92678
+propagations: 1924008
+integer_propagations: 3659769
+restarts: 136
+lp_iterations: 99542
+walltime: 98.6678
+usertime: 98.6678
+deterministic_time: 55.5003
+gap_integral: 0
+solution_fingerprint: 0xdad0eef8dc64efe1
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.17s
+#Model  26.25s var:1823/1823 constraints:140650/140650
+Starting search at 26.26s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      39.69s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818        906    20'603         4            8'502     13'177     692'695      1'835'583
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 906
+branches: 20603
+propagations: 692695
+integer_propagations: 1835583
+restarts: 4
+lp_iterations: 3770
+walltime: 39.7643
+usertime: 39.7643
+deterministic_time: 16.9144
+gap_integral: 0
+solution_fingerprint: 0xca6a715db6baba2f
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.16s
+#Model  24.30s var:1823/1823 constraints:140652/140652
+Starting search at 24.31s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      28.59s fj_restart_obj(batch:2 lin{mvs:21'335 evals:5'933} #w_updates:2'549 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818         17    14'812         0            8'498     12'298     677'160      1'812'188
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 17
+branches: 14812
+propagations: 677160
+integer_propagations: 1812188
+restarts: 0
+lp_iterations: 39
+walltime: 31.2747
+usertime: 31.2747
+deterministic_time: 14.0441
+gap_integral: 0
+solution_fingerprint: 0xc7cc48dda3def793
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.13s
+#Model  24.95s var:1823/1823 constraints:140654/140654
+Starting search at 24.95s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  46.46s var:1822/1823 constraints:139666/140654
+#1      62.67s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     17'901    61'104        67            8'570     30'012   1'353'692      2'792'098
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 17901
+branches: 61104
+propagations: 1353692
+integer_propagations: 2792098
+restarts: 67
+lp_iterations: 64546
+walltime: 62.7339
+usertime: 62.7339
+deterministic_time: 30.9284
+gap_integral: 0
+solution_fingerprint: 0xbd5a265231bdfbbb
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.15s
+#Model  26.72s var:1823/1823 constraints:140656/140656
+Starting search at 26.73s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      50.98s fj_restart(batch:2 lin{mvs:17'208 evals:5'110} #w_updates:1'368 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      8'310    34'791        34            8'533     20'577     986'947      2'265'038
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 8310
+branches: 34791
+propagations: 986947
+integer_propagations: 2265038
+restarts: 34
+lp_iterations: 27679
+walltime: 51.087
+usertime: 51.087
+deterministic_time: 23.3276
+gap_integral: 0
+solution_fingerprint: 0xc1d4de54314f64d0
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.17s
+#Model  26.54s var:1823/1823 constraints:140658/140658
+Starting search at 26.55s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  65.68s var:1822/1823 constraints:139295/140658
+#1      75.33s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     27'612    97'827       145            8'650     39'832   1'796'735      3'452'242
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 27612
+branches: 97827
+propagations: 1796735
+integer_propagations: 3452242
+restarts: 145
+lp_iterations: 82300
+walltime: 75.42
+usertime: 75.42
+deterministic_time: 44.6442
+gap_integral: 0
+solution_fingerprint: 0x45bce6799953348e
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.17s
+#Model  19.14s var:1823/1823 constraints:140660/140660
+Starting search at 19.15s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  39.85s var:1822/1823 constraints:139297/140660
+#1      55.64s fj_restart(batch:1 lin{mvs:3'630 evals:2'025} #w_updates:185 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     23'701    77'972       135            8'641     35'957   1'646'483      3'173'299
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 23701
+branches: 77972
+propagations: 1646483
+integer_propagations: 3173299
+restarts: 135
+lp_iterations: 80067
+walltime: 55.6814
+usertime: 55.6814
+deterministic_time: 41.9544
+gap_integral: 0
+solution_fingerprint: 0x95b9a90ce0d95fdd
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.10s
+#Model  17.39s var:1823/1823 constraints:140662/140662
+Starting search at 17.40s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      30.38s fj_restart_perturb(batch:3 lin{mvs:34'447 evals:9'597} #w_updates:4'012 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      2'802    25'816        28            8'526     15'089     794'363      2'021'351
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 2802
+branches: 25816
+propagations: 794363
+integer_propagations: 2021351
+restarts: 28
+lp_iterations: 19483
+walltime: 30.4285
+usertime: 30.4285
+deterministic_time: 19.9355
+gap_integral: 0
+solution_fingerprint: 0xcfd0c2b68722d74d
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.13s
+#Model  17.92s var:1823/1823 constraints:140664/140664
+Starting search at 17.92s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  29.47s var:1822/1823 constraints:139301/140664
+#1     186.83s fj_restart_obj(batch:2 lin{mvs:17'399 evals:5'173} #w_updates:1'745 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     69'250   205'895       427            8'933     81'507   3'572'629      5'986'502
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 69250
+branches: 205895
+propagations: 3572629
+integer_propagations: 5986502
+restarts: 427
+lp_iterations: 220222
+walltime: 186.933
+usertime: 186.933
+deterministic_time: 119.556
+gap_integral: 0
+solution_fingerprint: 0xea2789d6d042e178
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.19s
+#Model  22.32s var:1823/1823 constraints:140666/140666
+Starting search at 22.33s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  53.03s var:1822/1823 constraints:139303/140666
+#1     115.16s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     72'598   175'003       180            8'684     84'557   3'786'344      5'865'686
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 72598
+branches: 175003
+propagations: 3786344
+integer_propagations: 5865686
+restarts: 180
+lp_iterations: 201208
+walltime: 115.227
+usertime: 115.227
+deterministic_time: 79.7357
+gap_integral: 0
+solution_fingerprint: 0x80754911aff52055
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.15s
+#Model  22.14s var:1823/1823 constraints:140668/140668
+Starting search at 22.15s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      35.10s fj_restart_perturb_obj(batch:6 lin{mvs:89'464 evals:22'074} #w_updates:42'201 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818        946    18'850         8            8'506     13'229     717'261      1'886'134
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 946
+branches: 18850
+propagations: 717261
+integer_propagations: 1886134
+restarts: 8
+lp_iterations: 9591
+walltime: 35.1384
+usertime: 35.1384
+deterministic_time: 18.9874
+gap_integral: 0
+solution_fingerprint: 0x9f49d81b52a2add9
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.12s
+#Model  22.35s var:1823/1823 constraints:140670/140670
+Starting search at 22.36s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  34.12s var:1822/1823 constraints:139307/140670
+#1      46.01s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      9'731    45'909        58            8'562     21'980   1'077'280      2'435'110
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 9731
+branches: 45909
+propagations: 1077280
+integer_propagations: 2435110
+restarts: 58
+lp_iterations: 37776
+walltime: 46.0608
+usertime: 46.0608
+deterministic_time: 24.3941
+gap_integral: 0
+solution_fingerprint: 0x19244435901337ad
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.11s
+#Model  22.90s var:1823/1823 constraints:140672/140672
+Starting search at 22.91s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      28.36s fj_restart_obj(batch:1 lin{mvs:4'015 evals:2'221} #w_updates:426 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818         17    14'812         0            8'498     12'298     677'160      1'812'188
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 17
+branches: 14812
+propagations: 677160
+integer_propagations: 1812188
+restarts: 0
+lp_iterations: 29
+walltime: 30.8872
+usertime: 30.8872
+deterministic_time: 15.1488
+gap_integral: 0
+solution_fingerprint: 0xdc1b50021a78df8e
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.17s
+#Model  17.73s var:1823/1823 constraints:140674/140674
+Starting search at 17.73s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      26.58s fj_restart(batch:2 lin{mvs:22'326 evals:5'572} #w_updates:2'549 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818        517    17'368         9            8'507     12'804     698'909      1'856'583
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 517
+branches: 17368
+propagations: 698909
+integer_propagations: 1856583
+restarts: 9
+lp_iterations: 6266
+walltime: 26.6182
+usertime: 26.6182
+deterministic_time: 18.2415
+gap_integral: 0
+solution_fingerprint: 0x1443fa3e7052a4a8
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.11s
+#Model  17.98s var:1823/1823 constraints:140676/140676
+Starting search at 17.98s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  36.90s var:1822/1823 constraints:139688/140676
+#Model  37.97s var:1821/1823 constraints:138325/140676
+#1      52.88s fj_restart_obj(batch:1 lin{mvs:8'242 evals:2'766} #w_updates:551 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     18'074    66'590       115            8'623     30'321   1'379'276      2'899'869
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 18074
+branches: 66590
+propagations: 1379276
+integer_propagations: 2899869
+restarts: 115
+lp_iterations: 68340
+walltime: 52.992
+usertime: 52.992
+deterministic_time: 37.9093
+gap_integral: 0
+solution_fingerprint: 0x7ab671c62f17ab27
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.16s
+#Model  21.16s var:1823/1823 constraints:140678/140678
+Starting search at 21.17s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  58.80s var:1822/1823 constraints:139690/140678
+#1      91.37s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     34'501   120'755       235            8'743     46'791   2'060'944      3'925'872
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 34501
+branches: 120755
+propagations: 2060944
+integer_propagations: 3925872
+restarts: 235
+lp_iterations: 123767
+walltime: 91.4531
+usertime: 91.4531
+deterministic_time: 63.3962
+gap_integral: 0
+solution_fingerprint: 0xa9a7083e08d61531
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.15s
+#Model  18.28s var:1823/1823 constraints:140680/140680
+Starting search at 18.29s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      36.36s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      8'239    42'583        61            8'561     20'535   1'000'063      2'346'300
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 8239
+branches: 42583
+propagations: 1000063
+integer_propagations: 2346300
+restarts: 61
+lp_iterations: 34799
+walltime: 36.4674
+usertime: 36.4674
+deterministic_time: 24.9313
+gap_integral: 0
+solution_fingerprint: 0x24200ba5e26f7cc6
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.15s
+#Model  21.94s var:1823/1823 constraints:140682/140682
+Starting search at 21.94s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      54.35s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     23'886    70'859        61            8'563     36'068   1'616'084      3'132'304
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 23886
+branches: 70859
+propagations: 1616084
+integer_propagations: 3132304
+restarts: 61
+lp_iterations: 60405
+walltime: 54.4144
+usertime: 54.4144
+deterministic_time: 32.6224
+gap_integral: 0
+solution_fingerprint: 0x801491f510252e67
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.16s
+#Model  19.70s var:1823/1823 constraints:140684/140684
+Starting search at 19.70s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  43.30s var:1822/1823 constraints:139321/140684
+#Model  52.99s var:1821/1823 constraints:138333/140684
+#1      77.34s fj_restart_obj(batch:2 lin{mvs:12'667 evals:4'335} #w_updates:1'246 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     22'736    79'142       140            8'645     35'020   1'521'111      3'145'211
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 22736
+branches: 79142
+propagations: 1521111
+integer_propagations: 3145211
+restarts: 140
+lp_iterations: 84055
+walltime: 77.4485
+usertime: 77.4485
+deterministic_time: 43.1916
+gap_integral: 0
+solution_fingerprint: 0x8a35483bed9d554e
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.19s
+#Model  24.19s var:1823/1823 constraints:140686/140686
+Starting search at 24.20s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  53.77s var:1822/1823 constraints:139698/140686
+#1      55.31s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      9'135    49'055        87            8'589     21'446   1'047'843      2'440'232
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 9135
+branches: 49055
+propagations: 1047843
+integer_propagations: 2440232
+restarts: 87
+lp_iterations: 41526
+walltime: 55.402
+usertime: 55.402
+deterministic_time: 28.7467
+gap_integral: 0
+solution_fingerprint: 0x2b03da5ab65f240d
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.16s
+#Model  23.31s var:1823/1823 constraints:140688/140688
+Starting search at 23.31s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      35.23s fj_restart_obj(batch:1 lin{mvs:5'174 evals:2'404} #w_updates:376 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818        855    19'169        12            8'510     13'143     712'318      1'884'970
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 855
+branches: 19169
+propagations: 712318
+integer_propagations: 1884970
+restarts: 12
+lp_iterations: 6950
+walltime: 35.2842
+usertime: 35.2842
+deterministic_time: 17.6405
+gap_integral: 0
+solution_fingerprint: 0x35568797a51e8a8d
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.16s
+#Model  23.30s var:1823/1823 constraints:140690/140690
+Starting search at 23.31s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      32.55s fj_restart(batch:1 lin{mvs:4'567 evals:2'232} #w_updates:347 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818         17    14'812         0            8'498     12'298     677'160      1'812'188
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 17
+branches: 14812
+propagations: 677160
+integer_propagations: 1812188
+restarts: 0
+lp_iterations: 29
+walltime: 34.2001
+usertime: 34.2001
+deterministic_time: 15.9803
+gap_integral: 0
+solution_fingerprint: 0x8448ed141f8dc631
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.13s
+#Model  25.75s var:1823/1823 constraints:140692/140692
+Starting search at 25.75s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  46.31s var:1822/1823 constraints:139329/140692
+#Model  47.41s var:1821/1823 constraints:138341/140692
+#1      99.99s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     29'244   107'473       202            8'709     41'537   1'845'980      3'546'856
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 29244
+branches: 107473
+propagations: 1845980
+integer_propagations: 3546856
+restarts: 202
+lp_iterations: 99940
+walltime: 100.096
+usertime: 100.096
+deterministic_time: 51.3457
+gap_integral: 0
+solution_fingerprint: 0xa9ee40b8f6535f7
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.19s
+#Model  23.66s var:1823/1823 constraints:140694/140694
+Starting search at 23.67s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  76.69s var:1822/1823 constraints:139331/140694
+#1      91.67s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     22'594    84'589       157            8'661     34'877   1'596'424      3'205'609
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 22594
+branches: 84589
+propagations: 1596424
+integer_propagations: 3205609
+restarts: 157
+lp_iterations: 96576
+walltime: 91.7843
+usertime: 91.7843
+deterministic_time: 51.1818
+gap_integral: 0
+solution_fingerprint: 0x61fa72efce99e35e
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.27s
+#Model  27.57s var:1823/1823 constraints:140696/140696
+Starting search at 27.58s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      44.10s fj_restart(batch:3 lin{mvs:27'148 evals:8'330} #w_updates:3'093 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      2'154    21'835        17            8'516     14'443     771'617      1'963'566
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 2154
+branches: 21835
+propagations: 771617
+integer_propagations: 1963566
+restarts: 17
+lp_iterations: 12663
+walltime: 44.2185
+usertime: 44.2185
+deterministic_time: 19.5691
+gap_integral: 0
+solution_fingerprint: 0x37a8579c88fb2d8b
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.21s
+#Model  23.57s var:1823/1823 constraints:140698/140698
+Starting search at 23.58s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      39.10s fj_restart_perturb(batch:1 lin{mvs:6'149 evals:2'335} #w_updates:352 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      1'052    20'410        18            8'517     13'349     727'048      1'905'126
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 1052
+branches: 20410
+propagations: 727048
+integer_propagations: 1905126
+restarts: 18
+lp_iterations: 8540
+walltime: 39.1911
+usertime: 39.1911
+deterministic_time: 17.7231
+gap_integral: 0
+solution_fingerprint: 0x69ad2bc09cab790a
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.19s
+#Model  23.25s var:1823/1823 constraints:140700/140700
+Starting search at 23.25s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      46.79s fj_restart_perturb(batch:1 lin{mvs:7'124 evals:2'562} #w_updates:451 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      5'747    33'358        46            8'548     18'043     897'245      2'173'227
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 5747
+branches: 33358
+propagations: 897245
+integer_propagations: 2173227
+restarts: 46
+lp_iterations: 26053
+walltime: 46.8798
+usertime: 46.8798
+deterministic_time: 22.5863
+gap_integral: 0
+solution_fingerprint: 0xf0f3f030c16469ba
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.21s
+#Model  25.52s var:1823/1823 constraints:140702/140702
+Starting search at 25.52s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      66.43s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     16'477    66'553        94            8'596     28'737   1'302'880      2'770'296
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 16477
+branches: 66553
+propagations: 1302880
+integer_propagations: 2770296
+restarts: 94
+lp_iterations: 62320
+walltime: 66.5379
+usertime: 66.5379
+deterministic_time: 33.6287
+gap_integral: 0
+solution_fingerprint: 0xfd671cbce0a80761
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.18s
+#Model  26.49s var:1823/1823 constraints:140704/140704
+Starting search at 26.50s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      57.54s fj_restart(batch:1 lin{mvs:10'790 evals:2'901} #w_updates:952 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      9'015    47'156        84            8'583     21'319   1'031'265      2'422'303
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 9015
+branches: 47156
+propagations: 1031265
+integer_propagations: 2422303
+restarts: 84
+lp_iterations: 40926
+walltime: 57.6437
+usertime: 57.6437
+deterministic_time: 26.3846
+gap_integral: 0
+solution_fingerprint: 0x3e54836a207604f1
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.18s
+#Model  22.65s var:1823/1823 constraints:140706/140706
+Starting search at 22.65s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      33.00s fj_restart_obj(batch:2 lin{mvs:13'347 evals:4'537} #w_updates:1'839 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818         17    14'812         0            8'498     12'298     677'160      1'812'188
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 17
+branches: 14812
+propagations: 677160
+integer_propagations: 1812188
+restarts: 0
+lp_iterations: 30
+walltime: 33.2471
+usertime: 33.2471
+deterministic_time: 16.5789
+gap_integral: 0
+solution_fingerprint: 0x250986df1f874a66
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.20s
+#Model  22.81s var:1823/1823 constraints:140708/140708
+Starting search at 22.81s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  36.02s var:1822/1823 constraints:139720/140708
+#1     146.85s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     54'493   167'003       304            8'810     66'761   2'873'384      5'029'607
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 54493
+branches: 167003
+propagations: 2873384
+integer_propagations: 5029607
+restarts: 304
+lp_iterations: 174533
+walltime: 146.966
+usertime: 146.966
+deterministic_time: 80.6575
+gap_integral: 0
+solution_fingerprint: 0x3a6ffd296e9577c7
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.16s
+#Model  22.95s var:1823/1823 constraints:140710/140710
+Starting search at 22.95s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      27.61s fj_restart_perturb(batch:1 lin{mvs:10'599 evals:2'733} #w_updates:742 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818         17    14'812         0            8'498     12'298     677'160      1'812'188
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 17
+branches: 14812
+propagations: 677160
+integer_propagations: 1812188
+restarts: 0
+lp_iterations: 37
+walltime: 30.5192
+usertime: 30.5192
+deterministic_time: 14.4735
+gap_integral: 0
+solution_fingerprint: 0x1eab3fe31bd721b2
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.16s
+#Model  23.18s var:1823/1823 constraints:140712/140712
+Starting search at 23.19s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  34.32s var:1822/1823 constraints:139724/140712
+#Model  40.14s var:1821/1823 constraints:138361/140712
+#1      68.74s fj_restart(batch:2 lin{mvs:18'025 evals:5'206} #w_updates:1'663 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     28'352    93'838       178            8'685     40'617   1'766'891      3'487'075
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 28352
+branches: 93838
+propagations: 1766891
+integer_propagations: 3487075
+restarts: 178
+lp_iterations: 97478
+walltime: 68.7896
+usertime: 68.7896
+deterministic_time: 53.0529
+gap_integral: 0
+solution_fingerprint: 0x3519674ec3f3da9
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.10s
+#Model  18.39s var:1823/1823 constraints:140714/140714
+Starting search at 18.39s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      21.20s fj_restart_perturb_obj(batch:2 lin{mvs:15'662 evals:5'028} #w_updates:1'237 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818         17    14'774         0            8'492     12'281     674'428      1'804'301
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 17
+branches: 14774
+propagations: 674428
+integer_propagations: 1804301
+restarts: 0
+lp_iterations: 36
+walltime: 23.6374
+usertime: 23.6374
+deterministic_time: 13.9955
+gap_integral: 0
+solution_fingerprint: 0xd1e9e18a5ce34a3
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.12s
+#Model  18.12s var:1823/1823 constraints:140716/140716
+Starting search at 18.12s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      41.83s fj_restart(batch:5 lin{mvs:60'000 evals:16'876} #w_updates:17'809 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     11'139    53'968       109            8'611     23'455   1'121'762      2'561'362
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 11139
+branches: 53968
+propagations: 1121762
+integer_propagations: 2561362
+restarts: 109
+lp_iterations: 51995
+walltime: 41.8752
+usertime: 41.8752
+deterministic_time: 28.4993
+gap_integral: 0
+solution_fingerprint: 0x2892a38f7f70ce0c
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.11s
+#Model  17.64s var:1823/1823 constraints:140718/140718
+Starting search at 17.64s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      28.98s fj_restart(batch:3 lin{mvs:26'464 evals:7'599} #w_updates:2'725 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      2'053    20'924        11            8'510     14'311     756'814      1'932'632
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 2053
+branches: 20924
+propagations: 756814
+integer_propagations: 1932632
+restarts: 11
+lp_iterations: 9043
+walltime: 29.0244
+usertime: 29.0244
+deterministic_time: 17.82
+gap_integral: 0
+solution_fingerprint: 0x85c3973a57359b69
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.10s
+#Model  18.54s var:1823/1823 constraints:140720/140720
+Starting search at 18.55s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      42.72s fj_restart_obj(batch:2 lin{mvs:14'158 evals:4'878} #w_updates:981 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     11'061    45'769        56            8'556     23'323   1'119'800      2'514'082
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 11061
+branches: 45769
+propagations: 1119800
+integer_propagations: 2514082
+restarts: 56
+lp_iterations: 45820
+walltime: 42.7701
+usertime: 42.7701
+deterministic_time: 26.1383
+gap_integral: 0
+solution_fingerprint: 0x98f85cec54b5b16e
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.18s
+#Model  21.74s var:1823/1823 constraints:140722/140722
+Starting search at 21.75s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      40.33s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      5'318    32'570        34            8'532     17'581     860'531      2'114'050
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 5318
+branches: 32570
+propagations: 860531
+integer_propagations: 2114050
+restarts: 34
+lp_iterations: 22680
+walltime: 40.4236
+usertime: 40.4236
+deterministic_time: 21.2316
+gap_integral: 0
+solution_fingerprint: 0xef7dc819c31a316d
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.10s
+#Model  19.29s var:1823/1823 constraints:140724/140724
+Starting search at 19.30s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  39.26s var:1822/1823 constraints:139361/140724
+#Model  40.01s var:1821/1823 constraints:138373/140724
+#1      61.46s fj_restart(batch:7 lin{mvs:71'584 evals:26'440} #w_updates:23'957 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     21'614    75'518       112            8'619     33'842   1'582'480      3'168'884
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 21614
+branches: 75518
+propagations: 1582480
+integer_propagations: 3168884
+restarts: 112
+lp_iterations: 75109
+walltime: 61.577
+usertime: 61.577
+deterministic_time: 35.957
+gap_integral: 0
+solution_fingerprint: 0x4a5142f4ea99586b
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.09s
+#Model  20.66s var:1823/1823 constraints:140726/140726
+Starting search at 20.67s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      30.53s fj_restart_perturb(batch:1 lin{mvs:3'894 evals:2'086} #w_updates:241 #perturb:0)
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818         17    14'810         0            8'498     12'297     677'066      1'811'858
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 17
+branches: 14810
+propagations: 677066
+integer_propagations: 1811858
+restarts: 0
+lp_iterations: 29
+walltime: 31.2414
+usertime: 31.2414
+deterministic_time: 16.7955
+gap_integral: 0
+solution_fingerprint: 0xa2c7aa7b9bac4bc3
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.14s
+#Model  20.87s var:1823/1823 constraints:140728/140728
+Starting search at 20.87s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      57.73s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     21'676    74'440        97            8'599     33'887   1'526'160      3'042'770
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 21676
+branches: 74440
+propagations: 1526160
+integer_propagations: 3042770
+restarts: 97
+lp_iterations: 79435
+walltime: 57.7836
+usertime: 57.7836
+deterministic_time: 37.9473
+gap_integral: 0
+solution_fingerprint: 0xaa78dd1f18752417
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.15s
+#Model  21.50s var:1823/1823 constraints:140730/140730
+Starting search at 21.50s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#Model  46.57s var:1822/1823 constraints:139742/140730
+#1      50.64s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818     17'334    62'291        58            8'559     29'480   1'297'775      2'819'453
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 17334
+branches: 62291
+propagations: 1297775
+integer_propagations: 2819453
+restarts: 58
+lp_iterations: 45646
+walltime: 50.7343
+usertime: 50.7343
+deterministic_time: 30.819
+gap_integral: 0
+solution_fingerprint: 0x1706fe838024c31c
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.15s
+#Model  21.48s var:1823/1823 constraints:140732/140732
+Starting search at 21.48s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]
+#1      33.29s default_lp
+Search stats     Bools  Conflicts  Branches  Restarts  BacktrackToRoot  Backtrack  BoolPropag  IntegerPropag
+  'default_lp':  1'818      1'935    25'115        13            8'511     14'209     733'262      1'904'192
+CpSolverResponse summary:
+status: OPTIMAL
+objective: NA
+best_bound: NA
+integers: 1875
+booleans: 1818
+conflicts: 1935
+branches: 25115
+propagations: 733262
+integer_propagations: 1904192
+restarts: 13
+lp_iterations: 8574
+walltime: 33.3501
+usertime: 33.3501
+deterministic_time: 17.6718
+gap_integral: 0
+solution_fingerprint: 0xf5da266771d78d2c
+Starting CP-SAT solver v9.15.6755
+Starting presolve at 0.15s
+#Model  21.86s var:1823/1823 constraints:140734/140734
+Starting search at 21.86s with 2 workers.
+1 full problem subsolver: [default_lp]
+1 first solution subsolver: [fj]

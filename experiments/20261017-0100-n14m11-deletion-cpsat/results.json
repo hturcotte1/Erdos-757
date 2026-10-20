@@ -1,0 +1,5 @@
+{"cell": "n=14, m=11, alpha<=8 (Q11)", "status": "UNKNOWN", "cpsat_status": "UNKNOWN at time limit", "wall_s": 10800.2, "workers": 2,
+ "conflicts": 1361597, "branches": 3458184, "restarts": 5440, "lp_iterations": 4577122, "num_constraints": 1993421,
+ "abstract_solutions_found": 0, "f7": "eager (1,441,440 clauses)",
+ "soundness": {"A_base_and_50_random_census_classes": "all satisfy", "full_census_2910": "0 violations", "encoding_test": "63/63 agree (25 feasible/38 infeasible incl. both outcomes)"},
+ "m12_sanity": {"status": "UNKNOWN after 600 s (3 workers, lazy F7)", "abstract_solutions": 3, "realizable": 0}}

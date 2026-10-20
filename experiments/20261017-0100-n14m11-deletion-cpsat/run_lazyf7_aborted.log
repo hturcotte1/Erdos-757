@@ -1,0 +1,2 @@
+# started 2026-10-17T01:09:50Z max 4h
+# command: nice -n 5 python3 experiments/20261017-0100-n14m11-deletion-cpsat/model14.py solve 11 10800 2 m11

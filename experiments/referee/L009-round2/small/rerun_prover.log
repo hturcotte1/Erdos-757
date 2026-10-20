@@ -1,0 +1,81 @@
+== C2 component and window cells (enum_conn)
+enum_conn N=6 M=3 T0=2 DMAX=3 calls=52 found=6
+enum_conn N=8 M=5 T0=3 DMAX=3 calls=2162 found=86
+enum_conn N=10 M=7 T0=4 DMAX=3 calls=199787 found=494
+enum_conn N=10 M=8 T0=4 DMAX=3 calls=896011 found=23277
+enum_conn N=13 M=8 T0=5 DMAX=3 calls=1562736 found=106
+enum_conn N=13 M=9 T0=5 DMAX=3 calls=48929071 found=43382
+enum_conn N=16 M=10 T0=6 DMAX=3 calls=213228218 found=12394
+enum_conn N=16 M=9 T0=6 DMAX=3 calls=2341695 found=0
+enum_conn N=16 M=9 T0=6 DMAX=1000 calls=2658129 found=0
+enum_conn N=18 M=10 T0=7 DMAX=1000 calls=2870449 found=0
+enum_conn N=18 M=11 T0=7 DMAX=3 calls=299243572 found=0
+== C3 (17,12,7) case (iii) and (ii)
+rerun/in17_C10_2AP.txt graphs: 494 vertices: 16 slot sizes: [494, 1, 1]
+SUMMARY graphs=494 bad_tau=0 tested=12493456 hits=4476
+SUMMARY tag=HIT total=4476 linear=4476 contain_F7=4476 P3_violated=0 F7free_and_P3_violated=0 survivors=0 connected=0 tau_range=[7,7] maxdeg_max=3 vertices_range=[17,17] min(|U(F)|-|F|)_range=[2,2]
+SUMMARY tag=FOUND total=106 linear=106 contain_F7=106 P3_violated=0 F7free_and_P3_violated=0 survivors=0 connected=106 tau_range=[5,5] maxdeg_max=3 vertices_range=[13,13] min(|U(F)|-|F|)_range=[2,2]
+== C4 components in C
+SUMMARY tag=FOUND total=6 linear=6 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=6 connected=6 tau_range=[2,2] maxdeg_max=2 vertices_range=[6,6] min(|U(F)|-|F|)_range=[2,2]
+SUMMARY tag=FOUND total=86 linear=86 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=86 connected=86 tau_range=[3,3] maxdeg_max=3 vertices_range=[8,8] min(|U(F)|-|F|)_range=[2,2]
+SUMMARY tag=FOUND total=494 linear=494 contain_F7=126 P3_violated=0 F7free_and_P3_violated=0 survivors=368 connected=494 tau_range=[4,4] maxdeg_max=3 vertices_range=[10,10] min(|U(F)|-|F|)_range=[2,2]
+SUMMARY tag=FOUND total=23277 linear=23277 contain_F7=4673 P3_violated=284 F7free_and_P3_violated=45 survivors=18559 connected=23277 tau_range=[4,4] maxdeg_max=3 vertices_range=[10,10] min(|U(F)|-|F|)_range=[1,2]
+SUMMARY tag=FOUND total=43382 linear=43382 contain_F7=6101 P3_violated=37 F7free_and_P3_violated=37 survivors=37244 connected=43382 tau_range=[5,5] maxdeg_max=3 vertices_range=[13,13] min(|U(F)|-|F|)_range=[1,2]
+SUMMARY tag=FOUND total=12394 linear=12394 contain_F7=6946 P3_violated=0 F7free_and_P3_violated=0 survivors=5448 connected=12394 tau_range=[6,6] maxdeg_max=3 vertices_range=[16,16] min(|U(F)|-|F|)_range=[2,2]
+== C5 rebuild (14,12,6)
+rerun/inT14_a.txt graphs: 18559 vertices: 13 slot sizes: [1, 18559]
+rerun/inT14_b.txt graphs: 37244 vertices: 13 slot sizes: [37244]
+SUMMARY graphs=55803 bad_tau=0 tested=69894778 hits=85655
+SUMMARY tag=HIT total=85655 linear=85655 contain_F7=72365 P3_violated=21719 F7free_and_P3_violated=4596 survivors=8694 connected=80276 tau_range=[6,6] maxdeg_max=3 vertices_range=[14,14] min(|U(F)|-|F|)_range=[0,2]
+rerun/filtT14.txt survivors: connected 8694 | disconnected by component vertex counts {}
+== C6 rebuild (17,13,7)
+rerun/inT17_1.txt graphs: 18559 vertices: 16 slot sizes: [1, 1, 18559]
+rerun/inT17_2.txt graphs: 37244 vertices: 16 slot sizes: [1, 37244]
+rerun/inT17_3.txt graphs: 2208 vertices: 16 slot sizes: [368, 6]
+rerun/inT17_4.txt graphs: 7396 vertices: 16 slot sizes: [86, 86]
+rerun/inT17_5.txt graphs: 5448 vertices: 16 slot sizes: [5448]
+SUMMARY graphs=70855 bad_tau=0 tested=1086217081 hits=859503
+SUMMARY tag=HIT total=859503 linear=859503 contain_F7=699181 P3_violated=225167 F7free_and_P3_violated=39484 survivors=120838 connected=458716 tau_range=[7,7] maxdeg_max=3 vertices_range=[17,17] min(|U(F)|-|F|)_range=[0,2]
+rerun/filtT17.txt survivors: connected 112144 | disconnected by component vertex counts {(3, 14): 8694}
+== C7 final step
+rerun/inH18_T17.txt graphs: 112144 vertices: 17 slot sizes: [112144]
+rerun/inH18_T14AP.txt graphs: 8694 vertices: 17 slot sizes: [8694, 1]
+SUMMARY graphs=120838 bad_tau=0 tested=795858636 hits=0
+== SHA-256 comparison with the prover's recorded sums
+same  ./indep/T14_conn.txt
+same  ./indep/T17_conn.txt
+same  ./indep/cell_10_8_4.txt
+same  ./indep/cell_13_9_5.txt
+same  ./indep/cell_16_10_6.txt
+absent ./indep/direct_14_12_6_deg3.txt (not regenerated here)
+same  ./indep/hits17_C10_2AP.txt
+absent ./indep/hits17_C10all_2AP.txt (not regenerated here)
+same  ./indep/hitsT14.txt
+same  ./indep/hitsT17.txt
+absent ./rerun/direct14_partial.txt (not regenerated here)
+same  ./rerun/filtT14.txt
+same  ./rerun/filtT17.txt
+same  ./rerun/filt_10_8_4.txt
+same  ./rerun/filt_13_9_5.txt
+same  ./rerun/filt_16_10_6.txt
+same  ./rerun/inH18.txt
+same  ./rerun/inH18_T14AP.txt
+same  ./rerun/inH18_T17.txt
+absent ./rerun/inH18_sample12000.txt (not regenerated here)
+same  ./rerun/inT14.txt
+same  ./rerun/inT14_a.txt
+same  ./rerun/inT14_b.txt
+same  ./rerun/inT17.txt
+same  ./rerun/inT17_1.txt
+same  ./rerun/inT17_2.txt
+same  ./rerun/inT17_4.txt
+same as stored indep/T14_conn.txt
+same as stored indep/cell_6_3_2.txt
+same as stored indep/cell_8_5_3.txt
+same as stored indep/cell_10_7_4.txt
+same as stored indep/cell_13_8_5.txt
+same as stored indep/T17_conn.txt.gz
+same as stored indep/cell_10_8_4.txt.gz
+same as stored indep/cell_13_9_5.txt.gz
+same as stored indep/cell_16_10_6.txt.gz
+same as stored indep/hitsT14.txt.gz

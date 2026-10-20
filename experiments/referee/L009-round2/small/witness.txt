@@ -1,0 +1,8 @@
+distinct: True | 4-subsets: 3060 violating (<5 distinct differences): 0
+3-APs: 16
+conflicts (sum collisions as vertex sets): 16 sizes: [3]
+weak Sidon (sums of distinct pairs distinct): True
+exhaustive: largest Sidon subset size h = 11 | number of maximum Sidon subsets: 113
+one maximum Sidon subset: [0, 352, 492, 600, 916, 1264, 1388, 1613, 1696, 1767, 4352] | Sidon by definition: True
+CP-SAT: OPTIMAL objective 11
+h/n = 11/18 < 4/7 ? False | tau = n-h = 7 | I11 slack 3n+2m-11tau = 9

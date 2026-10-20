@@ -1,0 +1,9 @@
+cell (25,16,10) Delta<=2: branches [(2, 9, 1, 11)]
+   distinct nonempty-guard component cell types: 12, already computed in out/cells: 11, new: 1
+   new cells (n,m,tau,D) (n>=?): [(24, 14, 9, 2)]
+cell (25,17,10) Delta<=3: branches [(3, 9, 1, 11)]
+   distinct nonempty-guard component cell types: 12, already computed in out/cells: 9, new: 3
+   new cells (n,m,tau,D) (n>=?): [(18, 12, 7, 3), (21, 13, 8, 3), (24, 14, 9, 3)]
+cell (25,22,11) Delta<=3: branches [(3, 10, 0, 3)]
+   distinct nonempty-guard component cell types: 5, already computed in out/cells: 3, new: 2
+   new cells (n,m,tau,D) (n>=?): [(21, 18, 9, 3), (24, 19, 10, 3)]

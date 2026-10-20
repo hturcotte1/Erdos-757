@@ -1,0 +1,365 @@
+{
+ "26": [
+  {
+   "n": 26,
+   "m": 14,
+   "tau": 10,
+   "slack": -4,
+   "dmax": 2,
+   "tau_same_possible_degrees": [],
+   "status": "OPEN: Delta <= 2 (3m=42 <= 52)",
+   "remainders": [
+    {
+     "d": 1,
+     "cell": [
+      25,
+      13,
+      9
+     ],
+     "slack": 2,
+     "HY_ok": true,
+     "P3_ok": true
+    },
+    {
+     "d": 2,
+     "cell": [
+      25,
+      12,
+      9
+     ],
+     "slack": 0,
+     "HY_ok": true,
+     "P3_ok": true
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "m": 15,
+   "tau": 10,
+   "slack": -2,
+   "dmax": 3,
+   "tau_same_possible_degrees": [],
+   "status": "OPEN: Delta <= 3 (3m=45 <= 78)",
+   "remainders": [
+    {
+     "d": 1,
+     "cell": [
+      25,
+      14,
+      9
+     ],
+     "slack": 4,
+     "HY_ok": true,
+     "P3_ok": true
+    },
+    {
+     "d": 2,
+     "cell": [
+      25,
+      13,
+      9
+     ],
+     "slack": 2,
+     "HY_ok": true,
+     "P3_ok": true
+    },
+    {
+     "d": 3,
+     "cell": [
+      25,
+      12,
+      9
+     ],
+     "slack": 0,
+     "HY_ok": true,
+     "P3_ok": true
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "m": 19,
+   "tau": 11,
+   "slack": -5,
+   "dmax": 1,
+   "tau_same_possible_degrees": [],
+   "status": "excluded by counting: 3m=57 > dmax*n=26",
+   "remainders": []
+  },
+  {
+   "n": 26,
+   "m": 20,
+   "tau": 11,
+   "slack": -3,
+   "dmax": 2,
+   "tau_same_possible_degrees": [],
+   "status": "excluded by counting: 3m=60 > dmax*n=52",
+   "remainders": []
+  },
+  {
+   "n": 26,
+   "m": 21,
+   "tau": 11,
+   "slack": -1,
+   "dmax": 3,
+   "tau_same_possible_degrees": [],
+   "status": "OPEN: Delta <= 3 (3m=63 <= 78)",
+   "remainders": [
+    {
+     "d": 1,
+     "cell": [
+      25,
+      20,
+      10
+     ],
+     "slack": 5,
+     "HY_ok": true,
+     "P3_ok": true
+    },
+    {
+     "d": 2,
+     "cell": [
+      25,
+      19,
+      10
+     ],
+     "slack": 3,
+     "HY_ok": true,
+     "P3_ok": true
+    },
+    {
+     "d": 3,
+     "cell": [
+      25,
+      18,
+      10
+     ],
+     "slack": 1,
+     "HY_ok": true,
+     "P3_ok": true
+    }
+   ]
+  }
+ ],
+ "27": [
+  {
+   "n": 27,
+   "m": 13,
+   "tau": 10,
+   "slack": -3,
+   "dmax": 2,
+   "tau_same_possible_degrees": [],
+   "status": "OPEN: Delta <= 2 (3m=39 <= 54)",
+   "remainders": [
+    {
+     "d": 1,
+     "cell": [
+      26,
+      12,
+      9
+     ],
+     "slack": 3,
+     "HY_ok": true,
+     "P3_ok": true
+    },
+    {
+     "d": 2,
+     "cell": [
+      26,
+      11,
+      9
+     ],
+     "slack": 1,
+     "HY_ok": true,
+     "P3_ok": true
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "m": 14,
+   "tau": 10,
+   "slack": -1,
+   "dmax": 3,
+   "tau_same_possible_degrees": [],
+   "status": "OPEN: Delta <= 3 (3m=42 <= 81)",
+   "remainders": [
+    {
+     "d": 1,
+     "cell": [
+      26,
+      13,
+      9
+     ],
+     "slack": 5,
+     "HY_ok": true,
+     "P3_ok": true
+    },
+    {
+     "d": 2,
+     "cell": [
+      26,
+      12,
+      9
+     ],
+     "slack": 3,
+     "HY_ok": true,
+     "P3_ok": true
+    },
+    {
+     "d": 3,
+     "cell": [
+      26,
+      11,
+      9
+     ],
+     "slack": 1,
+     "HY_ok": true,
+     "P3_ok": true
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "m": 18,
+   "tau": 11,
+   "slack": -4,
+   "dmax": 2,
+   "tau_same_possible_degrees": [],
+   "status": "OPEN: Delta <= 2 (3m=54 <= 54)",
+   "remainders": [
+    {
+     "d": 1,
+     "cell": [
+      26,
+      17,
+      10
+     ],
+     "slack": 2,
+     "HY_ok": true,
+     "P3_ok": true
+    },
+    {
+     "d": 2,
+     "cell": [
+      26,
+      16,
+      10
+     ],
+     "slack": 0,
+     "HY_ok": true,
+     "P3_ok": true
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "m": 19,
+   "tau": 11,
+   "slack": -2,
+   "dmax": 3,
+   "tau_same_possible_degrees": [],
+   "status": "OPEN: Delta <= 3 (3m=57 <= 81)",
+   "remainders": [
+    {
+     "d": 1,
+     "cell": [
+      26,
+      18,
+      10
+     ],
+     "slack": 4,
+     "HY_ok": true,
+     "P3_ok": true
+    },
+    {
+     "d": 2,
+     "cell": [
+      26,
+      17,
+      10
+     ],
+     "slack": 2,
+     "HY_ok": true,
+     "P3_ok": true
+    },
+    {
+     "d": 3,
+     "cell": [
+      26,
+      16,
+      10
+     ],
+     "slack": 0,
+     "HY_ok": true,
+     "P3_ok": true
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "m": 23,
+   "tau": 12,
+   "slack": -5,
+   "dmax": 1,
+   "tau_same_possible_degrees": [],
+   "status": "excluded by counting: 3m=69 > dmax*n=27",
+   "remainders": []
+  },
+  {
+   "n": 27,
+   "m": 24,
+   "tau": 12,
+   "slack": -3,
+   "dmax": 2,
+   "tau_same_possible_degrees": [],
+   "status": "excluded by counting: 3m=72 > dmax*n=54",
+   "remainders": []
+  },
+  {
+   "n": 27,
+   "m": 25,
+   "tau": 12,
+   "slack": -1,
+   "dmax": 3,
+   "tau_same_possible_degrees": [],
+   "status": "OPEN: Delta <= 3 (3m=75 <= 81)",
+   "remainders": [
+    {
+     "d": 1,
+     "cell": [
+      26,
+      24,
+      11
+     ],
+     "slack": 5,
+     "HY_ok": true,
+     "P3_ok": true
+    },
+    {
+     "d": 2,
+     "cell": [
+      26,
+      23,
+      11
+     ],
+     "slack": 3,
+     "HY_ok": true,
+     "P3_ok": true
+    },
+    {
+     "d": 3,
+     "cell": [
+      26,
+      22,
+      11
+     ],
+     "slack": 1,
+     "HY_ok": true,
+     "P3_ok": true
+    }
+   ]
+  }
+ ]
+}

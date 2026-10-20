@@ -1,0 +1,15 @@
+| n | cells (m: lo = floor((3n+2m)/11)+1, hy = floor((5n+3m)/17)) |
+|---|---|
+| 3 | m=1: lo=2, hy=1 |
+| 4 | m=2: lo=2, hy=1 |
+| 5 | m=2: lo=2, hy=1; m=3: lo=2, hy=2  **WINDOW tau=2** |
+| 6 | m=3: lo=3, hy=2; m=4: lo=3, hy=2 |
+| 7 | m=3: lo=3, hy=2; m=4: lo=3, hy=2; m=5: lo=3, hy=2 |
+| 8 | m=4: lo=3, hy=3  **WINDOW tau=3**; m=5: lo=4, hy=3; m=6: lo=4, hy=3 |
+| 9 | m=4: lo=4, hy=3; m=5: lo=4, hy=3; m=6: lo=4, hy=3; m=7: lo=4, hy=3 |
+| 10 | m=5: lo=4, hy=3; m=6: lo=4, hy=4  **WINDOW tau=4**; m=7: lo=5, hy=4; m=8: lo=5, hy=4 |
+| 11 | m=5: lo=4, hy=4  **WINDOW tau=4**; m=6: lo=5, hy=4; m=7: lo=5, hy=4; m=8: lo=5, hy=4; m=9: lo=5, hy=4 |
+| 12 | m=6: lo=5, hy=4; m=7: lo=5, hy=4; m=8: lo=5, hy=4; m=9: lo=5, hy=5  **WINDOW tau=5**; m=10: lo=6, hy=5 |
+| 13 | m=6: lo=5, hy=4; m=7: lo=5, hy=5  **WINDOW tau=5**; m=8: lo=6, hy=5; m=9: lo=6, hy=5; m=10: lo=6, hy=5; m=11: lo=6, hy=5 |
+| 14 | m=7: lo=6, hy=5; m=8: lo=6, hy=5; m=9: lo=6, hy=5; m=10: lo=6, hy=5; m=11: lo=6, hy=6  **WINDOW tau=6**; m=12: lo=7, hy=6 |
+| 15 | m=7: lo=6, hy=5; m=8: lo=6, hy=5; m=9: lo=6, hy=6  **WINDOW tau=6**; m=10: lo=6, hy=6  **WINDOW tau=6**; m=11: lo=7, hy=6; m=12: lo=7, hy=6; m=13: lo=7, hy=6 |

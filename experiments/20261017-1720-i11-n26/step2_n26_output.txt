@@ -1,0 +1,53 @@
+=== cell (26,14,10) Delta<=2  (slack -4)
+  branch d=2 tau'=9 remainder (25,12) slack S'=0: 6 decompositions
+      1x(25,12,9)[NEW]
+      1x(3,1,1)[seeded] + 1x(22,11,8)[seeded]
+      2x(3,1,1)[seeded] + 1x(19,10,7)[seeded]
+      3x(3,1,1)[seeded] + 1x(16,9,6)[seeded]
+      4x(3,1,1)[seeded] + 1x(13,8,5)[seeded]
+      5x(3,1,1)[seeded] + 1x(10,7,4)[seeded]
+  distinct nonguard-empty component cells: 7; seeded: 6; NEW: 1
+  NEW (n,m,tau,D) at top level: [(25, 12, 9, 2)]
+=== cell (26,15,10) Delta<=3  (slack -2)
+  branch d=2 tau'=9 remainder (25,13) slack S'=2: 19 decompositions
+      1x(25,13,9)[NEW]
+      1x(11,6,4)[seeded] + 1x(14,7,5)[seeded]
+      1x(9,4,3)[seeded] + 1x(16,9,6)[seeded]
+      1x(8,5,3)[seeded] + 1x(17,8,6)[seeded]
+      1x(6,3,2)[seeded] + 1x(19,10,7)[seeded]
+      1x(3,1,1)[seeded] + 1x(22,12,8)[seeded]
+      1x(3,1,1)[seeded] + 2x(11,6,4)[seeded]
+      1x(3,1,1)[seeded] + 1x(9,4,3)[seeded] + 1x(13,8,5)[seeded]
+      1x(3,1,1)[seeded] + 1x(8,5,3)[seeded] + 1x(14,7,5)[seeded]
+      1x(3,1,1)[seeded] + 1x(6,3,2)[seeded] + 1x(16,9,6)[seeded]
+      2x(3,1,1)[seeded] + 1x(19,11,7)[seeded]
+      2x(3,1,1)[seeded] + 1x(9,4,3)[seeded] + 1x(10,7,4)[seeded]
+      2x(3,1,1)[seeded] + 1x(8,5,3)[seeded] + 1x(11,6,4)[seeded]
+      2x(3,1,1)[seeded] + 1x(6,3,2)[seeded] + 1x(13,8,5)[seeded]
+      3x(3,1,1)[seeded] + 1x(16,10,6)[seeded]
+      3x(3,1,1)[seeded] + 2x(8,5,3)[seeded]
+      3x(3,1,1)[seeded] + 1x(6,3,2)[seeded] + 1x(10,7,4)[seeded]
+      4x(3,1,1)[seeded] + 1x(13,9,5)[seeded]
+      5x(3,1,1)[seeded] + 1x(10,8,4)[seeded]
+  branch d=3 tau'=9 remainder (25,12) slack S'=0: 6 decompositions
+      1x(25,12,9)[NEW]
+      1x(3,1,1)[seeded] + 1x(22,11,8)[seeded]
+      2x(3,1,1)[seeded] + 1x(19,10,7)[seeded]
+      3x(3,1,1)[seeded] + 1x(16,9,6)[seeded]
+      4x(3,1,1)[seeded] + 1x(13,8,5)[seeded]
+      5x(3,1,1)[seeded] + 1x(10,7,4)[seeded]
+  distinct nonguard-empty component cells: 24; seeded: 22; NEW: 2
+  NEW (n,m,tau,D) at top level: [(25, 12, 9, 3), (25, 13, 9, 2)]
+=== cell (26,21,11) Delta<=3  (slack -1)
+  branch d=3 tau'=10 remainder (25,18) slack S'=1: 9 decompositions
+      1x(25,18,10)[NEW]
+      1x(12,10,5)[seeded] + 1x(13,8,5)[seeded]
+      1x(11,6,4)[seeded] + 1x(14,12,6)[seeded]
+      1x(10,7,4)[seeded] + 1x(15,11,6)[seeded]
+      1x(8,5,3)[seeded] + 1x(17,13,7)[seeded]
+      1x(3,1,1)[seeded] + 1x(22,17,9)[seeded]
+      1x(3,1,1)[seeded] + 1x(10,7,4)[seeded] + 1x(12,10,5)[seeded]
+      1x(3,1,1)[seeded] + 1x(8,5,3)[seeded] + 1x(14,12,6)[seeded]
+      2x(3,1,1)[seeded] + 1x(19,16,8)[seeded]
+  distinct nonguard-empty component cells: 12; seeded: 11; NEW: 1
+  NEW (n,m,tau,D) at top level: [(25, 18, 10, 3)]

@@ -1,0 +1,2 @@
+14,11,6,3 {'sat_solutions': 37, 'sat_classes': 1, 'authors_outputs': 998, 'authors_classes': 1, 'all_author_classes_covered': True, 'no_extra_classes': True}
+11,7,4,100 {'sat_solutions': 132, 'sat_classes': 40, 'authors_outputs': 8786, 'authors_classes': 40, 'all_author_classes_covered': True, 'no_extra_classes': True}

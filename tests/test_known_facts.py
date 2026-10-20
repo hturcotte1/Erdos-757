@@ -1,7 +1,10 @@
 """Pins facts K3, K7, K11, K12, K17-K24 and K29 of kb/known_results.md (K22 only for single-class
-chains with a != b and a + b <= 8). K13 and K30-K49 are backed by the tests, experiment folders,
+chains with a != b and a + b <= 8). K13 and K30-K56 are backed by the tests, experiment folders,
 certificates and referee reviews named in their Check column (K44 only by a check on the records
-in the main session), and rows whose Check is "source" are pinned by no test. Also pins the
+in the main session; K51 and K52 also by the cell regressions tests/test_l007_cells.py and
+tests/test_l008_cells.py; of K52-K55 only the exact values f(16), f(18), f(20), f(22) are pinned
+here, in test_fn_bounds; K56 is pinned by no test), and rows whose Check is "source" are pinned by
+no test. Also pins the
 safety rails
 (judge, hook, status script). Run: python3 -m pytest -q"""
 import hashlib
@@ -153,9 +156,9 @@ def test_fn_bounds():
     b = B.fn_bounds(40)
     exact = {n: lu[0] for n, lu in b.items() if lu[0] == lu[1]}
     want = {1: 1, 2: 2, 3: 2, 4: 3, 5: 4, 6: 4, 7: 5, 8: 5, 9: 6, 10: 6, 11: 7, 12: 7, 13: 8,
-            14: 8, 15: 9, 17: 10, 24: 14, 26: 15, 28: 16}
+            14: 8, 15: 9, 16: 10, 17: 10, 18: 11, 20: 12, 22: 13, 24: 14, 26: 15, 28: 16}
     assert exact == want
-    assert b[16] == (9, 10) and b[22] == (12, 13)
+    assert b[16] == (10, 10) and b[18] == (11, 11) and b[20] == (12, 12) and b[22] == (13, 13)  # L008-L011
     for n, (lo, hi) in b.items():
         assert lo <= hi
 

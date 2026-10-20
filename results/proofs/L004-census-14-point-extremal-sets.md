@@ -1,7 +1,7 @@
 # Exactly 2,910 saturated 14-point (4,5)-sets with h = 8 up to affine equivalence
 CLAIM-TYPE: certificate (exhaustive enumeration with exact realization)
 TYPE: certificate
-STATUS: ACCEPTED by referee round 1 (results/reviews/L004-census-14-point-extremal-sets__referee__20261015T225426Z.md); editorial fixes applied afterwards
+STATUS: ACCEPTED by referee round 1 (results/reviews/L004-census-14-point-extremal-sets__referee__20261015T225426Z.md); editorial fixes applied afterwards; the m = 11 case that the Statement leaves open was closed on 2026-10-17 by L007 (ACCEPTED x3, K51): no non-saturated extremal 14-point set exists, so the 2,910 classes are all extremal 14-point classes (L007 inherits the completeness caveat of this certificate)
 DEPENDS ON: K3-K6 [published]; K7 [published] (F7-free, imposed in the enumeration); K30 [verified-here] (monotone midpoints); (K31-K33 [verified-here] were used by the pipeline as pre-filters, 159,110 of the 205,529 patterns being discarded without realization, but they are not load-bearing: the referee realized all 205,529 patterns without pre-filters and found none of the discarded ones realizable); K8 [published] (Henning-Yeo: for n=14, tau=6 it gives m >= 11; the case m = 11 is NOT covered by this certificate). The pipeline is the one certified in L002 (C DFS e757/c/ordered_dfs, prefix-split driver e757/ordered_dfs_split.py, exact realizer experiments/20261014-1005-census-dfs/fastreal.py, affine normalization as in L002).
 
 ## Statement

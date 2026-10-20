@@ -1,0 +1,6 @@
+F7: linear True has_f7 True p3 True tau 3
+relabelled F7 + pendant edge: has_f7 True
+Fano: has_f7 False p3 False
+3x3 grid: in_C True tau 3 connected True
+two disjoint edges connected: False nonlinear: False
+AG(2,3) minus a parallel class: p3 False has_f7 False

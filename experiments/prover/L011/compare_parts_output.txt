@@ -1,0 +1,9 @@
+(20, 9, 7, 'slack', 1) prover G1 4 G2 4 falsifier 4 ALL EQUAL
+(19, 11, 7, 'slack', 2) prover G1 9 G2 9 falsifier 9 ALL EQUAL
+(20, 10, 7, 'slack', 3) prover G1 14 G2 14 falsifier 14 ALL EQUAL
+(17, 9, 6, 'slack', 3) prover G1 10 G2 10 falsifier 10 ALL EQUAL
+(16, 10, 6, 'slack', 2) prover G1 5 G2 5 falsifier 5 ALL EQUAL
+(18, 12, 7, 'slack', 1) prover G1 4 G2 4 falsifier 4 ALL EQUAL
+(21, 13, 8, 'slack', 1) prover G1 7 G2 7 falsifier 7 ALL EQUAL
+(20, 14, 8, 'slack', 0) prover G1 4 G2 4 falsifier 4 ALL EQUAL
+(19, 10, 7, 'slack', 0) prover G1 4 G2 4 falsifier 4 ALL EQUAL

@@ -1,0 +1,152 @@
+CELL (23, 13, 9, 2) classes=0 route=recurse secs=0.5 connected_hits=0
+  branch d=2 t'=8 S'=0: 5 decompositions, 0 inputs; ext_d: graphs=None bad_tau=None nodes=None hits_F7free=None hits_in_C=None
+      (22,11,8)                                                    inputs 0
+      (3,1,1) + (19,10,7)                                          inputs 0
+      (3,1,1) + (3,1,1) + (16,9,6)                                 inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (13,8,5)                       inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (10,7,4)             inputs 0
+CELL (23, 14, 9, 3) classes=0 route=recurse secs=2.9 connected_hits=0
+  branch d=2 t'=8 S'=2: 14 decompositions, 1 inputs; ext_d: graphs=1 bad_tau=0 nodes=84 hits_F7free=0 hits_in_C=0
+      (22,12,8)                                                    inputs 0
+      (11,6,4) + (11,6,4)                                          inputs 0
+      (9,4,3) + (13,8,5)                                           inputs 0
+      (8,5,3) + (14,7,5)                                           inputs 0
+      (6,3,2) + (16,9,6)                                           inputs 0
+      (3,1,1) + (19,11,7)                                          inputs 0
+      (3,1,1) + (9,4,3) + (10,7,4)                                 inputs 0
+      (3,1,1) + (8,5,3) + (11,6,4)                                 inputs 0
+      (3,1,1) + (6,3,2) + (13,8,5)                                 inputs 0
+      (3,1,1) + (3,1,1) + (16,10,6)                                inputs 0
+      (3,1,1) + (3,1,1) + (8,5,3) + (8,5,3)                        inputs 1
+      (3,1,1) + (3,1,1) + (6,3,2) + (10,7,4)                       inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (13,9,5)                       inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (10,8,4)             inputs 0
+  branch d=3 t'=8 S'=0: 5 decompositions, 4 inputs; ext_d: graphs=4 bad_tau=0 nodes=216017 hits_F7free=0 hits_in_C=0
+      (22,11,8)                                                    inputs 0
+      (3,1,1) + (19,10,7)                                          inputs 0
+      (3,1,1) + (3,1,1) + (16,9,6)                                 inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (13,8,5)                       inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (10,7,4)             inputs 4
+CELL (23, 20, 10, 3) classes=0 route=recurse secs=306.2 connected_hits=0
+  branch d=3 t'=9 S'=1: 4 decompositions, 864 inputs; ext_d: graphs=864 bad_tau=0 nodes=1385615 hits_F7free=84 hits_in_C=0
+      (22,17,9)                                                    inputs 37
+      (10,7,4) + (12,10,5)                                         inputs 596
+      (8,5,3) + (14,12,6)                                          inputs 4
+      (3,1,1) + (19,16,8)                                          inputs 227
+CELL (24, 12, 9, 2) classes=0 route=recurse secs=0.0 connected_hits=0
+  branch d=2 t'=8 S'=1: 4 decompositions, 1 inputs; ext_d: graphs=1 bad_tau=0 nodes=1271 hits_F7free=0 hits_in_C=0
+      (3,1,1) + (3,1,1) + (17,8,6)                                 inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (14,7,5)                       inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (11,6,4)             inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (8,5,3)    inputs 1
+CELL (24, 13, 9, 3) classes=0 route=recurse secs=0.1 connected_hits=0
+  branch d=2 t'=8 S'=3: 18 decompositions, 7 inputs; ext_d: graphs=7 bad_tau=0 nodes=3504 hits_F7free=0 hits_in_C=0
+      (23,11,8)                                                    inputs 0
+      (22,11,8) + (1,0,0)                                          inputs 0
+      (9,4,3) + (14,7,5)                                           inputs 0
+      (6,3,2) + (17,8,6)                                           inputs 0
+      (3,1,1) + (20,10,7)                                          inputs 0
+      (3,1,1) + (19,10,7) + (1,0,0)                                inputs 0
+      (3,1,1) + (9,4,3) + (11,6,4)                                 inputs 0
+      (3,1,1) + (6,3,2) + (14,7,5)                                 inputs 0
+      (3,1,1) + (3,1,1) + (17,9,6)                                 inputs 0
+      (3,1,1) + (3,1,1) + (16,9,6) + (1,0,0)                       inputs 0
+      (3,1,1) + (3,1,1) + (8,5,3) + (9,4,3)                        inputs 1
+      (3,1,1) + (3,1,1) + (6,3,2) + (11,6,4)                       inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (14,8,5)                       inputs 1
+      (3,1,1) + (3,1,1) + (3,1,1) + (13,8,5) + (1,0,0)             inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (6,3,2) + (8,5,3)              inputs 1
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (11,7,4)             inputs 4
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (10,7,4) + (1,0,0)   inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (8,6,3)    inputs 0
+  branch d=3 t'=8 S'=1: 4 decompositions, 2 inputs; ext_d: graphs=2 bad_tau=0 nodes=251142 hits_F7free=6 hits_in_C=0
+      (3,1,1) + (3,1,1) + (17,8,6)                                 inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (14,7,5)                       inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (11,6,4)             inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (8,5,3)    inputs 2
+CELL (24, 18, 10, 3) classes=0 route=recurse secs=3.8 connected_hits=0
+  branch d=3 t'=9 S'=0: 6 decompositions, 18 inputs; ext_d: graphs=18 bad_tau=0 nodes=412368 hits_F7free=0 hits_in_C=0
+      (23,15,9)                                                    inputs 0
+      (10,7,4) + (13,8,5)                                          inputs 0
+      (3,1,1) + (20,14,8)                                          inputs 0
+      (3,1,1) + (10,7,4) + (10,7,4)                                inputs 10
+      (3,1,1) + (3,1,1) + (17,13,7)                                inputs 6
+      (3,1,1) + (3,1,1) + (3,1,1) + (14,12,6)                      inputs 2
+CELL (25, 16, 10, 2) classes=0 route=recurse secs=0.4 connected_hits=0
+  branch d=2 t'=9 S'=1: 11 decompositions, 0 inputs; ext_d: graphs=None bad_tau=None nodes=None hits_F7free=None hits_in_C=None
+      (24,14,9)                                                    inputs 0
+      (11,6,4) + (13,8,5)                                          inputs 0
+      (10,7,4) + (14,7,5)                                          inputs 0
+      (8,5,3) + (16,9,6)                                           inputs 0
+      (3,1,1) + (21,13,8)                                          inputs 0
+      (3,1,1) + (10,7,4) + (11,6,4)                                inputs 0
+      (3,1,1) + (8,5,3) + (13,8,5)                                 inputs 0
+      (3,1,1) + (3,1,1) + (18,12,7)                                inputs 0
+      (3,1,1) + (3,1,1) + (8,5,3) + (10,7,4)                       inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (15,11,6)                      inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (12,10,5)            inputs 0
+CELL (25, 17, 10, 3) classes=0 route=recurse secs=4.9 connected_hits=0
+  branch d=3 t'=9 S'=1: 11 decompositions, 176 inputs; ext_d: graphs=176 bad_tau=0 nodes=3881429 hits_F7free=42 hits_in_C=0
+      (24,14,9)                                                    inputs 0
+      (11,6,4) + (13,8,5)                                          inputs 0
+      (10,7,4) + (14,7,5)                                          inputs 0
+      (8,5,3) + (16,9,6)                                           inputs 0
+      (3,1,1) + (21,13,8)                                          inputs 0
+      (3,1,1) + (10,7,4) + (11,6,4)                                inputs 0
+      (3,1,1) + (8,5,3) + (13,8,5)                                 inputs 0
+      (3,1,1) + (3,1,1) + (18,12,7)                                inputs 0
+      (3,1,1) + (3,1,1) + (8,5,3) + (10,7,4)                       inputs 8
+      (3,1,1) + (3,1,1) + (3,1,1) + (15,11,6)                      inputs 19
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (12,10,5)            inputs 149
+CELL (25, 22, 11, 3) classes=0 route=recurse secs=451.0 connected_hits=0
+  branch d=3 t'=10 S'=0: 3 decompositions, 8 inputs; ext_d: graphs=8 bad_tau=0 nodes=8510 hits_F7free=0 hits_in_C=0
+      (24,19,10)                                                   inputs 0
+      (10,7,4) + (14,12,6)                                         inputs 8
+      (3,1,1) + (21,18,9)                                          inputs 0
+CELL (26, 14, 10, 2) classes=0 route=recurse secs=0.1 connected_hits=0
+  branch d=2 t'=9 S'=0: 6 decompositions, 0 inputs; ext_d: graphs=None bad_tau=None nodes=None hits_F7free=None hits_in_C=None
+      (25,12,9)                                                    inputs 0
+      (3,1,1) + (22,11,8)                                          inputs 0
+      (3,1,1) + (3,1,1) + (19,10,7)                                inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (16,9,6)                       inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (13,8,5)             inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (10,7,4)   inputs 0
+CELL (26, 15, 10, 3) classes=0 route=recurse secs=0.9 connected_hits=0
+  branch d=2 t'=9 S'=2: 19 decompositions, 1 inputs; ext_d: graphs=1 bad_tau=0 nodes=314 hits_F7free=0 hits_in_C=0
+      (25,13,9)                                                    inputs 0
+      (11,6,4) + (14,7,5)                                          inputs 0
+      (9,4,3) + (16,9,6)                                           inputs 0
+      (8,5,3) + (17,8,6)                                           inputs 0
+      (6,3,2) + (19,10,7)                                          inputs 0
+      (3,1,1) + (22,12,8)                                          inputs 0
+      (3,1,1) + (11,6,4) + (11,6,4)                                inputs 0
+      (3,1,1) + (9,4,3) + (13,8,5)                                 inputs 0
+      (3,1,1) + (8,5,3) + (14,7,5)                                 inputs 0
+      (3,1,1) + (6,3,2) + (16,9,6)                                 inputs 0
+      (3,1,1) + (3,1,1) + (19,11,7)                                inputs 0
+      (3,1,1) + (3,1,1) + (9,4,3) + (10,7,4)                       inputs 0
+      (3,1,1) + (3,1,1) + (8,5,3) + (11,6,4)                       inputs 0
+      (3,1,1) + (3,1,1) + (6,3,2) + (13,8,5)                       inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (16,10,6)                      inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (8,5,3) + (8,5,3)              inputs 1
+      (3,1,1) + (3,1,1) + (3,1,1) + (6,3,2) + (10,7,4)             inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (13,9,5)             inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (10,8,4)   inputs 0
+  branch d=3 t'=9 S'=0: 6 decompositions, 4 inputs; ext_d: graphs=4 bad_tau=0 nodes=543795 hits_F7free=0 hits_in_C=0
+      (25,12,9)                                                    inputs 0
+      (3,1,1) + (22,11,8)                                          inputs 0
+      (3,1,1) + (3,1,1) + (19,10,7)                                inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (16,9,6)                       inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (13,8,5)             inputs 0
+      (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (3,1,1) + (10,7,4)   inputs 4
+CELL (26, 21, 11, 3) classes=0 route=recurse secs=258.8 connected_hits=0
+  branch d=3 t'=10 S'=1: 9 decompositions, 952 inputs; ext_d: graphs=952 bad_tau=0 nodes=8721467 hits_F7free=120 hits_in_C=0
+      (25,18,10)                                                   inputs 0
+      (12,10,5) + (13,8,5)                                         inputs 0
+      (11,6,4) + (14,12,6)                                         inputs 0
+      (10,7,4) + (15,11,6)                                         inputs 76
+      (8,5,3) + (17,13,7)                                          inputs 12
+      (3,1,1) + (22,17,9)                                          inputs 37
+      (3,1,1) + (10,7,4) + (12,10,5)                               inputs 596
+      (3,1,1) + (8,5,3) + (14,12,6)                                inputs 4
+      (3,1,1) + (3,1,1) + (19,16,8)                                inputs 227
