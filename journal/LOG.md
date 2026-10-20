@@ -435,3 +435,6 @@ Format for each work block:
 
 ## 2026-10-20T20:14Z journal PR #5 merged into main (873b2a5): C003/K59 and the submitted L015 are on main
 - https://github.com/hturcotte1/Erdos-757/pull/5 (branch at 7aebd48 -> main, merge commit 873b2a5). The PR body states the provenance (community construction, verified here). L015's referee outcome will follow in a later pull request.
+
+## 2026-10-20T20:18Z journal status.sh (run of 19:43 UTC, 35 min): clauses A,C satisfied; GOAL_MET NO only because 4 files were uncommitted at that moment
+- Block: claims_total 3 (pass 3), best_judged_ratio 37/65 [C003-reader-5-9-K6], new_record_claims C003 latest_referee 'VERDICT: ACCEPT', upper_bound_success YES, lower_bound_success NO, final_report present, clauses_satisfied A,C, integrity_ok YES. Reminder for the reader of the GOAL-STATUS block: clause (A) is met by a COMMUNITY construction (the reader's family; C003) that this run rebuilt, judged and refereed, not by a construction of this project (results/FINAL_REPORT.md section 8). A fresh run on the clean tree is in progress.
