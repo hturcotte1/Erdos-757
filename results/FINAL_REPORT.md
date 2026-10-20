@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report of the autonomous run (2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC)
 
-Last updated: 2026-10-20 16:15 UTC (48-hour extension granted by the user after the 72-hour budget, 2026-10-17/18; the extension results are R13 and section 7: certificates L007–L013 ACCEPTED by three referees each, K51–K57; certificate L014 (f(23) = 14) submitted 2026-10-18 00:30 UTC and in referee review; this branch state is merged into main by pull request #3 on 2026-10-20, and L014's outcome follows in a later pull request). The run's clauses: (A) a refereed record set; (B) a refereed
+Last updated: 2026-10-20 16:15 UTC (48-hour extension granted by the user after the 72-hour budget, 2026-10-17/18; the extension results are R13 and section 7: certificates L007–L013 ACCEPTED by three referees each, K51–K57; certificate L014 (f(23) = 14) submitted 2026-10-18 00:30 UTC and in referee review; this branch state is merged into main by pull request #3 on 2026-10-20, and L014's outcome follows in a later pull request). Status of the goal clauses: (A) no new record set; (B) no new
 lower-bound proof; (C) the budget ends at 23:06 UTC with this report in place. The published bounds
 $9/17\le c_*\le4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set $A_{\rm base}$) are unchanged.
 
