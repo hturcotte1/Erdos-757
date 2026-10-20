@@ -1,0 +1,33 @@
+K= 0 |I_K|= 11 |T_K|=  7 (7+5K=  7) subset=True sidon=True(distinct sums 28) 3AP-free=True selfsim=True 0.0s
+K= 1 |I_K|= 20 |T_K|= 12 (7+5K= 12) subset=True sidon=True(distinct sums 78) 3AP-free=True selfsim=True 0.0s
+K= 2 |I_K|= 29 |T_K|= 17 (7+5K= 17) subset=True sidon=True(distinct sums 153) 3AP-free=True selfsim=True 0.0s
+K= 3 |I_K|= 38 |T_K|= 22 (7+5K= 22) subset=True sidon=True(distinct sums 253) 3AP-free=True selfsim=True 0.0s
+K= 4 |I_K|= 47 |T_K|= 27 (7+5K= 27) subset=True sidon=True(distinct sums 378) 3AP-free=True selfsim=True 0.0s
+K= 5 |I_K|= 56 |T_K|= 32 (7+5K= 32) subset=True sidon=True(distinct sums 528) 3AP-free=True selfsim=True 0.0s
+K= 6 |I_K|= 65 |T_K|= 37 (7+5K= 37) subset=True sidon=True(distinct sums 703) 3AP-free=True selfsim=True 0.0s
+K= 7 |I_K|= 74 |T_K|= 42 (7+5K= 42) subset=True sidon=True(distinct sums 903) 3AP-free=True selfsim=True 0.0s
+K= 8 |I_K|= 83 |T_K|= 47 (7+5K= 47) subset=True sidon=True(distinct sums 1128) 3AP-free=True selfsim=True 0.0s
+K= 9 |I_K|= 92 |T_K|= 52 (7+5K= 52) subset=True sidon=True(distinct sums 1378) 3AP-free=True selfsim=True 0.0s
+K=10 |I_K|=101 |T_K|= 57 (7+5K= 57) subset=True sidon=True(distinct sums 1653) 3AP-free=True selfsim=True 0.0s
+K=11 |I_K|=110 |T_K|= 62 (7+5K= 62) subset=True sidon=True(distinct sums 1953) 3AP-free=True selfsim=True 0.0s
+K=12 |I_K|=119 |T_K|= 67 (7+5K= 67) subset=True sidon=True(distinct sums 2278) 3AP-free=True selfsim=True 0.0s
+K=13 |I_K|=128 |T_K|= 72 (7+5K= 72) subset=True sidon=True(distinct sums 2628) 3AP-free=None selfsim=True 0.0s
+K=14 |I_K|=137 |T_K|= 77 (7+5K= 77) subset=True sidon=True(distinct sums 3003) 3AP-free=None selfsim=True 0.0s
+K=15 |I_K|=146 |T_K|= 82 (7+5K= 82) subset=True sidon=True(distinct sums 3403) 3AP-free=None selfsim=True 0.0s
+K=16 |I_K|=155 |T_K|= 87 (7+5K= 87) subset=True sidon=True(distinct sums 3828) 3AP-free=None selfsim=True 0.0s
+K=17 |I_K|=164 |T_K|= 92 (7+5K= 92) subset=True sidon=True(distinct sums 4278) 3AP-free=None selfsim=True 0.0s
+K=18 |I_K|=173 |T_K|= 97 (7+5K= 97) subset=True sidon=True(distinct sums 4753) 3AP-free=None selfsim=True 0.0s
+K=19 |I_K|=182 |T_K|=102 (7+5K=102) subset=True sidon=True(distinct sums 5253) 3AP-free=None selfsim=True 0.0s
+K=20 |I_K|=191 |T_K|=107 (7+5K=107) subset=True sidon=True(distinct sums 5778) 3AP-free=None selfsim=True 0.0s
+K=21 |I_K|=200 |T_K|=112 (7+5K=112) subset=True sidon=True(distinct sums 6328) 3AP-free=None selfsim=True 0.0s
+K=22 |I_K|=209 |T_K|=117 (7+5K=117) subset=True sidon=True(distinct sums 6903) 3AP-free=None selfsim=True 0.0s
+K=23 |I_K|=218 |T_K|=122 (7+5K=122) subset=True sidon=True(distinct sums 7503) 3AP-free=None selfsim=True 0.0s
+K=24 |I_K|=227 |T_K|=127 (7+5K=127) subset=True sidon=True(distinct sums 8128) 3AP-free=None selfsim=True 0.0s
+K=25 |I_K|=236 |T_K|=132 (7+5K=132) subset=True sidon=True(distinct sums 8778) 3AP-free=None selfsim=True 0.0s
+K=26 |I_K|=245 |T_K|=137 (7+5K=137) subset=True sidon=True(distinct sums 9453) 3AP-free=None selfsim=True 0.0s
+K=27 |I_K|=254 |T_K|=142 (7+5K=142) subset=True sidon=True(distinct sums 10153) 3AP-free=None selfsim=True 0.0s
+K=28 |I_K|=263 |T_K|=147 (7+5K=147) subset=True sidon=True(distinct sums 10878) 3AP-free=None selfsim=True 0.0s
+K=29 |I_K|=272 |T_K|=152 (7+5K=152) subset=True sidon=True(distinct sums 11628) 3AP-free=None selfsim=True 0.0s
+K=30 |I_K|=281 |T_K|=157 (7+5K=157) subset=True sidon=True(distinct sums 12403) 3AP-free=None selfsim=True 0.0s
+ALL WITNESS CHECKS OK (K<=30)
+r5 exit=0

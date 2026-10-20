@@ -1,0 +1,14 @@
+K=11 n=110 copies_ok=True levels_ok=True ordered_quads=432 classes=108 four_point=0 bad=0 AP_sets==pred=True edges=108 linear=True saturated=True maxdeg=4 -> OK
+K=12 n=119 copies_ok=True levels_ok=True ordered_quads=468 classes=117 four_point=0 bad=0 AP_sets==pred=True edges=117 linear=True saturated=True maxdeg=4 -> OK
+K=13 n=128 copies_ok=True levels_ok=True ordered_quads=504 classes=126 four_point=0 bad=0 AP_sets==pred=True edges=126 linear=True saturated=True maxdeg=4 -> OK
+K=14 n=137 copies_ok=True levels_ok=True ordered_quads=540 classes=135 four_point=0 bad=0 AP_sets==pred=True edges=135 linear=True saturated=True maxdeg=4 -> OK
+K=15 n=146 copies_ok=True levels_ok=True ordered_quads=576 classes=144 four_point=0 bad=0 AP_sets==pred=True edges=144 linear=True saturated=True maxdeg=4 -> OK
+K=16 n=155 copies_ok=True levels_ok=True ordered_quads=612 classes=153 four_point=0 bad=0 AP_sets==pred=True edges=153 linear=True saturated=True maxdeg=4 -> OK
+K=17 n=164 copies_ok=True levels_ok=True ordered_quads=648 classes=162 four_point=0 bad=0 AP_sets==pred=True edges=162 linear=True saturated=True maxdeg=4 -> OK
+K=18 n=173 copies_ok=True levels_ok=True ordered_quads=684 classes=171 four_point=0 bad=0 AP_sets==pred=True edges=171 linear=True saturated=True maxdeg=4 -> OK
+K=19 n=182 copies_ok=True levels_ok=True ordered_quads=720 classes=180 four_point=0 bad=0 AP_sets==pred=True edges=180 linear=True saturated=True maxdeg=4 -> OK
+K=20 n=191 copies_ok=True levels_ok=True ordered_quads=756 classes=189 four_point=0 bad=0 AP_sets==pred=True edges=189 linear=True saturated=True maxdeg=4 -> OK
+K=25 n=236 copies_ok=True levels_ok=True ordered_quads=936 classes=234 four_point=0 bad=0 AP_sets==pred=True edges=234 linear=True saturated=True maxdeg=4 -> OK
+K=30 n=281 copies_ok=True levels_ok=True ordered_quads=1116 classes=279 four_point=0 bad=0 AP_sets==pred=True edges=279 linear=True saturated=True maxdeg=4 -> OK
+K=40 n=371 copies_ok=True levels_ok=True ordered_quads=1476 classes=369 four_point=0 bad=0 AP_sets==pred=True edges=369 linear=True saturated=True maxdeg=4 -> OK
+ALL R2 CENSUS OK

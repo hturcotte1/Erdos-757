@@ -4,8 +4,10 @@ by absolute path).
  (1) census: planting one point p = a + b - c (a, b, c from three different copies of S_3) must create a relation on
      4 distinct points, which the census must report;
  (2) literal 4-subset test: {2,3,5,8,...} style controls: {1,2,3,5} must FAIL (|B-B| = 9 < 11), {0,1,3,7} passes;
- (3) generic solver: h(A_base) = 8 (Ma-Tang's 14-point set), h of the third 12-point record = 7, h({1..9}) = 5
-     (largest 3-AP-free subset of {1..9} has 5 points: e.g. {1,2,4,8,9}).
+ (3) generic solver: h(A_base) = 8 (Ma-Tang's 14-point set), h of the third 12-point record = 7, alpha_AP({1..9}) = 5
+     (the independence number of the 3-AP hypergraph, = r_3(9): the largest 3-AP-free subset of {1..9} has 5 points,
+     e.g. {1,2,4,8,9}; this is NOT h: {1..9} is not weak Sidon and its largest Sidon subset has 4 points; the printed
+     label "h({1..9})" in v7_controls_output.txt is kept unchanged).
 Run:  python3 -I v7_controls.py
 """
 import sys

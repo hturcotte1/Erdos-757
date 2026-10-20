@@ -1,0 +1,16 @@
+random sets: 300 trials, mismatches: 0
+A_base                   n=14 h: DP=8 SAT=8 brute=8 expected=8 OK
+12pt#3                   n=12 h: DP=7 SAT=7 brute=7 expected=7 OK
+small_records[8]         n= 8 h: DP=5 SAT=5 brute=5 expected=5 OK
+small_records[10]        n=10 h: DP=6 SAT=6 brute=6 expected=6 OK
+small_records[11]        n=11 h: DP=7 SAT=7 brute=7 expected=7 OK
+small_records[12]        n=12 h: DP=7 SAT=7 brute=7 expected=7 OK
+small_records[14]        n=14 h: DP=8 SAT=8 brute=8 expected=8 OK
+small_records[12b]       n=12 h: DP=7 SAT=7 brute=7 expected=7 OK
+small_records[12c]       n=12 h: DP=7 SAT=7 brute=7 expected=7 OK
+Fib F3..F10              n= 8 h: DP=6 SAT=6 brute=6 expected=None OK
+Fib F3..F12              n=10 h: DP=7 SAT=7 brute=7 expected=None OK
+Fib F3..F14              n=12 h: DP=8 SAT=8 brute=8 expected=None OK
+Fib F3..F16              n=14 h: DP=9 SAT=9 brute=9 expected=None OK
+Fib F3..F18              n=16 h: DP=10 SAT=10 brute=10 expected=None OK
+ALL SELFTESTS OK

@@ -53,7 +53,7 @@
   "max_level_span_of_an_AP": 1,
   "min_|B-B|_over_4-subsets": 11,
   "number_of_4-subsets": 23751,
-  "sec": 0.1,
+  "sec": 0.0,
   "all_ok": true
  },
  {
@@ -72,7 +72,7 @@
   "max_level_span_of_an_AP": 1,
   "min_|B-B|_over_4-subsets": 11,
   "number_of_4-subsets": 73815,
-  "sec": 0.2,
+  "sec": 0.1,
   "all_ok": true
  },
  {
@@ -91,7 +91,7 @@
   "max_level_span_of_an_AP": 1,
   "min_|B-B|_over_4-subsets": 11,
   "number_of_4-subsets": 178365,
-  "sec": 0.6,
+  "sec": 0.3,
   "all_ok": true
  },
  {
@@ -110,7 +110,7 @@
   "max_level_span_of_an_AP": 1,
   "min_|B-B|_over_4-subsets": 11,
   "number_of_4-subsets": 367290,
-  "sec": 1.4,
+  "sec": 0.4,
   "all_ok": true
  },
  {
@@ -129,7 +129,7 @@
   "max_level_span_of_an_AP": 1,
   "min_|B-B|_over_4-subsets": 11,
   "number_of_4-subsets": 677040,
-  "sec": 2.5,
+  "sec": 0.8,
   "all_ok": true
  },
  {
@@ -148,7 +148,7 @@
   "max_level_span_of_an_AP": 1,
   "min_|B-B|_over_4-subsets": 11,
   "number_of_4-subsets": 1150626,
-  "sec": 3.7,
+  "sec": 1.3,
   "all_ok": true
  },
  {
@@ -167,7 +167,7 @@
   "max_level_span_of_an_AP": 1,
   "min_|B-B|_over_4-subsets": 11,
   "number_of_4-subsets": 1837620,
-  "sec": 5.9,
+  "sec": 2.1,
   "all_ok": true
  },
  {
@@ -286,7 +286,7 @@
   "nonconsecutive_copies_disjoint": true,
   "levels_as_in_Step1": true,
   "max_level_span_of_an_AP": 1,
-  "sec": 0.1,
+  "sec": 0.0,
   "all_ok": true
  },
  {
@@ -303,7 +303,7 @@
   "nonconsecutive_copies_disjoint": true,
   "levels_as_in_Step1": true,
   "max_level_span_of_an_AP": 1,
-  "sec": 0.2,
+  "sec": 0.1,
   "all_ok": true
  },
  {
@@ -320,7 +320,7 @@
   "nonconsecutive_copies_disjoint": true,
   "levels_as_in_Step1": true,
   "max_level_span_of_an_AP": 1,
-  "sec": 0.5,
+  "sec": 0.1,
   "all_ok": true
  }
 ]

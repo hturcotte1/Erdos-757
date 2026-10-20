@@ -1,0 +1,80 @@
+OK   F0 11 distinct sorted integers
+OK   F0 min 0 max 269
+OK   F0 interior in [49,159], 9 points
+OK   F1 269 prime
+OK   F1 269 does not divide 18, 251
+OK   F1 27169 = 101*269
+OK   F1 L not an integer
+OK   F1 L = 101/(1-r)
+OK   F2 phi(L) = L
+OK   F2 phi(x) = L + r(x-L) (integers -300..599)
+OK   F2 phi(0)=101, phi(269)=119
+OK   F3 y(x) = 251(x-L)
+OK   F3 y(x) != 0 on O
+OK   F3 y(x) = 251x mod 269
+OK   F3 269 | y(x) iff x in {0,269}
+OK   F3 y(0), y(269)
+OK   F3 269^2 divides neither
+OK   F4 66 sums x+y with x<=y
+OK   F4 exactly 9 repeated sums, each exactly twice
+OK   F4 repeated sum 98 is a doubled middle: [(0, 98), (49, 49)]
+OK   F4 repeated sum 150 is a doubled middle: [(49, 101), (75, 75)]
+OK   F4 repeated sum 166 is a doubled middle: [(49, 117), (83, 83)]
+OK   F4 repeated sum 318 is a doubled middle: [(49, 269), (159, 159)]
+OK   F4 repeated sum 196 is a doubled middle: [(75, 121), (98, 98)]
+OK   F4 repeated sum 234 is a doubled middle: [(75, 159), (117, 117)]
+OK   F4 repeated sum 202 is a doubled middle: [(83, 119), (101, 101)]
+OK   F4 repeated sum 242 is a doubled middle: [(83, 159), (121, 121)]
+OK   F4 repeated sum 238 is a doubled middle: [(117, 121), (119, 119)]
+OK   F4 E(O) = the nine listed APs (from sums and from triples)
+OK   F4 the nine repeated sums as listed
+OK   F4 middles = interior points, one each
+OK   F4 pairwise intersections <= 1
+OK   F4 no edge contains both 0 and 269
+OK   F4 exactly 36 ordered relation tuples in O (9 relations x 4 symmetries), all AP relations
+OK   F5(i)
+OK   F5(ii) (a=b allowed)
+OK   F5(iii)
+OK   F5(iv) solutions = {(49,49,98),(159,159,49)}: [(49, 49, 98), (159, 159, 49)]
+OK   F5(iv) fourth point 2x1-x3 in {0,269}
+OK   F5(iv) sign pattern (1, 1, -1) -> 2 solutions
+OK   F5(iv) sign pattern (1, -1, 1) -> 2 solutions
+OK   F5(iv) sign pattern (-1, 1, 1) -> 2 solutions
+OK   F5(iv) sign pattern (-1, -1, 1) -> 2 solutions
+OK   F5(iv) sign pattern (-1, 1, -1) -> 2 solutions
+OK   F5(iv) sign pattern (1, -1, -1) -> 2 solutions
+OK   F6 hits = [(1, 0, 101), (1, 269, 119)]
+OK   Lemma 1.2 numerically for d<=40
+OK   5.2 admissible (E(O)-free) == Sidon for every subset of O
+OK   831 Sidon subsets of O (incl. empty): 831
+best = [[5, 6, 6, 6], [5, 6, 6, 6], [5, 6, 6, 6], [6, 7, 7, 7]]
+OK   5.5 best table
+M = [[5, 6, 6, 6], [4, 5, 5, 5], [4, 5, 5, 5], [4, 5, 5, 5]] R0 = [6, 7, 7, 7]
+OK   5.5 M
+OK   5.5 R0
+OK   5.5 R0 (x) M = R0 + 5: [11, 12, 12, 12]
+OK   R_K = R0 + 5K for K <= 200 (max R_K = 7+5K)
+OK   5.6 (a) W=O: tau_W = 4 (claimed >= 4), edges inside W = 9, so |U| <= 7
+OK   5.6 (b) W=O\{101,119}: tau_W = 3 (claimed >= 3), edges inside W = 6, so |U| <= 6
+OK   5.6 (c) W=O\{0}: tau_W = 4 (claimed >= 4), edges inside W = 8, so |U| <= 6
+OK   5.6 (c') W=O\{269}: tau_W = 4 (claimed >= 4), edges inside W = 8, so |U| <= 6
+OK   5.6 (d) W=O\{0,101,119}: tau_W = 3 (claimed >= 3), edges inside W = 5, so |U| <= 5
+OK   5.6 (d') W=O\{101,119,269}: tau_W = 3 (claimed >= 3), edges inside W = 5, so |U| <= 5
+OK   5.6 (b) W=O\{101,119} edge list e1 e3 e4 e5 e6 e8
+OK   5.6 (c) W=O\{0} edge list e2 e3 e4 e5 e6 e7 e8 e9
+OK   5.6 (c') W=O\{269} edge list e1 e2 e3 e5 e6 e7 e8 e9
+OK   5.6 (d) W=O\{0,101,119} edge list e3 e4 e5 e6 e8
+OK   5.6 (d') W=O\{101,119,269} edge list e1 e3 e5 e6 e8
+OK   (a) max admissible |U| = 7
+OK   (b) max |U| with 101,119 not in U = 6
+OK   (c) max |U| with 0 not in U = 6
+OK   (c') max |U| with 269 not in U = 6
+OK   (d) = 5
+OK   (d') = 5
+OK   5.4 all subsets of {0,101,119,269} admissible
+OK   5.4 only e7 meets {0,101,119,269} twice
+OK   6.1 U* admissible / Sidon
+OK   6.1 |U*|=7, a=b=(1,1)
+6.1 points of each edge missing from U*: {'e1': [49], 'e2': [49, 75], 'e3': [49, 83], 'e4': [49], 'e5': [75, 121], 'e6': [75], 'e7': [83], 'e8': [83, 121], 'e9': [121]}
+
+ALL FACTS OK

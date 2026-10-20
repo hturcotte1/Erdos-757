@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""L015 / C1: every finite fact about O, phi and the residues mod 269 used in Steps 1-3 of
+"""L015 / C1: every finite fact about O, phi and the residues mod 269 used in Steps 1-5 of
 results/proofs/L015-reader-family-c-le-5-9.md.  Written for L015 (no code shared with
 experiments/20261020-1730-reader-5-9/).  Exact integers and Fractions only.
 Run:  python3 -I v1_facts_O.py

@@ -1,0 +1,22 @@
+K= 0 n= 11 repeated differences=  9 (class sizes [2]) disjoint-pair classes=0 3-APs=9 (9(K+1)=9) OK
+K= 1 n= 20 repeated differences= 18 (class sizes [2]) disjoint-pair classes=0 3-APs=18 (9(K+1)=18) OK
+K= 2 n= 29 repeated differences= 27 (class sizes [2]) disjoint-pair classes=0 3-APs=27 (9(K+1)=27) OK
+K= 3 n= 38 repeated differences= 36 (class sizes [2]) disjoint-pair classes=0 3-APs=36 (9(K+1)=36) OK
+K= 4 n= 47 repeated differences= 45 (class sizes [2]) disjoint-pair classes=0 3-APs=45 (9(K+1)=45) OK
+K= 5 n= 56 repeated differences= 54 (class sizes [2]) disjoint-pair classes=0 3-APs=54 (9(K+1)=54) OK
+K= 6 n= 65 repeated differences= 63 (class sizes [2]) disjoint-pair classes=0 3-APs=63 (9(K+1)=63) OK
+K= 7 n= 74 repeated differences= 72 (class sizes [2]) disjoint-pair classes=0 3-APs=72 (9(K+1)=72) OK
+K= 8 n= 83 repeated differences= 81 (class sizes [2]) disjoint-pair classes=0 3-APs=81 (9(K+1)=81) OK
+K= 9 n= 92 repeated differences= 90 (class sizes [2]) disjoint-pair classes=0 3-APs=90 (9(K+1)=90) OK
+K=10 n=101 repeated differences= 99 (class sizes [2]) disjoint-pair classes=0 3-APs=99 (9(K+1)=99) OK
+K=11 n=110 repeated differences=108 (class sizes [2]) disjoint-pair classes=0 3-APs=108 (9(K+1)=108) OK
+K=12 n=119 repeated differences=117 (class sizes [2]) disjoint-pair classes=0 3-APs=117 (9(K+1)=117) OK
+K=13 n=128 repeated differences=126 (class sizes [2]) disjoint-pair classes=0 3-APs=126 (9(K+1)=126) OK
+K=14 n=137 repeated differences=135 (class sizes [2]) disjoint-pair classes=0 3-APs=135 (9(K+1)=135) OK
+K=15 n=146 repeated differences=144 (class sizes [2]) disjoint-pair classes=0 3-APs=144 (9(K+1)=144) OK
+K=16 n=155 repeated differences=153 (class sizes [2]) disjoint-pair classes=0 3-APs=153 (9(K+1)=153) OK
+K=17 n=164 repeated differences=162 (class sizes [2]) disjoint-pair classes=0 3-APs=162 (9(K+1)=162) OK
+K=18 n=173 repeated differences=171 (class sizes [2]) disjoint-pair classes=0 3-APs=171 (9(K+1)=171) OK
+K=19 n=182 repeated differences=180 (class sizes [2]) disjoint-pair classes=0 3-APs=180 (9(K+1)=180) OK
+K=20 n=191 repeated differences=189 (class sizes [2]) disjoint-pair classes=0 3-APs=189 (9(K+1)=189) OK
+ALL DIFFERENCE-CENSUS CHECKS OK (K<=20)

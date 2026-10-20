@@ -1,0 +1,23 @@
+K=0 n=11 forbidden sets=9 (sizes [3]) | cadical/totalizer >=7: SAT(size 7, sidon True), >=8: UNSAT [0.0s] | glucose/seqcounter >=7: SAT(sidon True), >=8: UNSAT [0.0s] | CP-SAT: OPTIMAL value=7 [0.0s] | DFS=7
+K=1 n=20 forbidden sets=18 (sizes [3]) | cadical/totalizer >=12: SAT(size 12, sidon True), >=13: UNSAT [0.0s] | glucose/seqcounter >=12: SAT(sidon True), >=13: UNSAT [0.0s] | CP-SAT: OPTIMAL value=12 [0.0s] | DFS=12
+K=2 n=29 forbidden sets=27 (sizes [3]) | cadical/totalizer >=17: SAT(size 17, sidon True), >=18: UNSAT [0.0s] | glucose/seqcounter >=17: SAT(sidon True), >=18: UNSAT [0.0s] | CP-SAT: OPTIMAL value=17 [0.2s] | DFS=None
+K=3 n=38 forbidden sets=36 (sizes [3]) | cadical/totalizer >=22: SAT(size 22, sidon True), >=23: UNSAT [0.0s] | glucose/seqcounter >=22: SAT(sidon True), >=23: UNSAT [0.0s] | CP-SAT: OPTIMAL value=22 [11.0s] | DFS=None
+K=4 n=47 forbidden sets=45 (sizes [3]) | cadical/totalizer >=27: SAT(size 27, sidon True), >=28: UNSAT [0.0s] | glucose/seqcounter >=27: SAT(sidon True), >=28: UNSAT [0.0s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=5 n=56 forbidden sets=54 (sizes [3]) | cadical/totalizer >=32: SAT(size 32, sidon True), >=33: UNSAT [0.1s] | glucose/seqcounter >=32: SAT(sidon True), >=33: UNSAT [0.0s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=6 n=65 forbidden sets=63 (sizes [3]) | cadical/totalizer >=37: SAT(size 37, sidon True), >=38: UNSAT [0.2s] | glucose/seqcounter >=37: SAT(sidon True), >=38: UNSAT [0.0s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=7 n=74 forbidden sets=72 (sizes [3]) | cadical/totalizer >=42: SAT(size 42, sidon True), >=43: UNSAT [0.1s] | glucose/seqcounter >=42: SAT(sidon True), >=43: UNSAT [0.1s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=8 n=83 forbidden sets=81 (sizes [3]) | cadical/totalizer >=47: SAT(size 47, sidon True), >=48: UNSAT [0.2s] | glucose/seqcounter >=47: SAT(sidon True), >=48: UNSAT [0.1s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=9 n=92 forbidden sets=90 (sizes [3]) | cadical/totalizer >=52: SAT(size 52, sidon True), >=53: UNSAT [0.4s] | glucose/seqcounter >=52: SAT(sidon True), >=53: UNSAT [0.1s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=10 n=101 forbidden sets=99 (sizes [3]) | cadical/totalizer >=57: SAT(size 57, sidon True), >=58: UNSAT [0.5s] | glucose/seqcounter >=57: SAT(sidon True), >=58: UNSAT [0.1s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=11 n=110 forbidden sets=108 (sizes [3]) | cadical/totalizer >=62: SAT(size 62, sidon True), >=63: UNSAT [1.2s] | glucose/seqcounter >=62: SAT(sidon True), >=63: UNSAT [0.2s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=12 n=119 forbidden sets=117 (sizes [3]) | cadical/totalizer >=67: SAT(size 67, sidon True), >=68: UNSAT [0.7s] | glucose/seqcounter >=67: SAT(sidon True), >=68: UNSAT [0.2s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=13 n=128 forbidden sets=126 (sizes [3]) | cadical/totalizer >=72: SAT(size 72, sidon True), >=73: UNSAT [2.4s] | glucose/seqcounter >=72: SAT(sidon True), >=73: UNSAT [0.3s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=14 n=137 forbidden sets=135 (sizes [3]) | cadical/totalizer >=77: SAT(size 77, sidon True), >=78: UNSAT [1.9s] | glucose/seqcounter >=77: SAT(sidon True), >=78: UNSAT [0.3s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=15 n=146 forbidden sets=144 (sizes [3]) | cadical/totalizer >=82: SAT(size 82, sidon True), >=83: UNSAT [3.0s] | glucose/seqcounter >=82: SAT(sidon True), >=83: UNSAT [0.4s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=16 n=155 forbidden sets=153 (sizes [3]) | cadical/totalizer >=87: SAT(size 87, sidon True), >=88: UNSAT [10.0s] | glucose/seqcounter >=87: SAT(sidon True), >=88: UNSAT [0.6s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=17 n=164 forbidden sets=162 (sizes [3]) | cadical/totalizer >=92: SAT(size 92, sidon True), >=93: UNSAT [2.6s] | glucose/seqcounter >=92: SAT(sidon True), >=93: UNSAT [0.6s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=18 n=173 forbidden sets=171 (sizes [3]) | cadical/totalizer >=97: SAT(size 97, sidon True), >=98: UNSAT [8.3s] | glucose/seqcounter >=97: SAT(sidon True), >=98: UNSAT [0.7s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=19 n=182 forbidden sets=180 (sizes [3]) | cadical/totalizer >=102: SAT(size 102, sidon True), >=103: UNSAT [12.1s] | glucose/seqcounter >=102: SAT(sidon True), >=103: UNSAT [0.8s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+K=20 n=191 forbidden sets=189 (sizes [3]) | cadical/totalizer >=107: SAT(size 107, sidon True), >=108: UNSAT [14.6s] | glucose/seqcounter >=107: SAT(sidon True), >=108: UNSAT [1.0s] | CP-SAT: skipped value=None [0.0s] | DFS=None
+ALL h CHECKS OK: h(I_K) = 7+5K for K<=20
+r4(K20) exit=0

@@ -1,0 +1,22 @@
+K= 0 n= 11 relations=  9 (9(K+1)=  9) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K= 1 n= 20 relations= 18 (9(K+1)= 18) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K= 2 n= 29 relations= 27 (9(K+1)= 27) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K= 3 n= 38 relations= 36 (9(K+1)= 36) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K= 4 n= 47 relations= 45 (9(K+1)= 45) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K= 5 n= 56 relations= 54 (9(K+1)= 54) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K= 6 n= 65 relations= 63 (9(K+1)= 63) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K= 7 n= 74 relations= 72 (9(K+1)= 72) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K= 8 n= 83 relations= 81 (9(K+1)= 81) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K= 9 n= 92 relations= 90 (9(K+1)= 90) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K=10 n=101 relations= 99 (9(K+1)= 99) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K=11 n=110 relations=108 (9(K+1)=108) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K=12 n=119 relations=117 (9(K+1)=117) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K=13 n=128 relations=126 (9(K+1)=126) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K=14 n=137 relations=135 (9(K+1)=135) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K=15 n=146 relations=144 (9(K+1)=144) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K=16 n=155 relations=153 (9(K+1)=153) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K=17 n=164 relations=162 (9(K+1)=162) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K=18 n=173 relations=171 (9(K+1)=171) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K=19 n=182 relations=180 (9(K+1)=180) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+K=20 n=191 relations=189 (9(K+1)=189) all AP, cross-copy=0, linear, saturated, maxdeg=4, integer form OK
+ALL FAMILY CHECKS OK (K<=20)

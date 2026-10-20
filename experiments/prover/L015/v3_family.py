@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """L015 / C3: S_K in exact integers, compared with the agent's data and with C003; point count, copy
 intersections and levels (Step 1); the complete relation census a+b=c+d of S_K for a list of K (a consistency
-check of Step 2, not part of the proof); the AP hypergraph, its linearity, and the literal 4-subset test
-|B-B| >= 11 (Step 3) for K <= KLIT.
+check of Step 2, not part of the proof); the AP hypergraph and its linearity (Step 3), and the literal 4-subset test
+|B-B| >= 11 (Step 4) for K <= KLIT.
 Integers: N_j(x) := 269^j * phi^j(x) satisfies N_0(x) = x, N_j(x) = 101*269^j + 18*N_{j-1}(x); the integer form of S_K is
 I_K = { 269^(K-j) N_j(x) : 0 <= j <= K, x in O } = 269^K * S_K.   (Own code; no file of the agent's is imported.)
 Run:  python3 -I v3_family.py KLIT K1 K2 ...      (census for K1, K2, ...; 4-subset test for K <= KLIT)

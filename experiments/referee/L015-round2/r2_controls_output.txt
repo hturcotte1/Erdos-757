@@ -1,0 +1,5 @@
+baseline K=3: classes, four-point = (36, 0)  min|B-B| = 11
+planted p=a+b-c: classes=37 four-point=1 min|B-B|=9
+planted q=2a-c: classes=38 four-point=1 min|B-B|=9
+small controls: min|B-B| for {1,2,3,5}: 9  for {0,1,3,7}: 13
+CONTROLS OK
