@@ -1,0 +1,9 @@
+{
+ "K": 8,
+ "n": 83,
+ "status": "FEASIBLE",
+ "obj": 47,
+ "bound": 55,
+ "wall": 3000.0,
+ "witness_is_sidon_by_definition": true
+}

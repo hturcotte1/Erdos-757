@@ -1,0 +1,12 @@
+{
+ "ge38": {
+  "status": "UNKNOWN",
+  "time_s": 900.0,
+  "model_verified": null
+ },
+ "ge37": {
+  "status": "OPTIMAL",
+  "time_s": 2.7,
+  "model_verified": true
+ }
+}

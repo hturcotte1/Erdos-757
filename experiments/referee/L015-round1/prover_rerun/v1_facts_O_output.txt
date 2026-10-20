@@ -1,0 +1,55 @@
+OK   F0 O has 11 distinct integers, min 0, max 269
+OK   F0 O° = O minus {0,269} has 9 points, all in [49,159]
+OK   F1 269 is prime (no divisor in 2..16, 17^2 > 269)
+OK   F1 269 divides neither 18 nor 251 (so both are units mod 269)
+OK   F1 27169 = 101*269
+OK   F1 L = 27169/251 is not an integer (251*108 < 27169 < 251*109)
+OK   F2 L = 27169/251 is the fixed point of phi
+OK   F2 phi(x) = L + (18/269)(x - L) identically
+OK   F2 phi(0) = 101 and phi(269) = 119, both in O°
+OK   F2 phi(x) is not in O for x in O° (direct check)
+OK   F3 y(x) = 251 (x - L)
+OK   F3 y(x) != 0 for all x in O
+OK   F3 y(x) = 251 x (mod 269)
+OK   F3 269 | y(x) iff x in {0,269}
+OK   F3 the multiples of 269 in O are exactly 0 and 269
+OK   F3 y(0) = -101*269, y(269) = 150*269, neither divisible by 269^2
+     y values: {0: -27169, 49: -14870, 75: -8344, 83: -6336, 98: -2571, 101: -1818, 117: 2198, 119: 2700, 121: 3202, 159: 12740, 269: 40350}
+OK   F4 O has exactly 9 relations a+b=c+d with {a,b} != {c,d}
+OK   F4 relation (0, 98)~(49, 49) is a 3-AP (one pair doubled, 3 distinct points)
+OK   F4   ... with middle 49
+OK   F4 relation (49, 101)~(75, 75) is a 3-AP (one pair doubled, 3 distinct points)
+OK   F4   ... with middle 75
+OK   F4 relation (49, 117)~(83, 83) is a 3-AP (one pair doubled, 3 distinct points)
+OK   F4   ... with middle 83
+OK   F4 relation (49, 269)~(159, 159) is a 3-AP (one pair doubled, 3 distinct points)
+OK   F4   ... with middle 159
+OK   F4 relation (75, 121)~(98, 98) is a 3-AP (one pair doubled, 3 distinct points)
+OK   F4   ... with middle 98
+OK   F4 relation (75, 159)~(117, 117) is a 3-AP (one pair doubled, 3 distinct points)
+OK   F4   ... with middle 117
+OK   F4 relation (83, 119)~(101, 101) is a 3-AP (one pair doubled, 3 distinct points)
+OK   F4   ... with middle 101
+OK   F4 relation (83, 159)~(121, 121) is a 3-AP (one pair doubled, 3 distinct points)
+OK   F4   ... with middle 121
+OK   F4 relation (117, 121)~(119, 119) is a 3-AP (one pair doubled, 3 distinct points)
+OK   F4   ... with middle 119
+OK   F4 the 3-APs of O are exactly the page's nine: [(0, 49, 98), (49, 75, 101), (49, 83, 117), (49, 159, 269), (75, 98, 121), (75, 117, 159), (83, 101, 119), (83, 121, 159), (117, 119, 121)]
+OK   F4 one AP centred at each of the 9 interior points (middles = O°, each once)
+OK   F4 no two APs of O share two points
+OK   F4 no AP of O contains both 0 and 269
+OK   F4 second derivation (all triples a<u<c, a+c=2u) gives the same 9 APs
+OK   F5 m=1: no x in O° with x = 0 (mod 269)
+OK   F5 m=2 same side: no x1+x2 = 0 (mod 269) in O° (incl. x1 = x2)
+OK   F5 m=2 opposite sides: x1 = x2 (mod 269) forces x1 = x2
+OK   F5 m=3: the only solutions are (49,49,98) and (159,159,49): [(49, 49, 98), (159, 159, 49)]
+OK   F5   (49,49,98): 4th point 2*49-98 = 0, and {0,49,98} is an AP of O
+OK   F5   (159,159,49): 4th point 2*159-49 = 269, and {269,159,49} is an AP of O
+OK   F5 m=3 sign pattern (1, 1, -1): exactly 2 ordered solutions (the two above, reordered)
+OK   F5 m=3 sign pattern (1, -1, 1): exactly 2 ordered solutions (the two above, reordered)
+OK   F5 m=3 sign pattern (1, -1, -1): exactly 2 ordered solutions (the two above, reordered)
+OK   F5 m=3 sign pattern (-1, 1, 1): exactly 2 ordered solutions (the two above, reordered)
+OK   F5 m=3 sign pattern (-1, 1, -1): exactly 2 ordered solutions (the two above, reordered)
+OK   F5 m=3 sign pattern (-1, -1, 1): exactly 2 ordered solutions (the two above, reordered)
+OK   F6 phi^d(x') in O (x' in O, 1 <= d <= 6) only for (0,1)->101 and (269,1)->119
+ALL FACTS OK

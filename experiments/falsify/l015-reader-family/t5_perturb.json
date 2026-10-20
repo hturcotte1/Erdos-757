@@ -1,0 +1,272 @@
+{
+ "A_single_element_changes": {
+  "stats": {
+   "variants": 2890,
+   "PRED_true": 664,
+   "PRED_true_and_cross": 0,
+   "PRED_true_and_not45_literal": 0,
+   "cross_present": 2030,
+   "claimcopy_fail": 578,
+   "n_fail": 578,
+   "PRED_false_but_ok": 196,
+   "sec": 8.7
+  },
+  "cross_by_failed_hypothesis_set": {
+   "('O_has_4pt_relation', 'F5iv')": [
+    448,
+    448
+   ],
+   "('O_has_4pt_relation', 'O_linear', 'F5iv')": [
+    39,
+    39
+   ],
+   "('O_has_4pt_relation',)": [
+    512,
+    512
+   ],
+   "('O_linear',)": [
+    47,
+    0
+   ],
+   "('O_has_4pt_relation', 'O_linear')": [
+    102,
+    102
+   ],
+   "('O_has_4pt_relation', 'O_linear', 'F5ii')": [
+    1,
+    1
+   ],
+   "('O_has_4pt_relation', 'F5ii')": [
+    29,
+    29
+   ],
+   "('O_has_4pt_relation', 'F5ii', 'F5iv')": [
+    26,
+    26
+   ],
+   "('M_prime',)": [
+    189,
+    45
+   ],
+   "('M_prime', 'O_has_4pt_relation', 'F5iv')": [
+    124,
+    124
+   ],
+   "('M_prime', 'O_has_4pt_relation', 'F5ii')": [
+    36,
+    36
+   ],
+   "('O_has_4pt_relation', 'O_linear', 'F5ii', 'F5iv')": [
+    4,
+    4
+   ],
+   "('shared_in_O', 'lemma12')": [
+    205,
+    205
+   ],
+   "('shared_in_O', 'lemma12', 'O_has_4pt_relation', 'F5iv')": [
+    120,
+    120
+   ],
+   "('shared_in_O', 'lemma12', 'O_has_4pt_relation')": [
+    128,
+    128
+   ],
+   "('shared_in_O', 'lemma12', 'O_has_4pt_relation', 'O_linear', 'F5iv')": [
+    20,
+    20
+   ],
+   "('shared_in_O', 'lemma12', 'O_linear')": [
+    14,
+    14
+   ],
+   "('shared_in_O', 'lemma12', 'O_has_4pt_relation', 'O_linear')": [
+    25,
+    25
+   ],
+   "('shared_in_O', 'lemma12', 'O_has_4pt_relation', 'F5ii', 'F5iv')": [
+    5,
+    5
+   ],
+   "('shared_in_O', 'lemma12', 'O_has_4pt_relation', 'F5ii')": [
+    11,
+    11
+   ],
+   "('M_prime', 'shared_in_O', 'lemma12')": [
+    30,
+    30
+   ],
+   "('M_prime', 'shared_in_O', 'lemma12', 'O_has_4pt_relation', 'F5iv')": [
+    15,
+    15
+   ],
+   "('M_prime', 'shared_in_O', 'lemma12', 'O_has_4pt_relation', 'F5ii')": [
+    5,
+    5
+   ],
+   "('M_prime', 'O_has_4pt_relation')": [
+    41,
+    41
+   ],
+   "('M_prime', 'O_has_4pt_relation', 'O_linear', 'F5iv')": [
+    18,
+    18
+   ],
+   "('M_prime', 'O_has_4pt_relation', 'O_linear')": [
+    12,
+    12
+   ],
+   "('M_prime', 'O_has_4pt_relation', 'F5ii', 'F5iv')": [
+    8,
+    8
+   ],
+   "('M_prime', 'O_linear')": [
+    5,
+    0
+   ],
+   "('M_prime', 'O_has_4pt_relation', 'O_linear', 'F5ii', 'F5iv')": [
+    1,
+    1
+   ],
+   "('M_prime', 'O_has_4pt_relation', 'O_no_edge_with_both_ends', 'F5ii', 'F5iv')": [
+    1,
+    1
+   ],
+   "('M_prime', 'O_has_4pt_relation', 'O_linear', 'O_no_edge_with_both_ends', 'F5ii')": [
+    1,
+    1
+   ],
+   "('M_prime', 'O_has_4pt_relation', 'O_no_edge_with_both_ends', 'F5ii')": [
+    4,
+    4
+   ]
+  }
+ },
+ "B_phi_changes": {
+  "variants": 6660,
+  "all_claims_hold": [
+   [
+    75,
+    8
+   ],
+   [
+    75,
+    23
+   ],
+   [
+    75,
+    26
+   ],
+   [
+    75,
+    42
+   ],
+   [
+    75,
+    44
+   ],
+   [
+    75,
+    46
+   ],
+   [
+    83,
+    15
+   ],
+   [
+    83,
+    18
+   ],
+   [
+    83,
+    34
+   ],
+   [
+    83,
+    36
+   ],
+   [
+    83,
+    38
+   ],
+   [
+    98,
+    3
+   ],
+   [
+    98,
+    19
+   ],
+   [
+    98,
+    21
+   ],
+   [
+    98,
+    23
+   ],
+   [
+    101,
+    16
+   ],
+   [
+    101,
+    18
+   ],
+   [
+    101,
+    20
+   ],
+   [
+    101,
+    58
+   ],
+   [
+    117,
+    2
+   ],
+   [
+    117,
+    4
+   ],
+   [
+    117,
+    42
+   ],
+   [
+    119,
+    2
+   ],
+   [
+    119,
+    40
+   ],
+   [
+    121,
+    38
+   ]
+  ],
+  "sharing_claim_fails": 6635,
+  "cross_present": 6525
+ },
+ "D_transfer": {
+  "variants": 2312,
+  "struct_ok": 860,
+  "struct_ok_pred_eq_dp_all_K1to4": 860,
+  "struct_ok_identity_plus5": 1,
+  "struct_ok_identity_other": {
+   "[6]": 746,
+   "[6, 7]": 111,
+   "[5, 6]": 2
+  },
+  "struct_bad_pred_neq_dp": 86,
+  "struct_bad": 1452,
+  "mismatch_examples": []
+ },
+ "A2_literal_45_K2": {
+  "PRED_true_checked": 664,
+  "PRED_true_45_ok": 664,
+  "PRED_false_checked": 2226,
+  "PRED_false_45_fail": 1954
+ }
+}

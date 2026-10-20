@@ -1,0 +1,19 @@
+{
+ "min_diffs_{1,2,3,5}": 4,
+ "min_diffs_{0,1,3,7}": 6,
+ "A_base_min_diffs": 5,
+ "A_base_alpha_dp": 8,
+ "A_base_alpha_cpsat": 8,
+ "dp_vs_bruteforce_vs_cpsat_random_hypergraphs_mismatches_of_300": 0,
+ "planted_relation_detected_4pt": 1,
+ "planted_min_diffs": 4,
+ "planted_alpha_dp": 23,
+ "planted_alpha_sat_geq_22_and_23": [
+  true,
+  true
+ ],
+ "sidon_detects_AP": [
+  false,
+  true
+ ]
+}
