@@ -1,0 +1,927 @@
+[
+ {
+  "c": 75,
+  "a": 8,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    31,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    55,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    79,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    103,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 6.0,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 103
+ },
+ {
+  "c": 75,
+  "a": 23,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    28,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    50,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    71,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    92,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.25,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 92
+ },
+ {
+  "c": 75,
+  "a": 26,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    29,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    51,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    73,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    95,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.5,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 95
+ },
+ {
+  "c": 75,
+  "a": 42,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    31,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    55,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    79,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    103,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 6.0,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 103
+ },
+ {
+  "c": 75,
+  "a": 44,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    31,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    55,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    79,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    103,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 6.0,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 103
+ },
+ {
+  "c": 75,
+  "a": 46,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    31,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    55,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    79,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    103,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 6.0,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 103
+ },
+ {
+  "c": 83,
+  "a": 15,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    29,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    51,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    73,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    95,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.5,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 95
+ },
+ {
+  "c": 83,
+  "a": 18,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    29,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    51,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    73,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    95,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.5,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 95
+ },
+ {
+  "c": 83,
+  "a": 34,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    31,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    55,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    79,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    103,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 6.0,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 103
+ },
+ {
+  "c": 83,
+  "a": 36,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    31,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    55,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    79,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    103,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 6.0,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 103
+ },
+ {
+  "c": 83,
+  "a": 38,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    31,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    55,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    79,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    103,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 6.0,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 103
+ },
+ {
+  "c": 98,
+  "a": 3,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    29,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    51,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    73,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    95,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.5,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 95
+ },
+ {
+  "c": 98,
+  "a": 19,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    29,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    51,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    73,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    95,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.5,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 95
+ },
+ {
+  "c": 98,
+  "a": 21,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    29,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    51,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    73,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    95,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.5,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 95
+ },
+ {
+  "c": 98,
+  "a": 23,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    29,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    51,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    73,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    95,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.5,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 95
+ },
+ {
+  "c": 101,
+  "a": 16,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    31,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    55,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    79,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    103,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 6.0,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 103
+ },
+ {
+  "c": 101,
+  "a": 18,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    27,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    47,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    67,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    87,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.0,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 87
+ },
+ {
+  "c": 101,
+  "a": 20,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    31,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    55,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    79,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    103,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 6.0,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 103
+ },
+ {
+  "c": 101,
+  "a": 58,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    29,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    51,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    73,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    95,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.5,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 95
+ },
+ {
+  "c": 117,
+  "a": 2,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    29,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    51,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    73,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    95,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.5,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 95
+ },
+ {
+  "c": 117,
+  "a": 4,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    31,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    55,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    79,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    103,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 6.0,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 103
+ },
+ {
+  "c": 117,
+  "a": 42,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    29,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    51,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    73,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    95,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.5,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 95
+ },
+ {
+  "c": 119,
+  "a": 2,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    29,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    51,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    73,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    95,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.5,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 95
+ },
+ {
+  "c": 119,
+  "a": 40,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    29,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    51,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    73,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    95,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.5,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 95
+ },
+ {
+  "c": 121,
+  "a": 38,
+  "K->(n,h,4ptrel,onecopy,sharing)": {
+   "4": [
+    47,
+    29,
+    0,
+    true,
+    true
+   ],
+   "8": [
+    83,
+    51,
+    0,
+    true,
+    true
+   ],
+   "12": [
+    119,
+    73,
+    0,
+    true,
+    true
+   ],
+   "16": [
+    155,
+    95,
+    0,
+    true,
+    true
+   ]
+  },
+  "growth_per_copy_K8to16": 5.5,
+  "points_per_copy": 9.0,
+  "transfer_pred_K16": 95
+ }
+]

@@ -1,0 +1,21 @@
+S_0 (n=11)                                                   (4,5)=True brute h=7 (0.0s)  DP h=7  SAT>=7:True SAT>=8:False  conflicts=9 sizes=[3]  agree=True
+S_1 (n=20)                                                   (4,5)=True brute h=12 (2.7s)  DP h=12  SAT>=12:True SAT>=13:False  conflicts=18 sizes=[3]  agree=True
+A_base (n=14, h=8 published)                                 (4,5)=True brute h=8 (0.0s)  DP h=8  SAT>=8:True SAT>=9:False  conflicts=12 sizes=[3]  agree=True
+12-pt #3 (n=12, h=7)                                         (4,5)=True brute h=7 (0.0s)  DP h=7  SAT>=7:True SAT>=8:False  conflicts=10 sizes=[3]  agree=True
+copy 0 + 5 random points (n=16)                              (4,5)=True brute h=12 (0.0s)  DP h=12  SAT>=12:True SAT>=13:False  conflicts=9 sizes=[3]  agree=True
+copy 3 + 7 random points (n=18)                              (4,5)=True brute h=13 (0.1s)  DP h=13  SAT>=13:True SAT>=14:False  conflicts=10 sizes=[3]  agree=True
+copy 6 + 9 random points (n=20)                              (4,5)=True brute h=16 (0.0s)  DP h=16  SAT>=16:True SAT>=17:False  conflicts=9 sizes=[3]  agree=True
+copy 2 + 10 random points (n=21)                             (4,5)=True brute h=17 (0.1s)  DP h=17  SAT>=17:True SAT>=18:False  conflicts=10 sizes=[3]  agree=True
+copy 4 + 11 random points (n=22)                             (4,5)=True brute h=18 (0.1s)  DP h=18  SAT>=18:True SAT>=19:False  conflicts=9 sizes=[3]  agree=True
+copy 5 + 11 random points (n=22)                             (4,5)=True brute h=17 (0.9s)  DP h=17  SAT>=17:True SAT>=18:False  conflicts=11 sizes=[3]  agree=True
+copy 1 + 11 random points (n=22)                             (4,5)=True brute h=18 (0.1s)  DP h=18  SAT>=18:True SAT>=19:False  conflicts=10 sizes=[3]  agree=True
+copies 0,1 + 2 random points (n=22)                          (4,5)=True brute h=14 (8.4s)  DP h=14  SAT>=14:True SAT>=15:False  conflicts=18 sizes=[3]  agree=True
+copies 2,3 + 2 random points (n=22)                          (4,5)=True brute h=14 (8.8s)  DP h=14  SAT>=14:True SAT>=15:False  conflicts=18 sizes=[3]  agree=True
+copies 5,6 + 2 random points (n=22)                          (4,5)=True brute h=14 (8.0s)  DP h=14  SAT>=14:True SAT>=15:False  conflicts=18 sizes=[3]  agree=True
+copies 0,1 of C003 (n=20)                                    (4,5)=True brute h=12 (2.5s)  DP h=12  SAT>=12:True SAT>=13:False  conflicts=18 sizes=[3]  agree=True
+copies 1,2 of C003 (n=20)                                    (4,5)=True brute h=12 (2.8s)  DP h=12  SAT>=12:True SAT>=13:False  conflicts=18 sizes=[3]  agree=True
+copies 2,3 of C003 (n=20)                                    (4,5)=True brute h=12 (2.8s)  DP h=12  SAT>=12:True SAT>=13:False  conflicts=18 sizes=[3]  agree=True
+copies 3,4 of C003 (n=20)                                    (4,5)=True brute h=12 (3.0s)  DP h=12  SAT>=12:True SAT>=13:False  conflicts=18 sizes=[3]  agree=True
+copies 4,5 of C003 (n=20)                                    (4,5)=True brute h=12 (3.3s)  DP h=12  SAT>=12:True SAT>=13:False  conflicts=18 sizes=[3]  agree=True
+copies 5,6 of C003 (n=20)                                    (4,5)=True brute h=12 (3.5s)  DP h=12  SAT>=12:True SAT>=13:False  conflicts=18 sizes=[3]  agree=True
+ALL AGREE: True

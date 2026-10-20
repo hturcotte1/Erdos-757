@@ -1,0 +1,30 @@
+transfer table: mine (third method) == agent's best_T_size: True
+M: mine [[5, 6, 6, 6], [4, 5, 5, 5], [4, 5, 5, 5], [4, 5, 5, 5]]  agent [[5, 6, 6, 6], [4, 5, 5, 5], [4, 5, 5, 5], [4, 5, 5, 5]]  equal: True
+R0: mine [6, 7, 7, 7]  agent [6, 7, 7, 7]  equal: True
+K | n mine/agent | APs mine/agent | h mine(generic B&B)/agent(frontier DP, SAT>=h, SAT>=h+1, CP-SAT cuts)
+0 | 11/11 | 9/9 | 7/7, True, False, OPTIMAL 7/7 | agree
+1 | 20/20 | 18/18 | 12/12, True, False, OPTIMAL 12/12 | agree
+2 | 29/29 | 27/27 | 17/17, True, False, OPTIMAL 17/17 | agree
+3 | 38/38 | 36/36 | 22/22, True, False, OPTIMAL 22/22 | agree
+4 | 47/47 | 45/45 | 27/27, True, False, OPTIMAL 27/27 | agree
+5 | 56/56 | 54/54 | 32/32, True, False, OPTIMAL 32/32 | agree
+6 | 65/65 | 63/63 | 37/37, True, False, OPTIMAL 37/37 | agree
+7 | 74/74 | 72/72 | 42/42, True, False, OPTIMAL 42/42 | agree
+8 | 83/83 | 81/81 | 47/47, True, False, FEASIBLE 47/55 | agree
+census K=0: n 11/11, APs 9/9, span 0/0: agree
+census K=1: n 20/20, APs 18/18, span 1/1: agree
+census K=2: n 29/29, APs 27/27, span 1/1: agree
+census K=3: n 38/38, APs 36/36, span 1/1: agree
+census K=4: n 47/47, APs 45/45, span 1/1: agree
+census K=5: n 56/56, APs 54/54, span 1/1: agree
+census K=6: n 65/65, APs 63/63, span 1/1: agree
+census K=7: n 74/74, APs 72/72, span 1/1: agree
+census K=8: n 83/83, APs 81/81, span 1/1: agree
+census K=9: n 92/92, APs 90/90, span 1/1: agree
+census K=10: n 101/101, APs 99/99, span 1/1: agree
+census K=11: n 110/110, APs 108/108, span 1/1: agree
+census K=12: n 119/119, APs 117/117, span 1/1: agree
+census K=15: n 146/146, APs 144/144, span 1/1: agree
+census K=20: n 191/191, APs 189/189, span 1/1: agree
+census K=30: n 281/281, APs 279/279, span 1/1: agree
+ALL COMPARISONS AGREE

@@ -1,0 +1,80 @@
+{
+ "0": {
+  "n": 11,
+  "n4subsets": 330,
+  "min_distinct_positive_diffs": 5,
+  "sec": 0.0
+ },
+ "1": {
+  "n": 20,
+  "n4subsets": 4845,
+  "min_distinct_positive_diffs": 5,
+  "sec": 0.0
+ },
+ "2": {
+  "n": 29,
+  "n4subsets": 23751,
+  "min_distinct_positive_diffs": 5,
+  "sec": 0.0
+ },
+ "3": {
+  "n": 38,
+  "n4subsets": 73815,
+  "min_distinct_positive_diffs": 5,
+  "sec": 0.1
+ },
+ "4": {
+  "n": 47,
+  "n4subsets": 178365,
+  "min_distinct_positive_diffs": 5,
+  "sec": 0.1
+ },
+ "5": {
+  "n": 56,
+  "n4subsets": 367290,
+  "min_distinct_positive_diffs": 5,
+  "sec": 0.2
+ },
+ "6": {
+  "n": 65,
+  "n4subsets": 677040,
+  "min_distinct_positive_diffs": 5,
+  "sec": 0.3
+ },
+ "7": {
+  "n": 74,
+  "n4subsets": 1150626,
+  "min_distinct_positive_diffs": 5,
+  "sec": 0.8
+ },
+ "8": {
+  "n": 83,
+  "n4subsets": 1837620,
+  "min_distinct_positive_diffs": 5,
+  "sec": 1.0
+ },
+ "9": {
+  "n": 92,
+  "n4subsets": 2794155,
+  "min_distinct_positive_diffs": 5,
+  "sec": 1.3
+ },
+ "10": {
+  "n": 101,
+  "n4subsets": 4082925,
+  "min_distinct_positive_diffs": 5,
+  "sec": 2.3
+ },
+ "11": {
+  "n": 110,
+  "n4subsets": 5773185,
+  "min_distinct_positive_diffs": 5,
+  "sec": 3.4
+ },
+ "12": {
+  "n": 119,
+  "n4subsets": 7940751,
+  "min_distinct_positive_diffs": 5,
+  "sec": 5.2
+ }
+}

@@ -1,0 +1,6 @@
+(a) random hypergraphs: 400 trials, mismatches = 0 [1.7s]
+(b) induced subsets of the claim set: 66 subsets (sizes 8..22, up to 15 induced relations), mismatches = 0 [9.0s]
+(c) family K=0: n=11 brute force (definition) h=7, DP h=7, expected 7+5K=7 [0.0s]
+(c) family K=1: n=20 brute force (definition) h=12, DP h=12, expected 7+5K=12 [1.6s]
+    K=1 member equals the claim set's 20 smallest-depth points?  n/a (different scale)
+total 12.3s

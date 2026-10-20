@@ -1,0 +1,10 @@
+{
+ "method": "cpsat",
+ "time_limit_s": 1500.0,
+ "status": "FEASIBLE",
+ "objective": 37.0,
+ "best_bound": 64.0,
+ "witness_size": 37,
+ "witness_sidon": true,
+ "time_s": 1505.2
+}

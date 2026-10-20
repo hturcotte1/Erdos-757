@@ -1,0 +1,17 @@
+K=0: n=11 |T_K|=7 (7+5K=7) subset=True Sidon_by_definition=True (28 sums) AP_free=True self_similar=True -> OK
+K=1: n=20 |T_K|=12 (7+5K=12) subset=True Sidon_by_definition=True (78 sums) AP_free=True self_similar=True -> OK
+K=2: n=29 |T_K|=17 (7+5K=17) subset=True Sidon_by_definition=True (153 sums) AP_free=True self_similar=True -> OK
+K=3: n=38 |T_K|=22 (7+5K=22) subset=True Sidon_by_definition=True (253 sums) AP_free=True self_similar=True -> OK
+K=4: n=47 |T_K|=27 (7+5K=27) subset=True Sidon_by_definition=True (378 sums) AP_free=True self_similar=True -> OK
+K=5: n=56 |T_K|=32 (7+5K=32) subset=True Sidon_by_definition=True (528 sums) AP_free=True self_similar=True -> OK
+K=6: n=65 |T_K|=37 (7+5K=37) subset=True Sidon_by_definition=True (703 sums) AP_free=True self_similar=True -> OK
+K=7: n=74 |T_K|=42 (7+5K=42) subset=True Sidon_by_definition=True (903 sums) AP_free=True self_similar=True -> OK
+K=8: n=83 |T_K|=47 (7+5K=47) subset=True Sidon_by_definition=True (1128 sums) AP_free=True self_similar=True -> OK
+K=9: n=92 |T_K|=52 (7+5K=52) subset=True Sidon_by_definition=True (1378 sums) AP_free=True self_similar=True -> OK
+K=10: n=101 |T_K|=57 (7+5K=57) subset=True Sidon_by_definition=True (1653 sums) AP_free=True self_similar=True -> OK
+K=12: n=119 |T_K|=67 (7+5K=67) subset=True Sidon_by_definition=True (2278 sums) AP_free=True self_similar=True -> OK
+K=15: n=146 |T_K|=82 (7+5K=82) subset=True Sidon_by_definition=True (3403 sums) AP_free=True self_similar=True -> OK
+K=20: n=191 |T_K|=107 (7+5K=107) subset=True Sidon_by_definition=True (5778 sums) AP_free=True self_similar=True -> OK
+K=30: n=281 |T_K|=157 (7+5K=157) subset=True Sidon_by_definition=True (12403 sums) AP_free=True self_similar=True -> OK
+K=50: n=461 |T_K|=257 (7+5K=257) subset=True Sidon_by_definition=True (33153 sums) AP_free=True self_similar=True -> OK
+ALL WITNESS CHECKS OK

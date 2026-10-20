@@ -1,0 +1,317 @@
+{
+ "0": {
+  "K": 0,
+  "size": 7,
+  "claimed": 7,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "1": {
+  "K": 1,
+  "size": 12,
+  "claimed": 12,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "2": {
+  "K": 2,
+  "size": 17,
+  "claimed": 17,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "3": {
+  "K": 3,
+  "size": 22,
+  "claimed": 22,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "4": {
+  "K": 4,
+  "size": 27,
+  "claimed": 27,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "5": {
+  "K": 5,
+  "size": 32,
+  "claimed": 32,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "6": {
+  "K": 6,
+  "size": 37,
+  "claimed": 37,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "7": {
+  "K": 7,
+  "size": 42,
+  "claimed": 42,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "8": {
+  "K": 8,
+  "size": 47,
+  "claimed": 47,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "9": {
+  "K": 9,
+  "size": 52,
+  "claimed": 52,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "10": {
+  "K": 10,
+  "size": 57,
+  "claimed": 57,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "11": {
+  "K": 11,
+  "size": 62,
+  "claimed": 62,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "12": {
+  "K": 12,
+  "size": 67,
+  "claimed": 67,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "13": {
+  "K": 13,
+  "size": 72,
+  "claimed": 72,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "14": {
+  "K": 14,
+  "size": 77,
+  "claimed": 77,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "15": {
+  "K": 15,
+  "size": 82,
+  "claimed": 82,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "16": {
+  "K": 16,
+  "size": 87,
+  "claimed": 87,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "17": {
+  "K": 17,
+  "size": 92,
+  "claimed": 92,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "18": {
+  "K": 18,
+  "size": 97,
+  "claimed": 97,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "19": {
+  "K": 19,
+  "size": 102,
+  "claimed": 102,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "20": {
+  "K": 20,
+  "size": 107,
+  "claimed": 107,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "21": {
+  "K": 21,
+  "size": 112,
+  "claimed": 112,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "22": {
+  "K": 22,
+  "size": 117,
+  "claimed": 117,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "23": {
+  "K": 23,
+  "size": 122,
+  "claimed": 122,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "24": {
+  "K": 24,
+  "size": 127,
+  "claimed": 127,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "25": {
+  "K": 25,
+  "size": 132,
+  "claimed": 132,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "26": {
+  "K": 26,
+  "size": 137,
+  "claimed": 137,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "27": {
+  "K": 27,
+  "size": 142,
+  "claimed": 142,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "28": {
+  "K": 28,
+  "size": 147,
+  "claimed": 147,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "29": {
+  "K": 29,
+  "size": 152,
+  "claimed": 152,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "30": {
+  "K": 30,
+  "size": 157,
+  "claimed": 157,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "50": {
+  "K": 50,
+  "size": 257,
+  "claimed": 257,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "61": {
+  "K": 61,
+  "size": 312,
+  "claimed": 312,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "100": {
+  "K": 100,
+  "size": 507,
+  "claimed": 507,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ },
+ "150": {
+  "K": 150,
+  "size": 757,
+  "claimed": 757,
+  "subset_of_S_K": true,
+  "sidon_by_definition": true,
+  "no_3AP": true,
+  "ok": true
+ }
+}

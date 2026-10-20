@@ -1,0 +1,11 @@
+n=65, minimal conflicts from the definition: 63, sizes [3]
+SAT  >= 37  cadical195 totalizer  : SAT  (0.1s)  model size 37 Sidon-verified=True
+SAT  >= 37  glucose4   seqcounter : SAT  (0.0s)  model size 37 Sidon-verified=True
+SAT  >= 37  cadical195 kmtotalizer: SAT  (0.0s)  model size 37 Sidon-verified=True
+SAT  >= 38  cadical195 totalizer  : UNSAT  (0.5s)
+SAT  >= 38  glucose4   seqcounter : UNSAT  (0.1s)
+SAT  >= 38  cadical195 kmtotalizer: UNSAT  (0.3s)
+DP   copy_order          : h = 37, peak states 56, witness Sidon-verified=True (0.0s)
+DP   level_then_value    : h = 37, peak states 180, witness Sidon-verified=True (0.0s)
+DP   reverse_copy_order  : h = 37, peak states 56, witness Sidon-verified=True (0.0s)
+DP   sorted_by_value     : ABORTED, state count exceeded 3000000 (peak 3666176) (106.6s)

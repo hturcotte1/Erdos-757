@@ -1,0 +1,12 @@
+{
+ "method": "milp",
+ "time_limit_s": 1500.0,
+ "status": 0,
+ "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+ "objective": 37.00000000000138,
+ "mip_gap": 0.0,
+ "mip_dual_bound": -37.00000000000138,
+ "witness_size": 37,
+ "witness_sidon": true,
+ "time_s": 9.2
+}

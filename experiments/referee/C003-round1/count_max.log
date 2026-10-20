@@ -1,0 +1,3 @@
+order BFS from index 0: number of Sidon subsets by size: max size = 37, #max = 1281350529, #size 36 = 35334600407, total Sidon subsets = 80010646746848791
+order BFS from index 64: number of Sidon subsets by size: max size = 37, #max = 1281350529, #size 36 = 35334600407, total Sidon subsets = 80010646746848791
+structural chain count: max size = 37, #max = 1281350529, #size 36 = 35334600407, total = 80010646746848791

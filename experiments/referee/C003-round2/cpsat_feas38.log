@@ -1,0 +1,2 @@
+CP-SAT feasibility size >= 38: UNKNOWN (900.0s) model_verified=None
+CP-SAT feasibility size >= 37: OPTIMAL (2.7s) model_verified=True

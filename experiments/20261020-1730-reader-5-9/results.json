@@ -1,4 +1,5 @@
 {
+ "cpsat_K8_long": null,
  "source": "reader's 5/9 family [community]; all numbers below computed here [verified-here] unless marked",
  "table": [
   {
@@ -693,7 +694,7 @@
   }
  },
  "judge_outputs": {
-  "C003 (K=6) via new_claim.py": "2026-10-20T18:10:59Z\n",
+  "C003 (K=6) via new_claim.py": "2026-10-20T18:10:59Z\nJUDGE: PASS NEW-RECORD C003-reader-5-9-K6 n=65 h=37 ratio=37/65 (0.569231) vs 4/7=0.571429\nsaved: results/claims/C003-reader-5-9-K6.json\n\nreal\t59m6.956s\nuser\t44m46.621s\nsys\t0m4.743s\nexit=0\n2026-10-20T19:10:06Z\n",
   "C004 (K=7) via new_claim.py": "2026-10-20T18:22:48Z\n",
   "standalone judge.py on K=6 (timing run)": "2026-10-20T17:27:48Z\nJUDGE: PASS NEW-RECORD T-K6 n=65 h=37 ratio=37/65 (0.569231) vs 4/7=0.571429\n\nreal\t34m36.856s\nuser\t21m50.076s\nsys\t0m1.013s\n2026-10-20T18:02:25Z\n"
  }

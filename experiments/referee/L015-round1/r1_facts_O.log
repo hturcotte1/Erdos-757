@@ -1,0 +1,56 @@
+PASS F0: 11 distinct integers, min 0, max 269
+PASS F0: O° has 9 points in [49,159]
+PASS F1: 269 is prime (trial division to sqrt)
+PASS F1: 269 does not divide 18, 251, 101, 150
+PASS F1: 27169 = 101*269
+PASS F1: L = 27169/251 is not an integer (L = 27169/251)
+PASS F2: phi(L) = L
+PASS F2: phi(x) = L + r(x-L) identically (constant terms agree: L - rL = 101)
+PASS F2: phi(0)=101, phi(269)=119
+PASS F2/1.1: phi^j(x) = L + r^j (x - L) for x in O, j <= 24 (iteration vs closed form)
+PASS F3: y(x) = 251 (x - L)
+PASS F3: y(x) != 0 on O
+PASS F3: y(x) = 251 x mod 269
+     269-adic valuations of y(x): {0: 1, 49: 0, 75: 0, 83: 0, 98: 0, 101: 0, 117: 0, 119: 0, 121: 0, 159: 0, 269: 1}
+PASS F3: v_269(y(x)) = 0 on O°, = 1 at 0 and 269
+PASS F3: y(0) = -101*269, y(269) = 150*269
+     ordered relation quadruples in O: 36  classes: 9
+PASS F4: exactly 9 relation classes in O
+PASS F4: every relation of O is of the form (u,u,v,w) with v<u<w a 3-AP
+PASS F4: the point sets are exactly e1..e9 of the certificate
+PASS F4: 36 ordered quadruples = 9 classes x 4 (orbit of (u,u,v,w))
+PASS F4: middles of e1..e9 are the nine points of O°, one each
+PASS F4: linear (two edges share <= 1 point)
+PASS F4: no edge contains both 0 and 269
+PASS F4: 66 sums x+y, x<=y
+PASS F4: repeated sums exactly as listed in 0.4, each exactly twice
+PASS O itself: every 4-subset has >= 5 distinct distances (min = 5)
+     degrees in O: {0: 1, 49: 4, 75: 3, 83: 3, 98: 2, 101: 2, 117: 3, 119: 2, 121: 3, 159: 3, 269: 1}
+PASS F5(i): m=1 has no solution
+PASS F5(ii),(iii): m=2 solutions only on opposite sides with equal x (=> same point on both sides, excluded by 0.2)
+PASS F5(iv): m=3, every T: only (u,u,v) = (49,49,98) or (159,159,49); 4th point 0 resp. 269; point set e1 resp. e4
+PASS F6: phi^d(x') in O (x' in O, 1<=d<=30) only phi(0)=101, phi(269)=119; got [(0, 1, 101), (269, 1, 119)]
+PASS Table: Sidon-by-differences == E(O)-free for all 2048 subsets of O
+PASS Table: all 16 state pairs realised
+     Sidon subsets of O incl. empty set: 831
+     best = [[5, 6, 6, 6], [5, 6, 6, 6], [5, 6, 6, 6], [6, 7, 7, 7]]
+     M = [[5, 6, 6, 6], [4, 5, 5, 5], [4, 5, 5, 5], [4, 5, 5, 5]]  R0 = [6, 7, 7, 7]
+PASS Table: best as in Step 5.5
+PASS Table: M as in Step 5.5
+PASS Table: R0 = (6,7,7,7)
+PASS Table: R0 (x) M = R0 + 5 = [11, 12, 12, 12]
+PASS 5.4: every subset of {0,101,119,269} is admissible
+PASS 5.6 (a) W=O: edges [1, 2, 3, 4, 5, 6, 7, 8, 9], tau_W = 4 (claimed >= 4), max admissible = 7 = |W| - tau_W
+PASS 5.6 (b) W=O-{101,119}: edges [1, 3, 4, 5, 6, 8], tau_W = 3 (claimed >= 3), max admissible = 6 = |W| - tau_W
+PASS 5.6 (c) W=O-{0}: edges [2, 3, 4, 5, 6, 7, 8, 9], tau_W = 4 (claimed >= 4), max admissible = 6 = |W| - tau_W
+PASS 5.6 (c') W=O-{269}: edges [1, 2, 3, 5, 6, 7, 8, 9], tau_W = 4 (claimed >= 4), max admissible = 6 = |W| - tau_W
+PASS 5.6 (d) W=O-{0,101,119}: edges [3, 4, 5, 6, 8], tau_W = 3 (claimed >= 3), max admissible = 5 = |W| - tau_W
+PASS 5.6 (d') W=O-{101,119,269}: edges [1, 3, 5, 6, 8], tau_W = 3 (claimed >= 3), max admissible = 5 = |W| - tau_W
+PASS 5.6(b) degrees as stated
+PASS 5.6(d) degrees as stated
+PASS 5.6(d') all degrees <= 2
+PASS 5.6(a)/(c'): e1, e6, e7 pairwise disjoint
+PASS 5.6(c): e4, e5, e7 pairwise disjoint
+PASS 6.1: U* Sidon (differences), E(O)-free, |U*| = 7
+PASS 6.1: a(U*) = b(U*) = (1,1)
+SUMMARY: 0 failures

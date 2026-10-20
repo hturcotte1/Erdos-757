@@ -1,1 +1,9 @@
 2026-10-20T18:10:59Z
+JUDGE: PASS NEW-RECORD C003-reader-5-9-K6 n=65 h=37 ratio=37/65 (0.569231) vs 4/7=0.571429
+saved: results/claims/C003-reader-5-9-K6.json
+
+real	59m6.956s
+user	44m46.621s
+sys	0m4.743s
+exit=0
+2026-10-20T19:10:06Z

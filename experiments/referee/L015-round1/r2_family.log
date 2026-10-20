@@ -1,0 +1,37 @@
+PASS Thm 1(a): |S_K| = 11+9K, consecutive copies meet exactly in {phi^j(101),phi^j(119)} = {phi^(j+1)(0),phi^(j+1)(269)}, others disjoint, no point in 3 copies (K <= 40)
+PASS S_K subset [0,269] with extremes 0, 269
+PASS Thm 1(a)/1.6: I_K = 269^K S_K is a set of integers and equals the recursion of 1.6 (K <= 40)
+PASS C003: all entries are JSON integers (no rational/float parsing issue)
+PASS C003: 65 distinct entries
+PASS C003: set equals I_6 = 269^6 S_6 exactly
+     C003 keys: ['claimed_h', 'id', 'notes', 'set', 'type', 'witness_sidon_subset']  claimed_h: 37  witness size: 37
+PASS C003: stored witness is a Sidon subset of size 37 (sums x<=y distinct)
+     time so far 0.2s
+   K= 0 n= 11 sum-relations=9 (non-AP 0) diff-coincidences=9 (4-point 0) APs==pred:True linear:True
+   K= 5 n= 56 sum-relations=54 (non-AP 0) diff-coincidences=54 (4-point 0) APs==pred:True linear:True
+   K=10 n=101 sum-relations=99 (non-AP 0) diff-coincidences=99 (4-point 0) APs==pred:True linear:True
+   K=15 n=146 sum-relations=144 (non-AP 0) diff-coincidences=144 (4-point 0) APs==pred:True linear:True
+   K=20 n=191 sum-relations=189 (non-AP 0) diff-coincidences=189 (4-point 0) APs==pred:True linear:True
+PASS Thm 1(b),(c): for every K <= 20 all relations are 3-AP relations, exactly 9(K+1), AP set = {phi^J(e)}, linear; same by differences
+     time so far 1.0s
+PASS Thm 1(e)/Step 6: T_K subset S_K, |T_K| = 7+5K, Sidon (all sums x<=y distinct), no 3-AP, for every K <= 30
+     time so far 2.1s
+PASS Thm 1(d): K=0: #4-subsets with exactly 5 distances = 9(K+1)(n-3) = 72 (each contains exactly one AP)
+PASS Thm 1(d): K=0 n=11: all 330 4-subsets have >= 5 distinct distances (min 5; histogram {5: 72, 6: 258}; 2.1s)
+PASS Thm 1(d): K=1: #4-subsets with exactly 5 distances = 9(K+1)(n-3) = 306 (each contains exactly one AP)
+PASS Thm 1(d): K=1 n=20: all 4845 4-subsets have >= 5 distinct distances (min 5; histogram {5: 306, 6: 4539}; 2.2s)
+PASS Thm 1(d): K=2: #4-subsets with exactly 5 distances = 9(K+1)(n-3) = 702 (each contains exactly one AP)
+PASS Thm 1(d): K=2 n=29: all 23751 4-subsets have >= 5 distinct distances (min 5; histogram {5: 702, 6: 23049}; 2.2s)
+PASS Thm 1(d): K=3: #4-subsets with exactly 5 distances = 9(K+1)(n-3) = 1260 (each contains exactly one AP)
+PASS Thm 1(d): K=3 n=38: all 73815 4-subsets have >= 5 distinct distances (min 5; histogram {5: 1260, 6: 72555}; 2.3s)
+PASS Thm 1(d): K=4: #4-subsets with exactly 5 distances = 9(K+1)(n-3) = 1980 (each contains exactly one AP)
+PASS Thm 1(d): K=4 n=47: all 178365 4-subsets have >= 5 distinct distances (min 5; histogram {5: 1980, 6: 176385}; 2.5s)
+PASS Thm 1(d): K=5: #4-subsets with exactly 5 distances = 9(K+1)(n-3) = 2862 (each contains exactly one AP)
+PASS Thm 1(d): K=5 n=56: all 367290 4-subsets have >= 5 distinct distances (min 5; histogram {5: 2862, 6: 364428}; 3.1s)
+PASS Thm 1(d): K=6: #4-subsets with exactly 5 distances = 9(K+1)(n-3) = 3906 (each contains exactly one AP)
+PASS Thm 1(d): K=6 n=65: all 677040 4-subsets have >= 5 distinct distances (min 5; histogram {5: 3906, 6: 673134}; 4.1s)
+PASS Thm 1(d): K=7: #4-subsets with exactly 5 distances = 9(K+1)(n-3) = 5112 (each contains exactly one AP)
+PASS Thm 1(d): K=7 n=74: all 1150626 4-subsets have >= 5 distinct distances (min 5; histogram {5: 5112, 6: 1145514}; 5.6s)
+PASS Thm 1(d): K=8: #4-subsets with exactly 5 distances = 9(K+1)(n-3) = 6480 (each contains exactly one AP)
+PASS Thm 1(d): K=8 n=83: all 1837620 4-subsets have >= 5 distinct distances (min 5; histogram {5: 6480, 6: 1831140}; 8.4s)
+SUMMARY: 0 failures

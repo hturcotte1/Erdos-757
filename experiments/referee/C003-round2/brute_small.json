@@ -1,0 +1,202 @@
+[
+ {
+  "case": "S_0 (n=11)",
+  "n": 11,
+  "is45": true,
+  "brute_h": 7,
+  "dp_h": 7,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "S_1 (n=20)",
+  "n": 20,
+  "is45": true,
+  "brute_h": 12,
+  "dp_h": 12,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "A_base (n=14, h=8 published)",
+  "n": 14,
+  "is45": true,
+  "brute_h": 8,
+  "dp_h": 8,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "12-pt #3 (n=12, h=7)",
+  "n": 12,
+  "is45": true,
+  "brute_h": 7,
+  "dp_h": 7,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copy 0 + 5 random points (n=16)",
+  "n": 16,
+  "is45": true,
+  "brute_h": 12,
+  "dp_h": 12,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copy 3 + 7 random points (n=18)",
+  "n": 18,
+  "is45": true,
+  "brute_h": 13,
+  "dp_h": 13,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copy 6 + 9 random points (n=20)",
+  "n": 20,
+  "is45": true,
+  "brute_h": 16,
+  "dp_h": 16,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copy 2 + 10 random points (n=21)",
+  "n": 21,
+  "is45": true,
+  "brute_h": 17,
+  "dp_h": 17,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copy 4 + 11 random points (n=22)",
+  "n": 22,
+  "is45": true,
+  "brute_h": 18,
+  "dp_h": 18,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copy 5 + 11 random points (n=22)",
+  "n": 22,
+  "is45": true,
+  "brute_h": 17,
+  "dp_h": 17,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copy 1 + 11 random points (n=22)",
+  "n": 22,
+  "is45": true,
+  "brute_h": 18,
+  "dp_h": 18,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copies 0,1 + 2 random points (n=22)",
+  "n": 22,
+  "is45": true,
+  "brute_h": 14,
+  "dp_h": 14,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copies 2,3 + 2 random points (n=22)",
+  "n": 22,
+  "is45": true,
+  "brute_h": 14,
+  "dp_h": 14,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copies 5,6 + 2 random points (n=22)",
+  "n": 22,
+  "is45": true,
+  "brute_h": 14,
+  "dp_h": 14,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copies 0,1 of C003 (n=20)",
+  "n": 20,
+  "is45": true,
+  "brute_h": 12,
+  "dp_h": 12,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copies 1,2 of C003 (n=20)",
+  "n": 20,
+  "is45": true,
+  "brute_h": 12,
+  "dp_h": 12,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copies 2,3 of C003 (n=20)",
+  "n": 20,
+  "is45": true,
+  "brute_h": 12,
+  "dp_h": 12,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copies 3,4 of C003 (n=20)",
+  "n": 20,
+  "is45": true,
+  "brute_h": 12,
+  "dp_h": 12,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copies 4,5 of C003 (n=20)",
+  "n": 20,
+  "is45": true,
+  "brute_h": 12,
+  "dp_h": 12,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ },
+ {
+  "case": "copies 5,6 of C003 (n=20)",
+  "n": 20,
+  "is45": true,
+  "brute_h": 12,
+  "dp_h": 12,
+  "sat_ge_h": true,
+  "sat_ge_h1": false,
+  "agree": true
+ }
+]
