@@ -29,7 +29,7 @@ KNOWN_LOWER_EXTRA = {5: 4}
 #   18: 11  -- certificate L009 (results/proofs/L009-f18-equals-11.md, K53).
 #   20: 12  -- certificate L010 (results/proofs/L010-f20-equals-12.md, K54).
 #   22: 13  -- certificate L011 (results/proofs/L011-f22-equals-13.md, K55): no (4,5)-set with at most 22 points beats 4/7.
-EXACT_VALUES_VERIFIED = {16: 10, 18: 11, 20: 12, 22: 13}  # L008/K52, L009/K53, L010/K54, L011/K55 (referee ACCEPT x3 each)
+EXACT_VALUES_VERIFIED = {16: 10, 18: 11, 20: 12, 22: 13, 23: 14}  # L008/K52, L009/K53, L010/K54, L011/K55, L014/K58 (referee ACCEPT x3 each)
 
 
 def hy_max_tau(n, m=None):
@@ -105,5 +105,5 @@ if __name__ == "__main__":
         note = ""
         if ok and is_closed(n):
             status = 'CLOSED'
-            note = f"  [f({n}) = {EXACT_VALUES_VERIFIED[n]} exactly, verified exact value (kb/known_results.md K52-K55): h<={h} impossible]"
+            note = f"  [f({n}) = {EXACT_VALUES_VERIFIED[n]} exactly, verified exact value (kb/known_results.md K52-K55, K58): h<={h} impossible]"
         print(f"n={n:2d}: {status}  need h<={h} tau>={tau} m>={m} (max {n-2}){note}")

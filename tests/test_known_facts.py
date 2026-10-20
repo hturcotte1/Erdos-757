@@ -156,9 +156,9 @@ def test_fn_bounds():
     b = B.fn_bounds(40)
     exact = {n: lu[0] for n, lu in b.items() if lu[0] == lu[1]}
     want = {1: 1, 2: 2, 3: 2, 4: 3, 5: 4, 6: 4, 7: 5, 8: 5, 9: 6, 10: 6, 11: 7, 12: 7, 13: 8,
-            14: 8, 15: 9, 16: 10, 17: 10, 18: 11, 20: 12, 22: 13, 24: 14, 26: 15, 28: 16}
+            14: 8, 15: 9, 16: 10, 17: 10, 18: 11, 20: 12, 22: 13, 23: 14, 24: 14, 26: 15, 28: 16}
     assert exact == want
-    assert b[16] == (10, 10) and b[18] == (11, 11) and b[20] == (12, 12) and b[22] == (13, 13)  # L008-L011
+    assert b[16] == (10, 10) and b[18] == (11, 11) and b[20] == (12, 12) and b[22] == (13, 13) and b[23] == (14, 14)  # L008-L011, L014
     for n, (lo, hi) in b.items():
         assert lo <= hi
 
@@ -235,7 +235,7 @@ def test_protect_hook():
 def test_status_and_new_claim_in_copy(tmp_path):
     dst = tmp_path / "repo"
     shutil.copytree(REPO, dst, ignore=shutil.ignore_patterns(".git", "START_TIME_UTC", ".judge_cache.json",
-                                                             "__pycache__", "C[0-9]*-*.json"))
+                                                             "__pycache__", "C[0-9]*-*.json", "out", "logs*", "bin", "chunks*", "nauty_build", "prover_copy", "*.tar.gz"))
     (dst / "tests" / "fixtures").mkdir(parents=True, exist_ok=True)
     r = subprocess.run([sys.executable, "scripts/new_claim.py", "--slug", "abase",
                         "--set", ",".join(map(str, A_BASE)), "--notes", "test"],

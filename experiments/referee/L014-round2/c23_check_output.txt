@@ -1,0 +1,9 @@
+B11 [0, 2009010, 2901878, 3392944, 3459949, 3705482, 3750000, 3794746, 3884010, 4018020, 7500000]
+C23 equals the listed set: True n = 23 distinct: True
+4-subsets 8855 with < 5 distinct differences 0
+conflict sets 18 sizes [3]
+3-point conflicts (3-APs) 18 4-point conflicts 0
+size 14 Sidon subset exists: True (searched 54726 subsets, stopped at first)
+size 15 Sidon subset exists: False (searched 490314 subsets)
+explicit Sidon 14-subset [0, 269, 385, 467, 511, 521, 523, 1000000000, 16909350190, 23979971882, 27868723536, 28399336131, 30343711958, 30696250000] all differences distinct: True
+CP-SAT status OPTIMAL max Sidon size 14 bound 14

@@ -1,0 +1,2 @@
+my tree: nontrivial keys 104 direct 86 recursion 18 branches 24
+prover tree keys 104 same key set: True same routes: True

@@ -1,0 +1,6 @@
+DEC [(1, 0, 0), (21, 18, 9)] sizes [1, 0] inputs 0
+DEC [(3, 1, 1), (19, 17, 8)] sizes [1, 29898] inputs 29898
+DEC [(8, 6, 3), (14, 12, 6)] sizes [3, 2] inputs 6
+DEC [(10, 8, 4), (12, 10, 5)] sizes [63, 149] inputs 9387
+DEC [(22, 18, 9)] sizes [94513] inputs 94513
+BRANCH key (23, 21, 10, 3) d=3 tp=9 Sp=3 decompositions=5 inputs=133804
