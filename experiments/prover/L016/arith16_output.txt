@@ -1,0 +1,48 @@
+(a) window table n=27 (m: 3n+2m, lo=floor((3n+2m)/11)+1, 5n+3m, hy=min(floor((5n+3m)/17), m)):
+    m=13: 107, 10, 174, 10  <- lo <= hy
+    m=14: 109, 10, 177, 10  <- lo <= hy
+    m=15: 111, 11, 180, 10
+    m=16: 113, 11, 183, 10
+    m=17: 115, 11, 186, 10
+    m=18: 117, 11, 189, 11  <- lo <= hy
+    m=19: 119, 11, 192, 11  <- lo <= hy
+    m=20: 121, 12, 195, 11
+    m=21: 123, 12, 198, 11
+    m=22: 125, 12, 201, 11
+    m=23: 127, 12, 204, 12  <- lo <= hy
+    m=24: 129, 12, 207, 12  <- lo <= hy
+    m=25: 131, 12, 210, 12  <- lo <= hy
+    violator cells (n,m,tau): slack, dmax = floor((s+8)/2), tau(H-v)=tau impossible for every d, status:
+    (27,13,10) s=-3 dmax=2 OPEN (3m=39 <= dmax*n=54)
+    (27,14,10) s=-1 dmax=3 OPEN (3m=42 <= dmax*n=81)
+    (27,18,11) s=-4 dmax=2 OPEN (3m=54 <= dmax*n=54)
+    (27,19,11) s=-2 dmax=3 OPEN (3m=57 <= dmax*n=81)
+    (27,23,12) s=-5 dmax=1 EMPTY by counting (3m=69 > dmax*n=27)
+    (27,24,12) s=-3 dmax=2 EMPTY by counting (3m=72 > dmax*n=54)
+    (27,25,12) s=-1 dmax=3 OPEN (3m=75 <= dmax*n=81)
+    OPEN cells (n,m,tau,Delta): [(27, 13, 10, 2), (27, 14, 10, 3), (27, 18, 11, 2), (27, 19, 11, 3), (27, 25, 12, 3)]
+(b) branches of the open cells (d, t', S'):
+    (27,13,10,2): ceil(3m/n)=2; [(2, 9, 1, 'branch'), (2, 10, -10, "no branch (S'<0)")]
+    (27,14,10,3): ceil(3m/n)=2; [(2, 9, 3, 'branch'), (2, 10, -8, "no branch (S'<0)"), (3, 9, 1, 'branch'), (3, 10, -10, "no branch (S'<0)")]
+    (27,18,11,2): ceil(3m/n)=2; [(2, 10, 0, 'branch'), (2, 11, -11, "no branch (S'<0)")]
+    (27,19,11,3): ceil(3m/n)=3; [(3, 10, 0, 'branch'), (3, 11, -11, "no branch (S'<0)")]
+    (27,25,12,3): ceil(3m/n)=3; [(3, 11, 1, 'branch'), (3, 12, -10, "no branch (S'<0)")]
+(c) record cells (beat 4/7: h <= ceil(4n/7)-1; m <= n-2, tau <= m, K8) and I11 slack, 23 <= n <= 30:
+    n=23: needs h <= 13; K8-feasible record cells (n,m,tau,s): [(23, 19, 10, -3), (23, 20, 10, -1), (23, 21, 10, 1)]; I11-allowed (s>=0): [(23, 21, 10, 1)]
+    n=24: needs h <= 13; K8-feasible record cells (n,m,tau,s): []; I11-allowed (s>=0): []
+    n=25: needs h <= 14; K8-feasible record cells (n,m,tau,s): [(25, 21, 11, -4), (25, 22, 11, -2), (25, 23, 11, 0)]; I11-allowed (s>=0): [(25, 23, 11, 0)]
+    n=26: needs h <= 14; K8-feasible record cells (n,m,tau,s): []; I11-allowed (s>=0): []
+    n=27: needs h <= 15; K8-feasible record cells (n,m,tau,s): [(27, 23, 12, -5), (27, 24, 12, -3), (27, 25, 12, -1)]; I11-allowed (s>=0): []
+    n=28: needs h <= 15; K8-feasible record cells (n,m,tau,s): []; I11-allowed (s>=0): []
+    n=29: needs h <= 16; K8-feasible record cells (n,m,tau,s): [(29, 26, 13, -4), (29, 27, 13, -2)]; I11-allowed (s>=0): []
+    n=30: needs h <= 17; K8-feasible record cells (n,m,tau,s): [(30, 24, 13, -5), (30, 25, 13, -3), (30, 26, 13, -1), (30, 27, 13, 1), (30, 28, 13, 3)]; I11-allowed (s>=0): [(30, 27, 13, 1), (30, 28, 13, 3)]
+(d) lower bounds for h: I11 with m <= n-2, and K8 alone:
+    n=23: I11 13, K8 13
+    n=24: I11 14, K8 14
+    n=25: I11 14, K8 14
+    n=26: I11 15, K8 15
+    n=27: I11 16, K8 15
+    n=28: I11 16, K8 16
+    n=29: I11 17, K8 16
+    n=30: I11 17, K8 17
+    n=27, m <= 25: 11 tau <= 81 + 2m <= 131, floor(131/11) = 11, so h >= 16; ceil(4*27/7) - 1 = 15
