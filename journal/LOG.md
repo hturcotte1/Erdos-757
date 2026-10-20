@@ -403,3 +403,7 @@ Format for each work block:
 ## 2026-10-20T16:10Z journal resumed after the user's pause (container restarted; extension clock ended 2026-10-18 23:06 UTC)
 - State on resume: branch clean and pushed (last commit cf7981d), 140 commits ahead of main (main = 414628a, PR #2 of 2026-10-16). The extension's work (L007-L013 ACCEPTED x3, K51-K57; L014 submitted, unrefereed; probes) is not yet on main.
 - Decision: (1) launch L014 referee round 1 (opus, max) + scout now; (2) open and merge a pull request of the current state into main so that main holds everything documented so far (standing user directive: all findings documented and merged to main); L014's acceptance, if it comes, goes to main in a follow-up pull request; (3) the n = 27 probe stays optional.
+
+## 2026-10-20T16:25Z journal PR #3 merged into main (baa2e6e): the extension state is on main
+- https://github.com/hturcotte1/Erdos-757/pull/3 (branch claude/intelligent-pasteur-22z06m at 2c6bd59 -> main, merge commit baa2e6e): L007-L013 refereed (K51-K57), L014 submitted (unrefereed), probes, documentation audit. main now holds everything documented up to 2026-10-20 16:15 UTC. L014's outcome will go to main in a follow-up pull request.
+- Also resumed at low priority (nice 19, 1 core, 6 h cap): the n = 27 chain (cell(25,19,10,3) from its 38/84 chunks, then cell(26,22,11,3), cell(27,25,12,3)); unrefereed probe.
