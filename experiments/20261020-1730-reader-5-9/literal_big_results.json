@@ -1,0 +1,30 @@
+{
+ "9": {
+  "n": 92,
+  "ok": true,
+  "n_4subsets": 2794155,
+  "min_distinct_diffs": 5,
+  "sec": 2.1
+ },
+ "10": {
+  "n": 101,
+  "ok": true,
+  "n_4subsets": 4082925,
+  "min_distinct_diffs": 5,
+  "sec": 4.3
+ },
+ "11": {
+  "n": 110,
+  "ok": true,
+  "n_4subsets": 5773185,
+  "min_distinct_diffs": 5,
+  "sec": 5.9
+ },
+ "12": {
+  "n": 119,
+  "ok": true,
+  "n_4subsets": 7940751,
+  "min_distinct_diffs": 5,
+  "sec": 5.8
+ }
+}

@@ -1,0 +1,2 @@
+CMP n=19 m=17 A=63 (519189 graphs, 29898 classes) B=cell_19_17_8_D3.txt (29898 graphs, 29898 classes) common=29898 onlyA=0 onlyB=0 IDENTICAL
+exit 0

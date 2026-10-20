@@ -1,0 +1,44 @@
+top key (23, 21, 10, 3) sum deg 63 2n 46 ceil(3m/n) 3
+  d=1 tp=9 Sp=7 excluded
+  d=1 tp=10 Sp=-4 excluded
+  d=2 tp=9 Sp=5 excluded
+  d=2 tp=10 Sp=-6 excluded
+  d=3 tp=9 Sp=3 feasible
+  d=3 tp=10 Sp=-8 excluded
+decompositions of (22,18) slack 3, K8=True: bf 5 dp 5 EQUAL
+     ((1, 0, 0), (21, 18, 9)) [3, 0]
+     ((3, 1, 1), (19, 17, 8)) [0, 3]
+     ((8, 6, 3), (14, 12, 6)) [3, 0]
+     ((10, 8, 4), (12, 10, 5)) [2, 1]
+     ((22, 18, 9),) [3]
+decompositions of (22,18) slack 3, K8=False: bf 5 dp 5 EQUAL
+     ((1, 0, 0), (21, 18, 9)) [3, 0]
+     ((3, 1, 1), (19, 17, 8)) [0, 3]
+     ((8, 6, 3), (14, 12, 6)) [3, 0]
+     ((10, 8, 4), (12, 10, 5)) [2, 1]
+     ((22, 18, 9),) [3]
+BRANCH (20, 12, 7, 3) d=2 tp=6 Sp=11 engine 78 bf 78 dp 78 bf_noK8 78 OK 
+BRANCH (20, 12, 7, 3) d=2 tp=7 Sp=0 engine 4 bf 4 dp 4 bf_noK8 4 OK 
+BRANCH (20, 12, 7, 3) d=3 tp=6 Sp=9 engine 48 bf 48 dp 48 bf_noK8 48 OK 
+BRANCH (19, 12, 7, 3) d=2 tp=6 Sp=8 engine 40 bf 40 dp 40 bf_noK8 40 OK 
+BRANCH (19, 12, 7, 3) d=3 tp=6 Sp=6 engine 25 bf 25 dp 25 bf_noK8 25 OK 
+BRANCH (18, 12, 7, 3) d=2 tp=6 Sp=5 engine 17 bf 17 dp 17 bf_noK8 17 OK 
+BRANCH (18, 12, 7, 3) d=3 tp=6 Sp=3 engine 10 bf 10 dp 10 bf_noK8 10 OK 
+BRANCH (17, 11, 6, 3) d=2 tp=5 Sp=11 engine 37 bf 37 dp 37 bf_noK8 37 OK 
+BRANCH (17, 11, 6, 3) d=2 tp=6 Sp=0 engine 3 bf 3 dp 3 bf_noK8 3 OK 
+BRANCH (17, 11, 6, 3) d=3 tp=5 Sp=9 engine 30 bf 30 dp 30 bf_noK8 30 OK 
+BRANCH (16, 11, 6, 3) d=3 tp=5 Sp=6 engine 15 bf 15 dp 15 bf_noK8 15 OK 
+BRANCH (15, 11, 6, 3) d=3 tp=5 Sp=3 engine 6 bf 6 dp 6 bf_noK8 6 OK 
+BRANCH (21, 15, 8, 3) d=3 tp=7 Sp=7 engine 44 bf 44 dp 44 bf_noK8 44 OK 
+BRANCH (20, 15, 8, 3) d=3 tp=7 Sp=4 engine 16 bf 16 dp 16 bf_noK8 16 OK 
+BRANCH (14, 12, 6, 3) d=3 tp=5 Sp=2 engine 2 bf 2 dp 2 bf_noK8 2 OK 
+BRANCH (15, 12, 6, 3) d=3 tp=5 Sp=5 engine 7 bf 7 dp 7 bf_noK8 7 OK 
+BRANCH (17, 13, 7, 3) d=3 tp=6 Sp=2 engine 5 bf 5 dp 5 bf_noK8 5 OK 
+BRANCH (18, 14, 7, 3) d=3 tp=6 Sp=7 engine 19 bf 19 dp 19 bf_noK8 19 OK 
+BRANCH (17, 14, 7, 3) d=3 tp=6 Sp=4 engine 7 bf 7 dp 7 bf_noK8 7 OK 
+BRANCH (15, 13, 6, 3) d=3 tp=5 Sp=7 engine 6 bf 6 dp 6 bf_noK8 6 OK 
+BRANCH (22, 18, 9, 3) d=3 tp=8 Sp=5 engine 20 bf 20 dp 20 bf_noK8 20 OK 
+BRANCH (21, 18, 9, 3) d=3 tp=8 Sp=2 engine 5 bf 5 dp 5 bf_noK8 5 OK 
+BRANCH (19, 17, 8, 3) d=3 tp=7 Sp=5 engine 6 bf 6 dp 6 bf_noK8 6 OK 
+BRANCH (23, 21, 10, 3) d=3 tp=9 Sp=3 engine 5 bf 5 dp 5 bf_noK8 5 OK 
+SUMMARY recursion keys 18 branches 24 decompositions 455 differences 0

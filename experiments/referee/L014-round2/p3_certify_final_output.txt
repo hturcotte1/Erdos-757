@@ -1,0 +1,2 @@
+hits 10986 with explicit P3 violation |V(F)| <= |F|+1: 10986 violator sizes |F|: {7: 1322, 8: 4100, 10: 3576, 13: 1134, 15: 744, 20: 110}
+CP-SAT tau check on a 5% sample: 549 graphs, tau < 10 or not optimal: 0

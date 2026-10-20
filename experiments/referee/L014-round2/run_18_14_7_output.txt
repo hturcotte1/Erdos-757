@@ -1,0 +1,7 @@
+hg2g6: 12792445 graphs, 0 lines skipped
+pipeline exit 0
+hg2g6: 799342 graphs, 0 lines skipped
+classes.sh n=18 m=14 files=out/tracked/cells/cell_18_14_7_D3.txt classes=799342
+mine 799342 prover 799342
+(18,14,7,3) IDENTICAL
+SUMMARY inputs=102916 bad_input=0 bad_deg=0 bad_tau=0 max_min_covers=189 dsets=1661194083 hits=24926868 hit_tau_below_t=0 nonlinear=0 F7=1341179 P3_violated=288259 F7free_P3_violated=288259 disconnected=11020514 members_of_C=23297430 connected_members=12792445 p3_methods_disagree=0

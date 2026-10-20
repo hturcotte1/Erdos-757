@@ -1,0 +1,10 @@
+part 02 exit 0
+part 01 exit 0
+part 00 exit 0
+hg2g6: 232759 graphs, 0 lines skipped
+classes.sh n=21 m=15 files=out/tracked/cells/cell_21_15_8_D3.txt classes=232759
+SUMMARY inputs=40315 bad_input=0 bad_deg=0 bad_tau=0 max_min_covers=567 dsets=2818506636 hits=16276496 hit_tau_below_t=0 nonlinear=0 F7=840202 P3_violated=319908 F7free_P3_violated=319908 disconnected=14743447 members_of_C=15116386 connected_members=1503382 p3_methods_disagree=0
+SUMMARY inputs=40502 bad_input=0 bad_deg=0 bad_tau=0 max_min_covers=531 dsets=3457052511 hits=11647087 hit_tau_below_t=0 nonlinear=0 F7=958526 P3_violated=49515 F7free_P3_violated=49515 disconnected=10323670 members_of_C=10639046 connected_members=1030755 p3_methods_disagree=0
+SUMMARY inputs=40715 bad_input=0 bad_deg=0 bad_tau=0 max_min_covers=534 dsets=4288604365 hits=9779173 hit_tau_below_t=0 nonlinear=0 F7=1506456 P3_violated=65248 F7free_P3_violated=65248 disconnected=5128992 members_of_C=8207469 connected_members=3606267 p3_methods_disagree=0
+mine 232759 prover 232759
+(21,15,8,3) IDENTICAL

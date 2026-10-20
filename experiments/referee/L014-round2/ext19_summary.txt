@@ -1,0 +1,2 @@
+SUMMARY inputs=872909 bad_input=0 bad_deg=0 bad_tau=0 max_min_covers=315 dsets=430997012 hits=135773 hit_tau_below_t=0 nonlinear=0 F7=26091 P3_violated=70245 F7free_P3_violated=63287 disconnected=69690 members_of_C=46395 connected_members=46395 p3_methods_disagree=0
+SUMMARY inputs=878001 bad_input=0 bad_deg=0 bad_tau=0 max_min_covers=318 dsets=2595290137 hits=1244841 hit_tau_below_t=0 nonlinear=0 F7=688283 P3_violated=237272 F7free_P3_violated=83764 disconnected=12450 members_of_C=472794 connected_members=472794 p3_methods_disagree=0

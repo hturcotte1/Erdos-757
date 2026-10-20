@@ -21,6 +21,7 @@
 ## Community and formal
 - Tao optimization-constants database, constant 5b: https://teorth.github.io/optimizationproblems/constants/5b.html
 - Erdős Problem a Day progress log (entry for #757, 12 Aug 2026): https://erdosproblemaday.com/progress
+- Erdős Problem a Day, reader's self-similar construction claiming $c_*\le5/9$ for #757 (posted 19 Oct 2026; marked 'not ours, unreviewed by humans'; $O=\{0,49,75,83,98,101,117,119,121,159,269\}$, $\varphi(x)=101+18x/269$, $S_K=O\cup\varphi(S_{K-1})$ with $11+9K$ points and claimed Sidon number $7+5K$) [community]: https://erdosproblemaday.com/day/757-reader-five-ninths-refereed (found by the L014 scout on 2026-10-20; independent exact verification in experiments/20261020-1730-reader-5-9/)
 - Ma–Tang author PDF mirror: http://staff.ustc.edu.cn/~jiema/Sidon-subset-arXiv.pdf
 - the-omega-institute/trureturing issue #9804: https://github.com/the-omega-institute/trureturing/issues/9804
 - formal-conjectures 757.lean: https://github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/757.lean

@@ -1,0 +1,1 @@
+23-point (4,5)-sets tested 104; min h = 14; violations of h >= 14: 0

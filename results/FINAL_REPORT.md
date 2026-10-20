@@ -1,6 +1,6 @@
 # Erdős Problem #757: final report of the autonomous run (2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC)
 
-Last updated: 2026-10-20 16:15 UTC (48-hour extension granted by the user after the 72-hour budget, 2026-10-17/18; the extension results are R13 and section 7: certificates L007–L013 ACCEPTED by three referees each, K51–K57; certificate L014 (f(23) = 14) submitted 2026-10-18 00:30 UTC and in referee review; this branch state is merged into main by pull request #3 on 2026-10-20, and L014's outcome follows in a later pull request). Status of the goal clauses: (A) no new record set; (B) no new
+Last updated: 2026-10-20 16:15 UTC (48-hour extension granted by the user after the 72-hour budget, 2026-10-17/18; the extension results are R13 and section 7: certificates L007–L013 ACCEPTED by three referees each, K51–K57; certificate L014 (f(23) = 14, K58) ACCEPTED by three referees on 2026-10-20; the state through L013 was merged into main by pull request #3 on 2026-10-20 and L014 follows in pull request #4). Status of the goal clauses: (A) no new record set; (B) no new
 lower-bound proof; (C) the budget ends at 23:06 UTC with this report in place. The published bounds
 $9/17\le c_*\le4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set $A_{\rm base}$) are unchanged.
 
@@ -179,6 +179,7 @@ Results:
   Hence no (4,5)-set with at most 22 points beats $4/7$; the first record cells I11 allows are $(23,21,10)$, $(25,23,11)$,
   $(30,27,13)$, $(30,28,13)$, $(32,29,14)$, $(32,30,14)$, $(34,32,15)$.
 - L013 (K57, ACCEPTED by three referees): I11 on $C$ for $n\le26$ (four more induction steps with the L012 engine; no new $f(n)$).
+- L014 (K58, ACCEPTED by three referees, 2026-10-20): $f(23)=14$. The degree-3 case of the record cell $(23,21,10)$ is empty in $C$ (the slack-3 decompositions of $(22,18)$, with cell(22,18,9,3) = 94,513 classes, give 133,804 inputs and no extension in $C$); with L012 no 23-point (4,5)-set has $h=13$, and the explicit set $C_{23}=B_{12}\cup(10^9+7919B_{11})$ has $h=14$. Hence no (4,5)-set with at most 24 points beats $4/7$, and $n=25$ is the first open record size. The computation that L012 Step 8 estimated at $2.5\cdot10^{24}$ ordered-search calls took about 1.5 CPU-hours at the class level (Q14 closed).
 - L012 (K56, ACCEPTED by three referees): a 23-point record, if one exists, has every AP-degree $\le3$: the degree-4 case leaves 699 abstract
   classes in $C$, none of them realizable (exact realization of the rigid saturated systems); the degree-3 case is open (Q14).
 - By-products: K50 (non-saturated extremal 15-point sets exist, with 11 and 12 APs; two judged examples C001, C002);
@@ -188,6 +189,6 @@ Results:
 
 **What this means for the problem.** The bounds $9/17\le c_*\le4/7$ are unchanged. A proof of I11 in general would give
 $c_*\ge6/11$ (goal clause B); the induction proves it only for $n\le26$ and gives no asymptotic argument. On the upper-bound
-side, any set beating $4/7$ has at least 23 points, and the natural next target is the degree-3 case of $(23,21,10)$.
+side, any set beating $4/7$ has at least 25 points (L014), and the natural next target is the I11-tight cell $(25,23,11)$. Separately, a community post of 19 Oct 2026 claims a self-similar family with $c_*\le5/9$ (kb/literature/bibliography.md; [community]); its exact verification and judging are in progress (experiments/20261020-1730-reader-5-9/) and are not part of the results above.
 
-**Tags.** The certificates L007–L013 and their K-rows K51–K57 are [verified-here] (three referees each); I11 in general is [conjecture]; the implication $c_*\ge6/11$ is conditional on it.
+**Tags.** The certificates L007–L014 and their K-rows K51–K58 are [verified-here] (three referees each); I11 in general is [conjecture]; the implication $c_*\ge6/11$ is conditional on it.

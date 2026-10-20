@@ -1,0 +1,119 @@
+DIRECT (19,10,6,2) genbg=genbg rc=0 mine=128 prover=128 classes_mine=128 IDENTICAL | GFILT n1=19 t=6 total=424 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconne
+DIRECT (18,10,6,2) genbg=genbg rc=0 mine=67 prover=67 classes_mine=67 IDENTICAL | GFILT n1=18 t=6 total=551 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconne
+DIRECT (17,10,6,2) genbg=genbg rc=0 mine=6 prover=6 classes_mine=6 IDENTICAL | GFILT n1=17 t=6 total=390 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconne
+DIRECT (16,10,6,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=16 t=6 total=132 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconne
+DIRECT (9,5,3,2) genbg=genbg rc=0 mine=3 prover=3 classes_mine=3 IDENTICAL | GFILT n1=9 t=3 total=3 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (10,5,3,2) genbg=genbg rc=0 mine=4 prover=4 classes_mine=4 IDENTICAL | GFILT n1=10 t=3 total=4 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+DIRECT (9,4,3,2) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=9 t=3 total=2 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (10,6,3,2) genbg=genbg rc=0 mine=5 prover=5 classes_mine=5 IDENTICAL | GFILT n1=10 t=3 total=5 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+DIRECT (9,6,3,2) genbg=genbg rc=0 mine=2 prover=2 classes_mine=2 IDENTICAL | GFILT n1=9 t=3 total=2 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+>E genbg: impossible mine,maxe,mindeg,maxdeg values
+>E Usage: genbg [-c -ugs -vq -lzF] [-Z#] [-D#] [-A] [-d#|-d#:#] [-D#|-D#:#] n1 n2 
+                [mine[:maxe]] [res/mod] [file]
+   Use out/nbin/genbg -help to see more detailed instructions.
+DIRECT (8,6,3,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=8 t=3 total=0 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (8,5,3,2) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=8 t=3 total=1 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (11,5,3,2) genbg=genbg rc=0 mine=2 prover=2 classes_mine=2 IDENTICAL | GFILT n1=11 t=3 total=2 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+DIRECT (8,4,2,2) genbg=genbg rc=0 mine=2 prover=2 classes_mine=2 IDENTICAL | GFILT n1=8 t=2 total=2 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (11,6,4,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=11 t=4 total=9 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+DIRECT (7,4,2,2) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=7 t=2 total=1 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (12,6,4,2) genbg=genbg rc=0 mine=2 prover=2 classes_mine=2 IDENTICAL | GFILT n1=12 t=4 total=9 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+DIRECT (7,3,2,2) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=7 t=2 total=1 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (12,7,4,2) genbg=genbg rc=0 mine=15 prover=15 classes_mine=15 IDENTICAL | GFILT n1=12 t=4 total=15 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (11,7,4,2) genbg=genbg rc=0 mine=4 prover=4 classes_mine=4 IDENTICAL | GFILT n1=11 t=4 total=4 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+>E genbg: impossible mine,maxe,mindeg,maxdeg values
+>E Usage: genbg [-c -ugs -vq -lzF] [-Z#] [-D#] [-A] [-d#|-d#:#] [-D#|-D#:#] n1 n2 
+                [mine[:maxe]] [res/mod] [file]
+   Use out/nbin/genbg -help to see more detailed instructions.
+DIRECT (10,7,4,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=10 t=4 total=0 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+DIRECT (6,4,2,2) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=6 t=2 total=1 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (13,6,4,2) genbg=genbg rc=0 mine=2 prover=2 classes_mine=2 IDENTICAL | GFILT n1=13 t=4 total=4 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+DIRECT (6,3,2,2) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=6 t=2 total=1 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (13,7,4,2) genbg=genbg rc=0 mine=22 prover=22 classes_mine=22 IDENTICAL | GFILT n1=13 t=4 total=22 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (5,3,1,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=5 t=1 total=0 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (14,7,5,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=14 t=5 total=17 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (5,2,1,2) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=5 t=1 total=1 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (14,8,5,2) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=14 t=5 total=54 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (13,8,5,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=13 t=5 total=23 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (4,2,1,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=4 t=1 total=0 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (15,8,5,2) genbg=genbg rc=0 mine=11 prover=11 classes_mine=11 IDENTICAL | GFILT n1=15 t=5 total=63 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (3,1,1,2) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=3 t=1 total=1 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (16,9,5,2) genbg=genbg rc=0 mine=166 prover=166 classes_mine=166 IDENTICAL | GFILT n1=16 t=5 total=166 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconne
+DIRECT (15,9,5,2) genbg=genbg rc=0 mine=91 prover=91 classes_mine=91 IDENTICAL | GFILT n1=15 t=5 total=91 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (14,9,5,2) genbg=genbg rc=0 mine=19 prover=19 classes_mine=19 IDENTICAL | GFILT n1=14 t=5 total=19 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+>E genbg: impossible mine,maxe,mindeg,maxdeg values
+>E Usage: genbg [-c -ugs -vq -lzF] [-Z#] [-D#] [-A] [-d#|-d#:#] [-D#|-D#:#] n1 n2 
+                [mine[:maxe]] [res/mod] [file]
+   Use out/nbin/genbg -help to see more detailed instructions.
+DIRECT (13,9,5,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=13 t=5 total=0 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+>E genbg: impossible mine,maxe,mindeg,maxdeg values
+>E Usage: genbg [-c -ugs -vq -lzF] [-Z#] [-D#] [-A] [-d#|-d#:#] [-D#|-D#:#] n1 n2 
+                [mine[:maxe]] [res/mod] [file]
+   Use out/nbin/genbg -help to see more detailed instructions.
+DIRECT (7,5,2,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=7 t=2 total=0 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (13,8,4,2) genbg=genbg rc=0 mine=23 prover=23 classes_mine=23 IDENTICAL | GFILT n1=13 t=4 total=23 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (12,8,4,2) genbg=genbg rc=0 mine=5 prover=5 classes_mine=5 IDENTICAL | GFILT n1=12 t=4 total=5 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+>E genbg: impossible mine,maxe,mindeg,maxdeg values
+>E Usage: genbg [-c -ugs -vq -lzF] [-Z#] [-D#] [-A] [-d#|-d#:#] [-D#|-D#:#] n1 n2 
+                [mine[:maxe]] [res/mod] [file]
+   Use out/nbin/genbg -help to see more detailed instructions.
+DIRECT (11,8,4,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=11 t=4 total=0 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+>E genbg: impossible mine,maxe,mindeg,maxdeg values
+>E Usage: genbg [-c -ugs -vq -lzF] [-Z#] [-D#] [-A] [-d#|-d#:#] [-D#|-D#:#] n1 n2 
+                [mine[:maxe]] [res/mod] [file]
+   Use out/nbin/genbg -help to see more detailed instructions.
+DIRECT (10,8,4,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=10 t=4 total=0 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+>E genbg: impossible mine,maxe,mindeg,maxdeg values
+>E Usage: genbg [-c -ugs -vq -lzF] [-Z#] [-D#] [-A] [-d#|-d#:#] [-D#|-D#:#] n1 n2 
+                [mine[:maxe]] [res/mod] [file]
+   Use out/nbin/genbg -help to see more detailed instructions.
+DIRECT (10,7,3,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=10 t=3 total=0 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+>E genbg: impossible mine,maxe,mindeg,maxdeg values
+>E Usage: genbg [-c -ugs -vq -lzF] [-Z#] [-D#] [-A] [-d#|-d#:#] [-D#|-D#:#] n1 n2 
+                [mine[:maxe]] [res/mod] [file]
+   Use out/nbin/genbg -help to see more detailed instructions.
+DIRECT (9,7,3,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=9 t=3 total=0 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (19,10,7,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=19 t=7 total=424 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconne
+DIRECT (16,9,6,2) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=16 t=6 total=166 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconne
+DIRECT (19,9,6,3) genbg=genbg rc=0 mine=13 prover=13 classes_mine=13 IDENTICAL | GFILT n1=19 t=6 total=194 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconne
+DIRECT (18,9,6,3) genbg=genbg rc=0 mine=22 prover=22 classes_mine=22 IDENTICAL | GFILT n1=18 t=6 total=1229 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconn
+DIRECT (17,9,6,3) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=17 t=6 total=4540 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconn
+DIRECT (16,9,6,3) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=16 t=6 total=11456 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 discon
+DIRECT (9,4,3,3) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=9 t=3 total=3 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (10,5,3,3) genbg=genbg rc=0 mine=6 prover=6 classes_mine=6 IDENTICAL | GFILT n1=10 t=3 total=10 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (9,5,3,3) genbg=genbg rc=0 mine=6 prover=6 classes_mine=6 IDENTICAL | GFILT n1=9 t=3 total=10 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnect
+DIRECT (8,5,3,3) genbg=genbg rc=0 mine=2 prover=2 classes_mine=2 IDENTICAL | GFILT n1=8 t=3 total=5 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (7,3,2,3) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=7 t=2 total=2 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (12,6,4,3) genbg=genbg rc=0 mine=4 prover=4 classes_mine=4 IDENTICAL | GFILT n1=12 t=4 total=34 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (11,6,4,3) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=11 t=4 total=50 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (6,3,2,3) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=6 t=2 total=1 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (13,6,4,3) genbg=genbg rc=0 mine=3 prover=3 classes_mine=3 IDENTICAL | GFILT n1=13 t=4 total=13 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (5,2,1,3) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=5 t=1 total=1 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (14,7,5,3) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=14 t=5 total=109 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconne
+DIRECT (4,2,1,3) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=4 t=1 total=0 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (15,7,5,3) genbg=genbg rc=0 mine=2 prover=2 classes_mine=2 IDENTICAL | GFILT n1=15 t=5 total=31 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (3,1,1,3) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=3 t=1 total=1 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (16,8,5,3) genbg=genbg rc=0 mine=55 prover=55 classes_mine=55 IDENTICAL | GFILT n1=16 t=5 total=367 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconne
+DIRECT (15,8,5,3) genbg=genbg rc=0 mine=59 prover=59 classes_mine=59 IDENTICAL | GFILT n1=15 t=5 total=1047 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconn
+DIRECT (14,8,5,3) genbg=genbg rc=0 mine=9 prover=9 classes_mine=9 IDENTICAL | GFILT n1=14 t=5 total=2008 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconn
+DIRECT (13,8,5,3) genbg=genbg rc=0 mine=0 prover=0 classes_mine=0 IDENTICAL | GFILT n1=13 t=5 total=2555 not_3uniform_bipartite=0 nonlinear=0 F7=1 P3_violated=0 disconn
+DIRECT (7,4,2,3) genbg=genbg rc=0 mine=2 prover=2 classes_mine=2 IDENTICAL | GFILT n1=7 t=2 total=2 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (6,4,2,3) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=6 t=2 total=1 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (13,7,4,3) genbg=genbg rc=0 mine=104 prover=104 classes_mine=104 IDENTICAL | GFILT n1=13 t=4 total=236 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconne
+DIRECT (12,7,4,3) genbg=genbg rc=0 mine=97 prover=97 classes_mine=97 IDENTICAL | GFILT n1=12 t=4 total=321 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconne
+DIRECT (11,7,4,3) genbg=genbg rc=0 mine=35 prover=35 classes_mine=35 IDENTICAL | GFILT n1=11 t=4 total=273 not_3uniform_bipartite=0 nonlinear=0 F7=1 P3_violated=0 disconne
+DIRECT (10,7,4,3) genbg=genbg rc=0 mine=4 prover=4 classes_mine=4 IDENTICAL | GFILT n1=10 t=4 total=126 not_3uniform_bipartite=0 nonlinear=0 F7=1 P3_violated=0 disconne
+DIRECT (10,6,3,3) genbg=genbg rc=0 mine=43 prover=43 classes_mine=43 IDENTICAL | GFILT n1=10 t=3 total=47 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnec
+DIRECT (9,6,3,3) genbg=genbg rc=0 mine=21 prover=21 classes_mine=21 IDENTICAL | GFILT n1=9 t=3 total=24 not_3uniform_bipartite=0 nonlinear=0 F7=1 P3_violated=0 disconnect
+DIRECT (8,6,3,3) genbg=genbg rc=0 mine=3 prover=3 classes_mine=3 IDENTICAL | GFILT n1=8 t=3 total=5 not_3uniform_bipartite=0 nonlinear=0 F7=1 P3_violated=0 disconnecte
+DIRECT (7,5,2,3) genbg=genbg rc=0 mine=1 prover=1 classes_mine=1 IDENTICAL | GFILT n1=7 t=2 total=2 not_3uniform_bipartite=0 nonlinear=0 F7=0 P3_violated=0 disconnecte
+DIRECT (11,8,4,3) genbg=genbg rc=0 mine=471 prover=471 classes_mine=471 IDENTICAL | GFILT n1=11 t=4 total=895 not_3uniform_bipartite=0 nonlinear=0 F7=25 P3_violated=1 disconn
+DIRECT (10,8,4,3) genbg=genbg rc=0 mine=63 prover=63 classes_mine=63 IDENTICAL | GFILT n1=10 t=4 total=183 not_3uniform_bipartite=0 nonlinear=0 F7=16 P3_violated=3 disconn
+DIRECT (13,9,5,3) genbg=genbg rc=0 mine=84 prover=84 classes_mine=84 IDENTICAL | GFILT n1=13 t=5 total=18563 not_3uniform_bipartite=0 nonlinear=0 F7=16 P3_violated=1 disco
+DIRECT (14,9,5,3) genbg=genbg rc=0 mine=1060 prover=1060 classes_mine=1060 IDENTICAL | GFILT n1=14 t=5 total=24468 not_3uniform_bipartite=0 nonlinear=0 F7=21 P3_violated=0 disco
+DIRECT (16,10,6,3) genbg=genbg rc=0 mine=16 prover=16 classes_mine=16 IDENTICAL | GFILT n1=16 t=6 total=236382 not_3uniform_bipartite=0 nonlinear=0 F7=14 P3_violated=0 disc
+DIRECT (14,10,5,3) genbg=genbg rc=0 mine=45229 prover=45229 classes_mine=45229 IDENTICAL | GFILT n1=14 t=5 total=192159 not_3uniform_bipartite=0 nonlinear=0 F7=761 P3_violated=20 di
+DIRECT (13,10,5,3) genbg=genbg rc=0 mine=6683 prover=6683 classes_mine=6683 IDENTICAL | GFILT n1=13 t=5 total=76135 not_3uniform_bipartite=0 nonlinear=0 F7=374 P3_violated=24 dis
+DIRECT (12,10,5,3) genbg=genbg rc=0 mine=149 prover=149 classes_mine=149 IDENTICAL | GFILT n1=12 t=5 total=13440 not_3uniform_bipartite=0 nonlinear=0 F7=47 P3_violated=7 disco
+DIRECT (11,9,4,3) genbg=genbg rc=0 mine=1216 prover=1216 classes_mine=1216 IDENTICAL | GFILT n1=11 t=4 total=1464 not_3uniform_bipartite=0 nonlinear=0 F7=102 P3_violated=28 disc
+exit 0

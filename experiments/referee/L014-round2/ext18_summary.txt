@@ -1,0 +1,1 @@
+SUMMARY inputs=102916 bad_input=0 bad_deg=0 bad_tau=0 max_min_covers=189 dsets=1661194083 hits=24926868 hit_tau_below_t=0 nonlinear=0 F7=1341179 P3_violated=288259 F7free_P3_violated=288259 disconnected=11020514 members_of_C=23297430 connected_members=12792445 p3_methods_disagree=0

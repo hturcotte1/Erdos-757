@@ -1,0 +1,22 @@
+DEC [(1, 0, 0), (3, 1, 1), (17, 14, 7)] sizes [1, 1, 1708] inputs 1708
+DEC [(1, 0, 0), (6, 3, 2), (14, 12, 6)] sizes [1, 1, 2] inputs 2
+DEC [(1, 0, 0), (8, 5, 3), (12, 10, 5)] sizes [1, 2, 149] inputs 298
+DEC [(1, 0, 0), (10, 7, 4), (10, 8, 4)] sizes [1, 4, 63] inputs 252
+DEC [(1, 0, 0), (20, 15, 8)] sizes [1, 953] inputs 953
+DEC [(3, 1, 1), (3, 1, 1), (15, 13, 6)] sizes [1, 949522] inputs 949522
+DEC [(3, 1, 1), (4, 2, 1), (14, 12, 6)] sizes [1, 0, 2] inputs 0
+DEC [(3, 1, 1), (6, 4, 2), (12, 10, 5)] sizes [1, 1, 149] inputs 149
+DEC [(3, 1, 1), (8, 6, 3), (10, 8, 4)] sizes [1, 3, 63] inputs 189
+DEC [(3, 1, 1), (18, 14, 7)] sizes [1, 799342] inputs 799342
+DEC [(4, 2, 1), (17, 13, 7)] sizes [0, 6] inputs 0
+DEC [(6, 3, 2), (15, 12, 6)] sizes [1, 10617] inputs 10617
+DEC [(6, 4, 2), (15, 11, 6)] sizes [1, 19] inputs 19
+DEC [(7, 3, 2), (14, 12, 6)] sizes [1, 2] inputs 2
+DEC [(8, 5, 3), (13, 10, 5)] sizes [2, 6683] inputs 13366
+DEC [(8, 6, 3), (13, 9, 5)] sizes [3, 84] inputs 252
+DEC [(9, 5, 3), (12, 10, 5)] sizes [6, 149] inputs 894
+DEC [(10, 7, 4), (11, 8, 4)] sizes [4, 471] inputs 1884
+DEC [(10, 8, 4), (11, 7, 4)] sizes [63, 35] inputs 2205
+DEC [(21, 15, 8)] sizes [232759] inputs 232759
+BRANCH key (22, 18, 9, 3) d=3 tp=8 Sp=5 decompositions=20 inputs=2014413
+exit 0

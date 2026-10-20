@@ -1,0 +1,16 @@
+BRANCH key (15, 12, 6, 3) d=3 tp=5 Sp=5 decompositions=7 inputs=1683
+branch d=3 tp=5 pipeline_exit=0 SUMMARY inputs=1683 bad_input=0 bad_deg=0 bad_tau=0 max_min_covers=78 dsets=7207582 hits=178302 hit_tau_below_t=0 nonlinear=0 F7=18211 P3_violated=18862 F7free_P3_violated=18862 disconnected=20162 members_of_C=141229 connected_members=141212 p3_methods_disagree=0 classes_in_branch=10617
+ONELEVEL (15,12,6,3) mine_classes=10617 prover_classes=10617 IDENTICAL
+BRANCH key (17, 13, 7, 3) d=3 tp=6 Sp=2 decompositions=5 inputs=170
+branch d=3 tp=6 pipeline_exit=0 SUMMARY inputs=170 bad_input=0 bad_deg=0 bad_tau=0 max_min_covers=234 dsets=2357887 hits=1521 hit_tau_below_t=0 nonlinear=0 F7=1350 P3_violated=41 F7free_P3_violated=41 disconnected=732 members_of_C=130 connected_members=113 p3_methods_disagree=0 classes_in_branch=6
+ONELEVEL (17,13,7,3) mine_classes=6 prover_classes=6 IDENTICAL
+BRANCH key (20, 12, 7, 3) d=2 tp=6 Sp=11 decompositions=78 inputs=640
+branch d=2 tp=6 pipeline_exit=0 SUMMARY inputs=640 bad_input=0 bad_deg=0 bad_tau=0 max_min_covers=169 dsets=83926 hits=6132 hit_tau_below_t=0 nonlinear=0 F7=0 P3_violated=0 F7free_P3_violated=0 disconnected=4890 members_of_C=6132 connected_members=1242 p3_methods_disagree=0 classes_in_branch=38
+BRANCH key (20, 12, 7, 3) d=2 tp=7 Sp=0 decompositions=4 inputs=0
+branch d=2 tp=7 pipeline_exit=1 SUMMARY inputs=0 bad_input=0 bad_deg=0 bad_tau=0 max_min_covers=0 dsets=0 hits=0 hit_tau_below_t=0 nonlinear=0 F7=0 P3_violated=0 F7free_P3_violated=0 disconnected=0 members_of_C=0 connected_members=0 p3_methods_disagree=0 classes_in_branch=0
+BRANCH key (20, 12, 7, 3) d=3 tp=6 Sp=9 decompositions=48 inputs=524
+branch d=3 tp=6 pipeline_exit=0 SUMMARY inputs=524 bad_input=0 bad_deg=0 bad_tau=0 max_min_covers=305 dsets=91172031 hits=4700054 hit_tau_below_t=0 nonlinear=0 F7=68804 P3_violated=2287 F7free_P3_violated=2287 disconnected=3873494 members_of_C=4628963 connected_members=818919 p3_methods_disagree=0 classes_in_branch=15427
+ONELEVEL (20,12,7,3) mine_classes=15465 prover_classes=15465 IDENTICAL
+BRANCH key (21, 15, 8, 3) d=3 tp=7 Sp=7 decompositions=44 inputs=121532
+Terminated
+# note: the (21,15,8,3) entry of this queue was stopped by the referee (too slow with myext2) and redone in three parts with myext3: run_21_15_8.sh / run_21_15_8_output.txt

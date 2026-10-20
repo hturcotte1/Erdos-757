@@ -1,0 +1,700 @@
+{
+ "source": "reader's 5/9 family [community]; all numbers below computed here [verified-here] unless marked",
+ "table": [
+  {
+   "K": 0,
+   "n": 11,
+   "m": 9,
+   "h": 7,
+   "ratio": "7/11",
+   "ratio_float": 0.636364,
+   "below_4_7": false,
+   "equal_4_7": false,
+   "h_equals_formula": true,
+   "four_subset_test_ok": true,
+   "e757_is_45": true,
+   "e757_alpha": 7,
+   "cpsat_plain": "OPTIMAL",
+   "cpsat_plain_bound": 7,
+   "cpsat_cuts": "OPTIMAL",
+   "cpsat_cuts_obj": 7,
+   "cpsat_cuts_bound": 7,
+   "cpsat_cuts_sec": 0.0,
+   "witness_sidon_by_definition": true,
+   "frontier_dp_h": 7,
+   "sat_ge_h": true,
+   "sat_ge_h_plus_1": false,
+   "parallelograms": 0,
+   "ap_pairs_sharing_two_points": 0
+  },
+  {
+   "K": 1,
+   "n": 20,
+   "m": 18,
+   "h": 12,
+   "ratio": "3/5",
+   "ratio_float": 0.6,
+   "below_4_7": false,
+   "equal_4_7": false,
+   "h_equals_formula": true,
+   "four_subset_test_ok": true,
+   "e757_is_45": true,
+   "e757_alpha": 12,
+   "cpsat_plain": "OPTIMAL",
+   "cpsat_plain_bound": 12,
+   "cpsat_cuts": "OPTIMAL",
+   "cpsat_cuts_obj": 12,
+   "cpsat_cuts_bound": 12,
+   "cpsat_cuts_sec": 0.0,
+   "witness_sidon_by_definition": true,
+   "frontier_dp_h": 12,
+   "sat_ge_h": true,
+   "sat_ge_h_plus_1": false,
+   "parallelograms": 0,
+   "ap_pairs_sharing_two_points": 0
+  },
+  {
+   "K": 2,
+   "n": 29,
+   "m": 27,
+   "h": 17,
+   "ratio": "17/29",
+   "ratio_float": 0.586207,
+   "below_4_7": false,
+   "equal_4_7": false,
+   "h_equals_formula": true,
+   "four_subset_test_ok": true,
+   "e757_is_45": true,
+   "e757_alpha": 17,
+   "cpsat_plain": "OPTIMAL",
+   "cpsat_plain_bound": 17,
+   "cpsat_cuts": "OPTIMAL",
+   "cpsat_cuts_obj": 17,
+   "cpsat_cuts_bound": 17,
+   "cpsat_cuts_sec": 0.0,
+   "witness_sidon_by_definition": true,
+   "frontier_dp_h": 17,
+   "sat_ge_h": true,
+   "sat_ge_h_plus_1": false,
+   "parallelograms": 0,
+   "ap_pairs_sharing_two_points": 0
+  },
+  {
+   "K": 3,
+   "n": 38,
+   "m": 36,
+   "h": 22,
+   "ratio": "11/19",
+   "ratio_float": 0.578947,
+   "below_4_7": false,
+   "equal_4_7": false,
+   "h_equals_formula": true,
+   "four_subset_test_ok": true,
+   "e757_is_45": true,
+   "e757_alpha": null,
+   "cpsat_plain": "OPTIMAL",
+   "cpsat_plain_bound": 22,
+   "cpsat_cuts": "OPTIMAL",
+   "cpsat_cuts_obj": 22,
+   "cpsat_cuts_bound": 22,
+   "cpsat_cuts_sec": 0.1,
+   "witness_sidon_by_definition": true,
+   "frontier_dp_h": 22,
+   "sat_ge_h": true,
+   "sat_ge_h_plus_1": false,
+   "parallelograms": 0,
+   "ap_pairs_sharing_two_points": 0
+  },
+  {
+   "K": 4,
+   "n": 47,
+   "m": 45,
+   "h": 27,
+   "ratio": "27/47",
+   "ratio_float": 0.574468,
+   "below_4_7": false,
+   "equal_4_7": false,
+   "h_equals_formula": true,
+   "four_subset_test_ok": true,
+   "e757_is_45": true,
+   "e757_alpha": null,
+   "cpsat_plain": "FEASIBLE",
+   "cpsat_plain_bound": 46,
+   "cpsat_cuts": "OPTIMAL",
+   "cpsat_cuts_obj": 27,
+   "cpsat_cuts_bound": 27,
+   "cpsat_cuts_sec": 0.4,
+   "witness_sidon_by_definition": true,
+   "frontier_dp_h": 27,
+   "sat_ge_h": true,
+   "sat_ge_h_plus_1": false,
+   "parallelograms": 0,
+   "ap_pairs_sharing_two_points": 0
+  },
+  {
+   "K": 5,
+   "n": 56,
+   "m": 54,
+   "h": 32,
+   "ratio": "4/7",
+   "ratio_float": 0.571429,
+   "below_4_7": false,
+   "equal_4_7": true,
+   "h_equals_formula": true,
+   "four_subset_test_ok": true,
+   "e757_is_45": true,
+   "e757_alpha": null,
+   "cpsat_plain": "FEASIBLE",
+   "cpsat_plain_bound": 55,
+   "cpsat_cuts": "OPTIMAL",
+   "cpsat_cuts_obj": 32,
+   "cpsat_cuts_bound": 32,
+   "cpsat_cuts_sec": 8.9,
+   "witness_sidon_by_definition": true,
+   "frontier_dp_h": 32,
+   "sat_ge_h": true,
+   "sat_ge_h_plus_1": false,
+   "parallelograms": 0,
+   "ap_pairs_sharing_two_points": 0
+  },
+  {
+   "K": 6,
+   "n": 65,
+   "m": 63,
+   "h": 37,
+   "ratio": "37/65",
+   "ratio_float": 0.569231,
+   "below_4_7": true,
+   "equal_4_7": false,
+   "h_equals_formula": true,
+   "four_subset_test_ok": true,
+   "e757_is_45": true,
+   "e757_alpha": null,
+   "cpsat_plain": "FEASIBLE",
+   "cpsat_plain_bound": 64,
+   "cpsat_cuts": "OPTIMAL",
+   "cpsat_cuts_obj": 37,
+   "cpsat_cuts_bound": 37,
+   "cpsat_cuts_sec": 38.1,
+   "witness_sidon_by_definition": true,
+   "frontier_dp_h": 37,
+   "sat_ge_h": true,
+   "sat_ge_h_plus_1": false,
+   "parallelograms": 0,
+   "ap_pairs_sharing_two_points": 0
+  },
+  {
+   "K": 7,
+   "n": 74,
+   "m": 72,
+   "h": 42,
+   "ratio": "21/37",
+   "ratio_float": 0.567568,
+   "below_4_7": true,
+   "equal_4_7": false,
+   "h_equals_formula": true,
+   "four_subset_test_ok": true,
+   "e757_is_45": true,
+   "e757_alpha": null,
+   "cpsat_plain": "FEASIBLE",
+   "cpsat_plain_bound": 73,
+   "cpsat_cuts": "OPTIMAL",
+   "cpsat_cuts_obj": 42,
+   "cpsat_cuts_bound": 42,
+   "cpsat_cuts_sec": 590.0,
+   "witness_sidon_by_definition": true,
+   "frontier_dp_h": 42,
+   "sat_ge_h": true,
+   "sat_ge_h_plus_1": false,
+   "parallelograms": 0,
+   "ap_pairs_sharing_two_points": 0
+  },
+  {
+   "K": 8,
+   "n": 83,
+   "m": 81,
+   "h": 47,
+   "ratio": "47/83",
+   "ratio_float": 0.566265,
+   "below_4_7": true,
+   "equal_4_7": false,
+   "h_equals_formula": true,
+   "four_subset_test_ok": true,
+   "e757_is_45": true,
+   "e757_alpha": null,
+   "cpsat_plain": "FEASIBLE",
+   "cpsat_plain_bound": 82,
+   "cpsat_cuts": "FEASIBLE",
+   "cpsat_cuts_obj": 47,
+   "cpsat_cuts_bound": 55,
+   "cpsat_cuts_sec": 900.0,
+   "witness_sidon_by_definition": true,
+   "frontier_dp_h": 47,
+   "sat_ge_h": true,
+   "sat_ge_h_plus_1": false,
+   "parallelograms": 0,
+   "ap_pairs_sharing_two_points": 0
+  }
+ ],
+ "transfer_matrix": {
+  "states": [
+   [
+    0,
+    0
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    1
+   ]
+  ],
+  "best_T_size": {
+   "(0, 0)|(0, 0)": 5,
+   "(1, 0)|(0, 0)": 5,
+   "(0, 0)|(1, 0)": 6,
+   "(1, 0)|(1, 0)": 6,
+   "(0, 0)|(0, 1)": 6,
+   "(1, 0)|(0, 1)": 6,
+   "(0, 0)|(1, 1)": 6,
+   "(1, 0)|(1, 1)": 6,
+   "(0, 1)|(0, 0)": 5,
+   "(1, 1)|(0, 0)": 6,
+   "(0, 1)|(1, 0)": 6,
+   "(1, 1)|(1, 0)": 7,
+   "(0, 1)|(0, 1)": 6,
+   "(1, 1)|(0, 1)": 7,
+   "(0, 1)|(1, 1)": 6,
+   "(1, 1)|(1, 1)": 7
+  },
+  "M": [
+   [
+    5,
+    6,
+    6,
+    6
+   ],
+   [
+    4,
+    5,
+    5,
+    5
+   ],
+   [
+    4,
+    5,
+    5,
+    5
+   ],
+   [
+    4,
+    5,
+    5,
+    5
+   ]
+  ],
+  "R_0": [
+   6,
+   7,
+   7,
+   7
+  ],
+  "R_0 (x) M": [
+   11,
+   12,
+   12,
+   12
+  ],
+  "R_0 (x) M == R_0 + 5 (finite eigenvector check)": true,
+  "R_t == R_0 + 5t for t<=200": true,
+  "h(S_t)=max R_t == 7+5t for t<=200": true,
+  "inner-to-outer V_0": [
+   6,
+   6,
+   6,
+   7
+  ],
+  "V_t == V_0 + 5t for t<=200": true
+ },
+ "deep_census": [
+  {
+   "K": 0,
+   "n": 11,
+   "n_ok": true,
+   "n_aps": 9,
+   "n_aps_expected": 9,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 9,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 0,
+   "consecutive_copies_intersections": [],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 1,
+   "n": 20,
+   "n_ok": true,
+   "n_aps": 18,
+   "n_aps_expected": 18,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 18,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 2,
+   "n": 29,
+   "n_ok": true,
+   "n_aps": 27,
+   "n_aps_expected": 27,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 27,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 3,
+   "n": 38,
+   "n_ok": true,
+   "n_aps": 36,
+   "n_aps_expected": 36,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 36,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 4,
+   "n": 47,
+   "n_ok": true,
+   "n_aps": 45,
+   "n_aps_expected": 45,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 45,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 5,
+   "n": 56,
+   "n_ok": true,
+   "n_aps": 54,
+   "n_aps_expected": 54,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 54,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 6,
+   "n": 65,
+   "n_ok": true,
+   "n_aps": 63,
+   "n_aps_expected": 63,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 63,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 7,
+   "n": 74,
+   "n_ok": true,
+   "n_aps": 72,
+   "n_aps_expected": 72,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 72,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 8,
+   "n": 83,
+   "n_ok": true,
+   "n_aps": 81,
+   "n_aps_expected": 81,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 81,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 9,
+   "n": 92,
+   "n_ok": true,
+   "n_aps": 90,
+   "n_aps_expected": 90,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 90,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 10,
+   "n": 101,
+   "n_ok": true,
+   "n_aps": 99,
+   "n_aps_expected": 99,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 99,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 11,
+   "n": 110,
+   "n_ok": true,
+   "n_aps": 108,
+   "n_aps_expected": 108,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 108,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 12,
+   "n": 119,
+   "n_ok": true,
+   "n_aps": 117,
+   "n_aps_expected": 117,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 117,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 15,
+   "n": 146,
+   "n_ok": true,
+   "n_aps": 144,
+   "n_aps_expected": 144,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 144,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 20,
+   "n": 191,
+   "n_ok": true,
+   "n_aps": 189,
+   "n_aps_expected": 189,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 189,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.0
+  },
+  {
+   "K": 30,
+   "n": 281,
+   "n_ok": true,
+   "n_aps": 279,
+   "n_aps_expected": 279,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 279,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.1
+  },
+  {
+   "K": 50,
+   "n": 461,
+   "n_ok": true,
+   "n_aps": 459,
+   "n_aps_expected": 459,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 459,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.3
+  },
+  {
+   "K": 75,
+   "n": 686,
+   "n_ok": true,
+   "n_aps": 684,
+   "n_aps_expected": 684,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 684,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.6
+  },
+  {
+   "K": 100,
+   "n": 911,
+   "n_ok": true,
+   "n_aps": 909,
+   "n_aps_expected": 909,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 909,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 0.8
+  },
+  {
+   "K": 150,
+   "n": 1361,
+   "n_ok": true,
+   "n_aps": 1359,
+   "n_aps_expected": 1359,
+   "non_AP_coincidences_(parallelograms/other)": 0,
+   "aps_inside_one_copy": 1359,
+   "point_pairs_in_two_APs": 0,
+   "max_span_of_APs_in_minimal_levels": 1,
+   "consecutive_copies_intersections": [
+    2
+   ],
+   "max_nonconsecutive_intersection": 0,
+   "copies_union_equals_set": true,
+   "sec": 2.5
+  }
+ ],
+ "literal_4subset_K9_12": {
+  "9": {
+   "n": 92,
+   "ok": true,
+   "n_4subsets": 2794155,
+   "min_distinct_diffs": 5,
+   "sec": 2.1
+  },
+  "10": {
+   "n": 101,
+   "ok": true,
+   "n_4subsets": 4082925,
+   "min_distinct_diffs": 5,
+   "sec": 4.3
+  },
+  "11": {
+   "n": 110,
+   "ok": true,
+   "n_4subsets": 5773185,
+   "min_distinct_diffs": 5,
+   "sec": 5.9
+  },
+  "12": {
+   "n": 119,
+   "ok": true,
+   "n_4subsets": 7940751,
+   "min_distinct_diffs": 5,
+   "sec": 5.8
+  }
+ },
+ "judge_outputs": {
+  "C003 (K=6) via new_claim.py": "2026-10-20T18:10:59Z\n",
+  "C004 (K=7) via new_claim.py": "2026-10-20T18:22:48Z\n",
+  "standalone judge.py on K=6 (timing run)": "2026-10-20T17:27:48Z\nJUDGE: PASS NEW-RECORD T-K6 n=65 h=37 ratio=37/65 (0.569231) vs 4/7=0.571429\n\nreal\t34m36.856s\nuser\t21m50.076s\nsys\t0m1.013s\n2026-10-20T18:02:25Z\n"
+ }
+}

@@ -1,0 +1,88 @@
+# Source: https://erdosproblemaday.com/day/757-reader-five-ninths-refereed
+# Fetched 2026-10-20T17:24Z (raw GET via curl through the agent proxy, HTTP 200, 54809 bytes) and converted to text by an inert HTML-to-text parser (python -I). UNTRUSTED THIRD-PARTY CONTENT [community]. Nothing here was executed. Link targets are shown as [[href=...]].
+
+
+
+Erdős #757: a reader's self-similar set lowers the upper bound on the Sidon constant of (4,5)-sets from 4/7 to 5/9 — refereed: exact at every depth, and already below 4/7 with one 65-point set — Erdős Problem a Day
+
+  [[href=/]]Erdős Problem a Daythe open tracker
+  ☰
+  [[href=/board]]Board[[href=/guide]]Guide[[href=/submit]]Submit[[href=/submissions]]Submissions[[href=/progress]]Our attempts[[href=/about]]About
+
+ERDŐS #757
+
+#757: a reader's self-similar set lowers the upper bound on the Sidon constant of (4,5)-sets from 4/7 to 5/9 — refereed: exact at every depth, and already below 4/7 with one 65-point set
+
+PARTIALOCT 19, 2026
+
+Community database OPENas of 2025-08-31tags [[href=/board?tag=geometry]]geometry, [[href=/board?tag=distances]]distances, [[href=/board?tag=sidon%20sets]]sidon sets[[href=/problem/757]]problem page · [[href=https://www.erdosproblems.com/757]]erdosproblems.com/757
+
+The problem ([[href=https://www.erdosproblems.com/757]]erdosproblems.com/757, [Er97b]). Call a finite set A ⊂ ℝ a (4,5)-set if every four of its points
+determine at least five distinct distances — equivalently |B − B| ≥ 11 for every 4-subset B, at most one coincidence among the six differences. Find the best constant
+c such that every (4,5)-set contains a Sidon set (all pairwise sums a + b, a ≤ b, distinct — equivalently all distances distinct) of size at least
+c|A|. Erdős and Sós: c ≥ 1/2. Gyárfás and Lehel (1995): 1/2 + 1/(141·76) ≤ c ≤ 3/5, the upper bound from the Fibonacci numbers. Ma and Tang
+([[href=https://arxiv.org/abs/2602.23282]]arXiv:2602.23282, v2 March 2026) proved the limit exists, raised the lower bound to 9/17 and lowered the upper to 4/7 with a 14-point set whose
+largest Sidon subset has 8 points. Tao's optimization-constants database (constant 5b) and the live problem page both still list 4/7.
+
+The submission ([[href=/submission/7bkzb8]]reader submission 7bkzb8, 17 October, anonymous), in full: "c ≤ 5/9. Let
+O = {0,49,75,83,98,101,117,119,121,159,269} and φ(x) = 101 + 18x/269, so φ(0) = 101 and φ(269) = 119 are both in O. Then
+SK = O ∪ φ(O) ∪ … ∪ φK(O) is a (4,5)-set with 11 + 9K points whose largest Sidon subset has 7 + 5K points, so
+c ≤ lim (7+5K)/(11+9K) = 5/9. (Scale by 269K for integers.) Why +5 per level: a Sidon set takes at most 6 of a new copy's 9 inner points, and at most 5 if it contains
+either anchor point of that copy (the images of 0 and 269). A largest Sidon subset of the previous stage that avoids both anchors is 1 smaller."
+
+9/17 ≤ c ≤ 5/9 ≈ 0.5556   (was ≤ 4/7 ≈ 0.5714)
+
+Why it works. O's only additive structure is nine three-term progressions — {0,49,98}, {49,75,101}, {49,83,117}, {49,159,269}, {75,98,121}, {75,117,159},
+{83,101,119}, {83,121,159}, {117,119,121} — one centred at each of its nine interior points, which is the most Ma–Tang's Lemma 2.4 allows (|O| − 2). No two share two points, so no four
+points carry two coincidences. The map φ shrinks O by 18/269 and drops it onto the gap between 101 and 119, so consecutive copies share exactly two points and copies further apart share none.
+Because no additive relation ever crosses copies, a Sidon subset of SK is exactly a chain of choices, one per copy, that avoid that copy's nine progressions. A four-state
+max-plus transfer matrix — states = which of the two shared points are taken — runs the chain: the vector after copy 0 is [6, 7, 7, 7], one step adds exactly 5 to every entry, and so the Sidon number
+is 7 + 5K at every depth. That is the submitter's sketch, made exact.
+
+What we checked (none of the submitter's code; there was none).
+
+Exhaustive, exact. The literal |B − B| ≥ 11 test on every 4-subset of SK for K ≤ 12 (119 points, 7.9 million 4-sets): no failure. Every
+additive relation a + b = c + d (with a = b allowed) in S12: exactly 9·13 = 117, every one inside a single copy; a point planted
+to create a cross-copy relation is detected.
+
+Two solvers. Largest Sidon subset by OR-tools CP-SAT (optimal, bound = value) for K ≤ 8, and by a separately written integer construction with a distance-collision
+encoding on CaDiCaL plus a cardinality constraint (≥ 7 + 5K satisfiable, ≥ 8 + 5K unsatisfiable) for K ≤ 8. Both agree with 7 + 5K; at K = 6 that is
+37 of 65 points, 37/65 ≈ 0.5692 < 4/7, a single finite set below the published bound.
+
+Every depth. Write each point as φj(x), its level j, and use the fixed point L = 27169/251 of φ: then
+251(p − L) = (18/269)j(251x − 27169), and 27169 = 101·269. A relation must balance its deepest level modulo 269, which needs two points there; it must
+be nonzero at its shallowest level; and the sizes then force the span between the deepest and shallowest levels to be at most ten. Shifting levels preserves relations, so every relation at any depth
+is a shifted copy of one already in S12 — inside a single copy. From that, the (4,5)-property for every K follows in three lines (two progressions on four points would
+have to sit in consecutive copies through both shared points, and no progression of O contains both 0 and 269), and the transfer matrix gives the Sidon number exactly.
+
+Hostile referee. A separately briefed seat, told to refute, with the files and Ma–Tang's paper: holds with gaps. It found four, all fixed before this page: uniqueness of
+the level representation was asserted, not proved (it is what makes the point count 11 + 9K and the copy intersections exact at every depth); the two-point non-vanishing step skipped
+the coefficient-2 case; the coincidence count in the (4,5) step was left implicit; a code comment claimed a check the file does not run. It also tightened one case of the span bound (a relation on two levels sits on adjacent levels; the overall bound stays ten),
+brute-forced the relation census independently at depths up to 150, and rebuilt the transfer matrix from scratch to depth 200.
+
+Novelty, as of 19 October: the live problem page (edited 10 April; seven comments, no proof claims), Tao's constant 5b, Ma–Tang v2 (the current version) and arXiv: nothing below 4/7.
+
+Scope. This lowers the upper bound; it does not determine c. 5/9 is a limit, approached and never reached by the family: each depth gives
+c ≤ (7 + 5K)/(11 + 9K), and the first depth below 4/7 is K = 6. The lower bound 9/17 ≈ 0.529 is untouched. A side effect for our own work: a 16-point
+(4,5)-set with Sidon number 9 — the target of a SAT search running on our machine since 11 October — would give 9/16 ≈ 0.5625, no longer an improvement.
+
+Labels. (d) computer-assisted: O's nine progressions and (4,5)-property, the depth-12 relation census, the transfer-matrix entries, and the solver values used as
+cross-checks. (a) elementary: the level argument that extends the census to every depth, the (4,5) deduction, and the chain recursion. Nothing rests on (c). Unreviewed by humans.
+
+Whose. The set, the map, the claim and the +5-per-level sketch are the reader's. Ours: the every-depth proof write-up, the checks, and the referee pass.
+
+Sources & verification
+[[href=https://www.erdosproblems.com/757]]erdosproblems.com/757 ↗
+[[href=https://erdosproblemaday.com/submission/7bkzb8]]Reader submission 7bkzb8 — verdict and review ↗
+[[href=https://arxiv.org/abs/2602.23282]]Ma–Tang, Largest Sidon subsets in weak Sidon sets (arXiv:2602.23282) ↗
+[[href=https://github.com/teorth/optimizationproblems/blob/main/constants/5b.md]]Tao's optimization constants, 5b ↗
+[[href=https://github.com/pw/ErdosProblemADay.com/tree/main/verification/757/reader-5-9]]Every-depth proof, two solvers, exhaustive checks, referee report ↗
+
+[[href=/progress]]← our attempt log · [[href=/problem/757]]problem #757 on the board
+
+The problems are Paul Erdős's, collected by Thomas Bloom at [[href=https://www.erdosproblems.com]]erdosproblems.com — the authoritative wording lives there.
+  Statuses come from the community database [[href=https://github.com/teorth/erdosproblems]]teorth/erdosproblems and statements from
+  Google DeepMind's [[href=https://github.com/google-deepmind/formal-conjectures]]Formal Conjectures, both Apache-2.0.
+
+Built and kept by Patrick White with Claude (Anthropic). Our own attempts are labelled as ours, everywhere. [[href=/about]]About · [[href=/submit]]Send an attempt
+
