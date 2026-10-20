@@ -453,3 +453,7 @@ Format for each work block:
 
 ## 2026-10-20T21:12Z journal PR #6 merged into main (48fd694): L015/K60 on main
 - https://github.com/hturcotte1/Erdos-757/pull/6 (branch at f7aa54c -> main, merge commit 48fd694). main now holds everything through K60: the project's own results (K51-K58, f(16..23) exact values, I11 on C for n <= 26) and the verified community construction (K59 record set, K60 proof of c* <= 5/9 for the family). Remaining background: the n = 27 I11 chain (unrefereed probe) and a status run.
+
+## 2026-10-20T22:12Z result n = 27 chain: cell(25,19,10,3) = 35,645 classes; cell(26,22,11,3) 1/10 chunks; resumed with 2 processes
+- Worker (experiments/20261017-2150-i11-n27, 6 h cap, 1 core): cell(25,19,10,3) = 35,645 classes (2,082,993 inputs, 2.31e10 ext_d nodes, bad_tau 0; the last 46 of 84 chunks added no new class); cell(26,22,11,3): only branch d=3, tau'=10 (Delta <= 3 throughout), 15 decompositions, about 229,369 inputs in 10 chunks, chunk 1 done; cell(27,25,12,3) not started; the other four open n = 27 cells empty. Resume logic verified at a chunk boundary (identical md5 and hit counts). [verified-here as a computation, not refereed]
+- Decision: worker relaunched with NPROC=2 (4 h cap) to finish cell(26,22,11,3) and run cell(27,25,12,3); if empty, I11 holds on C for n = 27 by computation (f(27) = 16 would follow after a certificate). Status blocks of 21:11 and 21:33 UTC: clauses A,C, integrity OK; git flag tripped only by workers' live scratch files.
