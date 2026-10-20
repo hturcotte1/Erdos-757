@@ -39,15 +39,6 @@ def no4rel(X):
     return True
 
 
-def aps(X):
-    S = set(X)
-    Xs = sorted(X)
-    return [(a, (a + c) / 2 if not isinstance(a, int) else (a + c) // 2, c) for a, c in combinations(Xs, 2)
-            if ((a + c) % 2 == 0 if isinstance(a, int) and isinstance(c, int) else True) and
-            ((a + c) // 2 if isinstance(a, int) and isinstance(c, int) else (a + c) / 2) in S and
-            (isinstance(a, int) and isinstance(c, int) or True)]
-
-
 def aps_exact(X):
     S = set(X)
     out = []

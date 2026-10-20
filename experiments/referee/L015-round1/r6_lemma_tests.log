@@ -1,0 +1,22 @@
+     A_base: n=14 (4,5)=True  no4rel&linear=True
+     small_records[8]: n=8 (4,5)=True  no4rel&linear=True
+     small_records[10]: n=10 (4,5)=True  no4rel&linear=True
+     small_records[11]: n=11 (4,5)=True  no4rel&linear=True
+     small_records[12]: n=12 (4,5)=True  no4rel&linear=True
+     small_records[14]: n=14 (4,5)=True  no4rel&linear=True
+     small_records[12b]: n=12 (4,5)=True  no4rel&linear=True
+     small_records[12c]: n=12 (4,5)=True  no4rel&linear=True
+     Fibonacci F3..F20: n=18 (4,5)=True  no4rel&linear=True
+     {1,2,3,5,...} (negative): n=7 (4,5)=False  no4rel&linear=False
+     O: n=11 (4,5)=True  no4rel&linear=True
+PASS L4 on named sets and all induced subsets of A_base and the three 12-point sets (27316 sets; 2.2s)
+PASS L4 on 20000 random integer sets: (4,5) 8914, not (4,5) 11086, equivalence holds in all (2.7s)
+PASS L4 on 60 gluings A_base u (qO+t), generic and integer q (6.6s)
+PASS L4 on 750 census sets from data/ (every 7th of census_n14_m12_classes and ext15_sets): all (4,5), all weak Sidon & linear (7.7s)
+PASS L5 (Sidon = AP-free in weak Sidon sets): h = alpha(AP) on 143 weak Sidon sets incl. A_base (h=8), O (h=7) (7.8s)
+PASS 7.2: (7+5K)/(11+9K) = 5/9 + 8/(9(11+9K)) for K <= 100
+PASS 7.2: strictly decreasing, > 5/9
+PASS 7.5: below 4/7 iff K >= 6; K = 5 gives exactly 4/7
+PASS 7.5: K=6 ratio 37/65 < 4/7 (exact)
+     K=0..6 ratios: ['7/11', '3/5', '17/29', '11/19', '27/47', '4/7', '37/65']
+SUMMARY: 0 failures
