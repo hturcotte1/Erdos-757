@@ -1,0 +1,5 @@
+pairs: 2080 distinct differences: 2017 multiplicity histogram: {2: 63, 1: 1954}
+tau = 28 | Henning-Yeo 17tau <= 5n+3m: 476 <= 514 True | HY lower bound on h: h >= ceil((9n+6)/17) = 35
+I11 (conjecture) 11tau <= 3n+2m: 308 <= 321 True
+D = 17h - 9n = 44 | D/n = 44/65 vs 5/7: True
+h/n = 37/65 < 4/7: True | 4/7 - h/n = 1/455

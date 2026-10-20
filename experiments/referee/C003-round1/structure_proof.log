@@ -1,0 +1,7 @@
+1. rebuilt S_6: 65 points; equals claim set exactly: True; scale 269^6 = 378890468381881; max = 101921535994725989 (= 269^7: True)
+2. copy structure (|C_j|=11, C_(j-1) n C_j = phi^j{0,269} = phi^(j-1){101,119}, far copies disjoint): True;  65 = 7*11 - 6*2: True
+3. APs of O: 9: [(0, 49, 98), (49, 75, 101), (49, 83, 117), (49, 159, 269), (75, 98, 121), (75, 117, 159), (83, 101, 119), (83, 121, 159), (117, 119, 121)]
+   claim-set relations: 63 (all 3-sets); each inside one copy: True; set of relations == {phi^j(AP of O)} (63 images): True
+4. O: 831 AP-free subsets, alpha(O) = 7; (F2) holds: True; (F1) holds: True
+   per-copy table M[s][s'] = max|T| - |s| (rows s = T n {0,269}: none, 0, 269, both; cols s' = T n {101,119}): [[5, 6, 6, 6], [4, 5, 5, 5], [4, 5, 5, 5], [4, 5, 5, 5]];  R_0 = [6, 7, 7, 7]
+5. telescoping bound 6 + 5K + 1 = 37 for K = 6; exact max-plus chain value = 37; phi(0) = 101, phi(269) = 119

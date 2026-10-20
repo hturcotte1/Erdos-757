@@ -1,0 +1,10 @@
+A: n=65, distinct, all ints, min=0 max=101921535994725989
+B: rebuilt |S_6|=65 scale=378890468381881 (=269^6: True) equals claim set: True
+B: minimal levels in sorted order: [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 5, 5, 5, 5, 4, 4, 4, 4, 3, 3, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+C: checked 677040 4-subsets (expected 677040); min #distinct distances = 5; (4,5): True; 1.1s
+D: weak Sidon: True
+E: conflicts by size {3: 63}; max multiplicity of a difference 2; 3-APs m=63; linear=True; midpoints=63; non-midpoints=[0, 101921535994725989]; level spans {0: 51, 1: 12}
+E: degree sequence: [4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1]
+F: witness size 37, subset of A, Sidon (differences distinct): True, sums distinct: True
+G: 37/65 = 37/65 < 4/7: True; 4/7 - 37/65 = 1/455; 37*7=259 vs 4*65=260
+ALL STAGES PASSED; elapsed 1.1 s

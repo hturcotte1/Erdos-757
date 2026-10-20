@@ -1,0 +1,63 @@
+{
+ "n": 65,
+ "num_conflicts": 63,
+ "sat_ge37_cadical195_totalizer": {
+  "sat": true,
+  "time_s": 0.14,
+  "model_verified": true,
+  "model_size": 37
+ },
+ "sat_ge37_glucose4_seqcounter": {
+  "sat": true,
+  "time_s": 0.01,
+  "model_verified": true,
+  "model_size": 37
+ },
+ "sat_ge37_cadical195_kmtotalizer": {
+  "sat": true,
+  "time_s": 0.01,
+  "model_verified": true,
+  "model_size": 37
+ },
+ "sat_ge38_cadical195_totalizer": {
+  "sat": false,
+  "time_s": 0.5,
+  "model_verified": null,
+  "model_size": null
+ },
+ "sat_ge38_glucose4_seqcounter": {
+  "sat": false,
+  "time_s": 0.09,
+  "model_verified": null,
+  "model_size": null
+ },
+ "sat_ge38_cadical195_kmtotalizer": {
+  "sat": false,
+  "time_s": 0.33,
+  "model_verified": null,
+  "model_size": null
+ },
+ "dp_copy_order": {
+  "best": 37,
+  "peak_states": 56,
+  "time_s": 0.01,
+  "witness_verified": true
+ },
+ "dp_level_then_value": {
+  "best": 37,
+  "peak_states": 180,
+  "time_s": 0.03,
+  "witness_verified": true
+ },
+ "dp_reverse_copy_order": {
+  "best": 37,
+  "peak_states": 56,
+  "time_s": 0.01,
+  "witness_verified": true
+ },
+ "dp_sorted_by_value": {
+  "best": null,
+  "peak_states": 3666176,
+  "time_s": 106.57
+ }
+}

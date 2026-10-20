@@ -1,0 +1,37 @@
+OK   best[s][s'] identical by (A) AP-free bitmasks and (B) Sidon-by-definition; all 16 entries finite
+     number of Sidon (= AP-free) subsets of O, including the empty set: 831
+     states (order): [(0, 0), (1, 0), (0, 1), (1, 1)]
+     best[s][s'] (rows s = anchor state, columns s' = inner state):
+       (0, 0) [5, 6, 6, 6]   #maximisers: [2, 1, 1, 2]
+       (1, 0) [5, 6, 6, 6]   #maximisers: [11, 7, 6, 7]
+       (0, 1) [5, 6, 6, 6]   #maximisers: [12, 8, 7, 7]
+       (1, 1) [6, 7, 7, 7]   #maximisers: [8, 6, 4, 5]
+     M = [[5, 6, 6, 6], [4, 5, 5, 5], [4, 5, 5, 5], [4, 5, 5, 5]]
+     R0 = [6, 7, 7, 7]
+OK   M = [[5,6,6,6],[4,5,5,5],[4,5,5,5],[4,5,5,5]] (the agent's matrix)
+OK   R0 = [6,7,7,7] (the page's vector)
+OK   h(O) = max R0 = 7
+     R0 (x) M = [11, 12, 12, 12]
+OK   R0 (x) M = R0 + 5 = [11,12,12,12] (max-plus eigenvector, eigenvalue 5)
+     column (0, 0): R0[i]+M[i][k] = [11, 11, 11, 11], max 11 attained at [(0, 0), (1, 0), (0, 1), (1, 1)]
+     column (1, 0): R0[i]+M[i][k] = [12, 12, 12, 12], max 12 attained at [(0, 0), (1, 0), (0, 1), (1, 1)]
+     column (0, 1): R0[i]+M[i][k] = [12, 12, 12, 12], max 12 attained at [(0, 0), (1, 0), (0, 1), (1, 1)]
+     column (1, 1): R0[i]+M[i][k] = [12, 12, 12, 12], max 12 attained at [(0, 0), (1, 0), (0, 1), (1, 1)]
+OK   iteration check: R_t = R0 + 5t for t = 1..100 (consistency only)
+OK   U* = {0,98,101,117,119,159,269}: Sidon, AP-free, a(U*) = b(U*) = (1,1), |U*| = 7 = best[(1,1)][(1,1)]
+     AP (0, 49, 98) misses [49]
+     AP (49, 75, 101) misses [49, 75]
+     AP (49, 83, 117) misses [49, 83]
+     AP (49, 159, 269) misses [49]
+     AP (75, 98, 121) misses [75, 121]
+     AP (75, 117, 159) misses [75]
+     AP (83, 101, 119) misses [83]
+     AP (83, 121, 159) misses [83, 121]
+     AP (117, 119, 121) misses [121]
+OK   used bound: alpha(O) <= 7
+OK   used bound: best[s][(0,0)] <= 6 for all s
+OK   used bound: best[(0,0)][s'] <= 6 for all s'
+OK   used bound: best[(0,0)][(0,0)] <= 5
+OK   used bound: best[s][s'] <= 5 + |s| for |s| = 1
+OK   used bound: best[s][(0,0)] <= 4 + |s| for s != (0,0)
+ALL TRANSFER CHECKS OK

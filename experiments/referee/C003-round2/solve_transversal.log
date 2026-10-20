@@ -1,0 +1,2 @@
+transversal MILP: status=0 (Optimization terminated successfully. (HiGHS Status 7: Optimal)) tau=28 -> h = n - tau = 37; complement Sidon=True size=37; 3.7s
+LP relaxation of tau: 21.1418 (so fractional bound h <= 43.8582); integrality gap closed by branch and bound

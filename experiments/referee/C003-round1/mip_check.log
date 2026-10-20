@@ -1,0 +1,12 @@
+== highs ge38 600
+n=65 forbidden unions=63 sizes=[3] solver=highs mode=ge38
+{"status": 2, "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)", "dual_bound": null, "seconds": 5.3}
+== scip max 600
+n=65 forbidden unions=63 sizes=[3] solver=scip mode=max
+{"status": "OPTIMAL", "obj": 37.000000000000014, "bound": 37.0, "seconds": 4.4, "solution_size": 37, "solution_is_sidon": true}
+== scip ge38 600
+n=65 forbidden unions=63 sizes=[3] solver=scip mode=ge38
+{"status": "INFEASIBLE", "seconds": 12.7}
+== highs max 600
+n=65 forbidden unions=63 sizes=[3] solver=highs mode=max
+{"status": 0, "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)", "obj": 37.0, "dual_bound": -37.0, "seconds": 4.7, "solution_size": 37, "solution_is_sidon": true}

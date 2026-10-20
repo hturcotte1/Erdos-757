@@ -1,0 +1,14 @@
+A_base: n=14 (4,5)=True h_DP=8 h_brute=8 expected=8 OK
+12-pt third set: n=12 (4,5)=True h_DP=7 h_brute=7 expected=7 OK
+small_records[8]: n=8 (4,5)=True h_DP=5 h_brute=5 expected=5 OK
+small_records[10]: n=10 (4,5)=True h_DP=6 h_brute=6 expected=6 OK
+small_records[11]: n=11 (4,5)=True h_DP=7 h_brute=7 expected=7 OK
+small_records[12]: n=12 (4,5)=True h_DP=7 h_brute=7 expected=7 OK
+small_records[14]: n=14 (4,5)=True h_DP=8 h_brute=8 expected=8 OK
+small_records[12b]: n=12 (4,5)=True h_DP=7 h_brute=7 expected=7 OK
+small_records[12c]: n=12 (4,5)=True h_DP=7 h_brute=7 expected=7 OK
+Fibonacci 2..F_17 (16 pts): n=16 (4,5)=True h_DP=10 h_brute=10 expected=None OK
+negative [1,2,3,5]: (4,5) = False (must be False: diffs {1,2,3,4})
+control [1,2,3,6]: (4,5) = True (must be True: diffs {1,..,5}; it is (4,5) but not Sidon, K3), Sidon = False (must be False)
+negative: claim set + one point x = a+b-c, 20 trials: (4,5) rejected in 20 of the trials with x new
+negative: witness + any one of the 28 other points is Sidon for 0 of them (0 expected: the witness is maximal); diff/sum tests agree: True

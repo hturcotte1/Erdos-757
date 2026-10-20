@@ -1,0 +1,22 @@
+claim id: C003-reader-5-9-K6 | type: construction
+entry types: ['int']
+n = 65, distinct = True, min = 0, max = 101921535994725989
+min gap between consecutive points: 68024448
+(4,5) check (>=5 distinct positive differences): ok=True bad=None checked=677040 [0.6s]
+(4,5) literal |B-B|>=11: ok=True bad=None checked=677040 [2.4s]
+sum census: 63 relations a+b=c+d with distinct multisets; union sizes {3: 63}; max multiplicity of a sum = 2
+difference census: 63 equal-difference pair-pairs; same forbidden unions as sums: True
+weak Sidon (x<y sums distinct): True
+number of 3-APs: 63
+3-AP hypergraph linear: True
+number of distinct midpoints m = 63 (n-2 = 63 )
+AP-degree histogram {degree: #vertices}: {1: 2, 2: 9, 3: 47, 4: 7}
+witness: size=37, distinct=True, subset=True, Sidon(sums)=True, Sidon(diffs)=True
+claimed_h: 37
+frontier DP [greedy min-frontier order]: skipped (more than 3000000 states at step 29) [26.3s]
+frontier DP [BFS order from the minimum]: h = 37; max frontier width 7; max #states 90; reconstructed optimum is Sidon by definition: True [0.0s]
+frontier DP [BFS order from the maximum]: h = 37; max frontier width 6; max #states 56; reconstructed optimum is Sidon by definition: True [0.0s]
+frontier DP [value order]: skipped (more than 3000000 states at step 23) [13.5s]
+h/n = 37/65 = 0.569231;  4/7 = 0.571429;  h/n < 4/7: True  (7h = 259 vs 4n = 260)
+claimed_h == h: True
+total 44.4s
