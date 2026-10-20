@@ -50,7 +50,40 @@ Checks per K (all exact; independent of each other where marked):
 6. The reference judge: `judge/judge.py` through `scripts/new_claim.py` (section 4).
 
 ## 4. Results
-RESULTS_TABLE_PLACEHOLDER
+### 4.1 Table (exact; m = number of 3-APs; h = largest Sidon subset)
+| K | n | m (APs) | h | h/n | < 4/7 ? | CP-SAT (plain) | CP-SAT (+local cuts) | frontier DP | SAT >=h / >=h+1 | judge |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0 | 11 | 9 | 7 | 7/11 = 0.636364 | no | OPTIMAL (bound 7) | OPTIMAL 7/7 (0.0s) | 7 | True / False | - |
+| 1 | 20 | 18 | 12 | 3/5 = 0.6 | no | OPTIMAL (bound 12) | OPTIMAL 12/12 (0.0s) | 12 | True / False | - |
+| 2 | 29 | 27 | 17 | 17/29 = 0.586207 | no | OPTIMAL (bound 17) | OPTIMAL 17/17 (0.0s) | 17 | True / False | - |
+| 3 | 38 | 36 | 22 | 11/19 = 0.578947 | no | OPTIMAL (bound 22) | OPTIMAL 22/22 (0.1s) | 22 | True / False | - |
+| 4 | 47 | 45 | 27 | 27/47 = 0.574468 | no | FEASIBLE (bound 46) | OPTIMAL 27/27 (0.4s) | 27 | True / False | - |
+| 5 | 56 | 54 | 32 | 4/7 = 0.571429 | equal | FEASIBLE (bound 55) | OPTIMAL 32/32 (8.9s) | 32 | True / False | - |
+| 6 | 65 | 63 | 37 | 37/65 = 0.569231 | YES | FEASIBLE (bound 64) | OPTIMAL 37/37 (38.1s) | 37 | True / False | PASS NEW-RECORD (C003, 59 min) |
+| 7 | 74 | 72 | 42 | 21/37 = 0.567568 | YES | FEASIBLE (bound 73) | OPTIMAL 42/42 (590.0s) | 42 | True / False | no verdict (C004 unjudged, see 4.3) |
+| 8 | 83 | 81 | 47 | 47/83 = 0.566265 | YES | FEASIBLE (bound 82) | FEASIBLE 47/55 (900.0s) | 47 | True / False | - |
+
+- n = 11+9K and m = 9(K+1) for every K = 0..8; h = 7+5K for every K = 0..8 (each h value confirmed by the frontier DP and by the SAT pair ">= h SAT with Sidon model re-verified / >= h+1 UNSAT"; also by `e757.core.alpha` for K <= 2 and by CP-SAT with local cuts for K <= 7).
+- K = 5 is exactly 4/7 (32/56); K = 6 (65 points, 37/65 = 0.569231) is the first member below 4/7. Ratios 7/11, 3/5, 17/29, 11/19, 27/47 for K <= 4 are above 4/7; the K = 1 member (20 points, h = 12) equals f(20) = 12 (K54) and K = 0 equals f(11) = 7.
+- Plain CP-SAT (no cuts, 240 s) proves optimality only for K <= 3 (K = 3: 33 s); for K >= 4 it returns FEASIBLE with a weak bound (so "CP-SAT optimal for K <= 8", as the page says, did not reproduce for the plain model within these limits). With the local cuts it proves OPTIMAL for K <= 7. A longer CP-SAT run for K = 8 (cpsat_K8_long.py, 3000 s limit) was still running or did not finish when this was written; see cpsat_K8_long.log.
+- Transfer matrix (exact): M = [[5,6,6,6],[4,5,5,5],[4,5,5,5],[4,5,5,5]] (states (0,0),(1,0),(0,1),(1,1) for the two shared points), R_0 = [6,7,7,7], R_0 (x) M = [11,12,12,12] = R_0 + 5, R_t = R_0 + 5t for t <= 200. This reproduces the page's [6,7,7,7] and "+5 per copy".
+- Relation census (integer recursion, scale 269^K): K = 0..12, 15, 20, 30, 50, 75, 100, 150: n = 11+9K, exactly 9(K+1) APs, all inside one copy, no other coincidence a+b = c+d, no two APs share two points, consecutive copies share 2 points, others none, max level span of an AP = 1 (census_deep_results.json). The page's literal |B-B| >= 11 test for K = 9..12 (up to 119 points, 7,940,751 four-subsets) also passes here (literal_big_results.json).
+
+### 4.2 Frozen judge
+- Standalone `python3 judge/judge.py` on the K = 6 set (scratch claim id T-K6, a timing run; started 2026-10-20T17:27:48Z, ended 18:02:25Z; other jobs were running on the same 4 cores): `JUDGE: PASS NEW-RECORD T-K6 n=65 h=37 ratio=37/65 (0.569231) vs 4/7=0.571429`, real 34m36.857s (user 21m50.076s). File: standalone_verdict_K6.txt.
+- `python3 scripts/new_claim.py --slug reader-5-9-K6 ...` (started 18:10:59Z, ended 19:10:06Z; new_claim.py runs the judge twice, before and after attaching the witness): verbatim
+
+```
+JUDGE: PASS NEW-RECORD C003-reader-5-9-K6 n=65 h=37 ratio=37/65 (0.569231) vs 4/7=0.571429
+saved: results/claims/C003-reader-5-9-K6.json
+real	59m6.956s   (user 44m46.621s)
+```
+  The saved claim has claimed_h = 37 and a 37-point witness Sidon subset (re-verified here from the definition: all 703 sums x+y, x<=y, distinct). Note that this is the judge's verdict on a COMMUNITY construction that we only rebuilt; it is not refereed.
+- Cost of the judge (scaling_measure.py: judge.is_45 and judge.max_sidon_via_aps on the family): K = 1..5: alpha 0.00, 0.01, 0.15, 4.1, 91.6 s; is_45 0.0, 0.3, 0.9, 2.4, 4.9 s: a factor of about 22 per level, so the K = 6 branch-and-bound is about 30 min and K = 7 is projected at about 10 hours per judge pass.
+- K = 7 (74 points): `python3 scripts/new_claim.py --slug reader-5-9-K7 ...` was started 2026-10-20T18:22:48Z under `timeout 7200` (log: claim_K7.log). At the time of this write-up the judge had not produced a verdict (running).
+  Because an unjudged claim file in results/claims/ makes `scripts/status.py` (which re-judges every claim live) run the 74-point judge for hours, the unjudged file was moved out to `experiments/20261020-1730-reader-5-9/C004-reader-5-9-K7.unjudged.json` (no claimed_h, no witness; set identical to data/reader_5_9_family.json K = 7).
+
+
 
 ## 5. A short proof for every depth K  [derived-here, unrefereed; the finite computations in it are [verified-here]]
 Notation. r = 18/269, L = 27169/251 (so phi(x) = L + r(x - L)), y(x) = 251x - 27169 = 251(x - L), O° = O \ {0,269}. A point phi^j(x) satisfies 251(phi^j(x) - L) = r^j y(x).
@@ -76,7 +109,7 @@ What a referee should check: (i) Lemma 1 and Lemma 2 line by line (the mod-269 r
 ## 6. Conclusion (tags)
 - [community] The family, the 11+9K / 7+5K counts and the claim c* <= 5/9 are the reader's (via the site); the site's own checks and "referee" are not ours and the site calls them unreviewed by humans.
 - [verified-here] For K = 0..8 the rebuilt sets are (4,5)-sets of size 11+9K with exactly 9(K+1) 3-APs and h = 7+5K (several independent exact routes agree; CP-SAT alone is not conclusive at K = 8, the frontier DP and the SAT/UNSAT pair are). K = 5 gives exactly 4/7 (32/56); K = 6 gives 37/65 < 4/7.
-- [verified-here] K = 6 (65 points) JUDGE_K6_PLACEHOLDER
+- [verified-here] K = 6 (65 points) passes `scripts/new_claim.py` / `judge/judge.py`: `JUDGE: PASS NEW-RECORD C003-reader-5-9-K6 n=65 h=37 ratio=37/65 (0.569231) vs 4/7=0.571429` (results/claims/C003-reader-5-9-K6.json; 59 min). This is a judged construction beating 4/7, but it is a community-origin set and is NOT yet refereed (goal clause (A) additionally needs the referee/novelty steps).
 - [derived-here] The every-depth structure (section 5) gives h(S_K) = 7+5K and the (4,5)-property for all K, hence c* <= 5/9 [unrefereed; a referee must go through section 5].
 - Not claimed: nothing about the lower bound 9/17; nothing about f(23) or small n (the family has sizes 11, 20, 29, ...; its n = 20 member has h = 12 = f(20), n = 11 has h = 7 = f(11), consistent with K54 and the table in START_HERE).
 

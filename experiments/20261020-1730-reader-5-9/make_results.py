@@ -34,12 +34,13 @@ verdicts = {}
 for name, fn in (("C003 (K=6) via new_claim.py", "claim_K6.log"), ("C004 (K=7) via new_claim.py", "claim_K7.log"), ("standalone judge.py on K=6 (timing run)", "standalone_verdict_K6.txt")):
     p = here / fn
     verdicts[name] = p.read_text() if p.exists() else None
-res = dict(source="reader's 5/9 family [community]; all numbers below computed here [verified-here] unless marked",
+k8 = (here / "cpsat_K8_long.json")
+res = dict(cpsat_K8_long=(json.loads(k8.read_text()) if k8.exists() else None), source="reader's 5/9 family [community]; all numbers below computed here [verified-here] unless marked",
            table=rows, transfer_matrix=tm, deep_census=deep, literal_4subset_K9_12=lit, judge_outputs=verdicts)
 (here / "results.json").write_text(json.dumps(res, indent=1, default=str))
 md = ["| K | n | m (APs) | h | h/n | < 4/7 ? | CP-SAT (plain) | CP-SAT (+local cuts) | frontier DP | SAT >=h / >=h+1 | judge |", "|---|---|---|---|---|---|---|---|---|---|---|"]
 for r in rows:
-    jd = ""
+    jd = {6: "PASS NEW-RECORD (C003, 59 min)", 7: "no verdict (C004 unjudged, see 4.3)"}.get(r["K"], "-")
     md.append(f"| {r['K']} | {r['n']} | {r['m']} | {r['h']} | {r['ratio']} = {r['ratio_float']} | {'YES' if r['below_4_7'] else ('equal' if r['equal_4_7'] else 'no')} | {r['cpsat_plain']} (bound {r['cpsat_plain_bound']}) | {r['cpsat_cuts']} {r['cpsat_cuts_obj']}/{r['cpsat_cuts_bound']} ({r['cpsat_cuts_sec']}s) | {r['frontier_dp_h']} | {r['sat_ge_h']} / {r['sat_ge_h_plus_1']} | {jd} |")
 (here / "table.md").write_text("\n".join(md) + "\n")
 print("\n".join(md))
