@@ -50,3 +50,5 @@ NOTE	driver restarted after ext_d MAXP overflow (rc1 above): bin/ext_d recompile
 (23,14,8,2)	263	28.4	recurse(streamed)	5139	0	440801
 (24,16,9,3)	39568	5224.8	recurse(streamed)	127766	0	6104453207
 (25,19,10,3)	INTERRUPTED_rc124_at_03:48:59 (resumable: out/chunks)	-	-	-	-	-
+(25,19,10,3)	35645	20133.6	recurse(streamed)	2082993	0	23128213292
+(26,22,11,3)	INTERRUPTED_rc124_at_22:10:40 (resumable: out/chunks)	-	-	-	-	-
