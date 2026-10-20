@@ -375,9 +375,26 @@
    "inputs": 0,
    "bad_tau": 0,
    "ext_nodes": 0
+  },
+  "(26,22,11,3)": {
+   "classes": 36,
+   "secs": null,
+   "chunk_secs_sum": 8906.1,
+   "route": "recurse(streamed)",
+   "inputs": 229369,
+   "bad_tau": 0,
+   "ext_nodes": 941521078
+  },
+  "(27,25,12,3)": {
+   "classes": 0,
+   "secs": 31.4,
+   "route": "recurse(streamed)",
+   "inputs": 334,
+   "bad_tau": 0,
+   "ext_nodes": 53959
   }
  },
- "n_new": 47,
+ "n_new": 49,
  "resume_2026-10-20": {
   "window_utc": "2026-10-20 16:10-22:10",
   "ext_d": "bin/ext_d (MAXP=640 build, src/ext_d_maxp640.c) md5 8f76c7f8ff13d53c6f7b48dda5a37751",
@@ -399,5 +416,36 @@
   "cell_27_25_12_3": "not started",
   "conclusion": "I11 at n=27 NOT DECIDED (4 of 5 open cells empty; (27,25,12,3) needs cell(26,22,11,3))",
   "boundary_check": "chunk 38/84 (c00037) deleted and recomputed: keys.gz md5 b85fb8e3f80452b9be3d2e36217ed04c identical, same hits/connected counts"
+ },
+ "resume_2026-10-20_second_run": {
+  "window_utc": "2026-10-20 22:12-23:35",
+  "nproc": 2,
+  "workers": "WORKER=1 claim-file mode (mystream2.py), then assembling run without WORKER",
+  "ext_d": "bin/ext_d MAXP=640 build md5 8f76c7f8ff13d53c6f7b48dda5a37751 (unchanged)",
+  "cell_26_22_11_3": {
+   "classes": 36,
+   "inputs": 229369,
+   "chunks": 10,
+   "ext_nodes": 941521078,
+   "bad_tau": 0,
+   "hits_in_C": 7181,
+   "connected_hits": 1080,
+   "chunk_secs_sum": 8906.1
+  },
+  "cell_27_25_12_3": {
+   "classes": 0,
+   "inputs": 334,
+   "dec": {
+    "[(26,22,11)]": 36,
+    "[(12,10,5),(14,12,6)]": 298,
+    "[(3,1,1),(23,21,10)]": 0
+   },
+   "ext_nodes": 53959,
+   "bad_tau": 0,
+   "hits_in_C": 0,
+   "secs": 31.4,
+   "note": "ext_d hits_F7free 36 but 0 pass the filt (linear, F7-free, P3, connected, tau==12)"
+  },
+  "conclusion": "I11 holds on C for n = 27: YES (computation, unrefereed): all five open n=27 cells empty"
  }
 }

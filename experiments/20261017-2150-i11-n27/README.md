@@ -58,3 +58,16 @@ Results:
 
 Conclusion: **'I11 holds on C for n = 27': NOT DECIDED.** Four of five open n = 27 cells are empty; (27,25,12,3) remains. Remaining work: about 9 chunks of cell(26,22,11,3), then cell(27,25,12,3).
 To resume: untar chunks_25_19_10_d3_tp9.tar.gz and chunks_26_22_11_d3_tp10.tar.gz into out/ (gives out/chunks/), gunzip cell_24_16_9_D3.txt.gz and cell_25_19_10_D3.txt.gz and untar cells_n27_new.tar.gz into out/cells/, symlink the seeds as in run.sh, then `CAP_EPOCH=<epoch> bash run_heavy.sh`.
+
+
+## Finished 2026-10-20 (22:12-23:35 UTC, NPROC=2, nice -n 5, timeout) [verified-here as a computation, unrefereed]
+Binary: bin/ext_d is still the MAXP=640 build, md5 8f76c7f8ff13d53c6f7b48dda5a37751 (unchanged; other bin/ md5 as in out/ext_d_md5.txt). Disk free stayed at 18 GB.
+Parallelism: `mystream2.py` got a `WORKER` mode (env `WORKER=1`): a worker claims a chunk with an O_EXCL `cNNNNN.claim` file, skips chunks claimed or done, and at the end raises WORKER_DONE_SKIPPED_CHUNKS (expected). Chunk contents are unchanged (same code path per chunk). Two workers were started with
+`CELLDIR=$PWD/out/cells ENGINELOG=$PWD/out/engine_w.log NPROC=1 MD=10 CHUNK=25000 WORKER=1 nice -n 5 timeout 13000 python3 run_one2.py 26 22 11 3` (x2; chunk 1/10 existed from the earlier run, which was loaded as is; the resume of the chunk boundary was checked by the previous worker, see above). Then the assembling run without WORKER: `... python3 run_one2.py 26 22 11 3` (7 s), and `... timeout 3000 nice -n 5 python3 run_one2.py 27 25 12 3` (31 s). Logs out/worker26_{1,2}.log, out/chunk_progress.tsv (copy chunk_progress.tsv).
+
+Results:
+- **cell(26,22,11,3) = 36 classes** (d=3, tp=10 only; 15 decompositions, 229,369 inputs, 10 chunks, 9.415e8 ext_d nodes, bad_tau 0, hits in C 7,181, connected hits 1,080; sum of chunk times 8,906 s). Chunks 5 to 10 gave no hits. File cell_26_22_11_D3.txt.gz.
+- **cell(27,25,12,3) = 0 classes (EMPTY)** (d=3, tp=11, S'=1; 3 decompositions: [(26,22,11)] 36 inputs, [(12,10,5),(14,12,6)] 298 inputs (149 x 2 products), [(3,1,1),(23,21,10)] 0 (cell(23,21,10,3) empty); 334 inputs, 53,959 ext_d nodes, bad_tau 0, 36 ext_d hits F7-free but 0 survive the filter (linear, F7-free, P3, connected on 27 vertices, tau == 12); 31.4 s). File cell_27_25_12_D3.txt.gz.
+
+Conclusion: **'I11 holds on C for n = 27: YES (computation, unrefereed)'**: the five open n = 27 cells (27,13,10,2), (27,18,11,2), (27,14,10,3), (27,19,11,3), (27,25,12,3) are all EMPTY. Caveats: same unrefereed status and engine as L013 (unchanged L012 engine; ext_d with MAXP 640; chunked/streamed driver); no certificate document (L015-type) written; no referee run.
+Files added: cell_26_22_11_D3.txt.gz, cell_27_25_12_D3.txt.gz, chunks_26_22_11_d3_tp10.tar.gz, chunks_27_25_12_d3_tp11.tar.gz, chunk_progress.tsv, start_epoch_20261020.txt; results.json (key resume_2026-10-20_second_run), progress.tsv, cells_table.tsv updated.
