@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""L015 / C2: the 4-state max-plus transfer matrix of Step 4, computed in two independent ways.
+"""L015 / C2: the 4-state max-plus transfer matrix of Steps 5.4-5.6, computed in two independent ways.
   (A) all 2^11 subsets U of O as bitmasks; U admissible iff it contains none of the nine 3-APs of O
       (the APs re-derived here from the triples a<u<c, a+c=2u);
   (B) all subsets U of O by itertools.combinations; U admissible iff U is Sidon BY DEFINITION
@@ -99,7 +99,7 @@ ok(is_sidon(Ustar) and not any(set(e) <= set(Ustar) for e in E) and states(Ustar
    "U* = {0,98,101,117,119,159,269}: Sidon, AP-free, a(U*) = b(U*) = (1,1), |U*| = 7 = best[(1,1)][(1,1)]")
 for e in E:
     print("     AP", e, "misses", sorted(set(e) - set(Ustar)))
-# the upper-bound inequalities actually used in Step 4 (each is an entry of the table above)
+# the upper-bound inequalities actually used in Steps 5.4-5.6 (each is an entry of the table above)
 need = {"alpha(O) <= 7": max(max(r) for r in best) <= 7,
         "best[s][(0,0)] <= 6 for all s": all(best[i][0] <= 6 for i in range(4)),
         "best[(0,0)][s'] <= 6 for all s'": all(best[0][k] <= 6 for k in range(4)),

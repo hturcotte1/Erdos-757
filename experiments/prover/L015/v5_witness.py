@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""L015 / C5: the explicit Sidon subsets T_K = U* u phi(U*) u ... u phi^K(U*), U* = {0,98,101,117,119,159,269} (Step 5).
+"""L015 / C5: the explicit Sidon subsets T_K = U* u phi(U*) u ... u phi^K(U*), U* = {0,98,101,117,119,159,269} (Step 6).
 For each K in the list: |T_K| = 7+5K (as computed, not assumed), T_K is a subset of S_K, T_K is Sidon BY DEFINITION
 (all sums x+y, x<=y, distinct), T_K contains no 3-term AP, and T_K = U* u phi(T_{K-1}) (self-similar form).
 Integer form as in v3_family.py.   Run:  python3 -I v5_witness.py K1 K2 ...

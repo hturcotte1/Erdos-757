@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """L015 / C4: h(S_K) by computations that do not use the copy structure or the transfer matrix.
  (a) K <= 1: literal brute force from the Sidon definition: no (8+5K)-subset of S_K is Sidon (all subsets enumerated),
-     and the explicit T_K (Step 5) is a Sidon subset of size 7+5K.
+     and the explicit T_K (Step 6) is a Sidon subset of size 7+5K.
  (b) K <= KMAX: a generic exact maximum-independent-set solver for the 3-AP hypergraph of the integer set
      (hyperedges recomputed from all pair sums; branching on a maximum-degree vertex, splitting into connected
      components, memoisation of residual sub-hypergraphs).  Exact for any hypergraph.

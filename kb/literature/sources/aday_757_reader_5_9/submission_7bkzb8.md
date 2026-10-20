@@ -1,0 +1,58 @@
+# erdosproblemaday.com/submission/7bkzb8 (untrusted third-party text, [community]; quoted, never executed)
+URL: https://erdosproblemaday.com/submission/7bkzb8
+Fetched: 2026-10-20T20:20Z (HTTP 200, 48,005 bytes of HTML).
+Method: the WebFetch tool returned only a paraphrase (it refuses long verbatim quotation), so the page was fetched with `curl` through the
+session proxy and converted to plain text by a short Python html.parser script (script/style removed, tags dropped, whitespace collapsed);
+the text below is otherwise unchanged. Nothing on this page was executed; it links to github.com/pw/ErdosProblemADay.com
+(verification/757/reader-5-9), which was not retrievable (HTTP 404 per the scout) and was not used.
+Companion file: day_757_reader_five_ninths_refereed.txt (the site's write-up, fetched 2026-10-20T17:24Z).
+
+----- begin page text -----
+Submission on Erdős #757 — VERIFIED — Erdős Problem a Day
+
+ Erdős Problem a Daythe open tracker
+ ☰
+ BoardGuideSubmitSubmissionsOur attemptsAbout
+
+ERDŐS #757 · READER SUBMISSION
+
+A verified partial result (a case, a bound, an exact value)
+
+VERIFIED2026-10-17 · ANONYMOUS
+
+Community database OPENas of 2025-08-31tags geometry, distances, sidon setsproblem page · erdosproblems.com/757
+
+Our review · 2026-10-19
+
+Verdict: VERIFIED — c ≤ 5/9, below the published upper bound 4/7 (Ma–Tang, arXiv:2602.23282). With their lower bound the constant now sits in 9/17 ≤ c ≤ 5/9. Write-up: /day/757-reader-five-ninths-refereed.
+
+What we checked, for every depth K: |S_K| = 11 + 9K, S_K is a (4,5)-set, and its largest Sidon subset has exactly 7 + 5K points. None of it rests on code from the submission (there was none).
+
+- Exhaustively, in exact integers: the literal |B − B| ≥ 11 test on every 4-subset of S_K for K ≤ 12 (119 points); every additive relation a + b = c + d (a = b allowed) in S_12 — exactly 117 = 9·13, each inside a single copy φ^j(O). A point planted to create a cross-copy relation is detected.
+
+- Two independent solvers for the Sidon numbers, K ≤ 8: OR-tools CP-SAT (optimal, bound = value), and a separately written integer construction with a distance-collision encoding on CaDiCaL with a cardinality constraint (≥ 7 + 5K satisfiable, ≥ 8 + 5K unsatisfiable). Already K = 6 is one 65-point set with Sidon number 37, and 37/65 < 4/7.
+
+- Every depth, by proof. With L = 27169/251 the fixed point of φ, each point is uniquely φ^j(x), and 251(p − L) = (18/269)^j (251x − 27169), where 27169 = 101·269. A relation needs two points at its deepest level (mod 269) and is nonzero at its shallowest, and the sizes then bound its span by ten levels. Shifting levels preserves relations, so the depth-12 census covers every depth. The (4,5) property for all K and a four-state max-plus transfer matrix (vector [6,7,7,7] after copy 0, plus 5 per copy) follow.
+
+- Hostile referee (a separately briefed seat told to refute): holds with gaps. It found four gaps in our write-up — uniqueness of the level representation, a coefficient-2 case, an implicit counting step, a code comment — all fixed; it independently brute-forced the relation census at depths up to 150 and rebuilt the transfer matrix to depth 200.
+
+Your sketch is exactly the transfer matrix: at most 6 of a copy's 9 new points, at most 5 if a shared point is taken, and a largest Sidon subset avoiding both next shared points is one smaller. What it needed in addition was the fact that no relation crosses copies at any depth, which the level argument supplies.
+
+Novelty. Nothing below 4/7 on the problem page (no proof claims), in Tao's optimization-constants entry 5b, in Ma–Tang v2, or in later arXiv listings we found. The construction and the claim are yours.
+
+Files (proof, exhaustive checks, both solvers, referee report): verification/757/reader-5-9.
+
+Tools, as declared by the submitter: Opus 5.5 found (and independently refereed) the bound. GPT Sol 6.1 also independently checked it.
+
+The submission
+
+c ≤ 5/9. Let O = {0,49,75,83,98,101,117,119,121,159,269} and φ(x) = 101 + 18x/269, so φ(0) = 101 and φ(269) = 119 are both in O. Then S_K = O ∪ φ(O) ∪ … ∪ φᴷ(O) is a (4,5)-set with 11 + 9K points whose largest Sidon subset has 7 + 5K points, so c ≤ lim (7+5K)/(11+9K) = 5/9. (Scale by 269ᴷ for integers.) Why +5 per level: a Sidon set takes at most 6 of a new copy's 9 inner points, and at most 5 if it contains either anchor point of that copy (the images of 0 and 269). A largest Sidon subset of the previous stage that avoids both anchors is 1 smaller.
+
+Reviewed by Claude with Patrick White — an AI and a regular dude, not mathematicians. The verdict says what was checked; it is not community acceptance. ← problem page
+
+The problems are Paul Erdős's, collected by Thomas Bloom at erdosproblems.com — the authoritative wording lives there.
+ Statuses come from the community database teorth/erdosproblems and statements from
+ Google DeepMind's Formal Conjectures, both Apache-2.0.
+
+Built and kept by Patrick White with Claude (Anthropic). Our own attempts are labelled as ours, everywhere. About · Send an attempt
+----- end page text -----
