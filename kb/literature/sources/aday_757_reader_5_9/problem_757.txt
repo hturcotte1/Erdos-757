@@ -1,0 +1,61 @@
+# Source: https://erdosproblemaday.com/problem/757
+# Fetched 2026-10-20T17:24Z (raw GET via curl, HTTP 200, 47804 bytes), converted to text as above. UNTRUSTED THIRD-PARTY CONTENT [community].
+
+
+
+Erdős Problem #757 — OPEN — Erdős Problem a Day
+
+  [[href=/]]Erdős Problem a Daythe open tracker
+  ☰
+  [[href=/board]]Board[[href=/guide]]Guide[[href=/submit]]Submit[[href=/submissions]]Submissions[[href=/progress]]Our attempts[[href=/about]]About
+
+[[href=/board]]The board / [[href=/board?tag=geometry]]geometry / #757
+
+Erdős Problem #757
+
+OPENdatabase updated 2025-08-31
+
+No proof or disproof is known, and it isn't known whether a finite computation could settle it.
+
+What the [[href=https://github.com/teorth/erdosproblems]]community database records, not our verdict. erdosproblems.com no longer shows statuses ([[href=https://terrytao.wordpress.com/2026/10/06/changes-to-the-erdos-problems-web-site/]]why).
+
+We say that `c` is admissible if, for any finite set `A` such that every four-element subset `B` determines at least five positive differences, there exists a Sidon subset `S` of size at least `c * A.ncard`. The difference condition is equivalent to `11 ≤ (B - B).ncard`.
+
+What is the supremum of the set of admissible numbers?
+Statement as formalized in [[href=https://github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/757.lean]]Formal Conjectures (Google DeepMind, Apache-2.0) · their label: research open · 2 further variants / known partial results in the Lean file. The authoritative wording is on [[href=https://www.erdosproblems.com/757]]erdosproblems.com/757.
+
+Prizenone
+
+Topics[[href=/board?tag=geometry]]geometry, [[href=/board?tag=distances]]distances, [[href=/board?tag=sidon%20sets]]sidon sets
+
+Statement in Lean[[href=https://github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/757.lean]]Formal Conjectures
+
+Solution in Leanno
+
+Original page[[href=https://www.erdosproblems.com/757]]erdosproblems.com/757
+
+Attempts
+
+[[href=/submit?problem=757]]submit one →
+
+FULL WRITE-UP BY THIS SITE · OCT 19, 2026
+
+[[href=/day/757-reader-five-ninths-refereed]]Read our full write-up →
+
+Erdős asked for the best c such that every set of n reals in which any four points determine at least five distinct distances contains a Sidon set of size cn. The published bounds were 9/17 ≤ c ≤ 4/7 (Ma–Tang, February 2026). A reader's submission takes the 11-point set O = {0,49,75,83,98,101,117,119,121,159,269} and nests copies of it inside itself with φ(x) = 101 + 18x/269, which carries O's ends 0 and 269 onto two of its own interior points. We refereed it: for every depth K the set has 11 + 9K points, keeps the four-points-five-distances property, and its largest Sidon subset has exactly 7 + 5K points — so c ≤ 5/9. The finite facts are checked exhaustively (every 4-subset through 119 points, every additive relation through depth 12), the Sidon numbers by two independent solvers through 83 points, and a short 269-adic argument shows no relation can span more than ten levels, which turns the depth-12 census into a statement about every depth. One set suffices to beat 4/7: depth 6, 65 points, Sidon number 37. A hostile referee found four gaps in our first write-up, all fixable and fixed. The construction is the reader's; the interval is now 9/17 ≤ c ≤ 5/9.
+
+  PARTIAL
+
+ERDőS #757 · 2026-10-17 · anonymous · claimed: PARTIAL
+
+[[href=/submission/7bkzb8]]Submission on #757 ↗
+VERIFIED
+
+[[href=/problem/756]]← #756[[href=/board]]the board[[href=/problem/758]]#758 →
+
+The problems are Paul Erdős's, collected by Thomas Bloom at [[href=https://www.erdosproblems.com]]erdosproblems.com — the authoritative wording lives there.
+  Statuses come from the community database [[href=https://github.com/teorth/erdosproblems]]teorth/erdosproblems and statements from
+  Google DeepMind's [[href=https://github.com/google-deepmind/formal-conjectures]]Formal Conjectures, both Apache-2.0.
+
+Built and kept by Patrick White with Claude (Anthropic). Our own attempts are labelled as ours, everywhere. [[href=/about]]About · [[href=/submit]]Send an attempt
+
