@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: post-extension resumption (2026-10-20); GOAL.md unchanged (protected). Clause (A) is met by C003 (K59): a 65-point (4,5)-set with h = 37 < 4*65/7, judged PASS NEW-RECORD and ACCEPTED by two referees, BUT it is a COMMUNITY construction (anonymous reader, Erdős Problem a Day, 19 Oct 2026), not ours; say so everywhere.
-Last updated (UTC): 2026-10-20 20:40
+Last updated (UTC): 2026-10-20 20:23
 Phase/track: extension: the I11 induction chain is complete and refereed: L007 (Q11 closed, K51), L008 (f(16)=10, K52), L009 (f(18)=11, K53), L010 (f(20)=12, K54), L011 (f(22)=13, K55) ACCEPTED x3 each; no (4,5)-set with <= 22 points beats 4/7. L012 (n=23 record cell: all AP-degrees <= 3) ACCEPTED x3 (K56); the degree-3 case is open (Q14). Probes DONE [verified-here as a computation, not refereed]: I11 holds on C for n = 23, 24, 25, 26 (all twelve violator cells empty in the L012 engine; experiments/20261017-1645-i11-n23-n24, -1720-i11-n26). Certificate L013 (I11 on C for n <= 26) ACCEPTED x3, K57. By-product: the tight cell (21,18,9) with Delta<=3 is EMPTY, so one of the five (22,18) slack-3 decompositions of the degree-3 record case is void. Obstruction at n = 27: the remainder (26,22) of (27,25,12) decomposes as [(23,21,10), AP], i.e. needs Q14.
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h (GOAL.md)
 
