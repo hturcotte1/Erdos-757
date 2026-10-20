@@ -1,0 +1,24 @@
+K=0 |T_K|=7 (7+5K=7) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=1 |T_K|=12 (7+5K=12) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=2 |T_K|=17 (7+5K=17) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=3 |T_K|=22 (7+5K=22) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=4 |T_K|=27 (7+5K=27) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=5 |T_K|=32 (7+5K=32) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=6 |T_K|=37 (7+5K=37) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=7 |T_K|=42 (7+5K=42) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=8 |T_K|=47 (7+5K=47) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=9 |T_K|=52 (7+5K=52) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=10 |T_K|=57 (7+5K=57) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=15 |T_K|=82 (7+5K=82) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=20 |T_K|=107 (7+5K=107) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=25 |T_K|=132 (7+5K=132) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+K=30 |T_K|=157 (7+5K=157) subset=True Sidon=True noAP=True selfsimilar=True -> OK
+ALL WITNESS T_K (K<=30) OK
+C003: n=65 all-int=True distinct=True equals I_6=True claimed_h=37
+C003 witness: size=37 subset=True Sidon=True
+C003 raw set: h by DP = 37; SAT >=37 SAT, >=38 UNSAT
+C003 raw set: min |B-B| over all 4-subsets = 11
+C003 ratio h/n = 37/65 ; < 4/7: True ; 7*37=259 vs 4*65=260
+ratios: [(0, '7/11'), (1, '3/5'), (2, '17/29'), (3, '11/19'), (4, '27/47'), (5, '4/7'), (6, '37/65'), (7, '21/37'), (8, '47/83'), (9, '13/23'), (10, '57/101'), (11, '31/55')]  K=5 ratio == 4/7: True  first K below 4/7: 6
+difference formula (7+5K)/(11+9K) - 5/9 == 8/(9(11+9K)) for K<=1000: True
+ALL C003 CHECKS OK

@@ -1,0 +1,66 @@
+OK   F0: 11 distinct integers
+OK   F0: min 0, max 269
+OK   F0: interior has 9 points in [49,159]
+OK   F1: 269 prime
+OK   F1: 269 does not divide 18 or 251
+OK   F1: 27169 = 101*269
+OK   F1: L not an integer (L = 27169/251)
+OK   F2: phi(L) = L
+OK   F2: phi(x) = L + r(x-L) at test points (affine, so identity)
+OK   F2: affine identity (two points)
+OK   F2: phi(0)=101, phi(269)=119
+OK   F3: y(x) = 251(x-L) on O
+OK   F3: y(x) != 0 on O
+OK   F3: y(x) = 251x mod 269 on O
+OK   F3: 269 | y(x) iff x in {0,269}
+OK   F3: y(0) = -101*269, y(269) = 150*269
+OK   F3: 269^2 divides neither
+OK   F4: 36 ordered relation quadruples in O (= 4 per AP relation), got 36
+OK   F4: 9 relation classes, got 9
+OK   F4: class ((117, 121), (119, 119)) has 3 points with a doubled middle
+OK   F4: class ((75, 121), (98, 98)) has 3 points with a doubled middle
+OK   F4: class ((0, 98), (49, 49)) has 3 points with a doubled middle
+OK   F4: class ((75, 159), (117, 117)) has 3 points with a doubled middle
+OK   F4: class ((49, 269), (159, 159)) has 3 points with a doubled middle
+OK   F4: class ((49, 117), (83, 83)) has 3 points with a doubled middle
+OK   F4: class ((83, 159), (121, 121)) has 3 points with a doubled middle
+OK   F4: class ((49, 101), (75, 75)) has 3 points with a doubled middle
+OK   F4: class ((83, 119), (101, 101)) has 3 points with a doubled middle
+OK   F4: the 9 point sets are exactly e1..e9
+OK   F4: all 3-APs of O (triples a<u<c, a+c=2u) are exactly e1..e9
+OK   F4: 66 sums x+y with x<=y
+OK   F4: repeated sums are exactly 98,150,166,318,196,234,202,242,238, each twice: [(98, 2), (150, 2), (166, 2), (196, 2), (202, 2), (234, 2), (238, 2), (242, 2), (318, 2)]
+OK   F4: middles are the 9 interior points, one each
+OK   F4: pairwise intersections <= 1
+OK   F4: no AP contains both 0 and 269
+OK   F5(i)
+OK   F5(ii)
+OK   F5(iii)
+OK   F5(iv): solutions [(49, 49, 98), (159, 159, 49)]
+OK   F5(iv) hand range [-61,269]
+OK   F5(ii) hand list 269-x
+OK   F5(iv) hand list of sums <= 159: [98, 124, 132, 147, 150, 150, 158]
+OK   F5(iv) negated pattern same solutions
+OK   F5: 2x1-x3 in {0,269} for the solutions
+OK   F6/Lemma 1.2 (d<=40): hits [(0, 1, 101), (269, 1, 119)]
+OK   table: Sidon subsets of O = E(O)-free subsets (831)
+best = [[5, 6, 6, 6], [5, 6, 6, 6], [5, 6, 6, 6], [6, 7, 7, 7]]
+OK   table best matches certificate
+M = [[5, 6, 6, 6], [4, 5, 5, 5], [4, 5, 5, 5], [4, 5, 5, 5]]  R0 = [6, 7, 7, 7]
+OK   M matches
+OK   R0 matches
+OK   R0 (x) M = R0 + 5: [11, 12, 12, 12]
+OK   5.6 (a) W=O: |W|=11, edges=9, tau_W=4 (claim >= 4), max admissible |U| in W = 7 (claim <= 7)
+OK   5.6 (b) no 101,119: |W|=9, edges=6, tau_W=3 (claim >= 3), max admissible |U| in W = 6 (claim <= 6)
+OK   5.6 (c) no 0: |W|=10, edges=8, tau_W=4 (claim >= 4), max admissible |U| in W = 6 (claim <= 6)
+OK   5.6 (c') no 269: |W|=10, edges=8, tau_W=4 (claim >= 4), max admissible |U| in W = 6 (claim <= 6)
+OK   5.6 (d) no 0,101,119: |W|=8, edges=5, tau_W=3 (claim >= 3), max admissible |U| in W = 5 (claim <= 5)
+OK   5.6 (d') no 101,119,269: |W|=8, edges=5, tau_W=3 (claim >= 3), max admissible |U| in W = 5 (claim <= 5)
+OK   5.6(b) degrees {0: 1, 49: 3, 75: 2, 83: 2, 98: 2, 117: 2, 121: 2, 159: 3, 269: 1}
+OK   5.6(d) degrees {49: 2, 75: 2, 83: 2, 98: 1, 117: 2, 121: 2, 159: 3, 269: 1}
+OK   5.6(d') all degrees <= 2, 5 edges
+OK   U* Sidon, size 7
+OK   every subset of {0,101,119,269} is Sidon (all 16 entries finite)
+OK   degrees in O: deg(49)=4 max, deg(101)=deg(119)=2, deg(0)=deg(269)=1: {0: 1, 49: 4, 75: 3, 83: 3, 98: 2, 101: 2, 117: 3, 119: 2, 121: 3, 159: 3, 269: 1}
+FAILURES: 0
+ALL R1 FACTS OK

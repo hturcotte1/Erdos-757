@@ -1,0 +1,15 @@
+Formed at 2026-10-20T20:39:52Z, BEFORE reading the round-1 review, the scout review or the falsifier report.
+Own verdict: ACCEPT.
+Basis: every step of Steps 0-7 re-derived by hand (Lemma 1.2 valuation argument; deepest-level mod-269 case analysis
+m=1..4 incl. equal points, sign patterns and the symmetry reduction; Step 3 hypergraph; Step 4 (4,5) deduction;
+Step 5 bijection, max-plus recursion, monotonicity, hand transversal bounds (a)-(d'); Step 6 witness; Step 7 limits/sup).
+Own computations: r1 (F0-F6, table, tau_W), r2 (census by ordered-triple completion K<=20,25,30,40), r2_controls,
+r3 (literal |B-B| K<=8 with exact 11/13 distribution), r4 (SAT two solvers K<=8, frontier DP K<=20),
+r5 (T_K K<=30, C003 identity, exact ratio), r6 (self-test of DP/SAT vs brute force). All OK.
+No mathematical gap found. Editorial (non-blocking) remarks only:
+ (e1) header 'status PARTIAL' could say it is the site's problem-status label ('a verified partial result'), not partial verification;
+ (e2) the symbol T is used for the deepest-level position set (Step 2) and for Sidon subsets (Step 5);
+ (e3) Thm 1(b) parenthetical equates 'no relation crosses copies' with 'no relation has four distinct points';
+ (e4) Provenance 'What this certificate adds' could credit the fixed-point / deepest-level-mod-269 idea to the site (it is credited in Step 8.1-8.2);
+ (e5) in 2.5 the e1 case gives (u,u,phi^J(98),phi^J(0)) so the stated form needs the p3<->p4 exchange (allowed by Thm 1(b)).
+Pending (not load-bearing): rerun of judge/judge.py on C003 (earlier run took 59 min).

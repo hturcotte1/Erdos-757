@@ -1,0 +1,5 @@
+K=0 n=11 forbidden sets=9 (sizes [3]) | SAT>=7: SAT(size 7, sidon True) ; SAT>=8: UNSAT | CP-SAT: OPTIMAL value=7 | DFS=7 | 0.0s+0.0s
+K=1 n=20 forbidden sets=18 (sizes [3]) | SAT>=12: SAT(size 12, sidon True) ; SAT>=13: UNSAT | CP-SAT: OPTIMAL value=12 | DFS=12 | 0.0s+0.0s
+K=2 n=29 forbidden sets=27 (sizes [3]) | SAT>=17: SAT(size 17, sidon True) ; SAT>=18: UNSAT | CP-SAT: OPTIMAL value=17 | DFS=None | 0.0s+0.2s
+K=3 n=38 forbidden sets=36 (sizes [3]) | SAT>=22: SAT(size 22, sidon True) ; SAT>=23: UNSAT | CP-SAT: OPTIMAL value=22 | DFS=None | 0.0s+11.6s
+K=4 n=47 forbidden sets=45 (sizes [3]) | SAT>=27: SAT(size 27, sidon True) ; SAT>=28: UNSAT | CP-SAT: FEASIBLE value=27 | DFS=None | 0.0s+600.0s

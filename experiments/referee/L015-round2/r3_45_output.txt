@@ -1,0 +1,10 @@
+K=0 n=11 4-subsets=330 min|B-B|=11 distribution={11: 72, 13: 258} predicted #11=72 -> OK
+K=1 n=20 4-subsets=4845 min|B-B|=11 distribution={11: 306, 13: 4539} predicted #11=306 -> OK
+K=2 n=29 4-subsets=23751 min|B-B|=11 distribution={11: 702, 13: 23049} predicted #11=702 -> OK
+K=3 n=38 4-subsets=73815 min|B-B|=11 distribution={11: 1260, 13: 72555} predicted #11=1260 -> OK
+K=4 n=47 4-subsets=178365 min|B-B|=11 distribution={11: 1980, 13: 176385} predicted #11=1980 -> OK
+K=5 n=56 4-subsets=367290 min|B-B|=11 distribution={11: 2862, 13: 364428} predicted #11=2862 -> OK
+K=6 n=65 4-subsets=677040 min|B-B|=11 distribution={11: 3906, 13: 673134} predicted #11=3906 -> OK
+K=7 n=74 4-subsets=1150626 min|B-B|=11 distribution={11: 5112, 13: 1145514} predicted #11=5112 -> OK
+K=8 n=83 4-subsets=1837620 min|B-B|=11 distribution={11: 6480, 13: 1831140} predicted #11=6480 -> OK
+ALL R3 (4,5) CHECKS OK

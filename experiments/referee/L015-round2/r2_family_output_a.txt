@@ -1,0 +1,12 @@
+K=0 n=11 copies_ok=True levels_ok=True ordered_quads=36 classes=9 four_point=0 bad=0 AP_sets==pred=True edges=9 linear=True saturated=True maxdeg=4 -> OK
+K=1 n=20 copies_ok=True levels_ok=True ordered_quads=72 classes=18 four_point=0 bad=0 AP_sets==pred=True edges=18 linear=True saturated=True maxdeg=4 -> OK
+K=2 n=29 copies_ok=True levels_ok=True ordered_quads=108 classes=27 four_point=0 bad=0 AP_sets==pred=True edges=27 linear=True saturated=True maxdeg=4 -> OK
+K=3 n=38 copies_ok=True levels_ok=True ordered_quads=144 classes=36 four_point=0 bad=0 AP_sets==pred=True edges=36 linear=True saturated=True maxdeg=4 -> OK
+K=4 n=47 copies_ok=True levels_ok=True ordered_quads=180 classes=45 four_point=0 bad=0 AP_sets==pred=True edges=45 linear=True saturated=True maxdeg=4 -> OK
+K=5 n=56 copies_ok=True levels_ok=True ordered_quads=216 classes=54 four_point=0 bad=0 AP_sets==pred=True edges=54 linear=True saturated=True maxdeg=4 -> OK
+K=6 n=65 copies_ok=True levels_ok=True ordered_quads=252 classes=63 four_point=0 bad=0 AP_sets==pred=True edges=63 linear=True saturated=True maxdeg=4 -> OK
+K=7 n=74 copies_ok=True levels_ok=True ordered_quads=288 classes=72 four_point=0 bad=0 AP_sets==pred=True edges=72 linear=True saturated=True maxdeg=4 -> OK
+K=8 n=83 copies_ok=True levels_ok=True ordered_quads=324 classes=81 four_point=0 bad=0 AP_sets==pred=True edges=81 linear=True saturated=True maxdeg=4 -> OK
+K=9 n=92 copies_ok=True levels_ok=True ordered_quads=360 classes=90 four_point=0 bad=0 AP_sets==pred=True edges=90 linear=True saturated=True maxdeg=4 -> OK
+K=10 n=101 copies_ok=True levels_ok=True ordered_quads=396 classes=99 four_point=0 bad=0 AP_sets==pred=True edges=99 linear=True saturated=True maxdeg=4 -> OK
+ALL R2 CENSUS OK
