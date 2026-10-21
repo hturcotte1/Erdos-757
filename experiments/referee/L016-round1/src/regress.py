@@ -54,9 +54,12 @@ elif mode == 'random':
     # regress.py random seed count
     count = int(sys.argv[3]); nsame = 0; ndiff = 0; n256_4 = 0; n256_same = 0; stats = {}
     for it in range(count):
-        NG = rng.choice([8, 10, 12, 14, 16, 18, 20, 22, 23, 24, 24, 25, 25, 25])
-        mt = rng.randint(max(2, NG // 3), NG - 2)
-        G = rand_linear(NG, mt)
+        while True:   # random linear 3-graph without isolated vertices, m between ceil(NG/2) and NG-2
+            NG = rng.choice([8, 10, 12, 14, 16, 18, 20, 22, 23, 24, 24, 25, 25, 25])
+            mt = rng.randint((NG + 1) // 2, NG - 2)
+            G = rand_linear(NG, mt)
+            if len({v for e in G for v in e}) == NG:
+                break
         line = '%d %s\n' % (len(G), ' '.join('%d %d %d' % e for e in G))
         tau = int(subprocess.run([MYTAU], input=line.encode(), capture_output=True).stdout.split()[0])
         TG = tau if rng.random() < 0.8 else max(2, tau + rng.choice([-1, 1]))
@@ -81,6 +84,8 @@ elif mode == 'random':
             n256_same += 1
         else:
             print('G256 DIFF (rc %d)' % r256[0], args, line.strip())
+        if (it + 1) % 50 == 0:
+            print('progress', it + 1, nsame, ndiff, flush=True)
         key = 'NG%d' % NG
         stats[key] = stats.get(key, 0) + 1
         stats['hits'] = stats.get('hits', 0) + ref[1].count(b'HIT:')

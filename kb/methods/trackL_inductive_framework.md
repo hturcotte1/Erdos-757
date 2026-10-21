@@ -10,7 +10,7 @@ A candidate inequality has the shape
 $$a\,\tau(K)\le b\,|R|+c\,e_2+d\,e_1\qquad(\ast)$$
 and with $D=\emptyset$ it reads $\tau(H)\le (b/a)\,n$, i.e. $h\ge(1-b/a)\,n$. Q8 is $(a,b,c,d)=(7,3,2,4)$:
 with $D=\emptyset$ it is exactly $h\ge 4n/7$, so **Q8 is an inductive strengthening of the conjecture
-$c_*=4/7$**. That conjecture, and with it Q8 for realizable sets, is [refuted] since 2026-10-20: the 65-point set C003 (K59) is the 65-point member of an anonymous reader's self-similar family, posted on Erdős Problem a Day on 19 Oct 2026 ([community] construction, not this project's discovery; verified here by the frozen judge and two referees), and it has $n=65$ and $h=37$, hence $\tau=n-h=28$ and, with $D=\emptyset$ where Q8 reads $7\tau\le3n$, $7\tau=196>195=3n$ (equivalently $7h=259<260=4n$) [verified-here as arithmetic on K59]. Henning–Yeo's constants correspond to $b/a=8/17$ (but HY uses $m$, not traces).
+$c_*=4/7$**. That conjecture, and with it Q8 for realizable sets, is [refuted] since 2026-10-20: the 65-point set C003 (K59) is the 65-point member of an anonymous reader's self-similar family, posted on Erdős Problem a Day on 19 Oct 2026 ([community] construction, not this project's discovery; verified here by the frozen judge and two referees), and it has $n=65$ and $h=37$, hence $\tau=n-h=28$ and, with $D=\emptyset$ where Q8 reads $7\tau\le3n$, $7\tau=196>195=3n$ (equivalently $7h=259<260=4n$) [derived-here]. Henning–Yeo's constants correspond to $b/a=8/17$ (but HY uses $m$, not traces).
 
 ## The two moves and when they are free
 Write $\Phi=b|R|+ce_2+de_1$. For $v\in R$ let $e_i(v)$ be the number of size-$i$ traces containing $v$.

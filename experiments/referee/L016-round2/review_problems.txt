@@ -1,0 +1,46 @@
+## Additional independent arguments for three of the sparse top cells
+
+Not needed by the certificate, but independent of every program (they confirm Steps 4.1-4.3 by pure mathematics):
+- Lemma (hypertree bound). If H is a connected 3-graph without two edges sharing two vertices, with n vertices and m
+  edges, then tau(H) <= floor((2m+1)/3). Proof: the incidence graph has cyclomatic number c = 3m - (n+m) + 1 = 2m - n + 1;
+  replacing, c times, a vertex v of an edge e on a cycle by a new degree-1 vertex gives a Berge-acyclic 3-graph H' with
+  n + c = 2m + 1 vertices; a cover of H' maps onto a cover of H (new vertex -> v), so tau(H) <= tau(H') = nu(H') (Koenig
+  property of Berge-acyclic hypergraphs: induct on a leaf edge e meeting the rest in one vertex v; tau(H') <= 1 +
+  tau(H' - v) = 1 + nu(H' - v) <= nu(H')) <= floor((2m+1)/3).
+  (27,13,10,2): tau <= floor(27/3) = 9 < 10; (27,14,10,3): tau <= floor(29/3) = 9 < 10. Both cells are empty for every
+  Delta.
+- (27,18,11,2): all 27 degrees equal 2 (3m = 54 = 2n). The graph G* on the 18 edges of H, with one link per vertex of H,
+  is cubic, simple (linearity) and connected, and tau(H) = rho(G*) = 18 - nu(G*) (Gallai). tau = 11 forces nu(G*) = 7, so
+  by Tutte-Berge some S has q = odd(G* - S) = |S| + 4 (S is non-empty since G* is connected of even order). Each odd
+  component sends an odd number of edges to S; with q1 components sending exactly one, 3|S| >= q1 + 3(q - q1) gives
+  q1 >= 6, and such a component has at least 5 vertices, so 18 >= |S| + 30: impossible. The cell is empty.
+- (27,19,11,3) and (27,25,12,3) have no such short argument (the bound gives 13 and 17); they rest on the computation
+  (Step 4.4, 4.5), which I reproduced (R10, R11).
+
+## Problems found (in order of severity)
+
+No mathematical gap and no computational discrepancy was found. Every list that decides a claim was reproduced by my own
+programs with identical class sets. The following are documentation fixes:
+
+1. (minor, a wrong number) C6: "the counters of `ext_d_fast` and of the Gosper enumeration agree on 2,574,136 inputs of
+   full cells (the 127,766 + 2,082,993 + 229,369 + 334 inputs of the four heavy cells and the 133,804 of L014's top
+   cell)". The sum is 2,574,266, not 2,574,136. Nothing depends on it.
+2. (minor, wording) C8/W4: "28,822 canonical forms" for the eight recomputed chunks is the sum of the per-chunk class
+   counts; the eight chunks together contain 28,723 distinct classes. Say "28,822 (chunk, class) pairs, 28,723 distinct
+   classes".
+3. (cosmetic) Corollary 3 ends with a remark about records at larger sizes (C003/K59, K60). It is true per the KB but is
+   not in DEPENDS ON and is not needed by any claim; mark it as a remark or list K59/K60.
+
+Limits of this review (not problems of the certificate):
+- __LIMITS__
+
+## Independence statement
+
+All programs that decide my conclusions were written by me in this session (listed under Checks); none of them imports or
+executes code of experiments/prover/L016, of the other prover folders, or of the worker's folder. The only foreign
+programs I ran are the three `ext_d` binaries under test (R6, R7), the repository module `e757.fn_bounds` (R3), and
+unmodified nauty 2.8.8 (`labelg`, `genbg`, built by me from source, `genbg` also with my own PRUNE1 function through its
+documented compile-time hook). Data read: the cell lists (prover's `out/cellsF`, L013/L014 tarballs, worker's lists for
+comparison), the INFO lines (as data: decomposition order to align chunks, counters for comparison), the worker's chunk
+keys and metadata (comparison only). I did not read any other review of L016 (results/reviews/L016-*) nor the scratch
+folder of another L016 referee (experiments/referee/L016-round1).

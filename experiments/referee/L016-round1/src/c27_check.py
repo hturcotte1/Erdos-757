@@ -67,6 +67,24 @@ def h_bb(A, conf):
     rec(0, 0)
     return best[0], [A[i] for i in best[1]]
 
+def h_brute(A):
+    """exhaustive over all subsets (only for n <= 22)."""
+    n = len(A); best = 0
+    for k in range(n, 0, -1):
+        for S in itertools.combinations(A, k):
+            if is_sidon(S):
+                return k
+    return 0
+
+def h_tau(A, conf):
+    """if every conflict is a 3-term AP, a Sidon subset is a vertex set containing no conflict triple, so h = n - tau(conflicts);
+    tau computed exactly by my C program mytau."""
+    import subprocess
+    assert all(len(c) == 3 for c in conf)
+    line = '%d %s\n' % (len(conf), ' '.join('%d %d %d' % tuple(c) for c in conf))
+    t = int(subprocess.run(['/home/user/Erdos-757/experiments/referee/L016-round1/bin/mytau'], input=line.encode(), capture_output=True).stdout.split()[0])
+    return len(A) - t, t
+
 def aps(A):
     S = set(A); res = []
     for a, c in itertools.combinations(sorted(A), 2):
@@ -79,10 +97,14 @@ for name, A in (('A_base', ABASE), ('B13', B13), ('C27', C27)):
     conf = conflicts(A)
     four = sum(1 for c in conf if len(c) == 4)
     h1, S1 = h_cpsat(A, conf)
-    h2, S2 = h_bb(A, conf)
-    assert is_sidon(S1) and is_sidon(S2) and len(S1) == h1 and len(S2) == h2
-    print('%s: n=%d distinct=%s (4,5)=%s conflicts=%d (4-element %d, 3-AP %d) h_cpsat=%d h_bb=%d ratio=%s <4/7? %s' % (
-        name, len(A), len(set(A)) == len(A), is45(A), len(conf), four, len(conf) - four, h1, h2, Fraction(h1, len(A)),
+    if len(A) <= 14:
+        h2, S2 = h_bb(A, conf); h3 = h_brute(A)
+        assert is_sidon(S2) and len(S2) == h2 and h3 == h2
+    else:
+        h2, tt = h_tau(A, conf); h3 = None
+    assert is_sidon(S1) and len(S1) == h1
+    print('%s: n=%d distinct=%s (4,5)=%s conflicts=%d (4-element %d, 3-AP %d) h_cpsat=%d h_second=%d (brute force for n<=14: %s) ratio=%s <4/7? %s' % (
+        name, len(A), len(set(A)) == len(A), is45(A), len(conf), four, len(conf) - four, h1, h2, h3, Fraction(h1, len(A)),
         Fraction(h1, len(A)) < Fraction(4, 7)))
     if name == 'C27':
         print('  C27 equals the stated list:', C27 == STATED)
