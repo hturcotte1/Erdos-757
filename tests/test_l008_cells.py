@@ -5,7 +5,7 @@ Compiles the falsifier's connected-linear-3-graph enumerator conn_dfs3.c with gc
   * the connected (12,10,5), max-degree-3 labelled count is 145,033 (about 50 s),
 and checks the witness A_base + {-323, 5000} is a (4,5)-set with h = 10, and that e757.fn_bounds marks n = 16, 18, 20
 and 22 closed (EXACT_VALUES_VERIFIED, certificates L008-L011, K52-K55; only the fn_bounds entries of L009-L011 are
-pinned here, not their cell enumerations) and n = 23 not closed (f(23) in {13, 14}, 'n=23: possible' in
+pinned here, not their cell enumerations) and n = 23 closed too (L014, K58: f(23) = 14, 'n=23: CLOSED' in
 python3 -m e757.fn_bounds).
 Skipped cleanly without gcc.  The 186M-node cell (15,10,6) is deliberately not run.
 """

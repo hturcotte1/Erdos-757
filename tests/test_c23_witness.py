@@ -1,6 +1,7 @@
 """The explicit 23-point witness C23 of certificate L014 (results/proofs/L014-f23-equals-14.md, Step 5.3, C10):
 C23 = B12 u (10^9 + 7919 * B11) is a (4,5)-set with h(C23) = 14, so f(23) <= 14 [verified-here].
-(The lower bound f(23) >= 14 is Theorem 2 of L014 and is recorded only after refereeing.)"""
+(The lower bound f(23) >= 14 is Theorem 2 of L014 (with Theorem 1 there and L012 Theorem 1); L014 is ACCEPTED x3, K58, and
+e757.fn_bounds.EXACT_VALUES_VERIFIED[23] = 14.  This test pins only the upper-bound witness.)"""
 from fractions import Fraction
 from itertools import combinations
 from e757.core import alpha, ap_edges, is_45_set

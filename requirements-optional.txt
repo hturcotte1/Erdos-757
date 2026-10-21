@@ -8,21 +8,29 @@
 # on first use). Tests that use the binary in tests/test_ordered_dfs.py (4 test functions, 16 collected items) and
 # tests/test_small_counts.py (whole module) skip without it, but tests/test_census_counts.py::test_census_counts_agree
 # and ::test_prefix_split_small need it and fail (RuntimeError) without it.
-# tests/test_l007_cells.py and tests/test_l008_cells.py also need gcc (they compile
+# The cell tests of tests/test_l007_cells.py (all 7) and tests/test_l008_cells.py (3 of its 5: test_cell_15_9_6_empty,
+# test_cell_16_8_6_empty, test_connected_12_10_5_deg3_count) also need gcc (they compile
 # experiments/falsify/i11-inequality/conn_dfs2.c and experiments/20261017-0300-n16-via-i11/conn_dfs3.c into a temporary
-# directory) and skip cleanly without it.
+# directory) and skip cleanly without it; test_witness_n16_h10 and test_f16_closed_in_fn_bounds need no compiler.
 # nauty 2.8.8 (genbg, labelg and the library) is a system/source build, not a pip package, and no test, script or e757 module
-# needs it: only the referee and prover reproduction scripts of L008-L013 compile it, from the unpacked pynauty-2.8.8.1 sdist
-# (e.g. experiments/referee/L009-round1/reproduce.sh, experiments/prover/L012/reproduce.sh). The I11 cell engine (engine.py in
-# experiments/prover/L012, experiments/prover/L013, experiments/20261017-1030-n23-record-cell, experiments/20261017-1645-i11-n23-n24,
-# experiments/20261017-1720-i11-n26 and experiments/20261017-1735-q14-cell-sizes)
-# calls a nauty-built bin/canon: committed at experiments/prover/L012/bin/canon, linked as bin/ by the three 2026-10-17 i11/q14 experiment folders and
-# rebuilt by the L013 reproduce script.
+# needs it: only the referee reproduction scripts of L008-L014 and the prover reproduction scripts of L012-L014 and L016 compile it, from the unpacked pynauty-2.8.8.1 sdist
+# (e.g. experiments/referee/L009-round1/reproduce.sh, experiments/prover/L012/reproduce.sh, experiments/prover/L014/reproduce.sh).
+# The I11 cell engine (engine.py in experiments/prover/L012, experiments/prover/L013, experiments/prover/L014,
+# experiments/prover/L016 (and its fast/ copy), experiments/20261017-1645-i11-n23-n24, experiments/20261017-1720-i11-n26,
+# experiments/20261017-1735-q14-cell-sizes, experiments/20261017-1925-q14-decide and experiments/20261017-2150-i11-n27)
+# calls a nauty-built bin/canon: committed at experiments/prover/L012/bin/canon (own copies in experiments/prover/L013, L014 and L016;
+# experiments/20261017-2150-i11-n27/bin has its own ext_d and symlinks to L012's other binaries, canon included), linked as bin/ by the
+# four 2026-10-17 i11/q14 experiment folders (i11-n23-n24, i11-n26, q14-cell-sizes, q14-decide) and rebuilt by the L013, L014 and L016 reproduce scripts.
+# (experiments/20261017-1030-n23-record-cell does not use bin/canon: its dedupe_fast.py dedupes with the igraph Python package (BLISS), which is not listed in requirements.txt.)
 # numpy, scipy, sympy and networkx come from requirements.txt. Imports in e757/: sympy in core.py (module level) and in
 # ordered_search.py (inside a function); numpy in anneal.py (module level); numpy and scipy together as the optional LP pruning
 # in ordered_search.py (inside try/except). networkx is imported only by experiment and certificate scripts, e.g.
 # experiments/prover/L007/indep/iso_compare.py.
 # numba (named as an example in CLAUDE.md) is not imported anywhere in the repository.
+# igraph (PyPI package `igraph`, formerly python-igraph; BLISS canonical forms) is imported only by experiment and referee scripts,
+# not by any test, scripts/ file or e757 module, so it is not listed as a requirement: experiments/20261017-1030-n23-record-cell/dedupe_fast.py
+# (used by its engine.py), experiments/referee/L012-round2/src/bliss_classify.py and experiments/referee/L012-round3/src/iso_check.py.
+# Install it by hand (pip install igraph) to re-run them.
 python-sat
 ortools
 

@@ -25,7 +25,7 @@ $C$ is the class of L007–L011: 3-graphs that are (P1) linear, (P2) $F_7$-free 
 
 **Remark 5 (reference).** The I11-allowed record cells $(n,m,\tau)$ for $n\le40$ (L011 Remark 5, re-derived in C1): (23,21,10) $s=1$; (25,23,11) $s=0$; (30,27,13) $s=1$; (30,28,13) $s=3$; (32,29,14) $s=0$; (32,30,14) $s=2$; (34,32,15) $s=1$; (36,34,16) $s=0$; (37,33,16) $s=1$; (37,34,16) $s=3$; (37,35,16) $s=5$; (39,35,17) $s=0$; (39,36,17) $s=2$; (39,37,17) $s=4$.
 
-Tags: Theorems 1–3 **[verified-here]** (L011 ACCEPTED x3; this certificate ACCEPTED by three referees), computer-assisted; Remark 4 is a statement of what is open; Remark 5 [derived-here] (arithmetic). Scope: nothing is claimed about the maximum-degree-3 case or about $n\ge24$.
+Tags: Theorems 1–3 **[verified-here]** (L011 ACCEPTED x3; this certificate ACCEPTED by three referees), computer-assisted; Remark 4 is a statement of what was open when L012 was written (the maximum-degree-3 case, Q14; closed afterwards by L014, K58); Remark 5 [derived-here] (arithmetic). Scope: nothing is claimed about the maximum-degree-3 case or about $n\ge24$.
 
 ## Proof
 
