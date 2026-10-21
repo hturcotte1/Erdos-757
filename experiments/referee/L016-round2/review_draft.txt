@@ -1,0 +1,22 @@
+VERDICT: ACCEPT WITH FIXES
+
+# Referee report, round 2: L016 (I11 on C at n = 27; f(27) = 16)
+
+Certificate: results/proofs/L016-i11-n27-f27-equals-16.md (STATUS: submitted 2026-10-21 01:09 UTC). Referee scratch folder:
+experiments/referee/L016-round2/ (own sources in src/, binaries in bin/, outputs in out/). Review written __TS__.
+
+## Summary
+
+I re-derived every arithmetic step by hand and with my own exact script, checked every logical step of Steps 0-8,
+audited Lemma B and the MAXP argument against the C sources, and recomputed the whole computational part with my own
+programs (an extension/filter program written from scratch, my own decomposition brute force, my own input builder,
+unmodified nauty labelg for isomorphism, unmodified nauty genbg for direct cells). Every number that decides a claim was
+reproduced: the seven violator cells, the five open cells, all 45 run-A lists, cell(24,16,9,3) = 39,568 classes
+(complete independent recomputation, identical class set), __C25__, __C26__, and the final step of cell(27,25,12,3)
+(334 inputs, 36 extensions with tau >= 12 without any pruning, none connected, none satisfying (P3)): no member of C.
+The explicit set C27 was checked exhaustively (all 8,436,285 17-subsets: none Sidon; 8,151 Sidon 16-subsets). Lemma B is
+correct, the fast binary is byte-identical to a rebuild of the audited source, and it is byte-identical in output to
+L012's ext_d and to the MAXP-640 build on my 3,094 inputs. I found no mathematical or computational error. The fixes
+are documentation slips (a wrong total in C6, an ambiguous count in C8); see "Problems".
+
+__REST__

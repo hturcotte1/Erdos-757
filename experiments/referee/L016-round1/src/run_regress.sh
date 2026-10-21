@@ -18,4 +18,5 @@ $P file 303 out/in_27_19_11_3_d3.txt 18 26 10 11 3 2
 $P file 304 out/in_27_14_10_3_d2.txt 7 26 9 10 2 1
 $P file 305 out/in_27_25_12.txt 334 26 11 12 3 2
 $P file 306 out/in_27_25_12.txt 334 26 11 12 3 2 noprune
-$P random 401 1200
+$P random 401 1200   # stopped after 7 min (too slow with 3 Gosper builds); replaced by the next line
+$P random 402 400
