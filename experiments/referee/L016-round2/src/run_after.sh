@@ -2,7 +2,7 @@
 # runs after the chunk job: (26,22,11,3) recomputation, closure on (25,19,10,3), pruned genbg attempts (time-boxed)
 R=/home/user/Erdos-757/experiments/referee/L016-round2; CF=/home/user/Erdos-757/experiments/prover/L016/out/cellsF
 cd $R
-while pgrep -f "src/chunks25.py" > /dev/null; do sleep 5; done
+# (wait removed)
 echo "start after-chain $(date -u)" > out/after_status.txt
 nice -n 10 timeout 1500 python3 src/recompute.py 26 22 11 3 $CF --save out/mine_26_22_11_3.g6 > out/recompute_26_22_11_3.txt 2>&1
 echo "recompute26 done $(date -u)" >> out/after_status.txt

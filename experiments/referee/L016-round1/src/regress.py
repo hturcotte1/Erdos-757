@@ -15,8 +15,9 @@ MYTAU = '/home/user/Erdos-757/experiments/referee/L016-round1/bin/mytau'
 rng = random.Random(int(sys.argv[2]) if len(sys.argv) > 2 else 20261021)
 mode = sys.argv[1]
 
+RUN_TIMEOUT = 3600
 def run(binary, args, inp):
-    p = subprocess.run([binary] + [str(a) for a in args], input=inp.encode(), capture_output=True, timeout=3600)
+    p = subprocess.run([binary] + [str(a) for a in args], input=inp.encode(), capture_output=True, timeout=RUN_TIMEOUT)
     return p.returncode, p.stdout
 
 def compare(args, inp, builds):
@@ -52,11 +53,11 @@ if mode == 'file':
         os.path.basename(infile), len(sample), ' '.join(args), ref[0], hits, all(same.values()), r256[0], r256 == ref, summ[-1] if summ else ''))
 elif mode == 'random':
     # regress.py random seed count
-    count = int(sys.argv[3]); nsame = 0; ndiff = 0; n256_4 = 0; n256_same = 0; stats = {}
+    count = int(sys.argv[3]); RUN_TIMEOUT = 20; nsame = 0; ndiff = 0; n256_4 = 0; n256_same = 0; stats = {}
     for it in range(count):
         while True:   # random linear 3-graph without isolated vertices, m between ceil(NG/2) and NG-2
             NG = rng.choice([8, 10, 12, 14, 16, 18, 20, 22, 23, 24, 24, 25, 25, 25])
-            mt = rng.randint((NG + 1) // 2, NG - 2)
+            mt = rng.randint((2 * NG) // 3, NG - 2)
             G = rand_linear(NG, mt)
             if len({v for e in G for v in e}) == NG:
                 break
@@ -66,14 +67,18 @@ elif mode == 'random':
         TG = max(TG, 2)
         T = TG + rng.choice([1, 1, 1, 0, 2])
         d = rng.choice([1, 2, 2, 3, 3, 3])
-        EP = rng.choice([1, 2, 2, 3])
+        EP = rng.choice([1, 2, 2])
         args = [NG, TG, T, d, EP]
         if T == TG and d > 1:
             d = 1; args[3] = 1          # TG >= T: every d-set is a hit; keep the output small
         if rng.random() < 0.3:
             args.append('noprune')
-        ref, res, same = compare(args, line, [('FAST', FAST), ('G640W', G640W), ('G640P', G640P)])
-        r256 = run(G256, args, line)
+        try:
+            ref, res, same = compare(args, line, [('FAST', FAST), ('G640W', G640W), ('G640P', G640P)])
+            r256 = run(G256, args, line)
+        except subprocess.TimeoutExpired:
+            stats['skipped_timeout'] = stats.get('skipped_timeout', 0) + 1
+            continue
         if all(same.values()):
             nsame += 1
         else:

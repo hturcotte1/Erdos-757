@@ -10,4 +10,4 @@ while read n m t; do
   grep '^FOUND' out/new/cells_new/runA/cell_${n}_${m}_${t}_D2.txt | python3 src/canon_lines.py $n | ./bin/labelg -q -f$F 2>/dev/null | LC_ALL=C sort -u > out/gD2/prov_${n}_${m}_${t}.g6
   eq=$(cmp -s out/gD2/mine_${n}_${m}_${t}.g6 out/gD2/prov_${n}_${m}_${t}.g6 && echo EQUAL || echo DIFFERENT)
   echo "D2 ($n,$m,$t) genbg_rc=$rc mine=$(wc -l < out/gD2/mine_${n}_${m}_${t}.g6) prover=$(wc -l < out/gD2/prov_${n}_${m}_${t}.g6) $eq | $(grep G6FILT out/gD2/g_${n}_${m}_${t}.txt | cut -d' ' -f6-) | $(grep 'TAUHIST(in C)' out/gD2/g_${n}_${m}_${t}.txt)"
-done < out/runA_D2_keys.txt
+done < ${1:-out/runA_D2_keys.txt}

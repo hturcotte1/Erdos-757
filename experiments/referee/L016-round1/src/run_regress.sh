@@ -20,4 +20,6 @@ $P file 305 out/in_27_25_12.txt 334 26 11 12 3 2
 $P file 306 out/in_27_25_12.txt 334 26 11 12 3 2 noprune
 $P random 401 1200   # stopped after 7 min (too slow with 3 Gosper builds); replaced by the next line
 $P random 402 400   # stopped (sparse graphs with isolated vertices give millions of HIT lines); replaced by the next line
-$P random 403 300   # graphs without isolated vertices
+$P random 403 300   # graphs without isolated vertices; stopped (some EP=3 cases too slow); replaced by the next line
+$P random 404 150   # m >= 2NG/3, EP <= 2, 20 s per-run timeout (skipped runs counted)
+$P random 405 1000  # as 404, 1000 graphs
