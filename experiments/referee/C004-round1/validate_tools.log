@@ -1,0 +1,48 @@
+{'name': 'record_8', 'n': 8, 'is45': True, 'census': {3: 5}, 'h_ve': 5, 'width': 3, 'h_brute_forb': 5, 'n_max_sets': 14, 'h_brute_def': 5, 'h_sat': 5, 'expect': 5, 'agree': True, 'secs': 0.01}
+{'name': 'record_10', 'n': 10, 'is45': True, 'census': {3: 8}, 'h_ve': 6, 'width': 5, 'h_brute_forb': 6, 'n_max_sets': 23, 'h_brute_def': 6, 'h_sat': 6, 'expect': 6, 'agree': True, 'secs': 0.01}
+{'name': 'record_11', 'n': 11, 'is45': True, 'census': {3: 8}, 'h_ve': 7, 'width': 4, 'h_brute_forb': 7, 'n_max_sets': 22, 'h_brute_def': 7, 'h_sat': 7, 'expect': 7, 'agree': True, 'secs': 0.0}
+{'name': 'record_12', 'n': 12, 'is45': True, 'census': {3: 10}, 'h_ve': 7, 'width': 5, 'h_brute_forb': 7, 'n_max_sets': 62, 'h_brute_def': 7, 'h_sat': 7, 'expect': 7, 'agree': True, 'secs': 0.01}
+{'name': 'record_14', 'n': 14, 'is45': True, 'census': {3: 12}, 'h_ve': 8, 'width': 4, 'h_brute_forb': 8, 'n_max_sets': 143, 'h_brute_def': 8, 'h_sat': 8, 'expect': 8, 'agree': True, 'secs': 0.02}
+{'name': 'record_12b', 'n': 12, 'is45': True, 'census': {3: 10}, 'h_ve': 7, 'width': 4, 'h_brute_forb': 7, 'n_max_sets': 60, 'h_brute_def': 7, 'h_sat': 7, 'expect': 7, 'agree': True, 'secs': 0.01}
+{'name': 'record_12c', 'n': 12, 'is45': True, 'census': {3: 10}, 'h_ve': 7, 'width': 4, 'h_brute_forb': 7, 'n_max_sets': 60, 'h_brute_def': 7, 'h_sat': 7, 'expect': 7, 'agree': True, 'secs': 0.01}
+{'name': '12pt_third', 'n': 12, 'is45': True, 'census': {3: 10}, 'h_ve': 7, 'width': 5, 'h_brute_forb': 7, 'n_max_sets': 62, 'h_brute_def': 7, 'h_sat': 7, 'expect': 7, 'agree': True, 'secs': 0.01}
+{'name': 'fib8', 'n': 8, 'is45': True, 'census': {3: 5}, 'h_ve': 6, 'width': 3, 'h_brute_forb': 6, 'n_max_sets': 1, 'h_brute_def': 6, 'h_sat': 6, 'expect': None, 'agree': True, 'secs': 0.0}
+{'name': 'fib12', 'n': 12, 'is45': True, 'census': {3: 9}, 'h_ve': 8, 'width': 3, 'h_brute_forb': 8, 'n_max_sets': 6, 'h_brute_def': 8, 'h_sat': 8, 'expect': None, 'agree': True, 'secs': 0.0}
+{'name': 'fib16', 'n': 16, 'is45': True, 'census': {3: 13}, 'h_ve': 10, 'width': 3, 'h_brute_forb': 10, 'n_max_sets': 45, 'h_brute_def': None, 'h_sat': 10, 'expect': None, 'agree': True, 'secs': 0.01}
+{'name': 'fib20', 'n': 20, 'is45': True, 'census': {3: 17}, 'h_ve': 13, 'width': 3, 'h_brute_forb': 13, 'n_max_sets': 4, 'h_brute_def': None, 'h_sat': 13, 'expect': None, 'agree': True, 'secs': 0.25}
+{'name': 'fib22', 'n': 22, 'is45': True, 'census': {3: 19}, 'h_ve': 14, 'width': 3, 'h_brute_forb': 14, 'n_max_sets': 15, 'h_brute_def': None, 'h_sat': 14, 'expect': None, 'agree': True, 'secs': 1.37}
+negative control 1235 is45 = False
+negative control 0123 is45 = False
+negative control AP5 is45 = False
+negative control parallelogram is45 = False
+{'name': 'rand_dense_0', 'n': 12, 'is45': False, 'census': {4: 26, 3: 8}, 'h_ve': 7, 'width': 10, 'h_brute_forb': 7, 'n_max_sets': 7, 'h_brute_def': 7, 'h_sat': 7, 'expect': None, 'agree': True, 'secs': 0.01}
+{'name': 'rand_dense_1', 'n': 9, 'is45': False, 'census': {4: 9, 3: 3}, 'h_ve': 6, 'width': 6, 'h_brute_forb': 6, 'n_max_sets': 2, 'h_brute_def': 6, 'h_sat': 6, 'expect': None, 'agree': True, 'secs': 0.0}
+{'name': 'rand_dense_2', 'n': 11, 'is45': False, 'census': {4: 24, 3: 6}, 'h_ve': 6, 'width': 9, 'h_brute_forb': 6, 'n_max_sets': 47, 'h_brute_def': 6, 'h_sat': 6, 'expect': None, 'agree': True, 'secs': 0.0}
+{'name': 'rand_dense_3', 'n': 8, 'is45': False, 'census': {3: 3, 4: 4}, 'h_ve': 6, 'width': 4, 'h_brute_forb': 6, 'n_max_sets': 1, 'h_brute_def': 6, 'h_sat': 6, 'expect': None, 'agree': True, 'secs': 0.0}
+{'name': 'rand_dense_4', 'n': 14, 'is45': False, 'census': {3: 18, 4: 48}, 'h_ve': 7, 'width': 12, 'h_brute_forb': 7, 'n_max_sets': 13, 'h_brute_def': 7, 'h_sat': 7, 'expect': None, 'agree': True, 'secs': 0.03}
+{'name': 'rand_dense_5', 'n': 9, 'is45': False, 'census': {3: 4, 4: 10}, 'h_ve': 6, 'width': 7, 'h_brute_forb': 6, 'n_max_sets': 3, 'h_brute_def': 6, 'h_sat': 6, 'expect': None, 'agree': True, 'secs': 0.0}
+{'name': 'rand_dense_6', 'n': 10, 'is45': False, 'census': {4: 12, 3: 5}, 'h_ve': 6, 'width': 7, 'h_brute_forb': 6, 'n_max_sets': 30, 'h_brute_def': 6, 'h_sat': 6, 'expect': None, 'agree': True, 'secs': 0.0}
+{'name': 'rand_dense_7', 'n': 13, 'is45': False, 'census': {4: 39, 3: 10}, 'h_ve': 7, 'width': 11, 'h_brute_forb': 7, 'n_max_sets': 10, 'h_brute_def': 7, 'h_sat': 7, 'expect': None, 'agree': True, 'secs': 0.01}
+{'name': 'rand_dense_8', 'n': 10, 'is45': False, 'census': {4: 18, 3: 4}, 'h_ve': 6, 'width': 9, 'h_brute_forb': 6, 'n_max_sets': 6, 'h_brute_def': 6, 'h_sat': 6, 'expect': None, 'agree': True, 'secs': 0.0}
+{'name': 'rand_dense_9', 'n': 8, 'is45': False, 'census': {4: 7, 3: 3}, 'h_ve': 5, 'width': 5, 'h_brute_forb': 5, 'n_max_sets': 16, 'h_brute_def': 5, 'h_sat': 5, 'expect': None, 'agree': True, 'secs': 0.0}
+{'name': 'rand_dense_10', 'n': 14, 'is45': False, 'census': {3: 19, 4: 60}, 'h_ve': 7, 'width': 13, 'h_brute_forb': 7, 'n_max_sets': 6, 'h_brute_def': 7, 'h_sat': 7, 'expect': None, 'agree': True, 'secs': 0.03}
+{'name': 'rand_dense_11', 'n': 8, 'is45': False, 'census': {4: 7, 3: 5}, 'h_ve': 5, 'width': 6, 'h_brute_forb': 5, 'n_max_sets': 9, 'h_brute_def': 5, 'h_sat': 5, 'expect': None, 'agree': True, 'secs': 0.0}
+{'name': 'rand_dense_12', 'n': 13, 'is45': False, 'census': {4: 41, 3: 12}, 'h_ve': 7, 'width': 11, 'h_brute_forb': 7, 'n_max_sets': 4, 'h_brute_def': 7, 'h_sat': 7, 'expect': None, 'agree': True, 'secs': 0.01}
+{'name': 'rand_dense_13', 'n': 10, 'is45': False, 'census': {4: 18, 3: 7}, 'h_ve': 6, 'width': 8, 'h_brute_forb': 6, 'n_max_sets': 5, 'h_brute_def': 6, 'h_sat': 6, 'expect': None, 'agree': True, 'secs': 0.0}
+{'name': 'rand45_0', 'n': 17, 'is45': True, 'census': {3: 3}, 'h_ve': 15, 'width': 2, 'h_brute_forb': 15, 'n_max_sets': 5, 'h_brute_def': None, 'h_sat': 15, 'expect': None, 'agree': True, 'secs': 0.01}
+{'name': 'rand45_1', 'n': 18, 'is45': True, 'census': {3: 4}, 'h_ve': 15, 'width': 2, 'h_brute_forb': 15, 'n_max_sets': 9, 'h_brute_def': None, 'h_sat': 15, 'expect': None, 'agree': True, 'secs': 0.03}
+{'name': 'rand45_2', 'n': 18, 'is45': True, 'census': {3: 3}, 'h_ve': 15, 'width': 2, 'h_brute_forb': 15, 'n_max_sets': 27, 'h_brute_def': None, 'h_sat': 15, 'expect': None, 'agree': True, 'secs': 0.02}
+{'name': 'rand45_3', 'n': 17, 'is45': True, 'census': {3: 2}, 'h_ve': 15, 'width': 2, 'h_brute_forb': 15, 'n_max_sets': 9, 'h_brute_def': None, 'h_sat': 15, 'expect': None, 'agree': True, 'secs': 0.01}
+{'name': 'rand45_4', 'n': 17, 'is45': True, 'census': {3: 4}, 'h_ve': 14, 'width': 2, 'h_brute_forb': 14, 'n_max_sets': 15, 'h_brute_def': None, 'h_sat': 14, 'expect': None, 'agree': True, 'secs': 0.01}
+{'name': 'rand45_5', 'n': 16, 'is45': True, 'census': {3: 2}, 'h_ve': 15, 'width': 2, 'h_brute_forb': 15, 'n_max_sets': 1, 'h_brute_def': None, 'h_sat': 15, 'expect': None, 'agree': True, 'secs': 0.01}
+{'name': 'rand45_6', 'n': 17, 'is45': True, 'census': {3: 3}, 'h_ve': 15, 'width': 2, 'h_brute_forb': 15, 'n_max_sets': 3, 'h_brute_def': None, 'h_sat': 15, 'expect': None, 'agree': True, 'secs': 0.01}
+{'name': 'rand45_7', 'n': 16, 'is45': True, 'census': {3: 1}, 'h_ve': 15, 'width': 2, 'h_brute_forb': 15, 'n_max_sets': 3, 'h_brute_def': None, 'h_sat': 15, 'expect': None, 'agree': True, 'secs': 0.01}
+family {'K': 0, 'n': 11, 'n_expected': 11, 'm': 9, 'four': 0, 'h': 7, 'h_expected': 7, 'alpha_minus_min': 6, 'alpha_minus_max': 6, 'is45': True, 'width': 5, 'E1_n': 13, 'E1_h': 8, 'E1_m': 10, 'E1_four': 0, 'E1_is45': True}
+family {'K': 1, 'n': 20, 'n_expected': 20, 'm': 18, 'four': 0, 'h': 12, 'h_expected': 12, 'alpha_minus_min': 11, 'alpha_minus_max': 11, 'is45': True, 'width': 5, 'E1_n': 22, 'E1_h': 13, 'E1_m': 19, 'E1_four': 0, 'E1_is45': True}
+family {'K': 2, 'n': 29, 'n_expected': 29, 'm': 27, 'four': 0, 'h': 17, 'h_expected': 17, 'alpha_minus_min': 16, 'alpha_minus_max': 16, 'is45': True, 'width': 5, 'E1_n': 31, 'E1_h': 18, 'E1_m': 28, 'E1_four': 0, 'E1_is45': True}
+family {'K': 3, 'n': 38, 'n_expected': 38, 'm': 36, 'four': 0, 'h': 22, 'h_expected': 22, 'alpha_minus_min': 21, 'alpha_minus_max': 21, 'is45': True, 'width': 5, 'E1_n': 40, 'E1_h': 23, 'E1_m': 37, 'E1_four': 0, 'E1_is45': True}
+family {'K': 4, 'n': 47, 'n_expected': 47, 'm': 45, 'four': 0, 'h': 27, 'h_expected': 27, 'alpha_minus_min': 26, 'alpha_minus_max': 26, 'is45': True, 'width': 5, 'E1_n': 49, 'E1_h': 28, 'E1_m': 46, 'E1_four': 0, 'E1_is45': True}
+family {'K': 5, 'n': 56, 'n_expected': 56, 'm': 54, 'four': 0, 'h': 32, 'h_expected': 32, 'alpha_minus_min': 31, 'alpha_minus_max': 31, 'is45': True, 'width': 5, 'E1_n': 58, 'E1_h': 33, 'E1_m': 55, 'E1_four': 0, 'E1_is45': True}
+claim set == translate(S_5 u {min - t, min + t}) with t = 3*span + 1000003: True
+span(S_5) == 269^6: True
+ALL AGREE: True

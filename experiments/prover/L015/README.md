@@ -1,6 +1,7 @@
 # L015 prover work folder: the anonymous reader's 5/9 family, independent proof and verification
 
-Certificate: `results/proofs/L015-reader-family-c-le-5-9.md` (TYPE: proof, `CLAIM: c* <= 5/9`, submitted, unrefereed).
+Certificate: `results/proofs/L015-reader-family-c-le-5-9.md` (TYPE: proof, `CLAIM: c* <= 5/9`; ACCEPTED by three referee rounds on 2026-10-20, K60; round 1 'ACCEPT WITH FIXES', rounds 2 and 3 ACCEPT. The computations in this folder predate the referee rounds, and its README was edited afterwards only for the round-1 editorial fixes. The construction itself remains the anonymous reader's, see Origin below).
+
 
 **Origin.** The family $S_K=O\cup\varphi(O)\cup\dots\cup\varphi^K(O)$ with $O=\{0,49,75,83,98,101,117,119,121,159,269\}$ and
 $\varphi(x)=101+18x/269$, the counts $|S_K|=11+9K$ and $h(S_K)=7+5K$, and the claim $c_*\le5/9$ are an anonymous reader's

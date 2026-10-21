@@ -1,0 +1,9 @@
+conflicts from definition == 3-AP list: True ; m = 64
+reverse zigzag max frontier 11
+DP h (reverse zigzag) = 38
+glucose4/1: atleast 38: SAT (0.00s)
+glucose4/1: atleast 39: UNSAT (0.06s)
+minisat22/2: atleast 38: SAT (0.00s)
+minisat22/2: atleast 39: UNSAT (1.17s)
+cadical195/8: atleast 38: SAT (0.00s)
+cadical195/8: atleast 39: UNSAT (0.11s)

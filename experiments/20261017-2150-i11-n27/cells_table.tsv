@@ -39,9 +39,12 @@ cell	classes	secs	route	inputs	bad_tau	ext_nodes
 (24,16,9,3)	39568	5224.6	recurse(streamed)	127766	0	6104453207
 (25,13,9,3)	0	3.4	recurse(streamed)	78	0	3886573
 (25,14,9,2)	0	3.4	recurse(streamed)	371	0	130142
+(25,19,10,3)	35645	20133.4	recurse(streamed)	2082993	0	23128213292
 (26,16,10,2)	0	1.2	recurse(streamed)	8	0	580
 (26,16,10,3)	0	7.8	recurse(streamed)	182	0	14402041
 (27,13,10,2)	0	1.1	recurse(streamed)	1	0	2623
 (27,14,10,3)	0	2.4	recurse(streamed)	9	0	583366
 (27,18,11,2)	0	0.0	recurse(streamed)	0	0	0
 (27,19,11,3)	0	2.2	recurse(streamed)	18	0	1137704
+(26,22,11,3)	36	8906.1	recurse(streamed)	229369	0	941521078
+(27,25,12,3)	0	31.4	recurse(streamed)	334	0	53959

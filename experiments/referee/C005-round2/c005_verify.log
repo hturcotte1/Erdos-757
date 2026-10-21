@@ -1,0 +1,8 @@
+id: C005-lemmaE-SK6-E1 type: construction
+n = 67; all values integral after scaling by 1; distinct: True; min=0 max=611529215970355940
+(4,5) literal check over all C(67,4) = 766480 quadruples: PASS; histogram of #distinct differences: {5: 4096, 6: 762384}; bad=None; t=0.5s
+weak Sidon (all C(n,2) sums distinct): True 
+conflicts from the Sidon definition: 64; union sizes: {3: 64}; differences with multiplicity: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+number of 3-APs m = 64
+AP-degree histogram: {1: 3, 2: 10, 3: 47, 4: 7}
+non-midpoints: [0, 65, 66]

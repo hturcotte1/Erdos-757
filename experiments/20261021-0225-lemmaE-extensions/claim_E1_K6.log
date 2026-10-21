@@ -1,0 +1,9 @@
+Wed Oct 21 02:25:01 UTC 2026
+JUDGE: PASS NEW-RECORD C005-lemmaE-SK6-E1 n=67 h=38 ratio=38/67 (0.567164) vs 4/7=0.571429
+saved: results/claims/C005-lemmaE-SK6-E1.json
+
+real	69m36.903s
+user	68m54.838s
+sys	0m1.333s
+exit=0
+Wed Oct 21 03:34:38 UTC 2026

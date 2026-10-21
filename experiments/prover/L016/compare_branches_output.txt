@@ -1,0 +1,50 @@
+IDENTICAL 27,13,10,2: branches 1, inputs [1], nodes [2623], hits_in_C [0], connected 0
+IDENTICAL 24,12,8,2: branches 2, inputs [187, 1], nodes [261793, 0], hits_in_C [31465, 4185], connected 1284
+IDENTICAL 25,14,9,2: branches 1, inputs [371], nodes [130142], hits_in_C [255], connected 0
+IDENTICAL 26,16,10,2: branches 1, inputs [8], nodes [580], hits_in_C [0], connected 0
+IDENTICAL 23,15,9,2: branches 1, inputs [7], nodes [76], hits_in_C [0], connected 0
+IDENTICAL 20,14,8,2: branches 0, inputs [], nodes [], hits_in_C [], connected 0
+IDENTICAL 17,13,7,2: branches 0, inputs [], nodes [], hits_in_C [], connected 0
+IDENTICAL 14,12,6,2: branches 0, inputs [], nodes [], hits_in_C [], connected 0
+IDENTICAL 27,18,11,2: branches 1, inputs [0], nodes [None], hits_in_C [None], connected 0
+IDENTICAL 27,14,10,3: branches 2, inputs [7, 2], nodes [8538, 574828], hits_in_C [0, 0], connected 0
+IDENTICAL 25,13,9,3: branches 2, inputs [60, 18], nodes [54372, 3832201], hits_in_C [13, 11934], connected 0
+IDENTICAL 26,16,10,3: branches 2, inputs [8, 174], nodes [580, 14401461], hits_in_C [0, 1032], connected 0
+IDENTICAL 27,19,11,3: branches 1, inputs [18], nodes [1137704], hits_in_C [0], connected 0
+IDENTICAL 21,10,6,2 (direct): enum_conn N=21 M=10 T0=6 DMAX=2 calls=251931 found=20150, labelled 20150, in C with tau=t 20020
+IDENTICAL 20,10,6,2 (direct): enum_conn N=20 M=10 T0=6 DMAX=2 calls=1492131 found=77340, labelled 77340, in C with tau=t 77340
+IDENTICAL 7,3,1,2 (direct): enum_conn N=7 M=3 T0=1 DMAX=2 calls=52 found=9, labelled 9, in C with tau=t 0
+IDENTICAL 18,9,5,2 (direct): enum_conn N=18 M=9 T0=5 DMAX=2 calls=364807 found=59694, labelled 59694, in C with tau=t 58956
+IDENTICAL 17,9,5,2 (direct): enum_conn N=17 M=9 T0=5 DMAX=2 calls=839203 found=122532, labelled 122532, in C with tau=t 122532
+IDENTICAL 15,8,4,2 (direct): enum_conn N=15 M=8 T0=4 DMAX=2 calls=173621 found=23628, labelled 23628, in C with tau=t 22132
+IDENTICAL 14,8,4,2 (direct): enum_conn N=14 M=8 T0=4 DMAX=2 calls=203402 found=17826, labelled 17826, in C with tau=t 17782
+IDENTICAL 12,7,3,2 (direct): enum_conn N=12 M=7 T0=3 DMAX=2 calls=36047 found=2354, labelled 2354, in C with tau=t 0
+IDENTICAL 11,7,3,2 (direct): enum_conn N=11 M=7 T0=3 DMAX=2 calls=24269 found=368, labelled 368, in C with tau=t 0
+IDENTICAL 9,6,2,2 (direct): enum_conn N=9 M=6 T0=2 DMAX=2 calls=3661 found=16, labelled 16, in C with tau=t 0
+IDENTICAL 8,6,2,2 (direct): enum_conn N=8 M=6 T0=2 DMAX=2 calls=1475 found=0, labelled 0, in C with tau=t 0
+IDENTICAL 22,12,7,2: branches 2, inputs [1364, 58], nodes [630957, 0], hits_in_C [339387, 64429], connected 117829
+IDENTICAL 21,12,7,2: branches 2, inputs [1082, 7], nodes [253587, 0], hits_in_C [78512, 2993], connected 27619
+IDENTICAL 19,11,6,2: branches 2, inputs [780, 52], nodes [112113, 0], hits_in_C [130763, 13636], connected 93817
+IDENTICAL 18,11,6,2: branches 2, inputs [591, 7], nodes [34980, 0], hits_in_C [31587, 431], connected 27673
+IDENTICAL 16,10,5,2 (direct): enum_conn N=16 M=10 T0=5 DMAX=2 calls=4414301 found=111462, labelled 111462, in C with tau=t 111462
+IDENTICAL 15,10,5,2 (direct): enum_conn N=15 M=10 T0=5 DMAX=2 calls=2080237 found=4384, labelled 4384, in C with tau=t 4384
+IDENTICAL 13,9,4,2 (direct): enum_conn N=13 M=9 T0=4 DMAX=2 calls=249728 found=0, labelled 0, in C with tau=t 0
+IDENTICAL 12,9,4,2 (direct): enum_conn N=12 M=9 T0=4 DMAX=2 calls=86293 found=0, labelled 0, in C with tau=t 0
+IDENTICAL 10,8,3,2 (direct): enum_conn N=10 M=8 T0=3 DMAX=2 calls=11025 found=0, labelled 0, in C with tau=t 0
+IDENTICAL 23,14,8,2: branches 2, inputs [5138, 1], nodes [440801, 0], hits_in_C [49889, 129], connected 9822
+IDENTICAL 22,14,8,2: branches 1, inputs [1636], nodes [27864], hits_in_C [1011], connected 124
+IDENTICAL 21,14,8,2: branches 1, inputs [211], nodes [761], hits_in_C [0], connected 0
+IDENTICAL 20,13,7,2: branches 2, inputs [2606, 1], nodes [38336, 0], hits_in_C [23492, 6], connected 22847
+IDENTICAL 19,13,7,2: branches 0, inputs [], nodes [], hits_in_C [], connected 0
+IDENTICAL 18,13,7,2: branches 0, inputs [], nodes [], hits_in_C [], connected 0
+IDENTICAL 17,12,6,2: branches 0, inputs [], nodes [], hits_in_C [], connected 0
+IDENTICAL 16,12,6,2: branches 0, inputs [], nodes [], hits_in_C [], connected 0
+IDENTICAL 15,12,6,2: branches 0, inputs [], nodes [], hits_in_C [], connected 0
+IDENTICAL 14,11,5,2: branches 0, inputs [], nodes [], hits_in_C [], connected 0
+IDENTICAL 13,11,5,2: branches 0, inputs [], nodes [], hits_in_C [], connected 0
+IDENTICAL 23,13,8,3: branches 3, inputs [851, 0, 542], nodes [258503, None, 65225245], hits_in_C [10759, None, 7575904], connected 266422
+IDENTICAL 24,16,9,3: branches 2, inputs [1511, 126255], nodes [5354, 6104447853], hits_in_C [8, 45177363], connected 1771014
+IDENTICAL 25,19,10,3: branches 1, inputs [2082993], nodes [23128213292], hits_in_C [6944386], connected 1250199
+IDENTICAL 26,22,11,3: branches 1, inputs [229369], nodes [941521078], hits_in_C [7181], connected 1080
+IDENTICAL 27,25,12,3: branches 1, inputs [334], nodes [53959], hits_in_C [0], connected 0
+SUMMARY keys compared (direct: enum line, labelled, in-C counts, filt summary; recursion: branch data) 49, identical branch data 49, different 0

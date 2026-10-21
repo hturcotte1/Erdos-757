@@ -1,9 +1,13 @@
 """Pins facts K3, K7, K11, K12, K17-K24 and K29 of kb/known_results.md (K22 only for single-class
-chains with a != b and a + b <= 8). K13 and K30-K56 are backed by the tests, experiment folders,
+chains with a != b and a + b <= 8). K13 and K30-K60 are backed by the tests, experiment folders,
 certificates and referee reviews named in their Check column (K44 only by a check on the records
 in the main session; K51 and K52 also by the cell regressions tests/test_l007_cells.py and
-tests/test_l008_cells.py; of K52-K55 only the exact values f(16), f(18), f(20), f(22) are pinned
-here, in test_fn_bounds; K56 is pinned by no test), and rows whose Check is "source" are pinned by
+tests/test_l008_cells.py; of K52-K55 and K58 only the exact values f(16), f(18), f(20), f(22), f(23)
+are pinned here, in test_fn_bounds (K58 also by the witness test tests/test_c23_witness.py, which pins
+only the upper bound h(C23) = 14); K59 by tests/test_c003_record.py, which pins only the cheap half of
+the community 65-point set (it is a (4,5)-set, it equals the exact rebuild, and the stored 37-point
+subset is Sidon; the upper bound h <= 37 and the table entry KNOWN_UPPER[65] = 37 are pinned by no
+test); K56, K57 and K60 are pinned by no test), and rows whose Check is "source" are pinned by
 no test. Also pins the
 safety rails
 (judge, hook, status script). Run: python3 -m pytest -q"""
@@ -156,9 +160,9 @@ def test_fn_bounds():
     b = B.fn_bounds(40)
     exact = {n: lu[0] for n, lu in b.items() if lu[0] == lu[1]}
     want = {1: 1, 2: 2, 3: 2, 4: 3, 5: 4, 6: 4, 7: 5, 8: 5, 9: 6, 10: 6, 11: 7, 12: 7, 13: 8,
-            14: 8, 15: 9, 16: 10, 17: 10, 18: 11, 20: 12, 22: 13, 23: 14, 24: 14, 26: 15, 28: 16}
+            14: 8, 15: 9, 16: 10, 17: 10, 18: 11, 20: 12, 22: 13, 23: 14, 24: 14, 26: 15, 27: 16, 28: 16}
     assert exact == want
-    assert b[16] == (10, 10) and b[18] == (11, 11) and b[20] == (12, 12) and b[22] == (13, 13) and b[23] == (14, 14)  # L008-L011, L014
+    assert b[16] == (10, 10) and b[18] == (11, 11) and b[20] == (12, 12) and b[22] == (13, 13) and b[23] == (14, 14) and b[27] == (16, 16)  # L008-L011, L014, L016
     for n, (lo, hi) in b.items():
         assert lo <= hi
 

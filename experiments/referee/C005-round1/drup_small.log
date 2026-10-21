@@ -1,0 +1,4 @@
+A_base: proof of no Sidon subset of size 9 verified by RUP: True (47 lemmas); bare empty-clause proof accepted: False
+O: proof of no Sidon subset of size 8 verified by RUP: True (12 lemmas); bare empty-clause proof accepted: False
+I_1: proof of no Sidon subset of size 13 verified by RUP: True (104 lemmas); bare empty-clause proof accepted: False
+E1(S_1): proof of no Sidon subset of size 14 verified by RUP: True (151 lemmas); bare empty-clause proof accepted: False

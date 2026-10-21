@@ -1,0 +1,4 @@
+{"cell": [24, 16, 9, 3], "classes": 39568, "secs": 1897.8, "driver": "stream", "MD": 10, "NPROC": 3, "celldir": "/home/user/Erdos-757/experiments/prover/L016/out/cellsF", "utc": "2026-10-21T00:21:41Z"}
+{"cell": [25, 19, 10, 3], "classes": 35645, "secs": 2441.8, "driver": "stream", "MD": 10, "NPROC": 3, "celldir": "/home/user/Erdos-757/experiments/prover/L016/out/cellsF", "utc": "2026-10-21T01:02:22Z"}
+{"cell": [26, 22, 11, 3], "classes": 36, "secs": 167.5, "driver": "stream", "MD": 10, "NPROC": 3, "celldir": "/home/user/Erdos-757/experiments/prover/L016/out/cellsF", "utc": "2026-10-21T01:05:10Z"}
+{"cell": [27, 25, 12, 3], "classes": 0, "secs": 0.3, "driver": "stream", "MD": 10, "NPROC": 3, "celldir": "/home/user/Erdos-757/experiments/prover/L016/out/cellsF", "utc": "2026-10-21T01:05:10Z"}

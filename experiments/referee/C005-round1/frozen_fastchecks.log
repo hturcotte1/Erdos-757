@@ -1,0 +1,6 @@
+frozen file sha256 e061f0e2072e7d09381e5c5a69a25c985bd47ac9cfc345dd627d6fb9810d10ed
+id == stem True | type construction | n 67 | in range True
+frozen is_45 True None (6.7s)
+frozen is_weak_sidon True
+frozen witness checks: subset True is_sidon True size 38 claimed_h 38
+ratio 38/67 < RECORD True

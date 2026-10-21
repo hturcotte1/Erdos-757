@@ -1,0 +1,8 @@
+TOTAL inputs 1
+(27,13,10,2) branch d=2 t'=9: 1 inputs; ext_d noprune SUMMARY graphs=1 bad_tau=0 tg_too_small=0 searched=1 max_min_covers=9477 nodes=2623 hits_all=0 printed=0; pyverify: {'total': 0, 'disconnected': 0, 'nonlinear': 0, 'F7': 0, 'P3': 0, 'degree': 0, 'wrong_tau': 0, 'member': 0, 'tau_checked': 0}
+TOTAL inputs 9
+(27,14,10,3) branch d=2 t'=9: 7 inputs; ext_d noprune SUMMARY graphs=7 bad_tau=0 tg_too_small=0 searched=7 max_min_covers=6669 nodes=8538 hits_all=0 printed=0; pyverify: {'total': 0, 'disconnected': 0, 'nonlinear': 0, 'F7': 0, 'P3': 0, 'degree': 0, 'wrong_tau': 0, 'member': 0, 'tau_checked': 0}
+(27,14,10,3) branch d=3 t'=9: 2 inputs; ext_d noprune SUMMARY graphs=2 bad_tau=0 tg_too_small=0 searched=2 max_min_covers=10206 nodes=575721 hits_all=208 printed=208; pyverify: {'total': 208, 'disconnected': 208, 'nonlinear': 0, 'F7': 0, 'P3': 0, 'degree': 0, 'wrong_tau': 0, 'member': 0, 'tau_checked': 208}
+TOTAL inputs 0
+TOTAL inputs 18
+(27,19,11,3) branch d=3 t'=10: 18 inputs; ext_d noprune SUMMARY graphs=18 bad_tau=0 tg_too_small=0 searched=18 max_min_covers=11259 nodes=1142643 hits_all=240 printed=240; pyverify: {'total': 240, 'disconnected': 240, 'nonlinear': 0, 'F7': 0, 'P3': 0, 'degree': 0, 'wrong_tau': 0, 'member': 0, 'tau_checked': 240}

@@ -1,0 +1,2 @@
+MILP max: {'status': 0, 'message': 'Optimization terminated successfully. (HiGHS Status 7: Optimal)', 'obj': 33.0, 'dual_bound': -33.0, 'gap': 0.0, 'size': 33, 'sidon': True, 'secs': 0.57}
+MILP feasibility of sum >= 34: {'status': 2, 'message': 'The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)', 'secs': 1.99}

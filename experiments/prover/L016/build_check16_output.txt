@@ -1,0 +1,52 @@
+bin/enum_conn byte-identical to ../L012/bin/enum_conn
+bin/filt byte-identical to ../L012/bin/filt
+bin/canon byte-identical to ../L012/bin/canon
+bin/realize byte-identical to ../L012/bin/realize
+bin/realize_extra byte-identical to ../L012/bin/realize_extra
+bin256/ext_d (L012 ext_d.c unchanged, MAXP 256) byte-identical to ../L012/bin/ext_d
+diff ../L012/indep/ext_d.c src/ext_d_maxp640.c:
+23c23
+< #define MAXP 256
+---
+> #define MAXP 640
+src/ext_d_maxp640.c identical to the worker's src/ext_d_maxp640.c
+bin/ext_d (MAXP 640) byte-identical to the worker's bin/ext_d
+diff src/ext_d_maxp640.c src/ext_d_fast.c: 44 lines (ext_d_fast_diff.txt)
+fast/bin/ext_d = bin/ext_d_fast
+fast/bin/canon = bin/canon
+fast/bin/filt = bin/filt
+fast/bin/enum_conn = bin/enum_conn
+engine.py identical to ../L012/engine.py
+decomp22.py identical to ../L012/decomp22.py
+stream.py identical to ../L014/stream.py
+run_cells.py identical to ../L014/run_cells.py
+tree.py identical to ../L014/tree.py
+gen_inputs.py identical to ../L014/gen_inputs.py
+input_counts.py identical to ../L014/input_counts.py
+decomp_check.py identical to ../L014/decomp_check.py
+ext_validate.py identical to ../L014/ext_validate.py
+pyverify.py identical to ../L014/pyverify.py
+fast/engine.py identical to engine.py
+fast/decomp22.py identical to decomp22.py
+fast/stream.py identical to stream.py
+fast/run_cells.py identical to run_cells.py
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+ff78c6494fb4e0cba66c8634329e3bbeb79ff36654f2577dcbc6b0cbcea7abd4  bin/canon
+0884dc6306b9bb10f46e2d10147c5f7e53078e2ade6220f22ebfa27e0bdca91c  bin/enum_conn
+d3481b14123d6ad4ef84209100253b48e3a87a8a1ef6e599cf10ceb774b5da07  bin/ext_d
+772718c10fff0d6f0a3f44d53ad5e850d7acf3c7531707610f65f39bf782272b  bin/ext_d_fast
+9852fb898e1549a088af2d2829ced24954228a3506d9bef645a8c7a3c42af05f  bin/filt
+d469c1ee0348ae237d5d48c697dcd3bb8635be875cfa7e6aac0bea4f267e7941  bin/realize
+ed1fdb80cf450d31f106fb116b692616fb049586f17425f997920036474adc65  bin/realize_extra
+c773f385db32200f597ddeb125bc050784b516973ced451a9777c82df8addb27  bin256/ext_d
+ff78c6494fb4e0cba66c8634329e3bbeb79ff36654f2577dcbc6b0cbcea7abd4  fast/bin/canon
+0884dc6306b9bb10f46e2d10147c5f7e53078e2ade6220f22ebfa27e0bdca91c  fast/bin/enum_conn
+772718c10fff0d6f0a3f44d53ad5e850d7acf3c7531707610f65f39bf782272b  fast/bin/ext_d
+9852fb898e1549a088af2d2829ced24954228a3506d9bef645a8c7a3c42af05f  fast/bin/filt
+562551e58f091382093d79940b437cd96fadc2446d6980c0cc92e267a8768e59  engine.py
+042de7b2450859d9e2601360bf696422f93591a43e73f1fe015df45cd156f7f1  decomp22.py
+aba7f049e94e0cdf9b71d6e655920c910b47e08c3db9ed1bd08da7e4ad3f7eea  stream.py
+67aa1fdf560ecdbf564bc37dc4d61dd97aa3b92cadbed303ce7253038469db79  run_cells.py
+5e226aceb1b42b72127bd08f546e71dce4c81af7293ed8215c7d6fabc89f8f03  src/ext_d_fast.c
+57efd86b4a9cc500610756b5fe2bc317e0703efea7e87f540044039e9dc26ca2  src/ext_d_maxp640.c
+68adb22ea919b70b295507b30e57612ef006f6cfef562b987f3dfec8cfb3eaf9  ../L012/indep/ext_d.c

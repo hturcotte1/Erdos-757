@@ -1,0 +1,566 @@
+{
+ "description": "Self-similar (4,5)-families found/verified by experiments/20261020-2115-selfsimilar-search; n=n0+(n0-2)K, h=h0+gK (transfer matrix). No family with limit < 5/9 was found.",
+ "families": [
+  {
+   "name": "reader_n11",
+   "seed": [
+    0,
+    49,
+    75,
+    83,
+    98,
+    101,
+    117,
+    119,
+    121,
+    159,
+    269
+   ],
+   "n0": 11,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    0,
+    10,
+    5,
+    7
+   ],
+   "r": "18/269",
+   "growth_g": "5",
+   "limit_ratio": "5/9",
+   "h_seq_K0_8": [
+    7,
+    12,
+    17,
+    22,
+    27,
+    32,
+    37,
+    42,
+    47
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "reader family [community]"
+  },
+  {
+   "name": "reader_mirror_n11",
+   "seed": [
+    0,
+    49,
+    75,
+    83,
+    98,
+    101,
+    117,
+    119,
+    121,
+    159,
+    269
+   ],
+   "n0": 11,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    0,
+    10,
+    7,
+    5
+   ],
+   "r": "-18/269",
+   "growth_g": "5",
+   "limit_ratio": "5/9",
+   "h_seq_K0_8": [
+    7,
+    12,
+    17,
+    22,
+    27,
+    32,
+    37,
+    42,
+    47
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "reader family [community]"
+  },
+  {
+   "name": "n12_seed0_map(0,11,10,4)",
+   "seed": [
+    0,
+    8,
+    9,
+    14,
+    16,
+    18,
+    28,
+    40,
+    43,
+    72,
+    89,
+    135
+   ],
+   "n0": 12,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    0,
+    11,
+    10,
+    4
+   ],
+   "r": "-73/135",
+   "growth_g": "6",
+   "limit_ratio": "3/5",
+   "h_seq_K0_8": [
+    7,
+    14,
+    20,
+    26,
+    32,
+    38,
+    44,
+    50,
+    56
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "valid family, ratio 3/5 (worse than 4/7)"
+  },
+  {
+   "name": "n11_tie_seed31280_map(6, 10, 0, 1)",
+   "seed": [
+    0,
+    18,
+    32,
+    36,
+    40,
+    62,
+    63,
+    64,
+    92,
+    144,
+    224
+   ],
+   "n0": 11,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    6,
+    10,
+    0,
+    1
+   ],
+   "r": "18/161",
+   "growth_g": "5",
+   "limit_ratio": "5/9",
+   "h_seq_K0_8": [
+    7,
+    12,
+    17,
+    22,
+    27,
+    32,
+    37,
+    42,
+    47
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "tie with the reader (5/9), not an improvement"
+  },
+  {
+   "name": "n11_tie_seed60020_map(0, 10, 5, 8)",
+   "seed": [
+    0,
+    31,
+    56,
+    62,
+    68,
+    78,
+    81,
+    100,
+    105,
+    132,
+    233
+   ],
+   "n0": 11,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    0,
+    10,
+    5,
+    8
+   ],
+   "r": "27/233",
+   "growth_g": "5",
+   "limit_ratio": "5/9",
+   "h_seq_K0_8": [
+    7,
+    12,
+    17,
+    22,
+    27,
+    32,
+    37,
+    42,
+    47
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "tie with the reader (5/9), not an improvement"
+  },
+  {
+   "name": "n11_tie_seed60020_map(0, 10, 8, 5)",
+   "seed": [
+    0,
+    31,
+    56,
+    62,
+    68,
+    78,
+    81,
+    100,
+    105,
+    132,
+    233
+   ],
+   "n0": 11,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    0,
+    10,
+    8,
+    5
+   ],
+   "r": "-27/233",
+   "growth_g": "5",
+   "limit_ratio": "5/9",
+   "h_seq_K0_8": [
+    7,
+    12,
+    17,
+    22,
+    27,
+    32,
+    37,
+    42,
+    47
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "tie with the reader (5/9), not an improvement"
+  },
+  {
+   "name": "n11_tie_seed83460_map(5, 10, 0, 2)",
+   "seed": [
+    0,
+    40,
+    54,
+    64,
+    74,
+    77,
+    80,
+    96,
+    108,
+    152,
+    224
+   ],
+   "n0": 11,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    5,
+    10,
+    0,
+    2
+   ],
+   "r": "18/49",
+   "growth_g": "5",
+   "limit_ratio": "5/9",
+   "h_seq_K0_8": [
+    7,
+    12,
+    17,
+    22,
+    27,
+    32,
+    37,
+    42,
+    47
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "tie with the reader (5/9), not an improvement"
+  },
+  {
+   "name": "n11_tie_seed84020_map(4, 10, 0, 5)",
+   "seed": [
+    0,
+    40,
+    62,
+    70,
+    75,
+    78,
+    80,
+    84,
+    98,
+    156,
+    232
+   ],
+   "n0": 11,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    4,
+    10,
+    0,
+    5
+   ],
+   "r": "78/157",
+   "growth_g": "5",
+   "limit_ratio": "5/9",
+   "h_seq_K0_8": [
+    7,
+    12,
+    17,
+    22,
+    27,
+    32,
+    37,
+    42,
+    47
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "tie with the reader (5/9), not an improvement"
+  },
+  {
+   "name": "n11_tie_seed112740_map(7, 10, 0, 2)",
+   "seed": [
+    0,
+    50,
+    66,
+    68,
+    72,
+    76,
+    86,
+    91,
+    100,
+    132,
+    188
+   ],
+   "n0": 11,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    7,
+    10,
+    0,
+    2
+   ],
+   "r": "66/97",
+   "growth_g": "5",
+   "limit_ratio": "5/9",
+   "h_seq_K0_8": [
+    7,
+    12,
+    17,
+    22,
+    27,
+    32,
+    37,
+    42,
+    47
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "tie with the reader (5/9), not an improvement"
+  },
+  {
+   "name": "n11_tie_seed113300_map(7, 10, 0, 2)",
+   "seed": [
+    0,
+    50,
+    72,
+    82,
+    84,
+    92,
+    100,
+    113,
+    118,
+    144,
+    238
+   ],
+   "n0": 11,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    7,
+    10,
+    0,
+    2
+   ],
+   "r": "72/125",
+   "growth_g": "5",
+   "limit_ratio": "5/9",
+   "h_seq_K0_8": [
+    7,
+    12,
+    17,
+    22,
+    27,
+    32,
+    37,
+    42,
+    47
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "tie with the reader (5/9), not an improvement"
+  },
+  {
+   "name": "n11_tie_seed118480_map(6, 10, 0, 3)",
+   "seed": [
+    0,
+    52,
+    72,
+    90,
+    92,
+    94,
+    99,
+    104,
+    136,
+    180,
+    256
+   ],
+   "n0": 11,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    6,
+    10,
+    0,
+    3
+   ],
+   "r": "90/157",
+   "growth_g": "5",
+   "limit_ratio": "5/9",
+   "h_seq_K0_8": [
+    7,
+    12,
+    17,
+    22,
+    27,
+    32,
+    37,
+    42,
+    47
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "tie with the reader (5/9), not an improvement"
+  },
+  {
+   "name": "n11_tie_seed122160_map(0, 10, 2, 6)",
+   "seed": [
+    0,
+    53,
+    72,
+    76,
+    91,
+    99,
+    105,
+    106,
+    107,
+    138,
+    223
+   ],
+   "n0": 11,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    0,
+    10,
+    2,
+    6
+   ],
+   "r": "33/223",
+   "growth_g": "5",
+   "limit_ratio": "5/9",
+   "h_seq_K0_8": [
+    7,
+    12,
+    17,
+    22,
+    27,
+    32,
+    37,
+    42,
+    47
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "tie with the reader (5/9), not an improvement"
+  },
+  {
+   "name": "n11_tie_seed122160_map(0, 10, 6, 2)",
+   "seed": [
+    0,
+    53,
+    72,
+    76,
+    91,
+    99,
+    105,
+    106,
+    107,
+    138,
+    223
+   ],
+   "n0": 11,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    0,
+    10,
+    6,
+    2
+   ],
+   "r": "-33/223",
+   "growth_g": "5",
+   "limit_ratio": "5/9",
+   "h_seq_K0_8": [
+    7,
+    12,
+    17,
+    22,
+    27,
+    32,
+    37,
+    42,
+    47
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "tie with the reader (5/9), not an improvement"
+  },
+  {
+   "name": "n11_tie_seed153580_map(7, 10, 0, 4)",
+   "seed": [
+    0,
+    62,
+    76,
+    80,
+    84,
+    90,
+    100,
+    115,
+    124,
+    168,
+    236
+   ],
+   "n0": 11,
+   "h0": 7,
+   "map_indices(a,b,a2,b2)": [
+    7,
+    10,
+    0,
+    4
+   ],
+   "r": "84/121",
+   "growth_g": "5",
+   "limit_ratio": "5/9",
+   "h_seq_K0_8": [
+    7,
+    12,
+    17,
+    22,
+    27,
+    32,
+    37,
+    42,
+    47
+   ],
+   "structure_verified_exactly_K<=": 4,
+   "status": "tie with the reader (5/9), not an improvement"
+  }
+ ]
+}

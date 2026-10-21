@@ -1,0 +1,19 @@
+{'name': 'window0', 'n': 22, 'm': 8, 'four': 0, 've': 18, 'brute': 18, 'agree': True}
+{'name': 'window6', 'n': 22, 'm': 8, 'four': 0, 've': 18, 'brute': 18, 'agree': True}
+{'name': 'window12', 'n': 22, 'm': 9, 'four': 0, 've': 17, 'brute': 17, 'agree': True}
+{'name': 'window18', 'n': 22, 'm': 17, 'four': 0, 've': 14, 'brute': 14, 'agree': True}
+{'name': 'window24', 'n': 22, 'm': 13, 'four': 0, 've': 15, 'brute': 15, 'agree': True}
+{'name': 'window30', 'n': 22, 'm': 5, 'four': 0, 've': 17, 'brute': 17, 'agree': True}
+{'name': 'window36', 'n': 22, 'm': 5, 'four': 0, 've': 17, 'brute': 17, 'agree': True}
+{'name': 'rand0', 'n': 22, 'm': 2, 'four': 0, 've': 20, 'brute': 20, 'agree': True}
+{'name': 'rand1', 'n': 22, 'm': 1, 'four': 0, 've': 21, 'brute': 21, 'agree': True}
+{'name': 'rand2', 'n': 22, 'm': 2, 'four': 0, 've': 20, 'brute': 20, 'agree': True}
+{'name': 'rand3', 'n': 22, 'm': 4, 'four': 0, 've': 19, 'brute': 19, 'agree': True}
+{'name': 'rand4', 'n': 22, 'm': 4, 'four': 0, 've': 20, 'brute': 20, 'agree': True}
+{'name': 'rand5', 'n': 22, 'm': 5, 'four': 0, 've': 19, 'brute': 19, 'agree': True}
+{'name': 'rand6', 'n': 22, 'm': 4, 'four': 0, 've': 18, 'brute': 18, 'agree': True}
+{'name': 'rand7', 'n': 22, 'm': 2, 'four': 0, 've': 20, 'brute': 20, 'agree': True}
+{'name': 'rand8', 'n': 22, 'm': 3, 'four': 0, 've': 20, 'brute': 20, 'agree': True}
+{'name': 'rand9', 'n': 22, 'm': 2, 'four': 0, 've': 20, 'brute': 20, 'agree': True}
+{'name': 'newAP+19', 'n': 22, 'm': 8, 'four': 0, 've': 18, 'brute': 18, 'agree': True}
+all agree: True (14.0s)

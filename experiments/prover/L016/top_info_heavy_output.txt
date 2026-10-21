@@ -1,0 +1,162 @@
+CELL (24,16,9,3): 39568 classes, route recurse, secs 1897.6, connected_hits 1771014
+  branch d=2 t'=8 S'=9: 120 decompositions, 1511 inputs
+     [[23, 14, 8]]: 263
+     [[22, 14, 8], [1, 0, 0]]: 6
+     [[11, 7, 4], [12, 7, 4]]: 60
+     [[11, 7, 4], [11, 7, 4], [1, 0, 0]]: 10
+     [[9, 6, 3], [14, 8, 5]]: 2
+     [[9, 5, 3], [14, 9, 5]]: 57
+     [[8, 5, 3], [15, 9, 5]]: 91
+     [[8, 5, 3], [14, 9, 5], [1, 0, 0]]: 19
+     [[7, 4, 2], [8, 5, 3], [8, 5, 3]]: 1
+     [[6, 4, 2], [17, 10, 6]]: 6
+     [[6, 4, 2], [8, 5, 3], [9, 5, 3]]: 3
+     [[6, 4, 2], [8, 5, 3], [8, 5, 3], [1, 0, 0]]: 1
+     [[6, 3, 2], [17, 11, 6]]: 114
+     [[6, 3, 2], [8, 5, 3], [9, 6, 3]]: 2
+     [[6, 3, 2], [6, 4, 2], [11, 7, 4]]: 4
+     [[3, 1, 1], [20, 13, 7]]: 839
+     [[3, 1, 1], [9, 6, 3], [11, 7, 4]]: 8
+     [[3, 1, 1], [8, 5, 3], [12, 8, 4]]: 5
+     [[3, 1, 1], [6, 4, 2], [14, 9, 5]]: 19
+     [[3, 1, 1], [6, 4, 2], [6, 4, 2], [8, 5, 3]]: 1
+     ext_d: graphs=1511 bad_tau=0 tg_too_small=0 searched=1511 max_min_covers=676 nodes=5354 hits_F7free=8 hits_in_C=8 | HIT lines 8
+     filt: SUMMARY tag=HIT NV=24 total=5 bad_labels=0 linear=5 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=5 survivors_connected=5 wrong_tau_dropped=0 connected_all=5 tau_range=[-1,-1] maxdeg_max=2
+     filt: SUMMARY tag=HIT NV=24 total=3 bad_labels=0 linear=3 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=3 survivors_connected=3 wrong_tau_dropped=0 connected_all=3 tau_range=[-1,-1] maxdeg_max=2
+     filt: SUMMARY tag=HIT NV=24 total=0 bad_labels=0 linear=0 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=0 survivors_connected=0 wrong_tau_dropped=0 connected_all=0 tau_range=[99,-1] maxdeg_max=0
+  branch d=3 t'=8 S'=7: 83 decompositions, 126255 inputs
+     [[23, 13, 8]]: 2693
+     [[22, 13, 8], [1, 0, 0]]: 85
+     [[11, 7, 4], [12, 6, 4]]: 140
+     [[10, 7, 4], [13, 6, 4]]: 12
+     [[10, 7, 4], [12, 6, 4], [1, 0, 0]]: 16
+     [[9, 5, 3], [14, 8, 5]]: 54
+     [[9, 4, 3], [14, 9, 5]]: 1060
+     [[9, 4, 3], [13, 9, 5], [1, 0, 0]]: 84
+     [[8, 6, 3], [15, 7, 5]]: 6
+     [[8, 5, 3], [15, 8, 5]]: 118
+     [[8, 5, 3], [14, 8, 5], [1, 0, 0]]: 18
+     [[7, 3, 2], [16, 10, 6]]: 16
+     [[7, 3, 2], [8, 5, 3], [8, 5, 3]]: 3
+     [[6, 4, 2], [8, 5, 3], [9, 4, 3]]: 2
+     [[6, 3, 2], [17, 10, 6]]: 339
+     [[6, 3, 2], [16, 10, 6], [1, 0, 0]]: 16
+     [[6, 3, 2], [8, 6, 3], [9, 4, 3]]: 3
+     [[6, 3, 2], [8, 5, 3], [9, 5, 3]]: 12
+     [[6, 3, 2], [8, 5, 3], [8, 5, 3], [1, 0, 0]]: 3
+     [[6, 3, 2], [7, 3, 2], [10, 7, 4]]: 4
+     [[6, 3, 2], [6, 3, 2], [11, 7, 4]]: 35
+     [[6, 3, 2], [6, 3, 2], [10, 7, 4], [1, 0, 0]]: 4
+     [[3, 1, 1], [20, 12, 7]]: 15465
+     [[3, 1, 1], [19, 12, 7], [1, 0, 0]]: 833
+     [[3, 1, 1], [10, 5, 3], [10, 7, 4]]: 24
+     [[3, 1, 1], [9, 5, 3], [11, 7, 4]]: 210
+     [[3, 1, 1], [9, 5, 3], [10, 7, 4], [1, 0, 0]]: 24
+     [[3, 1, 1], [9, 4, 3], [11, 8, 4]]: 471
+     [[3, 1, 1], [9, 4, 3], [10, 8, 4], [1, 0, 0]]: 63
+     [[3, 1, 1], [8, 6, 3], [12, 6, 4]]: 12
+     [[3, 1, 1], [8, 5, 3], [12, 7, 4]]: 194
+     [[3, 1, 1], [8, 5, 3], [11, 7, 4], [1, 0, 0]]: 70
+     [[3, 1, 1], [8, 5, 3], [10, 7, 4], [1, 0, 0], [1, 0, 0]]: 8
+     [[3, 1, 1], [7, 3, 2], [13, 9, 5]]: 84
+     [[3, 1, 1], [6, 4, 2], [14, 8, 5]]: 9
+     [[3, 1, 1], [6, 3, 2], [14, 9, 5]]: 1060
+     [[3, 1, 1], [6, 3, 2], [13, 9, 5], [1, 0, 0]]: 84
+     [[3, 1, 1], [6, 3, 2], [6, 4, 2], [8, 5, 3]]: 2
+     [[3, 1, 1], [6, 3, 2], [6, 3, 2], [8, 6, 3]]: 3
+     [[3, 1, 1], [3, 1, 1], [17, 11, 6]]: 45669
+     [[3, 1, 1], [3, 1, 1], [16, 11, 6], [1, 0, 0]]: 3238
+     [[3, 1, 1], [3, 1, 1], [15, 11, 6], [1, 0, 0], [1, 0, 0]]: 19
+     [[3, 1, 1], [3, 1, 1], [8, 6, 3], [9, 5, 3]]: 18
+     [[3, 1, 1], [3, 1, 1], [8, 5, 3], [9, 6, 3]]: 42
+     [[3, 1, 1], [3, 1, 1], [8, 5, 3], [8, 6, 3], [1, 0, 0]]: 6
+     [[3, 1, 1], [3, 1, 1], [7, 4, 2], [10, 7, 4]]: 8
+     [[3, 1, 1], [3, 1, 1], [7, 3, 2], [10, 8, 4]]: 63
+     [[3, 1, 1], [3, 1, 1], [6, 4, 2], [11, 7, 4]]: 35
+     [[3, 1, 1], [3, 1, 1], [6, 4, 2], [10, 7, 4], [1, 0, 0]]: 4
+     [[3, 1, 1], [3, 1, 1], [6, 3, 2], [11, 8, 4]]: 471
+     [[3, 1, 1], [3, 1, 1], [6, 3, 2], [10, 8, 4], [1, 0, 0]]: 63
+     [[3, 1, 1], [3, 1, 1], [3, 1, 1], [14, 10, 5]]: 45229
+     [[3, 1, 1], [3, 1, 1], [3, 1, 1], [13, 10, 5], [1, 0, 0]]: 6683
+     [[3, 1, 1], [3, 1, 1], [3, 1, 1], [12, 10, 5], [1, 0, 0], [1, 0, 0]]: 149
+     [[3, 1, 1], [3, 1, 1], [3, 1, 1], [6, 4, 2], [8, 6, 3]]: 3
+     [[3, 1, 1], [3, 1, 1], [3, 1, 1], [3, 1, 1], [11, 9, 4]]: 1216
+     ext_d: graphs=126255 bad_tau=0 tg_too_small=0 searched=126255 max_min_covers=1701 nodes=6104447853 hits_F7free=45784478 hits_in_C=45177363 | HIT lines 45177363
+     filt: SUMMARY tag=HIT NV=24 total=15040934 bad_labels=0 linear=15040934 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=15040934 survivors_connected=585876 wrong_tau_dropped=0 connected_all=585876 tau_range=[-1,-1] maxdeg_max=3
+     filt: SUMMARY tag=HIT NV=24 total=15059170 bad_labels=0 linear=15059170 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=15059170 survivors_connected=596726 wrong_tau_dropped=0 connected_all=596726 tau_range=[-1,-1] maxdeg_max=3
+     filt: SUMMARY tag=HIT NV=24 total=15077259 bad_labels=0 linear=15077259 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=15077259 survivors_connected=588404 wrong_tau_dropped=0 connected_all=588404 tau_range=[-1,-1] maxdeg_max=3
+CELL (25,19,10,3): 35645 classes, route recurse, secs 2441.6, connected_hits 1250199
+  branch d=3 t'=9 S'=5: 48 decompositions, 2082993 inputs
+     [[24, 16, 9]]: 39568
+     [[23, 16, 9], [1, 0, 0]]: 178
+     [[12, 6, 4], [12, 10, 5]]: 596
+     [[11, 7, 4], [13, 9, 5]]: 2940
+     [[10, 8, 4], [14, 8, 5]]: 567
+     [[10, 7, 4], [14, 9, 5]]: 4240
+     [[10, 7, 4], [13, 9, 5], [1, 0, 0]]: 336
+     [[9, 5, 3], [15, 11, 6]]: 114
+     [[9, 4, 3], [15, 12, 6]]: 10617
+     [[9, 4, 3], [14, 12, 6], [1, 0, 0]]: 2
+     [[8, 6, 3], [16, 10, 6]]: 48
+     [[8, 5, 3], [16, 11, 6]]: 6476
+     [[8, 5, 3], [15, 11, 6], [1, 0, 0]]: 38
+     [[8, 5, 3], [8, 5, 3], [8, 6, 3]]: 9
+     [[7, 3, 2], [17, 13, 7]]: 6
+     [[6, 4, 2], [8, 5, 3], [10, 7, 4]]: 8
+     [[6, 3, 2], [18, 13, 7]]: 2544
+     [[6, 3, 2], [17, 13, 7], [1, 0, 0]]: 6
+     [[6, 3, 2], [8, 6, 3], [10, 7, 4]]: 12
+     [[6, 3, 2], [8, 5, 3], [10, 8, 4]]: 126
+     [[6, 3, 2], [6, 3, 2], [12, 10, 5]]: 149
+     [[3, 1, 1], [21, 15, 8]]: 232759
+     [[3, 1, 1], [20, 15, 8], [1, 0, 0]]: 953
+     [[3, 1, 1], [10, 8, 4], [11, 7, 4]]: 2205
+     [[3, 1, 1], [10, 7, 4], [11, 8, 4]]: 1884
+     [[3, 1, 1], [10, 7, 4], [10, 8, 4], [1, 0, 0]]: 252
+     [[3, 1, 1], [9, 5, 3], [12, 10, 5]]: 894
+     [[3, 1, 1], [8, 6, 3], [13, 9, 5]]: 252
+     [[3, 1, 1], [8, 5, 3], [13, 10, 5]]: 13366
+     [[3, 1, 1], [8, 5, 3], [12, 10, 5], [1, 0, 0]]: 298
+     [[3, 1, 1], [7, 3, 2], [14, 12, 6]]: 2
+     [[3, 1, 1], [6, 4, 2], [15, 11, 6]]: 19
+     [[3, 1, 1], [6, 3, 2], [15, 12, 6]]: 10617
+     [[3, 1, 1], [6, 3, 2], [14, 12, 6], [1, 0, 0]]: 2
+     [[3, 1, 1], [3, 1, 1], [18, 14, 7]]: 799342
+     [[3, 1, 1], [3, 1, 1], [17, 14, 7], [1, 0, 0]]: 1708
+     [[3, 1, 1], [3, 1, 1], [8, 6, 3], [10, 8, 4]]: 189
+     [[3, 1, 1], [3, 1, 1], [6, 4, 2], [12, 10, 5]]: 149
+     [[3, 1, 1], [3, 1, 1], [3, 1, 1], [15, 13, 6]]: 949522
+     ext_d: graphs=2082993 bad_tau=0 tg_too_small=0 searched=2082993 max_min_covers=2862 nodes=23128213292 hits_F7free=7468291 hits_in_C=6944386 | HIT lines 6944386
+     filt: SUMMARY tag=HIT NV=25 total=2319051 bad_labels=0 linear=2319051 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=2319051 survivors_connected=415387 wrong_tau_dropped=0 connected_all=415387 tau_range=[-1,-1] maxdeg_max=3
+     filt: SUMMARY tag=HIT NV=25 total=2293789 bad_labels=0 linear=2293789 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=2293789 survivors_connected=410578 wrong_tau_dropped=0 connected_all=410578 tau_range=[-1,-1] maxdeg_max=3
+     filt: SUMMARY tag=HIT NV=25 total=2331546 bad_labels=0 linear=2331546 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=2331546 survivors_connected=424234 wrong_tau_dropped=0 connected_all=424234 tau_range=[-1,-1] maxdeg_max=3
+CELL (26,22,11,3): 36 classes, route recurse, secs 167.5, connected_hits 1080
+  branch d=3 t'=10 S'=3: 15 decompositions, 229369 inputs
+     [[25, 19, 10]]: 35645
+     [[24, 19, 10], [1, 0, 0]]: 0
+     [[12, 10, 5], [13, 9, 5]]: 12516
+     [[11, 7, 4], [14, 12, 6]]: 70
+     [[10, 8, 4], [15, 11, 6]]: 1197
+     [[10, 7, 4], [15, 12, 6]]: 42468
+     [[10, 7, 4], [14, 12, 6], [1, 0, 0]]: 8
+     [[8, 6, 3], [17, 13, 7]]: 18
+     [[8, 5, 3], [17, 14, 7]]: 3416
+     [[6, 3, 2], [19, 16, 8]]: 227
+     [[3, 1, 1], [22, 18, 9]]: 94513
+     [[3, 1, 1], [21, 18, 9], [1, 0, 0]]: 0
+     [[3, 1, 1], [10, 8, 4], [12, 10, 5]]: 9387
+     [[3, 1, 1], [8, 6, 3], [14, 12, 6]]: 6
+     [[3, 1, 1], [3, 1, 1], [19, 17, 8]]: 29898
+     ext_d: graphs=229369 bad_tau=0 tg_too_small=0 searched=229369 max_min_covers=4914 nodes=941521078 hits_F7free=27740 hits_in_C=7181 | HIT lines 7181
+     filt: SUMMARY tag=HIT NV=26 total=2107 bad_labels=0 linear=2107 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=2107 survivors_connected=349 wrong_tau_dropped=0 connected_all=349 tau_range=[-1,-1] maxdeg_max=3
+     filt: SUMMARY tag=HIT NV=26 total=3485 bad_labels=0 linear=3485 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=3485 survivors_connected=379 wrong_tau_dropped=0 connected_all=379 tau_range=[-1,-1] maxdeg_max=3
+     filt: SUMMARY tag=HIT NV=26 total=1589 bad_labels=0 linear=1589 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=1589 survivors_connected=352 wrong_tau_dropped=0 connected_all=352 tau_range=[-1,-1] maxdeg_max=3
+CELL (27,25,12,3): 0 classes, route recurse, secs 0.3, connected_hits 0
+  branch d=3 t'=11 S'=1: 3 decompositions, 334 inputs
+     [[26, 22, 11]]: 36
+     [[12, 10, 5], [14, 12, 6]]: 298
+     [[3, 1, 1], [23, 21, 10]]: 0
+     ext_d: graphs=334 bad_tau=0 tg_too_small=0 searched=334 max_min_covers=8757 nodes=53959 hits_F7free=36 hits_in_C=0 | HIT lines 0
+     filt: SUMMARY tag=HIT NV=27 total=0 bad_labels=0 linear=0 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=0 survivors_connected=0 wrong_tau_dropped=0 connected_all=0 tau_range=[99,-1] maxdeg_max=0
+     filt: SUMMARY tag=HIT NV=27 total=0 bad_labels=0 linear=0 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=0 survivors_connected=0 wrong_tau_dropped=0 connected_all=0 tau_range=[99,-1] maxdeg_max=0
+     filt: SUMMARY tag=HIT NV=27 total=0 bad_labels=0 linear=0 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=0 survivors_connected=0 wrong_tau_dropped=0 connected_all=0 tau_range=[99,-1] maxdeg_max=0

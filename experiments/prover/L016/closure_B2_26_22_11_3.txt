@@ -1,0 +1,8 @@
+checking list out/cellsB/cell_26_22_11_D3.txt against the lower lists of out/cellsB
+closure (26,22,11,3) mode=all: classes 36, (class, max-degree vertex) pairs checked 504, problems 0
+   d=3 t'=10 [(25, 19, 10)]: 336
+   d=3 t'=10 [(6, 3, 2), (19, 16, 8)]: 72
+   d=3 t'=10 [(8, 5, 3), (17, 14, 7)]: 36
+   d=3 t'=10 [(10, 7, 4), (15, 12, 6)]: 36
+   d=3 t'=10 [(3, 1, 1), (22, 18, 9)]: 24
+RESULT closure OK

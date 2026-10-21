@@ -1,0 +1,19 @@
+id C005-lemmaE-SK6-E1 type construction n 67 claimed_h 38
+distinct True already sorted True min 0 max 611529215970355940
+t1 = 3*269^7+1000003 ? True  max == 2*t1 ? True
+4-subset literal test: ok True subsets 766480 C(67,4)= 766480 with exactly 5 distinct 4096 bad None (0.4s)
+forbidden sets by sums 64 by diffs 64 equal True
+sizes of forbidden sets Counter({3: 64})
+weak Sidon (sums x<y distinct) True
+3-APs found directly 64 equal to forbidden sets True
+distinct midpoints 64 max multiplicity 1 n-2 = 65
+degree distribution [(1, 3), (2, 10), (3, 47), (4, 7)]
+linear True
+witness size 38 distinct True subset True Sidon(sums) True Sidon(diffs) True
+DP greedy order: alpha 38 max states 28 (0.0s)
+  DP witness size 38 Sidon(sums) True Sidon(diffs) True
+DP reversed greedy order: alpha 38 max states 100 (0.0s)
+  witness 2 Sidon True 38
+h/n = 38/67  < 4/7 : True  7h = 266  4n = 268
+claimed_h matches True
+total time 0.4s

@@ -1,5 +1,5 @@
 """Exact counts of extremal (4,5)-sets (h = f(n)) for small n: re-derive n=8 and n=10 (saturated, m = n-2) and check that the
-record sets of data/small_records.json are among the affine classes.  Pipeline: experiments/20261014-1430-small-counts/counts.py
+record patterns of data/small_records.json are among the enumerated patterns (n=10: the record, m=8, lies in the 6644 saturated affine classes; n=8: the record has m=5 and is non-saturated, so only its AP pattern is matched against the (8,5) enumeration).  Pipeline: experiments/20261014-1430-small-counts/counts.py
 (C DFS over class O with alpha <= f(n), exact realization of every pattern, is_45_set/alpha re-check).
 Expected (see the experiment README): n=8: 260 labelled / 130 up to reflection / 66 realizable;
 n=10: 79488 / 39765 / 6644."""

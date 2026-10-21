@@ -1,8 +1,9 @@
 # Reader's self-similar "5/9" family for Erdős #757: independent rebuild, exact verification, judging
 
 Status tags: the construction and the claim c* <= 5/9 are **[community]** (not ours). Every number computed here is **[verified-here]**
-(exact integers or Fractions; reproduce with the commands below). The all-depth proof in section 5 is **[derived-here]** and **unrefereed**.
-Nothing here has been refereed; the orchestrator decides what goes into kb/known_results.md, results/LEDGER.md and kb/00_START_HERE.md.
+(exact integers or Fractions; reproduce with the commands below). The all-depth proof in section 5 is **[derived-here]** and was never refereed in this form; the all-depth proof that was refereed is the separately written certificate L015 (see the status update below).
+
+Status update (added after the referee rounds of 2026-10-20). Provenance is unchanged: the family S_K and the claim c* <= 5/9 are an anonymous reader's **[community]** (Erdős Problem a Day, 19 Oct 2026; the site marks the entry "unreviewed by humans"); this project rebuilt and verified them, it did not discover them. (a) The 65-point member (claim C003, judge PASS NEW-RECORD, 37/65 < 4/7) was ACCEPTED by two referees (opus, fable) and the scout returned NOVELTY: KNOWN (K59, results/LEDGER.md). (b) Certificate L015 (`results/proofs/L015-reader-family-c-le-5-9.md`) is an independently written all-depth proof that follows the route of the Lemmas 1-2 of section 5 and adds the bijection with per-copy choices, hand proofs of the table bounds and an explicit maximum Sidon subset; it was ACCEPTED by three referees (K60). The text of section 5 below was not itself refereed (the C003 referees put section 5 outside their scope), so L015 is the proof of record. Consequently the statements below that C003 is 'not refereed' / 'NOT yet refereed' (sections 4.2 and 6) describe the state at writing time and are out of date, whereas the statements that the section 5 proof is 'unrefereed' (sections 5 and 6) remain true of section 5 as written.
 
 ## 1. Question
 Is the family S_K = O u phi(O) u ... u phi^K(O), posted on Erdős Problem a Day on 19 Oct 2026 (reader submission 7bkzb8, 17 Oct 2026), a family of
@@ -80,7 +81,7 @@ real	59m6.956s   (user 44m46.621s)
 ```
   The saved claim has claimed_h = 37 and a 37-point witness Sidon subset (re-verified here from the definition: all 703 sums x+y, x<=y, distinct). Note that this is the judge's verdict on a COMMUNITY construction that we only rebuilt; it is not refereed.
 - Cost of the judge (scaling_measure.py: judge.is_45 and judge.max_sidon_via_aps on the family): K = 1..5: alpha 0.00, 0.01, 0.15, 4.1, 91.6 s; is_45 0.0, 0.3, 0.9, 2.4, 4.9 s: a factor of about 22 per level, so the K = 6 branch-and-bound is about 30 min and K = 7 is projected at about 10 hours per judge pass.
-- K = 7 (74 points): `python3 scripts/new_claim.py --slug reader-5-9-K7 ...` was started 2026-10-20T18:22:48Z under `timeout 7200` (log: claim_K7.log). At the time of this write-up the judge had not produced a verdict (running).
+- K = 7 (74 points): `python3 scripts/new_claim.py --slug reader-5-9-K7 ...` was started 2026-10-20T18:22:48Z under `timeout 7200` (log: claim_K7.log). Outcome (claim_K7.log): the run hit its `timeout 7200` limit without a verdict (real 120m0.017s, exit=124, ended 2026-10-20T20:22:48Z), so the K = 7 claim stays unjudged (C004; the file is `C004-reader-5-9-K7.unjudged.json` in this folder). This paragraph is what the K = 7 row of the table in 4.1 refers to under 'C004 unjudged'. The longer K = 8 CP-SAT run (cpsat_K8_long.py, see 4.1) also ended without a proof of optimality (cpsat_K8_long.json: FEASIBLE, objective 47, bound 55 after 3000 s); K = 8 rests on the frontier DP and the SAT pair.
   Because an unjudged claim file in results/claims/ makes `scripts/status.py` (which re-judges every claim live) run the 74-point judge for hours, the unjudged file was moved out to `experiments/20261020-1730-reader-5-9/C004-reader-5-9-K7.unjudged.json` (no claimed_h, no witness; set identical to data/reader_5_9_family.json K = 7).
 
 

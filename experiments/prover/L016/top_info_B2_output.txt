@@ -1,0 +1,26 @@
+CELL (26,22,11,3): 36 classes, route recurse, secs 897.1, connected_hits 1080
+  branch d=3 t'=10 S'=3: 15 decompositions, 229369 inputs
+     [[25, 19, 10]]: 35645
+     [[24, 19, 10], [1, 0, 0]]: 0
+     [[12, 10, 5], [13, 9, 5]]: 12516
+     [[11, 7, 4], [14, 12, 6]]: 70
+     [[10, 8, 4], [15, 11, 6]]: 1197
+     [[10, 7, 4], [15, 12, 6]]: 42468
+     [[10, 7, 4], [14, 12, 6], [1, 0, 0]]: 8
+     [[8, 6, 3], [17, 13, 7]]: 18
+     [[8, 5, 3], [17, 14, 7]]: 3416
+     [[6, 3, 2], [19, 16, 8]]: 227
+     [[3, 1, 1], [22, 18, 9]]: 94513
+     [[3, 1, 1], [21, 18, 9], [1, 0, 0]]: 0
+     [[3, 1, 1], [10, 8, 4], [12, 10, 5]]: 9387
+     [[3, 1, 1], [8, 6, 3], [14, 12, 6]]: 6
+     [[3, 1, 1], [3, 1, 1], [19, 17, 8]]: 29898
+     ext_d: graphs=229369 bad_tau=0 tg_too_small=0 searched=229369 max_min_covers=4914 nodes=941521078 hits_F7free=27740 hits_in_C=7181 | HIT lines 7181
+     filt: SUMMARY tag=HIT NV=26 total=7181 bad_labels=0 linear=7181 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=7181 survivors_connected=1080 wrong_tau_dropped=0 connected_all=1080 tau_range=[-1,-1] maxdeg_max=3
+CELL (27,25,12,3): 0 classes, route recurse, secs 1.3, connected_hits 0
+  branch d=3 t'=11 S'=1: 3 decompositions, 334 inputs
+     [[26, 22, 11]]: 36
+     [[12, 10, 5], [14, 12, 6]]: 298
+     [[3, 1, 1], [23, 21, 10]]: 0
+     ext_d: graphs=334 bad_tau=0 tg_too_small=0 searched=334 max_min_covers=8757 nodes=53959 hits_F7free=36 hits_in_C=0 | HIT lines 0
+     filt: SUMMARY tag=HIT NV=27 total=0 bad_labels=0 linear=0 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=0 survivors_connected=0 wrong_tau_dropped=0 connected_all=0 tau_range=[99,-1] maxdeg_max=0

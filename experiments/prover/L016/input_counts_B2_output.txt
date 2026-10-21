@@ -1,0 +1,22 @@
+  d=3 t'=10 [(25, 19, 10)]: recomputed 35645, recorded 35645
+  d=3 t'=10 [(24, 19, 10), (1, 0, 0)]: recomputed 0, recorded 0
+  d=3 t'=10 [(12, 10, 5), (13, 9, 5)]: recomputed 12516, recorded 12516
+  d=3 t'=10 [(11, 7, 4), (14, 12, 6)]: recomputed 70, recorded 70
+  d=3 t'=10 [(10, 8, 4), (15, 11, 6)]: recomputed 1197, recorded 1197
+  d=3 t'=10 [(10, 7, 4), (15, 12, 6)]: recomputed 42468, recorded 42468
+  d=3 t'=10 [(10, 7, 4), (14, 12, 6), (1, 0, 0)]: recomputed 8, recorded 8
+  d=3 t'=10 [(8, 6, 3), (17, 13, 7)]: recomputed 18, recorded 18
+  d=3 t'=10 [(8, 5, 3), (17, 14, 7)]: recomputed 3416, recorded 3416
+  d=3 t'=10 [(6, 3, 2), (19, 16, 8)]: recomputed 227, recorded 227
+  d=3 t'=10 [(3, 1, 1), (22, 18, 9)]: recomputed 94513, recorded 94513
+  d=3 t'=10 [(3, 1, 1), (21, 18, 9), (1, 0, 0)]: recomputed 0, recorded 0
+  d=3 t'=10 [(3, 1, 1), (10, 8, 4), (12, 10, 5)]: recomputed 9387, recorded 9387
+  d=3 t'=10 [(3, 1, 1), (8, 6, 3), (14, 12, 6)]: recomputed 6, recorded 6
+  d=3 t'=10 [(3, 1, 1), (3, 1, 1), (19, 17, 8)]: recomputed 29898, recorded 29898
+branch d=3 t'=10 S'=3: inputs recomputed 229369, recorded 229369
+ALL EQUAL
+  d=3 t'=11 [(26, 22, 11)]: recomputed 36, recorded 36
+  d=3 t'=11 [(12, 10, 5), (14, 12, 6)]: recomputed 298, recorded 298
+  d=3 t'=11 [(3, 1, 1), (23, 21, 10)]: recomputed 0, recorded 0
+branch d=3 t'=11 S'=1: inputs recomputed 334, recorded 334
+ALL EQUAL
