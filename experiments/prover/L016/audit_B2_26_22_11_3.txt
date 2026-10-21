@@ -1,0 +1,2 @@
+AUDIT cell_26_22_11_D3.txt (26,22,11,3): lines 36, python-structure problems 0; filt: SUMMARY tag=FOUND NV=26 total=36 bad_labels=0 linear=36 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=36 survivors_connected=36 wrong_tau_dropped=0 connected_all=36 tau_range=[-1,-1] maxdeg_max=3 | tau oracle ext_d_fast: SUMMARY graphs=36 bad_tau=0 tg_too_small=36 searched=0 max_min_covers=0 nodes=0 hits_F7free=0 hits_in_C=0 -> tau=t for all -> OK; canon fixed points 36 of 36, distinct lines 36; pyverify sample 36 (seed 2622), failures 0
+RESULT audit OK

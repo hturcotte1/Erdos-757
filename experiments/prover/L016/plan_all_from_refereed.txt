@@ -1,0 +1,209 @@
+COMPUTE (27, 13, 10, 2) recurse
+COMPUTE (24, 12, 8, 2) recurse
+COMPUTE (25, 14, 9, 2) recurse
+COMPUTE (26, 16, 10, 2) recurse
+COMPUTE (23, 15, 9, 2) recurse
+COMPUTE (20, 14, 8, 2) recurse
+COMPUTE (17, 13, 7, 2) recurse
+COMPUTE (14, 12, 6, 2) recurse
+COMPUTE (27, 18, 11, 2) recurse
+COMPUTE (27, 14, 10, 3) recurse
+COMPUTE (25, 13, 9, 3) recurse
+COMPUTE (26, 16, 10, 3) recurse
+COMPUTE (27, 19, 11, 3) recurse
+COMPUTE (21, 10, 6, 2) direct
+COMPUTE (20, 10, 6, 2) direct
+COMPUTE (7, 3, 1, 2) direct
+COMPUTE (18, 9, 5, 2) direct
+COMPUTE (17, 9, 5, 2) direct
+COMPUTE (15, 8, 4, 2) direct
+COMPUTE (14, 8, 4, 2) direct
+COMPUTE (12, 7, 3, 2) direct
+COMPUTE (11, 7, 3, 2) direct
+COMPUTE (9, 6, 2, 2) direct
+COMPUTE (8, 6, 2, 2) direct
+COMPUTE (22, 12, 7, 2) recurse
+COMPUTE (21, 12, 7, 2) recurse
+COMPUTE (19, 11, 6, 2) recurse
+COMPUTE (18, 11, 6, 2) recurse
+COMPUTE (16, 10, 5, 2) direct
+COMPUTE (15, 10, 5, 2) direct
+COMPUTE (13, 9, 4, 2) direct
+COMPUTE (12, 9, 4, 2) direct
+COMPUTE (10, 8, 3, 2) direct
+COMPUTE (23, 14, 8, 2) recurse
+COMPUTE (22, 14, 8, 2) recurse
+COMPUTE (21, 14, 8, 2) recurse
+COMPUTE (20, 13, 7, 2) recurse
+COMPUTE (19, 13, 7, 2) recurse
+COMPUTE (18, 13, 7, 2) recurse
+COMPUTE (17, 12, 6, 2) recurse
+COMPUTE (16, 12, 6, 2) recurse
+COMPUTE (15, 12, 6, 2) recurse
+COMPUTE (14, 11, 5, 2) recurse
+COMPUTE (13, 11, 5, 2) recurse
+COMPUTE (23, 13, 8, 3) recurse
+COMPUTE (24, 16, 9, 3) recurse
+COMPUTE (25, 19, 10, 3) recurse
+COMPUTE (26, 22, 11, 3) recurse
+COMPUTE (27, 25, 12, 3) recurse
+LOAD (3, 1, 1, 2)
+LOAD (3, 1, 1, 3)
+LOAD (4, 2, 1, 2)
+LOAD (4, 2, 1, 3)
+LOAD (5, 2, 1, 2)
+LOAD (5, 2, 1, 3)
+LOAD (5, 3, 1, 2)
+LOAD (6, 3, 1, 2)
+LOAD (6, 3, 2, 2)
+LOAD (6, 3, 2, 3)
+LOAD (6, 4, 1, 2)
+LOAD (6, 4, 2, 2)
+LOAD (6, 4, 2, 3)
+LOAD (7, 3, 2, 2)
+LOAD (7, 3, 2, 3)
+LOAD (7, 4, 2, 2)
+LOAD (7, 4, 2, 3)
+LOAD (7, 5, 2, 2)
+LOAD (7, 5, 2, 3)
+LOAD (8, 4, 2, 2)
+LOAD (8, 5, 2, 2)
+LOAD (8, 5, 3, 2)
+LOAD (8, 5, 3, 3)
+LOAD (8, 6, 3, 2)
+LOAD (8, 6, 3, 3)
+LOAD (9, 4, 2, 2)
+LOAD (9, 4, 3, 2)
+LOAD (9, 4, 3, 3)
+LOAD (9, 5, 2, 2)
+LOAD (9, 5, 3, 2)
+LOAD (9, 5, 3, 3)
+LOAD (9, 6, 3, 2)
+LOAD (9, 6, 3, 3)
+LOAD (9, 7, 3, 2)
+LOAD (10, 5, 3, 2)
+LOAD (10, 5, 3, 3)
+LOAD (10, 6, 3, 2)
+LOAD (10, 6, 3, 3)
+LOAD (10, 7, 3, 2)
+LOAD (10, 7, 4, 2)
+LOAD (10, 7, 4, 3)
+LOAD (10, 8, 4, 2)
+LOAD (10, 8, 4, 3)
+LOAD (11, 5, 3, 2)
+LOAD (11, 6, 3, 2)
+LOAD (11, 6, 4, 2)
+LOAD (11, 6, 4, 3)
+LOAD (11, 7, 4, 2)
+LOAD (11, 7, 4, 3)
+LOAD (11, 8, 4, 2)
+LOAD (11, 8, 4, 3)
+LOAD (11, 9, 4, 2)
+LOAD (11, 9, 4, 3)
+LOAD (12, 6, 3, 2)
+LOAD (12, 6, 4, 2)
+LOAD (12, 6, 4, 3)
+LOAD (12, 7, 4, 2)
+LOAD (12, 7, 4, 3)
+LOAD (12, 8, 4, 2)
+LOAD (12, 10, 5, 2)
+LOAD (12, 10, 5, 3)
+LOAD (13, 6, 4, 2)
+LOAD (13, 6, 4, 3)
+LOAD (13, 7, 4, 2)
+LOAD (13, 7, 4, 3)
+LOAD (13, 8, 4, 2)
+LOAD (13, 8, 5, 2)
+LOAD (13, 8, 5, 3)
+LOAD (13, 9, 5, 2)
+LOAD (13, 9, 5, 3)
+LOAD (13, 10, 5, 2)
+LOAD (13, 10, 5, 3)
+LOAD (14, 7, 4, 2)
+LOAD (14, 7, 5, 2)
+LOAD (14, 7, 5, 3)
+LOAD (14, 8, 5, 2)
+LOAD (14, 8, 5, 3)
+LOAD (14, 9, 5, 2)
+LOAD (14, 9, 5, 3)
+LOAD (14, 10, 5, 2)
+LOAD (14, 10, 5, 3)
+LOAD (14, 12, 6, 3)
+LOAD (15, 7, 4, 2)
+LOAD (15, 7, 5, 2)
+LOAD (15, 7, 5, 3)
+LOAD (15, 8, 5, 2)
+LOAD (15, 8, 5, 3)
+LOAD (15, 9, 5, 2)
+LOAD (15, 11, 6, 2)
+LOAD (15, 11, 6, 3)
+LOAD (15, 12, 6, 3)
+LOAD (15, 13, 6, 3)
+LOAD (16, 8, 5, 2)
+LOAD (16, 8, 5, 3)
+LOAD (16, 9, 5, 2)
+LOAD (16, 9, 6, 2)
+LOAD (16, 9, 6, 3)
+LOAD (16, 10, 6, 2)
+LOAD (16, 10, 6, 3)
+LOAD (16, 11, 6, 2)
+LOAD (16, 11, 6, 3)
+LOAD (17, 8, 5, 2)
+LOAD (17, 8, 6, 2)
+LOAD (17, 8, 6, 3)
+LOAD (17, 9, 6, 2)
+LOAD (17, 9, 6, 3)
+LOAD (17, 10, 6, 2)
+LOAD (17, 10, 6, 3)
+LOAD (17, 11, 6, 2)
+LOAD (17, 11, 6, 3)
+LOAD (17, 13, 7, 3)
+LOAD (17, 14, 7, 3)
+LOAD (18, 9, 6, 2)
+LOAD (18, 9, 6, 3)
+LOAD (18, 10, 6, 2)
+LOAD (18, 12, 7, 2)
+LOAD (18, 12, 7, 3)
+LOAD (18, 13, 7, 3)
+LOAD (18, 14, 7, 3)
+LOAD (19, 9, 6, 2)
+LOAD (19, 9, 6, 3)
+LOAD (19, 10, 6, 2)
+LOAD (19, 10, 7, 2)
+LOAD (19, 10, 7, 3)
+LOAD (19, 11, 7, 2)
+LOAD (19, 11, 7, 3)
+LOAD (19, 12, 7, 2)
+LOAD (19, 12, 7, 3)
+LOAD (19, 16, 8, 3)
+LOAD (19, 17, 8, 3)
+LOAD (20, 10, 7, 2)
+LOAD (20, 10, 7, 3)
+LOAD (20, 11, 7, 2)
+LOAD (20, 12, 7, 2)
+LOAD (20, 12, 7, 3)
+LOAD (20, 14, 8, 3)
+LOAD (20, 15, 8, 3)
+LOAD (21, 10, 7, 2)
+LOAD (21, 10, 7, 3)
+LOAD (21, 11, 7, 2)
+LOAD (21, 13, 8, 2)
+LOAD (21, 13, 8, 3)
+LOAD (21, 15, 8, 3)
+LOAD (21, 18, 9, 3)
+LOAD (22, 11, 7, 2)
+LOAD (22, 11, 8, 2)
+LOAD (22, 12, 8, 2)
+LOAD (22, 12, 8, 3)
+LOAD (22, 13, 8, 2)
+LOAD (22, 13, 8, 3)
+LOAD (22, 18, 9, 3)
+LOAD (23, 11, 8, 2)
+LOAD (23, 12, 8, 2)
+LOAD (23, 15, 9, 3)
+LOAD (23, 16, 9, 3)
+LOAD (23, 21, 10, 3)
+LOAD (24, 14, 9, 2)
+LOAD (24, 19, 10, 3)
+LOAD (25, 12, 9, 2)
+TOTAL compute 49 load 159

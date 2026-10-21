@@ -1,0 +1,44 @@
+1c1,2
+< /* ext_d.c (prover, certificate L012) -- re-insertion of one vertex of degree d.
+---
+> /* ext_d_fast.c = ext_d.c of L012 with MAXP 640 and (L016) a branching enumeration of the minimum covers for TG >= 2 (bcov).
+>    ext_d.c (prover, certificate L012) -- re-insertion of one vertex of degree d.
+120a122,147
+> /* (L016) bcov: branching over the vertices of the first edge (index order) not met by S.  In the branch of the i-th vertex of that
+>    edge the earlier vertices are forbidden in the whole subtree, so every vertex set C meeting every edge with |C| <= budget that is
+>    reachable is reached once.  mode 0: return 1 iff some leaf (S meets every edge, |S| <= budget) exists.  mode 1: store every leaf S
+>    in covers[] (K counts them).  If no cover with at most TG-1 vertices exists, the leaves of mode 1 with budget TG are exactly the
+>    TG-subsets of {0..NG-1} meeting every edge: such a set C is minimal (every proper subset has at most TG-1 vertices), so every
+>    vertex of C has a private edge and lies in an edge; following C (always the first vertex of the current edge that lies in C) gives
+>    a path S_0 = {} < S_1 < ... with S_j a subset of C, ending at a leaf S subset of C meeting every edge, so S = C (|S| < TG impossible);
+>    conversely every leaf meets every edge and has TG vertices (fewer is impossible), all of them labels < NG. */
+> static int bm, bovf;
+> static int bcov(uint32_t S, int budget, uint32_t forb, int mode) {
+>     int e = -1; for (int i = 0; i < bm; i++) if (!(E[i] & S)) { e = i; break; }
+>     if (e < 0) {
+>         if (mode == 0) return 1;
+>         if (__builtin_popcount(S) != TG) { bovf = 2; return 0; }
+>         if (K >= MAXC) { bovf = 1; return 0; }
+>         covers[K++] = S; return 0;
+>     }
+>     if (budget == 0) return 0;
+>     uint32_t r = E[e] & ~forb, f2 = forb;
+>     for (; r; r &= r - 1) { uint32_t v = r & -r;
+>         if (bcov(S | v, budget - 1, f2, mode) && mode == 0) return 1;
+>         if (bovf) return 0;
+>         f2 |= v; }
+>     return 0;
+> }
+> static int cmpu32(const void *a, const void *b) { uint32_t x = *(const uint32_t *)a, y = *(const uint32_t *)b; return x < y ? -1 : x > y; }
+135a163,173
+>         if (TG >= 2) {   /* (L016) fast path: the same covers[] as the Gosper loops below, by branching (see bcov) */
+>             bm = m; bovf = 0;
+>             small = bcov(0, TG - 1, 0, 0);                    /* is there a cover with at most TG-1 vertices? */
+>             if (!small) {
+>                 bcov(0, TG, 0, 1);                            /* all covers found by branching with budget TG */
+>                 if (bovf == 1) { fprintf(stderr, "MAXC\n"); return 3; }
+>                 if (bovf == 2) { fprintf(stderr, "FASTSIZE\n"); return 5; }
+>                 qsort(covers, K, sizeof(uint32_t), cmpu32);
+>                 for (int i = 1; i < K; i++) if (covers[i] == covers[i - 1]) { fprintf(stderr, "FASTDUP\n"); return 5; }
+>             }
+>         } else

@@ -1,0 +1,31 @@
+exact: {1: 1, 2: 2, 3: 2, 4: 3, 5: 4, 6: 4, 7: 5, 8: 5, 9: 6, 10: 6, 11: 7, 12: 7, 13: 8, 14: 8, 15: 9, 16: 10, 17: 10, 18: 11, 20: 12, 22: 13, 23: 14, 24: 14, 26: 15, 28: 16}
+open : {19: (11, 12), 21: (12, 13), 25: (14, 15), 27: (15, 16), 29: (16, 17), 30: (17, 18), 31: (17, 18), 32: (18, 19), 33: (18, 20), 34: (19, 20), 35: (19, 21), 36: (20, 21), 37: (20, 22), 38: (21, 22), 39: (21, 23), 40: (22, 23)}
+n=12: EXCLUDED  need h<=6 tau>=6 m>=14 (max 10)
+n=13: EXCLUDED  need h<=7 tau>=6 m>=13 (max 11)
+n=14: EXCLUDED  need h<=7 tau>=7 m>=17 (max 12)
+n=15: EXCLUDED  need h<=8 tau>=7 m>=15 (max 13)
+n=16: CLOSED  need h<=9 tau>=7 m>=13 (max 14)  [f(16) = 10 exactly, verified exact value (kb/known_results.md K52-K55, K58): h<=9 impossible]
+n=17: EXCLUDED  need h<=9 tau>=8 m>=17 (max 15)
+n=18: CLOSED  need h<=10 tau>=8 m>=16 (max 16)  [f(18) = 11 exactly, verified exact value (kb/known_results.md K52-K55, K58): h<=10 impossible]
+n=19: EXCLUDED  need h<=10 tau>=9 m>=20 (max 17)
+n=20: CLOSED  need h<=11 tau>=9 m>=18 (max 18)  [f(20) = 12 exactly, verified exact value (kb/known_results.md K52-K55, K58): h<=11 impossible]
+n=21: EXCLUDED  need h<=11 tau>=10 m>=22 (max 19)
+n=22: CLOSED  need h<=12 tau>=10 m>=20 (max 20)  [f(22) = 13 exactly, verified exact value (kb/known_results.md K52-K55, K58): h<=12 impossible]
+n=23: CLOSED  need h<=13 tau>=10 m>=19 (max 21)  [f(23) = 14 exactly, verified exact value (kb/known_results.md K52-K55, K58): h<=13 impossible]
+n=24: EXCLUDED  need h<=13 tau>=11 m>=23 (max 22)
+n=25: possible  need h<=14 tau>=11 m>=21 (max 23)
+n=26: EXCLUDED  need h<=14 tau>=12 m>=25 (max 24)
+n=27: possible  need h<=15 tau>=12 m>=23 (max 25)
+n=28: EXCLUDED  need h<=15 tau>=13 m>=27 (max 26)
+n=29: possible  need h<=16 tau>=13 m>=26 (max 27)
+n=30: possible  need h<=17 tau>=13 m>=24 (max 28)
+n=31: possible  need h<=17 tau>=14 m>=28 (max 29)
+n=32: possible  need h<=18 tau>=14 m>=26 (max 30)
+n=33: possible  need h<=18 tau>=15 m>=30 (max 31)
+n=34: possible  need h<=19 tau>=15 m>=29 (max 32)
+n=35: possible  need h<=19 tau>=16 m>=33 (max 33)
+n=36: possible  need h<=20 tau>=16 m>=31 (max 34)
+n=37: possible  need h<=21 tau>=16 m>=29 (max 35)
+n=38: possible  need h<=21 tau>=17 m>=33 (max 36)
+n=39: possible  need h<=22 tau>=17 m>=32 (max 37)
+n=40: possible  need h<=22 tau>=18 m>=36 (max 38)

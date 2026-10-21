@@ -1,0 +1,3 @@
+TOTAL inputs 334
+(27,25,12,3) branch d=3 t'=11: 334 inputs; ext_d noprune SUMMARY graphs=334 bad_tau=0 tg_too_small=0 searched=334 max_min_covers=8757 nodes=54423 hits_all=36 printed=36; pyverify: {'total': 36, 'disconnected': 36, 'nonlinear': 0, 'F7': 0, 'P3': 0, 'degree': 0, 'wrong_tau': 0, 'member': 0, 'tau_checked': 36}
+POSTB_DONE
