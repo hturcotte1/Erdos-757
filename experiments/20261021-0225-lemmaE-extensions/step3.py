@@ -21,11 +21,17 @@ def rel_sets(A):
             rels.add(frozenset(p) | frozenset(q))
     return rels
 
-def cpsat_alpha(A, edges, tlim=600):
+def cpsat_alpha(A, edges, tlim=600, copies=None):
     from ortools.sat.python import cp_model
     idx = {v: i for i, v in enumerate(A)}
     m = cp_model.CpModel(); x = [m.NewBoolVar(f"x{i}") for i in range(len(A))]
     for e in edges: m.Add(sum(x[idx[v]] for v in e) <= 2)
+    if copies is not None:  # valid local cuts implied by the AP constraints inside one copy of O (as in check_family.cpsat_h)
+        for cp in copies:
+            pts = sorted(cp)
+            a0, a1 = x[idx[pts[0]]], x[idx[pts[-1]]]
+            tot = sum(x[idx[v]] for v in pts)
+            m.Add(tot <= 7); m.Add(tot <= 6 + a0); m.Add(tot <= 6 + a1); m.Add(sum(x[idx[v]] for v in pts[1:-1]) <= 6)
     m.Maximize(sum(x))
     s = cp_model.CpSolver(); s.parameters.max_time_in_seconds = tlim; s.parameters.num_workers = 2
     r = s.Solve(m)
@@ -59,7 +65,7 @@ def analyse(name, K, pairs_spec, do_sat=True, do_cp=True):
     h, mf = alpha_dp(B, g)
     r.update(h_dp=h, maxfront=mf, expected_h=7 + 5 * K + len(pairs), ratio=f"{h}/{n}", beats_4_7=(7 * h < 4 * n), twice_h_check=None)
     if do_cp:
-        r["cpsat_plain"] = cpsat_alpha(B, E)
+        r["cpsat_cuts"] = cpsat_alpha(B, E, 900 if K >= 4 else 300, copies=[{v - s0 for v in cp} for cp in copies])
     if do_sat:
         from pysat.card import CardEnc, EncType
         from pysat.solvers import Cadical153
