@@ -37,7 +37,7 @@ KNOWN_LOWER_EXTRA = {5: 4}
 #              witness C23 = B12 u (10^9 + 7919 B11) (B12 = the third 12-point record of kb/00_START_HERE.md section 6, B11 = data/small_records.json
 #              sets["11"]; tests/test_c23_witness.py). No (4,5)-set with at most 24 points beats 4/7; the first size at which a (4,5)-set
 #              beating 4/7 is not excluded by a certificate is n = 25 (L014 Corollary 3).
-EXACT_VALUES_VERIFIED = {16: 10, 18: 11, 20: 12, 22: 13, 23: 14}  # L008/K52, L009/K53, L010/K54, L011/K55, L014/K58 (referee ACCEPT x3 each)
+EXACT_VALUES_VERIFIED = {16: 10, 18: 11, 20: 12, 22: 13, 23: 14, 27: 16}  # L008/K52, L009/K53, L010/K54, L011/K55, L014/K58, L016/K61 (referee ACCEPT x3 each)
 
 
 def hy_max_tau(n, m=None):
@@ -113,5 +113,5 @@ if __name__ == "__main__":
         note = ""
         if ok and is_closed(n):
             status = 'CLOSED'
-            note = f"  [f({n}) = {EXACT_VALUES_VERIFIED[n]} exactly, verified exact value (kb/known_results.md K52-K55, K58): h<={h} impossible]"
+            note = f"  [f({n}) = {EXACT_VALUES_VERIFIED[n]} exactly, verified exact value (kb/known_results.md K52-K55, K58, K61): h<={h} impossible]"
         print(f"n={n:2d}: {status}  need h<={h} tau>={tau} m>={m} (max {n-2}){note}")

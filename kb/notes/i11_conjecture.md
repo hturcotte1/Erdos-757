@@ -19,8 +19,8 @@ and disjoint unions of these (gluing A_base with itself: (28,24,12), slack 0). T
 tau <= a n + b m over the data known on 2026-10-17 has vertices (0,1), (3/11, 2/11) = I11, (3/7, 0). Since 2026-10-20 the vertex (3/7, 0), i.e. the bound tau <= 3n/7, is invalid [refuted]: the 65-point set C003 (K59; a community construction, an anonymous reader's, Erdos Problem a Day, 19 Oct 2026, verified here, not discovered here) has (n, m, tau) = (65, 63, 28) and 7 tau = 196 > 195 = 3n. I11 holds on C003 with slack 3*65 + 2*63 - 11*28 = 13, and on the whole community family S_K (n = 11 + 9K, m = n - 2, tau = 4 + 4K; K60, L015) with slack 7 + K (L015, Sanity checks) [derived-here].
 
 **What is proved.** On the class C of linear F7-free 3-graphs with e(S) <= |S| - 2 on every vertex subset (which contains
-every AP hypergraph of a (4,5)-set, K3-K7), I11 holds for all n <= 26: certificates L007 (n <= 14), L008 (n = 15, 16),
-L009 (n = 17, 18), L010 (n = 19, 20), L011 (n = 21, 22) and L013 (n = 23, 24, 25, 26), all ACCEPTED by three referees (K51-K55, K57).
+every AP hypergraph of a (4,5)-set, K3-K7), I11 holds for all n <= 27: certificates L007 (n <= 14), L008 (n = 15, 16),
+L009 (n = 17, 18), L010 (n = 19, 20), L011 (n = 21, 22), L013 (n = 23, 24, 25, 26) and L016 (n = 27), all ACCEPTED by three referees (K51-K55, K57, K61).
 Consequences: f(16) = 10, f(18) = 11, f(20) = 12, f(22) = 13; no (4,5)-set with at most 22 points beats 4/7. The method is inductive: I11 at n - 1 bounds
 the degrees in a hypothetical violator at n, which makes the remaining enumeration finite and small. The method does not decide the record at n = 23: the record cell (23,21,10) has slack +1, so I11 holds there and there is nothing to
 refute. The induction itself continues to n = 26 (L013, K57, ACCEPTED x3; first found by the worker runs experiments/20261017-1645-i11-n23-n24 and
@@ -36,5 +36,5 @@ m <= n - 2 the only connected linear 3-graph violating I11 is F7 itself (L007 re
 would be a Henning-Yeo-style discharging/induction argument on C; the equality cases above show what the extremal
 structures must look like (A_base-type components and disjoint APs).
 
-**Status tags.** The inequality in general: [conjecture]. For n <= 26 on C: [verified-here] (L007-L011, L013).
+**Status tags.** The inequality in general: [conjecture]. For n <= 27 on C: [verified-here] (L007-L011, L013, L016).
 The implication c* >= 6/11: conditional on the conjecture.
