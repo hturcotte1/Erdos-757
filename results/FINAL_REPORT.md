@@ -1,8 +1,27 @@
 # Erdős Problem #757: final report of the autonomous run (2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC)
 
-Last updated: 2026-10-21 02:16 UTC (48-hour extension 2026-10-17/18 and resumption 2026-10-20: certificates L007–L014 ACCEPTED by three referees each, K51–K58, incl. f(23) = 14; on 2026-10-20 a COMMUNITY construction (an anonymous reader's self-similar family, Erdős Problem a Day, 19 Oct 2026) was rebuilt, judged and refereed here: its 65-point member beats 4/7 (C003, K59) and certificate L015 proves c* <= 5/9 for the whole family (K60, three referees); section 8). Status of the goal clauses: (A) a judged and refereed record set exists since 2026-10-20 (C003, 65 points, h = 37, 37/65 < 4/7), but it is a COMMUNITY construction rebuilt, judged and refereed here, not this project's discovery (section 8); (B) no new
-lower-bound proof; (C) budget_exhausted is YES (the 72 h of GOAL.md ran from 2026-10-13 23:06 UTC to 2026-10-16 23:06 UTC; the later extensions were granted by the user and GOAL.md is unchanged), with this report in place. The PUBLISHED bounds
-$9/17\le c_*\le4/7$ (Ma–Tang 2026, via Henning–Yeo 2021 and the 14-point set $A_{\rm base}$) are unchanged, and this project's own constructions and proofs leave them unchanged. The only upper-bound improvement in the repository is the 5/9 family of section 8 (C003, L015), an anonymous reader's construction posted on Erdős Problem a Day on 19 Oct 2026 [community]: rebuilt, judged and refereed here [verified-here], but neither this project's discovery nor [published].
+Last updated: 2026-10-21 04:40 UTC (final). Three phases: the 72 h run (2026-10-13/16: exact small-case censuses, certificates L001-L006) and the 48 h extension (2026-10-17/18: the I11 window-cell induction, L007-L014, f(16) = 10 to f(23) = 14, no (4,5)-set with <= 24 points beats 4/7), then the resumption of 2026-10-20/21 (the community 5/9 family rebuilt, judged and proved here: C003, L015; this project's Lemma-E record sets C004, C005; the n = 27 certificate L016, pending). Goal clauses per scripts/status.sh: (A) met by judged and refereed record sets (C003 is a COMMUNITY construction, an anonymous reader's family from Erdős Problem a Day, 19 Oct 2026, unreviewed by humans there, submitter declares AI tools; C004 and C005 are this project's Lemma-E extensions of that family, so the record rests on a community construction), (B) not met (the lower bound 9/17 is untouched; nothing is claimed about whether c* = 5/9), (C) met (budget_exhausted YES, this report in place). The published bounds $9/17\le c_*\le4/7$ (Ma-Tang 2026) are improved on the upper side only by the community family, verified here [verified-here] but neither [published] nor this project's discovery (section 8).
+
+## 0. Executive summary (final, 2026-10-21)
+
+**This project's own results** (all [verified-here], computer-assisted unless noted; three referees ACCEPT each unless noted):
+- K51 / L007: no non-saturated extremal 14-point set (Q11 closed); 3 ACCEPTs.
+- K52-K55 / L008-L011: f(16) = 10, f(18) = 11, f(20) = 12, f(22) = 13, and I11 on the class C for n <= 22; 3 ACCEPTs each.
+- K56 / L012: a 23-point record would have all AP-degrees <= 3 (degree-4 case excluded); 3 ACCEPTs.
+- K57 / L013: I11 on the class C for n <= 26; 3 ACCEPTs.
+- K58 / L014: f(23) = 14, hence no (4,5)-set with <= 24 points beats 4/7; 3 ACCEPTs (Theorem 2 and Corollary 3 are [derived-here] from the computer-assisted Theorem 1).
+- K62 / C004: 58-point (4,5)-set, h = 33 (33/58), the smallest record set known (Lemma-E extension of the community set S_5); 2 ACCEPTs + judge PASS.
+- K63 / C005: 67-point set, h = 38 (38/67), best finite ratio among judged sets (Lemma-E extension of S_6); 2 ACCEPTs + judge PASS.
+- Earlier censuses K41, K43, K45, K46, K48 (L001-L006) and K47, K49 [verified-here]; I11 itself in general is a [conjecture].
+
+**Community construction verified here** (anonymous reader's self-similar family, Erdős Problem a Day, 19 Oct 2026, 'unreviewed by humans' there, submitter declares AI tools; [community] construction and claim, not this project's discovery):
+- K59 / C003: 65-point set, h = 37, judged NEW-RECORD, 2 ACCEPTs (c* <= 37/65).
+- K60 / L015: proof for every depth that S_K has 11 + 9K points, h = 7 + 5K, hence c* <= 5/9; 3 ACCEPTs.
+
+**Unrefereed or heuristic:** [L016 STATUS TO BE UPDATED] certificate L016 (I11 at n = 27, f(27) = 16, hence no 27-point set beats 4/7; ACCEPTED by two referees so far, third round pending, scout CLEAR; [derived-here] until refereed, no K-number yet); the n = 27 cell computations behind it; the D27 search for other self-similar chains (nothing below 5/9 in the tested ranges, [verified-here] for those ranges only, not a theorem).
+
+**Bounds on c*:** published 9/17 <= c* <= 4/7; verified here from the community family c* <= 5/9 (L015); smallest record set 58 points (C004). Lower bound untouched; nothing is claimed about c* = 5/9.
+
 
 ## 1. Verified results (each with a referee-accepted certificate or an exact, re-verifiable computation)
 
@@ -128,7 +147,7 @@ of near-tight configurations (experiments/20261014-0020-lp-fit: over 1,333,217 r
   prefixes (2,407 of 3,437) would have needed roughly 67 to 110 hours of wall time at the rate then measured. This bullet is a snapshot of 2026-10-16 22:15 UTC: the job was stopped at 1,081 of 3,437 prefixes with 0 patterns (last progress line of its run.log) and is superseded by certificate L007 (K51, ACCEPTED by three referees, 2026-10-17), which proves the $(14,11,\alpha\le8)$ cell empty (Q11 closed). Hence 2,910 is the total number of extremal 14-point classes (with the completeness caveat of L004, R3). The question whether a 16-point record could contain an extremal 14-point subset (R9, R11) is moot, because R13 (certificate L008) shows that no 16-point (4,5)-set beats 4/7.
 - The saturated census at $n=13$ was started and stopped as infeasible (D22, Q12): 8 of 1,811 prefixes already hold
   54,717,717 abstract patterns (Henning–Yeo slack 13 at $(13,11,5)$); a realizability-aware enumerator is needed.
-- Recommended next steps: (i) [done differently in the extension: $f(16)=10$ was decided by the window-cell induction on the I11 slack (certificate L008, K52, R13), not by cube-and-conquer or a $10^{14}$-node DFS; the same induction then gave $f(18)=11$, $f(20)=12$ and $f(22)=13$ (L009 to L011)]; (ii) [confirmed: $f(16)=10$, L008] the abstract wall is combinatorial, and the natural proof program is now a proof of I11 in general (section 7; still a [conjecture], verified here only on the abstract class $C$: for $n\le22$ by L007–L011 and for $n\le26$ by L013, K57, each ACCEPTED by three referees), and the Q8-type induction with 5/6-edge cores is no longer an alternative: Q8 without avoided points reads $h\ge4n/7$ (R8), and the community 65-point set of section 8 (C003, K59; an anonymous reader's construction, verified here, not discovered here) has $h=37$, so $7(n-h)=196>195=3n$ and Q8 is false for realizable sets [derived-here];
+- Recommended next steps as of 2026-10-16 (superseded by section 9): (i) [done differently in the extension: $f(16)=10$ was decided by the window-cell induction on the I11 slack (certificate L008, K52, R13), not by cube-and-conquer or a $10^{14}$-node DFS; the same induction then gave $f(18)=11$, $f(20)=12$ and $f(22)=13$ (L009 to L011)]; (ii) [confirmed: $f(16)=10$, L008] the abstract wall is combinatorial, and the natural proof program is now a proof of I11 in general (section 7; still a [conjecture], verified here only on the abstract class $C$: for $n\le22$ by L007–L011 and for $n\le26$ by L013, K57, each ACCEPTED by three referees), and the Q8-type induction with 5/6-edge cores is no longer an alternative: Q8 without avoided points reads $h\ge4n/7$ (R8), and the community 65-point set of section 8 (C003, K59; an anonymous reader's construction, verified here, not discovered here) has $h=37$, so $7(n-h)=196>195=3n$ and Q8 is false for realizable sets [derived-here];
   (iii) obtain Henning–Yeo 2021 for its equality cases (Lemma U shows how the equality structure constrains universal
   vertices); (iv) submit the census sequence to the OEIS; (v) [moot after the 48-hour extension, [verified-here]: $f(18)=11$ (L009, K53), so no 18-point record exists, and no non-saturated $(14,11)$ extremal set exists (L007, K51; Q11 closed); the rest of this item is the pre-extension rationale] four-point extensions of the 2,910 classes (an 18-point set
   with $h=10$ would be a record; it would need $m=16=n-2$ and $\tau=8=\lfloor(5n+3m)/17\rfloor$, i.e. be fully saturated and Henning–Yeo-tight after rounding [derived-here; kb/00_START_HERE.md section 4 and `python3 -m e757.fn_bounds`]; whether a new extreme point is forced is not established here) and two-point extensions
@@ -146,7 +165,7 @@ experiments/20261016-0840-extremal-subsets/stats.py) and the deletion-constraine
 (experiments/20261016-0850-n16-deletion-cpsat/model16.py, experiments/20261016-1240-n16-cnf-witness/build_cnf.py).
 The frozen judge (judge/judge.py) was used for every spot check.
 
-## 6. Dead ends added (kb/dead_ends.md D15 to D26; D25, D26 and the second CP-SAT run recorded under D21 come from the extension, see section 7)
+## 6. Dead ends added (kb/dead_ends.md D15 to D27; D25, D26, D27 and the second CP-SAT run recorded under D21 come from the extension, see sections 7 and 8)
 Direct SAT/CP-SAT at $n=16$ (with or without structure, with or without census invariants); annealing at $n=16$ and $18$;
 Q8 for the abstract class (D17); witness sweeps $n=18..25$ (D18); the layered $15\to16$ search (D19); D20, D21 (solver variants);
 the pattern-first saturated census at $n=13$ (D22); two-point extensions of smaller extremal sets as a route to records (D23: R4, R9,
@@ -202,3 +221,11 @@ On 19 Oct 2026 Erdős Problem a Day (a site built and kept by Patrick White with
 **This project's own addition (2026-10-21, K62, K63).** Lemma E of kb/notes/extension_lemmas.md (two points $a-t,a+t$ at a universal extreme point $a$ raise $h$ by exactly one and keep the (4,5)-property for generic $t$) applies to the family: the minimum and maximum of $S_K$ are its only universal vertices ($K\le6$, exact DP). The extension of $S_5$ is a 58-point (4,5)-set with $h=33$ ($33/58=0.56897$), the smallest record set known, and that of $S_6$ a 67-point set with $h=38$ ($38/67=0.56716$), the best finite ratio among the judged sets; both passed the frozen judge and two independent referees each (C004, C005; experiments/20261021-0225-lemmaE-extensions/). The two-sided extension raises $h$ by three, not two, so it gives no record at 51 or 60 points. The limit $5/9$ is not improved; a search for other self-similar seeds found none below $5/9$ (D27).
 
 How this relates to the project's own results: it is consistent with everything proved here (no record at $n\le24$, K52–K58; the family's sizes are $11,20,29,\dots$ and its $n=20$ member has $h=12=f(20)$), and with I11 ($5/9>6/11$). It does not affect the lower bound $9/17$. Gluing (Ma–Tang Lemma 3.6) turns the single 65-point set into $c_*\le37/65$; the family itself gives $5/9$.
+
+## 9. Recommended next steps (final)
+
+1. Prove I11 ($11\tau\le3n+2m$) in general; this would give $c_*\ge6/11$ (clause B). It is a [conjecture], verified here on the class C for $n\le26$ (L007-L013) with L016 for $n=27$ pending.
+2. Push the exact-value induction to $n=29$ ($f(29)=17$ would follow if I11 holds there); the first obstruction is the cell list needed beyond $n=27$.
+3. Search self-similar seeds with 12-15 points and growth $h_0-2$ (D27 shows $h_0-1$ is the typical minimum; the reader's 11-point seed reaches $h_0-2$), and tree / multi-map recursions and chains sharing $\ge3$ points, which D27 did not run.
+4. Decide $f(19)$, $f(21)$, $f(25)$ (open; $n=25$ is the first open record size by L014, with the I11-tight cell $(25,23,11)$).
+5. A human-reviewed write-up of L015, since its source entry on Erdős Problem a Day is marked 'unreviewed by humans' and its provenance is AI-assisted.
