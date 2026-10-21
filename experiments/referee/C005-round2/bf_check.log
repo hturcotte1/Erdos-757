@@ -1,0 +1,25 @@
+A_base: n=14 m=12 brute h=8 (0.0s) DP h=8 SAT(>=h)=True SAT(>=h+1)=False MILP h=8 expected=8 OK
+small_records/sets/8/set: n=8 m=5 brute h=5 (0.0s) DP h=5 SAT(>=h)=True SAT(>=h+1)=False MILP h=5 OK
+small_records/sets/10/set: n=10 m=8 brute h=6 (0.0s) DP h=6 SAT(>=h)=True SAT(>=h+1)=False MILP h=6 OK
+small_records/sets/11/set: n=11 m=8 brute h=7 (0.0s) DP h=7 SAT(>=h)=True SAT(>=h+1)=False MILP h=7 OK
+small_records/sets/12/set: n=12 m=10 brute h=7 (0.0s) DP h=7 SAT(>=h)=True SAT(>=h+1)=False MILP h=7 OK
+small_records/sets/14/set: n=14 m=12 brute h=8 (0.0s) DP h=8 SAT(>=h)=True SAT(>=h+1)=False MILP h=8 OK
+small_records/sets/12b/set: n=12 m=10 brute h=7 (0.0s) DP h=7 SAT(>=h)=True SAT(>=h+1)=False MILP h=7 OK
+small_records/sets/12c/set: n=12 m=10 brute h=7 (0.0s) DP h=7 SAT(>=h)=True SAT(>=h+1)=False MILP h=7 OK
+C005 zigzag prefix n=14: n=14 m=10 brute h=9 (0.0s) DP h=9 SAT(>=h)=True SAT(>=h+1)=False MILP h=9 OK
+C005 zigzag prefix n=16: n=16 m=11 brute h=11 (0.0s) DP h=11 SAT(>=h)=True SAT(>=h+1)=False MILP h=11 OK
+C005 zigzag prefix n=18: n=18 m=11 brute h=13 (0.0s) DP h=13 SAT(>=h)=True SAT(>=h+1)=False MILP h=13 OK
+C005 zigzag prefix n=20: n=20 m=15 brute h=13 (0.2s) DP h=13 SAT(>=h)=True SAT(>=h+1)=False MILP h=13 OK
+C005 zigzag prefix n=22: n=22 m=17 brute h=14 (1.2s) DP h=14 SAT(>=h)=True SAT(>=h+1)=False MILP h=14 OK
+C005 centre block [27,41) n=14: n=14 m=9 brute h=10 (0.0s) DP h=10 SAT(>=h)=True SAT(>=h+1)=False MILP h=10 OK
+C005 centre block [26,44) n=18: n=18 m=15 brute h=11 (0.1s) DP h=11 SAT(>=h)=True SAT(>=h+1)=False MILP h=11 OK
+C005 centre block [24,44) n=20: n=20 m=15 brute h=13 (0.3s) DP h=13 SAT(>=h)=True SAT(>=h+1)=False MILP h=13 OK
+C005 centre block [23,45) n=22: n=22 m=17 brute h=14 (1.9s) DP h=14 SAT(>=h)=True SAT(>=h+1)=False MILP h=14 OK
+C005 centre block [30,46) n=16: n=16 m=10 brute h=11 (0.0s) DP h=11 SAT(>=h)=True SAT(>=h+1)=False MILP h=11 OK
+C005 AP-union n=16: n=16 m=6 brute h=12 (0.0s) DP h=12 SAT(>=h)=True SAT(>=h+1)=False MILP h=12 OK
+C005 AP-union n=18: n=18 m=7 brute h=14 (0.0s) DP h=14 SAT(>=h)=True SAT(>=h+1)=False MILP h=14 OK
+C005 AP-union n=20: n=20 m=9 brute h=14 (0.1s) DP h=14 SAT(>=h)=True SAT(>=h+1)=False MILP h=14 OK
+C005 AP-union n=22: n=22 m=11 brute h=14 (1.7s) DP h=14 SAT(>=h)=True SAT(>=h+1)=False MILP h=14 OK
+C005 AP-union n=22: n=22 m=12 brute h=15 (0.6s) DP h=15 SAT(>=h)=True SAT(>=h+1)=False MILP h=15 OK
+C005 AP-union n=20: n=20 m=8 brute h=14 (0.1s) DP h=14 SAT(>=h)=True SAT(>=h+1)=False MILP h=14 OK
+ALL OK

@@ -1,0 +1,46 @@
+4-subset test [1, 2, 3, 5] False
+4-subset test [0, 1, 2, 3] False
+4-subset test [0, 1, 3, 4] False
+4-subset test [2, 3, 5, 8] True
+small_records[8] h_exp=5     n= 8 (4,5)=True  |F|=  5 sizes=[3] h_bf=5 h_def=5 dp=5,5,5 sat(h)=True sat(h+1)=False AGREE=True
+small_records[10] h_exp=6    n=10 (4,5)=True  |F|=  8 sizes=[3] h_bf=6 h_def=6 dp=6,6,6 sat(h)=True sat(h+1)=False AGREE=True
+small_records[11] h_exp=7    n=11 (4,5)=True  |F|=  8 sizes=[3] h_bf=7 h_def=7 dp=7,7,7 sat(h)=True sat(h+1)=False AGREE=True
+small_records[12] h_exp=7    n=12 (4,5)=True  |F|= 10 sizes=[3] h_bf=7 h_def=7 dp=7,7,7 sat(h)=True sat(h+1)=False AGREE=True
+small_records[14] h_exp=8    n=14 (4,5)=True  |F|= 12 sizes=[3] h_bf=8 h_def=8 dp=8,8,8 sat(h)=True sat(h+1)=False AGREE=True
+small_records[12b] h_exp=7   n=12 (4,5)=True  |F|= 10 sizes=[3] h_bf=7 h_def=7 dp=7,7,7 sat(h)=True sat(h+1)=False AGREE=True
+small_records[12c] h_exp=7   n=12 (4,5)=True  |F|= 10 sizes=[3] h_bf=7 h_def=7 dp=7,7,7 sat(h)=True sat(h+1)=False AGREE=True
+A_base (h=8 expected)        n=14 (4,5)=True  |F|= 12 sizes=[3] h_bf=8 h_def=8 dp=8,8,8 sat(h)=True sat(h+1)=False AGREE=True
+12pt third set (h=7)         n=12 (4,5)=True  |F|= 10 sizes=[3] h_bf=7 h_def=7 dp=7,7,7 sat(h)=True sat(h+1)=False AGREE=True
+O (h=7 expected)             n=11 (4,5)=True  |F|=  9 sizes=[3] h_bf=7 h_def=7 dp=7,7,7 sat(h)=True sat(h+1)=False AGREE=True
+I_1 = 269*S_1 (h=12 exp)     n=20 (4,5)=True  |F|= 18 sizes=[3] h_bf=12 h_def=None dp=12,12,12 sat(h)=True sat(h+1)=False AGREE=True
+E1(S_1) (h=13 exp)           n=22 (4,5)=True  |F|= 19 sizes=[3] h_bf=13 h_def=None dp=13,13,13 sat(h)=True sat(h+1)=False AGREE=True
+Fibonacci F3..(k=6)          n= 6 (4,5)=True  |F|=  3 sizes=[3] h_bf=4 h_def=4 dp=4,4,4 sat(h)=True sat(h+1)=False AGREE=True
+Fibonacci F3..(k=10)         n=10 (4,5)=True  |F|=  7 sizes=[3] h_bf=7 h_def=7 dp=7,7,7 sat(h)=True sat(h+1)=False AGREE=True
+Fibonacci F3..(k=14)         n=14 (4,5)=True  |F|= 11 sizes=[3] h_bf=9 h_def=9 dp=9,9,9 sat(h)=True sat(h+1)=False AGREE=True
+Fibonacci F3..(k=18)         n=18 (4,5)=True  |F|= 15 sizes=[3] h_bf=12 h_def=None dp=12,12,12 sat(h)=True sat(h+1)=False AGREE=True
+Fibonacci F3..(k=20)         n=20 (4,5)=True  |F|= 17 sizes=[3] h_bf=13 h_def=None dp=13,13,13 sat(h)=True sat(h+1)=False AGREE=True
+claim subset #0 (k=20)       n=20 (4,5)=True  |F|= 17 sizes=[3] h_bf=12 h_def=None dp=12,12,12 sat(h)=True sat(h+1)=False AGREE=True
+claim subset #1 (k=14)       n=14 (4,5)=True  |F|=  0 sizes=[] h_bf=14 h_def=14 dp=14,14,14 sat(h)=True sat(h+1)=False AGREE=True
+claim subset #2 (k=18)       n=18 (4,5)=True  |F|= 10 sizes=[3] h_bf=13 h_def=None dp=13,13,13 sat(h)=True sat(h+1)=False AGREE=True
+claim subset #3 (k=14)       n=14 (4,5)=True  |F|=  0 sizes=[] h_bf=14 h_def=14 dp=14,14,14 sat(h)=True sat(h+1)=False AGREE=True
+claim subset #4 (k=16)       n=16 (4,5)=True  |F|=  6 sizes=[3] h_bf=13 h_def=None dp=13,13,13 sat(h)=True sat(h+1)=False AGREE=True
+claim subset #5 (k=12)       n=12 (4,5)=True  |F|=  1 sizes=[3] h_bf=11 h_def=11 dp=11,11,11 sat(h)=True sat(h+1)=False AGREE=True
+claim subset #6 (k=22)       n=22 (4,5)=True  |F|=  5 sizes=[3] h_bf=17 h_def=None dp=17,17,17 sat(h)=True sat(h+1)=False AGREE=True
+claim subset #7 (k=14)       n=14 (4,5)=True  |F|=  0 sizes=[] h_bf=14 h_def=14 dp=14,14,14 sat(h)=True sat(h+1)=False AGREE=True
+claim subset #8 (k=20)       n=20 (4,5)=True  |F|=  6 sizes=[3] h_bf=17 h_def=None dp=17,17,17 sat(h)=True sat(h+1)=False AGREE=True
+claim subset #9 (k=12)       n=12 (4,5)=True  |F|=  0 sizes=[] h_bf=12 h_def=12 dp=12,12,12 sat(h)=True sat(h+1)=False AGREE=True
+claim subset #10 (k=20)      n=20 (4,5)=True  |F|= 11 sizes=[3] h_bf=14 h_def=None dp=14,14,14 sat(h)=True sat(h+1)=False AGREE=True
+claim subset #11 (k=14)      n=14 (4,5)=True  |F|=  0 sizes=[] h_bf=14 h_def=14 dp=14,14,14 sat(h)=True sat(h+1)=False AGREE=True
+random int set #0            n=10 (4,5)=False |F|= 12 sizes=[3, 4] h_bf=7 h_def=7 dp=7,7,7 sat(h)=True sat(h+1)=False AGREE=True
+random int set #1            n=11 (4,5)=False |F|= 13 sizes=[3, 4] h_bf=7 h_def=7 dp=7,7,7 sat(h)=True sat(h+1)=False AGREE=True
+random int set #2            n= 7 (4,5)=False |F|=  3 sizes=[4] h_bf=5 h_def=5 dp=5,5,5 sat(h)=True sat(h+1)=False AGREE=True
+random int set #3            n=14 (4,5)=False |F|= 33 sizes=[3, 4] h_bf=8 h_def=None dp=8,8,8 sat(h)=True sat(h+1)=False AGREE=True
+random int set #4            n= 8 (4,5)=False |F|=  3 sizes=[4] h_bf=6 h_def=6 dp=6,6,6 sat(h)=True sat(h+1)=False AGREE=True
+random int set #5            n=12 (4,5)=False |F|= 17 sizes=[3, 4] h_bf=8 h_def=8 dp=8,8,8 sat(h)=True sat(h+1)=False AGREE=True
+random int set #6            n=11 (4,5)=False |F|= 11 sizes=[4] h_bf=7 h_def=7 dp=7,7,7 sat(h)=True sat(h+1)=False AGREE=True
+random int set #7            n=12 (4,5)=False |F|= 24 sizes=[3, 4] h_bf=8 h_def=8 dp=8,8,8 sat(h)=True sat(h+1)=False AGREE=True
+random int set #8            n= 7 (4,5)=False |F|=  1 sizes=[4] h_bf=6 h_def=6 dp=6,6,6 sat(h)=True sat(h+1)=False AGREE=True
+random int set #9            n= 6 (4,5)=True  |F|=  0 sizes=[] h_bf=6 h_def=6 dp=6,6,6 sat(h)=True sat(h+1)=False AGREE=True
+random int set #10           n= 9 (4,5)=False |F|=  8 sizes=[3, 4] h_bf=7 h_def=7 dp=7,7,7 sat(h)=True sat(h+1)=False AGREE=True
+random int set #11           n=12 (4,5)=False |F|= 13 sizes=[3, 4] h_bf=8 h_def=8 dp=8,8,8 sat(h)=True sat(h+1)=False AGREE=True
+all validations agree (3.1s)

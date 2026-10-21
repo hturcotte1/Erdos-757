@@ -1,0 +1,10 @@
+n = 67 ; witness size 38 ; distinct True ; subset True
+witness Sidon by definition (all positive differences distinct): True
+witness: all sums x+y (x<y) distinct: True ; also 2x vs x+y collisions: False
+claimed_h 38 == |witness|: True
+h/n = 38/67; 4/7 - h/n = 2/469; h/n < 4/7: True; 7h=266 < 4n=268: True
+compare C003: 37/65 = 37/65; 38/67 < 37/65: True; D = 17h - 9n = 43; D/n = 43/67 vs 5/7
+C003 n = 65 span = 101921535994725989 t1 = 305764607985177970
+C005 == shift(C003) U {0, 2*t1}: True
+new points: 0 and 611529215970355940 ; old min now at 305764607985177970 ; AP {0, t1, 2 t1}: True
+new differences colliding with old differences: 0 ; among themselves duplicates: 1

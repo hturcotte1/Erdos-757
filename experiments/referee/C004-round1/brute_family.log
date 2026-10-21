@@ -1,0 +1,4 @@
+S_0 n 11 is45 True census {3: 9} VE 7 brute 7 #max 15 brute-by-definition 7
+E1(S_0) n 13 is45 True census {3: 10} VE 8 brute 8 #max 56 brute-by-definition 8
+S_1 n 20 is45 True census {3: 18} VE 12 brute 12 #max 315 brute-by-definition None
+E1(S_1) n 22 is45 True census {3: 19} VE 13 brute 13 #max 1177 brute-by-definition None

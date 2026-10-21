@@ -1,0 +1,5 @@
+n = 67; conflicts (from the Sidon definition) = 64; sizes [3]
+SAT  atleast 38: SAT in 0.0s; model size 38 verified Sidon by definition
+SAT  atleast 39: UNSAT in 0.1s
+CP-SAT (1 worker, limit 600.0s): status FEASIBLE, objective 38, bound 66.0, 600.0s
+MILP (HiGHS, gap 0, limit 600.0s): status 0 (Optimization terminated successfully. (HiGHS Status 7: Optimal)), objective 38, dual bound -38.0, 0.7s

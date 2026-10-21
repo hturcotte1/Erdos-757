@@ -1,0 +1,16 @@
+control (4,5): {1,2,3,5} -> False 4 (expect False 4);  {0,1,3,7} -> True 6 (expect True 6)
+A_base                   n=14 (4,5)=True minDiff=5 conflicts={3: 12} brute=8 (3539 subsets, 0.0s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 8/8 own=8 (109 calls, 0.00s) expected=8 OK
+12pt-third               n=12 (4,5)=True minDiff=5 conflicts={3: 10} brute=7 (816 subsets, 0.0s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 7/7 own=7 (91 calls, 0.00s) expected=7 OK
+small_records[10]        n=10 (4,5)=True minDiff=5 conflicts={3: 8} brute=6 (189 subsets, 0.0s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 6/6 own=6 (55 calls, 0.00s) expected=6 OK
+small_records[11]        n=11 (4,5)=True minDiff=5 conflicts={3: 8} brute=7 (233 subsets, 0.0s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 7/7 own=7 (51 calls, 0.00s) expected=7 OK
+small_records[12]        n=12 (4,5)=True minDiff=5 conflicts={3: 10} brute=7 (816 subsets, 0.0s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 7/7 own=7 (91 calls, 0.00s) expected=7 OK
+small_records[12b]       n=12 (4,5)=True minDiff=5 conflicts={3: 10} brute=7 (860 subsets, 0.0s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 7/7 own=7 (87 calls, 0.00s) expected=7 OK
+small_records[12c]       n=12 (4,5)=True minDiff=5 conflicts={3: 10} brute=7 (834 subsets, 0.0s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 7/7 own=7 (95 calls, 0.00s) expected=7 OK
+small_records[14]        n=14 (4,5)=True minDiff=5 conflicts={3: 12} brute=8 (3539 subsets, 0.0s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 8/8 own=8 (109 calls, 0.00s) expected=8 OK
+small_records[8]         n= 8 (4,5)=True minDiff=5 conflicts={3: 5} brute=5 (38 subsets, 0.0s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 5/5 own=5 (27 calls, 0.00s) expected=5 OK
+1..9 (not weak Sidon)    n= 9 (4,5)=False minDiff=3 conflicts={3: 16, 4: 34} brute=4 (266 subsets, 0.0s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 4/4 own=4 (81 calls, 0.00s) expected=4 OK
+Fibonacci16              n=16 (4,5)=True minDiff=5 conflicts={3: 13} brute=10 (8161 subsets, 0.0s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 10/10 own=10 (171 calls, 0.00s) expected=None OK
+S_0 = O                  n=11 (4,5)=True minDiff=5 conflicts={3: 9} brute=7 (265 subsets, 0.0s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 7/7 own=7 (57 calls, 0.00s) expected=7 OK
+S_1 (n=20)               n=20 (4,5)=True minDiff=5 conflicts={3: 18} brute=12 (148011 subsets, 1.4s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 12/12 own=12 (288 calls, 0.01s) expected=12 OK
+E1(S_1) (n=22)           n=22 (4,5)=True minDiff=5 conflicts={3: 19} brute=13 (618481 subsets, 6.3s) SAT(k)=True SAT(k+1)=False/False CPSAT=OPTIMAL 13/13 own=13 (322 calls, 0.00s) expected=None OK
+ALL TOOL VALIDATIONS OK

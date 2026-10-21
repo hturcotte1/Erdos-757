@@ -1,0 +1,65 @@
+{
+ "seqcounter_validation": {
+  "cases": 1792,
+  "mismatches": 0
+ },
+ "k33_minisat22": {
+  "result": true,
+  "secs": 0.0,
+  "stats": {
+   "restarts": 1,
+   "conflicts": 42,
+   "decisions": 239,
+   "propagations": 10166
+  },
+  "model_size": 33,
+  "model_sidon_sums": true,
+  "model_sidon_diffs": true,
+  "model_subset": true
+ },
+ "k33_glucose4": {
+  "result": true,
+  "secs": 0.0,
+  "stats": {
+   "restarts": 1,
+   "conflicts": 52,
+   "decisions": 288,
+   "propagations": 10976
+  },
+  "model_size": 33,
+  "model_sidon_sums": true,
+  "model_sidon_diffs": true,
+  "model_subset": true
+ },
+ "k34_minisat22": {
+  "result": false,
+  "secs": 0.48,
+  "stats": {
+   "restarts": 126,
+   "conflicts": 36357,
+   "decisions": 44475,
+   "propagations": 7460494
+  }
+ },
+ "k34_glucose4": {
+  "result": false,
+  "secs": 0.02,
+  "stats": {
+   "restarts": 5,
+   "conflicts": 3210,
+   "decisions": 5448,
+   "propagations": 280862
+  }
+ },
+ "k34_glucose4_proof_lines": 6520,
+ "k34_rup_check": {
+  "ok": true,
+  "lemmas": 3210,
+  "empty": true
+ },
+ "rup_negative_control_accepted": false,
+ "rup_negative_control_k33": {
+  "ok": false,
+  "empty": false
+ }
+}

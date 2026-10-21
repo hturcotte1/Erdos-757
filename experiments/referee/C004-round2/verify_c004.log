@@ -1,0 +1,21 @@
+file: /home/user/Erdos-757/results/claims/C004-lemmaE-SK5-E1.json  id: C004-lemmaE-SK5-E1  type: construction
+n = 58  min = 0  max = 2273342812291292  all distinct integers
+(4,5) literal check: ok=True  subsets=424270  min distinct diffs=5  (0.4s)
+weak Sidon: True  sum coincidences: 55  conflict sets by size: {3: 55}
+witness: size=33 subset=True Sidon(def)=True
+SAT k=33 cadical153/seqcounter: True (0.0s)
+  model of size 33 re-verified Sidon from the definition
+SAT k=34 cadical153/seqcounter: False (0.1s)
+SAT k=34 glucose4/totalizer: False (0.1s)
+SAT k=34 kissat404/kmtotalizer: False (0.2s)
+SAT k=34 maplechrono/cardnetwrk: False (2.3s)
+own branching solver: h = 33  (3046 calls, 1209 memo hits, 0.1s)
+CP-SAT (IP, 1 worker, 420s cap): status=FEASIBLE obj=33 bound=56 (420.0s)
+ratio 33/58 = 33/58 < 4/7 ? True   (7*33=231, 4*58=232)
+structure: |I_5| = 56, span = 378890468381881 (= 269^6: True), t = 1136671406145646, I_5 + {min-t, min+t} translated == claim set: True
+  a = min I_5 -> index 1 (value 1136671406145646); new points at indices [0, 57]
+  conflict sets involving a new point: [(0, 1136671406145646, 2273342812291292)]  (expected exactly [(0, t, 2t)])
+  base I_5: n=56 conflicts={3: 54}  h>=32: True  h>=33: False (0.0s)  => h(I_5) = 32: True
+  I_5 minus min: h>=31: True  h>=32: False  => min is universal (alpha(H-a) = h-1 = 31): True
+results written to /home/user/Erdos-757/experiments/referee/C004-round2/verify_c004_results.json
+SUMMARY: (4,5)=True  h=33 (SAT at 33, all k=34 runs UNSAT=True, own=33, cpsat=33)  ratio<4/7=True  => CLAIM VERIFIED

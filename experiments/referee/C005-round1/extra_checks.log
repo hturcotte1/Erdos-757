@@ -1,0 +1,9 @@
+witness entries all int: True  claimed_h type int
+judge-style parsing identical: True
+coincidences 64 four-point ones 0 pairs of coincidences inside one 4-set 0 => (4,5): True
+C003 min/max 0 101921535994725989 = 0, 269^7: True | C005 == {0,2t1} U (t1 + C003): True | t1 = 305764607985177970
+HiGHS MILP status 0 Optimization terminated successfully. (HiGHS Status 7: Optimal) obj 38.0 dual bound 38.0 gap 0.0
+  MILP solution size 38 Sidon True
+  LP relaxation value 45.02485556114793
+h(I_6) = 37 | alpha(H - min) = 36 | alpha(H - max) = 36
+h(C005) = 38 | universal vertices of C005 (indices): []

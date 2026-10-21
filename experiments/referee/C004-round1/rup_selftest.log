@@ -1,0 +1,5 @@
+satisfiable formulas with fake proofs: 300 accepted (must be 0): 0
+unsat instances with genuine glucose4 proofs: 58 accepted: 58
+corrupted proofs (one lemma truncated to a unit): 58 rejected: 22 (not all must be rejected: a truncated lemma can still be RUP)
+APs meeting the two new points (indices 0 and 57): [(0, 1136671406145646, 2273342812291292)]
+a = 1136671406145646  2a == max: True

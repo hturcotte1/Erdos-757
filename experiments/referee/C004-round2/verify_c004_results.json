@@ -1,0 +1,66 @@
+{
+ "n": 58,
+ "min": 0,
+ "max": 2273342812291292,
+ "all_integers": true,
+ "distinct": true,
+ "is_45": true,
+ "n_4subsets": 424270,
+ "min_distinct_diffs": 5,
+ "weak_sidon": true,
+ "n_sum_coincidences": 55,
+ "conflict_hist": {
+  "3": 55
+ },
+ "n_conflict_sets": 55,
+ "witness_size": 33,
+ "witness_ok": true,
+ "sat_33": {
+  "sat": true,
+  "model_size": 33,
+  "model_sidon": true,
+  "seconds": 0.0
+ },
+ "sat_34": {
+  "cadical153/seqcounter": {
+   "sat": false,
+   "seconds": 0.06
+  },
+  "glucose4/totalizer": {
+   "sat": false,
+   "seconds": 0.07
+  },
+  "kissat404/kmtotalizer": {
+   "sat": false,
+   "seconds": 0.23
+  },
+  "maplechrono/cardnetwrk": {
+   "sat": false,
+   "seconds": 2.32
+  }
+ },
+ "own_solver": {
+  "h": 33,
+  "calls": 3046,
+  "seconds": 0.1
+ },
+ "cpsat": {
+  "status": "FEASIBLE",
+  "obj": 33,
+  "bound": 56,
+  "seconds": 420.0
+ },
+ "ratio_lt_4_7": true,
+ "structure_matches": true,
+ "t": 1136671406145646,
+ "span": 378890468381881,
+ "new_aps": [
+  [
+   0,
+   1136671406145646,
+   2273342812291292
+  ]
+ ],
+ "h_I5_is_32": true,
+ "min_universal": true
+}

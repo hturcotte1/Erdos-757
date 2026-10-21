@@ -1,0 +1,12 @@
+seq-counter exhaustive validation: 1792 (n,K,assignment) cases, 0 mismatches (0.0s)
+n 58 forbidden census {3: 55}
+k=33: vars=1483 clauses=2937
+  minisat22: {'result': True, 'secs': 0.0, 'stats': {'restarts': 1, 'conflicts': 42, 'decisions': 239, 'propagations': 10166}, 'model_size': 33, 'model_sidon_sums': True, 'model_sidon_diffs': True, 'model_subset': True}
+  glucose4: {'result': True, 'secs': 0.0, 'stats': {'restarts': 1, 'conflicts': 52, 'decisions': 288, 'propagations': 10976}, 'model_size': 33, 'model_sidon_sums': True, 'model_sidon_diffs': True, 'model_subset': True}
+k=34: vars=1426 clauses=2824
+  minisat22: {'result': False, 'secs': 0.48, 'stats': {'restarts': 126, 'conflicts': 36357, 'decisions': 44475, 'propagations': 7460494}}
+  glucose4: {'result': False, 'secs': 0.02, 'stats': {'restarts': 5, 'conflicts': 3210, 'decisions': 5448, 'propagations': 280862}}
+glucose4 with proof: result False (0.0s); proof lines: 6520
+own RUP check: all lemmas RUP = True; lemmas checked = 3210; empty clause derived = True (0.9s)
+negative control (fake proof "1 0 / -1 0 / 0"): accepted = False at lemma 1
+negative control (k=34 proof replayed on the satisfiable k=33 CNF): ok = False empty = False stopped at lemma 1

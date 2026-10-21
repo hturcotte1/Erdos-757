@@ -1,0 +1,9 @@
+solver=cadical195 n=67 k=38 relations=64 clauses=3929 vars=1981 -> SAT in 0.09s stats={'restarts': 0, 'conflicts': 0, 'decisions': 0, 'propagations': 28}
+  model re-verified Sidon (sums and diffs), size 38
+solver=cadical195 n=67 k=39 relations=64 clauses=3798 vars=1915 -> UNSAT in 0.08s stats={'restarts': 549, 'conflicts': 5955, 'decisions': 15298, 'propagations': 678115}
+solver=glucose4 n=67 k=38 relations=64 clauses=3929 vars=1981 -> SAT in 0.01s stats={'restarts': 2, 'conflicts': 384, 'decisions': 1020, 'propagations': 49231}
+  model re-verified Sidon (sums and diffs), size 38
+solver=glucose4 n=67 k=39 relations=64 clauses=3798 vars=1915 -> UNSAT in 0.05s stats={'restarts': 2, 'conflicts': 5228, 'decisions': 8989, 'propagations': 539051}
+solver=minisat22 n=67 k=38 relations=64 clauses=3929 vars=1981 -> SAT in 0.00s stats={'restarts': 1, 'conflicts': 34, 'decisions': 290, 'propagations': 14449}
+  model re-verified Sidon (sums and diffs), size 38
+solver=minisat22 n=67 k=39 relations=64 clauses=3798 vars=1915 -> UNSAT in 0.75s stats={'restarts': 127, 'conflicts': 44650, 'decisions': 56228, 'propagations': 11129991}

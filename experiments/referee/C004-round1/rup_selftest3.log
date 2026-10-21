@@ -1,0 +1,3 @@
+replays of genuine proofs on satisfiable formulas: 2 empty clause derived (must be 0): 0
+corrupted proofs compared with the naive checker: 327 disagreements (must be 0): 0
+main k>=34 certificate through the naive full-scan RUP checker: (True, 3210, True)

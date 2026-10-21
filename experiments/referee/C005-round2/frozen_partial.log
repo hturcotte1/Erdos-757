@@ -1,0 +1,6 @@
+judge.parse_set: n = 67
+judge.is_45: True None 6.7s
+judge.is_weak_sidon: True
+judge.is_sidon(witness): True size 38 subset True
+judge.RECORD = 4/7 ; 38/67 < RECORD: True
+total 6.7s

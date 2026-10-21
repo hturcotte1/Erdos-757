@@ -74,11 +74,43 @@ out['h_ve'] = opt
 out['ve_width'] = w2
 out['ve_argmax'] = pts
 
-# a second elimination order (reverse value order) as an internal consistency check
-order2 = list(range(n))[::-1]
-opt2, w3, I2 = R.ve_max_independent(n, forb, order2)
-print('VE with plain reverse order: optimum', opt2, 'width', w3)
-out['h_ve_order2'] = opt2
+# further elimination orders (randomized min-fill / min-degree tie-breaking) as an internal consistency check
+import random
+def rand_order(nv, forb, seed, crit):
+    rng = random.Random(seed)
+    adj = {v: set() for v in range(nv)}
+    for F in forb:
+        for a in F:
+            for b in F:
+                if a != b:
+                    adj[a].add(b)
+    order = []
+    alive = set(range(nv))
+    while alive:
+        def key(v):
+            nb = list(adj[v])
+            fill = sum(1 for i in range(len(nb)) for j in range(i + 1, len(nb)) if nb[j] not in adj[nb[i]])
+            return (fill, len(nb)) if crit == 'fill' else (len(nb), fill)
+        ks = {v: key(v) for v in alive}
+        kmin = min(ks.values())
+        v = rng.choice(sorted(u for u in alive if ks[u] == kmin))
+        nb = list(adj[v])
+        for a in nb:
+            adj[a] |= set(nb) - {a}
+            adj[a].discard(v)
+        del adj[v]
+        alive.discard(v)
+        order.append(v)
+    return order
+others = []
+for seed in range(6):
+    for crit in ('fill', 'deg'):
+        o = rand_order(n, forb, seed, crit)
+        val, wd, Ix = R.ve_max_independent(n, forb, o)
+        okx = R.check_independent(Ix, forb) and len(Ix) == val and R.is_sidon_sums([A[i] for i in Ix])
+        others.append((seed, crit, val, wd, okx))
+print('VE with 12 randomized orders (seed, crit, optimum, width, argmax-valid):', others)
+out['h_ve_other_orders'] = sorted(set(x[2] for x in others))
 
 r = Fraction(opt, n)
 print('h/n =', r, ' < 4/7:', r < Fraction(4, 7), ' (7h =', 7 * opt, ', 4n =', 4 * n, ')')

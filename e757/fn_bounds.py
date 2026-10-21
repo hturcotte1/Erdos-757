@@ -24,7 +24,7 @@ from __future__ import annotations
 import math
 from fractions import Fraction
 
-KNOWN_UPPER = {3: 2, 8: 5, 10: 6, 12: 7, 14: 8, 65: 37}  # 8, 10: data/small_records.json; 65: 37 = C003 (results/claims/C003-reader-5-9-K6.json; a COMMUNITY construction, the depth-6 member of an anonymous reader's family posted on Erdős Problem a Day 19 Oct 2026; judged PASS NEW-RECORD and ACCEPTED by two referees here, K59): 37/65 < 4/7
+KNOWN_UPPER = {3: 2, 8: 5, 10: 6, 12: 7, 14: 8, 58: 33, 65: 37, 67: 38}  # 8, 10: data/small_records.json; 65: 37 = C003 (results/claims/C003-reader-5-9-K6.json; a COMMUNITY construction, the depth-6 member of an anonymous reader's family posted on Erdős Problem a Day 19 Oct 2026; judged PASS NEW-RECORD and ACCEPTED by two referees here, K59): 37/65 < 4/7; 58: 33 = C004 and 67: 38 = C005 (this project's Lemma-E two-point extensions of S_5 and S_6 at their universal minimum; judged and ACCEPTED x2 each, K62, K63): 33/58 and 38/67 < 4/7
 KNOWN_LOWER_EXTRA = {5: 4}
 # Exact values proved by computer-assisted, referee-accepted certificates (lower bound beyond Henning-Yeo; the
 # matching upper bound is in KNOWN_UPPER or follows by monotonicity/gluing).  Each entry is a certificate accepted by three
