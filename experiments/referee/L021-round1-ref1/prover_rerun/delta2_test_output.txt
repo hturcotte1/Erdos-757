@@ -1,0 +1,11 @@
+N=1: 1 connected subcubic G
+N=2: 1 connected subcubic G
+N=3: 2 connected subcubic G
+N=4: 6 connected subcubic G
+N=5: 10 connected subcubic G
+N=6: 29 connected subcubic G
+N=7: 64 connected subcubic G
+N=8: 194 connected subcubic G
+N=9: 531 connected subcubic G
+N=10: 1733 connected subcubic G
+delta2_test NMAX=10: 2571 graphs, A<0 in 7, KT failures 0, equality 7, min(A+DEF) 0

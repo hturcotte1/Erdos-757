@@ -1,0 +1,3 @@
+nc test [(3, 1, 1), (10, 7, 4), (14, 12, 6), (17, 13, 7), (8, 5, 3), (12, 10, 5), (15, 11, 6), (19, 16, 8), (22, 17, 9), (26, 22, 11)] {'nc': 258, 'nc_nonadj': 2, 'ident_ok': 2, 'ident_inC': 0, 'kprime': 6, 'egad': 6, 'egad_tight': 0} time 24.5
+   identification blocked: ((8, 5, 3), (1, 1), ('F7',)) 1
+   identification blocked: ((8, 5, 3), (1, 2), ('F7',)) 1

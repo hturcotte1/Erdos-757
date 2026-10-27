@@ -5,3 +5,6 @@ small ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#1') N 16 g-orbits 5 configs 32 runnin
 small ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#2') N 16 g-orbits 6 configs 40 running {'type_triples': 4, 'g_choices': 14, 'configs': 124, 'claimE': 60, 'inC3': 60, 'inC3_claimE': 60, 'tau_ok': 60, 'Pneg': 0} [6s]
 small ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#3') N 16 g-orbits 3 configs 12 running {'type_triples': 5, 'g_choices': 17, 'configs': 136, 'claimE': 60, 'inC3': 60, 'inC3_claimE': 60, 'tau_ok': 60, 'Pneg': 0} [6s]
 small ('(3,1,1)#0', '(3,1,1)#0', '(8,5,3)#0') N 14 g-orbits 4 configs 105 running {'type_triples': 6, 'g_choices': 21, 'configs': 241, 'claimE': 120, 'inC3': 120, 'inC3_claimE': 120, 'tau_ok': 120, 'Pneg': 0} [13s]
+small ('(3,1,1)#0', '(3,1,1)#0', '(8,5,3)#1') N 14 g-orbits 5 configs 138 running {'type_triples': 7, 'g_choices': 26, 'configs': 379, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0} [24s]
+small TOTAL {'type_triples': 7, 'g_choices': 26, 'configs': 379, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0}
+done [24s]

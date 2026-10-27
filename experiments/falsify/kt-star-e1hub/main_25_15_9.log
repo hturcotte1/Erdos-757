@@ -1,0 +1,1 @@
+(25, 15, 9) {'type': 'cell', 'cell': '(25, 15, 9)', 'A': 12, 'D': 3, 'graphs': 6849, 'nonconnected': 0, 'bconf_labelled': 1526, 'graphs_with_bconf': 554, 'notinT_low_vertices': 0, 'hub_classes_new': 1045, 'hub_inC': 1045, 'hubs_by_cell': {'(29,19,11)': 1045}, 'minP': 0, 'minPp_nonpiece': 0} [652s]

@@ -91,6 +91,6 @@
 - (i), (ii) and (iii) are reproduced exactly by independent code (check1).
 - The candidate scan's pruning rules are all valid for connected members of C_3 with n <= 27: n <= 2m + 1, 3m >= n, m <= n - 2, s >= 0 (L016), 17 tau <= 5n + 3m (K8) and A < 0. The lists used are complete by L013 Lemma E' (I11 below n, n <= 24).
 - The logic of 7.3 is correct: A >= 0 is trivial; a member of L* is handled by X = {H}; otherwise DEF >= DEF^proper >= -A.
-- (iv): my own Delta <= 2 test (networkx atlas plus random subcubic graphs) agrees (check3). The count 27,525 equals the number of connected subcubic graphs on at most 12 vertices.
+- (iv): my own Delta <= 2 test (networkx atlas plus random subcubic graphs) agrees (check3). delta2_test's per-N counts agree with the atlas for N <= 7 (113 graphs), and its N <= 10 run is reproduced identically (2,571 graphs).
 - (v): the conclusion is correct, but the proof in 7.6 has a missing case (item 1). The role tables are confirmed independently, both in the strict version and in a conservative version without the "trace not inside an edge" restriction for role_c and role_f1. A direct brute force over the 28 pairs of pieces with at most 10 vertices confirms (v), including the missing case (check2).
 - Conjecture KT* is correctly tagged [conjecture], and G4 is correctly described as a restatement of KT*. The equivalence "KT* iff every connected irreducible member of C_3 lies in L*" holds in both directions: a minimal counterexample has DEF = DEF^proper = 0 by (F), and is not in L* by (C).

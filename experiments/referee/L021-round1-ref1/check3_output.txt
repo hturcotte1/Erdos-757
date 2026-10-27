@@ -1,1 +1,2 @@
 (1) atlas connected subcubic graphs: 113 ; negative theta: [(1, 0, -16, False), (5, 7, -5, True)]
+(2) graphs tested: 193 (atlas 113 + random 80 , N <= 12 ) with A<0: 4  failures: 0  min P: 0

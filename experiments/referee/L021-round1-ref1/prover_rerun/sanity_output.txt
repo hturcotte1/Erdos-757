@@ -1,0 +1,8 @@
+F7: (n,m,tau)=(7,5,3) I11 slack -2, J_1/6 slack (x6) -5, A=-32, DEF=0, A+DEF=-32
+(9,8,4) violator: (n,m,tau)=(9,8,4) I11 slack -1, J_1/6 slack (x6) 3, A=-5, DEF=0, A+DEF=-5
+hypertree with perfect matching k=0: (n,m,tau)=(3,1,1) I11 slack 0, J_1/6 slack (x6) 3, A=-16, DEF=16, A+DEF=0
+hypertree with perfect matching k=1: (n,m,tau)=(9,4,3) I11 slack 2, J_1/6 slack (x6) 21, A=-13, DEF=13, A+DEF=0
+hypertree with perfect matching k=2: (n,m,tau)=(15,7,5) I11 slack 4, J_1/6 slack (x6) 39, A=-10, DEF=10, A+DEF=0
+hypertree with perfect matching k=3: (n,m,tau)=(21,10,7) I11 slack 6, J_1/6 slack (x6) 57, A=-7, DEF=7, A+DEF=0
+hypertree with perfect matching k=4: (n,m,tau)=(27,13,9) I11 slack 8, J_1/6 slack (x6) 75, A=-4, DEF=4, A+DEF=0
+hypertree with perfect matching k=5: (n,m,tau)=(33,16,11) I11 slack 10, J_1/6 slack (x6) 93, A=-1, DEF=1, A+DEF=0

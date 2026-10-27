@@ -1,0 +1,32 @@
+(3,1,1)#0 W 16 hubs 0 {}
+(8,5,3)#0 W 5 hubs 0 {}
+(8,5,3)#1 W 5 hubs 1 {((4, 1, 1), 'components', 2, 'b-config', True, 'outer degrees', (0, 1, 1)): 1}
+(10,7,4)#0 W 13 hubs 0 {}
+(10,7,4)#1 W 13 hubs 1 {((6, 3, 2), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 2)): 1}
+(10,7,4)#2 W 13 hubs 0 {}
+(10,7,4)#3 W 13 hubs 1 {((6, 3, 2), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 1)): 1}
+(15,11,6)#0 W 2 hubs 1 {((11, 7, 4), 'components', 2, 'b-config', True, 'outer degrees', (0, 1, 2)): 1}
+(15,11,6)#1 W 2 hubs 2 {((11, 7, 4), 'components', 2, 'b-config', True, 'outer degrees', (0, 1, 2)): 1, ((11, 7, 4), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 2)): 1}
+(15,11,6)#2 W 2 hubs 1 {((11, 7, 4), 'components', 2, 'b-config', True, 'outer degrees', (0, 1, 2)): 1}
+(15,11,6)#3 W 2 hubs 0 {}
+(15,11,6)#4 W 2 hubs 0 {}
+(15,11,6)#5 W 2 hubs 0 {}
+(15,11,6)#6 W 2 hubs 1 {((11, 7, 4), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 2)): 1}
+(15,11,6)#7 W 2 hubs 0 {}
+(15,11,6)#8 W 2 hubs 0 {}
+(15,11,6)#9 W 2 hubs 1 {((11, 7, 4), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 2)): 1}
+(15,11,6)#10 W 2 hubs 0 {}
+(15,11,6)#11 W 2 hubs 0 {}
+(15,11,6)#12 W 2 hubs 1 {((11, 7, 4), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 2)): 1}
+(15,11,6)#13 W 2 hubs 0 {}
+(15,11,6)#14 W 2 hubs 1 {((11, 7, 4), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 2)): 1}
+(15,11,6)#15 W 2 hubs 2 {((11, 7, 4), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 2)): 1, ((11, 7, 4), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 1)): 1}
+(15,11,6)#16 W 2 hubs 1 {((11, 7, 4), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 1)): 1}
+(15,11,6)#17 W 2 hubs 1 {((11, 7, 4), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 1)): 1}
+(15,11,6)#18 W 2 hubs 1 {((11, 7, 4), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 2)): 1}
+(17,13,7)#0 W 10 hubs 0 {}
+(17,13,7)#1 W 10 hubs 0 {}
+(17,13,7)#2 W 10 hubs 0 {}
+(17,13,7)#3 W 10 hubs 1 {((13, 9, 5), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 2)): 1}
+(17,13,7)#4 W 10 hubs 2 {((13, 9, 5), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 2)): 2}
+(17,13,7)#5 W 10 hubs 1 {((13, 9, 5), 'components', 1, 'b-config', True, 'outer degrees', (1, 1, 2)): 1}

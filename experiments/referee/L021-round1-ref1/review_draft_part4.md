@@ -6,7 +6,7 @@
    - 7.6 asserts that the distribution of the three pairs is one of (b), (c1), (c2), (e), (f). That list (L017 7.3) excludes the distributions {1,1,1} and {2,2,2}, in which all three pairs lie in one piece. L017 can exclude them because there H is connected, by L017 Theorem 4(ii).
    - The distribution {1,1,1} gives a disconnected H = (F_1 + v) + F_2. It is not isomorphic to a member of L*, so 7.6 does not cover it as written.
    - The case is empty. F_1 + v = H[V(F_1) u {v}] lies in C, has tau(F_1) + 1 and slack s(F_1) - 2 < 0, and has at most 18 vertices, which contradicts L016.
-   - My brute force (check2) enumerates this distribution explicitly for all pairs of pieces with at most 10 vertices. It finds τ-raising configurations of this kind only outside C_3. For example, (8,5,3) with all three pairs gives the (9,8,4) graphs, which violate (P3).
+   - My brute force enumerates this distribution explicitly (check2 and check2b, and check2c over all 528 pairs, R3c). Every τ-raising configuration of this kind lies outside C_3. For example, (8,5,3) with all three pairs gives the (9,8,4) graphs, which violate (P3), and (15,11,6) gives (16,14,7) graphs outside C.
    - Fix: add "connected" to (v). The only application, case (D2) in a minimal counterexample, has H connected. Alternatively, dispose of {1,1,1} by L016 in one sentence.
 
 2. **An unqualified statement relies on I11 beyond its proved range.** The Note after "The list L*" says: "no saturated graph (m = n-2) with n >= 11 is special, since then A = 12s + 2n - 22 >= 0".
@@ -31,7 +31,10 @@
    - Both must say "among connected members of C_3 with at most 24 vertices". The candidate cells (25,14,9) (only a D2 list), (26,13,9), (26,17,10) and the four n = 27 cells are not computed.
    - Theorem 7(i) and GAP G4 are correctly qualified.
 
-6. **Status line out of date.** DEPENDS describes L017 as "[round 1: two referees, no mathematical error; round 2 pending]". L017 is ACCEPTED (round 2: two referees ACCEPT; K64).
+6. **DEPENDS block: one status out of date and one use of L016 missing.**
+   - DEPENDS describes L017 as "[round 1: two referees, no mathematical error; round 2 pending]". L017 is ACCEPTED (round 2: two referees ACCEPT; K64).
+   - DEPENDS says L016 is "used only in the cell scan of Step 7 ... and for J_{1/6} of the pieces (Theorem 2)". L016 is also used in Proposition 9 (9.2 and 9.3 end with "contradiction with L016"), and it would be used in the fix of item 1.
+   - Both lines should be updated.
 
 7. **Novelty wording (README only).**
    - The README calls Theorem 6 "(new, via Tutte-Berge)".

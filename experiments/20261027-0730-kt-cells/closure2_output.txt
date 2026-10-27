@@ -50,3 +50,16 @@ cell (14,12,6) A=6: 2 graphs, irreducible 0, reducible 2 (P==0: 0), min P=6  [re
 cell (18,9,6) A=9: 22 graphs, irreducible 0, reducible 22 (P==0: 0), min P=9  [refereed L017/out] [16s]
 cell (19,12,7) A=9: 833 graphs, irreducible 0, reducible 833 (P==0: 0), min P=9  [refereed L017/out] [36s]
 cell (20,11,7) A=1: 45 graphs, irreducible 0, reducible 45 (P==0: 0), min P=1  [refereed L017/out] [37s]
+cell (20,15,8) A=9: 953 graphs, irreducible 0, reducible 953 (P==0: 0), min P=9  [refereed L017/out] [73s]
+cell (21,14,8) A=1: 299 graphs, irreducible 0, reducible 299 (P==0: 0), min P=1  [refereed L017/out] [80s]
+cell (21,18,9) A=9: 0 graphs, irreducible 0, reducible 0 (P==0: 0), min P=None  [refereed L017/out] [80s]
+cell (22,17,9) A=1: 37 graphs, irreducible 0, reducible 37 (P==0: 0), min P=1  [refereed L017/out] [82s]
+cell (24,12,8) A=12: 129 graphs, irreducible 0, reducible 129 (P==0: 0), min P=12  [OWN out/cells] [83s]
+cell (25,15,9) A=12: 6849 graphs, irreducible 0, reducible 6849 (P==0: 0), min P=12  [OWN out/cells] [223s]
+cell (26,14,9) A=4: MISSING list
+cell (26,18,10) A=12: MISSING list
+cell (27,17,10) A=4: MISSING list
+cell (27,21,11) A=12: MISSING list
+IRREDUCIBLE SPECIAL PIECES: 32
+NEW pieces beyond L021 closure (n>=25 or unseen type): 0
+MISSING lists: [(27, 13, 9, -4), (26, 14, 9, 4), (26, 18, 10, 12), (27, 17, 10, 4), (27, 21, 11, 12)]

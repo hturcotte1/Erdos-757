@@ -179,3 +179,31 @@ Once R1 and R2 are applied, which is editing only, I recommend ACCEPT without a 
 - Other referees' and the prover's output files were read as data only, to check attributions: opus-2 `bcfg_recount_output.txt`, `k29_profile_output.txt` and `prop6_check_output.txt`; fable-2 `econf_count_output.txt`; the opus-2 folder listing.
 - My only computation is experiments/referee/L020-round3-fixcheck/prop6_attach.py (Python standard library only; nothing imported from e757/, judge/, experiments/prover/ or any referee folder), with output `prop6_attach_output.txt`. It reads the stored lists in experiments/20261027-0300-transversal-richness/inputs/ as data.
 - I modified nothing except this review and that scratch folder.
+
+## Round 3 re-check (commit c434c4d, 2026-10-27 08:13:30 UTC; checked 08:14 UTC)
+
+**Scope of the commit.**
+- `git show c434c4d` and `git diff --unified=0 c85ce6d c434c4d -- results/proofs/L020-joint-induction-i11.md` show hunks at lines 4, 32 and 34 only (3 insertions, 3 deletions).
+- The file is clean at HEAD (c434c4d).
+
+**R2 applied.**
+- The parenthetical "(For the pattern-(e) vertices the 45 is exact given the lists, Remark 1.4.)" is deleted from the Theorem 1 statement; `grep -c` gives 0.
+- The caveat now runs directly into "Moreover each of the 45 graphs $K$: (i) …".
+- Remark 1.4's sentence "This is not part of the statement of Theorem 1" (line 85) is now consistent with the statement.
+
+**R1 applied.** The sentence now reads: "Both round-2 referees re-derived the pattern counts below with their own codes; the fable round-2 referee also rebuilt the pattern-(e) gluings from the stored lists."
+- This is accurate. Both re-derived the counts (opus-2 `k29_profile`/`t3_spot`, fable-2 `patterns45`/`thm3_sample`), and only fable-2 rebuilt the gluings (`econf_count`).
+- It agrees with Remark 1.4.
+
+**STATUS line.** It records "round-3 wording items R1, R2 applied 08:13 UTC", which matches the commit time.
+
+**Nothing else changed.**
+- No theorem statement, proof step, tag or other text changed.
+- The main claim of Theorem 1, $K_{29}$, the construction, the counts, the caveat and (i)–(iii) are verbatim as verified in rounds 1 and 2.
+
+**Remaining items, all cosmetic or optional and none blocking:**
+- R3 and R4 above;
+- the optional part (i) wording of R1;
+- a stray ".;" before the round-3 note in the STATUS line ("stated as such.; round-3 …").
+
+Final verdict: ACCEPT. All required fixes of rounds 1–3 are applied correctly; no mathematical or attribution problem remains.

@@ -1,0 +1,6 @@
+pool 380
+parents 72423
+level1 kids 15755 [409s]
+{'kids_L1': 15755, 'disconnected': 15201, 'conn_A<0_L1': 554, 'classes_n>=25': 554, 'evaluated': 554} minP 0 [720s]
+level2 kids 0 [722s]
+FINAL {'kids_L1': 15755, 'disconnected': 15201, 'conn_A<0_L1': 554, 'classes_n>=25': 554, 'evaluated': 554} minP 0 [722s]
