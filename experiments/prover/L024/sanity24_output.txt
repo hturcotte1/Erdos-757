@@ -1,0 +1,16 @@
+S1 L012/cells/cell_6_3_2_D3.txt hubs 4 {'hubs': 4, 'tau_ok': 4, 'A_ok': 4, 'P0': 4, 'Pneg': 0, 'Ppos': 0} [0s]
+S1 L012/cells/cell_11_7_4_D3.txt hubs 10 {'hubs': 14, 'tau_ok': 14, 'A_ok': 14, 'P0': 14, 'Pneg': 0, 'Ppos': 0} [1s]
+S1 L012/cells/cell_12_6_4_D3.txt hubs 7 {'hubs': 21, 'tau_ok': 21, 'A_ok': 21, 'P0': 21, 'Pneg': 0, 'Ppos': 0} [2s]
+S1 L012/cells/cell_13_9_5_D3.txt hubs 3 {'hubs': 24, 'tau_ok': 24, 'A_ok': 24, 'P0': 24, 'Pneg': 0, 'Ppos': 0} [3s]
+S1 L013/cells/cell_18_9_6_D3.txt hubs 27 {'hubs': 51, 'tau_ok': 51, 'A_ok': 51, 'P0': 51, 'Pneg': 0, 'Ppos': 0} [5s]
+S1 L013/cells/cell_19_12_7_D3.txt hubs 135 {'hubs': 186, 'tau_ok': 186, 'A_ok': 186, 'P0': 186, 'Pneg': 0, 'Ppos': 0} [23s]
+S1 TOTAL {'hubs': 186, 'tau_ok': 186, 'A_ok': 186, 'P0': 186, 'Pneg': 0, 'Ppos': 0} per G-cell {'L012/cells/cell_6_3_2_D3.txt': 4, 'L012/cells/cell_11_7_4_D3.txt': 10, 'L012/cells/cell_12_6_4_D3.txt': 7, 'L012/cells/cell_13_9_5_D3.txt': 3, 'L013/cells/cell_18_9_6_D3.txt': 27, 'L013/cells/cell_19_12_7_D3.txt': 135} H cells {(10, 7, 4): 4, (15, 11, 6): 10, (16, 10, 6): 7, (17, 13, 7): 3, (22, 13, 8): 27, (23, 16, 9): 135}
+S2 {'tested': 400, 'ok': 400}
+S3 L012/cells/cell_13_9_5_D3.txt {'R': 25, 'two': 910, 'two_ok': 910, 'one': 262, 'one_ok': 262} [23s]
+S3 L012/cells/cell_15_11_6_D3.txt {'R': 44, 'two': 1762, 'two_ok': 1762, 'one': 478, 'one_ok': 478} [24s]
+S3 L012/cells/cell_17_13_7_D3.txt {'R': 50, 'two': 2076, 'two_ok': 2076, 'one': 550, 'one_ok': 550} [24s]
+S3 L013/cells/cell_19_12_7_D3.txt {'R': 75, 'two': 4445, 'two_ok': 4445, 'one': 938, 'one_ok': 938} [26s]
+S3 L012/cells/cell_14_12_6_D3.txt {'R': 77, 'two': 4467, 'two_ok': 4467, 'one': 950, 'one_ok': 950} [26s]
+S3 L012/cells/cell_12_10_5_D3.txt {'R': 102, 'two': 4693, 'two_ok': 4693, 'one': 1094, 'one_ok': 1094} [26s]
+S3 TOTAL {'R': 102, 'two': 4693, 'two_ok': 4693, 'one': 1094, 'one_ok': 1094}
+done [26s]
