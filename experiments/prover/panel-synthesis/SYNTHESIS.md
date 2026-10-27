@@ -167,6 +167,11 @@ If the criterion is read literally as "distance to a proof of I11 itself": L022 
   - Data: among the 483 stored tight and slack-1 graphs with Delta <= 3 and at most 26 vertices, role_b is non-zero only for E_1 (L017 C5, L020 C3).
   - Data: the 36 classes of (26,22,11,3) and the 45 known (29,23,12) classes have no NC pair at all.
 - **KT form** (needed by L021 for G1). Let H be a minimal counterexample to KT^{L*}. Then H contains no E1-hub with d(x) = d(y) = d(z) = 2 whose outer triple {a,b,c} has no two members in a common minimum transversal of G' = H - {v,x,y,z}. In such a hub tau(H) = tau(G') + 2 and A(G') = A(H) + 16 <= 15.
+  - Data [verified-here as a probe, judge, unrefereed; probe_e1hub.py]. I scanned every connected class with Delta <= 3 in the 48 stored D3 cell lists with A <= 15 and s >= 0 (6 <= n' <= 26).
+  - b-configurations whose E1-hub lies in C_3 occur only for n' <= 19, in six cells: (6,3,2) 4, (11,7,4) 10, (12,6,4) 7, (13,9,5) 3, (18,9,6) 27, (19,12,7) 135.
+  - All 186 resulting hubs H land in (10,7,4), (15,11,6), (16,10,6), (17,13,7), (22,13,8), (23,16,9), and every one of them has P(H) = A + DEF = 0 exactly: KT equality, not failure.
+  - The 1,602 stored classes with 20 <= n' <= 23 and A <= 15 have no b-configuration at all. These cells are (20,11,7), (20,15,8), (21,10,7), (21,14,8), (22,13,8), (22,17,9), (23,16,9).
+  - So on stored data the E1-hub mechanism never reaches n(H) >= 25.
 
 **Lemma A (minimal apex)** [derived-here, judge, unrefereed; this is what makes the KT form the decisive case for L021]. Let H be a minimal counterexample to KT^{L*} in which every degree-3 vertex v is a (D1) apex with k_v = 3. Proposition 8 gives exactly this when the exceptions of G2 do not occur. Choose v and a special component F_v of H - v with |V(F_v)| minimum.
 - (a) Every vertex w of F_v with d_H(w) = 3 has v in F_w.
@@ -186,7 +191,7 @@ If the criterion is read literally as "distance to a proof of I11 itself": L022 
 
 So, given G2, KT* for n >= 67 reduces to the KT form of the E1-hub lemma. The range 25 <= n <= 66 is bounded, but far too large to enumerate, and needs a structural argument.
 
-**Why this lemma is not sufficient for L020 and L022.** Those routes also need C1-big (pattern (a)), and by L020 Remark 4.6 that is the core case of I11 itself. Only L021's change of potential removes pattern (a). A note on difficulty: in the KT form G' may have large I11 slack, because A(G') <= 15 permits slack of order 0.1 n in sparse graphs. So the KT form may be harder to prove than the I11 form, which assumes s(G) <= 1. The E1-hub mechanism is also how the known special pieces arise. The triangle (6,3,2) has the four b-configurations {2,4,6}, {1,2,6}, {2,3,4}, {4,5,6}, and its four E1-hubs give two of the four (10,7,4) classes with Delta <= 3 (L020 C9). By the slack arithmetic (2 - 2 = 0), the three (13,9,5) classes with a b-configuration give tight (17,13,7) graphs whenever the extension lies in C; I did not check that it does. So it is also the most likely source of a counterexample to KT*. Hence step 1 below.
+**Why this lemma is not sufficient for L020 and L022.** Those routes also need C1-big (pattern (a)), and by L020 Remark 4.6 that is the core case of I11 itself. Only L021's change of potential removes pattern (a). A note on difficulty: in the KT form G' may have large I11 slack, because A(G') <= 15 permits slack of order 0.1 n in sparse graphs. So the KT form may be harder to prove than the I11 form, which assumes s(G) <= 1. The E1-hub mechanism is also how the known special pieces arise. The triangle (6,3,2) has the four b-configurations {2,4,6}, {1,2,6}, {2,3,4}, {4,5,6}, and its four E1-hubs give two of the four (10,7,4) classes with Delta <= 3 (L020 C9). My probe (Appendix) confirms that the three (13,9,5) classes with a b-configuration give tight (17,13,7) graphs in C_3. So it is also the most likely source of a counterexample to KT*. Hence step 1 below.
 
 ## 4. Cross-pollination
 
@@ -207,7 +212,10 @@ So, given G2, KT* for n >= 67 reduces to the KT form of the E1-hub lemma. The ra
 
 ## 5. Recommended next steps (ordered)
 
-1. **[worker, about 3 h wall, one process]** Targeted falsifier for KT* via the E1-hub mechanism. This decides whether L021 deserves a prover. Spec:
+1. **[worker, about 3 h wall, one process]** Targeted falsifier for KT* via the E1-hub mechanism. This decides whether L021 deserves a prover.
+   - Already done by the judge's probe: the connected-G' pass over the 48 stored D3 cells with A <= 15 (0 counterexamples; Section 3).
+   - What remains: the missing G' cells with A <= 15 at n' = 25, 26, namely (25,14,9,3), (25,15,9,3), (26,13,9,3), (26,14,9,3), (26,17,10,3), (26,18,10,3), plus the unrefereed n = 27, 28 lists; the disjoint-union inputs; and the generator pass.
+   Spec:
    - Inputs: all stored connected class lists with Delta <= 3. These are experiments/20261027-0300-transversal-richness/inputs/, the extracted tarballs in experiments/prover/L017/out/ (L012 to L016), and the unrefereed n = 27, 28 lists in experiments/20261027-0340-induction-n28-n29-f25/out/cells.
    - Main pass: for every class G' with A(G') <= 15, at any slack:
      - enumerate all minimum transversals;
@@ -257,4 +265,7 @@ All checks were run from experiments/prover/panel-synthesis/checks/ with `nice -
   Q10 realizable as sub-hypergraph of a (4,5)-set: False
   all 6-edge subsets realizable: True
   ```
+- `cd experiments/prover/L017/out && timeout 1700 nice -n 10 python3 ../../panel-synthesis/checks/probe_e1hub.py $(cat ../../panel-synthesis/checks/probe_cells.txt)` produced checks/probe_e1hub_output.txt.
+  - This is a probe: it uses L021's kt.py for tau, minimum transversals and DEF, and my own linear / F7 / (P3) code for membership in C_3.
+  - Result: 48 cells, 186 b-configurations with the hub in C_3 (cells listed in Section 3), and every H has P = A + DEF = 0 (no counterexample). There are no b-configurations in any class with 20 <= n' <= 26 in these lists.
 - Hand checks: every step listed under "Proved" in Section 1 was verified line by line. Lemma A and L021 additions (a) and (b) are my own derivations and have not been refereed.
