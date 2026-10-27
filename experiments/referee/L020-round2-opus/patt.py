@@ -91,6 +91,7 @@ def analyse(K, v):
                 w = max(K.V) + 1
                 EF = [K.E[i] for i in range(len(K.E)) if em >> i & 1] + [tuple(sorted((w,) + tuple(P1))), tuple(sorted((w,) + tuple(ce))) ]
                 if in_C(list(Vc) + [w], EF): fails.append("f:F1+w in C")
+                detail = ('F1', (len(comps[k1][0]), popc(comps[k1][1]), K.tau_mask(comps[k1][1])), 'F2', (len(comps[k2][0]), popc(comps[k2][1]), K.tau_mask(comps[k2][1])))
             else:
                 pat = 'c'; fails.append("iv:two pairs in one component with r=2")
         else:
@@ -150,4 +151,4 @@ def analyse(K, v):
                 if not (NC(cf, P1[0], f) and NC(cf, P1[1], f)): fails.append("i3:cond")
         else:
             pat = 'i>3'; fails.append("v:r>3")
-    return dict(pattern=pat, cells=sorted(cells), iso=len(iso), sK=sK, fails=fails)
+    return dict(pattern=pat, cells=sorted(cells), detail=detail, iso=len(iso), sK=sK, fails=fails)

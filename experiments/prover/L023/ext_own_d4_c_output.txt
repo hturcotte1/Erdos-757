@@ -4,3 +4,9 @@ INPUT 46 covers 4320 pairs 204 extensions 116 EQUAL
 INPUT 47 covers 4290 pairs 204 extensions 116 EQUAL
 INPUT 48 covers 4170 pairs 219 extensions 116 EQUAL
 INPUT 49 covers 4770 pairs 190 extensions 108 EQUAL
+INPUT 50 covers 4410 pairs 189 extensions 116 EQUAL
+INPUT 51 covers 4770 pairs 189 extensions 108 EQUAL
+INPUT 52 covers 4170 pairs 219 extensions 116 EQUAL
+INPUT 53 covers 4500 pairs 190 extensions 116 EQUAL
+INPUT 54 covers 4470 pairs 190 extensions 110 EQUAL
+SUMMARY compared 11 equal 11 different 0 extensions(own) 1253 max_covers 4770 secs 221.3

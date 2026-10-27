@@ -1,0 +1,62 @@
+(3,1,1) s=0 A=-16  ->  refereed L017/out D3 1 classes
+(6,3,2) s=2 A=3  ->  refereed L017/out D3 1 classes
+(8,5,3) s=1 A=-5  ->  refereed L017/out D3 2 classes
+(9,4,3) s=2 A=-13  ->  refereed L017/out D3 1 classes
+(10,7,4) s=0 A=-13  ->  refereed L017/out D3 4 classes
+(11,6,4) s=1 A=-21  ->  refereed L017/out D3 0 classes
+(11,7,4) s=3 A=14  ->  refereed L017/out D3 35 classes
+(12,6,4) s=4 A=6  ->  refereed L017/out D3 4 classes
+(12,10,5) s=1 A=14  ->  refereed L017/out D3 149 classes
+(13,8,5) s=0 A=-29  ->  refereed L017/out D3 0 classes
+(13,9,5) s=2 A=6  ->  refereed L017/out D3 84 classes
+(14,7,5) s=1 A=-37  ->  refereed L017/out D3 0 classes
+(14,8,5) s=3 A=-2  ->  refereed L017/out D3 9 classes
+(14,12,6) s=0 A=6  ->  refereed L017/out D3 2 classes
+(15,7,5) s=4 A=-10  ->  refereed L017/out D3 2 classes
+(15,11,6) s=1 A=-2  ->  refereed L017/out D3 19 classes
+(16,9,6) s=0 A=-45  ->  refereed L017/out D3 0 classes
+(16,10,6) s=2 A=-10  ->  refereed L017/out D3 16 classes
+(17,8,6) s=1 A=-53  ->  refereed L017/out D3 0 classes
+(17,9,6) s=3 A=-18  ->  refereed L017/out D3 0 classes
+(17,13,7) s=0 A=-10  ->  refereed L017/out D3 6 classes
+(18,9,6) s=6 A=9  ->  refereed L017/out D3 22 classes
+(18,12,7) s=1 A=-18  ->  refereed L017/out D3 0 classes
+(19,10,7) s=0 A=-61  ->  refereed L017/out D3 0 classes
+(19,11,7) s=2 A=-26  ->  refereed L017/out D3 0 classes
+(19,12,7) s=4 A=9  ->  refereed L017/out D3 833 classes
+(20,10,7) s=3 A=-34  ->  refereed L017/out D3 0 classes
+(20,11,7) s=5 A=1  ->  refereed L017/out D3 45 classes
+(20,14,8) s=0 A=-26  ->  refereed L017/out D3 0 classes
+(20,15,8) s=2 A=9  ->  refereed L017/out D3 953 classes
+(21,10,7) s=6 A=-7  ->  refereed L017/out D3 5 classes
+(21,13,8) s=1 A=-34  ->  refereed L017/out D3 0 classes
+(21,14,8) s=3 A=1  ->  refereed L017/out D3 299 classes
+(21,18,9) s=0 A=9  ->  refereed L017/out D3 0 classes
+(22,11,8) s=0 A=-77  ->  refereed L017/out D3 0 classes
+(22,12,8) s=2 A=-42  ->  refereed L017/out D3 0 classes
+(22,13,8) s=4 A=-7  ->  refereed L017/out D3 85 classes
+(22,17,9) s=1 A=1  ->  refereed L017/out D3 37 classes
+(23,11,8) s=3 A=-50  ->  refereed L017/out D3 0 classes
+(23,12,8) s=5 A=-15  ->  refereed L017/out D3 0 classes
+(23,15,9) s=0 A=-42  ->  refereed L017/out D3 0 classes
+(23,16,9) s=2 A=-7  ->  refereed L017/out D3 178 classes
+(24,12,8) s=8 A=12  ->  OWN out/cells D3 129 classes
+(24,14,9) s=1 A=-50  ->  refereed L017/out D3 0 classes
+(24,15,9) s=3 A=-15  ->  refereed L017/out D3 0 classes
+(24,19,10) s=0 A=-7  ->  refereed L017/out D3 0 classes
+(25,12,9) s=0 A=-93  ->  refereed L017/out D3 0 classes
+(25,13,9) s=2 A=-58  ->  refereed L017/out D3 0 classes
+(25,14,9) s=4 A=-23  ->  seed cells_ref (computed-from-refereed, 0340 worker) D3 0 classes
+(25,15,9) s=6 A=12  ->  OWN out/cells D3 6849 classes
+(25,18,10) s=1 A=-15  ->  refereed L017/out D3 0 classes
+(26,13,9) s=5 A=-31  ->  OWN out/cells D3 0 classes
+(26,14,9) s=7 A=4  ->  NOT STORED
+(26,16,10) s=0 A=-58  ->  refereed L017/out D3 0 classes
+(26,17,10) s=2 A=-23  ->  seed cells_ref (computed-from-refereed, 0340 worker) D3 0 classes
+(26,18,10) s=4 A=12  ->  NOT STORED
+(27,13,9) s=8 A=-4  ->  NOT STORED
+(27,15,10) s=1 A=-66  ->  OWN out/cells D3 0 classes
+(27,16,10) s=3 A=-31  ->  OWN out/cells D3 0 classes
+(27,17,10) s=5 A=4  ->  NOT STORED
+(27,20,11) s=0 A=-23  ->  seed cells_ref (computed-from-refereed, 0340 worker) D3 0 classes
+(27,21,11) s=2 A=12  ->  NOT STORED

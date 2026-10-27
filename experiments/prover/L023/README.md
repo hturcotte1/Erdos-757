@@ -37,3 +37,7 @@ Tags: everything here is [verified-here] as an UNREFEREED computation unless sta
 | `new_claim_c25_output.txt` | `python3 scripts/new_claim.py --slug c25-witness-f25 --set-file experiments/prover/L023/c25_set.json --notes ...` (repo root) | frozen judge: PASS NO-IMPROVEMENT, claim C007 |
 
 Test: `python3 -m pytest -q tests/test_c25_witness.py` (3 passed).
+
+Added (Proposition 6 of the certificate): `core14.py` (`core14_output.txt`: the smallest non-realizable tight pieces of classes 5 and 7 of
+cell(14,12,6,4) have 8 vertices) and `h8.py` (`h8_output.txt`: the configuration Q8 (called H8 in the script) is in C, not realizable
+(95 labellings), contained in every X_i, and in none of the 2,910 census patterns, A_base, C006, C25).

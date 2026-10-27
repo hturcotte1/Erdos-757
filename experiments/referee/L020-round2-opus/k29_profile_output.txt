@@ -1,0 +1,10 @@
+K29 from text: edges 23
+classes in json 45
+K29 text == class 0: True
+pattern totals over all degree-3 vertices: {'f': 162, 'a': 216, 'e': 72, 'b': 45} sum 495
+fails 0
+bE1+251910                               classes with >=1: 31   distribution of counts per class: {0: 14, 1: 19, 2: 10, 3: 2}
+e853+20158                               classes with >=1: 45   distribution of counts per class: {1: 18, 2: 27}
+f18137+1074                              classes with >=1: 27   distribution of counts per class: {0: 18, 1: 27}
+other:a:[(28, 20, 11)]                   classes with >=1: 45   distribution of counts per class: {2: 1, 3: 6, 4: 13, 5: 12, 6: 7, 7: 6}
+theta                                    classes with >=1: 45   distribution of counts per class: {3: 45}
