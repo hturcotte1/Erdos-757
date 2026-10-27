@@ -21,6 +21,8 @@ t0 = time.time()
 for ck in cells:
     n0, m0, t_ = eval(ck); info = inv[ck]
     gs = [g for g in kt.read_cell(info['file']) if good(g)]
+    if os.environ.get('PART'):
+        pi, pk = map(int, os.environ['PART'].split('/')); gs = gs[pi::pk]
     if not gs:
         out.write(json.dumps(dict(type='cell', cell=ck, A=info['A'], D=info['D'], graphs=0, file=info['file'].split('experiments/')[-1])) + '\n'); out.flush()
         continue
