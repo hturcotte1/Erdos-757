@@ -1,0 +1,12 @@
+CLASS 0 n=14 mine=REAL labellings_REAL=498 rexact=REAL rexact_labellings=498 AGREE {"labellings": 1420, "SINGULAR": 0, "NONINJ": 150, "NOTWS": 772, "NONLIN": 0, "APSET": 0, "REAL": 498} secs=2.4
+CLASS 1 n=14 mine=REAL labellings_REAL=282 rexact=REAL rexact_labellings=282 AGREE {"labellings": 1590, "SINGULAR": 0, "NONINJ": 480, "NOTWS": 828, "NONLIN": 0, "APSET": 0, "REAL": 282} secs=2.0
+CLASS 2 n=14 mine=REAL labellings_REAL=560 rexact=REAL rexact_labellings=560 AGREE {"labellings": 1596, "SINGULAR": 0, "NONINJ": 149, "NOTWS": 887, "NONLIN": 0, "APSET": 0, "REAL": 560} secs=2.1
+CLASS 3 n=14 mine=REAL labellings_REAL=569 rexact=REAL rexact_labellings=569 AGREE {"labellings": 1596, "SINGULAR": 0, "NONINJ": 183, "NOTWS": 844, "NONLIN": 0, "APSET": 0, "REAL": 569} secs=2.6
+CLASS 4 n=14 mine=REAL labellings_REAL=702 rexact=REAL rexact_labellings=702 AGREE {"labellings": 1712, "SINGULAR": 0, "NONINJ": 154, "NOTWS": 856, "NONLIN": 0, "APSET": 0, "REAL": 702} secs=3.1
+CLASS 5 n=14 mine=NOT labellings_REAL=0 rexact=NOT rexact_labellings=0 AGREE {"labellings": 807, "SINGULAR": 0, "NONINJ": 667, "NOTWS": 140, "NONLIN": 0, "APSET": 0, "REAL": 0} secs=0.8
+CLASS 6 n=14 mine=REAL labellings_REAL=446 rexact=REAL rexact_labellings=446 AGREE {"labellings": 1480, "SINGULAR": 0, "NONINJ": 194, "NOTWS": 840, "NONLIN": 0, "APSET": 0, "REAL": 446} secs=2.2
+CLASS 7 n=14 mine=NOT labellings_REAL=0 rexact=NOT rexact_labellings=0 AGREE {"labellings": 799, "SINGULAR": 0, "NONINJ": 587, "NOTWS": 212, "NONLIN": 0, "APSET": 0, "REAL": 0} secs=0.8
+CLASS 8 n=14 mine=REAL labellings_REAL=698 rexact=REAL rexact_labellings=698 AGREE {"labellings": 1716, "SINGULAR": 0, "NONINJ": 142, "NOTWS": 876, "NONLIN": 0, "APSET": 0, "REAL": 698} secs=2.8
+CLASS 9 n=14 mine=REAL labellings_REAL=430 rexact=REAL rexact_labellings=430 AGREE {"labellings": 1492, "SINGULAR": 0, "NONINJ": 193, "NOTWS": 869, "NONLIN": 0, "APSET": 0, "REAL": 430} secs=2.1
+CLASS 10 n=14 mine=REAL labellings_REAL=506 rexact=REAL rexact_labellings=506 AGREE {"labellings": 1495, "SINGULAR": 0, "NONINJ": 125, "NOTWS": 864, "NONLIN": 0, "APSET": 0, "REAL": 506} secs=2.5
+SUMMARY classes 11 agree 11 disagree 0

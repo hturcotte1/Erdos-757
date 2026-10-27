@@ -1,0 +1,2 @@
+JUDGE: PASS NO-IMPROVEMENT C007-c25-witness-f25 n=25 h=15 ratio=3/5 (0.600000) vs 4/7=0.571429
+saved: results/claims/C007-c25-witness-f25.json

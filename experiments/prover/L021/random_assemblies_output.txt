@@ -1,0 +1,1 @@
+seed 2: assemblies 782, connected in C3 361, with A<0 0 (by n: {}), KT failures 0, equality 0, min(A+DEF) None

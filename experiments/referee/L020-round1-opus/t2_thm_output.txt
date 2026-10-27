@@ -1,0 +1,1 @@
+Theorem 2: random linear Delta<=2 3-graphs tested 3000 (connected with m>=2: 596 ) failures 0

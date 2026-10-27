@@ -1,0 +1,2 @@
+SET A_base n=14 m=12 REALIZABLE {"labellings": 1596, "SINGULAR": 0, "NONINJ": 183, "NOTWS": 844, "NONLIN": 0, "APSET": 0, "REAL": 569} true_labelling=REAL solution_equals_normalized_set=True secs=3.0
+SET C006 n=21 m=19 REALIZABLE {"labellings": 23950, "SINGULAR": 0, "NONINJ": 2412, "NOTWS": 15816, "NONLIN": 0, "APSET": 0, "REAL": 5722} true_labelling=REAL solution_equals_normalized_set=True secs=87.4

@@ -1,3 +1,4 @@
 cell_17_13_7.txt (k, tau of edges meeting N[v]) : count {(6, 4): 24}
 cell_15_11_6.txt (k, tau of edges meeting N[v]) : count {(5, 4): 22, (6, 4): 124, (7, 5): 8}
 cell_22_17_9.txt (k, tau of edges meeting N[v]) : count {(6, 4): 380}
+cell_26_22_11.txt (k, tau of edges meeting N[v]) : count {(6, 4): 144}

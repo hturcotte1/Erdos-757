@@ -1,0 +1,1 @@
+Lemma 2.1: graphs 5389 failures 0 equality with |E|>0: 7 ['D]w', 'EErO', 'F?rEO', 'G?BEEG', 'H??EEBA', 'I???EB?oO', 'I?`bCqWX?']

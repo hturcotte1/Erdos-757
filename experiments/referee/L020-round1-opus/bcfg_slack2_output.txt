@@ -1,0 +1,6 @@
+6_3_2 classes 1 b-config (edges allowed) 1 b-config (not an edge) 1 e-config 1
+9_4_3 classes 1 b-config (edges allowed) 1 b-config (not an edge) 0 e-config 0
+10_8_4 classes 63 b-config (edges allowed) 1 b-config (not an edge) 0 e-config 25
+13_9_5 classes 84 b-config (edges allowed) 32 b-config (not an edge) 3 e-config 5
+16_10_6 classes 16 b-config (edges allowed) 16 b-config (not an edge) 0 e-config 0
+20_15_8 classes 953 b-config (edges allowed) 159 b-config (not an edge) 0 e-config 24

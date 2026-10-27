@@ -1,0 +1,10 @@
+A_base 14 APs 12 is_45 True alpha 8
+B11 [0, 2009010, 2901878, 3392944, 3459949, 3705482, 3750000, 3794746, 3884010, 4018020, 7500000] APs 8 is_45 True alpha 7
+C25 = [0, 136, 200, 243, 246, 249, 272, 286, 298, 323, 400, 528, 596, 1056, 1000000000, 16909350190, 23979971882, 27868723536, 28399336131, 30343711958, 30696250000, 31050593574, 31757475190, 32818700380, 60392500000]
+four-point subsets 12650 with < 5 distinct differences 0
+weak Sidon True
+3-term APs 20 (A_base 12 + B11 8) APs using both parts 0
+AP hypergraph in C: True in C ; tau = 10 minimum cover [0, 136, 200, 243, 272, 323, 1000000000, 16909350190, 31757475190, 32818700380]
+Sidon subset (complement of the minimum cover): size 15 is_sidon True
+e757.core.alpha(C25) = 15 ; h = n - tau = 15
+RESULT C25 is a 25-point (4,5)-set with h = 15

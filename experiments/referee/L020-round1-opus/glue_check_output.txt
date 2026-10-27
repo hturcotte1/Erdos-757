@@ -1,0 +1,6 @@
+(20,15,8): classes 953 with e-config 24 e-config counts [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] with b-config 159 with f-config 0 20s
+(8,5,3): e-config counts [2, 3] b [0, 0] f [0, 0]
+gluings 120 in C (Hall) 120 P3 exhaustive 120 Delta<=3 120 tau=12 120 connected 120 85s
+distinct WL classes among gluings: 45
+gluings with equal WL invariant but non-isomorphic: 0
+prover classes matched by an own gluing class: 45 of 45
