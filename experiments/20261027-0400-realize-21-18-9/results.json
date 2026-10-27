@@ -1,0 +1,312 @@
+{
+ "main_21_18_9_D4": {
+  "classes": 12,
+  "realizable": 0,
+  "per_class": [
+   {
+    "cls": 0,
+    "nodes": 4414,
+    "prunes": {
+     "EQ": 194,
+     "SIDON": 869,
+     "NONLIN": 0
+    },
+    "secs": 44.0
+   },
+   {
+    "cls": 1,
+    "nodes": 1129,
+    "prunes": {
+     "EQ": 99,
+     "SIDON": 232,
+     "NONLIN": 0
+    },
+    "secs": 13.1
+   },
+   {
+    "cls": 2,
+    "nodes": 1129,
+    "prunes": {
+     "EQ": 99,
+     "SIDON": 232,
+     "NONLIN": 0
+    },
+    "secs": 13.5
+   },
+   {
+    "cls": 3,
+    "nodes": 1129,
+    "prunes": {
+     "EQ": 99,
+     "SIDON": 232,
+     "NONLIN": 0
+    },
+    "secs": 14.6
+   },
+   {
+    "cls": 4,
+    "nodes": 1129,
+    "prunes": {
+     "EQ": 99,
+     "SIDON": 232,
+     "NONLIN": 0
+    },
+    "secs": 10.6
+   },
+   {
+    "cls": 5,
+    "nodes": 1107,
+    "prunes": {
+     "EQ": 87,
+     "SIDON": 246,
+     "NONLIN": 0
+    },
+    "secs": 11.5
+   },
+   {
+    "cls": 6,
+    "nodes": 1024,
+    "prunes": {
+     "EQ": 88,
+     "SIDON": 231,
+     "NONLIN": 0
+    },
+    "secs": 8.1
+   },
+   {
+    "cls": 7,
+    "nodes": 1107,
+    "prunes": {
+     "EQ": 87,
+     "SIDON": 246,
+     "NONLIN": 0
+    },
+    "secs": 9.1
+   },
+   {
+    "cls": 8,
+    "nodes": 1024,
+    "prunes": {
+     "EQ": 88,
+     "SIDON": 231,
+     "NONLIN": 0
+    },
+    "secs": 11.6
+   },
+   {
+    "cls": 9,
+    "nodes": 1107,
+    "prunes": {
+     "EQ": 87,
+     "SIDON": 246,
+     "NONLIN": 0
+    },
+    "secs": 10.2
+   },
+   {
+    "cls": 10,
+    "nodes": 1043,
+    "prunes": {
+     "EQ": 91,
+     "SIDON": 224,
+     "NONLIN": 0
+    },
+    "secs": 9.1
+   },
+   {
+    "cls": 11,
+    "nodes": 1107,
+    "prunes": {
+     "EQ": 87,
+     "SIDON": 246,
+     "NONLIN": 0
+    },
+    "secs": 11.4
+   }
+  ]
+ },
+ "candidates_25_23_11": [
+  {
+   "name": "K21_0",
+   "n": 25,
+   "m": 23,
+   "realizable": false,
+   "realizable_labellings": 0,
+   "nodes": 1534,
+   "prunes": {
+    "EQ": 113,
+    "SIDON": 318,
+    "NONLIN": 0
+   },
+   "secs": 22.9,
+   "sub21_edges": 18,
+   "sub21_iso_class_index": 3
+  },
+  {
+   "name": "K21_1",
+   "n": 25,
+   "m": 23,
+   "realizable": false,
+   "realizable_labellings": 0,
+   "nodes": 1141,
+   "prunes": {
+    "EQ": 98,
+    "SIDON": 239,
+    "NONLIN": 0
+   },
+   "secs": 20.4,
+   "sub21_edges": 18,
+   "sub21_iso_class_index": 9
+  },
+  {
+   "name": "K21_2",
+   "n": 25,
+   "m": 23,
+   "realizable": false,
+   "realizable_labellings": 0,
+   "nodes": 1141,
+   "prunes": {
+    "EQ": 98,
+    "SIDON": 239,
+    "NONLIN": 0
+   },
+   "secs": 14.8,
+   "sub21_edges": 18,
+   "sub21_iso_class_index": 7
+  },
+  {
+   "name": "K21_3",
+   "n": 25,
+   "m": 23,
+   "realizable": false,
+   "realizable_labellings": 0,
+   "nodes": 1427,
+   "prunes": {
+    "EQ": 112,
+    "SIDON": 310,
+    "NONLIN": 0
+   },
+   "secs": 20.7,
+   "sub21_edges": 18,
+   "sub21_iso_class_index": 5
+  }
+ ],
+ "cell_25_23_11_D4": {
+  "classes": 6,
+  "realizable": 0,
+  "rexact_c_nodes": [
+   1502,
+   1502,
+   1395,
+   4618,
+   4618,
+   4449
+  ],
+  "python_rexact": "agrees (results_25_23_11_D4.json)"
+ },
+ "glue32": {
+  "route_b_17_13_7_plus_14_12_6": {
+   "b": {
+    "dec": [
+     [
+      17,
+      13,
+      7
+     ],
+     [
+      14,
+      12,
+      6
+     ]
+    ],
+    "inputs": 110,
+    "hits_in_C": 480,
+    "ext": {
+     "graphs": 110,
+     "bad_tau": 0,
+     "tg_too_small": 0,
+     "searched": 110,
+     "max_min_covers": 65508,
+     "nodes": 1400628261,
+     "hits_F7free": 715,
+     "hits_in_C": 480
+    },
+    "connected_hits": 480,
+    "classes": 72,
+    "filt": "SUMMARY tag=HIT NV=32 total=480 bad_labels=0 linear=480 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=480 survivors_connected=480 wrong_tau_dropped=0 connected_all=480 tau_range=[-1,-1] maxdeg_max=4"
+   },
+   "c": {
+    "dec": [
+     [
+      3,
+      1,
+      1
+     ],
+     [
+      14,
+      12,
+      6
+     ],
+     [
+      14,
+      12,
+      6
+     ]
+    ],
+    "inputs": 66,
+    "hits_in_C": 0,
+    "ext": {
+     "graphs": 66,
+     "bad_tau": 0,
+     "tg_too_small": 0,
+     "searched": 66,
+     "max_min_covers": 75843,
+     "nodes": 520800867,
+     "hits_F7free": 84,
+     "hits_in_C": 0
+    },
+    "connected_hits": 0,
+    "classes": 0,
+    "filt": null
+   },
+   "a": {
+    "dec": [
+     [
+      21,
+      18,
+      9
+     ],
+     [
+      10,
+      7,
+      4
+     ]
+    ],
+    "inputs": 60,
+    "hits_in_C": 408,
+    "ext": {
+     "graphs": 60,
+     "bad_tau": 0,
+     "tg_too_small": 0,
+     "searched": 60,
+     "max_min_covers": 65485,
+     "nodes": 436880930,
+     "hits_F7free": 3105,
+     "hits_in_C": 408
+    },
+    "connected_hits": 408,
+    "classes": 72,
+    "filt": "SUMMARY tag=HIT NV=32 total=408 bad_labels=0 linear=408 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=408 survivors_connected=408 wrong_tau_dropped=0 connected_all=408 tau_range=[-1,-1] maxdeg_max=4"
+   }
+  },
+  "route_b_realizable": 0,
+  "route_b_embed": "embed_b.json: all 72 classes contain a non-realizable sub-pattern; rexact_c: 72/72 NOT; python rexact first 15 NOT (glue32_b_real.log)",
+  "route_a": "21+10: moot (the (21,18,9) component is one of the 12 non-realizable classes); not enumerated",
+  "route_c": "3+14+14: see jobc/ and finish_c.log (running at hand-off)"
+ },
+ "C006": {
+  "claim": "results/claims/C006-tight-21pt-h12.json",
+  "judge": "JUDGE: PASS NO-IMPROVEMENT n=21 h=12 ratio=4/7",
+  "class_index_in_cell_21_19_9_D4_list": 43
+ }
+}
