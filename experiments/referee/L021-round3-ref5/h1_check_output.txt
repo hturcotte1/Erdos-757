@@ -1,0 +1,2 @@
+pieces=32 (R,u) cases=446 failures=0 cases where max_(S>=e') e(S)-|S| = -2 attained only at S=e': 446
+ALL OK

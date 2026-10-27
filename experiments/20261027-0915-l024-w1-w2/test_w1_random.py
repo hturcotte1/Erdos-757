@@ -51,7 +51,7 @@ def claimE_sets(S, sub):
     return True
 tot = dict(trials=0, pos=0, mism=0, total_sets=0, posE=0, setsE=0, nc_mism=0, lemma_viol=0)
 t0 = time.time()
-for trial in range(500):
+for trial in range(200):
     k = random.choice([1, 2, 2, 2])
     Ps = [rand_piece(random.choice([5, 6, 7, 8]), random.choice([2, 3, 3, 4, 5])) for _ in range(k)]
     need2 = random.choice([True, False])

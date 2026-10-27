@@ -18,6 +18,7 @@ def bits(x):
 class Setup:
     def __init__(self, Ps, need2=True, nc_only=False):
         self.Ps = Ps; self.k = k = len(Ps)
+        self.nc_only = nc_only
         self.offs = []; o = 0
         for P in Ps: self.offs.append(o); o += P['n']
         self.N = N = o
@@ -47,16 +48,27 @@ class Setup:
             # NC-vertex filter (Lemma NC in README): under Claim B + Claim E every vertex of a star edge lies in a pair of vertices of
             # its piece that is contained in no minimum transversal.
             ncv = set()
+            self.ncnb = {}
             for i, P in enumerate(Ps):
                 for x in range(P['n']):
                     for y in range(P['n']):
                         if x != y and not any((T >> x & 1) and (T >> y & 1) for T in P['mts']):
-                            ncv.add(x + self.offs[i]); break
+                            ncv.add(x + self.offs[i]); self.ncnb.setdefault(x + self.offs[i], set()).add(y + self.offs[i])
             usable = [x for x in usable if x in ncv]
         cands = []
         for a, b, c in itertools.combinations(usable, 3):
             if (a, b) in covered or (a, c) in covered or (b, c) in covered: continue
             if need2 and len({self.piece_of[a], self.piece_of[b], self.piece_of[c]}) < 2: continue
+            if nc_only:
+                # Lemma NC (trace form): for every piece i met by the edge, the trace A has a common NC-neighbour (the partner trace A'
+                # must satisfy A x A' subset of the non-co-transversal pairs).
+                okc = True
+                for pi in {self.piece_of[a], self.piece_of[b], self.piece_of[c]}:
+                    tr = [x for x in (a, b, c) if self.piece_of[x] == pi]
+                    common = set(self.ncnb.get(tr[0], ()))
+                    for x in tr[1:]: common &= self.ncnb.get(x, set())
+                    if not common: okc = False; break
+                if not okc: continue
             cands.append((a, b, c))
         self.cands = cands
         self.nc = len(cands)
@@ -157,6 +169,22 @@ class Setup:
                 if o | (1 << j) == full: return True
         return False
 
+def unsat_packing(S, edges):
+    """Lemma NC (vertex form): every vertex a of every star edge e needs an NC-neighbour (same piece) on another star edge.
+    Returns the size of a greedy packing of unsatisfied vertices with pairwise disjoint NC-neighbour sets (a lower bound on the
+    number of additional vertices still needed)."""
+    c = 0; used = set()
+    for p, e in enumerate(edges):
+        for a in e:
+            nb = S.ncnb.get(a, ())
+            sat = False
+            for q, f in enumerate(edges):
+                if q != p and any(y in nb for y in f): sat = True; break
+            if sat: continue
+            if used.isdisjoint(nb):
+                used |= nb; c += 1
+    return c
+
 def search(S, stats, c1range=None):
     K = S.k + 1
     sols = set()
@@ -187,6 +215,8 @@ def search(S, stats, c1range=None):
             ci = b.bit_length() - 1
             # add edge ci
             e = S.cands[ci]
+            if S.nc_only and unsat_packing(S, [S.cands[c] for c in chosen] + [e]) > 3 * (K - L - 1):
+                continue
             nb = allowed_base & ~S.incompat[ci] & ~b
             newc = []
             for x in e:

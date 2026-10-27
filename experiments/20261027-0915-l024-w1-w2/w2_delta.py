@@ -53,6 +53,22 @@ def place_options(Cx, targets_F, existingD, base_n, Pedges, E1_):
             yield [('N',)] + rest
     yield from rec(0, frozenset(), frozenset())
 
+def gen_opts3(P1, w, w2, Dlist, E1, TF_w2):
+    """all (P3, v3, Cx3, assign3) placements of a piece P3 at v (comps F-type onto comps of P1 - w', D-type onto Dlist, or new) with
+    w in the image of the F-type comps and every edge at v3 meeting the F-type image."""
+    for P3 in big:
+        for v3 in range(P3['n']):
+            if P3['deg'][v3] != 2: continue
+            Cx3 = CM_[(P3['name'], v3)]
+            for assign3 in place_options(Cx3, TF_w2, Dlist, P1['n'], P3['edges'], E1):
+                Fimg = set()
+                for (comp, iv), a in zip(Cx3, assign3):
+                    if a[0] == 'F': Fimg |= set(a[2][x] for x in comp)
+                if w not in Fimg: continue
+                if not all(any(a[0] == 'F' and (x in comp) and (x in a[2]) for (comp, iv), a in zip(Cx3, assign3) for x in e if x != v3)
+                           for e in P3['edges'] if v3 in e): continue
+                yield (P3, v3, Cx3, assign3)
+
 stats = dict(P1w=0, P2_placements=0, P3_placements=0, glue_candidates=0, struct_ok=0, n_le_46=0, n_ge_25_le_46=0, inC3=0, A_nonneg=0,
              A_neg=0, Pneg=0, inC3_n_ge_25=0, A_neg_n_ge_25=0)
 byn = {}
@@ -67,7 +83,7 @@ for P1 in big[lo:hi]:
             stats['P1w'] += 1
             TF_w = CM_[(P1['name'], w)]      # comps of P1 - w   (F-type targets for P2)
             TF_w2 = CM_[(P1['name'], w2)]    # comps of P1 - w'  (F-type targets for P3)
-            # w' must be inside S12 (a comp of P1-w) and w inside S13
+            opts3_empty = list(gen_opts3(P1, w, w2, [], E1, TF_w2))
             for P2 in big:
                 for v2 in range(P2['n']):
                     if P2['deg'][v2] != 2: continue
@@ -100,11 +116,9 @@ for P1 in big[lo:hi]:
                             if a[0] == 'N':
                                 ids = frozenset(mp[x] for x in comp)
                                 Dlist.append((ids, iv, [e for e in H2edges if all(y in ids for y in e)]))
-                        for P3 in big:
-                            for v3 in range(P3['n']):
-                                if P3['deg'][v3] != 2: continue
-                                Cx3 = CM_[(P3['name'], v3)]
-                                for assign3 in place_options(Cx3, TF_w2, Dlist, n1, P3['edges'], E1):
+                        for (P3, v3, Cx3, assign3) in (opts3_empty if not Dlist else gen_opts3(P1, w, w2, Dlist, E1, TF_w2)):
+                            if True:
+                                if True:
                                     stats['P3_placements'] += 1
                                     mp3 = {v3: n1}; nx3 = H2n
                                     for (comp, iv), a in zip(Cx3, assign3):

@@ -1,0 +1,53 @@
+diff --git a/experiments/prover/L021/README.md b/experiments/prover/L021/README.md
+index b6d22b7..707a160 100644
+--- a/experiments/prover/L021/README.md
++++ b/experiments/prover/L021/README.md
+@@ -1,6 +1,6 @@
+# L021: the Henning–Yeo deficiency route (prover work folder)
+
+Certificate: results/proofs/L021-i11-deficiency-route.md (submitted 2026-10-27; [-unrefereed;-]{+under referee (round 2: fable ACCEPT, opus editorial items applied);+} partial proof with GAPs G1–G4).
+Tags below follow that file: [derived-here] proofs there, [verified-here as computation, unrefereed] the outputs here.
+
+## Question
+@@ -16,7 +16,7 @@ special pieces of (sum of weights - 35 |E*|). KT implies 11 tau <= (3 + 1/6) n +
+because any epsilon < 3/17 suffices. The special family, computed exactly from the stored refereed lists, is 32 pieces among the connected members of C_3 with at most 24 vertices (at most 27 by the unrefereed run experiments/20261027-0730-kt-cells, see its README)
+(E_1; (8,5,3) x2; (10,7,4) x4; (15,11,6) x19; (17,13,7) x6), and KT holds on all of C_3 up to 24 vertices; all other
+special-candidate graphs are equality cases. Proved: Henning–Yeo Claims A–F, vertex co-transversality, the free-hub local
+structure (D1)–(D3) at degree-3 vertices, edge-criticality, KT for max degree <= 2 (via Tutte–Berge; [-a consequence of-]{+closely related to+} Henning–Yeo EJC 24(2) (2017) P2.50 Prop. 9, tau = N - nu(G), plus Chvatal–Hanson-type matching bounds for subcubic graphs, so not claimed as new; novelty left to the scout), Claim H under a
+replacement hypothesis, and two small-subgraph exclusions. Not proved: the impure (D1)–(D3) configurations (G1), Claim H in
+the cases where the replacement graph leaves C_3 (G2), degree-2 vertices (G3), and finiteness of the special family (G4).
+
+diff --git a/results/proofs/L021-i11-deficiency-route.md b/results/proofs/L021-i11-deficiency-route.md
+index 75aceee..e5f7dfb 100644
+--- a/results/proofs/L021-i11-deficiency-route.md
++++ b/results/proofs/L021-i11-deficiency-route.md
+@@ -1,13 +1,13 @@
+# A Henning–Yeo deficiency route on the class C: the free-hub key inequality KT (ε = 1/6), its reduction to c* ≥ 35/66, Claims A–F, the structure at degree-3 vertices, the case Δ ≤ 2, and the computed special family (32 pieces among the connected members of $C_3$ with at most 24 vertices; at most 27 by the unrefereed run experiments/20261027-0730-kt-cells)
+CLAIM-TYPE: lemma (a framework plus a partial proof; NO bound is claimed. If Conjecture KT* below were proved it would give $c_*\ge35/66>9/17$; the proof below is incomplete, the open steps are marked GAP. Conjecture KT* is a NEW conjecture introduced here: it is not known to follow from I11 and not known to imply I11, see the remark after it)
+TYPE: proof (partial) + computation
+STATUS: PARTIAL (gaps G1-G4); revised 2026-10-27 09:10 UTC after referee round 1 (opus NEEDS-WORK = editorial; fable ACCEPT WITH FIXES; Theorem 7 computations reproduced independently by both); submitted 2026-10-27 07:00 UTC. Written by the prover (route L021 of the orchestrator's spec: the Henning–Yeo deficiency formulation). Folder: [-experiments/prover/L021/.-]{+experiments/prover/L021/.; round 2 (fable ACCEPT; opus NEEDS-WORK = one symbol in Step 8.4 and three wording items): applied 09:39 UTC+}
+DEPENDS ON:
+- L016 [verified-here, ACCEPTED x3, K61]: I11 holds on $C$ for all graphs with at most 27 vertices. Used in the cell scan of Step 7 (cells with I11 slack $<0$ are void), for $J_{1/6}$ of the pieces (Theorem 2), in Proposition 9 (the small-subgraph exclusions, 9.2 and 9.3 end with a contradiction with L016) and in the disconnected case of Theorem 7(v) (Step 7.6).
+- The stored refereed cell lists of L012–L016 (tarballs experiments/prover/L012/cells.tar.gz, L013/cells.tar.gz, L014/cells.tar.gz, L016/cells_new.tar.gz; extracted copies in experiments/prover/L017/out/, used read-only): their completeness (L013 Lemma E′) is used in Theorem 7(i),(ii).
+- K8 [published: Henning–Yeo, Graphs Combin. 37 (2021), $17\tau\le5n+3m$ for linear $F_7$-free 3-graphs]: only to prune the cell scan of Step 7.
+- K4, K5, K6, K7 [published: Ma–Tang; Gyárfás–Lehel]: $h(A)=n-\tau(H(A))$, $H(A)\in C$, $m\le n-2$; only in Theorem 1(b).
+- L017 [ACCEPTED, [-K64;-]{+K64 for Theorems 1–6; the $\Delta\le2$ dual-graph formula is L017 Theorem 7, K65 (published, re-proved);+} round 1: two referees, no mathematical error; round 2: two referees ACCEPT]: Step 0 facts 0.1–0.7 (additivity, heredity of $C$, $\tau(H-Z)$ bounds, co-transversality), Theorem 7 Step 4.2 ($\tau(H)=m-\nu(G)$ for $\Delta\le2$; also [published] Henning–Yeo EJC 24(2) (2017) P2.50 Prop. 9), and Steps 7.3–7.4 (the Hall-deficient patterns of a degree-3 vertex over a disjoint union of graphs with "free choice", and their equivalent conditions); these steps use only additivity and free choice. Computation C5 of L017 (role tables, [verified-here as a computation, unrefereed]) is used in Theorem 7(v) only, and is recomputed independently here (C8).
+- Tutte–Berge formula [published: Berge 1958; quoted as Theorem 19 in Henning–Yeo arXiv:1802.01825 §7.2] (Theorem 6); Hall's theorem [published: Hall 1935; Theorem 20 there] (Theorem 3, Proposition 8).
+- Henning–Yeo arXiv:1802.01825 §7 [published preprint; kb/literature/sources/henning_yeo/henning_yeo_1802.01825_sec7_deficiency.txt]: the template (special sets, deficiency, Claims A–H). Every step taken from it is re-proved here for our setting.
+- Not used: realizability, K30, K31, and L018 (K67), L019 (K68), L020 (K69), none of which was read when this certificate was written (their statuses are those of kb/known_results.md: K67 partial certificate on Conjecture RU, K68 partial certificate on Conjecture C1, K69 refutation of Conjecture T″), Conjectures T, T′, T″, RU, C1, P2.
+@@ -63,7 +63,7 @@ $$P(H):=A(H)+\mathrm{DEF}(H).\qquad\textbf{KT}^L:\ P(H)\ge0\ \text{for every }H\
+
+**Conjecture KT*** [conjecture]: KT$^{L^*}$ holds on $C_3$. By Theorem 2 it implies $J_{1/6}$ on $C$ and $c_*\ge35/66$ (goal (B)). Evidence: Theorem 7(i),(ii),(iv), Theorem 6, and Theorems 3–5 (structure of a hypothetical minimal counterexample).
+
+*Remark (status of KT*).* KT* is a NEW conjecture, introduced in this certificate. It is not known to follow from I11 and not known to imply I11 (it implies only $J_{1/6}$). I11 gives $A=12s-9n+11m\ge0$ only when $11m\ge9n$; in the sparse region it gives nothing, and KT needs DEF to compensate: e.g. the cell $(21,10,7)$ has $s=6$, $A=-7$, and $(27,13,9)$ has $s=8$, $A=-4$. It is untested for $n\ge28$. The unrefereed computation experiments/20261027-0730-kt-cells (README there; [verified-here as a computation, [-unrefereed])-]{+unrefereed]; it reuses as empty the cells $(26,13,9,3)$, $(27,15,10,3)$, $(27,16,10,3)$ computed by another unrefereed run, experiments/20261027-0340-induction-n28-n29-f25)+} extends the verification of KT$^{L^*}$ and of "$L^*$ is exactly the 32 irreducible pieces" from $n\le24$ to $n\le27$: 346 graphs in 13 non-empty cells with $A<0$ (the 12 cells of Theorem 7(i) plus $(27,13,9)$, 18 hypertrees), 314 equality cases outside $L^*$, no new irreducible piece; the new cells $(25,14,9,3)$, $(26,17,10,3)$, $(27,20,11,3)$ are empty.
+
+Tags: Theorems 1–6 and Propositions 8, 9 **[derived-here]** (proofs below, unrefereed); Theorem 7 **[verified-here as computations, unrefereed]**; Conjecture KT* **[conjecture]**. GAPs: see "Where the induction closes and where it does not".
+
+@@ -135,7 +135,7 @@ $$\mathrm{DEF}(H)\ge\mathrm{DEF}_H(X)\ge16o_1+5o_5-35|U|.$$
+8.2 (The replacement.) Let $R=H-V(X)$ and $H'=R+e'$ as in (H$_3$) or (H$_2$) (in (H$_1$) put $e'=\partial(X)\cup\{z_1,z_2\}$ with two new vertices). Let $T'$ be a minimum transversal of $H'$. New vertices lie on $e'$ only, so we may assume $T'$ contains a vertex $u\in e'\cap\partial(X)$; $u$ lies on some $e_u\in E^*(X)$. With 8.1 for $e_u$, $T'\setminus\{\text{new}\}\cup\bigcup T_F$ is a transversal of $H$ (edges of $R$ by $T'$, of members by $T_F$, of $E^*(X)$ by $u$ or the $T_F$). With $n(H)=n(H')-\nu+\sum n_F$ ($\nu$ new vertices), $m(H)=m(H')-1+\sum m_F+|X|+1$:
+$$A(H)\ge A(H')+\sum A(F)+35|X|-27\nu=A(H')-\sum W+35|X|-27\nu\ge A(H')+19|X|-27\nu .$$
+8.3 ($\mathrm{DEF}(H')\le16$.) Let $Y$ attain $\mathrm{DEF}(H')>0$; then $35|E^*_{H'}(Y)|<\sum_YW\le16|Y|$, so $|E^*_{H'}(Y)|\le|Y|-1$. *Case 1: no member of $Y$ contains $e'$.* A member containing a new vertex would contain $e'$ (its only edge; members are connected with $\ge3$ vertices), so members lie in $R$ and are induced there ($e'\not\subseteq$ their vertex set); by 0.4 $Q:=X\cup Y$ is an $L^*$-family of $H$, and $E^*_H(Q)\subseteq E^*_H(X)\cup E^*_R(Y)$, $E^*_R(Y)\subseteq E^*_{H'}(Y)$; so $|E^*_H(Q)|\le|X|+1+|Y|-1=|Q|$, contradicting (E). *Case 2: $e'\in E(R')$ for a member $R'$ of $Y$, $|Y|\ge2$.* $Q:=X\cup(Y\setminus\{R'\})$ is an $L^*$-family of $H$; an edge of $R$ meeting $V(Y\setminus\{R'\})$ inside none of its members is inside no member of $Y$, so it is in $E^*_{H'}(Y)$; hence $|E^*_H(Q)|\le|X|+1+|Y|-1=|Q|+1$ with $|Q|>|X|$; by (E) $|E^*(Q)|-|Q|=1=|E^*(X)|-|X|$, contradicting the maximality of $|X|$. So $Y=\{R'\}$ and $\mathrm{DEF}(H')\le W(R')\le16$.
+8.4 In each of (H$_3$), (H$_2$), (H$_1$), $H'\in C_3$ (for (H$_1$): $e'$ has two new vertices of degree 1, so it creates no $F_7$ (minimum degree 2) and no pair inside two edges, and $e_{H'}(S)\le [-e_R(S\setminus\{z_1,z_2\})+1\le|S|-3$-]{+e_R(S\setminus\{z_1,z_2\})+1\le|S|-2$+} for $S\supseteq [-e'$;-]{+e'$ (only $\le|S|-2$ is needed; for $S=e'$ both sides equal $1$);+} degrees: $u$ lost at least one edge of $E^*(X)$ and gained $e'$), and $n(H')+m(H')<n(H)+m(H)$, so $A(H')\ge-\mathrm{DEF}(H')\ge-16$. By 8.2, $P(H)=A(H)\ge19|X|-16-27\nu$, which is $\ge3$ for $\nu=0$, $\ge14$ for $\nu=1$, $|X|\ge3$, and $\ge6$ for $\nu=2$, $|X|\ge4$: contradiction with (F). (H$_0$): $H$ is connected, so if $R\ne\emptyset$ some edge meets both $R$ and $V(X)$ and its vertices in $R$ lie in $\partial(X)$; hence $R=\emptyset$, $H=H[V(X)]$, $m=\sum m_F+|X|+1$, and by 8.1 $\tau(H)\le\sum\tau_F+1$, so $A(H)\ge\sum A(F)+35(|X|+1)-132\ge19|X|-97\ge17$ for $|X|\ge6$: contradiction. If none of the exceptions of GAP G2 occurs, the optimal $X$ has $|E^*(X)|-|X|\ge2$, hence so has every nonempty family; then in 4.3 (ii) reads $e_v+k_v\ge|X_v|+2$, which with (i) leaves only $j=1$, $e_v=0$, $k_v=3$. $\square$
+
+### Step 9. Proof of Proposition 9
+9.1 $F$ is an induced subgraph of $H-v$, hence of $H$, and a component of $H-v$; the third edge $e_3$ at $v$ misses $V(F)$ and its co-vertices lie outside $V(F)$. Every member of $L^*$ has I11 slack $s(F)\le1$, and $s(F)=0$ for $E_1$, $(10,7,4)$, $(17,13,7)$ (0.7: $s=(A+9n-11m)/12$).
