@@ -1,0 +1,30 @@
+n = 0 labelled linear 3-graphs: 1
+n = 1 labelled linear 3-graphs: 1
+n = 2 labelled linear 3-graphs: 1
+n = 3 labelled linear 3-graphs: 2
+n = 4 labelled linear 3-graphs: 5
+n = 5 labelled linear 3-graphs: 26
+n = 6 labelled linear 3-graphs: 271
+n = 7 labelled linear 3-graphs: 5596
+I11 on L for n <= 6 checked
+Theorem 1 at n=7: min slack -2 violators (labelled): 420
+Theorem 2 (i)-(iii) checked {'thm2_instances_k1': 822, 'thm2_ii_boundary_failures_k2': 360, 'thm2_instances_k2': 180, 'thm2_ii_boundary_failures_k3': 60}
+Theorem 2(iv) checks: 66882
+Part A Theorems 3/4/6/Lemma 7: {}
+984a n m tau s 9 8 4 -1 degrees [2, 2, 2, 3, 3, 3, 3, 3, 3] linear True F7 copies 0
+  vertex-critical: True
+  v=3 H-v connected True s(F)=1 C1 holds False pair-pair True | Prop10: k=5 tau(near)=4 ok=True
+  v=4 H-v connected True s(F)=1 C1 holds False pair-pair True | Prop10: k=5 tau(near)=4 ok=True
+  v=5 H-v connected True s(F)=1 C1 holds False pair-pair True | Prop10: k=5 tau(near)=4 ok=True
+  v=6 H-v connected True s(F)=1 C1 holds False pair-pair True | Prop10: k=5 tau(near)=4 ok=True
+  v=7 H-v connected True s(F)=1 C1 holds False pair-pair True | Prop10: k=5 tau(near)=4 ok=True
+  v=8 H-v connected True s(F)=1 C1 holds False pair-pair True | Prop10: k=5 tau(near)=4 ok=True
+984b n m tau s 9 8 4 -1 degrees [2, 2, 2, 3, 3, 3, 3, 3, 3] linear True F7 copies 0
+  vertex-critical: True
+  v=3 H-v connected True s(F)=1 C1 holds False pair-pair True | Prop10: k=5 tau(near)=4 ok=True
+  v=4 H-v connected True s(F)=1 C1 holds False pair-pair True | Prop10: k=5 tau(near)=4 ok=True
+  v=5 H-v connected True s(F)=1 C1 holds False pair-pair True | Prop10: k=5 tau(near)=4 ok=True
+  v=6 H-v connected True s(F)=1 C1 holds False pair-pair True | Prop10: k=5 tau(near)=4 ok=True
+  v=7 H-v connected True s(F)=1 C1 holds False pair-pair True | Prop10: k=5 tau(near)=4 ok=True
+  v=8 H-v connected True s(F)=1 C1 holds False pair-pair True | Prop10: k=5 tau(near)=4 ok=True
+FAILURES: 0

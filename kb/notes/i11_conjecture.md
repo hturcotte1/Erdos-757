@@ -55,7 +55,7 @@ All statements below are tagged; "as a computation" means an exact or exhaustive
 
 **The reduction (L017 Corollary 13.3).** [verified-here as a computation, not refereed]
 - For a minimal counterexample H and a degree-3 vertex v, some component of H - v has >= 27 vertices or is a tight graph in cell (25,23,11).
-- Hence I11 on C follows from Conjecture T'' (below) together with the emptiness of cell(25,23,11,3).
+- Hence I11 on C follows from Conjecture T'' (below) together with the emptiness of cell(25,23,11,3). **UPDATE 06:20 UTC: T'' is REFUTED [refuted, unrefereed computation]: L020 Theorem 1 (results/proofs/L020-joint-induction-i11.md) exhibits 45 connected members of C with (29,23,12), Delta = 3, slack 1 (verified by two independent programs). The reduction 'I11 <= T''' is therefore vacuous; L020 Corollary 5 replaces it by 'I11 <= cell(25,23,11,3) empty [computed] + C1-big + R-big' (coverage conjectures for connected slack <= 1 Delta <= 3 graphs with >= 27 vertices).**
 
 **Conjecture T (every connected tight member of C has <= 17 vertices).** [refuted] in this form. cell(21,18,9,4) has 12 classes, all with Delta = 4 (experiments/20261027-0300-tight-cells-d4; also experiments/falsify/i11-structure-lemmas/REPORT.md). Tight graphs with a degree-4 vertex are degree-4 gluings of unions of tight pieces and form an unbounded family (slack 0 + 3 + 8 - 11 = 0). Also three Delta = 4 tight classes in (25,23,11) (experiments/falsify/i11-structure-lemmas, non-exhaustive; search exhaustive only for the shape A u (3,1,1)). [verified-here as computations]
 
