@@ -160,3 +160,39 @@ Once items 1 and 2 are made as stated, with no other change, this round would be
 - I read, as permitted, the five earlier referee reviews of L018 and its scout review. I read the certificate's diff and text and the data files it cites.
 - My one computation is a script I wrote this session. It imports only gzip, sys and collections, and nothing from e757/, judge/, experiments/prover/ or any other referee's folder. The census list was used as input data only.
 - I did not modify the certificate, or any file other than this review.
+
+## Round 4 re-check (commit d66f93e, 2026-10-27T06:35:15Z)
+
+Scope: the three round-4 items. Commands run:
+- `git show --stat d66f93e`: one file, +3/−3.
+- `git show d66f93e --word-diff=plain --unified=0`: only lines 4, 70 and 236 changed.
+- `git diff d66f93e HEAD` and `git diff HEAD` on the certificate: both empty.
+
+No statement and no proof step changed. The only addition inside a proof is the citation sentence in Step 2.2.
+
+1. **STATUS (line 4): CORRECT.** It is the replacement line I proposed, and every clause checks out against the review files:
+   - "as a PARTIAL certificate";
+   - fable ACCEPT in rounds 1 and 2;
+   - opus ACCEPT WITH FIXES in rounds 1-4;
+   - "editorial except two one-line proof repairs in round 1 (Lemma 0.5, case $d_K(p)\ge4$; Step 4.5), no statement changed";
+   - the conditions on Theorem 8 (T'), Proposition 6.2 (P2) and Corollary 7.2 (the two unrefereed cell lists), with "I11 at $n=28$ is NOT established by this certificate";
+   - "Proposition 8.2 is an unrefereed census computation";
+   - "Conjecture RU is NOT proved and I11 is NOT proved (GAP 1, GAP 2)";
+   - "Chvátal–Hanson citation added at Step 2.4 and the Henning–Yeo … Prop. 9 citation at Step 2.2". Both citations are now present.
+
+   The parentheses balance. Two harmless imprecisions, which need no action:
+   - "two words of the Insight paragraph": the edit also adds the single-edge clause;
+   - the revision times 05:44 and 06:10 are about a minute before the commit times, 05:45:29 and 06:11:14.
+2. **Insight (line 236): CORRECT.** The new text reads: "the 2,899 other Red5-free census graphs with $9\le n\le14$ in redk5_free_graphs.txt.gz all have $\mathrm{slack}\ge6$, and the file's one remaining entry is the single edge $(3,1,1)$, slack 0". This matches my recount exactly: $17+2{,}899+1=2{,}917$ graphs in the file.
+3. **Step 2.2 (line 70): CORRECT.** Checked against the PDF (pdftotext of kb/literature/papers/henning_yeo_ejc_2017.pdf):
+   - Prop. 9 states $\alpha'(G_H)=|E(H)|-\tau(H)$ for $H\in\mathcal H_k$, the connected, linear, $k$-uniform hypergraphs of maximum degree 2 (Definition 5).
+   - It is introduced with "The following result is well-known (see, for example, [7])", so "called well known" is accurate.
+   - "The disconnected case follows by additivity" is correct, because $\tau$, $m$ and $\nu(G)$ are additive over components.
+   - Single-edge components and isolated vertices lie outside $\mathcal H_k$, but the identity is trivial for them ($1=1-0$ and $0=0-0$).
+   - The step is fully re-proved in the certificate, so the tag [published, re-proved here] is right and no step depends on the citation's scope.
+
+The first line of this file was left unchanged at the coordinator's request. scripts/status.py reads first lines only; L018 has no `CLAIM:` line, so no goal clause is affected.
+
+Nothing remains.
+
+**Re-check verdict: ACCEPT**
