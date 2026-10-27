@@ -638,3 +638,5 @@ EXIT 0 (python3 -m pytest -q tests/, nice 15)
 
 ## 2026-10-27T08:58Z result C008 (f(19) = 11) referee ACCEPT, scout CLEAR; recording as K70 in progress
 - results/reviews/C008-f19-h11__referee__20261027T085539Z.md (opus; own code: (4,5) three ways, h = 11 by all 2^19 subsets, 12-subsets, CP-SAT and SAT; 16 APs, tau = 8, linear, connected, F7-free, (P3) for all subsets; cell (19,16,8), degrees 4^1 3^8 2^10, isomorphic to class 40 of cell_19_16_8_D4; lower bound from published facts only; judge re-run agrees; scope note: the 956/778/178 census and the rexact engine are not covered by the ACCEPT). results/reviews/C008-f19-h11__scout__20261027T085238Z.md (CLEAR: public state f(19) in {11,12}; upper bound 11 new; no embedding into known constructions; also notes a community GitHub item, V3R1T4S PR #406, with a 21-point set of ratio 4/7: to be cited on K66). Tags: construction and h [verified-here]; f(19) >= 11 [published, K8]; f(19) = 11 [derived-here].
+
+## 2026-10-27T09:01Z check full test suite (incl. tests/test_c25_witness.py from L023) passes: exit 0 (nice 15 background run started 08:53 UTC)
