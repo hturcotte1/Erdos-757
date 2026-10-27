@@ -42,16 +42,24 @@ cell (27,15,10) A=-66: 0 graphs, irreducible 0, reducible 0 (P==0: 0), min P=Non
 cell (27,16,10) A=-31: 0 graphs, irreducible 0, reducible 0 (P==0: 0), min P=None  [seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)] [3s]
 cell (27,20,11) A=-23: 0 graphs, irreducible 0, reducible 0 (P==0: 0), min P=None  [OWN (computed in this folder)] [3s]
 cell (6,3,2) A=3: 1 graphs, irreducible 0, reducible 1 (P==0: 0), min P=3  [refereed L017/out] [3s]
-cell (11,7,4) A=14: 35 graphs, irreducible 0, reducible 35 (P==0: 0), min P=14  [refereed L017/out] [4s]
-cell (12,6,4) A=6: 4 graphs, irreducible 0, reducible 4 (P==0: 0), min P=6  [refereed L017/out] [4s]
+cell (11,7,4) A=14: 35 graphs, irreducible 0, reducible 35 (P==0: 0), min P=14  [refereed L017/out] [3s]
+cell (12,6,4) A=6: 4 graphs, irreducible 0, reducible 4 (P==0: 0), min P=6  [refereed L017/out] [3s]
 cell (12,10,5) A=14: 149 graphs, irreducible 0, reducible 149 (P==0: 0), min P=14  [refereed L017/out] [5s]
 cell (13,9,5) A=6: 84 graphs, irreducible 0, reducible 84 (P==0: 0), min P=6  [refereed L017/out] [5s]
 cell (14,12,6) A=6: 2 graphs, irreducible 0, reducible 2 (P==0: 0), min P=6  [refereed L017/out] [5s]
 cell (18,9,6) A=9: 22 graphs, irreducible 0, reducible 22 (P==0: 0), min P=9  [refereed L017/out] [5s]
 cell (19,12,7) A=9: 833 graphs, irreducible 0, reducible 833 (P==0: 0), min P=9  [refereed L017/out] [11s]
 cell (20,11,7) A=1: 45 graphs, irreducible 0, reducible 45 (P==0: 0), min P=1  [refereed L017/out] [11s]
-cell (20,15,8) A=9: 953 graphs, irreducible 0, reducible 953 (P==0: 0), min P=9  [refereed L017/out] [24s]
-cell (21,14,8) A=1: 299 graphs, irreducible 0, reducible 299 (P==0: 0), min P=1  [refereed L017/out] [26s]
-cell (21,18,9) A=9: 0 graphs, irreducible 0, reducible 0 (P==0: 0), min P=None  [refereed L017/out] [26s]
-cell (22,17,9) A=1: 37 graphs, irreducible 0, reducible 37 (P==0: 0), min P=1  [refereed L017/out] [27s]
-cell (24,12,8) A=12: 129 graphs, irreducible 0, reducible 129 (P==0: 0), min P=12  [seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)] [28s]
+cell (20,15,8) A=9: 953 graphs, irreducible 0, reducible 953 (P==0: 0), min P=9  [refereed L017/out] [27s]
+cell (21,14,8) A=1: 299 graphs, irreducible 0, reducible 299 (P==0: 0), min P=1  [refereed L017/out] [32s]
+cell (21,18,9) A=9: 0 graphs, irreducible 0, reducible 0 (P==0: 0), min P=None  [refereed L017/out] [32s]
+cell (22,17,9) A=1: 37 graphs, irreducible 0, reducible 37 (P==0: 0), min P=1  [refereed L017/out] [32s]
+cell (24,12,8) A=12: 129 graphs, irreducible 0, reducible 129 (P==0: 0), min P=12  [seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)] [32s]
+cell (25,15,9) A=12: 6849 graphs, irreducible 0, reducible 6849 (P==0: 0), min P=12  [seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)] [147s]
+cell (26,14,9) A=4: MISSING list
+cell (26,18,10) A=12: MISSING list
+cell (27,17,10) A=4: MISSING list
+cell (27,21,11) A=12: MISSING list
+IRREDUCIBLE SPECIAL PIECES: 32
+NEW pieces beyond L021 closure (n>=25 or unseen type): 0
+MISSING lists: [(26, 14, 9, 4), (26, 18, 10, 12), (27, 17, 10, 4), (27, 21, 11, 12)]

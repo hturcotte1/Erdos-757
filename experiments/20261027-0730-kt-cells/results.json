@@ -1,0 +1,1235 @@
+{
+ "verdict_KT_n_le_27": "KT^{L*} holds on every connected member of C_3 with n<=27 (A<0 cells: all graphs have A+DEF>=0; A>=0: trivial); no new irreducible special piece",
+ "n_cells_A_negative": 43,
+ "graphs_A_negative": 346,
+ "nonempty_A_negative_cells": {
+  "(3, 1, 1)": {
+   "A": -16,
+   "graphs": 1,
+   "irreducible": 1,
+   "P_zero": 0,
+   "minP": -16
+  },
+  "(8, 5, 3)": {
+   "A": -5,
+   "graphs": 2,
+   "irreducible": 2,
+   "P_zero": 0,
+   "minP": -5
+  },
+  "(9, 4, 3)": {
+   "A": -13,
+   "graphs": 1,
+   "irreducible": 0,
+   "P_zero": 1,
+   "minP": 0
+  },
+  "(10, 7, 4)": {
+   "A": -13,
+   "graphs": 4,
+   "irreducible": 4,
+   "P_zero": 0,
+   "minP": -13
+  },
+  "(14, 8, 5)": {
+   "A": -2,
+   "graphs": 9,
+   "irreducible": 0,
+   "P_zero": 9,
+   "minP": 0
+  },
+  "(15, 7, 5)": {
+   "A": -10,
+   "graphs": 2,
+   "irreducible": 0,
+   "P_zero": 2,
+   "minP": 0
+  },
+  "(15, 11, 6)": {
+   "A": -2,
+   "graphs": 19,
+   "irreducible": 19,
+   "P_zero": 0,
+   "minP": -2
+  },
+  "(16, 10, 6)": {
+   "A": -10,
+   "graphs": 16,
+   "irreducible": 0,
+   "P_zero": 16,
+   "minP": 0
+  },
+  "(17, 13, 7)": {
+   "A": -10,
+   "graphs": 6,
+   "irreducible": 6,
+   "P_zero": 0,
+   "minP": -10
+  },
+  "(21, 10, 7)": {
+   "A": -7,
+   "graphs": 5,
+   "irreducible": 0,
+   "P_zero": 5,
+   "minP": 0
+  },
+  "(22, 13, 8)": {
+   "A": -7,
+   "graphs": 85,
+   "irreducible": 0,
+   "P_zero": 85,
+   "minP": 0
+  },
+  "(23, 16, 9)": {
+   "A": -7,
+   "graphs": 178,
+   "irreducible": 0,
+   "P_zero": 178,
+   "minP": 0
+  },
+  "(27, 13, 9)": {
+   "A": -4,
+   "graphs": 18,
+   "irreducible": 0,
+   "P_zero": 18,
+   "minP": 0
+  }
+ },
+ "irreducible_pieces": 32,
+ "new_pieces": [],
+ "equality_cases_outside_Lstar": 314,
+ "new_cells": {
+  "(25,14,9,3)": 0,
+  "(26,17,10,3)": 0,
+  "(27,13,9,3)": 18,
+  "(27,20,11,3)": 0
+ },
+ "reused_empty_cells": [
+  "(26,13,9,3)",
+  "(27,15,10,3)",
+  "(27,16,10,3)"
+ ],
+ "A_nonneg_cells_checked": [
+  {
+   "cell": [
+    6,
+    3,
+    2
+   ],
+   "A": 3,
+   "graphs": 1,
+   "minP": 3,
+   "source": "refereed L017/out"
+  },
+  {
+   "cell": [
+    11,
+    7,
+    4
+   ],
+   "A": 14,
+   "graphs": 35,
+   "minP": 14,
+   "source": "refereed L017/out"
+  },
+  {
+   "cell": [
+    12,
+    6,
+    4
+   ],
+   "A": 6,
+   "graphs": 4,
+   "minP": 6,
+   "source": "refereed L017/out"
+  },
+  {
+   "cell": [
+    12,
+    10,
+    5
+   ],
+   "A": 14,
+   "graphs": 149,
+   "minP": 14,
+   "source": "refereed L017/out"
+  },
+  {
+   "cell": [
+    13,
+    9,
+    5
+   ],
+   "A": 6,
+   "graphs": 84,
+   "minP": 6,
+   "source": "refereed L017/out"
+  },
+  {
+   "cell": [
+    14,
+    12,
+    6
+   ],
+   "A": 6,
+   "graphs": 2,
+   "minP": 6,
+   "source": "refereed L017/out"
+  },
+  {
+   "cell": [
+    18,
+    9,
+    6
+   ],
+   "A": 9,
+   "graphs": 22,
+   "minP": 9,
+   "source": "refereed L017/out"
+  },
+  {
+   "cell": [
+    19,
+    12,
+    7
+   ],
+   "A": 9,
+   "graphs": 833,
+   "minP": 9,
+   "source": "refereed L017/out"
+  },
+  {
+   "cell": [
+    20,
+    11,
+    7
+   ],
+   "A": 1,
+   "graphs": 45,
+   "minP": 1,
+   "source": "refereed L017/out"
+  },
+  {
+   "cell": [
+    20,
+    15,
+    8
+   ],
+   "A": 9,
+   "graphs": 953,
+   "minP": 9,
+   "source": "refereed L017/out"
+  },
+  {
+   "cell": [
+    21,
+    14,
+    8
+   ],
+   "A": 1,
+   "graphs": 299,
+   "minP": 1,
+   "source": "refereed L017/out"
+  },
+  {
+   "cell": [
+    21,
+    18,
+    9
+   ],
+   "A": 9,
+   "graphs": 0,
+   "minP": null,
+   "source": "refereed L017/out"
+  },
+  {
+   "cell": [
+    22,
+    17,
+    9
+   ],
+   "A": 1,
+   "graphs": 37,
+   "minP": 1,
+   "source": "refereed L017/out"
+  },
+  {
+   "cell": [
+    24,
+    12,
+    8
+   ],
+   "A": 12,
+   "graphs": 129,
+   "minP": 12,
+   "source": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)"
+  },
+  {
+   "cell": [
+    25,
+    15,
+    9
+   ],
+   "A": 12,
+   "graphs": 6849,
+   "minP": 12,
+   "source": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)"
+  }
+ ],
+ "missing_A_nonneg_cells_not_needed_for_KT": [
+  [
+   26,
+   14,
+   9,
+   4
+  ],
+  [
+   26,
+   18,
+   10,
+   12
+  ],
+  [
+   27,
+   17,
+   10,
+   4
+  ],
+  [
+   27,
+   21,
+   11,
+   12
+  ]
+ ],
+ "all_cells": [
+  {
+   "cell": [
+    3,
+    1,
+    1
+   ],
+   "A": -16,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_3_1_1_D3.txt",
+   "graphs": 1,
+   "irreducible": 1,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": -16,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    8,
+    5,
+    3
+   ],
+   "A": -5,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_8_5_3_D3.txt",
+   "graphs": 2,
+   "irreducible": 2,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": -5,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    9,
+    4,
+    3
+   ],
+   "A": -13,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_9_4_3_D3.txt",
+   "graphs": 1,
+   "irreducible": 0,
+   "reducible": 1,
+   "P_zero": 1,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    10,
+    7,
+    4
+   ],
+   "A": -13,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_10_7_4_D3.txt",
+   "graphs": 4,
+   "irreducible": 4,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": -13,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    11,
+    6,
+    4
+   ],
+   "A": -21,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_11_6_4_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    13,
+    8,
+    5
+   ],
+   "A": -29,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_13_8_5_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    14,
+    7,
+    5
+   ],
+   "A": -37,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_14_7_5_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    14,
+    8,
+    5
+   ],
+   "A": -2,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_14_8_5_D3.txt",
+   "graphs": 9,
+   "irreducible": 0,
+   "reducible": 9,
+   "P_zero": 9,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    15,
+    7,
+    5
+   ],
+   "A": -10,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_15_7_5_D3.txt",
+   "graphs": 2,
+   "irreducible": 0,
+   "reducible": 2,
+   "P_zero": 2,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    15,
+    11,
+    6
+   ],
+   "A": -2,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_15_11_6_D3.txt",
+   "graphs": 19,
+   "irreducible": 19,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": -2,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    16,
+    9,
+    6
+   ],
+   "A": -45,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_16_9_6_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    16,
+    10,
+    6
+   ],
+   "A": -10,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_16_10_6_D3.txt",
+   "graphs": 16,
+   "irreducible": 0,
+   "reducible": 16,
+   "P_zero": 16,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    17,
+    8,
+    6
+   ],
+   "A": -53,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_17_8_6_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    17,
+    9,
+    6
+   ],
+   "A": -18,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_17_9_6_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    17,
+    13,
+    7
+   ],
+   "A": -10,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_17_13_7_D3.txt",
+   "graphs": 6,
+   "irreducible": 6,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": -10,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    18,
+    12,
+    7
+   ],
+   "A": -18,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_18_12_7_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    19,
+    10,
+    7
+   ],
+   "A": -61,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_19_10_7_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    19,
+    11,
+    7
+   ],
+   "A": -26,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_19_11_7_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    20,
+    10,
+    7
+   ],
+   "A": -34,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_20_10_7_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    20,
+    14,
+    8
+   ],
+   "A": -26,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_20_14_8_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    21,
+    10,
+    7
+   ],
+   "A": -7,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_21_10_7_D3.txt",
+   "graphs": 5,
+   "irreducible": 0,
+   "reducible": 5,
+   "P_zero": 5,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    21,
+    13,
+    8
+   ],
+   "A": -34,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_21_13_8_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    22,
+    11,
+    8
+   ],
+   "A": -77,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_22_11_8_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    22,
+    12,
+    8
+   ],
+   "A": -42,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_22_12_8_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    22,
+    13,
+    8
+   ],
+   "A": -7,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_22_13_8_D3.txt",
+   "graphs": 85,
+   "irreducible": 0,
+   "reducible": 85,
+   "P_zero": 85,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    23,
+    11,
+    8
+   ],
+   "A": -50,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_11_8_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    23,
+    12,
+    8
+   ],
+   "A": -15,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_12_8_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    23,
+    15,
+    9
+   ],
+   "A": -42,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_15_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    23,
+    16,
+    9
+   ],
+   "A": -7,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_16_9_D3.txt",
+   "graphs": 178,
+   "irreducible": 0,
+   "reducible": 178,
+   "P_zero": 178,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    24,
+    14,
+    9
+   ],
+   "A": -50,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_24_14_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    24,
+    15,
+    9
+   ],
+   "A": -15,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_24_15_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    24,
+    19,
+    10
+   ],
+   "A": -7,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_24_19_10_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    25,
+    12,
+    9
+   ],
+   "A": -93,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_25_12_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    25,
+    13,
+    9
+   ],
+   "A": -58,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L016/cells_new/runA/cell_25_13_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    25,
+    14,
+    9
+   ],
+   "A": -23,
+   "source": "OWN (computed in this folder)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_14_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    25,
+    18,
+    10
+   ],
+   "A": -15,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_25_18_10_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    26,
+    13,
+    9
+   ],
+   "A": -31,
+   "source": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_13_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    26,
+    16,
+    10
+   ],
+   "A": -58,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L016/cells_new/runA/cell_26_16_10_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    26,
+    17,
+    10
+   ],
+   "A": -23,
+   "source": "OWN (computed in this folder)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_17_10_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    27,
+    13,
+    9
+   ],
+   "A": -4,
+   "source": "OWN (computed in this folder)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_13_9_D3.txt",
+   "graphs": 18,
+   "irreducible": 0,
+   "reducible": 18,
+   "P_zero": 18,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    27,
+    15,
+    10
+   ],
+   "A": -66,
+   "source": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_15_10_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    27,
+    16,
+    10
+   ],
+   "A": -31,
+   "source": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_16_10_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    27,
+    20,
+    11
+   ],
+   "A": -23,
+   "source": "OWN (computed in this folder)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_20_11_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    6,
+    3,
+    2
+   ],
+   "A": 3,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_6_3_2_D3.txt",
+   "graphs": 1,
+   "irreducible": 0,
+   "reducible": 1,
+   "P_zero": 0,
+   "minP": 3,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    11,
+    7,
+    4
+   ],
+   "A": 14,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_11_7_4_D3.txt",
+   "graphs": 35,
+   "irreducible": 0,
+   "reducible": 35,
+   "P_zero": 0,
+   "minP": 14,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    12,
+    6,
+    4
+   ],
+   "A": 6,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_12_6_4_D3.txt",
+   "graphs": 4,
+   "irreducible": 0,
+   "reducible": 4,
+   "P_zero": 0,
+   "minP": 6,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    12,
+    10,
+    5
+   ],
+   "A": 14,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_12_10_5_D3.txt",
+   "graphs": 149,
+   "irreducible": 0,
+   "reducible": 149,
+   "P_zero": 0,
+   "minP": 14,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    13,
+    9,
+    5
+   ],
+   "A": 6,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_13_9_5_D3.txt",
+   "graphs": 84,
+   "irreducible": 0,
+   "reducible": 84,
+   "P_zero": 0,
+   "minP": 6,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    14,
+    12,
+    6
+   ],
+   "A": 6,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_14_12_6_D3.txt",
+   "graphs": 2,
+   "irreducible": 0,
+   "reducible": 2,
+   "P_zero": 0,
+   "minP": 6,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    18,
+    9,
+    6
+   ],
+   "A": 9,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_18_9_6_D3.txt",
+   "graphs": 22,
+   "irreducible": 0,
+   "reducible": 22,
+   "P_zero": 0,
+   "minP": 9,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    19,
+    12,
+    7
+   ],
+   "A": 9,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_19_12_7_D3.txt",
+   "graphs": 833,
+   "irreducible": 0,
+   "reducible": 833,
+   "P_zero": 0,
+   "minP": 9,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    20,
+    11,
+    7
+   ],
+   "A": 1,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_20_11_7_D3.txt",
+   "graphs": 45,
+   "irreducible": 0,
+   "reducible": 45,
+   "P_zero": 0,
+   "minP": 1,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    20,
+    15,
+    8
+   ],
+   "A": 9,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_20_15_8_D3.txt",
+   "graphs": 953,
+   "irreducible": 0,
+   "reducible": 953,
+   "P_zero": 0,
+   "minP": 9,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    21,
+    14,
+    8
+   ],
+   "A": 1,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_21_14_8_D3.txt",
+   "graphs": 299,
+   "irreducible": 0,
+   "reducible": 299,
+   "P_zero": 0,
+   "minP": 1,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    21,
+    18,
+    9
+   ],
+   "A": 9,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_21_18_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    22,
+    17,
+    9
+   ],
+   "A": 1,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_22_17_9_D3.txt",
+   "graphs": 37,
+   "irreducible": 0,
+   "reducible": 37,
+   "P_zero": 0,
+   "minP": 1,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    24,
+    12,
+    8
+   ],
+   "A": 12,
+   "source": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_12_8_D3.txt",
+   "graphs": 129,
+   "irreducible": 0,
+   "reducible": 129,
+   "P_zero": 0,
+   "minP": 12,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    25,
+    15,
+    9
+   ],
+   "A": 12,
+   "source": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_15_9_D3.txt",
+   "graphs": 6849,
+   "irreducible": 0,
+   "reducible": 6849,
+   "P_zero": 0,
+   "minP": 12,
+   "pass_": 2
+  }
+ ]
+}
