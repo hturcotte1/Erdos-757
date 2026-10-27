@@ -596,3 +596,4 @@ Format for each work block:
 ........................................................................ [ 87%]
 ....................                                                     [100%]
 EXIT 0 (python3 -m pytest -q tests/, nice 15)
+- Clarification: the pytest summary line was not captured by the quiet run; the suite finished with exit code 0 (all tests passed, one skipped), 164 dots over three screens.
