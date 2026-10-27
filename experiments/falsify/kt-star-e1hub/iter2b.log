@@ -11,3 +11,5 @@
 {'inputs': 220, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [11s]
 {'inputs': 240, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [15s]
 {'inputs': 260, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [21s]
+{'inputs': 280, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [26s]
+{'inputs': 300, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [31s]

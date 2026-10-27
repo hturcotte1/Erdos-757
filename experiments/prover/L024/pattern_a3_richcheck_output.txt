@@ -14,3 +14,4 @@ richcheck ('(10,7,4)#0', '(10,7,4)#0', '(10,7,4)#2') N 30 g-orbits 24 configs 0 
 richcheck ('(10,7,4)#0', '(10,7,4)#0', '(10,7,4)#3') N 30 g-orbits 12 configs 0 running {'type_triples': 13, 'g_choices': 143, 'configs': 20, 'claimE': 0, 'inC3': 0, 'inC3_claimE': 0, 'tau_ok': 0, 'Pneg': 0} [24s]
 richcheck ('(10,7,4)#0', '(10,7,4)#1', '(10,7,4)#1') N 30 g-orbits 50 configs 0 running {'type_triples': 14, 'g_choices': 193, 'configs': 20, 'claimE': 0, 'inC3': 0, 'inC3_claimE': 0, 'tau_ok': 0, 'Pneg': 0} [36s]
 richcheck ('(10,7,4)#0', '(10,7,4)#1', '(10,7,4)#2') N 30 g-orbits 60 configs 0 running {'type_triples': 15, 'g_choices': 253, 'configs': 20, 'claimE': 0, 'inC3': 0, 'inC3_claimE': 0, 'tau_ok': 0, 'Pneg': 0} [62s]
+richcheck ('(10,7,4)#0', '(10,7,4)#1', '(10,7,4)#3') N 30 g-orbits 30 configs 0 running {'type_triples': 16, 'g_choices': 283, 'configs': 20, 'claimE': 0, 'inC3': 0, 'inC3_claimE': 0, 'tau_ok': 0, 'Pneg': 0} [78s]
