@@ -1,0 +1,25 @@
+=== target n28 tops [(28, 17, 11, 2), (28, 18, 11, 3), (28, 23, 12, 3)]
+top (28, 17, 11, 2) slack -3: 1 branches
+   branch d=2 tau'=10 remainder (27,15) slack 1: 16 decompositions, inputs ~0; largest: 1x(27, 15, 10)[NEW~0]=0; 1x(13, 8, 5)[old:0]+1x(14, 7, 5)[old:0]=0; 1x(11, 6, 4)[old:0]+1x(16, 9, 6)[old:0]=0
+top (28, 18, 11, 3) slack -1: 2 branches
+   branch d=2 tau'=10 remainder (27,16) slack 3: 47 decompositions, inputs ~3; largest: 1x(27, 16, 10)[NEW~1]=2; 1x(3, 1, 1)[old:1]+3x(8, 5, 3)[old:1]=1; 1x(26, 16, 10)[old:0]=0
+   branch d=3 tau'=10 remainder (27,15) slack 1: 16 decompositions, inputs ~176; largest: 5x(3, 1, 1)[old:1]+1x(12, 10, 5)[old:149]=149; 4x(3, 1, 1)[old:1]+1x(15, 11, 6)[old:19]=19; 3x(3, 1, 1)[old:1]+1x(8, 5, 3)[old:2]+1x(10, 7, 4)[old:4]=8
+top (28, 23, 12, 3) slack -2: 1 branches
+   branch d=3 tau'=11 remainder (27,20) slack 0: 6 decompositions, inputs ~32; largest: 1x(10, 7, 4)[old:4]+1x(17, 13, 7)[old:6]=24; 1x(3, 1, 1)[old:1]+1x(10, 7, 4)[old:4]+1x(14, 12, 6)[old:2]=8; 1x(27, 20, 11)[NEW~0]=0
+=== target n29rec tops [(29, 27, 13, 3)]
+top (29, 27, 13, 3) slack -2: 1 branches
+   branch d=3 tau'=12 remainder (28,24) slack 0: 3 decompositions, inputs ~6; largest: 2x(14, 12, 6)[old:2]=3; 1x(3, 1, 1)[old:1]+1x(25, 23, 11)[NEW~2]=2; 1x(28, 24, 12)[NEW~0]=1
+=== target n29full tops [(29, 15, 11, 2), (29, 16, 11, 3), (29, 22, 12, 3), (29, 27, 13, 3)]
+top (29, 15, 11, 2) slack -4: 1 branches
+   branch d=2 tau'=10 remainder (28,13) slack 0: 6 decompositions, inputs ~0; largest: 1x(3, 1, 1)[old:1]+1x(25, 12, 9)[old:0]=0; 2x(3, 1, 1)[old:1]+1x(22, 11, 8)[old:0]=0; 3x(3, 1, 1)[old:1]+1x(19, 10, 7)[old:0]=0
+top (29, 16, 11, 3) slack -2: 2 branches
+   branch d=2 tau'=10 remainder (28,14) slack 2: 24 decompositions, inputs ~1; largest: 4x(3, 1, 1)[old:1]+2x(8, 5, 3)[old:1]=1; 1x(28, 14, 10)[NEW~0]=0; 2x(14, 7, 5)[old:0]=0
+   branch d=3 tau'=10 remainder (28,13) slack 0: 6 decompositions, inputs ~4; largest: 6x(3, 1, 1)[old:1]+1x(10, 7, 4)[old:4]=4; 1x(3, 1, 1)[old:1]+1x(25, 12, 9)[old:0]=0; 2x(3, 1, 1)[old:1]+1x(22, 11, 8)[old:0]=0
+top (29, 22, 12, 3) slack -1: 1 branches
+   branch d=3 tau'=11 remainder (28,19) slack 1: 17 decompositions, inputs ~974; largest: 2x(3, 1, 1)[old:1]+1x(10, 7, 4)[old:4]+1x(12, 10, 5)[old:149]=596; 3x(3, 1, 1)[old:1]+1x(19, 16, 8)[old:227]=227; 1x(3, 1, 1)[old:1]+1x(10, 7, 4)[old:4]+1x(15, 11, 6)[old:19]=76
+top (29, 27, 13, 3) slack -2: 1 branches
+   branch d=3 tau'=12 remainder (28,24) slack 0: 3 decompositions, inputs ~6; largest: 2x(14, 12, 6)[old:2]=3; 1x(3, 1, 1)[old:1]+1x(25, 23, 11)[NEW~2]=2; 1x(28, 24, 12)[NEW~0]=1
+=== target rec25 tops [(25, 23, 11, 4)]
+top (25, 23, 11, 4) slack 0: 2 branches
+   branch d=3 tau'=10 remainder (24,20) slack 2: 4 decompositions, inputs ~16974; largest: 2x(12, 10, 5)[old:149]=11175; 1x(3, 1, 1)[old:1]+1x(21, 19, 9)[NEW~3000]=3000; 1x(24, 20, 10)[NEW~2672]=2673
+   branch d=4 tau'=10 remainder (24,19) slack 0: 3 decompositions, inputs ~67; largest: 1x(10, 7, 4)[old:5]+1x(14, 12, 6)[old:11]=55; 1x(3, 1, 1)[old:1]+1x(21, 18, 9)[now:12]=12; 1x(24, 19, 10)[now:0]=0

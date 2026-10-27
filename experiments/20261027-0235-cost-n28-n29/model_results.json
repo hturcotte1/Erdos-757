@@ -97,7 +97,7 @@
  },
  "n29rec": {
   "central": {
-   "core_hours": 15.822476802458944,
+   "core_hours": 9.88032276399426,
    "cells_new": 16
   },
   "top_cells": [
@@ -108,8 +108,8 @@
      11,
      3
     ],
-    "est_classes": 1114.9,
-    "core_hours": 3.655
+    "est_classes": 530.4,
+    "core_hours": 1.739
    },
    {
     "cell": [
@@ -118,8 +118,8 @@
      10,
      3
     ],
-    "est_classes": 5831.9,
-    "core_hours": 3.537
+    "est_classes": 2672.6,
+    "core_hours": 1.621
    },
    {
     "cell": [
@@ -128,8 +128,8 @@
      9,
      3
     ],
-    "est_classes": 28603.3,
-    "core_hours": 3.21
+    "est_classes": 3000.0,
+    "core_hours": 1.294
    },
    {
     "cell": [
@@ -168,7 +168,7 @@
      7,
      3
     ],
-    "est_classes": 774843.3,
+    "est_classes": 200000.0,
     "core_hours": 0.876
    },
    {
@@ -183,17 +183,17 @@
    }
   ],
   "low": {
-   "core_hours": 1.0032585961552696,
+   "core_hours": 0.9081006606769203,
    "cells_new": 16
   },
   "high": {
-   "core_hours": 221.3449359699635,
+   "core_hours": 88.75839202548175,
    "cells_new": 16
   }
  },
  "n29full": {
   "central": {
-   "core_hours": 15.901979202001222,
+   "core_hours": 9.959825163536536,
    "cells_new": 25
   },
   "top_cells": [
@@ -204,8 +204,8 @@
      11,
      3
     ],
-    "est_classes": 1114.9,
-    "core_hours": 3.655
+    "est_classes": 530.4,
+    "core_hours": 1.739
    },
    {
     "cell": [
@@ -214,8 +214,8 @@
      10,
      3
     ],
-    "est_classes": 5831.9,
-    "core_hours": 3.537
+    "est_classes": 2672.6,
+    "core_hours": 1.621
    },
    {
     "cell": [
@@ -224,8 +224,8 @@
      9,
      3
     ],
-    "est_classes": 28603.3,
-    "core_hours": 3.21
+    "est_classes": 3000.0,
+    "core_hours": 1.294
    },
    {
     "cell": [
@@ -264,7 +264,7 @@
      7,
      3
     ],
-    "est_classes": 774843.3,
+    "est_classes": 200000.0,
     "core_hours": 0.876
    },
    {
@@ -279,17 +279,17 @@
    }
   ],
   "low": {
-   "core_hours": 1.0276131097474441,
+   "core_hours": 0.932455174269095,
    "cells_new": 25
   },
   "high": {
-   "core_hours": 221.55411159664618,
+   "core_hours": 88.96756765216445,
    "cells_new": 25
   }
  },
  "rec25": {
   "central": {
-   "core_hours": 10.968292108080872,
+   "core_hours": 6.848377401269008,
    "cells_new": 10
   },
   "top_cells": [
@@ -300,8 +300,8 @@
      10,
      3
     ],
-    "est_classes": 5831.9,
-    "core_hours": 3.537
+    "est_classes": 2672.6,
+    "core_hours": 1.621
    },
    {
     "cell": [
@@ -310,8 +310,8 @@
      9,
      3
     ],
-    "est_classes": 28603.3,
-    "core_hours": 3.21
+    "est_classes": 3000.0,
+    "core_hours": 1.294
    },
    {
     "cell": [
@@ -340,18 +340,8 @@
      7,
      3
     ],
-    "est_classes": 774843.3,
+    "est_classes": 200000.0,
     "core_hours": 0.876
-   },
-   {
-    "cell": [
-     25,
-     23,
-     11,
-     4
-    ],
-    "est_classes": 22.9,
-    "core_hours": 0.458
    },
    {
     "cell": [
@@ -362,6 +352,16 @@
     ],
     "est_classes": 5000,
     "core_hours": 0.417
+   },
+   {
+    "cell": [
+     25,
+     23,
+     11,
+     4
+    ],
+    "est_classes": 8.5,
+    "core_hours": 0.17
    },
    {
     "cell": [
@@ -375,29 +375,29 @@
    }
   ],
   "low": {
-   "core_hours": 0.811865774921293,
+   "core_hours": 0.7476686375939624,
    "cells_new": 10
   },
   "high": {
-   "core_hours": 157.11704016998175,
+   "core_hours": 60.246691832612335,
    "cells_new": 10
   }
  },
  "union": {
   "n28+n29rec": {
-   "central": 15.902779911583112,
-   "low": 1.0337752252477206,
-   "high": 221.540483739784
+   "central": 9.960625873118424,
+   "low": 0.9386172897693713,
+   "high": 88.9539397953023
   },
   "n28+n29full": {
-   "central": 15.96449064445872,
-   "low": 1.0413262408975081,
-   "high": 221.72919964424452
+   "central": 10.022336605994036,
+   "low": 0.946168305419159,
+   "high": 89.14265569976278
   },
   "n28+n29rec+rec25": {
-   "central": 16.36081211577019,
-   "low": 1.049431625669503,
-   "high": 238.39750093679632
+   "central": 10.131032152424428,
+   "low": 0.9528941083198929,
+   "high": 90.41047896028194
   }
  }
 }

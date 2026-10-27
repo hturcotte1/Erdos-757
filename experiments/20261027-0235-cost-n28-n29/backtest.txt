@@ -1,0 +1,10 @@
+backtest of the cost model (D=3 recursed cells with >=50,000 inputs): predicted = inputs*1e4/1e6*1.2 core-s vs measured wall secs of the original runs (Gosper ext_d, shared machine)
+[15, 13, 6, 3] inputs 53280 nodes/input 525 predicted 639 s measured 720 s ratio pred/meas 0.9
+[18, 14, 7, 3] inputs 102916 nodes/input 4115 predicted 1235 s measured 1237 s ratio pred/meas 1.0
+[19, 17, 8, 3] inputs 1750910 nodes/input 351 predicted 21011 s measured 877 s ratio pred/meas 24.0
+[21, 15, 8, 3] inputs 121532 nodes/input 16226 predicted 1458 s measured 1900 s ratio pred/meas 0.8
+[22, 18, 9, 3] inputs 2014413 nodes/input 2601 predicted 24173 s measured 2762 s ratio pred/meas 8.8
+[23, 21, 10, 3] inputs 133804 nodes/input 359 predicted 1606 s measured 481 s ratio pred/meas 3.3
+[24, 16, 9, 3] inputs 127766 nodes/input 47778 predicted 1533 s measured 5225 s ratio pred/meas 0.3
+[25, 19, 10, 3] inputs 2082993 nodes/input 11103 predicted 24996 s measured 20133 s ratio pred/meas 1.2
+[26, 22, 11, 3] inputs 229369 nodes/input 4105 predicted 2752 s measured 7 s ratio pred/meas 371.9
