@@ -1,6 +1,6 @@
 # L021: the Henning–Yeo deficiency route (prover work folder)
 
-Certificate: results/proofs/L021-i11-deficiency-route.md (submitted 2026-10-27; under referee (round 2: fable ACCEPT, opus editorial items applied); partial proof with GAPs G1–G4).
+Certificate: results/proofs/L021-i11-deficiency-route.md (submitted 2026-10-27; ACCEPTED 2026-10-27 as a PARTIAL certificate, proved parts only, K71; partial proof with GAPs G1–G4).
 Tags below follow that file: [derived-here] proofs there, [verified-here as computation, unrefereed] the outputs here.
 
 ## Question
@@ -63,9 +63,7 @@ Notation: (D1) at a degree-3 vertex v: a piece F is a component of H - v met by 
 ## Computations needed (to continue this route)
 1. The finite check for GAP G2 with empty boundary: assemblies H = H[V(X)] of at most five pieces of L* joined by |X| + 1 edges,
    n >= 25 (at most 85 vertices): test KT (equivalently, that none is a minimal counterexample).
-2. Cells with A < 0 at n = 25, 26, 27 not yet stored: cell(25,14,9,3), cell(26,13,9,3), cell(26,17,10,3), cell(27,13,9,3),
-   cell(27,15,10,3), cell(27,16,10,3), cell(27,20,11,3) (the last reported empty by experiments/20261027-0300-tight-cells-d4,
-   unrefereed); with them, Theorem 7(ii) extends to n <= 27 (or a new irreducible piece appears).
+2. DONE (unrefereed): the cells with A < 0 at n = 25, 26, 27 (cell(25,14,9,3), cell(26,13,9,3), cell(26,17,10,3), cell(27,13,9,3), cell(27,15,10,3), cell(27,16,10,3), cell(27,20,11,3)) are computed in experiments/20261027-0730-kt-cells; Theorem 7(ii) extends to n <= 27 (see that README; not refereed).
 3. A falsifier run on KT for n = 25..40 with the generators of experiments/falsify/i11-n28-40 (connected, max degree 3, A < 0),
    computing DEF with kt.deficiency; random_assemblies.py is a first, small version.
 4. For GAP G1 with k = 3: for every piece F and every uncoverable 3-attachment (C6 data), the list of minimal "outside completions"
