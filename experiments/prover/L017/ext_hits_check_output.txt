@@ -1,0 +1,10 @@
+ext_d SUMMARY (pruned run, as in L013): ['SUMMARY graphs=2 bad_tau=0 tg_too_small=0 searched=2 max_min_covers=3402 nodes=251142 hits_F7free=6 hits_in_C=0']
+ext_d SUMMARY (noprune: all hits with tau >= 9, no F7 pruning, no P3 test): ['SUMMARY graphs=2 bad_tau=0 tg_too_small=0 searched=2 max_min_covers=3402 nodes=251801 hits_all=148 printed=148']
+noprune hits: 148, of which F7-free: 6
+F7-free hit: 13 edges, 6 components, component sizes [3, 3, 3, 3, 3, 9], tau 9
+F7-free hit: 13 edges, 6 components, component sizes [3, 3, 3, 3, 3, 9], tau 9
+F7-free hit: 13 edges, 6 components, component sizes [3, 3, 3, 3, 3, 9], tau 9
+F7-free hit: 13 edges, 6 components, component sizes [3, 3, 3, 3, 3, 9], tau 9
+F7-free hit: 13 edges, 6 components, component sizes [3, 3, 3, 3, 3, 9], tau 9
+F7-free hit: 13 edges, 6 components, component sizes [3, 3, 3, 3, 3, 9], tau 9
+F7-free hits: 6, connected: 0; all noprune hits: 148, connected: 0 (Theorem 4(iii) predicts 0 connected hits)

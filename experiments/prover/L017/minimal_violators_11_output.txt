@@ -1,0 +1,2 @@
+N=11 done; connected linear violators (classes) by M: {10: 2}
+SUMMARY: 0 vertex-minimal violators with 11 <= N <= 11; total failed claims: 0; degree-3 patterns: {}; degree-2 cases: {}; degree-1 vertices checked: 0

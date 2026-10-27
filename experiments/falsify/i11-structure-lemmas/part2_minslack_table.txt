@@ -1,0 +1,50 @@
+n m min_slack  (e(G) nu(G) of a minimiser)  [connected Delta<=2 members of C; n<=14 complete; n>14 only from G with <=11 vertices]
+1 0 3 (isolated vertex; not in the enumeration, slack 3)
+3 1 0  (e=0 nu=0)
+5 2 8  (e=1 nu=1)
+6 3 2  (e=3 nu=1)
+6 4 4  (e=6 nu=2)
+7 3 5  (e=2 nu=1)
+7 4 7  (e=5 nu=2)
+8 4 10  (e=4 nu=2)
+8 5 1  (e=7 nu=2)
+9 4 2  (e=3 nu=1)
+9 5 4  (e=6 nu=2)
+9 6 6  (e=9 nu=3)
+10 5 7  (e=5 nu=2)
+10 6 9  (e=8 nu=3)
+11 5 10  (e=4 nu=2)
+11 6 12  (e=7 nu=3)
+11 7 3  (e=10 nu=3)
+12 6 4  (e=6 nu=2)
+12 7 6  (e=9 nu=3)
+12 8 8  (e=12 nu=4)
+13 6 7  (e=5 nu=2)
+13 7 9  (e=8 nu=3)
+13 8 11  (e=11 nu=4)
+14 7 12  (e=7 nu=3)
+14 8 3  (e=10 nu=3)
+14 9 5  (e=13 nu=4)
+15 7 4  (e=6 nu=2)  [partial]
+15 8 6  (e=9 nu=3)  [partial]
+15 9 8  (e=12 nu=4)  [partial]
+15 10 10  (e=15 nu=5)  [partial]
+16 8 9  (e=8 nu=3)  [partial]
+16 9 11  (e=11 nu=4)  [partial]
+16 10 13  (e=14 nu=5)  [partial]
+17 8 12  (e=7 nu=3)  [partial]
+17 9 14  (e=10 nu=4)  [partial]
+17 10 5  (e=13 nu=4)  [partial]
+17 11 7  (e=16 nu=5)  [partial]
+18 9 6  (e=9 nu=3)  [partial]
+18 10 8  (e=12 nu=4)  [partial]
+18 11 10  (e=15 nu=5)  [partial]
+19 9 9  (e=8 nu=3)  [partial]
+19 10 11  (e=11 nu=4)  [partial]
+19 11 13  (e=14 nu=5)  [partial]
+20 10 14  (e=10 nu=4)  [partial]
+20 11 5  (e=13 nu=4)  [partial]
+21 10 6  (e=9 nu=3)  [partial]
+21 11 8  (e=12 nu=4)  [partial]
+22 11 11  (e=11 nu=4)  [partial]
+23 11 14  (e=10 nu=4)  [partial]

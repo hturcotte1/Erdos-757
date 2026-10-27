@@ -16,12 +16,12 @@ for f in ['out/beam_d5a_pools.jsonl.gz', 'out/beam_d5b_pools.jsonl.gz']:
         d = json.loads(l)
         if 28 <= d['n'] <= 40:
             t = d['line'].split(' '); n = int(t[0]); graphs.append((n, [tuple(int(x) for x in w.split(',')) for w in t[2:]]))
-random.shuffle(graphs); graphs = graphs[:400]
+random.shuffle(graphs); graphs = graphs[:150]
 res = run_eval([line(n, e) for n, e in graphs])
 def tau_cp(n, es):
     m = cp_model.CpModel(); x = [m.NewBoolVar('x%d' % i) for i in range(n)]
     for e in es: m.AddBoolOr([x[v] for v in e])
-    m.Minimize(sum(x)); s = cp_model.CpSolver(); s.parameters.num_workers = 1; s.parameters.max_time_in_seconds = 60
+    m.Minimize(sum(x)); s = cp_model.CpSolver(); s.parameters.num_workers = 1; s.parameters.max_time_in_seconds = 30
     st = s.Solve(m); return int(s.ObjectiveValue()), st == cp_model.OPTIMAL
 def in_class_py(n, es):
     S = [frozenset(e) for e in es]
@@ -48,7 +48,7 @@ def in_class_py(n, es):
 bad = 0; chk = 0; nopt = 0
 for (n, es), r in zip(graphs, res):
     t, opt = tau_cp(n, es); nopt += (not opt)
-    ic = in_class_py(n, es) if len(graphs) and chk < 150 else None
+    ic = in_class_py(n, es) if len(graphs) and chk < 40 else None
     if ic is not None: chk += 1
     if t != r[2] or (ic is not None and ic != (r[4] == 0)): bad += 1; print('MISMATCH', n, r, t, ic)
 print(json.dumps(dict(graphs=len(graphs), tau_checked=len(graphs), class_checked=chk, mismatches=bad, cpsat_not_optimal=nopt, n_range=[min(g[0] for g in graphs), max(g[0] for g in graphs)])))

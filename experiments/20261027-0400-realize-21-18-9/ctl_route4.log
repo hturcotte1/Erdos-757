@@ -1,0 +1,15 @@
+ctl_route4 class 0 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 12.3 s
+ctl_route4 class 1 NOT-REALIZABLE labellings 0 dims {} nodes 1024 {'EQ': 88, 'SIDON': 231, 'NONLIN': 0} 10.6 s
+ctl_route4 class 2 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 10.3 s
+ctl_route4 class 3 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 9.0 s
+ctl_route4 class 4 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 11.0 s
+ctl_route4 class 5 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 13.6 s
+ctl_route4 class 6 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 13.9 s
+ctl_route4 class 7 NOT-REALIZABLE labellings 0 dims {} nodes 1024 {'EQ': 88, 'SIDON': 231, 'NONLIN': 0} 19.1 s
+ctl_route4 class 8 NOT-REALIZABLE labellings 0 dims {} nodes 1043 {'EQ': 91, 'SIDON': 224, 'NONLIN': 0} 16.0 s
+ctl_route4 class 9 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 21.0 s
+ctl_route4 class 10 NOT-REALIZABLE labellings 0 dims {} nodes 1107 {'EQ': 87, 'SIDON': 246, 'NONLIN': 0} 15.6 s
+ctl_route4 class 11 NOT-REALIZABLE labellings 0 dims {} nodes 1024 {'EQ': 88, 'SIDON': 231, 'NONLIN': 0} 14.6 s
+ctl_route4 class 12 NOT-REALIZABLE labellings 0 dims {} nodes 4414 {'EQ': 194, 'SIDON': 869, 'NONLIN': 0} 61.9 s
+ctl_route4 class 13 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 18.9 s
+ctl_route4 class 14 NOT-REALIZABLE labellings 0 dims {} nodes 1024 {'EQ': 88, 'SIDON': 231, 'NONLIN': 0} 21.8 s

@@ -31,8 +31,9 @@ static void rec(int i, u64 cur, int sz) {
     rec(i + 1, cur, sz);
 }
 static u64 *cov; static int W; static int pairs_ok[MAXN][MAXN];
-static int cores[200000][3], ncore[200000], ncores = 0; /* pair indices a*64+b */
+static int MAXD = 3; static long nodes_, nodelim_ = 3000000; static int cores[200000][4], ncore[200000], ncores = 0; /* pair indices a*64+b */
 static void dfs(int depth, const u64 *U, u64 used, int *chosen, int dmax) {
+    if (++nodes_ > nodelim_) return;
     int idx = -1; for (int w = 0; w < W; w++) if (U[w]) { idx = w * 64 + __builtin_ctzll(U[w]); break; }
     if (idx < 0) return;
     u64 S = sets[idx]; int vs[MAXN], k = 0; for (u64 r = S; r; r &= r - 1) vs[k++] = __builtin_ctzll(r);
@@ -48,6 +49,7 @@ static void dfs(int depth, const u64 *U, u64 used, int *chosen, int dmax) {
 int main(int argc, char **argv) {
     int maxchild = argc > 1 ? atoi(argv[1]) : 1000; int extras = argc > 2 ? atoi(argv[2]) : 2;
     const char *dme = getenv("I11_DM"); if (dme) DM = atoi(dme); DMAX = DM;
+    const char *md = getenv("I11_MAXD"); if (md) MAXD = atoi(md);
     const char *sd = getenv("I11_SEED"); seed_rng(sd ? atoll(sd) : 1);
     static char line[1 << 16]; G P; long nparents = 0, nchild = 0, skipped = 0;
     while (fgets(line, sizeof line, stdin)) {
@@ -68,10 +70,10 @@ int main(int argc, char **argv) {
         for (int s = 0; s < nsets; s++) { int vs[MAXN], k = 0; for (u64 r = sets[s]; r; r &= r - 1) vs[k++] = __builtin_ctzll(r); for (int x = 0; x < k; x++) for (int y = x + 1; y < k; y++) cov[(size_t)(vs[x] * n + vs[y]) * W + (s >> 6)] |= 1ULL << (s & 63); }
         for (int a = 0; a < n; a++) for (int b = 0; b < n; b++) { pairs_ok[a][b] = (a < b) && degree_of(&R, a) < DM && degree_of(&R, b) < DM; if (pairs_ok[a][b]) for (int j = 0; j < R.m; j++) if (((R.e[j] >> a) & 1) && ((R.e[j] >> b) & 1)) pairs_ok[a][b] = 0; }
         u64 U[(CAPS + 63) / 64]; for (int w = 0; w < W; w++) U[w] = ~0ULL; if (nsets & 63) U[W - 1] = (1ULL << (nsets & 63)) - 1;
-        int chosen[4]; ncores = 0; dfs(0, U, 0, chosen, 3);
+        int chosen[5]; ncores = 0; nodes_ = 0; dfs(0, U, 0, chosen, MAXD);
         int emitted = 0;
         for (int c = 0; c < ncores && emitted < maxchild; c++) {
-            for (int d = ncore[c]; d <= 3; d++) for (int rep = 0; rep < (d == ncore[c] ? 1 : extras); rep++) {
+            for (int d = ncore[c]; d <= MAXD; d++) for (int rep = 0; rep < (d == ncore[c] ? 1 : extras); rep++) {
                 G H = R; H.n = n + 1; u64 usedm = 0;
                 for (int t = 0; t < ncore[c]; t++) { int a = cores[c][t] >> 6, b = cores[c][t] & 63; H.e[H.m++] = vmask(a, b, n); usedm |= (1ULL << a) | (1ULL << b); }
                 int ok = 1;

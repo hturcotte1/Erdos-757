@@ -1,0 +1,10 @@
+n=5 {(5, 'local'): 1}
+n=6 {(6, 'local'): 1}
+n=7 {(7, 'local'): 5}
+n=8 {(8, 'local'): 10}
+n=9 {(9, 'local'): 48}
+n=10 {(10, 'local'): 276}
+n=11 {(11, 'local'): 2065}
+n=12 {(12, 'local'): 18262}
+n=13 {(13, 'local'): 180016}
+graphs with a pendant vertex but no radius-2-local (Red) pair at any pendant: 0

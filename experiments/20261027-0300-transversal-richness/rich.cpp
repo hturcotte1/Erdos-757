@@ -62,9 +62,9 @@ int main() {
         }
         // subset tables
         size_t NS = (size_t)1 << n; const unsigned char INF = 255;
-        bool doTriples = true;
-        vector<unsigned char> s2(NS), s3(NS);
-        {
+        bool nt = getenv("RICH_NT") != nullptr;   // transversal statistics only (no subset tables, no triples)
+        vector<unsigned char> s2(nt ? 1 : NS), s3(nt ? 1 : NS);
+        if (!nt) {
             vector<unsigned char> e(NS, 0);
             vector<vector<u32>> rest(n);
             for (int i = 0; i < m; i++) for (int k = 0; k < 3; k++) rest[ev[i][k]].push_back(em[i] & ~(1u << ev[i][k]));
@@ -114,7 +114,7 @@ int main() {
         vector<array<int, 6>> adm_unc_list;  // sample list of admissible uncoverable triples
         vector<u64> acc(W);
         int Eh[64][3]; for (int i = 0; i < m; i++) for (int k = 0; k < 3; k++) Eh[i][k] = ev[i][k];
-        for (int p1 = 0; p1 < np; p1++) for (int p2 = p1 + 1; p2 < np; p2++) {
+        for (int p1 = 0; p1 < np && !nt; p1++) for (int p2 = p1 + 1; p2 < np; p2++) {
             if (pm[p1] & pm[p2]) continue;
             for (int w = 0; w < W; w++) acc[w] = mb[p1][w] & mb[p2][w];
             u32 m12 = pm[p1] | pm[p2];

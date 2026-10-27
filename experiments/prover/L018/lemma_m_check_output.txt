@@ -1,0 +1,3 @@
+(A) census Delta<=2 graphs checked: 208  min of 7*slack - n2: 0
+(B) random linear Delta<=2 3-graphs: 4000  min of 7*(slack-3n0) - n2: 0
+(C) random subcubic graphs: 20000  with 7nu = 2|E|: 52 ; K4 with a subdivided edge: nu = 2 |E| = 7

@@ -38,7 +38,7 @@ for n in range(nstart,nmax+1):
         if not res: 
             if info: node_total+=info[3]
             continue
-        comps,off,NQ,nodes=info; node_total+=nodes
+        comps,off,NQ,nodes,_fs=info; node_total+=nodes
         hit_here=False
         for prs in res[:3000]:
             nn,edges=build_K(comps,off,NQ,prs)

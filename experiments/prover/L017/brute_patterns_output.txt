@@ -1,0 +1,17 @@
+E1+E1 (expect F7, pattern b): G has 6 vertices, 2 components, tau 2; configurations 6, with (star) 6 e.g. [((0, 3), (1, 4), (2, 5)), ((0, 3), (1, 5), (2, 4))]
+E1+(10,7,4)#0: G has 13 vertices, 2 components, tau 5; configurations 5130, with (star) 0 
+E1+(10,7,4)#1: G has 13 vertices, 2 components, tau 5; configurations 3024, with (star) 0 
+E1+(10,7,4)#2: G has 13 vertices, 2 components, tau 5; configurations 3024, with (star) 0 
+E1+(10,7,4)#3: G has 13 vertices, 2 components, tau 5; configurations 5130, with (star) 0 
+E1+(8,5,3)#0: G has 11 vertices, 2 components, tau 4; configurations 2070, with (star) 0 
+E1+(8,5,3)#1: G has 11 vertices, 2 components, tau 4; configurations 1245, with (star) 0 
+E1+E1+(8,5,3)#0: G has 14 vertices, 3 components, tau 5; configurations 16335, with (star) 0 
+E1+E1+(8,5,3)#1: G has 14 vertices, 3 components, tau 5; configurations 11151, with (star) 0 
+E1+E1+(10,7,4)#0: G has 16 vertices, 3 components, tau 6; configurations 28080, with (star) 0 
+E1+E1+(10,7,4)#1: G has 16 vertices, 3 components, tau 6; configurations 19233, with (star) 0 
+(8,5,3)#0 alone (pattern a; (9,8,4) graphs expected): G has 8 vertices, 1 components, tau 3; configurations 49, with (star) 15 e.g. [((0, 3), (4, 5), (6, 7)), ((0, 4), (1, 3), (2, 6))]
+(8,5,3)#1 alone (pattern a; (9,8,4) graphs expected): G has 8 vertices, 1 components, tau 3; configurations 22, with (star) 13 e.g. [((0, 1), (2, 5), (3, 6)), ((0, 1), (2, 6), (4, 5))]
+(10,7,4)#0 alone (pattern a): G has 10 vertices, 1 components, tau 4; configurations 269, with (star) 0 
+(10,7,4)#1 alone (pattern a): G has 10 vertices, 1 components, tau 4; configurations 122, with (star) 0 
+(10,7,4)#2 alone (pattern a): G has 10 vertices, 1 components, tau 4; configurations 120, with (star) 0 
+(10,7,4)#3 alone (pattern a): G has 10 vertices, 1 components, tau 4; configurations 270, with (star) 0 

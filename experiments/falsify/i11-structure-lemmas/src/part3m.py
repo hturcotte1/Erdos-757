@@ -93,25 +93,32 @@ def comp_multisets(lib,c,maxtotal):
     return res
 
 if __name__=='__main__':
-    kk=int(sys.argv[1]); maxtotal=int(sys.argv[2]); tlimit=float(sys.argv[3])
+    kk=int(sys.argv[1]); maxtotal=int(sys.argv[2]); tlimit=float(sys.argv[3]); cmin=int(sys.argv[4]); cmax=int(sys.argv[5]); tag=sys.argv[6]
     lib=load_library()
     import os
-    if os.path.exists('part3a_results.json'):
-        for i,g in enumerate(json.load(open('part3a_results.json'))['graphs']):
+    if os.path.exists('part3a_results_n18.json'):
+        for i,g in enumerate(json.load(open('part3a_results_n18.json'))['graphs']):
             lib.append(Comp('gen%d_%d#%d'%(g['n'],i,i),g['n'],[tuple(e) for e in g['edges']]))
-    t0=time.time(); report=[]; done=0; trunc=0; hits=[]
-    for c in range(1,kk+1):
+    t0=time.time(); report=[]; done=0; trunc=0; hits=[]; skipped_def=0; timeout_flag=False
+    tasks=[]
+    for c in range(cmin,cmax+1):
         for idxs in comp_multisets(lib,c,maxtotal):
             comps=[lib[i] for i in idxs]
-            if sum(deff(x) for x in comps)<kk+1: continue
-            if time.time()-t0>tlimit: print('TIME LIMIT'); break
-            try:
-                covs,nodes=minimal_covers(comps,kk)
-            except RuntimeError:
-                trunc+=1; report.append({'W':[x.name for x in comps],'truncated':True}); continue
-            done+=1
-            if covs:
-                hits.append({'W':[x.name for x in comps],'k':kk,'covers':covs})
-                print('MINIMAL COVER',[x.name for x in comps],len(covs),flush=True)
-    print('k',kk,'maxtotal',maxtotal,'unions done',done,'truncated',trunc,'hits',len(hits),'time',round(time.time()-t0,1))
-    json.dump({'k':kk,'maxtotal':maxtotal,'done':done,'truncated':trunc,'trunc_list':report,'hits':hits},open('part3m_k%d_max%d.json'%(kk,maxtotal),'w'))
+            if sum(deff(x) for x in comps)<kk+1: skipped_def+=1; continue
+            tasks.append((sum(x.n for x in comps),c,idxs))
+    tasks.sort()
+    print('tasks',len(tasks),'skipped by sum-def',skipped_def,flush=True)
+    last_total=None
+    for tot,c,idxs in tasks:
+        comps=[lib[i] for i in idxs]
+        if time.time()-t0>tlimit: timeout_flag=True; break
+        try:
+            covs,nodes=minimal_covers(comps,kk)
+        except RuntimeError:
+            trunc+=1; report.append({'W':[x.name for x in comps],'truncated':True}); continue
+        done+=1; last_total=tot
+        if covs:
+            hits.append({'W':[x.name for x in comps],'k':kk,'covers':covs})
+            print('MINIMAL COVER',[x.name for x in comps],len(covs),flush=True)
+    print('k',kk,'c range',cmin,cmax,'maxtotal',maxtotal,'unions done',done,'truncated',trunc,'hits',len(hits),'time',round(time.time()-t0,1),'timeout',timeout_flag,'last total done',last_total,flush=True)
+    json.dump({'k':kk,'cmin':cmin,'cmax':cmax,'maxtotal':maxtotal,'done':done,'truncated':trunc,'trunc_list':report,'timeout':timeout_flag,'last_total_done':last_total,'hits':hits},open('part3m_%s.json'%tag,'w'))
