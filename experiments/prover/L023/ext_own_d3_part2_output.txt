@@ -77,3 +77,11 @@ INPUT 845 covers 2974 pairs 55 extensions 0 EQUAL
 INPUT 846 covers 2959 pairs 55 extensions 0 EQUAL
 INPUT 847 covers 2861 pairs 55 extensions 0 EQUAL
 INPUT 848 covers 3049 pairs 55 extensions 0 EQUAL
+INPUT 849 covers 3022 pairs 55 extensions 0 EQUAL
+INPUT 850 covers 2893 pairs 55 extensions 0 EQUAL
+INPUT 851 covers 2937 pairs 55 extensions 0 EQUAL
+INPUT 852 covers 2943 pairs 55 extensions 0 EQUAL
+INPUT 853 covers 3023 pairs 55 extensions 0 EQUAL
+INPUT 854 covers 3103 pairs 56 extensions 0 EQUAL
+INPUT 855 covers 2969 pairs 55 extensions 0 EQUAL
+INPUT 856 covers 2873 pairs 55 extensions 0 EQUAL
