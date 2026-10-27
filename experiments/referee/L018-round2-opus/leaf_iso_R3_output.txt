@@ -1,0 +1,17 @@
+leaves read: 10
+leaf 0: nV=3 nproc=3 closed=True type=single-edge my best value=-3 (prover: (-3, (0, 1)))
+leaf 1: nV=31 nproc=15 closed=False type=P-tree-3 my best value=-1 (prover: (-1, (0, 1)))
+leaf 2: nV=24 nproc=12 closed=False type=P-tri-3 Cdegs=(2, 2) my best value=-1 (prover: (-1, (0, 1)))
+leaf 3: nV=26 nproc=12 closed=False type=P-tri-3 Cdegs=(2, 3) my best value=-1 (prover: (-1, (0, 1)))
+leaf 4: nV=26 nproc=12 closed=False type=P-tri-3 Cdegs=(2, 3) my best value=-1 (prover: (-1, (0, 1)))
+leaf 5: nV=28 nproc=12 closed=False type=P-tri-3 Cdegs=(3, 3) my best value=-1 (prover: (-1, (0, 1)))
+leaf 6: nV=24 nproc=12 closed=False type=P-tri-3 Cdegs=(2, 2) my best value=-1 (prover: (-1, (0, 1)))
+leaf 7: nV=26 nproc=12 closed=False type=P-tri-3 Cdegs=(2, 3) my best value=-1 (prover: (-1, (0, 1)))
+leaf 8: nV=26 nproc=12 closed=False type=P-tri-3 Cdegs=(2, 3) my best value=-1 (prover: (-1, (0, 1)))
+leaf 9: nV=28 nproc=12 closed=False type=P-tri-3 Cdegs=(3, 3) my best value=-1 (prover: (-1, (0, 1)))
+rooted isomorphism classes: 5
+   single-edge multiplicity 1 leaves [0]
+   P-tree-3 multiplicity 1 leaves [1]
+   P-tri-3 Cdegs=(2, 2) multiplicity 2 leaves [2, 6]
+   P-tri-3 Cdegs=(2, 3) multiplicity 4 leaves [3, 4, 7, 8]
+   P-tri-3 Cdegs=(3, 3) multiplicity 2 leaves [5, 9]

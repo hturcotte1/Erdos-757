@@ -1,0 +1,2 @@
+partners with an NC pair: [(3, 3), (10, 2), (10, 2)] F graphs: 299
+F with b-conf 0 with f-conf 0 of 299 ; near-tight graphs built: 0 []

@@ -1,0 +1,5 @@
+K4             girth 3  H=(n 8, m 5, tau 3, slack 1) linear True maxdeg 2 pendants 1  {'checked': 254, 'forest': 27, 'red': 5, 'l22viol': 0, 'forestviol': 0, 'minZred': 5}  minZ>=g/2: True
+K33            girth 4  H=(n 11, m 7, tau 4, slack 3) linear True maxdeg 2 pendants 1  {'checked': 2046, 'forest': 151, 'red': 74, 'l22viol': 0, 'forestviol': 0, 'minZred': 7}  minZ>=g/2: True
+Q3             girth 4  H=(n 14, m 9, tau 5, slack 5) linear True maxdeg 2 pendants 1  {'checked': 16382, 'forest': 739, 'red': 145, 'l22viol': 0, 'forestviol': 0, 'minZred': 7}  minZ>=g/2: True
+Petersen       girth 5  H=(n 17, m 11, tau 6, slack 7) linear True maxdeg 2 pendants 1  {'checked': 131070, 'forest': 3935, 'red': 1326, 'l22viol': 0, 'forestviol': 0, 'minZred': 7}  minZ>=g/2: True
+Heawood(s)     girth 6  H=(n 23, m 15, tau 8, slack 11) linear True maxdeg 2 pendants 1  {'checked': 20000, 'forest': 6131, 'red': 13, 'l22viol': 0, 'forestviol': 0, 'minZred': 14}  minZ>=g/2: True

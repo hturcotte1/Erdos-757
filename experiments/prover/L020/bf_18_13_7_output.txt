@@ -1,0 +1,33 @@
+partners with an NC pair: [(3, 3), (10, 2), (10, 2)] F graphs: 2544
+F 72 (18, 13, 7, 'slack', 3) b-conf 0 f-conf 1 near-tight results so far 14
+F 77 (18, 13, 7, 'slack', 3) b-conf 0 f-conf 1 near-tight results so far 28
+F 130 (18, 13, 7, 'slack', 3) b-conf 0 f-conf 1 near-tight results so far 42
+F 131 (18, 13, 7, 'slack', 3) b-conf 0 f-conf 1 near-tight results so far 56
+F 1900 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 57
+F 1901 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 58
+F 1938 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 59
+F 1994 (18, 13, 7, 'slack', 3) b-conf 0 f-conf 1 near-tight results so far 73
+F 1999 (18, 13, 7, 'slack', 3) b-conf 0 f-conf 1 near-tight results so far 87
+F 2028 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 88
+F 2029 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 89
+F 2030 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 90
+F 2031 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 91
+F 2032 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 92
+F 2033 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 93
+F 2034 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 94
+F 2035 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 95
+F 2036 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 96
+F 2285 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 97
+F 2289 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 98
+F 2313 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 99
+F 2314 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 100
+F 2317 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 101
+F 2324 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 102
+F 2354 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 103
+F 2463 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 104
+F 2464 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 105
+F 2467 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 106
+F 2482 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 107
+F 2502 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 108
+F 2509 (18, 13, 7, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 109
+F with b-conf 25 with f-conf 6 of 2544 ; near-tight graphs built: 109 [(22, 17, 9, 1), (29, 23, 12, 1)]

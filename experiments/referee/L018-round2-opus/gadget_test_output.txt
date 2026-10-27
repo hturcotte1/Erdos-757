@@ -1,0 +1,6 @@
+cell_10_7_4_D3.txt slack 0 {'classes': 4, 'instances': 442, 'logic_viol': 0, 'tau_up': 0, 'tau_up_in_C': 0}
+cell_14_12_6_D3.txt slack 0 {'classes': 6, 'instances': 492, 'logic_viol': 0, 'tau_up': 0, 'tau_up_in_C': 0}
+cell_17_13_7_D3.txt slack 0 {'classes': 12, 'instances': 6113, 'logic_viol': 0, 'tau_up': 0, 'tau_up_in_C': 0}
+cell_8_5_3_D3.txt slack 1 {'classes': 14, 'instances': 6195, 'logic_viol': 0, 'tau_up': 0, 'tau_up_in_C': 0}
+cell_15_11_6_D3.txt slack 1 {'classes': 33, 'instances': 19134, 'logic_viol': 0, 'tau_up': 0, 'tau_up_in_C': 0}
+TOTAL {'classes': 33, 'instances': 19134, 'logic_viol': 0, 'tau_up': 0, 'tau_up_in_C': 0}

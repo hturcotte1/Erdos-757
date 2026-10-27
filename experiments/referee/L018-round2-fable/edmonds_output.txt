@@ -1,0 +1,1 @@
+tested 2933 subcubic graphs: min(7nu-2|E|) = 0; equality cases 83; tau=m-nu identity asserted on the sampled duals

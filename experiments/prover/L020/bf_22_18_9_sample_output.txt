@@ -1,0 +1,3 @@
+partners with an NC pair: [(3, 3), (10, 2), (10, 2)] F graphs: 4000
+F 1659 (22, 18, 9, 'slack', 3) b-conf 1 f-conf 0 near-tight results so far 1
+F with b-conf 1 with f-conf 0 of 4000 ; near-tight graphs built: 1 [(26, 22, 11, 1)]

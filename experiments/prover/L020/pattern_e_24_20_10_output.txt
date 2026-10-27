@@ -1,0 +1,2 @@
+X classes with role_e: 2 [2, 3]
+TOTAL built 0 in C with Delta<=3 0 tau(K)=tau(F)+tau(X)+1: 0

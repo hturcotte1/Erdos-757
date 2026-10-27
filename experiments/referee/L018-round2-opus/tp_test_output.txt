@@ -1,0 +1,43 @@
+cell_10_7_4_D2.txt                                           classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_10_7_4_D3.txt                                           classes      4  maxdeg {3: 4}  pendants 2  TP violations 0
+cell_10_7_4_D4.txt                                           classes      5  maxdeg {3: 4, 4: 1}  pendants 3  TP violations 0
+cell_13_8_5_D2.txt                                           classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_13_8_5_D3.txt                                           classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_13_8_5_D4.txt                                           classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_14_12_6_D2.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_14_12_6_D3.txt                                          classes      2  maxdeg {3: 2}  pendants 0  TP violations 0
+cell_14_12_6_D4.txt                                          classes     11  maxdeg {4: 9, 3: 2}  pendants 4  TP violations 0
+cell_16_9_6_D2.txt                                           classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_16_9_6_D3.txt                                           classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_16_9_6_D4.txt                                           classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_17_13_7_D2.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_17_13_7_D3.txt                                          classes      6  maxdeg {3: 6}  pendants 0  TP violations 0
+cell_17_13_7_D4.txt                                          classes     10  maxdeg {3: 6, 4: 4}  pendants 0  TP violations 0
+cell_19_10_7_D2.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_19_10_7_D3.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_19_10_7_D4.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_20_14_8_D2.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_20_14_8_D3.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_20_14_8_D4.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_21_18_9_D3.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_21_18_9_D4.txt                                          classes     12  maxdeg {4: 12}  pendants 12  TP violations 0
+cell_22_11_8_D2.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_22_11_8_D3.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_22_11_8_D4.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_23_15_9_D2.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_23_15_9_D3.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_23_15_9_D4.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_24_19_10_D3.txt                                         classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_24_19_10_D4.txt                                         classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_25_12_9_D2.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_25_12_9_D3.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_25_12_9_D4.txt                                          classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_26_16_10_D2.txt                                         classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_26_16_10_D3.txt                                         classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_26_16_10_D4.txt                                         classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_27_20_11_D3.txt                                         classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_27_20_11_D4.txt                                         classes      0  maxdeg {}  pendants 0  TP violations 0
+cell_3_1_1_D2.txt                                            classes      1  maxdeg {1: 1}  pendants 3  TP violations 0
+cell_3_1_1_D3.txt                                            classes      1  maxdeg {1: 1}  pendants 3  TP violations 0
+cell_3_1_1_D4.txt                                            classes      1  maxdeg {1: 1}  pendants 3  TP violations 0
+TOTAL {'classes': 53, 'pendants': 30, 'viol': 0}

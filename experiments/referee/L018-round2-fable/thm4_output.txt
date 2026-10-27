@@ -1,0 +1,23 @@
+== Petersen: G has 11 vertices, 16 edges, girth 5; H: n=17 m=11
+  linear True | Delta 2 | pendants [16] | connected True
+  F7-free True | Hall e(S)<=|S|-2 True
+  tau=6 m-nu(G)=6 slack=7 n2=16 7*slack-n2=33 (>=0?)
+  r=0 [2r+4<=g]: K_r^sp(p) complete binary hypertree: True; |B_r(p)|=1; max value over Z in B_r(p) = -6
+  r=1 [2r+2<=g]: K_r^sp(p) complete binary hypertree: True; |B_r(p)|=3; max value over Z in B_r(p) = -1
+  exhaustive: 131070 sets Z; value>=0 for 1326; forest-lemma violations 0; min|Z| with value>=0: 7 (g/2=2.5); min|W| = 6 (g=5)
+  Lemma 2.2 bound violated on 0 sets
+== Heawood: G has 15 vertices, 22 edges, girth 6; H: n=23 m=15
+  linear True | Delta 2 | pendants [22] | connected True
+  F7-free True | Hall e(S)<=|S|-2 True
+  tau=8 m-nu(G)=8 slack=11 n2=22 7*slack-n2=55 (>=0?)
+  r=0 [2r+4<=g]: K_r^sp(p) complete binary hypertree: True; |B_r(p)|=1; max value over Z in B_r(p) = -6
+  r=1 [2r+4<=g]: K_r^sp(p) complete binary hypertree: True; |B_r(p)|=3; max value over Z in B_r(p) = -1
+  r=2 [2r+2<=g]: K_r^sp(p) complete binary hypertree: True; |B_r(p)|=7; max value over Z in B_r(p) = -1
+== Tutte-Coxeter: G has 31 vertices, 46 edges, girth 8; H: n=47 m=31
+  linear True | Delta 2 | pendants [46] | connected True
+  F7-free True | Hall e(S)<=|S|-2 True
+  tau=16 m-nu(G)=16 slack=27 n2=46 7*slack-n2=143 (>=0?)
+  r=0 [2r+4<=g]: K_r^sp(p) complete binary hypertree: True; |B_r(p)|=1; max value over Z in B_r(p) = -6
+  r=1 [2r+4<=g]: K_r^sp(p) complete binary hypertree: True; |B_r(p)|=3; max value over Z in B_r(p) = -1
+  r=2 [2r+4<=g]: K_r^sp(p) complete binary hypertree: True; |B_r(p)|=7; max value over Z in B_r(p) = -1
+  r=3 [2r+2<=g]: K_r^sp(p) complete binary hypertree: True; |B_r(p)|=15; max value over Z in B_r(p) = -1
