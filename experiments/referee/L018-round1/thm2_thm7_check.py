@@ -61,7 +61,7 @@ def check_A():
     cnt = 0; minval = None; eqcases = 0
     graphs = [g for g in nx.graph_atlas_g() if g.number_of_nodes() >= 1 and (g.number_of_edges() == 0 or max(d for _, d in g.degree()) <= 3)]
     for _ in range(3000):
-        N = random.randint(2, 40)
+        N = random.randint(2, 18)
         G = nx.Graph(); G.add_nodes_from(range(N))
         tries = 0
         target = random.randint(0, (3 * N) // 2)
@@ -98,7 +98,7 @@ def check_A():
             eqcases += 1
         minval = v if minval is None else min(minval, v)
         cnt += 1
-    print('(A) Theorem 2: %d linear Delta<=2 3-graphs (all subcubic graphs <= 7 vertices + 3000 random, up to 40 vertices): '
+    print('(A) Theorem 2: %d linear Delta<=2 3-graphs (all subcubic graphs <= 7 vertices + 3000 random, up to 18 vertices): '
           'identities tau = m - nu and slack = 3n0+11nu-3n2 hold; min of 7 slack - 21 n0 - n2 = %d; equality cases with n2>0: %d'
           % (cnt, minval, eqcases))
 

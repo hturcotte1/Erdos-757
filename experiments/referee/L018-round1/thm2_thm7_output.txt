@@ -1,0 +1,1 @@
+(A) Theorem 2: 3253 linear Delta<=2 3-graphs (all subcubic graphs <= 7 vertices + 3000 random, up to 18 vertices): identities tau = m - nu and slack = 3n0+11nu-3n2 hold; min of 7 slack - 21 n0 - n2 = 0; equality cases with n2>0: 19

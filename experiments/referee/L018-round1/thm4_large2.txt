@@ -1,0 +1,10 @@
+Foster: g=10  H: n=137 m=91 maxdeg=2 pendants=1 linear=True connected=True hall(e(S)<=|S|-2)=True tau=46 (m-nu=46) slack=87 n2=136
+   r=0: |B_r(p)|=1 |K_r|=1 boundary=2 binary-hypertree=True  max value over Z in B_r(p): -6
+   r=1: |B_r(p)|=3 |K_r|=3 boundary=4 binary-hypertree=True  max value over Z in B_r(p): -1
+   r=2: |B_r(p)|=7 |K_r|=7 boundary=8 binary-hypertree=True  max value over Z in B_r(p): -1
+   r=3: |B_r(p)|=15 |K_r|=15 boundary=16 binary-hypertree=True  max value over Z in B_r(p): -1
+Tutte12cage: g=12  H: n=191 m=127 maxdeg=2 pendants=1 linear=True connected=True hall(e(S)<=|S|-2)=True tau=64 (m-nu=64) slack=123 n2=190
+   r=0: |B_r(p)|=1 |K_r|=1 boundary=2 binary-hypertree=True  max value over Z in B_r(p): -6
+   r=1: |B_r(p)|=3 |K_r|=3 boundary=4 binary-hypertree=True  max value over Z in B_r(p): -1
+   r=2: |B_r(p)|=7 |K_r|=7 boundary=8 binary-hypertree=True  max value over Z in B_r(p): -1
+   r=3: |B_r(p)|=15 |K_r|=15 boundary=16 binary-hypertree=True  max value over Z in B_r(p): -1

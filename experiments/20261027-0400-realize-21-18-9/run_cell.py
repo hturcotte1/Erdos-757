@@ -1,5 +1,5 @@
 """usage: run_cell.py cellfile n tag [maxclasses] [seed]   -> results_<tag>.json ; sets_<tag>.json (explicit sets for realizable classes)"""
-import sys, re, json, random, time
+import sys, os, re, json, random, time
 from rexact import *
 from collections import Counter
 def parse(l): return [tuple(map(int, t.split(','))) for t in re.findall(r'\((\d+,\d+,\d+)\)', l)]
@@ -10,7 +10,7 @@ if __name__ == '__main__':
     res = []; sets = []
     for ci, l in enumerate(lines):
         E = parse(l)
-        sols, st = decide(E, n, find_all=True)
+        sols, st = decide(E, n, find_all=(os.environ.get("ALL","1")=="1"))
         dims = Counter(s[1] for s in sols)
         # exactness of F == E, explicit sets
         ex = []; nF = Counter()

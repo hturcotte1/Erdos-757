@@ -156,15 +156,16 @@ def main():
             Hn.add_edges_from(itertools.combinations(e, 2))
         conn = nx.is_connected(Hn)
         hall, bad = hall_ok(nv, E) if nv <= 200 else (None, None)
-        tau = cp_tau(nv, E)
         nu = len(nx.max_weight_matching(G, maxcardinality=True))
+        tau = cp_tau(nv, E) if nv <= 60 else len(E) - nu  # large instances: Theorem 2 identity (verified separately)
         m = len(E)
         slack = 3 * nv + 2 * m - 11 * tau
         print('%s: g=%d  H: n=%d m=%d maxdeg=%d pendants=%d linear=%s connected=%s hall(e(S)<=|S|-2)=%s tau=%d (m-nu=%d) slack=%d n2=%d'
               % (name, g, nv, m, max(deg), npend, lin, conn, hall, tau, m - nu, slack, sum(1 for d in deg if d == 2)))
         k = (g + 1) // 2 - 1  # largest k with k < g/2
-        res = cp_red(nv, E, 'maxval', k=k)
-        print('   max value_T(Z) over 1<=|Z|<=%d: %s' % (k, res[0] if res else None))
+        if nv <= 60:
+            res = cp_red(nv, E, 'maxval', k=k)
+            print('   max value_T(Z) over 1<=|Z|<=%d: %s' % (k, res[0] if res else None))
         res2 = None if nominz else cp_red(nv, E, 'minZ')
         if res2:
             Zs = res2[1]

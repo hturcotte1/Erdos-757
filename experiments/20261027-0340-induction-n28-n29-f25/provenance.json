@@ -2192,6 +2192,14 @@
 "firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_21_18_9_D4.txt",
 "md5": "c6cad9db145622fedd10d0f8481490c0"
 },
+"21,19,9,3": {
+"agree": [],
+"classes": 1347,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_21_19_9_D3.txt",
+"md5": "3674a810b28e28a2c59bc5834a180565"
+},
 "22,11,7,2": {
 "agree": [
 "20261017-2150-i11-n27 (worker, L016 cross-checked)",

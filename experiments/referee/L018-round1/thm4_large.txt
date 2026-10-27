@@ -3,3 +3,13 @@ TutteCoxeter: g=8  H: n=47 m=31 maxdeg=2 pendants=1 linear=True connected=True h
    r=0: |B_r(p)|=1 |K_r|=1 boundary=2 binary-hypertree=True  max value over Z in B_r(p): -6
    r=1: |B_r(p)|=3 |K_r|=3 boundary=4 binary-hypertree=True  max value over Z in B_r(p): -1
    r=2: |B_r(p)|=7 |K_r|=7 boundary=8 binary-hypertree=True  max value over Z in B_r(p): -1
+Traceback (most recent call last):
+  File "/home/user/Erdos-757/experiments/referee/L018-round1/thm4_check.py", line 227, in <module>
+    main()
+    ~~~~^^
+  File "/home/user/Erdos-757/experiments/referee/L018-round1/thm4_check.py", line 159, in main
+    tau = cp_tau(nv, E)
+  File "/home/user/Erdos-757/experiments/referee/L018-round1/thm4_check.py", line 81, in cp_tau
+    assert r == cp_model.OPTIMAL
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError

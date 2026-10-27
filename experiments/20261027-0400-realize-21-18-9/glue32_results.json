@@ -1,0 +1,31 @@
+{
+ "b": {
+  "dec": [
+   [
+    17,
+    13,
+    7
+   ],
+   [
+    14,
+    12,
+    6
+   ]
+  ],
+  "inputs": 110,
+  "hits_in_C": 480,
+  "ext": {
+   "graphs": 110,
+   "bad_tau": 0,
+   "tg_too_small": 0,
+   "searched": 110,
+   "max_min_covers": 65508,
+   "nodes": 1400628261,
+   "hits_F7free": 715,
+   "hits_in_C": 480
+  },
+  "connected_hits": 480,
+  "classes": 72,
+  "filt": "SUMMARY tag=HIT NV=32 total=480 bad_labels=0 linear=480 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=480 survivors_connected=480 wrong_tau_dropped=0 connected_all=480 tau_range=[-1,-1] maxdeg_max=4"
+ }
+}
