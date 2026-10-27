@@ -1,0 +1,72 @@
+# beam search over vertex extensions that raise tau: pool[n] = lowest-slack graphs on n vertices (any connectivity), degree cap DM.
+import sys, json, random, subprocess, collections, itertools, time, os, gzip
+from common import *
+DM = int(sys.argv[1]); W = int(sys.argv[2]); NMAX = int(sys.argv[3]); seed = int(sys.argv[4]); tag = sys.argv[5]
+random.seed(seed)
+env = dict(os.environ, I11_DM=str(DM), I11_SEED=str(seed))
+tight = json.load(open('pieces.json'))
+pieces = [(d['n'], [tuple(e) for e in d['edges']], d['slack']) for d in tight]
+if DM <= 3: pieces = [p for p in pieces if max(sum(v in e for e in p[1]) for v in range(p[0])) <= 3]
+AP = (3, [(0, 1, 2)], 0)
+def disj(a, b):
+    return (a[0] + b[0], a[1] + [tuple(v + a[0] for v in e) for e in b[1]])
+pool = collections.defaultdict(dict)   # n -> fp -> (slack, m, tau, edges-line)
+def parse_child(l):
+    t = l.split(' ', 5); return int(t[0]), int(t[1]), int(t[2]), int(t[3]), t[4], t[5].strip()
+# seeds: disjoint unions of pieces (slack = sum), up to NMAX
+seeds = []
+cur = [(p[0], p[1], p[2]) for p in pieces]
+seen = set()
+allp = [(p[0], p[1], p[2]) for p in pieces] + [AP]
+frontier = [AP]
+stack = [(0, [], 0)]
+def rec(cn, ce, cs, depth):
+    if depth > 0 and cn <= 22: seeds.append((cn, ce, cs))
+    if depth >= 4: return
+    for p in allp:
+        if cn + p[0] <= 22:
+            n2, e2 = disj((cn, ce), (p[0], p[1])); rec(n2, e2, cs + p[2], depth + 1)
+rec(0, [], 0, 0)
+random.shuffle(seeds)
+lines = [line(n, e) for n, e, s in seeds]
+res = run_eval(lines)
+for (n, e, s), r in zip(seeds, res):
+    if r and r[4] == 0 and r[3] <= 8: pool[n]["seed%d" % len(pool[n])] = (r[3], r[1], r[2], line(n, e).split(' ', 2)[2] if False else line(n, e))
+stats = {}
+best_by_n = {}
+t0 = time.time()
+lowfile = open('out/beam_%s_low.txt' % tag, 'w')
+for n in range(3, NMAX):
+    P = list(pool[n].values())
+    if not P: continue
+    random.shuffle(P); P.sort(key=lambda x: x[0]); P = P[:W]
+    inp = "\n".join(p[3] for p in P) + "\n"
+    r = subprocess.run([os.path.join(HERE, 'vext'), '400', '2'], input=inp, capture_output=True, text=True, env=env)
+    kids = 0; mn = 10**9
+    for l in r.stdout.split("\n"):
+        if not l: continue
+        s, nn, m, tau, fp, gl = parse_child(l)
+        kids += 1
+        if fp not in pool[nn]: pool[nn][fp] = (s, m, tau, gl)
+        if s < mn: mn = s
+        if s < 0: print("!!! NEGATIVE SLACK", l, flush=True); lowfile.write("NEG " + l + "\n")
+        if s <= 1 and nn >= 15: lowfile.write(l + "\n")
+    # unions with tight pieces (disconnected extensions) feed pools at larger n
+    for p in random.sample(P, min(len(P), 300)):
+        for q in [(3, [(0, 1, 2)], 0)] + [(a, b, c) for a, b, c in pieces if a in (8, 10, 12)]:
+            if n + q[0] <= NMAX and n + q[0] > 22:
+                e1 = [tuple(int(x) for x in t.split(',')) for t in p[3].split(' ')[2:]]
+                n2, e2 = disj((n, e1), (q[0], q[1]))
+                pool[n2]["u%d_%d" % (n, random.getrandbits(40))] = (p[0] + q[2], len(e2), -1, line(n2, e2))
+    ps = sorted(v[0] for v in pool[n + 1].values())
+    stats[n + 1] = dict(pool=len(pool[n + 1]), minslack=ps[0] if ps else None, hist=dict(collections.Counter(ps).most_common(8)))
+    print(n, "parents", len(P), "kids", kids, "-> n+1", stats[n + 1], "t=%.0fs" % (time.time() - t0), flush=True)
+    # keep only the best W*3 to bound memory
+    if len(pool[n + 1]) > 6 * W:
+        items = sorted(pool[n + 1].items(), key=lambda kv: kv[1][0]); pool[n + 1] = dict(items[:6 * W])
+json.dump(stats, open('out/beam_%s_stats.json' % tag, 'w'))
+# dump final low pools
+with gzip.open('out/beam_%s_pools.jsonl.gz' % tag, 'wt') as f:
+    for n in sorted(pool):
+        for fp, v in sorted(pool[n].items(), key=lambda kv: kv[1][0])[:300]:
+            f.write(json.dumps(dict(n=n, slack=v[0], m=v[1], tau=v[2], line=v[3])) + "\n")

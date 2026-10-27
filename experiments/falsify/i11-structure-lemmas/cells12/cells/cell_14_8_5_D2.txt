@@ -1,0 +1,2 @@
+FOUND: (0,1,12) (2,3,13) (4,5,6) (4,12,13) (5,9,10) (6,8,11) (7,8,10) (7,9,11)
+INFO {"route": "direct", "enum": "enum_conn N=14 M=8 T0=5 DMAX=2 calls=203402 found=44", "labelled": 44, "in_C_tau_exact": 44, "filt": "SUMMARY tag=FOUND NV=14 total=44 bad_labels=0 linear=44 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=44 survivors_connected=44 wrong_tau_dropped=0 connected_all=44 tau_range=[5,5] maxdeg_max=2", "secs": 0.0}

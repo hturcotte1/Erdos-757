@@ -15,6 +15,12 @@
 - Henning, Yeo, *Hypergraphs with large transversal number and with edge sizes at least three*, J. Graph Theory 59 (2008) 326–348, and *Hypergraphs with large transversal number*, Discrete Math. 313 (2013) 959–966 (equality cases of $4\tau\le n+m$, $6\tau\le2n+m$; cited by HY 2021); Henning, Löwenstein, DM 323 (2014) 69–75 (arXiv:1401.4851)
 - zbMATH Open record of HY 2021: Zbl 1470.05066 (no review text); full text NOT obtained, see kb/notes/henning_yeo_2021_affine.md
 - Sidorenko, *Exact values of Turán numbers*, Mat. Zametki 42 (1987) 751–760; Chvátal, Hanson, *Degrees and matchings*, JCTB 20 (1976) 128–138 (both cited by Gyárfás–Lehel); Lovász, Plummer, *Matching Theory* (1986)
+- Thomassé, Yeo, *Total domination of graphs and small transversals of hypergraphs*, Combinatorica 27 (2007) 473–487 (elementary proof of $4\tau\le n+m$ for 3-uniform hypergraphs; lexicographic minimal counterexample for 4-uniform): https://hal-lirmm.ccsd.cnrs.fr/lirmm-00250084/document · text saved in kb/literature/sources/henning_yeo/
+- Henning, Löwenstein, *A characterization of hypergraphs that achieve equality in the Chvátal–McDiarmid Theorem*, Discrete Math. 323 (2014) 69–75: https://arxiv.org/abs/1401.4851 (text saved)
+- Henning, Yeo, *Transversals in 4-uniform hypergraphs*, arXiv:1504.02650 (minimal counterexample with families of bad hypergraphs; $F_7$ appears as an equality component): https://arxiv.org/abs/1504.02650 (text saved)
+- Bujtás, Henning, Tuza, Yeo, *Total transversals and total domination in uniform hypergraphs*, EJC 21(2) P2.24 = arXiv:1310.7359 (text saved)
+- Henning, Yeo, *On upper transversals in 3-uniform hypergraphs*, EJC 25(4) P4.27: https://www.combinatorics.org/ojs/index.php/eljc/article/view/v25i4p27 (text saved)
+- Proof-technique note for the HY 2021 inequality (full text still NOT obtained; searched again 2026-10-27): kb/notes/hy_proof_technique.md
 - Henning, Yeo, *Transversals in Linear Uniform Hypergraphs* (book, Springer 2020): https://link.springer.com/978-3-030-46561-2
 - Chvátal, McDiarmid, *Small transversals in hypergraphs*, Combinatorica 12 (1992) 19–26; Tuza, *Covering all cliques of a graph*, Discrete Math. 86 (1990) 117–126
 

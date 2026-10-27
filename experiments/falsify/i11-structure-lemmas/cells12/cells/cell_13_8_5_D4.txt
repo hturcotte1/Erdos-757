@@ -1,0 +1,1 @@
+INFO {"route": "direct", "enum": "enum_conn N=13 M=8 T0=5 DMAX=4 calls=1773159 found=159", "labelled": 159, "in_C_tau_exact": 0, "filt": "SUMMARY tag=FOUND NV=13 total=159 bad_labels=0 linear=159 contain_F7=159 P3_violated=0 F7free_and_P3_violated=0 survivors=0 survivors_connected=0 wrong_tau_dropped=0 connected_all=159 tau_range=[5,5] maxdeg_max=4", "secs": 0.2}

@@ -67,3 +67,47 @@ S_K family). (2) Compute the (Red)-free connected Delta <= 3 graphs for small n 
 counterexample must have (experiments/20261027-0230-red-config). (3) Obtain the Henning-Yeo proof text and adapt its
 degree-3 reductions. (4) Write certificate L017 (the structure theorem for a minimal counterexample) for refereeing even if
 the full proof is not reached.
+
+## Addendum 2026-10-27 02:55 UTC: the Henning-Yeo deficiency template and a Hall lemma [derived-here]
+
+Source read: Henning-Yeo, arXiv:1802.01825, Section 7 (saved by the scout in kb/literature/sources/henning_yeo/;
+text extract in the scratchpad). Their key theorem has the form A tau <= B n + C m + def(H), where def(H) is the
+maximum over families X of vertex-disjoint 'special' subhypergraphs of sum of weights minus C per edge of E*(X)
+(edges meeting X from outside); the proof is a minimal counterexample on n + m with Claim B (if a minimum X-transversal
+covers E*(X), induct on H - V(X)), then Hall's theorem on the bipartite graph (X versus E*(X)) and a choice of X
+minimising |E*(X)| - |X| gives |E*(X)| >= |X| + 2; the rest is a long local case analysis. The weights make the
+induction exact for the special pieces. For I11 on class C the analogue is cleaner because (conjecturally) nothing
+violates the plain inequality, so no weights are needed; what remains is the Hall argument, which we can state for
+arbitrary low-slack blocks:
+
+Lemma U'' (non-universality from slack) [derived-here]. Let F in C satisfy I11 on all its proper induced subgraphs
+(e.g. F a proper induced subgraph of a minimal counterexample). If x is a vertex with d_F(x) >= 1 and
+slack(F) < 3 + 2 d_F(x) (in particular whenever slack(F) <= 4), then tau(F - x) = tau(F) - 1, i.e. x lies in a minimum
+transversal of F. Proof: otherwise slack(F - x) = slack(F) - 3 - 2 d_F(x) < 0. Two vertices x, y lie in a common
+minimum transversal whenever slack(F) < 5 + 2(d_F(x) + d_F(y) - [x,y share an edge]) fails to allow tau(F - x - y) = tau(F) - 1:
+precisely, if tau(F - x - y) >= tau(F) - 1 then slack(F - x - y) = slack(F) + 5 - 2(d_x + d_y - s_xy) must be >= 0.
+
+Lemma H (Hall reduction) [derived-here]. Let H be a minimal counterexample to I11 and X = {F_1, ..., F_r} a nonempty
+family of vertex-disjoint PROPER induced subgraphs of H, each with slack(F_i) <= 4 and no isolated vertex. Let E*(X)
+be the edges of H meeting V(X) that lie in no F_i. If the bipartite graph between E*(X) and X (e adjacent to F_i when
+e meets V(F_i)) has a matching saturating E*(X), then I11 holds for H. Proof: for each matched pair (e, F_i) pick
+x_e in e meeting V(F_i); by Lemma U'' there is a minimum transversal T_i of F_i containing x_e (for unmatched F_i any
+minimum transversal); T = union of the T_i covers every edge meeting V(X); tau(H) <= |T| + tau(H - V(X)) and I11 for
+H - V(X) and for the F_i give 11 tau(H) <= 3n + 2m - sum slack(F_i) - 2|E*(X)| <= 3n + 2m.
+Consequences for a minimal counterexample H (connected, Delta <= 3, slack s <= -1):
+(H1) every edge has degree sum >= 5 (X = {e}: |E*| = degsum - 3 must be >= 2); with Lemma R(b) the only pattern
+with a degree-1 vertex is (1,2,2).
+(H2) For a vertex v of degree 3: tau(H - v) = tau(H) - 1 and slack(H - v) = s + 2 in {0, 1} (so s in {-1, -2}); H - v has
+no isolated vertex (an isolated vertex has slack 3 > 1), hence all six neighbours of v have degree >= 2; the components
+F_1..F_r of H - v have slacks >= 0 summing to s + 2, so all are tight except at most one of slack 1; and Hall must FAIL
+for X = {F_i} with E*(X) = the three edges at v. Hence r <= 3 and exactly one of: (a) r = 1 (H - v connected, slack <= 1,
+and no minimum transversal of H - v meets all three pairs {a,b}, {c,d}, {e,f} of v's co-vertices); (b) r = 2 and every
+edge at v has one co-vertex in each component; (c) r = 2, two edges at v have all four co-vertices in F_1 and the third
+edge meets F_2; (d) r = 3, two edges inside F_1 and the third edge bridging F_2 and F_3. In (c), (d) no minimum
+transversal of F_1 meets both pairs; in (b) no minimum transversal of F_1 contains two of x_1, x_2, x_3 and likewise F_2.
+(H3) For a vertex v of degree 2: slack(H - v) = s + 4 in {2, 3}; Hall with the two edges at v must fail: H - v has exactly
+one non-trivial component meeting both edges (or an edge at v meets no block, which needs two degree-1 co-vertices,
+excluded by (H1)).
+(H4) If Delta(H) <= 2 then Lemma M (to be proved) applies; otherwise H has a degree-3 vertex and (H2) holds.
+Open: turning (H2) into a contradiction needs knowledge of the low-slack graphs F (tight and slack-1): the 'pair/triple
+transversal' properties. This is where the Henning-Yeo case analysis would start.

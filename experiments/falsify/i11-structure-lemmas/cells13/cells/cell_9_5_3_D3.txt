@@ -1,0 +1,7 @@
+FOUND: (0,1,3) (2,6,7) (3,4,5) (4,6,8) (5,7,8)
+FOUND: (0,1,8) (2,5,6) (3,4,7) (4,6,8) (5,7,8)
+FOUND: (0,3,4) (1,5,7) (2,6,8) (3,7,8) (4,5,6)
+FOUND: (0,4,5) (1,3,7) (2,3,6) (4,7,8) (5,6,8)
+FOUND: (0,6,8) (1,7,8) (2,3,4) (4,5,8) (5,6,7)
+FOUND: (0,6,8) (1,7,8) (2,4,6) (3,5,7) (4,5,8)
+INFO {"route": "direct", "enum": "enum_conn N=9 M=5 T0=3 DMAX=3 calls=2972 found=278", "labelled": 278, "in_C_tau_exact": 278, "filt": "SUMMARY tag=FOUND NV=9 total=278 bad_labels=0 linear=278 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=278 survivors_connected=278 wrong_tau_dropped=0 connected_all=278 tau_range=[3,3] maxdeg_max=3", "secs": 0.0}

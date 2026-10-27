@@ -75,3 +75,9 @@ experiments/*/out/
 experiments/referee/*/bin/
 experiments/prover/*/indep/*.log
 experiments/prover/*/indep/*.txt
+
+# seeded cell directories of workers (large; the certified lists live in the prover tarballs)
+experiments/falsify/*/cells*/
+experiments/*/cells/
+experiments/*/out/cells/
+experiments/*/*/cells/

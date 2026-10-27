@@ -1,0 +1,11 @@
+/usr/local/lib/python3.13/dist-packages/networkx/algorithms/graph_hashing.py:211: UserWarning: The hashes produced for graphs without node or edge attributes changed in v3.5 due to a bugfix (see documentation).
+  node_labels = _init_node_labels(G, edge_attr, node_attr)
+m 2 1
+m 3 2
+m 4 6
+m 5 10
+m 6 29
+m 7 64
+m 8 194
+m 9 531
+m 10 1733

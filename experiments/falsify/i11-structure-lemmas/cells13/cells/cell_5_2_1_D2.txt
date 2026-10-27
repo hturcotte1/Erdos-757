@@ -1,0 +1,2 @@
+FOUND: (0,3,4) (1,2,4)
+INFO {"route": "direct", "enum": "enum_conn N=5 M=2 T0=1 DMAX=2 calls=13 found=3", "labelled": 3, "in_C_tau_exact": 3, "filt": "SUMMARY tag=FOUND NV=5 total=3 bad_labels=0 linear=3 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=3 survivors_connected=3 wrong_tau_dropped=0 connected_all=3 tau_range=[1,1] maxdeg_max=2", "secs": 0.0}
