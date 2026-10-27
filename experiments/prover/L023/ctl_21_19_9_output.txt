@@ -1,2 +1,3 @@
 CLASS 43 n=21 mine=REAL rexact=REAL AGREE {"labellings": 23950, "SINGULAR": 0, "NONINJ": 2412, "NOTWS": 15816, "NONLIN": 0, "APSET": 0, "REAL": 5722} example_is_45=True num_aps=19 secs=112.2
 CLASS 0 n=21 mine=NOT rexact=NOT AGREE {"labellings": 29524, "SINGULAR": 0, "NONINJ": 7320, "NOTWS": 22204, "NONLIN": 0, "APSET": 0, "REAL": 0} secs=111.2
+CLASS 1 n=21 mine=REAL rexact=REAL AGREE {"labellings": 33050, "SINGULAR": 0, "NONINJ": 7522, "NOTWS": 22882, "NONLIN": 0, "APSET": 0, "REAL": 2646} example_is_45=True num_aps=19 secs=137.3
