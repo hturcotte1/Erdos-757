@@ -1,0 +1,7 @@
+(3,1,1)#0 {'total': 4, 'void_no_outer': 0, 'notC': 0, 'killedI11': 0, 'survive': 4, 'I11_formula_kill_all': 0, 'time_s': 0.0}
+(8,5,3)#0 {'total': 291, 'void_no_outer': 15, 'notC': 12, 'killedI11': 0, 'survive': 264, 'I11_formula_kill_all': 0, 'time_s': 0.6}
+(8,5,3)#1 {'total': 220, 'void_no_outer': 13, 'notC': 24, 'killedI11': 0, 'survive': 183, 'I11_formula_kill_all': 0, 'time_s': 0.3}
+(10,7,4)#0 {'total': 204, 'void_no_outer': 0, 'notC': 6, 'killedI11': 0, 'survive': 198, 'I11_formula_kill_all': 0, 'time_s': 0.8}
+(10,7,4)#1 {'total': 128, 'void_no_outer': 0, 'notC': 4, 'killedI11': 0, 'survive': 124, 'I11_formula_kill_all': 0, 'time_s': 0.4}
+(10,7,4)#2 {'total': 149, 'void_no_outer': 0, 'notC': 4, 'killedI11': 0, 'survive': 145, 'I11_formula_kill_all': 0, 'time_s': 0.5}
+(10,7,4)#3 {'total': 179, 'void_no_outer': 0, 'notC': 6, 'killedI11': 0, 'survive': 173, 'I11_formula_kill_all': 0, 'time_s': 0.5}

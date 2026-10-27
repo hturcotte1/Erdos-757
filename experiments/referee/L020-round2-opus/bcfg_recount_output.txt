@@ -1,0 +1,6 @@
+cell_9_4_3     classes    1  b-config (edges allowed)    1  b-config (non-edge only)   0  e-config    0
+cell_10_8_4    classes   63  b-config (edges allowed)    1  b-config (non-edge only)   0  e-config   25
+cell_13_9_5    classes   84  b-config (edges allowed)   32  b-config (non-edge only)   3  e-config    5
+cell_16_10_6   classes   16  b-config (edges allowed)   16  b-config (non-edge only)   0  e-config    0
+cell_6_3_2     classes    1  b-config (edges allowed)    1  b-config (non-edge only)   1  e-config    1
+cell_20_15_8   classes  953  b-config (edges allowed)  159  b-config (non-edge only)   0  e-config   24

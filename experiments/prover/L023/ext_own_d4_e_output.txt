@@ -1,0 +1,1 @@
+INPUT 24 covers 5040 pairs 190 extensions 293 EQUAL
