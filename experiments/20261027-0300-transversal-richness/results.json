@@ -1,0 +1,1248 @@
+{
+ "3_1_1": {
+  "n": 3,
+  "m": 1,
+  "tau": 1,
+  "slack": 0,
+  "D_listed": 4,
+  "classes": 1,
+  "classes_deg_le3": 1,
+  "n_minus_m": 2,
+  "m_le_n_minus_4": false,
+  "maxdeg_range": [
+   1,
+   1
+  ],
+  "nT_min": 3,
+  "nT_max": 3,
+  "nT_mean": 3.0,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 1,
+  "P2_bound_floor_s5_2": 2,
+  "p2_pairs": 3,
+  "p2_fail": 3,
+  "p2_fail_by_key": {
+   "1": [
+    3,
+    3
+   ]
+  },
+  "p2_by_key_total": {
+   "1": 3
+  },
+  "classes_with_P2_failure": 1,
+  "pp_all": 0,
+  "pp_all_cov": 0,
+  "pp_good": 0,
+  "pp_good_cov": 0,
+  "classes_pp_all_cov": 0,
+  "triples": 0,
+  "triples_coverable": 0,
+  "triples_linear": 0,
+  "triples_admissible": 0,
+  "admissible_uncoverable": 0,
+  "classes_with_admissible": 0,
+  "classes_with_admissible_uncoverable": 0,
+  "adm_R2": 0,
+  "adm_R2_unc": 0,
+  "adm_R1": 0,
+  "adm_R1_unc": 0,
+  "uncoverable_total": 0,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {}
+  },
+  "uncoverable_P_violating_minS": {},
+  "uncoverable_P_only_minS": {},
+  "nonadm_total": 0,
+  "nonadm_L": 0,
+  "nonadm_P": 0,
+  "adm_unc_sample": [],
+  "degree_sequences": 1
+ },
+ "10_7_4": {
+  "n": 10,
+  "m": 7,
+  "tau": 4,
+  "slack": 0,
+  "D_listed": 4,
+  "classes": 5,
+  "classes_deg_le3": 4,
+  "n_minus_m": 3,
+  "m_le_n_minus_4": false,
+  "maxdeg_range": [
+   3,
+   4
+  ],
+  "nT_min": 30,
+  "nT_max": 35,
+  "nT_mean": 32.2,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 2,
+  "P2_bound_floor_s5_2": 2,
+  "p2_pairs": 225,
+  "p2_fail": 6,
+  "p2_fail_by_key": {
+   "2": [
+    6,
+    6
+   ]
+  },
+  "p2_by_key_total": {
+   "2": 6,
+   "3": 73,
+   "4": 121,
+   "5": 25
+  },
+  "classes_with_P2_failure": 3,
+  "pp_all": 3150,
+  "pp_all_cov": 3150,
+  "pp_good": 899,
+  "pp_good_cov": 899,
+  "classes_pp_all_cov": 0,
+  "triples": 15750,
+  "triples_coverable": 15744,
+  "triples_linear": 2403,
+  "triples_admissible": 0,
+  "admissible_uncoverable": 0,
+  "classes_with_admissible": 0,
+  "classes_with_admissible_uncoverable": 0,
+  "adm_R2": 0,
+  "adm_R2_unc": 0,
+  "adm_R1": 0,
+  "adm_R1_unc": 0,
+  "uncoverable_total": 6,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "6": 6
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "8": 6
+  },
+  "uncoverable_P_only_minS": {},
+  "nonadm_total": 15750,
+  "nonadm_L": 13347,
+  "nonadm_P": 15750,
+  "adm_unc_sample": [],
+  "degree_sequences": 3
+ },
+ "14_12_6": {
+  "n": 14,
+  "m": 12,
+  "tau": 6,
+  "slack": 0,
+  "D_listed": 4,
+  "classes": 11,
+  "classes_deg_le3": 2,
+  "n_minus_m": 2,
+  "m_le_n_minus_4": false,
+  "maxdeg_range": [
+   3,
+   4
+  ],
+  "nT_min": 137,
+  "nT_max": 159,
+  "nT_mean": 146.63636363636363,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 2,
+  "P2_bound_floor_s5_2": 2,
+  "p2_pairs": 1001,
+  "p2_fail": 8,
+  "p2_fail_by_key": {
+   "2": [
+    8,
+    10
+   ]
+  },
+  "p2_by_key_total": {
+   "2": 10,
+   "3": 72,
+   "4": 282,
+   "5": 453,
+   "6": 169,
+   "7": 11,
+   "8": 4
+  },
+  "classes_with_P2_failure": 2,
+  "pp_all": 33033,
+  "pp_all_cov": 33033,
+  "pp_good": 12035,
+  "pp_good_cov": 12035,
+  "classes_pp_all_cov": 0,
+  "triples": 495495,
+  "triples_coverable": 495493,
+  "triples_linear": 108450,
+  "triples_admissible": 0,
+  "admissible_uncoverable": 0,
+  "classes_with_admissible": 0,
+  "classes_with_admissible_uncoverable": 0,
+  "adm_R2": 0,
+  "adm_R2_unc": 0,
+  "adm_R1": 0,
+  "adm_R1_unc": 0,
+  "uncoverable_total": 2,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "5": 2
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "13": 2
+  },
+  "uncoverable_P_only_minS": {},
+  "nonadm_total": 495495,
+  "nonadm_L": 387045,
+  "nonadm_P": 495495,
+  "adm_unc_sample": [],
+  "degree_sequences": 4
+ },
+ "17_13_7": {
+  "n": 17,
+  "m": 13,
+  "tau": 7,
+  "slack": 0,
+  "D_listed": 3,
+  "classes": 6,
+  "classes_deg_le3": 6,
+  "n_minus_m": 4,
+  "m_le_n_minus_4": true,
+  "maxdeg_range": [
+   3,
+   3
+  ],
+  "nT_min": 350,
+  "nT_max": 372,
+  "nT_mean": 360.6666666666667,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": null,
+  "P2_bound_floor_s5_2": 2,
+  "p2_pairs": 816,
+  "p2_fail": 0,
+  "p2_fail_by_key": {},
+  "p2_by_key_total": {
+   "3": 82,
+   "4": 438,
+   "5": 264,
+   "6": 32
+  },
+  "classes_with_P2_failure": 0,
+  "pp_all": 42840,
+  "pp_all_cov": 42840,
+  "pp_good": 21834,
+  "pp_good_cov": 21834,
+  "classes_pp_all_cov": 0,
+  "triples": 1113840,
+  "triples_coverable": 1113816,
+  "triples_linear": 406470,
+  "triples_admissible": 393178,
+  "admissible_uncoverable": 0,
+  "classes_with_admissible": 6,
+  "classes_with_admissible_uncoverable": 0,
+  "adm_R2": 40743,
+  "adm_R2_unc": 0,
+  "adm_R1": 393178,
+  "adm_R1_unc": 0,
+  "uncoverable_total": 24,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "6": 24
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "8": 24
+  },
+  "uncoverable_P_only_minS": {},
+  "nonadm_total": 720662,
+  "nonadm_L": 707370,
+  "nonadm_P": 37800,
+  "adm_unc_sample": [],
+  "degree_sequences": 1
+ },
+ "8_5_3": {
+  "n": 8,
+  "m": 5,
+  "tau": 3,
+  "slack": 1,
+  "D_listed": 4,
+  "classes": 2,
+  "classes_deg_le3": 2,
+  "n_minus_m": 3,
+  "m_le_n_minus_4": false,
+  "maxdeg_range": [
+   2,
+   3
+  ],
+  "nT_min": 13,
+  "nT_max": 14,
+  "nT_mean": 13.5,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 3,
+  "P2_bound_floor_s5_2": 3,
+  "p2_pairs": 56,
+  "p2_fail": 11,
+  "p2_fail_by_key": {
+   "2": [
+    6,
+    6
+   ],
+   "3": [
+    5,
+    32
+   ]
+  },
+  "p2_by_key_total": {
+   "2": 6,
+   "3": 32,
+   "4": 18
+  },
+  "classes_with_P2_failure": 2,
+  "pp_all": 420,
+  "pp_all_cov": 420,
+  "pp_good": 90,
+  "pp_good_cov": 90,
+  "classes_pp_all_cov": 0,
+  "triples": 840,
+  "triples_coverable": 778,
+  "triples_linear": 84,
+  "triples_admissible": 0,
+  "admissible_uncoverable": 0,
+  "classes_with_admissible": 0,
+  "classes_with_admissible_uncoverable": 0,
+  "adm_R2": 0,
+  "adm_R2_unc": 0,
+  "adm_R1": 0,
+  "adm_R1_unc": 0,
+  "uncoverable_total": 62,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "4": 6,
+    "5": 18,
+    "6": 22,
+    "7": 16
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "8": 6,
+   "9": 56
+  },
+  "uncoverable_P_only_minS": {
+   "9": 6
+  },
+  "nonadm_total": 840,
+  "nonadm_L": 756,
+  "nonadm_P": 840,
+  "adm_unc_sample": [],
+  "degree_sequences": 2
+ },
+ "12_10_5": {
+  "n": 12,
+  "m": 10,
+  "tau": 5,
+  "slack": 1,
+  "D_listed": 4,
+  "classes": 221,
+  "classes_deg_le3": 149,
+  "n_minus_m": 2,
+  "m_le_n_minus_4": false,
+  "maxdeg_range": [
+   3,
+   4
+  ],
+  "nT_min": 45,
+  "nT_max": 64,
+  "nT_mean": 56.57918552036199,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 3,
+  "P2_bound_floor_s5_2": 3,
+  "p2_pairs": 14586,
+  "p2_fail": 250,
+  "p2_fail_by_key": {
+   "2": [
+    97,
+    99
+   ],
+   "3": [
+    153,
+    1300
+   ]
+  },
+  "p2_by_key_total": {
+   "2": 99,
+   "3": 1300,
+   "4": 5000,
+   "5": 6963,
+   "6": 1181,
+   "7": 43
+  },
+  "classes_with_P2_failure": 134,
+  "pp_all": 328185,
+  "pp_all_cov": 328185,
+  "pp_good": 97512,
+  "pp_good_cov": 97512,
+  "classes_pp_all_cov": 0,
+  "triples": 3063060,
+  "triples_coverable": 3063036,
+  "triples_linear": 494567,
+  "triples_admissible": 0,
+  "admissible_uncoverable": 0,
+  "classes_with_admissible": 0,
+  "classes_with_admissible_uncoverable": 0,
+  "adm_R2": 0,
+  "adm_R2_unc": 0,
+  "adm_R1": 0,
+  "adm_R1_unc": 0,
+  "uncoverable_total": 24,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "4": 18,
+    "5": 6
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "11": 6,
+   "13": 18
+  },
+  "uncoverable_P_only_minS": {
+   "13": 18
+  },
+  "nonadm_total": 3063060,
+  "nonadm_L": 2568493,
+  "nonadm_P": 3063060,
+  "adm_unc_sample": [],
+  "degree_sequences": 7
+ },
+ "15_11_6": {
+  "n": 15,
+  "m": 11,
+  "tau": 6,
+  "slack": 1,
+  "D_listed": 4,
+  "classes": 30,
+  "classes_deg_le3": 19,
+  "n_minus_m": 4,
+  "m_le_n_minus_4": true,
+  "maxdeg_range": [
+   3,
+   4
+  ],
+  "nT_min": 136,
+  "nT_max": 177,
+  "nT_mean": 155.26666666666668,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 3,
+  "P2_bound_floor_s5_2": 3,
+  "p2_pairs": 3150,
+  "p2_fail": 65,
+  "p2_fail_by_key": {
+   "2": [
+    35,
+    38
+   ],
+   "3": [
+    30,
+    598
+   ]
+  },
+  "p2_by_key_total": {
+   "2": 38,
+   "3": 598,
+   "4": 1688,
+   "5": 715,
+   "6": 104,
+   "7": 7
+  },
+  "classes_with_P2_failure": 22,
+  "pp_all": 122850,
+  "pp_all_cov": 122850,
+  "pp_good": 57828,
+  "pp_good_cov": 57828,
+  "classes_pp_all_cov": 0,
+  "triples": 2252250,
+  "triples_coverable": 2252053,
+  "triples_linear": 728644,
+  "triples_admissible": 695668,
+  "admissible_uncoverable": 0,
+  "classes_with_admissible": 30,
+  "classes_with_admissible_uncoverable": 0,
+  "adm_R2": 116166,
+  "adm_R2_unc": 0,
+  "adm_R1": 478845,
+  "adm_R1_unc": 0,
+  "uncoverable_total": 197,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "6": 154,
+    "7": 43
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "8": 116,
+   "9": 81
+  },
+  "uncoverable_P_only_minS": {},
+  "nonadm_total": 1556582,
+  "nonadm_L": 1523606,
+  "nonadm_P": 91980,
+  "adm_unc_sample": [],
+  "degree_sequences": 7
+ },
+ "19_16_8": {
+  "n": 19,
+  "m": 16,
+  "tau": 8,
+  "slack": 1,
+  "D_listed": 4,
+  "classes": 956,
+  "classes_deg_le3": 227,
+  "n_minus_m": 3,
+  "m_le_n_minus_4": false,
+  "maxdeg_range": [
+   3,
+   4
+  ],
+  "nT_min": 555,
+  "nT_max": 806,
+  "nT_mean": 672.7625523012553,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 3,
+  "P2_bound_floor_s5_2": 3,
+  "p2_pairs": 163476,
+  "p2_fail": 407,
+  "p2_fail_by_key": {
+   "2": [
+    229,
+    246
+   ],
+   "3": [
+    178,
+    9868
+   ]
+  },
+  "p2_by_key_total": {
+   "2": 246,
+   "3": 9868,
+   "4": 48920,
+   "5": 75763,
+   "6": 25417,
+   "7": 3093,
+   "8": 169
+  },
+  "classes_with_P2_failure": 234,
+  "pp_all": 11116368,
+  "pp_all_cov": 11116368,
+  "pp_good": 5754400,
+  "pp_good_cov": 5754400,
+  "classes_pp_all_cov": 0,
+  "triples": 389072880,
+  "triples_coverable": 389070895,
+  "triples_linear": 145017861,
+  "triples_admissible": 0,
+  "admissible_uncoverable": 0,
+  "classes_with_admissible": 0,
+  "classes_with_admissible_uncoverable": 0,
+  "adm_R2": 0,
+  "adm_R2_unc": 0,
+  "adm_R1": 0,
+  "adm_R1_unc": 0,
+  "uncoverable_total": 1985,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "5": 15,
+    "6": 1938,
+    "7": 32
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "8": 1910,
+   "9": 60,
+   "17": 2,
+   "18": 2,
+   "20": 11
+  },
+  "uncoverable_P_only_minS": {},
+  "nonadm_total": 389072880,
+  "nonadm_L": 244055019,
+  "nonadm_P": 389072880,
+  "adm_unc_sample": [],
+  "degree_sequences": 11
+ },
+ "6_3_2": {
+  "n": 6,
+  "m": 3,
+  "tau": 2,
+  "slack": 2,
+  "D_listed": 3,
+  "classes": 1,
+  "classes_deg_le3": 1,
+  "n_minus_m": 3,
+  "m_le_n_minus_4": false,
+  "maxdeg_range": [
+   2,
+   2
+  ],
+  "nT_min": 6,
+  "nT_max": 6,
+  "nT_mean": 6.0,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 2,
+  "P2_bound_floor_s5_2": 3,
+  "p2_pairs": 15,
+  "p2_fail": 9,
+  "p2_fail_by_key": {
+   "2": [
+    9,
+    9
+   ]
+  },
+  "p2_by_key_total": {
+   "2": 9,
+   "3": 6
+  },
+  "classes_with_P2_failure": 1,
+  "pp_all": 45,
+  "pp_all_cov": 42,
+  "pp_good": 6,
+  "pp_good_cov": 3,
+  "classes_pp_all_cov": 1,
+  "triples": 15,
+  "triples_coverable": 0,
+  "triples_linear": 1,
+  "triples_admissible": 0,
+  "admissible_uncoverable": 0,
+  "classes_with_admissible": 0,
+  "classes_with_admissible_uncoverable": 0,
+  "adm_R2": 0,
+  "adm_R2_unc": 0,
+  "adm_R1": 0,
+  "adm_R1_unc": 0,
+  "uncoverable_total": 15,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "4": 1,
+    "5": 11,
+    "7": 3
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "7": 15
+  },
+  "uncoverable_P_only_minS": {
+   "7": 1
+  },
+  "nonadm_total": 15,
+  "nonadm_L": 14,
+  "nonadm_P": 15,
+  "adm_unc_sample": [],
+  "degree_sequences": 1
+ },
+ "9_4_3": {
+  "n": 9,
+  "m": 4,
+  "tau": 3,
+  "slack": 2,
+  "D_listed": 3,
+  "classes": 1,
+  "classes_deg_le3": 1,
+  "n_minus_m": 5,
+  "m_le_n_minus_4": true,
+  "maxdeg_range": [
+   2,
+   2
+  ],
+  "nT_min": 19,
+  "nT_max": 19,
+  "nT_mean": 19.0,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 2,
+  "P2_bound_floor_s5_2": 3,
+  "p2_pairs": 36,
+  "p2_fail": 9,
+  "p2_fail_by_key": {
+   "1": [
+    3,
+    3
+   ],
+   "2": [
+    6,
+    18
+   ]
+  },
+  "p2_by_key_total": {
+   "1": 3,
+   "2": 18,
+   "3": 15
+  },
+  "classes_with_P2_failure": 1,
+  "pp_all": 378,
+  "pp_all_cov": 378,
+  "pp_good": 168,
+  "pp_good_cov": 168,
+  "classes_pp_all_cov": 0,
+  "triples": 1260,
+  "triples_coverable": 1116,
+  "triples_linear": 372,
+  "triples_admissible": 360,
+  "admissible_uncoverable": 32,
+  "classes_with_admissible": 1,
+  "classes_with_admissible_uncoverable": 1,
+  "adm_R2": 0,
+  "adm_R2_unc": 0,
+  "adm_R1": 0,
+  "adm_R1_unc": 0,
+  "uncoverable_total": 144,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "0": 32,
+    "1": 94,
+    "2": 12,
+    "3": 6
+   }
+  },
+  "uncoverable_P_violating_minS": {},
+  "uncoverable_P_only_minS": {},
+  "nonadm_total": 900,
+  "nonadm_L": 888,
+  "nonadm_P": 0,
+  "adm_unc_sample": [
+   [
+    0,
+    [
+     [
+      0,
+      2,
+      1,
+      3,
+      4,
+      6
+     ],
+     [
+      0,
+      2,
+      1,
+      3,
+      4,
+      7
+     ],
+     [
+      0,
+      2,
+      1,
+      3,
+      5,
+      6
+     ]
+    ]
+   ]
+  ],
+  "degree_sequences": 1
+ },
+ "10_8_4": {
+  "n": 10,
+  "m": 8,
+  "tau": 4,
+  "slack": 2,
+  "D_listed": 3,
+  "classes": 63,
+  "classes_deg_le3": 63,
+  "n_minus_m": 2,
+  "m_le_n_minus_4": false,
+  "maxdeg_range": [
+   3,
+   3
+  ],
+  "nT_min": 20,
+  "nT_max": 26,
+  "nT_mean": 22.80952380952381,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 3,
+  "P2_bound_floor_s5_2": 3,
+  "p2_pairs": 2835,
+  "p2_fail": 221,
+  "p2_fail_by_key": {
+   "2": [
+    24,
+    26
+   ],
+   "3": [
+    197,
+    402
+   ]
+  },
+  "p2_by_key_total": {
+   "2": 26,
+   "3": 402,
+   "4": 1259,
+   "5": 1086,
+   "6": 62
+  },
+  "classes_with_P2_failure": 62,
+  "pp_all": 39690,
+  "pp_all_cov": 39690,
+  "pp_good": 8530,
+  "pp_good_cov": 8530,
+  "classes_pp_all_cov": 0,
+  "triples": 198450,
+  "triples_coverable": 197504,
+  "triples_linear": 19409,
+  "triples_admissible": 0,
+  "admissible_uncoverable": 0,
+  "classes_with_admissible": 0,
+  "classes_with_admissible_uncoverable": 0,
+  "adm_R2": 0,
+  "adm_R2_unc": 0,
+  "adm_R1": 0,
+  "adm_R1_unc": 0,
+  "uncoverable_total": 946,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "4": 336,
+    "5": 209,
+    "6": 247,
+    "7": 154
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "7": 15,
+   "8": 35,
+   "9": 281,
+   "10": 574,
+   "11": 41
+  },
+  "uncoverable_P_only_minS": {
+   "9": 38,
+   "10": 279,
+   "11": 19
+  },
+  "nonadm_total": 198450,
+  "nonadm_L": 179041,
+  "nonadm_P": 198450,
+  "adm_unc_sample": [],
+  "degree_sequences": 3
+ },
+ "13_9_5": {
+  "n": 13,
+  "m": 9,
+  "tau": 5,
+  "slack": 2,
+  "D_listed": 3,
+  "classes": 84,
+  "classes_deg_le3": 84,
+  "n_minus_m": 4,
+  "m_le_n_minus_4": true,
+  "maxdeg_range": [
+   3,
+   3
+  ],
+  "nT_min": 49,
+  "nT_max": 76,
+  "nT_mean": 64.78571428571429,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 3,
+  "P2_bound_floor_s5_2": 3,
+  "p2_pairs": 6552,
+  "p2_fail": 309,
+  "p2_fail_by_key": {
+   "1": [
+    29,
+    29
+   ],
+   "2": [
+    200,
+    248
+   ],
+   "3": [
+    80,
+    1782
+   ]
+  },
+  "p2_by_key_total": {
+   "1": 29,
+   "2": 248,
+   "3": 1782,
+   "4": 3432,
+   "5": 1017,
+   "6": 44
+  },
+  "classes_with_P2_failure": 78,
+  "pp_all": 180180,
+  "pp_all_cov": 180180,
+  "pp_good": 77056,
+  "pp_good_cov": 77056,
+  "classes_pp_all_cov": 0,
+  "triples": 2162160,
+  "triples_coverable": 2161188,
+  "triples_linear": 604924,
+  "triples_admissible": 543439,
+  "admissible_uncoverable": 61,
+  "classes_with_admissible": 84,
+  "classes_with_admissible_uncoverable": 19,
+  "adm_R2": 67735,
+  "adm_R2_unc": 4,
+  "adm_R1": 166846,
+  "adm_R1_unc": 8,
+  "uncoverable_total": 972,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "0": 61,
+    "1": 292,
+    "2": 273,
+    "3": 115,
+    "5": 13,
+    "6": 170,
+    "7": 48
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "7": 15,
+   "8": 138,
+   "9": 78
+  },
+  "uncoverable_P_only_minS": {},
+  "nonadm_total": 1618721,
+  "nonadm_L": 1557236,
+  "nonadm_P": 233070,
+  "adm_unc_sample": [
+   [
+    2,
+    [
+     [
+      0,
+      7,
+      5,
+      10,
+      6,
+      8
+     ],
+     [
+      0,
+      7,
+      5,
+      10,
+      6,
+      9
+     ],
+     [
+      0,
+      7,
+      5,
+      10,
+      8,
+      11
+     ]
+    ]
+   ],
+   [
+    8,
+    [
+     [
+      0,
+      10,
+      6,
+      7,
+      8,
+      11
+     ],
+     [
+      0,
+      10,
+      6,
+      7,
+      9,
+      11
+     ]
+    ]
+   ],
+   [
+    15,
+    [
+     [
+      0,
+      11,
+      1,
+      12,
+      3,
+      4
+     ],
+     [
+      0,
+      12,
+      2,
+      11,
+      3,
+      4
+     ]
+    ]
+   ]
+  ],
+  "degree_sequences": 4
+ },
+ "16_10_6": {
+  "n": 16,
+  "m": 10,
+  "tau": 6,
+  "slack": 2,
+  "D_listed": 3,
+  "classes": 16,
+  "classes_deg_le3": 16,
+  "n_minus_m": 6,
+  "m_le_n_minus_4": true,
+  "maxdeg_range": [
+   3,
+   3
+  ],
+  "nT_min": 188,
+  "nT_max": 221,
+  "nT_mean": 205.375,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 3,
+  "P2_bound_floor_s5_2": 3,
+  "p2_pairs": 1920,
+  "p2_fail": 118,
+  "p2_fail_by_key": {
+   "1": [
+    32,
+    32
+   ],
+   "2": [
+    79,
+    179
+   ],
+   "3": [
+    7,
+    714
+   ]
+  },
+  "p2_by_key_total": {
+   "1": 32,
+   "2": 179,
+   "3": 714,
+   "4": 794,
+   "5": 194,
+   "6": 7
+  },
+  "classes_with_P2_failure": 16,
+  "pp_all": 87360,
+  "pp_all_cov": 87360,
+  "pp_good": 49100,
+  "pp_good_cov": 49100,
+  "classes_pp_all_cov": 0,
+  "triples": 1921920,
+  "triples_coverable": 1921400,
+  "triples_linear": 808678,
+  "triples_admissible": 791730,
+  "admissible_uncoverable": 28,
+  "classes_with_admissible": 16,
+  "classes_with_admissible_uncoverable": 5,
+  "adm_R2": 8810,
+  "adm_R2_unc": 0,
+  "adm_R1": 31556,
+  "adm_R1_unc": 0,
+  "uncoverable_total": 520,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "0": 28,
+    "1": 374,
+    "2": 64,
+    "3": 32,
+    "6": 22
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "8": 22
+  },
+  "uncoverable_P_only_minS": {},
+  "nonadm_total": 1130190,
+  "nonadm_L": 1113242,
+  "nonadm_P": 50400,
+  "adm_unc_sample": [
+   [
+    0,
+    [
+     [
+      0,
+      2,
+      1,
+      3,
+      9,
+      11
+     ],
+     [
+      0,
+      2,
+      1,
+      3,
+      9,
+      12
+     ],
+     [
+      0,
+      2,
+      1,
+      3,
+      10,
+      11
+     ]
+    ]
+   ],
+   [
+    2,
+    [
+     [
+      0,
+      2,
+      1,
+      3,
+      4,
+      12
+     ],
+     [
+      0,
+      2,
+      1,
+      3,
+      4,
+      13
+     ],
+     [
+      0,
+      2,
+      1,
+      3,
+      5,
+      12
+     ]
+    ]
+   ],
+   [
+    7,
+    [
+     [
+      0,
+      11,
+      1,
+      3,
+      2,
+      4
+     ],
+     [
+      0,
+      11,
+      1,
+      4,
+      2,
+      3
+     ],
+     [
+      0,
+      12,
+      1,
+      3,
+      2,
+      4
+     ]
+    ]
+   ]
+  ],
+  "degree_sequences": 2
+ },
+ "17_14_7": {
+  "n": 17,
+  "m": 14,
+  "tau": 7,
+  "slack": 2,
+  "D_listed": 3,
+  "classes": 1708,
+  "classes_deg_le3": 1708,
+  "n_minus_m": 3,
+  "m_le_n_minus_4": false,
+  "maxdeg_range": [
+   3,
+   3
+  ],
+  "nT_min": 210,
+  "nT_max": 311,
+  "nT_mean": 254.5755269320843,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 3,
+  "P2_bound_floor_s5_2": 3,
+  "p2_pairs": 232288,
+  "p2_fail": 1411,
+  "p2_fail_by_key": {
+   "1": [
+    14,
+    14
+   ],
+   "2": [
+    455,
+    469
+   ],
+   "3": [
+    942,
+    15754
+   ]
+  },
+  "p2_by_key_total": {
+   "1": 14,
+   "2": 469,
+   "3": 15754,
+   "4": 77105,
+   "5": 114270,
+   "6": 24676
+  },
+  "classes_with_P2_failure": 703,
+  "pp_all": 12195120,
+  "pp_all_cov": 12195120,
+  "pp_good": 5834656,
+  "pp_good_cov": 5834656,
+  "classes_pp_all_cov": 0,
+  "triples": 317073120,
+  "triples_coverable": 317068361,
+  "triples_linear": 105175325,
+  "triples_admissible": 0,
+  "admissible_uncoverable": 0,
+  "classes_with_admissible": 0,
+  "classes_with_admissible_uncoverable": 0,
+  "adm_R2": 0,
+  "adm_R2_unc": 0,
+  "adm_R1": 0,
+  "adm_R1_unc": 0,
+  "uncoverable_total": 4759,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "4": 3,
+    "5": 78,
+    "6": 4115,
+    "7": 563
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "7": 6,
+   "8": 3791,
+   "9": 958,
+   "16": 2,
+   "18": 2
+  },
+  "uncoverable_P_only_minS": {
+   "9": 3
+  },
+  "nonadm_total": 317073120,
+  "nonadm_L": 211897795,
+  "nonadm_P": 317073120,
+  "adm_unc_sample": [],
+  "degree_sequences": 3
+ }
+}

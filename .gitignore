@@ -81,3 +81,8 @@ experiments/falsify/*/cells*/
 experiments/*/cells/
 experiments/*/out/cells/
 experiments/*/*/cells/
+
+# extracted cell lists anywhere (the certified lists are the tarballs in experiments/prover/*)
+**/cell_*_D[0-9].txt
+**/cell_*_D[0-9]*.txt
+experiments/*/data/*/cells/

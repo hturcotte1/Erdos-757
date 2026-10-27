@@ -1,7 +1,7 @@
 import os,sys,itertools,subprocess
 os.environ['CELLDIR']=os.path.abspath('out/cells'); os.environ['ENGINELOG']='/dev/null'
 sys.path.insert(0,'src'); import engine
-n,m,d,tp=21,18,3,8; lines=[]
+n,m,d,tp=24,19,4,9; lines=[]
 Sp=3*(n-1)+2*(m-d)-11*tp
 for dec in engine.decompositions(n-1,m-d,Sp):
     g={}

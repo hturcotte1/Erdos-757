@@ -55,6 +55,10 @@ int main(int argc, char **argv) {
         printf("%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%x\t%x\t", n, m, tau, slack, maxdeg, bestv < 0, bestv, bestsz, __builtin_popcount(ez), tz, bestz, T);
         { int c2[40] = {0}; for (int v = 0; v < n; v++) c2[dg[v]]++; int first = 1; for (int d = 0; d < 40; d++) if (c2[d]) { printf(first ? "%d^%d" : ",%d^%d", d, c2[d]); first = 0; } }
         printf("\t%d\t%x\t%d\t%x", minsz, minz, mincsz, mincz);
+        if (minsz < 99) { uint32_t em = EZ[minz]; int ds[32], k2 = 0; for (uint32_t r = minz; r; r &= r - 1) ds[k2++] = dg[__builtin_ctz(r)];
+            for (int a = 0; a < k2; a++) for (int b = a + 1; b < k2; b++) if (ds[a] < ds[b]) { int t = ds[a]; ds[a] = ds[b]; ds[b] = t; }
+            printf("\t%d\t%d\t", __builtin_popcount(em), tauF[em]); for (int a = 0; a < k2; a++) printf("%d", ds[a]); }
+        else printf("\t0\t0\t-");
         if (verbose) printf("\t%ld", cnt);
         printf("\t%s", line + 1);
     }

@@ -39,3 +39,65 @@ GROW n=30 m=25 K=1 tried=14192 ok=14191 minslack=19 hist 19:104 30:12316 41:1771
 GROW n=30 m=26 K=1 tried=14400 ok=14399 minslack=21 hist 21:1013 32:13081 43:305
 GROW n=30 m=27 K=1 tried=14316 ok=14310 minslack=23 hist 23:4377 34:9905 45:28
 GROW n=30 m=28 K=1 tried=14255 ok=14194 minslack=14 hist 14:3 25:10256 36:3935
+GROW n=31 m=15 K=1 tried=13182 ok=13182 minslack=13 hist 13:7 24:1063 35:7456 46:4429 57:227
+GROW n=31 m=16 K=1 tried=13412 ok=13412 minslack=15 hist 15:10 26:1665 37:8720 48:2943 59:74
+GROW n=31 m=17 K=1 tried=13260 ok=13260 minslack=17 hist 17:18 28:2603 39:8944 50:1684 61:11
+GROW n=31 m=18 K=1 tried=13368 ok=13368 minslack=19 hist 19:34 30:4118 41:8542 52:674
+GROW n=31 m=19 K=1 tried=13465 ok=13465 minslack=21 hist 21:103 32:6675 43:6492 54:195
+GROW n=31 m=20 K=1 tried=13249 ok=13249 minslack=23 hist 23:299 34:9085 45:3837 56:28
+GROW n=31 m=21 K=1 tried=13269 ok=13269 minslack=25 hist 25:926 36:10726 47:1616 58:1
+GROW n=31 m=22 K=1 tried=13401 ok=13401 minslack=27 hist 27:2603 38:10347 49:451
+GROW n=31 m=23 K=1 tried=13390 ok=13390 minslack=18 hist 18:7 29:5758 40:7546 51:79
+GROW n=31 m=24 K=1 tried=13270 ok=13270 minslack=20 hist 20:40 31:9492 42:3734 53:4
+GROW n=31 m=25 K=1 tried=13443 ok=13443 minslack=22 hist 22:392 33:11957 44:1094
+GROW n=31 m=26 K=1 tried=13384 ok=13382 minslack=24 hist 24:1945 35:11260 46:177
+GROW n=31 m=27 K=1 tried=13312 ok=13310 minslack=26 hist 26:5970 37:7330 48:10
+GROW n=31 m=28 K=1 tried=13202 ok=13189 minslack=17 hist 17:10 28:10544 39:2635
+GROW n=31 m=29 K=1 tried=13393 ok=13337 minslack=19 hist 19:273 30:12661 41:403
+GROW n=32 m=16 K=1 tried=13286 ok=13286 minslack=18 hist 18:70 29:2817 40:8303 51:2059 62:37
+GROW n=32 m=17 K=1 tried=13611 ok=13611 minslack=20 hist 20:103 31:4116 42:8276 53:1111 64:5
+GROW n=32 m=18 K=1 tried=13237 ok=13237 minslack=22 hist 22:163 33:5786 44:6906 55:382
+GROW n=32 m=19 K=1 tried=13457 ok=13457 minslack=24 hist 24:317 35:7959 46:5068 57:113
+GROW n=32 m=20 K=1 tried=13202 ok=13202 minslack=26 hist 26:793 37:9602 48:2786 59:21
+GROW n=32 m=21 K=1 tried=13453 ok=13453 minslack=17 hist 17:1 28:1954 39:10373 50:1123 61:2
+GROW n=32 m=22 K=1 tried=13510 ok=13510 minslack=19 hist 19:6 30:4096 41:9088 52:320
+GROW n=32 m=23 K=1 tried=13169 ok=13169 minslack=21 hist 21:26 32:7335 43:5774 54:34
+GROW n=32 m=24 K=1 tried=13406 ok=13406 minslack=23 hist 23:184 34:10581 45:2638 56:3
+GROW n=32 m=25 K=1 tried=13286 ok=13286 minslack=25 hist 25:935 36:11628 47:723
+GROW n=32 m=26 K=1 tried=13066 ok=13066 minslack=27 hist 27:3491 38:9480 49:95
+GROW n=32 m=27 K=1 tried=13199 ok=13198 minslack=18 hist 18:4 29:7785 40:5407 51:2
+GROW n=32 m=28 K=1 tried=13489 ok=13487 minslack=20 hist 20:59 31:11680 42:1748
+GROW n=32 m=29 K=1 tried=13415 ok=13407 minslack=22 hist 22:710 33:12392 44:305
+GROW n=32 m=30 K=1 tried=13214 ok=13162 minslack=24 hist 24:3939 35:9214 46:9
+GROW n=33 m=16 K=1 tried=12433 ok=12433 minslack=21 hist 21:177 32:3663 43:7172 54:1405 65:16
+GROW n=33 m=17 K=1 tried=12538 ok=12538 minslack=23 hist 23:269 34:5078 45:6559 56:629 67:3
+GROW n=33 m=18 K=1 tried=12499 ok=12499 minslack=25 hist 25:419 36:6696 47:5123 58:261
+GROW n=33 m=19 K=1 tried=12667 ok=12667 minslack=16 hist 16:2 27:827 38:8192 49:3600 60:46
+GROW n=33 m=20 K=1 tried=12588 ok=12588 minslack=18 hist 18:5 29:1613 40:9092 51:1868 62:10
+GROW n=33 m=21 K=1 tried=12413 ok=12413 minslack=20 hist 20:7 31:2969 42:8752 53:682 64:3
+GROW n=33 m=22 K=1 tried=12541 ok=12541 minslack=22 hist 22:40 33:5384 44:6935 55:182
+GROW n=33 m=23 K=1 tried=12358 ok=12358 minslack=24 hist 24:126 35:8130 46:4071 57:31
+GROW n=33 m=24 K=1 tried=12557 ok=12557 minslack=26 hist 26:532 37:10262 48:1760 59:3
+GROW n=33 m=25 K=1 tried=12354 ok=12354 minslack=28 hist 28:1883 39:10038 50:433
+GROW n=33 m=26 K=1 tried=12791 ok=12791 minslack=30 hist 30:5057 41:7672 52:62
+GROW n=33 m=27 K=1 tried=12390 ok=12390 minslack=21 hist 21:20 32:8691 43:3674 54:5
+GROW n=33 m=28 K=1 tried=12380 ok=12379 minslack=23 hist 23:230 34:11078 45:1071
+GROW n=33 m=29 K=1 tried=12566 ok=12564 minslack=25 hist 25:1543 36:10884 47:137
+GROW n=33 m=30 K=1 tried=12436 ok=12428 minslack=16 hist 16:1 27:5486 38:6933 49:8
+GROW n=33 m=31 K=1 tried=12489 ok=12426 minslack=18 hist 18:13 29:10010 40:2403
+GROW n=34 m=17 K=1 tried=12444 ok=12444 minslack=15 hist 15:4 26:656 37:6068 48:5303 59:411 70:2
+GROW n=34 m=18 K=1 tried=12599 ok=12599 minslack=17 hist 17:7 28:1072 39:7441 50:3931 61:148
+GROW n=34 m=19 K=1 tried=12695 ok=12695 minslack=19 hist 19:8 30:1569 41:8528 52:2543 63:47
+GROW n=34 m=20 K=1 tried=12636 ok=12636 minslack=21 hist 21:21 32:2682 43:8604 54:1327 65:2
+GROW n=34 m=21 K=1 tried=12506 ok=12506 minslack=23 hist 23:43 34:4490 45:7486 56:487
+GROW n=34 m=22 K=1 tried=12488 ok=12488 minslack=25 hist 25:119 36:6762 47:5489 58:118
+GROW n=34 m=23 K=1 tried=12596 ok=12596 minslack=27 hist 27:415 38:9159 49:3006 60:16
+GROW n=34 m=24 K=1 tried=12450 ok=12450 minslack=29 hist 29:1266 40:10073 51:1110 62:1
+GROW n=34 m=25 K=1 tried=12338 ok=12338 minslack=20 hist 20:1 31:3163 42:8865 53:309
+GROW n=34 m=26 K=1 tried=12596 ok=12596 minslack=22 hist 22:7 33:6544 44:6000 55:45
+GROW n=34 m=27 K=1 tried=12464 ok=12464 minslack=24 hist 24:103 35:9769 46:2591 57:1
+GROW n=34 m=28 K=1 tried=12366 ok=12366 minslack=26 hist 26:677 37:11017 48:672
+GROW n=34 m=29 K=1 tried=12238 ok=12238 minslack=28 hist 28:2762 39:9366 50:110
+GROW n=34 m=30 K=1 tried=12442 ok=12440 minslack=30 hist 30:7127 41:5305 52:8
+GROW n=34 m=31 K=1 tried=12547 ok=12541 minslack=21 hist 21:42 32:10825 43:1674
+GROW n=34 m=32 K=1 tried=12595 ok=12541 minslack=23 hist 23:605 34:11693 45:243

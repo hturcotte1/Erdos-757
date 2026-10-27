@@ -20,3 +20,15 @@
 25 parents 200 kids 6 -> n+1 {'pool': 206, 'minslack': 0, 'hist': {0: 110, 2: 92, 1: 2, 6: 2}} t=24s
 26 parents 202 kids 64 -> n+1 {'pool': 638, 'minslack': 0, 'hist': {1: 442, 4: 89, 3: 56, 0: 44, 2: 7}} t=34s
 27 parents 289 kids 12 -> n+1 {'pool': 356, 'minslack': 1, 'hist': {1: 186, 2: 158, 3: 12}} t=70s
+28 parents 200 kids 12 -> n+1 {'pool': 628, 'minslack': 0, 'hist': {2: 362, 0: 242, 1: 22, 6: 2}} t=118s
+29 parents 202 kids 67 -> n+1 {'pool': 668, 'minslack': 0, 'hist': {3: 207, 1: 165, 4: 143, 0: 99, 2: 54}} t=138s
+30 parents 343 kids 1 -> n+1 {'pool': 605, 'minslack': 1, 'hist': {1: 434, 2: 94, 3: 73, 7: 4}} t=152s
+31 parents 204 kids 294 -> n+1 {'pool': 1226, 'minslack': 0, 'hist': {2: 669, 5: 366, 0: 90, 1: 71, 4: 16, 3: 12, 6: 2}} t=153s
+32 parents 400 kids 46 -> n+1 {'pool': 982, 'minslack': 0, 'hist': {3: 394, 2: 217, 4: 170, 0: 152, 1: 45, 6: 4}} t=155s
+33 parents 374 kids 0 -> n+1 {'pool': 1192, 'minslack': 0, 'hist': {1: 739, 3: 314, 4: 76, 2: 47, 0: 8, 7: 8}} t=155s
+34 parents 284 kids 0 -> n+1 {'pool': 1356, 'minslack': 0, 'hist': {2: 763, 5: 324, 1: 193, 4: 35, 3: 24, 0: 14, 7: 2, 6: 1}} t=156s
+35 parents 400 kids 0 -> n+1 {'pool': 1342, 'minslack': 0, 'hist': {2: 599, 3: 264, 0: 256, 4: 164, 5: 38, 1: 14, 6: 7}} t=157s
+36 parents 400 kids 0 -> n+1 {'pool': 1466, 'minslack': 0, 'hist': {1: 635, 3: 466, 4: 254, 2: 60, 0: 39, 7: 12}} t=157s
+37 parents 400 kids 0 -> n+1 {'pool': 1502, 'minslack': 0, 'hist': {1: 417, 2: 387, 5: 382, 4: 174, 3: 137, 0: 2, 7: 2, 6: 1}} t=158s
+38 parents 400 kids 0 -> n+1 {'pool': 1401, 'minslack': 0, 'hist': {2: 757, 0: 213, 4: 181, 5: 114, 3: 88, 1: 32, 6: 8, 8: 8}} t=159s
+39 parents 400 kids 0 -> n+1 {'pool': 1700, 'minslack': 0, 'hist': {3: 546, 4: 398, 6: 292, 1: 202, 2: 156, 0: 86, 5: 10, 7: 10}} t=159s

@@ -43,12 +43,15 @@ def dual_hypergraph(G):
 if __name__=='__main__':
     maxm=int(sys.argv[1])
     t0=time.time()
-    levels=gen_subcubic(maxm)
+    import pickle, os
+    if os.path.exists('levels_cache_%d.pkl'%maxm): levels=pickle.load(open('levels_cache_%d.pkl'%maxm,'rb'))
+    else:
+        levels=gen_subcubic(maxm); pickle.dump(levels,open('levels_cache_%d.pkl'%maxm,'wb'))
     print('gen time',time.time()-t0)
     rows=[]
     minslack={}   # (n,m)->min slack
     viol=[]; mism_tau=0; mism_stated=collections.Counter(); nu_viol=0
-    nC=0; ntot=0; minratio=None
+    nC=0; nCfast=0; ntot=0; minratio=None
     for m,L in levels.items():
         for G in L:
             e=G.number_of_edges()
@@ -64,14 +67,16 @@ if __name__=='__main__':
             s=slack(n,es,t)
             assert s==11*nu-3*e or m==0
             if nu*11<3*e: nu_viol+=1; viol.append((n,m,t,s))
-            if n<=22:
+            if n<=14:
                 ok=in_C(n,es,brute=True)
                 assert ok,(n,m,es)
                 nC+=1
+            assert classC_fast(n,es),(n,m,es)
+            nCfast+=1
             key=(n,m)
             if key not in minslack or s<minslack[key][0]: minslack[key]=(s,e,nu)
             r=nu/e if e else None
-    out={'maxm':maxm,'total_graphs':ntot,'checked_in_C_bruteforce':nC,'tau_neq_m_minus_nu':mism_tau,
+    out={'maxm':maxm,'total_graphs':ntot,'checked_in_C_bruteforce_n_le_14':nC,'checked_in_C_hall_C_all':nCfast,'tau_neq_m_minus_nu':mism_tau,
          'stated_formula_mismatch_by_m':dict(mism_stated),'nu_lt_3e_over_11':nu_viol,'violations':viol,
          'counts_by_m':{m:len(L) for m,L in levels.items()},
          'minslack_by_nm':{f'{n},{m}':v for (n,m),v in sorted(minslack.items())}}

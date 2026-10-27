@@ -10,6 +10,16 @@ if DM <= 3: pieces = [p for p in pieces if max(sum(v in e for e in p[1]) for v i
 AP = (3, [(0, 1, 2)], 0)
 def disj(a, b):
     return (a[0] + b[0], a[1] + [tuple(v + a[0] for v in e) for e in b[1]])
+def is_conn(gl):
+    t = gl.split(' ', 2); n = int(t[0]); es = [tuple(int(x) for x in w.split(',')) for w in t[2].split()]
+    par = list(range(n))
+    def f(x):
+        while par[x] != x: par[x] = par[par[x]]; x = par[x]
+        return x
+    for e in es:
+        for v in e[1:]: par[f(v)] = f(e[0])
+    used = set(v for e in es for v in e)
+    return len(used) == n and len(set(f(v) for v in range(n))) == 1
 pool = collections.defaultdict(dict)   # n -> fp -> (slack, m, tau, edges-line)
 def parse_child(l):
     t = l.split(' ', 5); return int(t[0]), int(t[1]), int(t[2]), int(t[3]), t[4], t[5].strip()
@@ -48,8 +58,10 @@ lowfile = open('out/beam_%s_low.txt' % tag, 'w')
 for n in range(3, NMAX):
     P = list(pool[n].values())
     if not P: continue
-    lowP = [p for p in P if p[0] <= 3]; hiP = [p for p in P if 3 < p[0] <= 14]
-    random.shuffle(lowP); random.shuffle(hiP); P = lowP[:W // 2] + hiP[:W - min(len(lowP), W // 2)]
+    cP = [p for p in P if is_conn(p[3])]; dP = [p for p in P if not is_conn(p[3])]
+    lowP = [p for p in cP if p[0] <= 4]; hiP = [p for p in cP if 4 < p[0] <= 14]
+    random.shuffle(lowP); random.shuffle(hiP); random.shuffle(dP); dP.sort(key=lambda x: x[0])
+    P = lowP[:W // 2] + hiP[:W - min(len(lowP), W // 2)] + (dP[:W // 4] if n <= 22 else [])
     inp = "\n".join(p[3] for p in P) + "\n"
     r = subprocess.run([os.path.join(HERE, 'vext'), '400', '2'], input=inp, capture_output=True, text=True, env=env)
     kids = 0; mn = 10**9
@@ -60,15 +72,8 @@ for n in range(3, NMAX):
         if fp not in pool[nn]: pool[nn][fp] = (s, m, tau, gl)
         if s < mn: mn = s
         if s < 0: print("!!! NEGATIVE SLACK", l, flush=True); lowfile.write("NEG " + l + "\n")
-        if s <= 1 and nn >= 15: lowfile.write(l + "\n")
-    # unions with tight pieces (disconnected extensions) feed pools at larger n
-    for p in random.sample(P, min(len(P), 300)):
-        for q in [(3, [(0, 1, 2)], 0)] + [(a, b, c) for a, b, c in pieces if a in (8, 10, 12)]:
-            if n + q[0] <= NMAX and n + q[0] > 22:
-                e1 = [tuple(int(x) for x in t.split(',')) for t in p[3].split(' ')[2:]]
-                n2, e2 = disj((n, e1), (q[0], q[1]))
-                pool[n2]["u%d_%d" % (n, random.getrandbits(40))] = (p[0] + q[2], len(e2), -1, line(n2, e2))
-    ps = sorted(v[0] for v in pool[n + 1].values())
+        if s <= 1 and nn >= 15 and is_conn(gl): lowfile.write(l + "\n")
+    ps = sorted(v[0] for v in pool[n + 1].values() if is_conn(v[3]))
     stats[n + 1] = dict(pool=len(pool[n + 1]), minslack=ps[0] if ps else None, hist=dict(collections.Counter(ps).most_common(8)))
     print(n, "parents", len(P), "kids", kids, "-> n+1", stats[n + 1], "t=%.0fs" % (time.time() - t0), flush=True)
     # keep only the best W*3 to bound memory
