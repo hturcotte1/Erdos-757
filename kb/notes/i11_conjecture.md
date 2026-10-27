@@ -72,7 +72,7 @@ All statements below are tagged; "as a computation" means an exact or exhaustive
 
 **Conjecture C1 (triple coverage).** [conjecture]. In a connected slack <= 1 member F of C with m <= n - 4, every admissible degree-3 attachment (three disjoint vertex pairs whose addition keeps the graph in C) is met by some minimum transversal.
 - 102,260,107 admissible triples checked in cells (17,13,7), (15,11,6), (22,17,9), (26,22,11), 0 failures; it fails at slack 2 (56 uncoverable admissible triples in (20,15,8)) (experiments/20261027-0300-transversal-richness). [verified-here as a computation]
-- Proof attempt L019 (results/proofs/L019-triple-coverage-C1.md) in progress; nothing proved.
+- L019 (results/proofs/L019-triple-coverage-C1.md) proved parts [verified-here, K68]; C1 open (GAP 1: s(F) = 1; GAP 2: s(F) = 0 closes under T3). Its folding lemma (Theorem 5) is a new exact slack-raising operation: deleting a degree-2 vertex and identifying two non-adjacent neighbours from its two edges changes (n, m, tau) by (-2, -2, -1), raising the I11 slack by exactly 1 (graph case: Chen-Kanj-Jia 2001 [published]; 3-uniform form with the class-C criterion new) [verified-here, K68].
 
 **Conjecture P2 (tight graphs have at most one degree-1 vertex).** [conjecture]. Verified on all stored tight cells for n <= 27 (L018 Theorem 5; experiments/20261027-0300-tight-cells-d4). [verified-here as a computation] If true, no minimal counterexample has a degree-1 vertex (L018 Theorem 5).
 
