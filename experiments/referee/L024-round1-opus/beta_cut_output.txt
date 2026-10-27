@@ -1,0 +1,75 @@
+(8,5,3)#1 w 7 components [3, 3, 1] max non-trace total 6 
+(10,7,4)#1 w 8 components [6, 3] max non-trace total 6 
+(10,7,4)#1 w 9 components [6, 3] max non-trace total 6 
+(10,7,4)#2 w 9 components [6, 3] max non-trace total 6 
+(10,7,4)#3 w 9 components [6, 3] max non-trace total 6 
+(15,11,6)#0 w 11 components [10, 3, 1] max non-trace total 13 OK>=7
+(15,11,6)#0 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#0 w 14 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#1 w 11 components [10, 3, 1] max non-trace total 13 OK>=7
+(15,11,6)#1 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#1 w 13 components [11, 3] max non-trace total 11 OK>=7
+(15,11,6)#1 w 14 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#2 w 11 components [10, 3, 1] max non-trace total 13 OK>=7
+(15,11,6)#2 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#2 w 14 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#3 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#3 w 13 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#4 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#5 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#6 w 11 components [11, 3] max non-trace total 11 OK>=7
+(15,11,6)#6 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#7 w 11 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#8 w 11 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#8 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#8 w 14 components [11, 3] max non-trace total 11 OK>=7
+(15,11,6)#9 w 11 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#9 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#9 w 13 components [11, 3] max non-trace total 11 OK>=7
+(15,11,6)#9 w 14 components [11, 3] max non-trace total 11 OK>=7
+(15,11,6)#10 w 11 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#10 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#10 w 14 components [11, 3] max non-trace total 11 OK>=7
+(15,11,6)#11 w 10 components [10, 3, 1] max non-trace total 13 OK>=7
+(15,11,6)#11 w 13 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#12 w 10 components [10, 3, 1] max non-trace total 13 OK>=7
+(15,11,6)#12 w 11 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#12 w 14 components [11, 3] max non-trace total 11 OK>=7
+(15,11,6)#13 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#13 w 14 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#14 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#14 w 14 components [11, 3] max non-trace total 11 OK>=7
+(15,11,6)#15 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#15 w 13 components [11, 3] max non-trace total 11 OK>=7
+(15,11,6)#15 w 14 components [11, 3] max non-trace total 11 OK>=7
+(15,11,6)#16 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#16 w 14 components [11, 3] max non-trace total 11 OK>=7
+(15,11,6)#17 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#17 w 14 components [11, 3] max non-trace total 11 OK>=7
+(15,11,6)#18 w 12 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#18 w 13 components [8, 6] max non-trace total 8 OK>=7
+(15,11,6)#18 w 14 components [11, 3] max non-trace total 11 OK>=7
+(17,13,7)#0 w 12 components [8, 8] max non-trace total 8 OK>=7
+(17,13,7)#0 w 13 components [10, 6] max non-trace total 10 OK>=7
+(17,13,7)#0 w 15 components [10, 6] max non-trace total 10 OK>=7
+(17,13,7)#1 w 14 components [8, 8] max non-trace total 8 OK>=7
+(17,13,7)#1 w 15 components [10, 6] max non-trace total 10 OK>=7
+(17,13,7)#1 w 16 components [10, 6] max non-trace total 10 OK>=7
+(17,13,7)#2 w 14 components [8, 8] max non-trace total 8 OK>=7
+(17,13,7)#2 w 15 components [10, 6] max non-trace total 10 OK>=7
+(17,13,7)#2 w 16 components [10, 6] max non-trace total 10 OK>=7
+(17,13,7)#3 w 12 components [13, 3] max non-trace total 13 OK>=7
+(17,13,7)#3 w 14 components [10, 6] max non-trace total 10 OK>=7
+(17,13,7)#3 w 15 components [10, 6] max non-trace total 10 OK>=7
+(17,13,7)#3 w 16 components [8, 8] max non-trace total 8 OK>=7
+(17,13,7)#4 w 12 components [13, 3] max non-trace total 13 OK>=7
+(17,13,7)#4 w 13 components [13, 3] max non-trace total 13 OK>=7
+(17,13,7)#4 w 14 components [8, 8] max non-trace total 8 OK>=7
+(17,13,7)#4 w 15 components [10, 6] max non-trace total 10 OK>=7
+(17,13,7)#4 w 16 components [10, 6] max non-trace total 10 OK>=7
+(17,13,7)#5 w 12 components [8, 8] max non-trace total 8 OK>=7
+(17,13,7)#5 w 13 components [10, 6] max non-trace total 10 OK>=7
+(17,13,7)#5 w 15 components [10, 6] max non-trace total 10 OK>=7
+(17,13,7)#5 w 16 components [13, 3] max non-trace total 13 OK>=7
+pieces/vertices with a degree-3 cut vertex leaving >= 7 vertices outside some component: 68
+EXIT 0

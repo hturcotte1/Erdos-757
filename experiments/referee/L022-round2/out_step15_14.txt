@@ -1,0 +1,4 @@
+Part A (Step 1.5 delta argument): 27 base sets; {'cases': 241, 'bad_struct': 0, 'a2_fail': 0, 'a2_vals_fail': 0, 'not45': 0, 'ap_mismatch': 0, 'zero_delta_forms': 2253}
+Part B (hypertrees with 2-4 edges by Step 1.5 procedure): {'seqs': 123, 'ok': 123, 'retries': 0}
+Part C (Step 1.4 coefficient sums): {'zero_cases': 72, 'violations': 0, 'zero_types': [('par', 2, 2)]}
+Part D (midpoint counter-case p+q=a+b always): fails 0

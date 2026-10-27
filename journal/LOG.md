@@ -672,3 +672,6 @@ tried: referee rounds on results/proofs/L021-i11-deficiency-route.md. result: AC
 - L021 recorded: K71 (proved parts; KT*, KT^{L*}, c* >= 35/66 remain [conjecture]), LEDGER row, kb/notes/i11_conjecture.md KT-route item (commit 1f4d84f).
 
 ## 2026-10-27T09:54Z check full test suite after the f(19) recording (fn_bounds 19: 11, tests/test_c19_witness.py, test_known_facts dict) passes: exit 0 (nice 15 background run started 09:12 UTC; temp copies removed).
+
+## 2026-10-27T10:06Z result L022 round 2 (fix check): editorial only; items F1-F3 applied (commit 4c32ca5); re-check requested
+- results/reviews/L022-i11-realizable-route__referee__20261027T100315Z.md: every round-1 item applied correctly, nothing changed in substance; the Step 1.5 delta-coefficient argument checked in 241 cases and on 123 hypertrees. Remaining items: DEPENDS ON cited L021 (unused) and called L020 a target (it refutes T''); GAP 1 still offered T''; 'None of GAP 1-4 is finite' stale (GAP 4 closed); N4/W7 stale. All applied: GAP 1 now cites the refutation (K69) and L020 Cor. 5's C1-big/R-big; N4 marked DONE (unrefereed); W7 notes the six non-realizable (25,23,11,4) classes with the Q8 obstruction. On the re-check ACCEPT: record L022's proved parts as a K-row.

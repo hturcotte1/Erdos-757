@@ -1,0 +1,2 @@
+tested (Claim E holds) with rich piece 10762 violations 0 | without rich piece 2105 of which Claim B holds 46
+EXIT 0

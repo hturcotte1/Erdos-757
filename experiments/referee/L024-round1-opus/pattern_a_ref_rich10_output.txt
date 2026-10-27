@@ -14,3 +14,4 @@ mode rich10 all_g False type triples 25
 31 ('(10,7,4)#0', '(10,7,4)#0', '(10,7,4)#3') {'g_choices': 12, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 195
 31 ('(10,7,4)#0', '(10,7,4)#1', '(10,7,4)#1') {'g_choices': 50, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 266
 31 ('(10,7,4)#0', '(10,7,4)#1', '(10,7,4)#2') {'g_choices': 60, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 343
+EXIT 0
