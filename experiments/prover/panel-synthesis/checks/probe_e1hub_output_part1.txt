@@ -1,0 +1,2 @@
+cell_21_10_7_D3.txt {'graphs': 5, 'small_A': 5, 'bconf': 0, 'inC': 0, 'negA': 0, 'Pneg': 0}
+cell_22_13_8_D3.txt {'graphs': 85, 'small_A': 85, 'bconf': 0, 'inC': 0, 'negA': 0, 'Pneg': 0}

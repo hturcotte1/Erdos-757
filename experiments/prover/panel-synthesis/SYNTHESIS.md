@@ -16,7 +16,7 @@ Tags used here:
 3. **L020 and L022 also need C1-big (pattern (a): H - v connected).** This is not a lemma separate from I11. L020 Remark 4.6 shows that C1-big at size N is equivalent to the pattern-(a) case of I11 at size N+1. Neither route has any inductive handle on it.
 4. **L021's potential removes pattern (a) by design** (my observation, Section 1). In a minimal counterexample to KT, if H - v is connected for some degree-3 vertex v, then H - v is three special pieces joined by one edge, so n <= 52. That is the structural reason L021 is ranked first.
    - Price 1: the target is weaker. L021 aims at J_{1/6}, i.e. 11 tau <= (19/6) n + 2 m, which gives c* >= 35/66. That still beats 9/17 (goal B).
-   - Price 2: its key conjecture KT* is new. It is verified only for n <= 24, is not implied by I11, and is knife-edge (296 equality cases).
+   - Price 2: its key conjecture KT* is new. It is verified only for n <= 24, is not known to follow from I11, and is knife-edge (296 equality cases).
 
 ## 1. Verdict per attempt
 
@@ -92,7 +92,7 @@ None of these closes I11.
   - (25,14,9): only a D = 2 list exists;
   - (26,13,9) and (26,17,10): no list;
   - all four candidates at n = 27: no list (experiments/prover/L021/scan_cells_output.txt).
-- (iii) KT* is not a consequence of I11, and the certificate should say so. KT constrains the sparse region m < 9n/11 at any I11 slack. For example, the candidate cells (21,10,7) with s = 6 and (27,13,9) with s = 8 have A < 0. So the only evidence for KT* is Theorem 7 (n <= 24). The certificate's own random assemblies never reached A < 0, so no falsifier has tested n >= 25.
+- (iii) KT* is not known to follow from I11, and the certificate should say so. I11 gives A = 12s - 9n + 11m >= 0 only when 11m >= 9n, whereas KT constrains the sparse region m < 9n/11 at any I11 slack. For example, the candidate cells (21,10,7) with s = 6 and (27,13,9) with s = 8 have A < 0. So the only evidence for KT* is Theorem 7 (n <= 24). The certificate's own random assemblies never reached A < 0, so no falsifier has tested n >= 25.
 
 **My additions** [derived-here, judge, unrefereed]:
 - (a) **Pattern (a) is finite under KT.** Let v have degree 3 in a minimal counterexample. In (D1) and (D2) the members are components of H - v, and H - v = F would give n <= 18 < 25. In (D3) exactly one edge g of H - v leaves the three members. If H - v is connected, g must meet all three members, so g lies inside V(X_v), H - v is the union of F_1, F_2, F_3 and g, and n <= 3 * 17 + 1 = 52. So, except for this finite family, H - v is disconnected at every degree-3 vertex.
@@ -152,7 +152,7 @@ None of these closes I11.
    
    Caveats:
    - it proves J_{1/6} (c* >= 35/66), not I11 (6/11);
-   - KT* is a new conjecture, not implied by I11 and knife-edge (all 296 reducible special graphs up to 24 vertices are equality cases);
+   - KT* is a new conjecture, not known to follow from I11, and knife-edge (all 296 reducible special graphs up to 24 vertices are equality cases);
    - Henning-Yeo needed long case analyses (Claims H.1 to H.5) at exactly this point.
 2. **L022.** It gives the sharpest unconditional reduction of I11: for every n, and in C as well as R, the seven patterns become (a), (b), (f), with strong side conditions. But GAPs 1 to 3 are global statements about all large near-tight graphs, and GAP 1 is I11's own pattern (a).
 3. **L020.** Mostly negative: T'' is false and the joint induction cannot close. Its conditional reduction is weaker than L020 and L022 combined (Section 4).
@@ -197,6 +197,8 @@ So, given G2, KT* for n >= 67 reduces to the KT form of the E1-hub lemma. The ra
    
    The last three would all follow from one statement, NC0: near-tight graphs with >= 27 vertices have no non-co-transversal pair of degree-<=2 vertices. But NC0 is thinly supported: all 37 (22,17,9) classes do have NC pairs (L020 Observation 7), so its evidence is the 36 classes at n = 26 and the 45 at n = 29.
 2. **L021's potential into L020 and L022.** It is the only known way around C1-big: pattern (a) becomes finite (Section 1, L021 addition (a)). The price is the weaker target J_{1/6}, plus G1 and G2.
+   - Conversely, L020 explains why the deficiency method cannot aim at I11 itself. At eps = 0 every tight or slack-1 graph with n - m >= 2 is special (L021 Remark 2.4), and L020 Theorem 1 shows that near-tight graphs exist at least up to 29 vertices. So the special list would be infinite as far as is known.
+   - Hence eps > 0, and therefore J_eps rather than I11, is forced on this route; any eps < 3/17 still gives goal (B).
 3. **L022's sub-extension identity (Step 2.0, using L016's I11 for <= 27 vertices) into L021 G1.** L021 Proposition 9 is one instance. The general rule kills any (D1) or (D2) configuration in which H[V(F) ∪ {v} ∪ Q] has at most 27 vertices and s_F + 3(|Q| + 1) + 2(k + k') - 11t < 0. That covers every piece of L* with |Q| <= 9. A worker can enumerate all trace and outer-vertex patterns of the 32 pieces with this test, a finite and fast job, to shrink G1 before any proof is written.
 4. **L020 Proposition 6 into L022 GAPs 2 and 3 and into NC0.** An NC pair of type (2,2,1) in a near-tight K splits K - x - y into at most 5 tight graphs with Delta <= 3. Under T' this gives n(K) <= 87 for that type, so NC0 for (2,2,1)-pairs follows from T' plus a finite check. The other types leave remainders of slack 0 to 3.
 5. **Lemma A connects L021's G1 to L022 Corollary 3's residual pattern (b) with an E1 side.** These are the same configuration seen through two potentials.
@@ -225,7 +227,7 @@ So, given G2, KT* for n >= 67 reduces to the KT form of the E1-hub lemma. The ra
    - (iv) a precise list of what remains: the G2 residue (|X| <= 2; boundaries that are cliques in R; |∂(X)| = 1 with |X| <= 3; ∂(X) = ∅ with |X| <= 5), the range 25 <= n <= 66, and the E1-hub lemma in KT form.
    
    Every unproved step marked GAP.
-5. **[two referees in parallel, about 1.5 h each]** Referee the reusable hand-proved content so it can be cited: L022 Theorems 1 and 2 with Corollaries 3 and 3', and L021 Theorems 1 to 6 with Propositions 8 and 9. Also ask L021 to fix the sign typo and to add the sentence "KT* is not implied by I11".
+5. **[two referees in parallel, about 1.5 h each]** Referee the reusable hand-proved content so it can be cited: L022 Theorems 1 and 2 with Corollaries 3 and 3', and L021 Theorems 1 to 6 with Propositions 8 and 9. Also ask L021 to fix the sign typo and to add the sentence "KT* is not known to follow from I11".
 6. **[prover, about 3 h, after step 4]** Attack the E1-hub lemma. Start with the I11 form, using Proposition 6 (each NC pair has |∂| <= 3, and G - a - b has slack s + 5 - 2|∂| in [0, 3]) together with the Theta-chain structure. Then transfer to the KT form.
 7. **[worker, background, only if CPU is free; tens of core-hours]** L020 W1 and W2: cell(25,23,11,3); cell(29,23,12,3) and cell(29,17,11,3) with the triple test. This gives I11 at n <= 30 and tests the Theta-chain bound 29. Useful for f(25), f(29), f(30), but it does not advance a general proof.
 
