@@ -16,3 +16,19 @@ cell_26_22_11.txt {'graphs': 36, 'nc': 0, 'nonadj': 0, 'blocked_commonnbr': 0, '
 cell_19_16_8.txt {'graphs': 956, 'nc': 407, 'nonadj': 12, 'blocked_commonnbr': 0, 'blocked_P3': 0, 'blocked_F7': 12, 'mergeable': 0, 'tau_fail': 0} [33s]
 cell_20_15_8.txt {'graphs': 953, 'nc': 2480, 'nonadj': 21, 'blocked_commonnbr': 21, 'blocked_P3': 0, 'blocked_F7': 0, 'mergeable': 0, 'tau_fail': 0} [42s]
 cell_17_14_7.txt {'graphs': 1708, 'nc': 1411, 'nonadj': 48, 'blocked_commonnbr': 0, 'blocked_P3': 0, 'blocked_F7': 48, 'mergeable': 0, 'tau_fail': 0} [48s]
+cell_23_21_10.txt {'graphs': 699, 'nc': 1635, 'nonadj': 9, 'blocked_commonnbr': 0, 'blocked_P3': 0, 'blocked_F7': 9, 'mergeable': 0, 'tau_fail': 0} [88s]
+NC pair types (dmin,dmax,sigma,slack): count
+   (1, 1, 0, 1) 1
+   (1, 1, 0, 2) 13
+   (1, 1, 1, 0) 3
+   (1, 1, 1, 2) 463
+   (1, 2, 0, 1) 24
+   (1, 2, 0, 2) 106
+   (1, 2, 1, 0) 14
+   (1, 2, 1, 1) 1962
+   (1, 2, 1, 2) 2918
+   (1, 3, 1, 1) 128
+   (1, 3, 1, 2) 778
+   (2, 2, 1, 1) 395
+   (2, 2, 1, 2) 1313
+TOTAL {'graphs': 5066, 'nc': 8118, 'nc_adj': 0, 'nc_nonadj': 144, 'tau_fail': 0, 'commonnbr': 43, 'P3': 10, 'F7': 91, 'inC': 0, 'violations': 0}

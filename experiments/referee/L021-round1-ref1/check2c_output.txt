@@ -409,3 +409,4 @@
 (15,11,6)#9 + (17,13,7)#5 configs 1094696 tau-raising 2 in C_3 0
 (15,11,6)#10 + (15,11,6)#10 configs 783174 tau-raising 4 in C_3 0
 (15,11,6)#10 + (15,11,6)#11 configs 575417 tau-raising 2 in C_3 0
+exit 143
