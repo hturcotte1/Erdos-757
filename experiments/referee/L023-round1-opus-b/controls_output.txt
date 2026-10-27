@@ -1,0 +1,12 @@
+SET A_base n=14 APs=12 is45=True -> REALIZABLE witness_is45=True Q8copies=0 {"nodes": 14, "EQ": 2, "SIDON": 11, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 1} 0.0s
+SET B12 n=12 APs=10 is45=True -> REALIZABLE witness_is45=True Q8copies=0 {"nodes": 11, "EQ": 0, "SIDON": 5, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 1} 0.0s
+SET C006 n=21 APs=19 is45=True -> REALIZABLE witness_is45=True Q8copies=0 {"nodes": 21, "EQ": 0, "SIDON": 18, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 1} 0.1s
+SET C007 n=25 APs=20 is45=True -> REALIZABLE witness_is45=True Q8copies=0 {"nodes": 22, "EQ": 2, "SIDON": 14, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 1} 0.1s
+SET C008 n=19 APs=16 is45=True -> REALIZABLE witness_is45=True Q8copies=0 {"nodes": 27, "EQ": 1, "SIDON": 31, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 1} 0.0s
+cell(14,12,6,4) class 0: REALIZABLE witness_is45=True Q8copies=0 {"nodes": 14, "EQ": 1, "SIDON": 10, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 1}
+cell(14,12,6,4) class 1: REALIZABLE witness_is45=True Q8copies=0 {"nodes": 13, "EQ": 0, "SIDON": 3, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 1}
+cell(14,12,6,4) class 2: REALIZABLE witness_is45=True Q8copies=0 {"nodes": 13, "EQ": 0, "SIDON": 7, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 1}
+cell(14,12,6,4) class 3: REALIZABLE witness_is45=True Q8copies=0 {"nodes": 13, "EQ": 0, "SIDON": 5, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 1}
+cell(14,12,6,4) class 4: REALIZABLE witness_is45=True Q8copies=0 {"nodes": 13, "EQ": 0, "SIDON": 6, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 1}
+cell(14,12,6,4) class 5: NOT-REALIZABLE witness_is45=- Q8copies=2 {"nodes": 3415, "EQ": 1425, "SIDON": 5406, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 0}
+cell(14,12,6,4) class 6: REALIZABLE witness_is45=True Q8copies=0 {"nodes": 13, "EQ": 0, "SIDON": 5, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 1}

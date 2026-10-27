@@ -1,0 +1,1993 @@
+{
+ "tags": "[verified-here] as an UNREFEREED computation (exact integer/combinatorial)",
+ "n28": {
+  "violator_cells_required": {
+   "(28, 17, 11, 2)": 0,
+   "(28, 18, 11, 3)": 0,
+   "(28, 23, 12, 3)": 0
+  },
+  "all_empty": true,
+  "closure_cells": 136,
+  "closure": {
+   "(3, 1, 1, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(3, 1, 1, 3)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(4, 2, 1, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(5, 2, 1, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(5, 3, 1, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(6, 3, 1, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(6, 3, 2, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(6, 3, 2, 3)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(6, 4, 1, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(6, 4, 2, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(7, 3, 2, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(7, 4, 2, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(7, 5, 2, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(8, 4, 2, 2)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(8, 5, 2, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(8, 5, 3, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(8, 5, 3, 3)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(8, 6, 3, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(8, 6, 3, 3)": {
+    "classes": 3,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(9, 4, 2, 2)": {
+    "classes": 1,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(9, 4, 3, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(9, 4, 3, 3)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(9, 5, 2, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(9, 5, 3, 2)": {
+    "classes": 3,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(9, 6, 3, 2)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(9, 7, 3, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(10, 5, 3, 2)": {
+    "classes": 4,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(10, 6, 3, 2)": {
+    "classes": 5,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(10, 7, 3, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(10, 7, 4, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(10, 7, 4, 3)": {
+    "classes": 4,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(10, 8, 4, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 5, 3, 2)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 6, 3, 2)": {
+    "classes": 9,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(11, 6, 4, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 6, 4, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 7, 4, 2)": {
+    "classes": 4,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 7, 4, 3)": {
+    "classes": 35,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 8, 4, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 9, 4, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(12, 6, 3, 2)": {
+    "classes": 7,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(12, 6, 4, 2)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(12, 7, 4, 2)": {
+    "classes": 15,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(12, 8, 4, 2)": {
+    "classes": 5,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(12, 10, 5, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(12, 10, 5, 3)": {
+    "classes": 149,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 6, 4, 2)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 7, 4, 2)": {
+    "classes": 22,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 8, 4, 2)": {
+    "classes": 23,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 8, 5, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 8, 5, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 9, 5, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 10, 5, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 7, 4, 2)": {
+    "classes": 17,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(14, 7, 5, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 7, 5, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 8, 5, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 8, 5, 3)": {
+    "classes": 9,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 9, 5, 2)": {
+    "classes": 19,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 10, 5, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 12, 6, 2)": {
+    "classes": 0,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(14, 12, 6, 3)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(15, 7, 4, 2)": {
+    "classes": 5,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(15, 7, 5, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(15, 8, 5, 2)": {
+    "classes": 11,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(15, 9, 5, 2)": {
+    "classes": 91,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(15, 11, 6, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(15, 11, 6, 3)": {
+    "classes": 19,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(15, 12, 6, 2)": {
+    "classes": 0,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(16, 8, 5, 2)": {
+    "classes": 14,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(16, 9, 5, 2)": {
+    "classes": 166,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(16, 9, 6, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(16, 9, 6, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(16, 10, 6, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(16, 11, 6, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(17, 8, 5, 2)": {
+    "classes": 7,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(17, 8, 6, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(17, 8, 6, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(17, 9, 6, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(17, 9, 6, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(17, 10, 6, 2)": {
+    "classes": 6,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(17, 11, 6, 2)": {
+    "classes": 114,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(17, 13, 7, 2)": {
+    "classes": 0,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(17, 13, 7, 3)": {
+    "classes": 6,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(18, 9, 6, 2)": {
+    "classes": 5,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(18, 10, 6, 2)": {
+    "classes": 67,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(18, 12, 7, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(18, 12, 7, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(18, 13, 7, 2)": {
+    "classes": 0,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(19, 9, 6, 2)": {
+    "classes": 4,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(19, 10, 6, 2)": {
+    "classes": 128,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(19, 10, 7, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(19, 10, 7, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(19, 11, 7, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(19, 12, 7, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(20, 10, 7, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(20, 10, 7, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(20, 11, 7, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(20, 12, 7, 2)": {
+    "classes": 38,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(20, 14, 8, 2)": {
+    "classes": 0,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(21, 10, 7, 2)": {
+    "classes": 2,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(21, 11, 7, 2)": {
+    "classes": 36,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(21, 13, 8, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(21, 13, 8, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(21, 14, 8, 2)": {
+    "classes": 0,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(21, 18, 9, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(22, 11, 7, 2)": {
+    "classes": 52,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(22, 11, 8, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(22, 11, 8, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(22, 12, 8, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(22, 13, 8, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(23, 11, 8, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(23, 11, 8, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(23, 12, 8, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(23, 13, 8, 2)": {
+    "classes": 12,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(23, 15, 9, 2)": {
+    "classes": 0,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(24, 12, 8, 2)": {
+    "classes": 14,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(24, 14, 9, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(24, 14, 9, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(24, 15, 9, 2)": {
+    "classes": 0,
+    "source": "20261027-0235-cost-n28-n29 (cost study, unrefereed)"
+   },
+   "(24, 19, 10, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(25, 12, 8, 2)": {
+    "classes": 10,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(25, 12, 9, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(25, 12, 9, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(25, 13, 9, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(25, 14, 9, 2)": {
+    "classes": 0,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(26, 13, 9, 2)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(26, 14, 9, 2)": {
+    "classes": 3,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(26, 16, 10, 2)": {
+    "classes": 0,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(27, 15, 10, 2)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(27, 15, 10, 3)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(27, 16, 10, 2)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(27, 20, 11, 3)": {
+    "classes": 0,
+    "source": "20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+   },
+   "(28, 17, 11, 2)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(28, 18, 11, 3)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(28, 23, 12, 3)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   }
+  }
+ },
+ "n29": {
+  "violator_cells_required": {
+   "(29, 15, 11, 2)": 0,
+   "(29, 16, 11, 3)": 0,
+   "(29, 22, 12, 3)": 0,
+   "(29, 27, 13, 3)": 0
+  },
+  "all_empty": true,
+  "closure_cells": 192,
+  "closure": {
+   "(3, 1, 1, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(3, 1, 1, 3)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(4, 2, 1, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(4, 2, 1, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(5, 2, 1, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(5, 2, 1, 3)": {
+    "classes": 1,
+    "source": "L014 cells.tar.gz (refereed)"
+   },
+   "(5, 3, 1, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(5, 3, 1, 3)": {
+    "classes": 0,
+    "source": "20261027-0235-cost-n28-n29 (cost study, unrefereed)"
+   },
+   "(6, 3, 1, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(6, 3, 2, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(6, 3, 2, 3)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(6, 4, 1, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(6, 4, 2, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(6, 4, 2, 3)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(7, 3, 2, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(7, 3, 2, 3)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(7, 4, 2, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(7, 4, 2, 3)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(7, 5, 2, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(8, 4, 2, 2)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(8, 4, 2, 3)": {
+    "classes": 3,
+    "source": "20261027-0235-cost-n28-n29 (cost study, unrefereed)"
+   },
+   "(8, 5, 2, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(8, 5, 3, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(8, 5, 3, 3)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(8, 6, 3, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(8, 6, 3, 3)": {
+    "classes": 3,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(9, 4, 2, 2)": {
+    "classes": 1,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(9, 4, 3, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(9, 4, 3, 3)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(9, 5, 2, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(9, 5, 3, 2)": {
+    "classes": 3,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(9, 5, 3, 3)": {
+    "classes": 6,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(9, 6, 3, 2)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(9, 6, 3, 3)": {
+    "classes": 21,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(9, 7, 3, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(9, 7, 3, 3)": {
+    "classes": 24,
+    "source": "20261027-0235-cost-n28-n29 (cost study, unrefereed)"
+   },
+   "(10, 5, 3, 2)": {
+    "classes": 4,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(10, 5, 3, 3)": {
+    "classes": 6,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(10, 6, 3, 2)": {
+    "classes": 5,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(10, 7, 3, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(10, 7, 4, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(10, 7, 4, 3)": {
+    "classes": 4,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(10, 8, 4, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(10, 8, 4, 3)": {
+    "classes": 63,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 5, 3, 2)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 5, 3, 3)": {
+    "classes": 4,
+    "source": "20261027-0235-cost-n28-n29 (cost study, unrefereed)"
+   },
+   "(11, 6, 3, 2)": {
+    "classes": 9,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(11, 6, 4, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 6, 4, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 7, 4, 2)": {
+    "classes": 4,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 7, 4, 3)": {
+    "classes": 35,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 8, 4, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 8, 4, 3)": {
+    "classes": 471,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(11, 9, 4, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(12, 6, 3, 2)": {
+    "classes": 7,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(12, 6, 4, 2)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(12, 6, 4, 3)": {
+    "classes": 4,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(12, 7, 4, 2)": {
+    "classes": 15,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(12, 7, 4, 3)": {
+    "classes": 97,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(12, 8, 4, 2)": {
+    "classes": 5,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(12, 8, 4, 3)": {
+    "classes": 1391,
+    "source": "20261027-0235-cost-n28-n29 (cost study, unrefereed)"
+   },
+   "(12, 9, 4, 2)": {
+    "classes": 0,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(12, 10, 5, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(12, 10, 5, 3)": {
+    "classes": 149,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 6, 4, 2)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 6, 4, 3)": {
+    "classes": 3,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 7, 4, 2)": {
+    "classes": 22,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 8, 4, 2)": {
+    "classes": 23,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 8, 5, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 8, 5, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 9, 5, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 9, 5, 3)": {
+    "classes": 84,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 10, 5, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(13, 10, 5, 3)": {
+    "classes": 6683,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(13, 11, 5, 3)": {
+    "classes": 65771,
+    "source": "20261027-0235-cost-n28-n29 (cost study, unrefereed)"
+   },
+   "(14, 7, 4, 2)": {
+    "classes": 17,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(14, 7, 5, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 7, 5, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 8, 5, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 8, 5, 3)": {
+    "classes": 9,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 9, 5, 2)": {
+    "classes": 19,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 9, 5, 3)": {
+    "classes": 1060,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 10, 5, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(14, 12, 6, 3)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(15, 7, 4, 2)": {
+    "classes": 5,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(15, 7, 5, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(15, 7, 5, 3)": {
+    "classes": 2,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(15, 8, 5, 2)": {
+    "classes": 11,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(15, 8, 5, 3)": {
+    "classes": 59,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(15, 9, 5, 2)": {
+    "classes": 91,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(15, 9, 5, 3)": {
+    "classes": 3026,
+    "source": "20261027-0235-cost-n28-n29 (cost study, unrefereed)"
+   },
+   "(15, 10, 5, 2)": {
+    "classes": 19,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(15, 11, 6, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(15, 11, 6, 3)": {
+    "classes": 19,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(15, 12, 6, 3)": {
+    "classes": 10617,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(16, 8, 5, 2)": {
+    "classes": 14,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(16, 9, 5, 2)": {
+    "classes": 166,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(16, 9, 6, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(16, 9, 6, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(16, 10, 6, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(16, 10, 6, 3)": {
+    "classes": 16,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(16, 11, 6, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(16, 11, 6, 3)": {
+    "classes": 3238,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(16, 12, 6, 3)": {
+    "classes": 540610,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(17, 8, 5, 2)": {
+    "classes": 7,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(17, 8, 6, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(17, 8, 6, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(17, 9, 6, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(17, 9, 6, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(17, 10, 6, 2)": {
+    "classes": 6,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(17, 10, 6, 3)": {
+    "classes": 339,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(17, 11, 6, 2)": {
+    "classes": 114,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(17, 13, 7, 3)": {
+    "classes": 6,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(17, 14, 7, 3)": {
+    "classes": 1708,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(17, 15, 7, 3)": {
+    "classes": 660651,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(18, 9, 6, 2)": {
+    "classes": 5,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(18, 9, 6, 3)": {
+    "classes": 22,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(18, 10, 6, 2)": {
+    "classes": 67,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(18, 10, 6, 3)": {
+    "classes": 1634,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(18, 11, 6, 2)": {
+    "classes": 671,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(18, 12, 7, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(18, 12, 7, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(18, 13, 7, 3)": {
+    "classes": 2544,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(19, 9, 6, 2)": {
+    "classes": 4,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(19, 10, 6, 2)": {
+    "classes": 128,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(19, 10, 7, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(19, 10, 7, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(19, 11, 7, 2)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(19, 11, 7, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(19, 12, 7, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(19, 12, 7, 3)": {
+    "classes": 833,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(19, 13, 7, 3)": {
+    "classes": 192957,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(19, 16, 8, 3)": {
+    "classes": 227,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(20, 10, 7, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(20, 10, 7, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(20, 11, 7, 2)": {
+    "classes": 1,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(20, 11, 7, 3)": {
+    "classes": 45,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(20, 12, 7, 2)": {
+    "classes": 38,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(20, 14, 8, 3)": {
+    "classes": 0,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(20, 15, 8, 3)": {
+    "classes": 953,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(20, 16, 8, 3)": {
+    "classes": 314639,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(21, 10, 7, 2)": {
+    "classes": 2,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(21, 11, 7, 2)": {
+    "classes": 36,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(21, 11, 7, 3)": {
+    "classes": 562,
+    "source": "20261027-0235-cost-n28-n29 (cost study, unrefereed)"
+   },
+   "(21, 12, 7, 2)": {
+    "classes": 474,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(21, 13, 8, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(21, 13, 8, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(21, 14, 8, 3)": {
+    "classes": 299,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(21, 18, 9, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(21, 19, 9, 3)": {
+    "classes": 1347,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(22, 11, 7, 2)": {
+    "classes": 52,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(22, 11, 8, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(22, 11, 8, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(22, 12, 8, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(22, 12, 8, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(22, 13, 8, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(22, 14, 8, 3)": {
+    "classes": 47353,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(22, 17, 9, 3)": {
+    "classes": 37,
+    "source": "L012 cells.tar.gz (refereed)"
+   },
+   "(23, 11, 8, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(23, 12, 8, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(23, 12, 8, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(23, 13, 8, 2)": {
+    "classes": 12,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(23, 15, 9, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(23, 17, 9, 3)": {
+    "classes": 137326,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(24, 12, 8, 2)": {
+    "classes": 14,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(24, 12, 8, 3)": {
+    "classes": 129,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(24, 13, 8, 2)": {
+    "classes": 288,
+    "source": "20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+   },
+   "(24, 14, 9, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(24, 15, 9, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(24, 20, 10, 3)": {
+    "classes": 2781,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(25, 12, 8, 2)": {
+    "classes": 10,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(25, 12, 9, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(25, 12, 9, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(25, 13, 9, 2)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(25, 13, 9, 3)": {
+    "classes": 0,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(25, 14, 9, 2)": {
+    "classes": 0,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(25, 15, 9, 3)": {
+    "classes": 6849,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(25, 18, 10, 3)": {
+    "classes": 0,
+    "source": "L013 cells.tar.gz (refereed)"
+   },
+   "(25, 23, 11, 3)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(26, 13, 9, 3)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(26, 14, 9, 2)": {
+    "classes": 3,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(26, 16, 10, 3)": {
+    "classes": 0,
+    "source": "L016 cells_new.tar.gz (refereed)"
+   },
+   "(26, 18, 10, 3)": {
+    "classes": 29056,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(27, 16, 10, 3)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(27, 21, 11, 3)": {
+    "classes": 4553,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(28, 14, 10, 2)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(28, 19, 11, 3)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(28, 24, 12, 3)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(29, 15, 11, 2)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(29, 16, 11, 3)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(29, 22, 12, 3)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   },
+   "(29, 27, 13, 3)": {
+    "classes": 0,
+    "source": "COMPUTED HERE (this folder)"
+   }
+  }
+ },
+ "record_cell_25_23_11": {
+  "cell(25,23,11,4)": 6,
+  "cell(25,23,11,3)": 0,
+  "realizable": 0,
+  "realize": "realize_rec.txt: 6 graphs, 325400 assignments, 21831 distinct-valued, 0 realizations; min_extra_APs 8"
+ },
+ "f19_cells": {
+  "cell(19,17,8,5)": 785127,
+  "by max degree": {
+   "3": 29898,
+   "4": 667007,
+   "5": 88222
+  },
+  "cell(19,16,8,4)": 956,
+  "cell(18,12,7,5)": 0
+ },
+ "cell_21_19_9_D4": 31268,
+ "independent_recomputation_from_refereed_seeds": {
+  "5,3,1,3": "SAME (0 classes)",
+  "7,4,1,2": "SAME (0 classes)",
+  "8,4,2,3": "SAME (3 classes)",
+  "9,7,3,3": "SAME (24 classes)",
+  "10,5,2,2": "SAME (0 classes)",
+  "11,5,3,3": "SAME (4 classes)",
+  "12,8,4,3": "SAME (1391 classes)",
+  "13,6,3,2": "SAME (2 classes)",
+  "13,11,5,3": "SAME (65771 classes)",
+  "15,9,5,3": "SAME (3026 classes)",
+  "16,9,6,4": "SAME (0 classes)",
+  "17,13,7,4": "SAME (10 classes)",
+  "19,10,7,4": "SAME (0 classes)",
+  "20,14,8,4": "SAME (0 classes)",
+  "21,11,7,3": "SAME (562 classes)",
+  "21,18,9,4": "SAME (12 classes)",
+  "22,11,8,4": "SAME (0 classes)",
+  "23,11,7,2": "not finished",
+  "23,15,9,4": "not finished",
+  "24,13,8,2": "not finished",
+  "24,15,9,2": "not finished",
+  "24,19,10,4": "not finished",
+  "25,12,9,4": "not finished",
+  "25,14,9,3": "not finished",
+  "25,15,9,2": "not finished",
+  "26,16,10,4": "not finished",
+  "26,17,10,3": "not finished",
+  "27,20,11,3": "not finished",
+  "27,20,11,4": "not finished"
+ },
+ "computed_cells": [
+  {
+   "cell": "(26,13,9,2)",
+   "classes": 0,
+   "inputs": "130",
+   "nodes": "223513",
+   "seconds": "0.3",
+   "bad_tau": "0",
+   "hits_in_C": "2771",
+   "route": "recurse",
+   "utc": "2026-10-27T03:12:59Z"
+  },
+  {
+   "cell": "(27,15,10,2)",
+   "classes": 0,
+   "inputs": "47",
+   "nodes": "23617",
+   "seconds": "0.2",
+   "bad_tau": "0",
+   "hits_in_C": "0",
+   "route": "recurse",
+   "utc": "2026-10-27T03:13:11Z"
+  },
+  {
+   "cell": "(28,17,11,2)",
+   "classes": 0,
+   "inputs": "0",
+   "nodes": "0",
+   "seconds": "0.0",
+   "bad_tau": "0",
+   "hits_in_C": "0",
+   "route": "recurse",
+   "utc": "2026-10-27T03:13:23Z"
+  },
+  {
+   "cell": "(25,12,8,2)",
+   "classes": 10,
+   "inputs": "226",
+   "nodes": "460549",
+   "seconds": "1063.4",
+   "bad_tau": "0",
+   "hits_in_C": "197884",
+   "route": "recurse",
+   "utc": "2026-10-27T03:31:20Z"
+  },
+  {
+   "cell": "(26,14,9,2)",
+   "classes": 3,
+   "inputs": "952",
+   "nodes": "766798",
+   "seconds": "2.0",
+   "bad_tau": "0",
+   "hits_in_C": "16198",
+   "route": "recurse",
+   "utc": "2026-10-27T03:31:44Z"
+  },
+  {
+   "cell": "(27,16,10,2)",
+   "classes": 0,
+   "inputs": "314",
+   "nodes": "50607",
+   "seconds": "1.0",
+   "bad_tau": "0",
+   "hits_in_C": "13",
+   "route": "recurse",
+   "utc": "2026-10-27T03:32:05Z"
+  },
+  {
+   "cell": "(27,15,10,3)",
+   "classes": 0,
+   "inputs": "102",
+   "nodes": "12137486",
+   "seconds": "7.7",
+   "bad_tau": "0",
+   "hits_in_C": "5204",
+   "route": "recurse",
+   "utc": "2026-10-27T03:32:33Z"
+  },
+  {
+   "cell": "(18,10,6,3)",
+   "classes": 1634,
+   "inputs": "1426570",
+   "nodes": "",
+   "seconds": "264.5",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T03:32:47Z"
+  },
+  {
+   "cell": "(28,18,11,3)",
+   "classes": 0,
+   "inputs": "177",
+   "nodes": "11169715",
+   "seconds": "4.4",
+   "bad_tau": "0",
+   "hits_in_C": "0",
+   "route": "recurse",
+   "utc": "2026-10-27T03:32:58Z"
+  },
+  {
+   "cell": "(28,23,12,3)",
+   "classes": 0,
+   "inputs": "32",
+   "nodes": "614280",
+   "seconds": "1.4",
+   "bad_tau": "0",
+   "hits_in_C": "0",
+   "route": "recurse",
+   "utc": "2026-10-27T03:34:21Z"
+  },
+  {
+   "cell": "(22,14,8,3)",
+   "classes": 47353,
+   "inputs": "10911",
+   "nodes": "480921507",
+   "seconds": "560.9",
+   "bad_tau": "0",
+   "hits_in_C": "22945669",
+   "route": "recurse",
+   "utc": "2026-10-27T03:42:27Z"
+  },
+  {
+   "cell": "(19,13,7,3)",
+   "classes": 192957,
+   "inputs": "8404",
+   "nodes": "144178380",
+   "seconds": "314.1",
+   "bad_tau": "0",
+   "hits_in_C": "15225619",
+   "route": "recurse",
+   "utc": "2026-10-27T03:48:05Z"
+  },
+  {
+   "cell": "(24,12,8,3)",
+   "classes": 129,
+   "inputs": "229",
+   "nodes": "9112190",
+   "seconds": "142.3",
+   "bad_tau": "0",
+   "hits_in_C": "2292841",
+   "route": "recurse",
+   "utc": "2026-10-27T03:51:19Z"
+  },
+  {
+   "cell": "(16,12,6,3)",
+   "classes": 540610,
+   "inputs": "6163",
+   "nodes": "25590984",
+   "seconds": "185.8",
+   "bad_tau": "0",
+   "hits_in_C": "8357721",
+   "route": "recurse",
+   "utc": "2026-10-27T03:51:30Z"
+  },
+  {
+   "cell": "(25,15,9,3)",
+   "classes": 6849,
+   "inputs": "11831",
+   "nodes": "1241825400",
+   "seconds": "2102.4",
+   "bad_tau": "0",
+   "hits_in_C": "32526630",
+   "route": "recurse",
+   "utc": "2026-10-27T04:26:36Z"
+  },
+  {
+   "cell": "(26,13,9,3)",
+   "classes": 0,
+   "inputs": "161",
+   "nodes": "10273694",
+   "seconds": "18.6",
+   "bad_tau": "0",
+   "hits_in_C": "456835",
+   "route": "recurse",
+   "utc": "2026-10-27T04:27:14Z"
+  },
+  {
+   "cell": "(27,16,10,3)",
+   "classes": 0,
+   "inputs": "2533",
+   "nodes": "355639121",
+   "seconds": "231.9",
+   "bad_tau": "0",
+   "hits_in_C": "576080",
+   "route": "recurse",
+   "utc": "2026-10-27T04:31:26Z"
+  },
+  {
+   "cell": "(28,14,10,2)",
+   "classes": 0,
+   "inputs": "61",
+   "nodes": "120107",
+   "seconds": "0.6",
+   "bad_tau": "0",
+   "hits_in_C": "13",
+   "route": "recurse",
+   "utc": "2026-10-27T04:31:45Z"
+  },
+  {
+   "cell": "(29,15,11,2)",
+   "classes": 0,
+   "inputs": "0",
+   "nodes": "0",
+   "seconds": "0.0",
+   "bad_tau": "0",
+   "hits_in_C": "0",
+   "route": "recurse",
+   "utc": "2026-10-27T04:32:03Z"
+  },
+  {
+   "cell": "(29,16,11,3)",
+   "classes": 0,
+   "inputs": "5",
+   "nodes": "1217635",
+   "seconds": "1.3",
+   "bad_tau": "0",
+   "hits_in_C": "0",
+   "route": "recurse",
+   "utc": "2026-10-27T04:32:24Z"
+  },
+  {
+   "cell": "(28,19,11,3)",
+   "classes": 0,
+   "inputs": "14348",
+   "nodes": "763063201",
+   "seconds": "521.5",
+   "bad_tau": "0",
+   "hits_in_C": "55002",
+   "route": "recurse",
+   "utc": "2026-10-27T04:41:27Z"
+  },
+  {
+   "cell": "(29,22,12,3)",
+   "classes": 0,
+   "inputs": "972",
+   "nodes": "30979690",
+   "seconds": "33.3",
+   "bad_tau": "0",
+   "hits_in_C": "0",
+   "route": "recurse",
+   "utc": "2026-10-27T04:42:18Z"
+  },
+  {
+   "cell": "(17,15,7,3)",
+   "classes": 660651,
+   "inputs": "617069",
+   "nodes": "330779930",
+   "seconds": "574.2",
+   "bad_tau": "0",
+   "hits_in_C": "8643236",
+   "route": "recurse",
+   "utc": "2026-10-27T05:02:16Z"
+  },
+  {
+   "cell": "(9,4,3,4)",
+   "classes": 1,
+   "inputs": "4",
+   "nodes": "",
+   "seconds": "0.1",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T05:13:54Z"
+  },
+  {
+   "cell": "(6,3,2,4)",
+   "classes": 1,
+   "inputs": "6",
+   "nodes": "",
+   "seconds": "0.1",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T05:14:17Z"
+  },
+  {
+   "cell": "(10,8,4,4)",
+   "classes": 73,
+   "inputs": "29184",
+   "nodes": "",
+   "seconds": "0.6",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T05:14:43Z"
+  },
+  {
+   "cell": "(13,9,5,4)",
+   "classes": 124,
+   "inputs": "75994",
+   "nodes": "",
+   "seconds": "32.4",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T05:15:42Z"
+  },
+  {
+   "cell": "(16,10,6,4)",
+   "classes": 26,
+   "inputs": "21755",
+   "nodes": "",
+   "seconds": "231.8",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T05:20:06Z"
+  },
+  {
+   "cell": "(19,11,7,4)",
+   "classes": 0,
+   "inputs": "72",
+   "nodes": "1661238",
+   "seconds": "2.2",
+   "bad_tau": "0",
+   "hits_in_C": "47578",
+   "route": "recurse",
+   "utc": "2026-10-27T05:20:33Z"
+  },
+  {
+   "cell": "(23,17,9,3)",
+   "classes": 137326,
+   "inputs": "883379",
+   "nodes": "12544926050",
+   "seconds": "5323.2",
+   "bad_tau": "0",
+   "hits_in_C": "23156691",
+   "route": "recurse",
+   "utc": "2026-10-27T05:20:50Z"
+  },
+  {
+   "cell": "(17,14,7,4)",
+   "classes": 6922,
+   "inputs": "10393",
+   "nodes": "31541759",
+   "seconds": "25.8",
+   "bad_tau": "0",
+   "hits_in_C": "104168",
+   "route": "recurse",
+   "utc": "2026-10-27T05:21:18Z"
+  },
+  {
+   "cell": "(20,15,8,4)",
+   "classes": 2610,
+   "inputs": "11480",
+   "nodes": "182768686",
+   "seconds": "99.3",
+   "bad_tau": "0",
+   "hits_in_C": "326010",
+   "route": "recurse",
+   "utc": "2026-10-27T05:23:14Z"
+  },
+  {
+   "cell": "(20,16,8,3)",
+   "classes": 314639,
+   "inputs": "821288",
+   "nodes": "2938837574",
+   "seconds": "1522.3",
+   "bad_tau": "0",
+   "hits_in_C": "15195479",
+   "route": "recurse",
+   "utc": "2026-10-27T05:28:33Z"
+  },
+  {
+   "cell": "(21,19,9,3)",
+   "classes": 1347,
+   "inputs": "977982",
+   "nodes": "246362118",
+   "seconds": "243.7",
+   "bad_tau": "0",
+   "hits_in_C": "24699",
+   "route": "recurse",
+   "utc": "2026-10-27T05:33:30Z"
+  },
+  {
+   "cell": "(24,20,10,3)",
+   "classes": 2781,
+   "inputs": "1176201",
+   "nodes": "2858943025",
+   "seconds": "1116.4",
+   "bad_tau": "0",
+   "hits_in_C": "368489",
+   "route": "recurse",
+   "utc": "2026-10-27T05:48:05Z"
+  },
+  {
+   "cell": "(21,19,9,4)",
+   "classes": 31268,
+   "inputs": "988332",
+   "nodes": "4030113235",
+   "seconds": "970.0",
+   "bad_tau": "0",
+   "hits_in_C": "327015",
+   "route": "recurse",
+   "utc": "2026-10-27T05:50:29Z"
+  },
+  {
+   "cell": "(25,23,11,4)",
+   "classes": 6,
+   "inputs": "15496",
+   "nodes": "72303161",
+   "seconds": "48.4",
+   "bad_tau": "0",
+   "hits_in_C": "172",
+   "route": "recurse",
+   "utc": "2026-10-27T05:52:00Z"
+  },
+  {
+   "cell": "(25,23,11,3)",
+   "classes": 0,
+   "inputs": "15429",
+   "nodes": "4738908",
+   "seconds": "21.5",
+   "bad_tau": "0",
+   "hits_in_C": "0",
+   "route": "recurse",
+   "utc": "2026-10-27T05:52:37Z"
+  },
+  {
+   "cell": "(17,9,6,4)",
+   "classes": 0,
+   "inputs": "0",
+   "nodes": "",
+   "seconds": "0.7",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T06:15:21Z"
+  },
+  {
+   "cell": "(14,8,5,4)",
+   "classes": 10,
+   "inputs": "1616",
+   "nodes": "",
+   "seconds": "0.5",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T06:15:36Z"
+  },
+  {
+   "cell": "(11,7,4,4)",
+   "classes": 38,
+   "inputs": "8786",
+   "nodes": "",
+   "seconds": "0.3",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T06:15:51Z"
+  },
+  {
+   "cell": "(8,6,3,4)",
+   "classes": 3,
+   "inputs": "313",
+   "nodes": "",
+   "seconds": "0.0",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T06:16:03Z"
+  },
+  {
+   "cell": "(18,13,7,4)",
+   "classes": 6014,
+   "inputs": "2159",
+   "nodes": "29681256",
+   "seconds": "31.4",
+   "bad_tau": "0",
+   "hits_in_C": "742624",
+   "route": "recurse",
+   "utc": "2026-10-27T06:16:46Z"
+  },
+  {
+   "cell": "(15,12,6,4)",
+   "classes": 28137,
+   "inputs": "1741",
+   "nodes": "4307134",
+   "seconds": "13.7",
+   "bad_tau": "0",
+   "hits_in_C": "355203",
+   "route": "recurse",
+   "utc": "2026-10-27T06:17:13Z"
+  },
+  {
+   "cell": "(18,12,7,5)",
+   "classes": 0,
+   "inputs": "91",
+   "nodes": "1070517",
+   "seconds": "0.9",
+   "bad_tau": "0",
+   "hits_in_C": "8768",
+   "route": "recurse",
+   "utc": "2026-10-27T06:17:27Z"
+  },
+  {
+   "cell": "(8,5,3,5)",
+   "classes": 2,
+   "inputs": "86",
+   "nodes": "",
+   "seconds": "0.0",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T06:17:39Z"
+  },
+  {
+   "cell": "(10,7,4,5)",
+   "classes": 5,
+   "inputs": "637",
+   "nodes": "",
+   "seconds": "0.0",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T06:17:52Z"
+  },
+  {
+   "cell": "(3,1,1,5)",
+   "classes": 1,
+   "inputs": "1",
+   "nodes": "",
+   "seconds": "0.0",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T06:18:06Z"
+  },
+  {
+   "cell": "(15,11,6,5)",
+   "classes": 30,
+   "inputs": "55",
+   "nodes": "203214",
+   "seconds": "0.5",
+   "bad_tau": "0",
+   "hits_in_C": "5212",
+   "route": "recurse",
+   "utc": "2026-10-27T06:18:23Z"
+  },
+  {
+   "cell": "(12,10,5,5)",
+   "classes": 221,
+   "inputs": "272136",
+   "nodes": "",
+   "seconds": "135.4",
+   "bad_tau": "",
+   "hits_in_C": "",
+   "route": "direct",
+   "utc": "2026-10-27T06:20:53Z"
+  },
+  {
+   "cell": "(19,17,8,5)",
+   "classes": 785127,
+   "inputs": "1785725",
+   "nodes": "7349443829",
+   "seconds": "6574.3",
+   "bad_tau": "0",
+   "hits_in_C": "6961082",
+   "route": "recurse",
+   "utc": "2026-10-27T08:11:40Z"
+  },
+  {
+   "cell": "(26,18,10,3)",
+   "classes": 29056,
+   "inputs": "896462",
+   "nodes": "38576781027",
+   "seconds": "13087.8",
+   "bad_tau": "0",
+   "hits_in_C": "30789264",
+   "route": "recurse(finished by hand)",
+   "utc": "2026-10-27T09:26:29Z"
+  },
+  {
+   "cell": "(27,21,11,3)",
+   "classes": 4553,
+   "inputs": "1233449",
+   "nodes": "13324098997",
+   "seconds": "3763.6",
+   "bad_tau": "0",
+   "hits_in_C": "969356",
+   "route": "recurse",
+   "utc": "2026-10-27T10:31:37Z"
+  },
+  {
+   "cell": "(28,24,12,3)",
+   "classes": 0,
+   "inputs": "30645",
+   "nodes": "138270703",
+   "seconds": "177.4",
+   "bad_tau": "0",
+   "hits_in_C": "34",
+   "route": "recurse",
+   "utc": "2026-10-27T10:34:59Z"
+  },
+  {
+   "cell": "(29,27,13,3)",
+   "classes": 0,
+   "inputs": "3",
+   "nodes": "415",
+   "seconds": "0.2",
+   "bad_tau": "0",
+   "hits_in_C": "0",
+   "route": "recurse",
+   "utc": "2026-10-27T10:35:20Z"
+  }
+ ]
+}

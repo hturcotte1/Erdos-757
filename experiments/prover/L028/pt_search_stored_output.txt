@@ -1,1 +1,1 @@
-{'graphs': 1746, 'connected_inC': 1746, 'configs': 4, 'min_slack': 12, 'slack_hist': {12: 4}, 'degW': {(1, 1, 1, 1, 2, 2): 4}, 'Q': 96, 'Q_tau_eq': 96, 'Q_slack_mismatch': 0, 'Q_negative': 0}
+{'graphs': 1746, 'connected_inC': 1746, 'configs': 4, 'min_slack': 12, 'slack_hist': {12: 4}, 'degW': {(1, 1, 1, 1, 2, 2): 4}, 'Q': 96, 'Q_tau_eq': 96, 'Q_slack_mismatch': 0, 'Q_negative': 0, 'Q_tau_below_lower_bound': 0, 'Q_slack_above_bound': 0}

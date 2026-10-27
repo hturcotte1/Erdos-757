@@ -17,3 +17,6 @@ TOTAL inputs 5
 === 29,15,11,2
 TOTAL inputs 0
 === 29,22,12,3
+TOTAL inputs 972
+(29,22,12,3) branch d=3 t'=11: 972 inputs; ext_d noprune SUMMARY graphs=972 bad_tau=0 tg_too_small=0 searched=972 max_min_covers=18711 nodes=31143970 hits_all=8668 printed=8668; pyverify: {'total': 8668, 'disconnected': 8668, 'nonlinear': 0, 'F7': 0, 'P3': 0, 'degree': 0, 'wrong_tau': 0, 'member': 0, 'tau_checked': 50}
+=== 27,20,11,3

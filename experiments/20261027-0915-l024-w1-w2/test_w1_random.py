@@ -20,6 +20,8 @@ def rand_piece(nv, ne):
         edges = sorted(tuple(sorted(rl[x] for x in e)) for e in edges)
         n = len(vs)
         t = tau(n, edges)
+        mts = min_transversals(n, edges, t)
+        if not all(any(T >> x & 1 for T in mts) for x in range(n)): continue   # (L1) holds for all pieces of L*
         return dict(name='rnd', n=n, edges=edges, tau=t, deg=degrees(n, edges), mts=min_transversals(n, edges, t), m=len(edges), W=0)
 def brute(S):
     K = S.k + 1; res = set()

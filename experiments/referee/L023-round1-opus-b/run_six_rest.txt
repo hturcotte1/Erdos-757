@@ -1,0 +1,3 @@
+X1 NOT-REALIZABLE {"nodes": 1075, "EQ": 510, "SIDON": 1641, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 0} secs 4.9 injective_labellings 54164
+X2 NOT-REALIZABLE {"nodes": 977, "EQ": 491, "SIDON": 1464, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 0} secs 4.3 injective_labellings 53300
+X3 NOT-REALIZABLE {"nodes": 3551, "EQ": 1614, "SIDON": 5489, "NONLIN": 0, "dependent_eq": 0, "leaves_ok": 0} secs 24.3 injective_labellings 53740

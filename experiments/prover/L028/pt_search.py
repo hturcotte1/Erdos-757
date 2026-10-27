@@ -92,6 +92,10 @@ def analyse(n, edges, t, cfgs, stats):
                     dd = sum(1 for e in edges if u in e or w in e)
                     pred = s - 1 - 2 * dd
                     stats['Q'] += 1
+                    if tq < t:
+                        stats['Q_tau_below_lower_bound'] += 1
+                    if sq > s - 1 - 2 * dd:
+                        stats['Q_slack_above_bound'] += 1
                     if tq == t:
                         stats['Q_tau_eq'] += 1
                         if sq != pred:
@@ -103,7 +107,7 @@ def analyse(n, edges, t, cfgs, stats):
 def new_stats():
     return dict(graphs=0, connected_inC=0, configs=0, min_slack=10 ** 9,
                 slack_hist={}, degW={}, Q=0, Q_tau_eq=0, Q_slack_mismatch=0,
-                Q_negative=0)
+                Q_negative=0, Q_tau_below_lower_bound=0, Q_slack_above_bound=0)
 
 
 def random_connected_C(n, rng, maxdeg=3):
