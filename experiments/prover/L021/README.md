@@ -13,10 +13,10 @@ analogue shifts weight from vertices to edges so that deleting a degree-3 vertex
 (27 + 3*35 = 132, as 6 + 3*13 = 45 in Henning–Yeo), and gives up epsilon = 1/6 on the vertex coefficient:
 **KT: 132 tau <= 27 n + 35 m + DEF(H)** on C_3 (members of C with max degree <= 3), DEF = max over families of disjoint induced
 special pieces of (sum of weights - 35 |E*|). KT implies 11 tau <= (3 + 1/6) n + 2 m on C, hence c* >= 35/66 > 9/17 (goal B),
-because any epsilon < 3/17 suffices. The special family, computed exactly from the stored refereed lists, is 32 pieces
+because any epsilon < 3/17 suffices. The special family, computed exactly from the stored refereed lists, is 32 pieces among the connected members of C_3 with at most 24 vertices (at most 27 by the unrefereed run experiments/20261027-0730-kt-cells, see its README)
 (E_1; (8,5,3) x2; (10,7,4) x4; (15,11,6) x19; (17,13,7) x6), and KT holds on all of C_3 up to 24 vertices; all other
 special-candidate graphs are equality cases. Proved: Henning–Yeo Claims A–F, vertex co-transversality, the free-hub local
-structure (D1)–(D3) at degree-3 vertices, edge-criticality, KT for max degree <= 2 (new, via Tutte–Berge), Claim H under a
+structure (D1)–(D3) at degree-3 vertices, edge-criticality, KT for max degree <= 2 (via Tutte–Berge; a consequence of Henning–Yeo EJC 24(2) (2017) P2.50 Prop. 9, tau = N - nu(G), plus Chvatal–Hanson-type matching bounds for subcubic graphs, so not claimed as new; novelty left to the scout), Claim H under a
 replacement hypothesis, and two small-subgraph exclusions. Not proved: the impure (D1)–(D3) configurations (G1), Claim H in
 the cases where the replacement graph leaves C_3 (G2), degree-2 vertices (G3), and finiteness of the special family (G4).
 
