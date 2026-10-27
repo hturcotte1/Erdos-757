@@ -91,3 +91,17 @@
 (27, 14, 10, 3) s=-1 classes 0 inputs 9 nodes 5.83e+05 n/in 64818 secs 2.4
 (27, 19, 11, 3) s=-2 classes 0 inputs 18 nodes 1.14e+06 n/in 63206 secs 2.2
 (27, 25, 12, 3) s=-1 classes 0 inputs 334 nodes 5.40e+04 n/in 162 secs 31.4
+(13, 11, 5, 3) s=6 classes 65771 inputs 1950 nodes 7.01e+05 n/in 360 secs 26.8
+(17, 13, 7, 4) s=0 classes 10 inputs 175 nodes 8.57e+05 n/in 4898 secs 0.2
+(20, 14, 8, 4) s=0 classes 0 inputs 179 nodes 4.26e+06 n/in 23804 secs 1.2
+(21, 11, 7, 3) s=8 classes 562 inputs 217 nodes 3.80e+06 n/in 17489 secs 61.5
+(21, 18, 9, 4) s=0 classes 12 inputs 3249 nodes 2.02e+07 n/in 6208 secs 13.5
+(22, 11, 8, 4) s=0 classes 0 inputs 14 nodes 2.14e+06 n/in 152790 secs 1.0
+(23, 15, 9, 4) s=0 classes 0 inputs 186 nodes 1.53e+07 n/in 82451 secs 7.0
+(24, 15, 9, 2) s=3 classes 0 inputs 281 nodes 9.70e+03 n/in 35 secs 2.2
+(23, 11, 7, 2) s=14 classes 21 inputs 233 nodes 3.13e+05 n/in 1345 secs 232.7
+(23, 21, 10, 4) s=1 classes 699 inputs 135982 nodes 1.87e+09 n/in 13757 secs 927.5
+(24, 13, 8, 2) s=10 classes 288 inputs 1396 nodes 9.09e+05 n/in 651 secs 322.4
+(24, 19, 10, 4) s=0 classes 0 inputs 3809 nodes 9.33e+07 n/in 24506 secs 80.9
+(25, 14, 9, 3) s=4 classes 0 inputs 661 nodes 4.96e+07 n/in 75067 secs 46.0
+(25, 15, 9, 2) s=6 classes 2 inputs 2295 nodes 2.31e+05 n/in 101 secs 356.1

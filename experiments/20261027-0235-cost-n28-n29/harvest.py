@@ -1,8 +1,11 @@
 import os, re, json, glob
-CELLS='../20261017-2150-i11-n27/out/cells'
+CELLDIRS=['../20261017-2150-i11-n27/out/cells','out/cells','../20261027-0300-tight-cells-d4/out/cells']
 rows=[]
-for p in sorted(glob.glob(CELLS+'/cell_*.txt')):
+import itertools
+seenk=set()
+for p in itertools.chain(*[sorted(glob.glob(c+'/cell_*.txt')) for c in CELLDIRS]):
     m=re.match(r'cell_(\d+)_(\d+)_(\d+)_D(\d+)\.txt',os.path.basename(p)); k=tuple(map(int,m.groups()))
+    if k in seenk: continue
     c=0; info=None
     with open(p) as f:
         for l in f:
@@ -15,6 +18,8 @@ for p in sorted(glob.glob(CELLS+'/cell_*.txt')):
         for b in info.get('branches',[]):
             e=b.get('ext',{}); nodes+=e.get('nodes',0) if isinstance(e,dict) else 0; ins+=b.get('inputs',0)
         if route=='recurse' and ins==0: pass
+    if info is None: continue
+    seenk.add(k)
     rows.append(dict(key=k,s=s,count=c,route=route,nodes=nodes,inputs=ins,secs=secs,ext=[b.get('ext') for b in (info or {}).get('branches',[])][:1]))
 json.dump(rows,open('harvest.json','w'))
 for r in rows:

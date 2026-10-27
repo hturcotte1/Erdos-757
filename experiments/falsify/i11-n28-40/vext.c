@@ -18,7 +18,7 @@ static u64 fp_graph(const G *g) {
 static u64 seen_tab[SEEN_SZ];
 static int seen_insert(u64 h) { if (!h) h = 1; unsigned i = (unsigned)(h >> 12) & (SEEN_SZ - 1); for (int k = 0; k < 128; k++) { unsigned j = (i + k) & (SEEN_SZ - 1); if (seen_tab[j] == h) return 0; if (!seen_tab[j]) { seen_tab[j] = h; return 1; } } return 0; }
 
-#define CAPS 60000
+#define CAPS 20000
 static u64 sets[CAPS]; static int nsets;
 static G R; /* relabelled parent */
 static int DM = 3; static int A, sufA[MAXN + 1]; static u64 endO[MAXN][MAXDEG]; static int nend[MAXN];

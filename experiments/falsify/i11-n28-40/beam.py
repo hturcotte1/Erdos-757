@@ -32,6 +32,15 @@ lines = [line(n, e) for n, e, s in seeds]
 res = run_eval(lines)
 for (n, e, s), r in zip(seeds, res):
     if r and r[4] == 0 and r[3] <= 8: pool[n]["seed%d" % len(pool[n])] = (r[3], r[1], r[2], line(n, e).split(' ', 2)[2] if False else line(n, e))
+# extra seeds: gluing results (connected, slack<=12), if available
+for gf in ['out/glue_main.json', 'out/glue_test2.json']:
+    if os.path.exists(gf):
+        gd = json.load(open(gf))
+        for nk, lst in gd['best'].items():
+            for d in lst:
+                if int(nk) <= NMAX and max(sum(v in e for e in d['edges']) for v in range(int(nk))) <= DM:
+                    pool[int(nk)]['g%d' % len(pool[int(nk)])] = (d['slack'], d['m'], d['tau'], line(int(nk), [tuple(e) for e in d['edges']]))
+        break
 stats = {}
 best_by_n = {}
 t0 = time.time()
@@ -39,7 +48,8 @@ lowfile = open('out/beam_%s_low.txt' % tag, 'w')
 for n in range(3, NMAX):
     P = list(pool[n].values())
     if not P: continue
-    random.shuffle(P); P.sort(key=lambda x: x[0]); P = P[:W]
+    lowP = [p for p in P if p[0] <= 3]; hiP = [p for p in P if 3 < p[0] <= 14]
+    random.shuffle(lowP); random.shuffle(hiP); P = lowP[:W // 2] + hiP[:W - min(len(lowP), W // 2)]
     inp = "\n".join(p[3] for p in P) + "\n"
     r = subprocess.run([os.path.join(HERE, 'vext'), '400', '2'], input=inp, capture_output=True, text=True, env=env)
     kids = 0; mn = 10**9
@@ -62,8 +72,8 @@ for n in range(3, NMAX):
     stats[n + 1] = dict(pool=len(pool[n + 1]), minslack=ps[0] if ps else None, hist=dict(collections.Counter(ps).most_common(8)))
     print(n, "parents", len(P), "kids", kids, "-> n+1", stats[n + 1], "t=%.0fs" % (time.time() - t0), flush=True)
     # keep only the best W*3 to bound memory
-    if len(pool[n + 1]) > 6 * W:
-        items = sorted(pool[n + 1].items(), key=lambda kv: kv[1][0]); pool[n + 1] = dict(items[:6 * W])
+    if len(pool[n + 1]) > 20 * W:
+        items = sorted(pool[n + 1].items(), key=lambda kv: kv[1][0] + random.random()); pool[n + 1] = dict(items[:20 * W])
 json.dump(stats, open('out/beam_%s_stats.json' % tag, 'w'))
 # dump final low pools
 with gzip.open('out/beam_%s_pools.jsonl.gz' % tag, 'wt') as f:

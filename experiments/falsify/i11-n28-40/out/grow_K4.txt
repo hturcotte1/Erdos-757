@@ -25,3 +25,17 @@ GROW n=29 m=24 K=4 tried=4233 ok=4233 minslack=14 hist 14:5 25:3918 36:310
 GROW n=29 m=25 K=4 tried=4330 ok=4330 minslack=16 hist 16:65 27:4234 38:31
 GROW n=29 m=26 K=4 tried=4292 ok=4292 minslack=18 hist 18:530 29:3762
 GROW n=29 m=27 K=4 tried=4286 ok=4286 minslack=20 hist 20:2045 31:2241
+GROW n=30 m=15 K=4 tried=4331 ok=4331 minslack=10 hist 10:126 21:2939 32:1262 43:4
+GROW n=30 m=16 K=4 tried=4139 ok=4139 minslack=12 hist 12:138 23:2979 34:1018 45:4
+GROW n=30 m=17 K=4 tried=4449 ok=4449 minslack=14 hist 14:145 25:3437 36:867
+GROW n=30 m=18 K=4 tried=4370 ok=4370 minslack=16 hist 16:166 27:3726 38:478
+GROW n=30 m=19 K=4 tried=4282 ok=4282 minslack=18 hist 18:297 29:3822 40:163
+GROW n=30 m=20 K=4 tried=4307 ok=4307 minslack=9 hist 9:1 20:648 31:3623 42:35
+GROW n=30 m=21 K=4 tried=4298 ok=4298 minslack=22 hist 22:1372 33:2925 44:1
+GROW n=30 m=22 K=4 tried=4283 ok=4283 minslack=13 hist 13:2 24:2519 35:1762
+GROW n=30 m=23 K=4 tried=4238 ok=4238 minslack=15 hist 15:3 26:3625 37:610
+GROW n=30 m=24 K=4 tried=4202 ok=4202 minslack=17 hist 17:40 28:4087 39:75
+GROW n=30 m=25 K=4 tried=4383 ok=4383 minslack=19 hist 19:345 30:4035 41:3
+GROW n=30 m=26 K=4 tried=4308 ok=4308 minslack=21 hist 21:1416 32:2892
+GROW n=30 m=27 K=4 tried=4210 ok=4210 minslack=23 hist 23:3074 34:1136
+GROW n=30 m=28 K=4 tried=4200 ok=4199 minslack=14 hist 14:8 25:4008 36:183
