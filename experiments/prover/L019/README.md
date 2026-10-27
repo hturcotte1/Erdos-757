@@ -6,7 +6,7 @@ L017 Theorem 4 for a minimal counterexample to I11)? Result: PARTIAL, see result
 
 All scripts: Python 3, exact integers, one process, run under `nice -n 10` and `timeout`; inputs are the stored class
 lists experiments/20261027-0300-transversal-richness/inputs/cell_*.txt (format: n m tau followed by the edges).
-`bash reproduce.sh` regenerates every `*_output.txt` (about 10 minutes plus about 10-60 minutes for the (26,22,11) C8 run, depending on machine load).
+`bash reproduce.sh` regenerates every `*_output.txt` (about 10 minutes plus about 5-30 minutes for the (26,22,11) C8 run, depending on machine load).
 
 | file | what it checks | output |
 |---|---|---|
