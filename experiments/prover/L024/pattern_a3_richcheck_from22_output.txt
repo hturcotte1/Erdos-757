@@ -1,2 +1,3 @@
 mode richcheck_from22 types [('(10,7,4)#2', '(10,7,4)#2', '(10,7,4)#3'), ('(10,7,4)#2', '(10,7,4)#3', '(10,7,4)#3'), ('(10,7,4)#3', '(10,7,4)#3', '(10,7,4)#3')]
 richcheck_from22 ('(10,7,4)#2', '(10,7,4)#2', '(10,7,4)#3') N 30 g-orbits 108 configs 0 running {'type_triples': 1, 'g_choices': 108, 'configs': 0, 'claimE': 0, 'inC3': 0, 'inC3_claimE': 0, 'tau_ok': 0, 'Pneg': 0} [51s]
+richcheck_from22 ('(10,7,4)#2', '(10,7,4)#3', '(10,7,4)#3') N 30 g-orbits 54 configs 0 running {'type_triples': 2, 'g_choices': 162, 'configs': 0, 'claimE': 0, 'inC3': 0, 'inC3_claimE': 0, 'tau_ok': 0, 'Pneg': 0} [96s]

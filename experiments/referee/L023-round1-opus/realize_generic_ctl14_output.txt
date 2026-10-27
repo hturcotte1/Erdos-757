@@ -8,3 +8,16 @@ X_3 n=14 m=12 REALIZABLE {"nodes": 18, "pruned": 5, "leaves_good": 1, "reasons":
   witness dimension 2
 X_4 n=14 m=12 REALIZABLE {"nodes": 19, "pruned": 6, "leaves_good": 1, "reasons": {"FOUR": 6}, "secs": 0.0}
   witness dimension 2
+X_5 n=14 m=12 NOT-REALIZABLE {"nodes": 10246, "pruned": 6831, "leaves_good": 0, "reasons": {"FOUR": 5406, "EQUAL": 1425}, "secs": 18.7}
+X_6 n=14 m=12 REALIZABLE {"nodes": 18, "pruned": 5, "leaves_good": 1, "reasons": {"FOUR": 5}, "secs": 0.1}
+  witness dimension 2
+X_7 n=14 m=12 NOT-REALIZABLE {"nodes": 10654, "pruned": 7103, "leaves_good": 0, "reasons": {"FOUR": 5489, "EQUAL": 1614}, "secs": 23.3}
+X_8 n=14 m=12 REALIZABLE {"nodes": 23, "pruned": 9, "leaves_good": 1, "reasons": {"FOUR": 9}, "secs": 0.0}
+  witness dimension 2
+X_9 n=14 m=12 REALIZABLE {"nodes": 24, "pruned": 9, "leaves_good": 1, "reasons": {"FOUR": 8, "EQUAL": 1}, "secs": 0.0}
+  witness dimension 2
+X_10 n=14 m=12 REALIZABLE {"nodes": 32, "pruned": 15, "leaves_good": 1, "reasons": {"FOUR": 15}, "secs": 0.0}
+  witness dimension 2
+F7 (False, {'nodes': 178, 'pruned': 119, 'leaves_good': 0, 'reasons': {'FOUR': 53, 'EQUAL': 66}, 'secs': 0.0})
+nonlinear pair (False, {'nodes': 13, 'pruned': 9, 'leaves_good': 0, 'reasons': {'EQUAL': 3, 'FOUR': 6}, 'secs': 0.0})
+medial-triangle-shape (all labellings) (True, {'nodes': 5, 'pruned': 1, 'leaves_good': 1, 'reasons': {'FOUR': 1}, 'secs': 0.0})

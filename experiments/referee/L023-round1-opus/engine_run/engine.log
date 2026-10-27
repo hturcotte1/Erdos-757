@@ -18,3 +18,4 @@ CELL (12, 8, 4, 3) classes 1391 {'route': 'direct', 'driver': 'stream', 'enum': 
 CELL (11, 8, 4, 3) classes 471 (loaded)
 CELL (10, 8, 4, 3) classes 63 (loaded)
 CELL (9, 7, 3, 3) classes 24 {'route': 'direct', 'driver': 'stream', 'enum': 'enum_conn N=9 M=7 T0=3 DMAX=3 calls=75780 found=4479', 'labelled': 4479, 'in_C_tau_exact': 3623, 'filt': 'SUMMARY tag=FOUND NV=9 total=4479 bad_labels=0 linear=4479 contain_F7=825 P3_violated=31 F7free_and_P3_violated=31 survivors=3623 survivors_connected=3623 wrong_tau_dropped=0 connected_all=4479 tau_range=[3,3] maxdeg_max=3', 'secs': 0.1}
+  BRANCH (16, 12, 6, 3) d=3 tp=5 S'=8 decompositions=18 inputs=6163 {'graphs': 6163, 'bad_tau': 0, 'tg_too_small': 0, 'searched': 6163, 'max_min_covers': 78, 'nodes': 25590984, 'hits_F7free': 8392475, 'hits_in_C': 8357721}

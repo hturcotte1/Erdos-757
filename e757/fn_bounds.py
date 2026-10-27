@@ -5,8 +5,8 @@ Lower bound (published route, Ma-Tang + Henning-Yeo):
     17 tau <= 5n + 3m,  m <= n - 2   =>   h = n - tau >= n - floor((8n - 6) / 17)   (n >= 2)
     plus f(5) = 4: a linear 3-uniform hypergraph on 5 vertices has a 1-vertex transversal
       (two triples on 5 points always share a point, and a linear 3-uniform hypergraph on 5 points has at most 2 edges).
-    plus the certified exact values f(16) = 10, f(18) = 11, f(20) = 12, f(22) = 13, f(23) = 14 (and f(21) = 12 by the
-      construction C006 + this Henning-Yeo bound, K66)
+    plus the certified exact values f(16) = 10, f(18) = 11, f(20) = 12, f(22) = 13, f(23) = 14 (and f(19) = 11, f(21) = 12 by the
+      constructions C008, C006 + this Henning-Yeo bound, K70, K66)
       (EXACT_VALUES_VERIFIED below; computer-assisted certificates L008-L011 and L014, K52-K55 and K58, each accepted by
       three referees [verified-here]), which exceed the Henning-Yeo bound (9, 10, 11, 12, 13) at those n.
 Upper bound (constructions):
@@ -25,7 +25,7 @@ from __future__ import annotations
 import math
 from fractions import Fraction
 
-KNOWN_UPPER = {3: 2, 8: 5, 10: 6, 12: 7, 14: 8, 21: 12, 58: 33, 65: 37, 67: 38}  # 8, 10: data/small_records.json; 21: 12 = C006 (results/claims/C006-tight-21pt-h12.json, K66); 65: 37 = C003 (results/claims/C003-reader-5-9-K6.json; a COMMUNITY construction, the depth-6 member of an anonymous reader's family posted on Erdős Problem a Day 19 Oct 2026; judged PASS NEW-RECORD and ACCEPTED by two referees here, K59): 37/65 < 4/7; 58: 33 = C004 and 67: 38 = C005 (this project's Lemma-E two-point extensions of S_5 and S_6 at their universal minimum; judged and ACCEPTED x2 each, K62, K63): 33/58 and 38/67 < 4/7
+KNOWN_UPPER = {3: 2, 8: 5, 10: 6, 12: 7, 14: 8, 19: 11, 21: 12, 58: 33, 65: 37, 67: 38}  # 8, 10: data/small_records.json; 19: 11 = C008 (results/claims/C008-f19-h11.json, K70); 21: 12 = C006 (results/claims/C006-tight-21pt-h12.json, K66); 65: 37 = C003 (results/claims/C003-reader-5-9-K6.json; a COMMUNITY construction, the depth-6 member of an anonymous reader's family posted on Erdős Problem a Day 19 Oct 2026; judged PASS NEW-RECORD and ACCEPTED by two referees here, K59): 37/65 < 4/7; 58: 33 = C004 and 67: 38 = C005 (this project's Lemma-E two-point extensions of S_5 and S_6 at their universal minimum; judged and ACCEPTED x2 each, K62, K63): 33/58 and 38/67 < 4/7
 KNOWN_LOWER_EXTRA = {5: 4}
 # Exact values proved by computer-assisted, referee-accepted certificates (lower bound beyond Henning-Yeo; the
 # matching upper bound is in KNOWN_UPPER or follows by monotonicity/gluing).  Each entry is a certificate accepted by three
@@ -38,7 +38,7 @@ KNOWN_LOWER_EXTRA = {5: 4}
 #              witness C23 = B12 u (10^9 + 7919 B11) (B12 = the third 12-point record of kb/00_START_HERE.md section 6, B11 = data/small_records.json
 #              sets["11"]; tests/test_c23_witness.py). No (4,5)-set with at most 24 points beats 4/7; the first size at which a (4,5)-set
 #              beating 4/7 is not excluded by a certificate is n = 25 (L014 Corollary 3).
-EXACT_VALUES_VERIFIED = {16: 10, 18: 11, 20: 12, 21: 12, 22: 13, 23: 14, 27: 16}  # L008/K52, L009/K53, L010/K54, L011/K55, L014/K58, L016/K61 (referee ACCEPT x3 each); 21: C006 + K8 lower bound, K66 (referee ACCEPT x1 + judge)
+EXACT_VALUES_VERIFIED = {16: 10, 18: 11, 19: 11, 20: 12, 21: 12, 22: 13, 23: 14, 27: 16}  # L008/K52, L009/K53, L010/K54, L011/K55, L014/K58, L016/K61 (referee ACCEPT x3 each); 19: C008 + K8 lower bound, K70 (referee ACCEPT + judge); 21: C006 + K8 lower bound, K66 (referee ACCEPT x1 + judge)
 
 
 def hy_max_tau(n, m=None):
