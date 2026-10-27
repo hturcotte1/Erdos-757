@@ -18,3 +18,5 @@ Fibonacci n=13: n=13 m=10 tau=4 A=173 (4,5)=True; induced subgraphs tested 1: Th
 Fibonacci n=14: n=14 m=11 tau=5 A=103 (4,5)=True; induced subgraphs tested 1: Thm2 violations 0; KT tested on 1 with Delta<=3: violations 0, min P 103
 Fibonacci n=15: n=15 m=12 tau=5 A=165 (4,5)=True; induced subgraphs tested 1: Thm2 violations 0; KT tested on 1 with Delta<=3: violations 0, min P 165
 Fibonacci n=16: n=16 m=13 tau=6 A=95 (4,5)=True; induced subgraphs tested 1: Thm2 violations 0; KT tested on 1 with Delta<=3: violations 0, min P 95
+Fibonacci n=17: n=17 m=14 tau=6 A=157 (4,5)=None; induced subgraphs tested 1: Thm2 violations 0; KT tested on 1 with Delta<=3: violations 0, min P 157
+Fibonacci n=18: n=18 m=15 tau=6 A=219 (4,5)=None; induced subgraphs tested 1: Thm2 violations 0; KT tested on 1 with Delta<=3: violations 0, min P 219
