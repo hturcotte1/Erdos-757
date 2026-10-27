@@ -1,6 +1,6 @@
 # L022 work folder: I11 on the realizable class R (route "the realizable class only")
 
-Prover run of 2026-10-27 (about 05:20-06:45 UTC). Certificate: results/proofs/L022-i11-realizable-route.md (submitted; unrefereed).
+Prover run of 2026-10-27 (about 05:20-06:36 UTC). Certificate: results/proofs/L022-i11-realizable-route.md (submitted; unrefereed).
 All scripts use exact integer / Fraction arithmetic; run from this folder with `nice -n 10` and a `timeout`.
 
 ## Question

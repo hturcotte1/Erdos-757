@@ -7,3 +7,7 @@ cell_12_10_5 graphs 149 done in 2s | running: deg3 984 patterns {'a': 908, 'b': 
 cell_15_11_6 graphs 19 done in 0s | running: deg3 1053 patterns {'a': 931, 'b': 19, 'f': 43, 'e': 15, 'i2': 6, 'i1': 39} NC pairs 133 fails 0
 cell_19_16_8 graphs 227 done in 25s | running: deg3 3329 patterns {'a': 2775, 'b': 95, 'f': 309, 'e': 105, 'i2': 6, 'i1': 39} NC pairs 157 fails 0
 cell_22_17_9 graphs 37 done in 5s | running: deg3 3607 patterns {'a': 2887, 'b': 121, 'f': 398, 'e': 147, 'i2': 15, 'i1': 39} NC pairs 204 fails 0
+cell_26_22_11 graphs 36 done in 54s | running: deg3 4111 patterns {'a': 3223, 'b': 145, 'f': 506, 'e': 183, 'i2': 15, 'i1': 39} NC pairs 204 fails 0
+SUMMARY graphs 483 deg3 vertices 4111 patterns {'a': 3223, 'b': 145, 'f': 506, 'e': 183, 'i2': 15, 'i1': 39}
+NC pairs 204 types (dmin,dmax,sigma): {(1, 1, 1): 3, (1, 2, 1): 104, (1, 2, 0): 1, (2, 2, 1): 95, (1, 1, 0): 1} crosschecks 400
+FAILS 0 []

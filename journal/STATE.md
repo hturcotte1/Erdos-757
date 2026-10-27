@@ -1,12 +1,12 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: RUN 2026-10-27 (user, 02:17 UTC): 'continue with /goal and work non-stop until 4 pm MST tomorrow; try to find a significant result'. Target: a proof of c* >= 6/11 (I11 in general, goal clause B) or another significant result. Hard stop 2026-10-28 22:00 UTC (4 pm MDT); finalize (FINAL_REPORT section, STATE, tests, status, PR to main) by 21:30 UTC. GOAL.md protected; GOAL_MET YES already via clauses A (C003, a COMMUNITY construction: anonymous reader, Erdős Problem a Day, 19 Oct 2026, verified here, not ours; say so everywhere) and C.
-Last updated (UTC): 2026-10-27 06:13
+Last updated (UTC): 2026-10-27 06:35
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h exhausted long ago (status.sh takes 1 h+, re-judges C003-C005: run in background with timeout 14000 nice 19).
 
 ## Best verified results (details: results/LEDGER.md, kb/known_results.md K30-K63)
 - Upper: c* <= 5/9 (L015, K60) and record sets 65/37 (C003, K59), 58/33 (C004, K62), 67/38 (C005, K63): the family and 5/9 are the reader's [community]; our part is the independent proof, the judging and the Lemma-E extensions. Lower: c* >= 9/17 [published], not improved.
-- Exact f(n): n <= 18, 20, 22, 23, 24, 26, 27, 28 (f(16..23 even) = n/2+2, f(23) = 14, f(27) = 16; L008-L011, L014, L016). NEW 2026-10-27: f(21) = 12 RECORDED (K66; claim C006, a realized (21,19,9) class, judge PASS NO-IMPROVEMENT, ratio exactly 4/7; referee ACCEPT, scout CLEAR) [verified-here: set and h; derived-here: f(21) = 12]. Open: f(19) in {11,12}, f(25) in {14,15} (cell(25,23,11,4) = 6 abstract classes, all Delta = 4; exact realizability test queued first), f(29) in {16,17}.
+- Exact f(n): n <= 18, 20, 22, 23, 24, 26, 27, 28 (f(16..23 even) = n/2+2, f(23) = 14, f(27) = 16; L008-L011, L014, L016). NEW 2026-10-27: f(21) = 12 RECORDED (K66; claim C006, a realized (21,19,9) class, judge PASS NO-IMPROVEMENT, ratio exactly 4/7; referee ACCEPT, scout CLEAR) [verified-here: set and h; derived-here: f(21) = 12]. Open: f(19) in {11,12}, f(25) = 15 BY COMPUTATION (06:30 UTC: all 6 classes of cell(25,23,11,4) NOT realizable, exact; certificate L023 in preparation; hence no (4,5)-set with <= 28 points beats 4/7, first open record size 29), f(29) in {16,17}.
 - I11 (11 tau <= 3n + 2m) [conjecture] on class C: refereed for n <= 27 (L007-L016). Implies c* >= 6/11.
 
 ## This run (since 2026-10-27 02:17 UTC)
