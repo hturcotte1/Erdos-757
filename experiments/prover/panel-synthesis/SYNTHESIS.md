@@ -95,7 +95,7 @@ None of these closes I11.
 - (iii) KT* is not a consequence of I11, and the certificate should say so. KT constrains the sparse region m < 9n/11 at any I11 slack. For example, the candidate cells (21,10,7) with s = 6 and (27,13,9) with s = 8 have A < 0. So the only evidence for KT* is Theorem 7 (n <= 24). The certificate's own random assemblies never reached A < 0, so no falsifier has tested n >= 25.
 
 **My additions** [derived-here, judge, unrefereed]:
-- (a) **Pattern (a) is finite under KT.** Let v have degree 3 in a minimal counterexample. In (D1) and (D2) the members are components of H - v, and H - v = F would give n <= 18 < 25. In (D3) exactly one edge g of H - v leaves the three members. If H - v is connected, g must meet all three members, so H - v is the union of F_1, F_2, F_3 and g, and n <= 3 * 17 + 1 + 1 = 53. So, except for this finite family, H - v is disconnected at every degree-3 vertex.
+- (a) **Pattern (a) is finite under KT.** Let v have degree 3 in a minimal counterexample. In (D1) and (D2) the members are components of H - v, and H - v = F would give n <= 18 < 25. In (D3) exactly one edge g of H - v leaves the three members. If H - v is connected, g must meet all three members, so g lies inside V(X_v), H - v is the union of F_1, F_2, F_3 and g, and n <= 3 * 17 + 1 = 52. So, except for this finite family, H - v is disconnected at every degree-3 vertex.
 - (b) **G2 is narrower than stated.** Let R = H - V(X), and let p, q in ∂(X) share no edge of R. Then the replacement e' = {p, q, z}, with z a new vertex, always stays in C_3:
   - F7 has minimum degree 2, so z lies in no copy of F7;
   - (P3): e_{H'}(S) = e_R(S - z) + 1 <= |S| - 2 whenever S contains z, p, q;
@@ -108,7 +108,7 @@ None of these closes I11.
 - KT on the uncomputed special cells at n = 25 to 27;
 - a KT falsifier at 25 <= n <= 40 (Section 5, step 1);
 - (H_0): assemblies of at most 5 pieces of L* joined by |X| + 1 edges (at most 85 vertices);
-- the finite (D3) family in (a) (at most 53 vertices).
+- the finite (D3) family in (a) (at most 52 vertices).
 
 **Verdict:** a correct and well-built framework. The remaining gaps concern configurations of bounded size around a degree-3 vertex, but they are substantial, and KT* is untested beyond 24 vertices.
 
@@ -164,25 +164,29 @@ If the criterion is read literally as "distance to a proof of I11 itself": L022 
 **The E1-hub (b-configuration) lemma.** This is the one configuration that every route must exclude. Notation: G ⊕ (a,b,c) is G plus new vertices v, x, y, z and the edges {x,y,z}, {v,x,a}, {v,y,b}, {v,z,c}. Then tau(G ⊕ (a,b,c)) equals tau(G) + 1 if some minimum transversal of G contains two of a, b, c, and tau(G) + 2 otherwise. So the I11 slack changes by +9 or by -2.
 
 - **I11 form** (needed by L020 as R-big for b-configurations, and by L022 as GAP 2 under P2'). Let G in C be connected with Delta(G) <= 3, s(G) <= 1 and n(G) >= 27, and assume I11 for all members of C with fewer than n(G) + 4 vertices. If a, b, c are vertices of G-degree <= 2 with {a,b,c} not an edge of G and G ⊕ (a,b,c) in C, then some minimum transversal of G contains two of them. Equivalently, G ⊕ (a,b,c) satisfies I11.
-  - Data: role_b is non-zero only for E_1 among all 482 stored slack <= 1 graphs with Delta <= 3 and at most 26 vertices (L017 C5, L020 C3).
+  - Data: among the 483 stored tight and slack-1 graphs with Delta <= 3 and at most 26 vertices, role_b is non-zero only for E_1 (L017 C5, L020 C3).
   - Data: the 36 classes of (26,22,11,3) and the 45 known (29,23,12) classes have no NC pair at all.
 - **KT form** (needed by L021 for G1). Let H be a minimal counterexample to KT^{L*}. Then H contains no E1-hub with d(x) = d(y) = d(z) = 2 whose outer triple {a,b,c} has no two members in a common minimum transversal of G' = H - {v,x,y,z}. In such a hub tau(H) = tau(G') + 2 and A(G') = A(H) + 16 <= 15.
 
 **Lemma A (minimal apex)** [derived-here, judge, unrefereed; this is what makes the KT form the decisive case for L021]. Let H be a minimal counterexample to KT^{L*} in which every degree-3 vertex v is a (D1) apex with k_v = 3. Proposition 8 gives exactly this when the exceptions of G2 do not occur. Choose v and a special component F_v of H - v with |V(F_v)| minimum.
 - (a) Every vertex w of F_v with d_H(w) = 3 has v in F_w.
 
-  *Proof.* The components of H - w that avoid v are of two kinds. (i) Subsets of F_v - w: these contradict the minimality of |F_v|. (ii) Components D of H - v other than F_v that attach to v only through the edge at v containing w: then the family X = {D} has E*(X) = {that edge}, contradicting Claim E.
+  *Proof.* A component of H - w that avoids v is of one of two kinds:
+  - (i) a subset of F_v - w;
+  - (ii) a component D of H - v other than F_v that attaches to v only through the edge at v containing w.
+  
+  If F_w were of kind (i), then |F_w| < |F_v|, contradicting minimality. If F_w = D were of kind (ii), then D is special and the family X = {D} has E*(X) = {that edge}, so |E*(X)| = 1 < |X| + 1, contradicting Claim E. So F_w contains v.
 - (b) If n >= 67, the minimal apex is an E1-hub. That is, F_v = E_1 = {x,y,z}, the edges at v are {v,x,a}, {v,y,b}, {v,z,c}, d_H(x) = d_H(y) = d_H(z) = 2, and no minimum transversal of G' = H - {v,x,y,z} contains two of a, b, c.
 
   *Proof.*
   1. H - v - V(F_v) has at most 3 components, one per outer co-vertex. Since n >= 67, at least one component D has >= 17 vertices.
-  2. By (a), D can attach to v by only one edge e_D, and every degree-3 vertex of F_v lies in e_D. So Delta(F_v) <= 2, and F_v is E_1 or (8,5,3)#0.
-  3. Three disjoint traces exclude (8,5,3)#0, since its only vertex of degree 1 is 0. So F_v = E_1.
+  2. Let w be a degree-3 vertex of F_v. By (a), F_w is the component of H - w containing v, and it has at most 17 vertices. If some edge at v meeting D avoids w, then D ⊆ F_w, which is impossible. Hence either F_v has no degree-3 vertex, or D attaches to v by a single edge e_D and every degree-3 vertex of F_v lies in e_D ∩ V(F_v) = {f}. In both cases Delta(F_v) <= 2 (f has F-degree <= 2), so F_v is E_1 or (8,5,3)#0; these are the only members of L* with Delta <= 2, by degree sums.
+  3. Every trace vertex other than f has F-degree <= 1. Three disjoint nonempty traces therefore exclude (8,5,3)#0, whose only vertex of degree 1 is 0. So F_v = E_1, with three single-vertex traces.
   4. If some minimum transversal of G' contained two of a, b, c, then tau(H) <= tau(G') + 1. This gives A(H) >= A(G') + 116 and DEF(H) >= DEF(G') - 105, hence P(H) >= P(G') + 11 > 0, a contradiction.
 
 So, given G2, KT* for n >= 67 reduces to the KT form of the E1-hub lemma. The range 25 <= n <= 66 is bounded, but far too large to enumerate, and needs a structural argument.
 
-**Why this lemma is not sufficient for L020 and L022.** Those routes also need C1-big (pattern (a)), and by L020 Remark 4.6 that is the core case of I11 itself. Only L021's change of potential removes pattern (a). A note on difficulty: in the KT form G' may have large I11 slack, because A(G') <= 15 permits slack of order 0.1 n in sparse graphs. So the KT form may be harder to prove than the I11 form, which assumes s(G) <= 1. The E1-hub mechanism is also exactly how the known special pieces arise: (10,7,4) is the triangle (6,3,2) ⊕ its b-configuration {2,4,6}, and (17,13,7) arises the same way from (13,9,5). So it is also the most likely source of a counterexample to KT*. Hence step 1 below.
+**Why this lemma is not sufficient for L020 and L022.** Those routes also need C1-big (pattern (a)), and by L020 Remark 4.6 that is the core case of I11 itself. Only L021's change of potential removes pattern (a). A note on difficulty: in the KT form G' may have large I11 slack, because A(G') <= 15 permits slack of order 0.1 n in sparse graphs. So the KT form may be harder to prove than the I11 form, which assumes s(G) <= 1. The E1-hub mechanism is also how the known special pieces arise. The triangle (6,3,2) has the four b-configurations {2,4,6}, {1,2,6}, {2,3,4}, {4,5,6}, and its four E1-hubs give two of the four (10,7,4) classes with Delta <= 3 (L020 C9). By the slack arithmetic (2 - 2 = 0), the three (13,9,5) classes with a b-configuration give tight (17,13,7) graphs whenever the extension lies in C; I did not check that it does. So it is also the most likely source of a counterexample to KT*. Hence step 1 below.
 
 ## 4. Cross-pollination
 
