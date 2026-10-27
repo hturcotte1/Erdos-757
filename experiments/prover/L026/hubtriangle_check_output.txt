@@ -31,3 +31,6 @@
 (17,13,7)#4 hub triangles with d(x)=1, d(y)=d(z)=d(v)=2: 0 []
 (17,13,7)#5 hub triangles with d(x)=1, d(y)=d(z)=d(v)=2: 0 []
 TOTAL 0
+control: triangle (6,3,2): [(1, 0, 2, 4), (3, 2, 4, 0), (5, 0, 4, 2)]
+control: cell_12_6_4_D3.txt 1 of 4 classes have a hub triangle
+control: cell_18_9_6_D3.txt 4 of 22 classes have a hub triangle

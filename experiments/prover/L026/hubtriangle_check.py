@@ -30,3 +30,28 @@ for P in L.load_pieces():
     tot += len(found)
     print(P.name, 'hub triangles with d(x)=1, d(y)=d(z)=d(v)=2:', len(found), found[:3])
 print('TOTAL', tot)
+
+# positive control: the same search on the triangle (6,3,2) and on two stored cells
+def search(n, E):
+    Es = [tuple(sorted(e)) for e in E]; d = L.degs(n, E)
+    inc = [[] for _ in range(n)]
+    for e in Es:
+        for u in e: inc[u].append(e)
+    out = []
+    for e0 in Es:
+        for x in e0:
+            if d[x] != 1: continue
+            y, z = [u for u in e0 if u != x]
+            if d[y] != 2 or d[z] != 2: continue
+            eb = [e for e in inc[y] if e != e0][0]; ec = [e for e in inc[z] if e != e0][0]
+            cm = set(eb) & set(ec)
+            if len(cm) != 1: continue
+            v = cm.pop()
+            if v in e0 or d[v] != 2: continue
+            out.append((x, y, z, v))
+    return out
+print('control: triangle (6,3,2):', search(6, [(0, 1, 2), (2, 3, 4), (4, 5, 0)]))
+for f in ['/home/user/Erdos-757/experiments/prover/L017/out/L012/cells/cell_12_6_4_D3.txt',
+          '/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_18_9_6_D3.txt']:
+    G = L.read_found(f)
+    print('control:', f.split('/')[-1], sum(1 for E in G if search(L.nv(E), E)), 'of', len(G), 'classes have a hub triangle')

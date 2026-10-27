@@ -1,6 +1,6 @@
 # L021: the Henning–Yeo deficiency route (prover work folder)
 
-Certificate: results/proofs/L021-i11-deficiency-route.md (submitted 2026-10-27; unrefereed; partial proof with GAPs G1–G4).
+Certificate: results/proofs/L021-i11-deficiency-route.md (submitted 2026-10-27; under referee (round 2: fable ACCEPT, opus editorial items applied); partial proof with GAPs G1–G4).
 Tags below follow that file: [derived-here] proofs there, [verified-here as computation, unrefereed] the outputs here.
 
 ## Question
@@ -16,7 +16,7 @@ special pieces of (sum of weights - 35 |E*|). KT implies 11 tau <= (3 + 1/6) n +
 because any epsilon < 3/17 suffices. The special family, computed exactly from the stored refereed lists, is 32 pieces among the connected members of C_3 with at most 24 vertices (at most 27 by the unrefereed run experiments/20261027-0730-kt-cells, see its README)
 (E_1; (8,5,3) x2; (10,7,4) x4; (15,11,6) x19; (17,13,7) x6), and KT holds on all of C_3 up to 24 vertices; all other
 special-candidate graphs are equality cases. Proved: Henning–Yeo Claims A–F, vertex co-transversality, the free-hub local
-structure (D1)–(D3) at degree-3 vertices, edge-criticality, KT for max degree <= 2 (via Tutte–Berge; a consequence of Henning–Yeo EJC 24(2) (2017) P2.50 Prop. 9, tau = N - nu(G), plus Chvatal–Hanson-type matching bounds for subcubic graphs, so not claimed as new; novelty left to the scout), Claim H under a
+structure (D1)–(D3) at degree-3 vertices, edge-criticality, KT for max degree <= 2 (via Tutte–Berge; closely related to Henning–Yeo EJC 24(2) (2017) P2.50 Prop. 9, tau = N - nu(G), plus Chvatal–Hanson-type matching bounds for subcubic graphs, so not claimed as new; novelty left to the scout), Claim H under a
 replacement hypothesis, and two small-subgraph exclusions. Not proved: the impure (D1)–(D3) configurations (G1), Claim H in
 the cases where the replacement graph leaves C_3 (G2), degree-2 vertices (G3), and finiteness of the special family (G4).
 

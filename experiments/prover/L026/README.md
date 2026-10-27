@@ -17,10 +17,12 @@ or reduce it to a finite computation; examine the I11 form structurally.
   with slack <= 2 are blocked), the structure of positive deficiency (Lemma 9: a connected graph with DEF > 0
   is a member of L* or a p-piece tree, p odd <= 11) and the boundary count (Lemma 10, from Claim E).
 - KT form reduced to Case 1* (Theorem 12): connected outer graph, DEF(G') = 0, -8 <= A(H) <= -1,
-  8 <= A(G') <= 15, not all outer pairs adjacent, every fold deficiency-free, merges blocked, local
-  structure (alpha)/(beta) at degree-2 outer vertices, corner pattern only in the empty cell (24,19,10).
+  8 <= A(G') <= 15, not all outer pairs adjacent, every fold deficiency-free, merges blocked; every outer
+  vertex of G'-degree 2 is a cut vertex of G' with a pendant member K of L* (uses C10: no member of L* has
+  a hub triangle), with a blocked replacement edge when both its edges leave K; corner pattern only in the
+  empty cell (24,19,10).
 - NOT proved: GAP A (KT form in Case 1*), GAP B (I11 form with s(G) = 1). Neither is reduced to a finite
-  computation; two finite sub-families (A1: n(H) <= 52, A2: n(G') <= 70) are stated, not computed.
+  computation; one finite sub-family (A2: n(G') <= 70) is stated, not computed.
 
 ## Files and exact commands (all run with nice -n 10, one process, under timeout; own code only)
 `ownlib.py` (first draft, reviewed): exact tau / all minimum transversals, induced copies, exact DEF, C_3 test.
@@ -35,6 +37,8 @@ or reduce it to a finite computation; examine the I11 form structurally.
 | C6 merge lemma | `cd $I && timeout 3000 nice -n 10 python3 /home/user/Erdos-757/experiments/prover/L026/merge_check.py cell_3_1_1.txt cell_6_3_2.txt cell_8_5_3.txt cell_9_4_3.txt cell_10_7_4.txt cell_10_8_4.txt cell_12_10_5.txt cell_13_9_5.txt cell_14_12_6.txt cell_15_11_6.txt cell_16_10_6.txt cell_17_13_7.txt cell_22_17_9.txt cell_23_16_9.txt cell_26_22_11.txt cell_19_16_8.txt cell_20_15_8.txt cell_17_14_7.txt cell_23_21_10.txt` | merge_check_output.txt | 5,066 graphs, 8,118 NC pairs, 144 non-adjacent: tau identity 144/144, all blocked (43 common nbr, 10 saturated set, 91 F7), 0 violations |
 | C7 stored hubs | `cd /home/user/Erdos-757/experiments/prover/L017/out && timeout 5400 nice -n 10 python3 /home/user/Erdos-757/experiments/prover/L026/hub_analysis.py ./L012/cells/cell_6_3_2_D3.txt ./L012/cells/cell_11_7_4_D3.txt ./L012/cells/cell_12_6_4_D3.txt ./L012/cells/cell_13_9_5_D3.txt ./L013/cells/cell_18_9_6_D3.txt ./L013/cells/cell_19_12_7_D3.txt /home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_12_8_D3.txt` | hub_analysis_output.txt | 311 hubs (P = 0 each); Lemma 9 on 1,837 graphs ok; DEF(G') = 0 always; 443 large folds all DEF-free; A(H) in {-7,-4} for n(H) >= 22 |
 | C8 Theorem 13 | `timeout 1500 nice -n 10 python3 i11_form_check.py $I/cell_3_1_1.txt $I/cell_10_7_4.txt $I/cell_14_12_6.txt $I/cell_17_13_7.txt <(zcat ../../20261027-0300-tight-cells-d4/lists/cell_17_13_7_D4.txt.gz) <(zcat ../../20261027-0300-tight-cells-d4/lists/cell_21_18_9_D4.txt.gz) ../L023/cell_25_23_11_D4.txt $I/cell_8_5_3.txt $I/cell_12_10_5.txt $I/cell_15_11_6.txt $I/cell_19_16_8.txt $I/cell_22_17_9.txt $I/cell_26_22_11.txt $I/cell_23_21_10.txt` (the run used decompressed copies of the two .gz lists in the session scratchpad) | i11_form_check_output.txt | 51 tight graphs: 0 b-triples; 2,039 slack-1 graphs: 0 b-triples |
+| C10 hub triangles | `timeout 300 nice -n 10 python3 hubtriangle_check.py > hubtriangle_check_output.txt` (here) | hubtriangle_check_output.txt | no member of L* has a hub triangle (TOTAL 0); positive controls find them in the triangle, (12,6,4), (18,9,6) |
+| A_base | `timeout 300 nice -n 10 python3 abase_check.py > abase_check_output.txt` (here) | abase_check_output.txt | tight, 143 min transversals, no NC pair, no b-triple |
 | C9 Lemma 9 | `cd /home/user/Erdos-757/experiments/prover/L017/out && timeout 3000 nice -n 10 python3 /home/user/Erdos-757/experiments/prover/L026/lemma9_check.py $(cat ../../panel-synthesis/checks/probe_cells.txt) /home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_12_8_D3.txt` | lemma9_check_output.txt | 2,920 connected graphs, 327 with DEF > 0, 0 failures |
 
 Inputs are read-only: the refereed tarball extracts in experiments/prover/L017/out/ (L012-L016 lists), the
@@ -47,5 +51,5 @@ experiments/prover/L021/closure_results.json.
 The decisive missing step is unchanged in kind but sharpened: in Case 1* every constraint proved here is met by
 the stored (non-counterexample) hubs, which escape only because the hub lies in a member of a positive-deficiency
 family. A proof of the KT form needs exactly that statement (or a reduction with gain >= 9 in A); the I11 form
-needs the slack-1 case. Computations that would help: N1-N4 of the certificate (finite families A1, A2; a Case-1*
+needs the slack-1 case. Computations that would help: N1-N4 of the certificate (pendant-piece table; finite family A2; a Case-1*
 falsifier at 25 <= n <= 40; b-configurations in the complete slack-1 cells at n = 27..30).
