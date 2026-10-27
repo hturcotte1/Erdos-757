@@ -9,3 +9,4 @@ part1 ('(3,1,1)#0', '(3,1,1)#0', '(17,13,7)#1') N 23 configs 16 running {'type_t
 part1 ('(3,1,1)#0', '(3,1,1)#0', '(17,13,7)#2') N 23 configs 16 running {'type_triples': 8, 'g_choices': 33, 'configs': 200, 'inC3': 60, 'tau_ok': 60, 'Pneg': 0} [87s]
 part1 ('(3,1,1)#0', '(3,1,1)#0', '(17,13,7)#3') N 23 configs 40 running {'type_triples': 9, 'g_choices': 43, 'configs': 240, 'inC3': 60, 'tau_ok': 60, 'Pneg': 0} [121s]
 part1 ('(3,1,1)#0', '(3,1,1)#0', '(17,13,7)#4') N 23 configs 24 running {'type_triples': 10, 'g_choices': 49, 'configs': 264, 'inC3': 60, 'tau_ok': 60, 'Pneg': 0} [141s]
+part1 ('(3,1,1)#0', '(3,1,1)#0', '(17,13,7)#5') N 23 configs 40 running {'type_triples': 11, 'g_choices': 59, 'configs': 304, 'inC3': 60, 'tau_ok': 60, 'Pneg': 0} [192s]

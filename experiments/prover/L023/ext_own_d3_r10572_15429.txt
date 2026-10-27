@@ -1659,3 +1659,9 @@ INPUT 12229 covers 3136 pairs 47 extensions 0 EQUAL
 INPUT 12230 covers 3192 pairs 47 extensions 0 EQUAL
 INPUT 12231 covers 3360 pairs 48 extensions 0 EQUAL
 INPUT 12232 covers 3304 pairs 47 extensions 0 EQUAL
+INPUT 12233 covers 3248 pairs 47 extensions 0 EQUAL
+INPUT 12234 covers 3472 pairs 48 extensions 0 EQUAL
+INPUT 12235 covers 3248 pairs 48 extensions 0 EQUAL
+INPUT 12236 covers 3528 pairs 49 extensions 0 EQUAL
+INPUT 12237 covers 3304 pairs 48 extensions 0 EQUAL
+INPUT 12238 covers 3360 pairs 49 extensions 0 EQUAL

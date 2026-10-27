@@ -1643,3 +1643,9 @@ INPUT 7356 covers 3080 pairs 57 extensions 1 EQUAL
 INPUT 7357 covers 2970 pairs 57 extensions 0 EQUAL
 INPUT 7358 covers 3190 pairs 57 extensions 1 EQUAL
 INPUT 7359 covers 2860 pairs 56 extensions 0 EQUAL
+INPUT 7360 covers 3135 pairs 57 extensions 1 EQUAL
+INPUT 7361 covers 2970 pairs 56 extensions 0 EQUAL
+INPUT 7362 covers 3080 pairs 57 extensions 0 EQUAL
+INPUT 7363 covers 2915 pairs 54 extensions 0 EQUAL
+INPUT 7364 covers 3135 pairs 58 extensions 1 EQUAL
+INPUT 7365 covers 2915 pairs 58 extensions 0 EQUAL

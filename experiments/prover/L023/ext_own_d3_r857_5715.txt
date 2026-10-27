@@ -1745,3 +1745,9 @@ INPUT 2600 covers 2826 pairs 53 extensions 0 EQUAL
 INPUT 2601 covers 2775 pairs 53 extensions 0 EQUAL
 INPUT 2602 covers 2924 pairs 53 extensions 0 EQUAL
 INPUT 2603 covers 2819 pairs 53 extensions 0 EQUAL
+INPUT 2604 covers 2814 pairs 53 extensions 0 EQUAL
+INPUT 2605 covers 2726 pairs 53 extensions 0 EQUAL
+INPUT 2606 covers 2560 pairs 53 extensions 0 EQUAL
+INPUT 2607 covers 2916 pairs 55 extensions 0 EQUAL
+INPUT 2608 covers 2683 pairs 55 extensions 0 EQUAL
+INPUT 2609 covers 2561 pairs 53 extensions 0 EQUAL
