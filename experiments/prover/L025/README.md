@@ -17,7 +17,13 @@ transversal of $G$ contain two of $a,b,c$ (equivalently, does the E1-hub $G\oplu
   three pendant edges are distinct, of $G''$-degree 1 or 2, and avoided by every minimum transversal of $G''$; every
   edge-adding gadget (an edge on three avoided vertices, identifications, moves) would give a smaller violator and is
   blocked only by an $F_7$ through the new edge or by a tight set ($e(S)=|S|-2$) of $G''$.
-- NOT proved: the pendant case itself (GAP in the certificate). It is not a finite computation.
+- Remark 10.4: the degree bound is automatic (a pairwise non-co-transversal non-edge triple of a slack-$\le1$ graph has
+  all degrees $\le2$). Theorem 12(j),(k): all six attachment vertices lie in one tight set; if it is everything, $G$ is
+  saturated with $n(G)\equiv1\pmod{11}$ and all other vertices of degree 3. Lemma 13 (pendant block, I11 form): otherwise
+  at least two edges leave the tight set.
+- NOT proved: the pendant case itself (GAP in the certificate). It is not a finite computation. Sufficient: Conjecture
+  P2$^+$ (a connected slack-1 member of $C$ with $\Delta\le3$ has at most two degree-1 vertices), true on all stored data
+  (`pendants_output.txt`).
 
 The key mechanism: "compression gadgets". A pairwise non-co-transversal triple can be replaced by smaller graphs whose
 transversal numbers are forced by the NC conditions: the fold $G\oplus^\circ(a,b|c)$ (slack $-1$), the pendant
@@ -63,6 +69,9 @@ Run from this folder.
 - W1 (`run_w1b.sh`): `python3 w1_pendant.py <13 cells of slack 9, 8, 7>` → `w1_output.txt`.
 - C3: `python3 census.py` → `census_near_output.txt`; `python3 census2.py n m t 4` for the slack-2 cells →
   `census2_slack2_small_output.txt`, `census2_slack2_big_output.txt`.
+
+- A_base check: `python3 abase_check.py` (the AP hypergraph of A_base, tau, minimum transversals, NC pairs)
+  → `abase_check_output.txt`: `n m tau s 14 12 6 0 inC True maxdeg 4 #minT 143`, `NC pairs 0`.
 
 Counter names in the C2 output: L1 hub triples, L2 fold orientations, L3 pendant replacements, L4 deletions of
 b-configurations (L4_drop1: those with $\tau(G-a-b-c)=\tau-1$), L5 NC pairs (pair lemma), L6 identifications (L6_inC: in

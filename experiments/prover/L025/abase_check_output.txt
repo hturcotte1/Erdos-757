@@ -1,0 +1,2 @@
+n m tau s 14 12 6 0 inC True maxdeg 4 #minT 143
+NC pairs 0
