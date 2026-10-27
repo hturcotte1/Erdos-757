@@ -123,3 +123,4 @@
 {'base': 'U_AAB12', 'N': 40, 'size': 36, 'evals': 150000, 'best_slack': 9999}
 {'base': 'U_AAB12', 'N': 40, 'size': 37, 'evals': 150000, 'best_slack': 9999}
 {'base': 'U_AAB12', 'N': 40, 'size': 38, 'evals': 150000, 'best_slack': 9999}
+{'base': 'U_AAB12', 'N': 40, 'size': 39, 'evals': 150000, 'best_slack': 9999}
