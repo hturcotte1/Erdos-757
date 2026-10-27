@@ -89,3 +89,6 @@ experiments/*/data/*/cells/
 experiments/prover/*/repro*/work/
 experiments/prover/*/work/*.in
 experiments/prover/*/work/*.out
+experiments/referee/*/engine/work/
+experiments/referee/*/*/work/*.in
+experiments/referee/*/work/*.in
