@@ -44,3 +44,7 @@ RESULT n=28 m=26 samples=20000 grown=138 growfail=0 bestTau=11 minSlack=15 hist=
 RESULT n=29 m=23 samples=20000 grown=128 growfail=5 bestTau=11 minSlack=12 hist=7:86 8:4580 9:14225 10:1095 11:14 
 RESULT n=29 m=25 samples=20000 grown=128 growfail=0 bestTau=12 minSlack=5 hist=7:35 8:2383 9:14153 10:3386 11:40 12:3 
 RESULT n=29 m=26 samples=20000 grown=129 growfail=0 bestTau=12 minSlack=7 hist=7:18 8:1483 9:12903 10:5503 11:87 12:6 
+RESULT n=29 m=27 samples=20000 grown=134 growfail=0 bestTau=12 minSlack=9 hist=7:8 8:649 9:10766 10:8481 11:90 12:6 
+RESULT n=30 m=21 samples=20000 grown=132 growfail=66 bestTau=11 minSlack=11 hist=7:245 8:6230 9:12916 10:606 11:3 
+RESULT n=30 m=26 samples=20000 grown=125 growfail=0 bestTau=12 minSlack=10 hist=7:6 8:839 9:10212 10:8795 11:137 12:11 
+RESULT n=30 m=27 samples=20000 grown=128 growfail=0 bestTau=12 minSlack=12 hist=7:1 8:380 9:8235 10:11227 11:146 12:11 

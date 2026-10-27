@@ -1,7 +1,8 @@
-"""L017, computation C5 for Corollary 13.3 (illustrative; consequences of Theorem 4 for slack -2).
-For every tight connected member F of C with maximum degree <= 3 in the stored, refereed cell lists (the only non-empty
-tight Delta<=3 cells with at most 26 vertices other than the uncomputed (25,23,11): (3,1,1), (10,7,4), (14,12,6), (17,13,7);
-the other tight Delta<=3 cells with n <= 26 are stored EMPTY, see engine_decomps/tight_cells output), compute exactly:
+"""L017, computation C5 for Corollary 13.3 (illustrative; consequences of Theorem 4).
+For every graph F of the given stored, refereed cell lists -- by default the connected tight members of C with maximum
+degree <= 3 (the only non-empty tight Delta<=3 cells with at most 26 vertices other than the uncomputed (25,23,11):
+(3,1,1), (10,7,4), (14,12,6), (17,13,7); the other tight Delta<=3 cells with n <= 26 are stored EMPTY, see
+engine_decomps_output.txt), and on request the six non-empty slack-1 Delta<=3 cells with n <= 26 -- compute exactly:
  - the anti-pairs: pairs {x, y} of vertices with d_F <= 2 contained in no minimum transversal of F;
  - property (P): every anti-pair {x, y} shares an edge of F and {d_F(x), d_F(y)} = {1, 2} (or F is the single edge);
  - the numbers of local configurations required by the exact conditions of Theorem 4 (iv) (attachment vertices must have

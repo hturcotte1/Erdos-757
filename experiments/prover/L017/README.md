@@ -21,9 +21,12 @@ Method and results (exact integer arithmetic; commands in reproduce.sh; outputs 
   1 and 7, 6 more by Theorem 4(iii) and the stored lists, 5 need the extension step; 19 of 64 decompositions have >= 4
   components); the tight connected cells with n <= 30 and their stored Delta<=3 class counts; the violator cells with
   s in {-1,-2} at n = 28, 29, 30 and their decompositions.
-- C5 `tight_configs.py`: non-co-transversal pairs and the configuration counts of Theorem 4(iv) in the 13 tight Delta<=3
-  classes: only E1 has three pairwise non-co-transversal vertices; no class has the configurations of patterns (c1), (c2),
-  (d), (e), (f). Hence Corollary 13.3.
+- C5 `tight_configs.py`: non-co-transversal pairs and the configuration counts of Theorem 4(iv) in the 13 tight and the
+  470 slack-1 Delta<=3 classes with at most 26 vertices (all such cells are computed except the tight (25,23,11)): only E1
+  has three pairwise non-co-transversal vertices (pattern b); no class has the configurations of patterns (c1), (c2), (d),
+  (f); only the two (8,5,3) classes have that of pattern (e). Hence Corollary 13.3: for every degree-3 vertex v of a
+  minimal counterexample some component of H - v has >= 27 vertices or lies in (25,23,11); at n = 28, H - v is connected,
+  in cell(27,15,10,3) or cell(27,20,11,3).
 - C6 `check_lemmas_random.py`: Theorem 2 (R), (R+), (U) on 1,500 random linear 3-graphs, 0 failures.
 
 Conclusion. All computations agree with the certificate. `hyp.py` holds the shared exact routines (transversal number by

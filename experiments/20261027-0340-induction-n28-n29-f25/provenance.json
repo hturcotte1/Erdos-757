@@ -1163,6 +1163,14 @@
 "firstpath": "seedsrc/L016/cells_new/runA/cell_16_12_6_D2.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
+"16,12,6,3": {
+"agree": [],
+"classes": 540610,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_16_12_6_D3.txt",
+"md5": "c397ff9cf5bffc8e7461c5c0e0b27f56"
+},
 "16,8,5,2": {
 "agree": [
 "L013 cells.tar.gz (refereed)",
@@ -2491,6 +2499,14 @@
 "first": "L016 cells_new.tar.gz (refereed)",
 "firstpath": "seedsrc/L016/cells_new/runA/cell_24_12_8_D2.txt",
 "md5": "4ecfa86e87184f335abb90fbc35aa0d8"
+},
+"24,12,8,3": {
+"agree": [],
+"classes": 129,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_24_12_8_D3.txt",
+"md5": "8fb3b9eb9df849312511e683bcc4afa7"
 },
 "24,12,9,2": {
 "agree": [

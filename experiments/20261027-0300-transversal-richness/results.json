@@ -651,6 +651,90 @@
   "adm_unc_sample": [],
   "degree_sequences": 11
  },
+ "22_17_9": {
+  "n": 22,
+  "m": 17,
+  "tau": 9,
+  "slack": 1,
+  "D_listed": 4,
+  "classes": 95,
+  "classes_deg_le3": 37,
+  "n_minus_m": 5,
+  "m_le_n_minus_4": true,
+  "maxdeg_range": [
+   3,
+   4
+  ],
+  "nT_min": 1617,
+  "nT_max": 2181,
+  "nT_mean": 1850.7578947368422,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 3,
+  "P2_bound_floor_s5_2": 3,
+  "p2_pairs": 21945,
+  "p2_fail": 142,
+  "p2_fail_by_key": {
+   "2": [
+    78,
+    78
+   ],
+   "3": [
+    64,
+    2150
+   ]
+  },
+  "p2_by_key_total": {
+   "2": 78,
+   "3": 2150,
+   "4": 10496,
+   "5": 7262,
+   "6": 1728,
+   "7": 216,
+   "8": 15
+  },
+  "classes_with_P2_failure": 95,
+  "pp_all": 2084775,
+  "pp_all_cov": 2084775,
+  "pp_good": 1266325,
+  "pp_good_cov": 1266325,
+  "classes_pp_all_cov": 0,
+  "triples": 106323525,
+  "triples_coverable": 106323145,
+  "triples_linear": 50363288,
+  "triples_admissible": 49891889,
+  "admissible_uncoverable": 0,
+  "classes_with_admissible": 95,
+  "classes_with_admissible_uncoverable": 0,
+  "adm_R2": 4566892,
+  "adm_R2_unc": 0,
+  "adm_R1": 42284060,
+  "adm_R1_unc": 0,
+  "adm_min_cover_count": 49,
+  "adm_thin_le2": 0,
+  "adm_min_cover_ratio": 0.02765,
+  "uncoverable_total": 380,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "6": 380
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "8": 380
+  },
+  "uncoverable_P_only_minS": {},
+  "uncoverable_violates_A": 0,
+  "uncoverable_violates_B_only": 380,
+  "A_minS": {},
+  "B_only_minS": {
+   "8": 380
+  },
+  "nonadm_total": 56431636,
+  "nonadm_L": 55960237,
+  "nonadm_P": 638400,
+  "adm_unc_sample": [],
+  "degree_sequences": 8
+ },
  "6_3_2": {
   "n": 6,
   "m": 3,

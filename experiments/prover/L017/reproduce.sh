@@ -23,7 +23,10 @@ timeout 3000 nice -n 10 python3 minimal_violators.py 10 > minimal_violators_10_o
 # python3 minimal_violators.py --recheck out/minimal_violators_11.txt > minimal_violators_11_recheck_output.txt
 # C4: the engine's decompositions at the 17 top-level violator cells of L013/L016, tight cells n <= 30, cells n = 28..30
 timeout 600 nice -n 10 python3 engine_decomps.py > engine_decomps_output.txt
-# C5: local configurations of Theorem 4 (iv) in the 13 tight Delta<=3 classes (Corollary 13.3)
+# C5: local configurations of Theorem 4 (iv) in the 13 tight and the 470 slack-1 Delta<=3 classes with n <= 26 (Corollary 13.3)
 timeout 600 nice -n 10 python3 tight_configs.py > tight_configs_output.txt
+timeout 1500 nice -n 10 python3 tight_configs.py out/L012/cells/cell_8_5_3_D3.txt out/L012/cells/cell_12_10_5_D3.txt \
+  out/L012/cells/cell_15_11_6_D3.txt out/L012/cells/cell_19_16_8_D3.txt out/L012/cells/cell_22_17_9_D3.txt \
+  out/L016/cells_new/runF/cell_26_22_11_D3.txt > tight_configs_slack1_output.txt
 # C6: Theorem 2 (R), (R+), (U) on random linear 3-graphs
 timeout 900 nice -n 10 python3 check_lemmas_random.py 1500 7 > check_lemmas_random_output.txt
