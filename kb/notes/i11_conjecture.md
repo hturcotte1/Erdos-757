@@ -38,3 +38,44 @@ structures must look like (A_base-type components and disjoint APs).
 
 **Status tags.** The inequality in general: [conjecture]. For n <= 27 on C: [verified-here] (L007-L011, L013, L016).
 The implication c* >= 6/11: conditional on the conjecture.
+
+## Status 2026-10-27: minimal-counterexample theory, conjectures T, T', T'', RU, C1, P2
+
+All statements below are tagged; "as a computation" means an exact or exhaustive computation that no referee has re-run. Notation: a cell (n,m,tau,Delta) is the set of connected members of C with n vertices, m edges, transversal number tau and maximum degree Delta; slack = 3n + 2m - 11 tau (so I11 says slack >= 0; "tight" means slack 0). Evidence is in journal/LOG.md entries dated 2026-10-27.
+
+**L017: structure of a minimal counterexample (results/proofs/L017-i11-minimal-counterexample-structure.md).** [verified-here, round 1: two referees found no mathematical error (editorial fixes only), round 2 in progress]
+- A minimal counterexample H to I11 on C (minimal in n, then m) is connected, has Delta = 3 and n >= 28, and has slack s in {-1,-2}.
+- Every vertex of H lies in a minimum transversal, and tau(H - v) = tau(H) - 1 for every vertex v.
+- Deleting a vertex v of degree d gives slack(H - v) = s + 8 - 2 d(v) (Lemma D).
+- Lemma U'' (every non-isolated vertex of a graph in C with slack <= 4 lies in a minimum transversal, given I11 below n), the pair and k-vertex forms of Lemmas R and R+, and the Hall lemma (Lemma H, reduction for families of disjoint low-slack blocks; modelled on Henning-Yeo arXiv:1802.01825 Section 7; only proper induced subgraphs are used, so there is no circularity).
+- For a degree-3 vertex v, H - v has at most 3 components: tight pieces plus at most one slack-1 piece; there are exactly seven Hall-deficient attachment patterns, each with an exact equivalent condition (Theorem 4 of L017). L018 Theorem 6 (unrefereed) sharpens this to at most 2 components; the referees must reconcile the two statements.
+- Degree-1 and degree-2 vertices: a degree-1 vertex forces s = -1; see Theorem 5 of L017 and L018.
+- Caveat stated in L017: Theorems 1-5 use only linearity and I11 below n, so F7 and the (9,8,4) graphs satisfy them; a full proof must use F7-freeness and the hereditary condition e(S) <= |S| - 2.
+- Theorem 7 (I11 for Delta <= 2, Lemma M): [published, re-proved here]. Henning-Yeo EJC 24(2) (2017) P2.50, Prop. 9 + Thm 14 at k = 3, or Chvatal-Hanson 1976 (|E| <= 3 nu + floor(nu/2) for subcubic graphs); L017 proves it via tau = m - nu(dual graph) and Tutte-Berge, equality only for matchings. Scout verdict NOVELTY: KNOWN for this theorem; Theorems 1-6 are the new content.
+
+**The reduction (L017 Corollary 13.3).** [verified-here as a computation, not refereed]
+- For a minimal counterexample H and a degree-3 vertex v, some component of H - v has >= 27 vertices or is a tight graph in cell (25,23,11).
+- Hence I11 on C follows from Conjecture T'' (below) together with the emptiness of cell(25,23,11,3).
+
+**Conjecture T (every connected tight member of C has <= 17 vertices).** [refuted] in this form. cell(21,18,9,4) has 12 classes, all with Delta = 4 (experiments/20261027-0300-tight-cells-d4; also experiments/falsify/i11-structure-lemmas/REPORT.md). Tight graphs with a degree-4 vertex are degree-4 gluings of unions of tight pieces and form an unbounded family (slack 0 + 3 + 8 - 11 = 0). Also three Delta = 4 tight classes in (25,23,11) (experiments/falsify/i11-structure-lemmas, non-exhaustive; search exhaustive only for the shape A u (3,1,1)). [verified-here as computations]
+
+**Conjecture T' (Delta <= 3 version: a connected tight member of C with Delta <= 3 has n <= 17).** [conjecture]. Holds for n <= 27: the cells (20,14,8,3), (21,18,9,3), (24,19,10,3), (27,20,11,3) are empty and (17,13,7,3) is the L014 list of 6 classes (experiments/20261027-0300-tight-cells-d4; stored refereed lists). [verified-here as computations: stored cells]
+
+**Conjecture T'' (connected, Delta <= 3, slack <= 1 implies n <= 26).** [conjecture]
+- Evidence: the stress test experiments/falsify/i11-n28-40 (2.6M random growth graphs, 713k gluings, 3.16M edge extensions, exact beam, hub unions; HOLDS-ON-DATA for I11). Every connected slack <= 1 graph found with n >= 19 has Delta = 4; with Delta <= 3 the only connected slack <= 1 graphs found have n <= 17 (low_graphs.jsonl.gz there). [heuristic]
+- Slack-1 cells with Delta <= 3 and n <= 26: (8,5,3), (12,10,5), (15,11,6), (19,16,8), (22,17,9), (26,22,11) with 2, 149, 19, 227, 37, 36 classes (470 in total, from the stored refereed lists; L017 C4). [verified-here as computations]
+
+**Conjecture RU ((Red)-universality).** [conjecture]. Every connected Delta <= 3 member of C with n >= 4 has a proper nonempty Z and a cover T of the edges meeting Z with 11|T| <= 3|Z| + 2e(Z). RU would imply I11 for all n (a minimal counterexample is connected, Delta <= 3 and (Red)-free; the only (Red)-free graph is the single edge, which satisfies I11).
+- Verified for n <= 14 by the census experiments/20261027-0230-red-config (2,704,610 connected classes; only the single edge is (Red)-free). [verified-here as a computation]
+- L018 (results/proofs/L018-red-universality.md, PARTIAL, under referee) proves RU is NON-LOCAL (Theorem 4: for any R there are class-C graphs whose every (Red) pair has |Z| > R), so no bounded-radius discharging proof exists. [verified-here pending referee]
+- The n = 15 dense census (experiments/20261027-0400-red-config-n15) is not complete; nothing is claimed beyond n = 14.
+
+**Conjecture C1 (triple coverage).** [conjecture]. In a connected slack <= 1 member F of C with m <= n - 4, every admissible degree-3 attachment (three disjoint vertex pairs whose addition keeps the graph in C) is met by some minimum transversal.
+- 102,260,107 admissible triples checked in cells (17,13,7), (15,11,6), (22,17,9), (26,22,11), 0 failures; it fails at slack 2 (56 uncoverable admissible triples in (20,15,8)) (experiments/20261027-0300-transversal-richness). [verified-here as a computation]
+- Proof attempt L019 (results/proofs/L019-triple-coverage-C1.md) in progress; nothing proved.
+
+**Conjecture P2 (tight graphs have at most one degree-1 vertex).** [conjecture]. Verified on all stored tight cells for n <= 27 (L018 Theorem 5; experiments/20261027-0300-tight-cells-d4). [verified-here as a computation] If true, no minimal counterexample has a degree-1 vertex (L018 Theorem 5).
+
+**Exact realizability of the tight (21,18,9) classes.** [verified-here as a computation, unrefereed]. experiments/20261027-0400-realize-21-18-9 (rexact.py, exact incremental RREF over Q, DFS over midpoint labellings): none of the 12 tight (21,18,9) classes is realizable (each contains a non-realizable sub-configuration of 9-12 edges; positive controls (17,13,7), (14,12,6), (10,7,4) are realizable). So f(21) = 13 unless a class of cell (21,19,9) (slack 2, saturated) is realizable; that list is pending.
+
+**I11 at n = 28 by computation.** [verified-here as a computation, unrefereed]. Every violator cell at n = 28 is empty: (28,17,11,2), (28,18,11,3), (28,23,12,3), (28,19,11,3) in experiments/20261027-0340-induction-n28-n29-f25/progress.tsv, and (27,20,11,3) = 0 in experiments/20261027-0300-tight-cells-d4; this relies on the refereed lists up to n = 27 and on the L017 reductions (Corollary 13.3, Lemma D), which are themselves not yet refereed in full. n = 29 is in progress (no claim). Not certified: no L-number exists for n = 28.
