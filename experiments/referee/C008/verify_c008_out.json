@@ -1,0 +1,218 @@
+{
+ "n": 19,
+ "all_int": true,
+ "distinct": true,
+ "sorted_as_given": true,
+ "same_as_set_19pt_h11.json": true,
+ "claim_keys": [
+  "claimed_h",
+  "id",
+  "notes",
+  "set",
+  "type",
+  "witness_sidon_subset"
+ ],
+ "claimed_h": 11,
+ "witness_size": 11,
+ "witness_distinct": true,
+ "witness_subset_of_A": true,
+ "witness_sidon_differences": true,
+ "witness_sidon_sums": true,
+ "num_4subsets": 3876,
+ "4subsets_by_num_distances": {
+  "5": 256,
+  "6": 3620
+ },
+ "min_distinct_distances_over_4subsets": 5,
+ "min_|B-B|_over_4subsets": 11,
+ "is_45_bruteforce": true,
+ "weak_sidon": true,
+ "AP_hypergraph_linear": true,
+ "is_45_via_weakSidon_and_linear": true,
+ "num_equal_distance_pair_pairs": 16,
+ "equal_distance_pair_pairs_union_sizes": {
+  "3": 16
+ },
+ "4subsets_with_>=2_coincidences": 0,
+ "is_45_via_coincidences": true,
+ "num_obstruction_masks": 16,
+ "h_all_2^19_subsets": 11,
+ "num_sidon_subsets_by_size_all_2^19": {
+  "0": 1,
+  "1": 19,
+  "2": 171,
+  "3": 953,
+  "4": 3620,
+  "5": 9748,
+  "6": 18793,
+  "7": 25625,
+  "8": 23865,
+  "9": 14211,
+  "10": 4783,
+  "11": 680
+ },
+ "num_sidon_12_subsets_direct": 0,
+ "num_sidon_11_subsets_direct": 680,
+ "witness_among_them": true,
+ "agree_numpy_vs_direct_count": true,
+ "all_11_sets_sidon_by_sums": true,
+ "cpsat_max_status": "OPTIMAL",
+ "cpsat_max_objective": 11.0,
+ "cpsat_solution_is_sidon": true,
+ "cpsat_at_least_12_status": "INFEASIBLE",
+ "pysat_at_least_11": true,
+ "pysat_at_least_11_model_sidon": true,
+ "pysat_at_least_12": false,
+ "h_final": 11,
+ "h_equals_claimed": true,
+ "m_num_3APs": 16,
+ "APs_as_values": [
+  [
+   0,
+   14756207,
+   29512414
+  ],
+  [
+   0,
+   18236662,
+   36473324
+  ],
+  [
+   14756207,
+   26866346,
+   38976485
+  ],
+  [
+   18236662,
+   22551504,
+   26866346
+  ],
+  [
+   22551504,
+   29512414,
+   36473324
+  ],
+  [
+   26866346,
+   31669835,
+   36473324
+  ],
+  [
+   31669835,
+   35323160,
+   38976485
+  ],
+  [
+   35323160,
+   37256612,
+   39190064
+  ],
+  [
+   37256612,
+   37818662,
+   38380712
+  ],
+  [
+   37256612,
+   38021000,
+   38785388
+  ],
+  [
+   37818662,
+   38290784,
+   38762906
+  ],
+  [
+   38021000,
+   38380712,
+   38740424
+  ],
+  [
+   38290784,
+   38740424,
+   39190064
+  ],
+  [
+   38380712,
+   38785388,
+   39190064
+  ],
+  [
+   38740424,
+   38762906,
+   38785388
+  ],
+  [
+   38762906,
+   38976485,
+   39190064
+  ]
+ ],
+ "midpoints_distinct": true,
+ "min_or_max_is_midpoint": false,
+ "non_midpoints_sorted_index": [
+  0,
+  8,
+  18
+ ],
+ "degree_sequence": [
+  4,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  3,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "max_degree": 4,
+ "degree_histogram": {
+  "4": 1,
+  "3": 8,
+  "2": 10
+ },
+ "num_components": 1,
+ "num_transversals_size_<=7": 0,
+ "num_transversals_size_8": 680,
+ "tau": 8,
+ "n_minus_tau_equals_h": true,
+ "witness_complement_is_transversal": true,
+ "num_APfree_11_subsets": 680,
+ "APfree_count_equals_Sidon_count": true,
+ "F7_copies_by_homomorphism_search": 0,
+ "5edge_subsets_on_7_vertices": 0,
+ "F7_copies_by_5subset_isomorphism": 0,
+ "F7_free": true,
+ "eS_le_S_minus_2_violations": 0,
+ "cell_(n,m,tau)": [
+  19,
+  16,
+  8
+ ],
+ "HY_17tau_le_5n_plus_3m": [
+  136,
+  143,
+  true
+ ],
+ "HY_slack_delta": 7,
+ "excess_D=17h-9n": 16,
+ "D_equals_delta_plus_3(n-m)": true,
+ "ratio": "11/19",
+ "ratio_lt_4/7": false,
+ "ratio_minus_4/7": "1/133",
+ "K8_max_tau_n19": 8,
+ "K8_min_h_n19": 11,
+ "(9n+6)/17_n19": "177/17",
+ "ceil((9n+6)/17)_n19": 11
+}
