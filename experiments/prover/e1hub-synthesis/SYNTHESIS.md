@@ -194,7 +194,7 @@ Here the hypothesis is I11 for fewer than n(G'')+7 vertices.
 (i) and (ii) together are exactly the condition tau(G'' + gadget) = tau'' + 4. The gadget has the 7 vertices v, x, y, z, a, b, c and the 7 edges xyz, vxa, vyb, vzc, a∪A, b∪B, c∪C. Since s(gadget) = 21 + 14 - 44 = -9, the graph G'' + gadget is then a violator with slack -1. So PT is exactly "no minimal counterexample contains the 7-vertex pendant hub gadget".
 
 **Why PT is decisive.**
-- I11 side: L025 Corollary 11(b) and L026 Corollary 14 together show the following. In a minimal counterexample to I11, a degree-3 vertex has pattern (b) only if it is the centre of an E1-hub over a slack-1 outer graph whose outer triple is pendant. So PT is exactly what remains of pattern (b), and with it B1-big of the panel synthesis §4.1. B0-big is already proved (L025 Corollary 11(a), L026 Theorem 13).
+- I11 side: L025 Corollary 11(b) and L026 Corollary 14 together show the following. In a minimal counterexample to I11, a degree-3 vertex has pattern (b) only if it is the centre of an E1-hub over a slack-1 outer graph whose outer triple is pendant. So PT is exactly what remains of pattern (b), and with it B1-big of the panel synthesis §4.1. B0-big is already proved inside the induction, i.e. given I11 at n ± 2 (L025 Corollary 11(a), L026 Theorem 13).
 - KT side: L026 Theorem 12(k2), together with Section 4.1 below, reduces L024's GAP R3 to the KT analogue PT-KT.
 
 **PT-KT.** No minimal counterexample H to KT^{L*} with n(H) >= 25 that satisfies (AH) has a pendant E1-hub. For such an E1-hub, R = G' - {a,b,c} would satisfy:
@@ -246,11 +246,11 @@ The exact changes of A = 27n + 35m - 132 tau, all following from the tau stateme
 | edge on three avoided vertices | -97 |
 | two pendant pairs with tau + 2 | -140 |
 | three pendant pairs with tau + 3 | -210 |
-| triple deletion with tau - 2 | +94 |
+| triple deletion from G' with tau - 2 | +78 (so A(R) = A(G') + 78 = A(H) + 94) |
 
 In the KT pendant case, A(G') = A(H) + 16 <= 15.
 
-- A move M in C_3 that is connected has A(M) <= -12, while DEF(M) <= 10 by L026 Lemma 3 (n >= 11). That is a contradiction. So, exactly as in L025 11.4 and 11.8, a connected move forces a saturated set ⊇ {a_i} ∪ B ∪ C in R.
+- A move M in C_3 that is connected has A(M) <= -12 (M is linear, hence in C_3 up to F_7 and (P3), once A, B, C are pairwise disjoint; that is the KT analogue of L025 Theorem 12(c), still to be proved, see step 4 of Section 5), while DEF(M) <= 10 by L026 Lemma 3 (n >= 11). That is a contradiction. So, exactly as in L025 11.4 and 11.8, a connected move forces a saturated set ⊇ {a_i} ∪ B ∪ C in R.
 - Pendant pairs on a connected R give A <= A(H) - 46, while DEF <= 16. So the KT analogues of L025 Theorem 12(g) and (h) hold whenever the graphs involved are connected.
 
 The one genuinely new ingredient is the disconnected case, where DEF adds over components. It is controlled by L026 Lemma 10 and Claim E, which bound the number of positive-deficiency components by the number of boundary edges. Expected outcome: the KT pendant case acquires the same tight-set structure (S_0 ⊇ W in R) as L025 Theorem 12(j). PT and PT-KT then become one combinatorial question about saturated sets.
