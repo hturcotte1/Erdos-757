@@ -1,0 +1,7 @@
+labeled block-level growth sequences: 105
+/usr/local/lib/python3.13/dist-packages/networkx/algorithms/graph_hashing.py:211: UserWarning: The hashes produced for graphs without node or edge attributes changed in v3.5 due to a bugfix (see documentation).
+  node_labels = _init_node_labels(G, edge_attr, node_attr)
+structures built: 843 isomorphism classes: 18 [6s]
+every class: linear, connected, Delta<=3, tau=9, (P3): True
+stored graphs: 18 each matched by exactly one class: True
+ALL OK [9s]

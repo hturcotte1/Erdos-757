@@ -1,0 +1,7 @@
+X_0 n=25 m=23 NOT-REALIZABLE {"nodes": 3226, "pruned": 2151, "leaves_good": 0, "reasons": {"FOUR": 1641, "EQUAL": 510}, "secs": 56.0}
+X_3 n=25 m=23 NOT-REALIZABLE {"nodes": 10654, "pruned": 7103, "leaves_good": 0, "reasons": {"FOUR": 5489, "EQUAL": 1614}, "secs": 238.4}
+X_4 n=25 m=23 NOT-REALIZABLE {"nodes": 10654, "pruned": 7103, "leaves_good": 0, "reasons": {"FOUR": 5489, "EQUAL": 1614}, "secs": 187.3}
+X_1 n=25 m=23 NOT-REALIZABLE {"nodes": 3226, "pruned": 2151, "leaves_good": 0, "reasons": {"FOUR": 1641, "EQUAL": 510}, "secs": 63.6}
+X_2 n=25 m=23 NOT-REALIZABLE {"nodes": 2932, "pruned": 1955, "leaves_good": 0, "reasons": {"FOUR": 1464, "EQUAL": 491}, "secs": 61.6}
+X_5 n=25 m=23 NOT-REALIZABLE {"nodes": 10177, "pruned": 6785, "leaves_good": 0, "reasons": {"FOUR": 5285, "EQUAL": 1500}, "secs": 211.5}
+EXIT 0

@@ -1,0 +1,15 @@
+3_1_1 {'classes': 1, 'Delta<=3': 1, 'records': 1, 'tested': 1, 'realizable': 1, 'not_realizable': 0, 'bad_realizations': 0, 'skip_consistent': True, 'timeouts': 0}
+10_7_4 {'classes': 5, 'Delta<=3': 4, 'records': 5, 'tested': 4, 'realizable': 3, 'not_realizable': 1, 'bad_realizations': 0, 'skip_consistent': True, 'timeouts': 0}
+14_12_6 {'classes': 11, 'Delta<=3': 2, 'records': 11, 'tested': 2, 'realizable': 2, 'not_realizable': 0, 'bad_realizations': 0, 'skip_consistent': True, 'timeouts': 0}
+17_13_7 {'classes': 6, 'Delta<=3': 6, 'records': 6, 'tested': 6, 'realizable': 6, 'not_realizable': 0, 'bad_realizations': 0, 'skip_consistent': True, 'timeouts': 0}
+8_5_3 {'classes': 2, 'Delta<=3': 2, 'records': 2, 'tested': 2, 'realizable': 2, 'not_realizable': 0, 'bad_realizations': 0, 'skip_consistent': True, 'timeouts': 0}
+12_10_5 {'classes': 221, 'Delta<=3': 149, 'records': 221, 'tested': 149, 'realizable': 126, 'not_realizable': 23, 'bad_realizations': 0, 'skip_consistent': True, 'timeouts': 0}
+15_11_6 {'classes': 30, 'Delta<=3': 19, 'records': 30, 'tested': 19, 'realizable': 19, 'not_realizable': 0, 'bad_realizations': 0, 'skip_consistent': True, 'timeouts': 0}
+19_16_8 {'classes': 956, 'Delta<=3': 227, 'records': 374, 'tested': 66, 'realizable': 58, 'not_realizable': 8, 'bad_realizations': 0, 'skip_consistent': True, 'timeouts': 0}
+22_17_9 {'classes': 95, 'Delta<=3': 37, 'records': 95, 'tested': 37, 'realizable': 37, 'not_realizable': 0, 'bad_realizations': 0, 'skip_consistent': True, 'timeouts': 0}
+26_22_11 {'classes': 36, 'Delta<=3': 36, 'records': 36, 'tested': 36, 'realizable': 36, 'not_realizable': 0, 'bad_realizations': 0, 'skip_consistent': True, 'timeouts': 0}
+not realizable (cls): {'3_1_1': [], '10_7_4': [0], '14_12_6': [], '17_13_7': [], '8_5_3': [], '12_10_5': [0, 36, 42, 55, 76, 97, 98, 101, 102, 128, 129, 146, 177, 193, 195, 196, 199, 200, 202, 203, 205, 206, 211], '15_11_6': [], '19_16_8': [319, 323, 345, 354, 364, 370, 371, 373], '22_17_9': [], '26_22_11': []}
+obstruction max degrees: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+12_10_5 class 0 realizable(any extra APs): False {'equal': 45254, 'parallelogram': 13795} 175s
+12_10_5 class 36 realizable(any extra APs): False {'parallelogram': 15021, 'equal': 44028} 158s
+12_10_5 class 42 realizable(any extra APs): False {'equal': 44377, 'parallelogram': 14672} 183s

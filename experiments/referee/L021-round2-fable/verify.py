@@ -202,11 +202,21 @@ def main():
         assert lin and conn and D <= 3 and not f7 and p3 and (n, m, t) == (27, 13, 9)
     pr('all 18: A=-4, DEF=4, P=0 :', all(p == 0 for p in allP) and len(allP) == 18)
 
-    # pairwise non-isomorphism of the 18 (own backtracking test)
-    niso = 0
-    for i, j in itertools.combinations(range(len(G)), 2):
-        if iso(G[i], G[j]): niso += 1
-    pr('isomorphic pairs among the 18:', niso)
+    # pairwise non-isomorphism of the 18: colour refinement (1-WL) on the incidence graph; distinct hashes => non-isomorphic
+    def wl_hash(E):
+        V = vertices(E)
+        col = {('v', v): 0 for v in V}; col.update({('e', i): 1 for i in range(len(E))})
+        inc = {('v', v): [('e', i) for i, e in enumerate(E) if v in e] for v in V}
+        inc.update({('e', i): [('v', v) for v in e] for i, e in enumerate(E)})
+        for _ in range(40):
+            sig = {x: (col[x], tuple(sorted(col[y] for y in inc[x]))) for x in col}
+            ids = {t: k for k, t in enumerate(sorted(set(sig.values())))}
+            new = {x: ids[sig[x]] for x in col}
+            if len(set(new.values())) == len(set(col.values())): col = new; break
+            col = new
+        return tuple(sorted(col.values()))
+    hashes = [wl_hash(E) for E in G]
+    pr('distinct 1-WL hashes among the 18 (equal hashes are inconclusive):', len(set(hashes)))
 
     # ---- (3) exact arithmetic for the edited passages
     pr('A(21,10,7) =', A_of(21,10,7), ' s =', s_of(21,10,7))

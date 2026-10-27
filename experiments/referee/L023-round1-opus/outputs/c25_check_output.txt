@@ -1,0 +1,7 @@
+claim set == certificate list: True ; == A_base u (1e9+7919 B11): True ; len 25 distinct 25 all int True
+4-subsets 12650 with < 5 distinct distances: 0
+3-APs 20 ; 4-element additive quadruples (x+y=z+w, x<y, z<w, disjoint) 0 ; weak Sidon: True
+APs inside A_base 12 inside the scaled B11 8 mixed 0
+largest Sidon subset (brute force over all 2^25 subsets): 15 ; number of maximum Sidon subsets: 3146 ; example [0, 136, 200, 243, 246, 298, 323, 528, 1000000000, 16909350190, 23979971882, 27868723536, 28399336131, 30343711958, 30696250000] is Sidon (direct sums check): True
+claimed_h 15 ; witness in set True witness size 15 witness Sidon True
+h/n = 3/5 ; 4/7 = 4/7 ; h/n < 4/7: False

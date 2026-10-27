@@ -1,0 +1,19 @@
+A_base n=14 m=12 contains Q8: False
+C001-ext15-m11-example n=15 m=11 contains Q8: False
+C002-ext15-m12-example n=15 m=12 contains Q8: False
+C003-reader-5-9-K6 n=65 m=63 contains Q8: False
+C004-lemmaE-SK5-E1 n=58 m=55 contains Q8: False
+C005-lemmaE-SK6-E1 n=67 m=64 contains Q8: False
+C006-tight-21pt-h12 n=21 m=19 contains Q8: False
+C007-c25-witness-f25 n=25 m=20 contains Q8: False
+C008-f19-h11 n=19 m=16 contains Q8: False
+small_records_8 n=8 m=5 contains Q8: False
+small_records_10 n=10 m=8 contains Q8: False
+small_records_11 n=11 m=8 contains Q8: False
+small_records_12 n=12 m=10 contains Q8: False
+small_records_14 n=14 m=12 contains Q8: False
+small_records_12b n=12 m=10 contains Q8: False
+small_records_12c n=12 m=10 contains Q8: False
+cell(14,12,6,4) class 5 Q8 embeddings 4 vertex sets [(6, 7, 8, 9, 10, 11, 12, 13)]
+cell(14,12,6,4) class 7 Q8 embeddings 4 vertex sets [(6, 7, 8, 9, 10, 11, 12, 13)]
+other classes of cell(14,12,6,4) containing Q8: []

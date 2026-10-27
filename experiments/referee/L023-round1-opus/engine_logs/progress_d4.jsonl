@@ -1,0 +1,4 @@
+{"cell": [21, 18, 9, 4], "classes": 12, "secs": 25.4, "driver": "stream", "MD": 10, "NPROC": 1, "celldir": "/dev/shm/L023ref/d4run/cells", "utc": "2026-10-27T09:23:40Z"}
+{"cell": [24, 19, 10, 4], "classes": 0, "secs": 105.0, "driver": "stream", "MD": 10, "NPROC": 1, "celldir": "/dev/shm/L023ref/d4run/cells", "utc": "2026-10-27T09:25:25Z"}
+{"cell": [25, 23, 11, 4], "classes": 6, "secs": 141.2, "driver": "stream", "MD": 10, "NPROC": 1, "celldir": "/dev/shm/L023ref/d4run/cells", "utc": "2026-10-27T09:27:46Z"}
+{"cell": [25, 23, 11, 3], "classes": 0, "secs": 73.0, "driver": "stream", "MD": 10, "NPROC": 1, "celldir": "/dev/shm/L023ref/d4run/cells", "utc": "2026-10-27T09:28:59Z"}

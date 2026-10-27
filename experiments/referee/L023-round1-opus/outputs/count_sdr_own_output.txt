@@ -1,0 +1,7 @@
+X_0 injective labellings 55236
+X_1 injective labellings 54164
+X_2 injective labellings 53300
+X_3 injective labellings 53740
+X_4 injective labellings 54700
+X_5 injective labellings 54260
+Q8 injective labellings 95

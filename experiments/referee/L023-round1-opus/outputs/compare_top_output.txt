@@ -1,0 +1,3 @@
+(25,23,11,4) mine 6 classes (sha256 sorted b8814978a3eea68b) | U1 6 classes (b8814978a3eea68b) | EQUAL
+(25,23,11,3) mine 0 classes (sha256 sorted e3b0c44298fc1c14) | U1 0 classes (e3b0c44298fc1c14) | EQUAL
+SUMMARY ALL EQUAL

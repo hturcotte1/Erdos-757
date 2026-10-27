@@ -1,0 +1,47 @@
+OK   A = 27n+35m-132tau = 12s-9n+11m = 12(s+n/6-11(n-m)/12) on a grid
+OK   piece type (3, 1, 1): W = 16 (claimed 16), s = 0 (claimed 0)
+OK     J_1/6 and W <= 11(n-m) = 22
+OK     7.6 disconnected case: B = (4, 4, 2), s(B) = -2 = s(F)-2 < 0, n(B) <= 18
+OK   piece type (8, 5, 3): W = 5 (claimed 5), s = 1 (claimed 1)
+OK     J_1/6 and W <= 11(n-m) = 33
+OK     7.6 disconnected case: B = (9, 8, 4), s(B) = -1 = s(F)-2 < 0, n(B) <= 18
+OK   piece type (10, 7, 4): W = 13 (claimed 13), s = 0 (claimed 0)
+OK     J_1/6 and W <= 11(n-m) = 33
+OK     7.6 disconnected case: B = (11, 10, 5), s(B) = -2 = s(F)-2 < 0, n(B) <= 18
+OK   piece type (15, 11, 6): W = 2 (claimed 2), s = 1 (claimed 1)
+OK     J_1/6 and W <= 11(n-m) = 44
+OK     7.6 disconnected case: B = (16, 14, 7), s(B) = -1 = s(F)-2 < 0, n(B) <= 18
+OK   piece type (17, 13, 7): W = 10 (claimed 10), s = 0 (claimed 0)
+OK     J_1/6 and W <= 11(n-m) = 44
+OK     7.6 disconnected case: B = (18, 16, 8), s(B) = -2 = s(F)-2 < 0, n(B) <= 18
+OK   A(14,12,6) = +6
+OK   12-point records: A = 14, J slack 18
+OK   A_base J_{1/6} slack 14
+OK   remark cell (21, 10, 7): s = 6, A = -7, sparse (11m < 9n: 110 < 189)
+OK   remark cell (27, 13, 9): s = 8, A = -4, sparse (11m < 9n: 143 < 243)
+OK   hypertree k=0: A = -16 = 3k-16, DEF_H(M) = 16 = 16-3k, A + DEF_H(M) = 0
+OK   hypertree k=1: A = -13 = 3k-16, DEF_H(M) = 13 = 16-3k, A + DEF_H(M) = 0
+OK   hypertree k=2: A = -10 = 3k-16, DEF_H(M) = 10 = 16-3k, A + DEF_H(M) = 0
+OK   hypertree k=3: A = -7 = 3k-16, DEF_H(M) = 7 = 16-3k, A + DEF_H(M) = 0
+OK   hypertree k=4: A = -4 = 3k-16, DEF_H(M) = 4 = 16-3k, A + DEF_H(M) = 0
+OK   hypertree k=5: A = -1 = 3k-16, DEF_H(M) = 1 = 16-3k, A + DEF_H(M) = 0
+OK   hypertree k=6: A = 2 = 3k-16, DEF_H(M) = -2 = 16-3k, A + DEF_H(M) = 0
+OK   hypertree k=7: A = 5 = 3k-16, DEF_H(M) = -5 = 16-3k, A + DEF_H(M) = 0
+OK   hypertree k=8: A = 8 = 3k-16, DEF_H(M) = -8 = 16-3k, A + DEF_H(M) = 0
+OK   hypertree k=9: A = 11 = 3k-16, DEF_H(M) = -11 = 16-3k, A + DEF_H(M) = 0
+OK   hypertree k=10: A = 14 = 3k-16, DEF_H(M) = -14 = 16-3k, A + DEF_H(M) = 0
+OK   hypertree k=11: A = 17 = 3k-16, DEF_H(M) = -17 = 16-3k, A + DEF_H(M) = 0
+OK   any H with perfect matching M and tau = |M|: A + DEF_H(M) = 0
+OK   m = n-2: A = 12s + 2n - 22
+OK   HY (17 tau <= 5n+3m) with m = n-2 gives exactly s >= -(3n+2)/17
+     (info) n >= 11 where the HY floor alone would allow A < 0 for saturated graphs: [11, 12, 13, 14, 15] ...
+OK   35/66 > 9/17
+OK   (6-eps)/11 > 9/17 iff eps < 3/17
+OK   hub balances 0, -35, -70
+     (info) feasible (j, e_v, k_v, sumW>=36): [(1, 0, 2, False), (1, 0, 3, False), (2, 0, 3, False), (3, 1, 3, True)]
+OK   4.3: only (D1) j=1,e=0,k in {2,3}; (D2) j=2,e=0,k=3; (D3) j=3,e=1,k=3 with sum W >= 36
+OK   4.3 with any weights <= 16: same three cases
+OK   largest sum W - 35 e_v is 32 (D2 with two E_1)
+OK   theta < 0 only for (c,e) = (1,0): -16 and (5,7): -5; found [(1, 0, -16), (5, 7, -5)]
+OK   6.2 algebra
+ALL OK

@@ -1,0 +1,12 @@
+Q10 edges [(0, 1, 2), (0, 3, 4), (1, 5, 7), (2, 6, 8), (3, 7, 9), (4, 8, 9), (5, 6, 9)]
+degrees [2, 2, 2, 2, 2, 2, 2, 2, 2, 3]
+tau 4 slack 0 linear True F7 False P3 True
+Q10 realizable (sub-hypergraph, any extra APs allowed): False 2187 {'equal': 1230, 'parallelogram': 957}
+  delete (0, 1, 2) -> exact realization [-1215991, 228788, -1480918, 1919194, -4351176, 602772, -2778040, -145196, -183796, 3983584] bruteforce(4,5) True AP set == edges True
+  delete (0, 3, 4) -> exact realization [482806, 1338419, -372807, 1681540, -4176296, 1123770, 437528, 1553068, -1183142, 1810012] bruteforce(4,5) True AP set == edges True
+  delete (1, 5, 7) -> exact realization [4298148, 8993787, -397491, 2170600, 43052, -2259612, -1378526, 836580, 583544, -497440] bruteforce(4,5) True AP set == edges True
+  delete (2, 6, 8) -> exact realization [-3841423, 459684, -8142530, -1187358, 1466707, 1005516, 995970, -86148, 1918352, 1015062] bruteforce(4,5) True AP set == edges True
+  delete (3, 7, 9) -> exact realization [-6337250, -6498232, -6176268, -3268855, -200460, -19623904, -7672288, 6627440, -4680248, 4279328] bruteforce(4,5) True AP set == edges True
+  delete (4, 8, 9) -> exact realization [1343445, 1539568, 1147322, 1049340, 755235, 2118740, 3366028, 960396, -1071384, 871452] bruteforce(4,5) True AP set == edges True
+  delete (5, 6, 9) -> exact realization [11937265, 23379087, 495443, 5488726, -959813, 44978656, 980822, 1779518, 10064, -1929690] bruteforce(4,5) True AP set == edges True
+all 7 one-edge deletions exactly realizable: True

@@ -1903,6 +1903,14 @@
 "firstpath": "seedsrc/L014/cells/cell_19_17_8_D3.txt",
 "md5": "8e012af3807a14f937cab6b44de4b1e3"
 },
+"19,17,8,5": {
+"agree": [],
+"classes": 785127,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_19_17_8_D5.txt",
+"md5": "874a8e7308dd80243fd04f59b17fb30c"
+},
 "19,9,6,2": {
 "agree": [
 "L013 cells.tar.gz (refereed)",
@@ -3061,6 +3069,14 @@
 "first": "20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)",
 "firstpath": "../20261027-0300-tight-cells-d4/out/cells/cell_26_17_10_D3.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"26,18,10,3": {
+"agree": [],
+"classes": 29056,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_26_18_10_D3.txt",
+"md5": "6eabd03ac7a434f0438c58cbc5091131"
 },
 "26,21,11,3": {
 "agree": [

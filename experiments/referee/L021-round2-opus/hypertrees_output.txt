@@ -1,0 +1,23 @@
+32 pieces re-verified (n, m, tau, W, s in {0,1}, linear, connected, Delta<=3) [0.1s]
+graphs read: 18
+# 0: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+# 1: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+# 2: n=27 m=13 conn=True lin=True Dmax=2 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+# 3: n=27 m=13 conn=True lin=True Dmax=2 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+# 4: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+# 5: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+# 6: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+# 7: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+# 8: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+# 9: n=27 m=13 conn=True lin=True Dmax=2 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+#10: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+#11: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+#12: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+#13: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+#14: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+#15: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+#16: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+#17: n=27 m=13 conn=True lin=True Dmax=3 P3=True/True F7=False tau=9 #perfect_matchings=1 A=-4 copies=13 ['(3,1,1)#0'] DEF=4 (family size 9) A+DEF=0 OK
+pairwise non-isomorphic: True
+A values [-4], DEF values [4], A+DEF values [0]
+ALL OK [2.6s]

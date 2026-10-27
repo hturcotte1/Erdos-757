@@ -1,0 +1,9 @@
+(3,1,1)#0    n= 3 |MT|=   3 attachable= 3 configs=     0 tau-raising=    0 tau-raising in C=0 [0s]
+(8,5,3)#0    n= 8 |MT|=  13 attachable= 8 configs=    49 tau-raising=   15 tau-raising in C=0 [0s]
+(8,5,3)#1    n= 8 |MT|=  14 attachable= 7 configs=    22 tau-raising=   13 tau-raising in C=0 [0s]
+(10,7,4)#0   n=10 |MT|=  31 attachable= 9 configs=   269 tau-raising=    0 tau-raising in C=0 [0s]
+(10,7,4)#1   n=10 |MT|=  32 attachable= 8 configs=   122 tau-raising=    0 tau-raising in C=0 [0s]
+(10,7,4)#2   n=10 |MT|=  33 attachable= 8 configs=   120 tau-raising=    0 tau-raising in C=0 [0s]
+(10,7,4)#3   n=10 |MT|=  30 attachable= 9 configs=   270 tau-raising=    0 tau-raising in C=0 [0s]
+TOTAL configs=852 tau-raising=28 tau-raising in C=0 criterion/direct-tau mismatches=0
+ALL OK

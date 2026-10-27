@@ -1,0 +1,6 @@
+    (9,8,4)b vertex 5 pattern a fails []
+    (9,8,4)b vertex 6 pattern a fails []
+    (9,8,4)b vertex 7 pattern a fails []
+    (9,8,4)b vertex 8 pattern a fails []
+small violators: {"violators": 3, "deg3": 13, "pat": {"b": 1, "a": 12}, "f_cases": 0, "v_cases": 2, "vii_pairs": 40} fails []
+random: trials 12000 {"violators": 117, "deg3": 697, "pat": {"b": 1, "a": 696}, "f_cases": 0, "v_cases": 2, "vii_pairs": 1784} nfails 0 time 91s

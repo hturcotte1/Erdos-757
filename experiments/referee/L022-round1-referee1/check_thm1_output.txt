@@ -1,0 +1,26 @@
+Part (b) exhaustive ordered injective-midpoint patterns, n<=7:
+  n=3 patterns=1
+  n=4 patterns=8
+  n=5 patterns=79
+  n=6 patterns=1224
+  n=7 patterns=29159
+  total patterns 30471 dependent 0
+Part (b) random patterns (n in 5..45), 4000 trials: dependent 0
+Part (b), (b'), (c) on stored sets:
+  small_8 n=8 m=5 rank=5 deletions ok 11/11
+  small_10 n=10 m=8 rank=8 saturated: dim V = 2 deletions ok 14/14
+  small_11 n=11 m=8 rank=8 deletions ok 14/14
+  small_12 n=12 m=10 rank=10 saturated: dim V = 2 deletions ok 16/16
+  small_14 n=14 m=12 rank=12 saturated: dim V = 2 deletions ok 18/18
+  small_12b n=12 m=10 rank=10 saturated: dim V = 2 deletions ok 16/16
+  small_12c n=12 m=10 rank=10 saturated: dim V = 2 deletions ok 16/16
+  C001   n=15 m=11 rank=11 deletions ok 17/17
+  C002   n=15 m=12 rank=12 deletions ok 18/18
+  C003   n=65 m=63 rank=63 saturated: dim V = 2 deletions ok 16/16
+  C004   n=58 m=55 rank=55 deletions ok 16/16
+  C005   n=67 m=64 rank=64 deletions ok 16/16
+  C006   n=21 m=19 rank=19 saturated: dim V = 2 deletions ok 25/25
+  C007   n=25 m=20 rank=20 deletions ok 26/26
+  C008   n=19 m=16 rank=16 deletions ok 22/22
+{'sets': 15, 'rank_eq_m': 15, 'saturated': 7, 'saturated_rigid': 7, 'deletions': 261, 'deletions_ok': 261}
+time 22.9s

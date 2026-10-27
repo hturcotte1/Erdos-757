@@ -1,0 +1,18 @@
+reader_5_9_family.json /family[7]/set len 74 is (4,5)-set: None contains Q8: False head [0, 4994155263741573461, 7644115199604449175, 8459487487562257087, 9988310527483146922, 10294075135467324889]
+reader_5_9_family.json /family[8]/set len 83 is (4,5)-set: None contains Q8: False head [0, 1343427765946483261009, 2056266988693596828075, 2275602134154247156403, 2686855531892966522018, 2769106211440710395141]
+reader_5_9_family.json lists 9 ; (4,5)-sets 9 ; (4,5)-sets containing Q8 0
+selfsim_families.json /families[0]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 12, 17, 22, 27, 32]
+selfsim_families.json /families[1]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 12, 17, 22, 27, 32]
+selfsim_families.json /families[2]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 14, 20, 26, 32, 38]
+selfsim_families.json /families[3]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 12, 17, 22, 27, 32]
+selfsim_families.json /families[4]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 12, 17, 22, 27, 32]
+selfsim_families.json /families[5]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 12, 17, 22, 27, 32]
+selfsim_families.json /families[6]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 12, 17, 22, 27, 32]
+selfsim_families.json /families[7]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 12, 17, 22, 27, 32]
+selfsim_families.json /families[8]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 12, 17, 22, 27, 32]
+selfsim_families.json /families[9]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 12, 17, 22, 27, 32]
+selfsim_families.json /families[10]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 12, 17, 22, 27, 32]
+selfsim_families.json /families[11]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 12, 17, 22, 27, 32]
+selfsim_families.json /families[12]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 12, 17, 22, 27, 32]
+selfsim_families.json /families[13]/h_seq_K0_8 len 9 is (4,5)-set: False contains Q8: True head [7, 12, 17, 22, 27, 32]
+selfsim_families.json lists 42 ; (4,5)-sets 28 ; (4,5)-sets containing Q8 0

@@ -1,0 +1,2 @@
+A_base AP hypergraph: n 14 m 12 tau 6 slack 0 in C True
+minimum transversals 143 NC pairs 0 b-triples 0

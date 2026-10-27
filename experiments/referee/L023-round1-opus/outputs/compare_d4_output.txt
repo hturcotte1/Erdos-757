@@ -1,0 +1,9 @@
+(16,9,6,4) mine 0 classes (sha256 sorted e3b0c44298fc1c14) | U1 0 classes (e3b0c44298fc1c14) | EQUAL
+(17,13,7,4) mine 10 classes (sha256 sorted f30e0dd9d1dd51bf) | U1 10 classes (f30e0dd9d1dd51bf) | EQUAL
+(19,10,7,4) mine 0 classes (sha256 sorted e3b0c44298fc1c14) | U1 0 classes (e3b0c44298fc1c14) | EQUAL
+(20,14,8,4) mine 0 classes (sha256 sorted e3b0c44298fc1c14) | U1 0 classes (e3b0c44298fc1c14) | EQUAL
+(21,18,9,4) mine 12 classes (sha256 sorted 17917a5ee926014a) | U1 12 classes (17917a5ee926014a) | EQUAL
+(22,11,8,4) mine 0 classes (sha256 sorted e3b0c44298fc1c14) | U1 0 classes (e3b0c44298fc1c14) | EQUAL
+(23,15,9,4) mine 0 classes (sha256 sorted e3b0c44298fc1c14) | U1 0 classes (e3b0c44298fc1c14) | EQUAL
+(24,19,10,4) mine 0 classes (sha256 sorted e3b0c44298fc1c14) | U1 0 classes (e3b0c44298fc1c14) | EQUAL
+SUMMARY ALL EQUAL

@@ -1,0 +1,1 @@
+near {'classes': 483, 'L1': 12581, 'L2': 28430, 'L3': 6, 'L4': 0, 'L4_drop1': 0, 'L5': 258, 'L6': 2, 'L6_inC': 0, 'L7': 6, 'L7_inC': 0, 'L8': 0, 'L8_inC': 0, 'L9': 0, 'bconf': 0} failures 0 time 353.2s

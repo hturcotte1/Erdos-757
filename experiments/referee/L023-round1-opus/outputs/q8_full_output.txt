@@ -1,0 +1,2 @@
+{"total": 729, "injective": 95, "good_generic": 0, "injective_dim2": 95} {"EQUAL": 588, "FOUR": 141}
+RESULT Q8: NOT-REALIZABLE

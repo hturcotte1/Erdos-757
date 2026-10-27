@@ -1,0 +1,19 @@
+10
+12
+cell_3_1_1.txt {'graphs': 1, 'tight': 1, 'slack1': 0, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 1} [0s]
+cell_10_7_4.txt {'graphs': 5, 'tight': 5, 'slack1': 0, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 0} [0s]
+cell_14_12_6.txt {'graphs': 11, 'tight': 11, 'slack1': 0, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 0} [0s]
+cell_17_13_7.txt {'graphs': 6, 'tight': 6, 'slack1': 0, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 0} [0s]
+cell_17_13_7_D4.txt {'graphs': 10, 'tight': 10, 'slack1': 0, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 0} [0s]
+cell_21_18_9_D4.txt {'graphs': 12, 'tight': 12, 'slack1': 0, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 0} [0s]
+cell_25_23_11_D4.txt {'graphs': 6, 'tight': 6, 'slack1': 0, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 0} [1s]
+cell_8_5_3.txt {'graphs': 2, 'tight': 0, 'slack1': 2, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 0} [0s]
+cell_12_10_5.txt {'graphs': 221, 'tight': 0, 'slack1': 221, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 0} [0s]
+cell_15_11_6.txt {'graphs': 30, 'tight': 0, 'slack1': 30, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 0} [0s]
+cell_19_16_8.txt {'graphs': 956, 'tight': 0, 'slack1': 956, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 0} [17s]
+cell_22_17_9.txt {'graphs': 95, 'tight': 0, 'slack1': 95, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 0} [5s]
+cell_26_22_11.txt {'graphs': 36, 'tight': 0, 'slack1': 36, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 0} [14s]
+cell_23_21_10.txt {'graphs': 699, 'tight': 0, 'slack1': 699, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 0} [98s]
+TOTAL {'graphs': 2090, 'tight': 51, 'slack1': 2039, 'bconf_tight': 0, 'bconf_slack1': 0, 'bconf_other': 0, 'edge_triples': 1}
+
+[exited with code 0]

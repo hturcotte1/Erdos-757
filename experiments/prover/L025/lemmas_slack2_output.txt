@@ -1,0 +1,6 @@
+cell_6_3_2.txt {'classes': 1, 'L1': 10, 'L2': 10, 'L3': 12, 'L4': 12, 'L4_drop1': 9, 'L5': 9, 'L6': 0, 'L6_inC': 0, 'L7': 18, 'L7_inC': 0, 'L8': 0, 'L8_inC': 0, 'L9': 4, 'bconf': 4} failures 0 time 0.0s
+cell_9_4_3.txt {'classes': 2, 'L1': 20, 'L2': 31, 'L3': 12, 'L4': 12, 'L4_drop1': 9, 'L5': 18, 'L6': 0, 'L6_inC': 0, 'L7': 18, 'L7_inC': 0, 'L8': 0, 'L8_inC': 0, 'L9': 4, 'bconf': 4} failures 0 time 0.0s
+cell_10_8_4.txt {'classes': 65, 'L1': 614, 'L2': 1258, 'L3': 111, 'L4': 12, 'L4_drop1': 9, 'L5': 239, 'L6': 28, 'L6_inC': 0, 'L7': 130, 'L7_inC': 0, 'L8': 0, 'L8_inC': 0, 'L9': 4, 'bconf': 4} failures 0 time 3.7s
+cell_13_9_5.txt {'classes': 149, 'L1': 1454, 'L2': 3106, 'L3': 128, 'L4': 21, 'L4_drop1': 18, 'L5': 548, 'L6': 28, 'L6_inC': 0, 'L7': 154, 'L7_inC': 0, 'L8': 0, 'L8_inC': 0, 'L9': 7, 'bconf': 7} failures 0 time 9.3s
+cell_16_10_6.txt {'classes': 165, 'L1': 1614, 'L2': 3492, 'L3': 128, 'L4': 21, 'L4_drop1': 18, 'L5': 666, 'L6': 28, 'L6_inC': 0, 'L7': 154, 'L7_inC': 0, 'L8': 0, 'L8_inC': 0, 'L9': 7, 'bconf': 7} failures 0 time 10.5s
+cell_23_16_9.txt {'classes': 343, 'L1': 3394, 'L2': 8114, 'L3': 128, 'L4': 21, 'L4_drop1': 18, 'L5': 1700, 'L6': 28, 'L6_inC': 0, 'L7': 154, 'L7_inC': 0, 'L8': 0, 'L8_inC': 0, 'L9': 7, 'bconf': 7} failures 0 time 97.2s

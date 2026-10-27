@@ -1,0 +1,5 @@
+labelled connected linear configurations with <=4 edges: 502
+invariant classes (n, m, degree sequence): 13
+not exactly realizable: 0
+F7 realizable (any extra APs): False {'parallelogram': 39, 'equal': 204}
+all 4-edge sub-hypergraphs of F7 exactly realizable: True

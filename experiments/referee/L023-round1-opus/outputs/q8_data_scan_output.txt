@@ -1,0 +1,7 @@
+census_n14_m12 (2,910 classes) sets 2910 containing Q8 0
+ext12_all_rows (54,243 classes) sets 54243 containing Q8 0
+ext15_sets (rows with a set) sets 2337 containing Q8 0
+reader_5_9_family.json (integer lists found) sets 9 containing Q8 0
+selfsim_families.json (integer lists found) sets 42 containing Q8 14
+Fibonacci F_3..F_16 is (4,5): True ; AP count of F_3..F_30: 25
+Fibonacci {F_3..F_30} sets 1 containing Q8 0

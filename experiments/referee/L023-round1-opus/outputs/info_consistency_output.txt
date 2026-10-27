@@ -1,0 +1,6 @@
+(24, 20, 10, 3) branch d=3 tp=9 recomputed inputs 1176201 recorded 1176201 graphs 1176201 EQUAL
+(23, 17, 9, 3) branch d=3 tp=8 recomputed inputs 883379 recorded 883379 graphs 883379 EQUAL
+(21, 19, 9, 3) branch d=3 tp=8 recomputed inputs 977982 recorded 977982 graphs 977982 EQUAL
+(20, 16, 8, 3) branch d=3 tp=7 recomputed inputs 821288 recorded 821288 graphs 821288 EQUAL
+(17, 15, 7, 3) branch d=3 tp=6 recomputed inputs 617069 recorded 617069 graphs 617069 EQUAL
+ALL CONSISTENT

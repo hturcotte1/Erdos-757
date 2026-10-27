@@ -1,0 +1,4 @@
+low-degree orbit representatives: {'(3,1,1)#0': [0], '(10,7,4)#0': [0, 3], '(10,7,4)#3': [0, 3, 6]}
+('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#0') N 16 g-orbits 2 configs 8 inC3 0 tau_ok 0 iso to piece 0 classes {} A [] not-C3 reasons {'F7': 8} [3s]
+('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#3') N 16 g-orbits 3 configs 12 inC3 0 tau_ok 0 iso to piece 0 classes {} A [] not-C3 reasons {'F7': 12} [3s]
+GRAND {'types': 2, 'g_orbits': 5, 'configs': 20, 'inC3': 0, 'tau_ok': 0, 'iso_piece': 0, 'Pneg': 0} [3s]

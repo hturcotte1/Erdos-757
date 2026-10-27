@@ -114,7 +114,14 @@ def main():
     st = {k: 0 for k in ['classes', 'L1', 'L2', 'L3', 'L4', 'L4_drop1', 'L5', 'L6', 'L6_inC', 'L7', 'L7_inC', 'L8', 'L8_inC', 'L9', 'bconf']}
     bad = []
     t0 = time.time()
+    cur = None
+    def report(c):
+        print(c, st, 'failures', len(bad), 'time %.1fs' % (time.time() - t0), flush=True)
     for cell, h in graphs(args):
+        if cell != cur:
+            if cur is not None:
+                report(cur)
+            cur = cell
         if h.maxdeg() > 3:
             continue
         st['classes'] += 1
@@ -223,7 +230,9 @@ def main():
                 st['L8_inC'] += 1
                 if 3 * h.n + 2 * (h.m + 1) - 11 * (tau + 1) < 0:
                     bad.append(('L8-I11', cell, E, Y))
-    print(' '.join(args), st, 'failures', len(bad), 'time %.1fs' % (time.time() - t0), flush=True)
+    if cur is not None:
+        report(cur)
+    print('TOTAL', ' '.join(args), st, 'failures', len(bad), 'time %.1fs' % (time.time() - t0), flush=True)
     for b in bad[:10]:
         print('  FAIL', b)
 

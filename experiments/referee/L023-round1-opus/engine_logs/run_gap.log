@@ -1,0 +1,34 @@
+START 2026-10-27T09:03:21Z
+CELL (15, 9, 5, 3) classes 3026 {'route': 'direct', 'driver': 'stream', 'enum': 'enum_conn N=15 M=9 T0=5 DMAX=3 calls=62232724 found=2557893', 'labelled': 2557893, 'in_C_tau_exact': 2552898, 'filt': 'SUMMARY tag=FOUND NV=15 total=2557893 bad_labels=0 linear=2557893 contain_F7=4995 P3_violated=0 F7free_and_P3_violated=0 survivors=2552898 survivors_connected=2552898 wrong_tau_dropped=0 connected_all=2557893 tau_range=[5,5] maxdeg_max=3', 'secs': 81.3}
+CELL (14, 9, 5, 3) classes 1060 (loaded)
+CELL (13, 9, 5, 3) classes 84 (loaded)
+CELL (7, 4, 2, 3) classes 2 (loaded)
+CELL (8, 5, 3, 3) classes 2 (loaded)
+CELL (7, 3, 2, 3) classes 1 (loaded)
+CELL (8, 6, 3, 3) classes 3 (loaded)
+CELL (6, 4, 2, 3) classes 1 (loaded)
+CELL (9, 5, 3, 3) classes 6 (loaded)
+CELL (6, 3, 2, 3) classes 1 (loaded)
+CELL (9, 6, 3, 3) classes 21 (loaded)
+CELL (5, 2, 1, 3) classes 1 (loaded)
+CELL (10, 7, 4, 3) classes 4 (loaded)
+CELL (4, 2, 1, 3) classes 0 (loaded)
+CELL (11, 7, 4, 3) classes 35 (loaded)
+CELL (3, 1, 1, 3) classes 1 (loaded)
+CELL (12, 8, 4, 3) classes 1391 {'route': 'direct', 'driver': 'stream', 'enum': 'enum_conn N=12 M=8 T0=4 DMAX=3 calls=4605791 found=706674', 'labelled': 706674, 'in_C_tau_exact': 698814, 'filt': 'SUMMARY tag=FOUND NV=12 total=706674 bad_labels=0 linear=706674 contain_F7=7860 P3_violated=0 F7free_and_P3_violated=0 survivors=698814 survivors_connected=698814 wrong_tau_dropped=0 connected_all=706674 tau_range=[4,4] maxdeg_max=3', 'secs': 11.5}
+CELL (11, 8, 4, 3) classes 471 (loaded)
+CELL (10, 8, 4, 3) classes 63 (loaded)
+CELL (9, 7, 3, 3) classes 24 {'route': 'direct', 'driver': 'stream', 'enum': 'enum_conn N=9 M=7 T0=3 DMAX=3 calls=75780 found=4479', 'labelled': 4479, 'in_C_tau_exact': 3623, 'filt': 'SUMMARY tag=FOUND NV=9 total=4479 bad_labels=0 linear=4479 contain_F7=825 P3_violated=31 F7free_and_P3_violated=31 survivors=3623 survivors_connected=3623 wrong_tau_dropped=0 connected_all=4479 tau_range=[3,3] maxdeg_max=3', 'secs': 0.1}
+  BRANCH (16, 12, 6, 3) d=3 tp=5 S'=8 decompositions=18 inputs=6163 {'graphs': 6163, 'bad_tau': 0, 'tg_too_small': 0, 'searched': 6163, 'max_min_covers': 78, 'nodes': 25590984, 'hits_F7free': 8392475, 'hits_in_C': 8357721}
+CELL (16, 12, 6, 3) classes 540610 {'route': 'recurse', 'driver': 'stream', 'branches': [{'d': 3, 'tp': 5, 'Sp': 8, 'decompositions': 18, 'inputs': 6163, 'dec': [[[(15, 9, 5)], 3026], [[(14, 9, 5), (1, 0, 0)], 1060], [[(13, 9, 5), (1, 0, 0), (1, 0, 0)], 84], [[(7, 4, 2), (8, 5, 3)], 4], [[(7, 3, 2), (8, 6, 3)], 3], [[(6, 4, 2), (9, 5, 3)], 6], [[(6, 4, 2), (8, 5, 3), (1, 0, 0)], 2], [[(6, 3, 2), (9, 6, 3)], 21], [[(6, 3, 2), (8, 6, 3), (1, 0, 0)], 3], [[(5, 2, 1), (10, 7, 4)], 4], [[(4, 2, 1), (11, 7, 4)], 0], [[(4, 2, 1), (10, 7, 4), (1, 0, 0)], 0], [[(3, 1, 1), (12, 8, 4)], 1391], [[(3, 1, 1), (11, 8, 4), (1, 0, 0)], 471], [[(3, 1, 1), (10, 8, 4), (1, 0, 0), (1, 0, 0)], 63], [[(3, 1, 1), (6, 4, 2), (6, 4, 2)], 1], [[(3, 1, 1), (4, 2, 1), (8, 6, 3)], 0], [[(3, 1, 1), (3, 1, 1), (9, 7, 3)], 24]], 'ext': {'graphs': 6163, 'bad_tau': 0, 'tg_too_small': 0, 'searched': 6163, 'max_min_covers': 78, 'nodes': 25590984, 'hits_F7free': 8392475, 'hits_in_C': 8357721}, 'hits_in_C': 8357721, 'filt_chunks': ['SUMMARY tag=HIT NV=16 total=8357721 bad_labels=0 linear=8357721 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=8357721 survivors_connected=7526694 wrong_tau_dropped=0 connected_all=7526694 tau_range=[-1,-1] maxdeg_max=3']}], 'connected_hits': 7526694, 'secs': 424.4}
+CELL (15, 12, 6, 3) classes 10617 (loaded)
+CELL (14, 12, 6, 3) classes 2 (loaded)
+CELL (12, 10, 5, 3) classes 149 (loaded)
+  BRANCH (13, 11, 5, 3) d=3 tp=4 S'=8 decompositions=6 inputs=1950 {'graphs': 1950, 'bad_tau': 0, 'tg_too_small': 0, 'searched': 1950, 'max_min_covers': 26, 'nodes': 701451, 'hits_F7free': 703555, 'hits_in_C': 675606}
+CELL (13, 11, 5, 3) classes 65771 {'route': 'recurse', 'driver': 'stream', 'branches': [{'d': 3, 'tp': 4, 'Sp': 8, 'decompositions': 6, 'inputs': 1950, 'dec': [[[(12, 8, 4)], 1391], [[(11, 8, 4), (1, 0, 0)], 471], [[(10, 8, 4), (1, 0, 0), (1, 0, 0)], 63], [[(6, 4, 2), (6, 4, 2)], 1], [[(4, 2, 1), (8, 6, 3)], 0], [[(3, 1, 1), (9, 7, 3)], 24]], 'ext': {'graphs': 1950, 'bad_tau': 0, 'tg_too_small': 0, 'searched': 1950, 'max_min_covers': 26, 'nodes': 701451, 'hits_F7free': 703555, 'hits_in_C': 675606}, 'hits_in_C': 675606, 'filt_chunks': ['SUMMARY tag=HIT NV=13 total=675606 bad_labels=0 linear=675606 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=675606 survivors_connected=675606 wrong_tau_dropped=0 connected_all=675606 tau_range=[-1,-1] maxdeg_max=3']}], 'connected_hits': 675606, 'secs': 25.0}
+  BRANCH (17, 15, 7, 3) d=3 tp=6 S'=6 decompositions=7 inputs=617069 {'graphs': 617069, 'bad_tau': 0, 'tg_too_small': 0, 'searched': 617069, 'max_min_covers': 139, 'nodes': 330779930, 'hits_F7free': 8868948, 'hits_in_C': 8643236}
+CELL (17, 15, 7, 3) classes 660651 {'route': 'recurse', 'driver': 'stream', 'branches': [{'d': 3, 'tp': 6, 'Sp': 6, 'decompositions': 7, 'inputs': 617069, 'dec': [[[(16, 12, 6)], 540610], [[(15, 12, 6), (1, 0, 0)], 10617], [[(14, 12, 6), (1, 0, 0), (1, 0, 0)], 2], [[(8, 6, 3), (8, 6, 3)], 6], [[(6, 4, 2), (10, 8, 4)], 63], [[(4, 2, 1), (12, 10, 5)], 0], [[(3, 1, 1), (13, 11, 5)], 65771]], 'ext': {'graphs': 617069, 'bad_tau': 0, 'tg_too_small': 0, 'searched': 617069, 'max_min_covers': 139, 'nodes': 330779930, 'hits_F7free': 8868948, 'hits_in_C': 8643236}, 'hits_in_C': 8643236, 'filt_chunks': ['SUMMARY tag=HIT NV=17 total=8643236 bad_labels=0 linear=8643236 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=8643236 survivors_connected=8643236 wrong_tau_dropped=0 connected_all=8643236 tau_range=[-1,-1] maxdeg_max=3']}], 'connected_hits': 8643236, 'secs': 1668.2}
+DONE {"cell": [17, 15, 7, 3], "classes": 660651, "secs": 1678.1, "driver": "stream", "MD": 10, "NPROC": 1, "celldir": "/dev/shm/L023ref/engine_run/cells", "utc": "2026-10-27T09:31:20Z"}
+Terminated
+EXIT 143
+END 2026-10-27T09:31:22Z

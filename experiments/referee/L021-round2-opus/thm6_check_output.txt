@@ -1,0 +1,3 @@
+atlas (connected subcubic, 2..7 nodes): {'graphs': 112, 'U_sets': 688, 'negA': 3, 'o5': 3, 'minP': 0} [2s]
+total: {'graphs': 513, 'U_sets': 3966, 'negA': 12, 'o5': 8, 'minP': 0} [20s]
+ALL OK (no assertion failed)

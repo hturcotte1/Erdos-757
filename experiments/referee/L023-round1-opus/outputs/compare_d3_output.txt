@@ -1,0 +1,7 @@
+(15,9,5,3) mine 3026 classes (sha256 sorted 8715dea0f2ed7fb5) | U1 3026 classes (8715dea0f2ed7fb5) | EQUAL
+(12,8,4,3) mine 1391 classes (sha256 sorted 149fbfc0193c7a86) | U1 1391 classes (149fbfc0193c7a86) | EQUAL
+(9,7,3,3) mine 24 classes (sha256 sorted 187f308b0ad316da) | U1 24 classes (187f308b0ad316da) | EQUAL
+(16,12,6,3) mine 540610 classes (sha256 sorted 23c61913c7128cb4) | U1 540610 classes (23c61913c7128cb4) | EQUAL
+(13,11,5,3) mine 65771 classes (sha256 sorted eda639b6c19effb9) | U1 65771 classes (eda639b6c19effb9) | EQUAL
+(17,15,7,3) mine 660651 classes (sha256 sorted 138fb48f25712ce0) | U1 660651 classes (138fb48f25712ce0) | EQUAL
+SUMMARY ALL EQUAL

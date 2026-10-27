@@ -1,0 +1,40 @@
+(3,1,1)#0 {'n': 3, 'm': 1, 'tau': 1, 'W': 16, 'inC3_conn': True, 'L1': True, 'nmt': 3, 'maxdeg': 1, 'degseq': '111', 'n_nct': 3, 'nct': [(0, 1), (0, 2), (1, 2)], 'rich': False, 'stored_match': True}
+(8,5,3)#0 {'n': 8, 'm': 5, 'tau': 3, 'W': 5, 'inC3_conn': True, 'L1': True, 'nmt': 13, 'maxdeg': 2, 'degseq': '22222221', 'n_nct': 5, 'nct': [(0, 1), (0, 2), (0, 3), (4, 6), (5, 7)], 'rich': False, 'stored_match': True}
+(8,5,3)#1 {'n': 8, 'm': 5, 'tau': 3, 'W': 5, 'inC3_conn': True, 'L1': True, 'nmt': 14, 'maxdeg': 3, 'degseq': '32222211', 'n_nct': 6, 'nct': [(0, 1), (0, 2), (0, 7), (1, 5), (1, 6), (3, 4)], 'rich': False, 'stored_match': True}
+(10,7,4)#0 {'n': 10, 'm': 7, 'tau': 4, 'W': 13, 'inC3_conn': True, 'L1': True, 'nmt': 31, 'maxdeg': 3, 'degseq': '3222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+(10,7,4)#1 {'n': 10, 'm': 7, 'tau': 4, 'W': 13, 'inC3_conn': True, 'L1': True, 'nmt': 32, 'maxdeg': 3, 'degseq': '3322222221', 'n_nct': 2, 'nct': [(0, 1), (0, 2)], 'rich': False, 'stored_match': True}
+(10,7,4)#2 {'n': 10, 'm': 7, 'tau': 4, 'W': 13, 'inC3_conn': True, 'L1': True, 'nmt': 33, 'maxdeg': 3, 'degseq': '3322222221', 'n_nct': 2, 'nct': [(0, 1), (0, 2)], 'rich': False, 'stored_match': True}
+(10,7,4)#3 {'n': 10, 'm': 7, 'tau': 4, 'W': 13, 'inC3_conn': True, 'L1': True, 'nmt': 30, 'maxdeg': 3, 'degseq': '3222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+(15,11,6)#0 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 154, 'maxdeg': 3, 'degseq': '333322222222221', 'n_nct': 3, 'nct': [(0, 1), (0, 11), (2, 3)], 'rich': False, 'stored_match': True}
+(15,11,6)#1 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 152, 'maxdeg': 3, 'degseq': '333322222222221', 'n_nct': 3, 'nct': [(0, 1), (0, 11), (2, 3)], 'rich': False, 'stored_match': True}
+(15,11,6)#2 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 157, 'maxdeg': 3, 'degseq': '333322222222221', 'n_nct': 3, 'nct': [(0, 1), (0, 11), (2, 3)], 'rich': False, 'stored_match': True}
+(15,11,6)#3 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 142, 'maxdeg': 3, 'degseq': '333222222222222', 'n_nct': 2, 'nct': [(6, 9), (7, 10)], 'rich': False, 'stored_match': True}
+(15,11,6)#4 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 145, 'maxdeg': 3, 'degseq': '333222222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+(15,11,6)#5 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 148, 'maxdeg': 3, 'degseq': '333222222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+(15,11,6)#6 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 158, 'maxdeg': 3, 'degseq': '333322222222221', 'n_nct': 3, 'nct': [(0, 1), (0, 2), (9, 10)], 'rich': False, 'stored_match': True}
+(15,11,6)#7 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 157, 'maxdeg': 3, 'degseq': '333322222222221', 'n_nct': 3, 'nct': [(0, 1), (0, 2), (9, 10)], 'rich': False, 'stored_match': True}
+(15,11,6)#8 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 154, 'maxdeg': 3, 'degseq': '333322222222221', 'n_nct': 3, 'nct': [(0, 1), (0, 2), (9, 10)], 'rich': False, 'stored_match': True}
+(15,11,6)#9 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 148, 'maxdeg': 3, 'degseq': '333322222222221', 'n_nct': 3, 'nct': [(0, 1), (0, 2), (9, 10)], 'rich': False, 'stored_match': True}
+(15,11,6)#10 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 150, 'maxdeg': 3, 'degseq': '333322222222221', 'n_nct': 3, 'nct': [(0, 1), (0, 2), (9, 10)], 'rich': False, 'stored_match': True}
+(15,11,6)#11 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 165, 'maxdeg': 3, 'degseq': '333332222222211', 'n_nct': 4, 'nct': [(0, 2), (0, 10), (1, 6), (1, 7)], 'rich': False, 'stored_match': True}
+(15,11,6)#12 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 165, 'maxdeg': 3, 'degseq': '333332222222211', 'n_nct': 4, 'nct': [(0, 2), (0, 10), (1, 6), (1, 7)], 'rich': False, 'stored_match': True}
+(15,11,6)#13 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 146, 'maxdeg': 3, 'degseq': '333222222222222', 'n_nct': 2, 'nct': [(7, 9), (8, 10)], 'rich': False, 'stored_match': True}
+(15,11,6)#14 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 146, 'maxdeg': 3, 'degseq': '333222222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+(15,11,6)#15 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 136, 'maxdeg': 3, 'degseq': '333222222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+(15,11,6)#16 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 142, 'maxdeg': 3, 'degseq': '333222222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+(15,11,6)#17 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 141, 'maxdeg': 3, 'degseq': '333222222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+(15,11,6)#18 {'n': 15, 'm': 11, 'tau': 6, 'W': 2, 'inC3_conn': True, 'L1': True, 'nmt': 141, 'maxdeg': 3, 'degseq': '333222222222222', 'n_nct': 2, 'nct': [(4, 9), (5, 10)], 'rich': False, 'stored_match': True}
+(17,13,7)#0 {'n': 17, 'm': 13, 'tau': 7, 'W': 10, 'inC3_conn': True, 'L1': True, 'nmt': 366, 'maxdeg': 3, 'degseq': '33333222222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+(17,13,7)#1 {'n': 17, 'm': 13, 'tau': 7, 'W': 10, 'inC3_conn': True, 'L1': True, 'nmt': 361, 'maxdeg': 3, 'degseq': '33333222222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+(17,13,7)#2 {'n': 17, 'm': 13, 'tau': 7, 'W': 10, 'inC3_conn': True, 'L1': True, 'nmt': 372, 'maxdeg': 3, 'degseq': '33333222222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+(17,13,7)#3 {'n': 17, 'm': 13, 'tau': 7, 'W': 10, 'inC3_conn': True, 'L1': True, 'nmt': 361, 'maxdeg': 3, 'degseq': '33333222222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+(17,13,7)#4 {'n': 17, 'm': 13, 'tau': 7, 'W': 10, 'inC3_conn': True, 'L1': True, 'nmt': 350, 'maxdeg': 3, 'degseq': '33333222222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+(17,13,7)#5 {'n': 17, 'm': 13, 'tau': 7, 'W': 10, 'inC3_conn': True, 'L1': True, 'nmt': 354, 'maxdeg': 3, 'degseq': '33333222222222222', 'n_nct': 0, 'nct': [], 'rich': True, 'stored_match': True}
+RICH ['(10,7,4)#0', '(10,7,4)#3', '(15,11,6)#4', '(15,11,6)#5', '(15,11,6)#14', '(15,11,6)#15', '(15,11,6)#16', '(15,11,6)#17', '(17,13,7)#0', '(17,13,7)#1', '(17,13,7)#2', '(17,13,7)#3', '(17,13,7)#4', '(17,13,7)#5']
+NONRICH ['(3,1,1)#0', '(8,5,3)#0', '(8,5,3)#1', '(10,7,4)#1', '(10,7,4)#2', '(15,11,6)#0', '(15,11,6)#1', '(15,11,6)#2', '(15,11,6)#3', '(15,11,6)#6', '(15,11,6)#7', '(15,11,6)#8', '(15,11,6)#9', '(15,11,6)#10', '(15,11,6)#11', '(15,11,6)#12', '(15,11,6)#13', '(15,11,6)#18']
+Delta<=2 pieces ['(3,1,1)#0', '(8,5,3)#0']
+cell (3, 1, 1) stored 1 stored Delta<=3 1 pieces 1 bijection True iso pairs among pieces 0
+cell (8, 5, 3) stored 2 stored Delta<=3 2 pieces 2 bijection True iso pairs among pieces 0
+cell (10, 7, 4) stored 5 stored Delta<=3 4 pieces 4 bijection True iso pairs among pieces 0
+cell (15, 11, 6) stored 30 stored Delta<=3 19 pieces 19 bijection True iso pairs among pieces 0
+cell (17, 13, 7) stored 6 stored Delta<=3 6 pieces 6 bijection True iso pairs among pieces 0
