@@ -1,0 +1,17 @@
+cell_3_1_1 {'classes': 1, 'with_NC': 1, 'with_b': 1, 'with_e': 0, 'with_f': 0} (0s)
+cell_10_7_4 {'classes': 4, 'with_NC': 2, 'with_b': 0, 'with_e': 0, 'with_f': 0} (0s)
+cell_14_12_6 {'classes': 2, 'with_NC': 0, 'with_b': 0, 'with_e': 0, 'with_f': 0} (0s)
+cell_17_13_7 {'classes': 6, 'with_NC': 0, 'with_b': 0, 'with_e': 0, 'with_f': 0} (0s)
+cell_8_5_3 {'classes': 2, 'with_NC': 2, 'with_b': 0, 'with_e': 2, 'with_f': 0} (0s)
+cell_12_10_5 {'classes': 149, 'with_NC': 59, 'with_b': 0, 'with_e': 0, 'with_f': 0} (0s)
+cell_15_11_6 {'classes': 19, 'with_NC': 13, 'with_b': 0, 'with_e': 0, 'with_f': 0} (0s)
+cell_19_16_8 {'classes': 227, 'with_NC': 18, 'with_b': 0, 'with_e': 0, 'with_f': 0} (3s)
+cell_22_17_9 {'classes': 37, 'with_NC': 37, 'with_b': 0, 'with_e': 0, 'with_f': 0} (4s)
+cell_26_22_11 {'classes': 36, 'with_NC': 0, 'with_b': 0, 'with_e': 0, 'with_f': 0} (11s)
+K29 classes with an NC pair (degree<=2 vertices): 0 of 45
+triangle: tau 2 NC pairs [(0, 1), (0, 5), (1, 2), (1, 3), (1, 5), (2, 3), (3, 4), (3, 5), (4, 5)] b-configs 4 e-configs 14 f-configs 6 [((0, 3), (1, 5)), ((1, 3), (2, 5)), ((1, 4), (3, 5)), ((1, 5), (0, 3)), ((2, 5), (1, 3)), ((3, 5), (1, 4))]
+Theta(cell_8_5_3) -> cell_15_11_6: built 60 near-tight graphs, 19 classes; target classes 19; hit 19; outside target 0 (0s)
+Theta(cell_12_10_5) -> cell_19_16_8: built 498 near-tight graphs, 227 classes; target classes 227; hit 227; outside target 0 (5s)
+Theta(cell_15_11_6) -> cell_22_17_9: built 198 near-tight graphs, 37 classes; target classes 37; hit 37; outside target 0 (3s)
+Theta(cell_19_16_8) -> cell_26_22_11: built 144 near-tight graphs, 36 classes; target classes 36; hit 36; outside target 0 (9s)
+Theta(cell_22_17_9) -> K29: built 282 near-tight graphs, 45 classes; target classes 45; hit 45; outside target 0 (26s)
