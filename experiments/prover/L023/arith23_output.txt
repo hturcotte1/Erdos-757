@@ -1,0 +1,35 @@
+(a) K8 at n=25: 17*tau <= 5n + 3m <= 125 + 3*23 = 194, so tau <= 11, h >= 14
+    4/7 threshold at n=25: h <= ceil(100/7) - 1 = 14
+    tau = 11 allowed by K8 with m = 21; I11 slack 75 + 2m - 121 = -4
+    tau = 11 allowed by K8 with m = 22; I11 slack 75 + 2m - 121 = -2
+    tau = 11 allowed by K8 with m = 23; I11 slack 75 + 2m - 121 = 0
+(b) degree bound: v of degree d, H - v: 24 vertices, 23 - d edges, tau(H-v) in {10, 11}
+    d=1 tau(H-v)=10: 11*10 = 110 <= 72 + 2*(23-1) = 116 ? True
+    d=1 tau(H-v)=11: 11*11 = 121 <= 72 + 2*(23-1) = 116 ? False
+    d=2 tau(H-v)=10: 11*10 = 110 <= 72 + 2*(23-2) = 114 ? True
+    d=2 tau(H-v)=11: 11*11 = 121 <= 72 + 2*(23-2) = 114 ? False
+    d=3 tau(H-v)=10: 11*10 = 110 <= 72 + 2*(23-3) = 112 ? True
+    d=3 tau(H-v)=11: 11*11 = 121 <= 72 + 2*(23-3) = 112 ? False
+    d=4 tau(H-v)=10: 11*10 = 110 <= 72 + 2*(23-4) = 110 ? True
+    d=4 tau(H-v)=11: 11*11 = 121 <= 72 + 2*(23-4) = 110 ? False
+    d=5 tau(H-v)=10: 11*10 = 110 <= 72 + 2*(23-5) = 108 ? False
+    d=5 tau(H-v)=11: 11*11 = 121 <= 72 + 2*(23-5) = 108 ? False
+    d=6 tau(H-v)=10: 11*10 = 110 <= 72 + 2*(23-6) = 106 ? False
+    d=6 tau(H-v)=11: 11*11 = 121 <= 72 + 2*(23-6) = 106 ? False
+    d=7 tau(H-v)=10: 11*10 = 110 <= 72 + 2*(23-7) = 104 ? False
+    d=7 tau(H-v)=11: 11*11 = 121 <= 72 + 2*(23-7) = 104 ? False
+(c) top key (25,23,11,4): d from ceil(3*23/25) = 3 to 4
+    d=3 tp=10 S' = 3*24 + 2*(23-3) - 11*10 = 2
+    d=3 tp=11 S' = 3*24 + 2*(23-3) - 11*11 = -9
+    d=4 tp=10 S' = 3*24 + 2*(23-4) - 11*10 = 0
+    d=4 tp=11 S' = 3*24 + 2*(23-4) - 11*11 = -11
+(d) Corollary 5: records need h <= ceil(4n/7) - 1; K8 bound h >= n - floor((5n + 3(n-2))/17)
+    n=23: record needs h <= 13; K8 gives h >= 13 (not excluded by K8); I11 (if it held) h >= 13; ceil(n/2)+2 = 14
+    n=24: record needs h <= 13; K8 gives h >= 14 (excluded); I11 (if it held) h >= 14; ceil(n/2)+2 = 14
+    n=25: record needs h <= 14; K8 gives h >= 14 (not excluded by K8); I11 (if it held) h >= 14; ceil(n/2)+2 = 15
+    n=26: record needs h <= 14; K8 gives h >= 15 (excluded); I11 (if it held) h >= 15; ceil(n/2)+2 = 15
+    n=27: record needs h <= 15; K8 gives h >= 15 (not excluded by K8); I11 (if it held) h >= 16; ceil(n/2)+2 = 16
+    n=28: record needs h <= 15; K8 gives h >= 16 (excluded); I11 (if it held) h >= 16; ceil(n/2)+2 = 16
+    n=29: record needs h <= 16; K8 gives h >= 16 (not excluded by K8); I11 (if it held) h >= 17; ceil(n/2)+2 = 17
+    n=30: record needs h <= 17; K8 gives h >= 17 (not excluded by K8); I11 (if it held) h >= 17; ceil(n/2)+2 = 17
+    Henning-Yeo bound at n=25: n - floor((8n-6)/17) = 14

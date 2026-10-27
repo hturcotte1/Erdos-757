@@ -591,3 +591,8 @@ Format for each work block:
 
 ## 2026-10-27T06:54Z result L019 round 1: opus NEEDS-WORK (editorial only), fable ACCEPT WITH FIXES, scout PARTIAL; the proved parts stand
 - Reviews results/reviews/L019-triple-coverage-C1__referee__20261027T065058Z.md (opus: no mathematical error, no unmarked gap; 79,426 folds, 0 failures; Theorems 1-4, Lemma 7, Prop. 10 also hold in analogue classes; defects: incomplete C8 evidence file for (26,22,11) (claim itself confirmed independently: 144 triples, all (6,4)), L017 tags outdated, restricted form of C1 not labelled, remark-level items), ...__referee__20261027T060439Z.md (fable: every proved statement correct, 0 failures on 21,040 folds; same C8 file issue, reproduced by its own C++ code; small editorial items), ...__scout__20261027T061122Z.md (PARTIAL: the folding lemma's graph case is Chen-Kanj-Jia's degree-2 vertex folding (J. Algorithms 41, 2001); the 3-uniform form with slack +1 and the class-C criterion is new; Thms 2-3 are standard potential bookkeeping at the I11 weights). Fixes being applied (worker); round 2 next. [verified-here pending round 2]
+
+## 2026-10-27T07:13Z check full test suite after the f(21) recording: ......................... [ 43%]
+........................................................................ [ 87%]
+....................                                                     [100%]
+EXIT 0 (python3 -m pytest -q tests/, nice 15)

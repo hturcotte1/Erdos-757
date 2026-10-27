@@ -1,0 +1,9 @@
+EQUAL cell_16_9_6_D4.txt recomputed 0 stored 0
+EQUAL cell_17_13_7_D4.txt recomputed 10 stored 10
+EQUAL cell_19_10_7_D4.txt recomputed 0 stored 0
+EQUAL cell_20_14_8_D4.txt recomputed 0 stored 0
+EQUAL cell_21_18_9_D4.txt recomputed 12 stored 12
+EQUAL cell_22_11_8_D4.txt recomputed 0 stored 0
+EQUAL cell_23_15_9_D4.txt recomputed 0 stored 0
+EQUAL cell_24_19_10_D4.txt recomputed 0 stored 0
+SUMMARY recomputed lists compared 8 equal 8 different 0

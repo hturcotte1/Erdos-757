@@ -1,0 +1,88 @@
+=== replace old lines 4-4 -> new lines 4-4
+  [replace] ...STATUS: PARTIAL 
+     OLD: (2026-10-27,
+     NEW: (Conjecture
+  [replace] ...STATUS: PARTIAL (2026-10-27, 
+     OLD: prover;
+     NEW: C1
+  [replace] ...STATUS: PARTIAL (2026-10-27, prover; 
+     OLD: unrefereed).
+     NEW: not proved; GAP 1, GAP 2); revised 2026-10-27 06:55 UTC after referee round 1 (opus NEEDS-WORK = editorial only; fable ACCEPT WITH FIXES; scout PARTIAL: attributions added); submitted 2026-10-27 (prover).
+=== replace old lines 6-6 -> new lines 6-6
+  [replace] ...- L017 (results/proofs/L017-i11-minimal-counterexample-structure.md) 
+     OLD: [derived-here,
+     NEW: [verified-here:
+  [replace] ...- L017 (results/proofs/L017-i11-minimal-counterexample-structure.md) [derived-here, 
+     OLD: unrefereed]:
+     NEW: Theorems 1-6, ACCEPTED, K64; Theorem 7 published (re-proved there); L017 Corollaries 13.3(iii) and 13.5(i) are unrefereed computations]:
+  [replace] ...the GAP section, and L017 Theorem 
+     OLD: 5(A)(iv),
+     NEW: 5(A)(iv) [verified-here, ACCEPTED],
+  [insert] ... 5(A)(iv), Corollary 13.3(iii) and Corollary 13.5(i)
+     NEW:  [both unrefereed computations]
+=== replace old lines 21-21 -> new lines 21-21
+  [insert] ... setting of C1* (it implies $s(F)\in\{0,1\}$).
+     NEW:  *This is a restricted form of the source Conjecture C1* (experiments/20261027-0300-transversal-richness/README.md, "Conjectures", item (C1)): the source statement has neither the hypothesis "$F$ connected" nor the hypothesis "I11 holds for every member of $C$ with at most $n_F$ vertices"; both are added here (they are exactly what is available for the $F=H-v$ of a minimal counterexample, Theorem 4(b)), so a proof of the statement above does not prove the unrestricted source conjecture.
+=== replace old lines 30-30 -> new lines 30-30
+  [insert] ... minimum transversal of $H-y$) and triple-rich
+     NEW:  (the analogue for three pairwise disjoint pairs $Q_1,Q_2,Q_3$: if $(H-y)+w(Q_1,Q_2,Q_3)\in C$, some minimum transversal of $H-y$ meets all three)
+=== replace old lines 68-68 -> new lines 68-68
+  [replace] ...counterexample has $s=-1$, by L017 Corollary 
+     OLD: 13.3(iii).)
+     NEW: 13.3(iii); these two corollaries are unrefereed computations (L017 tags them [verified-here as a computation, not refereed]), so this parenthetical is not a refereed input.)
+=== insert old lines 75-74 -> new lines 75-76
+  [insert] ...
+     NEW: 
+Provenance and novelty (scout round 1, PARTIAL). **Theorem 5**: the graph case is the classical degree-2 vertex folding of Chen, Kanj and Jia (J. Algorithms 41 (2001) 280-301; see also arXiv:1312.6260, arXiv:1708.06151) [published]; new here is only the 3-uniform linear form with the exact slack change $+1$ (part (c)) and the class-$C$ criterion (parts (d)-(e)) [derived-here]. **Theorems 2-3** are standard minimal-counterexample potential bookkeeping (Thomassé-Yeo; Henning-Yeo arXiv:1802.01825, Claim B) applied at the I11 weights, not new methods [published technique, derived-here application].
+=== replace old lines 169-169 -> new lines 171-171
+  [insert] ... degree 2 whose folds are blocked.
+     NEW:  (The statements "no vertex of degree 1" and "$s=-1$" in this remark rest on L017 Corollaries 13.5(i) and 13.3(iii), which are unrefereed computations, in addition to Conjecture T3.)
+=== replace old lines 174-174 -> new lines 176-176
+  [replace] ...with $s=s(H)$), $0\le s(H-Z)\le s(H)+11|T|-21-2(3+k)$, i.e. 
+     OLD: $11|T|\ge27+2k-s(H)\ge28+2k$.
+     NEW: $11|T|\ge27+2k-s(H)\ge28+2k$ (using $s(H)\le-1$).
+  [replace] ...$k\ge3$: $11|T|\ge34$, $|T|\ge4$. With $k\ge9$ and 
+     OLD: $s(H)\ge-2$:
+     NEW: $s(H)\le-1$:
+=== replace old lines 186-186 -> new lines 188-188
+  [insert] ...or slack $\ge-2$ on $n$ vertices. 
+     NEW: [heuristic] 
+  [replace] ...this case without an additional structural 
+     OLD: input.
+     NEW: input (Proposition 8 proves only that no single exact operation gives a contradiction; the sentence is a judgement, not a theorem).
+=== replace old lines 188-188 -> new lines 190-190
+  [insert] ...L017 Corollary 13.3 under Conjecture T3). 
+     NEW: [heuristic] 
+  [replace] ...by a purely local argument from 
+     OLD: folds:
+     NEW: folds (this is a judgement supported by the following data, not a theorem):
+  [replace] ...is the argument of L017 Corollary 
+     OLD: 13.3(iii)
+     NEW: 13.3(iii), an unrefereed computation there,
+=== replace old lines 190-190 -> new lines 192-192
+  [insert] ...uncoverable triple in the stored lists 
+     NEW: with slack at most $1$ 
+  [replace] ...stored lists necessarily has $F+v\notin C$ 
+     OLD: (this
+     NEW: (for the slack-2 cells this is false: Sanity checks, last bullet; this
+=== replace old lines 195-195 -> new lines 197-197
+  [insert] ...mismatches; the blocking saturated sets found 
+     NEW: in these five cells 
+  [replace] ...sets found have 8 or 9 
+     OLD: vertices).
+     NEW: vertices; the bound $|S|\ge6$ of Theorem 5(d) is attained: blocking saturated sets of size 6 (and 7) occur in $(10,8,4)$, per the fable referee's independent computation, round 1).
+=== replace old lines 199-200 -> new lines 201-202
+  [insert] ... $(6,4)$; $(5,4)$, $(6,4)$, $(7,5)$; $(6,4)$; $(6,4)$.
+     NEW:  *Evidence note (round 1):* the stored file `nbhd_cover_output.txt` initially lacked the $(26,22,11)$ line, because the original `reproduce.sh` gave each C8 run 1800 s and the $(26,22,11)$ run exceeded it (the script aborted there under `set -e`; the `exit 0` in the old `reproduce.log` was misleading). The $(26,22,11)$ entry (144 triples, all $(6,4)$) was reproduced independently by both round-1 referees (opus `c8_check.py`: 144 triples, all $(6,4)$; fable `nbhd26.cpp`: the same, and also the prover's counts 24, 154, 380 for the other three cells); `reproduce.sh` now allows 5400 s for the C8 runs. The missing line was then regenerated by re-running that single step (about 5 minutes, one process, exit status 0) and appended to `nbhd_cover_output.txt`: `cell_26_22_11.txt ... {(6, 4): 144}`.
+  [replace] ...together): over all stored classes of 
+     OLD: all
+     NEW: 17
+  [replace] ...over all stored classes of all 
+     OLD: 17
+     NEW: of the 19
+  [replace] ...cells of slack 0, 1, 2 
+     OLD: (experiments/20261027-0300-transversal-richness/inputs)
+     NEW: (experiments/20261027-0300-transversal-richness/inputs; the loop skips the slack-0 cell $(3,1,1)$ and the slack-1 cell $(23,21,10)$ with 699 classes; the claim still holds in $(23,21,10)$, because by the opus referee's recomputation every class there has a vertex degree outside $\{2,3\}$)
+=== replace old lines 206-206 -> new lines 208-208
+  [insert] ... whose hypothesis $K^+\in C$ fails there.
+     NEW:  Because the gadget $F_7\notin C$, this example is not a test of the lemma inside $C$; it shows only that the slack hypothesis cannot be dropped in the class of all linear 3-graphs (the hereditary analogue where Theorems 1-4 also make sense).
