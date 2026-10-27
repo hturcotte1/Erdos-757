@@ -6,3 +6,4 @@ VIOL crit=0 n=14 m=11 tau=6 s=-2 edges=(0,1,2)(0,3,4)(0,5,6)(7,8,9)(10,11,12)(7,
 SUMMARY n=14 m=11 graphs=820881 violators=1 vertex_critical=0
 SUMMARY n=14 m=12 graphs=1493310 violators=0 vertex_critical=0
 SUMMARY n=14 m=14 graphs=21398 violators=0 vertex_critical=0
+SUMMARY n=14 m=13 graphs=729321 violators=0 vertex_critical=0 (rerun)

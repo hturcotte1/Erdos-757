@@ -667,3 +667,11 @@ cell_26_22_11_D3.txt #28 (n,m,tau,s)=(26,22,11,1) antiV2=[] role_b=0 role_c=0 ro
 cell_26_22_11_D3.txt #29 (n,m,tau,s)=(26,22,11,1) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
 cell_26_22_11_D3.txt #30 (n,m,tau,s)=(26,22,11,1) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
 cell_26_22_11_D3.txt #31 (n,m,tau,s)=(26,22,11,1) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_26_22_11_D3.txt #32 (n,m,tau,s)=(26,22,11,1) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_26_22_11_D3.txt #33 (n,m,tau,s)=(26,22,11,1) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_26_22_11_D3.txt #34 (n,m,tau,s)=(26,22,11,1) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_26_22_11_D3.txt #35 (n,m,tau,s)=(26,22,11,1) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+SUMMARY cell_26_22_11_D3.txt (all pairs): {'classes': 36, 'with_b': 0, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 0, 'u_fail': 0, 'pl_fail': 0, 'anti_all': 0, 'types': {}}  [757.7s]
+
+##### roles.py v2 ((12,10,5), (19,16,8))
+SUMMARY cell_12_10_5_D3.txt (deg<=2 pairs): {'classes': 149, 'with_b': 0, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 59, 'u_fail': 0, 'pl_fail': 0, 'anti_all': 83, 'types': {(2, 2, 1): 48, (1, 2, 1): 35}}  [174.3s]

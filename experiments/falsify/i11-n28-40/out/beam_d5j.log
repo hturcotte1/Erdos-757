@@ -31,3 +31,14 @@ seeds 2218
 28 parents 100 kids 0 -> n+1 {'pool': 151, 'minslack': 3, 'hist': {5: 59, 3: 1}} t=906s
   vext chunk timeouts at level 29 3
 29 parents 80 kids 0 -> n+1 {'pool': 149, 'minslack': 6, 'hist': {6: 57}} t=1026s
+  vext chunk timeouts at level 30 3
+30 parents 77 kids 0 -> n+1 {'pool': 116, 'minslack': 2, 'hist': {11: 10, 2: 1, 6: 1, 8: 1}} t=1146s
+31 parents 22 kids 0 -> n+1 {'pool': 182, 'minslack': 3, 'hist': {5: 55, 3: 1, 7: 1}} t=1147s
+32 parents 77 kids 0 -> n+1 {'pool': 133, 'minslack': 5, 'hist': {12: 7, 10: 4, 5: 1}} t=1147s
+33 parents 21 kids 0 -> n+1 {'pool': 238, 'minslack': 4, 'hist': {6: 50, 4: 1}} t=1147s
+34 parents 71 kids 0 -> n+1 {'pool': 147, 'minslack': 9, 'hist': {11: 20, 9: 1}} t=1147s
+35 parents 20 kids 0 -> n+1 {'pool': 240, 'minslack': 3, 'hist': {5: 52, 3: 1}} t=1147s
+36 parents 73 kids 0 -> n+1 {'pool': 252, 'minslack': 10, 'hist': {10: 19, 12: 1}} t=1148s
+37 parents 20 kids 0 -> n+1 {'pool': 248, 'minslack': 2, 'hist': {6: 41, 2: 4}} t=1148s
+38 parents 65 kids 0 -> n+1 {'pool': 253, 'minslack': 11, 'hist': {11: 8}} t=1148s
+39 parents 20 kids 0 -> n+1 {'pool': 14, 'minslack': 12, 'hist': {12: 14}} t=1148s

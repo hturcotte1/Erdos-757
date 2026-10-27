@@ -1,0 +1,2 @@
+library of free-choice components: 60 Counter({(7, 6): 18, (3, 1): 10, (6, 3): 7, (6, 4): 6, (7, 7): 5, (8, 8): 5, (8, 6): 5, (7, 5): 3, (8, 5): 1})
+{'a': 412, 'a nostar': 85, 'a star': 327, 'b': 2186, 'b nostar': 2045, 'b star': 141, 'c1': 126, 'c1 nostar': 95, 'c1 star': 31, 'c2': 6, 'c2 nostar': 6, 'd': 5, 'd nostar': 2, 'd star': 3, 'e': 91, 'e nostar': 80, 'e star': 11, 'f': 1271, 'f nostar': 1155, 'f star': 116, 'non-deficient': 1154} BAD = 0
