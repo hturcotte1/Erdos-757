@@ -1,0 +1,5 @@
+level 0 from n 25 {'raw_solutions': 12, 'MIS': 8496, 'secs': 7.8, 'notC': 12, 'tight': 0, 'distinct_classes': 0, 'sampled': 12} 8
+level 0 from n 25 {'raw_solutions': 12, 'MIS': 8496, 'secs': 9.3, 'notC': 12, 'tight': 0, 'distinct_classes': 0, 'sampled': 12} 18
+level 0 from n 25 {'raw_solutions': 12, 'MIS': 8496, 'secs': 7.5, 'notC': 12, 'tight': 0, 'distinct_classes': 0, 'sampled': 12} 26
+level 0 from n 25 {'raw_solutions': 12, 'MIS': 8496, 'secs': 9.3, 'notC': 12, 'tight': 0, 'distinct_classes': 0, 'sampled': 12} 36
+LEVEL 0 new distinct tight graphs 0 n= []
