@@ -1,0 +1,5 @@
+root degree 1 radius 1 nodes 9 reducible 5 irreducible leaves 2
+reducing Z (|Z|, value) counts: [((2, 1), 2), ((3, 2), 2), ((3, 4), 1)]
+irreducible leaves in class C: 2
+  inC=True processed-degrees=(1, 1, 1) : 1
+  inC=True processed-degrees=(1, 2, 2) : 1

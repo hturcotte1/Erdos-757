@@ -16,3 +16,4 @@ seeds 2218
 19 parents 278 kids 10 -> n+1 {'pool': 90, 'minslack': 2, 'hist': {6: 44, 4: 3, 2: 1}} t=40s
 20 parents 86 kids 92 -> n+1 {'pool': 165, 'minslack': 0, 'hist': {9: 35, 5: 11, 7: 11, 0: 5, 2: 2}} t=69s
 21 parents 130 kids 9247 -> n+1 {'pool': 9335, 'minslack': 1, 'hist': {5: 4491, 7: 4314, 3: 54, 1: 21}} t=192s
+22 parents 875 kids 130 -> n+1 {'pool': 236, 'minslack': 1, 'hist': {1: 120, 6: 59}} t=552s

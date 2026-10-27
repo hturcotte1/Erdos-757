@@ -1,0 +1,19 @@
+root degree 1 radius 3 nodes 40912 reducible 35687 irreducible leaves 10
+reducing Z (|Z|, value) counts: [((2, 1), 68), ((3, 2), 42), ((3, 4), 1), ((4, 0), 18531), ((4, 2), 638), ((5, 0), 38), ((5, 1), 935), ((5, 3), 521), ((6, 1), 74), ((6, 3), 142), ((7, 0), 1581), ((7, 2), 9567), ((7, 4), 26), ((9, 1), 1965), ((9, 3), 946), ((11, 2), 612)]
+irreducible leaves in class C: 10
+  inC=True processed-degrees=(1, 1, 1) : 1
+  inC=True processed-degrees=(1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2) : 1
+  inC=True processed-degrees=(1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2) : 1
+  inC=True processed-degrees=(1, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 2) : 1
+  inC=True processed-degrees=(1, 2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2) : 1
+  inC=True processed-degrees=(1, 2, 2, 2, 3, 2, 2, 2, 3, 3, 2, 2) : 1
+  inC=True processed-degrees=(1, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2) : 1
+  inC=True processed-degrees=(1, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2) : 1
+  inC=True processed-degrees=(1, 2, 2, 3, 2, 2, 3, 2, 2, 2, 2, 2) : 1
+  inC=True processed-degrees=(1, 2, 2, 3, 2, 2, 3, 3, 2, 2, 2, 2) : 1
+
+real	2m38.522s
+user	0m20.226s
+sys	0m0.143s
+
+[exited with code 0]
