@@ -1,0 +1,9 @@
+cell_3_1_1 graphs 1 done in 0s | running: deg3 0 patterns {} NC pairs 3 fails 0
+cell_10_7_4 graphs 4 done in 0s | running: deg3 6 patterns {'a': 2, 'b': 2, 'f': 2} NC pairs 7 fails 0
+cell_14_12_6 graphs 2 done in 0s | running: deg3 22 patterns {'a': 18, 'b': 2, 'f': 2} NC pairs 7 fails 0
+cell_17_13_7 graphs 6 done in 0s | running: deg3 52 patterns {'a': 26, 'b': 6, 'f': 14, 'e': 6} NC pairs 7 fails 0
+cell_8_5_3 graphs 2 done in 0s | running: deg3 53 patterns {'a': 26, 'b': 6, 'f': 14, 'e': 6, 'i2': 1} NC pairs 17 fails 0
+cell_12_10_5 graphs 149 done in 2s | running: deg3 984 patterns {'a': 908, 'b': 9, 'f': 21, 'e': 6, 'i2': 1, 'i1': 39} NC pairs 100 fails 0
+cell_15_11_6 graphs 19 done in 0s | running: deg3 1053 patterns {'a': 931, 'b': 19, 'f': 43, 'e': 15, 'i2': 6, 'i1': 39} NC pairs 133 fails 0
+cell_19_16_8 graphs 227 done in 25s | running: deg3 3329 patterns {'a': 2775, 'b': 95, 'f': 309, 'e': 105, 'i2': 6, 'i1': 39} NC pairs 157 fails 0
+cell_22_17_9 graphs 37 done in 5s | running: deg3 3607 patterns {'a': 2887, 'b': 121, 'f': 398, 'e': 147, 'i2': 15, 'i1': 39} NC pairs 204 fails 0

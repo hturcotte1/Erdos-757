@@ -1,6 +1,6 @@
 # L022 work folder: I11 on the realizable class R (route "the realizable class only")
 
-Prover run of 2026-10-27 (about 05:20-07:50 UTC). Certificate: results/proofs/L022-i11-realizable-route.md (submitted; unrefereed).
+Prover run of 2026-10-27 (about 05:20-06:45 UTC). Certificate: results/proofs/L022-i11-realizable-route.md (submitted; unrefereed).
 All scripts use exact integer / Fraction arithmetic; run from this folder with `nice -n 10` and a `timeout`.
 
 ## Question
@@ -9,7 +9,7 @@ Can the order structure of a (4,5)-set (midpoint map, extreme points, K30, K31, 
 the minimal-counterexample theory of L017/L018 for the abstract class C?
 
 ## Answer (short)
-No proof and no finite reduction. Proved instead (hand proofs, unrefereed):
+No proof of I11 on R, and no reduction of it to a finite computation for all n (only the step n = 30 is reduced to two cells, Corollary 3'). Proved instead (hand proofs, unrefereed):
 - Theorem 1: the AP relations of any set with injective midpoints are linearly independent (maximum principle), hence R is
   closed under deleting edges as well as vertices (and under disjoint unions); the minimal-counterexample theory of C,
   including edge-criticality (L017 Thm 1(g)), transfers to R verbatim.
@@ -40,8 +40,8 @@ configurations have realizable labellings, and the relevant pieces (m <= n-4) ar
 | order_checks.py | `python3 order_checks.py` | order_checks.txt | O1-O7 and rank = m on every stored set (C2) |
 | edge_delete_check.py | `python3 edge_delete_check.py 1 10` | edge_delete_check.txt | Theorem 1(c): all deletions realized (C3) |
 | test_subext.py | `python3 test_subext.py 1 40000 7 12`, `... 3 20000 7 11`, `... 2 60000 9 13` | test_subext_1.txt, test_subext_3.txt, test_subext_2.txt | Theorem 2 on linear vertex-critical violators outside C: 0 failures (C4) |
-| test_patterns_e_f.py | `python3 test_patterns_e_f.py 1 20000` | (printed; in L022 C6) | random (e)/(f) configurations on stored pieces: (*) never holds |
-| test_ef_exhaustive.py | `python3 test_ef_exhaustive.py` | test_ef_exhaustive.txt | identities of Steps 2.2-2.3 wherever (*) holds (C6) |
+| test_patterns_e_f.py | `python3 test_patterns_e_f.py 1 20000` | test_patterns_e_f.txt | random (e)/(f) configurations on stored pieces: (*) never holds (C6) |
+| test_ef_exhaustive.py | `python3 test_ef_exhaustive.py` | test_ef_exhaustive.txt | identities of Steps 2.2-2.4 wherever (*) holds; only 25 pattern-(e) cases occur, no pattern-(f) case (C6) |
 | local_configs.py | `python3 local_configs.py` | local_configs.txt | local configurations of (b), (f) with an E_1 side realizable; F7 not (C5) |
 | minimal_obstruction_10_7_4.py | `python3 minimal_obstruction_10_7_4.py` | minimal_obstruction_10_7_4.txt | Q10 = (10,7,4)#0 is a minimal non-realizable configuration (C7) |
 | independence_stress.py | `python3 independence_stress.py 1 3000` | independence_stress.txt | Theorem 1(b) on 3,000 random ordered midpoint patterns: 0 dependent (C8) |
@@ -54,5 +54,5 @@ unrefereed); data/small_records.json; results/claims/C001-C006 (C006 appeared du
 ## Caveats
 - rexact.py is an unrefereed tool; its pruning is sound (forced coincidences hold on the whole solution space), and every
   positive answer was re-checked by an explicit integer (4,5)-set with exactly the given APs.
-- The random tests C4 are not deduplicated up to isomorphism and never produced pattern (f); C6 exercises the identities.
+- The random tests C4 are not deduplicated up to isomorphism and never produced pattern (f); C6 exercises the identities of pattern (e) only (no pattern-(f) configuration on the stored pieces satisfies (*)).
 - Nothing here proves I11 on R for any n beyond the range already known on C (n <= 27, L016).

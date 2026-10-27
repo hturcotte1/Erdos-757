@@ -1,0 +1,11 @@
+N 1 graphs so far 1 fails 0 equality cases 0
+N 2 graphs so far 3 fails 0 equality cases 0
+N 3 graphs so far 7 fails 0 equality cases 0
+N 4 graphs so far 18 fails 0 equality cases 0
+N 5 graphs so far 41 fails 0 equality cases 1
+N 6 graphs so far 103 fails 0 equality cases 2
+N 7 graphs so far 253 fails 0 equality cases 3
+N 8 graphs so far 677 fails 0 equality cases 4
+N 9 graphs so far 1842 fails 0 equality cases 5
+LEMMA 2.1: graphs 1842 failures 0 equality (E>0) 5
+THEOREM 2 random test: tested 3000 failures 0

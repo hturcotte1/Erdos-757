@@ -1,0 +1,11 @@
+cell_3_1_1.txt {'classes': 1, 'with_b': 1, 'with_e': 0, 'with_f': 0, 'with_nc': 1, 'all_vertices_covered': 1, 'tau_ok': 1, 'inC': 1, 'connected': 1} 0.0s
+cell_10_7_4.txt {'classes': 4, 'with_b': 0, 'with_e': 0, 'with_f': 0, 'with_nc': 2, 'all_vertices_covered': 4, 'tau_ok': 4, 'inC': 4, 'connected': 4} 0.0s
+cell_14_12_6.txt {'classes': 2, 'with_b': 0, 'with_e': 0, 'with_f': 0, 'with_nc': 0, 'all_vertices_covered': 2, 'tau_ok': 2, 'inC': 2, 'connected': 2} 0.0s
+cell_17_13_7.txt {'classes': 6, 'with_b': 0, 'with_e': 0, 'with_f': 0, 'with_nc': 0, 'all_vertices_covered': 6, 'tau_ok': 6, 'inC': 6, 'connected': 6} 0.0s
+cell_8_5_3.txt {'classes': 2, 'with_b': 0, 'with_e': 2, 'with_f': 0, 'with_nc': 2, 'all_vertices_covered': 2, 'tau_ok': 2, 'inC': 2, 'connected': 2} 0.0s
+cell_12_10_5.txt {'classes': 149, 'with_b': 0, 'with_e': 0, 'with_f': 0, 'with_nc': 59, 'all_vertices_covered': 149, 'tau_ok': 149, 'inC': 149, 'connected': 149} 0.7s
+cell_15_11_6.txt {'classes': 19, 'with_b': 0, 'with_e': 0, 'with_f': 0, 'with_nc': 13, 'all_vertices_covered': 19, 'tau_ok': 19, 'inC': 19, 'connected': 19} 0.2s
+cell_19_16_8.txt {'classes': 227, 'with_b': 0, 'with_e': 0, 'with_f': 0, 'with_nc': 18, 'all_vertices_covered': 227, 'tau_ok': 227, 'inC': 227, 'connected': 227} 6.1s
+cell_22_17_9.txt {'classes': 37, 'with_b': 0, 'with_e': 0, 'with_f': 0, 'with_nc': 37, 'all_vertices_covered': 37, 'tau_ok': 37, 'inC': 37, 'connected': 37} 2.2s
+cell_26_22_11.txt {'classes': 36, 'with_b': 0, 'with_e': 0, 'with_f': 0, 'with_nc': 0, 'all_vertices_covered': 36, 'tau_ok': 36, 'inC': 36, 'connected': 36} 11.7s
+NC pairs total 204 types (dmin,dmax,sigma): {(1, 1, 0): 1, (1, 1, 1): 3, (1, 2, 0): 1, (1, 2, 1): 104, (2, 2, 1): 95} Prop6 failures 0
