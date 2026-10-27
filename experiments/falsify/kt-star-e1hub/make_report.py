@@ -3,13 +3,19 @@ import json, glob, os, collections
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 inv = json.load(open('inventory.json'))
 cells = {}
-for f in ['main_others.jsonl', 'main_25_15_9.jsonl']:
-    if not os.path.exists(f): continue
+PARTS = sorted(glob.glob('main_25_15_9.part*.jsonl'))
+for f in ['main_others.jsonl'] + PARTS:
     for l in open(f):
         d = json.loads(l)
-        if d['type'] == 'cell': cells[d['cell']] = d
+        if d['type'] == 'cell':
+            if d['cell'] in cells and f in PARTS:
+                c = cells[d['cell']]
+                for x in ('graphs', 'bconf_labelled', 'graphs_with_bconf', 'hub_classes_new', 'hub_inC', 'notinT_low_vertices'): c[x] += d[x]
+                for kk, vv in d['hubs_by_cell'].items(): c['hubs_by_cell'][kk] = c['hubs_by_cell'].get(kk, 0) + vv
+                c['minP'] = min(c['minP'], d['minP']) if c['minP'] is not None and d['minP'] is not None else (c['minP'] if d['minP'] is None else d['minP'])
+            else: cells[d['cell']] = d
 Hs = []
-for f in ['main_others.jsonl', 'main_25_15_9.jsonl']:
+for f in ['main_others.jsonl'] + PARTS:
     if os.path.exists(f):
         for l in open(f):
             d = json.loads(l)

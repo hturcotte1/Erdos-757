@@ -1,1 +1,2 @@
 branch d=4: 67 inputs built (expected 67)
+   ext_d noprune: SUMMARY graphs=67 bad_tau=0 tg_too_small=0 searched=67 max_min_covers=5613 nodes=69342539 hits_all=15032 printed=15032 (19s); hits 15032 (expected 15032)

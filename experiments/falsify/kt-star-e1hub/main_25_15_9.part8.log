@@ -1,0 +1,2 @@
+H records written 80
+(25, 15, 9) {'type': 'cell', 'cell': '(25, 15, 9)', 'A': 12, 'D': 3, 'graphs': 571, 'nonconnected': 0, 'bconf_labelled': 108, 'graphs_with_bconf': 40, 'notinT_low_vertices': 0, 'hub_classes_new': 80, 'hub_inC': 80, 'hubs_by_cell': {'(29,19,11)': 80}, 'minP': 0, 'minPp_nonpiece': 0} [40s]
