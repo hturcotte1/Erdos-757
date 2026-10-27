@@ -1,0 +1,2879 @@
+{
+ "amax": 15,
+ "summary": [
+  {
+   "cell": [
+    3,
+    1,
+    1
+   ],
+   "A": -16,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_3_1_1_D3.txt",
+   "graphs": 1,
+   "irreducible": 1,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": -16,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    8,
+    5,
+    3
+   ],
+   "A": -5,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_8_5_3_D3.txt",
+   "graphs": 2,
+   "irreducible": 2,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": -5,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    9,
+    4,
+    3
+   ],
+   "A": -13,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_9_4_3_D3.txt",
+   "graphs": 1,
+   "irreducible": 0,
+   "reducible": 1,
+   "P_zero": 1,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    10,
+    7,
+    4
+   ],
+   "A": -13,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_10_7_4_D3.txt",
+   "graphs": 4,
+   "irreducible": 4,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": -13,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    11,
+    6,
+    4
+   ],
+   "A": -21,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_11_6_4_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    13,
+    8,
+    5
+   ],
+   "A": -29,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_13_8_5_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    14,
+    7,
+    5
+   ],
+   "A": -37,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_14_7_5_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    14,
+    8,
+    5
+   ],
+   "A": -2,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_14_8_5_D3.txt",
+   "graphs": 9,
+   "irreducible": 0,
+   "reducible": 9,
+   "P_zero": 9,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    15,
+    7,
+    5
+   ],
+   "A": -10,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_15_7_5_D3.txt",
+   "graphs": 2,
+   "irreducible": 0,
+   "reducible": 2,
+   "P_zero": 2,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    15,
+    11,
+    6
+   ],
+   "A": -2,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_15_11_6_D3.txt",
+   "graphs": 19,
+   "irreducible": 19,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": -2,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    16,
+    9,
+    6
+   ],
+   "A": -45,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_16_9_6_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    16,
+    10,
+    6
+   ],
+   "A": -10,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_16_10_6_D3.txt",
+   "graphs": 16,
+   "irreducible": 0,
+   "reducible": 16,
+   "P_zero": 16,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    17,
+    8,
+    6
+   ],
+   "A": -53,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_17_8_6_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    17,
+    9,
+    6
+   ],
+   "A": -18,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_17_9_6_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    17,
+    13,
+    7
+   ],
+   "A": -10,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_17_13_7_D3.txt",
+   "graphs": 6,
+   "irreducible": 6,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": -10,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    18,
+    12,
+    7
+   ],
+   "A": -18,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_18_12_7_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    19,
+    10,
+    7
+   ],
+   "A": -61,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_19_10_7_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    19,
+    11,
+    7
+   ],
+   "A": -26,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_19_11_7_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    20,
+    10,
+    7
+   ],
+   "A": -34,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_20_10_7_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    20,
+    14,
+    8
+   ],
+   "A": -26,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_20_14_8_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    21,
+    10,
+    7
+   ],
+   "A": -7,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_21_10_7_D3.txt",
+   "graphs": 5,
+   "irreducible": 0,
+   "reducible": 5,
+   "P_zero": 5,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    21,
+    13,
+    8
+   ],
+   "A": -34,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_21_13_8_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    22,
+    11,
+    8
+   ],
+   "A": -77,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_22_11_8_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    22,
+    12,
+    8
+   ],
+   "A": -42,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_22_12_8_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    22,
+    13,
+    8
+   ],
+   "A": -7,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_22_13_8_D3.txt",
+   "graphs": 85,
+   "irreducible": 0,
+   "reducible": 85,
+   "P_zero": 85,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    23,
+    11,
+    8
+   ],
+   "A": -50,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_11_8_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    23,
+    12,
+    8
+   ],
+   "A": -15,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_12_8_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    23,
+    15,
+    9
+   ],
+   "A": -42,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_15_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    23,
+    16,
+    9
+   ],
+   "A": -7,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_16_9_D3.txt",
+   "graphs": 178,
+   "irreducible": 0,
+   "reducible": 178,
+   "P_zero": 178,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    24,
+    14,
+    9
+   ],
+   "A": -50,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_24_14_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    24,
+    15,
+    9
+   ],
+   "A": -15,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_24_15_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    24,
+    19,
+    10
+   ],
+   "A": -7,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_24_19_10_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    25,
+    12,
+    9
+   ],
+   "A": -93,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_25_12_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    25,
+    13,
+    9
+   ],
+   "A": -58,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L016/cells_new/runA/cell_25_13_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    25,
+    14,
+    9
+   ],
+   "A": -23,
+   "source": "OWN (computed in this folder)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_14_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    25,
+    18,
+    10
+   ],
+   "A": -15,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_25_18_10_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    26,
+    13,
+    9
+   ],
+   "A": -31,
+   "source": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_13_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    26,
+    16,
+    10
+   ],
+   "A": -58,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L016/cells_new/runA/cell_26_16_10_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    26,
+    17,
+    10
+   ],
+   "A": -23,
+   "source": "OWN (computed in this folder)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_17_10_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    27,
+    13,
+    9
+   ],
+   "A": -4,
+   "source": "OWN (computed in this folder)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_13_9_D3.txt",
+   "graphs": 18,
+   "irreducible": 0,
+   "reducible": 18,
+   "P_zero": 18,
+   "minP": 0,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    27,
+    15,
+    10
+   ],
+   "A": -66,
+   "source": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_15_10_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    27,
+    16,
+    10
+   ],
+   "A": -31,
+   "source": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_16_10_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    27,
+    20,
+    11
+   ],
+   "A": -23,
+   "source": "OWN (computed in this folder)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_20_11_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 1
+  },
+  {
+   "cell": [
+    6,
+    3,
+    2
+   ],
+   "A": 3,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_6_3_2_D3.txt",
+   "graphs": 1,
+   "irreducible": 0,
+   "reducible": 1,
+   "P_zero": 0,
+   "minP": 3,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    11,
+    7,
+    4
+   ],
+   "A": 14,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_11_7_4_D3.txt",
+   "graphs": 35,
+   "irreducible": 0,
+   "reducible": 35,
+   "P_zero": 0,
+   "minP": 14,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    12,
+    6,
+    4
+   ],
+   "A": 6,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_12_6_4_D3.txt",
+   "graphs": 4,
+   "irreducible": 0,
+   "reducible": 4,
+   "P_zero": 0,
+   "minP": 6,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    12,
+    10,
+    5
+   ],
+   "A": 14,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_12_10_5_D3.txt",
+   "graphs": 149,
+   "irreducible": 0,
+   "reducible": 149,
+   "P_zero": 0,
+   "minP": 14,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    13,
+    9,
+    5
+   ],
+   "A": 6,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_13_9_5_D3.txt",
+   "graphs": 84,
+   "irreducible": 0,
+   "reducible": 84,
+   "P_zero": 0,
+   "minP": 6,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    14,
+    12,
+    6
+   ],
+   "A": 6,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_14_12_6_D3.txt",
+   "graphs": 2,
+   "irreducible": 0,
+   "reducible": 2,
+   "P_zero": 0,
+   "minP": 6,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    18,
+    9,
+    6
+   ],
+   "A": 9,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_18_9_6_D3.txt",
+   "graphs": 22,
+   "irreducible": 0,
+   "reducible": 22,
+   "P_zero": 0,
+   "minP": 9,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    19,
+    12,
+    7
+   ],
+   "A": 9,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_19_12_7_D3.txt",
+   "graphs": 833,
+   "irreducible": 0,
+   "reducible": 833,
+   "P_zero": 0,
+   "minP": 9,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    20,
+    11,
+    7
+   ],
+   "A": 1,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_20_11_7_D3.txt",
+   "graphs": 45,
+   "irreducible": 0,
+   "reducible": 45,
+   "P_zero": 0,
+   "minP": 1,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    20,
+    15,
+    8
+   ],
+   "A": 9,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_20_15_8_D3.txt",
+   "graphs": 953,
+   "irreducible": 0,
+   "reducible": 953,
+   "P_zero": 0,
+   "minP": 9,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    21,
+    14,
+    8
+   ],
+   "A": 1,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_21_14_8_D3.txt",
+   "graphs": 299,
+   "irreducible": 0,
+   "reducible": 299,
+   "P_zero": 0,
+   "minP": 1,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    21,
+    18,
+    9
+   ],
+   "A": 9,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_21_18_9_D3.txt",
+   "graphs": 0,
+   "irreducible": 0,
+   "reducible": 0,
+   "P_zero": 0,
+   "minP": null,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    22,
+    17,
+    9
+   ],
+   "A": 1,
+   "source": "refereed L017/out",
+   "path": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_22_17_9_D3.txt",
+   "graphs": 37,
+   "irreducible": 0,
+   "reducible": 37,
+   "P_zero": 0,
+   "minP": 1,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    24,
+    12,
+    8
+   ],
+   "A": 12,
+   "source": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_12_8_D3.txt",
+   "graphs": 129,
+   "irreducible": 0,
+   "reducible": 129,
+   "P_zero": 0,
+   "minP": 12,
+   "pass_": 2
+  },
+  {
+   "cell": [
+    25,
+    15,
+    9
+   ],
+   "A": 12,
+   "source": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
+   "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_15_9_D3.txt",
+   "graphs": 6849,
+   "irreducible": 0,
+   "reducible": 6849,
+   "P_zero": 0,
+   "minP": 12,
+   "pass_": 2
+  }
+ ],
+ "missing": [
+  [
+   26,
+   14,
+   9,
+   4
+  ],
+  [
+   26,
+   18,
+   10,
+   12
+  ],
+  [
+   27,
+   17,
+   10,
+   4
+  ],
+  [
+   27,
+   21,
+   11,
+   12
+  ]
+ ],
+ "pieces": [
+  {
+   "name": "(3,1,1)#0",
+   "n": 3,
+   "m": 1,
+   "tau": 1,
+   "W": 16,
+   "edges": [
+    [
+     0,
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "name": "(8,5,3)#0",
+   "n": 8,
+   "m": 5,
+   "tau": 3,
+   "W": 5,
+   "edges": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     5,
+     6
+    ],
+    [
+     2,
+     4,
+     7
+    ],
+    [
+     3,
+     4,
+     6
+    ],
+    [
+     3,
+     5,
+     7
+    ]
+   ]
+  },
+  {
+   "name": "(8,5,3)#1",
+   "n": 8,
+   "m": 5,
+   "tau": 3,
+   "W": 5,
+   "edges": [
+    [
+     0,
+     2,
+     7
+    ],
+    [
+     1,
+     5,
+     6
+    ],
+    [
+     2,
+     3,
+     4
+    ],
+    [
+     3,
+     5,
+     7
+    ],
+    [
+     4,
+     6,
+     7
+    ]
+   ]
+  },
+  {
+   "name": "(10,7,4)#0",
+   "n": 10,
+   "m": 7,
+   "tau": 4,
+   "W": 13,
+   "edges": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     0,
+     3,
+     4
+    ],
+    [
+     1,
+     5,
+     7
+    ],
+    [
+     2,
+     6,
+     8
+    ],
+    [
+     3,
+     7,
+     9
+    ],
+    [
+     4,
+     8,
+     9
+    ],
+    [
+     5,
+     6,
+     9
+    ]
+   ]
+  },
+  {
+   "name": "(10,7,4)#1",
+   "n": 10,
+   "m": 7,
+   "tau": 4,
+   "W": 13,
+   "edges": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     7,
+     9
+    ],
+    [
+     2,
+     6,
+     9
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     3,
+     8,
+     9
+    ],
+    [
+     4,
+     7,
+     8
+    ],
+    [
+     5,
+     6,
+     8
+    ]
+   ]
+  },
+  {
+   "name": "(10,7,4)#2",
+   "n": 10,
+   "m": 7,
+   "tau": 4,
+   "W": 13,
+   "edges": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     8,
+     9
+    ],
+    [
+     2,
+     7,
+     9
+    ],
+    [
+     3,
+     4,
+     9
+    ],
+    [
+     3,
+     5,
+     8
+    ],
+    [
+     4,
+     6,
+     8
+    ],
+    [
+     5,
+     6,
+     7
+    ]
+   ]
+  },
+  {
+   "name": "(10,7,4)#3",
+   "n": 10,
+   "m": 7,
+   "tau": 4,
+   "W": 13,
+   "edges": [
+    [
+     0,
+     1,
+     6
+    ],
+    [
+     0,
+     2,
+     8
+    ],
+    [
+     1,
+     2,
+     7
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     3,
+     6,
+     9
+    ],
+    [
+     4,
+     8,
+     9
+    ],
+    [
+     5,
+     7,
+     9
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#0",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     1,
+     11
+    ],
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     2,
+     10,
+     11
+    ],
+    [
+     3,
+     11,
+     14
+    ],
+    [
+     4,
+     5,
+     6
+    ],
+    [
+     4,
+     9,
+     12
+    ],
+    [
+     5,
+     7,
+     13
+    ],
+    [
+     6,
+     8,
+     13
+    ],
+    [
+     7,
+     8,
+     12
+    ],
+    [
+     9,
+     10,
+     14
+    ],
+    [
+     12,
+     13,
+     14
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#1",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     1,
+     11
+    ],
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     2,
+     10,
+     11
+    ],
+    [
+     3,
+     11,
+     14
+    ],
+    [
+     4,
+     7,
+     13
+    ],
+    [
+     4,
+     12,
+     14
+    ],
+    [
+     5,
+     9,
+     12
+    ],
+    [
+     5,
+     10,
+     14
+    ],
+    [
+     6,
+     7,
+     8
+    ],
+    [
+     6,
+     9,
+     13
+    ],
+    [
+     8,
+     12,
+     13
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#2",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     1,
+     11
+    ],
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     2,
+     10,
+     11
+    ],
+    [
+     3,
+     11,
+     14
+    ],
+    [
+     4,
+     8,
+     9
+    ],
+    [
+     4,
+     12,
+     14
+    ],
+    [
+     5,
+     10,
+     14
+    ],
+    [
+     5,
+     12,
+     13
+    ],
+    [
+     6,
+     7,
+     12
+    ],
+    [
+     6,
+     8,
+     13
+    ],
+    [
+     7,
+     9,
+     13
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#3",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     1,
+     12
+    ],
+    [
+     0,
+     4,
+     14
+    ],
+    [
+     1,
+     5,
+     14
+    ],
+    [
+     2,
+     3,
+     12
+    ],
+    [
+     2,
+     8,
+     13
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     6,
+     7,
+     13
+    ],
+    [
+     6,
+     9,
+     11
+    ],
+    [
+     7,
+     10,
+     11
+    ],
+    [
+     8,
+     9,
+     10
+    ],
+    [
+     12,
+     13,
+     14
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#4",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     1,
+     12
+    ],
+    [
+     0,
+     8,
+     14
+    ],
+    [
+     1,
+     9,
+     14
+    ],
+    [
+     2,
+     3,
+     12
+    ],
+    [
+     2,
+     8,
+     9
+    ],
+    [
+     3,
+     10,
+     11
+    ],
+    [
+     4,
+     6,
+     11
+    ],
+    [
+     4,
+     7,
+     13
+    ],
+    [
+     5,
+     6,
+     13
+    ],
+    [
+     5,
+     7,
+     10
+    ],
+    [
+     12,
+     13,
+     14
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#5",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     1,
+     12
+    ],
+    [
+     0,
+     8,
+     14
+    ],
+    [
+     1,
+     9,
+     14
+    ],
+    [
+     2,
+     8,
+     9
+    ],
+    [
+     2,
+     12,
+     13
+    ],
+    [
+     3,
+     10,
+     11
+    ],
+    [
+     3,
+     12,
+     14
+    ],
+    [
+     4,
+     6,
+     11
+    ],
+    [
+     4,
+     7,
+     13
+    ],
+    [
+     5,
+     6,
+     13
+    ],
+    [
+     5,
+     7,
+     10
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#6",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     9,
+     13
+    ],
+    [
+     2,
+     10,
+     14
+    ],
+    [
+     3,
+     9,
+     10
+    ],
+    [
+     3,
+     13,
+     14
+    ],
+    [
+     4,
+     5,
+     6
+    ],
+    [
+     4,
+     11,
+     12
+    ],
+    [
+     5,
+     7,
+     11
+    ],
+    [
+     6,
+     8,
+     11
+    ],
+    [
+     7,
+     12,
+     13
+    ],
+    [
+     8,
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#7",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     9,
+     13
+    ],
+    [
+     2,
+     10,
+     14
+    ],
+    [
+     3,
+     9,
+     10
+    ],
+    [
+     3,
+     13,
+     14
+    ],
+    [
+     4,
+     5,
+     6
+    ],
+    [
+     4,
+     11,
+     14
+    ],
+    [
+     5,
+     7,
+     12
+    ],
+    [
+     6,
+     8,
+     12
+    ],
+    [
+     7,
+     8,
+     11
+    ],
+    [
+     11,
+     12,
+     13
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#8",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     9,
+     14
+    ],
+    [
+     2,
+     10,
+     14
+    ],
+    [
+     3,
+     11,
+     14
+    ],
+    [
+     3,
+     12,
+     13
+    ],
+    [
+     4,
+     7,
+     8
+    ],
+    [
+     4,
+     11,
+     12
+    ],
+    [
+     5,
+     6,
+     12
+    ],
+    [
+     5,
+     7,
+     13
+    ],
+    [
+     6,
+     8,
+     13
+    ],
+    [
+     9,
+     10,
+     11
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#9",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     9,
+     14
+    ],
+    [
+     2,
+     10,
+     14
+    ],
+    [
+     3,
+     4,
+     12
+    ],
+    [
+     3,
+     11,
+     14
+    ],
+    [
+     4,
+     5,
+     13
+    ],
+    [
+     5,
+     6,
+     7
+    ],
+    [
+     6,
+     12,
+     13
+    ],
+    [
+     7,
+     8,
+     13
+    ],
+    [
+     8,
+     11,
+     12
+    ],
+    [
+     9,
+     10,
+     11
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#10",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     1,
+     2
+    ],
+    [
+     1,
+     9,
+     14
+    ],
+    [
+     2,
+     10,
+     14
+    ],
+    [
+     3,
+     4,
+     12
+    ],
+    [
+     3,
+     11,
+     14
+    ],
+    [
+     4,
+     5,
+     6
+    ],
+    [
+     5,
+     7,
+     13
+    ],
+    [
+     6,
+     8,
+     13
+    ],
+    [
+     7,
+     8,
+     12
+    ],
+    [
+     9,
+     10,
+     11
+    ],
+    [
+     11,
+     12,
+     13
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#11",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     2,
+     10
+    ],
+    [
+     1,
+     6,
+     7
+    ],
+    [
+     2,
+     11,
+     12
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     3,
+     12,
+     13
+    ],
+    [
+     4,
+     8,
+     14
+    ],
+    [
+     5,
+     9,
+     14
+    ],
+    [
+     6,
+     10,
+     11
+    ],
+    [
+     7,
+     10,
+     12
+    ],
+    [
+     8,
+     9,
+     13
+    ],
+    [
+     11,
+     13,
+     14
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#12",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     2,
+     10
+    ],
+    [
+     1,
+     6,
+     7
+    ],
+    [
+     2,
+     12,
+     13
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     3,
+     11,
+     14
+    ],
+    [
+     4,
+     9,
+     14
+    ],
+    [
+     5,
+     8,
+     14
+    ],
+    [
+     6,
+     10,
+     12
+    ],
+    [
+     7,
+     10,
+     13
+    ],
+    [
+     8,
+     11,
+     13
+    ],
+    [
+     9,
+     11,
+     12
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#13",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     3,
+     14
+    ],
+    [
+     0,
+     12,
+     13
+    ],
+    [
+     1,
+     2,
+     12
+    ],
+    [
+     1,
+     5,
+     13
+    ],
+    [
+     2,
+     6,
+     13
+    ],
+    [
+     3,
+     9,
+     10
+    ],
+    [
+     4,
+     5,
+     6
+    ],
+    [
+     4,
+     12,
+     14
+    ],
+    [
+     7,
+     8,
+     14
+    ],
+    [
+     7,
+     9,
+     11
+    ],
+    [
+     8,
+     10,
+     11
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#14",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     4,
+     14
+    ],
+    [
+     0,
+     12,
+     13
+    ],
+    [
+     1,
+     2,
+     12
+    ],
+    [
+     1,
+     5,
+     14
+    ],
+    [
+     2,
+     10,
+     11
+    ],
+    [
+     3,
+     4,
+     5
+    ],
+    [
+     3,
+     12,
+     14
+    ],
+    [
+     6,
+     8,
+     11
+    ],
+    [
+     6,
+     9,
+     13
+    ],
+    [
+     7,
+     8,
+     13
+    ],
+    [
+     7,
+     9,
+     10
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#15",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     5,
+     6
+    ],
+    [
+     0,
+     12,
+     13
+    ],
+    [
+     1,
+     3,
+     12
+    ],
+    [
+     1,
+     6,
+     13
+    ],
+    [
+     2,
+     4,
+     12
+    ],
+    [
+     2,
+     5,
+     13
+    ],
+    [
+     3,
+     7,
+     14
+    ],
+    [
+     4,
+     8,
+     9
+    ],
+    [
+     7,
+     10,
+     11
+    ],
+    [
+     8,
+     10,
+     14
+    ],
+    [
+     9,
+     11,
+     14
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#16",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     7,
+     14
+    ],
+    [
+     0,
+     12,
+     13
+    ],
+    [
+     1,
+     2,
+     12
+    ],
+    [
+     1,
+     5,
+     13
+    ],
+    [
+     2,
+     6,
+     13
+    ],
+    [
+     3,
+     4,
+     12
+    ],
+    [
+     3,
+     5,
+     6
+    ],
+    [
+     4,
+     10,
+     11
+    ],
+    [
+     7,
+     8,
+     9
+    ],
+    [
+     8,
+     10,
+     14
+    ],
+    [
+     9,
+     11,
+     14
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#17",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     7,
+     8
+    ],
+    [
+     0,
+     12,
+     13
+    ],
+    [
+     1,
+     2,
+     12
+    ],
+    [
+     1,
+     5,
+     13
+    ],
+    [
+     2,
+     6,
+     13
+    ],
+    [
+     3,
+     4,
+     12
+    ],
+    [
+     3,
+     9,
+     14
+    ],
+    [
+     4,
+     5,
+     6
+    ],
+    [
+     7,
+     10,
+     14
+    ],
+    [
+     8,
+     11,
+     14
+    ],
+    [
+     9,
+     10,
+     11
+    ]
+   ]
+  },
+  {
+   "name": "(15,11,6)#18",
+   "n": 15,
+   "m": 11,
+   "tau": 6,
+   "W": 2,
+   "edges": [
+    [
+     0,
+     8,
+     14
+    ],
+    [
+     0,
+     12,
+     13
+    ],
+    [
+     1,
+     2,
+     13
+    ],
+    [
+     1,
+     3,
+     12
+    ],
+    [
+     2,
+     7,
+     14
+    ],
+    [
+     3,
+     9,
+     10
+    ],
+    [
+     4,
+     5,
+     12
+    ],
+    [
+     4,
+     9,
+     11
+    ],
+    [
+     5,
+     10,
+     11
+    ],
+    [
+     6,
+     7,
+     8
+    ],
+    [
+     6,
+     13,
+     14
+    ]
+   ]
+  },
+  {
+   "name": "(17,13,7)#0",
+   "n": 17,
+   "m": 13,
+   "tau": 7,
+   "W": 10,
+   "edges": [
+    [
+     0,
+     1,
+     12
+    ],
+    [
+     0,
+     15,
+     16
+    ],
+    [
+     1,
+     7,
+     13
+    ],
+    [
+     2,
+     3,
+     13
+    ],
+    [
+     2,
+     8,
+     14
+    ],
+    [
+     3,
+     9,
+     14
+    ],
+    [
+     4,
+     5,
+     15
+    ],
+    [
+     4,
+     10,
+     16
+    ],
+    [
+     5,
+     11,
+     16
+    ],
+    [
+     6,
+     10,
+     11
+    ],
+    [
+     6,
+     12,
+     15
+    ],
+    [
+     7,
+     8,
+     9
+    ],
+    [
+     12,
+     13,
+     14
+    ]
+   ]
+  },
+  {
+   "name": "(17,13,7)#1",
+   "n": 17,
+   "m": 13,
+   "tau": 7,
+   "W": 10,
+   "edges": [
+    [
+     0,
+     1,
+     16
+    ],
+    [
+     0,
+     6,
+     12
+    ],
+    [
+     1,
+     7,
+     12
+    ],
+    [
+     2,
+     3,
+     15
+    ],
+    [
+     2,
+     8,
+     13
+    ],
+    [
+     3,
+     9,
+     13
+    ],
+    [
+     4,
+     5,
+     14
+    ],
+    [
+     4,
+     10,
+     16
+    ],
+    [
+     5,
+     11,
+     15
+    ],
+    [
+     6,
+     7,
+     10
+    ],
+    [
+     8,
+     9,
+     11
+    ],
+    [
+     12,
+     14,
+     16
+    ],
+    [
+     13,
+     14,
+     15
+    ]
+   ]
+  },
+  {
+   "name": "(17,13,7)#2",
+   "n": 17,
+   "m": 13,
+   "tau": 7,
+   "W": 10,
+   "edges": [
+    [
+     0,
+     1,
+     16
+    ],
+    [
+     0,
+     6,
+     12
+    ],
+    [
+     1,
+     7,
+     12
+    ],
+    [
+     2,
+     3,
+     15
+    ],
+    [
+     2,
+     8,
+     13
+    ],
+    [
+     3,
+     9,
+     13
+    ],
+    [
+     4,
+     5,
+     14
+    ],
+    [
+     4,
+     12,
+     16
+    ],
+    [
+     5,
+     13,
+     15
+    ],
+    [
+     6,
+     7,
+     10
+    ],
+    [
+     8,
+     9,
+     11
+    ],
+    [
+     10,
+     14,
+     16
+    ],
+    [
+     11,
+     14,
+     15
+    ]
+   ]
+  },
+  {
+   "name": "(17,13,7)#3",
+   "n": 17,
+   "m": 13,
+   "tau": 7,
+   "W": 10,
+   "edges": [
+    [
+     0,
+     11,
+     12
+    ],
+    [
+     0,
+     15,
+     16
+    ],
+    [
+     1,
+     2,
+     14
+    ],
+    [
+     1,
+     8,
+     13
+    ],
+    [
+     2,
+     9,
+     13
+    ],
+    [
+     3,
+     5,
+     15
+    ],
+    [
+     3,
+     10,
+     12
+    ],
+    [
+     4,
+     5,
+     16
+    ],
+    [
+     4,
+     13,
+     14
+    ],
+    [
+     6,
+     10,
+     11
+    ],
+    [
+     6,
+     12,
+     15
+    ],
+    [
+     7,
+     8,
+     9
+    ],
+    [
+     7,
+     14,
+     16
+    ]
+   ]
+  },
+  {
+   "name": "(17,13,7)#4",
+   "n": 17,
+   "m": 13,
+   "tau": 7,
+   "W": 10,
+   "edges": [
+    [
+     0,
+     6,
+     13
+    ],
+    [
+     0,
+     14,
+     15
+    ],
+    [
+     1,
+     7,
+     12
+    ],
+    [
+     1,
+     14,
+     16
+    ],
+    [
+     2,
+     4,
+     15
+    ],
+    [
+     2,
+     10,
+     13
+    ],
+    [
+     3,
+     5,
+     16
+    ],
+    [
+     3,
+     11,
+     12
+    ],
+    [
+     4,
+     5,
+     14
+    ],
+    [
+     6,
+     8,
+     10
+    ],
+    [
+     7,
+     9,
+     11
+    ],
+    [
+     8,
+     13,
+     15
+    ],
+    [
+     9,
+     12,
+     16
+    ]
+   ]
+  },
+  {
+   "name": "(17,13,7)#5",
+   "n": 17,
+   "m": 13,
+   "tau": 7,
+   "W": 10,
+   "edges": [
+    [
+     0,
+     8,
+     9
+    ],
+    [
+     0,
+     15,
+     16
+    ],
+    [
+     1,
+     2,
+     3
+    ],
+    [
+     1,
+     4,
+     13
+    ],
+    [
+     2,
+     5,
+     14
+    ],
+    [
+     3,
+     6,
+     14
+    ],
+    [
+     4,
+     7,
+     12
+    ],
+    [
+     5,
+     6,
+     13
+    ],
+    [
+     7,
+     11,
+     15
+    ],
+    [
+     8,
+     11,
+     16
+    ],
+    [
+     9,
+     10,
+     16
+    ],
+    [
+     10,
+     12,
+     15
+    ],
+    [
+     12,
+     13,
+     14
+    ]
+   ]
+  }
+ ]
+}
