@@ -11,8 +11,8 @@ or reduce it to a finite computation; examine the I11 form structurally.
 - PROVED [derived-here, unrefereed]: the I11 form when the outer graph G is tight (Theorem 13: fold +
   pair lemma; in C, given I11 at n(G) +- 2). Corollary 14: in a minimal counterexample to I11, pattern (b)
   occurs only with s(H) = -1, one side a single edge (an E1-hub) and the other side of slack 1; if s(H) = -2
-  every degree-3 vertex has pattern (a) (with L022 Theorem 2). This removes Conjecture P2/P2' from the
-  pattern-(b) part of L022 Corollary 3 and from L018 Proposition 6.2.
+  every degree-3 vertex has pattern (a) (with L022 Theorem 2(ii),(iii)). This removes Conjecture P2' from
+  the pattern-(b) part of L022 Corollary 3 and gives the conclusion of L018 Proposition 6.2 without P2.
 - PROVED: the merge lemma (Lemma 11: identifying an NC pair keeps tau, slack -3, A -27; NC pairs of graphs
   with slack <= 2 are blocked), the structure of positive deficiency (Lemma 9: a connected graph with DEF > 0
   is a member of L* or a p-piece tree, p odd <= 11) and the boundary count (Lemma 10, from Claim E).
@@ -44,6 +44,7 @@ or reduce it to a finite computation; examine the I11 form structurally.
 | C10 hub triangles | `timeout 300 nice -n 10 python3 hubtriangle_check.py > hubtriangle_check_output.txt` (here) | hubtriangle_check_output.txt | no member of L* has a hub triangle (TOTAL 0); positive controls find them in the triangle, (12,6,4), (18,9,6) |
 | A_base | `timeout 300 nice -n 10 python3 abase_check.py > abase_check_output.txt` (here) | abase_check_output.txt | tight, 143 min transversals, no NC pair, no b-triple |
 | C11 replacement identities | `cd /home/user/Erdos-757/experiments/prover/L017/out && timeout 2400 nice -n 10 python3 /home/user/Erdos-757/experiments/prover/L026/replacement_check.py <the 7 cells of C7>` | replacement_check_output.txt | 385 degree-2 outer vertices: tau(C_hub) - tau(Q) rule ok; 281 replacements M in C_3 with A(M) = A(C_hub) - 19 |
+| C12 shape (j1) | `cd /home/user/Erdos-757/experiments/prover/L017/out && timeout 1800 nice -n 10 python3 /home/user/Erdos-757/experiments/prover/L026/j1_check.py <the 7 cells of C7>` | j1_check_output.txt | 37 (j1) hubs: bounds on tau(R) ok; 34 disjoint with tau drop 2 and W avoided; 3 shared with R an (8,5,3) piece |
 | C9 Lemma 9 | `cd /home/user/Erdos-757/experiments/prover/L017/out && timeout 3000 nice -n 10 python3 /home/user/Erdos-757/experiments/prover/L026/lemma9_check.py $(cat ../../panel-synthesis/checks/probe_cells.txt) /home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_12_8_D3.txt` | lemma9_check_output.txt | 2,920 connected graphs, 327 with DEF > 0, 0 failures |
 
 Inputs are read-only: the refereed tarball extracts in experiments/prover/L017/out/ (L012-L016 lists), the
