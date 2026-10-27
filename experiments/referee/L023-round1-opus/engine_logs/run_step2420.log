@@ -1,0 +1,31 @@
+857cf17458615bbd8e02ed95c8a4c95c9130b47cdc3685a63239546ef2349bc1  cells/cell_17_15_7_D3.txt
+7a3528b057e0a8892eb8967e899f2a7f65a49af1947056d6895f8fc4a5ced42d  cells/cell_20_16_8_D3.txt
+aa488b41d34cd1d0c28246e224eadab9e3ed919a43d9297f3d588f3af5daa278  cells/cell_23_17_9_D3.txt
+START 2026-10-27T09:46:47Z
+CELL (23, 17, 9, 3) classes 137326 (loaded)
+CELL (22, 17, 9, 3) classes 37 (loaded)
+CELL (11, 7, 4, 3) classes 35 (loaded)
+CELL (12, 10, 5, 3) classes 149 (loaded)
+CELL (10, 8, 4, 3) classes 63 (loaded)
+CELL (13, 9, 5, 3) classes 84 (loaded)
+CELL (10, 7, 4, 3) classes 4 (loaded)
+CELL (13, 10, 5, 3) classes 6683 (loaded)
+CELL (9, 5, 3, 3) classes 6 (loaded)
+CELL (14, 12, 6, 3) classes 2 (loaded)
+CELL (8, 6, 3, 3) classes 3 (loaded)
+CELL (15, 11, 6, 3) classes 19 (loaded)
+CELL (8, 5, 3, 3) classes 2 (loaded)
+CELL (15, 12, 6, 3) classes 10617 (loaded)
+CELL (6, 4, 2, 3) classes 1 (loaded)
+CELL (17, 13, 7, 3) classes 6 (loaded)
+CELL (6, 3, 2, 3) classes 1 (loaded)
+CELL (17, 14, 7, 3) classes 1708 (loaded)
+CELL (3, 1, 1, 3) classes 1 (loaded)
+CELL (20, 16, 8, 3) classes 314639 (loaded)
+CELL (19, 16, 8, 3) classes 227 (loaded)
+CELL (17, 15, 7, 3) classes 660651 (loaded)
+  BRANCH (24, 20, 10, 3) d=3 tp=9 S'=4 decompositions=18 inputs=1176201 {'graphs': 1176201, 'bad_tau': 0, 'tg_too_small': 0, 'searched': 1176201, 'max_min_covers': 2223, 'nodes': 2858943025, 'hits_F7free': 682190, 'hits_in_C': 368489}
+CELL (24, 20, 10, 3) classes 2781 {'route': 'recurse', 'driver': 'stream', 'branches': [{'d': 3, 'tp': 9, 'Sp': 4, 'decompositions': 18, 'inputs': 1176201, 'dec': [[[(23, 17, 9)], 137326], [[(22, 17, 9), (1, 0, 0)], 37], [[(11, 7, 4), (12, 10, 5)], 5215], [[(10, 8, 4), (13, 9, 5)], 5292], [[(10, 7, 4), (13, 10, 5)], 26732], [[(10, 7, 4), (12, 10, 5), (1, 0, 0)], 596], [[(9, 5, 3), (14, 12, 6)], 12], [[(8, 6, 3), (15, 11, 6)], 57], [[(8, 5, 3), (15, 12, 6)], 21234], [[(8, 5, 3), (14, 12, 6), (1, 0, 0)], 4], [[(6, 4, 2), (17, 13, 7)], 6], [[(6, 3, 2), (17, 14, 7)], 1708], [[(3, 1, 1), (20, 16, 8)], 314639], [[(3, 1, 1), (19, 16, 8), (1, 0, 0)], 227], [[(3, 1, 1), (10, 8, 4), (10, 8, 4)], 2016], [[(3, 1, 1), (8, 6, 3), (12, 10, 5)], 447], [[(3, 1, 1), (6, 4, 2), (14, 12, 6)], 2], [[(3, 1, 1), (3, 1, 1), (17, 15, 7)], 660651]], 'ext': {'graphs': 1176201, 'bad_tau': 0, 'tg_too_small': 0, 'searched': 1176201, 'max_min_covers': 2223, 'nodes': 2858943025, 'hits_F7free': 682190, 'hits_in_C': 368489}, 'hits_in_C': 368489, 'filt_chunks': ['SUMMARY tag=HIT NV=24 total=368489 bad_labels=0 linear=368489 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=368489 survivors_connected=74937 wrong_tau_dropped=0 connected_all=74937 tau_range=[-1,-1] maxdeg_max=3']}], 'connected_hits': 74937, 'secs': 3113.1}
+DONE {"cell": [24, 20, 10, 3], "classes": 2781, "secs": 3113.1, "driver": "stream", "MD": 10, "NPROC": 1, "celldir": "/dev/shm/L023ref/step2420/cells", "utc": "2026-10-27T10:38:40Z"}
+EXIT 0
+END 2026-10-27T10:38:47Z

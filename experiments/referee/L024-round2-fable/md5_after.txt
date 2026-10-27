@@ -1,0 +1,3 @@
+50a19ee41255fa06e195b800a20d339f  experiments/prover/L024/pattern_a3_poor_results.json
+fb9789b5cca03c04d36b7e49e978961e  experiments/prover/L024/pattern_a3_richcheck_results.json
+dd60c82b4b1353577d79437ef8b5c722  experiments/prover/L024/pattern_a3_small_results.json

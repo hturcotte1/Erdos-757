@@ -1,0 +1,3 @@
+29 22 12 target slack -1 GAD N=29 (n''=22) seed=29023 iters=1500000 evals=685048 acc=279954 best_slack=10 (m=22 tau
+29 22 12 target slack -1 GAD N=29 (n''=22) seed=29024 iters=1500000 evals=683443 acc=269320 best_slack=10 (m=22 tau
+30 15 11 target slack -1 GAD N=30 (n''=23) seed=30016 iters=1500000 evals=852006 acc=223312 best_slack=43 (m=15 tau

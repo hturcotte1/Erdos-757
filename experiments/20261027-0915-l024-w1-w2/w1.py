@@ -87,6 +87,12 @@ class Setup:
             for x in e: row[self.piece_of[x]] |= self.hitbits[self.piece_of[x]][x]
             self.chit.append(row)
         self.all_c = (1 << self.nc) - 1
+        self.ymasks = []
+        for r in range(1, k + 1):
+            for Y in itertools.combinations(range(k), r):
+                vm = 0
+                for i in Y: vm |= ((1 << Ps[i]['n']) - 1) << self.offs[i]
+                self.ymasks.append((r, vm))
 
     def classes(self, cl):
         """for each piece: dict pattern -> bitset of transversals having exactly that pattern (cl = list of candidate idx)."""
@@ -185,6 +191,26 @@ def unsat_packing(S, edges):
                 used |= nb; c += 1
     return c
 
+def last_edge_bits(S, edges):
+    """Lemma NC (vertex form) for the LAST star edge: every vertex of it needs an NC-neighbour on an existing edge, and every
+    existing vertex without a partner needs an NC-neighbour on the last edge.  Returns the bitset of candidate edges satisfying both."""
+    allv = set(); unsat = []
+    for p, e in enumerate(edges):
+        for a in e:
+            allv.add(a)
+            nb = S.ncnb.get(a, ())
+            if not any(q != p and any(y in nb for y in f) for q, f in enumerate(edges)): unsat.append(a)
+    nbstar = set()
+    for a in allv: nbstar |= S.ncnb.get(a, set())
+    res = S.all_c
+    for x in range(S.N):
+        if x not in nbstar: res &= ~S.cw[x]
+    for a in unsat:
+        m = 0
+        for y in S.ncnb.get(a, ()): m |= S.cw[y]
+        res &= m
+    return res
+
 def search(S, stats, c1range=None):
     K = S.k + 1
     sols = set()
@@ -215,13 +241,26 @@ def search(S, stats, c1range=None):
             ci = b.bit_length() - 1
             # add edge ci
             e = S.cands[ci]
-            if S.nc_only and unsat_packing(S, [S.cands[c] for c in chosen] + [e]) > 3 * (K - L - 1):
-                continue
+            if S.nc_only:
+                # Claim E as a pruning rule (it is part of the W1 specification): for every set Y of pieces the number of star edges
+                # meeting V(Y) must reach |Y|+1; with R edges still to come we need count + R >= |Y| + 1.
+                cm = [S.cmask[c] for c in chosen] + [S.cmask[ci]]
+                Rleft = K - L - 1
+                if any(sum(1 for m in cm if m & vm) + Rleft < r + 1 for (r, vm) in S.ymasks):
+                    continue
+                if unsat_packing(S, [S.cands[c] for c in chosen] + [e]) > 3 * Rleft:
+                    continue
             nb = allowed_base & ~S.incompat[ci] & ~b
             newc = []
             for x in e:
                 used_cnt[x] += 1
                 if used_cnt[x] >= S.cap[x]: nb &= ~S.cw[x]
+            if S.nc_only and L + 1 == K - 1:
+                lb = last_edge_bits(S, [S.cands[c] for c in chosen] + [e])
+                nb &= lb
+                if not nb:
+                    for x in e: used_cnt[x] -= 1
+                    continue
             chosen.append(ci)
             rec(chosen, nb, used_cnt, lowmask)
             chosen.pop()
@@ -301,6 +340,8 @@ if __name__ == '__main__':
     pieces = load_pieces(); byname = {P['name']: P for P in pieces}
     T = types(k, pieces, nmin)
     mine = [t for i, t in enumerate(T) if i % nparts == part]
+    rev = len(sys.argv) > 6 and sys.argv[6] == 'rev'
+    if rev: mine = mine[::-1]
     tot = {}
     allout = []
     per_type = []
@@ -320,5 +361,5 @@ if __name__ == '__main__':
         allout += out
         print(ti, names, 'N', S.N, 'cands', S.nc, stats, f'{time.time()-ts:.0f}s total {time.time()-t0:.0f}s', flush=True)
         json.dump(dict(k=k, part=part, nparts=nparts, nmin=nmin, done_types=ti + 1, of=len(mine), totals=tot, per_type=per_type, configs=allout),
-                  open(f'/home/user/Erdos-757/experiments/20261027-0915-l024-w1-w2/w1_k{k}_p{part}of{nparts}_n{nmin}{"_nc" if ncmode else ""}.json', 'w'))
+                  open(f'/home/user/Erdos-757/experiments/20261027-0915-l024-w1-w2/w1_k{k}_p{part}of{nparts}_n{nmin}{"_nc" if ncmode else ""}{"_rev" if rev else ""}.json', 'w'))
     print('TOTAL', tot, f'{time.time()-t0:.0f}s', flush=True)

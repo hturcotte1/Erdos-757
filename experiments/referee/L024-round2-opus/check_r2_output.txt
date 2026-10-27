@@ -1,0 +1,35 @@
+A (3,1,1)#0 {'alpha': 1, 'beta': 0, 'gamma': 0, 'delta': 0}
+A (8,5,3)#0 {'alpha': 0, 'beta': 0, 'gamma': 0, 'delta': 488}
+A (8,5,3)#1 {'alpha': 0, 'beta': 282, 'gamma': 0, 'delta': 0}
+A (10,7,4)#0 {'alpha': 0, 'beta': 1454, 'gamma': 0, 'delta': 0}
+A (10,7,4)#1 {'alpha': 0, 'beta': 804, 'gamma': 0, 'delta': 0}
+A (10,7,4)#2 {'alpha': 0, 'beta': 802, 'gamma': 0, 'delta': 0}
+A (10,7,4)#3 {'alpha': 0, 'beta': 1455, 'gamma': 0, 'delta': 0}
+A (15,11,6)#0 {'alpha': 0, 'beta': 8867, 'gamma': 0, 'delta': 0}
+A (15,11,6)#1 {'alpha': 0, 'beta': 9307, 'gamma': 0, 'delta': 0}
+A (15,11,6)#2 {'alpha': 0, 'beta': 9306, 'gamma': 0, 'delta': 0}
+A (15,11,6)#3 {'alpha': 0, 'beta': 14094, 'gamma': 0, 'delta': 0}
+A (15,11,6)#4 {'alpha': 0, 'beta': 14122, 'gamma': 0, 'delta': 0}
+A (15,11,6)#5 {'alpha': 0, 'beta': 14745, 'gamma': 0, 'delta': 0}
+A (15,11,6)#6 {'alpha': 0, 'beta': 8847, 'gamma': 0, 'delta': 0}
+A (15,11,6)#7 {'alpha': 0, 'beta': 8451, 'gamma': 0, 'delta': 0}
+A (15,11,6)#8 {'alpha': 0, 'beta': 9285, 'gamma': 0, 'delta': 0}
+A (15,11,6)#9 {'alpha': 0, 'beta': 9306, 'gamma': 0, 'delta': 0}
+A (15,11,6)#10 {'alpha': 0, 'beta': 8867, 'gamma': 0, 'delta': 0}
+A (15,11,6)#11 {'alpha': 0, 'beta': 4901, 'gamma': 0, 'delta': 0}
+A (15,11,6)#12 {'alpha': 0, 'beta': 5175, 'gamma': 0, 'delta': 0}
+A (15,11,6)#13 {'alpha': 0, 'beta': 14687, 'gamma': 0, 'delta': 0}
+A (15,11,6)#14 {'alpha': 0, 'beta': 14717, 'gamma': 0, 'delta': 0}
+A (15,11,6)#15 {'alpha': 0, 'beta': 15452, 'gamma': 0, 'delta': 0}
+A (15,11,6)#16 {'alpha': 0, 'beta': 15424, 'gamma': 0, 'delta': 0}
+A (15,11,6)#17 {'alpha': 0, 'beta': 15452, 'gamma': 0, 'delta': 0}
+A (15,11,6)#18 {'alpha': 0, 'beta': 14687, 'gamma': 0, 'delta': 0}
+A (17,13,7)#0 {'alpha': 0, 'beta': 16808, 'gamma': 0, 'delta': 0}
+A (17,13,7)#1 {'alpha': 0, 'beta': 16129, 'gamma': 0, 'delta': 0}
+A (17,13,7)#2 {'alpha': 0, 'beta': 17515, 'gamma': 0, 'delta': 0}
+A (17,13,7)#3 {'alpha': 0, 'beta': 17517, 'gamma': 0, 'delta': 0}
+A (17,13,7)#4 {'alpha': 0, 'beta': 17518, 'gamma': 0, 'delta': 0}
+A (17,13,7)#5 {'alpha': 0, 'beta': 16809, 'gamma': 0, 'delta': 0}
+PART A TOTAL {'alpha': 1, 'beta': 322785, 'gamma': 0, 'delta': 488} BAD 0
+PART B {'graphs': 4242, 'apex_cases': 39686, 'alpha': 716, 'beta': 36519, 'gamma': 259, 'delta': 2192, 'beta_nontrivial': 11315, 'delta_nontrivial': 1034} BAD 0
+ALL BAD 0

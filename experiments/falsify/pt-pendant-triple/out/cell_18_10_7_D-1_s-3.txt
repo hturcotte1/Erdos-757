@@ -1,0 +1,3 @@
+GRAPHS 0
+SRC /home/user/Erdos-757/experiments/prover/L009/indep/cell_18_10_7_anydeg.txt
+DONE

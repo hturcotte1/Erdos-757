@@ -1,0 +1,1 @@
+STATS {'instances': 20000, 'beta': 347749, 'delta': 789789, 'beta_fail': 0, 'delta_fail': 0, 'usable': 103357}

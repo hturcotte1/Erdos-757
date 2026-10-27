@@ -1,0 +1,1 @@
+CHECK 5.6 {'inst': 18854, 'claimE': 17323, 'H1_ok': 42775, 'H1_fail': 0, 'hyp': 8359, 'tau_ok': 8359, 'P_ok': 8359, 'ctrl': 8870, 'ctrl_P_lt': 1721, 'ctrl_tau_plus1': 1721, 'bd_empty': 94, 'edge_in_bd': 610, 'edge_in_bd_ok': 610} BAD 0

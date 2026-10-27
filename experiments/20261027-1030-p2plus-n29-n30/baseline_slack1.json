@@ -1,0 +1,147 @@
+{
+ "cell_14_7_5_D3.txt": {
+  "classes": 0,
+  "n_deg1_hist": {},
+  "pendant_b_total": 0,
+  "classes_with_pendant_b": 0,
+  "slacks": [],
+  "taus": [],
+  "ge3": []
+ },
+ "cell_15_11_6_D3.txt": {
+  "classes": 19,
+  "n_deg1_hist": {
+   "0": 9,
+   "1": 8,
+   "2": 2
+  },
+  "pendant_b_total": 0,
+  "classes_with_pendant_b": 0,
+  "slacks": [
+   1
+  ],
+  "taus": [
+   6
+  ],
+  "ge3": []
+ },
+ "cell_17_8_6_D3.txt": {
+  "classes": 0,
+  "n_deg1_hist": {},
+  "pendant_b_total": 0,
+  "classes_with_pendant_b": 0,
+  "slacks": [],
+  "taus": [],
+  "ge3": []
+ },
+ "cell_18_12_7_D3.txt": {
+  "classes": 0,
+  "n_deg1_hist": {},
+  "pendant_b_total": 0,
+  "classes_with_pendant_b": 0,
+  "slacks": [],
+  "taus": [],
+  "ge3": []
+ },
+ "cell_19_16_8_D3.txt": {
+  "classes": 227,
+  "n_deg1_hist": {
+   "0": 221,
+   "1": 6
+  },
+  "pendant_b_total": 0,
+  "classes_with_pendant_b": 0,
+  "slacks": [
+   1
+  ],
+  "taus": [
+   8
+  ],
+  "ge3": []
+ },
+ "cell_21_13_8_D3.txt": {
+  "classes": 0,
+  "n_deg1_hist": {},
+  "pendant_b_total": 0,
+  "classes_with_pendant_b": 0,
+  "slacks": [],
+  "taus": [],
+  "ge3": []
+ },
+ "cell_22_17_9_D3.txt": {
+  "classes": 37,
+  "n_deg1_hist": {
+   "0": 18,
+   "1": 19
+  },
+  "pendant_b_total": 0,
+  "classes_with_pendant_b": 0,
+  "slacks": [
+   1
+  ],
+  "taus": [
+   9
+  ],
+  "ge3": []
+ },
+ "cell_23_21_10_D3.txt": {
+  "classes": 0,
+  "n_deg1_hist": {},
+  "pendant_b_total": 0,
+  "classes_with_pendant_b": 0,
+  "slacks": [],
+  "taus": [],
+  "ge3": []
+ },
+ "cell_24_14_9_D3.txt": {
+  "classes": 0,
+  "n_deg1_hist": {},
+  "pendant_b_total": 0,
+  "classes_with_pendant_b": 0,
+  "slacks": [],
+  "taus": [],
+  "ge3": []
+ },
+ "cell_25_18_10_D3.txt": {
+  "classes": 0,
+  "n_deg1_hist": {},
+  "pendant_b_total": 0,
+  "classes_with_pendant_b": 0,
+  "slacks": [],
+  "taus": [],
+  "ge3": []
+ },
+ "cell_26_22_11_D3.txt": {
+  "classes": 36,
+  "n_deg1_hist": {
+   "0": 36
+  },
+  "pendant_b_total": 0,
+  "classes_with_pendant_b": 0,
+  "slacks": [
+   1
+  ],
+  "taus": [
+   11
+  ],
+  "ge3": []
+ },
+ "cell_27_15_10_D3.txt": {
+  "classes": 0,
+  "n_deg1_hist": {},
+  "pendant_b_total": 0,
+  "classes_with_pendant_b": 0,
+  "slacks": [],
+  "taus": [],
+  "ge3": []
+ },
+ "cell_28_19_11_D3.txt": {
+  "classes": 0,
+  "n_deg1_hist": {},
+  "pendant_b_total": 0,
+  "classes_with_pendant_b": 0,
+  "slacks": [],
+  "taus": [],
+  "ge3": []
+ }
+}

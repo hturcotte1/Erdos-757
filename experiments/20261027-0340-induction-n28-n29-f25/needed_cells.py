@@ -17,7 +17,7 @@ def closure(tops):
         c = cnt(k); p = prov.get('%d,%d,%d,%d' % k, {}).get('first', '?')
         seen[k] = dict(classes=c, source=p)
         if c is None: seen[k]['MISSING'] = True; return
-        if 'refereed' in p: return
+        if p.endswith('(refereed)'): return
         n, m, t, D = k
         if m <= engine.MD: return
         for d in range(max(1, math.ceil(3 * m / n)), D + 1):

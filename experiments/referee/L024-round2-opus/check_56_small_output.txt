@@ -1,0 +1,3 @@
+/home/user/Erdos-757/experiments/referee/L024-round2-opus/check_56.py:5: SyntaxWarning: invalid escape sequence '\ '
+  H1: for every e in E*(X) there are minimum transversals T_F (F in X) whose union meets E*(X) \ {e} (L021 8.1);
+CHECK 5.6 {'inst': 281, 'claimE': 264, 'H1_ok': 649, 'H1_fail': 0, 'hyp': 118, 'tau_ok': 118, 'P_ok': 118, 'ctrl': 146, 'ctrl_P_lt': 35, 'ctrl_tau_plus1': 35, 'bd_empty': 0} BAD 0

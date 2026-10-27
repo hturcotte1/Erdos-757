@@ -1,0 +1,19 @@
+=== 29,27,13,3
+TOTAL inputs 3
+(29,27,13,3) branch d=3 t'=12: 3 inputs; ext_d noprune SUMMARY graphs=3 bad_tau=0 tg_too_small=0 searched=3 max_min_covers=19321 nodes=415 hits_all=0 printed=0; pyverify: {'total': 0, 'disconnected': 0, 'nonlinear': 0, 'F7': 0, 'P3': 0, 'degree': 0, 'wrong_tau': 0, 'member': 0, 'tau_checked': 0}
+=== 28,23,12,3
+TOTAL inputs 32
+(28,23,12,3) branch d=3 t'=11: 32 inputs; ext_d noprune SUMMARY graphs=32 bad_tau=0 tg_too_small=0 searched=32 max_min_covers=13761 nodes=619429 hits_all=0 printed=0; pyverify: {'total': 0, 'disconnected': 0, 'nonlinear': 0, 'F7': 0, 'P3': 0, 'degree': 0, 'wrong_tau': 0, 'member': 0, 'tau_checked': 0}
+=== 28,18,11,3
+TOTAL inputs 177
+(28,18,11,3) branch d=2 t'=10: 1 inputs; ext_d noprune SUMMARY graphs=1 bad_tau=0 tg_too_small=0 searched=1 max_min_covers=6591 nodes=34 hits_all=0 printed=0; pyverify: {'total': 0, 'disconnected': 0, 'nonlinear': 0, 'F7': 0, 'P3': 0, 'degree': 0, 'wrong_tau': 0, 'member': 0, 'tau_checked': 0}
+(28,18,11,3) branch d=3 t'=10: 176 inputs; ext_d noprune SUMMARY graphs=176 bad_tau=0 tg_too_small=0 searched=176 max_min_covers=15309 nodes=11189796 hits_all=9944 printed=9944; pyverify: {'total': 9944, 'disconnected': 9944, 'nonlinear': 0, 'F7': 0, 'P3': 0, 'degree': 0, 'wrong_tau': 0, 'member': 0, 'tau_checked': 50}
+=== 28,17,11,2
+TOTAL inputs 0
+=== 29,16,11,3
+TOTAL inputs 5
+(29,16,11,3) branch d=2 t'=10: 1 inputs; ext_d noprune SUMMARY graphs=1 bad_tau=0 tg_too_small=0 searched=1 max_min_covers=13689 nodes=846 hits_all=0 printed=0; pyverify: {'total': 0, 'disconnected': 0, 'nonlinear': 0, 'F7': 0, 'P3': 0, 'degree': 0, 'wrong_tau': 0, 'member': 0, 'tau_checked': 0}
+(29,16,11,3) branch d=3 t'=10: 4 inputs; ext_d noprune SUMMARY graphs=4 bad_tau=0 tg_too_small=0 searched=4 max_min_covers=24057 nodes=1218567 hits_all=360 printed=360; pyverify: {'total': 360, 'disconnected': 360, 'nonlinear': 0, 'F7': 0, 'P3': 0, 'degree': 0, 'wrong_tau': 0, 'member': 0, 'tau_checked': 50}
+=== 29,15,11,2
+TOTAL inputs 0
+=== 29,22,12,3

@@ -1,0 +1,1538 @@
+[
+{
+"n": 3,
+"m": 1,
+"tau": 1,
+"D": 5,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_3_1_1_D5.txt",
+"slack": 0
+},
+{
+"n": 4,
+"m": 2,
+"tau": 1,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_4_2_1_D3.txt",
+"slack": 5
+},
+{
+"n": 5,
+"m": 2,
+"tau": 1,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_5_2_1_D3.txt",
+"slack": 8
+},
+{
+"n": 5,
+"m": 3,
+"tau": 1,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_5_3_1_D3.txt",
+"slack": 10
+},
+{
+"n": 6,
+"m": 3,
+"tau": 1,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_6_3_1_D2.txt",
+"slack": 13
+},
+{
+"n": 6,
+"m": 3,
+"tau": 2,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_6_3_2_D4.txt",
+"slack": 2
+},
+{
+"n": 6,
+"m": 4,
+"tau": 1,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_6_4_1_D2.txt",
+"slack": 15
+},
+{
+"n": 6,
+"m": 4,
+"tau": 2,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_6_4_2_D3.txt",
+"slack": 4
+},
+{
+"n": 7,
+"m": 3,
+"tau": 1,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_7_3_1_D2.txt",
+"slack": 16
+},
+{
+"n": 7,
+"m": 3,
+"tau": 2,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_7_3_2_D3.txt",
+"slack": 5
+},
+{
+"n": 7,
+"m": 4,
+"tau": 1,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_7_4_1_D2.txt",
+"slack": 18
+},
+{
+"n": 7,
+"m": 4,
+"tau": 2,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_7_4_2_D3.txt",
+"slack": 7
+},
+{
+"n": 7,
+"m": 5,
+"tau": 2,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_7_5_2_D3.txt",
+"slack": 9
+},
+{
+"n": 8,
+"m": 4,
+"tau": 2,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_8_4_2_D3.txt",
+"slack": 10
+},
+{
+"n": 8,
+"m": 5,
+"tau": 2,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_8_5_2_D2.txt",
+"slack": 12
+},
+{
+"n": 8,
+"m": 5,
+"tau": 3,
+"D": 5,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_8_5_3_D5.txt",
+"slack": 1
+},
+{
+"n": 8,
+"m": 6,
+"tau": 2,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_8_6_2_D2.txt",
+"slack": 14
+},
+{
+"n": 8,
+"m": 6,
+"tau": 3,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_8_6_3_D4.txt",
+"slack": 3
+},
+{
+"n": 9,
+"m": 4,
+"tau": 2,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_9_4_2_D2.txt",
+"slack": 13
+},
+{
+"n": 9,
+"m": 4,
+"tau": 3,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_9_4_3_D4.txt",
+"slack": 2
+},
+{
+"n": 9,
+"m": 5,
+"tau": 2,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_9_5_2_D2.txt",
+"slack": 15
+},
+{
+"n": 9,
+"m": 5,
+"tau": 3,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_9_5_3_D3.txt",
+"slack": 4
+},
+{
+"n": 9,
+"m": 6,
+"tau": 2,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_9_6_2_D2.txt",
+"slack": 17
+},
+{
+"n": 9,
+"m": 6,
+"tau": 3,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_9_6_3_D3.txt",
+"slack": 6
+},
+{
+"n": 9,
+"m": 7,
+"tau": 3,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_9_7_3_D3.txt",
+"slack": 8
+},
+{
+"n": 10,
+"m": 5,
+"tau": 2,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_10_5_2_D2.txt",
+"slack": 18
+},
+{
+"n": 10,
+"m": 5,
+"tau": 3,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_10_5_3_D3.txt",
+"slack": 7
+},
+{
+"n": 10,
+"m": 6,
+"tau": 3,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_10_6_3_D3.txt",
+"slack": 9
+},
+{
+"n": 10,
+"m": 7,
+"tau": 3,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_10_7_3_D2.txt",
+"slack": 11
+},
+{
+"n": 10,
+"m": 7,
+"tau": 4,
+"D": 5,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_10_7_4_D5.txt",
+"slack": 0
+},
+{
+"n": 10,
+"m": 8,
+"tau": 3,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_10_8_3_D2.txt",
+"slack": 13
+},
+{
+"n": 10,
+"m": 8,
+"tau": 4,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_10_8_4_D4.txt",
+"slack": 2
+},
+{
+"n": 11,
+"m": 5,
+"tau": 3,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_11_5_3_D3.txt",
+"slack": 10
+},
+{
+"n": 11,
+"m": 6,
+"tau": 3,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_11_6_3_D2.txt",
+"slack": 12
+},
+{
+"n": 11,
+"m": 6,
+"tau": 4,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_11_6_4_D4.txt",
+"slack": 1
+},
+{
+"n": 11,
+"m": 7,
+"tau": 3,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_11_7_3_D2.txt",
+"slack": 14
+},
+{
+"n": 11,
+"m": 7,
+"tau": 4,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_11_7_4_D4.txt",
+"slack": 3
+},
+{
+"n": 11,
+"m": 8,
+"tau": 4,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_11_8_4_D3.txt",
+"slack": 5
+},
+{
+"n": 11,
+"m": 9,
+"tau": 4,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_11_9_4_D3.txt",
+"slack": 7
+},
+{
+"n": 12,
+"m": 6,
+"tau": 3,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_12_6_3_D2.txt",
+"slack": 15
+},
+{
+"n": 12,
+"m": 6,
+"tau": 4,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_12_6_4_D3.txt",
+"slack": 4
+},
+{
+"n": 12,
+"m": 7,
+"tau": 3,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_12_7_3_D2.txt",
+"slack": 17
+},
+{
+"n": 12,
+"m": 7,
+"tau": 4,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_12_7_4_D3.txt",
+"slack": 6
+},
+{
+"n": 12,
+"m": 8,
+"tau": 4,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_12_8_4_D3.txt",
+"slack": 8
+},
+{
+"n": 12,
+"m": 9,
+"tau": 4,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_12_9_4_D2.txt",
+"slack": 10
+},
+{
+"n": 12,
+"m": 10,
+"tau": 5,
+"D": 5,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_12_10_5_D5.txt",
+"slack": 1
+},
+{
+"n": 13,
+"m": 6,
+"tau": 3,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_13_6_3_D2.txt",
+"slack": 18
+},
+{
+"n": 13,
+"m": 6,
+"tau": 4,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_13_6_4_D3.txt",
+"slack": 7
+},
+{
+"n": 13,
+"m": 7,
+"tau": 4,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_13_7_4_D3.txt",
+"slack": 9
+},
+{
+"n": 13,
+"m": 8,
+"tau": 4,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_13_8_4_D2.txt",
+"slack": 11
+},
+{
+"n": 13,
+"m": 8,
+"tau": 5,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_13_8_5_D4.txt",
+"slack": 0
+},
+{
+"n": 13,
+"m": 9,
+"tau": 4,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_13_9_4_D2.txt",
+"slack": 13
+},
+{
+"n": 13,
+"m": 9,
+"tau": 5,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_13_9_5_D4.txt",
+"slack": 2
+},
+{
+"n": 13,
+"m": 10,
+"tau": 5,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_13_10_5_D3.txt",
+"slack": 4
+},
+{
+"n": 13,
+"m": 11,
+"tau": 5,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_13_11_5_D3.txt",
+"slack": 6
+},
+{
+"n": 14,
+"m": 7,
+"tau": 4,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_14_7_4_D2.txt",
+"slack": 12
+},
+{
+"n": 14,
+"m": 7,
+"tau": 5,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_14_7_5_D4.txt",
+"slack": 1
+},
+{
+"n": 14,
+"m": 8,
+"tau": 4,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_14_8_4_D2.txt",
+"slack": 14
+},
+{
+"n": 14,
+"m": 8,
+"tau": 5,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_14_8_5_D4.txt",
+"slack": 3
+},
+{
+"n": 14,
+"m": 9,
+"tau": 5,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_14_9_5_D3.txt",
+"slack": 5
+},
+{
+"n": 14,
+"m": 10,
+"tau": 5,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_14_10_5_D3.txt",
+"slack": 7
+},
+{
+"n": 14,
+"m": 11,
+"tau": 5,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_14_11_5_D2.txt",
+"slack": 9
+},
+{
+"n": 14,
+"m": 12,
+"tau": 6,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0400-realize-21-18-9/work/cells/cell_14_12_6_D4.txt",
+"slack": 0
+},
+{
+"n": 15,
+"m": 7,
+"tau": 4,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_15_7_4_D2.txt",
+"slack": 15
+},
+{
+"n": 15,
+"m": 7,
+"tau": 5,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_15_7_5_D3.txt",
+"slack": 4
+},
+{
+"n": 15,
+"m": 8,
+"tau": 4,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_15_8_4_D2.txt",
+"slack": 17
+},
+{
+"n": 15,
+"m": 8,
+"tau": 5,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_15_8_5_D3.txt",
+"slack": 6
+},
+{
+"n": 15,
+"m": 9,
+"tau": 5,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_15_9_5_D3.txt",
+"slack": 8
+},
+{
+"n": 15,
+"m": 10,
+"tau": 5,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_15_10_5_D2.txt",
+"slack": 10
+},
+{
+"n": 15,
+"m": 11,
+"tau": 6,
+"D": 5,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_15_11_6_D5.txt",
+"slack": 1
+},
+{
+"n": 15,
+"m": 12,
+"tau": 6,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_15_12_6_D4.txt",
+"slack": 3
+},
+{
+"n": 15,
+"m": 13,
+"tau": 6,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/prover/L014/out/cells/cell_15_13_6_D3.txt",
+"slack": 5
+},
+{
+"n": 16,
+"m": 8,
+"tau": 5,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_16_8_5_D3.txt",
+"slack": 9
+},
+{
+"n": 16,
+"m": 9,
+"tau": 5,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_16_9_5_D2.txt",
+"slack": 11
+},
+{
+"n": 16,
+"m": 9,
+"tau": 6,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_16_9_6_D4.txt",
+"slack": 0
+},
+{
+"n": 16,
+"m": 10,
+"tau": 5,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_16_10_5_D2.txt",
+"slack": 13
+},
+{
+"n": 16,
+"m": 10,
+"tau": 6,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_16_10_6_D4.txt",
+"slack": 2
+},
+{
+"n": 16,
+"m": 11,
+"tau": 6,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_16_11_6_D3.txt",
+"slack": 4
+},
+{
+"n": 16,
+"m": 12,
+"tau": 6,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_16_12_6_D3.txt",
+"slack": 6
+},
+{
+"n": 17,
+"m": 8,
+"tau": 5,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_17_8_5_D2.txt",
+"slack": 12
+},
+{
+"n": 17,
+"m": 8,
+"tau": 6,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_17_8_6_D4.txt",
+"slack": 1
+},
+{
+"n": 17,
+"m": 9,
+"tau": 5,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_17_9_5_D2.txt",
+"slack": 14
+},
+{
+"n": 17,
+"m": 9,
+"tau": 6,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_17_9_6_D4.txt",
+"slack": 3
+},
+{
+"n": 17,
+"m": 10,
+"tau": 6,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_17_10_6_D3.txt",
+"slack": 5
+},
+{
+"n": 17,
+"m": 11,
+"tau": 6,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_17_11_6_D3.txt",
+"slack": 7
+},
+{
+"n": 17,
+"m": 12,
+"tau": 6,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_17_12_6_D2.txt",
+"slack": 9
+},
+{
+"n": 17,
+"m": 13,
+"tau": 7,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0400-realize-21-18-9/work/cells/cell_17_13_7_D4.txt",
+"slack": 0
+},
+{
+"n": 17,
+"m": 14,
+"tau": 7,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_17_14_7_D4.txt",
+"slack": 2
+},
+{
+"n": 17,
+"m": 15,
+"tau": 7,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_17_15_7_D3.txt",
+"slack": 4
+},
+{
+"n": 18,
+"m": 9,
+"tau": 5,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_18_9_5_D2.txt",
+"slack": 17
+},
+{
+"n": 18,
+"m": 9,
+"tau": 6,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_18_9_6_D3.txt",
+"slack": 6
+},
+{
+"n": 18,
+"m": 10,
+"tau": 6,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_18_10_6_D3.txt",
+"slack": 8
+},
+{
+"n": 18,
+"m": 10,
+"tau": 7,
+"D": -1,
+"path": "/home/user/Erdos-757/experiments/falsify/pt-pendant-triple/out/cell_18_10_7_D-1_s-3.txt",
+"slack": -3
+},
+{
+"n": 18,
+"m": 11,
+"tau": 6,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_18_11_6_D2.txt",
+"slack": 10
+},
+{
+"n": 18,
+"m": 11,
+"tau": 7,
+"D": -1,
+"path": "/home/user/Erdos-757/experiments/falsify/pt-pendant-triple/out/cell_18_11_7_D-1_s-1.txt",
+"slack": -1
+},
+{
+"n": 18,
+"m": 12,
+"tau": 7,
+"D": 5,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_18_12_7_D5.txt",
+"slack": 1
+},
+{
+"n": 18,
+"m": 13,
+"tau": 7,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_18_13_7_D4.txt",
+"slack": 3
+},
+{
+"n": 18,
+"m": 14,
+"tau": 7,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_18_14_7_D3.txt",
+"slack": 5
+},
+{
+"n": 19,
+"m": 9,
+"tau": 6,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_19_9_6_D3.txt",
+"slack": 9
+},
+{
+"n": 19,
+"m": 10,
+"tau": 6,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_19_10_6_D2.txt",
+"slack": 11
+},
+{
+"n": 19,
+"m": 10,
+"tau": 7,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_19_10_7_D4.txt",
+"slack": 0
+},
+{
+"n": 19,
+"m": 11,
+"tau": 6,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_19_11_6_D2.txt",
+"slack": 13
+},
+{
+"n": 19,
+"m": 11,
+"tau": 7,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_19_11_7_D4.txt",
+"slack": 2
+},
+{
+"n": 19,
+"m": 12,
+"tau": 7,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_19_12_7_D3.txt",
+"slack": 4
+},
+{
+"n": 19,
+"m": 13,
+"tau": 7,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_19_13_7_D3.txt",
+"slack": 6
+},
+{
+"n": 19,
+"m": 16,
+"tau": 8,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/referee/L012-round3/out/cell_19_16_8_D4_mine.txt",
+"slack": 1
+},
+{
+"n": 19,
+"m": 17,
+"tau": 8,
+"D": 5,
+"path": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells/cell_19_17_8_D5.txt",
+"slack": 3
+},
+{
+"n": 20,
+"m": 10,
+"tau": 6,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_20_10_6_D2.txt",
+"slack": 14
+},
+{
+"n": 20,
+"m": 10,
+"tau": 7,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_20_10_7_D3.txt",
+"slack": 3
+},
+{
+"n": 20,
+"m": 11,
+"tau": 7,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_20_11_7_D3.txt",
+"slack": 5
+},
+{
+"n": 20,
+"m": 12,
+"tau": 7,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_20_12_7_D3.txt",
+"slack": 7
+},
+{
+"n": 20,
+"m": 13,
+"tau": 7,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_20_13_7_D2.txt",
+"slack": 9
+},
+{
+"n": 20,
+"m": 14,
+"tau": 8,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_20_14_8_D4.txt",
+"slack": 0
+},
+{
+"n": 20,
+"m": 15,
+"tau": 8,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_20_15_8_D4.txt",
+"slack": 2
+},
+{
+"n": 20,
+"m": 16,
+"tau": 8,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_20_16_8_D3.txt",
+"slack": 4
+},
+{
+"n": 21,
+"m": 10,
+"tau": 6,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_21_10_6_D2.txt",
+"slack": 17
+},
+{
+"n": 21,
+"m": 10,
+"tau": 7,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_21_10_7_D3.txt",
+"slack": 6
+},
+{
+"n": 21,
+"m": 11,
+"tau": 7,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_21_11_7_D3.txt",
+"slack": 8
+},
+{
+"n": 21,
+"m": 12,
+"tau": 7,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_21_12_7_D2.txt",
+"slack": 10
+},
+{
+"n": 21,
+"m": 13,
+"tau": 8,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_21_13_8_D4.txt",
+"slack": 1
+},
+{
+"n": 21,
+"m": 14,
+"tau": 8,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_21_14_8_D3.txt",
+"slack": 3
+},
+{
+"n": 21,
+"m": 15,
+"tau": 8,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_21_15_8_D3.txt",
+"slack": 5
+},
+{
+"n": 21,
+"m": 18,
+"tau": 9,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0400-realize-21-18-9/work/cells/cell_21_18_9_D4.txt",
+"slack": 0
+},
+{
+"n": 21,
+"m": 19,
+"tau": 9,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_21_19_9_D4.txt",
+"slack": 2
+},
+{
+"n": 22,
+"m": 11,
+"tau": 7,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_22_11_7_D2.txt",
+"slack": 11
+},
+{
+"n": 22,
+"m": 11,
+"tau": 8,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_22_11_8_D4.txt",
+"slack": 0
+},
+{
+"n": 22,
+"m": 12,
+"tau": 7,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_22_12_7_D2.txt",
+"slack": 13
+},
+{
+"n": 22,
+"m": 12,
+"tau": 8,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_22_12_8_D3.txt",
+"slack": 2
+},
+{
+"n": 22,
+"m": 13,
+"tau": 8,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_22_13_8_D3.txt",
+"slack": 4
+},
+{
+"n": 22,
+"m": 14,
+"tau": 8,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_22_14_8_D3.txt",
+"slack": 6
+},
+{
+"n": 22,
+"m": 17,
+"tau": 9,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/referee/L012-round3/out/cell_22_17_9_D4_mine.txt",
+"slack": 1
+},
+{
+"n": 22,
+"m": 18,
+"tau": 9,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_22_18_9_D3.txt",
+"slack": 3
+},
+{
+"n": 23,
+"m": 11,
+"tau": 7,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_23_11_7_D2.txt",
+"slack": 14
+},
+{
+"n": 23,
+"m": 11,
+"tau": 8,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_23_11_8_D3.txt",
+"slack": 3
+},
+{
+"n": 23,
+"m": 12,
+"tau": 8,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_23_12_8_D3.txt",
+"slack": 5
+},
+{
+"n": 23,
+"m": 13,
+"tau": 8,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_23_13_8_D3.txt",
+"slack": 7
+},
+{
+"n": 23,
+"m": 13,
+"tau": 9,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_23_13_9_D2.txt",
+"slack": -4
+},
+{
+"n": 23,
+"m": 14,
+"tau": 8,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_23_14_8_D2.txt",
+"slack": 9
+},
+{
+"n": 23,
+"m": 14,
+"tau": 9,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_23_14_9_D3.txt",
+"slack": -2
+},
+{
+"n": 23,
+"m": 15,
+"tau": 9,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_23_15_9_D4.txt",
+"slack": 0
+},
+{
+"n": 23,
+"m": 16,
+"tau": 9,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_23_16_9_D3.txt",
+"slack": 2
+},
+{
+"n": 23,
+"m": 17,
+"tau": 9,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_23_17_9_D3.txt",
+"slack": 4
+},
+{
+"n": 23,
+"m": 20,
+"tau": 10,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_23_20_10_D3.txt",
+"slack": -1
+},
+{
+"n": 23,
+"m": 21,
+"tau": 10,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_23_21_10_D4.txt",
+"slack": 1
+},
+{
+"n": 24,
+"m": 12,
+"tau": 8,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_12_8_D3.txt",
+"slack": 8
+},
+{
+"n": 24,
+"m": 12,
+"tau": 9,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_12_9_D2.txt",
+"slack": -3
+},
+{
+"n": 24,
+"m": 13,
+"tau": 8,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_13_8_D2.txt",
+"slack": 10
+},
+{
+"n": 24,
+"m": 13,
+"tau": 9,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_13_9_D3.txt",
+"slack": -1
+},
+{
+"n": 24,
+"m": 14,
+"tau": 9,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_14_9_D3.txt",
+"slack": 1
+},
+{
+"n": 24,
+"m": 15,
+"tau": 9,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_15_9_D3.txt",
+"slack": 3
+},
+{
+"n": 24,
+"m": 16,
+"tau": 9,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_16_9_D3.txt",
+"slack": 5
+},
+{
+"n": 24,
+"m": 18,
+"tau": 10,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_18_10_D3.txt",
+"slack": -2
+},
+{
+"n": 24,
+"m": 19,
+"tau": 10,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_19_10_D4.txt",
+"slack": 0
+},
+{
+"n": 24,
+"m": 20,
+"tau": 10,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_20_10_D3.txt",
+"slack": 2
+},
+{
+"n": 25,
+"m": 12,
+"tau": 8,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_12_8_D2.txt",
+"slack": 11
+},
+{
+"n": 25,
+"m": 12,
+"tau": 9,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_12_9_D4.txt",
+"slack": 0
+},
+{
+"n": 25,
+"m": 13,
+"tau": 9,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_13_9_D3.txt",
+"slack": 2
+},
+{
+"n": 25,
+"m": 14,
+"tau": 9,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_14_9_D3.txt",
+"slack": 4
+},
+{
+"n": 25,
+"m": 15,
+"tau": 9,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_15_9_D3.txt",
+"slack": 6
+},
+{
+"n": 25,
+"m": 16,
+"tau": 10,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_16_10_D2.txt",
+"slack": -3
+},
+{
+"n": 25,
+"m": 17,
+"tau": 10,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_17_10_D3.txt",
+"slack": -1
+},
+{
+"n": 25,
+"m": 18,
+"tau": 10,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_18_10_D3.txt",
+"slack": 1
+},
+{
+"n": 25,
+"m": 19,
+"tau": 10,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_19_10_D3.txt",
+"slack": 3
+},
+{
+"n": 25,
+"m": 22,
+"tau": 11,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_22_11_D3.txt",
+"slack": -2
+},
+{
+"n": 25,
+"m": 23,
+"tau": 11,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_23_11_D4.txt",
+"slack": 0
+},
+{
+"n": 26,
+"m": 13,
+"tau": 9,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_13_9_D3.txt",
+"slack": 5
+},
+{
+"n": 26,
+"m": 14,
+"tau": 9,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_14_9_D2.txt",
+"slack": 7
+},
+{
+"n": 26,
+"m": 14,
+"tau": 10,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_14_10_D2.txt",
+"slack": -4
+},
+{
+"n": 26,
+"m": 15,
+"tau": 10,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_15_10_D3.txt",
+"slack": -2
+},
+{
+"n": 26,
+"m": 16,
+"tau": 10,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_16_10_D4.txt",
+"slack": 0
+},
+{
+"n": 26,
+"m": 17,
+"tau": 10,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_17_10_D3.txt",
+"slack": 2
+},
+{
+"n": 26,
+"m": 18,
+"tau": 10,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells/cell_26_18_10_D3.txt",
+"slack": 4
+},
+{
+"n": 26,
+"m": 21,
+"tau": 11,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_21_11_D3.txt",
+"slack": -1
+},
+{
+"n": 26,
+"m": 22,
+"tau": 11,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_22_11_D3.txt",
+"slack": 1
+},
+{
+"n": 27,
+"m": 13,
+"tau": 9,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_13_9_D3.txt",
+"slack": 8
+},
+{
+"n": 27,
+"m": 13,
+"tau": 10,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_13_10_D2.txt",
+"slack": -3
+},
+{
+"n": 27,
+"m": 14,
+"tau": 10,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_14_10_D3.txt",
+"slack": -1
+},
+{
+"n": 27,
+"m": 15,
+"tau": 10,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_15_10_D3.txt",
+"slack": 1
+},
+{
+"n": 27,
+"m": 16,
+"tau": 10,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_16_10_D3.txt",
+"slack": 3
+},
+{
+"n": 27,
+"m": 18,
+"tau": 11,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_18_11_D2.txt",
+"slack": -4
+},
+{
+"n": 27,
+"m": 19,
+"tau": 11,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_19_11_D3.txt",
+"slack": -2
+},
+{
+"n": 27,
+"m": 20,
+"tau": 11,
+"D": 4,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_20_11_D4.txt",
+"slack": 0
+},
+{
+"n": 27,
+"m": 21,
+"tau": 11,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells/cell_27_21_11_D3.txt",
+"slack": 2
+},
+{
+"n": 27,
+"m": 25,
+"tau": 12,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_25_12_D3.txt",
+"slack": -1
+},
+{
+"n": 28,
+"m": 14,
+"tau": 10,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_28_14_10_D2.txt",
+"slack": 2
+},
+{
+"n": 28,
+"m": 17,
+"tau": 11,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_28_17_11_D2.txt",
+"slack": -3
+},
+{
+"n": 28,
+"m": 18,
+"tau": 11,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_28_18_11_D3.txt",
+"slack": -1
+},
+{
+"n": 28,
+"m": 19,
+"tau": 11,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_28_19_11_D3.txt",
+"slack": 1
+},
+{
+"n": 28,
+"m": 23,
+"tau": 12,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_28_23_12_D3.txt",
+"slack": -2
+},
+{
+"n": 29,
+"m": 15,
+"tau": 11,
+"D": 2,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_29_15_11_D2.txt",
+"slack": -4
+},
+{
+"n": 29,
+"m": 16,
+"tau": 11,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_29_16_11_D3.txt",
+"slack": -2
+},
+{
+"n": 29,
+"m": 22,
+"tau": 12,
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_29_22_12_D3.txt",
+"slack": -1
+}
+]

@@ -1,0 +1,16 @@
+mode poor types [('(3,1,1)#0', '(3,1,1)#0', '(3,1,1)#0'), ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#1'), ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#2'), ('(3,1,1)#0', '(3,1,1)#0', '(8,5,3)#0'), ('(3,1,1)#0', '(3,1,1)#0', '(8,5,3)#1'), ('(3,1,1)#0', '(10,7,4)#1', '(10,7,4)#1'), ('(3,1,1)#0', '(10,7,4)#1', '(10,7,4)#2'), ('(3,1,1)#0', '(10,7,4)#2', '(10,7,4)#2'), ('(10,7,4)#1', '(10,7,4)#1', '(10,7,4)#1'), ('(10,7,4)#1', '(10,7,4)#1', '(10,7,4)#2'), ('(10,7,4)#1', '(10,7,4)#2', '(10,7,4)#2'), ('(10,7,4)#2', '(10,7,4)#2', '(10,7,4)#2')]
+poor ('(3,1,1)#0', '(3,1,1)#0', '(3,1,1)#0') N 9 g-orbits 1 configs 44 running {'type_triples': 1, 'g_choices': 1, 'configs': 44, 'claimE': 32, 'inC3': 32, 'inC3_claimE': 32, 'tau_ok': 32, 'Pneg': 0} [2s]
+poor ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#1') N 16 g-orbits 5 configs 32 running {'type_triples': 2, 'g_choices': 6, 'configs': 76, 'claimE': 44, 'inC3': 44, 'inC3_claimE': 44, 'tau_ok': 44, 'Pneg': 0} [3s]
+poor ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#2') N 16 g-orbits 6 configs 40 running {'type_triples': 3, 'g_choices': 12, 'configs': 116, 'claimE': 60, 'inC3': 60, 'inC3_claimE': 60, 'tau_ok': 60, 'Pneg': 0} [5s]
+poor ('(3,1,1)#0', '(3,1,1)#0', '(8,5,3)#0') N 14 g-orbits 4 configs 105 running {'type_triples': 4, 'g_choices': 16, 'configs': 221, 'claimE': 120, 'inC3': 120, 'inC3_claimE': 120, 'tau_ok': 120, 'Pneg': 0} [10s]
+poor ('(3,1,1)#0', '(3,1,1)#0', '(8,5,3)#1') N 14 g-orbits 5 configs 138 running {'type_triples': 5, 'g_choices': 21, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0} [17s]
+poor ('(3,1,1)#0', '(10,7,4)#1', '(10,7,4)#1') N 23 g-orbits 25 configs 0 running {'type_triples': 6, 'g_choices': 46, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0} [19s]
+poor ('(3,1,1)#0', '(10,7,4)#1', '(10,7,4)#2') N 23 g-orbits 30 configs 0 running {'type_triples': 7, 'g_choices': 76, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0} [23s]
+poor ('(3,1,1)#0', '(10,7,4)#2', '(10,7,4)#2') N 23 g-orbits 36 configs 0 running {'type_triples': 8, 'g_choices': 112, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0} [28s]
+poor ('(10,7,4)#1', '(10,7,4)#1', '(10,7,4)#1') N 30 g-orbits 125 configs 0 running {'type_triples': 9, 'g_choices': 237, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0} [73s]
+poor ('(10,7,4)#1', '(10,7,4)#1', '(10,7,4)#2') N 30 g-orbits 150 configs 0 running {'type_triples': 10, 'g_choices': 387, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0} [142s]
+poor ('(10,7,4)#1', '(10,7,4)#2', '(10,7,4)#2') N 30 g-orbits 180 configs 0 running {'type_triples': 11, 'g_choices': 567, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0} [217s]
+poor ('(10,7,4)#2', '(10,7,4)#2', '(10,7,4)#2') N 30 g-orbits 216 configs 0 running {'type_triples': 12, 'g_choices': 783, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0} [308s]
+poor TOTAL {'type_triples': 12, 'g_choices': 783, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0}
+done [308s]
+exit 0

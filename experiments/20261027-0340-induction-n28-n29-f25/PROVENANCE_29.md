@@ -1,0 +1,27 @@
+# Provenance of cell(29,27,13,3) = 0 (and of the cells it needs)
+
+Unrefereed computation [verified-here as a computation]. Folder experiments/20261027-0340-induction-n28-n29-f25, finished 2026-10-27 ~10:36 UTC. Cell semantics and engine as in PROVENANCE_25_23_11.md (L012 engine, streamed L016 driver, `ext_d_fast`).
+The cell's class list is empty: `lists/cell_29_27_13_D3.txt` (header + 0 classes, sha256 of the file `37bbced69153d33753e0620e68ee9c0603fbcd16dceff7b8dbbfabf973b20e97`; `lists/cell_29_27_13_D3.json`).
+
+## Why only d = 3 and D = 3 [derived-here, I11 for n <= 28 = this run + L013 + L016]
+Top cell (29,27,13): I11 slack s = 3*29 + 2*27 - 11*13 = 87+54-143 = -2 < 0 (a violator of I11 would lie here; m <= n-2 = 27 saturated; 17*13 = 221 <= 5*29+3*27 = 226 so the Henning-Yeo bound allows it). For a vertex v of degree d: X-v has 28 vertices, 27-d edges, tau' in {12,13}; its components have <= 28 vertices so slack >= 0 by I11 at n <= 28 (L013 Theorem 1 for n <= 26, L016 for n = 27, this run for n = 28), S' = 3*28 + 2(27-d) - 11 tau' = 138 - 2d - 11 tau'. tau' = 13: S' = -5-2d < 0; tau' = 12: S' = 6-2d >= 0 so d <= 3. Max degree >= ceil(3m/n) = ceil(81/29) = 3. So the only branch is d = 3, tau' = 12, S' = 0, and Delta <= 3 is automatic.
+Other n = 29 cells with m <= n-2, 17 tau <= 5n+3m and negative slack: (29,14,11) -6, (29,20,12) -5, (29,21,12) -3, (29,26,13) -4 are excluded by the counting bound 3m <= dmax*n (dmax = floor((s+8)/2) = 1, 1, 2, 2; e.g. (29,26,13): 78 > 58), and (29,15,11,2), (29,16,11,3), (29,22,12,3), (29,27,13,3) are the four OPEN cells (`arith_base.py` = L016/L013 arithmetic, cost study `arith_output.txt`). The full window table is in ../20261027-0235-cost-n28-n29/arith_output.txt (window 1 <= tau <= m <= n-2, connected n <= 2m+1, K8; cells with slack >= 0 satisfy I11 trivially). Their results: (29,15,11,2) 0 (0 inputs), (29,16,11,3) 0 (5 inputs), (29,22,12,3) 0 (972 inputs), (29,27,13,3) 0 (3 inputs).
+
+## Decompositions of the d = 3 branch of (29,27,13,3) (S' = 0, remainder (28,24), tau' = 12; 3 decompositions)
+| decomposition | components | inputs |
+|---|---|---|
+| (14,12,6)+(14,12,6) | cell(14,12,6,3) = 2 classes (refereed L012/L013/L014), multisets of size 2 | 3 |
+| (3,1,1)+(25,23,11) | AP = 1; cell(25,23,11,3) = 0 (computed here: PROVENANCE_25_23_11.md) | 0 |
+| (28,24,12) | cell(28,24,12,3) = 0 (computed here, below) | 0 |
+Command: `ext_d 28 12 13 3 2 < input | filt HIT 29 notau | ... | canon 29`, 3 inputs: `graphs=3 bad_tau=0 searched=3 max_min_covers=19321 nodes=415 hits_F7free=0 hits_in_C=0`; 0.2 s. With `noprune` (no F7/(P3) pruning, original Gosper `ext_d` of L016 `bin/`, validate/val_output.txt): `hits_all=0`: not a single extension of the three inputs has tau >= 13, so the emptiness is not produced by the filters.
+
+## cell(28,24,12,3) = 0 (needed above; slack 0: 84+48-132 = 0, the I11-tight n = 28 cell)
+d = 3 only (3*24/28 -> 3; tau' = 11, S' = 2, remainder (27,21)): 11 decompositions, 30,645 inputs: (3,1,1)+(12,10,5)^2 11,175; (10,7,4)+(17,14,7) 6,832; (27,21,11) 4,553; (12,10,5)+(15,11,6) 2,831; (3,1,1)+(24,20,10) 2,781; (3,1,1)^2+(21,19,9) 1,347; (8,5,3)+(19,16,8) 454; (10,8,4)+(17,13,7) 378; and two more small ones (`out/cells` INFO line). Command `ext_d 27 11 12 3 2`, 2 chunks: `graphs=30645 bad_tau=0 searched=30645 max_min_covers=11907 nodes=138270703 hits_F7free=4590 hits_in_C=34` (the 34 hits in C are all disconnected on 28 vertices: 0 connected survivors), 177 s.
+
+## Lists used (provenance in provenance.tsv; counts)
+- COMPUTED HERE with `ext_d_fast` (all bad_tau = 0; rows in progress.tsv): cell(27,21,11,3) = 4,553 classes (1,233,449 inputs, 13,324,098,997 nodes, 3,764 s with NPROC = 4), cell(26,18,10,3) = 29,056 (896,462 inputs, 38,576,781,027 nodes, ~13,100 s; its driver process died after both pipelines had completed because the parent shell was killed by mistake, the post-processing was finished by `finish_26_18.py` from the complete chunk files with the same assertions: 896,462 inputs = ext_d `graphs`, HIT lines = `hits_in_C`), cell(24,20,10,3) = 2,781, cell(21,19,9,3) = 1,347, cell(25,23,11,3) = 0, and the chain below: (23,17,9,3) 137,326; (20,16,8,3) 314,639; (17,15,7,3) 660,651; (16,12,6,3) 540,610; (19,13,7,3) 192,957; (22,14,8,3) 47,353; (18,10,6,3) 1,634 (direct); (25,15,9,3) 6,849; (24,12,8,3) 129; (25,12,8,2) 10; (26,14,9,2) 3; small ones zero.
+- Refereed (L012-L016 tarballs): all others, in particular (14,12,6,3), (12,10,5,3), (10,7,4,3), (17,14,7,3), (19,16,8,3), (15,11,6,3), (17,13,7,3), (8,5,3,3). Cells that only the cost study / d4 worker had (small ones, e.g. (13,11,5,3) = 65,771, (12,8,4,3) = 1,391, (15,9,5,3), (21,11,7,3), (24,13,8,2), (24,15,9,2), (27,20,11,3), (26,17,10,3)): recomputed here from refereed seeds, see README "Independent recomputation".
+- NOT independently recomputed: the large chain cells computed here (no second run, no Gosper-build run); `ext_d_fast` correctness rests on L016 Lemma B and its regressions.
+
+## Completeness argument
+Identical to PROVENANCE_25_23_11.md: every connected member X of C with (n,m,tau) = (29,27,13) has a max-degree vertex w (degree 3); X-w in C with tau 12 and S' = 0; its components form one of the decompositions above and are members of the listed cells; X is a connected hit of `ext_d 28 12 13 3 2` on the corresponding disjoint union. All inputs are covered (inputs = product of multiset counts; `input_counts` equal to the stored branch data).

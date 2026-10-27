@@ -1,0 +1,30 @@
+J1 F7-through-w shape: tested 2751, failures 0
+J1 linear: tested 2751, failures 0
+J1 membership iff (no tight S >= B u C, no F7 through w): tested 2751, failures 0
+J1 tau: tested 6458, failures 0
+L1 hub in C: tested 12000, failures 0
+L1 hub tau: tested 12000, failures 0
+L2 fold in C: tested 135618, failures 0
+L2 fold tau: tested 135618, failures 0
+L3 pendant-replacement in C: tested 135261, failures 0
+L3 pendant-replacement tau: tested 135261, failures 0
+L3 slack: tested 135261, failures 0
+L4 identification linear: tested 21620, failures 0
+L4 identification tau: tested 21620, failures 0
+L4 membership iff (no F7 through x, no tight S>={x,y}, |S|>=3): tested 21620, failures 0
+L5 move tau: tested 112928, failures 0
+L5 new edge is not an old edge: tested 112928, failures 0
+L6 avoided triple not an edge: tested 43253, failures 0
+L6 tau+1: tested 43253, failures 0
+L7 in C: tested 8092, failures 0
+L7 tau formula: tested 15048, failures 0
+L8a: tested 11938, failures 0
+L8b slack: tested 65284, failures 0
+L8b tau: tested 65284, failures 0
+L9 drop-1 slack: tested 45841, failures 0
+L9 tau(G-a-b): tested 64455, failures 0
+L9 tau(G-abc) in {t-2,t-1}: tested 64455, failures 0
+gadget tau = t+4 iff (i) and (ii): tested 1640, failures 0
+gadget tau in {t+2,t+3,t+4}: tested 1640, failures 0
+tight union: tested 7902, failures 0
+BASE GRAPHS 3000 TOTAL FAILURES 0
