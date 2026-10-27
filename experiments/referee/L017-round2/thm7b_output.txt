@@ -1,0 +1,9 @@
+n=1 done
+n=2 done
+n=3 done
+n=4 done
+n=5 done
+n=6 done
+n=7 done
+n=8 done
+PART B: 1354 dual 3-graphs checked (82 also by brute force): mismatches of tau(H)=m-nu(G) or s(H)=3n0+11nu-3|E(G)|: 0; tight ones: 8 (all are perfect matchings: asserted); min slack of a connected H with m>=2: 1

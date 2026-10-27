@@ -675,3 +675,5 @@ SUMMARY cell_26_22_11_D3.txt (all pairs): {'classes': 36, 'with_b': 0, 'with_c':
 
 ##### roles.py v2 ((12,10,5), (19,16,8))
 SUMMARY cell_12_10_5_D3.txt (deg<=2 pairs): {'classes': 149, 'with_b': 0, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 59, 'u_fail': 0, 'pl_fail': 0, 'anti_all': 83, 'types': {(2, 2, 1): 48, (1, 2, 1): 35}}  [174.3s]
+SUMMARY cell_19_16_8_D3.txt (deg<=2 pairs): {'classes': 227, 'with_b': 0, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 18, 'u_fail': 0, 'pl_fail': 0, 'anti_all': 24, 'types': {(2, 2, 1): 12, (1, 2, 1): 12}}  [827.5s]
+##### DONE

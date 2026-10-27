@@ -1,0 +1,37 @@
+==== n = 28
+cell (28,16,11) slack -5: excluded by Theorem 6(a) (slack <= -3)
+cell (28,17,11) slack -3: excluded by Theorem 6(a) (slack <= -3)
+cell (28,18,11) slack -1: X-w = (27,15,10) slack 1; decompositions into <= 2 connected components:
+     (27, 15, 10)[0 UNREFEREED 20261027-0340-induction-n28-n29-f25] -> VOID (empty component cell)
+     (3, 1, 1)[1 L013] + (24, 14, 9)[0 L013] -> VOID (empty component cell)
+     (8, 5, 3)[2 L013] + (19, 10, 7)[0 L013] -> VOID (empty component cell)
+     (10, 7, 4)[4 L013] + (17, 8, 6)[0 L013] -> VOID (empty component cell)
+     (11, 6, 4)[0 L013] + (16, 9, 6)[0 L013] -> VOID (empty component cell)
+     (13, 8, 5)[0 L013] + (14, 7, 5)[0 L013] -> VOID (empty component cell)
+cell (28,22,12) slack -4: excluded by Theorem 6(a) (slack <= -3)
+cell (28,23,12) slack -2: X-w = (27,20,11) slack 0; decompositions into <= 2 connected components:
+     (27, 20, 11)[0 UNREFEREED 20261027-0300-tight-cells-d4] -> VOID (empty component cell)
+     (3, 1, 1)[1 L013] + (24, 19, 10)[0 L013] -> VOID (empty component cell)
+     (10, 7, 4)[4 L013] + (17, 13, 7)[6 L013] -> REMAINS ; all components among the 13 known tight classes -> void by Thm 8 Steps 8.5-8.6 (7.2.4)
+     (13, 8, 5)[0 L013] + (14, 12, 6)[2 L013] -> VOID (empty component cell)
+==== n = 29
+cell (29,14,11) slack -6: excluded by Theorem 6(a) (slack <= -3)
+cell (29,15,11) slack -4: excluded by Theorem 6(a) (slack <= -3)
+cell (29,16,11) slack -2: X-w = (28,13,10) slack 0; decompositions into <= 2 connected components:
+     (3, 1, 1)[1 L013] + (25, 12, 9)[0 L013] -> VOID (empty component cell)
+cell (29,20,12) slack -5: excluded by Theorem 6(a) (slack <= -3)
+cell (29,21,12) slack -3: excluded by Theorem 6(a) (slack <= -3)
+cell (29,22,12) slack -1: X-w = (28,19,11) slack 1; decompositions into <= 2 connected components:
+     (28, 19, 11)[0 UNREFEREED 20261027-0340-induction-n28-n29-f25] -> VOID (empty component cell)
+     (3, 1, 1)[1 L013] + (25, 18, 10)[0 L013] -> VOID (empty component cell)
+     (8, 5, 3)[2 L013] + (20, 14, 8)[0 L013] -> VOID (empty component cell)
+     (10, 7, 4)[4 L013] + (18, 12, 7)[0 L013] -> VOID (empty component cell)
+     (11, 6, 4)[0 L013] + (17, 13, 7)[6 L013] -> VOID (empty component cell)
+     (12, 10, 5)[149 L013] + (16, 9, 6)[0 L013] -> VOID (empty component cell)
+     (13, 8, 5)[0 L013] + (15, 11, 6)[19 L013] -> VOID (empty component cell)
+     (14, 7, 5)[0 L013] + (14, 12, 6)[2 L013] -> VOID (empty component cell)
+cell (29,26,13) slack -4: excluded by Theorem 6(a) (slack <= -3)
+cell (29,27,13) slack -2: X-w = (28,24,12) slack 0; decompositions into <= 2 connected components:
+     (28, 24, 12)[None NOT COMPUTED] -> REMAINS
+     (3, 1, 1)[1 L013] + (25, 23, 11)[None NOT COMPUTED] -> REMAINS
+     (14, 12, 6)[2 L013] + (14, 12, 6)[2 L013] -> REMAINS ; all components among the 13 known tight classes -> void by Thm 8 Steps 8.5-8.6 (7.2.4)

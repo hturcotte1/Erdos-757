@@ -1,0 +1,66 @@
+[
+ {
+  "name": "K21_0",
+  "n": 25,
+  "m": 23,
+  "realizable": false,
+  "realizable_labellings": 0,
+  "nodes": 1534,
+  "prunes": {
+   "EQ": 113,
+   "SIDON": 318,
+   "NONLIN": 0
+  },
+  "secs": 22.9,
+  "sub21_edges": 18,
+  "sub21_iso_class_index": 3
+ },
+ {
+  "name": "K21_1",
+  "n": 25,
+  "m": 23,
+  "realizable": false,
+  "realizable_labellings": 0,
+  "nodes": 1141,
+  "prunes": {
+   "EQ": 98,
+   "SIDON": 239,
+   "NONLIN": 0
+  },
+  "secs": 20.4,
+  "sub21_edges": 18,
+  "sub21_iso_class_index": 9
+ },
+ {
+  "name": "K21_2",
+  "n": 25,
+  "m": 23,
+  "realizable": false,
+  "realizable_labellings": 0,
+  "nodes": 1141,
+  "prunes": {
+   "EQ": 98,
+   "SIDON": 239,
+   "NONLIN": 0
+  },
+  "secs": 14.8,
+  "sub21_edges": 18,
+  "sub21_iso_class_index": 7
+ },
+ {
+  "name": "K21_3",
+  "n": 25,
+  "m": 23,
+  "realizable": false,
+  "realizable_labellings": 0,
+  "nodes": 1427,
+  "prunes": {
+   "EQ": 112,
+   "SIDON": 310,
+   "NONLIN": 0
+  },
+  "secs": 20.7,
+  "sub21_edges": 18,
+  "sub21_iso_class_index": 5
+ }
+]

@@ -101,3 +101,13 @@ def p3_violations(E, V):
             if e >= k - 1: bad.append((k, S, e))
         if bad: return bad
     return bad
+
+def tight_set_exists(n, E, x, u, w):
+    """smallest |S| of a set S with u,w in S, x not in S, |S| >= 3 and e(S) = |S|-2 (brute force), or None.
+    (Lemma 5.3 of L019: the fold (H-x)/(u~w) violates (P3) iff such S exists, for H in C.)"""
+    V = [y for y in range(n) if y not in (x, u, w)]
+    for k in range(1, len(V)+1):
+        for X in itertools.combinations(V, k):
+            S = set(X) | {u, w}
+            if sum(1 for e in E if set(e) <= S) == len(S) - 2: return len(S)
+    return None

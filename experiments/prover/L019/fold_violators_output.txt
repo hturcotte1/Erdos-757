@@ -1,0 +1,3 @@
+F7 n m tau s = 7 5 3 -2 folds: {'nonlin s=-1': 12, 'adj': 12}
+984a n m tau s = 9 8 4 -1 folds: {'nonlin s=0': 12}
+984b n m tau s = 9 8 4 -1 folds: {'lin s=0': 1, 'nonlin s=0': 7, 'adj': 4}

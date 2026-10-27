@@ -1,0 +1,12 @@
+Petersen: g=5  H: n=17 m=11 maxdeg=2 pendants=1 linear=True connected=True hall(e(S)<=|S|-2)=True tau=6 (m-nu=6) slack=7 n2=16
+   max value_T(Z) over 1<=|Z|<=2: -1
+   min |Z| of a (Red) pair: 7 (g/2 = 2.5); |E_Z| = 6
+   r=0: |B_r(p)|=1 |K_r|=1 boundary=2 binary-hypertree=True  max value over Z in B_r(p): -6
+   exhaustive (Petersen): 131070 sets Z, 1326 with value >= 0, forest-lemma violations 0, min |Z| with value >= 0: 7
+Heawood: g=6  H: n=23 m=15 maxdeg=2 pendants=1 linear=True connected=True hall(e(S)<=|S|-2)=True tau=8 (m-nu=8) slack=11 n2=22
+   max value_T(Z) over 1<=|Z|<=2: -1
+   min |Z| of a (Red) pair: 12 (g/2 = 3.0); |E_Z| = 10
+   r=0: |B_r(p)|=1 |K_r|=1 boundary=2 binary-hypertree=True  max value over Z in B_r(p): -6
+   r=1: |B_r(p)|=3 |K_r|=3 boundary=4 binary-hypertree=True  max value over Z in B_r(p): -1
+McGee: g=7  H: n=38 m=25 maxdeg=2 pendants=1 linear=True connected=True hall(e(S)<=|S|-2)=True tau=13 (m-nu=13) slack=21 n2=37
+   max value_T(Z) over 1<=|Z|<=3: -1
