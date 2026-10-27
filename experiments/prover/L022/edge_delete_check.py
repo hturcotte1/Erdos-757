@@ -56,10 +56,12 @@ d = json.load(open('/home/user/Erdos-757/data/small_records.json'))
 for k, v in d['sets'].items(): sets.append(('small_records:' + k, sorted(v['set'])))
 for f in sorted(glob.glob('/home/user/Erdos-757/results/claims/C00[12]*.json')):
     sets.append(('claim:' + f.split('/')[-1][:4], sorted(json.load(open(f))['set'])))
-for f in sorted(glob.glob('/home/user/Erdos-757/experiments/prover/L022/out/realize_*.jsonl'))[:6]:
-    for l in list(open(f))[:3]:
+for c in ['10_7_4', '15_11_6', '17_13_7', '22_17_9', '26_22_11']:
+    got = 0
+    for l in open('/home/user/Erdos-757/experiments/prover/L022/out/realize_%s.jsonl' % c):
         r = json.loads(l)
-        if r.get('explicit'): sets.append(('realized:%s#%d' % (r['cell'], r['cls']), sorted(r['explicit'])))
+        if r.get('explicit') and got < 3:
+            sets.append(('realized:%s#%d' % (r['cell'], r['cls']), sorted(r['explicit']))); got += 1
 tot = dict(cases=0, ok=0, rank_full=0, sets=0)
 for name, A in sets:
     E = lib22.ap_triples(A); n = len(A); tot['sets'] += 1

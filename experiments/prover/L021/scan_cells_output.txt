@@ -1,0 +1,43 @@
+(3,1,1) s=0 n-m=2 A=-16  ->  D3 list, 1 graphs  L012/cells/cell_3_1_1_D3.txt
+(8,5,3) s=1 n-m=3 A=-5  ->  D3 list, 2 graphs  L012/cells/cell_8_5_3_D3.txt
+(9,4,3) s=2 n-m=5 A=-13  ->  D3 list, 1 graphs  L012/cells/cell_9_4_3_D3.txt
+(10,7,4) s=0 n-m=3 A=-13  ->  D3 list, 4 graphs  L012/cells/cell_10_7_4_D3.txt
+(11,6,4) s=1 n-m=5 A=-21  ->  D3 list, 0 graphs  L012/cells/cell_11_6_4_D3.txt
+(13,8,5) s=0 n-m=5 A=-29  ->  D3 list, 0 graphs  L012/cells/cell_13_8_5_D3.txt
+(14,7,5) s=1 n-m=7 A=-37  ->  D3 list, 0 graphs  L012/cells/cell_14_7_5_D3.txt
+(14,8,5) s=3 n-m=6 A=-2  ->  D3 list, 9 graphs  L012/cells/cell_14_8_5_D3.txt
+(15,7,5) s=4 n-m=8 A=-10  ->  D3 list, 2 graphs  L012/cells/cell_15_7_5_D3.txt
+(15,11,6) s=1 n-m=4 A=-2  ->  D3 list, 19 graphs  L012/cells/cell_15_11_6_D3.txt
+(16,9,6) s=0 n-m=7 A=-45  ->  D3 list, 0 graphs  L012/cells/cell_16_9_6_D3.txt
+(16,10,6) s=2 n-m=6 A=-10  ->  D3 list, 16 graphs  L012/cells/cell_16_10_6_D3.txt
+(17,8,6) s=1 n-m=9 A=-53  ->  D3 list, 0 graphs  L012/cells/cell_17_8_6_D3.txt
+(17,9,6) s=3 n-m=8 A=-18  ->  D3 list, 0 graphs  L012/cells/cell_17_9_6_D3.txt
+(17,13,7) s=0 n-m=4 A=-10  ->  D3 list, 6 graphs  L012/cells/cell_17_13_7_D3.txt
+(18,12,7) s=1 n-m=6 A=-18  ->  D3 list, 0 graphs  L013/cells/cell_18_12_7_D3.txt
+(19,10,7) s=0 n-m=9 A=-61  ->  D3 list, 0 graphs  L012/cells/cell_19_10_7_D3.txt
+(19,11,7) s=2 n-m=8 A=-26  ->  D3 list, 0 graphs  L012/cells/cell_19_11_7_D3.txt
+(20,10,7) s=3 n-m=10 A=-34  ->  D3 list, 0 graphs  L012/cells/cell_20_10_7_D3.txt
+(20,14,8) s=0 n-m=6 A=-26  ->  D3 list, 0 graphs  L012/cells/cell_20_14_8_D3.txt
+(21,10,7) s=6 n-m=11 A=-7  ->  D3 list, 5 graphs  L013/cells/cell_21_10_7_D3.txt
+(21,13,8) s=1 n-m=8 A=-34  ->  D3 list, 0 graphs  L013/cells/cell_21_13_8_D3.txt
+(22,11,8) s=0 n-m=11 A=-77  ->  D3 list, 0 graphs  L013/cells/cell_22_11_8_D3.txt
+(22,12,8) s=2 n-m=10 A=-42  ->  D3 list, 0 graphs  L013/cells/cell_22_12_8_D3.txt
+(22,13,8) s=4 n-m=9 A=-7  ->  D3 list, 85 graphs  L013/cells/cell_22_13_8_D3.txt
+(23,11,8) s=3 n-m=12 A=-50  ->  D3 list, 0 graphs  L013/cells/cell_23_11_8_D3.txt
+(23,12,8) s=5 n-m=11 A=-15  ->  D3 list, 0 graphs  L013/cells/cell_23_12_8_D3.txt
+(23,15,9) s=0 n-m=8 A=-42  ->  D3 list, 0 graphs  L013/cells/cell_23_15_9_D3.txt
+(23,16,9) s=2 n-m=7 A=-7  ->  D3 list, 178 graphs  L013/cells/cell_23_16_9_D3.txt
+(24,14,9) s=1 n-m=10 A=-50  ->  D3 list, 0 graphs  L013/cells/cell_24_14_9_D3.txt
+(24,15,9) s=3 n-m=9 A=-15  ->  D3 list, 0 graphs  L013/cells/cell_24_15_9_D3.txt
+(24,19,10) s=0 n-m=5 A=-7  ->  D3 list, 0 graphs  L013/cells/cell_24_19_10_D3.txt
+(25,12,9) s=0 n-m=13 A=-93  ->  D3 list, 0 graphs  L013/cells/cell_25_12_9_D3.txt
+(25,13,9) s=2 n-m=12 A=-58  ->  D3 list, 0 graphs  L016/cells_new/runA/cell_25_13_9_D3.txt
+(25,14,9) s=4 n-m=11 A=-23  ->  Donly D2 list, 0 graphs  L016/cells_new/runA/cell_25_14_9_D2.txt
+(25,18,10) s=1 n-m=7 A=-15  ->  D3 list, 0 graphs  L013/cells/cell_25_18_10_D3.txt
+(26,13,9) s=5 n-m=13 A=-31  ->  NOT STORED
+(26,16,10) s=0 n-m=10 A=-58  ->  D3 list, 0 graphs  L016/cells_new/runA/cell_26_16_10_D3.txt
+(26,17,10) s=2 n-m=9 A=-23  ->  NOT STORED
+(27,13,9) s=8 n-m=14 A=-4  ->  NOT STORED
+(27,15,10) s=1 n-m=12 A=-66  ->  NOT STORED
+(27,16,10) s=3 n-m=11 A=-31  ->  NOT STORED
+(27,20,11) s=0 n-m=7 A=-23  ->  NOT STORED

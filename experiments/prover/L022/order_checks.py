@@ -76,7 +76,8 @@ d = json.load(open('/home/user/Erdos-757/data/small_records.json'))
 for k, v in d['sets'].items(): sets.append(('small_records:' + k, v['set']))
 for f in sorted(glob.glob('/home/user/Erdos-757/results/claims/C00*.json')):
     c = json.load(open(f)); sets.append(('claim:' + f.split('/')[-1][:4], c['set']))
-for f in sorted(glob.glob('/home/user/Erdos-757/experiments/prover/L022/out/realize_*.jsonl')):
+CELLS = ['3_1_1', '10_7_4', '14_12_6', '17_13_7', '8_5_3', '12_10_5', '15_11_6', '19_16_8', '22_17_9', '26_22_11']
+for f in ['/home/user/Erdos-757/experiments/prover/L022/out/realize_%s.jsonl' % c for c in CELLS]:
     for l in open(f):
         r = json.loads(l)
         if r.get('explicit'): sets.append(('realized:%s#%d' % (r['cell'], r['cls']), r['explicit']))

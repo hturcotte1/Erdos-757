@@ -1,0 +1,4 @@
+labelled linear 3-graphs on 8 vertices: 231577 ; connected F7-free with s <= 1 (labelled): 30240
+isomorphism classes of connected F7-free F on 8 vertices with s <= 1: 2 [(5, 3, 1), (5, 3, 1)]
+{'admissible triples': 43, 'C1 holds': 37, 'C1 fails (s(F)=1)': 6, 'lemma7 instances': 58, 'prop10 (k,tau)=(5,4)': 6}
+FAILURES: 0

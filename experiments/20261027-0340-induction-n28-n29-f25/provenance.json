@@ -283,6 +283,14 @@
 "firstpath": "seedsrc/L012/cells/cell_11_7_4_D3.txt",
 "md5": "95e0cc9eca9622e230092a8ee1ef0262"
 },
+"11,7,4,4": {
+"agree": [],
+"classes": 38,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_11_7_4_D4.txt",
+"md5": "30a6dbe30a01c6f2687b1ae3c94d7d72"
+},
 "11,8,4,2": {
 "agree": [
 "L013 cells.tar.gz (refereed)",
@@ -878,6 +886,14 @@
 "first": "L012 cells.tar.gz (refereed)",
 "firstpath": "seedsrc/L012/cells/cell_14_8_5_D3.txt",
 "md5": "ebd37591aef33d86cab773f5c245033a"
+},
+"14,8,5,4": {
+"agree": [],
+"classes": 10,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_14_8_5_D4.txt",
+"md5": "378007ddfbe2ca604b0a7d752e7c2ff0"
 },
 "14,9,5,2": {
 "agree": [
@@ -1493,6 +1509,14 @@
 "disagree": [],
 "first": "L012 cells.tar.gz (refereed)",
 "firstpath": "seedsrc/L012/cells/cell_17_9_6_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"17,9,6,4": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_17_9_6_D4.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
 "18,10,6,2": {
@@ -2886,6 +2910,14 @@
 "firstpath": "seedsrc/L013/cells/cell_25_22_11_D3.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
+"25,23,11,3": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_25_23_11_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
 "25,23,11,4": {
 "agree": [],
 "classes": 6,
@@ -3604,6 +3636,14 @@
 "disagree": [],
 "first": "L012 cells.tar.gz (refereed)",
 "firstpath": "seedsrc/L012/cells/cell_8_6_3_D3.txt",
+"md5": "08118a75a8d9cec78b4dfe8346c71c40"
+},
+"8,6,3,4": {
+"agree": [],
+"classes": 3,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_8_6_3_D4.txt",
 "md5": "08118a75a8d9cec78b4dfe8346c71c40"
 },
 "9,4,2,2": {

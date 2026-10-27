@@ -1,0 +1,13 @@
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_10_7_4.txt', '300'] stats: {'lemma11_graphs': 4, 'saturated_sets': 28} FAILURES: 0
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_14_12_6.txt', '300'] stats: {'lemma11_graphs': 2, 'saturated_sets': 26, '2core': 2} FAILURES: 0
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_17_13_7.txt', '300'] stats: {'lemma11_graphs': 6, 'saturated_sets': 78} FAILURES: 0
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_12_10_5.txt', '300'] stats: {'lemma11_graphs': 149, 'saturated_sets': 1795, '2core': 159} FAILURES: 0
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_15_11_6.txt', '300'] stats: {'lemma11_graphs': 19, 'saturated_sets': 209} FAILURES: 0
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_10_8_4.txt', '300'] stats: {'lemma11_graphs': 63, 'saturated_sets': 665, '2core': 68} FAILURES: 0
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_13_9_5.txt', '300'] stats: {'lemma11_graphs': 84, 'saturated_sets': 756} FAILURES: 0
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_16_10_6.txt', '300'] stats: {'lemma11_graphs': 16, 'saturated_sets': 160} FAILURES: 0
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_8_5_3.txt', '300'] stats: {'lemma11_graphs': 2, 'saturated_sets': 10} FAILURES: 0
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_9_4_3.txt', '300'] stats: {'lemma11_graphs': 1, 'saturated_sets': 4} FAILURES: 0
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_6_3_2.txt', '300'] stats: {'lemma11_graphs': 1, 'saturated_sets': 3} FAILURES: 0
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_17_14_7.txt', '150'] stats: {'lemma11_graphs': 150, 'saturated_sets': 2244, '2core': 35} FAILURES: 0
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_19_16_8.txt', '60'] stats: {} FAILURES: 0

@@ -1,0 +1,16 @@
+set 8 n 8 m 5 (4,5): True in C: True tau 3
+set 10 n 10 m 8 (4,5): True in C: True tau 4
+set 11 n 11 m 8 (4,5): True in C: True tau 4
+set 12 n 12 m 10 (4,5): True in C: True tau 5
+set 14 n 14 m 12 (4,5): True in C: True tau 6
+set 12b n 12 m 10 (4,5): True in C: True tau 5
+set 12c n 12 m 10 (4,5): True in C: True tau 5
+set reader_K0 n 11 m 9 (4,5): True in C: True tau 4
+set reader_K1 n 20 m 18 (4,5): True in C: True tau 8
+set fib15 n 15 m 12 (4,5): True in C: True tau 5
+set glue_12_12b n 24 m 20 (4,5): True in C: True tau 10
+set glue_10_8 n 18 m 13 (4,5): True in C: True tau 7
+A_base induced subsets with an edge: 11529
+census14 classes tested: 150
+['ap'] fold stats: {'adjacent': 10115, 'class_F': 83, 'class_FP': 4, 'class_N': 5034, 'class_NF': 31, 'class_NFP': 5, 'class_inC': 38160, 'dtau=-1': 41683, 'dtau=0': 1634, 'folds': 43317, 'folds_KinC': 43317, 'folds_cotrans': 40575, 'folds_noncotrans': 2742, 'graphs': 11691, 'sat_min_size=10': 2, 'sat_min_size=8': 4} fold FAILURES: 0
+['ap'] stats: {'lemma11_graphs': 11535, 'saturated_sets': 24808, '2core': 36} FAILURES: 0
