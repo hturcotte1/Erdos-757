@@ -31,7 +31,8 @@ none has n >= 24. Remaining: GAP R1 (G2 residue), GAP R2 (cases beta, delta of L
 | pattern_a2.py | `nice -n 10 python3 pattern_a2.py poor` (stopped after 6 type triples, superseded) | pattern_a2_poor_output.txt (partial) | same generic search with an explicit type list and Claim-E tags |
 | pattern_a3.py | `timeout 1700 nice -n 10 python3 pattern_a3.py small > pattern_a3_small_output.txt` | pattern_a3_small_output.txt, pattern_a3_small_results.json | fast level-based search reproduces the generic counts on 7 type triples (44, 8, 32, 40, 12, 105, 138) |
 | pattern_a3.py | `timeout 7000 nice -n 10 python3 pattern_a3.py poor > pattern_a3_poor_output.txt` | pattern_a3_poor_output.txt, pattern_a3_poor_results.json | Theorem 4: the 12 non-rich type triples, 783 g-orbits, 359 Claim-B configurations, 206 in C_3, all tau = sum + 1, all with P = 0 via the single-member family {H} (H is a piece of L*); 0 configurations for n = 24, 31 |
-| pattern_a3.py | `timeout 1700 nice -n 10 python3 pattern_a3.py richcheck > pattern_a3_richcheck_output.txt`; then `... richcheck 16 > pattern_a3_richcheck_from16_output.txt`; then `... richcheck 22 > pattern_a3_richcheck_from22_output.txt` | the three outputs | Lemma 2 cross-check: 25 type triples with a rich piece and pieces of <= 10 vertices: 20 Claim-B configurations (all (E1,E1,(10,7,4)#0/#3)), none satisfies Claim E, none in C_3. The first two processes ended without their final line after 16 resp. 6 type triples (cause unknown; no traceback in the outputs); the third ended with exit code 0 |
+| pattern_a3.py | `timeout 1700 nice -n 10 python3 pattern_a3.py richcheck > pattern_a3_richcheck_output.txt` | pattern_a3_richcheck_results.json (evidence; the text log lost its tail) | Lemma 2 cross-check: 25 type triples with a rich piece and pieces of <= 10 vertices: 20 Claim-B configurations (all (E1,E1,(10,7,4)#0/#3)), none satisfies Claim E, none in C_3 |
+| summarize_results.py | `timeout 300 nice -n 10 python3 summarize_results.py > results_summary.txt` | results_summary.txt | totals and per-type counts from the three pattern_a3 result files |
 | sanity24.py | `timeout 3000 nice -n 10 python3 sanity24.py > sanity24_output.txt` | sanity24_output.txt | S1: the judge's 186 E1-hubs recomputed with own code: tau(H) = tau(G') + 2, A(H) = A(G') - 16, P(H) = 0 exactly for all; S2: 400 non-b-configuration triples: tau(H) = tau(G') + 1, A(H) = A(G') + 116; S3: 4,693 two-vertex and 1,094 one-vertex pendant additions to 102 stored graphs all in C_3 |
 
 Inputs: experiments/prover/L021/closure_results.json (the 32 pieces), stored refereed cell lists in experiments/prover/L017/out/
@@ -60,3 +61,9 @@ minimum transversals (via clause patterns).
   H-degree 3 on different edges at v), n <= 46. Enumerate the overlap patterns of the two (three) pieces, require (AH)
   (Lemma 1: unique special component at every degree-3 vertex, met by all three edges, Claim B), and compute P.
 - W3 (GAP R3). The falsifier experiments/falsify/kt-star-e1hub/ (running when this was written) tests the E1-hub mechanism.
+
+## Note on the logs
+Text logs of commands that ran longer than about 100 s in the foreground of the agent's shell lost their final lines
+(the processes completed, exit code 0, and wrote their JSON result files at the end). The JSON result files and
+results_summary.txt are the evidence of record; pattern_a3_poor_output.txt (background run) is complete. Earlier partial
+re-runs of the cross-check (from type 17 and from type 23) agreed with the full run and were deleted.

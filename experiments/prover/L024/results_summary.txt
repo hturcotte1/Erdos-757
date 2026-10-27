@@ -1,0 +1,17 @@
+pattern_a3_small_results.json TOTALS {'type_triples': 7, 'g_choices': 26, 'configs': 379, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0}
+   ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#0') configs 8 claimE 0 inC3 0 min P over inC3 None
+   ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#1') configs 32 claimE 12 inC3 12 min P over inC3 0
+   ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#2') configs 40 claimE 16 inC3 16 min P over inC3 0
+   ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#3') configs 12 claimE 0 inC3 0 min P over inC3 None
+   ('(3,1,1)#0', '(3,1,1)#0', '(3,1,1)#0') configs 44 claimE 32 inC3 32 min P over inC3 0
+   ('(3,1,1)#0', '(3,1,1)#0', '(8,5,3)#0') configs 105 claimE 60 inC3 60 min P over inC3 0
+   ('(3,1,1)#0', '(3,1,1)#0', '(8,5,3)#1') configs 138 claimE 86 inC3 86 min P over inC3 0
+pattern_a3_poor_results.json TOTALS {'type_triples': 12, 'g_choices': 783, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0}
+   ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#1') configs 32 claimE 12 inC3 12 min P over inC3 0
+   ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#2') configs 40 claimE 16 inC3 16 min P over inC3 0
+   ('(3,1,1)#0', '(3,1,1)#0', '(3,1,1)#0') configs 44 claimE 32 inC3 32 min P over inC3 0
+   ('(3,1,1)#0', '(3,1,1)#0', '(8,5,3)#0') configs 105 claimE 60 inC3 60 min P over inC3 0
+   ('(3,1,1)#0', '(3,1,1)#0', '(8,5,3)#1') configs 138 claimE 86 inC3 86 min P over inC3 0
+pattern_a3_richcheck_results.json TOTALS {'type_triples': 25, 'g_choices': 808, 'configs': 20, 'claimE': 0, 'inC3': 0, 'inC3_claimE': 0, 'tau_ok': 0, 'Pneg': 0}
+   ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#0') configs 8 claimE 0 inC3 0 min P over inC3 None
+   ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#3') configs 12 claimE 0 inC3 0 min P over inC3 None
