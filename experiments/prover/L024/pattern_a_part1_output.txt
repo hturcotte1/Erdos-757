@@ -10,3 +10,5 @@ part1 ('(3,1,1)#0', '(3,1,1)#0', '(17,13,7)#2') N 23 configs 16 running {'type_t
 part1 ('(3,1,1)#0', '(3,1,1)#0', '(17,13,7)#3') N 23 configs 40 running {'type_triples': 9, 'g_choices': 43, 'configs': 240, 'inC3': 60, 'tau_ok': 60, 'Pneg': 0} [121s]
 part1 ('(3,1,1)#0', '(3,1,1)#0', '(17,13,7)#4') N 23 configs 24 running {'type_triples': 10, 'g_choices': 49, 'configs': 264, 'inC3': 60, 'tau_ok': 60, 'Pneg': 0} [141s]
 part1 ('(3,1,1)#0', '(3,1,1)#0', '(17,13,7)#5') N 23 configs 40 running {'type_triples': 11, 'g_choices': 59, 'configs': 304, 'inC3': 60, 'tau_ok': 60, 'Pneg': 0} [192s]
+part1 ('(3,1,1)#0', '(3,1,1)#0', '(8,5,3)#0') N 14 configs 105 running {'type_triples': 12, 'g_choices': 63, 'configs': 409, 'inC3': 120, 'tau_ok': 120, 'Pneg': 0} [200s]
+part1 ('(3,1,1)#0', '(3,1,1)#0', '(8,5,3)#1') N 14 configs 138 running {'type_triples': 13, 'g_choices': 68, 'configs': 547, 'inC3': 206, 'tau_ok': 206, 'Pneg': 0} [215s]

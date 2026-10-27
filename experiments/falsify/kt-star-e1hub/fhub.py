@@ -50,31 +50,45 @@ for ck in sorted(inv, key=lambda k: eval(k)):
         A0 = kt.A_value(n, len(g), t_)
         T1 = kt.min_transversals(kt.masks(g), t_)
         low = [x for x in range(n) if d[x] <= 2]
-        def cot(mask): return any((t & mask) == mask for t in T1)
+        lowmask = sum(1 << x for x in low)
+        cop = [0] * n; inT = 0
+        for tr in T1:
+            inT |= tr; l = tr & lowmask; mm = l
+            while mm:
+                bb = mm & -mm; mm ^= bb; cop[bb.bit_length() - 1] |= l
+        # G' triples that are pairwise non-co-transversal (edges allowed; class membership is tested on H)
+        trips = []
+        for x1 in low:
+            for x2 in low:
+                if x2 <= x1 or (cop[x1] >> x2) & 1: continue
+                for x3 in low:
+                    if x3 <= x2 or (cop[x1] >> x3) & 1 or (cop[x2] >> x3) & 1: continue
+                    trips.append((x1, x2, x3))
         stats['G'] += 1
+        if not trips: continue
         for (P, TF, trip) in PD:
-            if A0 - (-P.W) - 0 >= 0 and A0 - P.W >= 0: continue   # need A(H) = A(G')-W(F) < 0
+            if A0 - P.W >= 0: continue   # need A(H) = A(G')-W(F) < 0
             for (q, forb) in trip:
-                for gs in itertools.permutations(low, 3):
-                    if any(cot(sum(1 << gs[i] for i in u)) for u in forb if len(u) > 0): continue
-                    if () in forb: continue
-                    stats['pairs'] += 1
-                    nF = P.n
-                    # build H: G' on 0..n-1, F on n..n+nF-1, v = n+nF
-                    v = n + nF
-                    E = list(g) + [tuple(n + x for x in e) for e in P.edges] + [(v, n + q[i], gs[i]) for i in range(3)]
-                    nH = v + 1
-                    stats['built'] += 1
-                    rec, new = reg.lookup(nH, E)
-                    if not new: continue
-                    stats['newclasses'] += 1
-                    if max(hubs.degs(nH, E)) > 3: continue
-                    r = hubs.analyse_H(nH, E, t_ + P.tau + 1)
-                    if not r['inC']: continue
-                    stats['inC'] += 1
-                    if stats['minP'] is None or r['P'] < stats['minP']: stats['minP'] = r['P']
-                    out.write(json.dumps(dict(type='FH', cell=ck, F=P.name, q=q, g=gs, G=g, **r, H=E)) + '\n'); out.flush()
-                    if r['P'] < 0 or (r['piece'] is None and r['Pp'] < 0):
-                        stats['hits'] += 1; print('HIT', ck, P.name, q, gs, r, E, flush=True)
+                singles = [u[0] for u in forb if len(u) == 1]
+                for tr3 in trips:
+                    for gs in itertools.permutations(tr3):
+                        if any((inT >> gs[i]) & 1 for i in singles): continue
+                        stats['pairs'] += 1
+                        nF = P.n
+                        v = n + nF
+                        E = list(g) + [tuple(n + x for x in e) for e in P.edges] + [(v, n + q[i], gs[i]) for i in range(3)]
+                        nH = v + 1
+                        stats['built'] += 1
+                        rec, new = reg.lookup(nH, E)
+                        if not new: continue
+                        stats['newclasses'] += 1
+                        if max(hubs.degs(nH, E)) > 3: continue
+                        r = hubs.analyse_H(nH, E, t_ + P.tau + 1)
+                        if not r['inC']: continue
+                        stats['inC'] += 1
+                        if stats['minP'] is None or r['P'] < stats['minP']: stats['minP'] = r['P']
+                        out.write(json.dumps(dict(type='FH', cell=ck, F=P.name, q=q, g=gs, G=g, **r, H=E)) + '\n'); out.flush()
+                        if r['P'] < 0 or (r['piece'] is None and r['Pp'] < 0):
+                            stats['hits'] += 1; print('HIT', ck, P.name, q, gs, r, E, flush=True)
     print(ck, stats, '[%.0fs]' % (time.time() - t0), flush=True)
 json.dump(stats, open(sys.argv[1] + '.stats.json', 'w'))

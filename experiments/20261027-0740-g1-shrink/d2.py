@@ -47,6 +47,36 @@ def build_full(S1, S2, ts):
         edges.append(tuple(vs)); ved.append((t, tuple(vs), o))
     return nxt, edges, ved
 
+
+DEFCACHE = {}
+def canonical_B(Sname, P1, P2, ts, inc):
+    """B = S-pieces + v + included v-edges (+ new vertices for non-S vertices), canonical labelling, for caching DEF"""
+    n1, n2 = P1.n, P2.n
+    edges = []; nS = 0; names = []
+    if Sname in ('both', 'F1'): edges += list(P1.edges); nS += n1; names.append(P1.name)
+    if Sname == 'F2': edges += list(P2.edges); nS += n2; names.append(P2.name)
+    if Sname == 'both': edges += [tuple(x + n1 for x in e) for e in P2.edges]; nS += n2; names.append(P2.name)
+    v = nS; nxt = v + 1; desc = []
+    for x in inc:
+        t = ts[x]
+        if Sname == 'both': tr = tuple(t['a']) + tuple(y + n1 for y in t['b'])
+        elif Sname == 'F1': tr = tuple(t['a'])
+        else: tr = tuple(t['b'])
+        desc.append(tr)
+    order = sorted(range(len(inc)), key=lambda i: desc[i])
+    key = [tuple(names)]
+    for i in order:
+        tr = desc[i]; vs = [v] + list(tr)
+        while len(vs) < 3: vs.append(nxt); nxt += 1
+        edges.append(tuple(vs)); key.append((tr, 3 - 1 - len(tr)))
+    return nxt, edges, tuple(key)
+
+def def_cached(Sname, P1, P2, ts, inc, nn_expected):
+    nn, ee, key = canonical_B(Sname, P1, P2, ts, inc)
+    assert nn == nn_expected
+    if key not in DEFCACHE: DEFCACHE[key] = deficiency(nn, ee, PIECES, proper=True)
+    return DEFCACHE[key]
+
 def heavy(S1, S2, ts, stats, mode='I'):
     """exact sub-extension tests for one Claim-B pattern.  returns dict kill info or None"""
     P1, P2 = S1.P, S2.P
@@ -105,7 +135,8 @@ def heavy(S1, S2, ts, stats, mode='I'):
                     vs = ved[x][1]
                     if any((y in V1 and Sname in ('both', 'F1')) or (y in V2 and Sname in ('both', 'F2')) for y in vs) and all((y == v) or (y in base) for y in vs): nmeet += 1
                 if AB + max(0, Wsum - 35 * nmeet) >= 0: continue
-                PB = AB + deficiency(nn, ee, PIECES, proper=True)
+                if exact: PB = AB + deficiency(nn, ee, PIECES, proper=True)
+                else: PB = AB + def_cached(Sname, P1, P2, ts, inc, nn)
                 kill_K = PB < 0
             if not (kill_I or kill_K): continue
             # variants with an unknown extra edge g inside Q' (>=1 outer vertex, no two on one v-edge)
@@ -130,13 +161,13 @@ def heavy(S1, S2, ts, stats, mode='I'):
             return info
     return None
 
-def run_pair(S1, S2, store_limit=2000, verbose=True):
+def run_pair(S1, S2, store_limit=2000, verbose=True, do_c=True):
     t0 = time.time()
     types = make_types(S1, S2)
     W1 = -A_value(S1.P.n, S1.P.m, S1.P.tau); W2 = -A_value(S2.P.n, S2.P.m, S2.P.tau)
     n12 = S1.P.n + S2.P.n + 1
     N = len(types)
-    cnt = dict(types=N, claimB=0, candidates=0, killed_I11_or_KT=0, killed_I11=0, killed_KT_only=0, killed_notC_only=0)
+    cnt = dict(types=N, claimB=0, candidates=0, killed_I11_or_KT=0, killed_I11=0, killed_KT_only=0, notC_among_unkilled=0, survive_C=0)
     kills = []; surv_examples = []
     s1, s2 = S1.s, S2.s
     for i in range(N):
@@ -176,6 +207,10 @@ def run_pair(S1, S2, store_limit=2000, verbose=True):
                 if not cand: continue
                 cnt['candidates'] += 1
                 r = heavy(S1, S2, ts, cnt, 'I') or heavy(S1, S2, ts, cnt, 'K')
+                if not r and do_c:
+                    nF, eF, _ = build_full(S1, S2, ts)
+                    if not in_C(nF, eF): cnt['notC_among_unkilled'] += 1
+                    else: cnt['survive_C'] += 1
                 if r:
                     cnt['killed_I11_or_KT'] += 1
                     cnt['killed_I11' if r['killI'] else 'killed_KT_only'] += 1
