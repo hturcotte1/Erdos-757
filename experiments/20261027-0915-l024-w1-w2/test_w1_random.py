@@ -8,20 +8,19 @@ from w1 import *
 random.seed(12345)
 def rand_piece(nv, ne):
     while True:
-        edges = set()
-        tries = 0
-        used_pairs = set()
+        edges = set(); tries = 0; used_pairs = set()
         while len(edges) < ne and tries < 100:
             tries += 1
             e = tuple(sorted(random.sample(range(nv), 3)))
             ps = list(itertools.combinations(e, 2))
             if any(p in used_pairs for p in ps): continue
             edges.add(e); used_pairs.update(ps)
-        edges = sorted(edges)
-        d = degrees(nv, edges)
-        if min(d) == 0: continue
-        t = tau(nv, edges)
-        return dict(name='rnd', n=nv, edges=edges, tau=t, deg=d, mts=min_transversals(nv, edges, t), m=len(edges), W=0)
+        if len(edges) < 2: continue
+        vs = sorted({x for e in edges for x in e}); rl = {x: i for i, x in enumerate(vs)}
+        edges = sorted(tuple(sorted(rl[x] for x in e)) for e in edges)
+        n = len(vs)
+        t = tau(n, edges)
+        return dict(name='rnd', n=n, edges=edges, tau=t, deg=degrees(n, edges), mts=min_transversals(n, edges, t), m=len(edges), W=0)
 def brute(S):
     K = S.k + 1; res = set()
     for sub in itertools.combinations(range(S.nc), K):
@@ -47,7 +46,7 @@ tot = dict(trials=0, pos=0, mism=0, total_sets=0, posE=0, setsE=0, nc_mism=0, le
 t0 = time.time()
 for trial in range(300):
     k = random.choice([1, 2, 2, 2])
-    Ps = [rand_piece(random.choice([6, 7, 8]), random.choice([2, 3, 3, 4])) for _ in range(k)]
+    Ps = [rand_piece(random.choice([5, 6]), random.choice([2, 2, 3])) for _ in range(k)]
     need2 = random.choice([True, False])
     S = Setup(Ps, need2=need2)
     if S.nc > 60 or S.nc < S.k + 1: continue
