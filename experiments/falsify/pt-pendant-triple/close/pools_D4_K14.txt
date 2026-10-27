@@ -1,0 +1,12 @@
+CLOSE inputs=645 visited=153483 hits=0 minslack_with_hit=999
+SLACKROW 0 maxU2 0 minGoodAtCand 99 hist 0:11
+SLACKROW 1 maxU2 0 minGoodAtCand 99 hist 0:3
+SLACKROW 2 maxU2 0 minGoodAtCand 99 hist 0:110
+SLACKROW 3 maxU2 0 minGoodAtCand 99 hist 0:227
+SLACKROW 4 maxU2 0 minGoodAtCand 99 hist 0:1635
+SLACKROW 5 maxU2 1 minGoodAtCand 99 hist 0:3206 1:5
+SLACKROW 6 maxU2 1 minGoodAtCand 99 hist 0:6723 1:6
+SLACKROW 7 maxU2 1 minGoodAtCand 99 hist 0:44665 1:73
+SLACKROW 8 maxU2 2 minGoodAtCand 99 hist 0:6314 1:81 2:3
+SLACKROW 9 maxU2 3 minGoodAtCand 99 hist 0:141 1:950 2:2 3:2
+SLACKROW 10 maxU2 3 minGoodAtCand 99 hist 0:88243 1:1038 2:43 3:2
