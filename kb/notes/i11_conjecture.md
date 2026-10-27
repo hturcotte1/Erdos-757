@@ -43,7 +43,7 @@ The implication c* >= 6/11: conditional on the conjecture.
 
 All statements below are tagged; "as a computation" means an exact or exhaustive computation that no referee has re-run. Notation: a cell (n,m,tau,Delta) is the set of connected members of C with n vertices, m edges, transversal number tau and maximum degree Delta; slack = 3n + 2m - 11 tau (so I11 says slack >= 0; "tight" means slack 0). Evidence is in journal/LOG.md entries dated 2026-10-27.
 
-**L017: structure of a minimal counterexample (results/proofs/L017-i11-minimal-counterexample-structure.md).** [verified-here, round 1: two referees found no mathematical error (editorial fixes only), round 2 in progress]
+**L017: structure of a minimal counterexample (results/proofs/L017-i11-minimal-counterexample-structure.md).** [verified-here: referee ACCEPT x2, 2026-10-27; Theorem 7 [published, re-proved here]] (K64, K65; round 1 editorial fixes only, round 2 two referees ACCEPT; Corollary 13.3/13.5 computations below remain unrefereed)
 - A minimal counterexample H to I11 on C (minimal in n, then m) is connected, has Delta = 3 and n >= 28, and has slack s in {-1,-2}.
 - Every vertex of H lies in a minimum transversal, and tau(H - v) = tau(H) - 1 for every vertex v.
 - Deleting a vertex v of degree d gives slack(H - v) = s + 8 - 2 d(v) (Lemma D).
