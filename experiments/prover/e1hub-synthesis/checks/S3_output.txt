@@ -1,0 +1,8 @@
+cell_5_2_1_D3.txt classes 1 candidate (A,B,C) 0 hits 0
+cell_9_7_3_D2.txt classes 0 candidate (A,B,C) 0 hits 0
+cell_12_8_4_D2.txt classes 5 candidate (A,B,C) 0 hits 0
+cell_15_9_5_D2.txt classes 91 candidate (A,B,C) 0 hits 0
+cell_18_10_6_D2.txt classes 67 candidate (A,B,C) 0 hits 0
+cell_21_11_7_D2.txt classes 36 candidate (A,B,C) 0 hits 0
+cell_24_12_8_D2.txt classes 14 candidate (A,B,C) 0 hits 0
+TOTAL hits 0

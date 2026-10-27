@@ -1,0 +1,10 @@
+cell_3_1_1_D3.txt classes 1 slack 0 deg1-histogram {3: 1} pendant_b_configs 0
+cell_8_5_3_D3.txt classes 2 slack 1 deg1-histogram {1: 1, 2: 1} pendant_b_configs 0
+cell_10_7_4_D3.txt classes 4 slack 0 deg1-histogram {0: 2, 1: 2} pendant_b_configs 0
+cell_12_10_5_D3.txt classes 149 slack 1 deg1-histogram {0: 112, 1: 37} pendant_b_configs 0
+cell_14_12_6_D3.txt classes 2 slack 0 deg1-histogram {0: 2} pendant_b_configs 0
+cell_15_11_6_D3.txt classes 19 slack 1 deg1-histogram {0: 9, 1: 8, 2: 2} pendant_b_configs 0
+cell_17_13_7_D3.txt classes 6 slack 0 deg1-histogram {0: 6} pendant_b_configs 0
+cell_19_16_8_D3.txt classes 227 slack 1 deg1-histogram {0: 221, 1: 6} pendant_b_configs 0
+cell_22_17_9_D3.txt classes 37 slack 1 deg1-histogram {0: 18, 1: 19} pendant_b_configs 0
+cell_26_22_11_D3.txt classes 36 slack 1 deg1-histogram {0: 36} pendant_b_configs 0

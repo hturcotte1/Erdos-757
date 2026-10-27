@@ -1,0 +1,10 @@
+8 {'n': 8, 'm': 5, 'tau': 3, 'A': -5, 'subsets': 255, 'subsets_with_A_neg': 9, 'min_P_lower': 0}
+10 {'n': 10, 'm': 8, 'tau': 4, 'A': 22, 'subsets': 1023, 'subsets_with_A_neg': 33, 'min_P_lower': 0}
+11 {'n': 11, 'm': 8, 'tau': 4, 'A': 49, 'subsets': 2047, 'subsets_with_A_neg': 50, 'min_P_lower': 0}
+12 {'n': 12, 'm': 10, 'tau': 5, 'A': 14, 'subsets': 4095, 'subsets_with_A_neg': 124, 'min_P_lower': 0}
+14 {'n': 14, 'm': 12, 'tau': 6, 'A': 6, 'subsets': 16383, 'subsets_with_A_neg': 364, 'min_P_lower': -13}
+12b {'n': 12, 'm': 10, 'tau': 5, 'A': 14, 'subsets': 4095, 'subsets_with_A_neg': 129, 'min_P_lower': 0}
+12c {'n': 12, 'm': 10, 'tau': 5, 'A': 14, 'subsets': 4095, 'subsets_with_A_neg': 129, 'min_P_lower': 0}
+fib13 {'n': 13, 'm': 10, 'tau': 4, 'A': 173, 'subsets': 8191, 'subsets_with_A_neg': 183, 'min_P_lower': 0}
+ALL min P >= 0: False
+EXIT 0

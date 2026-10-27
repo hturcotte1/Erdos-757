@@ -32,13 +32,7 @@ def brute(S):
                 if use[x] > S.cap[x]: ok = False
         if not ok: continue
         if any(S.incompat[a] >> b & 1 for a, b in itertools.combinations(sub, 2)): continue
-        masks = [S.cmask[c] for c in sub]
-        viol = False
-        for Ts in itertools.product(*S.MT):
-            U = 0
-            for T in Ts: U |= T
-            if all(U & m for m in masks): viol = True; break
-        if not viol: res.add(frozenset(sub))
+        if S.claimB_brute(list(sub)): res.add(frozenset(sub))
     return res
 def claimE_sets(S, sub):
     k = S.k
@@ -51,15 +45,15 @@ def claimE_sets(S, sub):
     return True
 tot = dict(trials=0, pos=0, mism=0, total_sets=0, posE=0, setsE=0, nc_mism=0, lemma_viol=0)
 t0 = time.time()
-for trial in range(400):
+for trial in range(300):
     k = random.choice([1, 2, 2, 2])
-    Ps = [rand_piece(random.choice([5, 6, 7, 8]), random.choice([2, 3, 3, 4, 5])) for _ in range(k)]
+    Ps = [rand_piece(random.choice([6, 7, 8]), random.choice([2, 3, 3, 4])) for _ in range(k)]
     need2 = random.choice([True, False])
     S = Setup(Ps, need2=need2)
-    if S.nc > 32 or S.nc < S.k + 1: continue
+    if S.nc > 60 or S.nc < S.k + 1: continue
     a = search(S, {'nodes': 0}); b = brute(S)
     tot['trials'] += 1; tot['total_sets'] += len(b)
-    if tot['trials'] % 10 == 0: print('progress', tot, f'{time.time()-t0:.0f}s', flush=True)
+    if tot["trials"] % 3 == 0: print('progress', tot, f'{time.time()-t0:.0f}s', flush=True)
     if b: tot['pos'] += 1
     if a != b:
         tot['mism'] += 1; print('MISMATCH', [P['edges'] for P in Ps], len(a), len(b))

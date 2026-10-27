@@ -1,0 +1,44 @@
+cell_17_13_7.txt 0 n,m,tau (17, 13, 7) inC3 True rich True non-co-transversal pairs 0
+cell_17_13_7.txt 1 n,m,tau (17, 13, 7) inC3 True rich True non-co-transversal pairs 0
+cell_17_13_7.txt 2 n,m,tau (17, 13, 7) inC3 True rich True non-co-transversal pairs 0
+cell_17_13_7.txt 3 n,m,tau (17, 13, 7) inC3 True rich True non-co-transversal pairs 0
+cell_17_13_7.txt 4 n,m,tau (17, 13, 7) inC3 True rich True non-co-transversal pairs 0
+cell_17_13_7.txt 5 n,m,tau (17, 13, 7) inC3 True rich True non-co-transversal pairs 0
+cell_10_7_4.txt 0 n,m,tau (10, 7, 4) inC3 True rich True non-co-transversal pairs 0
+cell_10_7_4.txt 1 n,m,tau (10, 7, 4) inC3 True rich False non-co-transversal pairs 2
+cell_10_7_4.txt 2 Delta 4 (not a piece: Delta > 3)
+cell_10_7_4.txt 3 n,m,tau (10, 7, 4) inC3 True rich False non-co-transversal pairs 2
+cell_10_7_4.txt 4 n,m,tau (10, 7, 4) inC3 True rich True non-co-transversal pairs 0
+cell_8_5_3.txt 0 n,m,tau (8, 5, 3) inC3 True rich False non-co-transversal pairs 5
+cell_8_5_3.txt 1 n,m,tau (8, 5, 3) inC3 True rich False non-co-transversal pairs 6
+cell_15_11_6.txt 0 n,m,tau (15, 11, 6) inC3 True rich False non-co-transversal pairs 3
+cell_15_11_6.txt 1 n,m,tau (15, 11, 6) inC3 True rich False non-co-transversal pairs 3
+cell_15_11_6.txt 2 n,m,tau (15, 11, 6) inC3 True rich False non-co-transversal pairs 3
+cell_15_11_6.txt 3 n,m,tau (15, 11, 6) inC3 True rich False non-co-transversal pairs 2
+cell_15_11_6.txt 4 n,m,tau (15, 11, 6) inC3 True rich True non-co-transversal pairs 0
+cell_15_11_6.txt 5 n,m,tau (15, 11, 6) inC3 True rich True non-co-transversal pairs 0
+cell_15_11_6.txt 6 Delta 4 (not a piece: Delta > 3)
+cell_15_11_6.txt 7 Delta 4 (not a piece: Delta > 3)
+cell_15_11_6.txt 8 Delta 4 (not a piece: Delta > 3)
+cell_15_11_6.txt 9 Delta 4 (not a piece: Delta > 3)
+cell_15_11_6.txt 10 Delta 4 (not a piece: Delta > 3)
+cell_15_11_6.txt 11 Delta 4 (not a piece: Delta > 3)
+cell_15_11_6.txt 12 n,m,tau (15, 11, 6) inC3 True rich False non-co-transversal pairs 3
+cell_15_11_6.txt 13 n,m,tau (15, 11, 6) inC3 True rich False non-co-transversal pairs 3
+cell_15_11_6.txt 14 n,m,tau (15, 11, 6) inC3 True rich False non-co-transversal pairs 3
+cell_15_11_6.txt 15 n,m,tau (15, 11, 6) inC3 True rich False non-co-transversal pairs 3
+cell_15_11_6.txt 16 n,m,tau (15, 11, 6) inC3 True rich False non-co-transversal pairs 3
+cell_15_11_6.txt 17 Delta 4 (not a piece: Delta > 3)
+cell_15_11_6.txt 18 n,m,tau (15, 11, 6) inC3 True rich False non-co-transversal pairs 4
+cell_15_11_6.txt 19 n,m,tau (15, 11, 6) inC3 True rich False non-co-transversal pairs 4
+cell_15_11_6.txt 20 Delta 4 (not a piece: Delta > 3)
+cell_15_11_6.txt 21 n,m,tau (15, 11, 6) inC3 True rich False non-co-transversal pairs 2
+cell_15_11_6.txt 22 n,m,tau (15, 11, 6) inC3 True rich True non-co-transversal pairs 0
+cell_15_11_6.txt 23 n,m,tau (15, 11, 6) inC3 True rich True non-co-transversal pairs 0
+cell_15_11_6.txt 24 Delta 4 (not a piece: Delta > 3)
+cell_15_11_6.txt 25 Delta 4 (not a piece: Delta > 3)
+cell_15_11_6.txt 26 Delta 4 (not a piece: Delta > 3)
+cell_15_11_6.txt 27 n,m,tau (15, 11, 6) inC3 True rich True non-co-transversal pairs 0
+cell_15_11_6.txt 28 n,m,tau (15, 11, 6) inC3 True rich True non-co-transversal pairs 0
+cell_15_11_6.txt 29 n,m,tau (15, 11, 6) inC3 True rich False non-co-transversal pairs 2
+EXIT 0

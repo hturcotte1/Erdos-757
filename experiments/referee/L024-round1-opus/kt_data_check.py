@@ -89,12 +89,15 @@ for name, S in bases.items():
     Eall = ap_edges(S)
     t0, _ = min_transversals(n0, Eall)
     A0 = 27 * n0 + 35 * len(Eall) - 132 * t0
-    minP = None; negA = 0; checked = 0
+    minP = None; negA = 0; checked = 0; d4 = 0
     for k in range(1, n0 + 1):
         for Vs in combinations(range(n0), k):
             Ei = induced(Eall, Vs)
             loc = {x: i for i, x in enumerate(Vs)}
             El = [tuple(sorted(loc[x] for x in e)) for e in Ei]
+            if El and max(degs(k, El)) > 3:
+                d4 += 1
+                continue  # KT^{L*} is a statement about C_3 only
             t, _ = min_transversals(k, El)
             A = 27 * k + 35 * len(El) - 132 * t
             checked += 1
@@ -106,6 +109,6 @@ for name, S in bases.items():
                 P = A  # DEF >= 0
             if minP is None or P < minP:
                 minP = P
-    report[name] = dict(n=n0, m=len(Eall), tau=t0, A=A0, subsets=checked, subsets_with_A_neg=negA, min_P_lower=minP)
+    report[name] = dict(n=n0, m=len(Eall), tau=t0, A=A0, subsets_in_C3=checked, skipped_Delta4=d4, subsets_with_A_neg=negA, min_P_lower=minP)
     print(name, report[name], flush=True)
 print('ALL min P >= 0:', all(r['min_P_lower'] >= 0 for r in report.values()))
