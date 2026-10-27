@@ -1,0 +1,10 @@
+X_0 n=14 m=12 REALIZABLE {"nodes": 25, "pruned": 11, "leaves_good": 1, "reasons": {"FOUR": 10, "EQUAL": 1}, "secs": 0.1}
+  witness dimension 2
+X_1 n=14 m=12 REALIZABLE {"nodes": 16, "pruned": 3, "leaves_good": 1, "reasons": {"FOUR": 3}, "secs": 0.0}
+  witness dimension 2
+X_2 n=14 m=12 REALIZABLE {"nodes": 20, "pruned": 7, "leaves_good": 1, "reasons": {"FOUR": 7}, "secs": 0.0}
+  witness dimension 2
+X_3 n=14 m=12 REALIZABLE {"nodes": 18, "pruned": 5, "leaves_good": 1, "reasons": {"FOUR": 5}, "secs": 0.0}
+  witness dimension 2
+X_4 n=14 m=12 REALIZABLE {"nodes": 19, "pruned": 6, "leaves_good": 1, "reasons": {"FOUR": 6}, "secs": 0.0}
+  witness dimension 2

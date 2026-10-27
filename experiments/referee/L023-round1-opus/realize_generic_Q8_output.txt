@@ -1,0 +1,1 @@
+Q8 n=8 m=6 NOT-REALIZABLE {"nodes": 397, "pruned": 265, "leaves_good": 0, "reasons": {"FOUR": 136, "EQUAL": 129}, "secs": 0.3}

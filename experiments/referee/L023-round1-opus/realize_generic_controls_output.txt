@@ -1,0 +1,8 @@
+set n=14 m=12 REALIZABLE {"nodes": 27, "pruned": 13, "leaves_good": 1, "reasons": {"FOUR": 11, "EQUAL": 2}, "secs": 0.1}
+  witness dimension 2
+set n=12 m=10 REALIZABLE {"nodes": 16, "pruned": 5, "leaves_good": 1, "reasons": {"FOUR": 5}, "secs": 0.0}
+  witness dimension 2
+set n=11 m=8 REALIZABLE {"nodes": 12, "pruned": 3, "leaves_good": 1, "reasons": {"FOUR": 3}, "secs": 0.1}
+  witness dimension 3
+set n=21 m=19 REALIZABLE {"nodes": 39, "pruned": 18, "leaves_good": 1, "reasons": {"FOUR": 18}, "secs": 0.6}
+  witness dimension 2
