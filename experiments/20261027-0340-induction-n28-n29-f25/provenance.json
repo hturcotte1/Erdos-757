@@ -2200,6 +2200,14 @@
 "firstpath": "out/cells/cell_21_19_9_D3.txt",
 "md5": "3674a810b28e28a2c59bc5834a180565"
 },
+"21,19,9,4": {
+"agree": [],
+"classes": 31268,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_21_19_9_D4.txt",
+"md5": "8cbd2517a0dbb5a4bcc76fcfc75bc115"
+},
 "22,11,7,2": {
 "agree": [
 "20261017-2150-i11-n27 (worker, L016 cross-checked)",
@@ -2710,6 +2718,14 @@
 "firstpath": "../20261027-0300-tight-cells-d4/out/cells/cell_24_19_10_D4.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
+"24,20,10,3": {
+"agree": [],
+"classes": 2781,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_24_20_10_D3.txt",
+"md5": "b378da36f0418735f43019f28cc54188"
+},
 "25,12,8,2": {
 "agree": [],
 "classes": 10,
@@ -2869,6 +2885,14 @@
 "first": "L013 cells.tar.gz (refereed)",
 "firstpath": "seedsrc/L013/cells/cell_25_22_11_D3.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"25,23,11,4": {
+"agree": [],
+"classes": 6,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_25_23_11_D4.txt",
+"md5": "c9a59d581a5978642c895a0b7a80b854"
 },
 "26,13,9,2": {
 "agree": [],

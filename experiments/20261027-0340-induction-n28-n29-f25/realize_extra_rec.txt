@@ -1,0 +1,7 @@
+STAT graph=1 assignments=55236 singular=0 liftfail=0 distinct=2233 realizations=0 min_extra_APs=8
+STAT graph=2 assignments=54164 singular=0 liftfail=0 distinct=4479 realizations=0 min_extra_APs=8
+STAT graph=3 assignments=53300 singular=0 liftfail=0 distinct=4406 realizations=0 min_extra_APs=8
+STAT graph=4 assignments=53740 singular=0 liftfail=0 distinct=4448 realizations=0 min_extra_APs=8
+STAT graph=5 assignments=54700 singular=0 liftfail=0 distinct=3136 realizations=0 min_extra_APs=8
+STAT graph=6 assignments=54260 singular=0 liftfail=0 distinct=3129 realizations=0 min_extra_APs=8
+TOTAL graphs=6 assignments=325400 singular=0 liftfail=0 distinct=21831 realizations=0 realizable_graphs=0
