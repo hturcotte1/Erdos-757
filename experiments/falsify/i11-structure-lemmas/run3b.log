@@ -1,0 +1,45 @@
+RESULT n=18 m=12 samples=20000 grown=168 growfail=249 bestTau=6 minSlack=12 hist=3:4 4:688 5:13693 6:5615 
+RESULT n=18 m=14 samples=20000 grown=168 growfail=27 bestTau=7 minSlack=5 hist=4:74 5:6667 6:13232 7:27 
+RESULT n=18 m=15 samples=20000 grown=175 growfail=26 bestTau=7 minSlack=7 hist=4:22 5:4210 6:15682 7:86 
+RESULT n=18 m=16 samples=20000 grown=186 growfail=29 bestTau=7 minSlack=9 hist=4:6 5:2187 6:17467 7:340 
+RESULT n=19 m=10 samples=20000 grown=220 growfail=300 bestTau=6 minSlack=11 hist=3:9 4:1816 5:15169 6:3006 
+RESULT n=19 m=15 samples=20000 grown=163 growfail=21 bestTau=7 minSlack=10 hist=4:15 5:2815 6:16583 7:587 
+RESULT n=19 m=16 samples=20000 grown=167 growfail=4 bestTau=8 minSlack=1 hist=4:3 5:1391 6:16215 7:2348 8:43 
+RESULT n=19 m=17 samples=20000 grown=179 growfail=14 bestTau=8 minSlack=3 hist=4:1 5:524 6:13773 7:5632 8:70 
+RESULT n=20 m=14 samples=20000 grown=158 growfail=64 bestTau=7 minSlack=11 hist=4:12 5:3181 6:15985 7:822 
+RESULT n=20 m=16 samples=20000 grown=157 growfail=39 bestTau=8 minSlack=4 hist=4:3 5:693 6:13478 7:5823 8:3 
+RESULT n=20 m=17 samples=20000 grown=162 growfail=6 bestTau=8 minSlack=6 hist=4:1 5:313 6:10799 7:8814 8:73 
+RESULT n=20 m=18 samples=20000 grown=170 growfail=9 bestTau=8 minSlack=8 hist=5:105 6:7230 7:12500 8:165 
+RESULT n=21 m=13 samples=20000 grown=166 growfail=267 bestTau=7 minSlack=12 hist=4:34 5:3391 6:15648 7:927 
+RESULT n=21 m=17 samples=20000 grown=153 growfail=17 bestTau=8 minSlack=9 hist=5:127 6:7609 7:12131 8:133 
+RESULT n=21 m=18 samples=20000 grown=157 growfail=5 bestTau=8 minSlack=11 hist=5:61 6:5342 7:14408 8:189 
+RESULT n=21 m=19 samples=20000 grown=164 growfail=11 bestTau=8 minSlack=13 hist=4:2 5:10 6:3141 7:16344 8:503 
+RESULT n=22 m=17 samples=20000 grown=147 growfail=23 bestTau=9 minSlack=1 hist=5:58 6:5120 7:14266 8:506 9:50 
+RESULT n=22 m=18 samples=20000 grown=149 growfail=0 bestTau=9 minSlack=3 hist=5:34 6:3323 7:15639 8:962 9:42 
+RESULT n=22 m=19 samples=20000 grown=152 growfail=0 bestTau=9 minSlack=5 hist=5:6 6:1846 7:15831 8:2254 9:63 
+RESULT n=22 m=20 samples=20000 grown=161 growfail=0 bestTau=9 minSlack=7 hist=5:1 6:1061 7:14737 8:4127 9:74 
+RESULT n=23 m=15 samples=20000 grown=152 growfail=123 bestTau=8 minSlack=11 hist=5:293 6:7465 7:12186 8:56 
+RESULT n=23 m=19 samples=20000 grown=145 growfail=0 bestTau=9 minSlack=8 hist=6:1121 7:14141 8:4664 9:74 
+RESULT n=23 m=20 samples=20000 grown=147 growfail=0 bestTau=9 minSlack=10 hist=6:506 7:11238 8:8163 9:93 
+RESULT n=23 m=21 samples=20000 grown=154 growfail=0 bestTau=9 minSlack=12 hist=6:207 7:8723 8:10971 9:99 
+RESULT n=24 m=19 samples=20000 grown=140 growfail=3 bestTau=9 minSlack=11 hist=5:2 6:597 7:11011 8:8306 9:84 
+RESULT n=24 m=20 samples=20000 grown=141 growfail=5 bestTau=9 minSlack=13 hist=6:222 7:8423 8:11201 9:154 
+RESULT n=24 m=21 samples=20000 grown=143 growfail=0 bestTau=10 minSlack=4 hist=6:86 7:5939 8:13683 9:281 10:11 
+RESULT n=24 m=22 samples=20000 grown=152 growfail=0 bestTau=10 minSlack=6 hist=6:53 7:4123 8:15097 9:705 10:22 
+RESULT n=25 m=18 samples=20000 grown=141 growfail=51 bestTau=9 minSlack=12 hist=5:6 6:631 7:11193 8:8168 9:2 
+RESULT n=25 m=21 samples=20000 grown=139 growfail=0 bestTau=10 minSlack=7 hist=6:48 7:4202 8:14924 9:812 10:14 
+RESULT n=25 m=22 samples=20000 grown=141 growfail=0 bestTau=10 minSlack=9 hist=6:33 7:2728 8:15354 9:1854 10:31 
+RESULT n=25 m=23 samples=20000 grown=147 growfail=0 bestTau=10 minSlack=11 hist=6:9 7:1452 8:14835 9:3680 10:24 
+RESULT n=26 m=22 samples=20000 grown=136 growfail=1 bestTau=10 minSlack=12 hist=6:7 7:1374 8:13973 9:4612 10:34 
+RESULT n=26 m=23 samples=20000 grown=137 growfail=0 bestTau=11 minSlack=3 hist=6:7 7:971 8:12107 9:6844 10:65 11:6 
+RESULT n=26 m=24 samples=20000 grown=143 growfail=0 bestTau=11 minSlack=5 hist=7:378 8:9717 9:9804 10:93 11:8 
+RESULT n=27 m=20 samples=20000 grown=133 growfail=18 bestTau=10 minSlack=11 hist=6:29 7:2493 8:14112 9:3353 10:13 
+RESULT n=27 m=23 samples=20000 grown=131 growfail=0 bestTau=11 minSlack=6 hist=6:1 7:432 8:9104 9:10308 10:137 11:18 
+RESULT n=27 m=24 samples=20000 grown=133 growfail=0 bestTau=11 minSlack=8 hist=7:225 8:7434 9:12129 10:196 11:16 
+RESULT n=27 m=25 samples=20000 grown=140 growfail=0 bestTau=11 minSlack=10 hist=7:99 8:5197 9:14208 10:475 11:21 
+RESULT n=28 m=19 samples=20000 grown=139 growfail=69 bestTau=9 minSlack=23 hist=6:63 7:2558 8:13844 9:3535 
+RESULT n=28 m=24 samples=20000 grown=130 growfail=0 bestTau=11 minSlack=11 hist=6:1 7:123 8:4924 9:14143 10:784 11:25 
+RESULT n=28 m=25 samples=20000 grown=131 growfail=0 bestTau=12 minSlack=2 hist=7:54 8:3428 9:14792 10:1694 11:31 12:1 
+RESULT n=28 m=26 samples=20000 grown=138 growfail=0 bestTau=11 minSlack=15 hist=7:27 8:2172 9:14680 10:3089 11:32 
+RESULT n=29 m=23 samples=20000 grown=128 growfail=5 bestTau=11 minSlack=12 hist=7:86 8:4580 9:14225 10:1095 11:14 
+RESULT n=29 m=25 samples=20000 grown=128 growfail=0 bestTau=12 minSlack=5 hist=7:35 8:2383 9:14153 10:3386 11:40 12:3 

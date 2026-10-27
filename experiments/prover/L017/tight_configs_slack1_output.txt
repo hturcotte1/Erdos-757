@@ -1,0 +1,100 @@
+cell_8_5_3_D3.txt #0: (n,m,tau)=(8,5,3) degrees 22222221; anti-pairs 5 [(1, 2, 0), (1, 2, 1), (1, 2, 1), (2, 2, 1), (2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=2 role_f1=0 role_f2=5
+cell_8_5_3_D3.txt #1: (n,m,tau)=(8,5,3) degrees 32222211; anti-pairs 5 [(1, 1, 0), (1, 2, 1), (1, 2, 1), (1, 2, 1), (2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=3 role_f1=0 role_f2=5
+cell_15_11_6_D3.txt #0: (n,m,tau)=(15,11,6) degrees 333322222222221; anti-pairs 2 [(1, 2, 1), (2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_15_11_6_D3.txt #1: (n,m,tau)=(15,11,6) degrees 333322222222221; anti-pairs 2 [(1, 2, 1), (2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_15_11_6_D3.txt #2: (n,m,tau)=(15,11,6) degrees 333322222222221; anti-pairs 2 [(1, 2, 1), (2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_15_11_6_D3.txt #3: (n,m,tau)=(15,11,6) degrees 333222222222222; anti-pairs 2 [(2, 2, 1), (2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_15_11_6_D3.txt #4: (n,m,tau)=(15,11,6) degrees 333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_15_11_6_D3.txt #5: (n,m,tau)=(15,11,6) degrees 333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_15_11_6_D3.txt #6: (n,m,tau)=(15,11,6) degrees 333322222222221; anti-pairs 3 [(1, 2, 1), (1, 2, 1), (2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3
+cell_15_11_6_D3.txt #7: (n,m,tau)=(15,11,6) degrees 333322222222221; anti-pairs 3 [(1, 2, 1), (1, 2, 1), (2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3
+cell_15_11_6_D3.txt #8: (n,m,tau)=(15,11,6) degrees 333322222222221; anti-pairs 3 [(1, 2, 1), (1, 2, 1), (2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3
+cell_15_11_6_D3.txt #9: (n,m,tau)=(15,11,6) degrees 333322222222221; anti-pairs 3 [(1, 2, 1), (1, 2, 1), (2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3
+cell_15_11_6_D3.txt #10: (n,m,tau)=(15,11,6) degrees 333322222222221; anti-pairs 3 [(1, 2, 1), (1, 2, 1), (2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3
+cell_15_11_6_D3.txt #11: (n,m,tau)=(15,11,6) degrees 333332222222211; anti-pairs 3 [(1, 2, 1), (1, 2, 1), (1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3
+cell_15_11_6_D3.txt #12: (n,m,tau)=(15,11,6) degrees 333332222222211; anti-pairs 3 [(1, 2, 1), (1, 2, 1), (1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3
+cell_15_11_6_D3.txt #13: (n,m,tau)=(15,11,6) degrees 333222222222222; anti-pairs 2 [(2, 2, 1), (2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_15_11_6_D3.txt #14: (n,m,tau)=(15,11,6) degrees 333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_15_11_6_D3.txt #15: (n,m,tau)=(15,11,6) degrees 333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_15_11_6_D3.txt #16: (n,m,tau)=(15,11,6) degrees 333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_15_11_6_D3.txt #17: (n,m,tau)=(15,11,6) degrees 333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_15_11_6_D3.txt #18: (n,m,tau)=(15,11,6) degrees 333222222222222; anti-pairs 2 [(2, 2, 1), (2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_22_17_9_D3.txt #0: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 1 [(1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #1: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 1 [(1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #2: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 1 [(1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #3: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 1 [(1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #4: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 1 [(1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #5: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 1 [(1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #6: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 1 [(1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #7: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 1 [(1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #8: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 1 [(1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #9: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #10: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #11: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #12: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #13: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #14: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #15: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #16: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 2 [(1, 2, 1), (1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_22_17_9_D3.txt #17: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 2 [(1, 2, 1), (1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_22_17_9_D3.txt #18: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 2 [(1, 2, 1), (1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_22_17_9_D3.txt #19: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 2 [(1, 2, 1), (1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_22_17_9_D3.txt #20: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 2 [(1, 2, 1), (1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_22_17_9_D3.txt #21: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 2 [(1, 2, 1), (1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_22_17_9_D3.txt #22: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 2 [(1, 2, 1), (1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_22_17_9_D3.txt #23: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 2 [(1, 2, 1), (1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_22_17_9_D3.txt #24: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 2 [(1, 2, 1), (1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_22_17_9_D3.txt #25: (n,m,tau)=(22,17,9) degrees 3333333322222222222221; anti-pairs 2 [(1, 2, 1), (1, 2, 1)]; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2
+cell_22_17_9_D3.txt #26: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #27: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #28: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #29: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #30: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #31: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #32: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #33: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #34: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #35: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_22_17_9_D3.txt #36: (n,m,tau)=(22,17,9) degrees 3333333222222222222222; anti-pairs 1 [(2, 2, 1)]; (P) False; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1
+cell_26_22_11_D3.txt #0: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #1: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #2: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #3: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #4: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #5: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #6: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #7: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #8: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #9: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #10: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #11: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #12: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #13: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #14: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #15: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #16: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #17: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #18: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #19: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #20: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #21: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #22: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #23: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #24: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #25: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #26: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #27: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #28: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #29: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #30: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #31: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #32: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #33: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #34: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+cell_26_22_11_D3.txt #35: (n,m,tau)=(26,22,11) degrees 33333333333333222222222222; anti-pairs 0 []; (P) True; role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0
+SUMMARY cell_8_5_3_D3.txt: {'classes': 2, 'with_b': 0, 'with_c': 0, 'with_e': 2, 'with_f1': 0, 'with_f2': 2}
+SUMMARY cell_12_10_5_D3.txt: {'classes': 149, 'with_b': 0, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 59}
+SUMMARY cell_15_11_6_D3.txt: {'classes': 19, 'with_b': 0, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 13}
+SUMMARY cell_19_16_8_D3.txt: {'classes': 227, 'with_b': 0, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 18}
+SUMMARY cell_22_17_9_D3.txt: {'classes': 37, 'with_b': 0, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 37}
+SUMMARY cell_26_22_11_D3.txt: {'classes': 36, 'with_b': 0, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 0}

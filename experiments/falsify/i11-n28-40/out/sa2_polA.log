@@ -3,3 +3,8 @@
 {'n': 29, 'm0': 25, 'start_slack': 5, 'best_slack': 5, 'm': 25, 'tau': 12, 'visits_le1': 0}
 {'n': 30, 'm0': 24, 'start_slack': 6, 'best_slack': 6, 'm': 24, 'tau': 12, 'visits_le1': 0}
 {'n': 31, 'm0': 26, 'start_slack': 2, 'best_slack': 2, 'm': 26, 'tau': 13, 'visits_le1': 0}
+{'n': 31, 'm0': 28, 'start_slack': 6, 'best_slack': 6, 'm': 28, 'tau': 13, 'visits_le1': 0}
+{'n': 31, 'm0': 29, 'start_slack': 8, 'best_slack': 6, 'm': 28, 'tau': 13, 'visits_le1': 0}
+{'n': 31, 'm0': 25, 'start_slack': 11, 'best_slack': 11, 'm': 25, 'tau': 12, 'visits_le1': 0}
+{'n': 32, 'm0': 25, 'start_slack': 3, 'best_slack': 3, 'm': 25, 'tau': 13, 'visits_le1': 0}
+{'n': 32, 'm0': 26, 'start_slack': 5, 'best_slack': 5, 'm': 26, 'tau': 13, 'visits_le1': 0}

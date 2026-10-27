@@ -7,6 +7,13 @@ env = dict(os.environ, I11_DM=str(DM), I11_SEED=str(seed))
 tight = json.load(open('pieces.json'))
 pieces = [(d['n'], [tuple(e) for e in d['edges']], d['slack']) for d in tight]
 if DM <= 3: pieces = [p for p in pieces if max(sum(v in e for e in p[1]) for v in range(p[0])) <= 3]
+if os.environ.get('EXTRA'):
+    seen_fp = set()
+    for l in open(os.environ['EXTRA']):
+        t = l.strip().split(' ')
+        if len(t) < 7 or t[0] not in ('0', '1') or t[4] in seen_fp: continue
+        seen_fp.add(t[4]); nn = int(t[5]); pieces.append((nn, [tuple(int(x) for x in w.split(',')) for w in t[7:]], int(t[0])))
+    print('extra pieces', len(seen_fp), flush=True)
 AP = (3, [(0, 1, 2)], 0)
 def disj(a, b):
     return (a[0] + b[0], a[1] + [tuple(v + a[0] for v in e) for e in b[1]])

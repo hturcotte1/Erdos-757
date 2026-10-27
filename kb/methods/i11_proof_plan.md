@@ -45,7 +45,7 @@ m - nu(G) + (corrections for edges whose vertices all have degree 1), so slack =
 needs nu(G) >= 3|E(G)|/11 for subcubic G arising this way (true for cubic graphs: nu >= (4|V|-1)/9 gives nu >= 0.44|V|
 against 3|E|/11 = 0.41|V|); the class-C structure must be used for the general subcubic case or a counterexample found.
 
-Conjecture T (finiteness of tight graphs) [conjecture]. Every connected member of C with slack 0 has at most 17 vertices.
+Conjecture T (finiteness of tight graphs) [REFUTED for Delta <= 4 on 2026-10-27: cell(21,18,9,4) has 12 classes, degree-4 gluings of tight pieces; the Delta <= 3 version, Conjecture T', is open and is all the induction needs]. Every connected member of C with slack 0 AND maximum degree <= 3 has at most 17 vertices.
 Known tight connected cells [verified-here]: (3,1,1): 1 class; (10,7,4): 5 classes (4 with Delta <= 3); (14,12,6): 11 classes
 (2 with Delta <= 3); (17,13,7): 6 classes (Delta <= 3); empty: (20,14,8), (21,18,9), (24,19,10) (Delta <= 3). Open: (27,20,11),
 (28,...), and all Delta = 4 cells beyond 14. Relevance: the record cells (25,23,11) and (32,29,14) have slack 0, so

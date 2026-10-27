@@ -1,6 +1,6 @@
-"""L017, falsification test of the structure theorem (Theorems 1-5) on vertex-minimal I11 violators among ALL connected
+"""L017, computation C3: falsification test of the structure theorem (Theorems 1-5) on vertex-minimal I11 violators among ALL connected
 linear 3-graphs with at most NMAX vertices (not only class C: the proofs of Theorems 1-5 use only linearity and the
-fact that proper induced subgraphs satisfy I11, see Remark 6.4; so every vertex-minimal linear violator must satisfy them).
+fact that proper induced subgraphs satisfy I11, see Step 10.1 of the certificate; so every vertex-minimal linear violator must satisfy them).
 
 Pipeline: for every (N, M) with lo = floor((3N+2M)/11)+1 <= M, L007's enumerator `enum_conn N M lo N 1` lists a labelled
 copy of every connected linear 3-graph with N vertices, M edges and tau >= lo (L007 Lemma D); `canon` (nauty) reduces to
@@ -72,6 +72,11 @@ def check(H, log):
         need(H.T[V & ~bit(v)] == tau - 1, 'T1b tau(H-v)=tau-1 v=%d' % v)
         need(H.slack(V & ~bit(v)) == s + 8 - 2 * d[v], 'T1b slack(H-v) v=%d' % v)
     need(max(d) == 3, 'Lemma M: Delta=3')
+    # Theorem 1(f): every X with |X| <= 3 and 2|d(X)| > s + 8|X| - 11 is co-transversal in H
+    for k in (1, 2, 3):
+        for X in itertools.combinations(range(N), k):
+            Xm = sum(bit(x) for x in X); dX = sum(1 for e in H.em if e & Xm)
+            if 2 * dX > s + 8 * k - 11: need(H.in_min_T(Xm, V), 'T1f co-transversal %s' % (X,))
     if max(d) == 3: need(s in (-1, -2), 'T1e slack in {-1,-2}')
     # Theorem 3
     for e in H.E:
@@ -117,6 +122,7 @@ def check(H, log):
         for (x, y, c) in required_uncovered(r, P, types, cs, cid):
             need(not H.in_min_T(bit(x) | bit(y), c), 'T4 required uncovered pair %d %d' % (x, y))
             need(2 * H.dpair(x, y, c) <= H.slack(c) + 5, 'T4 pair lemma %d %d' % (x, y))
+        for msg in check_vi(H, r, P, types, cs, cid, d): fails.append('T4(vi) v=%d %s' % (v, msg))
     # Theorem 5 (degree-2 and degree-1 vertices)
     for v in range(N):
         if d[v] == 2:
@@ -151,6 +157,56 @@ def check(H, log):
                 need(not H.in_min_T(bit(q) | bit(c1), W2) and not H.in_min_T(bit(q) | bit(c2), W2), 'T5 deg1: (b,c),(b,d) uncovered')
             log['deg1'] += 1
     return fails
+
+def share(H, x, y, c):
+    return any(e & c == e and e >> x & 1 and e >> y & 1 for e in H.em)
+
+def sides_vi(r, P, types, cs, cid):
+    """(component, side1, side2) for Theorem 4(vi); side2 None means 'the other members of side1' (pattern b)."""
+    out = []
+    if r == 1: return out
+    if r == 3:
+        ins = [i for i, t in enumerate(types) if t[0] == 'in']
+        return [(cs[types[ins[0]][1]], list(P[ins[0]]), list(P[ins[1]]))]
+    nin = [sum(1 for t in types if t == ('in', i)) for i in range(2)]
+    if nin == [0, 0]:
+        return [(cs[i], [y for p in P for y in p if cid[y] == i], None) for i in range(2)]
+    o = 1 if nin[1] > nin[0] else 0
+    inF1 = [p for p, t in zip(P, types) if t == ('in', o)]; spl = [p for p, t in zip(P, types) if t[0] == 'split']
+    if len(inF1) == 2: return [(cs[o], list(inF1[0]), list(inF1[1]))]
+    if len(inF1) == 1 and len(spl) == 2:
+        return [(cs[o], list(inF1[0]), [[y for y in q if cid[y] == o][0] for q in spl])]
+    return []
+
+def check_vi(H, r, P, types, cs, cid, d):
+    msgs = []
+    for (c, A, Bs) in sides_vi(r, P, types, cs, cid):
+        if H.slack(c) != 0: continue
+        if Bs is None:
+            three = [z for z in A if d[z] == 3]
+            if len(three) > 1: msgs.append('two degree-3 attachment vertices (b)')
+            for z in three:
+                if not all(share(H, z, w, c) for w in A if w != z): msgs.append('(b) sharing')
+        else:
+            three = [z for z in A + Bs if d[z] == 3]
+            if len(three) > 1: msgs.append('two degree-3 attachment vertices')
+            for z in three:
+                other = Bs if z in A else A
+                if not all(share(H, z, w, c) for w in other): msgs.append('sharing')
+    # pattern (e)
+    if r == 2:
+        nin = [sum(1 for t in types if t == ('in', i)) for i in range(2)]
+        spl = [p for p, t in zip(P, types) if t[0] == 'split']
+        if nin == [1, 1] and len(spl) == 1:
+            for i in range(2):
+                if H.slack(cs[i]) != 0: continue
+                Pi = [p for p, t in zip(P, types) if t == ('in', i)][0]; ei = [y for y in spl[0] if cid[y] == i][0]
+                a, b = Pi
+                if d[ei] == 3:
+                    if not (d[a] == 2 and d[b] == 2 and share(H, ei, a, cs[i]) and share(H, ei, b, cs[i])): msgs.append('(e) degree 3 case')
+                else:
+                    if not (d[a] == 2 or d[b] == 2): msgs.append('(e) degree 2 case')
+    return msgs
 
 def pattern_name(r, types):
     if r == 1: return 'a'
@@ -228,6 +284,18 @@ def required_uncovered(r, P, types, cs, cid):
         return [(a, x, F1) for a in inF1[0] for x in ce] + [(df[0], df[1], F2)]
     return out
 
+if __name__ == '__main__' and len(sys.argv) > 2 and sys.argv[1] == '--recheck':
+    # re-check the vertex-minimal violators listed (as JSON lines) in an earlier output file with the current checks
+    log = {'pattern3': collections.Counter(), 'deg2': [], 'deg1': 0}; nf = 0; cnt = 0
+    for l in open(sys.argv[2]):
+        if not l.startswith('{'): continue
+        info = json.loads(l); H = HG(info['N'], [tuple(e) for e in info['edges']])
+        assert H.slack(H.full) < 0 and not any(H.slack(S) < 0 for S in range(1, H.full))
+        f = check(H, log); nf += len(f); cnt += 1
+        print('N=%d M=%d tau=%d slack=%d F7free=%s P3=%s fails=%s' % (info['N'], info['M'], info['tau'], info['slack'], info['F7free'], info['P3'], f))
+    print('RECHECK SUMMARY: %d vertex-minimal violators re-checked, failed claims: %d; degree-3 patterns: %s; degree-2 cases: %s; degree-1 vertices: %d'
+          % (cnt, nf, dict(log['pattern3']), dict(collections.Counter(log['deg2'])), log['deg1']))
+    sys.exit(0)
 if __name__ == '__main__':
     NMAX = int(sys.argv[1]); NMIN = int(sys.argv[2]) if len(sys.argv) > 2 else 3
     log = {'pattern3': collections.Counter(), 'deg2': [], 'deg1': 0}

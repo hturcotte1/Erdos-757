@@ -1,4 +1,4 @@
-"""L017, illustrative check of Lemma U'' and of its two-vertex form (Steps 3-4) on stored tight and slack-1 cells.
+"""L017, illustrative check C2 of Theorem 2 (U) (Lemma U'', its two-vertex form and the pair lemma; proof in Step 2) on stored tight and slack-1 cells.
 For every graph F of each cell list: compute tau(F) and ALL minimum transversals (exact, hyp.py); then
  (U'')  every vertex x with slack(F) < 3 + 2 d_F(x) lies in some minimum transversal;
  (U2)   every pair x != y with slack(F) < 2 |d(x,y)| - 5 lies in a common minimum transversal, where

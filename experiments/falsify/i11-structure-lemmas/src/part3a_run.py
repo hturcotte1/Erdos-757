@@ -1,8 +1,12 @@
 import sys, json, time, collections
 sys.path.insert(0,'src')
 from part3a import *
-nmax=int(sys.argv[1]); tlimit=float(sys.argv[2])
+nmax=int(sys.argv[1]); tlimit=float(sys.argv[2]); nstart=int(sys.argv[3]) if len(sys.argv)>3 else 5; maxparts=int(sys.argv[4]) if len(sys.argv)>4 else 8; outname=sys.argv[5] if len(sys.argv)>5 else 'part3a_results.json'
 lib=load_library()
+if nstart>5:
+    import os
+    for i,g in enumerate(json.load(open('part3a_results_n18.json'))['graphs']):
+        lib.append(Comp('gen%d_%d#%d'%(g['n'],i,i),g['n'],[tuple(e) for e in g['edges']]))
 t0=time.time()
 found_by_n={}   # n -> list of dict(edges)
 summary=[]
@@ -19,15 +23,15 @@ def canon_key(n,edges):
 def same(B1,B2):
     return nx.is_isomorphic(B1,B2,node_match=lambda a,b:a['t']==b['t'])
 newgraphs=[]
-for n in range(5,nmax+1):
+for n in range(nstart,nmax+1):
     N=n-1
-    ms=multisets(lib,N)
+    ms_all=multisets(lib,N,maxparts=8); ms=[x for x in ms_all if len(x)<=maxparts]
     ngraphs=[]  # (B,edges)
     hits=0; unions_done=0; unions_hit=0; node_total=0; errs=0
     for idxs in ms:
         if time.time()-t0>tlimit: break
         try:
-            res,info=search_union(lib,idxs,max_nodes=3_000_000)
+            res,info=search_union(lib,idxs,max_nodes=2_000_000)
         except RuntimeError:
             errs+=1; continue
         unions_done+=1
@@ -53,7 +57,7 @@ for n in range(5,nmax+1):
                 if k2==key and same(B,B2): dup=True;break
             if not dup: ngraphs.append((B,edges,key))
         unions_hit+=hit_here
-    summary.append({'n':n,'unions':len(ms),'unions_done':unions_done,'unions_with_tight_K':unions_hit,'node_total':node_total,'errs':errs,
+    summary.append({'n':n,'unions_all_comp_counts':len(ms_all),'skipped_gt_maxparts':len(ms_all)-len(ms),'unions':len(ms),'unions_done':unions_done,'unions_with_tight_K':unions_hit,'node_total':node_total,'errs':errs,
                     'new_tight_classes_deg4':len(ngraphs),'time':round(time.time()-t0,1)})
     print(summary[-1],flush=True)
     known_re=0; knownset=set()
@@ -69,4 +73,4 @@ for n in range(5,nmax+1):
     summary[-1]['reproduced_known_classes']=known_re
     summary[-1]['new_classes']=len(ngraphs)-known_re
     print('   n=%d: generated %d classes, %d match library, %d NEW'%(n,len(ngraphs),known_re,len(ngraphs)-known_re),flush=True)
-    json.dump({'summary':summary,'graphs':newgraphs},open('part3a_results.json','w'))
+    json.dump({'summary':summary,'graphs':newgraphs},open(outname,'w'))

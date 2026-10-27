@@ -1,0 +1,1 @@
+random linear 3-graphs: 1500; (R) instances 7500, (R+) instances 1500, (U) instances 147005 of which 4712 with the hypothesis; failures: 0

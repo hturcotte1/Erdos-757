@@ -4,7 +4,7 @@
 #define HOFF 60
 #define HSZ 400
 
-static FILE *OUT = NULL; static int REQCONN = 0; /* slack<=1 graphs */
+static FILE *OUT = NULL; static FILE *DUMP = NULL; static long dumped = 0; static int REQCONN = 0; /* slack<=1 graphs */
 static inline u64 mix(u64 x) { x ^= x >> 31; x *= 0x9E3779B97F4A7C15ULL; x ^= x >> 29; x *= 0xBF58476D1CE4E5B9ULL; x ^= x >> 32; return x; }
 static unsigned long long fp_graph(const G *g) { /* isomorphism-invariant fingerprint: 5 rounds of colour refinement on the incidence graph */
     u64 vc[MAXN], ec[MAXM], nv_[MAXN];
@@ -155,6 +155,7 @@ static void grow_mode(int n, int mlo, int mhi, long samples, u64 seed, int K) {
         if (tau < 0) { continue; }
         int sl = slack_of(&g, tau); if (sl + HOFF >= 0 && sl + HOFF < HSZ) hist[m][sl + HOFF]++; if (sl < minsl[m]) minsl[m] = sl;
         report_low(&g, tau, sl, "grow");
+        if (DUMP && m == n - 2 && dumped < 4000) { print_graph(DUMP, &g); dumped++; }
     }
     for (int m = mlo; m <= mhi; m++) { printf("GROW n=%d m=%d K=%d tried=%ld ok=%ld minslack=%d hist", n, m, K, tried[m], ok[m], minsl[m]); for (int s = 0; s < HSZ; s++) if (hist[m][s]) printf(" %d:%ld", s - HOFF, hist[m][s]); printf("\n"); }
 }
@@ -233,6 +234,7 @@ static void subsa_mode(const char *file, int size, long iters, u64 seed, double 
 int main(int argc, char **argv) {
     if (argc < 2) { fprintf(stderr, "usage\n"); return 1; }
     const char *mode = argv[1]; const char *outf = getenv("I11_OUT"); if (outf) OUT = fopen(outf, "a");
+    const char *du = getenv("I11_DUMP"); if (du) DUMP = fopen(du, "w");
     const char *rc = getenv("I11_CONN"); if (rc) REQCONN = atoi(rc);
     const char *dm = getenv("I11_DMAX"); if (dm) DMAX = atoi(dm);
     if (!strcmp(mode, "selftest")) return selftest() ? 1 : 0;

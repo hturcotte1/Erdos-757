@@ -48,12 +48,19 @@
   "adm_R2_unc": 0,
   "adm_R1": 0,
   "adm_R1_unc": 0,
+  "adm_min_cover_count": null,
+  "adm_thin_le2": 0,
+  "adm_min_cover_ratio": null,
   "uncoverable_total": 0,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {}
   },
   "uncoverable_P_violating_minS": {},
   "uncoverable_P_only_minS": {},
+  "uncoverable_violates_A": 0,
+  "uncoverable_violates_B_only": 0,
+  "A_minS": {},
+  "B_only_minS": {},
   "nonadm_total": 0,
   "nonadm_L": 0,
   "nonadm_P": 0,
@@ -112,6 +119,9 @@
   "adm_R2_unc": 0,
   "adm_R1": 0,
   "adm_R1_unc": 0,
+  "adm_min_cover_count": null,
+  "adm_thin_le2": 0,
+  "adm_min_cover_ratio": null,
   "uncoverable_total": 6,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
@@ -122,6 +132,12 @@
    "8": 6
   },
   "uncoverable_P_only_minS": {},
+  "uncoverable_violates_A": 0,
+  "uncoverable_violates_B_only": 6,
+  "A_minS": {},
+  "B_only_minS": {
+   "8": 6
+  },
   "nonadm_total": 15750,
   "nonadm_L": 13347,
   "nonadm_P": 15750,
@@ -183,6 +199,9 @@
   "adm_R2_unc": 0,
   "adm_R1": 0,
   "adm_R1_unc": 0,
+  "adm_min_cover_count": null,
+  "adm_thin_le2": 0,
+  "adm_min_cover_ratio": null,
   "uncoverable_total": 2,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
@@ -193,6 +212,12 @@
    "13": 2
   },
   "uncoverable_P_only_minS": {},
+  "uncoverable_violates_A": 2,
+  "uncoverable_violates_B_only": 0,
+  "A_minS": {
+   "13": 2
+  },
+  "B_only_minS": {},
   "nonadm_total": 495495,
   "nonadm_L": 387045,
   "nonadm_P": 495495,
@@ -246,6 +271,9 @@
   "adm_R2_unc": 0,
   "adm_R1": 393178,
   "adm_R1_unc": 0,
+  "adm_min_cover_count": 17,
+  "adm_thin_le2": 0,
+  "adm_min_cover_ratio": 0.04857,
   "uncoverable_total": 24,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
@@ -256,6 +284,12 @@
    "8": 24
   },
   "uncoverable_P_only_minS": {},
+  "uncoverable_violates_A": 0,
+  "uncoverable_violates_B_only": 24,
+  "A_minS": {},
+  "B_only_minS": {
+   "8": 24
+  },
   "nonadm_total": 720662,
   "nonadm_L": 707370,
   "nonadm_P": 37800,
@@ -317,6 +351,9 @@
   "adm_R2_unc": 0,
   "adm_R1": 0,
   "adm_R1_unc": 0,
+  "adm_min_cover_count": null,
+  "adm_thin_le2": 0,
+  "adm_min_cover_ratio": null,
   "uncoverable_total": 62,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
@@ -332,6 +369,13 @@
   },
   "uncoverable_P_only_minS": {
    "9": 6
+  },
+  "uncoverable_violates_A": 0,
+  "uncoverable_violates_B_only": 62,
+  "A_minS": {},
+  "B_only_minS": {
+   "8": 6,
+   "9": 56
   },
   "nonadm_total": 840,
   "nonadm_L": 756,
@@ -397,6 +441,9 @@
   "adm_R2_unc": 0,
   "adm_R1": 0,
   "adm_R1_unc": 0,
+  "adm_min_cover_count": null,
+  "adm_thin_le2": 0,
+  "adm_min_cover_ratio": null,
   "uncoverable_total": 24,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
@@ -411,6 +458,13 @@
   "uncoverable_P_only_minS": {
    "13": 18
   },
+  "uncoverable_violates_A": 24,
+  "uncoverable_violates_B_only": 0,
+  "A_minS": {
+   "11": 6,
+   "13": 18
+  },
+  "B_only_minS": {},
   "nonadm_total": 3063060,
   "nonadm_L": 2568493,
   "nonadm_P": 3063060,
@@ -475,6 +529,9 @@
   "adm_R2_unc": 0,
   "adm_R1": 478845,
   "adm_R1_unc": 0,
+  "adm_min_cover_count": 4,
+  "adm_thin_le2": 0,
+  "adm_min_cover_ratio": 0.02424,
   "uncoverable_total": 197,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
@@ -487,6 +544,13 @@
    "9": 81
   },
   "uncoverable_P_only_minS": {},
+  "uncoverable_violates_A": 0,
+  "uncoverable_violates_B_only": 197,
+  "A_minS": {},
+  "B_only_minS": {
+   "8": 116,
+   "9": 81
+  },
   "nonadm_total": 1556582,
   "nonadm_L": 1523606,
   "nonadm_P": 91980,
@@ -552,6 +616,9 @@
   "adm_R2_unc": 0,
   "adm_R1": 0,
   "adm_R1_unc": 0,
+  "adm_min_cover_count": null,
+  "adm_thin_le2": 0,
+  "adm_min_cover_ratio": null,
   "uncoverable_total": 1985,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
@@ -568,6 +635,16 @@
    "20": 11
   },
   "uncoverable_P_only_minS": {},
+  "uncoverable_violates_A": 0,
+  "uncoverable_violates_B_only": 1985,
+  "A_minS": {},
+  "B_only_minS": {
+   "8": 1910,
+   "9": 60,
+   "17": 2,
+   "18": 2,
+   "20": 11
+  },
   "nonadm_total": 389072880,
   "nonadm_L": 244055019,
   "nonadm_P": 389072880,
@@ -624,6 +701,9 @@
   "adm_R2_unc": 0,
   "adm_R1": 0,
   "adm_R1_unc": 0,
+  "adm_min_cover_count": null,
+  "adm_thin_le2": 0,
+  "adm_min_cover_ratio": null,
   "uncoverable_total": 15,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
@@ -637,6 +717,12 @@
   },
   "uncoverable_P_only_minS": {
    "7": 1
+  },
+  "uncoverable_violates_A": 0,
+  "uncoverable_violates_B_only": 15,
+  "A_minS": {},
+  "B_only_minS": {
+   "7": 15
   },
   "nonadm_total": 15,
   "nonadm_L": 14,
@@ -699,6 +785,9 @@
   "adm_R2_unc": 0,
   "adm_R1": 0,
   "adm_R1_unc": 0,
+  "adm_min_cover_count": 0,
+  "adm_thin_le2": 360,
+  "adm_min_cover_ratio": 0.0,
   "uncoverable_total": 144,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
@@ -710,6 +799,10 @@
   },
   "uncoverable_P_violating_minS": {},
   "uncoverable_P_only_minS": {},
+  "uncoverable_violates_A": 0,
+  "uncoverable_violates_B_only": 0,
+  "A_minS": {},
+  "B_only_minS": {},
   "nonadm_total": 900,
   "nonadm_L": 888,
   "nonadm_P": 0,
@@ -803,6 +896,9 @@
   "adm_R2_unc": 0,
   "adm_R1": 0,
   "adm_R1_unc": 0,
+  "adm_min_cover_count": null,
+  "adm_thin_le2": 0,
+  "adm_min_cover_ratio": null,
   "uncoverable_total": 946,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
@@ -824,6 +920,16 @@
    "10": 279,
    "11": 19
   },
+  "uncoverable_violates_A": 946,
+  "uncoverable_violates_B_only": 0,
+  "A_minS": {
+   "7": 15,
+   "8": 5,
+   "9": 128,
+   "10": 339,
+   "11": 459
+  },
+  "B_only_minS": {},
   "nonadm_total": 198450,
   "nonadm_L": 179041,
   "nonadm_P": 198450,
@@ -892,6 +998,9 @@
   "adm_R2_unc": 4,
   "adm_R1": 166846,
   "adm_R1_unc": 8,
+  "adm_min_cover_count": 0,
+  "adm_thin_le2": 5313,
+  "adm_min_cover_ratio": 0.0,
   "uncoverable_total": 972,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
@@ -910,6 +1019,14 @@
    "9": 78
   },
   "uncoverable_P_only_minS": {},
+  "uncoverable_violates_A": 0,
+  "uncoverable_violates_B_only": 231,
+  "A_minS": {},
+  "B_only_minS": {
+   "7": 15,
+   "8": 138,
+   "9": 78
+  },
   "nonadm_total": 1618721,
   "nonadm_L": 1557236,
   "nonadm_P": 233070,
@@ -1050,6 +1167,9 @@
   "adm_R2_unc": 0,
   "adm_R1": 31556,
   "adm_R1_unc": 0,
+  "adm_min_cover_count": 0,
+  "adm_thin_le2": 152,
+  "adm_min_cover_ratio": 0.0,
   "uncoverable_total": 520,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
@@ -1064,6 +1184,12 @@
    "8": 22
   },
   "uncoverable_P_only_minS": {},
+  "uncoverable_violates_A": 0,
+  "uncoverable_violates_B_only": 22,
+  "A_minS": {},
+  "B_only_minS": {
+   "8": 22
+  },
   "nonadm_total": 1130190,
   "nonadm_L": 1113242,
   "nonadm_P": 50400,
@@ -1220,6 +1346,9 @@
   "adm_R2_unc": 0,
   "adm_R1": 0,
   "adm_R1_unc": 0,
+  "adm_min_cover_count": null,
+  "adm_thin_le2": 0,
+  "adm_min_cover_ratio": null,
   "uncoverable_total": 4759,
   "uncoverable_nonadm_by_combo": {
    "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
@@ -1239,10 +1368,185 @@
   "uncoverable_P_only_minS": {
    "9": 3
   },
+  "uncoverable_violates_A": 391,
+  "uncoverable_violates_B_only": 4368,
+  "A_minS": {
+   "7": 6,
+   "8": 6,
+   "9": 195,
+   "11": 182,
+   "16": 2
+  },
+  "B_only_minS": {
+   "8": 3682,
+   "9": 684,
+   "18": 2
+  },
   "nonadm_total": 317073120,
   "nonadm_L": 211897795,
   "nonadm_P": 317073120,
   "adm_unc_sample": [],
   "degree_sequences": 3
+ },
+ "20_15_8": {
+  "n": 20,
+  "m": 15,
+  "tau": 8,
+  "slack": 2,
+  "D_listed": 3,
+  "classes": 953,
+  "classes_deg_le3": 953,
+  "n_minus_m": 5,
+  "m_le_n_minus_4": true,
+  "maxdeg_range": [
+   3,
+   3
+  ],
+  "nT_min": 599,
+  "nT_max": 907,
+  "nT_mean": 735.7733473242392,
+  "truncated": 0,
+  "vertices_in_no_min_transversal": 0,
+  "max_P2_fail_key": 3,
+  "P2_bound_floor_s5_2": 3,
+  "p2_pairs": 181070,
+  "p2_fail": 2480,
+  "p2_fail_by_key": {
+   "1": [
+    165,
+    165
+   ],
+   "2": [
+    1463,
+    1644
+   ],
+   "3": [
+    852,
+    24261
+   ]
+  },
+  "p2_by_key_total": {
+   "1": 165,
+   "2": 1644,
+   "3": 24261,
+   "4": 87788,
+   "5": 58730,
+   "6": 8482
+  },
+  "classes_with_P2_failure": 854,
+  "pp_all": 13851855,
+  "pp_all_cov": 13851855,
+  "pp_good": 8072435,
+  "pp_good_cov": 8072435,
+  "classes_pp_all_cov": 0,
+  "triples": 554074200,
+  "triples_coverable": 554069788,
+  "triples_linear": 246734238,
+  "triples_admissible": 242862407,
+  "admissible_uncoverable": 56,
+  "classes_with_admissible": 953,
+  "classes_with_admissible_uncoverable": 20,
+  "adm_R2": 16071129,
+  "adm_R2_unc": 0,
+  "adm_R1": 159446641,
+  "adm_R1_unc": 26,
+  "adm_min_cover_count": 0,
+  "adm_thin_le2": 56,
+  "adm_min_cover_ratio": 0.0,
+  "uncoverable_total": 4412,
+  "uncoverable_nonadm_by_combo": {
+   "L,F,P bits (1=nonlinear,2=F7,4=P3 violated)": {
+    "0": 56,
+    "1": 770,
+    "2": 228,
+    "3": 42,
+    "5": 24,
+    "6": 3052,
+    "7": 240
+   }
+  },
+  "uncoverable_P_violating_minS": {
+   "7": 24,
+   "8": 3004,
+   "9": 288
+  },
+  "uncoverable_P_only_minS": {},
+  "uncoverable_violates_A": 0,
+  "uncoverable_violates_B_only": 3316,
+  "A_minS": {},
+  "B_only_minS": {
+   "7": 24,
+   "8": 3004,
+   "9": 288
+  },
+  "nonadm_total": 311211793,
+  "nonadm_L": 307339962,
+  "nonadm_P": 8926632,
+  "adm_unc_sample": [
+   [
+    283,
+    [
+     [
+      3,
+      12,
+      11,
+      13,
+      16,
+      19
+     ],
+     [
+      3,
+      13,
+      11,
+      19,
+      12,
+      16
+     ]
+    ]
+   ],
+   [
+    284,
+    [
+     [
+      3,
+      12,
+      11,
+      13,
+      16,
+      19
+     ],
+     [
+      3,
+      13,
+      11,
+      19,
+      12,
+      16
+     ]
+    ]
+   ],
+   [
+    285,
+    [
+     [
+      3,
+      12,
+      11,
+      13,
+      16,
+      19
+     ],
+     [
+      3,
+      13,
+      11,
+      19,
+      12,
+      16
+     ]
+    ]
+   ]
+  ],
+  "degree_sequences": 5
  }
 }

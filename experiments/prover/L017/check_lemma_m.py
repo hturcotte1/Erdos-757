@@ -1,4 +1,4 @@
-"""L017, illustrative check of Lemma M (Step 9).
+"""L017, illustrative check C1 of Theorem 7 (Lemma M; proof in Step 4 of the certificate).
 (a) Every simple graph G with maximum degree <= 3 satisfies 11 nu(G) >= 3 |E(G)|, with equality only if E(G) is empty:
     exhaustive over all graphs with max degree <= 3 on n <= NMAX vertices (nauty geng -D3, not necessarily connected).
 (b) For linear 3-uniform H with max degree <= 2: tau(H) = m - nu(G) where G is the dual graph (vertices = edges of H,

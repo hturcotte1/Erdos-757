@@ -1,5 +1,5 @@
 """L017, illustrative comparison of the structure theorem with the top level of the cell recursion of L013 and L016
-(Step 12 / Theorem 6 (iii)).  For every top-level violator cell (n, m, tau, D) of L013 (n = 23..26) and L016 (n = 27):
+(computation C4; Theorem 6 (i), (iii), Step 9.3, Remarks 13.1 and 13.4).  For every top-level violator cell (n, m, tau, D) of L013 (n = 23..26) and L016 (n = 27):
  - its slack s; Theorem 1 + Lemma M say: a violator at size n (with I11 below n) has Delta = 3 and s in {-1, -2};
    so cells with s <= -3 or D <= 2 are empty without computation, and in the cells with D = 3 the engine branch d = 2 is void;
  - for the branch d = 3, tp = tau - 1 (the only one with S' >= 0), S' = s + 2: the engine's decompositions of (n-1, m-3)
@@ -74,3 +74,49 @@ if __name__ == '__main__':
             if not unknown and size > 0: tot['used_r%d' % min(r, 4)] += 1; tot['inputs_r%d' % min(r, 4)] += size
             if iso: tot['isolated'] += 1
     print('TOTALS:', dict(tot))
+    # per-cell verdicts: which top-level cells needed an extension computation after Theorem 1, Lemma M and Theorem 4(iii)
+    print('VERDICTS (after Theorem 1 + Lemma M + Theorem 4(iii), using the stored class counts):')
+    for (n, m, t, D) in TOP:
+        s = 3 * n + 2 * m - 11 * t
+        if D <= 2 or s <= -3: print('   ', (n, m, t, D), 'empty without computation'); continue
+        need = 0
+        for dec in decompositions(n - 1, m - 3, s + 2):
+            if len(dec) >= 4: continue
+            size = 1
+            for typ, k in collections.Counter(dec).items():
+                c = 1 if typ == (1, 0, 0) else cnt.get(typ + (3,))
+                size *= math.comb(c + k - 1, k) if c is not None else 1
+            need += size
+        print('   ', (n, m, t, D), 'empty given the stored lists (all r<=3 decompositions have 0 inputs)' if need == 0 else
+              'needs the extension step: %d inputs from r<=3 decompositions' % need)
+    # tight connected cells (slack 0) with n <= 30 and their stored Delta<=3 class counts
+    print('TIGHT CONNECTED CELLS (3n+2m = 11 tau, ceil((n-1)/2) <= m <= n-2, tau <= m, 17 tau <= 5n+3m), n <= 30:')
+    for n in range(3, 31):
+        for m in range((n - 1 + 1) // 2, n - 1):
+            if (3 * n + 2 * m) % 11: continue
+            t = (3 * n + 2 * m) // 11
+            if t > m or 17 * t > 5 * n + 3 * m: continue
+            print('    (%d,%d,%d): stored Delta<=3 classes = %s' % (n, m, t, cnt.get((n, m, t, 3), 'not computed')))
+    # connected cells with slack 1 and n <= 27 and their stored Delta<=3 class counts
+    print('SLACK-1 CONNECTED CELLS (3n+2m-11 tau = 1, same constraints), n <= 27:')
+    for n in range(3, 28):
+        for m in range((n - 1 + 1) // 2, n - 1):
+            if (3 * n + 2 * m - 1) % 11: continue
+            t = (3 * n + 2 * m - 1) // 11
+            if t > m or 17 * t > 5 * n + 3 * m: continue
+            print('    (%d,%d,%d): stored Delta<=3 classes = %s' % (n, m, t, cnt.get((n, m, t, 3), 'not computed')))
+    # the violator cells at n = 28..30 with slack -1 or -2 (Theorem 6 (i)) and the decompositions of their d = 3 branch
+    print('VIOLATOR CELLS n = 28..30 with s in {-1,-2} (connected, m <= n-2, HY) and their d=3 decompositions:')
+    for n in range(28, 31):
+        for m in range((n - 1 + 1) // 2, n - 1):
+            for s in (-1, -2):
+                if (3 * n + 2 * m - s) % 11: continue
+                t = (3 * n + 2 * m - s) // 11
+                if t > m or 17 * t > 5 * n + 3 * m or 3 * m < n: continue
+                decs = decompositions(n - 1, m - 3, s + 2)
+                print('    (%d,%d,%d) s=%d: %d decompositions of (%d,%d) with total slack %d, %d of them with r<=3:'
+                      % (n, m, t, s, len(decs), n - 1, m - 3, s + 2, sum(1 for d_ in decs if len(d_) <= 3)))
+                for dec in decs:
+                    if len(dec) > 3: continue
+                    cs = [cnt.get(typ + (3,), 'NC') if typ != (1, 0, 0) else 1 for typ in dec]
+                    print('        r=%d %s  stored Delta<=3 counts %s' % (len(dec), list(dec), cs))

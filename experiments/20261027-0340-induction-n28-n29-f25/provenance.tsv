@@ -177,6 +177,7 @@ cell(n,m,tau,Delta)	classes	first_source	agreeing_other_sources	DISAGREE
 (19,12,7,2)	1	L012 cells.tar.gz (refereed)	L013 cells.tar.gz (refereed); L014 cells.tar.gz (refereed); 20261017-2150-i11-n27 (worker, L016 cross-checked); 20261027-0235-cost-n28-n29 (cost study, unrefereed); 20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)	
 (19,12,7,3)	833	L013 cells.tar.gz (refereed)	L014 cells.tar.gz (refereed); 20261017-2150-i11-n27 (worker, L016 cross-checked); 20261027-0235-cost-n28-n29 (cost study, unrefereed); 20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)	
 (19,13,7,2)	0	L016 cells_new.tar.gz (refereed)	20261017-2150-i11-n27 (worker, L016 cross-checked); 20261027-0235-cost-n28-n29 (cost study, unrefereed); 20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)	
+(19,13,7,3)	192957	COMPUTED HERE (this folder)		
 (19,16,8,3)	227	L012 cells.tar.gz (refereed)	L013 cells.tar.gz (refereed); 20261017-2150-i11-n27 (worker, L016 cross-checked); 20261027-0235-cost-n28-n29 (cost study, unrefereed); 20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)	
 (19,16,8,4)	956	L012 cells.tar.gz (refereed)	L014 cells.tar.gz (refereed); 20261017-2150-i11-n27 (worker, L016 cross-checked); 20261027-0235-cost-n28-n29 (cost study, unrefereed); 20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)	
 (19,17,8,3)	29898	L014 cells.tar.gz (refereed)	20261017-2150-i11-n27 (worker, L016 cross-checked); 20261027-0235-cost-n28-n29 (cost study, unrefereed); 20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)	

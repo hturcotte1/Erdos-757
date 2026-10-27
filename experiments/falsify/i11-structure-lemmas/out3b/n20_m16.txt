@@ -1,0 +1,1 @@
+RESULT n=20 m=16 samples=20000 grown=157 growfail=39 bestTau=8 minSlack=4 hist=4:3 5:693 6:13478 7:5823 8:3 

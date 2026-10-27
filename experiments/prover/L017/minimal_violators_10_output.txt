@@ -1,0 +1,12 @@
+N=3 done; connected linear violators (classes) by M: {}
+N=4 done; connected linear violators (classes) by M: {}
+N=5 done; connected linear violators (classes) by M: {}
+N=6 done; connected linear violators (classes) by M: {}
+{"N": 7, "M": 5, "tau": 3, "slack": -2, "edges": [[0, 1, 6], [0, 4, 5], [1, 2, 3], [2, 4, 6], [3, 5, 6]], "degrees": [3, 2, 2, 2, 2, 2, 2], "F7free": false, "P3": true, "fails": []}
+N=7 done; connected linear violators (classes) by M: {5: 1}
+N=8 done; connected linear violators (classes) by M: {8: 1}
+{"N": 9, "M": 8, "tau": 4, "slack": -1, "edges": [[0, 1, 2], [0, 3, 4], [1, 6, 7], [2, 5, 8], [3, 5, 7], [3, 6, 8], [4, 5, 6], [4, 7, 8]], "degrees": [3, 3, 3, 3, 3, 3, 2, 2, 2], "F7free": true, "P3": false, "fails": []}
+{"N": 9, "M": 8, "tau": 4, "slack": -1, "edges": [[0, 1, 4], [0, 2, 3], [1, 7, 8], [2, 5, 6], [3, 5, 8], [3, 6, 7], [4, 5, 7], [4, 6, 8]], "degrees": [3, 3, 3, 3, 3, 3, 2, 2, 2], "F7free": true, "P3": false, "fails": []}
+N=9 done; connected linear violators (classes) by M: {8: 4, 12: 1}
+N=10 done; connected linear violators (classes) by M: {12: 3}
+SUMMARY: 3 vertex-minimal violators with 3 <= N <= 10; total failed claims: 0; degree-3 patterns: {'b': 1, 'a': 12}; degree-2 cases: {'alpha': 12}; degree-1 vertices checked: 0

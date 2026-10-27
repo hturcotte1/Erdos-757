@@ -1,0 +1,14 @@
+n=1 graphs(maxdeg<=3)=1  all satisfy 11nu-3M >= 0
+n=2 graphs(maxdeg<=3)=2  all satisfy 11nu-3M >= 0
+n=3 graphs(maxdeg<=3)=4  all satisfy 11nu-3M >= 0
+n=4 graphs(maxdeg<=3)=11  all satisfy 11nu-3M >= 0
+n=5 graphs(maxdeg<=3)=23  all satisfy 11nu-3M >= 0
+n=6 graphs(maxdeg<=3)=62  all satisfy 11nu-3M >= 0
+n=7 graphs(maxdeg<=3)=150  all satisfy 11nu-3M >= 0
+n=8 graphs(maxdeg<=3)=424  all satisfy 11nu-3M >= 0
+n=9 graphs(maxdeg<=3)=1165  all satisfy 11nu-3M >= 0
+n=10 graphs(maxdeg<=3)=3547  all satisfy 11nu-3M >= 0
+n=11 graphs(maxdeg<=3)=10946  all satisfy 11nu-3M >= 0
+n=12 graphs(maxdeg<=3)=36327  all satisfy 11nu-3M >= 0
+PART A: 52662 graphs, 0 violations; graphs with M>0 and 11nu=3M: 0; min of 11nu-3M over M>0: 1 at (5, 'D]w', 2, 7)
+PART B: 3000 random linear max-degree-2 3-graphs (1..14 edges, 0..2 isolated vertices): tau = m - nu(G) and slack = 3n0 + 11nu - 3|E(G)| >= 0 in all; mismatches: 0; min slack over connected ones with >= 2 edges: 1

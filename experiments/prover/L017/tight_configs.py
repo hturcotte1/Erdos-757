@@ -1,4 +1,4 @@
-"""L017, Remark 8.3 (illustrative; conditional consequences of Theorem 4 for slack -2).
+"""L017, computation C5 for Corollary 13.3 (illustrative; consequences of Theorem 4 for slack -2).
 For every tight connected member F of C with maximum degree <= 3 in the stored, refereed cell lists (the only non-empty
 tight Delta<=3 cells with at most 26 vertices other than the uncomputed (25,23,11): (3,1,1), (10,7,4), (14,12,6), (17,13,7);
 the other tight Delta<=3 cells with n <= 26 are stored EMPTY, see engine_decomps/tight_cells output), compute exactly:
@@ -11,7 +11,7 @@ the other tight Delta<=3 cells with n <= 26 are stored EMPTY, see engine_decomps
      role_e : a pair {a,b} not inside an edge and a vertex e with {a,e}, {b,e} anti  (pattern (e), on both components)
      role_f1: a pair {a,b} not inside an edge and two more vertices c, e, all 4 cross pairs anti (pattern (f), on F_1)
      role_f2: anti-pairs {d, f}                                                  (pattern (f), on F_2)
-Usage: python3 tight_configs.py"""
+Usage: python3 tight_configs.py [cellfile ...]   (no argument: the four tight Delta<=3 lists)"""
 import sys, os, itertools
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from hyp import read_cell, masks, all_min_transversals, degrees
@@ -44,10 +44,17 @@ def analyse(n, es):
                 role_e=re_, role_f1=rf1, role_f2=rf2)
 
 if __name__ == '__main__':
-    for f in FILES:
+    files = sys.argv[1:] if len(sys.argv) > 1 else FILES   # default: the tight Delta<=3 lists; other lists may be given
+    summary = {}
+    for f in files:
         gs = read_cell(os.path.join(HERE, f)); n = int(os.path.basename(f).split('_')[1])
         for i, es in enumerate(gs):
             r = analyse(n, es)
-            print('%s #%d: (n,m,tau)=(%d,%d,%d) degrees %s; anti-pairs %d %s; (P) %s; role_b=%d role_c=%d role_e=%d role_f1=%d role_f2=%d'
-                  % (os.path.basename(f), i, r['n'], r['m'], r['tau'], r['deg'], len(r['anti']), r['anti_types'], r['P'],
-                     r['role_b'], r['role_c'], r['role_e'], r['role_f1'], r['role_f2']))
+            if len(gs) <= 40:
+                print('%s #%d: (n,m,tau)=(%d,%d,%d) degrees %s; anti-pairs %d %s; (P) %s; role_b=%d role_c=%d role_e=%d role_f1=%d role_f2=%d'
+                      % (os.path.basename(f), i, r['n'], r['m'], r['tau'], r['deg'], len(r['anti']), r['anti_types'], r['P'],
+                         r['role_b'], r['role_c'], r['role_e'], r['role_f1'], r['role_f2']))
+            S = summary.setdefault(os.path.basename(f), dict(classes=0, with_b=0, with_c=0, with_e=0, with_f1=0, with_f2=0))
+            S['classes'] += 1
+            for k in ('b', 'c', 'e', 'f1', 'f2'): S['with_' + k] += 1 if r['role_' + k] > 0 else 0
+    for k, v in summary.items(): print('SUMMARY %s: %s' % (k, v))

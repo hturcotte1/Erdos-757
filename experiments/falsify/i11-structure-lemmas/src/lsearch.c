@@ -59,9 +59,9 @@ static int has_f7(const G*g){
     }
     return 0;
 }
+#define FIND(x) ({int _x=(x); while(p[_x]!=_x){p[_x]=p[p[_x]];_x=p[_x];} _x;})
 static int connected_all(const G*g){
     int n=g->n; int p[MAXN]; for(int i=0;i<n;i++)p[i]=i;
-    #define FIND(x) ({int _x=(x); while(p[_x]!=_x){p[_x]=p[p[_x]];_x=p[_x];} _x;})
     for(int i=0;i<g->m;i++){ int a=FIND(g->e[i][0]),b=FIND(g->e[i][1]); p[a]=b; int c=FIND(g->e[i][2]); b=FIND(g->e[i][1]); p[c]=b; }
     int r=FIND(0); for(int v=1;v<n;v++) if(FIND(v)!=r) return 0;
     return 1;
@@ -76,6 +76,45 @@ static int classC(const G*g){ return linear_ok(g) && !has_f7(g) && hall_ok(g); }
 static int gtau(const G*g){
     int flat[3*MAXM]; for(int i=0;i<g->m;i++) for(int k=0;k<3;k++) flat[3*i+k]=g->e[i][k];
     return tau_induced(g->m,flat,~0ULL);
+}
+
+// ---- seeded growth ----
+static int nseed=0; static int seed_n[400], seed_m[400]; static int seed_e[400][MAXM][3];
+static void load_seeds(const char*fn){
+    FILE*f=fopen(fn,"r"); if(!f) return; char line[8192];
+    while(fgets(line,sizeof line,f)){
+        int n,m,off; if(sscanf(line,"%d %d %n",&n,&m,&off)<2) continue;
+        if(m>MAXM) continue;
+        seed_n[nseed]=n; seed_m[nseed]=m; char*p=line+off; int i=0;
+        while(i<m){ int a,b,c,adv; if(sscanf(p,"%d,%d,%d%n",&a,&b,&c,&adv)<3) break; seed_e[nseed][i][0]=a;seed_e[nseed][i][1]=b;seed_e[nseed][i][2]=c; i++; p+=adv; if(*p==';')p++; }
+        nseed++; if(nseed>=400) break;
+    }
+    fclose(f);
+}
+static int grow_seeded(G*g,int n,int m){
+    int ns=1+rint_(4); int used=0; g->n=n; g->m=0;
+    for(int s=0;s<ns;s++){
+        int k=rint_(nseed);
+        if(used+seed_n[k]>n || g->m+seed_m[k]>m) continue;
+        for(int i=0;i<seed_m[k];i++){ for(int t=0;t<3;t++) g->e[g->m][t]=seed_e[k][i][t]+used; g->m++; }
+        used+=seed_n[k];
+    }
+    if(g->m==0) return 0;
+    // add edges
+    int guard=0;
+    while(g->m<m && guard<2000){
+        guard++;
+        int p[MAXN]; for(int i=0;i<n;i++)p[i]=i;
+        for(int i=0;i<g->m;i++){ int a=FIND(g->e[i][0]),b=FIND(g->e[i][1]); p[a]=b; int c=FIND(g->e[i][2]); b=FIND(g->e[i][1]); p[c]=b; }
+        int a=rint_(n); int b,c; int tries=0;
+        do{ b=rint_(n); tries++; }while((b==a||FIND(b)==FIND(a)) && tries<30);
+        tries=0;
+        do{ c=rint_(n); tries++; }while((c==a||c==b||FIND(c)==FIND(a)||FIND(c)==FIND(b)) && tries<30);
+        if(a==b||a==c||b==c) continue;
+        g->e[g->m][0]=a;g->e[g->m][1]=b;g->e[g->m][2]=c; g->m++;
+        if(!classC(g)) g->m--;
+    }
+    return g->m==m && connected_all(g);
 }
 static long nsamples=0;
 // random constructive growth
@@ -108,10 +147,10 @@ static int grow(G*g,int n,int m){
 #ifndef LIB
 int main(int argc,char**argv){
     int n=atoi(argv[1]), m=atoi(argv[2]); long target=atol(argv[3]); long steps=atol(argv[4]); rs^=(u64)atol(argv[5])*0x9E3779B97F4A7C15ULL; for(int i=0;i<10;i++)rnd();
-    double T=argc>6?atof(argv[6]):0.5;
+    double T=argc>6?atof(argv[6]):0.5; double pseed=argc>7?atof(argv[7]):0.0; if(argc>8) load_seeds(argv[8]); if(nseed==0) pseed=0;
     int bestTau=-1; long hist[64]; memset(hist,0,sizeof hist); long grown=0, growfail=0, saved=0;
     while(nsamples<target){
-        G g; if(!grow(&g,n,m)){ growfail++; if(growfail>200000 && grown==0){ printf("RESULT n=%d m=%d GROWTH_FAILED fail=%ld\n",n,m,growfail); return 0;} continue; }
+        G g; int okg=(runif()<pseed)? grow_seeded(&g,n,m): grow(&g,n,m); if(!okg){ growfail++; if(growfail>200000 && grown==0){ printf("RESULT n=%d m=%d GROWTH_FAILED fail=%ld\n",n,m,growfail); return 0;} continue; }
         grown++; nsamples++;
         int t=gtau(&g); hist[t]++; if(t>bestTau){bestTau=t;}
         for(long s=0;s<steps && nsamples<target;s++){
