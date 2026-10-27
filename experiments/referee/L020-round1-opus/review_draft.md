@@ -35,7 +35,9 @@ I found no mathematical error, and Conjecture T'' is refuted. I checked everythi
 
 ## Independence statement
 
-I did not read any other review of L020; none existed when I started. I used no code from e757/, judge/, experiments/prover/L020/ or experiments/prover/L017/.
+I did not read any other review of L020; none existed when I started. I used no code from e757/, judge/, experiments/prover/L020/ or experiments/prover/L017/. Data files were read as data only:
+- experiments/prover/L020/K29_classes.json, bf_18_13_7.json and bf_25_19_10_sample.json;
+- the stored lists in experiments/20261027-0300-transversal-richness/inputs/ and experiments/prover/L017/out/.
 
 | Purpose | Own script (experiments/referee/L020-round1-opus/) | Method |
 |---|---|---|
@@ -45,7 +47,7 @@ I did not read any other review of L020; none existed when I started. I used no 
 | L017 C5 role facts and Proposition 6 | `roles_check.py` | |
 | Theorem 2 and Lemma 2.1 | `t2_check.py` | own bitmask DP for $\nu$ |
 | cell table of Step 4.3 | `cells_enum.py` | |
-| Observation 7 | `obs7_perclass.py` | |
+| Observation 7 | `obs7_perclass.py`, `theta_rebuild.py` | |
 | prover's (b)/(f) outputs | `bf_classes.py` | |
 | b-configurations in slack-2 cells | `bcfg_slack2.py` | |
 
@@ -102,7 +104,8 @@ External tools: nauty `geng` was used only to generate the subcubic graphs for L
      - so the slacks are $(1,2)$;
      - the slack-1 component, with at most 25 vertices, must be an $(8,5,3)$ graph (all slack-1 cells up to 25 vertices are computed);
      - so the other component is a $(20,15,8,3)$ graph.
-   - Hence, given the completeness of the refereed lists $(20,15,8,3)$ and $(8,5,3,3)$, **the 45 classes are exactly the classes of cell$(29,23,12,3)$ that have a pattern-(e) vertex.** By `obs7_perclass.py` every one of the 45 also has a $\Theta$-vertex (triangle $+(22,17,9)$).
+   - Hence, given the completeness of the refereed lists $(20,15,8,3)$ and $(8,5,3,3)$, **the 45 classes are exactly the classes of cell$(29,23,12,3)$ that have a pattern-(e) vertex.**
+   - **The same 45 arise from the triangle.** `obs7_perclass.py` shows that every one of the 45 also has a $\Theta$-vertex (triangle $+(22,17,9)$). Conversely, `theta_rebuild.py` → `theta_rebuild_output.txt` re-runs every $\Theta$-gluing: all 6 f-configurations of the triangle, every NC pair of every $(22,17,9,3)$ class in both orientations, and C, $\Delta\le3$ and $\tau$ tested. It gives 564 near-tight graphs with 29 vertices, as in C9; they hit all 45 classes and no others. So, by the same argument as above, the 45 are also exactly the classes with a $\Theta$-vertex.
    - **Classes without a pattern-(e) vertex cannot be found by this method.** That covers any class whose degree-3 vertices are all of pattern (a), where $K-v$ lies in $(28,20,11,3)$, an uncomputed cell. The prover's other searches do not close this gap:
      - pattern (f) with $(18,13,7,3)+(10,7,4)$ is complete and reached only 27 of the 45;
      - pattern (b) and (f) with $(25,19,10,3)+E_1$ ran on a 3,000/35,645 sample only.
@@ -146,7 +149,8 @@ External tools: nauty `geng` was used only to generate the subcubic graphs for L
   - The 45 classes: 495 vertices, 0 failures, although (H$_{29}$) is not known.
   - Synthetic two-sided tests: $G$ is a disjoint union of stored graphs with free choice, attachments of the shapes (b), (e), (f), (i2-1)…(i2-4), (i3), and ($\star$) computed directly as $\tau(G+w)=\tau(G)+1$.
     - Random runs (`t3_equiv.py`, seeds 7 and 5): 2 × 1,200 configurations, 0 disagreements, with ($\star$) true in 34 and 29 of them.
-    - Condition-forced run (`t3_equiv2.py`): RESULT_EQUIV2.
+    - Condition-forced run (`t3_equiv2.py 5 60`, output in `t3_equiv2_output.txt`): attachments built from the components' b-, e- and f-configurations and NC pairs so that the stated condition holds. In 60 of 60 configurations per pattern, for all 8 patterns, ($\star$) holds; 0 counterexamples. Here ($\star$) is evaluated from its definition over the product of the components' minimum transversals, and 67 of the cases were cross-checked against $\tau(G+w)=\tau(G)+1$ with full agreement.
+  - Together these test both directions of every stated equivalence.
 
 ### (d) Theorem 4 and Corollary 5
 
