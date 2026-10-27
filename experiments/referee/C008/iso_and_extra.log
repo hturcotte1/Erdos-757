@@ -1,0 +1,11 @@
+cell list FOUND lines 956 c19_16_8.txt FOUND lines 956 identical True
+class 40 edges 16 [(0, 1, 10), (0, 3, 11), (1, 4, 11), (2, 3, 4), (2, 10, 14), (5, 12, 17), (5, 13, 16), (6, 8, 14), (6, 10, 11), (7, 9, 15), (7, 13, 17), (8, 17, 18), (9, 16, 18), (12, 13, 18), (12, 15, 16), (14, 15, 18)]
+unlabelled isomorphic to class 40: True
+isomorphic list indices [40]
+records in sets_19_16_8_realizable.json 40 keys ['cls', 'dim', 'labelling', 'set']
+rec40 set equals claim set True
+labelled iso ( middle entry = midpoint ): True
+labelled iso ( first entry = midpoint ): False
+labelled iso ( last entry = midpoint ): False
+-- non-load-bearing: all records in sets_19_16_8_realizable.json
+summary (n, is45, m, h, linear, F7free) -> count: {(19, True, 16, 11, True, True): 40} problems 0
