@@ -1,0 +1,90 @@
+{
+ "grand": {
+  "types": 7,
+  "g_orbits": 762,
+  "configs": 0,
+  "inC3": 0,
+  "tau_ok": 0,
+  "iso_piece": 0,
+  "Pneg": 0
+ },
+ "summary": {
+  "('(3,1,1)#0', '(10,7,4)#1', '(10,7,4)#1')": {
+   "N": 23,
+   "g_orbits": 25,
+   "configs": 0,
+   "inC3": 0,
+   "tau_ok": 0,
+   "iso_piece": 0,
+   "iso_classes": {},
+   "A": [],
+   "notC3": {}
+  },
+  "('(3,1,1)#0', '(10,7,4)#1', '(10,7,4)#2')": {
+   "N": 23,
+   "g_orbits": 30,
+   "configs": 0,
+   "inC3": 0,
+   "tau_ok": 0,
+   "iso_piece": 0,
+   "iso_classes": {},
+   "A": [],
+   "notC3": {}
+  },
+  "('(3,1,1)#0', '(10,7,4)#2', '(10,7,4)#2')": {
+   "N": 23,
+   "g_orbits": 36,
+   "configs": 0,
+   "inC3": 0,
+   "tau_ok": 0,
+   "iso_piece": 0,
+   "iso_classes": {},
+   "A": [],
+   "notC3": {}
+  },
+  "('(10,7,4)#1', '(10,7,4)#1', '(10,7,4)#1')": {
+   "N": 30,
+   "g_orbits": 125,
+   "configs": 0,
+   "inC3": 0,
+   "tau_ok": 0,
+   "iso_piece": 0,
+   "iso_classes": {},
+   "A": [],
+   "notC3": {}
+  },
+  "('(10,7,4)#1', '(10,7,4)#1', '(10,7,4)#2')": {
+   "N": 30,
+   "g_orbits": 150,
+   "configs": 0,
+   "inC3": 0,
+   "tau_ok": 0,
+   "iso_piece": 0,
+   "iso_classes": {},
+   "A": [],
+   "notC3": {}
+  },
+  "('(10,7,4)#1', '(10,7,4)#2', '(10,7,4)#2')": {
+   "N": 30,
+   "g_orbits": 180,
+   "configs": 0,
+   "inC3": 0,
+   "tau_ok": 0,
+   "iso_piece": 0,
+   "iso_classes": {},
+   "A": [],
+   "notC3": {}
+  },
+  "('(10,7,4)#2', '(10,7,4)#2', '(10,7,4)#2')": {
+   "N": 30,
+   "g_orbits": 216,
+   "configs": 0,
+   "inC3": 0,
+   "tau_ok": 0,
+   "iso_piece": 0,
+   "iso_classes": {},
+   "A": [],
+   "notC3": {}
+  }
+ }
+}
