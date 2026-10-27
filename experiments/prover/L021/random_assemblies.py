@@ -1,13 +1,15 @@
-"""L021 mini-falsifier for KT (epsilon = 1/6, list L*): random assemblies of 2..6 pieces of L* joined by random edges
+"""L021 mini-falsifier for KT (epsilon = 1/6, list L*): random assemblies of 2..4 pieces (at most NMAX vertices) of L* joined by random edges
 (between pieces, with new vertices) and random degree-2/3 hub vertices, kept in C_3 (linear, F7-free, e(S)<=|S|-2 tested
 in its Hall form on the 3 pairs inside each new edge, max degree 3), connected; for every graph with A < 0 the exact DEF
-is computed and A + DEF >= 0 is checked.  Usage: python3 random_assemblies.py SEED SECONDS"""
+is computed and A + DEF >= 0 is checked.  Usage: python3 random_assemblies.py SEED SECONDS [NMAX=45]"""
 import sys, json, random, time, itertools
 sys.path.insert(0, '/home/user/Erdos-757/experiments/prover/L021')
 from kt import *
 R = json.load(open('/home/user/Erdos-757/experiments/prover/L021/closure_results.json'))
 pieces = [Piece(p['edges'], p['name']) for p in R['pieces']]
 seed = int(sys.argv[1]); secs = float(sys.argv[2]); rng = random.Random(seed)
+NMAX = int(sys.argv[3]) if len(sys.argv) > 3 else 45
+last = time.time()
 def sdr_avoiding(edges, x, y):
     # bipartite matching edges -> vertices not in {x,y}
     match = {}
@@ -54,7 +56,7 @@ def connected(n, edges):
     return len(seen) == n
 t0 = time.time(); tried = 0; kept = 0; special = 0; fails = 0; eqs = 0; minP = None; hist = {}
 while time.time() - t0 < secs:
-    k = rng.randint(2, 6)
+    k = rng.randint(2, 4)
     edges = []; n = 0
     for _ in range(k):
         P = rng.choice(pieces)
@@ -89,7 +91,7 @@ while time.time() - t0 < secs:
             if not added:
                 n -= 1
     tried += 1
-    if not connected(n, edges): continue
+    if n > NMAX or not connected(n, edges): continue
     kept += 1
     t = tau_masks(masks(edges)); A = A_value(n, len(edges), t)
     if A >= 0: continue
@@ -99,6 +101,8 @@ while time.time() - t0 < secs:
     minP = P if minP is None else min(minP, P)
     hist[n] = hist.get(n, 0) + 1
     if P == 0: eqs += 1
+    if time.time() - last > 60:
+        last = time.time(); print(f'progress {time.time()-t0:.0f}s: assemblies {tried}, kept {kept}, A<0 {special}, failures {fails}, equality {eqs}, min {minP}', flush=True)
     if P < 0:
         fails += 1
         print('KT FAILS', n, len(edges), t, A, D, edges, flush=True)
