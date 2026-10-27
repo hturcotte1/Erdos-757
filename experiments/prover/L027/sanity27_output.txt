@@ -1,0 +1,7 @@
+triangle: n,m,tau,s = 6 3 2 2 in C True
+  {0,1,2}: degrees [1, 1, 1] pairwise NC True
+  hub T+(0,1,2): n,m,tau,s = 10 7 4 0 in C True (Lemma A1: s-2 = 0 )
+  fold T+(0,1|2): n,m,tau,s = 8 5 3 1 in C True (Lemma A2: s-1 = 1 )
+  T-{0,1,2}: three isolated vertices, s = 9 (= s(T)+13-2*3 = 9, Lemma A9 with drop 2)
+A_base: n,m,tau,s = 14 12 6 0 in C True min transversals 143 max degree 4
+  NC pairs 0  pairwise-NC non-edge triples 0
