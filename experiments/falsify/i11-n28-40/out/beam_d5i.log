@@ -1,0 +1,21 @@
+extra pieces 10
+pieces [(3, 1, 0), (3, 1, 0), (10, 7, 0), (10, 7, 0), (14, 12, 0), (14, 12, 0), (14, 12, 0), (8, 5, 1), (8, 5, 1), (12, 10, 1), (12, 10, 1), (17, 13, 0), (17, 13, 0), (17, 13, 0)]
+seeds 2218
+6 parents 3 kids 0 -> n+1 {'pool': 0, 'minslack': None, 'hist': {}} t=0s
+8 parents 2 kids 0 -> n+1 {'pool': 4, 'minslack': None, 'hist': {}} t=0s
+9 parents 4 kids 1 -> n+1 {'pool': 3, 'minslack': 0, 'hist': {0: 3}} t=0s
+10 parents 3 kids 0 -> n+1 {'pool': 4, 'minslack': None, 'hist': {}} t=0s
+11 parents 4 kids 72 -> n+1 {'pool': 79, 'minslack': 1, 'hist': {1: 74}} t=0s
+12 parents 79 kids 2 -> n+1 {'pool': 5, 'minslack': None, 'hist': {}} t=1s
+13 parents 5 kids 6 -> n+1 {'pool': 15, 'minslack': 0, 'hist': {0: 9}} t=1s
+14 parents 15 kids 83 -> n+1 {'pool': 93, 'minslack': 1, 'hist': {1: 11}} t=2s
+15 parents 93 kids 3 -> n+1 {'pool': 10, 'minslack': None, 'hist': {}} t=4s
+16 parents 7 kids 8 -> n+1 {'pool': 25, 'minslack': 0, 'hist': {0: 5}} t=4s
+17 parents 25 kids 85 -> n+1 {'pool': 102, 'minslack': None, 'hist': {}} t=8s
+18 parents 102 kids 448 -> n+1 {'pool': 284, 'minslack': 1, 'hist': {1: 269}} t=23s
+19 parents 278 kids 20 -> n+1 {'pool': 90, 'minslack': 2, 'hist': {6: 44, 4: 3, 2: 1}} t=40s
+20 parents 86 kids 233 -> n+1 {'pool': 165, 'minslack': 0, 'hist': {9: 35, 5: 11, 7: 11, 0: 5, 2: 2}} t=71s
+21 parents 130 kids 9923 -> n+1 {'pool': 9337, 'minslack': 1, 'hist': {5: 4492, 7: 4315, 3: 54, 1: 21}} t=169s
+22 parents 750 kids 197 -> n+1 {'pool': 234, 'minslack': 1, 'hist': {1: 118, 6: 59}} t=434s
+  vext chunk timeouts at level 23 2
+23 parents 226 kids 23469 -> n+1 {'pool': 23460, 'minslack': 2, 'hist': {6: 22959, 4: 326, 2: 37}} t=701s

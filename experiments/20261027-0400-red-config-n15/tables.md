@@ -7,6 +7,7 @@ Table: n=15 census cells (connected, Delta<=3, in C, up to isomorphism), smalles
 | 9 | 6 | 20320 | 0 | 8..30 | 5 | 19766 | 499 | 21 | 34 | 0 | 0 | 0 | 0 | 0 |
 | 10 | 5 | 267258 | 0 | 10..21 | 10 | 260708 | 4308 | 2221 | 7 | 0 | 13 | 0 | 0 | 1 |
 | 11 | 4 | 2183753 | 0 | 1..23 | 9 | 2092232 | 30438 | 61067 | 1 | 1 | 7 | 0 | 7 | 0 |
+| 12 | 3 | 9480410 | 0 | 3..25 | 8 | 8418214 | 70970 | 987785 | 610 | 2813 | 7 | 11 | 0 | 0 |
 
 Slack <= 5 classes by min|Z|:
 
@@ -15,5 +16,6 @@ Slack <= 5 classes by min|Z|:
 * m=9: {}
 * m=10: {}
 * m=11: {'2': 5, '4': 14}
+* m=12: {'2': 2535, '3': 1142, '4': 6816, '5': 33, '6': 73, '7': 7, '8': 11}
 
-Classes with min|Z| >= 7 by (m, slack, min|Z|): {"m=10,slack=10,minZ=7": 13, "m=10,slack=10,minZ=10": 1, "m=11,slack=12,minZ=7": 7, "m=11,slack=12,minZ=9": 7}
+Classes with min|Z| >= 7 by (m, slack, min|Z|): {"m=10,slack=10,minZ=7": 13, "m=10,slack=10,minZ=10": 1, "m=11,slack=12,minZ=7": 7, "m=11,slack=12,minZ=9": 7, "m=12,slack=3,minZ=7": 7, "m=12,slack=3,minZ=8": 11}

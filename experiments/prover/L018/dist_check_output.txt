@@ -1,0 +1,1 @@
+(|Z|, radius from nearest pendant needed) counts: [((4, 3), 129), ((4, 4), 4), ((5, 3), 5), ((5, 4), 2), ((7, 3), 1)]

@@ -1,0 +1,173 @@
+{
+ "(3, 1, 1)": {
+  "classes": 1,
+  "counts": {
+   "vertex_pred": 3,
+   "vertex_fail": 0,
+   "pairs": 3,
+   "np_pairs": 3,
+   "graphs": 1,
+   "graphs_with_np": 1
+  },
+  "classes_with_nonzero_role": {
+   "b": 1,
+   "f2": 1
+  },
+  "np_pair_types": {
+   "(1, 1, 1)": 3
+  }
+ },
+ "(10, 7, 4)": {
+  "classes": 4,
+  "counts": {
+   "vertex_pred": 40,
+   "vertex_fail": 0,
+   "pairs": 180,
+   "np_pairs": 4,
+   "graphs": 4,
+   "graphs_with_np": 2
+  },
+  "classes_with_nonzero_role": {
+   "f2": 2
+  },
+  "np_pair_types": {
+   "(1, 2, 1)": 4
+  }
+ },
+ "(14, 12, 6)": {
+  "classes": 2,
+  "counts": {
+   "vertex_pred": 28,
+   "vertex_fail": 0,
+   "pairs": 182,
+   "np_pairs": 0,
+   "graphs": 2,
+   "graphs_with_np": 0
+  },
+  "classes_with_nonzero_role": {},
+  "np_pair_types": {}
+ },
+ "(17, 13, 7)": {
+  "classes": 6,
+  "counts": {
+   "vertex_pred": 102,
+   "vertex_fail": 0,
+   "pairs": 816,
+   "np_pairs": 0,
+   "graphs": 6,
+   "graphs_with_np": 0
+  },
+  "classes_with_nonzero_role": {},
+  "np_pair_types": {}
+ },
+ "(8, 5, 3)": {
+  "classes": 2,
+  "counts": {
+   "vertex_pred": 16,
+   "vertex_fail": 0,
+   "pairs": 56,
+   "np_pairs": 11,
+   "graphs": 2,
+   "graphs_with_np": 2
+  },
+  "classes_with_nonzero_role": {
+   "e": 2,
+   "f2": 2
+  },
+  "np_pair_types": {
+   "(1, 1, 0)": 1,
+   "(1, 2, 0)": 1,
+   "(1, 2, 1)": 5,
+   "(1, 3, 1)": 1,
+   "(2, 2, 1)": 3
+  }
+ },
+ "(12, 10, 5)": {
+  "classes": 149,
+  "counts": {
+   "vertex_pred": 1788,
+   "vertex_fail": 0,
+   "pairs": 9834,
+   "np_pairs": 122,
+   "graphs": 149,
+   "graphs_with_np": 73
+  },
+  "classes_with_nonzero_role": {
+   "f2": 59
+  },
+  "np_pair_types": {
+   "(1, 2, 1)": 35,
+   "(1, 3, 1)": 39,
+   "(2, 2, 1)": 48
+  }
+ },
+ "(15, 11, 6)": {
+  "classes": 19,
+  "counts": {
+   "vertex_pred": 285,
+   "vertex_fail": 0,
+   "pairs": 1995,
+   "np_pairs": 38,
+   "graphs": 19,
+   "graphs_with_np": 13
+  },
+  "classes_with_nonzero_role": {
+   "f2": 13
+  },
+  "np_pair_types": {
+   "(1, 2, 1)": 19,
+   "(1, 3, 1)": 5,
+   "(2, 2, 1)": 14
+  }
+ },
+ "(19, 16, 8)": {
+  "classes": 227,
+  "counts": {
+   "vertex_pred": 4313,
+   "vertex_fail": 0,
+   "pairs": 38817,
+   "np_pairs": 24,
+   "graphs": 227,
+   "graphs_with_np": 18
+  },
+  "classes_with_nonzero_role": {
+   "f2": 18
+  },
+  "np_pair_types": {
+   "(1, 2, 1)": 12,
+   "(2, 2, 1)": 12
+  }
+ },
+ "(22, 17, 9)": {
+  "classes": 37,
+  "counts": {
+   "vertex_pred": 814,
+   "vertex_fail": 0,
+   "pairs": 8547,
+   "np_pairs": 56,
+   "graphs": 37,
+   "graphs_with_np": 37
+  },
+  "classes_with_nonzero_role": {
+   "f2": 37
+  },
+  "np_pair_types": {
+   "(1, 2, 1)": 29,
+   "(1, 3, 1)": 9,
+   "(2, 2, 1)": 18
+  }
+ },
+ "(26, 22, 11)": {
+  "classes": 36,
+  "counts": {
+   "vertex_pred": 936,
+   "vertex_fail": 0,
+   "pairs": 11700,
+   "np_pairs": 0,
+   "graphs": 36,
+   "graphs_with_np": 0
+  },
+  "classes_with_nonzero_role": {},
+  "np_pair_types": {}
+ }
+}

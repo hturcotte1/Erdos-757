@@ -1,0 +1,15 @@
+ctl_14_12_6 class 0 REALIZABLE labellings 498 dims {0: 498} nodes 7596 {'EQ': 73, 'SIDON': 1053, 'NONLIN': 0} 14.8 s
+ctl_14_12_6 class 1 REALIZABLE labellings 282 dims {0: 282} nodes 4779 {'EQ': 264, 'SIDON': 873, 'NONLIN': 0} 7.8 s
+ctl_14_12_6 class 2 REALIZABLE labellings 560 dims {0: 560} nodes 4513 {'EQ': 68, 'SIDON': 715, 'NONLIN': 0} 11.5 s
+ctl_14_12_6 class 3 REALIZABLE labellings 569 dims {0: 569} nodes 3917 {'EQ': 84, 'SIDON': 608, 'NONLIN': 0} 9.8 s
+ctl_14_12_6 class 4 REALIZABLE labellings 702 dims {0: 702} nodes 4885 {'EQ': 71, 'SIDON': 622, 'NONLIN': 0} 13.8 s
+ctl_14_12_6 class 5 NOT-REALIZABLE labellings 0 dims {} nodes 4487 {'EQ': 194, 'SIDON': 879, 'NONLIN': 0} 6.8 s
+ctl_14_12_6 class 6 REALIZABLE labellings 446 dims {0: 446} nodes 3726 {'EQ': 71, 'SIDON': 566, 'NONLIN': 0} 8.2 s
+ctl_14_12_6 class 7 NOT-REALIZABLE labellings 0 dims {} nodes 4618 {'EQ': 172, 'SIDON': 896, 'NONLIN': 0} 7.6 s
+ctl_14_12_6 class 8 REALIZABLE labellings 698 dims {0: 698} nodes 5268 {'EQ': 84, 'SIDON': 737, 'NONLIN': 0} 15.8 s
+ctl_14_12_6 class 9 REALIZABLE labellings 430 dims {0: 430} nodes 3961 {'EQ': 84, 'SIDON': 592, 'NONLIN': 0} 7.4 s
+ctl_14_12_6 class 10 REALIZABLE labellings 506 dims {0: 506} nodes 3796 {'EQ': 42, 'SIDON': 555, 'NONLIN': 0} 5.0 s
+ctl_17_13_7 class 0 REALIZABLE labellings 10304 dims {2: 10304} nodes 28109 {'EQ': 25, 'SIDON': 1564, 'NONLIN': 0} 94.2 s
+ctl_17_13_7 class 1 REALIZABLE labellings 8676 dims {2: 8676} nodes 25309 {'EQ': 135, 'SIDON': 1690, 'NONLIN': 0} 97.0 s
+ctl_17_13_7 class 2 REALIZABLE labellings 10308 dims {2: 10308} nodes 27362 {'EQ': 22, 'SIDON': 1318, 'NONLIN': 0} 113.2 s
+ctl_17_13_7 class 3 REALIZABLE labellings 10308 dims {2: 10308} nodes 27653 {'EQ': 22, 'SIDON': 1509, 'NONLIN': 0} 101.7 s

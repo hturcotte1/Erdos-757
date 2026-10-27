@@ -2722,6 +2722,14 @@
 "firstpath": "../20261027-0300-tight-cells-d4/out/cells/cell_25_15_9_D2.txt",
 "md5": "e3be72e86600097531852b052faa71f0"
 },
+"25,15,9,3": {
+"agree": [],
+"classes": 6849,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_25_15_9_D3.txt",
+"md5": "a5b58585e481127bafe7756761228ad5"
+},
 "25,16,10,2": {
 "agree": [
 "20261017-2150-i11-n27 (worker, L016 cross-checked)",
@@ -2788,6 +2796,14 @@
 "disagree": [],
 "first": "COMPUTED HERE (this folder)",
 "firstpath": "out/cells/cell_26_13_9_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"26,13,9,3": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_26_13_9_D3.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
 "26,14,10,2": {
@@ -2934,6 +2950,14 @@
 "firstpath": "out/cells/cell_27_16_10_D2.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
+"27,16,10,3": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_27_16_10_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
 "27,18,11,2": {
 "agree": [
 "20261017-2150-i11-n27 (worker, L016 cross-checked)",
@@ -2986,6 +3010,14 @@
 "firstpath": "seedsrc/L016/cells_new/runB2/cell_27_25_12_D3.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
+"28,14,10,2": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_28_14_10_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
 "28,17,11,2": {
 "agree": [],
 "classes": 0,
@@ -3008,6 +3040,22 @@
 "disagree": [],
 "first": "COMPUTED HERE (this folder)",
 "firstpath": "out/cells/cell_28_23_12_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"29,15,11,2": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_29_15_11_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"29,16,11,3": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_29_16_11_D3.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
 "3,1,1,2": {

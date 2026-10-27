@@ -5,6 +5,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 res = {}; hard = []; ge7 = []; ge6 = []; redfree = []
 for f in sorted(glob.glob(os.path.join(HERE, 'out', 'summary_15_*.txt'))):
     m = int(re.findall(r'summary_15_(\d+)', f)[0]); s = open(f).read().strip()
+    if 'hist=' not in s: continue
     d = dict(re.findall(r'(\w+)=(-?\d+)', s.split('hist=')[0])); d = {k: int(v) for k, v in d.items()}
     hist = collections.Counter(); 
     for tok in s.split('hist=')[1].split(','):

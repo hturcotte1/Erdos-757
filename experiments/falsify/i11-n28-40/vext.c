@@ -82,7 +82,7 @@ int main(int argc, char **argv) {
                 if (check_class(&H, DM) != 0) continue;
                 if (!seen_insert(fp_graph(&H))) continue;
                 int tau = tau_of(&H, 2, 0, NULL); if (tau < 0) continue;
-                printf("%d %d %d %d %llx ", slack_of(&H, tau), H.n, H.m, tau, (unsigned long long)fp_graph(&H)); print_graph(stdout, &H); emitted++; nchild++;
+                printf("%d %d %d %d %llx ", slack_of(&H, tau), H.n, H.m, tau, (unsigned long long)fp_graph(&H)); print_graph(stdout, &H); fflush(stdout); emitted++; nchild++;
             }
         }
         free(cov);

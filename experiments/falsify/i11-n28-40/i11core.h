@@ -11,7 +11,7 @@ typedef uint64_t u64;
 #define MAXDEG 16
 #define MAXSLOT 22
 typedef struct { int n, m; u64 e[MAXM]; } G;
-static int DMAX = 3; /* max degree allowed when adding edges */
+static int DMAX = 3; static int NOHALL = 0, NOF7 = 0; /* mutation-test switches (env I11_NOHALL / I11_NOF7) */ /* max degree allowed when adding edges */
 
 static u64 rs0 = 88172645463325252ULL, rs1 = 1234567891011ULL;
 static inline u64 rnd64(void) { u64 s1 = rs0, s0 = rs1; rs0 = s0; s1 ^= s1 << 23; rs1 = s1 ^ s0 ^ (s1 >> 18) ^ (s0 >> 5); return rs1 + s0; }
@@ -74,8 +74,8 @@ static int check_class(const G *g, int dmax) {
     for (int i = 0; i < g->m; i++) if (__builtin_popcountll(g->e[i]) != 3 || (g->e[i] >> g->n)) return 1;
     if (!linear_all(g)) return 2;
     if (dmax > 0 && maxdeg(g) > dmax) return 3;
-    if (has_f7(g)) return 4;
-    if (!hall_full(g)) return 5;
+    if (!NOF7 && has_f7(g)) return 4;
+    if (!NOHALL && !hall_full(g)) return 5;
     return 0;
 }
 /* try to append edge e (mask) to g: returns 1 on success (g modified), else 0 (g unchanged). assumes g in C with degree cap DMAX */
@@ -85,7 +85,7 @@ static int try_add(G *g, u64 e) {
     for (int i = 0; i < g->m; i++) if (__builtin_popcountll(g->e[i] & e) >= 2) return 0;
     for (u64 r = e; r; r &= r - 1) { int v = __builtin_ctzll(r); if (DMAX > 0 && degree_of(g, v) >= DMAX) return 0; }
     g->e[g->m++] = e;
-    if (has_f7(g) || !hall_new_edge(g, e)) { g->m--; return 0; }
+    if ((!NOF7 && has_f7(g)) || (!NOHALL && !hall_new_edge(g, e))) { g->m--; return 0; }
     return 1;
 }
 

@@ -1,0 +1,1 @@
+{"7": {"pool": 0, "minslack": null, "hist": {}}, "9": {"pool": 6, "minslack": -1, "hist": {"-1": 2}}, "10": {"pool": 2, "minslack": 0, "hist": {"0": 2}}, "11": {"pool": 4, "minslack": null, "hist": {}}, "12": {"pool": 4, "minslack": 1, "hist": {"1": 2}}, "13": {"pool": 4, "minslack": null, "hist": {}}, "14": {"pool": 0, "minslack": null, "hist": {}}}

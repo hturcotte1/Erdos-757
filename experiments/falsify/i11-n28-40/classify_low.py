@@ -33,7 +33,7 @@ for s, n, m, tau, gl, f in raw:
     for G2 in buckets[h]:
         if nx.is_isomorphic(G, G2, node_match=lambda a, b: a['t'] == b['t']): dup = True; break
     if dup: continue
-    buckets[h].append(G); uniq.append((s, n, m, tau, nn, es, f))
+    buckets[h].append(G); uniq.append((s, n, m, tau, nn, es, f, h[3]))
 print('unique n>=15', len(uniq))
 def comps(n, es):
     par = list(range(n))
@@ -47,7 +47,7 @@ def comps(n, es):
     iso = sum(1 for v in range(n) if all(v not in e for e in es))
     return list(cs.values()), iso
 out = []; summ = collections.Counter(); pieces = collections.Counter()
-for s, n, m, tau, nn, es, f in uniq:
+for s, n, m, tau, nn, es, f, wl in uniq:
     cs, iso = comps(nn, es); cinfo = []
     lines = []
     for ce in cs:
@@ -55,7 +55,7 @@ for s, n, m, tau, nn, es, f in uniq:
         lines.append(line(len(vs), [tuple(mp[v] for v in e) for e in ce]))
     res = run_eval(lines) if lines else []
     cinfo = [(r[0], r[1], r[2], r[3]) for r in res]
-    out.append(dict(slack=s, n=n, m=m, tau=tau, connected=(len(cs) == 1 and iso == 0), n_components=len(cs), isolated=iso, components=cinfo, src=f, edges=[list(e) for e in es]))
+    out.append(dict(slack=s, n=n, m=m, tau=tau, connected=(len(cs) == 1 and iso == 0), n_components=len(cs), isolated=iso, components=cinfo, src=f, wl_hash=wl, edges=[list(e) for e in es]))
     summ[(s, n if len(cs) == 1 and iso == 0 else None, 'conn' if (len(cs) == 1 and iso == 0) else 'disc')] += 1
 with gzip.open('low_graphs.jsonl.gz', 'wt') as fo:
     for d in out: fo.write(json.dumps(d) + '\n')

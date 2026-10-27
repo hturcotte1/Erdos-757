@@ -14,3 +14,6 @@
 04:02:13	gen 15 11 done classes=2183753
 04:03:11	redmin 15 11 cls=2183753 redfree=0 maxminsz=9 minslack=1 maxslack=23 hist=2:1:5,2:12:1617934,2:23:474293,3:12:29713,3:23:725,4:1:14,4
 04:03:11	gen 15 12 start
+04:19:06	gen 15 12 done classes=9480410
+04:26:26	redmin 15 12 cls=9480410 redfree=0 maxminsz=8 minslack=3 maxslack=25 hist=2:3:2535,2:14:8164978,2:25:250701,3:3:1142,3:14:69828,4:3:6
+04:26:26	gen+redmin 15 13 start (streamed)

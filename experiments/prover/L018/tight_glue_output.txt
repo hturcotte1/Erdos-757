@@ -1,0 +1,73 @@
+10_7_4 n=10 tau=4 #minT=31 #low=9 |Phi|=0 |Phi on low|=0 PP: 0 failing of 132 []
+10_7_4 n=10 tau=4 #minT=32 #low=8 |Phi|=2 |Phi on low|=2 PP: 0 failing of 89 [(0, 1), (0, 2)]
+10_7_4 n=10 tau=4 #minT=33 #low=8 |Phi|=2 |Phi on low|=2 PP: 0 failing of 89 [(0, 1), (0, 2)]
+10_7_4 n=10 tau=4 #minT=30 #low=9 |Phi|=0 |Phi on low|=0 PP: 0 failing of 132 []
+14_12_6 n=14 tau=6 #minT=139 #low=6 |Phi|=0 |Phi on low|=0 PP: 0 failing of 25 []
+14_12_6 n=14 tau=6 #minT=139 #low=6 |Phi|=0 |Phi on low|=0 PP: 0 failing of 25 []
+17_13_7 n=17 tau=7 #minT=366 #low=12 |Phi|=0 |Phi on low|=0 PP: 0 failing of 925 []
+17_13_7 n=17 tau=7 #minT=361 #low=12 |Phi|=0 |Phi on low|=0 PP: 0 failing of 891 []
+17_13_7 n=17 tau=7 #minT=372 #low=12 |Phi|=0 |Phi on low|=0 PP: 0 failing of 960 []
+17_13_7 n=17 tau=7 #minT=361 #low=12 |Phi|=0 |Phi on low|=0 PP: 0 failing of 960 []
+17_13_7 n=17 tau=7 #minT=350 #low=12 |Phi|=0 |Phi on low|=0 PP: 0 failing of 960 []
+17_13_7 n=17 tau=7 #minT=354 #low=12 |Phi|=0 |Phi on low|=0 PP: 0 failing of 925 []
+pieces (10_7_4#0, 17_13_7#6) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#0, 17_13_7#7) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#0, 17_13_7#8) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#0, 17_13_7#9) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#0, 17_13_7#10) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#0, 17_13_7#11) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#1, 17_13_7#6) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#1, 17_13_7#7) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#1, 17_13_7#8) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#1, 17_13_7#9) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#1, 17_13_7#10) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#1, 17_13_7#11) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#2, 17_13_7#6) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#2, 17_13_7#7) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#2, 17_13_7#8) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#2, 17_13_7#9) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#2, 17_13_7#10) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#2, 17_13_7#11) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#3, 17_13_7#6) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#3, 17_13_7#7) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#3, 17_13_7#8) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#3, 17_13_7#9) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#3, 17_13_7#10) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (10_7_4#3, 17_13_7#11) n=28: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#4, 14_12_6#4) n=29: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#4, 14_12_6#5) n=29: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#4, 17_13_7#6) n=32: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#4, 17_13_7#7) n=32: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#4, 17_13_7#8) n=32: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#4, 17_13_7#9) n=32: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#4, 17_13_7#10) n=32: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#4, 17_13_7#11) n=32: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#5, 14_12_6#5) n=29: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#5, 17_13_7#6) n=32: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#5, 17_13_7#7) n=32: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#5, 17_13_7#8) n=32: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#5, 17_13_7#9) n=32: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#5, 17_13_7#10) n=32: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (14_12_6#5, 17_13_7#11) n=32: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#6, 17_13_7#6) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#6, 17_13_7#7) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#6, 17_13_7#8) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#6, 17_13_7#9) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#6, 17_13_7#10) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#6, 17_13_7#11) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#7, 17_13_7#7) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#7, 17_13_7#8) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#7, 17_13_7#9) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#7, 17_13_7#10) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#7, 17_13_7#11) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#8, 17_13_7#8) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#8, 17_13_7#9) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#8, 17_13_7#10) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#8, 17_13_7#11) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#9, 17_13_7#9) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#9, 17_13_7#10) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#9, 17_13_7#11) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#10, 17_13_7#10) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#10, 17_13_7#11) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+pieces (17_13_7#11, 17_13_7#11) n=35: triangles 0/0, vp 0/0, two_vp 0/0 -> no failing pattern
+piece pairs with a possible failing pattern: 0

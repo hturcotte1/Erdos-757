@@ -1,0 +1,19 @@
+extra pieces 10
+pieces [(3, 1, 0), (3, 1, 0), (10, 7, 0), (10, 7, 0), (14, 12, 0), (14, 12, 0), (14, 12, 0), (8, 5, 1), (8, 5, 1), (12, 10, 1), (12, 10, 1), (17, 13, 0), (17, 13, 0), (17, 13, 0)]
+seeds 2218
+6 parents 3 kids 0 -> n+1 {'pool': 0, 'minslack': None, 'hist': {}} t=0s
+8 parents 2 kids 0 -> n+1 {'pool': 4, 'minslack': None, 'hist': {}} t=0s
+9 parents 4 kids 1 -> n+1 {'pool': 3, 'minslack': 0, 'hist': {0: 3}} t=0s
+10 parents 3 kids 0 -> n+1 {'pool': 4, 'minslack': None, 'hist': {}} t=0s
+11 parents 4 kids 72 -> n+1 {'pool': 79, 'minslack': 1, 'hist': {1: 74}} t=0s
+12 parents 79 kids 2 -> n+1 {'pool': 5, 'minslack': None, 'hist': {}} t=1s
+13 parents 5 kids 6 -> n+1 {'pool': 15, 'minslack': 0, 'hist': {0: 9}} t=1s
+14 parents 15 kids 83 -> n+1 {'pool': 93, 'minslack': 1, 'hist': {1: 11}} t=2s
+15 parents 86 kids 3 -> n+1 {'pool': 10, 'minslack': None, 'hist': {}} t=4s
+16 parents 7 kids 8 -> n+1 {'pool': 25, 'minslack': 0, 'hist': {0: 5}} t=4s
+17 parents 25 kids 85 -> n+1 {'pool': 102, 'minslack': None, 'hist': {}} t=9s
+18 parents 75 kids 258 -> n+1 {'pool': 198, 'minslack': 1, 'hist': {1: 183}} t=19s
+19 parents 192 kids 10 -> n+1 {'pool': 90, 'minslack': 2, 'hist': {6: 44, 4: 3, 2: 1}} t=29s
+20 parents 86 kids 230 -> n+1 {'pool': 165, 'minslack': 0, 'hist': {9: 35, 5: 11, 7: 11, 0: 5, 2: 2}} t=57s
+21 parents 104 kids 9639 -> n+1 {'pool': 9328, 'minslack': 1, 'hist': {5: 4492, 7: 4314, 3: 54, 1: 19}} t=118s
+22 parents 375 kids 83 -> n+1 {'pool': 182, 'minslack': 1, 'hist': {1: 72, 6: 59}} t=231s

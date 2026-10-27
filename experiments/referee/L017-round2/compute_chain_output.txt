@@ -1,0 +1,627 @@
+##### thm7.py 9
+MISMATCH b'>>graph6<<@\n' 0 1 0
+n=1: 1 graphs with Delta<=3 processed
+MISMATCH b'>>graph6<<A?\n' 0 2 0
+MISMATCH b'>>graph6<<A_\n' 0 1 0
+n=2: 2 graphs with Delta<=3 processed
+MISMATCH b'>>graph6<<B?\n' 0 3 0
+MISMATCH b'>>graph6<<BO\n' 0 2 0
+MISMATCH b'>>graph6<<BW\n' 2 2 1
+n=3: 4 graphs with Delta<=3 processed
+MISMATCH b'>>graph6<<C?\n' 0 4 0
+MISMATCH b'>>graph6<<CC\n' 0 3 0
+MISMATCH b'>>graph6<<CE\n' 0 3 1
+MISMATCH b'>>graph6<<CF\n' 2 3 2
+MISMATCH b'>>graph6<<CQ\n' 2 2 0
+MISMATCH b'>>graph6<<CU\n' 2 2 1
+MISMATCH b'>>graph6<<CT\n' 0 3 2
+MISMATCH b'>>graph6<<C^\n' 0 2 3
+MISMATCH b'>>graph6<<C~\n' 2 2 4
+n=4: 11 graphs with Delta<=3 processed
+MISMATCH b'>>graph6<<D??\n' 0 5 0
+MISMATCH b'>>graph6<<D?_\n' 1 4 0
+MISMATCH b'>>graph6<<D?o\n' 2 4 1
+MISMATCH b'>>graph6<<D?w\n' 0 4 2
+MISMATCH b'>>graph6<<DCO\n' 0 3 0
+MISMATCH b'>>graph6<<DCo\n' 2 3 1
+MISMATCH b'>>graph6<<DCW\n' 1 3 1
+MISMATCH b'>>graph6<<DCc\n' 2 4 2
+MISMATCH b'>>graph6<<DCw\n' 0 3 2
+MISMATCH b'>>graph6<<DCs\n' 1 3 2
+MISMATCH b'>>graph6<<DEo\n' 1 3 2
+MISMATCH b'>>graph6<<DFw\n' 0 3 4
+MISMATCH b'>>graph6<<DQo\n' 0 3 2
+MISMATCH b'>>graph6<<DQg\n' 1 3 2
+MISMATCH b'>>graph6<<DUw\n' 1 3 4
+MISMATCH b'>>graph6<<DTw\n' 0 3 4
+MISMATCH b'>>graph6<<DTk\n' 1 3 4
+MISMATCH b'>>graph6<<D]w\n' 0 3 5
+n=5: 23 graphs with Delta<=3 processed
+MISMATCH b'>>graph6<<E???\n' 2 6 0
+MISMATCH b'>>graph6<<E?A?\n' 1 5 0
+MISMATCH b'>>graph6<<E?B?\n' 1 5 1
+MISMATCH b'>>graph6<<E?B_\n' 0 5 2
+MISMATCH b'>>graph6<<E?`?\n' 2 4 0
+MISMATCH b'>>graph6<<E?b?\n' 2 4 1
+MISMATCH b'>>graph6<<E?`_\n' 1 4 1
+MISMATCH b'>>graph6<<E?aG\n' 1 5 2
+MISMATCH b'>>graph6<<E?b_\n' 2 4 2
+MISMATCH b'>>graph6<<E?`o\n' 1 4 2
+MISMATCH b'>>graph6<<E?bG\n' 0 4 2
+MISMATCH b'>>graph6<<E?r?\n' 0 4 2
+MISMATCH b'>>graph6<<E?oo\n' 0 4 2
+MISMATCH b'>>graph6<<E?r_\n' 2 4 3
+MISMATCH b'>>graph6<<E?qo\n' 1 4 3
+MISMATCH b'>>graph6<<E?rG\n' 1 4 3
+MISMATCH b'>>graph6<<E?qg\n' 0 4 3
+MISMATCH b'>>graph6<<E?ow\n' 0 4 3
+MISMATCH b'>>graph6<<ECO_\n' 0 3 0
+MISMATCH b'>>graph6<<ECR?\n' 2 4 2
+MISMATCH b'>>graph6<<ECQ_\n' 0 3 1
+MISMATCH b'>>graph6<<ECQO\n' 0 4 2
+MISMATCH b'>>graph6<<ECR_\n' 0 3 2
+MISMATCH b'>>graph6<<ECRO\n' 1 4 3
+MISMATCH b'>>graph6<<ECQo\n' 0 3 2
+MISMATCH b'>>graph6<<ECpO\n' 1 4 3
+MISMATCH b'>>graph6<<ECZ?\n' 2 3 2
+MISMATCH b'>>graph6<<ECX_\n' 2 3 2
+MISMATCH b'>>graph6<<ECYO\n' 2 4 3
+MISMATCH b'>>graph6<<ECxo\n' 0 3 4
+MISMATCH b'>>graph6<<EEr_\n' 0 3 4
+MISMATCH b'>>graph6<<EErO\n' 0 4 5
+MISMATCH b'>>graph6<<EEj_\n' 2 3 4
+MISMATCH b'>>graph6<<EEio\n' 1 3 4
+MISMATCH b'>>graph6<<EEho\n' 2 3 4
+MISMATCH b'>>graph6<<EEiW\n' 0 3 4
+MISMATCH b'>>graph6<<EEhW\n' 0 3 4
+MISMATCH b'>>graph6<<EEz_\n' 1 3 5
+MISMATCH b'>>graph6<<EEzO\n' 0 3 5
+MISMATCH b'>>graph6<<EFz_\n' 1 3 6
+MISMATCH b'>>graph6<<EQj_\n' 0 3 4
+MISMATCH b'>>graph6<<EQjO\n' 0 3 4
+MISMATCH b'>>graph6<<EQig\n' 0 3 4
+MISMATCH b'>>graph6<<EQzO\n' 0 3 5
+MISMATCH b'>>graph6<<EUZ_\n' 0 3 5
+MISMATCH b'>>graph6<<EUZO\n' 2 3 5
+MISMATCH b'>>graph6<<EUxo\n' 1 3 6
+n=6: 62 graphs with Delta<=3 processed
+MISMATCH b'>>graph6<<F????\n' 0 7 0
+MISMATCH b'>>graph6<<F??C?\n' 2 6 0
+MISMATCH b'>>graph6<<F??E?\n' 1 6 1
+MISMATCH b'>>graph6<<F??F?\n' 0 6 2
+MISMATCH b'>>graph6<<F?AA?\n' 0 5 0
+MISMATCH b'>>graph6<<F?AE?\n' 1 5 1
+MISMATCH b'>>graph6<<F?AB?\n' 0 5 1
+MISMATCH b'>>graph6<<F?ACG\n' 1 6 2
+MISMATCH b'>>graph6<<F?AF?\n' 2 5 2
+MISMATCH b'>>graph6<<F?AB_\n' 0 5 2
+MISMATCH b'>>graph6<<F?AEG\n' 0 5 2
+MISMATCH b'>>graph6<<F?BE?\n' 0 5 2
+MISMATCH b'>>graph6<<F?B@_\n' 0 5 2
+MISMATCH b'>>graph6<<F?BF?\n' 1 5 3
+MISMATCH b'>>graph6<<F?BD_\n' 1 5 3
+MISMATCH b'>>graph6<<F?B@o\n' 0 5 3
+MISMATCH b'>>graph6<<F?BEG\n' 0 5 3
+MISMATCH b'>>graph6<<F?BDG\n' 2 5 3
+MISMATCH b'>>graph6<<F?B@g\n' 2 5 3
+MISMATCH b'>>graph6<<F?Bf?\n' 0 5 4
+MISMATCH b'>>graph6<<F?Be_\n' 0 5 4
+MISMATCH b'>>graph6<<F?Bco\n' 0 5 4
+MISMATCH b'>>graph6<<F?`@?\n' 1 4 0
+MISMATCH b'>>graph6<<F?`E?\n' 2 5 2
+MISMATCH b'>>graph6<<F?`D?\n' 0 4 1
+MISMATCH b'>>graph6<<F?`@_\n' 0 4 1
+MISMATCH b'>>graph6<<F?`CO\n' 1 5 2
+MISMATCH b'>>graph6<<F?`F?\n' 0 4 2
+MISMATCH b'>>graph6<<F?`D_\n' 1 4 2
+MISMATCH b'>>graph6<<F?`EO\n' 0 5 3
+MISMATCH b'>>graph6<<F?`DO\n' 0 4 2
+MISMATCH b'>>graph6<<F?bAO\n' 0 5 3
+MISMATCH b'>>graph6<<F?bF?\n' 2 4 3
+MISMATCH b'>>graph6<<F?bB_\n' 0 4 3
+MISMATCH b'>>graph6<<F?bEO\n' 1 5 4
+MISMATCH b'>>graph6<<F?bBO\n' 0 4 3
+MISMATCH b'>>graph6<<F?bEG\n' 1 5 4
+MISMATCH b'>>graph6<<F?bDG\n' 1 4 3
+MISMATCH b'>>graph6<<F?`e?\n' 0 4 2
+MISMATCH b'>>graph6<<F?`b?\n' 2 4 2
+MISMATCH b'>>graph6<<F?`c_\n' 0 4 2
+MISMATCH b'>>graph6<<F?`cO\n' 0 5 3
+MISMATCH b'>>graph6<<F?`f?\n' 2 4 3
+MISMATCH b'>>graph6<<F?`e_\n' 0 4 3
+MISMATCH b'>>graph6<<F?`b_\n' 0 4 3
+MISMATCH b'>>graph6<<F?`eO\n' 0 4 3
+MISMATCH b'>>graph6<<F?`co\n' 2 4 3
+MISMATCH b'>>graph6<<F?`eG\n' 0 4 3
+MISMATCH b'>>graph6<<F?`bG\n' 0 4 3
+MISMATCH b'>>graph6<<F?`cg\n' 0 4 3
+MISMATCH b'>>graph6<<F?`ag\n' 2 4 3
+MISMATCH b'>>graph6<<F?`cW\n' 2 5 4
+MISMATCH b'>>graph6<<F?aJ_\n' 1 5 4
+MISMATCH b'>>graph6<<F?aKW\n' 0 5 4
+MISMATCH b'>>graph6<<F?qb?\n' 0 4 3
+MISMATCH b'>>graph6<<F?ou?\n' 2 4 3
+MISMATCH b'>>graph6<<F?rf?\n' 0 4 5
+MISMATCH b'>>graph6<<F?re_\n' 0 4 5
+MISMATCH b'>>graph6<<F?reO\n' 0 4 5
+MISMATCH b'>>graph6<<F?qr_\n' 0 4 5
+MISMATCH b'>>graph6<<F?qrO\n' 0 4 5
+MISMATCH b'>>graph6<<F?qpo\n' 2 4 5
+MISMATCH b'>>graph6<<F?zf?\n' 0 4 6
+MISMATCH b'>>graph6<<FCOe?\n' 2 4 2
+MISMATCH b'>>graph6<<FCOc_\n' 0 4 2
+MISMATCH b'>>graph6<<FCOf?\n' 0 4 3
+MISMATCH b'>>graph6<<FCOe_\n' 0 4 3
+MISMATCH b'>>graph6<<FCQb?\n' 2 4 3
+MISMATCH b'>>graph6<<FCQ`_\n' 0 4 3
+MISMATCH b'>>graph6<<FCQaO\n' 2 4 3
+MISMATCH b'>>graph6<<FCQQO\n' 0 5 4
+MISMATCH b'>>graph6<<FCR`o\n' 1 4 5
+MISMATCH b'>>graph6<<FCRV?\n' 1 4 5
+MISMATCH b'>>graph6<<FCRUO\n' 1 4 5
+MISMATCH b'>>graph6<<FCQrO\n' 2 4 5
+MISMATCH b'>>graph6<<FCpf?\n' 2 4 5
+MISMATCH b'>>graph6<<FCpe_\n' 0 4 5
+MISMATCH b'>>graph6<<FCpd_\n' 2 4 5
+MISMATCH b'>>graph6<<FCpb_\n' 2 4 5
+MISMATCH b'>>graph6<<FCpeO\n' 0 4 5
+MISMATCH b'>>graph6<<FCpdO\n' 0 4 5
+MISMATCH b'>>graph6<<FCpbO\n' 0 4 5
+MISMATCH b'>>graph6<<FCpeG\n' 2 4 5
+MISMATCH b'>>graph6<<FCpdG\n' 0 4 5
+MISMATCH b'>>graph6<<FCpV?\n' 0 4 5
+MISMATCH b'>>graph6<<FCpU_\n' 0 4 5
+MISMATCH b'>>graph6<<FCpUO\n' 0 4 5
+MISMATCH b'>>graph6<<FCrQo\n' 0 4 6
+MISMATCH b'>>graph6<<FCpv?\n' 2 4 6
+MISMATCH b'>>graph6<<FCptO\n' 2 4 6
+MISMATCH b'>>graph6<<FCXf?\n' 0 4 5
+MISMATCH b'>>graph6<<FCXe_\n' 0 4 5
+MISMATCH b'>>graph6<<FCXbO\n' 0 4 5
+MISMATCH b'>>graph6<<FCZf?\n' 0 4 6
+MISMATCH b'>>graph6<<FCZb_\n' 1 4 6
+MISMATCH b'>>graph6<<FCZeO\n' 1 4 6
+MISMATCH b'>>graph6<<FCZbO\n' 0 4 6
+MISMATCH b'>>graph6<<FCZco\n' 1 4 6
+MISMATCH b'>>graph6<<FCZV?\n' 2 4 6
+MISMATCH b'>>graph6<<FCZUO\n' 0 4 6
+MISMATCH b'>>graph6<<FCZTO\n' 2 4 6
+MISMATCH b'>>graph6<<FCZSo\n' 0 4 6
+MISMATCH b'>>graph6<<FCde_\n' 0 4 5
+MISMATCH b'>>graph6<<FCdco\n' 1 4 5
+MISMATCH b'>>graph6<<FCdeG\n' 0 4 5
+MISMATCH b'>>graph6<<FCdbG\n' 0 4 5
+MISMATCH b'>>graph6<<FCdcg\n' 2 4 5
+MISMATCH b'>>graph6<<FCxv?\n' 1 4 7
+MISMATCH b'>>graph6<<FEhf?\n' 0 4 6
+MISMATCH b'>>graph6<<FEhe_\n' 1 4 6
+MISMATCH b'>>graph6<<FEhd_\n' 0 4 6
+MISMATCH b'>>graph6<<FEhv?\n' 1 4 7
+MISMATCH b'>>graph6<<FEhuO\n' 2 4 7
+MISMATCH b'>>graph6<<FQhV?\n' 0 4 6
+MISMATCH b'>>graph6<<FQhTO\n' 1 4 6
+MISMATCH b'>>graph6<<FQjR_\n' 2 4 7
+n=7: 150 graphs with Delta<=3 processed
+MISMATCH b'>>graph6<<G?????\n' 2 8 0
+MISMATCH b'>>graph6<<G???C?\n' 0 7 0
+MISMATCH b'>>graph6<<G???E?\n' 2 7 1
+MISMATCH b'>>graph6<<G???F?\n' 2 7 2
+MISMATCH b'>>graph6<<G??CA?\n' 1 6 0
+MISMATCH b'>>graph6<<G??CE?\n' 2 6 1
+MISMATCH b'>>graph6<<G??CB?\n' 0 6 1
+MISMATCH b'>>graph6<<G??CCC\n' 0 7 2
+MISMATCH b'>>graph6<<G??CF?\n' 2 6 2
+MISMATCH b'>>graph6<<G??CB_\n' 1 6 2
+MISMATCH b'>>graph6<<G??CEC\n' 1 6 2
+MISMATCH b'>>graph6<<G??EE?\n' 0 6 2
+MISMATCH b'>>graph6<<G??E@_\n' 0 6 2
+MISMATCH b'>>graph6<<G??EF?\n' 1 6 3
+MISMATCH b'>>graph6<<G??ED_\n' 1 6 3
+MISMATCH b'>>graph6<<G??E@o\n' 1 6 3
+MISMATCH b'>>graph6<<G??EEC\n' 2 6 3
+MISMATCH b'>>graph6<<G??EDC\n' 0 6 3
+MISMATCH b'>>graph6<<G??E@c\n' 0 6 3
+MISMATCH b'>>graph6<<G??FF?\n' 0 6 4
+MISMATCH b'>>graph6<<G??FE_\n' 0 6 4
+MISMATCH b'>>graph6<<G??FCo\n' 2 6 4
+MISMATCH b'>>graph6<<G??F?w\n' 1 6 4
+MISMATCH b'>>graph6<<G?AA@?\n' 0 5 0
+MISMATCH b'>>graph6<<G?AAE?\n' 0 6 2
+MISMATCH b'>>graph6<<G?AAD?\n' 0 5 1
+MISMATCH b'>>graph6<<G?AA@_\n' 2 5 1
+MISMATCH b'>>graph6<<G?AACG\n' 0 6 2
+MISMATCH b'>>graph6<<G?AAF?\n' 0 5 2
+MISMATCH b'>>graph6<<G?AAD_\n' 0 5 2
+MISMATCH b'>>graph6<<G?AA@o\n' 2 5 2
+MISMATCH b'>>graph6<<G?AAEG\n' 2 6 3
+MISMATCH b'>>graph6<<G?AADG\n' 0 5 2
+MISMATCH b'>>graph6<<G?AEAG\n' 0 6 3
+MISMATCH b'>>graph6<<G?AEF?\n' 0 5 3
+MISMATCH b'>>graph6<<G?AEB_\n' 1 5 3
+MISMATCH b'>>graph6<<G?AE@o\n' 0 5 3
+MISMATCH b'>>graph6<<G?AEEG\n' 0 6 4
+MISMATCH b'>>graph6<<G?AEBG\n' 0 5 3
+MISMATCH b'>>graph6<<G?AEEC\n' 0 6 4
+MISMATCH b'>>graph6<<G?AEDC\n' 1 5 3
+MISMATCH b'>>graph6<<G?ABE?\n' 2 5 2
+MISMATCH b'>>graph6<<G?ABB?\n' 0 5 2
+MISMATCH b'>>graph6<<G?ABC_\n' 2 5 2
+MISMATCH b'>>graph6<<G?AB?o\n' 0 5 2
+MISMATCH b'>>graph6<<G?ABCG\n' 0 6 3
+MISMATCH b'>>graph6<<G?ABF?\n' 0 5 3
+MISMATCH b'>>graph6<<G?ABE_\n' 2 5 3
+MISMATCH b'>>graph6<<G?ABB_\n' 2 5 3
+MISMATCH b'>>graph6<<G?ABCo\n' 1 5 3
+MISMATCH b'>>graph6<<G?ABAo\n' 2 5 3
+MISMATCH b'>>graph6<<G?ABEG\n' 2 5 3
+MISMATCH b'>>graph6<<G?ABCg\n' 0 5 3
+MISMATCH b'>>graph6<<G?ABEC\n' 0 5 3
+MISMATCH b'>>graph6<<G?ABBC\n' 0 5 3
+MISMATCH b'>>graph6<<G?ABCc\n' 1 5 3
+MISMATCH b'>>graph6<<G?ABAc\n' 0 5 3
+MISMATCH b'>>graph6<<G?AB?s\n' 1 5 3
+MISMATCH b'>>graph6<<G?ABCK\n' 0 6 4
+MISMATCH b'>>graph6<<G?ACJ_\n' 2 6 4
+MISMATCH b'>>graph6<<G?ACKK\n' 2 6 4
+MISMATCH b'>>graph6<<G?AFBG\n' 2 5 4
+MISMATCH b'>>graph6<<G?AFAg\n' 0 5 4
+MISMATCH b'>>graph6<<G?AF?w\n' 2 5 4
+MISMATCH b'>>graph6<<G?ABf?\n' 1 5 4
+MISMATCH b'>>graph6<<G?ABb_\n' 2 5 4
+MISMATCH b'>>graph6<<G?ABeO\n' 2 5 4
+MISMATCH b'>>graph6<<G?ABbO\n' 0 5 4
+MISMATCH b'>>graph6<<G?ABeG\n' 2 5 4
+MISMATCH b'>>graph6<<G?ABcW\n' 0 5 4
+MISMATCH b'>>graph6<<G?BEF?\n' 0 5 4
+MISMATCH b'>>graph6<<G?BE@o\n' 0 5 4
+MISMATCH b'>>graph6<<G?BEEG\n' 1 6 5
+MISMATCH b'>>graph6<<G?BDB?\n' 0 5 3
+MISMATCH b'>>graph6<<G?BDF?\n' 1 5 4
+MISMATCH b'>>graph6<<G?BDB_\n' 2 5 4
+MISMATCH b'>>graph6<<G?BDAo\n' 2 5 4
+MISMATCH b'>>graph6<<G?BDDG\n' 0 5 4
+MISMATCH b'>>graph6<<G?BDBG\n' 0 5 4
+MISMATCH b'>>graph6<<G?BD@g\n' 0 5 4
+MISMATCH b'>>graph6<<G?BDCK\n' 0 5 4
+MISMATCH b'>>graph6<<G?BDAK\n' 1 5 4
+MISMATCH b'>>graph6<<G?BD?k\n' 1 5 4
+MISMATCH b'>>graph6<<G?B@e?\n' 0 5 3
+MISMATCH b'>>graph6<<G?B@f?\n' 0 5 4
+MISMATCH b'>>graph6<<G?B@eO\n' 1 5 4
+MISMATCH b'>>graph6<<G?B@dO\n' 0 5 4
+MISMATCH b'>>graph6<<G?B@eG\n' 1 5 4
+MISMATCH b'>>graph6<<G?B@dG\n' 2 5 4
+MISMATCH b'>>graph6<<G?B@`g\n' 0 5 4
+MISMATCH b'>>graph6<<G?B@cW\n' 2 5 4
+MISMATCH b'>>graph6<<G?B@`W\n' 2 5 4
+MISMATCH b'>>graph6<<G?B@cK\n' 2 5 4
+MISMATCH b'>>graph6<<G?B@_[\n' 1 5 4
+MISMATCH b'>>graph6<<G?BfF?\n' 1 5 6
+MISMATCH b'>>graph6<<G?Bcr_\n' 0 5 6
+MISMATCH b'>>graph6<<G?`@?_\n' 1 4 0
+MISMATCH b'>>graph6<<G?`@E?\n' 0 5 2
+MISMATCH b'>>graph6<<G?`@C_\n' 1 4 1
+MISMATCH b'>>graph6<<G?`@CO\n' 0 5 2
+MISMATCH b'>>graph6<<G?`@F?\n' 0 5 3
+MISMATCH b'>>graph6<<G?`@E_\n' 2 4 2
+MISMATCH b'>>graph6<<G?`@EO\n' 1 5 3
+MISMATCH b'>>graph6<<G?`@Co\n' 0 4 2
+MISMATCH b'>>graph6<<G?`DB?\n' 2 5 3
+MISMATCH b'>>graph6<<G?`DA_\n' 0 4 2
+MISMATCH b'>>graph6<<G?`D@O\n' 2 5 3
+MISMATCH b'>>graph6<<G?`DAG\n' 0 5 3
+MISMATCH b'>>graph6<<G?`DF?\n' 0 5 4
+MISMATCH b'>>graph6<<G?`DE_\n' 2 4 3
+MISMATCH b'>>graph6<<G?`DD_\n' 0 4 3
+MISMATCH b'>>graph6<<G?`DB_\n' 1 4 3
+MISMATCH b'>>graph6<<G?`DEO\n' 0 5 4
+MISMATCH b'>>graph6<<G?`DDO\n' 0 5 4
+MISMATCH b'>>graph6<<G?`DBO\n' 0 5 4
+MISMATCH b'>>graph6<<G?`D@o\n' 0 4 3
+MISMATCH b'>>graph6<<G?`DEG\n' 2 5 4
+MISMATCH b'>>graph6<<G?`DBG\n' 0 5 4
+MISMATCH b'>>graph6<<G?`DAg\n' 2 4 3
+MISMATCH b'>>graph6<<G?`DEC\n' 0 5 4
+MISMATCH b'>>graph6<<G?`DDC\n' 2 5 4
+MISMATCH b'>>graph6<<G?`DCc\n' 0 4 3
+MISMATCH b'>>graph6<<G?`@e?\n' 0 5 3
+MISMATCH b'>>graph6<<G?`@d?\n' 2 4 2
+MISMATCH b'>>graph6<<G?`@`_\n' 0 4 2
+MISMATCH b'>>graph6<<G?`@cO\n' 2 5 3
+MISMATCH b'>>graph6<<G?`@f?\n' 0 4 3
+MISMATCH b'>>graph6<<G?`@d_\n' 1 4 3
+MISMATCH b'>>graph6<<G?`@eO\n' 1 5 4
+MISMATCH b'>>graph6<<G?`@dO\n' 0 4 3
+MISMATCH b'>>graph6<<G?`@eC\n' 2 5 4
+MISMATCH b'>>graph6<<G?`@dC\n' 2 4 3
+MISMATCH b'>>graph6<<G?`@`c\n' 0 4 3
+MISMATCH b'>>graph6<<G?`@cS\n' 1 5 4
+MISMATCH b'>>graph6<<G?`CQG\n' 0 6 4
+MISMATCH b'>>graph6<<G?`CR_\n' 2 5 4
+MISMATCH b'>>graph6<<G?`CUO\n' 0 5 4
+MISMATCH b'>>graph6<<G?`CUG\n' 1 5 4
+MISMATCH b'>>graph6<<G?`CRG\n' 1 5 4
+MISMATCH b'>>graph6<<G?`CSS\n' 2 5 4
+MISMATCH b'>>graph6<<G?bB@O\n' 0 5 4
+MISMATCH b'>>graph6<<G?b@`_\n' 0 4 3
+MISMATCH b'>>graph6<<G?b@aO\n' 2 5 4
+MISMATCH b'>>graph6<<G?bBf?\n' 0 4 5
+MISMATCH b'>>graph6<<G?bB`o\n' 0 4 5
+MISMATCH b'>>graph6<<G?bBdG\n' 0 4 5
+MISMATCH b'>>graph6<<G?bB`W\n' 0 4 5
+MISMATCH b'>>graph6<<G?bEQW\n' 0 5 6
+MISMATCH b'>>graph6<<G?bBV?\n' 2 5 6
+MISMATCH b'>>graph6<<G?bBUO\n' 1 5 6
+MISMATCH b'>>graph6<<G?bBTG\n' 2 5 6
+MISMATCH b'>>graph6<<G?`ad?\n' 0 4 3
+MISMATCH b'>>graph6<<G?`a`_\n' 0 4 3
+MISMATCH b'>>graph6<<G?`fF?\n' 1 5 6
+MISMATCH b'>>graph6<<G?`fBO\n' 0 5 6
+MISMATCH b'>>graph6<<G?`fBG\n' 0 5 6
+MISMATCH b'>>graph6<<G?`fCg\n' 2 4 5
+MISMATCH b'>>graph6<<G?`fCW\n' 2 5 6
+MISMATCH b'>>graph6<<G?`f?w\n' 2 4 5
+MISMATCH b'>>graph6<<G?`ef?\n' 1 4 5
+MISMATCH b'>>graph6<<G?`e`o\n' 2 4 5
+MISMATCH b'>>graph6<<G?`eeG\n' 2 4 5
+MISMATCH b'>>graph6<<G?`edG\n' 0 4 5
+MISMATCH b'>>graph6<<G?`ecg\n' 0 4 5
+MISMATCH b'>>graph6<<G?`e`g\n' 0 4 5
+MISMATCH b'>>graph6<<G?`ecW\n' 1 5 6
+MISMATCH b'>>graph6<<G?`e`W\n' 1 4 5
+MISMATCH b'>>graph6<<G?`e_w\n' 0 4 5
+MISMATCH b'>>graph6<<G?`bf?\n' 0 4 5
+MISMATCH b'>>graph6<<G?`bb_\n' 0 4 5
+MISMATCH b'>>graph6<<G?`bco\n' 0 4 5
+MISMATCH b'>>graph6<<G?`bbG\n' 2 4 5
+MISMATCH b'>>graph6<<G?`bcg\n' 1 4 5
+MISMATCH b'>>graph6<<G?`bcW\n' 2 5 6
+MISMATCH b'>>graph6<<G?`eV?\n' 0 5 6
+MISMATCH b'>>graph6<<G?`eUG\n' 2 5 6
+MISMATCH b'>>graph6<<G?`eTG\n' 2 5 6
+MISMATCH b'>>graph6<<G?`ePg\n' 0 4 5
+MISMATCH b'>>graph6<<G?`eSW\n' 1 5 6
+MISMATCH b'>>graph6<<G?`cuG\n' 0 4 5
+MISMATCH b'>>graph6<<G?`crG\n' 0 4 5
+MISMATCH b'>>graph6<<G?`csg\n' 0 5 6
+MISMATCH b'>>graph6<<G?`csW\n' 1 5 6
+MISMATCH b'>>graph6<<G?aJB?\n' 1 5 4
+MISMATCH b'>>graph6<<G?aJb_\n' 0 5 6
+MISMATCH b'>>graph6<<G?aJeO\n' 0 5 6
+MISMATCH b'>>graph6<<G?aJcW\n' 0 5 6
+MISMATCH b'>>graph6<<G?bbV?\n' 0 5 7
+MISMATCH b'>>graph6<<G?`vF?\n' 0 4 6
+MISMATCH b'>>graph6<<G?`rb_\n' 0 4 6
+MISMATCH b'>>graph6<<G?r@f?\n' 1 4 5
+MISMATCH b'>>graph6<<G?r@d_\n' 0 4 5
+MISMATCH b'>>graph6<<G?r@eO\n' 0 5 6
+MISMATCH b'>>graph6<<G?r@eC\n' 1 5 6
+MISMATCH b'>>graph6<<G?r@dC\n' 1 4 5
+MISMATCH b'>>graph6<<G?r@`c\n' 1 4 5
+MISMATCH b'>>graph6<<G?r@cS\n' 2 5 6
+MISMATCH b'>>graph6<<G?qbF?\n' 1 5 6
+MISMATCH b'>>graph6<<G?qbE_\n' 2 4 5
+MISMATCH b'>>graph6<<G?qbEO\n' 1 5 6
+MISMATCH b'>>graph6<<G?qbDO\n' 0 5 6
+MISMATCH b'>>graph6<<G?qb@o\n' 0 4 5
+MISMATCH b'>>graph6<<G?qaf?\n' 0 4 5
+MISMATCH b'>>graph6<<G?qad_\n' 0 4 5
+MISMATCH b'>>graph6<<G?qaeO\n' 0 4 5
+MISMATCH b'>>graph6<<G?qadO\n' 0 4 5
+MISMATCH b'>>graph6<<G?qa`o\n' 0 4 5
+MISMATCH b'>>graph6<<G?qaeG\n' 0 4 5
+MISMATCH b'>>graph6<<G?qabG\n' 2 4 5
+MISMATCH b'>>graph6<<G?qacg\n' 1 4 5
+MISMATCH b'>>graph6<<G?qaag\n' 0 4 5
+MISMATCH b'>>graph6<<G?qa`g\n' 2 4 5
+MISMATCH b'>>graph6<<G?qacW\n' 0 4 5
+MISMATCH b'>>graph6<<G?qaaW\n' 1 4 5
+MISMATCH b'>>graph6<<G?qa`W\n' 0 4 5
+MISMATCH b'>>graph6<<G?qa_w\n' 1 4 5
+MISMATCH b'>>graph6<<G?qacK\n' 0 4 5
+MISMATCH b'>>graph6<<G?qa`K\n' 0 4 5
+MISMATCH b'>>graph6<<G?qa_[\n' 2 5 6
+MISMATCH b'>>graph6<<G?qbf?\n' 2 4 6
+MISMATCH b'>>graph6<<G?qbe_\n' 0 4 6
+MISMATCH b'>>graph6<<G?qbdO\n' 1 4 6
+MISMATCH b'>>graph6<<G?qbbO\n' 2 4 6
+MISMATCH b'>>graph6<<G?qbcW\n' 1 4 6
+MISMATCH b'>>graph6<<G?qb_w\n' 2 4 6
+MISMATCH b'>>graph6<<G?qbV?\n' 0 5 7
+MISMATCH b'>>graph6<<G?qbUG\n' 1 5 7
+MISMATCH b'>>graph6<<G?q`v?\n' 0 4 6
+MISMATCH b'>>graph6<<G?q`qg\n' 0 4 6
+MISMATCH b'>>graph6<<G?ovF?\n' 2 4 6
+MISMATCH b'>>graph6<<G?ovE_\n' 2 4 6
+MISMATCH b'>>graph6<<G?ovD_\n' 0 4 6
+MISMATCH b'>>graph6<<G?ovEO\n' 0 4 6
+MISMATCH b'>>graph6<<G?ov@o\n' 1 4 6
+MISMATCH b'>>graph6<<G?ovEG\n' 0 4 6
+MISMATCH b'>>graph6<<G?ovDG\n' 2 4 6
+MISMATCH b'>>graph6<<G?ovCW\n' 2 4 6
+MISMATCH b'>>graph6<<G?ov@W\n' 2 4 6
+MISMATCH b'>>graph6<<G?ov?w\n' 2 4 6
+MISMATCH b'>>graph6<<G?ouPg\n' 0 4 6
+MISMATCH b'>>graph6<<G?otTG\n' 1 4 6
+MISMATCH b'>>graph6<<G?otQg\n' 0 4 6
+MISMATCH b'>>graph6<<G?opuG\n' 0 4 6
+MISMATCH b'>>graph6<<G?oppg\n' 0 5 7
+MISMATCH b'>>graph6<<G?qrf?\n' 2 4 7
+MISMATCH b'>>graph6<<G?qrd_\n' 2 4 7
+MISMATCH b'>>graph6<<G?qjf?\n' 0 4 7
+MISMATCH b'>>graph6<<G?o~F?\n' 0 4 7
+MISMATCH b'>>graph6<<G?zTb_\n' 0 4 8
+MISMATCH b'>>graph6<<GCOcb?\n' 2 5 4
+MISMATCH b'>>graph6<<GCOcaO\n' 0 5 4
+MISMATCH b'>>graph6<<GCOfF?\n' 2 5 6
+MISMATCH b'>>graph6<<GCOfB_\n' 2 4 5
+MISMATCH b'>>graph6<<GCOf?w\n' 0 4 5
+MISMATCH b'>>graph6<<GCOef?\n' 2 4 5
+MISMATCH b'>>graph6<<GCOeeO\n' 0 4 5
+MISMATCH b'>>graph6<<GCOe`W\n' 0 4 5
+MISMATCH b'>>graph6<<GCQ`f?\n' 0 4 5
+MISMATCH b'>>graph6<<GCQ`e_\n' 1 4 5
+MISMATCH b'>>graph6<<GCQ`d_\n' 1 4 5
+MISMATCH b'>>graph6<<GCQ`dG\n' 0 4 5
+MISMATCH b'>>graph6<<GCQfAW\n' 1 4 6
+MISMATCH b'>>graph6<<GCQeag\n' 0 4 6
+MISMATCH b'>>graph6<<GCQd`g\n' 0 4 6
+MISMATCH b'>>graph6<<GCQbf?\n' 1 4 6
+MISMATCH b'>>graph6<<GCQbd_\n' 0 4 6
+MISMATCH b'>>graph6<<GCQbb_\n' 1 4 6
+MISMATCH b'>>graph6<<GCQbeO\n' 1 4 6
+MISMATCH b'>>graph6<<GCQbdO\n' 0 4 6
+MISMATCH b'>>graph6<<GCQb`o\n' 0 4 6
+MISMATCH b'>>graph6<<GCQbeG\n' 0 4 6
+MISMATCH b'>>graph6<<GCQbcW\n' 1 4 6
+MISMATCH b'>>graph6<<GCQeRG\n' 1 4 6
+MISMATCH b'>>graph6<<GCQeQW\n' 0 4 6
+MISMATCH b'>>graph6<<GCQbV?\n' 1 4 6
+MISMATCH b'>>graph6<<GCQbU_\n' 1 4 6
+MISMATCH b'>>graph6<<GCQbR_\n' 2 4 6
+MISMATCH b'>>graph6<<GCQbUO\n' 0 4 6
+MISMATCH b'>>graph6<<GCQbUG\n' 2 4 6
+MISMATCH b'>>graph6<<GCQbRG\n' 2 4 6
+MISMATCH b'>>graph6<<GCQbQg\n' 1 4 6
+MISMATCH b'>>graph6<<GCQbQW\n' 2 4 6
+MISMATCH b'>>graph6<<GCQRF?\n' 0 4 5
+MISMATCH b'>>graph6<<GCQRE_\n' 1 4 5
+MISMATCH b'>>graph6<<GCQRD_\n' 0 4 5
+MISMATCH b'>>graph6<<GCQREO\n' 2 4 5
+MISMATCH b'>>graph6<<GCQRDO\n' 1 4 5
+MISMATCH b'>>graph6<<GCQRBO\n' 0 5 6
+MISMATCH b'>>graph6<<GCQRCg\n' 0 4 5
+MISMATCH b'>>graph6<<GCQREC\n' 2 4 5
+MISMATCH b'>>graph6<<GCQQV?\n' 0 5 6
+MISMATCH b'>>graph6<<GCQQU_\n' 0 5 6
+MISMATCH b'>>graph6<<GCQQT_\n' 0 5 6
+MISMATCH b'>>graph6<<GCQQSg\n' 1 5 6
+MISMATCH b'>>graph6<<GCQUQo\n' 2 5 7
+MISMATCH b'>>graph6<<GCQRV?\n' 1 4 6
+MISMATCH b'>>graph6<<GCQRU_\n' 2 4 6
+MISMATCH b'>>graph6<<GCQRT_\n' 1 4 6
+MISMATCH b'>>graph6<<GCQRUO\n' 0 4 6
+MISMATCH b'>>graph6<<GCQRSg\n' 1 4 6
+MISMATCH b'>>graph6<<GCRcqo\n' 0 4 7
+MISMATCH b'>>graph6<<GCR`v?\n' 2 4 7
+MISMATCH b'>>graph6<<GCR`u_\n' 2 4 7
+MISMATCH b'>>graph6<<GCR`r_\n' 1 4 7
+MISMATCH b'>>graph6<<GCQuQo\n' 2 4 7
+MISMATCH b'>>graph6<<GCQrV?\n' 1 4 7
+MISMATCH b'>>graph6<<GCQrU_\n' 0 4 7
+MISMATCH b'>>graph6<<GCp`f?\n' 2 4 6
+MISMATCH b'>>graph6<<GCp`e_\n' 0 4 6
+MISMATCH b'>>graph6<<GCp`eO\n' 1 4 6
+MISMATCH b'>>graph6<<GCp`dO\n' 0 4 6
+MISMATCH b'>>graph6<<GCpdbO\n' 1 4 7
+MISMATCH b'>>graph6<<GCpdao\n' 2 4 7
+MISMATCH b'>>graph6<<GCpd`o\n' 0 4 7
+MISMATCH b'>>graph6<<GCpdag\n' 0 4 7
+MISMATCH b'>>graph6<<GCpbd_\n' 1 4 7
+MISMATCH b'>>graph6<<GCpbdO\n' 0 4 7
+MISMATCH b'>>graph6<<GCpb`o\n' 0 4 7
+MISMATCH b'>>graph6<<GCrb`o\n' 1 4 8
+MISMATCH b'>>graph6<<GCXed_\n' 1 4 7
+MISMATCH b'>>graph6<<GCXeco\n' 0 4 7
+MISMATCH b'>>graph6<<GCXecW\n' 2 4 7
+MISMATCH b'>>graph6<<GCXe`W\n' 0 4 7
+MISMATCH b'>>graph6<<GCZJd_\n' 0 4 8
+MISMATCH b'>>graph6<<GCXmd_\n' 0 4 8
+MISMATCH b'>>graph6<<GCY^B_\n' 0 4 8
+MISMATCH b'>>graph6<<GCdbF?\n' 1 4 6
+MISMATCH b'>>graph6<<GCdbE_\n' 0 4 6
+MISMATCH b'>>graph6<<GCdbCo\n' 0 4 6
+MISMATCH b'>>graph6<<GCdbEG\n' 0 4 6
+MISMATCH b'>>graph6<<GCdbBG\n' 0 5 7
+MISMATCH b'>>graph6<<GCdbM_\n' 2 4 7
+MISMATCH b'>>graph6<<GCdbKo\n' 0 4 7
+MISMATCH b'>>graph6<<GQhTQg\n' 2 4 8
+n=8: 424 graphs with Delta<=3 processed
+n=9: 1165 graphs with Delta<=3 processed
+PART A: 1842 graphs, violations of 11nu>=3M: 0; graphs with M>0 and 11nu=3M: 0
+   n=2: min 11nu-3M over M>0 = 8 at graph6 A_ (M=1, nu=1)
+   n=3: min 11nu-3M over M>0 = 2 at graph6 Bw (M=3, nu=1)
+   n=4: min 11nu-3M over M>0 = 2 at graph6 CF (M=3, nu=1)
+   n=5: min 11nu-3M over M>0 = 1 at graph6 D]w (M=7, nu=2)
+   n=6: min 11nu-3M over M>0 = 1 at graph6 EErO (M=7, nu=2)
+   n=7: min 11nu-3M over M>0 = 1 at graph6 F?rEO (M=7, nu=2)
+   n=8: min 11nu-3M over M>0 = 1 at graph6 G?BEEG (M=7, nu=2)
+   n=9: min 11nu-3M over M>0 = 1 at graph6 H??EEBA (M=7, nu=2)
+PART B: 677 dual 3-graphs: tau(H) = m - nu(G) and s(H) = 3n0 + 11nu - 3|E(G)| mismatches: 530; min slack of connected dual H with m>=2 (n0=0): 0
+   K3: |E|=3 nu=1 11nu-3|E|=2
+   K4: |E|=6 nu=2 11nu-3|E|=4
+   K_{1,3}: |E|=3 nu=1 11nu-3|E|=2
+   P2: |E|=1 nu=1 11nu-3|E|=8
+   K4 subdivided edge: |E|=7 nu=2 11nu-3|E|=1
+   K_{3,3}: |E|=9 nu=3 11nu-3|E|=6
+   Petersen: |E|=15 nu=5 11nu-3|E|=10
+
+##### roles.py full (tight lists, (8,5,3), (15,11,6), (22,17,9), (26,22,11))
+cell_3_1_1_D3.txt #0 (n,m,tau,s)=(3,1,1,0) antiV2=[(1, 1, 1), (1, 1, 1), (1, 1, 1)] role_b=1 role_c=0 role_e=0 role_f1=0 role_f2=3 U-fail=[] pairlemma-fail=[]
+SUMMARY cell_3_1_1_D3.txt (all pairs): {'classes': 1, 'with_b': 1, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 1, 'u_fail': 0, 'pl_fail': 0, 'anti_all': 3, 'types': {(1, 1, 1): 3}}  [0.0s]
+cell_10_7_4_D3.txt #0 (n,m,tau,s)=(10,7,4,0) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_10_7_4_D3.txt #1 (n,m,tau,s)=(10,7,4,0) antiV2=[(1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_10_7_4_D3.txt #2 (n,m,tau,s)=(10,7,4,0) antiV2=[(1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_10_7_4_D3.txt #3 (n,m,tau,s)=(10,7,4,0) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+SUMMARY cell_10_7_4_D3.txt (all pairs): {'classes': 4, 'with_b': 0, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 2, 'u_fail': 0, 'pl_fail': 0, 'anti_all': 4, 'types': {(1, 2, 1): 4}}  [7.2s]
+cell_14_12_6_D3.txt #0 (n,m,tau,s)=(14,12,6,0) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_14_12_6_D3.txt #1 (n,m,tau,s)=(14,12,6,0) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+SUMMARY cell_14_12_6_D3.txt (all pairs): {'classes': 2, 'with_b': 0, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 0, 'u_fail': 0, 'pl_fail': 0, 'anti_all': 0, 'types': {}}  [16.7s]
+cell_17_13_7_D3.txt #0 (n,m,tau,s)=(17,13,7,0) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_17_13_7_D3.txt #1 (n,m,tau,s)=(17,13,7,0) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_17_13_7_D3.txt #2 (n,m,tau,s)=(17,13,7,0) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_17_13_7_D3.txt #3 (n,m,tau,s)=(17,13,7,0) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_17_13_7_D3.txt #4 (n,m,tau,s)=(17,13,7,0) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_17_13_7_D3.txt #5 (n,m,tau,s)=(17,13,7,0) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+SUMMARY cell_17_13_7_D3.txt (all pairs): {'classes': 6, 'with_b': 0, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 0, 'u_fail': 0, 'pl_fail': 0, 'anti_all': 0, 'types': {}}  [67.6s]
+cell_8_5_3_D3.txt #0 (n,m,tau,s)=(8,5,3,1) antiV2=[(1, 2, 0), (1, 2, 1), (1, 2, 1), (2, 2, 1), (2, 2, 1)] role_b=0 role_c=0 role_e=2 role_f1=0 role_f2=5 U-fail=[] pairlemma-fail=[]
+cell_8_5_3_D3.txt #1 (n,m,tau,s)=(8,5,3,1) antiV2=[(1, 1, 0), (1, 2, 1), (1, 2, 1), (1, 2, 1), (2, 2, 1)] role_b=0 role_c=0 role_e=3 role_f1=0 role_f2=5 U-fail=[] pairlemma-fail=[]
+SUMMARY cell_8_5_3_D3.txt (all pairs): {'classes': 2, 'with_b': 0, 'with_c': 0, 'with_e': 2, 'with_f1': 0, 'with_f2': 2, 'u_fail': 0, 'pl_fail': 0, 'anti_all': 11, 'types': {(1, 2, 0): 1, (1, 2, 1): 5, (2, 2, 1): 3, (1, 1, 0): 1}}  [3.0s]
+cell_15_11_6_D3.txt #0 (n,m,tau,s)=(15,11,6,1) antiV2=[(1, 2, 1), (2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #1 (n,m,tau,s)=(15,11,6,1) antiV2=[(1, 2, 1), (2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #2 (n,m,tau,s)=(15,11,6,1) antiV2=[(1, 2, 1), (2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #3 (n,m,tau,s)=(15,11,6,1) antiV2=[(2, 2, 1), (2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #4 (n,m,tau,s)=(15,11,6,1) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #5 (n,m,tau,s)=(15,11,6,1) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #6 (n,m,tau,s)=(15,11,6,1) antiV2=[(1, 2, 1), (1, 2, 1), (2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #7 (n,m,tau,s)=(15,11,6,1) antiV2=[(1, 2, 1), (1, 2, 1), (2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #8 (n,m,tau,s)=(15,11,6,1) antiV2=[(1, 2, 1), (1, 2, 1), (2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #9 (n,m,tau,s)=(15,11,6,1) antiV2=[(1, 2, 1), (1, 2, 1), (2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #10 (n,m,tau,s)=(15,11,6,1) antiV2=[(1, 2, 1), (1, 2, 1), (2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #11 (n,m,tau,s)=(15,11,6,1) antiV2=[(1, 2, 1), (1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #12 (n,m,tau,s)=(15,11,6,1) antiV2=[(1, 2, 1), (1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=3 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #13 (n,m,tau,s)=(15,11,6,1) antiV2=[(2, 2, 1), (2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #14 (n,m,tau,s)=(15,11,6,1) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #15 (n,m,tau,s)=(15,11,6,1) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #16 (n,m,tau,s)=(15,11,6,1) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #17 (n,m,tau,s)=(15,11,6,1) antiV2=[] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=0 U-fail=[] pairlemma-fail=[]
+cell_15_11_6_D3.txt #18 (n,m,tau,s)=(15,11,6,1) antiV2=[(2, 2, 1), (2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+SUMMARY cell_15_11_6_D3.txt (all pairs): {'classes': 19, 'with_b': 0, 'with_c': 0, 'with_e': 0, 'with_f1': 0, 'with_f2': 13, 'u_fail': 0, 'pl_fail': 0, 'anti_all': 38, 'types': {(1, 2, 1): 19, (2, 2, 1): 14}}  [140.7s]
+cell_22_17_9_D3.txt #0 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #1 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #2 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #3 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #4 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #5 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #6 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #7 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #8 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #9 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #10 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #11 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #12 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #13 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #14 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #15 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #16 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #17 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #18 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #19 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #20 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #21 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #22 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #23 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #24 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #25 (n,m,tau,s)=(22,17,9,1) antiV2=[(1, 2, 1), (1, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=2 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #26 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #27 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]

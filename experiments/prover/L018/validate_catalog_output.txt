@@ -1,0 +1,10 @@
+n=5 [(('other', 'locally-reducible'), 4)]
+n=6 [(('other', 'locally-reducible'), 7)]
+n=7 [(('other', 'locally-reducible'), 24)]
+n=8 [(('other', 'locally-reducible'), 50)]
+n=9 [(('P-tri-2', 'locally-IRREDUCIBLE'), 1), (('other', 'locally-reducible'), 171)]
+n=10 [(('P-tri-2', 'locally-IRREDUCIBLE'), 7), (('other', 'locally-reducible'), 752)]
+n=11 [(('P-tree-2', 'locally-IRREDUCIBLE'), 2), (('P-tree-2', 'locally-reducible'), 2), (('P-tri-2', 'locally-IRREDUCIBLE'), 23), (('other', 'locally-reducible'), 4721)]
+n=12 [(('P-tree-2', 'locally-IRREDUCIBLE'), 16), (('P-tree-2', 'locally-reducible'), 11), (('P-tri-2', 'locally-IRREDUCIBLE'), 94), (('other', 'locally-reducible'), 37729)]
+n=13 [(('P-tree-2', 'locally-IRREDUCIBLE'), 92), (('P-tree-2', 'locally-reducible'), 45), (('P-tri-2', 'locally-IRREDUCIBLE'), 461), (('other', 'locally-reducible'), 350999)]
+VALIDATION PASSED: every radius-2-irreducible pendant is of type P-tree-2 or P-tri-2

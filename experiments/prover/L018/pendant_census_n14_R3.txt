@@ -1,0 +1,2 @@
+n=14 {(14, 'local'): 1930778}
+graphs with a pendant vertex but no radius-3-local (Red) pair at any pendant: 0

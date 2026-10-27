@@ -1,0 +1,17 @@
+pieces [(3, 1, 0), (3, 1, 0), (10, 7, 0), (10, 7, 0), (14, 12, 0), (14, 12, 0), (14, 12, 0), (8, 5, 1), (8, 5, 1), (12, 10, 1), (12, 10, 1)]
+seeds 35
+!!! NEGATIVE SLACK -2 7 5 3 3f5ca94d14a915f9 7 5 0,1,2 3,4,5 0,3,6 1,4,6 2,5,6
+6 parents 3 kids 1 -> n+1 {'pool': 1, 'minslack': -2, 'hist': {-2: 1}} t=0s
+7 parents 1 kids 0 -> n+1 {'pool': 2, 'minslack': 1, 'hist': {1: 2}} t=0s
+8 parents 2 kids 0 -> n+1 {'pool': 4, 'minslack': None, 'hist': {}} t=0s
+!!! NEGATIVE SLACK -2 10 6 4 1c42e7e942b4e79b 10 6 0,1,2 3,4,5 6,7,8 0,3,9 1,4,9 2,5,9
+9 parents 4 kids 1 -> n+1 {'pool': 3, 'minslack': 0, 'hist': {0: 2}} t=0s
+10 parents 3 kids 0 -> n+1 {'pool': 4, 'minslack': None, 'hist': {}} t=0s
+11 parents 4 kids 0 -> n+1 {'pool': 7, 'minslack': 1, 'hist': {1: 2}} t=0s
+!!! NEGATIVE SLACK -2 13 7 5 f937268570c0b93d 13 7 0,1,2 3,4,5 6,7,8 9,10,11 0,3,12 1,4,12 2,5,12
+12 parents 7 kids 1 -> n+1 {'pool': 5, 'minslack': None, 'hist': {}} t=0s
+!!! NEGATIVE SLACK -4 14 10 6 7eb9529a29522bf2 14 10 0,1,3 4,5,6 7,8,9 10,11,12 0,2,4 1,2,5 2,3,6 7,10,13 8,11,13 9,12,13
+13 parents 5 kids 1 -> n+1 {'pool': 10, 'minslack': 0, 'hist': {0: 3}} t=0s
+!!! NEGATIVE SLACK -1 15 10 6 3f8b7a5537be2a2b 15 10 0,1,2 3,4,5 6,7,9 6,8,12 7,8,11 11,12,13 8,9,10 0,3,14 1,4,14 2,5,14
+!!! NEGATIVE SLACK -1 15 10 6 1bbcc0804c178230 15 10 0,1,2 3,4,5 6,7,8 7,9,10 9,11,12 8,11,13 10,12,13 0,3,14 1,4,14 2,5,14
+14 parents 10 kids 2 -> n+1 {'pool': 2, 'minslack': None, 'hist': {}} t=0s

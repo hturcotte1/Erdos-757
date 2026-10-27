@@ -1,0 +1,14 @@
+tasks 232 skipped by sum-def 78
+MINIMAL COVER ['e3#0', 'e3#0', 'e3#0'] 324
+MINIMAL COVER ['e3#0', 't10#1'] 66
+MINIMAL COVER ['e3#0', 't10#2'] 126
+MINIMAL COVER ['e3#0', 't10#3'] 54
+MINIMAL COVER ['e3#0', 't10#4'] 18
+MINIMAL COVER ['e3#0', 'e3#0', 't10#1'] 72
+MINIMAL COVER ['e3#0', 'e3#0', 't10#2'] 72
+MINIMAL COVER ['e3#0', 'e3#0', 't10#3'] 72
+MINIMAL COVER ['e3#0', 't17D3#0'] 72
+MINIMAL COVER ['e3#0', 't17D3#1'] 72
+MINIMAL COVER ['e3#0', 't17D3#2'] 72
+MINIMAL COVER ['e3#0', 't17D3#3'] 72
+k 4 c range 2 3 maxtotal 29 unions done 15 truncated 0 hits 12 time 877.3 timeout True last total done 20

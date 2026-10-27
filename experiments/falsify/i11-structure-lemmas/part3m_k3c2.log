@@ -1,2 +1,3 @@
 tasks 213 skipped by sum-def 0
 MINIMAL COVER ['e3#0', 'e3#0'] 6
+k 3 c range 2 2 maxtotal 29 unions done 87 truncated 0 hits 1 time 607.2 timeout True last total done 24

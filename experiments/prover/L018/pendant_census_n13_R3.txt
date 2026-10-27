@@ -7,4 +7,4 @@ n=10 {(10, 'local'): 276}
 n=11 {(11, 'local'): 2065}
 n=12 {(12, 'local'): 18262}
 n=13 {(13, 'local'): 180016}
-graphs with a pendant vertex but no radius-2-local (Red) pair at any pendant: 0
+graphs with a pendant vertex but no radius-3-local (Red) pair at any pendant: 0

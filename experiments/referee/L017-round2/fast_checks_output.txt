@@ -1,0 +1,136 @@
+##### patterns.py
+r=1: 1 surjective distributions, 1 Hall-deficient, 1 patterns up to symmetry
+    P1 in F1 P2 in F1 P3 in F1   [1 labelled distributions]
+r=2: 62 surjective distributions, 62 Hall-deficient, 5 patterns up to symmetry
+    P1 in F1 P2 in F1 P3 split(F1,F2)   [12 labelled distributions]
+    P1 in F1 P2 in F1 P3 in F2   [6 labelled distributions]
+    P1 in F1 P2 split(F1,F2) P3 split(F1,F2)   [24 labelled distributions]
+    P1 in F1 P2 split(F1,F2) P3 in F2   [12 labelled distributions]
+    P1 split(F1,F2) P2 split(F1,F2) P3 split(F1,F2)   [8 labelled distributions]
+r=3: 540 surjective distributions, 18 Hall-deficient, 1 patterns up to symmetry
+    P1 in F1 P2 in F1 P3 split(F2,F3)   [18 labelled distributions]
+r=4: 1560 surjective distributions, 0 Hall-deficient, 0 patterns up to symmetry
+r=5: 1800 surjective distributions, 0 Hall-deficient, 0 patterns up to symmetry
+r=6: 720 surjective distributions, 0 Hall-deficient, 0 patterns up to symmetry
+TOTAL Hall-deficient patterns: 7 (certificate: 7 = (a) r=1; (b),(c1),(c2),(e),(f) r=2; (d) r=3)
+
+##### cells.py
+Theorem 6(i): cells with s in {-1,-2}, m<=n-2, n<=2m+1, tau<=m, HY, 3m>=n:
+  N=28: [(28, 18, 11, -1), (28, 23, 12, -2)]
+  N=29: [(29, 16, 11, -2), (29, 22, 12, -1), (29, 27, 13, -2)]
+  N=30: [(30, 15, 11, -1), (30, 20, 12, -2), (30, 26, 13, -1)]
+13.1 tight connected cells n<=30: [(3, 1, 1), (10, 7, 4), (13, 8, 5), (14, 12, 6), (16, 9, 6), (17, 13, 7), (19, 10, 7), (20, 14, 8), (21, 18, 9), (22, 11, 8), (23, 15, 9), (24, 19, 10), (25, 12, 9), (25, 23, 11), (26, 16, 10), (27, 20, 11), (28, 24, 12), (29, 17, 11), (30, 21, 12)]
+      number with n<=26: 15
+13.3 slack-1 connected cells n<=27: [(8, 5, 3), (11, 6, 4), (12, 10, 5), (14, 7, 5), (15, 11, 6), (17, 8, 6), (18, 12, 7), (19, 16, 8), (21, 13, 8), (22, 17, 9), (23, 21, 10), (24, 14, 9), (25, 18, 10), (26, 22, 11), (27, 15, 10)]
+13.4 decompositions of (28,24) with total slack 0: [((3, 1, 1), (25, 23, 11)), ((14, 12, 6), (14, 12, 6)), ((28, 24, 12),)]
+13.3(i) decompositions of (27,m-3) for the two n=28 cells, slack s+2, components with slack<=1:
+   (28,18) s=-1: 16 decompositions; those with r<=3: [((3, 1, 1), (3, 1, 1), (21, 13, 8)), ((3, 1, 1), (8, 5, 3), (16, 9, 6)), ((3, 1, 1), (10, 7, 4), (14, 7, 5)), ((3, 1, 1), (11, 6, 4), (13, 8, 5)), ((3, 1, 1), (24, 14, 9)), ((8, 5, 3), (19, 10, 7)), ((10, 7, 4), (17, 8, 6)), ((11, 6, 4), (16, 9, 6)), ((13, 8, 5), (14, 7, 5)), ((27, 15, 10),)]
+   (28,23) s=-2: 6 decompositions; those with r<=3: [((3, 1, 1), (3, 1, 1), (21, 18, 9)), ((3, 1, 1), (10, 7, 4), (14, 12, 6)), ((3, 1, 1), (24, 19, 10)), ((10, 7, 4), (17, 13, 7)), ((13, 8, 5), (14, 12, 6)), ((27, 20, 11),)]
+13.5(i) tight connected cells with 26 vertices: [(26, 16, 10)]
+13.5(ii) (28,18): all (n1,n2,n3): [(2, 26, 0), (3, 24, 1), (4, 22, 2), (5, 20, 3), (6, 18, 4), (7, 16, 5), (8, 14, 6), (9, 12, 7), (10, 10, 8), (11, 8, 9), (12, 6, 10), (13, 4, 11), (14, 2, 12), (15, 0, 13)] ; n1-n3 = [2]
+13.5(ii) (28,23): all (n1,n2,n3): [(0, 15, 13), (1, 13, 14), (2, 11, 15), (3, 9, 16), (4, 7, 17), (5, 5, 18), (6, 3, 19), (7, 1, 20)] ; n1-n3 = [-13]
+
+##### f7.py
+F7: linear, n=7 m=5 tau=3 s=-2 degrees=[3, 2, 2, 2, 2, 2, 2]
+proper induced subgraphs with s<0: [] -> vertex-critical violator
+Theorem 1(b) tau(H-v)=tau-1, s(H-v)=s+8-2d: ok for all v; Delta=3 (1(c),(d)); s=-2 in {-1,-2} (1(e))
+Theorem 1(f) for pairs: ok. Theorem 3: no degree-1 vertex, so (a)-(f) vacuous/true.
+Theorem 4 at v=0: pairs [(1, 2), (3, 4), (5, 6)] components of G [[1, 3, 5], [2, 4, 6]] s(G)=0 (= s+2) tau(G)=2
+  minimum transversals of G meeting all three pairs: [] (star) holds
+  every pair split between the two components (pattern (b)): True
+Theorem 5(A) at the six degree-2 vertices: tau(G)=tau-1, s(G)=s+4=2, (star_2) holds, no isolated vertex (case alpha): ok
+
+##### decomp_check.py
+(23,13,9,2) s=-4: Delta<=2 -> empty by Theorem 7 (and s<=-3: by Theorem 1(e))
+(23,14,9,3) s=-2: d=3 branch, (22,11) total slack 0: 5 decompositions
+    r=5 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (10, 7, 4)] counts=[1, 1, 1, 1, 4] inputs=4  (void by Theorem 4(iii))
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (13, 8, 5)] counts=[1, 1, 1, 0] inputs=0  (void by Theorem 4(iii))
+    r=3 [(3, 1, 1), (3, 1, 1), (16, 9, 6)] counts=[1, 1, 0] inputs=0
+    r=2 [(3, 1, 1), (19, 10, 7)] counts=[1, 0] inputs=0
+    r=1 [(22, 11, 8)] counts=[0] inputs=0
+    VERDICT: empty given the stored lists (all r<=3 decompositions have 0 inputs)
+(23,20,10,3) s=-1: d=3 branch, (22,17) total slack 1: 4 decompositions
+    r=2 [(3, 1, 1), (19, 16, 8)] counts=[1, 227] inputs=227
+    r=2 [(8, 5, 3), (14, 12, 6)] counts=[2, 2] inputs=4
+    r=2 [(10, 7, 4), (12, 10, 5)] counts=[4, 149] inputs=596
+    r=1 [(22, 17, 9)] counts=[37] inputs=37
+    VERDICT: needs the extension step: 864 inputs from r<=3 decompositions
+(24,12,9,2) s=-3: Delta<=2 -> empty by Theorem 7 (and s<=-3: by Theorem 1(e))
+(24,13,9,3) s=-1: d=3 branch, (23,10) total slack 1: 4 decompositions
+    r=6 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (8, 5, 3)] counts=[1, 1, 1, 1, 1, 2] inputs=2  (void by Theorem 4(iii))
+    r=5 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (11, 6, 4)] counts=[1, 1, 1, 1, 0] inputs=0  (void by Theorem 4(iii))
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (14, 7, 5)] counts=[1, 1, 1, 0] inputs=0  (void by Theorem 4(iii))
+    r=3 [(3, 1, 1), (3, 1, 1), (17, 8, 6)] counts=[1, 1, 0] inputs=0
+    VERDICT: empty given the stored lists (all r<=3 decompositions have 0 inputs)
+(24,18,10,3) s=-2: d=3 branch, (23,15) total slack 0: 6 decompositions
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (14, 12, 6)] counts=[1, 1, 1, 2] inputs=2  (void by Theorem 4(iii))
+    r=3 [(3, 1, 1), (3, 1, 1), (17, 13, 7)] counts=[1, 1, 6] inputs=6
+    r=3 [(3, 1, 1), (10, 7, 4), (10, 7, 4)] counts=[1, 4, 4] inputs=16
+    r=2 [(3, 1, 1), (20, 14, 8)] counts=[1, 0] inputs=0
+    r=2 [(10, 7, 4), (13, 8, 5)] counts=[4, 0] inputs=0
+    r=1 [(23, 15, 9)] counts=[0] inputs=0
+    VERDICT: needs the extension step: 22 inputs from r<=3 decompositions
+(25,16,10,2) s=-3: Delta<=2 -> empty by Theorem 7 (and s<=-3: by Theorem 1(e))
+(25,17,10,3) s=-1: d=3 branch, (24,14) total slack 1: 11 decompositions
+    r=5 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (12, 10, 5)] counts=[1, 1, 1, 1, 149] inputs=149  (void by Theorem 4(iii))
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (15, 11, 6)] counts=[1, 1, 1, 19] inputs=19  (void by Theorem 4(iii))
+    r=4 [(3, 1, 1), (3, 1, 1), (8, 5, 3), (10, 7, 4)] counts=[1, 1, 2, 4] inputs=8  (void by Theorem 4(iii))
+    r=3 [(3, 1, 1), (3, 1, 1), (18, 12, 7)] counts=[1, 1, 0] inputs=0
+    r=3 [(3, 1, 1), (8, 5, 3), (13, 8, 5)] counts=[1, 2, 0] inputs=0
+    r=3 [(3, 1, 1), (10, 7, 4), (11, 6, 4)] counts=[1, 4, 0] inputs=0
+    r=2 [(3, 1, 1), (21, 13, 8)] counts=[1, 0] inputs=0
+    r=2 [(8, 5, 3), (16, 9, 6)] counts=[2, 0] inputs=0
+    r=2 [(10, 7, 4), (14, 7, 5)] counts=[4, 0] inputs=0
+    r=2 [(11, 6, 4), (13, 8, 5)] counts=[0, 0] inputs=0
+    r=1 [(24, 14, 9)] counts=[0] inputs=0
+    VERDICT: empty given the stored lists (all r<=3 decompositions have 0 inputs)
+(25,22,11,3) s=-2: d=3 branch, (24,19) total slack 0: 3 decompositions
+    r=2 [(3, 1, 1), (21, 18, 9)] counts=[1, 0] inputs=0
+    r=2 [(10, 7, 4), (14, 12, 6)] counts=[4, 2] inputs=8
+    r=1 [(24, 19, 10)] counts=[0] inputs=0
+    VERDICT: needs the extension step: 8 inputs from r<=3 decompositions
+(26,14,10,2) s=-4: Delta<=2 -> empty by Theorem 7 (and s<=-3: by Theorem 1(e))
+(26,15,10,3) s=-2: d=3 branch, (25,12) total slack 0: 6 decompositions
+    r=6 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (10, 7, 4)] counts=[1, 1, 1, 1, 1, 4] inputs=4  (void by Theorem 4(iii))
+    r=5 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (13, 8, 5)] counts=[1, 1, 1, 1, 0] inputs=0  (void by Theorem 4(iii))
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (16, 9, 6)] counts=[1, 1, 1, 0] inputs=0  (void by Theorem 4(iii))
+    r=3 [(3, 1, 1), (3, 1, 1), (19, 10, 7)] counts=[1, 1, 0] inputs=0
+    r=2 [(3, 1, 1), (22, 11, 8)] counts=[1, 0] inputs=0
+    r=1 [(25, 12, 9)] counts=[0] inputs=0
+    VERDICT: empty given the stored lists (all r<=3 decompositions have 0 inputs)
+(26,21,11,3) s=-1: d=3 branch, (25,18) total slack 1: 9 decompositions
+    r=3 [(3, 1, 1), (3, 1, 1), (19, 16, 8)] counts=[1, 1, 227] inputs=227
+    r=3 [(3, 1, 1), (8, 5, 3), (14, 12, 6)] counts=[1, 2, 2] inputs=4
+    r=3 [(3, 1, 1), (10, 7, 4), (12, 10, 5)] counts=[1, 4, 149] inputs=596
+    r=2 [(3, 1, 1), (22, 17, 9)] counts=[1, 37] inputs=37
+    r=2 [(8, 5, 3), (17, 13, 7)] counts=[2, 6] inputs=12
+    r=2 [(10, 7, 4), (15, 11, 6)] counts=[4, 19] inputs=76
+    r=2 [(11, 6, 4), (14, 12, 6)] counts=[0, 2] inputs=0
+    r=2 [(12, 10, 5), (13, 8, 5)] counts=[149, 0] inputs=0
+    r=1 [(25, 18, 10)] counts=[0] inputs=0
+    VERDICT: needs the extension step: 952 inputs from r<=3 decompositions
+(27,13,10,2) s=-3: Delta<=2 -> empty by Theorem 7 (and s<=-3: by Theorem 1(e))
+(27,18,11,2) s=-4: Delta<=2 -> empty by Theorem 7 (and s<=-3: by Theorem 1(e))
+(27,14,10,3) s=-1: d=3 branch, (26,11) total slack 1: 4 decompositions
+    r=7 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (8, 5, 3)] counts=[1, 1, 1, 1, 1, 1, 2] inputs=2  (void by Theorem 4(iii))
+    r=6 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (11, 6, 4)] counts=[1, 1, 1, 1, 1, 0] inputs=0  (void by Theorem 4(iii))
+    r=5 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (14, 7, 5)] counts=[1, 1, 1, 1, 0] inputs=0  (void by Theorem 4(iii))
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (17, 8, 6)] counts=[1, 1, 1, 0] inputs=0  (void by Theorem 4(iii))
+    VERDICT: empty given the stored lists (all r<=3 decompositions have 0 inputs)
+(27,19,11,3) s=-2: d=3 branch, (26,16) total slack 0: 9 decompositions
+    r=5 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (14, 12, 6)] counts=[1, 1, 1, 1, 2] inputs=2  (void by Theorem 4(iii))
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (17, 13, 7)] counts=[1, 1, 1, 6] inputs=6  (void by Theorem 4(iii))
+    r=4 [(3, 1, 1), (3, 1, 1), (10, 7, 4), (10, 7, 4)] counts=[1, 1, 4, 4] inputs=16  (void by Theorem 4(iii))
+    r=3 [(3, 1, 1), (3, 1, 1), (20, 14, 8)] counts=[1, 1, 0] inputs=0
+    r=3 [(3, 1, 1), (10, 7, 4), (13, 8, 5)] counts=[1, 4, 0] inputs=0
+    r=2 [(3, 1, 1), (23, 15, 9)] counts=[1, 0] inputs=0
+    r=2 [(10, 7, 4), (16, 9, 6)] counts=[4, 0] inputs=0
+    r=2 [(13, 8, 5), (13, 8, 5)] counts=[0, 0] inputs=0
+    r=1 [(26, 16, 10)] counts=[0] inputs=0
+    VERDICT: empty given the stored lists (all r<=3 decompositions have 0 inputs)
+(27,25,12,3) s=-1: d=3 branch, (26,22) total slack 1: 3 decompositions
+    r=2 [(3, 1, 1), (23, 21, 10)] counts=[1, 0] inputs=0
+    r=2 [(12, 10, 5), (14, 12, 6)] counts=[149, 2] inputs=298
+    r=1 [(26, 22, 11)] counts=[36] inputs=36
+    VERDICT: needs the extension step: 334 inputs from r<=3 decompositions
+TOTALS {'decs': 64, 'r4': 19, 'r4_used': 11, 'r4_inputs': 214, 'empty_T1M': 6}

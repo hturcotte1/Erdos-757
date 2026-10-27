@@ -1,0 +1,32 @@
+extra pieces 10
+pieces [(3, 1, 0), (3, 1, 0), (10, 7, 0), (10, 7, 0), (14, 12, 0), (14, 12, 0), (14, 12, 0), (8, 5, 1), (8, 5, 1), (12, 10, 1), (12, 10, 1), (17, 13, 0), (17, 13, 0), (17, 13, 0)]
+seeds 2218
+6 parents 3 kids 0 -> n+1 {'pool': 0, 'minslack': None, 'hist': {}} t=0s
+8 parents 2 kids 0 -> n+1 {'pool': 4, 'minslack': None, 'hist': {}} t=0s
+9 parents 4 kids 1 -> n+1 {'pool': 3, 'minslack': 0, 'hist': {0: 3}} t=0s
+10 parents 3 kids 0 -> n+1 {'pool': 4, 'minslack': None, 'hist': {}} t=0s
+11 parents 4 kids 72 -> n+1 {'pool': 79, 'minslack': 1, 'hist': {1: 74}} t=1s
+12 parents 79 kids 1 -> n+1 {'pool': 5, 'minslack': None, 'hist': {}} t=1s
+13 parents 5 kids 6 -> n+1 {'pool': 15, 'minslack': 0, 'hist': {0: 9}} t=1s
+14 parents 15 kids 83 -> n+1 {'pool': 93, 'minslack': 1, 'hist': {1: 11}} t=2s
+15 parents 93 kids 1 -> n+1 {'pool': 10, 'minslack': None, 'hist': {}} t=5s
+16 parents 7 kids 8 -> n+1 {'pool': 25, 'minslack': 0, 'hist': {0: 5}} t=6s
+17 parents 25 kids 85 -> n+1 {'pool': 102, 'minslack': None, 'hist': {}} t=14s
+18 parents 102 kids 270 -> n+1 {'pool': 284, 'minslack': 1, 'hist': {1: 269}} t=31s
+19 parents 278 kids 10 -> n+1 {'pool': 90, 'minslack': 2, 'hist': {6: 44, 4: 3, 2: 1}} t=52s
+20 parents 86 kids 92 -> n+1 {'pool': 165, 'minslack': 0, 'hist': {9: 35, 5: 11, 7: 11, 0: 5, 2: 2}} t=80s
+21 parents 130 kids 9249 -> n+1 {'pool': 9337, 'minslack': 1, 'hist': {5: 4492, 7: 4315, 3: 54, 1: 21}} t=159s
+  vext timeout at level 22
+22 parents 750 kids 0 -> n+1 {'pool': 106, 'minslack': 6, 'hist': {6: 59}} t=310s
+  vext timeout at level 23
+Traceback (most recent call last):
+  File "/home/user/Erdos-757/experiments/falsify/i11-n28-40/beam4.py", line 92, in <module>
+    if s <= 1 and nn >= 15 and is_conn(gl): lowfile.write(l + "\n")
+                               ~~~~~~~^^^^
+  File "/home/user/Erdos-757/experiments/falsify/i11-n28-40/beam4.py", line 21, in is_conn
+    t = gl.split(' ', 2); n = int(t[0]); es = [tuple(int(x) for x in w.split(',')) for w in t[2].split()]
+                                               ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/Erdos-757/experiments/falsify/i11-n28-40/beam4.py", line 21, in <genexpr>
+    t = gl.split(' ', 2); n = int(t[0]); es = [tuple(int(x) for x in w.split(',')) for w in t[2].split()]
+                                                     ~~~^^^
+ValueError: invalid literal for int() with base 10: ''
