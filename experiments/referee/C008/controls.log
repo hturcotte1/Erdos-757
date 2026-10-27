@@ -1,0 +1,26 @@
+-- record sets from data/small_records.json
+8 n 8 is45 True weakS True lin True m 5 (expect 5 ) h_np 5 h_cp 5 (expect 5 ) tau 3 n-tau 5 F7homs 0 F7sub 0
+10 n 10 is45 True weakS True lin True m 8 (expect 8 ) h_np 6 h_cp 6 (expect 6 ) tau 4 n-tau 6 F7homs 0 F7sub 0
+11 n 11 is45 True weakS True lin True m 8 (expect 8 ) h_np 7 h_cp 7 (expect 7 ) tau 4 n-tau 7 F7homs 0 F7sub 0
+12 n 12 is45 True weakS True lin True m 10 (expect 10 ) h_np 7 h_cp 7 (expect 7 ) tau 5 n-tau 7 F7homs 0 F7sub 0
+14 n 14 is45 True weakS True lin True m 12 (expect 12 ) h_np 8 h_cp 8 (expect 8 ) tau 6 n-tau 8 F7homs 0 F7sub 0
+12b n 12 is45 True weakS True lin True m 10 (expect 10 ) h_np 7 h_cp 7 (expect 7 ) tau 5 n-tau 7 F7homs 0 F7sub 0
+12c n 12 is45 True weakS True lin True m 10 (expect 10 ) h_np 7 h_cp 7 (expect 7 ) tau 5 n-tau 7 F7homs 0 F7sub 0
+-- (4,5) negative / boundary controls
+[1, 2, 3, 5] is45 False weakSidon True linear False h_np 3 h_cp 3
+[0, 1, 2, 4] is45 False weakSidon True linear False h_np 3 h_cp 3
+[0, 1, 3, 4] is45 False weakSidon False linear True h_np 3 h_cp 3
+[1, 2, 3, 6] is45 True weakSidon True linear True h_np 3 h_cp 3
+[0, 1, 2, 3] is45 False weakSidon False linear False h_np 3 h_cp 3
+-- Fibonacci {2,3,5,8,...}: (4,5)?, h by numpy vs CP-SAT
+5 is45 True h_np 4 h_cp 4
+8 is45 True h_np 6 h_cp 6
+10 is45 True h_np 7 h_cp 7
+12 is45 True h_np 8 h_cp 8
+15 is45 True h_np 10 h_cp 10
+18 is45 True h_np 12 h_cp 12
+-- F7 detector controls (abstract hypergraphs)
+F7 itself: homs (=|Aut F7|) 12 subsets 1
+AG(2,3): lines 12 homs 432 F7 subsets 36
+relabelled F7 + 2 extra edges on 15 vertices: homs 12 subsets 1
+F7 minus one edge: homs 0 subsets 0
