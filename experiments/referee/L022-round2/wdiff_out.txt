@@ -1,0 +1,136 @@
+===== line 4 =====
+  [insert] ...STATUS:
+     + PARTIAL (I11 on R not proved; GAPs 1-3 open, GAP 4 closed by unrefereed computation); revised 2026-10-27 09:50 UTC after referee round 1 (ACCEPT WITH FIXES and NEEDS-WORK = editorial; no mathematical error; Theorems 1, 2, 4, Corollary 3 verified by both referees, Theorem 5 and Corollary 3' reproduced with independent code);
+     ...submitted 2026-10-27 06:36 UTC; unrefereed. Written
+  [replace] ...STATUS: submitted 2026-10-27 06:36
+     - UTC; unrefereed.
+     + UTC.
+     ...Written by the prover (route L022:
+  [replace] ...3; I11 itself is open (GAP
+     - 1-4
+     + 1-3
+     ...at the end).
+  [replace] ...is open (GAP 1-4 at the
+     - end).
+     + end; GAP 4 is closed by an unrefereed computation, certificate L023 pending). Theorem 1(f), Theorem 2 and Corollary 3 rest on L017 Theorem 4 and Step 10.1 (L017 is ACCEPTED, K64). In Theorem 2(vi) the clause "that is not a single edge" was dropped after round 1: the proof (Step 2.6) gives at least two attachment vertices of degree 1 also for a single edge.
+     ...
+===== line 6 =====
+  [replace] ...- L017 (results/proofs/L017-i11-minimal-counterexample-structure.md) [derived-here;
+     - two referees found no mathematical error in round 1, the revised text is unrefereed]:
+     + ACCEPTED, K64, Theorem 7 K65]:
+     ...Theorem 4 (i)-(vi) (the configuration at
+  [replace] ...behind it [verified-here as a computation,
+     - NOT refereed]
+     + not part of the accepted proved parts]
+     ...are used only in Corollary 6,
+===== line 7 =====
+  [replace] ...- L018 (results/proofs/L018-red-universality.md)
+     - [unrefereed]:
+     + [ACCEPTED as a partial certificate, K67, including Theorem 5(vi) and Proposition 6.2 (the latter conditional on L018's Conjecture P2; the C-version of Conjecture P2' below is exactly L018's Conjecture P2)]:
+     ...Theorem 6(b') (no component of $H-v$
+  [insert] ...sentence of Corollary 3 (Step 3.3).
+     + Also cited in GAP 1 only, as targets and not as dependencies: L019 (K68), L020 (K69) and L021 (K71), accepted proved parts.
+     ...
+===== line 34 =====
+  [replace] ...(vi) (L017 Theorem 4(vi),
+     - restated)
+     + re-proved in Step 2.6)
+     ...In pattern (b), a tight component
+  [delete] ...In pattern (b), a tight component
+     - that is not a single edge
+     ...contains at least two attachment vertices
+===== line 38 =====
+  [replace] ...at most one vertex of degree
+     - 1):
+     + 1; the $C$-version is L018's Conjecture P2):
+     ...if $s(H)=-2$ every vertex of degree
+  [replace] ...If in addition L018 Theorem 5(vi)
+     - [unrefereed]
+     + [ACCEPTED, K67]
+     ...is granted (a minimal counterexample with
+===== line 40 =====
+  [replace] ...4(iv)(a); the cell $(30,15,11)$ contains no
+     - violator.
+     + violator if I11 holds for all graphs with at most 29 vertices; this clause needs no stored list: $H-v$ would have at most $r\le3$ components, each with $k_i$ edges and at most $2k_i+1$ vertices, so at most $2\cdot12+3=27<29$ vertices.
+     ...
+===== line 60 =====
+  [replace] ...one also on L018 Theorem 5(vi),
+     - unrefereed),
+     + ACCEPTED, K67),
+     ...and "at least 27 vertices" there
+===== line 85 =====
+  [replace] ...nonzero coefficients $+1,-1$ (inspect the three
+     - types: $X_j-X_l$ from
+     + types of forms in $\Phi$:
+     ...a split parallelogram, there is no
+  [insert] ...the three types: $X_j-X_l$ from a
+     + parallelogram form $X_i+X_j-X_k-X_l$
+     ...split parallelogram, there is no split
+  [replace] ...three types: $X_j-X_l$ from a split
+     - parallelogram, there is
+     + 2+2 between the parts gives $X_p-X_q$ on $B$, with $p\ne q$; a parallelogram form split 2+2 with equal signs in $B$ has coefficient sum $\pm2$ on $B$; a parallelogram form split 1+3 or 3+1 and an AP form split 1+2 or 2+1 have coefficient sum $\pm1$ or $\pm2$ on the part $B$, so $\varphi_B(\mathbf 1)\ne0$; a difference form $X_i-X_j$ split between the parts has coefficient sum $\pm1$ on $B$; so
+     ...no split AP form with coefficient
+  [replace] ...there is no split AP form
+     - with
+     + has
+     ...coefficient sum 0 on one side)
+===== line 87 =====
+  [delete] ...edges one at a time, each
+     - with two
+     ...new points chosen generically (the same
+  [replace] ...a time, each with two new
+     - points chosen generically (the same argument as in 1.4
+     + edge $\{u,p,q\}$ sharing exactly one vertex $u$
+     ...with the AP condition imposed). $F_7\in\mathcal
+  [insert] ...argument as in 1.4 with the
+     + previous ones [derived-here, sketch, not load-bearing; checked by both round-1 referees and on all 502 labelled connected linear configurations with at most 4 edges by referee #1's code]. Verification: take $u$ as an endpoint of the new AP, $p=x_u+\delta$, $q=x_u+2\delta$ with $\delta$ generic (if $u$ were made the midpoint, $p=x_u-\delta$, $q=x_u+\delta$, and $u$ were already a midpoint of $(a,u,b)$, then $p+q=a+b$ would violate weak Sidon). Every form of $\Phi$ that involves $p$ or $q$ has $\delta$-coefficient $\alpha+2\beta$ with $\alpha,\beta\in\{0,\pm1,\pm2\}$ the coefficients of $p,q$; it vanishes only for $\alpha=-2,\beta=1$ (the coefficient $\pm2$ occurs only on the midpoint of an
+     ...AP condition imposed). $F_7\in\mathcal M_R$: $F_7\notin
+  [replace] ...as in 1.4 with the AP
+     - condition imposed).
+     + form), i.e. for forms $X_a+X_q-2X_p$, whose value is $x_a-x_u\ne0$ unless $a=u$, the intended AP (the only $\delta$-degenerate coincidence); for all other forms the value is a nonconstant polynomial in $\delta$, so a generic $\delta$ creates no further coincidence.
+     ...$F_7\in\mathcal M_R$: $F_7\notin R$ (K7), and
+===== line 108 =====
+  [replace] ...with $\tau(H)-1$ vertices, which is absurd
+     - (L017 Theorem 5(A)(iii)).
+     + by the definition of $\tau$.
+     ...So $T'_F\cap\{p,q\}=\emptyset$ for every minimum transversal
+===== line 116 =====
+  [replace] ...3.3 (With L018 Theorem
+     - 5(vi).)
+     + 5(vi), ACCEPTED, K67.)
+     ...The proof of L018 Theorem 5
+===== line 142 =====
+  [insert] ...3 | 227 (first 66 tested)
+     + (incomplete: classes 0-373 of 956 scanned, 308 skipped for Delta > 3)
+     ...| 58 | 8 (161 untested)
+===== line 161 =====
+  [replace] ...realizable pieces occur (Theorem 1(a), Theorem
+     - 5).**
+     + 5) [all realizability statements in this item are unrefereed computations: experiments/20261027-0400-realize-21-18-9 and Theorem 5].**
+     ...Of the 13 tight connected classes
+===== line 173 =====
+  [replace] ...P2' together with L018 Theorem 5(vi)
+     - [unrefereed]
+     + [ACCEPTED, K67]
+     ...removes (f) altogether (Corollary 3, Step
+===== line 175 =====
+  [replace] ...GAP 4 (the
+     - uncomputed cell).
+     + tight cell $(25,23,11)$) [closed by computation, unrefereed; certificate L023 pending]. At the time of submission
+     ...L017 Corollary 13.3 leaves components in
+  [replace] ...(the uncomputed cell). L017 Corollary 13.3
+     - leaves
+     + left
+     ...components in the tight cell $(25,23,11)$
+  [replace] ...tight cell $(25,23,11)$ with $\Delta\le3$, not
+     - computed
+     + computed. The later run experiments/20261027-0340-induction-n28-n29-f25 found cell$(25,23,11,3)=0$ and cell$(25,23,11,4)=6$ classes, all with $\Delta=4$, and experiments/20261027-0400-realize-21-18-9 found none of them realizable; so the cell is empty for $\Delta\le3$
+     ...in $C$; its realizable part is
+  [replace] ...$(25,23,11)$ with $\Delta\le3$, not computed in
+     - $C$; its realizable part
+     + $C$ (hence in $R$). This
+     ...is not computed either.
+  [replace] ...in $C$; its realizable part is
+     - not computed either.
+     + an unrefereed computation (certificate L023 under referee); nothing in Theorems 1, 2, 4 or Corollary 3 depends on it.
+     ...
