@@ -1,0 +1,6 @@
+cell_26_22_11.txt (k, tau of edges meeting N[v]) : count {(6, 4): 4}
+
+real	0m5.528s
+user	0m2.370s
+sys	0m0.008s
+exit status 0

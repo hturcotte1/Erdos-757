@@ -1,0 +1,91 @@
+== 0. parsing / artifacts
+  OK   no float literals anywhere in the JSON (seen: [])
+  OK   every element of 'set' is a JSON integer (type int, not bool/float/str)
+  OK   raw tokens of 'set' are plain decimal integers
+  OK   set equals the 21 integers quoted in the referee task
+  OK   n = 21
+  OK   all points distinct
+  OK   listed in increasing order (not needed, informational)
+  claimed_h = 12; witness size = 12
+  OK   claimed_h is the integer 12
+== 1. (4,5) property, three formulations
+  4-subsets: 5985; histogram of #distinct distances: {5: 342, 6: 5643}
+  OK   M1: every 4-subset has >= 5 distinct positive differences
+  OK   M2: every 4-subset B has |B-B| >= 11 (and |B-B| = 1+2|D(B)| always)
+  OK   M3a: weak Sidon (all sums x+y, x<y, distinct)
+  OK   M3b: no two 3-APs share two points (AP hypergraph linear)
+  OK   M3c: #4-sets with exactly 5 distances = m(n-3) = 342 (each contains exactly one AP)
+== 2. h(A): largest Sidon subset
+  OK   witness is a 12-subset of A
+  OK   witness is Sidon (sums and differences forms)
+  violation sets from equal sums: 19, by size {3: 19}
+  OK   violation sets are exactly the 3-AP triples (instance check of Ma-Tang Lemma 2.3)
+  H1 (2^21 enumeration): h = 12; #maximum Sidon subsets = 1372; #Sidon subsets total = 319374
+  OK   H1: h = 12
+  H2: Sidon 13-subsets: 0 of 203490; Sidon 12-subsets: 1372 of 293930 (5.4s)
+  OK   H2: no 13-subset is Sidon (so h <= 12, as Sidon is hereditary)
+  OK   H2: #Sidon 12-subsets agrees with H1
+  H3a CP-SAT: status=OPTIMAL, optimum=12, bound=12.0
+  OK   H3a: CP-SAT proves max = 12
+  H3b CP-SAT feasibility of a Sidon 13-subset: INFEASIBLE
+  OK   H3b: Sidon 13-subset infeasible
+  H3c scipy/HiGHS milp: status=0 (Optimization terminated successfully. (HiGHS Status 7: Optimal)), optimum=12.0
+  OK   H3c: HiGHS proves max = 12
+  OK   H3c: HiGHS solution is a Sidon 12-set [210, 396, 444, 792, 1596, 1758, 1935, 1941, 2231, 2304, 2375, 2449]
+== 3. AP hypergraph
+  APs (as values a<b<c, midpoint b): 0,210,420; 0,396,792; 0,444,888; 210,792,1374; 210,888,1566; 396,420,444; 444,1374,2304; 888,1596,2304; 1374,1566,1758; 1566,1581,1596; 1566,1935,2304; 1581,1758,1935; 1581,1941,2301; 1935,2301,2667; 1941,2231,2521; 1941,2304,2667; 2231,2449,2667; 2301,2375,2449; 2375,2521,2667
+  OK   m = #3-APs = 19
+  OK   midpoint map injective (distinct midpoints)
+  OK   min A and max A are not midpoints
+  non-midpoints: [0, 2667]  (saturated iff m = n-2: True)
+  degree by point: 0:3, 210:3, 396:2, 420:2, 444:3, 792:2, 888:3, 1374:3, 1566:4, 1581:3, 1596:2, 1758:2, 1935:3, 1941:3, 2231:2, 2301:3, 2304:4, 2375:2, 2449:2, 2521:2, 2667:4
+  degree sequence (sorted): [4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2]; sum = 57 (= 3m = 57)
+  OK   max degree = 4
+  OK   linear
+  connected components of H (isolated points count): 1; isolated: []
+  OK   F7-free (backtracking embedding count = 0)
+  OK   F7-free (5-edge subsets on 7 points: 0, isomorphic to F7: 0)
+  H4: transversals of size 8: 0; size 9: 1372 (1.7s)
+  OK   H4: tau = 9 and #minimum transversals = #maximum Sidon subsets
+  OK   complement of the witness [420, 792, 888, 1596, 1758, 2301, 2304, 2521, 2667] is a transversal
+  OK   h = n - tau (alpha = n - tau)
+== 4. exact arithmetic
+  OK   h/n = 4/7 == 4/7 exactly (not < 4/7: no record)
+  OK   h/n < 4/7 is FALSE
+  9n/17 = 189/17 = 11.1176; (9n+6)/17 = 195/17 = 11.4706
+  OK   both forms give h >= 12 at n = 21
+  HY with m <= n-2: tau <= (8n-6)/17 = 162/17 = 9.5294, floor = 9
+  OK   tau <= 9, h >= 12 for every 21-point (4,5)-set
+  OK   HY on this set: 17*tau = 153 <= 5n+3m = 162 (slack 9)
+  OK   I11 on this set: 11*tau = 99 <= 3n+2m = 101 (slack 2)
+  D = 17h - 9n = 15; D/n = 5/7
+== 5. every subset S of A (each is a (4,5)-set): alpha, e(S), HY, I11, class C
+  OK   e(S) <= |S|-2 for all S with |S| >= 2 (class C)
+  OK   HY 17 tau <= 5|S|+3e(S) on all 2^21 subsets
+  OK   I11 11 tau <= 3|S|+2e(S) on all 2^21 subsets
+  OK   SOS-DP alpha(full) = 12
+  OK   min h over 1-subsets = 1 >= f(1) = 1
+  OK   min h over 2-subsets = 2 >= f(2) = 2
+  OK   min h over 3-subsets = 2 >= f(3) = 2
+  OK   min h over 4-subsets = 3 >= f(4) = 3
+  OK   min h over 5-subsets = 4 >= f(5) = 4
+  OK   min h over 6-subsets = 4 >= f(6) = 4
+  OK   min h over 7-subsets = 5 >= f(7) = 5
+  OK   min h over 8-subsets = 5 >= f(8) = 5
+  OK   min h over 9-subsets = 6 >= f(9) = 6
+  OK   min h over 10-subsets = 6 >= f(10) = 6
+  OK   min h over 11-subsets = 7 >= f(11) = 7
+  OK   min h over 12-subsets = 8 >= f(12) = 7
+  OK   min h over 13-subsets = 8 >= f(13) = 8
+  OK   min h over 14-subsets = 8 >= f(14) = 8
+  OK   min h over 15-subsets = 9 >= f(15) = 9
+  OK   min h over 16-subsets = 10 >= f(16) = 10
+  OK   min h over 17-subsets = 10 >= f(17) = 10
+  OK   min h over 18-subsets = 11 >= f(18) = 11
+  min h over 19-subsets = 12 (f(19) not pinned here)
+  OK   min h over 20-subsets = 12 >= f(20) = 12
+  min h over 21-subsets = 12 (f(21) not pinned here)
+  h(A minus one point) for each point: [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12]
+  min h over 19-point subsets: 12
+  two-block partitions (U, V-U) with tau(U)+tau(V-U) = 9: 0
+== done in 10.3s; problems: 0

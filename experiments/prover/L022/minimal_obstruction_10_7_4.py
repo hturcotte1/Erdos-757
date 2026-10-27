@@ -20,3 +20,13 @@ for k in range(5, 8):
                 for x in e: deg[x] = deg.get(x, 0) + 1
             print('minimal non-realizable:', sub, 'vertices', len(vs), 'max degree', max(deg.values()), flush=True)
 print('number of minimal non-realizable edge subsets:', len(nonreal))
+
+# Part 2: maximum degree of every stored obstruction of the (21,18,9) run (experiments/20261027-0400-realize-21-18-9/obstructions.json)
+import json
+obs = json.load(open('/home/user/Erdos-757/experiments/20261027-0400-realize-21-18-9/obstructions.json'))
+for o in obs:
+    deg = {}
+    for e in o['subedges']:
+        for x in e: deg[x] = deg.get(x, 0) + 1
+    print('obstruction of (21,18,9) class', o['cls'], 'edges', o['k'], 'vertices', o['nverts'], 'max degree', max(deg.values()))
+print('all stored obstructions have a vertex of degree >= 4:', all(max({x: sum(1 for e in o['subedges'] if x in e) for e in o['subedges'] for x in e}.values()) >= 4 for o in obs))

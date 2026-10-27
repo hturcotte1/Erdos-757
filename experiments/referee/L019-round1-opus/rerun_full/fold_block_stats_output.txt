@@ -1,0 +1,5 @@
+cell_10_7_4.txt 12 {'N': 43, 'inC': 64, 'adjacent': 47, 'F': 6} criterion mismatches: 0 blocking tight-set sizes: {}
+cell_14_12_6.txt 12 {'inC': 62, 'F': 3, 'adjacent': 127, 'N': 92, 'FP': 8} criterion mismatches: 0 blocking tight-set sizes: {9: 8}
+cell_17_13_7.txt 12 {'inC': 64, 'adjacent': 92, 'F': 12, 'N': 120} criterion mismatches: 0 blocking tight-set sizes: {}
+cell_12_10_5.txt 12 {'N': 105, 'inC': 86, 'adjacent': 106, 'NP': 2, 'F': 9} criterion mismatches: 0 blocking tight-set sizes: {8: 1, 9: 1}
+cell_15_11_6.txt 12 {'inC': 182, 'adjacent': 192, 'N': 166, 'F': 8} criterion mismatches: 0 blocking tight-set sizes: {}

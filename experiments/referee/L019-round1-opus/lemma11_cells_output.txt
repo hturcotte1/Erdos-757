@@ -11,3 +11,4 @@
 ['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_6_3_2.txt', '300'] stats: {'lemma11_graphs': 1, 'saturated_sets': 3} FAILURES: 0
 ['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_17_14_7.txt', '150'] stats: {'lemma11_graphs': 150, 'saturated_sets': 2244, '2core': 35} FAILURES: 0
 ['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_19_16_8.txt', '60'] stats: {} FAILURES: 0
+['lemma11', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_20_15_8.txt', '60'] stats: {'lemma11_graphs': 60, 'saturated_sets': 900} FAILURES: 0

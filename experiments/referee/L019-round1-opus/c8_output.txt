@@ -1,0 +1,4 @@
+cell_17_13_7.txt graphs 6 uncoverable linear triples 24 (k, tau(edges meeting {v}uW)): {(6, 4): 24} pair-pair failures 0 admissible uncoverable 0
+cell_15_11_6.txt graphs 30 uncoverable linear triples 154 (k, tau(edges meeting {v}uW)): {(5, 4): 22, (6, 4): 124, (7, 5): 8} pair-pair failures 0 admissible uncoverable 0
+cell_22_17_9.txt graphs 95 uncoverable linear triples 380 (k, tau(edges meeting {v}uW)): {(6, 4): 380} pair-pair failures 0 admissible uncoverable 0
+cell_26_22_11.txt graphs 36 uncoverable linear triples 144 (k, tau(edges meeting {v}uW)): {(6, 4): 144} pair-pair failures 0 admissible uncoverable 0

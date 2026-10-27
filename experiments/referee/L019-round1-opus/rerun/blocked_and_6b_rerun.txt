@@ -1,0 +1,2 @@
+cell_10_8_4.txt {'graphs_deg23': 28, '6b': 11, '6c': 7, '6b&6c': 3, 'deg_not_23': 35} both: [39, 40, 60]
+cell_14_12_6.txt {'deg_not_23': 9, 'graphs_deg23': 2, '6b': 0, '6c': 2, '6b&6c': 0} both: []

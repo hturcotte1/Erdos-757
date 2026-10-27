@@ -105,6 +105,18 @@ def main():
                     att = [p[0] if cid[p[0]] == ci else p[1] for p in pairs]
                     if tuple(sorted(att)) in {tuple(sorted(e)) for e in G}:
                         if len(comps[ci]) != 3: ok = False
+            # Theorem 2(vii): degree-2 co-vertex w in component F, F-edge {w,p,q}: {w,p},{w,q} not co-transversal in F
+            for pr in pairs:
+                for w in pr:
+                    if deg[w] != 2: continue
+                    F = comps[cid[w]]; FE = [e for e in G if all(x in set(F) for x in e)]
+                    gw = [e for e in FE if w in e][0]
+                    Ts, tF = lib22.min_transversals(FE)
+                    for pp in gw:
+                        if pp == w: continue
+                        if any((T >> w) & 1 and (T >> pp) & 1 for T in Ts):
+                            ok = False
+                    stats['vii'] = stats.get('vii', 0) + 1
             if not ok:
                 stats['fails'] += 1
                 print('FAIL', n, E, 'v', v, pat, types, cs, 's', s, flush=True)

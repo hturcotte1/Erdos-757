@@ -1,0 +1,1 @@
+cell_17_13_7.txt (k, tau of edges meeting N[v]) : count {(6, 4): 24}

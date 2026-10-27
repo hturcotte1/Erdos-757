@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/home/user/Erdos-757/experiments/referee/L019-round1-opus/test_ap_and_lemma11.py", line 180, in <module>
+    thm2iv(sys.argv[2], int(sys.argv[3]))
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/Erdos-757/experiments/referee/L019-round1-opus/test_ap_and_lemma11.py", line 164, in thm2iv
+    D = set(rng.sample(range(m), r))
+            ~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/random.py", line 434, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+['thm2iv', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_8_5_3.txt', '10'] stats: {'thm2iv_graphs': 2, 'edges_checked': 10, 'D_checked': 40} FAILURES: 0
+['thm2iv', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_10_7_4.txt', '300'] stats: {'thm2iv_graphs': 5, 'edges_checked': 35, 'D_checked': 100} FAILURES: 0
+['thm2iv', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_14_12_6.txt', '300'] stats: {'thm2iv_graphs': 11, 'edges_checked': 132, 'D_checked': 220} FAILURES: 0
+['thm2iv', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_17_13_7.txt', '300'] stats: {'thm2iv_graphs': 6, 'edges_checked': 78, 'D_checked': 120} FAILURES: 0
+['thm2iv', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_12_10_5.txt', '300'] stats: {'thm2iv_graphs': 221, 'edges_checked': 2210, 'D_checked': 4420} FAILURES: 0
+['thm2iv', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_15_11_6.txt', '300'] stats: {'thm2iv_graphs': 30, 'edges_checked': 330, 'D_checked': 600} FAILURES: 0
+['thm2iv', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_19_16_8.txt', '120'] stats: {'thm2iv_graphs': 120, 'edges_checked': 1920, 'D_checked': 2400} FAILURES: 0
+['thm2iv', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_22_17_9.txt', '95'] stats: {'thm2iv_graphs': 95, 'edges_checked': 1615, 'D_checked': 1900} FAILURES: 0
+['thm2iv', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_26_22_11.txt', '36'] stats: {'thm2iv_graphs': 36, 'edges_checked': 792, 'D_checked': 720} FAILURES: 0
+['thm2iv', '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/cell_23_21_10.txt', '60'] stats: {'thm2iv_graphs': 60, 'edges_checked': 1260, 'D_checked': 1200} FAILURES: 0

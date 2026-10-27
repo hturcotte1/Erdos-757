@@ -1,0 +1,2 @@
+sets: 60  (n, m, tau, maxdeg, #4-point additive quadruples, is45) -> count: {(21, 19, 9, 4, 0, True): 57, (21, 19, 9, 3, 0, True): 3}
+all are 21-point (4,5)-sets with h = 12: True
