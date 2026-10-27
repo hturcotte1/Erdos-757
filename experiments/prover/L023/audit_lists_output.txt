@@ -1,1 +1,3 @@
 AUDIT cell_21_19_9_D3.txt: classes 1347 checked 1347 problems 0
+AUDIT cell_24_20_10_D3.txt: classes 2781 checked 400 problems 0
+AUDIT cell_21_18_9_D4.txt: classes 12 checked 12 problems 0
