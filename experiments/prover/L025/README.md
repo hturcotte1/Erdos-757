@@ -39,6 +39,7 @@ always stay in $C$ and kill every non-pendant case.
   `p3_fast` (one SDR, then per pair only the two displaced edges are re-routed).
 - `p3check.py`: C1, cross-check of `p3_fast` against `hyp25.p3`.
 - `w1_pendant.py`: W1, pendant b-configurations built on stored classes (consistency test of Theorem 10 and Remark 10.3).
+- `abase_check.py`: the A_base sanity check (AP hypergraph, tau, minimum transversals, NC pairs).
 - `run_c2.sh`, `run_w1.sh`, `run_w1b.sh`: the exact command sequences of the runs (sequential, `timeout`, `nice -n 10`).
 - `pendants.py` → `pendants_output.txt`: number of degree-1 vertices in the stored near-tight classes (evidence for Conjecture P2$^+$).
 - `census.py`, `census2.py`, `census_one.py`: C3, b-configurations and NC-pair types in stored lists.
@@ -66,9 +67,15 @@ Run from this folder.
   the fold rule, failures 0.
 - C2 (slack-8/9 cells (5,2,1), (7,5,2), (10,6,3), (13,7,4), (16,8,5), (19,9,6), for Lemma 6, which needs three avoided
   vertices; `run_w1b.sh`) → `lemmas_slack89_output.txt`.
-- W1 (`run_w1b.sh`): `python3 w1_pendant.py <13 cells of slack 9, 8, 7>` → `w1_output.txt`.
+- W1 (`run_w1b.sh`): `python3 w1_pendant.py <13 cells of slack 9, 8, 7>` → `w1_output.txt`: 107,807 classes, 42 pairwise-NC
+  pendant triples, all with $s(G)\in\{11,12,13\}$, none with six distinct attachment vertices, `unexpected 0`.
+- C2 slack-8/9 result (`lemmas_slack89_output.txt`): 217 classes, L8 75 avoided triples (29 in C, all slack $\ge0$),
+  7,487 b-configurations, failures 0.
+- C3 re-run at 09:55 UTC: `census_near_output.txt` (no non-edge b-configuration in the 483 near-tight classes),
+  `census2_slack2_small_output.txt` and `census2_slack2_big_output.txt` (slack-2 b-configuration types).
 - C3: `python3 census.py` → `census_near_output.txt`; `python3 census2.py n m t 4` for the slack-2 cells →
-  `census2_slack2_small_output.txt`, `census2_slack2_big_output.txt`.
+  `census2_slack2_small_output.txt` ((6,3,2), (9,4,3), (10,8,4), (13,9,5), (16,10,6)), `census2_slack2_big_output.txt`
+  ((17,14,7), (20,15,8), (23,16,9)).
 
 - A_base check: `python3 abase_check.py` (the AP hypergraph of A_base, tau, minimum transversals, NC pairs)
   → `abase_check_output.txt`: `n m tau s 14 12 6 0 inC True maxdeg 4 #minT 143`, `NC pairs 0`.
@@ -80,9 +87,6 @@ violation), L9 b-configurations checked against the rules, bconf b-configuration
 identity held and no rule was violated.
 
 ## Suggested computations (they test, but cannot close, the GAP)
-- W1: among stored connected cells of slack 8 (or any slack) with at most 26 vertices, search for three pairwise disjoint
-  2-sets inside no edge, whose six vertices are avoided and such that every transversal meeting all three has
-  $\ge\tau+2$ vertices (Theorem 12(a)); by Remark 10.3 none can exist with at most 22 vertices, so a hit there would
-  refute a step of the certificate.
+- W1 (done, above): pendant triples on stored classes of slack 7-9; none near-tight.
 - W2: a falsifier for the pendant case at $24\le n(G'')\le40$: glue stored slack-$\le4$ pieces along six attachment
   vertices and test Theorem 12(a); any $G''$ found gives an I11 violator $G''+$pendants$\oplus(a,b,c)$ or a smaller one.

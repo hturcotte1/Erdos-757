@@ -6,6 +6,9 @@ cell_16_8_5_D3.txt classes 55 pendant b-configurations 0 (slack, connected, |W|=
 cell_19_9_6_D3.txt classes 13 pendant b-configurations 0 (slack, connected, |W|=6): count {} unexpected 0 time 0.0s
 cell_7_4_2_D3.txt classes 2 pendant b-configurations 1 (slack, connected, |W|=6): count {(11, True, False): 1} unexpected 0 time 0.0s
 cell_10_5_3_D3.txt classes 6 pendant b-configurations 0 (slack, connected, |W|=6): count {} unexpected 0 time 0.0s
-cell_11_9_4_D3.txt classes 1216 pendant b-configurations 0 (slack, connected, |W|=6): count {} unexpected 0 time 0.5s
+cell_11_9_4_D3.txt classes 1216 pendant b-configurations 0 (slack, connected, |W|=6): count {} unexpected 0 time 0.4s
 cell_13_6_4_D3.txt classes 3 pendant b-configurations 0 (slack, connected, |W|=6): count {} unexpected 0 time 0.0s
-exit 143
+cell_20_12_7_D3.txt classes 15465 pendant b-configurations 0 (slack, connected, |W|=6): count {} unexpected 0 time 77.9s
+cell_14_10_5_D3.txt classes 45229 pendant b-configurations 0 (slack, connected, |W|=6): count {} unexpected 0 time 34.0s
+cell_17_11_6_D3.txt classes 45669 pendant b-configurations 0 (slack, connected, |W|=6): count {} unexpected 0 time 79.0s
+exit 0

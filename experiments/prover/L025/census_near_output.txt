@@ -7,3 +7,6 @@
 (15, 11, 6) slack 1 classes(D<=3) 19 NC types {(1, 2, 1): 19, (2, 2, 1): 14} b-conf non-edge 0 edge 0 {}
 (19, 16, 8) slack 1 classes(D<=3) 227 NC types {(1, 2, 1): 12, (2, 2, 1): 12} b-conf non-edge 0 edge 0 {}
 (22, 17, 9) slack 1 classes(D<=3) 37 NC types {(1, 2, 1): 29, (2, 2, 1): 18} b-conf non-edge 0 edge 0 {}
+(26, 22, 11) slack 1 classes(D<=3) 36 NC types {} b-conf non-edge 0 edge 0 {}
+total classes 483
+time 28.4s
