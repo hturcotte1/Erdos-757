@@ -1461,6 +1461,14 @@
 "firstpath": "seedsrc/L012/cells/cell_18_10_6_D2.txt",
 "md5": "428c4df518cded0aaf9f36a2865505e3"
 },
+"18,10,6,3": {
+"agree": [],
+"classes": 1634,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_18_10_6_D3.txt",
+"md5": "88333e5750f7a3dcec27f20f2c70a1ac"
+},
 "18,11,6,2": {
 "agree": [
 "20261017-2150-i11-n27 (worker, L016 cross-checked)",
@@ -2222,6 +2230,14 @@
 "firstpath": "seedsrc/L016/cells_new/runA/cell_22_14_8_D2.txt",
 "md5": "73c2f822d9d35783bb966d51f28fda4d"
 },
+"22,14,8,3": {
+"agree": [],
+"classes": 47353,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_22_14_8_D3.txt",
+"md5": "d379325ca85910c1fc6d5e5e3558eec7"
+},
 "22,17,9,3": {
 "agree": [
 "L013 cells.tar.gz (refereed)",
@@ -2590,6 +2606,14 @@
 "firstpath": "../20261027-0300-tight-cells-d4/out/cells/cell_24_19_10_D4.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
+"25,12,8,2": {
+"agree": [],
+"classes": 10,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_25_12_8_D2.txt",
+"md5": "ac80fe5808578c2ee2ff8e37fb717a64"
+},
 "25,12,9,2": {
 "agree": [
 "20261017-2150-i11-n27 (worker, L016 cross-checked)",
@@ -2612,6 +2636,14 @@
 "disagree": [],
 "first": "L013 cells.tar.gz (refereed)",
 "firstpath": "seedsrc/L013/cells/cell_25_12_9_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"25,12,9,4": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)",
+"firstpath": "../20261027-0300-tight-cells-d4/out/cells/cell_25_12_9_D4.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
 "25,13,9,2": {
@@ -2746,6 +2778,14 @@
 "firstpath": "seedsrc/L013/cells/cell_26_14_10_D2.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
+"26,14,9,2": {
+"agree": [],
+"classes": 3,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_26_14_9_D2.txt",
+"md5": "2580ee27ae8f9f284815fb3f21c96bd9"
+},
 "26,15,10,3": {
 "agree": [
 "20261017-2150-i11-n27 (worker, L016 cross-checked)",
@@ -2780,6 +2820,14 @@
 "disagree": [],
 "first": "L016 cells_new.tar.gz (refereed)",
 "firstpath": "seedsrc/L016/cells_new/runA/cell_26_16_10_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"26,16,10,4": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)",
+"firstpath": "../20261027-0300-tight-cells-d4/out/cells/cell_26_16_10_D4.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
 "26,17,10,3": {
@@ -2846,6 +2894,22 @@
 "firstpath": "out/cells/cell_27_15_10_D2.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
+"27,15,10,3": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_27_15_10_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"27,16,10,2": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_27_16_10_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
 "27,18,11,2": {
 "agree": [
 "20261017-2150-i11-n27 (worker, L016 cross-checked)",
@@ -2870,6 +2934,22 @@
 "firstpath": "seedsrc/L016/cells_new/runA/cell_27_19_11_D3.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
+"27,20,11,3": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)",
+"firstpath": "../20261027-0300-tight-cells-d4/out/cells/cell_27_20_11_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"27,20,11,4": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)",
+"firstpath": "../20261027-0300-tight-cells-d4/out/cells/cell_27_20_11_D4.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
 "27,25,12,3": {
 "agree": [
 "20261017-2150-i11-n27 (worker, L016 cross-checked)",
@@ -2888,6 +2968,22 @@
 "disagree": [],
 "first": "COMPUTED HERE (this folder)",
 "firstpath": "out/cells/cell_28_17_11_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"28,18,11,3": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_28_18_11_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"28,23,12,3": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_28_23_12_D3.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
 "3,1,1,2": {
