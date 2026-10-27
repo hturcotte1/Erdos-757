@@ -1,0 +1,5 @@
+cell_15_11_6.txt classes 19 with a Theta-vertex (triangle carries P1 and c,e) 19 X cells {(8, 5, 3, 1): 19}
+cell_19_16_8.txt classes 227 with a Theta-vertex (triangle carries P1 and c,e) 227 X cells {(12, 10, 5, 1): 227}
+cell_22_17_9.txt classes 37 with a Theta-vertex (triangle carries P1 and c,e) 37 X cells {(15, 11, 6, 1): 37}
+cell_26_22_11.txt classes 36 with a Theta-vertex (triangle carries P1 and c,e) 36 X cells {(19, 16, 8, 1): 36}
+K29_classes.json classes 45 with a Theta-vertex (triangle carries P1 and c,e) 45 X cells {(22, 17, 9, 1): 45}

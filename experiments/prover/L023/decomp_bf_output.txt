@@ -1,0 +1,14 @@
+branch d=3 tp=10 S=2: brute force 4 decompositions, engine 4, EQUAL
+    [(12, 10, 5), (12, 10, 5)] inputs 11175
+    [(14, 12, 6), (10, 8, 4)] inputs 126
+    [(21, 19, 9), (3, 1, 1)] inputs 1347
+    [(24, 20, 10)] inputs 2781
+   branch inputs 15429
+branch d=3 tp=11 S=-9 < 0: none
+branch d=4 tp=10 S=0: brute force 3 decompositions, engine 3, EQUAL
+    [(14, 12, 6), (10, 7, 4)] inputs 55
+    [(21, 18, 9), (3, 1, 1)] inputs 12
+    [(24, 19, 10)] inputs 0
+   branch inputs 67
+branch d=4 tp=11 S=-11 < 0: none
+TOTAL inputs 15496

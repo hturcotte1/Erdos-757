@@ -30,8 +30,9 @@ the cases where the replacement graph leaves C_3 (G2), degree-2 vertices (G3), a
 | l1_check.py | `timeout 300 nice -n 10 python3 l1_check.py` | l1_check_output.txt | (L1) every vertex of every piece lies in a minimum transversal (32/32); max weight 16 < 35 |
 | delta2_test.py | `timeout 2400 nice -n 10 python3 delta2_test.py 12` | delta2_test12_output.txt (and delta2_test_output.txt for N <= 10) | KT on all 27,525 connected linear 3-graphs with max degree <= 2 and <= 12 edges: 0 failures (Theorem 6 proves it in general) |
 | attach.py | `timeout 1500 nice -n 10 python3 attach.py` | attach_output.txt (partial: 10 of 32 pieces before the timeout; the script is slow because of a redundant loop in in_C, results are exact) | numbers of admissible and of uncoverable 2- and 3-attachments of a hub to one piece (data for GAP G1) |
+| roles.py | `timeout 600 nice -n 10 python3 roles.py` | roles_output.txt | independent recomputation of L017 C5's role counts for the 32 pieces: role_b > 0 only E_1, role_e > 0 only the two (8,5,3), role_c = role_f1 = 0 (Theorem 7(v)) |
 | sanity.py | `timeout 600 nice -n 10 python3 sanity.py` | sanity_output.txt | F7 and the (9,8,4) violator (outside C) violate KT; hypertrees with a perfect matching are equality cases |
-| random_assemblies.py | `timeout 1500 nice -n 10 python3 random_assemblies.py 1 1200` | random_assemblies_output.txt | mini-falsifier: random assemblies of pieces joined by edges and hubs, kept in C_3; KT checked on those with A < 0 (see the last line of the output) |
+| random_assemblies.py | `timeout 900 nice -n 10 python3 random_assemblies.py 2 600 45` | random_assemblies_output.txt | mini-falsifier: 782 random assemblies of 2-4 pieces joined by random edges and degree-2/3 hubs (at most 45 vertices), 361 connected and in C_3, NONE with A < 0, so KT holds trivially on them and the test is uninformative: random assemblies do not reach the special region (a first run with up to 6 pieces, seed 1, was killed by its timeout inside a DEF computation and printed nothing) |
 
 Inputs: the refereed cell lists, extracted read-only in experiments/prover/L017/out/ (from experiments/prover/L012/cells.tar.gz,
 L013/cells.tar.gz, L014/cells.tar.gz, L016/cells_new.tar.gz); L017's role tables experiments/prover/L017/tight_configs_output.txt and
@@ -52,11 +53,11 @@ Notation: (D1) at a degree-3 vertex v: a piece F is a component of H - v met by 
    short by W(F) + DEF(G') (the free hub is exactly balanced, so every inexact step loses).
 2. Same Z with the families: DEF(H) >= DEF(G') + W(F) - 35 k'; useless, as the k' <= 3 edges at v cost 105.
 3. For k = 2 with a single-vertex trace on e_2 = {v, c, o}: replace the uncovered e_2 by a pendant edge {v, o, z} (z new) in R = H - V(F):
-   R' is in C_3, and P(H) >= 8 - W(F) - DEF(R'); with DEF(R') <= 16 (as in Proposition 9) this fails for every piece.
+   R' is in C_3, and P(H) >= 8 - W(F) - DEF(R'); with DEF(R') <= 16 (as in Proposition 8) this fails for every piece.
 4. Small induced subgraphs: B = H[V(F) + v + outside co-vertices] has tau(B) = tau(F) + 1 by Claim B, and I11 for B (L016, n(B) <= 20)
-   excludes the trace types (2,2) and, over tight pieces, (2,1) when k = 2 (Proposition 10); for k = 3 the slack of B is
+   excludes the trace types (2,2) and, over tight pieces, (2,1) when k = 2 (Proposition 9); for k = 3 the slack of B is
    s(F) + 3(4 - q) - 5 with q = number of 2-vertex traces, negative only for q = 3, the pure case.
-5. The Henning–Yeo replacement (Proposition 9) works whenever the new edge on the boundary keeps the graph in C_3; it fails when
+5. The Henning–Yeo replacement (Proposition 8) works whenever the new edge on the boundary keeps the graph in C_3; it fails when
    the boundary contains a pair lying in an edge of H - V(X), or creates an F7 or a P3-tight set.
 
 ## Computations needed (to continue this route)

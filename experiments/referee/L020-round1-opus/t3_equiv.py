@@ -8,10 +8,11 @@ import hg
 from roles_check import read_cell
 I = '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/'
 pool = []
-for c in ['3_1_1', '6_3_2', '8_5_3', '10_7_4', '9_4_3', '10_8_4', '12_10_5', '13_9_5']:
+for c, w in [('3_1_1', 6), ('6_3_2', 6), ('8_5_3', 3), ('10_7_4', 1), ('9_4_3', 3), ('10_8_4', 1), ('12_10_5', 1), ('13_9_5', 1)]:
     L = read_cell(I + 'cell_%s.txt' % c)
-    for n, m, t, es in L[:25]:
-        pool.append((n, es))
+    for n, m, t, es in L[:12]:
+        for _ in range(w):
+            pool.append((n, es))
 random.seed(int(sys.argv[1]) if len(sys.argv) > 1 else 7)
 N_PER = int(sys.argv[2]) if len(sys.argv) > 2 else 400
 
@@ -28,13 +29,20 @@ def union(parts, iso=0):
     return off + iso, es, vs_of, ys
 
 
-def prep(n, es):
-    t = hg.tau_bb(es)
-    TL = hg.all_min_transversals(es, t)
+def prep(n, es, vs_of):
+    """per-component minimum transversals (the minimum transversals of G are the unions)."""
+    t = 0
     B = [0] * n
-    for k, T in enumerate(TL):
-        for x in hg.bits(T):
-            B[x] |= 1 << k
+    for vs in vs_of:
+        ce = [e for e in es if e[0] in set(vs)]
+        nn, cer, idx = hg.relabel(vs, ce)
+        tc = hg.tau_bb(cer)
+        t += tc
+        TL = hg.all_min_transversals(cer, tc)
+        inv = {i: v for v, i in idx.items()}
+        for k, T in enumerate(TL):
+            for x in hg.bits(T):
+                B[inv[x]] |= 1 << k
     d = hg.degrees(n, es)
     share = set()
     for e in es:
@@ -43,8 +51,7 @@ def prep(n, es):
     return t, B, d, share
 
 
-def star(n, es, P):
-    t = hg.tau_bb(es)
+def star(n, es, P, t):
     w = n
     es2 = es + [tuple(sorted((w,) + tuple(p))) for p in P]
     return hg.tau_bb(es2) == t + 1
@@ -65,9 +72,9 @@ def pick(lst, k):
 
 
 trials = 0
-while min([sum(v) for v in res.values()] + [0]) < N_PER or len(res) < 9:
+while min([sum(v) for v in res.values()] + [0]) < N_PER or len(res) < 8:
     trials += 1
-    if trials > 200000:
+    if trials > 60000:
         break
     pat = random.choice(['b', 'e', 'f', 'i2-1', 'i2-2', 'i2-3', 'i2-4', 'i3'])
     if pat in res and sum(res[pat]) >= N_PER:
@@ -76,7 +83,7 @@ while min([sum(v) for v in res.values()] + [0]) < N_PER or len(res) < 9:
     iso = 1 if pat.startswith('i') else 0
     parts = [random.choice(pool) for _ in range(r)]
     n, es, vs_of, ys = union(parts, iso)
-    t, B, d, share = prep(n, es)
+    t, B, d, share = prep(n, es, vs_of)
     def fc_ok():
         return all(B[x] for vs in vs_of for x in vs)
     if not fc_ok():
@@ -142,8 +149,8 @@ while min([sum(v) for v in res.values()] + [0]) < N_PER or len(res) < 9:
             if not inside_ok((a, b)): continue
             P = [(a, b), (c, dd), (y, f)]
             cond = nc(a, f) and nc(b, f)
-    lhs = star(n, es, P)
+    lhs = star(n, es, P, t)
     record(pat, lhs, cond)
-print('pattern: [agree with (*) true, agree with (*) false, DISAGREE]')
+print('trials', trials, 'pattern: [agree with (*) true, agree with (*) false, DISAGREE]')
 for k in sorted(res):
     print(' ', k, res[k])

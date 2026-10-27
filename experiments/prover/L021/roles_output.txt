@@ -1,0 +1,36 @@
+(3,1,1)#0 role_b 1 role_c 0 role_e 0 role_f1 0
+(8,5,3)#0 role_b 0 role_c 0 role_e 2 role_f1 0
+(8,5,3)#1 role_b 0 role_c 0 role_e 3 role_f1 0
+(10,7,4)#0 role_b 0 role_c 0 role_e 0 role_f1 0
+(10,7,4)#1 role_b 0 role_c 0 role_e 0 role_f1 0
+(10,7,4)#2 role_b 0 role_c 0 role_e 0 role_f1 0
+(10,7,4)#3 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#0 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#1 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#2 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#3 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#4 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#5 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#6 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#7 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#8 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#9 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#10 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#11 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#12 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#13 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#14 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#15 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#16 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#17 role_b 0 role_c 0 role_e 0 role_f1 0
+(15,11,6)#18 role_b 0 role_c 0 role_e 0 role_f1 0
+(17,13,7)#0 role_b 0 role_c 0 role_e 0 role_f1 0
+(17,13,7)#1 role_b 0 role_c 0 role_e 0 role_f1 0
+(17,13,7)#2 role_b 0 role_c 0 role_e 0 role_f1 0
+(17,13,7)#3 role_b 0 role_c 0 role_e 0 role_f1 0
+(17,13,7)#4 role_b 0 role_c 0 role_e 0 role_f1 0
+(17,13,7)#5 role_b 0 role_c 0 role_e 0 role_f1 0
+pieces with role_b > 0: ['(3,1,1)#0']
+pieces with role_c > 0: []
+pieces with role_e > 0: ['(8,5,3)#0', '(8,5,3)#1']
+pieces with role_f1 > 0: []

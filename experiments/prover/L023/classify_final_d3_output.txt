@@ -1,0 +1,1 @@
+SUMMARY {"extensions": 2928, "tau_rechecked": 293, "F7": 190, "P3_violated": 2738} classes_found 0 stored_list_classes 0 each_found_class_in_list True each_list_class_found True

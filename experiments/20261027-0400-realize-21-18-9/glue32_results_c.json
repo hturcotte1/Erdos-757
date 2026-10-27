@@ -1,0 +1,36 @@
+{
+ "c": {
+  "dec": [
+   [
+    3,
+    1,
+    1
+   ],
+   [
+    14,
+    12,
+    6
+   ],
+   [
+    14,
+    12,
+    6
+   ]
+  ],
+  "inputs": 66,
+  "hits_in_C": 0,
+  "ext": {
+   "graphs": 66,
+   "bad_tau": 0,
+   "tg_too_small": 0,
+   "searched": 66,
+   "max_min_covers": 75843,
+   "nodes": 520800867,
+   "hits_F7free": 84,
+   "hits_in_C": 0
+  },
+  "connected_hits": 0,
+  "classes": 0,
+  "filt": null
+ }
+}

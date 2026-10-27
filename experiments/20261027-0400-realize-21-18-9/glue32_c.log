@@ -1,2 +1,4 @@
 CELL (3, 1, 1, 4) classes 1 (loaded)
 CELL (14, 12, 6, 4) classes 11 (loaded)
+c inputs 66 hits_in_C 0 {'graphs': 66, 'bad_tau': 0, 'tg_too_small': 0, 'searched': 66, 'max_min_covers': 75843, 'nodes': 520800867, 'hits_F7free': 84, 'hits_in_C': 0}
+c connected hits 0 classes 0 None
