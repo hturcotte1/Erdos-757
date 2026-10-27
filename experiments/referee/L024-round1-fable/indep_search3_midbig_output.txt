@@ -3,3 +3,4 @@
 ('(3,1,1)#0', '(10,7,4)#2', '(10,7,4)#2') N 23 g-orbits 36 configs 0 inC3 0 tau_ok 0 iso to piece 0 classes {} A [] not-C3 reasons {} [13s]
 ('(10,7,4)#1', '(10,7,4)#1', '(10,7,4)#1') N 30 g-orbits 125 configs 0 inC3 0 tau_ok 0 iso to piece 0 classes {} A [] not-C3 reasons {} [115s]
 ('(10,7,4)#1', '(10,7,4)#1', '(10,7,4)#2') N 30 g-orbits 150 configs 0 inC3 0 tau_ok 0 iso to piece 0 classes {} A [] not-C3 reasons {} [236s]
+('(10,7,4)#1', '(10,7,4)#2', '(10,7,4)#2') N 30 g-orbits 180 configs 0 inC3 0 tau_ok 0 iso to piece 0 classes {} A [] not-C3 reasons {} [368s]

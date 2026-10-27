@@ -1,0 +1,3 @@
+cell_17_14_7.txt {'classes': 1708, 'L1': 17080, 'L2': 39112, 'L3': 102, 'L4': 0, 'L4_drop1': 0, 'L5': 1411, 'L6': 48, 'L6_inC': 0, 'L7': 102, 'L7_inC': 0, 'L8': 0, 'L8_inC': 0, 'L9': 0, 'bconf': 0} failures 0 time 269.4s
+TOTAL file:../../20261027-0300-transversal-richness/inputs/cell_17_14_7.txt {'classes': 1708, 'L1': 17080, 'L2': 39112, 'L3': 102, 'L4': 0, 'L4_drop1': 0, 'L5': 1411, 'L6': 48, 'L6_inC': 0, 'L7': 102, 'L7_inC': 0, 'L8': 0, 'L8_inC': 0, 'L9': 0, 'bconf': 0} failures 0 time 269.4s
+exit 0
