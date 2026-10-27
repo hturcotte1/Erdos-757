@@ -133,6 +133,50 @@
    "8": 3
   }
  },
+ "13": {
+  "cls": 17126146,
+  "redfree": 0,
+  "maxminsz": 8,
+  "minslack": 5,
+  "maxslack": 16,
+  "n": 15,
+  "m": 13,
+  "dist_min_Z": {
+   "2": 10761892,
+   "4": 5747898,
+   "5": 612399,
+   "6": 3911,
+   "7": 2,
+   "8": 44
+  },
+  "dist_min_Z_slack_le5": {
+   "2": 324599,
+   "4": 526121,
+   "5": 94845,
+   "6": 3911,
+   "7": 2,
+   "8": 44
+  },
+  "hist_minZ_slack": {
+   "2,5": 324599,
+   "2,16": 10437293,
+   "4,5": 526121,
+   "4,16": 5221777,
+   "5,5": 94845,
+   "5,16": 517554,
+   "6,5": 3911,
+   "7,5": 2,
+   "8,5": 44
+  },
+  "min_slack_by_minZ": {
+   "2": 5,
+   "4": 5,
+   "5": 5,
+   "6": 5,
+   "7": 5,
+   "8": 5
+  }
+ },
  "7": {
   "cls": 31,
   "redfree": 0,
@@ -217,19 +261,21 @@
    "5": 8
   }
  },
- "total_classes": 11952819,
+ "total_classes": 29078965,
  "total_redfree": 0,
  "max_minZ_overall": 10,
- "n_minZ_ge6": 2860,
- "n_minZ_ge7": 46,
- "n_minZ_ge7_slack_le5": 18,
- "n_minZ_ge6_slack_le5": 91,
+ "n_minZ_ge6": 6817,
+ "n_minZ_ge7": 92,
+ "n_minZ_ge7_slack_le5": 64,
+ "n_minZ_ge6_slack_le5": 4048,
  "minZ_ge7_by_cell_slack": {
   "m=10,slack=10,minZ=7": 13,
   "m=10,slack=10,minZ=10": 1,
   "m=11,slack=12,minZ=7": 7,
   "m=11,slack=12,minZ=9": 7,
   "m=12,slack=3,minZ=7": 7,
-  "m=12,slack=3,minZ=8": 11
+  "m=12,slack=3,minZ=8": 11,
+  "m=13,slack=5,minZ=7": 2,
+  "m=13,slack=5,minZ=8": 44
  }
 }
