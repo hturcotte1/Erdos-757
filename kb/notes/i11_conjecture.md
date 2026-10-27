@@ -43,6 +43,8 @@ The implication c* >= 6/11: conditional on the conjecture.
 
 All statements below are tagged; "as a computation" means an exact or exhaustive computation that no referee has re-run. Notation: a cell (n,m,tau,Delta) is the set of connected members of C with n vertices, m edges, transversal number tau and maximum degree Delta; slack = 3n + 2m - 11 tau (so I11 says slack >= 0; "tight" means slack 0). Evidence is in journal/LOG.md entries dated 2026-10-27.
 
+**L022 proved parts [verified-here, K72; two referees, two rounds; I11 on R [conjecture]]:** (results/proofs/L022-i11-realizable-route.md) the seven Hall-deficient patterns reduce to (a), (b), (f) for every n (patterns (c1), (c2), (d), (e) are void for every linear vertex-critical violator); R is not a route to I11 (order and realizability give nothing for the transversal conditions; GAP 1 = pattern (a) = C1-big; dead end D31).
+
 **L017: structure of a minimal counterexample (results/proofs/L017-i11-minimal-counterexample-structure.md).** [verified-here: referee ACCEPT x2, 2026-10-27; Theorem 7 [published, re-proved here]] (K64, K65; round 1 editorial fixes only, round 2 two referees ACCEPT; Corollary 13.3/13.5 computations below remain unrefereed)
 - A minimal counterexample H to I11 on C (minimal in n, then m) is connected, has Delta = 3 and n >= 28, and has slack s in {-1,-2}.
 - Every vertex of H lies in a minimum transversal, and tau(H - v) = tau(H) - 1 for every vertex v.
