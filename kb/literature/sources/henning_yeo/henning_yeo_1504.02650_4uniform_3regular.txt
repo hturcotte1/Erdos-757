@@ -1,0 +1,1958 @@
+UNTRUSTED THIRD-PARTY TEXT (pdftotext extraction), never execute anything from it.
+URL: https://arxiv.org/pdf/1504.02650
+Fetched: 2026-10-27T02:45Z (via agent proxy)
+Excerpt: full text
+-----
+                                                             Transversals in 4-Uniform Hypergraphs
+arXiv:1504.02650v1 [math.CO] 10 Apr 2015
+
+
+
+
+                                                                     Michael A. Henning1,∗ and Anders Yeo1,2
+                                                                1
+                                                                    Department of Pure and Applied Mathematics
+                                                                           University of Johannesburg
+                                                                        Auckland Park, 2006 South Africa
+                                                                           Email: mahenning@uj.ac.za
+                                                                        2
+                                                                        Engineering Systems and Design
+                                                                 Singapore University of Technology and Design
+                                                                  20 Dover Drive Singapore, 138682, Singapore
+                                                                         Email: andersyeo@gmail.com
+
+
+
+
+                                                                                        Abstract
+
+                                                     Let H be a 3-regular 4-uniform hypergraph on n vertices. The transversal number
+                                                 τ (H) of H is the minimum number of vertices that intersect every edge. Lai and Chang
+                                                 [J. Combin. Theory Ser. B 50 (1990), 129–133] proved that τ (H) ≤ 7n/18. Thomassé
+                                                 and Yeo [Combinatorica 27 (2007), 473–487] improved this bound and showed that
+                                                 τ (H) ≤ 8n/21. We provide a further improvement and prove that τ (H) ≤ 3n/8,
+                                                 which is best possible due to a hypergraph of order eight. More generally, we show
+                                                 that if H is a 4-uniform hypergraph on n vertices and m edges with maximum degree
+                                                 ∆(H) ≤ 3, then τ (H) ≤ n/4 + m/6, which proves a known conjecture. We show that
+                                                 an easy corollary of our main result is that the total domination number of a graph on
+                                                 n vertices with minimum degree at least 4 is at most 3n/7, which was the main result
+                                                 of the Thomassé-Yeo paper [Combinatorica 27 (2007), 473–487].
+
+
+                                             Keywords: Transversal; Hypergraph.
+                                             AMS subject classification: 05C65
+
+
+
+
+                                             ∗
+                                              Research supported in part by the South African National Research Foundation and the University of
+                                           Johannesburg
+
+
+                                                                                            1
+1    Notation and Definitions
+
+In this paper we continue the study of transversals in hypergraphs. Hypergraphs are systems
+of sets which are conceived as natural extensions of graphs. A hypergraph H = (V, E) is a
+finite set V = V (H) of elements, called vertices, together with a finite multiset E = E(H)
+of subsets of V , called hyperedges or simply edges. The order of H is n(H) = |V | and the
+size of H is m(H) = |E|.
+  A k-edge in H is an edge of size k. The hypergraph H is said to be k-uniform if every
+edge of H is a k-edge. Every (simple) graph is a 2-uniform hypergraph. Thus graphs are
+special hypergraphs. For i ≥ 2, we denote the number of edges in H of size i by ei (H).
+The degree of a vertex v in H, denoted by dH (v) or simply by d(v) if H is clear from the
+context, is the number of edges of H which contain v. The maximum degree among the
+vertices of H is denoted by ∆(H). We say that two edges in H overlap if they intersect in
+at least two vertices.
+  Two vertices x and y of H are adjacent if there is an edge e of H such that {x, y} ⊆ e.
+The neighborhood of a vertex v in H, denoted NH (v) or simply N (v) if H is clear from the
+context, is the set of all vertices different from v that are adjacent to v. Two vertices x
+and y of H are connected if there is a sequence x = v0 , v1 , v2 . . . , vk = y of vertices of H in
+which vi−1 is adjacent to vi for i = 1, 2, . . . , k. A connected hypergraph is a hypergraph in
+which every pair of vertices are connected. A maximal connected subhypergraph of H is a
+component of H. Thus, no edge in H contains vertices from different components.
+   A subset T of vertices in a hypergraph H is a transversal (also called vertex cover or
+hitting set in many papers) if T has a nonempty intersection with every edge of H. The
+transversal number τ (H) of H is the minimum size of a transversal in H. A transversal of
+size τ (H) is called a τ (H)-set. Transversals in hypergraphs are well studied in the literature
+(see, for example, [1, 2, 3, 5, 6, 7, 8, 9, 11, 13, 14]).
+   Given a hypergraph H and subsets X, Y ⊆ V (H) of vertices, we let H(X, Y ) denote
+the hypergraph obtained by deleting all vertices in X ∪ Y from H and removing all edges
+containing vertices from X and removing the vertices in Y from any remaining edges.
+When we use the definition H(X, Y ) we furthermore assume that no edges of size zero are
+created. That is, there is no edge e ∈ E(H) such that V (e) ⊆ Y \ X. In this case we
+note that if add X to any τ (H(X, Y ))-set, then we get a transversal of H, implying that
+τ (H) ≤ |X| + τ (H(X, Y )). We will often use this fact throughout the paper.
+  A total dominating set, also called a TD-set, of a graph G with no isolated vertex is
+a set S of vertices of G such that every vertex is adjacent to a vertex in S. The total
+domination number of G, denoted by γt (G), is the minimum cardinality of a TD-set of
+G. Total domination in graphs is now well studied in graph theory. The literature on the
+subject has been surveyed and detailed in the recent book [10]. A recent paper on the topic
+can be found in [4].
+
+
+
+
+                                                2
+                                      v❧                  v❧❅   y❧
+                                                             ❅
+                                              ⇒               ❅
+                                                               ❅
+                                                                 ❅
+                                      u❧                  u❧    x❧
+
+                                     H2                       B
+                     Figure 1: An illustration of Step (B) in Definition 1.
+
+2     The Family, B, of Hypergraphs
+
+In this section, we define a family, B, of “bad” hypergraphs as follows.
+
+Definition 1 Let B be the class of bad hypergraphs defined as exactly those that can be
+generated using the operations (A)-(D) below.
+
+(A): Let H2 be the hypergraph with two vertices {x, y} and one edge {x, y} and let H2
+     belong to B.
+(B): Given any B ′ ∈ B containing a 2-edge {u, v}, define B as follows. Let V (B) =
+     V (B ′ ) ∪ {x, y} and let E(B) = E(B ′ ) ∪ {{u, v, x}, {u, v, y}, {x, y}} \ {u, v}. Now add
+     B to B.
+(C): Given any B ′ ∈ B containing a 3-edge {u, v, w}, define B as follows. Let V (B) =
+     V (B ′ ) ∪ {x, y} and let E(B) = E(B ′ ) ∪ {{u, v, w, x}, {u, v, w, y}, {x, y}} \ {u, v, w}.
+     Now add B to B.
+(D): Given any B1 , B2 ∈ B, such that Bi contains a 2-edge {ui , vi }, for i = 1, 2, define
+     B as follows. Let V (B) = V (B1 ) ∪ V (B2 ) ∪ {x} and let E(B) = E(B1 ) ∪ E(B2 ) ∪
+     {{u1 , v1 , x}, {u2 , v2 , x}, {u1 , v1 , u2 , v2 }} \ {{u1 , v1 }, {u2 , v2 }}. Now add B to B.
+  We call the two vertices, {x, y}, added in step (A) above an (A)-pair. Note that in
+operations (B) and (C), {a, b} is an (A)-pair in B if and only if it is an (A)-pair in B ′ .
+Analogously in operation (D), {a, b} is an (A)-pair in B if and only if it is an (A)-pair in
+B1 or B2 .
+
+ The hypergraph B ∈ B created by applying Step (B) in Definition 1 to the hypergraph
+H2 is shown in Figure 1, while Figure 2 illustrates Step (C) and Step (D) in Definition 1.
+    We shall need the following definition.
+
+Definition 2 If H is a hypergraph, then let b(H) denote the number of components in H
+that belong to B. Further for i ≥ 0, let bi (H) denote the maximum number of vertex disjoint
+subhypergraphs in H which are isomorphic to hypergraphs in B and which are intersected
+by exactly i other edges of H.
+
+                                                 3
+                                                              x✐❅
+                                                                  ❅
+                                                                   ❅
+                                                                     ❅
+                     v✐❅  u✐                          y✐      v✐❅   u✐
+                        ❅                                        ❅
+                         ❅
+                           ❅
+                                         ⇒           ❅
+                                                      ❅
+                                                                   ❅
+                                                                    ❅
+                     w✐   •✐                           ❅      w✐    •✐
+                                                        ❅
+                         B′                                   B
+
+
+                                                                  ✁ x❦❆
+                                                                 ✁ ❈      ✄❆
+                                                                ✁ ❈      ✄ ❆
+                                                               ✁     ❈ ✄      ❆
+                  •❦❅ v❦1         v❦
+                                   2                       •❦❅ v❦ 1 ❈ ✄ v❦  2
+                     ❅                                        ❅       ❈✄
+                      ❅
+                        ❅
+                                            ⇒                   ❅
+                                                                  ❅ ✄❈
+                                                                      ❈✄
+                  •❦   u❦
+                        1        u❦
+                                  2                        •❦     1 ✄ ❈ u❦
+                                                                 u❦         2
+
+
+                    B1           B2                                  B
+
+
+              Figure 2: An illustration of Steps (C) and (D) in Definition 1.
+
+3    Main Results
+
+Let H denote the class of all hypergraphs where all edges have size at most four and at least
+two and with maximum degree at most three. We shall prove the following result a proof
+of which is presented in Section 5.
+
+
+Theorem 1 If H ∈ H, then
+
+             24τ (H) ≤ 6n(H) + 4e4 (H) + 6e3 (H) + 10e2 (H) + 2b(H) + b1 (H).
+
+Furthermore if b1 (H) is odd, then the above inequality is strict.
+
+
+  Let H be a 4-uniform hypergraph with ∆(H) ≤ 3. Since every hypergraph in B contains
+a 2-edge or a 3-edge, we note that b(H) = b1 (H) = 0. By the 4-uniformity of H, we
+have that e2 (H) = e3 (H) = 0 and e4 (H) = m(H). Therefore, Theorem 1 implies that
+24τ (H) ≤ 6n(H) + 4m(H). Hence as an immediate consequence of Theorem 1 we have our
+two main results.
+
+
+Theorem 2 If H is a 4-uniform hypergraph with ∆(H) ≤ 3, then τ (H) ≤ n(H)
+                                                                       4 +
+                                                                           m(H)
+                                                                            6 .
+
+
+
+                                              4
+Theorem 3 If H is a 3-regular 4-uniform hypergraph on n vertices, then τ (H) ≤ 3n(H)
+                                                                                 8 .
+
+
+  Theorem 2 and Theorem 3 are best possible due to the hypergraph, H8 , depicted in
+Figure 3, of order n = 8, size m = 6, satisfying τ (H8 ) = 3 = 3n   n   m
+                                                                8 = 4 + 6.
+
+
+
+
+                    Figure 3: The 3-regular 4-uniform hypergraph, H8 .
+
+  As an application of our main result, Theorem 2, we give very short proofs of the following
+three known results in Section 6.
+
+
+Theorem 4 ([2]) If H is a 4-uniform hypergraph, then τ (H) ≤ n(H)
+                                                               6 +
+                                                                   m(H)
+                                                                    3 .
+
+
+
+Theorem 5 ([13]) If H is a 4-uniform hypergraph, then τ (H) ≤ 5n(H)
+                                                                21 +
+                                                                     4m(H)
+                                                                       21 .
+
+
+  Recall that δ(G) denotes the minimum degree of a graph G.
+
+
+Theorem 6 ([13]) If G is a graph of order n with δ(G) ≥ 4, then γt (G) ≤ 3n
+                                                                          7 .
+
+
+   Theorem 5 and Theorem 6 were the main results in [13]. Recall that the Heawood graph
+is the graph shown in Figure 4(a) (which is the unique 6-cage). The bipartite complement
+of the Heawood graph is the bipartite graph formed by taking the two partite sets of
+the Heawood graph and joining a vertex from one partite set to a vertex from the other
+partite set by an edge whenever they are not joined in the Heawood graph. The bipartite
+complement of the Heawood graph can also be seen as the incidence bipartite graph of the
+complement of the Fano plane which is shown in Figure 4(b).
+
+  In fact, it is not difficult to prove the following improvement on Theorem 6 along the
+same lines as the proof of Theorem 6. A proof of Theorem 7 is provided in Section 7.
+
+
+Theorem 7 ([10, 17]) If G is a connected graph of order n with δ(G) ≥ 4, then γt (G) ≤
+3n/7. Furthermore we have equality if and only if G is the bipartite complement of the
+Heawood Graph.
+
+
+
+                                             5
+                      (a)                                    (b)
+
+                   Figure 4: The Heawood graph and the Fano Plane.
+
+3.1   Motivation
+
+There has been much interest in determining upper bounds on the transversal number of
+a 3-regular 4-uniform hypergraph. In particular, as a consequence of more general results
+we have the Chvátal-McDiarmid bound, the improved Lai-Chang bound and the further
+improved Thomassé-Yeo bound. These bounds are summarized in Theorem 8.
+
+
+Theorem 8 Let H be a 3-regular 4-uniform hypergraph on n vertices. Then the following
+bounds on τ (H) have been established.
+  (a) τ (H) ≤ 5n/12 (Chvátal, McDiarmid [2]).
+  (b) τ (H) ≤ 7n/18 (Lai, Chang [11]).
+  (c) τ (H) ≤ 8n/21 (Thomassé, Yeo [13]).
+
+
+   In this paper, we provide a further improvement on the bounds in Theorem 8 as shown in
+our main result, Theorem 3, by proving that τ (H) ≤ 3n/8. As mentioned above our bound
+is best possible, due to a hypergraph on eight vertices.
+  Motivated by comments and questions posed by Douglas West [16], the authors in [9]
+considered the following slightly more general question.
+
+
+Question 1 For k ≥ 2, let H be a hypergraph on n vertices with m edges and with every
+edge of size at least k. Is it true that τ (H) ≤ n/k + m/6 holds for all k?
+
+
+  It is shown in [9] that Question 1 holds for k = 2 and a characterization of the extremal
+hypergraphs is given. Chvátal and McDiarmid [2] proved that Question 1 holds for k = 3
+and the extremal hypergraphs are characterized in [9]. Question 1 is not always true when
+k ≥ 4 as shown in [9]. However the family of counterexamples presented in [9] all satisfy
+∆(H) ≥ 4. The authors in [9] pose the following conjecture.
+
+
+Conjecture 1 ([9]) For all k ≥ 2, if H is a k-uniform hypergraph on n vertices with m
+edges satisfying ∆(H) ≤ 3, then τ (H) ≤ n/k + m/6.
+
+
+                                            6
+   As remarked earlier, Conjecture 1 always holds when k ∈ {2, 3} (with no restriction
+on the maximum degree). In [9] it is shown that Conjecture 1 is true when ∆(H) ≤ 2.
+However Conjecture 1 appears to be a challenging conjecture for general k ≥ 4 and for
+∆(H) = 3. We remark that if the conjecture is true, then this would imply as a very special
+case a long standing conjecture due to Tuza and Vestergaard [15] that if H is a 3-regular
+6-uniform hypergraph, then τ (H) ≤ n/4. In this paper, we prove that Conjecture 1 is true
+for 4-uniform hypergraphs as shown in our main result, Theorem 2.
+
+
+4    Preliminary Lemma
+
+We need the following lemma which proves a number of properties of the hypergraphs that
+belong to the family B.
+
+
+Lemma 9 The following properties holds for all B ∈ B.
+
+(i): If B was created from B ′ in Step (B) or (C) in Definition 1, then τ (B) = τ (B ′ ) + 1.
+
+(ii): If B was created from B1 and B2 in Step (D) in Definition 1, then τ (B) = τ (B1 ) +
+      τ (B2 ).
+
+(iii): τ (B) = (6n(B) + 4e4 (B) + 6e3 (B) + 10e2 (B) + 2)/24.
+
+(iv): All (A)-pairs are vertex disjoint (recall the definition of (A)-pairs, below the definition
+      of Steps (A)-(D)).
+
+(v): For all e ∈ E(B) we have τ (B − e) = τ (B) − 1.
+
+(vi): For all s ∈ V (B) there exists a τ (B)-set containing s.
+
+(vii): For all s, t ∈ V (B) there exists a τ (B)-set containing both s and t if and only if {s, t}
+      is not an (A)-pair.
+
+(viii): Let {s1 , t1 }, {s2 , t2 } and {s3 , t3 } be three subsets of V (B). Then there exists a
+      τ (B)-set in B intersecting all of these three sets.
+
+(ix): There is no 4-edge in B intersecting three or more 2-edges.
+
+(x): If B 6= H2 , then δ(B) ≥ 2.
+
+(xi): If dB (x) = 2, then x is contained in a 3-edge or a 2-edge in B.
+
+(xii): If B 6= H2 and e2 (B) > 0, then B contains either two overlapping 3-edges or two
+      4-edges, e1 and e2 , with |V (e1 ) ∩ V (e2 )| = 3.
+
+(xiii): If B 6= H2 and B does not contain two 4-edges intersecting in three vertices, then
+      every 2-edge in B intersects two overlapping 3-edges.
+
+
+
+                                                7
+Proof. (i): Suppose that B was created from B ′ in Step (B) in Definition 1. Name the
+vertices as in Definition 1 and let S be a τ (B)-set. Since the set S intersects the 2-edge
+{x, y}, we note that |S ∩ {x, y}| ≥ 1. If |S ∩ {x, y}| = 2, then (S ∪ {u}) \ {x} is a τ (B)-set.
+Hence we may choose the set S so that |S ∩ {x, y}| = 1. This implies that |S ∩ {u, v}| ≥ 1
+and that S \ {x, y} is a transversal in B ′ of size |S| − 1, and so τ (B ′ ) ≤ τ (B) − 1. Since
+every transversal in B ′ can be extended to a transversal in B by adding to it the vertex
+x, we have that τ (B) ≤ τ (B ′ ) + 1. Consequently, τ (B) = τ (B ′ ) + 1, as desired. If B was
+created from B ′ in Step (C) in Definition 1, then analogously to when B was created in
+Step (B), we have that τ (B) = τ (B ′ ) + 1.
+
+   (ii): Suppose that B was created from B1 and B2 in Step (D). Name the vertices as in
+Definition 1 and let S be a τ (B)-set. Suppose x ∈ S. Since S ∩ {u1 , v1 , u2 , v2 } =6 ∅, we may
+assume, renaming vertices if necessary, that u1 ∈ S. Then, (S ∪ {u2 }) \ {x} is a τ (B)-set.
+Hence we may choose the set S so that x ∈   / S. In this case, S ∩ V (B1 ) is a transversal in B1
+and S ∩ V (B2 ) is a transversal in B2 , and so τ (B1 ) + τ (B2 ) ≤ |S ∩ V (B1 )| + |S ∩ V (B2 )| =
+|S| = τ (B). Furthermore, if Si is a transversal of Bi , for i = 1, 2, then S1 ∪S2 is a transversal
+of B, and so τ (B) ≤ τ (B1 ) + τ (B2 ). Consequently, τ (B) = τ (B1 ) + τ (B2 ).
+
+   (iii): We will show Part (iii) by induction on the order, n(B), of the hypergraph B. If
+n(G) = 2, then B = H2 was created in step (A) in Definition 1. In this case, τ (B) = 1 =
+(12 + 10 + 2)/24 = (6n(B) + 4e4 (B) + 6e3 (B) + 10e2 (B) + 2)/24 and Part (iii) holds in this
+case. This establishes the base case. Let k ≥ 3 and assume that the formula holds for all
+B ′ ∈ B with n(B ′ ) < k and let B ∈ B have order n(B) = k.
+   Suppose that B was created from B ′ in Step (B) in Definition 1. By Part (i), τ (B) =
+τ (B ′ ) + 1. Applying the inductive hypothesis to B ′ , we therefore have that
+
+           τ (B) = τ (B ′ ) + 1
+                        1       ′         ′          ′           ′
+                  =    24 (6n(B ) + 4e4 (B ) + 6e3 (B ) + 10e2 (B ) + 2) + 1
+                        1
+                  =    24 (6(n(B) − 2) + 4e4 (B) + 6(e3 (B) − 2) + 10e2 (B) + 2) + 1
+                        1
+                  =    24 (6n(B) + 4e4 (B) + 6e3 (B) + 10e2 (B) + 2),
+
+
+and so Part (iii) holds in this case. Suppose next that B was created from B ′ in Step (C)
+in Definition 1. By Part (i), τ (B) = τ (B ′ ) + 1. Applying the inductive hypothesis to B ′ ,
+we therefore have that
+
+    τ (B) = τ (B ′ ) + 1
+                 1       ′         ′          ′           ′
+            =   24 (6n(B ) + 4e4 (B ) + 6e3 (B ) + 10e2 (B ) + 2) + 1
+                 1
+            =   24 (6(n(B) − 2) + 4(e4 (B) − 2) + 6(e3 (B) + 1) + 10(e2 (B) − 1) + 2) + 1
+                 1
+            =   24 (6n(B) + 4e4 (B) + 6e3 (B) + 10e2 (B) + 2),
+
+
+and so Part (iii) holds in this case. Suppose finally that B was created from B1 and B2 in
+Step (D). By Part (ii), τ (B) = τ (B1 ) + τ (B2 ). Applying the inductive hypothesis to B1
+
+                                                8
+and B2 , we therefore have that
+
+    τ (B) = τ (B1 ) + τ (B2 )
+                  1
+            =    24 (6(n(B) − 1) + 4(e4 (B) − 1) + 6(e3 (B) − 2) + 10(e2 (B) + 2) + 2 + 2)
+                  1
+            =    24 (6n(B) + 4e4 (B) + 6e3 (B) + 10e2 (B) + 2),
+
+
+and so Part (iii) holds in this case. This completes the proof of Part (iii).
+
+  (iv): Part (iv) follows easily by induction as no operation can make (A)-pairs intersect.
+
+   (v): We will prove Part (v) by induction on the order, n(B), of the hypergraph B. Let
+e ∈ E(B) be an arbitrary edge in B. If n(G) = 2, then B = H2 was created in step (A) in
+Definition 1. In this case, if e denotes the edge of B, then τ (B − e) = 0 = τ (B) − 1 and
+Part (v) holds. This establishes the base case. Let k ≥ 3 and assume that the result holds
+for all B ′ ∈ B with n(B ′ ) < k and let B ∈ B have order n(B) = k. Let e ∈ E(B) be an
+arbitrary edge in B.
+   Suppose that B was created from B ′ in Step (B) in Definition 1 and name the vertices as
+in Definition 1. By Part (i), τ (B ′ ) = τ (B) − 1. Suppose that e = {u, v, x} or e = {u, v, y}.
+Renaming vertices, if necessary, we may assume without loss of generality that e = {u, v, x}.
+By induction there exists a τ (B ′ − {u, v})-set, S ′ , with |S ′ | = τ (B ′ ) − 1. Since S ′ ∪ {y}
+is a transversal of B − e, we note that τ (B − e) ≤ |S ′ | + 1 = τ (B ′ ) = τ (B) − 1, and so
+τ (B − e) ≤ τ (B) − 1. Since deleting an edge from a hypergraph can decrease the transversal
+number by at most one, we have that τ (B−e) ≥ τ (B)−1. Consequently, τ (B−e) = τ (B)−1,
+as desired. Suppose next that e = {x, y}. In this case any transversal in B ′ is a transversal in
+B − e, implying that τ (B − e) ≤ τ (B ′ ) = τ (B) − 1. As observed earlier, τ (B − e) ≥ τ (B) − 1.
+Consequently, τ (B−e) = τ (B)−1, as desired. Suppose finally that e ∈ E(B ′ ). By induction,
+τ (B ′ −e) = τ (B ′ )−1. Every τ (B ′ −e)-set can be extended to a transversal of B −e by adding
+to it the vertex x, implying that τ (B) − 1 ≤ τ (B − e) ≤ τ (B ′ − e) + 1 = τ (B ′ ) = τ (B) − 1.
+Consequently, τ (B − e) = τ (B) − 1, as desired.
+   If B was created from B ′ in Step (C) in Definition 1, then the proof that Part (v) holds
+is analogous to when B was created in Step (B).
+   Suppose finally that B was created from B1 and B2 in Step (D) and name the vertices as
+in Definition 1. By Part (ii), τ (B) = τ (B1 ) + τ (B2 ). Suppose first that e = {ui , vi , x} for
+some i ∈ {1, 2}. By induction there exists a τ (Bi − {ui , vi })-set, Si , with |Si | = τ (Bi ) − 1.
+Let S3−i be any τ (B3−i )-set in B3−i and note that S1 ∪ S2 is a transversal in B − e, and
+so τ (B) − 1 ≤ τ (B − e) ≤ |S1 | + |S2 | = τ (B1 ) + τ (B2 ) − 1 = τ (B) − 1. Consequently,
+τ (B − e) = τ (B) − 1, as desired. Suppose next that e = {u1 , v1 , u2 , v2 }. By induction there
+exists a τ (Bi − {ui , vi })-set, Ti , with |Ti | = τ (Bi ) − 1. Then, T1 ∪ T2 ∪ {x} is a transversal
+in B − e, and so τ (B) − 1 ≤ τ (B − e) ≤ |T1 | + |T2 | + 1 = (τ (B1 ) − 1) + (τ (B2 ) − 1) + 1 =
+τ (B1 ) + τ (B2 ) − 1 = τ (B) − 1. Consequently, τ (B − e) = τ (B) − 1, as desired. Suppose
+finally that e ∈ E(Bi ) for some i ∈ {1, 2}. By induction there exists a τ (Bi −e)-set, Di , with
+|Di | = τ (Bi )−1. Let D3−i be any τ (B3−i )-set in B3−i and note that D1 ∪D2 is a transversal
+in B − e, and so τ (B) − 1 ≤ τ (B − e) ≤ |D1 | + |D2 | = τ (B1 ) + τ (B2 ) − 1 = τ (B) − 1.
+
+                                                 9
+Consequently, τ (B − e) = τ (B) − 1, as desired. This completes the proof of Part (v).
+
+   (vi): We will prove Part (vi) by induction on the order, n(B), of the hypergraph B. Let
+s ∈ V (B) be an arbitrary vertex in B. If n(G) = 2, then B = H2 was created in step (A) in
+Definition 1. In this case, there clearly exists a τ (B)-set containing s and Part (vi) holds.
+This establishes the base case. Let k ≥ 3 and assume that the result holds for all B ′ ∈ B
+with n(B ′ ) < k and let B ∈ B have order n(B) = k. Let s ∈ V (B) be an arbitrary vertex
+in B.
+   Suppose that B was created from B ′ in Step (B) in Definition 1 and name the vertices as
+in Definition 1. By Part (i), τ (B ′ ) = τ (B) − 1. On the one hand, if s ∈ {x, y}, then adding
+the vertex s to any τ (B ′ )-set produces a transversal in B of size τ (B ′ )+1 = τ (B) containing
+s. On the other hand, if s ∈   / {x, y}, then by induction let S be any τ (B ′ )-set containing s
+and note that S ∪ {x} is a transversal of size τ (B ′ ) + 1 = τ (B) in B containing s. In both
+cases, there exists a τ (B)-set containing s.
+   If B was created from B ′ in Step (C) in Definition 1, then the proof that Part (vi) holds
+is analogous to when B was created in Step (B).
+   Suppose finally that B was created from B1 and B2 in Step (D) and name the vertices
+as in Definition 1. By Part (ii), τ (B) = τ (B1 ) + τ (B2 ). Suppose first that s = x. In
+this case, let S1 be any τ (B1 )-set and let S2 be any τ (B2 − {u2 , v2 })-set. By Part (v),
+|S2 | = τ (B2 ) − 1. Thus the set S1 ∪ S2 ∪ {x} is a transversal in B containing s of size
+τ (B1 ) + (τ (B2 ) − 1) + 1 = τ (B), as desired. Suppose next that s 6= x. Renaming B1 and
+B2 , if necessary, we may assume that s ∈ V (B1 ). Applying the inductive hypothesis to
+B1 , there exists a τ (B1 )-set, S1 , containing s. Let S2 be a τ (B2 )-set. Then, S1 ∪ S2 is a
+transversal in B containing s of size τ (B1 ) + τ (B2 ) = τ (B), which completes the proof of
+Part (vi).
+
+   (vii): We will prove Part (vii) by induction on the order, n(B), of the hypergraph B. Let
+s, t ∈ V (B) be distinct arbitrary vertices. If n(G) = 2, then B = H2 was created in step (A)
+in Definition 1. In this case, {s, t} is an (A)-pair and there is no τ (B)-set containing both
+s and t. This establishes the base case. Let k ≥ 3 and assume that the result holds for all
+B ′ ∈ B with n(B ′ ) < k and let B ∈ B have order n(B) = k. Let s, t ∈ V (B) be distinct
+arbitrary vertices.
+   Suppose that B was created from B ′ in Step (B) in Definition 1 and name the vertices
+as in Definition 1. By Part (i), τ (B ′ ) = τ (B) − 1. Suppose first that {s, t} = {x, y}. Let S ′
+be any τ (B ′ − {u, v})-set. By Part (v), |S ′ | = τ (B ′ ) − 1. The set S ′ ∪ {s, t} is a transversal
+in B of size (τ (B ′ ) − 1) + 2 = τ (B) containing s and t, as desired. Suppose next that
+|{s, t} ∩ {x, y}| = 1. By Part (vi) there exists a τ (B ′ )-set, S ′′ , containing the vertex in
+the set {s, t} \ {x, y}. Adding the vertex in {s, t} ∩ {x, y} to S ′′ produces a transversal of
+size τ (B ′ ) + 1 = τ (B) in B containing s and t, as desired. Finally consider the case when
+{s, t} ∩ {x, y} = ∅. If there exists a τ (B ′ )-set containing both s and t, then add x to such
+a set in order to obtain a τ (B)-set containing s and t. If there is no τ (B ′ )-set containing
+both s and t, then, by induction, {s, t} is an (A)-pair in B ′ and therefore also an (A)-pair
+in B.
+
+                                                 10
+   We will now show that if {s, t} is an (A)-pair in B ′ (and therefore in B) there is no
+τ (B)-set containing s and t. For the sake of contradiction, assume that S is a τ (B)-set
+containing s and t. If S ∩ V (B ′ ) is a transversal in B ′ , then since there is no τ (B ′ )-set
+containing both s and t and {s, t} ⊆ S ∩ V (B ′ ), we have that τ (B ′ ) < |S ∩ V (B ′ )|. However
+since |S ∩ {x, y}| ≥ 1, this implies that |S| ≥ |S ∩ V (B ′ )| + 1 > τ (B ′ ) + 1 = τ (B), a
+contradiction. Hence, the set S ∩ V (B ′ ) is not a transversal in B ′ . The only edge of B ′
+that does not intersect S is the edge {u, v}, implying that {u, v} ∩ S = ∅ and {x, y} ⊆ S.
+In this case, |S ∩ V (B ′ )| = |S| − 2 = τ (B) − 2 = τ (B ′ ) − 1. Hence adding the vertex v
+to the set S ∩ V (B ′ ) produces a transversal in B ′ of size τ (B ′ ) containing both s and t, a
+contradiction. Therefore if {s, t} is an (A)-pair in B ′ , then there is no τ (B)-set containing
+s and t.
+   If B was created from B ′ in Step (C) in Definition 1, then the proof that Part (vii) holds
+is analogous to when B was created in Step (B).
+   Suppose finally that B was created from B1 and B2 in Step (D) and name the vertices
+as in Definition 1. By Part (ii), τ (B) = τ (B1 ) + τ (B2 ). Suppose x ∈ {s, t}. Without
+loss of generality we assume that x = s and t ∈ V (B1 ). By Part (vi) there exists a
+τ (B1 )-set, S1 , containing the vertex t. Let S2 be a τ (B2 − {u2 , v2 })-set. By part (v),
+|S2 | = τ (B2 ) − 1. Now the set S1 ∪ S2 ∪ {x} is a transversal in B containing s and t of size
+|S1 | + |S2 | + 1 = τ (B1 ) + (τ (B2 ) − 1) + 1 = τ (B). Hence we may assume that x ∈       / {s, t},
+for otherwise the desired result follows. Suppose |{s, t} ∩ V (B1 )| = 1. Renaming vertices if
+necessary, we may assume that s ∈ V (B1 ) and t ∈ V (B2 ). By Part (vi) there exists a τ (B1 )-
+set, S1 , containing the vertex s and a τ (B2 )-set, S2 , containing the vertex t. In this case, the
+set S1 ∪S2 is a transversal in B containing s and t of size |S1 |+|S2 | = τ (B1 )+τ (B2 ) = τ (B).
+Hence without loss of generality we may assume that {s, t} ⊆ V (B1 ).
+   If there exists a τ (B1 )-set containing both s and t, then such a set can be extended to a
+τ (B)-set containing s and t by adding to it a τ (B2 )-set. Hence we may assume that there
+is no τ (B1 )-set containing both s and t, for otherwise we are done. By induction, the set
+{s, t} is an (A)-pair in B1 and therefore also an (A)-pair in B. We will now show that in
+this case there is no τ (B)-set containing s and t, which would complete the proof of Part
+(vii). For the sake of contradiction, assume that S is a τ (B)-set containing s and t.
+   If S ∩ V (B1 ) is a transversal in B1 , then since there is no τ (B1 )-set containing both s and
+t and {s, t} ⊆ S ∩ V (B1 ), we have that τ (B1 ) < |S ∩ V (B1 )|. However |S ∩ (V (B2 ) ∪ {x})| ≥
+τ (B2 ), implying that |S| = |S ∩ V (B1 )| + |S ∩ (V (B2 ) ∪ {x})| > τ (B1 ) + τ (B2 ) = τ (B), a
+contradiction. Hence, the set S ∩ V (B1 ) is not a transversal in B ′ .
+   The only edge in B1 that is not intersected by the set S is the edge {u1 , v1 }, implying
+that S ∩ {u1 , v1 } = ∅. Since |S ∩ {x, u1 , v1 }| ≥ 1, this implies that x ∈ S. Further since
+|S∩{u1 , u2 , v1 , v2 }| ≥ 1, this in turn implies that S∩{u2 , v2 } =
+                                                                     6 ∅ and that the set S∩V (B2 ) is
+a transversal in B2 . Therefore, |S ∩V (B2 )| ≥ τ (B2 ). Since the set S ∩V (B1 ) is a transversal
+in B1 − {u1 , v1 }, by Part (v) we have that |S ∩ V (B1 )| ≥ τ (B1 − {u1 , v1 }) = τ (B1 ) − 1.
+Hence, τ (B1 ) + τ (B2 ) = |S| = |S ∩ V (B1 )| + |{x}| + |S ∩ V (B2 )| ≥ (τ (B1 ) − 1) + 1 + τ (B2 ) =
+τ (B1 ) + τ (B2 ). Thus we must have equality throughout this inequality chain. In particular,
+we have |S ∩ V (B1 )| = τ (B1 ) − 1. But then the set (S ∩ V (B1 )) ∪ {u1 } is a transversal in
+
+
+                                                 11
+B1 of size τ (B1 ) containing both s and t, a contradiction. Therefore if {s, t} is an (A)-pair
+in B1 , then there is no τ (B)-set containing s and t, which completes the proof of Part (vii).
+
+  (viii): We will prove Part (viii) by induction on the order, n(B), of the hypergraph B.
+Let Y1 = {s1 , t1 }, Y2 = {s2 , t2 } and Y3 = {s3 , t3 }. If n(G) = 2, then B = H2 was created
+in step (A) in Definition 1. In this case, Y1 = Y2 = Y3 and the result holds trivially. This
+establishes the base case. Let k ≥ 3 and assume that the result holds for all B ′ ∈ B with
+n(B ′ ) < k and let B ∈ B have order n(B) = k.
+  Assume that Y1 , Y2 and Y3 are not vertex disjoint. Renaming vertices, we may assume
+that s1 = s2 . If s1 ∈ Y3 , then we are done by part (vi) since there exists a τ (B)-set
+containing s1 . Hence we may assume that s1 ∈    / Y3 . However by Part (iv) either {s1 , s3 }
+or {s1 , t3 } is not an (A)-pair. Renaming vertices in Y3 if necessary, we may assume that
+{s1 , s3 } is not an (A)-pair. We are now done by Part (vii) since there exists a τ (B)-set
+containing s1 and s3 . Hence we may assume that Y1 , Y2 and Y3 are vertex disjoint, for
+otherwise the desired result follows. Let X = {s1 , t1 , s2 , t2 , s3 , t3 }, and so |V (B)| ≥ |X| = 6.
+   Suppose that B was created from B ′ in Step (B) in Definition 1 and name the vertices
+as in Definition 1. By Part (i), τ (B ′ ) = τ (B) − 1. Suppose {x, y} ∩ X = ∅. Applying the
+inductive hypothesis to B ′ , there exists a τ (B ′ )-set, S ′ , intersecting Y1 , Y2 and Y3 . But then
+the set S ′ ∪ {x} is a τ (B)-set intersecting Y1 , Y2 and Y3 . Hence we may assume, renaming
+vertices if necessary, that s1 = x. Since Y2 and Y3 are vertex disjoint sets, the vertex y
+belongs to at most one of the sets, implying that there exists a vertex, w1 , in Y2 \ {y} and
+a vertex, w2 , in Y3 \ {y} that together do not form an (A)-pair by Part (iv). However, by
+Part (vii), this implies that there exists a τ (B ′ )-set, S ′ , containing w1 and w2 . Thus the set
+S ′ ∪ {x} is a τ (B)-set covering Y1 , Y2 and Y3 .
+   If B was created from B ′ in Step (C) in Definition 1, then the proof that Part (viii) holds
+is analogous to when B was created in Step (B).
+   Suppose finally that B was created from B1 and B2 in Step (D) and name the vertices
+as in Definition 1. By Part (ii), τ (B) = τ (B1 ) + τ (B2 ). For i = 1, 2, let Xi = X ∩ V (Bi ).
+Then, |X1 | ≥ 3 or |X2 | ≥ 3. Renaming B1 and B2 if necessary, we may assume without loss
+of generality that |X1 | ≥ 3.
+   If |X1 | = 6, then by induction there exists a τ (B1 )-set, S1 , covering all three sets, Y1 , Y2
+and Y3 . Let S2 be a τ (B2 )-set. Then, S1 ∪ S2 is a τ (B)-set covering Y1 , Y2 and Y3 . Hence
+we may assume that 3 ≤ |X1 | ≤ 5. Further renaming Y1 , Y2 and Y3 if necessary, we may
+assume by Part (iv) that {s1 , s2 } ⊂ V (B1 ) and that {s1 , s2 } is not an (A)-pair. Further
+since |X1 | ≤ 5, we may assume that |Y3 ∩V (B1 )| ≤ 1. By Part (vii), there exists a τ (B1 )-set,
+S1 , containing s1 and s2 . On the one hand if x ∈ Y3 , then let S2′ be a τ (B2 − {u2 , v2 })-set.
+By part (v), |S2′ | = τ (B2 ) − 1. In this case, the set S1 ∪ S2′ ∪ {x} is a transversal in B of
+size |S1 | + |S2′ | + 1 = τ (B1 ) + (τ (B2 ) − 1) + 1 = τ (B) covering Y1 , Y2 and Y3 . On the other
+hand, if x ∈ / Y3 , then |Y3 ∩ V (B2 )| ≥ 1 and we may assume, renaming s3 and t3 if necessary,
+that s3 ∈ V (B2 ). By Part (vi), there exists a τ (B2 )-set, S2 , containing s3 . In this case the
+set S1 ∪ S2 is a τ (B)-set covering Y1 , Y2 and Y3 , which completes the proof of Part (viii).
+
+
+
+                                                  12
+  (ix): We will prove Part (ix) by induction on the order, n(B), of the hypergraph B.
+Clearly, Part (ix) is vacuously true if B = H2 . This establishes the base case. Let k ≥ 3
+and assume that the result holds for all B ′ ∈ B with n(B ′ ) < k and let B ∈ B have
+order n(B) = k. We first note that no 2-edges intersect in any hypergraph in B, as none of
+the steps (A)-(D) in Definition 1 cause 2-edges to intersect. In particular, we note that in
+Step (B) the 2-edge {u, v} in B ′ does not intersect any other 2-edge in B ′ . We now observe
+that no 3-edge in any B ∈ B can intersect two 2-edges in B, as again none of the steps
+(A)-(D) in Definition 1 can cause this to happen. In particular, we observe that in Step (C)
+the 3-edge {u, v, w} in B ′ intersects at most one other 2-edge in B ′ . Finally we observe that
+no 4-edge in B ∈ B can intersect three 2-edges in B, as again none of the steps (A)-(D) in
+Definition 1 can cause this to happen. Therefore, Part (ix) follows easily by induction.
+
+  (x): Part (x) follows easily by induction and the observation that Steps (B)-(D) all
+increase the degrees of existing vertices being operated on and introduce new vertices of
+degree two.
+
+   (xi): We will prove Part (xi) by induction on the order, n(B), of the hypergraph B.
+Clearly, Part (xi) is vacuously true if B = H2 . This establishes the base case. Let k ≥ 3
+and assume that the result holds for all B ′ ∈ B with n(B ′ ) < k and let B ∈ B have
+order n(B) = k. Let x ∈ V (B) be chosen such that dB (x) = 2. As observed in the proof
+of Part (x), Steps (B)-(D) all increase the degrees of existing vertices being operated on
+and introduce new vertices of degree two. If x is a new vertex of degree two added when
+constructing B, then by construction the vertex x belongs to a 2-edge or a 3-edge. If x
+is not a new vertex added when constructing B, then by considering Steps (A)-(D) and
+Part (x) above it is not difficult to see that Part (xi) holds. This completes the proof of
+Lemma 9.
+
+   (xii): We will prove Part (xii) by induction on the order, n(B), of the hypergraph B. It
+is not difficult to see that Part (xii) holds if the order is at most four. Let k ≥ 5 and assume
+that the result holds for all B ′ ∈ B with n(B ′ ) < k and let B ∈ B have order n(B) = k. If
+B was created using Step (B) or (C), then clearly Part (xii) holds. If B was created using
+Step (D), then without loss of generality there is a 2-edge in B1 different from {u1 , v1 }
+(otherwise there is a 2-edge in B2 different from {u2 , v2 }) and Part (xii) follows by induction
+on B1 .
+
+   (xiii): As B does not contain two 4-edges intersecting in three vertices we note that
+Step (C) was never performed in any step of constructing B (as no operation removes 4-
+edges). As Step (C) was never performed we note that no operation removes 3-edges. As
+all 2-edges in B are created using Step (B) (any 2-edge created in Step (A) will be removed
+again by Step (B) or Step (D)) we note that all 2-edges in B intersects two overlapping
+3-edges. ✷
+
+
+
+
+                                               13
+5    Proof of Main Result
+
+In this section, we present a proof of our main result, namely Theorem 1. Recall its
+statement, where H denotes the class of hypergraphs where all edges have size at most four
+and at least two and with maximum degree at most three.
+Theorem 1. If H ∈ H, then
+
+             24τ (H) ≤ 6n(H) + 4e4 (H) + 6e3 (H) + 10e2 (H) + 2b(H) + b1 (H).
+
+Furthermore if b1 (H) is odd, then the above inequality is strict.
+Proof of Theorem 1. Given any H ′ ∈ H, let
+
+            φ(H ′ ) = 6n(H ′ ) + 4e4 (H ′ ) + 6e3 (H ′ ) + 10e2 (H ′ ) + 2b(H ′ ) + b1 (H ′ ).
+
+We note that if b1 (H ′ ) is odd, then φ(H ′ ) is odd. Hence if 24τ (H) ≤ φ(H ′ ) and b1 (H ′ ) is
+odd, then 24τ (H) < φ(H ′ ).
+  If e ∈ E(H ′ ), we let ωH ′ (e), or simply ω(e) if H ′ is clear from the context, denote the
+contribution of the edge e to the expression φ(H ′ ); that is,
+
+                                         
+                                          4 if e is a 4-edge
+                                  ω(e) =   6 if e is a 3-edge
+                                           10 if e is a 2-edge
+                                         
+
+
+   We refer to ω(e) as the weight of the edge e. Suppose to the contrary that the theorem
+is false. Among all counterexamples, let H be chosen so that n(H) + m(H) is minimum.
+In particular, 24τ (H) > φ(H). We will often use the following fact.
+
+
+Fact 1: Let H ′ ∈ H be a hypergraph with n(H ′ ) + m(H ′ ) < n(H) + m(H). Then the
+     following holds.
+          (a) φ(H) − φ(H ′ ) < 24(τ (H) − τ (H ′ )).
+          (b) If H ′ = H(X, Y ), then φ(H) − φ(H ′ ) < 24|X|.
+
+
+Proof. (a) Let H ′ ∈ H satisfy n(H ′ ) + m(H ′ ) < n(H) + m(H). If φ(H) − φ(H ′ ) ≥
+24τ (H) − 24τ (H ′ ), then 24τ (H ′ ) ≥ φ(H ′ ) + (24τ (H) − φ(H)) > φ(H ′ ), contradicting the
+minimality of H. Hence, φ(H) − φ(H ′ ) < 24τ (H) − 24τ (H ′ ).
+  (b) Further suppose H ′ = H(X, Y ). If X ′ is a τ (H ′ )-set, then X ∪ X ′ is a transversal in
+H, implying that φ(H) < 24τ (H) ≤ 24|X| + 24|X ′ | = 24τ (H ′ ) + 24|X| ≤ φ(H ′ ) + 24|X|,
+or, equivalently, φ(H) − φ(H ′ ) < 24|X|. (✷)
+
+ In what follows we present a series of claims describing some structural properties of H
+which culminate in the implication of its non-existence.
+
+
+                                                   14
+Claim 1 No edge of H is contained in another edge of H.
+
+
+Proof. Let e and f be two distinct edges of H and suppose to the contrary that V (e) ⊆
+V (f ). Let H ′ = H − f . By the minimality of H, we have that 24τ (H ′ ) ≤ φ(H ′ ). Since
+every transversal of H ′ is a transversal of H, we have that τ (H) ≤ τ (H ′ ). Hence, 24τ (H) ≤
+24τ (H ′ ) ≤ φ(H ′ ) = φ(H) − ω(f ) ≤ φ(H) − 4 < φ(H), a contradiction. (✷)
+
+
+Claim 2 The following hold in the hypergraph H.
+  (a) H is connected.
+  (b) b(H) = 0.
+  (c) b1 (H) = 0.
+
+
+Proof. (a) If H is disconnected, then by the minimality of H we have that the theorem
+holds for all components of H and therefore also for H, a contradiction.
+  (b) If b(H) > 0, then by Part (a), H ∈ B and by Lemma 9(iii) we note that H is not a
+counter-example to the theorem, a contradiction.
+   (c) Suppose to the contrary that b1 (H) > 0. Let B ∈ B be a subhypergraph in H and
+let e ∈ E(H) be the (unique) edge of E(H) \ E(B) intersecting B in H. By Lemma 9(vi)
+there exists a transversal S of B containing a vertex, v, in e. Let H ′ = H(S, V (B) \ S). If a
+vertex, v ′ , in V (e)\{v} contributes one to b(H ′ ), then necessarily v ′ belongs to a component
+B ′ ∈ B of H ′ and therefore contributes one to b1 (H). In this case, v ′ contributes one to
+2b(H) + b1 (H) and two to 2b(H ′ ) + b1 (H ′ ). If a vertex, v ′ , in V (e) \ {v} contributes one to
+b1 (H ′ ), then v ′ contributes one to b2 (H). In this case, v ′ contributes zero to 2b(H) + b1 (H)
+and one to 2b(H ′ ) + b1 (H ′ ). In both cases, the vertex v ′ increases 2b(H ′ ) + b1 (H ′ ) by one.
+Since |V (e)| ≤ 4, we note that |V (e) \ {v}| ≤ 3. Thus since each vertex in V (e) \ {v}
+increases 2b(H ′ ) + b1 (H ′ ) by at most one, and since the deletion of the subhypergraph B ′
+from H decreases 2b(H ′ )+ b1 (H ′ ) by one, we have that 2b(H ′ )+ b1 (H ′ ) is at most two larger
+than 2b(H) + b1 (H); that is,
+
+                          (2b(H) + b1 (H)) − (2b(H ′ ) + b1 (H ′ )) ≥ −2.
+
+Further since ωH (e) ≥ 4, and applying Lemma 9(iii) to B ∈ B, we have that
+
+             φ(H) − φ(H ′ ) = (6n(B) + 4e4 (B) + 6e3 (B) + 10e2 (B)) + ωH (e)
+                                 +(2b(H) + b1 (H)) − (2b(H ′ ) + b1 (H ′ )
+                               ≥ (24|S| − 2) + 4 − 2
+                               = 24|S|,
+
+
+contradicting Fact 1. Therefore, b1 (H) = 0. (✷)
+
+
+Claim 3 b2 (H) = 0.
+
+
+                                                 15
+Proof. Suppose to the contrary that b2 (H) > 0. Let B ∈ B be any subhypergraph in H
+contributing to b2 (H) and let f1 , f2 ∈ E(H) be the two edges of E(H) \ E(B) intersecting
+B in H. We now show a number of subclaims.
+
+
+Subclaim 3(a) |V (fi ) ∩ V (B)| = 1 for i = 1, 2. Further if V (fi ) ∩ V (B) = {si }, then
+s1 6= s2 and {s1 , s2 } is an (A)-pair in B.
+
+
+Proof of Subclaim 3(a). Suppose to the contrary that |V (fi ) ∩ V (B)| ≥ 2 for some
+i = 1, 2 or that V (fi ) ∩ V (B) = {si } but {s1 , s2 } is not an (A)-pair in B. We now choose
+a τ (H)-set, S, as follows. If there exists a vertex v ∈ V (f1 ) ∩ V (f2 ), then by Lemma 9(vi),
+let S be chosen to contain v. If fi intersects B in at least two vertices for some i ∈ {1, 2},
+then by Lemma 9(iv) we can find vertices sj ∈ V (fj ) such that {s1 , s2 } is not an (A)-pair in
+B. By Lemma 9(vii), let S be chosen to contain s1 and s2 . Finally if V (fi ) ∩ V (B) = {si }
+where s1 6= s2 but {s1 , s2 } is not an (A)-pair in B, then by Lemma 9(vii) let S be chosen
+to contain s1 and s2 . In all three cases, we have that the τ (B)-set, S, covers f1 and f2 . Let
+H ′ = H(S, V (B) \ S). A similar argument as in the proof of Claim 2(c) shows that each
+vertex in V (fi ) \ V (B) for i ∈ {1, 2}, increases 2b(H ′ ) + b1 (H ′ ) by at most one. Hence since
+2b(H) + b1 (H) = 0 and |V (f1 ) \ S| + |V (f2 ) \ S| ≤ 6, we have that 2b(H ′ ) + b1 (H ′ ) ≤ 6, and
+so
+                           (2b(H) + b1 (H)) − (2b(H ′ ) + b1 (H ′ )) ≥ −6.
+
+  Further since ωH (fi ) ≥ 4 for i ∈ {1, 2}, and applying Lemma 9(iii) to B ∈ B, we have
+that
+
+       φ(H) − φ(H ′ ) = (6n(B) + 4e4 (B) + 6e3 (B) + 10e2 (B)) + ωH (f1 ) + ωH (f2 )
+                           +(2b(H) + b1 (H)) − (2b(H ′ ) + b1 (H ′ )
+                        ≥ (24|S| − 2) + 4 + 4 − 6
+                        = 24|S|,
+
+contradicting Fact 1 and proving Subclaim 3(a). (✷)
+
+
+Subclaim 3(b) B = H2 .
+
+
+Proof of Subclaim 3(b). By Subclaim 3(a), we may assume relabeling vertices if necessary
+that V (f1 ) ∩ V (B) = {s1 } and V (f2 ) ∩ V (B) = {s2 } and that {s1 , s2 } is an (A)-pair in
+B. Suppose to the contrary that B 6= H2 . Let H ′ be obtained from H by removing all
+edges in B and all vertices V (B) \ {s1 , s2 } and adding the 2-edge {s1 , s2 }. We show that
+τ (H) ≤ τ (H ′ ) + τ (B) − 1. Let S ′ be a τ (H ′ )-set such that |S ′ ∩ {s1 , s2 }| is a minimum.
+Since {s1 , s2 } is an edge in H ′ , we have that |S ′ ∩ {s1 , s2 }| ≥ 1. If |S ′ ∩ {s1 , s2 }| = 2,
+then by removing s2 from S ′ and replacing it with an arbitrary vertex in V (f2 ) \ {s2 }
+we get a contradiction to the minimality of |S ′ ∩ {s1 , s2 }|. Therefore, |S ′ ∩ {s1 , s2 }| = 1.
+Renaming vertices if necessary, we may assume that s1 ∈ S ′ . By Lemma 9(vi) there exists
+
+                                                16
+a transversal, SB , of B containing the vertex s1 . Thus, S ′ ∪ SB is a transversal in H and
+S ′ ∩ SB = {s1 }, and so τ (H) ≤ |S ′ | + |SB | − 1 = τ (H ′ ) + τ (B) − 1, as desired. Equivalently,
+τ (B) − 1 ≥ τ (H) − τ (H ′ ). By Lemma 9(iii), we therefore have that
+
+                              φ(H) − φ(H ′ ) = φ(B) − φ(H2 )
+                                             = 24τ (B) − 24τ (H2 )
+                                                = 24(τ (B) − τ (H2 ))
+                                                = 24(τ (B) − 1)
+                                                ≥ 24(τ (H) − τ (H ′ )),
+
+
+where H2 is defined in Definition 1(A), contradicting Fact 1 and proving Subclaim 3(b). (✷)
+
+
+Subclaim 3(c) There is no edge e ∈ E(H) with V (e) ⊆ (V (f1 ) ∪ V (f2 )) \ {s1 , s2 }.
+
+
+Proof of Subclaim 3(c). Suppose to the contrary that there is an edge e ∈ E(H) such that
+V (e) ⊆ (V (f1 )∪V (f2 ))\{s1 , s2 }. Let H ′ be obtained from H by deleting the vertices s1 and
+s2 and the edges f1 , f2 , {s1 , s2 }; that is, H ′ = H({s1 , s2 }, ∅). Let S ′ be a τ (H ′ )-set. Due to
+the existence of the edge e we may assume without loss of generality that f1 contains a vertex
+from S ′ . But then S ′ ∪ {s2 } is a transversal of H, implying that τ (H) ≤ |S ′ |+ 1 = τ (H ′ )+ 1.
+Each vertex in (V (f1 )∪V (f2 ))\{s1 , s2 } increases 2b(H ′ )+b1 (H ′ ) by at most one. Thus since
+2b(H) + b1 (H) = 0 and |(V (f1 ) ∪ V (f2 )) \ {s1 , s2 }| ≤ 6, we have that 2b(H ′ ) + b1 (H ′ ) ≤ 6.
+Further, ω(f1 ) ≥ 4, ω(f2 ) ≥ 4 and ω({s1 , s2 }) = 10. Therefore since the vertices s1 and s2
+and the edges f1 , f2 , {s1 , s2 } are removed from H when constructing H ′ , we have that
+
+                 φ(H) − φ(H ′ ) = 6|{s1 , s2 }| + ω(f1 ) + ω(f2 ) + ω({s1 , s2 })
+                                         −(2b(H ′ ) + b1 (H ′ ))
+                                    = 12 + 4 + 4 + 10 − 6 = 24
+                                    ≥ 24(τ (H) − τ (H ′ )),
+
+
+contradicting Fact 1 and proving Subclaim 3(c). (✷)
+
+
+Subclaim 3(d) b(H − f1 − f2 ) = 1.
+
+
+Proof of Subclaim 3(d). Since B is a component of H − f1 − f2 , we have that b(H −
+f1 − f2 ) ≥ 1. We show that b(H − f1 − f2 ) = 1. Suppose to the contrary that there exists
+a component, R ∈ B, in H − f1 − f2 which is different from B. Since b(H) = b1 (H) = 0,
+the subhypergraph R contributes to b2 (H), which by Subclaim 3(b) implies that R = H2 .
+By Subclaim 3(a) we note that the 2-edge in R is a subset of (V (f1 ) ∪ V (f2 )) \ {s1 , s2 }, a
+contradiction to Subclaim 3(c). (✷)
+
+  We now return to the proof of Claim 3. By Subclaim 3(a) and 3(b), we may assume that
+B = H2 , V (B) = {s1 , s2 } and V (fi ) ∩ V (B) = {si } for i = 1, 2. Let X = (V (f1 ) ∪ V (f2 )) \
+
+                                                   17
+{s1 , s2 } and assume without loss of generality that |V (f1 )| ≤ |V (f2 )|. Clearly, 1 ≤ |X| ≤ 6.
+We now consider a number of different cases.
+   First consider the case when |X| = 1. Assume that X = {x}, which implies that f1 =
+{s1 , x} and f2 = {s2 , x}. Let H ′ = H({x}, ∅). Suppose dH (x) = 2. Then, H ′ = B,
+b(H ′ ) = 1 and b1 (H) = 0, implying that φ(H) − φ(H ′ ) = 6|{x}| + ω(f1 ) + ω(f2 ) − (2b(H ′ ) +
+b1 (H ′ )) = 6 + (2 × 10) − 2 = 24 = 24|X|, contradicting Fact 1. Hence, dH (x) ≥ 3.
+Consequently since ∆(H) = 3, we have that dH (x) = 3. Let e be the edge of H different
+from f1 and f2 containing x and note that 2b(H − e) + b1 (H − e) ≤ 3, which implies that
+2b(H ′ ) + b1 (H ′ ) ≤ 5. Therefore, φ(H) − φ(H ′ ) = 6|{x}| + ω(e) + ω(f1 ) + ω(f2 ) − (2b(H ′ ) +
+b1 (H ′ )) ≥ 6 + 4 + (2 × 10) − 5 > 24 = 24|X|, contradicting Fact 1. Hence, |X| ≥ 2.
+   Suppose 2 ≤ |X| ≤ 4. In this case we let H ′ be obtained from H by deleting the vertices
+s1 and s2 and the edges f1 , f2 , {s1 , s2 } and adding the new edge f = X. By Subclaim 3(d),
+b(H − f1 − f2 ) = 1 and therefore B is the only component of H − f1 − f2 in B. This implies
+that if b(H ′ ) > 0 or b1 (H ′ ) > 0, then the new edge f belongs to some subhypergraph R
+which contributes to b(H ′ ) or b1 (H ′ ), and this R is the only subhypergraph that contributes
+to 2b(H ′ ) + b1 (H ′ ). Therefore, 2b(H ′ ) + b1 (H ′ ) ≤ 2. We now show that τ (H) ≤ τ (H ′ ) + 1.
+Assume that S ′ is a τ (H ′ )-set and note that some vertex in X belongs to S ′ . Without loss
+of generality we may assume that there is a vertex in S ′ ∩ X belonging to f1 . This implies
+that S ′ ∪ {s2 } is a transversal of H, and so τ (H) ≤ |S ′ | + 1 = τ (H ′ ) + 1. We now consider
+the following possibilities.
+  Suppose that |X| = 2. Suppose that |V (f1 )| = 2. As observed earlier, 2b(H ′ )+b1 (H ′ ) ≤ 2.
+Since |V (f2 )| ≤ |X| + 1 = 3, we have that ω(f2 ) ≥ 6. Thus,
+
+                 φ(H) − φ(H ′ ) = 6|{s1 , s2 }| + ω(f1 ) + ω(f2 ) + ω({s1 , s2 })
+                                       −ω(f ) − (2b(H ′ ) + b1 (H ′ ))
+                                  ≥ (6 × 2) + 10 + 6 + 10 − 10 − 2 > 24
+                                  ≥ 24(τ (H) − τ (H ′ )),
+
+
+contradicting Fact 1. Hence, |V (f1 )| = 3. Thus, 3 = |V (f1 )| ≤ |V (f2 )| ≤ |X| + 1 = 3,
+implying that |V (f2 )| = 3. Assume that X = {x, y}, which implies that f1 = {s1 , x, y} and
+f2 = {s1 , x, y}. If b(H ′ ) = b1 (H ′ ) = 0, then φ(H) − φ(H ′ ) ≥ (2 × 6) + (2 × 6) + 10 − 10 =
+24 = 24(τ (H) − τ (H ′ )), contradicting Fact 1. Hence, 2b(H ′ ) + b(H ′ ) > 0. This implies that
+the new edge f belongs to some subhypergraph R which contributes to b(H ′ ) or b1 (H ′ ),
+and this R is the only subhypergraph that contributes to 2b(H ′ ) + b1 (H ′ ). Since {x, y} is a
+2-edge in R, using Step (B) in Definition 1 we can extend R to a subhypergraph R′ ∈ B, by
+adding the vertices {s1 , s2 } and the edges f1 , f2 and {s1 , s2 } and deleting the edge {x, y}.
+However this implies that R′ is a subhypergraph in H contributing to b(H) or b1 (H), a
+contradiction. Hence, |X| ≥ 3.
+   Suppose that |X| = 3. Then, ω(f ) = 6. Suppose that |V (f1 )| ≤ 3. Then, ω(f1 ) ≥ 6, while
+ω(f2 ) ≥ 4. As observed earlier, 2b(H ′ ) + b1 (H ′ ) ≤ 2. Thus, φ(H) − φ(H ′ ) ≥ (2 × 6) + 6 + 4 +
+10− 6− 2 = 24 = 24(τ (H)− τ (H ′ )), contradicting Fact 1. Hence, |V (f1 )| ≥ 4, implying that
+|V (f1 )| = |V (f2 )| = 4. If b(H ′ ) = b1 (H ′ ) = 0, then φ(H)−φ(H ′ ) ≥ (2×6)+(2×4)+10−6 =
+
+                                                18
+24 = 24(τ (H) − τ (H ′ )), contradicting Fact 1. Hence, 2b(H ′ ) + b(H ′ ) > 0. This implies that
+the new edge f belongs to some subhypergraph R which contributes to b(H ′ ) or b1 (H ′ ),
+and this R is the only subhypergraph that contributes to 2b(H ′ ) + b1 (H ′ ). Since f is a
+3-edge in R, using Step (C) in Definition 1 we can extend R to a subhypergraph R′ ∈ B,
+by adding the vertices {s1 , s2 } and the edges f1 , f2 and {s1 , s2 } and deleting the edge f , a
+contradiction.
+  Hence, |X| = 4, and so ω(f ) = 4. As observed earlier, 2b(H ′ ) + b1 (H ′ ) ≤ 2. Thus,
+φ(H) − φ(H ′ ) ≥ (2 × 6) + (2 × 4) + 10 − 4 − 2 = 24 = 24(τ (H) − τ (H ′ )), contradicting
+Fact 1. This completes the case when 2 ≤ |X| ≤ 4.
+   It remains for us to consider the case when 5 ≤ |X| ≤ 6. In this case we note that
+|V (f1 ) ∩ V (f2 )| ≤ 1. Further, |V (f1 )| ≥ 3, and so neither f1 nor f2 is a 2-edge. Let X ′ be
+the set of vertices from X which belong to some 2-edge in H. We note that by Subclaim 3(c),
+every 2-edge in H contains at most one vertex of X.
+   Suppose that |X ′ | ≤ 3. Let f ⊆ X be chosen such that |V (f )| = 4, X ′ ⊆ V (f ) and if
+any vertex belongs to V (e1 ) ∩ V (e2 ), then it also belongs to f . In particular, we note that
+ω(f ) = 4. Let H ′ be obtained from H by deleting the vertices s1 and s2 and the edges
+f1 , f2 , {s1 , s2 } and adding the new edge f . Analogously to the case when 2 ≤ |X| ≤ 4, we
+have that τ (H) ≤ τ (H ′ ) + 1. By Subclaim 3(d), b(H − f1 − f2 ) = 1 and therefore B is the
+only component of H − f1 − f2 in B. This implies that if 2b(H ′ ) + b1 (H ′ ) ≥ 3, then there
+must exists a subhypergraph R ∈ B which does not contain the edge f but contributes to
+2b(H ′ ) + b1 (H ′ ). But then R contributed to b2 (H), which by Subclaim 3(b) implies that
+R = H2 , a contradiction to the definition of X ′ . Therefore, 2b(H ′ ) + b1 (H ′ ) ≤ 2. Hence,
+φ(H) − φ(H ′ ) ≥ (2 × 6) + (2 × 4) + 10 − 4 − 2 = 24 = 24(τ (H) − τ (H ′ )), contradicting
+Fact 1. Hence, |X ′ | ≥ 4.
+  Let f ⊆ X ′ be chosen such that |V (f )| = 4. Let H ′′ be obtained from H by deleting the
+vertices s1 and s2 and the edges f1 , f2 , {s1 , s2 } and adding the new edge f . Analogously
+to the case when 2 ≤ |X| ≤ 4, we have that τ (H) ≤ τ (H ′′ ) + 1. By Subclaim 3(d),
+b(H − f1 − f2 ) = 1 and therefore B is the only component of H − f1 − f2 in B. For the
+sake of contradiction suppose that there exists a subhypergraph R ∈ B which contains the
+edge f and contributes to 2b(H ′′ ) + b1 (H ′′ ). By Lemma 9(ix) and Subclaim 3(c) we note
+that at most two of the four 2-edges intersecting f can belong to R. As observed earlier,
+neither f1 nor f2 is a 2-edge. But this implies that the subhypergraph R ∈ B is intersected
+by at least two 2-edges in H ′′ that do not belong to R, contradicting the fact that R
+contributes to 2b(H ′′ ) + b1 (H ′′ ). Therefore, 2b(H ′′ ) + b1 (H ′′ ) ≤ |X \ V (f )| ≤ 2. Hence,
+φ(H) − φ(H ′′ ) ≥ (2 × 6) + (2 × 4) + 10 − 4 − 2 = 24 = 24(τ (H) − τ (H ′′ )), contradicting
+Fact 1. This completes the proof of Claim 3. (✷)
+
+
+
+
+                                                19
+Claim 4 No 2-edges in H intersect.
+
+
+Proof. Suppose to the contrary that there are two 2-edges, e and e′ , that intersect in H and
+let x be the vertex common to both edges. Let H ′ = H({x}, ∅) and let X = {x}. If d(x) = 2,
+then Claim 2 and 3 imply that b(H ′ ) = 0 and b1 (H ′ ) ≤ 1, and so 2b(H ′ ) + b1 (H ′ ) ≤ 1. This
+implies that, φ(H) − φ(H ′ ) ≥ 6 + (2 × 10) − (2b(H ′ ) + b1 (H ′ )) > 24 = 24|X|, contradicting
+Fact 1. Therefore, d(x) = 3, which by Claim 2 and 3 implies that 2b(H ′ ) + b1 (H ′ ) ≤ 2
+and therefore that φ(H) − φ(H ′ ) ≥ 6 + (2 × 10) + 4 − (2b(H ′ ) + b1 (H ′ )) > 24 = 24|X|,
+contradicting Fact 1. (✷)
+
+
+Claim 5 If e = {x, y} is a 2-edge in H and dH (x) = 3, then x is contained in two distinct
+4-edges.
+
+
+Proof. Assume that e = {x, y} is a 2-edge in H and dH (x) = 3. Let e, e′ and e′′ be the
+three distinct edges in H containing x. By Claim 4, neither e′ nor e′′ is a 2-edge. Suppose
+to the contrary that e′ is a 3-edge. Let H ′ = H({x}, ∅). Then, τ (H) ≤ τ (H ′ ) + 1.
+  Suppose that e′′ is a 4-edge. If b(H ′ ) > 0, then by Claim 2 and 3 we note that any
+component R ∈ B in H must intersect e, e′ and e′′ and therefore contain y. This implies
+that b(H ′ ) ≤ 1. Since |V (e) \ {x}| + |V (e′ ) \ {x}| + |V (e′′ ) \ {x}| = 6, we note that by
+Claim 2 and 3 either b(H ′ ) = 1 and b1 (H ′ ) ≤ 1 or b(H ′ ) = 0 and b1 (H ′ ) ≤ 3. Thus,
+2b(H ′ ) + b1 (H ′ ) ≤ 3. Furthermore if 2b(H ′ ) + b1 (H ′ ) = 3, then b1 (H ′ ) is odd. By the
+minimality of H we have 24τ (H ′ ) ≤ φ(H ′ ) when 2b(H ′ ) + b1 (H ′ ) ≤ 2 and 24τ (H ′ ) ≤
+φ(H ′ ) − 1 when 2b(H ′ ) + b1 (H ′ ) = 3. On the one hand if 2b(H ′ ) + b1 (H ′ ) = 3, then
+
+      24τ (H) ≤ 24(τ (H ′ ) + 1)
+                ≤ (φ(H ′ ) − 1) + 24
+                = [φ(H) − 6|{x}| − ω(e) − ω(e′ ) − ω(e′′ ) + 2b(H ′ ) + b1 (H ′ ) − 1] + 24
+                = [φ(H) − 6 − 10 − 6 − 4 + 3 − 1] + 24
+                = φ(H),
+
+
+a contradiction. On the other hand if 2b(H ′ ) + b1 (H ′ ) ≤ 2, then 24τ (H) ≤ 24(τ (H ′ ) + 1) ≤
+φ(H ′ )+24 = [φ(H)−6−10−6−4+2]+24 = φ(H), once again a contradiction. Hence, e′′ is
+not a 4-edge, implying that e′′ is a 3-edge. Since |V (e)\{x}|+|V (e′ )\{x}|+|V (e′′ )\{x}| = 5,
+we note that by Claim 2 and 3 2b(H ′ ) + b1 (H ′ ) ≤ 3. Therefore,
+
+           φ(H) − φ(H ′ ) ≥     6|{x}| + ω(e) + ω(e′ ) + ω(e′′ ) − (2b(H ′ ) + b1 (H ′ ))
+                          ≥     6 + 10 + (2 × 6) − 3
+                          >     24
+                          =     24|{x}|,
+
+
+a contradiction. This completes the proof of Claim 5. (✷)
+
+                                               20
+Claim 6 If R ∈ B is a subhypergraph in H and e is a 2-edge in E(H) \ E(R), then
+V (e) ∩ V (R) = ∅.
+
+Proof. Assume that R ∈ B is a subhypergraph in H and e is a 2-edge in E(H) \ E(R).
+Suppose to the contrary that V (e) ∩ V (R) 6= ∅ and let x ∈ V (e) ∩ V (R). If dR (x) = 1, then
+by Lemma 9(x) we have that R = H2 and so x belongs to a 2-edge in R, a contradiction
+to Claim 4. Hence, dR (x) ≥ 2. However since ∆(H) ≤ 3 and the edge e ∈       / E(R) contains
+the vertex x, we have that dR (x) ≤ 2. Consequently, dR (x) = 2. By Lemma 9(xi), x is
+therefore contained in a 3-edge or a 2-edge in R, a contradiction to Claim 5. (✷)
+
+Claim 7 If B ∈ B contributes to b3 (H), then B = H2 .
+
+Proof. Assume that b3 (H) > 0 and that B ∈ B is a subhypergraph in H that contributes
+to b3 (H). Suppose to the contrary that B 6= H2 . Let f1 , f2 , f3 ∈ E(H) \ E(B) be the three
+edges in H that intersect B.
+  Suppose that |V (fi ) ∩ V (B)| ≥ 2 for all i = 1, 2, 3. Then by Lemma 9(viii) there exists
+a τ (B)-set, S, intersecting f1 , f2 and f3 . Let H ′ = H(S, V (B) \ S). By Claim 2 and 3
+we note that any component R ∈ B in H ′ must intersect all of f1 , f2 and f3 , while any
+subhypergraph in H ′ that contributes to b1 (H ′ ) must intersect at least two of f1 , f2 and f3 .
+Since |(V (f1 ) ∪ V (f2 ) ∪ V (f3 )) \ V (B)| ≤ 6, this implies that 2b(H ′ ) + b1 (H ′ ) ≤ 4. Therefore
+by Lemma 9(iii), we have that
+
+             φ(H) − φ(H ′ ) ≥ 6n(B) + 4e4 (B) + 6e3 (B) + 10e2 (B)
+                                 +ω(f1 ) + ω(f2 ) + ω(f3 ) − (2b(H ′ ) + b1 (H ′ ))
+                            ≥ (24|S| − 2) + 12 − 4
+                            > 24|S|,
+
+contradicting Fact 1. Hence we may assume without loss of generality that |V (f1 ) ∩ B| = 1.
+   If there is no τ (B)-set intersecting both f2 and f3 , then by Lemma 9(vii) we must have
+V (f2 )∩B = {b2 } and V (f3 )∩B = {b3 } and {b2 , b3 } is an (A)-pair in B. However in this case
+by Lemma 9(iv) there exists a τ (B)-set intersecting both f1 and f2 . Hence in both cases
+there exists a τ (B)-set intersecting two of f1 , f2 , f3 such that the edge not covered intersects
+B in exactly one vertex. Without loss of generality we may assume that V (f1 ) ∩ B = {b1 }
+and that SB is a τ (B)-set intersecting both f2 and f3 .
+   Let H1∗ = H(V (B), ∅). If b1 (H1∗ ) > 0, then let B1 ∈ B be a subhypergraph in H1∗ and let
+e1 ∈ E(H1∗ ) be the only edge intersecting B1 in H1∗ . In this case let H2∗ = H1∗ (V (B1 ), ∅). If
+b1 (H2∗ ) > 0, then let B2 ∈ B be a subhypergraph in H2∗ and let e2 ∈ E(H2∗ ) be the only edge
+intersecting B2 in H2∗ . In this case let H3∗ = H2∗ (V (B2 ), ∅). Continue the above process
+until b1 (Hℓ∗ ) = 0, for some ℓ ≥ 1. This defines H1∗ , H2∗ , . . . , Hℓ∗ and B1 , B2 , . . . , Bℓ−1 and
+e1 , e2 , . . . , eℓ−1 .
+  We first consider the case when b(Hℓ∗ ) = 0. Recall that SB is a τ (B)-set intersecting
+both f2 and f3 . Let S ′ = SB . We now construct a hypergraph H ′ where initially we let
+
+                                                  21
+H ′ = H(SB , V (B)\(SB ∪{b1 })). If b1 (H ′ ) > 0, let R ∈ B be a subgraph in H ′ intersected by
+exactly one edge e ∈ E(H ′ ) \ E(R) and do the following. Let SR be a τ (R)-set intersecting
+e (which exists by Lemma 9(vi)) and add SR to S ′ and let H ′ be H ′ (SR , V (R) \ SR ).
+We continue this process until b1 (H ′ ) = 0. When the above process stops assume that
+b1 (H ′ ) > 0 was true r times. Let S ′ consist of the set SB and the r τ (R)-sets SR resulting
+from constructing H ′ .
+  We show first that b(H ′ ) = 0. Suppose to the contrary that b(H ′ ) > 0 and let R∗ ∈ B be
+a component in H ′ . This implies that R must contain the edge f1 , for if this were not the
+case, then such a component would also be a component in Hℓ∗ , but b1 (Hℓ∗ ) = b(Hℓ∗ ) = 0.
+However, f1 is not a 2-edge by Claim 6, but it does contain a vertex of degree one in H ′
+(namely b1 ). However this is a contradiction to Lemma 9(x). Therefore, b(H ′ ) = 0 and
+2b(H ′ ) + b1 (H ′ ) = 0.
+   Let V ′ denote all vertices removed from H to obtain H ′ and let E ′ be all edges removed.
+We note that H ′ = H(S ′ , V ′ \ (S ′ ∪ {b1 })). Furthermore the vertex b1 was not removed from
+H when we initialized H ′ for the first time. By applying Lemma 9(iii) r + 1 times, we note
+that 24|S ′ | = 6(|V ′ | + 1) + 4e4 (E ′ ) + 6e3 (E ′ ) + 10e2 (E ′ ) + 2(r + 1). Note that apart from
+the vertices and edges in subhypergraphs from B that were deleted when constructing H ′
+from H, a further r + 2 edges have been removed, namely the two edges f2 and f3 and the
+r edges from subhypergraphs contributing to b1 (H ′ ) when constructing H ′ . Therefore since
+we have removed in total r + 1 subhypergraphs in H belonging to B, we have that
+
+       φ(H) − φ(H ′ ) ≥ 6|V ′ | + 4e4 (E ′ ) + 6e3 (E ′ ) + 10e2 (E ′ ) + 4(r + 2)
+                      = 6(|V ′ | + 1) + 4e4 (E ′ ) + 6e3 (E ′ ) + 10e2 (E ′ ) + 2(r + 1) + 2r
+                         ≥ 24|S ′ | + 2r
+                         ≥ 24|S ′ |,
+
+contradicting Fact 1. Hence, b(Hℓ∗ ) > 0.
+   Since B 6= H2 , we have by Lemma 9(x) that δ(B) ≥ 2. Since ∆(H) = 3, each vertex
+in V (B) is intersected by at most one of the three edges f1 , f2 and f3 , implying that
+V (f1 )∩ V (B), V (f2 )∩ V (B) and V (f3 )∩ V (B) are distinct sets. By Lemma 9(iv) and 9(vii),
+we may assume that there exists a τ (B)-set intersecting both f1 and f2 and a τ (B)-set
+intersecting both f2 and f3 (by renaming f1 , f2 and f3 if necessary).
+   Let R ∈ B be a component in Hℓ∗ . Recall by Claim 2 and 3 that we have b(H) = b1 (H) =
+b2 (H) = 0. This implies that there is an edge in {f1 , f3 , e1 , e2 , . . . , eℓ−1 } that intersects
+R. Assume it is ej1 . However now there is an edge in {f1 , f3 , e1 , e2 , . . . , ej1 −1 } that in-
+tersects Bj1 . Assume it is ej2 . However now there is an edge in {f1 , f3 , e1 , e2 , . . . , ej2 −1 }
+that intersects Bj2 . Assume it is ej3 . Continuing the above process we note that j1 >
+j2 > j3 > · · · > js and the edge that intersects Bjs is without loss of generality f1 (oth-
+erwise it is f3 ). By Lemma 9(vi) we can find a minimum transversal in Bji that covers
+the edge eji+1 for each i ∈ {1, 2, . . .}. Furthermore we can find a τ (Bjs )-set that covers
+f1 and a τ (R)-set covering ej1 . Taking the union of all of these transversals we obtain
+a minimum transversal in each of R, Bj1 , Bj2 , . . . , Bjs that together cover all the edges
+
+                                                  22
+ej1 , ej2 , . . . , ejs , f1 . Similarly by Lemma 9(vi) we can readily find a minimum transver-
+sal in each hypergraph in {B1 , B2 , . . . , Bℓ−1 } \ {Bj1 , Bj2 , . . . , Bjs } that cover all edges in
+{e1 , e2 , . . . , eℓ−1 } \ {ej1 , ej2 , . . . , ejs }. Let SB be a τ (B)-set covering f2 and f3 (if f3 would
+have intersected Bjs instead of f1 , then we would have let SB cover f1 and f2 ). Let S ∗
+denote the union of all of these transversals together with SB . Then, S ∗ covers every edge in
+E ∗ ∪ E ∗∗ , where E ∗ = {f1 , f2 , f3 , e1 , e2 , . . . , eℓ−1 } and E ∗∗ = E(R ∪ B ∪ B1 ∪ B2 ∪ · · · ∪ Bℓ−1 ).
+   Let H ′ be obtained from H be removing S ∗ and all edges incident with S ∗ and all resulting
+isolated vertices. Since b(H) = b1 (H) = b2 (H) = 0, we note that every component in Hℓ∗
+which belong to B is incident with at least three edges from E ∗ . Further every edge in
+E ∗ intersects at most three such components, implying that b(Hℓ∗ ) ≤ |E ∗ | = ℓ + 2. Recall
+that b1 (Hℓ∗ ) = 0. Since H ′ is obtained from Hℓ∗ by removing vertices from the component
+R, we have that b(H ′ ) ≤ ℓ + 1 and b1 (H ′ ) = 0, and so 2b(H ′ ) + b1 (H ′ ) ≤ 2(ℓ + 1). Let
+V ∗ = V (R ∪ B ∪ B1 ∪ B2 ∪ · · · ∪ Bℓ−1 ) and note that H ′ = H(S ∗ , V ∗ \ S ∗ ). Applying
+Lemma 9(iii) to the ℓ + 1 hypergraphs R, B, B1 , B2 , . . . , Bℓ−1 , we therefore have that
+
+       φ(H) − φ(H ′ ) ≥ 6|V ∗ | + 4e4 (E ∗∗ ) + 6e3 (E ∗∗ ) + 10e2 (E ∗∗ ) + 4|E ∗ | − 2(ℓ + 1)
+                          = (24|S ∗ | − 2(ℓ + 1)) + 4(ℓ + 2) − 2(ℓ + 1)
+                          = 24|S ∗ | + 4
+                          > 24|S ∗ |,
+
+
+contradicting Fact 1. This completes the proof of Claim 7. (✷)
+
+
+Claim 8 e2 (H) = 0, which by Claim 7 also implies that b3 (H) = 0.
+
+
+Proof. Suppose to the contrary that e = {x, y} is a 2-edge in H. Recall by Claim 2 and 3
+that b(H) = b1 (H) = b2 (H) = 0. Hence since H2 ∈ B, we have that dH (x) = 3 or dH (y) = 3
+(or both). Renaming vertices if necessary, we may assume that dH (x) = 3. Let e, e1 and
+e2 be the edges in H containing x. By Claim 5, the edges e′ and e′′ are both 4-edges. Let
+e′ = {x, u1 , v1 , w1 } and e′′ = {x, u2 , v2 , w2 }. Let H ′ = H({x}, ∅) and let X = {x}.
+  If b(H ′ ) > 0, then since b(H) = b1 (H) = b2 (H) = 0 the component contributing to
+b(H ′ ) must intersect e, e′ and e′′ and therefore contains the vertex y, contradicting Claim 6.
+Therefore, b(H ′ ) = 0. If b1 (H ′ ) = 0, then
+
+              φ(H) − φ(H ′ ) ≥ 6|X| + ω(e) + ω(e′ ) + ω(e′′ ) − (2b(H ′ ) + b1 (H ′ ))
+                                 = 6 + 10 + (2 × 4) − 0
+                                 = 24
+                                 = 24|X|,
+
+
+contradicting Fact 1. Hence, b1 (H ′ ) ≥ 1. If b1 (H ′ ) = 1, then 24τ (H ′ ) < φ(H ′ ) since b1 (H ′ )
+is odd, and so
+
+
+                                                      23
+       24τ (H) ≤ 24(τ (H ′ ) + 1)
+               ≤ (φ(H ′ ) − 1) + 24
+               = [φ(H) − 6|X| − ω(e) − ω(e′ ) − ω(e′′ ) + 2b(H ′ ) + b1 (H ′ ) − 1] + 24
+                    = [φ(H) − 6 − 10 − (2 × 4) + 1 − 1] + 24
+                    = φ(H),
+
+
+a contradiction. Hence, b1 (H ′ ) ≥ 2. Let R ∈ B contribute to b1 (H ′ ). By Claim 6, the
+         / V (R) and therefore R contributes to b3 (H) and is intersected by both e′ and e′′ .
+vertex y ∈
+By Claim 7, we have that R = H2 . Let e2 = {z, w} denote the edge in R, and so y ∈ / {z, w}.
+   Suppose that the edges e′ and e′′ intersect the edge e2 in the same vertex, say z ∈
+V (e2 ) ∩ V (e′ ) ∩ V (e′′ ). Now let H ∗ be obtained from H by deleting the vertices x and z
+and edges e, e′ , e′′ and e2 and adding a 2-edge {y, w}. Let S ∗ be a τ (H ∗ )-set. In order
+to cover the 2-edge {y, w}, we note that |S ∗ ∩ {y, w}| ≥ 1. If y ∈ S ∗ , then S ∗ ∪ {z} is a
+transversal in H. If w ∈ S ∗ , then S ∗ ∪ {x} is a transversal in H. In both cases, there exists
+a transversal in H of size |S ∗ | + 1, implying that τ (H) ≤ τ (H ∗ ) + 1. Furthermore since
+|V (e) \ {x}| + |V (e′ ) \ {x, z}| + |V (e′′ ) \ {x, z}| + |V (e2 ) \ {z}| = 6 and since we added the
+edge {y, w}, we note that 2b(H ∗ ) + b1 (H ∗ ) ≤ 6 (in fact one can show that it is at most 3).
+Therefore,
+
+                    φ(H) − φ(H ∗ ) ≥ 6|{x, z}| + ω(e′ ) + ω(e′′ ) + ω(e) + ω(e2 )
+                                        −ω({y, w}) − (2b(H ∗ ) + b1 (H ∗ ))
+                                    = (2 × 6) + (2 × 4) + (2 × 10) − 10 − 6
+                                    = 24
+                                    ≥ 24(τ (H) − τ (H ∗ ),
+
+
+contradicting Fact 1. Hence, e′ and e′′ do not intersect R in the same vertex. Renaming
+vertices in e′ and e′′ , if necessary, we may assume that e2 = {u1 , u2 }, where we recall
+that e′ = {x, u1 , v1 , w1 } and e′′ = {x, u2 , v2 , w2 }. Since b1 (H ′ ) ≥ 2 there is also another
+subhypergraph R′ ∈ B which contributes to b1 (H ′ ). Analogously to the above arguments
+for R, we have that R′ contributes to b3 (H), R′ is isomorphic to H2 and we may assume
+that the edge, e3 , in R′ is {v1 , v2 }. Since R contributes to b3 (H), there is an edge f in
+E(H) \ {e2 } that intersects R distinct from e′ and e′′ . By Claim 1, the edge f contains
+exactly one of u1 and u2 . Therefore exactly one vertex in {u1 , u2 } has degree 2 in H and
+the other vertex has degree 3 in H. Analogously, there is an edge f ′ in E(H) \ {e3 } that
+intersects R′ distinct from e′ and e′′ . Further, exactly one vertex in {v1 , v2 } has degree 2 in
+H and the other vertex has degree 3 in H. Without loss of generality we may assume that
+dH (u1 ) = 3 (and so, dH (u2 ) = 2). By Claim 6, we note that f and f ′ are 4-edges.
+  Suppose that dH (v2 ) = 3. In this case, we let H ′′ = H(Y, Y ′ ), where Y = {u1 , v2 } and
+Y ′ = {u2 , v1 }.
+                It is not difficult to see that 2b(H ′′ ) + b1 (H ′′ ) ≤ 6. Therefore the following
+holds (even if f = f ′ ).
+
+
+                                                 24
+              φ(H) − φ(H ′′ ) ≥ 6|Y | + 6|Y ′ | + ω(e′ ) + ω(e′′ ) + ω(e2 ) + ω(e3 )
+                                      +ω(f ) − (2b(H ′′ ) + b1 (H ′′ ))
+                                 = (4 × 6) + (4 × 3) + (2 × 10) − 6
+                                 > 48
+                                 = 24|Y |,
+
+contradicting Fact 1. Therefore, dH (v1 ) = 3. Let H x be obtained from H by deleting the
+vertices u2 and v2 and edges e′ , e′′ , e2 and e3 and adding the 2-edge ex = {u1 , v1 }. Let S x
+be a τ (H x )-set. In order to cover the 2-edge ex , we note that |S x ∩ {u1 , v1 }| ≥ 1. If u1 ∈ S x ,
+then S x ∪ {v2 } is a transversal in H. If v1 ∈ S x , then S x ∪ {u2 } is a transversal in H. In
+both cases, there exists a transversal in H x of size |S x |+1, implying that τ (H) ≤ τ (H x )+1.
+   If H x contains a component, Rx , that belongs to B, then since b(H) = b1 (H) = b2 (H) = 0
+the component Rx must intersect at least three of the edges e′ , e′′ , e2 and e3 and therefore
+contains both vertices u1 and v1 (recall that {u1 , v1 } is an edge in H x ). Hence, b(H x ) ≤ 1.
+Suppose b1 (H x ) ≥ 1. In this case, let Rx ∈ B contribute to b1 (H x ). Since b(H) = b1 (H) =
+b2 (H) = 0, the subhypergraph Rx must intersect at least two of the edges e′ , e′′ , e2 and e3 .
+In particular, if w1 ∈ V (Rx ), then Rx must contains at least one of the vertices u1 , x and
+w2 . An analogous argument holds if w2 ∈ V (Rx ). Further since {u1 , v1 } is an edge of H x ,
+this implies that b1 (H x ) ≤ 3. Moreover, if b1 (H x ) = 3, then b(H x ) = 0. Thus if b(H x ) = 1,
+then b1 (H x ) ≤ 2. Hence, 2b(H x ) + b1 (H x ) ≤ 4. Therefore,
+
+               φ(H) − φ(H x ) ≥ 6|{u2 , v2 }| + ω(e′ ) + ω(e′′ ) + ω(e2 ) + ω(e3 )
+                                   −ω({u1 , v1 }) − (2b(H x ) + b1 (H x ))
+                                  = (2 × 6) + (2 × 4) + (2 × 10) − 10 − 4
+                                  > 24
+                                  ≥ 24(τ (H) − τ (H x ),
+
+contradicting Fact 1. This completes the proof of Claim 8. (✷)
+
+Claim 9 There are no 3-edges e1 , e2 ∈ E(H) with |V (e1 ) ∩ V (e2 )| = 2.
+
+Proof. Suppose to the contrary that e1 , e2 ∈ E(H) are 3-edges and |V (e1 ) ∩ V (e2 )| = 2.
+Let H ′ be obtained from H by removing e1 and e2 and adding the edge f = V (e1 ) ∩ V (e2 ).
+Every transversal in H ′ is also a transversal in H, and so τ (H) ≤ τ (H ′ ). By Claims 2, 3
+and 8 we have that b(H) = b1 (H) = b2 (H) = b3 (H) = 0. This implies that b(H − e1 − e2 ) =
+b1 (H − e1 − e2 ) = 0, which in turn implies that 2b(H ′ ) + b1 (H ′ ) ≤ 2. Therefore,
+
+                φ(H) − φ(H x ) ≥ ω(e1 ) + ω(e2 ) − ω(f ) − (2b(H ′ ) + b1 (H ′ ))
+                               ≥ 6 + 6 − 10 − 2
+                                   = 0
+                                   ≥ 24(τ (H) − τ (H ′ )),
+
+                                                  25
+contradicting Fact 1. (✷)
+
+
+Claim 10 There are no 4-edges e1 , e2 ∈ E(H) with |V (e1 ) ∩ V (e2 )| = 3.
+
+
+Proof. This is proved analogously to Claim 9. Suppose to the contrary that e1 , e2 ∈ E(H)
+are 4-edges and |V (e1 ) ∩ V (e2 )| = 3. Let H ′ be obtained from H by removing e1 and e2
+and adding the edge f = V (e1 ) ∩ V (e2 ). Then, τ (H) ≤ τ (H ′ ) and 2b(H ′ ) + b1 (H ′ ) ≤ 2.
+Therefore,
+
+                φ(H) − φ(H x ) ≥ ω(e1 ) + ω(e2 ) − ω(f ) − (2b(H ′ ) + b1 (H ′ ))
+                               ≥ 4+4−6−2
+                                  = 0
+                                  ≥ 24(τ (H) − τ (H ′ )),
+
+
+contradicting Fact 1. (✷)
+
+
+Claim 11 There is no 3-edge e1 and 4-edge e2 in H with |V (e1 ) ∩ V (e2 )| = 2.
+
+
+Proof. Suppose to the contrary that e1 = {u, v, x} is a 3-edges and e2 = {u, v, s, t} is a
+4-edge with V (e1 ) ∩ V (e2 ) = {u, v}. Suppose that dH (u) = 3 and let eu be the third edge
+that contains u. If dH({u},∅) (v) = 0, then let H ′ = H({u}, {v}). In this case, we note that
+since b(H) = b1 (H) = b2 (H) = b3 (H) = 0, we have 2b(H ′ ) + b1 (H ′ ) ≤ 1. Therefore,
+
+         φ(H) − φ(H ′ ) ≥ 2|{u, v}| + ω(e1 ) + ω(e2 ) + ω(eu ) − (2b(H ′ ) + b1 (H ′ ))
+                            ≥ 12 + 6 + 4 + 4 − 1
+                            > 24
+                            = 24|{u}|,
+
+
+contradicting Fact 1. Hence, dH({u},∅) (v) > 0. In this case let H ′ be obtained from H by
+removing e1 and e2 and adding the edge f = {u, v}. Since b(H−e1 −e2 ) = b1 (H−e1 −e2 ) = 0,
+we note that if 2b(H ′ ) + b1 (H ′ ) > 0, then the edge f must belong to a subhypergraph R ∈ B
+which contributes to b(H ′ ) or b1 (H ′ ). Since dH (u) = 3 and dH({u},∅) (v) > 0, we note that
+R 6= H2 . By Lemma9(xii) we note that R contains two 3-edges overlapping in two vertices or
+two 4-edges overlapping in three vertices, a contradiction against Claim 9 and 10. Therefore
+2b(H ′ )+b1 (H ′ ) = 0 and φ(H)−φ(H ′ ) = 6+4−10 = 0, a contradiction to Fact 1. Therefore,
+dH (u) = 2. Analogously, dH (v) = 2.
+  Let H ∗ = H(∅, {u}). Hence, H ∗ is obtained from H by deleting the vertex u and the two
+edges e1 and e2 and adding the 2-edge e′1 = {x, v} and the 3-edge e′2 = {v, s, t}. Since every
+transversal in H ∗ is a transversal in H, we have that τ (H) ≤ τ (H ∗ ). If b(H ∗ ) = b1 (H ∗ ) = 0,
+then we have that
+
+                                                26
+     φ(H) − φ(H ∗ ) ≥ 6|{u}| + ω(e1 ) + ω(e2 ) − ω(e′1 ) − ω(e′2 ) − (2b(H ∗ ) + b1 (H ∗ ))
+                    ≥ 6 + 6 + 4 − 10 − 6
+                       = 0
+                       ≥ 24(φ(H) − φ(H ∗ )),
+
+
+contradicting Fact 1. Hence, 2b(H ∗ ) + b1 (H ∗ ) > 0. Let R ∈ B be a subhypergraph in H ∗
+contributing to b(H ∗ ) or b1 (H ∗ ). Since b(H − e1 − e2 ) = b1 (H − e1 − e2 ) = 0, the edge e′1 or
+e′2 must belong to R, implying that v ∈ V (R). However we note that dH ∗ (v) = 2 and that
+v is incident to the 2-edge e′1 = {x, v} and the 3-edge e′2 = {v, s, t}.
+   Suppose dR (v) = 1. Then by Lemma 9(x) we have that R = H2 . But since the edge e′2
+intersects R, we have that R contributes to b1 (H ∗ ) and that e′2 is the only edge intersecting
+R. This in turn implies that dH (x) = 1. But then letting H x = H({u, v, x}, ∅), we have
+that every transversal in H x can be extended to a transversal in H by adding to it the
+vertex u, and so τ (H) ≤ τ (H x ) + 1. Further, b(H x ) = b1 (H x ) = 0, and so φ(H) − φ(H x ) =
+6|{u, v, x}| + ω(e1 ) + ω(e2 ) − (2b(H x ) + b1 (H x )) = 18 + 6 + 4 > 24 ≤ 24(τ (H) − τ (H x )),
+contradicting Fact 1. Hence, dR (v) = 2.
+   Since dR (v) = 2, both edges e′1 and e′2 belong to R. By Lemma9(xii) we note that R
+contains two 3-edges overlapping in two vertices or two 4-edges overlapping in three vertices.
+By Claim 9 and 10 we note that R contains two 3-edges overlapping in two vertices and
+e′2 = {v, s, t} is one of these 3-edges. By Lemma9(xiii) and Claim 10 we note that {x, s, t} is
+an edge in R and therefore also in H ∗ and H. Considering the edges {x, s, t} and {u, v, s, t}
+instead of e1 and e2 , we have that dH (s) = dH (t) = 2 (analogously to the arguments showing
+that dH (u) = 2 and dH (v) = 2).
+  Let F be the hypergraph with V (F ) = {u, v, x, s, t} and with E(F ) = {e1 , e2 , e3 }. We
+note that F is obtained by using Step (D) in Definition 1 on two disjoint copies of H2 , and
+so F ∈ B. On the one hand, if dH (x) = 2, then H = F since recall that, by Claim 2, H is
+connected. But this implies that b(H) = 1. On the other hand, if dH (x) = 3, then F is a
+component of H − e′ , where e′ denote the edge of H containing x different from e1 and e2 .
+But this implies that the subhypergraph F ∈ B contributes to b1 (H), and so b1 (H) ≥ 1. In
+both cases, we contradict Claim 2. This completes the proof of Claim 11. (✷)
+
+
+Claim 12 No B ∈ B is a subhypergraph of H.
+
+
+Proof. Suppose to the contrary that R ∈ B is a subhypergraph of H. By Claim 8, we
+have that e2 (H) = 0, implying that in order to create R in Definition 1 we must have used
+Step (D) last. However this implies that a 3-edge and a 4-edge overlap in two vertices, a
+contradiction to Claim 11. (✷)
+
+
+
+
+                                                27
+Claim 13 There are no overlapping edges in H.
+
+Proof. Suppose to the contrary that e1 , e2 ∈ E(H) have |V (e1 ) ∩ V (e2 )| ≥ 2. By
+Claims 8, 9, 10 and 11 we note that e1 and e2 are both 4-edges and |V (e1 ) ∩ V (e2 )| = 2. Let
+e1 = {u, v, x1 , y1 } and e2 = {u, v, x2 , y2 }. Suppose that dH (u) = 2. Let H ′ = H(∅, {u}).
+Hence, H ′ is obtained from H by deleting the vertex u and the two edges e1 and e2 and
+adding the edges e′1 = {v, x1 , y1 } and e′2 = {v, x2 , y2 }. Since every transversal in H ′ is a
+transversal in H, we have that τ (H) ≤ τ (H ′ ). Every R ∈ B contributing to 2b(H ′ ) + b1 (H ′ )
+must contain the vertex v, implying that 2b(H ′ ) + b1 (H ′ ) ≤ 2. Therefore,
+
+      φ(H) − φ(H ′ ) ≥ 6|{u}| + ω(e1 ) + ω(e2 ) − ω(e′1 ) − ω(e′2 ) − (2b(H ′ ) + b1 (H ′ ))
+                       ≥ 6+4+4−6−6−2
+                       = 0
+                       ≥ 24(φ(H) − φ(H ′ )),
+
+
+contradicting Fact 1. Therefore, dH (u) = 3. Analogously, dH (v) = 3. Let fu be the edge
+in E(H) \ {e1 , e2 } containing u and let fv be the edge in E(H) \ {e1 , e2 } containing v.
+Without loss of generality, we may assume that |V (fu )| ≥ |V (fv )|. Suppose that fu = fv .
+In this case, let H ′ = H({u}, {v}). By Claim 12, no B ∈ B is a subhypergraph of H, and
+so b(H ′ ) = b1 (H ′ ) = 0. Therefore,
+
+         φ(H) − φ(H ′ ) ≥ 6|{u, v}| + ω(e1 ) + ω(e2 ) + ω(fu ) − (2b(H ′ ) + b1 (H ′ ))
+                        ≥ 12 + 4 + 4 + 4
+                          = 24
+                          = 24|{u}|,
+
+
+contradicting Fact 1. Hence, fu 6= fv , implying that v ∈      / V (fu ) and u ∈ / V (Fv ). By
+Claims 9, 10 and 11, there is a vertex w ∈ V (fv )\(V (fu )∪{v}). Let f ∗ = (V (fu )\{u})∪{w}.
+Then, |V (f ∗ )| = |V (fu )| ≥ |V (fv )|. Let H ∗ be obtained from H be deleting the edges
+e1 , e2 , fu , fv and the vertices u and v, but adding the edge f ∗ . Let S ∗ be a τ (H ∗ )-set
+and note that |S ∗ ∩ V (f ∗ )| ≥ 1. If w ∈ S ∗ , then let S = S ∗ ∪ {u}, while if w ∈  / S ∗ , let
+S = S ∗ ∪ {v}. In both cases, S is a transversal in H and |S| = |S ∗ | + 1 = τ (H ∗ ) + 1,
+implying that τ (H) ≤ τ (H ∗ ) + 1. Recalling that ω(f ∗ ) = ω(fu ), we have
+
+               φ(H) − φ(H ∗ ) ≥ 6|{u, v}| + ω(e1 ) + ω(e2 ) + ω(fu ) + ω(fv )
+                                      −ω(f ∗ ) − 2b(H ∗ ) − b1 (H ∗ )
+                                 ≥ 12 + 4 + 4 + ω(fv ) − 2b(H ∗ ) − b1 (H ∗ )
+                                 = 20 + w(fv ) − 2b(H ∗ ) − b1 (H ∗ ).
+
+
+  By Claim 12, no B ∈ B is a subhypergraph of H. Hence any subgraph R ∈ B contributing
+to 2b(H ∗ ) + b1 (H ∗ ) must contain the edge f ∗ , implying that 2b(H ∗ ) + b1 (H ∗ ) ≤ 2. If fv
+
+                                               28
+is a 3-edge, then w(fv ) = 6 and w(fv ) − 2b(H ∗ ) − b1 (H ∗ ) ≥ 4. But then φ(H) − φ(H ∗ ) ≥
+20 + w(fv ) − 2b(H ∗ ) − b1 (H ∗ ) ≥ 24 ≥ 24(τ (H) − τ (H ∗ )), contradicting Fact 1. Hence, fv
+is a 4-edge, implying that f ∗ and fu are 4-edges. In particular, ω(fv ) = 4. Furthermore if
+2b(H ∗ ) + b1 (H ∗ ) = 0, then w(fv ) − 2b(H ∗ ) − b1 (H ∗ ) ≥ 4 and therefore that φ(H) − φ(H ∗ ) ≥
+24(τ (H) − τ (H ∗ )), contradicting Fact 1. Hence, 2b(H ∗ ) + b1 (H ∗ ) ≥ 1. Let R ∈ B be a
+subhypergraph in H ∗ contributing to 2b(H ∗ ) + b1 (H ∗ ).
+  By Claim 8, we have e2 (H) = 0. Since no 2-edges are added when constructing H ∗ , we
+therefore have that e2 (H ∗ ) = 0. This implies that the last step performed in the creation of
+R in Definition 1 is Step (D). This in turn implies that in H ∗ there is a 4-edge intersected
+by two 3-edges. Moreover, such a 4-edge intersects each of these 3-edges in two vertices.
+By Claim 11, this 4-edge must therefore be the new edge f ∗ added when constructing H ∗ .
+By Step (D) in Definition 1 we furthermore note that the two 3-edges that intersect the
+4-edge f ∗ intersect it in disjoint sets. Hence there is a 3-edge, not containing the vertex
+w ∈ V (F ∗ ), that intersects f ∗ in two vertices. But this implies it intersected fu in two
+vertices, a contradiction to Claim 11. This completes the proof of Claim 13. (✷)
+
+
+Claim 14 δ(H) ≥ 2.
+
+
+Proof. Suppose to the contrary that a vertex x ∈ V (H) has dH (x) = 1. Let e be the edge
+containing x and let e′ = V (ex ) \ {x}. Let H ′ = H(∅, {x}) and note that τ (H) = τ (H ′ ).
+By Claim 12, no B ∈ B is a subhypergraph of H, implying that 2b(H ′ ) + b1 (H ′ ) ≤ 2.
+If e is a 3-edge, then φ(H) − φ(H ∗ ) ≥ 6|{x}| + ω(e) − ω(e′ ) − 2b(H ′ ) − b1 (H ′ ) ≥ 6 +
+6 − 10 − 2 ≥ 0 ≥ 24(τ (H) − τ (H ′ )), contradicting Fact 1. Hence, e is a 4-edge. But then
+φ(H)−φ(H ∗ ) ≥ 6|{x}|+ω(e)−ω(e′ )−2b(H ′ )−b1 (H ′ ) ≥ 6+4−6−2 > 0 ≥ 24(τ (H)−τ (H ′ )),
+once again contradicting Fact 1. (✷)
+
+
+Claim 15 Every vertex of degree 2 in H is incident with two 3-edges.
+
+
+Proof. Assume that dH (x) = 2. By Claim 8, we have e2 (H) = 0. Suppose to the
+contrary that x is incident with at least one 4-edge, e. Let f denote the remaining edge
+that contains x. Let H ′ = H(∅, {x}) and note that τ (H) ≤ τ (H ′ ). We first show that
+2b(H ′ ) + b1 (H ′ ) = 0. If this is not the case, let R ∈ B be a subhypergraph of H ′ that
+contributes to b(H ′ ) or b1 (H ′ ). Since all hypergraphs in B \ H2 have overlapping edges
+while there are no overlapping edges in H ′ , by Claim 13, we must have that R = H2 .
+By Claim 12, no B ∈ B is a subhypergraph of H, implying that f is a 3-edge and R
+necessarily contains the 2-edge V (f ) \ {x}. However since δ(H) ≥ 2 by Claim 2, both
+vertices in R are incident with at least one edge in E(H) \ {e′ }. Further since there are no
+overlapping edges in H, these edges are distinct. But this implies that there are least two
+edges in E(H ′ )\E(R) intersecting V (R), and so R does not contribute to b(H ′ ) or b1 (H ′ ), a
+contradiction. Therefore, 2b(H ′ ) + b1 (H ′ ) = 0. Letting e′ = V (e) \ {x} and f ′ = V (f ) \ {x},
+we note that ω(e′ ) − ω(e) = 2 and ω(f ′ ) − ω(f ) ≤ 4. Therefore,
+
+
+
+
+                                                29
+        φ(H) − φ(H ′ ) ≥ 6|{x}| + ω(e) + ω(f ) − ω(e′ ) − ω(f ′ ) − (2b(H ′ ) + b1 (H ′ ))
+                       ≥ 6 − (ω(e′ ) − ω(e)) − (ω(f ′ ) − ω(f )) − 0
+                          ≥ 6−2−4
+                          = 0
+                          ≥ 24(τ (H) − τ (H ′ ),
+
+
+contradicting Fact 1. This completes the proof of Claim 15. (✷)
+
+
+Claim 16 Every vertex of degree 3 in H is incident with a 3-edge and a 4-edge.
+
+
+Proof. Assume that dH (x) = 3 and suppose to the contrary that x is contained in only
+3-edges or only 4-edges. Suppose first that x is contained in only 3-edges and let H ′ =
+H({x}, ∅). By Claim 12, we have that b(H ′ ) = b1 (H ′ ) = 0. Therefore since each of the three
+edges incident with x has weight 6, we have that φ(H) − φ(H ′ ) = 6 + (3 × 6) = 24 = 24|{x}|,
+contradicting Fact 1. Hence, x is contained in only 4-edges.
+  We now let H ∗ = H(∅, {x}) and note that τ (H) ≤ τ (H ′ ). Since there are no 2-edges
+in H ∗ and no overlapping edges in H ∗ by Claim 13, we note that b(H ∗ ) = b1 (H ∗ ) = 0.
+Therefore since each of the three deleted edges has weight 4 and each of the three added
+edges has weight 6, we have that φ(H) − φ(H ′ ) = 6 − (3 × 2) = 0 ≥ 24(τ (H) − τ (H ′ ),
+contradicting Fact 1. This completes the proof of Claim 16. (✷)
+
+
+Claim 17 Every 3-edge in H contains a vertex of degree 3.
+
+
+Proof. Assume that e = {u1 , u2 , u3 } ∈ E(H) and suppose to the contrary that dH (u1 ) =
+dH (u2 ) = dH (u3 ) = 2. For i = 1, 2, 3, let ei be the edge in E(H) \ {e} containing ui . By
+Claim 13, e1 , e2 and e3 are distinct edges and by Claim 15 they are all 3-edges.
+   Suppose first that |V (ei )∪V (ej )| ≤ 5 for all 1 ≤ i < j ≤ 3. In this case, by Claim 13, every
+pair of edges in {e1 , e2 , e3 } intersect in exactly one vertex. So let V (ei ) ∩ V (ej ) = {vi,j }
+for 1 ≤ i < j ≤ 3. If v1,2 , v1,3 and v2,3 are not distinct vertices, then we must have
+v1,2 = v1,3 = v2,3 , which contradicts Claim 16. Hence, v1,2 , v1,3 and v2,3 are distinct
+vertices. Hence, e1 = {u1 , v12 , v13 }, e2 = {u2 , v12 , v23 }, and e3 = {u3 , v13 , v23 }. Let H ′ be
+obtained from H by deleting the edges e, e1 , e2 , e2 and vertices u1 , u2 , u3 and adding the
+edge f = {v1,2 , v1,3 , v2,3 }. We will first show that τ (H) ≤ τ (H ′ ) + 1. Let S ′ be a τ (H ′ )-set.
+Since S ′ intersects the edge f , we may assume, renaming vertices if necessary, that v1,2 ∈ S ′ .
+But then S ′ ∪ {u3 } is a transversal of H, and so τ (H) ≤ |S ′ | + 1 = τ (H ′ ) + 1, as desired.
+Clearly 2b(H ′ ) + b1 (H ′ ) ≤ 2 as any subgraph contributing to 2b(H ′ ) + b1 (H ′ ) must contain
+the added edge f since by Claim 12 no subhypergraph of H belongs to B. Therefore,
+
+
+
+
+                                                  30
+              φ(H) − φ(H ′ ) ≥ 6|{u1 , u2 , u3 }| + ω(e) + ω(e1 ) + ω(e2 ) + ω(e3 )
+                                    −ω(f ) − (2b(H ′ ) + b1 (H ′ ))
+                               ≥ (3 × 6) + (4 × 6) − 6 − 2
+                               > 24
+                               ≥ 24(τ (H) − τ (H ′ ),
+
+
+contradicting Fact 1. We may therefore assume, renaming vertices if necessary, that |V (e1 )∪
+V (e2 )| = 6; that is, the 3-edges e1 and e2 do not intersect. Let f1,2 = (V (e1 ) ∪ V (e2 )) \
+{u1 , u2 } and let f3 = V (e3 ) \ {u3 }. Let H ∗ be obtained from H by deleting the edges
+e, e1 , e2 , e3 and vertices u1 , u2 , u3 and adding the edges f1,2 and f3 . We will first show that
+τ (H) ≤ τ (H ∗ ) + 1. Let S ∗ be a τ (H ∗ )-set. Since S ∗ intersects the edge f12 , we may assume,
+renaming vertices if necessary, that S ∗ ∩ V (e1 ) 6= ∅. But then S ∗ ∪ {u2 } is a transversal of
+H, and so τ (H) ≤ |S ∗ | + 1 = τ (H ∗ ) + 1, as desired. Clearly, 2b(H ∗ ) + b1 (H ∗ ) ≤ 4 as any
+subhypergraph contributing to 2b(H ∗ ) + b1 (H ∗ ) must contain the edge f1,2 or the edge f3 .
+Therefore, since f1,2 is a 4-edge and f3 a 2-edge, we have that
+
+             φ(H) − φ(H ∗ ) ≥ 6|{u1 , u2 , u3 }| + ω(e) + ω(e1 ) + ω(e2 ) + ω(e3 )
+                                    −ω(f1,2 ) − ω(f3 ) − (2b(H ∗ ) + b1 (H ∗ ))
+                               ≥ (3 × 6) + (4 × 6) − 4 − 10 − 4
+                               = 24
+                               ≥ 24(τ (H) − τ (H ∗ ),
+
+
+contradicting Fact 1. This completes the proof of Claim 17. (✷)
+
+
+Claim 18 Every 3-edge in H contains at least two vertices of degree 3.
+
+
+Proof. Assume that e = {u1 , u2 , u3 } ∈ E(H) and suppose to the contrary that dH (u2 ) =
+dH (u3 ) = 2. By Claim 17 we have dH (u1 ) = 3. Let e′1 and e′2 be the two edges in
+E(H) \ {e} containing u1 . For i = 2, 3, let ei be the edge in E(H) \ {e} containing ui and
+let fi = V (ei ) \ {ui }. By Claim 15, the edges e2 and e3 are both 3-edges, and so f2 and f3
+are both 2-edges. Let H ′ = H({u1 }, {u2 , u3 }). Let V (f2 ) = {v2 , w2 }.
+   We will first show that b(H ′ ) = 0. If this is not the case, then let R ∈ B be a component
+in H ′ . By Claim 13, we have that R = H2 , which by Claim 8, implies that f2 or f3 is
+the edge in R. Renaming vertices if necessary, we may assume that E(R) = {f2 }, and so
+V (R) = {v2 , w2 }. Since there is no edge in E(H ′ ) \ {f2 } that intersects V (R), we note that
+the edges f2 and f3 do not intersect. By Claim 15, each vertex in V (R) is either incident
+to three edges in H or two 3-edges in H. Suppose both v2 and w2 are incident to two
+3-edges in H. This implies that there are two distinct 3-edges that contain (exactly) one of
+v2 and w2 and these two 3-edges are different from the edge e2 (and from the edge e). Since
+the vertex u1 , which has degree 3 in H, cannot be incident to three 3-edges by Claim 16,
+
+                                                31
+at least one of these 3-edges that contain v2 or w2 is different from both e′1 and e′2 . This
+3-edge belongs to E(H ′ ) \ {f2 } and intersects V (R), a contradiction to the fact that R is a
+component in H ′ . Hence at least one of v2 and w2 is incident to three edges in H and the
+other to at least two edges in H. But once again this implies that there exists an edge that
+contain v2 or w2 and is different from the deleted edges e, e′1 , e′′1 , e2 , e3 and the edge f2 , a
+contradiction again to the fact that R is a component in H ′ . Therefore, b(H ′ ) = 0.
+  If b1 (H ′ ) = 0, then
+
+         φ(H) − φ(H ′ ) ≥ 6|{u1 , u2 , u3 }| + ω(e) + ω(e′1 ) + ω(e′′1 ) + ω(e2 ) + ω(e3 )
+                                     −ω(f2 ) − ω(f3 ) − (2b(H ′ ) + b1 (H ′ ))
+                              ≥ (3 × 6) + (3 × 6) + (2 × 4) − (2 × 10) − 0
+                              = 24
+                              = 24|{u1 }|,
+
+
+contradicting Fact 1. Hence, b1 (H ′ ) ≥ 1. Let R ∈ B be a subhypergraph in H ′ contributing
+to b1 (H ′ ). By Claim 13, there are no overlapping edges in H and therefore in H ′ , implying
+that R = H2 . This in turn implies by Claim 8 that f2 or f3 is the edge in R. Renaming
+vertices if necessary, we may assume that E(R) = {f2 }. Let e′ be the edge in E(H ′ ) \ {f2 }
+that intersects R. Since there are no overlapping edges in H, we note that |V (f2 )∩V (e′ )| = 1.
+Renaming vertices in f2 if necessary, we may assume that V (f2 ) ∩ V (e′ ) = {v2 }.
+  We now consider the hypergraph H ∗ = H ′ ({v2 }, {w2 }) obtained from H ′ by deleting the
+vertices v2 and w2 and deleting the edge e′ . We note that H ∗ = H({{u1 , v2 }, {u2 , u3 , w2 }).
+By Claims 8, 12 and 13 the only possibly subhypergraph in H ∗ in B is the hypergraph iso-
+morphic to H2 that consists of the 2-edge f3 , implying that 2b(H ∗ )+b1 (H ∗ ) ≤ 2. Therefore,
+
+     φ(H) − φ(H ∗ ) ≥ 6|{u1 , u2 , u3 , v2 , w2 }| + ω(e) + ω(e′1 ) + ω(e′′1 ) + ω(e2 ) + ω(e3 )
+                         +ω(e′ ) − ω(f3 ) − (2b(H ∗ ) + b1 (H ∗ ))
+                           ≥ (5 × 6) + (3 × 6) + (3 × 4) − 10 − 2
+                           = 48
+                           ≥ 24|{u1 , v2 }|,
+
+
+contradicting Fact 1. This completes the proof of Claim 18. (✷)
+
+
+Claim 19 No vertex is contained in two 3-edges and one 4-edge, such that one of the 3-
+edges contains a degree-2 vertex.
+
+
+Proof. Assume that e1 = {x, u1 , v1 }, e2 = {x, u2 , v2 } and e3 = {x, u3 , v3 , w3 } are edges
+in H and suppose to the contrary that dH (u1 ) = 2. By Claim 15, u1 is incident with two
+3-edges, say e1 and f1 = {u1 , x1 , y1 }. Let H ′ = H({x}, {u1 }). If 2b(H ′ ) + b1 (H ′ ) > 0, then
+let R ∈ B be a subhypergraph in H ′ contributing to 2b(H ′ )+ b1 (H ′ ). By Claim 13, there are
+
+                                                   32
+no overlapping edges in H and therefore in H ′ , implying that R = H2 . This in turn implies
+by Claim 8 that the edge in E(R) is g = {x1 , y1 }. By supposition, dH (u1 ) = 2. Hence by
+Claim 18 the two vertices, namely x1 and y1 , in the 3-edge f1 both have degree 3 in H. Since
+there are no overlapping edges in H, there are therefore four distinct edges in H excluding
+the edge f1 that intersect V (R). Further we note that the vertex u1 is the only vertex
+common to both edges e1 and f1 , implying that the edge e1 does not intersect V (R). Hence
+removing the three edges e1 , e2 and e3 from H can remove at most two edges intersecting
+V (R), implying that at least two edges in H that intersect V (R) remain in H ′ . But then
+R does not contribute to 2b(H ′ ) + b1 (H ′ ), a contradiction. Therefore, 2b(H ′ ) + b1 (H ′ ) = 0.
+This implies that
+
+                φ(H) − φ(H ′ ) ≥ 6|{x, u1 }| + ω(e1 ) + ω(e2 ) + ω(e3 ) + ω(f1 )
+                                      −ω(g) − (2b(H ′ ) + b1 (H ′ ))
+                                 ≥ (2 × 6) + (3 × 6) + 4 − 10 − 0
+                                 = 24
+                                 = 24|{x}|,
+
+
+contradicting Fact 1. (✷)
+
+
+Claim 20 H is 3-regular.
+
+
+Proof. Suppose to the contrary that δ(H) = 2. Let x be a vertex of degree 2 in H. By
+Claim 15, x is incident with two 3-edges in H, say e1 = {x, u1 , v1 } and e2 = {x, u2 , v2 }.
+By Claims 16, 18 and 19 each vertex in {u1 , v1 , u2 , v2 } is contained in one 3-edge and two
+4-edges. Let f1 and f2 be the two 4-edges containing u1 and let h1 and h2 be the two
+4-edges containing v1 . For i ∈ {1, 2}, let h′i = V (hi ) \ {v1 }. Let e′2 = {u2 , v2 }. We note that
+h′1 and h′2 are both 3-edges. We now consider the hypergraph H ′ = H({u1 }, {x, v1 }).
+   We will first show that 2b(H ′ ) + b1 (H ′ ) = 0. If this is not the case, then let R ∈ B be a
+subhypergraph in H ′ contributing to 2b(H ′ )+b1 (H ′ ). By Claim 13, there are no overlapping
+edges in H and therefore in H ′ , implying that R = H2 . This in turn implies by Claim 8
+that V (R) = {u2 , v2 } as e′2 is the only 2-edge in H ′ . By Claim 18, both vertices u2 and v2
+have degree 3 in H. Since removing all edges containing u1 can remove at most two edges
+intersecting V (R) in H, at least two edges in H that intersect V (R) remain in H ′ . But then
+R does not contribute to 2b(H ′ ) + b1 (H ′ ), a contradiction. Therefore, 2b(H ′ ) + b1 (H ′ ) = 0.
+This implies that
+
+    φ(H) − φ(H ′ ) ≥ 6|{x, u1 , v1 }| + ω(e1 ) + ω(e2 ) + ω(f1 ) + ω(f2 ) + ω(h1 ) + ω(h2 )
+                        −ω(h′1 ) − ω(h′1 ) − ω(e′2 ) − (2b(H ′ ) + b1 (H ′ ))
+                      ≥ (3 × 6) + (2 × 6) + (4 × 4) − (2 × 6) − 10 − 0
+                      = 24
+                      = 24|{u1 }|,
+
+                                                 33
+contradicting Fact 1. (✷)
+
+
+Claim 21 All vertices are contained in two 3-edges and one 4-edge.
+
+
+Proof. Suppose to the contrary that there is a vertex x in H that is not adjacent with two
+3-edges and one 4-edge. By Claim 21, dH (x) = 3. By Claim 16, the vertex x is incident
+with a 3-edge and a 4-edge. By our supposition, the remaining edge incident with x is a
+4-edge. Let e1 = {x, u1 , v1 }, e2 = {x, u2 , v2 , w2 } and e3 = {x, u3 , v3 , w3 } be the three edges
+incident with x. For i ∈ {1, 2, }, let e′i = V (ei ) \ {x}.
+  By Claim 16 and 21, we have that dH (u1 ) = 3 and u1 is incident with either two 3-
+edges and one 4-edge or with one 3-edge and two 4-edges. Suppose that u1 is incident
+with two 3-edges, say e1 and f1 . In this case, let f2 be the 4-edge that contains u1 . Let
+H ′ = H({u1 }, {x}). Since e2 (H ′ ) = 0 and there are no overlapping edges in H ′ , we note
+that b(H ′ ) = b1 (H ′ ) = 0. Therefore,
+
+           φ(H) − φ(H ′ ) ≥ 6|{x, u1 }| + ω(e1 ) + ω(e2 ) + ω(e3 ) + ω(f1 ) + ω(f2 )
+                               −ω(e′2 ) − ω(e′3 ) − (2b(H ′ ) + b1 (H ′ ))
+                             ≥ (2 × 6) + (2 × 6) + (3 × 4) − (2 × 6) − 0
+                             = 24
+                             = 24|{u1 }|,
+
+
+contradicting Fact 1. Hence, u1 is incident with one 3-edge and two 4-edges. Analogously,
+v1 is incident with one 3-edge and two 4-edges. Let h1 and h2 be the two 4-edges containing
+u1 and let g1 and g2 be the two 4-edges containing v1 . For i ∈ {1, 2}, let h′i = V (hi ) \ {u1 }
+and let gi′ = V (gi ) \ {v1 }. We now consider the hypergraph H ∗ = H({x}, {u1 , v1 }) and
+note that e2 (H ∗ ) = 0. Further since there are no overlapping edges in H ∗ , we note that
+b(H ∗ ) = b1 (H ∗ ) = 0. Therefore,
+
+   φ(H) − φ(H ∗ ) ≥ 6|{x, u1 , v1 }| + ω(e1 ) + ω(e2 ) + ω(e3 ) + ω(h1 ) + ω(h2 ) + ω(g1 )
+                       +ω(g2 ) − ω(h′1 ) − ω(h′2 ) − ω(g1′ ) − ω(g1′ ) − (2b(H ∗ ) + b1 (H ∗ ))
+                     ≥ (3 × 6) + 6 + (6 × 4) − (4 × 6) − 0
+                     = 24
+                     = 24|{x}|,
+
+
+contradicting Fact 1. (✷)
+
+   We now return to the proof of Theorem 1 to obtain a final contradiction implying the non-
+existence of our counterexample, H, to the theorem. Let e = {u1 , u2 , u3 } be an arbitrary
+3-edge in H. By Claim 21, each vertex of H is contained in two 3-edges and one 4-edge. For
+i ∈ {1, 2, 3}, let ei be the 3-edge and fi the 4-edge in E(H) \ {e} that contains the vertex ui .
+
+
+                                                 34
+By Claim 13, the edges e1 , e2 and e3 are all distinct. For i ∈ {1, 2, 3}, let fi′ = V (fi ) \ {ui }
+and note that fi′ is a 3-edge.
+    Suppose that V (ei ) ∩ V (ej ) 6= ∅ for all 1 ≤ i < j ≤ 3. Let V (ei ) ∩ V (ej ) = {vi,j }
+for 1 ≤ i < j ≤ 3. If v1,2 , v1,3 and v2,3 are not distinct vertices, then we must have
+v1,2 = v1,3 = v2,3 , which implies that a vertex is incident with three 3-edges, contradicting
+Claim 21. Hence, v1,2 , v1,3 and v2,3 are distinct vertices. Thus, e1 = {u1 , v12 , v13 }, e2 =
+{u2 , v12 , v23 }, and e3 = {u3 , v13 , v23 }. Let h = {v1,2 , v1,3 , v2,3 }. Let H ′ be obtained by
+deleting the edges e, e1 , e2 , e3 , f1 , f2 , f3 and vertices u1 , u2 , u3 and adding the 3-edges f1′ ,
+f2′ , f3′ and h. By Claim 12 and by construction, we note that if R is a subhypergraph
+contributing to 2b(H ′ ) + b1 (H ′ ), then R must contain the added 3-edge h, implying that
+2b(H ′ ) + b( H ′ ) ≤ 2. Suppose that S ′ is a τ (H ′ )-set. Since |S ′ ∩ V (h)| ≥ 1, we may assume
+renaming vertices if necessary that v1,2 ∈ S ′ . But then S ′ ∪ {u3 } is a transversal of H, and
+so τ (H) ≤ |S ′ | + 1 = τ (H ′ ) + 1. Therefore,
+
+    φ(H) − φ(H ′ ) ≥ 6|{u1 , u2 , u3 }| + ω(e) + ω(e1 ) + ω(e2 ) + ω(e3 ) + ω(f1 ) + ω(f2 )
+                        +ω(f3 ) − ω(f1′ ) − ω(f2′ ) − ω(f3′ ) − ω(h) − (2b(H ′ ) + b1 (H ′ ))
+                       ≥ (3 × 6) + (4 × 6) + (3 × 4) − (4 × 6) − 2
+                       > 24
+                       ≥ 24(τ (H) − τ (H ′ )),
+
+contradicting Fact 1. Hence, V (ei ) ∩ V (ej ) = ∅ for some i and j where 1 ≤ i < j ≤ 3.
+Renaming vertices if necessary, we may assume that V (e1 ) ∩ V (e2 ) = ∅. For i ∈ {1, 2, 3},
+let ei = {ui , xi , yi }. Since H has no overlapping edges by Claim 13, we know that |V (f2 ) ∩
+V (e1 )| ≤ 1. Renaming the vertices x1 and y1 if necessary, we may assume that x1 ∈  / V (f2 ).
+This implies that there is no common edge containing both u2 and x1 . We now consider the
+hypergraphs H ∗ = H({x1 , u2 }, {u1 }). Then, e2 (H ∗ ) = 0 and H ∗ has no overlapping edges,
+implying that b(H ∗ ) = b1 (H ∗ ) = 0. By Claim 21, the vertex x is contained in two 3-edges,
+say e1 and ex , and in one 4-edge, say fx . We now have that
+
+         φ(H) − φ(H ∗ ) ≥ 6|{u1 , u2 , x1 }| + ω(e) + ω(e1 ) + ω(e2 ) + ω(f1 ) + ω(f2 )
+                                 +ω(ex ) + ω(fx ) − ω(f1′ ) − (2b(H ∗ ) + b1 (H ∗ ))
+                            ≥ (3 × 6) + (4 × 6) + (3 × 4) − 6 − 0
+                            = 48
+                            = 24|{{x1 , u2 }|,
+
+contradicting Fact 1. This completes the proof of Theorem 1. ✷
+
+
+6    Proof of Theorem 6
+
+Before giving a proof of Theorem 6 we first present short proofs of Theorem 4 and Theorem 5.
+Recall the statement of Theorem 4, first proved by Chvátal and McDiarmid.
+
+                                                  35
+Theorem 4. ([2]) If H is a 4-uniform hypergraph, then τ (H) ≤ n(H)
+                                                                6 +
+                                                                    m(H)
+                                                                     3 .
+
+Proof of Theorem 4. We will prove the theorem by induction on n(H). Clearly the
+theorem holds when n(H) ≤ 4, so assume that H is a 4-uniform hypergraph with n(H) > 4.
+Further since τ (H) is additive with respect to the components of H, we may assume that
+H is connected, and so δ(H) ≥ 1. If ∆(H) > 2, then let x be any vertex with dH (x) > 2
+and let H ′ = H − x. By induction, 6τ (H ′ ) ≤ n(H ′ ) + 2m(H ′ ) ≤ (n(H) − 1) + 2(m(H) − 3).
+By adding x to any transversal in H ′ we obtain a transversal in H, implying that 6τ (H) ≤
+6(τ (H ′ ) + 1) ≤ (n(H) + 2m(H) − 7) + 6 < n(H) + 2m(H). We may therefore assume that
+∆(H) ≤ 2.
+   If some x ∈ V (H) has dH (x) = 1, then let e denote the edge containing x and let y be
+a vertex in e of maximum degree in H. Note that dH (y) = 2 as H is connected, n(H) ≥ 5
+and ∆(H) ≤ 2. Consider the hypergraph H ′ = H − y obtained from H by deleting
+y and all edges containing y and then removing any resulting isolated vertices. Then,
+n(H ′ ) ≤ n(H) − 2 (since both x and y get removed) and m(H ′ ) = m(H) − 2. By induction,
+6τ (H ′ ) ≤ n(H ′ ) + 2m(H ′ ) ≤ n(H) + 2m(H) − 6. By adding y to any transversal in H ′ we
+obtain a transversal in H, implying that 6τ (H) ≤ 6(τ (H ′ ) + 1) ≤ n(H ′ ) + 2m(H ′ ) + 6 ≤
+n(H) + 2m(H), by induction. We may therefore assume that δ(H) ≥ 2, implying that H is
+2-regular.
+  Since H is 2-regular and 4-uniform we have 2n(H) = 4m(H), which, by Theorem 2 implies
+that 24τ (H) ≤ 6n(H) + 4m(H) = 4n(H) + 8m(H), completing the proof of Theorem 4. ✷
+
+Theorem 5. ([13]) If H is a 4-uniform hypergraph, then τ (H) ≤ 5n(H)
+                                                                 21 +
+                                                                      4m(H)
+                                                                        21 .
+
+Proof of Theorem 5. The following holds for 4-uniform hypergraph, by Theorem 2 and
+Theorem 4.
+                                                            
+               6       n(H) m(H)           1       n(H) m(H)           5n(H) 4m(H)
+     τ (H) ≤               +           +               +           =        +      .   ✷
+               7         4   6             7         6   3               21    21
+
+
+  Recall that for a graph G, the open neighborhood hypergraph, abbreviated ONH, of G is
+the hypergraph HG with vertex set V (HG ) = V (G) and with edge set E(HG ) = {NG (x) |
+x ∈ V } consisting of the open neighborhoods of vertices in G. The transversal number of
+the ONH of a graph is precisely the total domination number of the graph; that is, for a
+graph G, we have γt (G) = τ (HG ). We are now in a position to prove Theorem 6. Recall
+the statement of the theorem.
+Theorem 6. ([13]) If G is a graph of order n with δ(G) ≥ 4, then γt (G) ≤ 3n/7.
+Proof of Theorem 6. Let G be a graph of order n with δ(G) ≥ 4 and let HG be the
+ONH of G. Then, each edge of HG has size at least 4. Let H be obtained from HG by
+shrinking all edges of HG , if necessary, to edges of size 4. Then, H is a 4-uniform hypergraph
+with n vertices and n edges; that is, n(H) = m(H) = n(G) = n. By Theorem 5 we note
+that 21τ (H) ≤ 5n(H) + 4m(H) = 9n. This completes the proof of the theorem since
+γt (G) = τ (HG ) ≤ τ (H). ✷
+
+                                                     36
+7     Proof of Theorem 7
+
+Chvátal and McDiarmid proved the following bound in [2].
+
+Theorem 10 ([2]) If H is a 4-uniform hypergraph, then 6τ (H) ≤ n(H) + 2m(H).
+
+  In order to present a proof of Theorem 7, we shall need a characterization of the hyper-
+graphs that achieve equality in Theorem 10. For this purpose, let H4 be the hypergraph
+on four vertices with only one hyperedge containing all four of these vertices. Let H6 be
+the hypergraph with vertex set {a1 , a2 , b1 , b2 , c1 , c2 } and edge set E(H6 ) = {{a1 , a2 , b1 , b2 },
+{a1 , a2 , c1 , c2 }, {b1 , b2 , c1 , c2 }}. The following result is given in [5].
+
+Theorem 11 ([5]) Let H be a 4-uniform hypergraph. If 6τ (H) = n(H) + 2m(H), then
+every component of H is isomorphic to H4 or H6 .
+
+    We shall also need the following result in [6].
+
+Theorem 12 ([6]) The ONH of a connected bipartite graph consists of two components,
+while the ONH of a connected graph that is not bipartite is connected.
+
+    We are now in a position to prove Theorem 7. Recall the statement of the theorem.
+Theorem 7. If G is a connected graph of order n with δ(G) ≥ 4, then γt (G) ≤ 3n/7.
+Furthermore we have equality if and only if G is the bipartite complement of the Heawood
+Graph.
+Proof of Theorem 7. Let G be a connected graph of order n with δ(G) ≥ 4 and let HG be
+the ONH of G. If G is not 4-regular, then let x be an arbitrary vertex in G with dG (x) ≥ 5.
+Now let H be obtained by shrinking all edges of size greater than four to size four in such
+a way that we never remove x from any edge. We note that the resulting hypergraph H
+is 4-uniform with n(H) = m(H) = n(G) = n, but H is not 4-regular. Alternatively if G
+is 4-regular, then let H = HG in which case again n(H) = m(H) = n(G) = n, but in this
+case H is 4-regular.
+  Let x1 be a vertex of maximum degree in H. Let x2 be a vertex of maximum degree
+in H − {x1 }. Let x3 be a vertex of maximum degree in H − {x1 , x2 }. Continue this
+process as long as the maximum degree in the resulting hypergraph is at least four and let
+X = {x1 , x2 , . . . , xℓ } be the resulting set of chosen vertices. Let H ′ = H − X and note that
+the following holds.
+
+(a): ∆(H ′ ) ≤ 3.
+
+(b): n(H ′ ) ≤ n(H) − |X| and m(H ′ ) ≤ m(H) − 4|X|. Furthermore if H is not 4-regular,
+     then since x1 removes at least five edges from H we have that m(H ′ ) < m(H) − 4|X|.
+
+                                                   37
+  If |X| < n/7, then by Theorem 2 we have
+
+                             τ (H) ≤ τ (H ′ ) + |X|
+                                            n(H ′ )         ′)
+                                       ≤      4     + m(H 6     + |X|
+                                            n(H)−|X|        m(H)−4|X|
+                                       ≤        4  +            6     + |X|
+                                             1      1              1   4
+                                                                         
+                                       =     4 +    6  n  +    1 − 4 − 6 |X|
+                                            5n      |X|
+                                       =        + 12
+                                           12             
+                                              5         1
+                                       <     12   +   7×12 n
+                                       = 3n,
+
+
+and the desired result follows from the observation that γt (G) = τ (HG ) ≤ τ (H). Hence in
+what follows we may assume that |X| ≥ n/7. By Theorem 10, we now have that
+
+                           τ (H) ≤ τ (H ′ ) + |X|
+                                                     
+                                     n(H ′ )+2m(H ′ )
+                                 ≤           6          + |X|
+                                                             
+                                     n(H)−|X|+2(m(H)−4|X|)
+                                 ≤               6              + |X|
+                                           n   9|X|
+                                   =       2 − 6 + |X|
+                                           n−|X|
+                                   =         2
+                                           n−n/7
+                                   ≤         2
+                                   = 3n.
+
+
+   Hence, γt (G) = τ (HG ) ≤ τ (H) ≤ 3n/7, proving the desired upper bound. Suppose that
+γt (G) = 3n/7. Then we must have equality throughout the above inequality chains. In
+particular, this implies that the following holds.
+
+(c): 6τ (H ′ ) = n(H ′ ) + 2m(H ′ ).
+
+(d): n(H ′ ) = n(H) − |X|.
+
+(e): m(H ′ ) = m(H) − 4|X|.
+
+(f ): |X| = n/7.
+
+(g): H is 4-regular (by (b) and (e)).
+
+  Since (c) holds, Theorem 11 implies that every component of H ′ is isomorphic to H4 or
+H6 . By (d), (e) and (f), and noting that n(H) = m(H) = n, we have that n(H ′ ) = 6n/7
+and m(H ′ ) = 3n/7. Hence if d denotes the average degree in H ′ , we have that
+
+                                              X
+                              4m(H ′ ) =                 dH ′ (v) = n(H ′ ) · d,
+                                            v∈V (H ′ )
+
+
+                                                     38
+  and so d = 4m(H ′ )/n(H ′ ) = 2. We show that every component of H ′ is an H6 -component.
+Suppose to the contrary that there is an H4 -component in H ′ . Each vertex in such a
+component has degree 1 in H ′ . Since the average degree in H ′ is 2, this implies that there
+must also be a vertex of degree 3 in H ′ . However such a vertex does not belong to an H4 -
+or an H6 -component, a contradiction. Therefore the following holds.
+
+(h): Every component of H ′ is an H6 -component.
+
+   Suppose that NH (u1 ) ∩ NH (u2 ) 6= ∅ for some u1 , u2 ∈ V (H). We show that u1 and u2
+are contained in a common edge of H. Suppose to the contrary that no edge in H contains
+both u1 and u2 and let w ∈ N (u1 ) ∩ N (u2 ) be arbitrary. Let f1 , f2 ∈ E(H) be chosen so
+that {u1 , w} ⊂ V (f1 ) and {u2 , w} ⊂ V (f2 ). By the 4-regularity of H, we can choose the set
+X by starting with x1 = u1 and x2 = u2 . We note that with this choice of the set X, the
+vertex w ∈ V (H ′ ). By (h), the vertex w belongs to some H6 -component in H ′ , implying
+that there is a vertex w′ ∈ V (H ′ ) such that w and w′ both belong to two overlapping edges,
+say e1 and e2 , in E(H ′ ). However, if we had created X starting with x1 = w′ , then w
+would belong to an H6 -component, R, of H ′ . Since dH (w) = 4 and dH ′ (w) = 2, and since
+        / E(H ′ ), we have that f1 , f2 ∈ E(H ′ ) and f1 , f2 ∈ E(R). In particular, u1 and u2
+e1 , e2 ∈
+are contained in a common edge of R and therefore of H, a contradiction. Therefore, the
+following holds.
+
+(i): If NH (u1 ) ∩ NH (u2 ) 6= ∅ for some u1 , u2 ∈ V (H), then there exists an edge e ∈ E(H),
+      such that u1 , u2 ∈ V (e).
+
+   Let u1 ∈ V (H) be arbitrary. If some edge e contains vertices from N [u1 ] and from
+V (H) \ N [u1 ], then let u2 ∈ V (e) ∩ (V (H) \ N [u1 ]) and let w ∈ V (e) ∩ N [u1 ] be arbitrary.
+Since u1 and u2 are not adjacent, u1 6= w and no edge contains both u1 and u2 . However
+this is a contradiction by (i). Therefore, the following holds.
+
+(j): If x ∈ V (H), then N [x] is the vertex set of some component in H.
+
+   Let x ∈ V (H) be arbitrary and let Rx be the component of H containing x. By (j),
+V (Rx ) = N [x]. By the 4-regularity of H, we can choose the set X by starting with x1 = x.
+Thus by (h), Rx − {x} only contains components isomorphic to H6 . However since H
+is a 4-regular 4-uniform hypergraph, and since H6 is 2-regular, we note that Rx − {x}
+must contain only one component, which is isomorphic to H6 . Therefore, |Rx | = 7 and
+Rx − {x} = H6 . This is true for every vertex x of H, implying that Rx must be isomorphic
+to the complement of the Fano plane. Hence, the following holds.
+
+(k): Every component of H is isomorphic to the complement of the Fano plane, which we
+     will denote by F7 .
+
+ By (k), every component of H is isomorphic to F7 (the complement of the Fano plane). If
+H 6= HG , then by construction H is not 4-regular, a contradiction to (g). Hence, H = HG .
+
+                                               39
+Since F7 is not the ONH of any graph, applying the result of Theorem 12 we have that
+H consists of precisely two components since G is by assumption connected. Let G′ be
+constructed such that V (G′ ) = V (F7 ) ∪ E(F7 ) and let xy be an edge in G′ if and only if x
+belongs to y in F7 (x is a vertex and y is an edge in F7 ). Now it is not difficult to see that
+G′ is the incidence bipartite graph of the complement of the Fano plane and that the ONH
+of G′ is H. Therefore G′ = G. ✷
+
+
+8    Closing Comment
+
+Let H be a 4-uniform hypergraph of order n = n(H) and size m = m(H). In this paper we
+have shown that if ∆(H) ≤ 3, then τ (H) ≤ n/4 + m/6. It is known that τ (H) ≤ n/4 + m/6
+is not always true when ∆(H) ≥ 4. We close with the following conjectures. Recall that a
+hypergraph is linear if every two edges intersect in at most one vertex.
+
+
+Conjecture 2 If H is a 4-uniform linear hypergraph, then τ (H) ≤ n4 + m
+                                                                      6.
+
+
+Conjecture 3 If H is a 4-uniform linear hypergraph, then τ (H) ≤ n+m
+                                                                  5 .
+
+
+   We remark that Conjecture 3 implies Conjecture 2. If there is a vertex of degree at
+least 5, then we may remove it and use induction in order to prove Conjecture 2 and if
+there is no such vertex we note that Conjecture 2 follows from Conjecture 3 as in this case
+n/5 + m/5 < n/4 + m/6. Conjecture 3, if true, would be best possible due to the 4-uniform
+hypergraph H10 , illustrated in Figure 5, of order n = 10, size m = 5, and τ = 3.
+
+
+
+
+                               Figure 5: The hypergraph H10 .
+
+
+
+
+                                              40
+References
+ [1] C. Bujtás, M. A. Henning and Zs. Tuza, Transversals and domination in uniform
+     hypergraphs. European J. Combin. 33 (2012), 62–71.
+
+ [2] V. Chvátal and C. McDiarmid, Small transversals in hypergraphs. Combinatorica 12
+     (1992), 19–26.
+
+ [3] E. J. Cockayne, S. T. Hedetniemi and P. J. Slater, Matchings and transversals in
+     hypergraphs, domination and independence-in trees. J. Combin. Theory B 27 (1979),
+     78–80.
+
+ [4] M. A. Henning, S. Klavžar, and D. F. Rall, The 4/5 upper bound on the game total
+     domination number. Combinatorica. To appear.
+
+ [5] M. A. Henning and C. Löwenstein, Hypergraphs with large transversal number and
+     with edge sizes at least four. Central European J. Math. 10(3) (2012), 1133–1140
+
+ [6] M. A. Henning and A. Yeo, Hypergraphs with large transversal number and with edge
+     sizes at least three. J. Graph Theory 59 (2008), 326–348.
+
+ [7] M. A. Henning and A. Yeo, Strong transversals in hypergraphs and double total dom-
+     ination in graphs. SIAM J. Discrete Math. 24(4) (2010), 1336–1355.
+
+ [8] M. A. Henning and A. Yeo, Transversals and matchings in 3-uniform hypergraphs.
+     European J. Combin. 34 (2013), 217–228.
+
+ [9] M. A. Henning and A. Yeo, Hypergraphs with large transversal number. Discrete Math.
+     313 (2013), 959–966.
+
+[10] M. A. Henning and A. Yeo, Total domination in graphs (Springer Monographs in Math-
+     ematics) 2013. ISBN: 978-1-4614-6524-9 (Print) 978-1-4614-6525-6 (Online).
+
+[11] F. C. Lai and G. J. Chang, An upper bound for the transversal numbers of 4-uniform
+     hypergraphs. J. Combin. Theory Ser. B 50 (1990), 129–133.
+
+[12] C. Löwenstein and A. Yeo, A proof of the Tuza-Vestergaard Conjecture. Manuscript.
+
+[13] S. Thomassé and A. Yeo, Total domination of graphs and small transversals of hyper-
+     graphs. Combinatorica 27 (2007), 473–487.
+
+[14] Zs. Tuza, Covering all cliques of a graph. Discrete Math. 86 (1990), 117–126.
+
+[15] Zs. Tuza and P. H. Vestergaard, Domination in partitioned graphs. Discussiones Math.
+     Graph Theory 22 (2002), 199–210.
+
+[16] Douglas   West,      Covering   numbers     and          hypergraph      transversals.
+     http://www.math.uiuc.edu/∼west/regs/hyptrans.html
+
+[17] A. Yeo, manuscript.
+
+
+
+                                            41
+

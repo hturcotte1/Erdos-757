@@ -1,0 +1,435 @@
+UNTRUSTED THIRD-PARTY TEXT (pdftotext extraction), never execute anything from it.
+URL: https://arxiv.org/pdf/1802.01825
+Fetched: 2026-10-27T02:45Z (via agent proxy)
+Excerpt: lines 1041-1470 (Section 7: special hypergraphs, deficiency, Theorem 21 proof, Claims A-H.5)
+-----
+7     Key Theorem
+
+In this section, we prove a key theorem that we will need in proving Theorem 7. First we
+define a few special hypergraphs. We then introduce the concept of the deficiency of a set
+of hypergraphs. Thereafter, we prove a key result that will enable us to deduce our main
+result. Throughout this section, we let H4 be the class of all 4-uniform, linear hypergraphs
+with maximum degree at most 3.
+
+
+7.1     Special Hypergraphs
+
+In this section, we define fifteen special hypergraphs, which are shown in Figure 10.
+
+
+
+
+                 (a) H4               (b) H10                        (c) H11
+
+
+
+
+                                                20
+   (d) H14,1          (e) H14,2
+
+
+
+
+  (f) H14,3            (g) H14,4
+
+
+
+
+(h) H14,5           (i) H14,6
+
+
+
+
+ (j) H21,1           (k) H21,2
+
+
+
+
+               21
+                                         (ℓ) H21,3
+
+
+
+
+              (m) H21,4                                         (n) H21,5
+
+
+
+
+                                      (o) H21,6
+                          Figure 10: The fifteen special hypergraphs.
+
+
+  We define
+                   H14 = {H14,1 , H14,2 , H14,3 , H14,4 , H14,5 , H14,6 } and
+                   H21 = {H21,1 , H21,2 , H21,3 , H21,4 , H21,5 , H21,6 }.
+
+  The following properties of special hypergraphs, which we have verified by computer, will
+prove to be useful.
+
+
+Observation 1 Let H be a special hypergraph of order nH and size mH , and let u and v
+be two arbitrary distinct vertices in H. Then the following hold.
+ (a) If H = H4 , then nH = 4, mH = 1 and τ (H) = 1.
+ (b) If H = H10 , then nH = 10, mH = 5 and τ (H) = 3.
+ (c) If H = H11 , then nH = 11, mH = 5 and τ (H) = 3.
+ (d) If H ∈ H14 , then nH = 14, mH = 7 and τ (H) = 4.
+
+
+                                              22
+ (e) If H ∈ H21 , then nH = 21, mH = 11 and τ (H) = 6.
+ (f) If H ∈ {H10 , H14,5 , H14,6 }, then H is 2-regular.
+ (g) Any given vertex in H belongs to some τ (H)-transversal.
+ (h) If H ∈ {H10 , H14,6 }, then there exists a τ (H)-transversal that contains both u and v.
+  (i) If H 6= H4 , T ⊂ V (H) and |T | = 3, then there exists a τ (H)-transversal that contains
+      at least two vertices of T , unless H = H11 and T is the set of three vertices in H that
+      have no neighbor of degree 1 in H.
+  (j) If H 6= H4 , T ⊂ V (H) and |T | = 4, then there exists a τ (H)-transversal that contains
+      at least two vertices of T .
+ (k) If H 6= H4 and T1 and T2 are vertex-disjoint subsets of H such that |T1 | = |T2 | =
+      2, then there exists a τ (H)-transversal that contains a vertex from T1 and a vertex
+      from T2 .
+ (ℓ) If T1 and T2 are vertex-disjoint subsets of H such that |T1 | = 3 and |T2 | = 1 and T1
+      contains two vertices that are not adjacent in H, then there exists a τ (H)-transversal
+      that contains a vertex from T1 and a vertex from T2 .
+(m) If T1 and T2 are vertex-disjoint subsets of H such that |T1 | = 1 and |T2 | = 2 where T2
+      contains two vertices that are not adjacent in H, then there exists a τ (H)-transversal
+      that contains a vertex from T1 and a vertex from T2 , except if H = H11 , and one
+      degree-1 vertex in H belongs to T1 and the other degree-1 vertex to T2 , and the second
+      vertex of T2 is adjacent to the vertex of T1 .
+ (n) If T1 , T2 and T3 are vertex-disjoint subsets of H such that |T1 | = |T2 | = 3 and |T3 | ≥ 2,
+      and T1 , T2 and T3 are independent sets in H, then there exists a τ (H)-transversal that
+      contains a vertex from each of T1 , T2 and T3 .
+ (o) If H is a special subhypergraph of a 4-uniform linear hypergraph F where ∆(F ) ≤ 3,
+      and if there are three edges of F each of which intersect H in two vertices, then there
+      is a τ (H)-transversal that covers one of these edges and any specified edge of H.
+ (p) If H = H11 or if H ∈ H14 ∪ H21 , and if v is a vertex of degree 2 in H, then either
+      H − v is connected or H − v is disconnected with exactly two components, one of
+      which consists of an isolated vertex. Further, H − y does not contain two vertex
+      disjoint copies of H4 that are both intersected by a common edge and such that both
+      copies of H4 have three vertices of degree 1 and one vertex of degree 2.
+
+
+7.2   Known Results and Observations
+
+We shall need the following theorem of Berge [3] about the matching number of a graph,
+which is sometimes referred to as the Tutte-Berge formulation for the matching number.
+
+
+Theorem 19 (Tutte-Berge Formula) For every graph G,
+                                         1
+                      α′ (G) =    min      (|V (G)| + |X| − oc(G − X)) ,
+                                 X⊆V (G) 2
+
+where oc(G − X) denotes the number of odd components of G − X.
+
+
+                                               23
+  We shall also rely heavily on the following well-known theorem due to König [29] and
+Hall [16] in 1935.
+
+Theorem 20 (Hall’s Theorem) Let G be a bipartite graph with partite sets X and Y . Then
+X can be matched to a subset of Y if and only if |N (S)| ≥ |S| for every nonempty subset S
+of X.
+
+
+7.3   The Deficiency of a Set
+
+Let H be a 4-uniform hypergraph. A set X is a special H-set if it consists of subhypergraphs
+of H with the property that every subhypergraph in X is a special hypergraph and further
+these special hypergraphs are pairwise vertex disjoint. For notational simplicity, we write
+V (X) and E(X) to denote the set of all vertices and edges, respectively, in H that belong
+to a subhypergraph H ′ ∈ X in the special H-set X. Let X be an arbitrary special H-set.
+   A set T of vertices in V (X) is an X-transversal if T is a minimum set of vertices that
+intersects every edge from every subhypergraph in X.
+              ∗ (X) to be the set of all edges in H that do not belong to a subhypergraph in
+   We define EH
+X but which intersect at least one subhypergraph in X. Hence if e ∈ E ∗ (X), then e ∈
+                                                                                    / E(H ′ )
+                             ′                        ′
+for every subhypergraph H ∈ X but V (e) ∩ V (H ) 6= ∅ for at least one subhypergraph
+H ′ ∈ X. If the hypergraph H is clear from context, we simply write E ∗ (X) rather than
+EH∗ (X) .
+
+
+   We associate with the set X a bipartite graph, which we denote by GX , with partite sets
+X and E ∗ (X), where an edge joins e ∈ E ∗ (X) and H ′ ∈ X in GX if and only if the edge e
+intersects the subhypergraph H ′ of X in H.
+   We define a weak partition of X = (X4 , X10 , X11 , X14 , X21 ) (where a weak partition
+is a partition in which some of the sets may be empty) where Xi ⊆ X consists of all
+subhypergraphs in X of order i, i ∈ {4, 10, 11, 14, 21}. Thus, X = X4 ∪ X10 ∪ X11 ∪ X14 ∪
+X21 and |X| = |X4 | + |X10 | + |X11 | + |X14 | + |X21 |. As an immediate consequence of
+Observation 1(a)–(e), we have the following result.
+
+Observation 2 If X is a special H-set and T is an X-transversal, then
+
+                      |T | = |X4 | + 3|X10 | + 3|X11 | + 4|X12 | + 6|X21 |.
+
+  We define the deficiency of X in H as
+
+            def H (X) = 10|X10 | + 8|X4 | + 5|X14 | + 4|X11 | + |X21 | − 13|E ∗ (X)|.
+
+We define the deficiency of H by
+                                   def(H) = max def H (X)
+
+where the maximum is taken over all special H-sets X. We note that taking X = ∅, we
+have def(H) ≥ 0.
+
+                                               24
+7.4   Key Theorem
+
+Recall that H4 is the class of all 4-uniform linear hypergraphs with maximum degree at
+most 3. We shall prove the following key result that we will need when proving our main
+theorem.
+
+
+Theorem 21 If H ∈ H4 , then 45τ (H) ≤ 6n(H) + 13m(H) + def(H).
+
+
+Proof. For a 4-uniform hypergraph H, let
+
+                       ξ(H) = 45τ (H) − 6n(H) − 13m(H) − def(H).
+
+We wish to show that if H ∈ H4 , then ξ(H) ≤ 0. Suppose, to the contrary, that the theorem
+is false and that H ∈ H4 is a counterexample with minimum value of n(H) + m(H). Thus,
+ξ(H) > 0 but every hypergraph H ′ ∈ H4 with n(H ′ ) + m(H ′ ) < n(H) + m(H) satisfies
+ξ(H ′ ) ≤ 0. We will now prove a number of claims, where the last claim completes the proof
+of the theorem.
+  Claim A: The hypergraph H is connected and δ(H) ≥ 1.
+  Proof of Claim A: If H is disconnected, then by the minimality of H we have that the
+theorem holds for all components of H and therefore also for H, a contradiction. Therefore,
+H is connected. If H has an isolated vertex, then by the connectivity of H we have that
+n(H) = 1 and m(H) = 0, implying that 45τ (H) = 0 < 6 = 6n(H) + 13m(H) + def(H), a
+contradiction. Hence, δ(H) ≥ 1. (✷)
+  Claim B: Given a special H-set, X, there is no X-transversal, T , such that |T | =
+|X4 | + 3|X10 | + 3|X11 | + 4|X14 | + |X21 | and T intersects every edge in E ∗ (X).
+   Proof of Claim B: Suppose that there does exist an X-transversal, T , such that |T | =
+|X4 | + 3|X10 | + 3|X11 | + 4|X14 | + |X21 | and T intersects every edge in E ∗ (X). Let H ′
+be obtained from H by removing all vertices in V (X) and removing all edges of H that
+intersect V (X). Since T is an X-transversal and T intersects every edge in E ∗ (X), we
+remark that H ′ = H(T, V (X) \ T ). Then, H ′ is a 4-uniform hypergraph with maximum
+degree ∆(H) ≤ 3. Further, n(H ′ ) = n(H) − 4|X4 | − 10|X10 | − 11|X11 | − 14|X14 | − 21|X21 |,
+m(H ′ ) = m(H)−|X4 |−5|X10 |−5|X11 |−7|X14 |−11|X21 |−|E ∗ (X)|, and τ (H) ≤ |T |+τ (H ′ ).
+Let
+                                     def(H ′ ) = def H ′ (X ′ )
+
+for some special H ′ -set, X ′ . Let X ∗ = X ∪ X ′ . Then, def(H ′ ) = def H (X ∗ ) − def H (X).
+By the minimality of n(H) + m(H), H ′ is not a counterexample to our theorem, and so
+45τ (H ′ ) ≤ 6n(H ′ ) + 13m(H ′ ) + def(H ′ ). Hence,
+
+
+
+
+                                              25
+ 45τ (H) ≤ 45τ (H ′ ) + 45|T |
+           ≤ (6n(H ′ ) + 13m(H ′ ) + def(H ′ ))+
+                  45(|X4 | + 3|X10 | + 3|X11 | + 4|X14 | + 6|X21 |)
+           ≤ 6(n(H) − 4|X4 | − 10|X10 | − 11|X11 | − 14|X14 | − 21|X21 |)+
+                13(m(H) − |X4 | − 5|X10 | − 5|X11 | − 7|X14 | − 11|X21 | − |E ∗ (X)|)+
+                   def H (X ∗ ) − def H (X) + 45(|X4 | + 3|X10 | + 3|X11 | + 4|X14 | + 6|X21 |)
+           = 6n(H) + 13m(H) + 8|X4 | + 10|X10 | + 4|X11 | + 5|X14 | + |X21 | − 13|E ∗ (X)|+
+                def H (X ∗ ) − def H (X)
+           = 6n(H) + 13m(H) + def H (X ∗ )
+           ≤ 6n(H) + 13m(H) + def(H),
+
+contradicting the fact that H is a counterexample. (✷)
+
+ As an immediate consequence of Claim A and Claim B, H is not a special hypergraph.
+We state this formally as follows.
+  Claim C: H is not a special hypergraph.
+  Among all special non-empty H-sets, let X be chosen so that
+         (1) |E ∗ (X)| − |X| is minimum.
+         (2) Subject to (1), |X| is maximum.
+  Claim D: |E ∗ (X)| ≥ |X| + 1.
+  Proof of Claim D: Suppose, to the contrary, that |E ∗ (X)| ≤ |X|. Let GX be the bipartite
+graph associated with the special H-set X. Suppose there exists a matching, M , in GX
+that matches E ∗ (X) to a subset of X. Then, by Observation 1(g), there exists a minimum
+X-transversal, T , that intersects every edge in E ∗ (X), contradicting Claim B. Therefore,
+no matching in GX matches E ∗ (X) to a subset of X. By Hall’s Theorem, there is a
+nonempty subset S ⊆ E ∗ (X) such that |NGX (S)| < |S|. We now consider the special
+H-set, X ′ = X \ NGX (S). Then, |X ′ | = |X| − |NGX (S)| and |E ∗ (X ′ )| = |E ∗ (X)| − |S|.
+Thus,
+                 |E ∗ (X ′ )| − |X ′ | = (|E ∗ (X)| − |S|) − (|X| − |NGX (S)|)
+                                       = (|E ∗ (X)| − |X|) + (|NGX (S)| − |S|)
+                                       < |E ∗ (X)| − |X|,
+contradicting our choice of the special H-set X. (✷)
+
+  As an immediate consequence of Claim D and by our choice of the special H-set X, we
+have the following claim.
+  Claim E: If X ′ 6= ∅ is a special H-set, then |E ∗ (X ′ )| ≥ |X ′ | + 1.
+  Claim F: def(H) = 0.
+  Proof of Claim F: Let X ∗ be a special H-set. If X ∗ 6= ∅, then by Claim E, |E ∗ (X ∗ )| ≥
+
+                                                26
+|X ∗ | + 1, implying that def H (X ∗ ) ≤ 10|X ∗ | − 13|E ∗ (X ∗ )| < 0. However, taking X ∗ = ∅, we
+note that def H (X ∗ ) = 0. Consequently, def(H) = 0. (✷)
+  For a hypergraph H ′ ∈ H4 , let
+
+                                    Φ(H ′ ) = ξ(H ′ ) − ξ(H).
+
+  Claim G: If H ′ ∈ H4 satisfies n(H ′ ) + m(H ′ ) < n(H) + m(H), then Φ(H ′ ) < 0.
+  Proof of Claim G: Since H is a counterexample with minimum value of n(H) + m(H),
+and since n(H ′ ) + m(H ′ ) < n(H) + m(H), we note that ξ(H ′ ) ≤ 0. Thus,
+                 45τ (H) = ξ(H) + 6n(H) + 13m(H) + def(H)
+                         = ξ(H ′ ) − Φ(H ′ ) + 6n(H) + 13m(H) + def(H)
+                            ≤ −Φ(H ′ ) + 6n(H) + 13m(H) + def(H),
+
+implying that Φ(H ′ ) ≤ 6n(H) + 13m(H) + def(H) − 45τ (H) = −ξ(H) < 0. (✷)
+  Claim H: |E ∗ (X)| ≥ |X| + 2.
+  Proof of Claim H: Suppose, to the contrary, that |E ∗ (X)| ≤ |X| + 1. Then, by Claim D,
+|E ∗ (X)| = |X| + 1. We define an edge e ∈ E ∗ (X) to be X-universal if there exists a
+special subhypergraph F ∈ X, such that e intersects F and for every other edge, say f ,
+that intersects F there exists a τ (F )-transversal that covers both e and f . We proceed
+further with the following series of subclaims.
+   Claim H.1: If e ∈ E ∗ (X), then there exists an X-transversal that intersects every edge
+in E ∗ (X) \ {e}. Furthermore, no edge in E ∗ (X) is X-universal.
+  Proof of Claim H.1: Let GX be the bipartite graph associated with the special H-set X
+and consider the graph GX − e, where e is an arbitrary vertex in E ∗ (X). We note that
+the partite sets of GX − e are E ∗ (X) \ {e} and X and these sets have equal cardinalities.
+Suppose that GX − e does not have a perfect matching. By Hall’s Theorem, there is a
+nonempty subset S ⊆ X such that in the graph GX − e, we have |N (S)| < |S|. (We remark
+that here N (S) ⊂ E ∗ (X) \ {e}.) Since the edge e may possibly intersect a subhypergraph
+of S in H, we note that in the graph GX , |N (S)| ≤ |S|. However, in the graph GX ,
+|E ∗ (S)| = |N (S)|, implying that |E ∗ (S)| ≤ |S|. By our choice of the special H-set X,
+|E ∗ (X)| − |X| ≤ |E ∗ (S)| − |S| ≤ 0, contradicting Claim D. Therefore, GX − e has a perfect
+matching. By Observation 1(g), this implies the existence of a minimum X-transversal, T ,
+that intersects every edge in E ∗ (X) \ {e}. This proves the first part of Claim H.1.
+   For the sake of contradiction, suppose that e ∈ E ∗ (X) is a universal edge. Let F ∈ X
+be a special subhypergraph of X that is intersected by e, such that for every f ∈ E ∗ (X)
+intersecting F there exists a τ (F )-transversal that covers both e and f . By the above
+argument there exists a perfect matching, M , in GX − e. Let g be the edge that is matched
+to F in M . By definition there is a τ (F )-transversal intersecting both e and g. Due to the
+matching M \ {gF } and Observation 1(g), we therefore obtain an X-transversal, T , that
+intersects every edge in E ∗ (X), a contradiction to Claim B. This proves the second part of
+Claim H.1. (✷)
+
+                                                27
+  Claim H.2: |X10 | = 0.
+  Proof of Claim H.2: Suppose, to the contrary, that |X10 | > 0. Let H ′ be a copy of H10
+that belongs to the special H-set X. By Claim E, at least two edges in E ∗ (X) intersect H ′
+in H. Let e be such an edge of E ∗ (X) that intersects H ′ . Let GX be the bipartite graph
+associated with X and consider the graph GX − e. We note that the partite sets of GX − e
+are E ∗ (X)\{e} and X and these sets have equal cardinalities. Suppose that GX −e does not
+have a perfect matching. By Hall’s Theorem, there is a nonempty subset S ⊆ E ∗ (X) \ {e}
+such that in the graph GX − e (and in the graph GX ), we have |N (S)| < |S|. We remark
+that here N (S) ⊂ X. We now consider the special H-set, X ′ = X \ N (S). Then, X ′ 6= ∅
+and
+                           |E ∗ (X ′ )| ≤ |E ∗ (X)| − |S|
+                                        ≤ |E ∗ (X)| − (|N (S)| + 1)
+                                        = |X| + 1 − |N (S)| − 1
+                                        = |X ′ |,
+contradicting Claim E. Therefore, GX −e has a perfect matching, M say. Let e′ be the vertex
+of E ∗ (X) that is M -matched to H ′ in GX − e. Let u and v be vertices in the subhypergraph
+H ′ that belong to the edges e and e′ , respectively, in H. By Observation 1(h), there exists
+a τ (H ′ )-transversal that contains both u and v. If H ′′ is a subhypergraph in X different
+from H ′ and if e′′ is the vertex of E ∗ (X) that is M -matched to H ′′ in GX − e, then by
+Observation 1(g) there exists a τ (H ′′ )-transversal that contains a vertex of H ′′ that belongs
+to e′′ in H. This implies the existence of a minimum X-transversal, T , that intersects every
+edge in E ∗ (X), contradicting Claim B. (✷)
+
+   Recall that the boundary of a set S of vertices in H, denoted ∂H (S) or simply ∂(S) if H
+is clear from context, is the set N (S) \ S. Abusing notation, we write ∂(X), rather than
+∂(V (X)), as the boundary of the set V (X). Let X ′ be a set of new vertices (not in H),
+where |X ′ | = max(0, 4 − |∂(X)|). We note that |X ′ ∪ ∂(X)| ≥ 4. Further if |∂(X)| ≥ 4,
+then X ′ = ∅. Let H ′ be the hypergraph obtained from H − V (X) by adding the set X ′ of
+new vertices and adding a 4-edge, e, containing four vertices in X ′ ∪ ∂(X). Note that H ′
+may not be linear as the edge e may overlap other edges in H ′ .
+   Claim H.3: Either def(H ′ ) = 0 or def(H ′ ) = def H ′ (Y ) where |Y | = 1 and e is an edge
+of the hypergraph in the special H ′ -set Y .
+   Proof of Claim H.3: Suppose that def(H ′ ) > 0. Let Y be a special H ′ -set such that
+def(H ′ ) = def H ′ (Y ). Since def(H ′ ) > 0, we note that in H ′ , |E ∗ (Y )| < |Y |. Suppose
+that e ∈ / E(Y ). We now consider the special H-set Q = X ∪ Y . Then in H, |E ∗ (Q)| ≤
+|E (X)| + |E ∗ (Y )| ≤ (|X| + 1) + (|Y | − 1) = |X| + |Y | = |Q|, contradicting Claim E.
+   ∗
+
+Therefore, e ∈ E(Y ). Let e ∈ E(R), where R ∈ Y . Suppose that |Y | ≥ 2. In this case, we
+consider the special H-set Q = X ∪ (Y \ {R}). Then in H, |E ∗ (Q)| ≤ |E ∗ (X)| + |E ∗ (Y )| ≤
+(|X| + 1) + (|Y | − 1) = |X| + |Y | = |Q| + 1. By Claim E, |E ∗ (Q)| ≥ |Q| + 1. Consequently,
+|E ∗ (Q)| = |Q| + 1. However since |Y | ≥ 2, we note that |Q| > |X|, contradicting our choice
+of the special H-set X. (✷)
+  Claim H.4: Φ(H ′ ) ≥ −8|X4 | − 5|X14 | − 4|X11 | − |X21 | − 6|X ′ | + 13|X| − def(H ′ ).
+Furthermore if H ′ is linear, then both of the following statements hold.
+
+                                               28
+  (a): 8|X4 | + 5|X14 | + 4|X11 | + |X21 | > 13|X| − 6|X ′ | − def(H ′ ) ≥ 13|X| − 6|X ′ | − 10.
+  (b): If X ′ 6= ∅, then 8|X4 | + 5|X14 | + 4|X11 | + |X21 | > 13|X| − 6|X ′ | − 8.
+  Proof of Claim H.4: By Claim F, def(H) = 0. Thus,
+
+      Φ(H ′ ) = 45(τ (H ′ ) − τ (H)) − 6(n(H ′ ) − n(H)) − 13(m(H ′ ) − m(H)) − def(H ′ ).
+
+  We will first show that τ (H) ≤ τ (H ′ ) + |X4 | + 3|X10 | + 3|X11 | + 4|X14 | + 6|X21 |. Let T ′
+be a minimum transversal in H ′ . If some vertex of X ′ belongs to T ′ , then we can simply
+replace such a vertex in T ′ with a vertex from V (e) ∩ ∂(X) since a vertex in X ′ belongs to
+the edge e but no other edge of H ′ . We may therefore assume that some vertex in ∂(X)
+belongs to T ′ , and hence T ′ covers at least one edge from E ∗ (X). By Claim H.1, we can
+now obtain a transversal of H of size τ (H ′ ) + |X4 | + 3|X10 | + 3|X11 | + 4|X14 | + 6|X21 |, which
+implies that τ (H) ≤ τ (H ′ ) + |X4 | + 3|X10 | + 3|X11 | + 4|X14 | + 6|X21 | as desired.
+   Let F ∈ X. By Claim H.2, X10 = ∅. By Observation 1, if F ∈ X4 , then F contributes 4 to
+the sum n(H) − n(H ′ ), 1 to the sum m(H) − m(H ′ ), and at most 1 to the sum τ (H) − τ (H ′ )
+(due to the above bound on τ (H)), and therefore contributes at least 45 · (−1) − 6 · (−4) −
+13 · (−1) = −8 to Φ(H ′ ). Similar arguments show that if F ∈ X14 , then F contributes at
+least −5 to Φ(H ′ ). If F ∈ X11 , then F contributes at least −4 to Φ(H ′ ), while if F ∈ X21 ,
+then F contributes at least −1 to Φ(H ′ ). The edges in E ∗ (X) contribute |E ∗ (X)| = |X| + 1
+to the sum m(H) − m(H ′ ) and therefore 13(|X| + 1) to Φ(H ′ ), while the added edge e
+contributes 1 to the sum m(H ′ ) − m(H) and therefore −13 to Φ(H ′ ). If X ′ 6= ∅, then
+each vertex in X ′ contributes 1 to the sum n(H ′ ) − n(H), and therefore the vertices in X ′
+contribute −6|X ′ | to Φ(H ′ ). This proves the first part of Claim H.4.
+   Suppose, next, that H ′ is linear. Then, by Claim G, Φ(H ′ ) < 0. Thus, from our previous
+inequality established in the first part of Claim H.4, 0 > Φ(H ′ ) ≥ −8|X4 | − 5|X14 | −
+4|X11 | − |X21 | − 6|X ′ | + 13|X| − def (H ′ ). This immediately implies part (a) as def(H ′ ) ≤ 10
+by Claim H.3. If X ′ 6= ∅, then the edge e contains a degree-1 vertex and is therefore not
+part of a H10 subhypergraph in H ′ . Part (b) now again follows from Claim H.3, noting that
+in this case def(H ′ ) ≤ 8. (✷)
+  Claim H.5: Suppose the added edge e overlaps with some other edge in H ′ .
+  (a): If e contains a vertex of degree 1 in H ′ , then both of the following statements hold.
+      (i): Φ(H ′ ) ≤ 3 − def(H ′ ).
+      (ii): 8|X4 | + 5|X14 | + 4|X11 | + |X21 | ≥ 13|X| − 6|X ′ | − 3.
+  (b): If e contains no vertex of degree 1 in H ′ , then both of the following statements hold.
+      (i): Φ(H ′ ) ≤ 7 − def(H ′ ).
+      (ii): 8|X4 | + 5|X14 | + 4|X11 | + |X21 | ≥ 13|X| − 6|X ′ | − 7.
+  Proof of Claim H.5: Suppose that the added edge e overlaps with some other edge e′ in
+H ′ . We will first show the following.
+                          3 − def(H ′ ) if e contains a vertex of degree 1 in H ′
+                       
+                   ′
+             Φ(H ) ≤
+                          7 − def(H ′ ) if e contains no vertex of degree 1 in H ′ .
+
+Suppose, to the contrary, that Φ(H ′ ) ≥ 4 − def(H ′ ) if e contains a vertex of degree 1 in H ′
+
+                                                 29
+and that Φ(H ′ ) ≥ 8 − def(H ′ ) if e contains no vertex of degree 1 in H ′ . Let {x, y} ⊆ e ∩ e′ .
+    Suppose firstly that dH ′ (x) = 3. Let e′′ be the edge incident with x different from e and
+e′ , and consider the hypergraph H ⋆ = H ′ − x. Since H ∈ H4 , by construction, H ⋆ ∈ H4 .
+Then, m(H ⋆ ) = m(H ′ ) − 3 and τ (H ′ ) ≤ τ (H ⋆ ) + 1. Further, if e contains a vertex of
+degree 1 in H ′ , then n(H ⋆ ) ≤ n(H ′ ) − 2, while if e contains no vertex of degree 1 in H ′ ,
+then n(H ⋆ ) ≤ n(H ′ ) − 1. Recall that Φ(H ′ ) = ξ(H ′ ) − ξ(H) and Φ(H ⋆ ) = ξ(H ⋆ ) − ξ(H).
+By Claim G, Φ(H ⋆ ) < 0. Thus,
+
+             0 > Φ(H ⋆ )
+               = ξ(H ⋆ ) − ξ(H)
+                 = ξ(H ⋆ ) + Φ(H ′ ) − ξ(H ′ )
+                 = Φ(H ′ ) − 45(τ (H ′ ) − τ (H ⋆ )) + 6(n(H ′ ) − n(H ⋆ ))+
+                    13(m(H ′ ) − m(H ⋆ )) + (def(H ′ ) − def(H ⋆ ))
+                 ≥ Φ(H ′ ) − 45 + 6(n(H ′ ) − n(H ⋆ )) + 13 · 3 + def(H ′ ) − def(H ⋆ )
+                 ≥ Φ(H ′ ) − 6 + 6(n(H ′ ) − n(H ⋆ )) + def(H ′ ) − def(H ⋆ ).
+
+  Claim H.5.1: If e contains a vertex of degree 1 in H ′ , then def(H ⋆ ) ≥ 11.
+  Proof of Claim H.5.1: If e contains a vertex of degree 1 in H ′ , then n(H ′ ) − n(H ⋆ ) ≥ 2
+and, by supposition, Φ(H ′ ) ≥ 4 − def(H ′ ). Thus, in this case, the above inequality chain
+simplifies to 0 > Φ(H ⋆ ) ≥ (4 − def(H ′ )) − 6 + 6 · 2 + def(H ′ ) − def(H ⋆ ) = 10 − def(H ⋆ ),
+and so, def(H ⋆ ) > 10. (✷)
+  Claim H.5.2: If e contains no vertex of degree 1 in H ′ , then def(H ⋆ ) ≥ 9.
+  Proof of Claim H.5.2: If e contains no vertex of degree 1 in H ′ , then n(H ′ ) − n(H ⋆ ) ≥ 1
+and, by supposition, Φ(H ′ ) ≥ 8 − def(H ′ ). Thus, in this case, our inequality chain simplifies
+to 0 > Φ(H ⋆ ) ≥ (8 − def(H ′ )) − 6 + 6 · 1 + def(H ′ ) − def(H ⋆ ) = 8 − def(H ⋆ ), and so,
+def(H ⋆ ) > 8. (✷)
+  By Claim H.5.1 and Claim H.5.2, def(H ⋆ ) ≥ 9. Let Y be a special H ⋆ -set such that
+def(H ⋆ ) = def H ⋆ (Y ).
+  Claim H.5.3: |Y | = 1.
+  Proof of Claim H.5.3: Suppose, to the contrary, that |Y | ≥ 2. If |E ∗ (Y )| ≥ |Y | − 1, then
+def H ⋆ (Y ) ≤ 10|Y | − 13|E ∗ (Y )| ≤ 10|Y | − 13(|Y | − 1) = −3|Y | + 13 ≤ 7, a contradiction.
+Hence, |E ∗ (Y )| ≤ |Y | − 2. We now consider the special H-set Q = X ∪ Y . Then in H,
+|E ∗ (Q)| ≤ |E ∗ (X)| + |E ∗ (Y )| + |{e′ , e′′ }| ≤ (|X| + 1) + (|Y | − 2) + 2 = |X| + |Y | + 1 = |Q| + 1.
+By Claim E, |E ∗ (Q)| ≥ |Q| + 1. Consequently, |E ∗ (Q)| = |Q| + 1. However |Q| > |X|,
+contradicting our choice of the special H-set X. Therefore, |Y | = 1. (✷)

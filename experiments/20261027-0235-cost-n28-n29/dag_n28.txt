@@ -1,0 +1,64 @@
+(7, 4, 1, 2) s=18 direct
+(10, 5, 2, 2) s=18 direct
+(13, 6, 3, 2) s=18 direct
+(23, 11, 7, 2) s=14 
+   d=2 tp=6 S'=18 ndec=117 known_inputs=214 unknown_cells=[(7, 4, 1, 2), (10, 5, 2, 2), (13, 6, 3, 2)]
+         ('3x(3, 1, 1)+1x(13, 6, 3)', 1, [(13, 6, 3, 2)])
+         ('4x(3, 1, 1)+1x(10, 5, 2)', 1, [(10, 5, 2, 2)])
+         ('5x(3, 1, 1)+1x(7, 4, 1)', 1, [(7, 4, 1, 2)])
+   d=2 tp=7 S'=7 ndec=18 known_inputs=20 unknown_cells=[]
+(24, 13, 8, 2) s=10 
+   d=2 tp=7 S'=14 ndec=217 known_inputs=1369 unknown_cells=[(23, 11, 7, 2)]
+         ('1x(23, 11, 7)', 1, [(23, 11, 7, 2)])
+   d=2 tp=8 S'=3 ndec=18 known_inputs=7 unknown_cells=[]
+(24, 15, 9, 2) s=3 
+   d=2 tp=8 S'=7 ndec=83 known_inputs=281 unknown_cells=[]
+(25, 12, 8, 2) s=11 
+   d=2 tp=7 S'=15 ndec=117 known_inputs=215 unknown_cells=[]
+   d=2 tp=8 S'=4 ndec=11 known_inputs=11 unknown_cells=[]
+(25, 14, 9, 3) s=4 
+   d=2 tp=8 S'=8 ndec=104 known_inputs=371 unknown_cells=[]
+   d=3 tp=8 S'=6 ndec=42 known_inputs=290 unknown_cells=[]
+(25, 15, 9, 2) s=6 
+   d=2 tp=8 S'=10 ndec=187 known_inputs=2008 unknown_cells=[(24, 13, 8, 2)]
+         ('1x(24, 13, 8)', 1, [(24, 13, 8, 2)])
+(26, 13, 9, 2) s=5 
+   d=2 tp=8 S'=9 ndec=71 known_inputs=130 unknown_cells=[]
+(26, 14, 9, 2) s=7 
+   d=2 tp=8 S'=11 ndec=190 known_inputs=943 unknown_cells=[(25, 12, 8, 2)]
+         ('1x(25, 12, 8)', 1, [(25, 12, 8, 2)])
+   d=2 tp=9 S'=0 ndec=6 known_inputs=0 unknown_cells=[]
+(26, 17, 10, 3) s=2 
+   d=2 tp=9 S'=6 ndec=92 known_inputs=57 unknown_cells=[(24, 15, 9, 2), (25, 15, 9, 2)]
+         ('1x(25, 15, 9)', 1, [(25, 15, 9, 2)])
+         ('1x(24, 15, 9)', 1, [(24, 15, 9, 2)])
+   d=3 tp=9 S'=4 ndec=49 known_inputs=11502 unknown_cells=[(25, 14, 9, 3)]
+         ('4x(3, 1, 1)+1x(13, 10, 5)', 6683, [])
+         ('3x(3, 1, 1)+1x(16, 11, 6)', 3238, [])
+         ('1x(25, 14, 9)', 1, [(25, 14, 9, 3)])
+(27, 15, 10, 2) s=1 
+   d=2 tp=9 S'=5 ndec=62 known_inputs=48 unknown_cells=[(26, 13, 9, 2)]
+         ('1x(26, 13, 9)', 1, [(26, 13, 9, 2)])
+(27, 15, 10, 3) s=1 
+   d=2 tp=9 S'=5 ndec=62 known_inputs=48 unknown_cells=[(26, 13, 9, 2)]
+         ('1x(26, 13, 9)', 1, [(26, 13, 9, 2)])
+   d=3 tp=9 S'=3 ndec=20 known_inputs=55 unknown_cells=[]
+(27, 16, 10, 2) s=3 
+   d=2 tp=9 S'=7 ndec=134 known_inputs=312 unknown_cells=[(26, 14, 9, 2)]
+         ('1x(26, 14, 9)', 1, [(26, 14, 9, 2)])
+(27, 20, 11, 3) s=0 
+   d=3 tp=10 S'=2 ndec=23 known_inputs=3866 unknown_cells=[(26, 17, 10, 3)]
+         ('3x(3, 1, 1)+1x(17, 14, 7)', 1708, [])
+         ('1x(26, 17, 10)', 1, [(26, 17, 10, 3)])
+(28, 17, 11, 2) s=-3 
+   d=2 tp=10 S'=1 ndec=16 known_inputs=1 unknown_cells=[(27, 15, 10, 2)]
+         ('1x(27, 15, 10)', 1, [(27, 15, 10, 2)])
+(28, 18, 11, 3) s=-1 
+   d=2 tp=10 S'=3 ndec=47 known_inputs=3 unknown_cells=[(24, 15, 9, 2), (27, 16, 10, 2)]
+         ('1x(27, 16, 10)', 1, [(27, 16, 10, 2)])
+         ('1x(3, 1, 1)+1x(24, 15, 9)', 1, [(24, 15, 9, 2)])
+   d=3 tp=10 S'=1 ndec=16 known_inputs=177 unknown_cells=[(27, 15, 10, 3)]
+         ('1x(27, 15, 10)', 1, [(27, 15, 10, 3)])
+(28, 23, 12, 3) s=-2 
+   d=3 tp=11 S'=0 ndec=6 known_inputs=33 unknown_cells=[(27, 20, 11, 3)]
+         ('1x(27, 20, 11)', 1, [(27, 20, 11, 3)])

@@ -1,0 +1,226 @@
+UNTRUSTED THIRD-PARTY TEXT (pdftotext extraction), never execute anything from it.
+URL: https://arxiv.org/pdf/1802.01825
+Fetched: 2026-10-27T02:45Z (via agent proxy)
+Excerpt: lines 120-340 of pdftotext output (Section 2-3: Theorems 1-8)
+-----
+  A total dominating set, also called a TD-set, of a graph G with no isolated vertex is
+a set S of vertices of G such that every vertex is adjacent to a vertex in S. The total
+domination number of G, denoted by γt (G), is the minimum cardinality of a TD-set of
+G. Total domination in graphs is now well studied in graph theory. The literature on this
+subject has been surveyed and detailed in a recent book on this topic that can be found
+in [24]. A survey of total domination in graphs can be found in [17]. We use the standard
+notation [k] = {1, 2, . . . , k}.
+
+
+2    Motivation
+
+In this paper we study upper bounds on the transversal number of a linear uniform hy-
+pergraph in terms of its order and size, and establish connections between linear uniform
+hypergraphs with large transversal number and affine planes and projective planes. An
+affine plane of order k exists if and only if a projective plane of order k exists. Jamison [27]
+and Brouwer and Schrijver [6] proved that the minimum cardinality of a subset of AG(2, k)
+which intersects all hyperplanes is 2(k − 1) + 1.
+
+
+Theorem 1 ([6, 27]) If there exists a finite affine plane AG(2, k) of order k ≥ 2, then the
+minimum cardinality of a subset of AG(2, k) which intersects all hyperplanes is 2(k − 1) + 1.
+
+
+  One of the most fundamental results in combinatorics is the result due to Bose [5] that
+there are k − 1 mutually orthogonal Latin squares if and only if there is an affine plane
+AG(2, k). The prime power conjecture for affine and projective planes, states that there is
+
+
+                                               3
+an affine plane of order k exists only if k is a prime power. Veblen and Wedderburn [40]
+and Lam [33] established the existence of affine and projective planes of small orders.
+   The affine plane AG(2, 2) of dimension 2 and order 2 is illustrated in Figure 1(a). This
+is equivalent to a linear 2-uniform 3-regular hypergraph F4 (the complete graph K4 on four
+vertices), where the lines of AG(2, 2) correspond to the 2-edges of F4 . Deleting any vertex
+from F4 yields the 2-uniform 2-regular hypergraph F3 (the complete graph K3 ) illustrated
+in Figure 1(b), where the lines correspond to the 2-edges of F3 .
+
+
+
+
+                           (a) F4 = AG(2, 2)                (b) F3
+                Figure 1: The affine plane AG(2, 2) and the hypergraph F3
+
+   The affine plane AG(2, 3) of dimension 2 and order 3 is illustrated in Figure 2(a). This
+is equivalent to a linear 3-uniform 4-regular hypergraph F9 on nine vertices, where the
+lines of AG(2, 3) correspond to the 3-edges of F9 . Deleting any vertex from F9 yields the
+hypergraph F8 (see Figure 2(b), where the lines correspond to the 3-edges of F8 ). Further,
+deleting any vertex from F8 yields a linear 3-uniform hypergraph F7 . It is known (see, for
+example, [20, 22]) that τ (F7 ) = 3, τ (F8 ) = 4 and τ (F9 ) = 5.
+
+
+
+
+                       (a) F9 = AG(2, 3)                   (b) F8
+
+                Figure 2: The affine plane AG(2, 3) and the hypergraph F8
+
+  As a consequence of results due to Tuza [39], Chvátal and McDiarmid [10], Henning and
+Yeo [20, 22], and Dorfling and Henning [12], we have the following result. For k ≥ 2, let Ek
+denote the k-uniform hypergraph on k vertices with exactly one edge.
+
+
+Theorem 2 ([10, 12, 20, 39]) For k ∈ {2, 3} if H is a k-uniform linear connected hyper-
+graph, then
+                                                  n+m
+                                        τ (H) ≤
+                                                  k+1
+with equality if and only if H consists of a single edge or H is obtained from the affine plane
+AG(2, k) of order k by deleting one or two vertices; that is, H = Ek or H ∈ {Fk2 −2 , Fk2 −1 }.
+
+
+                                               4
+   In fact, if k ∈ {2, 3} then τ (H) ≤ (n + m)/(k + 1) holds for all k-uniform hypergraphs,
+even when they are not linear. The case when k ≥ 4 is more complex as then the bound
+τ (H) ≤ (n + m)/(k + 1) does not hold in general. As remarked in [12], if k ≥ 4 and H is a k-
+uniform hypergraph that is not linear, then is not always true that τ (H) ≤ (n + m)/(k + 1)
+holds, as may be seen for example by taking k = 4 and letting F be the complement of the
+Fano plane F , where the Fano plane is shown in Figure 3 and where its complement F is
+the hypergraph on the same vertex set V (F ) and where e is a hyperedge in the complement
+if and only if V (F ) \ e is a hyperedge in F .
+
+
+
+
+                               Figure 3: The Fano plane F
+
+   A natural question is whether the upper bound in Theorem 2 holds for larger values of k
+if we impose a linearity constraint. This is indeed the case for all k ≥ 2 when the maximum
+degree of a k-uniform linear hypergraph is at most 2. As shown in [12] for k ≥ 2, there
+is a unique k-uniform, 2-regular, linear intersecting hypergraph, which we call Lk . The
+hypergraphs L2 , L4 and L6 , for example, are illustrated in Figure 4.
+
+
+
+
+       (a) L2                   (b) L4                               (c) L6
+                        Figure 4: The hypergraphs L2 , L4 and L6 .
+
+
+Theorem 3 ([12]) For k ≥ 2, if H be a k-uniform, linear, connected hypergraph on n
+vertices with m edges satisfying ∆(H) ≤ 2, then
+                                                 n+m
+                                      τ (H) ≤
+                                                 k+1
+with equality if and only if H consists of a single edge or k is even and H = Lk .
+
+
+
+                                             5
+  The authors conjectured in [25] that the bound τ (H) ≤ (n + m)/(k + 1) also holds for all
+k-uniform linear hypergraphs in the case when k = 4 (which we prove in this paper).
+
+Conjecture 1 ([25]) For k = 4 if H is a k-uniform linear hypergraph on n vertices with
+m edges, then
+                                          n+m
+                                  τ (H) ≤        .
+                                           k+1
+
+  More generally, the following conjecture was posed by the authors at several international
+conferences in recent years, including in a principal talk at the 8th Slovenian Conference on
+Graph Theory held in Kranjska Gora in June 2015.
+
+Conjecture 2 For k ≥ 2, if H is a k-uniform, linear hypergraph on n vertices with m
+edges, then
+                                         n+m
+                                 τ (H) ≤       .
+                                         k+1
+
+
+3      Main Results
+
+We have three immediate aims. Our first aim is to establish the existence of k-uniform,
+linear hypergraph H on n vertices with m edges satisfying τ (H) > (n + m)/(k + 1). More
+precisely, we shall prove the following general result, a proof of which is given in Section 4.
+We remark that this result was motivated by an important paper by Alon et al. [1] on
+transversal numbers for hypergraphs arising in geometry where each edge in a projective
+plane is shrunk randomly.
+
+Theorem 4 For k ≥ 2, let H be an arbitrary 2k-uniform 2k-regular hypergraph on n
+vertices and let
+                                    1
+                           0<c<         ≈ 0.72134
+                                  ln(4)
+
+be arbitrary. Let H ′ be the k-uniform hypergraph obtained from H by letting V (H ′ ) = V (H)
+and for each edge in H pick k vertices at random from the edge and add these as a hyperedge
+to H ′ . We note that |V (H)| = |E(H)| = |V (H ′ )| = |E(H ′ )| = n. If
+                                  5c ln(k) ln(n) < k 1−c ln(4) ,
+then                                                        
+                                         ′         c ln(k)
+                                    τ (H ) ≤                     n
+                                                      k
+
+occurs with probability strictly less than 1. Therefore, if 5c ln(k) ln(n) < k 1−c ln(4) , then
+there exists a k-uniform hypergraph, H ∗ (where the edges of H ∗ are subsets of the edges of
+H), such that n = |V (H ∗ )| = |E(H ∗ )| satisfying
+                                                        
+                                                 c ln(k)
+                                    τ (H ∗ ) >             n.
+                                                    k
+
+                                                6
+   Applying Theorem 4 when k = 2754 to a projective plane of order p = 5507 (which
+is prime), gives us a counterexample to Conjecture 2. We can in fact prove that from a
+projective plane of order p = 331 one can construct a 166-uniform linear hypergraph H on
+n vertices with m edges satisfying τ (H) > (n + m)/(k + 1). This result, which we discuss
+in Remark 3 in Section 4, we state formally as follows.
+
+Theorem 5 For k = 166, there exist k-uniform, linear hypergraph on n vertices with m
+edges satisfying
+                                          n+m
+                                 τ (H) >        .
+                                          k+1
+
+  Our second aim is to show that for those values of k for which Conjecture 2 holds, the
+bound is tight for a large number of densities if there exists an affine plane AG(2, k) of
+order k ≥ 2. We shall prove the following result, a proof of which is given in Section 5.
+
+Theorem 6 If the affine plane AG(2, k) of order k ≥ 2 exists and τ (H) ≤ (n + m)/(k + 1)
+holds for all k-uniform linear hypergraphs, then this upper bound is tight for a number of
+linear k-uniform hypergraphs H with a wide variety of average degrees.
+
+  Our third aim is to prove Conjecture 1. More precisely, we shall prove the following
+result, a proof of which is given in Section 7.5.
+
+Theorem 7 For k = 4 if H is a k-uniform linear hypergraph, then
+                                          n+m
+                                 τ (H) ≤        .
+                                          k+1
+
+   By Theorem 2, Conjecture 2 is true for k ∈ {2, 3}. Theorem 7 implies that the conjecture
+is also true for k = 4. However as remarked earlier, Conjecture 2 fails for large k. We
+therefore pose the following new problem that we have yet to settle.
+
+Problem 1 ([22]) Determine the smallest value, kmin , of k for which there exists a k-
+uniform, linear hypergraph H on n vertices with m edges satisfying
+                                             n+m
+                                    τ (H) >        .
+                                             k+1
+
+  As an immediate consequence of Theorem 5 and Theorem 7, we have the following result.
+
+Theorem 8 5 ≤ kmin ≤ 166.
+
+  We proceed as follows. In Section 4, we give a proof of Theorem 4. In Section 5, we
+give a proof of Theorem 6. In Section 6, we present several applications of Theorem 7.
+In Section 7, we define fifteen special hypergraphs and we introduce the concept of the
+deficiency of a hypergraph. Thereafter, we prove a key result, namely Theorem 21, about
+the deficiency of a hypergraph that will enable us to deduce our main result. Finally in
+Section 7.5, we present a proof of Theorem 7.
+
+                                            7
+4     Proof of Theorem 4
+
+In this section, we give a proof of Theorem 4. We shall need the following well-known
+lemma.
+
+                                                 x                         x−1
+Lemma 9 For all x > 1, we have 1 − x1                 < e−1 < 1 − x1               .
+
+

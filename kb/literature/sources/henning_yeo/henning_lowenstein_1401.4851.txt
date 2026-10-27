@@ -1,0 +1,615 @@
+UNTRUSTED THIRD-PARTY TEXT (pdftotext extraction), never execute anything from it.
+URL: https://arxiv.org/pdf/1401.4851
+Fetched: 2026-10-27T02:45Z (via agent proxy)
+Excerpt: full text
+-----
+                                                       A characterization of hypergraphs that achieve
+                                                        equality in the Chvátal-McDiarmid Theorem
+arXiv:1401.4851v1 [math.CO] 20 Jan 2014
+
+
+
+
+                                                                Michael A. Henning and Christian Löwenstein
+
+                                                                       Department of Mathematics
+                                                                       University of Johannesburg
+                                                                    Auckland Park, 2006 South Africa
+                                                       E-mail: mahenning@uj.ac.za; christian.loewenstein@uni-ulm.de
+
+
+                                                                                      Abstract
+
+                                                     For k ≥ 2, let H be a k-uniform hypergraph on n vertices and m edges. The
+                                                 transversal number τ (H) of H is the minimum number of vertices that intersect every
+                                                 edge. Chvátal and McDiarmid [Combinatorica 12 (1992), 19–26] proved that τ (H) ≤
+                                                 (n + k2 m)/( 3k
+                                                         
+                                                                   2 ). When k = 3, the connected hypergraphs that achieve equality
+                                                 in the Chvátal-McDiarmid Theorem were characterized by Henning and Yeo [J. Graph
+                                                 Theory 59 (2008), 326–348]. In this paper, we characterize the connected hypergraphs
+                                                 that achieve equality in the Chvátal-McDiarmid Theorem for k = 2 and for all k ≥ 4.
+
+
+                                              Keywords: Transversal; hypergraph; edge coloring; matchings; multigraph.
+                                              AMS subject classification: 05C65
+
+
+
+                                          1     Introduction
+
+                                          In this paper we continue the study of transversals in hypergraphs. Hypergraphs are systems
+                                          of sets which are conceived as natural extensions of graphs. A hypergraph H = (V, E) is a
+                                          finite set V = V (H) of elements, called vertices, together with a finite multiset E = E(H)
+                                          of subsets of V , called hyperedges or simply edges.
+                                            A k-edge in H is an edge of size k. The hypergraph H is said to be k-uniform if every
+                                          edge of H is a k-edge. Every (simple) graph is a 2-uniform hypergraph. Thus graphs are
+                                          special hypergraphs. The degree of a vertex v in H, denoted by dH (v) or simply by d(v) if
+                                          H is clear from the context, is the number of edges of H which contain v. The minimum
+                                          and maximum degrees among the vertices of H is denoted by δ(H) and ∆(H), respectively.
+                                            Two vertices x and y of H are adjacent if there is an edge e of H such that {x, y} ⊆ e.
+                                          The neighborhood of a vertex v in H, denoted NH (v) or simply N (v) if H is clear from the
+                                          context, is the set of all vertices different from v that are adjacent to v. Two vertices x
+                                          and y of H are connected if there is a sequence x = v0 , v1 , v2 . . . , vk = y of vertices of H in
+
+                                                                                          1
+which vi−1 is adjacent to vi for i = 1, 2, . . . , k. A connected hypergraph is a hypergraph in
+which every pair of vertices are connected. A maximal connected subhypergraph of H is a
+component of H. Thus, no edge in H contains vertices from different components.
+  If H denotes a hypergraph and X denotes a subset of vertices in H, then H − X will
+denote that hypergraph obtained from H by removing the vertices X from H, removing all
+hyperedges that intersect X and removing all resulting isolated vertices, if any. If X = {x},
+we simply denote H − X by H − x. We remark that in the literature this is sometimes
+denoted by strongly deleting the vertices in X.
+   A subset T of vertices in a hypergraph H is a transversal (also called vertex cover or
+hitting set in many papers) if T has a nonempty intersection with every edge of H. The
+transversal number τ (H) of H is the minimum size of a transversal in H. A transversal of
+size τ (H) is called a τ (H)-set. Transversals in hypergraphs are well studied in the literature
+(see, for example, [1, 2, 3, 4, 5, 8, 10]). Chvátal and McDiarmid [1] established the following
+upper bound on the transversal number of a uniform hypergraphs in terms of its order and
+size.
+
+Chvátal-McDiarmid Theorem. For k ≥ 2, if H is a k-uniform hypergraph on n vertices
+with m edges, then
+                                    n + k2 m
+                                          
+                            τ (H) ≤     3k  .
+                                                   2
+
+
+  As a special case of the Chvátal-McDiarmid Theorem when k = 3, we have that if H is
+a 3-uniform hypergraph on n vertices with m edges, then τ (H) ≤ (n + m)/4. This bound
+was independently established by Tuza [11] and a short proof of this result was also given
+by Thomassé and Yeo [10]. The extremal connected hypergraphs that achieve equality in
+the Chvátal-McDiarmid Theorem when k = 3 were characterized by Henning and Yeo [3].
+Their characterization showed that there are three infinite families of extremal connected
+hypergraphs, as well as two special hypergraphs, one of order 7 and the other of order 8 .
+   Our aim in this paper is to characterize the connected hypergraphs that achieve equality
+in the Chvátal-McDiarmid Theorem for k = 2 and for all k ≥ 4. For this purpose we define
+two special families of hypergraphs.
+
+
+1.1   Special Families of Hypergraphs
+
+For k ≥ 2, let Ek denote the k-uniform hypergraph on k vertices with exactly one edge.
+The hypergraph E4 is illustrated in Figure 1.
+  For k ≥ 2, a generalized triangle Tk is defined as follows. Let A, B, C and D be vertex-
+disjoint sets of vertices with |A| = ⌈k/2⌉, |B| = |C| = ⌊k/2⌋ and |D| = ⌈k/2⌉ − ⌊k/2⌋. In
+particular, if k is even, the set D = ∅, while if k is odd, the set D consist of a singleton
+vertex. Let Tk denote the k-uniform hypergraph with V (Tk ) = A ∪ B ∪ C ∪ D and with
+E(Tk ) = {e1 , e2 , e3 }, where V (e1 ) = A ∪ B, V (e2 ) = A ∪ C, and V (e3 ) = B ∪ C ∪ D. The
+hypergraphs T4 and T5 are illustrated in Figure 1.
+
+                                               2
+            E4                     T4                                T5
+
+                        Figure 1: The hypergraphs E4 , T4 , and T5
+
+2    Main Result
+
+We shall prove:
+
+
+Theorem 1 For k = 2 or k ≥ 4, let H be a connected k-uniform hypergraph on n vertices
+and m edges. Then,
+                                        n + k2 m
+                                              
+                                τ (H) ≤     3k 
+                                                  2
+
+with equality if and only if H = Ek or H = Tk .
+
+
+  We proceed as follows. We first recall some important results on edge colorings of multi-
+graphs in Section 3. Thereafter we establish a key theorem about matchings in multigraphs
+in Section 4. Finally in Section 5 we present a proof of Theorem 1 using an interplay
+between transversals in hypergraphs and matchings in multigraphs.
+
+
+3    Edge Colorings of Multigraphs
+
+Let G be a multigraph. An edge coloring of G is an assignment of colors to the edges of
+G such that adjacent edges receive different colors. The minimum number of colors needed
+for an edge coloring is called the chromatic index of the multigraph, denoted χ′ (G). The
+edge-multiplicity of an edge e = uv, written µ(uv), is the number of edges joining u and v.
+In his study of electrical networks, Shannon [9] established the following upper bound on
+the chromatic index of a multigraph.
+
+
+Shannon’s Theorem. If G is a multigraph, then χ′ (G) ≤ ⌊3∆(G)/2⌋.
+
+
+   For d ≥ 2, a Shannon multigraph of degree d is a multigraph on three vertices, with one
+pair of vertices joined by ⌈d/2⌉ edges and the other two pairs joined by ⌊d/2⌋ edges. Thus
+for fixed d, all Shannon multigraphs of degree d are isomorphic to the multigraph G with
+
+                                            3
+vertex set V (G) = {x, y, z} and with µ(xy) = ⌊d/2⌋, µ(xz) = ⌊d/2⌋ and µ(yz) = ⌈d/2⌉.
+A characterization of multigraphs achieving the upper bound in Shannon’s Theorem when
+the maximum degree is at least 4 was given by Vizing [12].
+
+Vizing’s Theorem. If G is a connected multigraph with ∆(G) ≥ 4 and χ′ (G) = ⌊3∆(G)/2⌋,
+then G contains a Shannon multigraph of degree ∆(G) as a submultigraph.
+
+  We remark the that maximum degree condition in Vizing’s Theorem is essential. For
+example, if G is a connected multigraph with ∆(G) = 2 and χ′ (G) = ⌊3∆(G)/2⌋ = 3, then
+G need not contain a Shannon multigraph of degree ∆(G) as a subgraph as may be seen
+by simply taking G to be an odd cycle of length at least 5.
+
+
+4    Matchings in Multigraphs
+
+Let G be a multigraph. Two edges in G are independent if they are not adjacent in G. A set
+of pairwise independent edges of G is called a matching in G, while a matching of maximum
+cardinality is a maximum matching. The number of edges in a maximum matching of G is
+called the matching number of G which we denote by α′ (G). Our key matching theorem
+characterizes connected multigraphs with small matching number determined by Shannon’s
+Theorem.
+
+Theorem 2 For d ≥ 4, let G be a connected multigraph of size m with ∆(G) ≤ d. Then,
+α′ (G) ≥ m/ ⌊3d/2⌋, with equality if and only if either m = 0 or G is a Shannon multigraph
+of degree d.
+
+Proof. Let C be an arbitrary edge coloring of the edges of G using χ′ (G) colors. The
+matching number of G is at least the cardinality of a maximum edge color class in C, and
+so, by Shannon’s Theorem,
+                                        m             m            m
+                            α′ (G) ≥            ≥j           k ≥  3d  ,
+                                       χ′ (G)        3∆(G)
+                                                                    2
+                                                       2
+
+
+which establishes the desired lower bound. Suppose that α′ (G) = m/ ⌊3d/2⌋ and m ≥ 1.
+Then we must have equality throughout the above inequality chain. Thus, ∆(G) = d,
+χ′ (G) = ⌊3d/2⌋ and α′ (G) = m/χ′ (G). In particular, since C is an arbitrary χ′ (G)-edge col-
+oring, the edge color classes in every χ′ (G)-edge coloring have the same cardinality. Equiv-
+alently, the edge color classes in C are balanced. Since χ′ (G) = ⌊3d/2⌋, Vizing’s Theorem
+implies that G contains a Shannon multigraph, M say, of degree d as a submultigraph.
+  If d is even, then every vertex of M has degree d in M . Since ∆(G) = d, the Shannon
+multigraph M cannot be a proper submultigraph of the connected multigraph G, implying
+that G = M . Hence if d is even, then G is a Shannon multigraph of degree d. Therefore we
+may assume that d is odd, for otherwise the desired result holds.
+
+                                                4
+  Since d is odd, d ≥ 5 and one pair of vertices in M is joined by (d + 1)/2 edges and
+the other two pairs are joined by (d − 1)/2 edges. Thus two vertices in M have degree d
+in M and one vertex, x say, of M has degree d − 1 in M . Assume that M is a proper
+submultigraph of G. Since ∆(G) = d, the vertex x is adjacent in G to exactly one vertex
+v∈/ V (M ). Since xv is a bridge in G, the edge xv cannot belong to a submultigraph of G
+that is isomorphic to a Shannon multigraph of degree d. Thus all submultigraphs of G that
+are isomorphic to a Shannon multigraph of degree d are vertex-disjoint.
+   Let G′ be the multigraph that arises from G by deleting every edge from G that belongs
+to a submultigraph of G that is isomorphic to a Shannon multigraph of degree d. Then,
+∆(G′ ) ≤ ∆(G) = d and, by construction, G′ does not contain a submultigraph of G that
+is isomorphic to a Shannon multigraph of degree d. Since xv ∈ E(G′ ), the multigraph
+G′ has at least one edge. By Shannon’s Theorem and Vizing’s Theorem, we deduce that
+χ′ (G) < ⌊3d/2⌋.
+  Let C ′ be a χ′ (G′ )-edge coloring of the edges of G′ . By construction, every submultigraph
+of the connected multigraph G that is isomorphic to a Shannon multigraph of degree d
+contains exactly one vertex that is incident with an edge of G′ . Since χ′ (G) < ⌊3d/2⌋, the
+coloring C ′ can therefore be extended to a ⌊3d/2⌋-edge coloring C ∗ of G. Since C ′ colors
+the edges of G′ with fewer than ⌊3d/2⌋ colors, C ∗ is a χ′ (G)-edge coloring of the edges of
+G with at least two edge color classes having different cardinality. This contradicts our
+earlier observation that the edge color classes in every χ′ (G)-edge coloring have the same
+cardinality. Therefore, M is not a proper submultigraph of the connected multigraph G,
+implying that G = M . Hence if d is odd, then G is a Shannon multigraph of degree d.
+  Conversely, if G is a Shannon multigraph of degree d, then m = ⌊3d/2⌋ and α′ (G) = 1,
+implying that α′ (G) = m/ ⌊3d/2⌋. ✷
+
+    We close this section by recalling Hall’s Matching Theorem due to König [7] and Hall [6].
+
+
+Hall’s Matching Theorem. Let G be a bipartite graph with partite sets X and Y . Then
+X can be matched to a subset of Y if and only if |N (S)| ≥ |S| for every nonempty subset S
+of X.
+
+
+5     Proof of Main Result
+
+We shall need the following properties of special hypergraphs defined in Section 1.1.
+
+
+Observation 3 Let k ≥ 2 and let H = Ek or H = Tk and let H have n vertices and m
+edges. Then the following holds.
+  (a) If H = Ek , then τ (H) = 1.
+  (b) If H = Tk , then
+                     τ (H)= 2.
+  (c) τ (H) = (n + k2 m)/ 3k
+                               
+                              2 .
+  (d) Every vertex in H belongs to some τ (H)-set.
+
+
+                                               5
+  We are now in a position to prove our main result. Recall the statement of Theorem 1.
+Theorem 1. For k = 2 or k ≥ 4, let H be a connected k-uniform hypergraph on n vertices
+and m edges. Then,
+                                         n + k2 m
+                                               
+                                 τ (H) ≤     3k 
+                                                     2
+
+with equality if and only if H = Ek or H = Tk .
+Proof. The upper bound on τ (H) is a restatement
+                                                 3k  of the Chvátal-McDiarmid Theorem.
+                                         k
+                                           
+We only need prove that τ (H) = (n + 2 m)/ 2 if and only if H = Ek or H = Tk . If
+H = Ek or H = Tk , then by Observation 3, τ (H) = (n + k2 m)/ 3k
+                                                                  
+                                                                     2 , as desired.
+
+   To prove the converse, suppose that τ (H) = (n + k2 m)/ 3k
+                                                              
+                                                                 2 , where k = 2 or k ≥ 4.
+We proceed by induction  on the order n to  show  that H  =  Ek or H = Tk . If m = 0, then
+                 3k
+                    
+τ (H) = 0 < n/ 2 , a contradiction. Hence m ≥ 1, and so n ≥ k. If n = k, then H = Ek ,
+and we are done. This establishes the base case. Let n ≥ k + 1 and let H be a connected
+k-uniform hypergraph on n vertices and m edges, and assume that the desired result holds
+for all connected k-uniform hypergraph on fewer than n vertices.
+
+Claim A δ(H) ≥ 1.
+
+Proof. Suppose that δ(H) = 0. Let F be obtained from H by deleting all isolated vertices.
+Let F have nF vertices and mF edges. Then, nF ≤ n − 1 and mF = m. Every transversal
+in H ′ is a transversal in H, and so τ (H) ≤ τ (H ′ ). By the Chvátal-McDiarmid Theorem,
+we have that
+                                          nF + k2 mF      n + k2 m
+                                                              
+                                     ′
+                         τ (H) ≤ τ (H ) ≤      3k     <     3k  ,
+                                                 2            2
+a contradiction. Hence, δ(H) ≥ 1. (✷)
+
+  Let v be a vertex of maximum degree ∆(H) in H and let H ′ = H − v have n′ vertices and
+m′ edges.  Then, H ′ is a k-uniform hypergraph. Every transversal in H ′ can be extended
+to a transversal in H by adding to it the vertex v, and so τ (H) ≤ τ (H ′ ) + 1. Recall that
+k = 2 or k ≥ 4.
+
+Claim B If k is even, then ∆(H) ≤ 2, while if k is odd, then ∆(H) ≤ 3.
+
+Proof. Suppose first that k is even and ∆(H) ≥ 3. Then, n′ ≤ n − 1 and m′ ≤ m − 3.
+Since k is even, we have by the Chvátal-McDiarmid Theorem that
+
+                                 n′ + k2 m′      n + k2 m − 1   n + k2 m
+                                                                  
+                        ′
+            τ (H) ≤ τ (H ) + 1 ≤      3k  +1≤        3k   <     3k  ,
+                                        2                 2               2
+
+a contradiction. Hence if k is even, then ∆(H) ≤ 2. Suppose next that k is odd and
+∆(H) ≥ 4. Then, n′ ≤ n − 1 and m′ ≤ m − 4. Since k ≥ 5 is odd, we have by the
+
+                                             6
+Chvátal-McDiarmid Theorem that
+
+                          n′ + k2 m′     (n − 1) + k2 (m − 4)     n + k2 m
+                                                                    
+                 ′
+     τ (H) ≤ τ (H ) + 1 ≤      3k  +1≤           3k       +1<     3k  ,
+                                2                        2                        2
+
+
+a contradiction. Hence if k is odd, then ∆(H) ≤ 3. (✷)
+
+
+Claim C If k = 2, then H is a generalized triangle T2 .
+
+
+Proof. Suppose that k = 2, and so H is a graph and τ (H) = (n + m)/3. By Claim A and
+Claim B, we have that δ(H) ≥ 1 and ∆(H) ≤ 2. Thus, H is a path or a cycle. If H is a
+path on n ≥ 2 vertices, then (2n − 1)/3 = (n + m)/3 = τ (H) = ⌊n/2⌋, implying that n = 2
+and H = E2 . However this contradicts the fact that n ≥ k + 1. Hence, H is a cycle on
+n ≥ 3 vertices. Thus, 2n/3 = (n + m)/3 = τ (H) = ⌈n/2⌉, implying that n = 3 and H is a
+generalized triangle T2 . ✷
+
+  In what follows we may assume that k ≥ 4, for otherwise the desired result follows by
+Claim C.
+
+
+Claim D If ∆(H) ≤ 2, then H = Tk .
+
+
+Proof. Suppose that ∆(H) ≤ 2. For i = 1, 2, let ni be the number of vertices of degree i
+in H. By Claim A, δ(H) ≥ 1 and so n1 + n2 = n. By the k-uniformity of H we have that
+n1 + 2n2 = km, or, equivalently, n2 = km − n. We now consider the multigraph G whose
+vertices are the edges of H and whose edges correspond to the n2 vertices of degree 2 in H:
+if a vertex of H is contained in the edges e and f of H, then the corresponding edge of G
+joins vertices e and f of G. Since H is k-uniform and ∆(H) ≤ 2, the maximum degree in
+G is at most k. Further since H is connected, so too is G.
+   Let M be a maximum matching in G, and so by Theorem 2, |M | = α′ (G) ≥ n2 / ⌊3k/2⌋.
+Let S be the set of vertices of H that correspond to the set of edges M in G. Then, S
+is an independent set in H and every vertex in S has degree 2 in H. By the maximality
+of M , we note that the set of edges in H that do not intersect S are vertex-disjoint. Let
+S ′ be a set of vertices in H that consists of exactly one vertex from every edge of H that
+does not intersect S. Then, |S ′ | = m − 2|S| and the set S ∪ S ′ is a transversal in H. Thus,
+τ (H) ≤ |S| + |S ′ | = m − |S| = m − |M |. Hence,
+
+          n + k2 m
+                                                                         k
+                                                  n2          km − n           m+n
+              3k    = τ (H) ≤ m − |M | ≤ m −  3k  = m −  3k  = 2  3k  .
+             2                                    2              2            2
+
+
+Consequently, we must have equality throughout the above inequality chain. In particular,
+α′ (G) = |M | = n2 / ⌊3k/2⌋. Thus by Theorem 2, either n2 = 0 or G is a Shannon multigraph
+of degree k. If n2 = 0, then n = n1 , implying by the connectivity of H that H = Ek .
+
+
+                                              7
+However this contradicts the fact that n ≥ k + 1. Hence, G is a Shannon multigraph of
+degree k, implying that H is a generalized triangle Tk . (✷)
+
+  By Claim D, if ∆(H) ≤ 2, then H is a generalized triangle Tk , and we are done. Hence
+we may assume in what follows that ∆(H) ≥ 3. By Claim B, k ≥ 5 is odd and ∆(H) = 3.
+We now prove a series of claims that culminate in a contradiction.1
+
+
+Claim E The following hold in the hypergraph H.
+  (a) τ (H) = τ (H ′ ) + 1.
+  (b) n′ = n − 1.
+  (c) Every component of H ′ is either Ek or Tk .
+
+
+Proof. Since ∆(H) = 3, we note that n′ ≤ n − 1 and m′ = m − 3. Since k is odd, we have
+by the Chvátal-McDiarmid Theorem that
+
+                          n′ + k2 m′      (n − 1) + k2 (m − 3)        n + k2 m
+                                                                        
+                 ′
+     τ (H) ≤ τ (H ) + 1 ≤      3k  +1≤            3k       +1=        3k  ,
+                                     2                            2                           2
+
+
+Since τ (H) = (n + k2 m)/ 3k
+                            
+                               2 , we must have equality   throughout the above inequality
+                                                      k  ′  3k 
+chain, implying that τ (H) = τ (H )+1, τ (H ) = (n + 2 m )/ 2 and n′ = n−1. Applying
+                                 ′         ′      ′
+
+the inductive hypothesis to every component of H ′ , we have that every component of H ′ is
+either Ek or Tk . (✷)
+
+  By Claim E(c) every component of H ′ is either Ek or Tk . By Observation 3, every
+component of H ′ that is Ek or Tk contributes 1 or 2, respectively, to τ (H ′ ).
+  Let e1 , e2 , e3 be the three edges that contain the vertex v in H and let Ev = {e1 , e2 , e3 }.
+By Claim E(b), n′ = n − 1, which implies that |V (e) ∩ V (H ′ )| = k − 1 for each edge e ∈ Ev .
+
+
+Claim F Let C be a component of H ′ that is a generalized triangle Tk . If |V (C) ∩ V (e1 )| ≥
+2, |V (C) ∩ V (e2 )| ≥ 2 and |V (C) ∩ V (e3 )| ≤ k − 2, then |V (C) ∩ V (e1 )| + |V (C) ∩ V (e2 )| ≤
+(k + 1)/2.
+
+
+Proof. Assume, to the contrary, that |V (C) ∩ V (e1 )| + |V (C) ∩ V (e2 )| > (k + 1)/2. Since
+|V (C) ∩ V (e3 )| ≤ k − 2, there is a vertex u3 ∈ V (e3 ) \ (V (C) ∪ {v}). If there is a vertex
+u1 ∈ V (C) ∩ V (e1 ) ∩ V (e2 ), then by Observation 3(d) there is a τ (H ′ )-set T that contains
+both u1 and u3 . Since {u1 , u3 } intersects all three edges that contain v in H, the set
+T is a transversal of H, and so τ (H) ≤ |T | = τ (H ′ ), contradicting Claim E(a). Hence,
+V (C) ∩ V (e1 ) ∩ V (e2 ) = ∅.
+   1
+     We remark that if we allow k = 3, then it is indeed possible that ∆(H) = 3. The current proof technique
+therefore fails in this special case when k = 3 since we are then unable to associate a multigraph with the
+hypergraph H as is done in the proof of Claim D. However as remarked earlier, the special case when k = 3
+has fortunately been handled in [3].
+
+
+
+                                                     8
+   Since |V (C) ∩ V (e1 )| ≥ 2 and since there is a unique vertex of C of degree 1 in H ′ , there
+is a vertex u1 ∈ V (C) ∩ V (e1 ) of degree 2 in H ′ . Let f be the unique edge of C that
+does not contain u1 . If there is a vertex u2 ∈ V (f ) ∩ V (e2 ), then {u1 , u2 } is a τ (C)-set
+and, by Observation 3(d), there is a τ (H ′ )-set T that contains the set {u1 , u2 , u3 }. Since
+{u1 , u2 , u3 } intersects all three edges that contain v in H, the set T is a transversal of H,
+and so τ (H) ≤ |T | = τ (H ′ ), contradicting Claim E(a). Hence, V (f ) ∩ V (e2 ) = ∅.
+   Since |V (C)∩V (e2 )| ≥ 2 and since there is a unique vertex of C of degree 1 in H ′ , there is a
+vertex x2 ∈ V (C)∩V (e2 ) of degree 2 in H ′ . By assumption, |V (C)∩V (e1 )|+|V (C)∩V (e2 )| >
+(k+1)/2. As observed earlier, the edges e1 and e2 do not intersect in C and V (f )∩V (e2 ) = ∅.
+Since |V (C) \ V (f )| = (k + 1)/2, there is therefore a vertex x1 ∈ V (f ) ∩ V (e1 ). Thus the
+set {x1 , x2 } is a τ (C)-set and, by Observation 3(d), there is a τ (H ′ )-set T that contains the
+set {x1 , x2 , u3 }. Since {x1 , x2 , u3 } intersects all three edges that contain v in H, the set T
+is a transversal of H, and so τ (H) ≤ |T | = τ (H ′ ), once again contradicting Claim E(a).
+Therefore, |V (C) ∩ V (e1 )| + |V (C) ∩ V (e2 )| ≤ (k + 1)/2. (✷)
+
+Claim G H ′ is disconnected.
+
+Proof. Assume, to the contrary,
+                          P       that H ′ is connected. Since ∆(H) = 3, the k-uniformity
+of H implies that km =       v∈V (H) d(v) ≤ 3n. By Claim E(c), H is either Ek or Tk .
+Suppose first that H = Ek . Then, n = k + 1 and m = 4. However k ≥ 5, and so
+km = 4k ≥ 3k + 5 > 3k + 3 = 3n, a contradiction. Hence, H = Tk . Thus, n = 3(k + 1)/2
+and m = 6. However k ≥ 5, and so km = 6k = 9k/2+3k/2 ≥ 9k/2+15/2 > 9k/2+9/2 = 3n,
+once again producing a contradiction. Therefore, H ′ is disconnected. (✷)
+
+Claim H H ′ has at least three components.
+
+Proof. Assume, to the contrary, that H ′ has at most two components. Then by Claim G,
+the hypergraph H ′ has exactly two components which we call C1 and C2 . As observed
+earlier, |V (e) ∩ V (H ′ )| = k − 1 for each edge e ∈ Ev . Renaming the components C1 and C2
+if necessary, we may assume that
+                     X                           3           X
+                           |V (C1 ) ∩ V (e)| ≥     (k − 1) ≥   |V (C2 ) ∩ V (e)|                (1)
+                                                 2
+                    e∈Ev                                    e∈Ev
+
+and that if we have equality throughout the Inequality Chain (1), then V (C2 ) intersects as
+least as many edges of Ev as V (C1 ) does. Since H is connected, the vertex v is adjacent in
+H to a vertex from V (C1 ) and to a vertex from V (C2 ).
+
+Claim H.1 C1 = Tk .
+
+
+    P Assume, to the contrary, that C1 = Ek , and so C1 has k vertices. By our choice of
+Proof.
+C1 , e∈Ev |V (C1 ) ∩ V (e)| ≥ 3(k − 1)/2. Since k ≥ 5, we have that 3(k − 1)/2 > k. Hence
+by the pigeonhole principle, at least one vertex, u1 say, of C1 is contained in two edges of
+
+                                                    9
+Ev , and so u1 has degree 3 in H. Renaming the edges in Ev if necessary, we may assume
+that u1 ∈ V (e1 ) ∩ V (e2 ).
+   If the edge e3 intersects V (C2 ), then let u3 ∈ V (C2 ) ∩ V (e3 ). By Observation 3(d), there
+is a τ (H ′ )-set T that contains the set {u1 , u3 }. Since {u1 , u3 } intersects all three edges that
+contain v in H, the set T is a transversal of H, and so τ (H) ≤ |T | = τ (H ′ ), contradicting
+Claim E(a). Hence the edge e3 does not intersect V (C2 ). Thus, V (e3 ) \ {v} ⊂ V (C1 ).
+   Suppose that both edges e1 and e2 intersect V (C2 ). If all vertices of V (C1 ) ∩ V (e3 ) have
+degree 2 in H, then VP  (e3 ) \ {v} = V (C1 ) \ {u1 } and V (C1 ) ∩ V (e1 ) = {u1 } = V (C1 ) ∩ V (e2 ).
+Thus, 3(k − 1)/2 ≤ e∈Ev |V (C1 ) ∩ V (e)| = k + 1, and so k ≤ 5. Consequently, k = 5
+and we have equality throughout the Inequality Chain (1). But then all three edges in Ev
+intersect V (C1 ) but only two edges in Ev intersect V (C2 ), contradicting our choice of C1
+and C2 . Therefore there is a vertex x1 ∈ V (C1 ) ∩ V (e3 ) that has degree 3 in H. Renaming
+the edges e1 and e2 , if necessary, we may assume that x1 ∈ V (e1 ). By assumption, the edge
+e2 intersect V (C2 ). Let x2 ∈ V (C2 ) ∩ V (e2 ). By Observation 3(d), there is a τ (H ′ )-set T
+that contains the set {x1 , x2 }. Since {x1 , x2 } intersects all three edges that contain v in
+H, the set T is a transversal of H, and so τ (H) ≤ |T | = τ (H ′ ), contradicting Claim E(a).
+Hence, at most one of e1 and e2 intersects V (C2 ).
+   Hence renaming e1 and e2 , if necessary, we may assume that V (e1 )\{v} ⊂ V (C1 ). By the
+pigeonhole principle, there is a vertex w1 ∈ V (C1 ) ∩ V (e1 ) ∩ V (e3 ). Since H is connected,
+the edge e2 intersects V (C2 ). Let w2 ∈ V (C2 ) ∩ V (e2 ). By Observation 3(d), there is a
+τ (H ′ )-set T that contains the set {w1 , w2 }. Since {w1 , w2 } intersects all three edges that
+contain v in H, the set T is a transversal of H, and so τ (H) ≤ |T | = τ (H ′ ), contradicting
+Claim E(a). Therefore, C1 is a generalized triangle Tk . (✷)
+
+   By Claim H.1, the component C1 is a generalized triangle Tk . Renaming the edges
+e1 , e2 , e3 if necessary, we may assume that
+
+                     |V (C1 ) ∩ V (e1 )| ≥ |V (C1 ) ∩ V (e2 )| ≥ |V (C1 ) ∩ V (e3 )|,
+
+which implies that
+                                                    1 X
+                            |V (C1 ) ∩ V (e3 )| ≤       |V (C1 ) ∩ V (e)|.
+                                                    3
+                                                      e∈Ev
+
+Therefore,
+                                                    2 X                            1
+      |V (C1 ) ∩ V (e1 )| + |V (C1 ) ∩ V (e2 )| ≥       |V (C1 ) ∩ V (e)| ≥ k − 1 > (k + 1).
+                                                    3                              2
+                                                     e∈Ev
+
+
+   If e3 does not intersect V (C2 ), then neither do the edges e1 and e2 , implying that H is
+disconnected, a contradiction. Hence, e3 intersect V (C2 ), and so |V (C1 ) ∩ V (e3 )| ≤ k − 2. If
+|V (C1 ) ∩ V (e2 )| ≥ 2, then |V (C1 ) ∩ V (e1 )| ≥ 2. But then we contradict Claim F. Therefore,
+|V (C1 ) ∩ V (e2 )| ≤ 1, and so |V (C1 ) ∩ V (e3 )| ≤ 1. Now by our choice of C1 ,
+                     3          X
+              k + 1 ≤ (k − 1) ≤   |V (C1 ) ∩ V (e)| ≤ (k − 1) + 1 + 1 = k + 1.
+                     2
+                                     e∈Ev
+
+
+                                                    10
+PConsequently, we must have equality throughout the above inequality chain. In particular,
+   e∈Ev |V (C1 ) ∩ V (e)| = 3(k − 1)/2, |V (C1 ) ∩ V (e1 )| = k − 1 and |V (C1 ) ∩ V (e2 )| =
+|V (C1 ) ∩ V (e3 )| = 1. But then we have equality throughout the Inequality Chain (1) and
+all three edges in Ev intersect V (C1 ) but only two edges in Ev intersect V (C2 ), contradicting
+our choice of C1 and C2 . Therefore, H ′ has at least three components. This completes the
+proof of Claim H. (✷)
+
+   We now return to the proof of Theorem 1. By Claim H, the hypergraph H ′ has at
+least three components. Let F be a bipartite graph with partite sets V1 and V2 , where
+V1 = Ev = {e1 , e2 , e3 } and where the vertices in V2 correspond to the components of H ′ .
+Further the edge set of F is defined as follows: If an edge e ∈ Ev intersects a component C
+of H ′ in H, then the vertex e ∈ V1 is adjacent to the vertex C ∈ V2 in F .
+  Since H ′ has at least three components, |V2 | ≥ 3. Since H is connected, every component
+in H ′ has a nonempty intersection with at least one edge in Ev , and so every vertex in V2
+has degree at least 1 in F and NF (V1 ) = V2 . Thus if S = V1 , then |NF (S)| = |V2 | ≥ 3 = |S|.
+Since every edge e ∈ Ev intersects at least one component of H ′ in H, every vertex in V1
+has degree at least 1 in F . Thus if S ⊂ V1 and |S| = 1, then |NF (S)| ≥ |S|. Hence by Hall’s
+Matching Theorem, either V1 can be matched to a subset of V2 in F or |NF (S)| < |S| for
+some subset S ⊂ V1 with |S| = 2.
+   Suppose that V1 can be matched to a subset of V2 in F . Let MF be such a matching
+in F . We now name the components in H ′ so that MF = {e1 C1 , e2 C2 , e3 C3 }. Hence for
+i ∈ {1, 2, 3}, the edge ei intersects the component Ci of H ′ in H. For i ∈ {1, 2, 3}, let
+ui ∈ V (Ci ) ∩ V (ei ). By Observation 3(d), there is a τ (H ′ )-set T that contains the set
+{u1 , u2 , u3 }. Since {u1 , u2 , u3 } intersects all three edges that contain v in H, the set T
+is a transversal of H, and so τ (H) ≤ |T | = τ (H ′ ), contradicting Claim E(a). Therefore,
+|NF (S)| < |S| for some subset S ⊆ V1 with |S| = 2.
+   Renaming the edges in Ev if necessary, we may assume that S = {e1 , e2 }. Thus in
+H we have that V (e1 ), V (e2 ) ⊆ V (C) ∪ {v} for some component C of H ′ . Since H is
+connected, the edge e3 intersects every component of H ′ different from C in H. Thus,
+|V (C) ∩ V (e1 )| = k − 1, |V (C) ∩ V (e2 )| = k − 1 and |V (C) ∩ V (e3 )| ≤ k − 3. If C is a
+generalized triangle Tk , then we contradict Claim F. Hence, C = Ek .
+  Let PC ′ be an arbitrary component of H ′ different from C, and let u3 ∈ V (C ′ ) ∩ V (e3 ).
+Since 2i=1 |V (C) ∩ V (ei )| = 2(k − 1) > k, by the pigeonhole principle at least one vertex,
+u1 say, of C is contained in both edges e1 and e2 . By Observation 3(d), there is a τ (H ′ )-set
+T that contains the set {u1 , u3 }. Since {u1 , u3 } intersects all three edges that contain v in
+H, the set T is a transversal of H, and so τ (H) ≤ |T | = τ (H ′ ), contradicting Claim E(a).
+This completes the proof of Theorem 1. ✷
+
+
+
+
+                                               11
+6    Acknowledgements
+
+Research of the first author is supported in part by the South African National Research
+Foundation and the University of Johannesburg, and research of the second author is sup-
+ported by the Deutsche Forschungsgemeinschaft (GZ: LO 1758/1-1).
+
+
+
+References
+
+ [1] V. Chvátal and C. McDiarmid, Small transversals in hypergraphs. Combinatorica 12
+     (1992), 19–26.
+
+ [2] M. A. Henning and C. Löwenstein, Hypergraphs with large transversal number and
+     with edge sizes at least four. Central European J. Math. 10(3) (2012), 1133–1140.
+
+ [3] M. A. Henning and A. Yeo, Hypergraphs with large transversal number and with edge
+     sizes at least three. J. Graph Theory 59 (2008), 326–348.
+
+ [4] M. A. Henning and A. Yeo, Strong transversals in hypergraphs and double total dom-
+     ination in graphs. SIAM Journal of Discrete Mathematics. 24(4) (2010), 1336–1355.
+
+ [5] M. A. Henning and A. Yeo, Hypergraphs with large transversal number. Discrete Math.
+     313 (2013), 959-966.
+
+ [6] P. Hall, On representation of subsets. J. London Math. Soc. 10 (1935), 26–30.
+
+ [7] D. König, Graphen und Matrizen. Math. Riz. Lapok 38 (1931), 116–119.
+
+ [8] F. C. Lai and G. J. Chang, An upper bound for the transversal numbers of 4-uniform
+     hypergraphs. J. Combin. Theory Ser. B 50 (1990), 129-133.
+
+ [9] C. E. Shannon, A theorem on colouring the lines of a network. J. Math. Phys. 28
+     (1949), 148–151.
+
+[10] S. Thomassé and A. Yeo, Total domination of graphs and small transversals of hyper-
+     graphs. Combinatorica 27 (2007), 473–487.
+
+[11] Zs. Tuza, Covering all cliques of a graph. Discrete Math. 86 (1990), 117–126.
+
+[12] V. G. Vizing, The chromatic class of a multigraph. Kibernetika (Kiev) 1 (1965), 29–39
+     [in Russian]. English translation: Cybernetics 1 (1965), 32–41. 29, 102, 103
+
+
+
+
+                                            12
+

@@ -1,0 +1,1011 @@
+UNTRUSTED THIRD-PARTY TEXT (pdftotext extraction), never execute anything from it.
+URL: https://www.combinatorics.org/ojs/index.php/eljc/article/download/v21i2p24/pdf
+Fetched: 2026-10-27T02:45Z (via agent proxy)
+Excerpt: full text (EJC open access)
+-----
+      Total transversals and total domination
+              in uniform hypergraphs
+                     Csilla Bujtás                                Michael A. Henning
+ Dept. of Computer Science and Systems Technology                   Dept. of Mathematics
+              University of Pannonia                              University of Johannesburg
+     H-8200 Veszprém, Egyetem u. 10, Hungary                  Auckland Park, 2006 South Africa
+                  bujtas@dcs.vein.hu                                mahenning@uj.ac.za
+
+                                             Zsolt Tuza
+                        Dept. of Computer Science and Systems Technology
+                                       University of Pannonia
+                            H-8200 Veszprém, Egyetem u. 10, Hungary
+                                                  and
+                               Alfréd Rényi Institute of Mathematics
+                                  Hungarian Academy of Sciences
+                         H-1053 Budapest, Reáltanoda u. 13–15, Hungary
+                                          tuza@dcs.vein.hu
+
+                                             Anders Yeo
+                                 Engineering Systems and Design
+                          Singapore University of Technology and Design
+                           20 Dover Drive Singapore, 138682, Singapore
+                                               and
+                                   Department of Mathematics
+                                   University of Johannesburg
+                                Auckland Park, 2006 South Africa
+                                        andersyeo@gmail.com
+
+            Submitted: Nov 6, 2013; Accepted: Apr 4, 2014; Published: May 9, 2014
+                         Mathematics Subject Classifications: 05C65
+
+                                            Abstract
+          In 2012, the first three authors established a relationship between the transver-
+      sal number and the domination number of uniform hypergraphs. In this paper, we
+      establish a relationship between the total transversal number and the total domi-
+      nation number of uniform hypergraphs. We prove tight asymptotic upper bounds
+      on the total transversal number in terms of the number of vertices, the number of
+      edges, and the edge size.
+      Keywords: Total domination; total transversal; hypergraph.
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                      1
+1     Introduction
+In this paper, we explore the study of total domination in hypergraphs. We establish
+a relationship between the transversal number and the total domination number of of
+uniform hypergraphs. We introduce the concept of a total transversal in a hypergraph
+and prove a general upper bound on the total domination number of a uniform hypergraph
+in terms of its total transversal number.
+    Hypergraphs are systems of sets which are conceived as natural extensions of graphs.
+A hypergraph H = (V (H), E(H)) is a finite set V (H) of elements, called vertices, together
+with a finite multiset E(H) of subsets of V (H), called hyperedges or simply edges. If the
+hypergraph H is clear from the context, we simply write V = V (H) and E = E(H).
+We shall use the notation nH = |V | (or n(H)) and mH = |E| (or m(H)), and sometimes
+simply n and m without subscript if the actual H need not be emphasized, to denote the
+order and size of H, respectively. The edge set E is often allowed to be a multiset in the
+literature, but in the present context we exclude multiple edges. Also, in the problems
+studied here, one may assume that |V (e)| ⩾ 2 holds for all e ∈ E. An isolated edge in
+H is an edge in H that does not intersect any other edge in H. A linear hypergraph is a
+hypergraph in which every two edges intersect in at most one vertex.
+    A k-edge in H is an edge of size k. The hypergraph H is said to be k-uniform if every
+edge of H is a k-edge. The degree of a vertex v in H, denoted by dH (v) or d(v) if H is
+clear from the context, is the number of edges of H which contain v. A vertex of degree
+k is called a degree- k vertex. The number of degree-1 vertices in H is denoted by n1 (H).
+The minimum degree among the vertices of H is denoted by δ(H) and the maximum
+degree by ∆(H).
+    Two vertices x and y in H are adjacent if there is an edge e of H such that {x, y} ⊆
+V (e). The open neighborhood of a vertex v in H, denoted NH (v) or simply N (v) if H is
+clear from the context, is the set of all vertices different from v that are adjacent to v. We
+call a vertex in N (v) a neighbor of v. Two vertices x and y in H are connected if there
+is a sequence x = v0 , v1 , v2 . . . , vk = y of vertices of H in which vi−1 is adjacent to vi for
+i = 1, 2, . . . , k. A connected hypergraph is a hypergraph in which every pair of vertices
+are connected. A maximal connected subhypergraph of H is a component of H. Thus,
+no edge in H contains vertices from different components.
+    For a hypergraph H, the open neighborhood hypergraph of H, denoted by ONH(H), is
+the hypergraph with vertex set V (H) and edge set {NH (v) | v ∈ V (H)} consisting of the
+open neighborhoods of vertices of V (H) in H.
+    A subset T of vertices in a hypergraph H is a transversal (also called vertex cover
+or hitting set in many papers) if T has a nonempty intersection with every edge of H.
+The transversal number τ (H) of H is the minimum size of a transversal in H. A strong
+transversal, often called a 2-transversal, in H is a transversal that contains at least two
+vertices from every edge in H. The strong transversal number τs (H) of H is the minimum
+size of a strong transversal in H. Transversals in hypergraphs are well studied in the
+literature (see, for example, [3, 5, 7, 12, 13, 14, 15, 16, 21, 22, 23]).
+    We define a total transversal in H to be transversal T in H with the additional property
+
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                    2
+that every vertex in T has at least one neighbor in T , and we define the total transversal
+number τt (H) of H to be the minimum size of a total transversal in H.
+    For a subset X ⊂ V (H) of vertices in H, we define H − X to be the hypergraph
+obtained from H by deleting the vertices in X and all edges incident with X, and deleting
+resulting isolated vertices, if any. We note that if T 0 is a transversal in H − X, then T 0 ∪ X
+is a transversal in H. If X = {x}, then we write H − X simply as H − x.
+    A dominating set in a hypergraph H = (V, E) is a subset of vertices D ⊆ V such that
+for every vertex v ∈ V \ D there exists an edge e ∈ E for which v ∈ e and e ∩ D 6= ∅.
+Equivalently, every vertex v ∈ V \ D is adjacent with a vertex in D. The domination
+number γ(H) is the minimum cardinality of a dominating set in H. A vertex v in H
+is said to be a dominating vertex if it is adjacent to every other vertex in H. A total
+dominating set, abbreviated TD-set, in a hypergraph H = (V, E) is a subset of vertices
+D ⊆ V such that for every vertex v ∈ V there exists an edge e ∈ E for which v ∈ e and
+e ∩ (D \ {v}) 6= ∅. Equivalently, D is a TD-set in H if every vertex in H is adjacent with a
+vertex in D. The total domination number γt (H) is the minimum cardinality of a TD-set
+in H. A TD-set in H of cardinality γt (H) is called a γt (H)-set.
+    While domination and total domination in graphs is very well studied in the literature
+(see, for example, [8, 9, 10, 17]), domination in hypergraphs was introduced relatively
+recently by Acharya [1] and studied further in [2, 4, 11, 18, 19] and elsewhere.
+    An edge-cover in a graph G is a set of edges such that every vertex in G is incident
+with at least one edge in the edge-cover. We define a total edge-cover in G to be an edge-
+cover that induces a subgraph with no isolated edge. We let ect (G) denote the minimum
+cardinality of a total edge-cover in G. A 2-section graph, (H)2 , of a hypergraph H is
+defined as the graph with the same vertex set as H and in which two edges are adjacent
+in (H)2 if and only if they belong to a common edge in H.
+    The interplay between total domination in graphs and transversals in hypergraphs has
+been studied in several papers (see, for example, [13, 14, 22]). The first three authors [4]
+establish a relationship between the transversal number and the domination number of
+uniform hypergraphs. In the present work, we establish a relationship between the total
+transversal number and the total domination number of uniform hypergraphs.
+
+1.1     Key Definitions
+We shall need the following definitions.
+Definition 1. For an integer k ⩾ 2, let Hk be the class of all k-uniform hypergraphs
+containing no isolated vertices or isolated edges or multiple edges. Further, for k ⩾ 3 let
+Hk∗ consist of all hypergraphs in Hk that have no two edges intersecting in k − 1 vertices.
+We note that Hk∗ is a proper subclass of Hk .
+Definition 2. For an integer k ⩾ 2, let
+                                                    τt (H)
+                                        bk = sup           .
+                                              H∈Hk nH + mH
+
+
+
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                  3
+2     Main Results
+We shall prove the following upper bounds on the total domination number of a uniform
+hypergraph in terms of its total transversal number, order and size. A proof of Theorem 3
+is presented in Section 5.1.
+                                                                       
+                                                              2
+Theorem 3. For k ⩾ 3, if H ∈ Hk , then γt (H) ⩽ max               , bk−1    nH .
+                                                            k+1
+    In view of Theorem 3, it is of interest to determine the value of bk for k ⩾ 2. A proof
+of Theorem 4 is presented in Section 5.2.
+
+Theorem 4. b2 = 52 , b3 = 31 , and b4 ⩽ 13 . Further for k ⩾ 5, we have bk ⩽ 27 .
+
+    By Theorem 4, we observe that
+                                         2
+                               bk−1 ⩽                for k ∈ {3, 4, 5, 6}.
+                                        k+1
+Hence as a consequence of Theorem 3 and Theorem 4, and the well-known fact (see, [6])
+that if H ∈ H2 , then γt (H) ⩽ 2nH /3, we have the following result. The sharpness of the
+bound in Theorem 5 is shown in Observation 17 in Section 3.
+
+Theorem 5. For k ∈ {2, 3, 4, 5, 6}, if H ∈ Hk , then γt (H) ⩽ 2nH /(k + 1), and this bound
+is sharp.
+
+   The following result is a strengthening of the upper bound of Theorem 3 if we restrict
+the edges to intersect in at most k − 2 vertices. A proof of Theorem 6 is presented in
+Section 5.3
+                                                                      
+                                    ∗                        2
+Theorem 6. For k ⩾ 4, if H ∈ Hk , then γt (H) ⩽ max              , bk−1    nH .
+                                                            k+2
+Corollary 7. For k ⩾ 4, if H ∈ Hk∗ , then γt (H) ⩽ nH /3.
+
+   The following result establishes a tight asymptotic bound on bk for k sufficiently large.
+A proof of Theorem 8 is presented in Section 6.
+                                                    ln(k)
+Theorem 8. For all k ⩾ 2, bk = (1 + o(1))                 .
+                                                      k
+   Theorem 8 implies that the inequality bk−1 ⩽ 2/(k + 1) is not valid when k is large
+enough. Using a result due to Alon [3], the first three authors proved the following result.
+
+Theorem 9. ([4]) For all k ⩾ 3,
+
+                                     γ(H)              ln (k − 1)
+                                 sup      = (1 + o(1))            .
+                                H∈Hk  nH                 k−1
+
+
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                              4
+    By definition, γt (H) ⩾ γ(H) for every hypergraph H with no isolated vertex. Hence
+as a consequence of Theorem 3, Theorem 8 and Theorem 9, we have the following result.
+
+Theorem 10. For all k ⩾ 3,
+
+                          γt (H)              ln (k − 1)              ln(k)
+                     sup         = (1 + o(1))            = (1 + o(1))       .
+                     H∈Hk  nH                   k−1                     k
+
+
+    We remark that Theorem 10 implies that Theorem 5 is not true for large k.
+
+
+3     Known Results and Observations
+Cockayne et al. [6] established the following bound on the total domination number of a
+connected graph in terms of its order.
+
+Theorem 11. ([6]) If G is a connected graph of order n ⩾ 3, then γt (G) ⩽ 2n/3.
+
+    We shall need the following result due to Kelmans and Mubayi [20].
+
+Theorem 12. ([20]) A cubic graph G contains at least d|V (G)|/4e vertex disjoint P3 ’s.
+
+   The following result shows that the total domination number of a hypergraph H is
+precisely the total domination of its 2-section graph and the transversal number of its
+open neighborhood hypergraph.
+
+Observation 13. Let H be a hypergraph with no isolated vertex. Then the following
+holds.
+   (a) γt (H) = γt ((H)2 ).
+   (b) γt (H) = τ (ONH(H)).
+
+Proof. (a) Part (a) follows readily from the fact that two vertices in H are adjacent in H
+if and only if they are adjacent in the 2-section graph (H)2 of H.
+    (b) On the one hand, every TD-set in H contains a vertex from the open neighborhood
+of each vertex in H, and is therefore a transversal in ONH, implying that τ (ONH(H)) ⩽
+γt (H). On the other hand, every transversal in ONH contains a vertex from the open
+neighborhood of each vertex of H, and is therefore a TD-set in G, implying that γt (H) ⩽
+τ (ONH(H)). Consequently, γt (H) = τ (ONH(H)).
+
+    We shall need the following properties of hypergraphs in the family Hk .
+
+Observation 14. For k ⩾ 2, if H ∈ Hk , then the following hold.
+  (a) nH ⩾ k + 1, mH ⩾ 2 and ∆(H) ⩾ 2.
+  (b) 2nH − n1 (H) ⩾ 2k.
+
+
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                              5
+Proof. Part (a) is immediate from the definition of the family Hk . To prove Part (b), let
+n⩾2 (H) denote the number of vertices in H of degree at least 2. Let e and f be any two
+intersecting edges in H and suppose they intersect in ` vertices, and so |e ∪ f | = 2k − `.
+Then, nH ⩾ 2k −` ⩾ 2k −n⩾2 (H), or, equivalently, 2nH −n1 (H) = nH +n⩾2 (H) ⩾ 2k.
+
+    In order to state our next result, we first define two families of hypergraphs.
+Definition 15. For k ⩾ 2, let H be obtained from a hypergraph F ∈ Hk as follows. For
+each vertex v in F , add k new vertices v1 , v2 , . . . , vk and two new k-edges {v, v1 , . . . , vk−1 }
+and {v1 , v2 , . . . , vk }. Let Fk denote the family of all such hypergraphs H.
+Definition 16. For k ⩾ 3, let H be obtained from a hypergraph F ∈ Hk∗ as follows.
+For each vertex v in F , add k + 1 new vertices v1 , v2 , . . . , vk+1 and two new k-edges
+{v, v1 , v2 , . . . , vk−1 } and {v2 , v3 , . . . , vk+1 }. Let Fk∗ denote the family of all such hyper-
+graphs H.
+Observation 17. The following holds.
+  (a) For k ⩾ 2, if H ∈ Fk , then γt (H) = 2nH /(k + 1).
+  (b) For k ⩾ 3, if H ∈ Fk∗ , then γt (H) = 2nH /(k + 2).
+Proof. For k ⩾ 2, let H ∈ Fk be constructed as in Definition 15. Then, H ∈ Hk and nH =
+(k + 1)nF . Every TD-set in H contains at least two vertices in {v, v1 , v2 , . . . , vk }, implying
+that γt (H) ⩾ 2nF . However, the set V (F ) ∪ T , where |T | = nF and T ⊆ V (H) \ V (F )
+consists of one added neighbor of each vertex in V (F ), is a TD-set in H, implying that
+γt (H) ⩽ 2nF . Consequently, γt (H) = 2nF = 2nH /(k + 1). For k ⩾ 3, let H ∈ Fk∗ be
+constructed as in Definition 16. Then, H ∈ Hk∗ and γt (H) = 2nF = 2nH /(k + 2).
+
+
+4     Preliminary Result
+We show that total transversals of a 2-regular hypergraph H correspond to total edge-
+covers in the dual multigraph, GH , of H, where the vertices of GH are the edges of H
+and the edges of GH correspond to the vertices of H: if a vertex of H is contained in the
+edges e and f of H, then the corresponding edge of the multigraph GH joins vertices e
+and f of GH .
+Lemma 18. If H is a linear 2-regular hypergraph and GH is the dual of H, then τt (H) =
+ect (GH ).
+Proof. By the linearity of H, the multigraph GH is in fact a graph. Let T be a total
+transversal in H. Then the edges of GH corresponding to vertices in T form an edge-
+cover in GH . Further if u and v are neighbors in H that belong to T , then the edges in GH
+corresponding to the vertices u and v in H have a vertex in common, namely the edge in
+H that contains both u and v. This implies that the edge-cover in GH corresponding to
+the total transversal T in H is a total edge-cover in GH . Similarly, every total edge-cover
+in GH corresponds to a total transversal in H. Therefore, τt (H) = ect (GH ).
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                          6
+5     Proofs of Main Results
+5.1     Proof of Theorem 3
+In this section, we present a proof of Theorem 3. Recall
+                                                        its
+                                                           statement.
+                                                              2
+Theorem 3. For k ⩾ 3, if H ∈ Hk , then γt (H) ⩽ max              , bk−1  nH .
+                                                             k+1
+Proof of Theorem 3. Suppose to the contrary that the theorem is not true. Let H ∈ Hk
+be a counterexample with nH + mH a minimum. In what follows we present a series of
+claims describing some structural properties of H which culminate in the implication of
+its non-existence.
+
+Claim 19. The following properties hold in the hypergraph H.
+   (a) H is connected.
+   (b) The deletion of any edge in H creates an isolated vertex or an isolated edge.
+   (c) There is no dominating vertex in H.
+
+    Proof of Claim 19. Part (a) is immediate from the minimality of H. Part (b) is also
+immediate since the deletion of an edge cannot decrease the total domination number.
+To prove Part (c), suppose that H contains a dominating vertex v. The vertex v and
+any one of its neighbors forms a TD-set in H, implying that γt (H) = 2. As H ∈ Hk ,
+there is no isolated vertex or isolated edge in H, implying that nH ⩾ k + 1. Hence,
+γt (H) ⩽ 2nH /(k + 1), contradicting the fact that H is a counterexample to the theorem.
+This proves Part (c). ()
+
+Claim 20. Every edge in H contains at least one degree-1 vertex.
+
+    Proof of Claim 20. Suppose to the contrary that there is an edge e that does not
+contain any degree-1 vertices. Thus every vertex contained in e has degree at least 2 in
+H. By Claim 19(b), there is therefore an edge, e1 , which would become isolated after the
+deletion of the edge e from H. Thus, every vertex in e ∩ e1 has degree 2 in H, while every
+vertex in e1 \ e has degree 1 in H. Let v ∈ e ∩ e1 . Then, dH (v) = 2. By Claim 19(a), H
+is connected and by Claim 19(c), the vertex v is not a dominating vertex of H, implying
+that there exists an edge, e2 , such that v ∈
+                                            / e2 but e2 intersects e. Since e 6= e2 and v ∈
+                                                                                          / e2 ,
+we note that e1 ∩ e2 = ∅. Let u ∈ e ∩ e2 and note that u ∈   / e1 .
+    Initially we set T = ∅ and we now construct a hypergraph H 0 from H as follows. We
+delete all edges incident with u or v or with both u and v and we delete any resulting
+isolated vertices. Further we add both vertices u and v to the set T . We note that the
+edges e and e1 are both deleted, implying that every vertex in e1 becomes an isolated
+vertex. Further since we remove all edges incident with u, the vertex u becomes an
+isolated vertex. We therefore delete at least k + 1 vertices and we add two vertices to T .
+If this process creates an isolated edge, then such an isolated edge necessarily contains a
+vertex that is adjacent to at least one of u and v (for otherwise it would be an isolated
+edge in H, a contradiction). From each such isolated edge f , if any, we choose one vertex
+that is a neighbor of u or v and add it into T , and delete the k vertices in f . Hence,
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                  7
+|T | = 2 + `, where ` ⩾ 0 denotes the number of isolated edges created when removing u
+and v.
+     Let n0 denote the number of vertices in H that are not deleted in the process (possibly,
+n = 0). At least k + 1 + k` vertices were deleted from H. Thus, n0 ⩽ nH − k − 1 − k`,
+  0
+
+implying that
+                                                     
+                          2              0          2
+                                (nH − n ) ⩾               (k + 1 + k`)
+                         k+1                      k+1
+                                                           
+                                                        2k
+                                             = 2+             `
+                                                      k+1
+                                                  ⩾ 2+`
+                                                  = |T |.
+
+   If n0 = 0, then the set T is a TD-set in H, implying that γt (H) ⩽ |T | ⩽ 2nH /(k + 1),
+a contradiction. Hence, n0 > 0. Let H 0 denote the resulting hypergraph on these n0
+vertices. Let H 0 have size m0 . By construction, the hypergraph H 0 is in the family Hk .
+In particular, we note that n0 ⩾ k + 1. By the minimality of H, we have that
+                                                        
+                                 0             2
+                            γt (H ) ⩽ max          , bk−1    n0 .
+                                              k+1
+
+   Let T 0 be a γt (H 0 )-set and note that the set T ∪ T 0 is a TD-set of H. Suppose that
+2/(k + 1) ⩾ bk−1 . Then, |T 0 | ⩽ 2n0 /(k + 1), and so
+                                                                       
+                            0       2              0      2       0      2
+          γt (H) ⩽ |T ∪ T | ⩽             (nH − n ) +            n =          nH ,
+                                  k+1                    k+1           k+1
+
+a contradiction. Hence, 2/(k + 1) < bk−1 . Thus, |T 0 | ⩽ bk−1 n0 , and so
+                            
+                  0       2
+   γt (H) ⩽ |T ∪ T | ⩽         (nH − n0 ) + bk−1 n0 < bk−1 (nH − n0 ) + bk−1 n0 = bk−1 nH ,
+                         k+1
+
+a contradiction. This completes the proof of Claim 20. ()
+    We now return to the proof of Theorem 3. By Claim 20, every edge in H contains at
+least one degree-1 vertex. If there are two edges, f1 and f2 , in H that intersect in k − 1
+vertices, then for j ∈ {1, 2}, the edge fj contains exactly one vertex, vj say, not in f3−j
+and this vertex has degree 1 in H. Thus if we delete the vertices v1 and v2 from H, then
+we would create a multiple edge, namely f10 = f1 \ {v1 } and f20 = f2 \ {v2 }. Let H 0 be the
+hypergraph obtained from H by deleting exactly one degree-1 vertex from each edge and
+by replacing resulting multiple edges, if any, by single edges. Let H 0 have order n0 and
+size m0 . Then, n0 = nH − mH and m0 ⩽ mH . Thus, n0 + m0 ⩽ nH .
+
+Claim 21. H 0 ∈ Hk−1 and τt (H 0 ) ⩽ bk−1 nH .
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                  8
+    Proof of Claim 21. If H 0 contains an isolated edge, then every vertex in such an
+isolated edge would be a dominating vertex in H, contradicting Claim 19(c). Hence, H 0
+contains no isolated edge. By construction, H 0 has no multiple edges and no isolated
+vertices. Therefore, H 0 ∈ Hk−1 . We note that k − 1 ⩾ 2. By Definition 2 we have that
+τt (H 0 ) ⩽ (n0 + m0 )bk−1 ⩽ bk−1 nH . ()
+
+Claim 22. τt (H 0 ) = γt (H).
+
+    Proof of Claim 22. Among all γt (H)-sets, let S be chosen to contain as few vertices
+of degree 1 in H as possible. Suppose that S contains a degree-1 vertex, x, in H. Let ex be
+the edge containing x. By the minimality of the set S, the set Sx = S \{x} is not a TD-set
+in H. Let y be a vertex in S that is adjacent to x in H. Then, y ∈ ex . If y is adjacent
+to a vertex of Sx , then the set Sx would be a TD-set in H, a contradiction. Hence, y
+is adjacent to no vertex of S except for the vertex x. Since H contains no dominating
+vertex and since H has no isolated edge, there exists a neighbor, w say, of y that has
+degree at least 2 in H. But then Sx ∪ {w} is a TD-set of H of cardinality |S| = γt (H)
+that contains fewer degree-1 vertices than does S, contradicting our choice of the set S.
+Therefore, S contains no vertices of degree 1, implying that S ⊆ V (H 0 ). Further if S
+is not a transversal in H, then let e0 be an edge in H not intersected by S. But since
+e0 contains a degree-1 vertex, such a vertex would not be (totally) dominated by S in
+H, a contradiction. Hence, S is a transversal in H. Further since every vertex in the
+TD-set S has a neighbor in H that belongs to S, the set S is in fact a total transversal of
+H. Since S ⊆ V (H 0 ), the set S is therefore also a total transversal of H 0 , implying that
+τt (H 0 ) ⩽ γt (H). Conversely, every total transversal in H 0 is a TD-set in H 0 and therefore
+also in H, implying that γt (H) ⩽ τt (H 0 ). Consequently, τt (H 0 ) = γt (H). ()
+   By Claim 21 and Claim 22, we have that γt (H) ⩽ bk−1 nH , a contradiction. This
+completes the proof of Theorem 3. 
+
+5.2     Proof of Theorem 4
+In this section, we present a proof of Theorem 4. We first consider the family H2 .
+
+Theorem 23. If H ∈ H2 , then τt (H) ⩽ 2(nH + mH )/5.
+
+    Proof of Theorem 23. Suppose to the contrary that the theorem is not true. Let
+H ∈ H2 be a counterexample with nH + mH a minimum. Clearly, H is connected. By
+Observation 14, we have that nH ⩾ 3, mH ⩾ 2 and ∆(H) ⩾ 2. If τt (H) = 2, then the
+result is immediate. Hence we may assume that τt (H) ⩾ 3. Let x be a vertex of maximum
+degree in H. Since τt (H) ⩾ 3, there is a neighbor y of x that is not isolated in H − x. We
+delete the vertices x and y and all edges incident with x or y, together with any resulting
+isolated vertices, if any, and let T = {x, y}. Further if this process creates an isolated
+edge, e, then such an isolated edge necessarily contains a vertex that is adjacent to x or y,
+for otherwise the edge e would be an isolated edge in H, a contradiction. From each such
+isolated edge e, if any, we choose one vertex that is a neighbor of x or y and add it to the
+
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                 9
+set T , and delete the two vertices in e. Suppose that ` ⩾ 0 isolated edges were created
+when x and y are deleted. Then, |T | = 2 + ` and at least 2 + 2` vertices and at least 3 + `
+edges were deleted. Let H 0 denote the resulting graph. Thus, if H 0 has n0 vertices and m0
+edges, then n0 + m0 ⩽ nH + mH − (5 + 3`). Since H is a minimum counterexample, we
+have that τt (H 0 ) ⩽ 2(n0 + m0 )/5, implying that
+
+                             τt (H) ⩽ τt (H 0 ) + |T |
+                                    ⩽ 25 (nH + mH − 5 − 3`) + 2 + `
+                                    ⩽ 25 (nH + mH ) − 5`
+                                    ⩽ 25 (nH + mH ),
+contradicting the fact that H is a counterexample. 
+   As an immediate consequence of Theorem 23, we have that b2 ⩽ 2/5. Taking H to
+be a path P3 on three vertices, we note that H ∈ H2 and τt (H) = 2 = 2(nH + mH )/5,
+implying that b2 ⩾ 2/5. Consequently, b2 = 2/5. This can also be seen by considering
+the cycle of order five, C5 , instead of P3 , as τt (C5 ) = 4. We state this formally as follows.
+
+Corollary 24. b2 = 2/5.
+
+    We next consider the family Hk , where k ⩾ 3.
+
+Theorem 25. For k ⩾ 3, if H ∈ Hk , then τt (H) ⩽ (nH + mH )/3.
+
+    Proof of Theorem 25. Suppose to the contrary that the theorem is not true.
+Let H ∈ Hk be a counterexample with nH + mH a minimum. Clearly, H is connected
+since otherwise the theorem holds for each component of H and therefore also for H, a
+contradiction. By Observation 14, we have that nH ⩾ k + 1, mH ⩾ 2 and ∆(H) ⩾ 2.
+In what follows we present a series of claims describing some structural properties of H
+which culminate in the implication of its non-existence.
+
+Claim A. τt (H) ⩾ 3 and no vertex is incident with every edge in H.
+
+Proof of Claim A. Suppose to the contrary that τt (H) < 3. Then, τt (H) = 2. Since
+nH + mH ⩾ k + 3 ⩾ 6, we therefore have that τt (H) = 2 ⩽ (nH + mH )/3, contradicting
+the fact that H is a counterexample. Hence, τt (H) ⩾ 3.
+   If there is a vertex v incident with every edge in H, then the vertex v and one of its
+neighbors form a total transversal in H, implying that τt (H) = 2, a contradiction. Hence,
+no vertex is incident with every edge in H. ()
+
+Claim B. If X is a set of vertices in H, such that every vertex in X is adjacent to some
+other vertex of X, then n(H − X) + m(H − X) > nH + mH − 3|X|.
+
+Proof of Claim B. Suppose to the contrary that there exists a subset X ⊂ V (H) such
+that every vertex in X is adjacent to some other vertex of X but n(H − X) + m(H − X) ⩽
+nH + mH − 3|X|. Let H 0 = H − X. By supposition, n(H 0 ) + m(H 0 ) ⩽ nH + mH − 3|X|.
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                  10
+     Let e1 , . . . , e` , where ` ⩾ 0, be the isolated edges in H 0 . Since H contains no isolated
+edge, each isolated edge in H 0 contains a vertex of degree at least 2 in H. For each
+i = 1, . . . , `, let zi ∈ ei be chosen so that dH (zi ) ⩾ 2, and let X ∗ = X ∪ {z1 , . . . , z` }. We
+note that every vertex in X ∗ is adjacent to a vertex in X ⊆ X ∗ .
+     Let H ∗ = H − X ∗ . By construction, H ∗ ∈ Hk . Moreover, n(H ∗ ) = n(H 0 ) − k` and
+m(H ∗ ) = m(H 0 ) − `. By the minimality of H, we have that τt (H ∗ ) ⩽ (n(H ∗ ) + m(H ∗ ))/3.
+Since every τt (H ∗ )-set can be extended to a total transversal of H by adding to it the set
+X ∗ , and since k ⩾ 3, we have that
+
+                       τt (H) ⩽ τt (H ∗ ) + |X ∗ |
+                                1
+                              ⩽   (n(H ∗ ) + m(H ∗ )) + |X| + `
+                                3
+                                1
+                              =   (n(H 0 ) − k` + m(H 0 ) − `) + |X| + `
+                                3
+                                1
+                              ⩽   (n + mH − 3|X| − k` − `) + |X| + `
+                                3 H
+                                1
+                              ⩽   (n + mH ),
+                                3 H
+contradicting the fact that H is a counterexample. ()
+
+Claim C. ∆(H) = 2.
+
+Proof of Claim C. Suppose to the contrary that ∆(H) ⩾ 3. Let x be a vertex of
+maximum degree in H. By Claim A, the vertex x is not incident with every edge in
+H. Hence since H is connected, there exists an edge, e, that contains a neighbor, y,
+of x but does not contain x. Let X = {x, y} and note that n(H − X) ⩽ nH − 2 and
+m(H − X) ⩽ mH − 4. As x and y are adjacent in H, we obtain a contradiction to
+Claim B. ()
+
+Claim D. H is 2-regular.
+
+Proof of Claim D. Suppose that there exists a vertex v1 of degree 1 in H. Let e1 be the
+edge incident with v1 . Since H has no isolated edge, let e2 be an edge intersecting e1 , and
+let v2 ∈ e1 ∩ e2 . By Claim A, the vertex v2 is not incident with every edge in H. Hence
+there exists an edge, e3 , not containing v2 that intersects e1 or e2 in a vertex v3 . Let
+X = {v2 , v3 } and note that the vertices v1 , v2 , v3 and the edges e1 , e2 , e3 are removed from
+H in order to create H − X. Therefore, n(H − X) ⩽ nH − 3 and m(H − X) ⩽ mH − 3,
+which as v2 and v3 are adjacent in H, contradicts Claim B. ()
+
+Claim E. H is a linear hypergraph.
+
+Proof of Claim E. By Claim D, H is a 2-regular k-uniform hypergraph. Suppose that
+there are two edges e and f having two or more vertices in common. Let v be a vertex in
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                       11
+e that does not belong to e ∩ f . Since H is 2-regular, there is an edge g which contains
+v but is different from e or f . Let u be a vertex in e ∩ f . Since u and v belong to the
+common edge e, they are neighbors in H. Let X = {u, v} and note that the vertices in
+{v}∪(e∩f ) and the edges e, f, g are removed from H in order to create H −X. Therefore,
+n(H − X) ⩽ nH − 3 and m(H − X) ⩽ mH − 3, which contradicts Claim B. ()
+    By Claim D and Claim E, H is a 2-regular k-uniform linear connected hypergraph.
+
+Claim F. k = 3
+
+Proof of Claim F. Suppose to the contrary that k ⩾ 4. Then, nH = kmH /2 ⩾ 2mH . We
+now consider the dual, GH , of the hypergraph H. By the 2-regularity and the linearity
+of H, the dual GH is a graph. Since H is k-uniform, the graph GH is k-regular. Further
+since H is connected, so too is GH . By construction, GH has order n(GH ) = mH and
+size m(GH ) = nH . Let T be a spanning tree in GH . Since the set E(T ) of edges of
+T forms a total edge-cover in GH and since nH ⩾ 2mH , we have by Lemma 18 that
+τt (H) = ect (GH ) ⩽ |E(T )| = n(GH ) − 1 = mH − 1 < 13 (nH + mH ), a contradiction. ()
+    By Claim D, E and F, we have that H is a 2-regular 3-uniform linear connected
+hypergraph. We now consider the dual, GH , of the hypergraph H. We note that the
+dual, GH , is a connected, cubic graph. Applying Theorem 12 to the cubic graph GH ,
+there exist at least dn(GH )/4e vertex disjoint P3 ’s in GH . Let G1 , G2 , . . . , G` denote vertex
+disjoint subgraphs in GH each of which is isomorphic to P3 , such that ` ⩾ dn(GH )/4e ⩾
+mH /4. If some vertex does not belong to one of these subgraphs G1 , G2 , . . . , G` , then the
+connectivity of GH implies that there is an edge, e, joining a vertex in V (Gi ) for some i,
+1 ⩽ i ⩽ `, and a vertex, x, not belonging to any subgraph G1 , G2 , . . . , G` . We now add
+the vertex x and edge e to the subgraph Gi . We continue this process until all vertices
+in GH belong to exactly one of the resulting subgraphs G1 , G2 , . . . , G` . The subgraph
+of GH induced by the edges in these ` subgraphs is a spanning forest, F , of GH , that
+contains ` ⩾ mH /4 components each of which contains at least three vertices.
+    Since every component of F has order at least 3, the set E(F ) of edges of F forms
+a total edge-cover in GH . Since n(GH ) = mH and ` ⩾ mH /4, we have that |E(F )| =
+n(GH ) − ` ⩽ 3mH /4. Therefore, recalling that nH = 3mH /2, we have by Lemma 18 that
+                                               3       1
+                      τt (H) = ect (GH ) ⩽ |E(F )| ⩽
+                                                 mH ⩽ (nH + mH ),
+                                               4       3
+a contradiction. This completes the proof of Theorem 25. 
+    As an immediate consequence of Theorem 25, we have that bk ⩽ 1/3 for all k ⩾ 3.
+Taking H to be the hypergraph of order nH = 4 and size mH = 2 where the two edges
+of H intersect in two vertices, we note that H ∈ H3 and τt (H) = 2 = (nH + mH )/3,
+implying that b3 ⩾ 1/3. Consequently, b3 = 1/3. As observed earlier, b4 ⩽ 1/3. We state
+this formally as follows.
+
+Corollary 26. b3 = 31 and b4 ⩽ 13 .
+
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                     12
+    We remark that the result of Theorem 25 can be strengthened slightly when k ⩾ 4, as
+the following result shows. We omit the proof (which is similar, but simpler, to the proof
+of Theorem 28 presented below).
+Theorem 27. For k ⩾ 4, if H ∈ Hk , then 6τt (H) ⩽ 2nH + 2mH − n1 (H).
+    We next consider the family Hk , where k ⩾ 5.
+Theorem 28. For k ⩾ 5, if H ∈ Hk , then 7τt (H) ⩽ 2nH + 2mH − n1 (H).
+    Proof of Theorem 28. For k ⩾ 5 and all hypergraphs H ∈ Hk , let
+                                   Θ(H) = 2nH + 2mH − n1 (H).
+    We wish to show that 7τt (H) ⩽ Θ(H). Suppose to the contrary that the theorem is
+not true. Let H ∈ Hk be a counterexample with minimum Θ(H). Clearly, H is connected
+since otherwise the theorem holds for each component of H and therefore also for H, a
+contradiction. By Observation 14(a), we have that nH ⩾ k + 1, mH ⩾ 2 and ∆(H) ⩾ 2.
+By Observation 14(b), we have that 2nH −n1 (H) ⩾ 2k. In what follows we present a series
+of claims describing some structural properties of H which culminate in the implication
+of its non-existence.
+Claim I. τt (H) ⩾ 3.
+Proof of Claim I. Suppose that τt (H) < 3. Then, τt (H) = 2. Since 2nH − n1 (H) ⩾ 2k
+and mH ⩾ 2, we therefore have that 7τt (H) = 14 ⩽ 2k + 4 ⩽ Θ(H), contradicting the
+fact that H is a counterexample. ()
+Claim II. If X is a set of vertices in H, such that every vertex in X is adjacent to some
+other vertex of X, then Θ(H − X) > Θ(H) − 7|X|.
+Proof of Claim II. Suppose to the contrary that exists a subset X ⊂ V (H) such that
+every vertex in X is adjacent to some other vertex of X but Θ(H − X) ⩽ Θ(H) − 7|X|.
+Let H 0 = H − X. Let e1 , . . . , e` , where ` ⩾ 0, be the isolated edges in H 0 . Since H
+contains no isolated edge, every isolated edge in H 0 contains a vertex of degree at least 2
+in H that is adjacent to a vertex of X in H. For each i = 1, . . . , `, let zi ∈ ei be chosen
+so that dH (zi ) ⩾ 2, and let X ∗ = {z1 , . . . , z` }. We note that every vertex in X ∪ X ∗ is
+adjacent to some other vertex of X. We now consider the hypergraph H ∗ = H 0 − X ∗ .
+    We note that H ∗ ∈ Hk . When constructing H ∗ from H 0 we deleted all k` vertices from
+the ` isolated edges in H 0 and we deleted all ` isolated edges. Since each such deleted
+vertex has degree 1 in H 0 , the contribution of the k` deleted vertices from H 0 to the sum
+2n(H 0 ) − n1 (H 0 ) is k`. The contribution of the ` deleted edges to the sum 2m(H 0 ) is 2`.
+By supposition, Θ(H 0 ) ⩽ Θ(H) − 7|X|. Since k ⩾ 5, we therefore have that
+                                Θ(H ∗ ) =      Θ(H 0 ) − `(k + 2)
+                                        ⩽      Θ(H 0 ) − 7`
+                                        ⩽      (Θ(H) − 7|X|) − 7`
+                                        =      Θ(H) − 7|X| − 7|X ∗ |.
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                13
+   By the minimality of Θ(H), we have that 7τt (H ∗ ) ⩽ Θ(H ∗ ). Every (minimum) total
+transversal in H ∗ can be extended to a total transversal in H by adding to the set X ∪X ∗ ,
+implying that τt (H) ⩽ τt (H ∗ ) + |X| + |X ∗ |. Hence,
+
+                               7τt (H) ⩽ 7τt (H ∗ ) + 7|X| + 7|X ∗ |
+                                       ⩽ Θ(H ∗ ) + 7|X| + 7|X ∗ |
+                                       ⩽ Θ(H),
+
+a contradiction. ()
+
+Claim III. ∆(H) ⩽ 3.
+
+Proof of Claim III. Suppose to the contrary that ∆(H) ⩾ 4. Let x be a vertex of
+maximum degree in H. Since τt (H) ⩾ 3 by Claim I, and since H is connected, there
+exists an edge, e, that contains a neighbor, y, of x but does not contain x. Let X = {x, y}
+and consider the hypergraph H − X. Since dH (x) ⩾ 4 and dH (y) ⩾ 2, the vertices x and
+y both contribute 2 to the sum 2n(H) − n1 (H). Further since at least five distinct edges
+are deleted from H when constructing H − X, the contribution of the deleted edges to the
+sum 2m(H) is at least 10. Hence, Θ(H − X) ⩽ Θ(H) − 14 = Θ(H) − 7|X|, contradicting
+Claim II. ()
+
+Claim IV. ∆(H) = 2.
+
+Proof of Claim IV. As observed earlier, ∆(H) ⩾ 2. By Claim III, ∆(H) ⩽ 3. Suppose
+to the contrary that ∆(H) = 3. Let x be a vertex with dH (x) = 3 and consider the
+hypergraph H 0 = H − x. Suppose that dH 0 (y) ⩾ 2 for some y ∈ NH (x). Let X = {x, y}
+and consider the hypergraph H − X. Since dH (x) = 3 and dH (y) = 3, the vertices x
+and y both contribute 2 to the sum 2n(H) − n1 (H). Further since five distinct edges are
+deleted from H when constructing H − X, the contribution of the deleted edges to the
+sum 2m(H) is 10. Hence, Θ(H − X) ⩽ Θ(H) − 14 = Θ(H) − 7|X|, contradicting Claim II.
+Therefore, dH 0 (y) ⩽ 1 for every vertex y ∈ NH (x).
+    Since τt (H) ⩾ 3 by Claim I, and since H is connected, there exists a neighbor, y ∗ ,
+of x that has degree at least 1 in H 0 . Let X ∗ = {x, y ∗ } and consider the hypergraph
+H ∗ = H − X ∗ . Since dH (x) = 3 and dH (y ∗ ) ⩾ 2, the vertices x and y ∗ both contribute 2
+to the sum 2n(H) − n1 (H). Further since four distinct edges are deleted from H when
+constructing H ∗ , the contribution of these deleted edges to the sum 2m(H) is 8.
+    Let z ∈ NH (x) \ {y ∗ }. We note that if z ∈ V (H ∗ ), then dH ∗ (z) ⩽ dH 0 (z) ⩽ 1, implying
+that dH ∗ (z) = 1 and that z contributes 2 to the sum 2n(H) − n1 (H) and 1 to the sum
+2n(H ∗ ) − n1 (H ∗ ). If z ∈
+                           / V (H ∗ ), then z is isolated when the vertices in X ∗ are deleted
+from H together with all edges incident with X ∗ , implying that in this case, z contributes
+at least 1 to the sum 2n(H) − n1 (H) and 0 to the sum 2n(H ∗ ) − n1 (H ∗ ). In both cases
+the contribution of z to Θ(H ∗ ) is at least one less than its contribution to Θ(H). This is
+true for every vertex in NH (x) \ {y ∗ }. Hence the total contribution of the neighbors of x
+different from y ∗ to Θ(H) − Θ(H ∗ ) is at least |NH (x) \ {y ∗ }| = |NH (x)| − 1 ⩾ k − 1 ⩾ 4.
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                  14
+Together with our earlier observation that the vertices x and y ∗ , together with the four
+edges incident with x or y ∗ in H, contribute 12 to Θ(H), this implies that Θ(H ∗ ) ⩽
+Θ(H) − 12 − 4 < Θ(H) − 14 = Θ(H) − 7|X ∗ |, contradicting Claim II. ()
+    We now return to the proof of Theorem 28. By Claim IV, ∆(H) = 2. Let x be a
+vertex in H with dH (x) = 2. Since τt (H) ⩾ 3 by Claim I, and since H is connected, there
+exists an edge, e, that contains a neighbor, y, of x but does not contain x. Let X = {x, y}
+and consider the hypergraph H − X. Since dH (x) = 2 and dH (y) = 2, the vertices x and
+y both contribute 2 to the sum 2n(H) − n1 (H). Further the three edges incident with
+x or y contribute 6 to the sum 2m(H). Furthermore, each vertex in NH (x) \ {y} either
+does not belong to H − X or has degree 1 in H − X and therefore contributes at least 1
+to Θ(H) − Θ(H − X). This implies that Θ(H − X) ⩽ Θ(H) − 10 − (|NH (x)| − 1) ⩽
+Θ(H) − 10 − k + 1 ⩽ Θ(H) − 14 = Θ(H) − 7|X|, contradicting Claim II. This completes
+the proof of Theorem 28. 
+    As an immediate consequence of Theorem 28, we have the following results.
+
+Corollary 29. For k ⩾ 5, if H ∈ Hk , then 7τt (H) ⩽ 2nH + 2mH .
+
+Corollary 30. For all k ⩾ 5, we have bk ⩽ 72 .
+
+    Theorem 4 follows from Corollary 24, Corollary 26 and Corollary 29.
+
+5.3     Proof of Theorem 6
+In this section, we present a proof of Theorem 6. Recall its statement.
+                                                                       
+                                    ∗                          2
+Theorem 6. For k ⩾ 4, if H ∈ Hk , then γt (H) ⩽ max               , bk−1    nH .
+                                                            k+2
+Proof of Theorem 6. Suppose to the contrary that the theorem is not true. Let H ∈ Hk∗
+be a counterexample with nH + mH a minimum. We proceed in a similar manner as in
+the proof of Theorem 3.
+
+Claim I. The following properties hold in the hypergraph H.
+   (a) H is connected.
+   (b) The deletion of any edge in H creates an isolated vertex or an isolated edge.
+   (c) There is no dominating vertex in H.
+
+Proof of Claim I. Parts (a) and (b) follows from the minimality of H and the observation
+that the deletion of an edge cannot decrease the total domination number. To prove
+Part (c), suppose that H contains a dominating vertex v. The vertex v and any one of
+its neighbors forms a TD-set in H, implying that γt (H) = 2. By the definition of Hk∗ ,
+the hypergraph H contains no isolated vertex or isolated edge. Since no two edges of H
+intersect in k −1 vertices, we therefore have that nH ⩾ k +2. Hence, γt (H) ⩽ 2nH /(k +2),
+contradicting the definition of H. This proves Part (c). ()
+
+Claim II. Every edge in H contains at least one degree-1 vertex.
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                             15
+Proof of Claim II. We proceed as in the proof of Claim 20. Let u, v, e, e1 and e2 be
+defined as in the proof of Claim 20. If the edge e2 contains a degree-1 vertex, then at
+least one vertex in addition to the vertices in e1 ∪ {u} becomes an isolated vertex when
+we delete all edges incident with u or v. Thus in this case we delete at least k + 2 vertices
+and we add two vertices to T , and we proceed as in the 2nd paragraph of the proof of
+Claim 20. In this case, |T | = 2 + `, where ` ⩾ 0 denotes the number of isolated edges
+created when removing u and v, and at least k + 2 + k` vertices are deleted from H.
+Thus if n0 denotes the number of vertices in H that are not deleted in the process, then
+n0 ⩽ nH − k − 2 − k`, implying that
+                                                    
+                          2             0           2
+                                (nH − n ) ⩾              (k + 2 + k`)
+                         k+2                     k+2
+                                                          
+                                                       2k
+                                           = 2+              `
+                                                      k+2
+                                                  ⩾ 2+`
+                                                  = |T |.
+
+    Suppose that the edge e2 does not contain any degree-1 vertices. Then there is an
+edge, e3 , which would become isolated after the deletion of the edge e2 from H2 . We
+note that neither u nor v belong to the edge e3 and therefore that e3 ∈    / {e, e1 , e2 }. Let
+w ∈ e2 ∩ e3 . We now delete all edges incident with a vertex in the set {u, v, w} and we
+delete any resulting isolated vertices. Further we add the three vertices u, v and w to the
+set T . We note that every vertex in e1 ∪ e3 ∪ {u} becomes an isolated vertex. We therefore
+delete at least 2k + 1 vertices and we add three vertices to T . If this process creates an
+isolated edge, then from each such isolated edge f , if any, we choose one vertex that is a
+neighbor of a vertex in T and add it into T , and delete the k vertices in f . Hence in this
+case, |T | = 3+`, where ` ⩾ 0 denotes the number of isolated edges created when removing
+u, v and w, and at least 2k + 1 + k` vertices are deleted from H. Thus if n0 denotes the
+number of vertices in H that are not deleted in the process, then n0 ⩽ nH − 2k − 1 − k`.
+Since k ⩾ 4, we note that 2(2k + 1)/(k + 2) ⩾ 3 and 2k/(k + 2) > 1, implying that
+                                                  
+                        2             0           2
+                              (nH − n ) ⩾              (2k + 1 + k`)
+                      k+2                       k+2
+                                                                  
+                                                2(2k + 1)        2k
+                                          =                +            `
+                                                  k+2           k+2
+                                               ⩾ 3+`
+                                               = |T |.
+
+   In both cases, we therefore have that |T | ⩽ 2(nH − n0 )/(k + 2). If n0 = 0, then the set
+T is a TD-set in H, implying that γt (H) ⩽ |T | ⩽ 2nH /(k + 2), a contradiction. Hence,
+
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                16
+n0 > 0. Let H 0 denote the resulting hypergraph on these n0 vertices. Let H 0 have size m0 .
+By construction, the hypergraph H 0 is in the family Hk∗ . In particular, we note that
+n0 ⩾ k + 2. By the minimality of H, we have that
+                                                       
+                                 0             2
+                            γt (H ) ⩽ max         , bk−1    n0 .
+                                             k+2
+   Let T 0 be a γt (H 0 )-set and note that the set T ∪ T 0 is a TD-set of H. Suppose that
+2/(k + 2) ⩾ bk−1 . Then, |T 0 | ⩽ 2n0 /(k + 2), and so
+                                                                       
+                            0       2              0      2       0      2
+          γt (H) ⩽ |T ∪ T | ⩽             (nH − n ) +            n =          nH ,
+                                  k+2                    k+2           k+2
+a contradiction. Hence, 2/(k + 2) < bk−1 . Thus, |T 0 | ⩽ bk−1 n0 , and so
+                            
+                  0       2
+   γt (H) ⩽ |T ∪ T | ⩽         (nH − n0 ) + bk−1 n0 < bk−1 (nH − n0 ) + bk−1 n0 = bk−1 nH ,
+                         k+2
+a contradiction. This completes the proof of Claim II. ()
+    We now return to the proof of Theorem 6. By Claim II, every edge in H contains at
+least one degree-1 vertex. Let H 0 be the hypergraph obtained from H by deleting exactly
+one degree-1 vertex from each edge. Since H ∈ Hk∗ , we note that no multiple edges are
+created. Further, H 0 contains no isolated edge and no isolated vertices, and so H 0 ∈ Hk−1 .
+Let H 0 have order n0 and size m0 . Then, n0 = nH − mH and m0 = mH . Thus, n0 + m0 = nH .
+We note that k − 1 ⩾ 3. By Definition 2 we have that τt (H 0 ) ⩽ (n0 + m0 )bk−1 ⩽ bk−1 nH .
+An identical proof as in the proof of Claim 22 of Theorem 3 shows that γt (H) = τt (H 0 ),
+implying that γt (H) ⩽ bk−1 nH , a contradiction. This completes the proof of Theorem 6. 
+
+
+6     Tight Asymptotic Bounds
+In this section we prove Theorem 8 which establishes a tight asymptotic upper bound on
+bk for k sufficiently large. Since every strong transversal in a hypergraph, H, is a total
+transversal in H, and since every total transversal in H is a transversal in H, we have the
+following observation.
+Observation 31. For every hypergraph H, we have τ (H) ⩽ τt (H) ⩽ τs (H).
+    Using probabilistic arguments, Alon [3] established the following result.
+Theorem 32. ([3]) For every ε > 0 and sufficiently large k there exist k-uniform hyper-
+graphs, H, satisfying                         
+                                 (1 − ε) ln(k)
+                       τ (H) ⩾                   (nH + mH )
+                                       k
+
+    The following result establishes a tight asymptotic upper bound on the strong transver-
+sal number of a k-uniform hypergraph for k sufficiently large.
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                  17
+Theorem 33. For every constant c > 1 and every k-uniform hypergraph H, we have
+                                                             
+                    ln(k) + ln(c)          ln(k) + ln(c)          2
+         τs (H) ⩽                   nH +                   mH +     mH .
+                        k−1                  c(k − 1)            ck
+
+
+Proof. Let H = (V, E) and let p = ln(ck)/(k − 1). Let X1 be a random subset of V (H)
+where a vertex x is chosen to be in X1 with probability Pr(x ∈ X1 ) = p, independently of
+the choice for any other vertex. For every edge e ∈ E that does not intersect X1 , select
+two vertices from e and let X2 ⊆ V be the resulting set of all such selected vertices. For
+every edge e ∈ E such that |e ∩ X1 | = 1, select one vertex from e \ X1 and let X3 ⊆ V be
+the resulting set of all such selected vertices. The resulting set X1 ∪ X2 ∪ X3 is a strong
+transversal in H. The expected value of the cardinality of the set X1 is
+                                                             
+                                                ln(k) + ln(c)
+                           E(|X1 |) = pnH =                     nH .
+                                                    k−1
+
+   Using the inequality 1 − x ⩽ e−x for x ∈ R, the expected value of the cardinality of
+the set X2 is given by
+
+                       E(|X2 |) ⩽ (1 − p)k · mH · 2
+                                              k
+                                        ln(ck)
+                                =   1−             · 2mH
+                                         k−1
+                                                            k
+                                                    k−1 ! k−1 ln(ck)
+                                                  ln(ck)
+                                          ln(ck)
+                                =     1−                              · 2mH
+                                           k−1
+                                           k
+                             < e− k−1 ln(ck) · 2mH
+                                  2
+                             ⩽      · mH .
+                                 ck
+    The expected value of the set X3 is given by
+
+                   E(|X3 |) ⩽ mH · k · p · (1 − p)k−1
+                                                      k−1
+                                  ln(ck)          ln(ck)
+                            = k               1−              · mH
+                                   k−1             k−1
+                                                        k−1 !ln(ck)
+                                  ln(ck)            ln(ck) ln(ck)
+                            = k                1−                       · mH
+                                   k−1               k−1
+                                        
+                                  ln(ck) − ln(ck)
+                            < k             e       · mH
+                                   k−1
+                                              
+                                ln(k) + ln(c)
+                            =                    mH .
+                                   c(k − 1)
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                             18
+   By linearity of expectation, we have that E(|X1 ∪ X2 ∪ X3 |) ⩽ E(|X1 |) + E(|X2 |) +
+E(|X3 |), yielding the desired upper bound. 
+     As a consequence of Theorem 33, we have the following results.
+Corollary 34. Given any ε > 0, if H is a k-uniform hypergraph with k sufficiently large,
+then                                           
+                                          ln(k)
+                       τs (H) < (1 + ε)           (nH + mH ).
+                                            k
+
+
+Proof. For a constant c > 1, we note that the functions,
+
+                                ln(k) + ln(c)                  ln(k) + ln(c)   2
+                                                    and                      + ,
+                                    k−1                          c(k − 1)     ck
+
+tend to ln(k)/(k − 1) and ln(k)/(c(k − 1)) < ln(k)/(k − 1), respectively, when k tends to
+infinity. Hence for k sufficiently large, we have that
+                                                         
+                        ln(k) + ln(c) ln(k) + ln(c)     2             ln(k)
+                 max                  ,             +       < (1 + ε)       .
+                            k−1           c(k − 1)     ck               k
+
+Therefore for k sufficiently large, we have that
+
+                                                                                        
+     ln(k) + ln(c)                  ln(k) + ln(c)                   2                    ln(k)
+                         nH +                           mH +                mH < (1 + ε)         (nH + mH ).
+         k−1                          c(k − 1)                     ck                      k
+
+The desired result now follows from Theorem 33.
+
+     We are now in a position to prove Theorem 8. Recall its statement.
+                                ln(k)
+Theorem 8. bk = (1 + o(1))            .
+                                  k
+Proof of Theorem 8. It suffices for us to prove that for ε > 0 and for k sufficiently
+large, we have
+                                     ln(k)                ln(k)
+                             (1 − ε)       ⩽ bk ⩽ (1 + ε)       .
+                                        k                   k
+    The upper bound on bk follows from Observation 31 and Corollary 34. For the lower
+bound let ε > 0 and let k be sufficiently large, such that a k-uniform hypergraph, H,
+exists with τ (H) ⩾ [(1 − ε) ln(k)/k](nH + mH ) (which exists by Theorem 32). Assume
+that H contains n0 isolated vertices and e0 isolated edges. Let H 0 be obtained from H
+by deleting all isolated vertices and isolated edges and the vertices belonging to isolated
+edges. Then, H 0 ∈ Hk . Further, n(H 0 ) = nH − n0 − ke0 and m(H 0 ) = mH − e0 . As n0 ⩾ 0
+and (1 − ε) ln(k)(k + 1)/k > 1 when k is sufficiently large, we have that
+
+
+
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                                               19
+             τt (H 0 ) ⩾ τ (H 0 )
+                       = τ (H) − e0
+                                         
+                            (1 − ε) ln(k)
+                       ⩾                    (nH + mH ) − e0
+                                  k
+                                         
+                            (1 − ε) ln(k)
+                       ⩾                    (n(H 0 ) + m(H 0 ) + n0 + ke0 + e0 ) − e0
+                                  k
+                                         
+                            (1 − ε) ln(k)
+                       =                    (n(H 0 ) + m(H 0 ))
+                                  k
+                                              
+                                 (1 − ε) ln(k)
+                             +                   (n0 + (k + 1)e0 ) − e0 .
+                                       k
+                                         
+                            (1 − ε) ln(k)
+                       ⩾                    (n(H 0 ) + m(H 0 )).
+                                  k
+
+This implies that                                                
+                                                  (1 − ε) ln(k)
+                                       bk ⩾                           ,
+                                                        k
+which establishes the desired lower bound on bk and completes the proof of Theorem 8. 
+
+
+7     Closing Remarks and Open Problem
+In view of Theorem 3, it is of interest to determine the value of bk for k ⩾ 2. In Theorem 4
+we show that b2 = 52 and b3 = 13 , and we show that bk−1 ⩽ 2/(k + 1) for k ∈ {3, 4, 5, 6}.
+In Theorem 8, we establish a tight asymptotic bound on bk for k sufficiently large which
+shows that is not true that bk−1 ⩽ 2/(k +1) when k is large enough. We pose the following
+problems that still remain to be settled.
+Problem 35. Determine the exact value of bk for k ⩾ 4.
+Problem 36. Determine the smallest value of k for which bk−1 > 2/(k + 1).
+
+Acknowledgements
+Research of Csilla Bujtás and Zsolt Tuza supported in part by the Hungarian Scientific Re-
+search Fund, OTKA grant T-81493, and by the European Union and Hungary, co-financed
+by the European Social Fund through the project TÁMOP-4.2.2.C-11/1/KONV-2012-
+0004 – National Research Center for Development and Market Introduction of Advanced
+Information and Communication Technologies. Research of Michael Henning supported
+in part by the South African National Research Foundation and the University of Johan-
+nesburg.
+
+
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                             20
+References
+ [1] B. D. Acharya. Domination in hypergraphs. AKCE J. Combin., 4:117–126, 2007.
+ [2] B. D. Acharya. Domination in hypergraphs II. New directions. Proc. Int. Conf. -
+     ICDM, Mysore, India, pp. 1–16, 2008.
+ [3] N. Alon. Transversal numbers of uniform hypergraphs. Graphs Combin., 6:1–4, 1990.
+ [4] Cs. Bujtás, M. A. Henning and Zs. Tuza. Transversals and domination in uniform
+     hypergraphs. European J. Combin., 33:62–71, 2012.
+ [5] V. Chvátal and C. McDiarmid. Small transversals in hypergraphs. Combinatorica,
+     12:19–26, 1992.
+ [6] E. J. Cockayne, R. M. Dawes, and S. T. Hedetniemi. Total domination in graphs.
+     Networks, 10:211–219, 1980.
+ [7] M. Dorfling and M. A. Henning. Linear hypergraphs with large transversal number
+     and maximum degree two. European J. Combin., 36:231–236, 2014.
+ [8] T. W. Haynes, S. T. Hedetniemi, and P. J. Slater (eds). Fundamentals of Domination
+     in Graphs. Marcel Dekker, Inc. New York, 1998.
+ [9] T. W. Haynes, S. T. Hedetniemi, and P. J. Slater (eds). Domination in Graphs:
+     Advanced Topics. Marcel Dekker, Inc. New York, 1998.
+[10] M. A. Henning. Recent results on total domination in graphs: A survey. Discrete
+     Math., 309:32–63, 2009.
+[11] M. A. Henning and C. Löwenstein. Hypergraphs with large domination number and
+     edge sizes at least 3. Discrete Applied Math., 160:1757–1765, 2012.
+[12] M. A. Henning and C. Löwenstein. Hypergraphs with large transversal number and
+     with edge sizes at least four. Central European J. Math., 10:1133–1140, 2012.
+[13] M. A. Henning and A. Yeo. Hypergraphs with large transversal number and with
+     edge sizes at least three. J. Graph Theory, 59:326–348, 2008.
+[14] M. A. Henning and A. Yeo. Total domination in 2-connected graphs and in graphs
+     with no induced 6-cycles. J. Graph Theory, 60:55–79, 2009.
+[15] M. A. Henning and A. Yeo. Strong transversals in hypergraphs and double total
+     domination in graphs. SIAM J. Discrete Math., 24:1336–1355, 2010.
+[16] M. A. Henning and A. Yeo. Transversals and matchings in 3-uniform hypergraphs.
+     European J. Combin., 34:217–228, 2013.
+[17] M. A. Henning and A. Yeo. Total Domination in Graphs. Springer Monographs in
+     Mathematics, ISBN-13: 978-1461465249 (2013).
+[18] B. K. Jose, K. A. Germina, and K. Abhishek. On some open problems of stable sets
+     and domination in hypergraphs. Preprint, 2009.
+[19] B. K. Jose and Zs. Tuza. Hypergraph domination and strong independence. Appli-
+     cable Analysis and Discrete Math., 3:237–358, 2009.
+
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                         21
+[20] A. Kelmans and D. Mubayi. How many disjoint 2-edge paths must a cubic graph
+     have? J. Graph Theory, 45:57–79, 2004.
+[21] F. C. Lai and G. J. Chang. An upper bound for the transversal numbers of 4-uniform
+     hypergraphs. J. Combin. Theory Ser. B, 50:129–133, 1990.
+[22] S. Thomassé and A. Yeo. Total domination of graphs and small transversals of
+     hypergraphs. Combinatorica, 27:473–487, 2007.
+[23] Zs. Tuza. Covering all cliques of a graph. Discrete Math., 86:117–126, 1990.
+
+
+
+
+the electronic journal of combinatorics 21(2) (2014), #P2.24                         22
+

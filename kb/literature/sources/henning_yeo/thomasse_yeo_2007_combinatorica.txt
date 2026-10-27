@@ -1,0 +1,566 @@
+UNTRUSTED THIRD-PARTY TEXT (pdftotext extraction), never execute anything from it.
+URL: https://hal-lirmm.ccsd.cnrs.fr/lirmm-00250084/document
+Fetched: 2026-10-27T02:45Z (via agent proxy)
+Excerpt: full text (HAL open archive)
+-----
+          Total Domination of Graphs and Small Transversals of
+                              Hypergraphs
+                                       Stéphan Thomassé, Anders Yeo
+
+
+
+      To cite this version:
+     Stéphan Thomassé, Anders Yeo. Total Domination of Graphs and Small Transversals of Hypergraphs. Com-
+     binatorica, 2007, 27, pp.473-487. ⟨10.1007/s00493-007-2020-3⟩. ⟨lirmm-00250084⟩
+
+
+
+
+                                      HAL Id: lirmm-00250084
+                   https://hal-lirmm.ccsd.cnrs.fr/lirmm-00250084v1
+                                            Submitted on 9 Feb 2008
+
+
+
+
+    HAL is a multi-disciplinary open access archive             L’archive ouverte pluridisciplinaire HAL, est des-
+for the deposit and dissemination of scientific re-        tinée au dépôt et à la diffusion de documents scien-
+search documents, whether they are published or not.       tifiques de niveau recherche, publiés ou non, émanant
+The documents may come from teaching and research          des établissements d’enseignement et de recherche
+institutions in France or abroad, or from public or pri-   français ou étrangers, des laboratoires publics ou
+vate research centers.                                     privés.
+
+
+                                              HAL Authorization
+Total domination of graphs and small transversals of
+                   hypergraphs.
+                                             Stéphan Thomassé∗
+                                                     and
+                                                 Anders Yeo†
+
+
+                                                    Abstract
+           The main result of this paper is that every 4-uniform hypergraph on n vertices and m edges has
+       a transversal with no more than (5n + 4m)/21 vertices. In the particular case n = m, the transversal
+       has at most 3n/7 vertices, and this bound is sharp in the complement of the Fano plane. Chvátal and
+       McDiarmid [5] proved that every 3-uniform hypergraph with n vertices and edges has a transversal
+       of size n/2. Two direct corollaries of these results are that every graph with minimal degree at least
+       3 has total domination number at most n/2 and every graph with minimal degree at least 4 has total
+       domination number at most 3n/7. These two bounds are sharp.
+
+
+1      Introduction.
+Given a graph G = (V, E), a total dominating set is a subset S of the vertices of G such that every vertex
+of G has a neighbour in S. The minimum size of a total dominating set is the total domination number
+of G. It was proved by Favaron et al. [6] that a graph with n vertices and minimum degree at least 3
+has total domination number at most 7n/13. This result has been recently extended to n/2 [4], [2], and
+a fractional approach can be found in [7]. A transversal in a hypergraph is a subset of vertices which
+intersects every edge. We are mainly concerned here with transversals of k-uniform hypergraphs with the
+same number of edges and vertices. Precisely, we raise the problem to find the minimum ck for which
+every k-uniform hypergraph with n vertices and n edges has a transversal of size ck n. It directly follows
+that every graph G with minimum degree k and n vertices has a total dominating set with ck n vertices,
+since in the hypergraph whose edges are the neighbourhoods of the vertices of G, a transversal is a total
+dominating set. The main advantage of considering hypergraphs instead of graphs is that the structure
+is easier to handle - for instance we can limit ourselves to k-uniform structures. When H is a hypergraph
+on the vertex set V and X ⊆ V , we denote by H \ X the induced subhypergraph on V \ X - that is, we
+delete all the vertices of X, and all the edges having a vertex in X.
+    To fix the ideas, and a bound, let us calculate c2 :
+
+Lemma 1 Every 2-uniform hypergraph H has a transversal T such that 3|T | ≤ n + m
+
+Proof. By induction on the number of vertices. If some vertex x has degree at least 2, we put it in the
+transversal, and apply the induction hypothesis to H \ x. Otherwise no vertex has degree 2 and then the
+edges form a matching, and the formula holds. 
+    ∗ LIRMM, 161 rue Ada, 34392 Montpellier Cedex 5, France, thomasse@lirmm.fr
+   † Department of Computer Science, Royal Holloway, University of London, Egham; Surrey TW20 0EX, UK (email:
+
+yeo@dcs.rhbnc.ac.uk)
+
+
+
+
+                                                         1
+Corollary 1 c2 = 2/3
+
+
+    When n = 3k, the extremal graph for c2 is certainly a disjoint union of triangles, and this is the
+sole example by the unicity of the extremal Turán graphs. This kind of example generalizes for all k: If
+one considers a disjoint union of complete k-uniform hypergraphs on k + 1 vertices, this clearly forms a
+k-uniform hypergraph with n edges and n vertices and the minimum transversal has exactly 2n/(k + 1)
+vertices. By this, we directly have that ck ≥ 2/(k + 1). The interesting fact is that equality holds also
+for k = 3, that is c3 = 1/2, but many extremal examples arise: consider for instance the hypergraph
+on vertex set {1, . . . , n, 10 , . . . , n0 } and edges {i, i0 , i + 1} and {i, i0 , (i + 1)0 } where i + 1 is understood
+modulo n. However, it turns out that c4 is not equal to 2/5, as we will observe. But let us now prove that
+c3 = 1/2. The following result can be found in [5], but we will give an alternative proof as an introduction
+to the proof of our main result.
+
+Theorem 1 Let H = (V, E) be a 3-uniform hypergraph. There exists a transversal T of H such that
+4|T | ≤ |V | + |E|.
+
+Proof. Induction on the number of vertices. If some vertex v has degree at least 3, we find, by the
+induction hypothesis, a transversal T 0 of H \ v. In turn, T 0 ∪ {v} satisfies our condition. We can now
+suppose that every vertex has degree at most 2. If some edge abc satisfies that the degree of a is 2 and
+the degree of b is 1, we apply the induction hypothesis to H \ {a, b} in order to find a transversal T 0 :
+the transversal T := T 0 ∪ {a} still satisfies the hypothesis. If one edge abc has no vertex of degree 2, we
+simply apply the induction hypothesis to H \ {a, b, c}. Now the hypergraph is 2-regular. If the same edge
+abc appears twice in H, we simply apply the induction hypothesis to H \ {a, b, c}. If not, we can find the
+following subset of edges
+                                     x1 y1 x2 , x2 y2 x3 , x3 y3 x4 , . . . , xk yk x1
+where all the vertices x1 , . . . , xk , y1 , . . . , yk are distinct, because of the following: If two edges intersect
+on two vertices, then these two edges are of the form x1 y1 x2 , x2 y2 x1 . If no two edges intersect on
+two points, the above sequence is simply obtained by considering a minimum cyclic sequence of edges
+where only adjacent edges intersect. Now, two cases can happen: If k = 2l, choose a transversal T 0 of
+H 0 := H \{xi : i = 1..k} which satisfies the induction hypothesis: the transversal T := T 0 ∪{x2i : i = 1..l}
+satisfies the hypothesis for H since we deleted 2l vertices and 2l edges to get H 0 from H. If k = 2l + 1,
+choose a transversal T 0 of H 0 := H \ ({yk } ∪ {xi : i = 1..k}) which satisfies the induction hypothesis: the
+transversal T := T 0 ∪ {x2i : i = 1..l} ∪ {yk } satisfies the hypothesis for H since we deleted 2l + 2 vertices
+and 2l + 2 edges to get H 0 from H. 
+
+Corollary 2 Every 3-uniform hypergraph H = (V, E) with |V | = |E| = n has a transversal with at most
+n/2 vertices. In other words, c3 = 1/2.
+
+    Finally we would like to mention a result of Seymour [9]: every minimal non bipartite hypergraph
+has at least as many edges as vertices. From this result follows a short proof of the existence of a n/2
+transversal in a connected 3-uniform 3-regular hypergraph H with 2l vertices: remove an edge e of H
+for which H − e is connected (e exists since there exists a connected spanning subhypergraph with at
+most n − 2 edges). Now every proper induced subhypergraph of H − e has less edges than vertices, in
+particular, by Seymour’s result, H − e is two colourable. If e belongs to both colours, we are done. If the
+color class of e has at most n/2 vertices, it is our transversal. Finally, if it has more than l + 1 vertices,
+take the other color class and a vertex of e as a transversal.
+
+
+
+
+                                                            2
+2     The 4-uniform hypergraphs.
+The case of 4-uniform hypergraphs is much more complicated since what seems to be the extremal case
+is not the complete 4-uniform hypergraph on 5 vertices but the complement of the Fano plane. Precisely,
+we consider the hypergraph F on the vertex set {1, 2, 3, 4, 5, 6, 7} and edge set {Q + i : i := 1..7}, where
++ is understood modulo 7 and Q := {0, 1, 2, 4} is the set of quadratic residues. In this case we have
+7 vertices and we need 3 vertices to hit all the edges. This example provides a graph with 14 vertices,
+minimum degree 4 and total domination number 6, simply by considering the incidence bipartite graph
+of F . The main result of this section is to prove that these two examples are extremal, in other words
+we have the following result:
+
+Theorem 2 c4 = 3/7
+
+    We prove a more general formula for 4-uniform hypergraphs which directly implies the value of c4 .
+An analog formula was proved in [3], where they established that every 4-uniform hypergraph has a
+transversal with no more than (2n + 2m − d)/9 vertices, where d is the number of edges which contain a
+vertex of degree one. This gives the upper bound c4 ≤ 4/9.
+    An edge of a hypergraph is overlapping if it intersects another edge on at least 2 vertices. An edge is
+special if it is overlapping and has exactly one vertex of degree 1. For k > 0, an edge is k-degenerated if it
+is not special and has exactly k vertices of degree 1. An edge which is not special and not k-degenerated
+is plain.
+
+Theorem 3 Let H be a 4-uniform hypergraph with n vertices, p plain edges, s special edges and d
+degenerated edges. There exists a transversal T such that 21|T | ≤ 5n + 4p + 3s/2 + d.
+
+Proof. Let us consider a counterexample H, minimum with respect to its degree sequence, ordered
+lexicographically (that is, for each hypergraph we order its degree sequence in the decreasing order and
+we compare two hypergraphs using the lexicographical order on their respective sequences.)
+
+Claim 1 The maximum degree in H is at most three.
+
+Proof. Assume not and remove a vertex v of degree at least 4. If all its incident edges are plain, the
+removal of these edges gives at least -16 and the removal of v gives -5. In all, we get at least -21, and
+adding v in the transversal T 0 of H \ v, the total count is +21-21, so this contradicts the minimality of
+H. Now, if some edges incident with v contain degree one vertices, we delete these vertices as well, in
+this case, the count for removing one edge is at least -6 (that is at least -1 for the removed edge and -5
+for the isolated vertex). Again removing all the edges incident with v (plus possibly the now isolated
+vertices) gives again at least -16, so we conclude as previously. 
+
+    In the following of the proof, we will indicate the counting argument we did in the proof of Claim 1 as
+a sum +x − y − z − t where x is the value of the vertices in the transversal, y is the value of the removed
+edges, z is the value of the removed vertices, and t is the value change of the edges (since some of the
+remaining edges can become special or degenerated.)
+
+Claim 2 Every degree two vertex x of H is in a non plain edge.
+
+Proof. If x is in two plain edges e1 , e2 , we split the vertex x into two vertices x1 , x2 , letting x1 ∈ e1 and
+x2 ∈ e2 . There is a +5 for the new vertex, but at least 2.(-2,5) since e1 , e2 become at least special. Observe
+that every transversal of this new hypergraph is also a transversal of H, contradicting the minimality of
+the degree sequence of H. 
+
+Claim 3 Every vertex x of degree three is incident to at least two plain edges.
+
+                                                       3
+Proof. If not, removing x gives at least +21-6-15.
+
+Claim 4 There is no 4-degenerated edge. Sum +21-1-20.
+
+Claim 5 There is no 3-degenerated edge. Sum +21-5-20, in all -4.
+
+Claim 6 Two edges of H do not intersect on 3 vertices.
+
+Proof. Let e and f be two edges intersecting on x, y, z. If e is not plain (its degree one vertex being
+t), we simply remove the edge f and find a transversal T 0 . If T 0 does not contain t, it is a transversal of
+H. If it contains t, we replace t by any of x, y, z. So both are plain. We add then a new vertex ω to H,
+remove the edges e, f and add the edge xyzω. Observe that this new graph is lexicographically smaller
+than H, and that the count is -6,5+5 in the worst case. Let T 0 be a transversal of this new graph. If
+T 0 does not contain ω, it is a transversal of H. If it contains ω, we replace ω by any of x, y, z to get a
+transversal of H. 
+
+Claim 7 There is no 2-degenerated edge. Sum -2.
+
+Proof. Let e be a 2-degenerated edge. If some vertex of e has degree three, removing it gives at least
++21-9-15, that is -3. So there are exactly two vertices x, y of degree two, incident with two edges ex , ey ,
+and two vertices of degree one. If ex = ey , removing x gives at least +21-5-20, so -4. By Claim 6, ex and
+ey do not intersect on three vertices. If ex and ey intersect on two vertices, we remove all the vertices of
+e, we delete ex and ey , and add the new edge (ex ∪ ey ) \ {x, y}. This new graph has a lexicographically
+smaller degree sequence than H, and any transversal T 0 can be extended by either x or y to form a
+transversal of H. This gives us 21-5-20 if ex and ey are plain. If one is special and the other plain, the
+sum is 21-5-20. If both ex and ey are special, 21-3-20. Observe that this exhausts all possibilities. Now
+ex and ey intersect on at most one vertex. If ex and ey are both plain, we remove all the vertices of e, we
+delete ex and ey , and add a new edge containing any four vertices of (ex ∪ ey ) \ {x, y}. As previously, this
+gives 21-5-20. If they are not both plain, one vertex z of, say, ex has degree 1. In this case, we remove
+all the vertices of e, we delete z, we delete ex and ey , and add a new edge containing any four vertices of
+(ex ∪ ey ) \ {x, y, z}. This gives 21+1-25. 
+
+   We will widely use Claim 7 in our proofs. As soon as removing a vertex yields a 2-degenerated edge,
+we will substract 2 to our sum.
+
+    We define the intersection graph of H as the multigraph G on vertex set V and edge set E in the
+following way: for all pairs e, f of edges of H such that e ∩ f = {x, y}, we add the edge xy to G.
+
+Claim 8 The graph G does not have 2-cycles.
+
+Proof. If there are three edges e, f, g pairwise intersecting on x, y, removing x gives at least +21-12-10.
+This calculation holds when all the edges are plain. If they are not, we get a better bound. 
+
+Claim 9 The graph G has maximum degree 2.
+
+Proof. Suppose we have three edges e, f, g such that e ∩ f = {y, x}, f ∩ g = {y, z} and e ∩ g = {y, t}.
+If one of x, z, t has degree two, removing y gives at least 21-12-10. Thus, x, z, t have degree 3, and we
+let ex , ez , et their incident other edges. If e is special, by Claim 3, ex is plain, and removing y gives
+21-9,5-10-2,5. So e, f, g are plain. If ez is non plain, deleting z gives 21-9-10-2,5. Thus all are plain, and
+we delete y: If ex = ey = ez , we have 21-12-5 and an additional -4, since ex becomes 3-degenerated. If
+ex 6= ey , we have 21-12-5 and -5, since ex and ey become at least special. 
+
+
+                                                      4
+Claim 10 The graph G has maximum degree 1.
+
+Proof. Suppose we have three edges e, f, g such that e ∩ f = {x, y} and f ∩ g = {y, z}. By Claim 9, we
+have e ∩ g = {y}. Clearly x and z have degree 3, otherwise we obtain 21-12-10. We denote respectively
+by ex and ez the other edges incident to x and z. If g is not plain, ez is plain, and thus we can remove
+y, the sum is 21-9-10-2,5. Thus e, f, g are plain. If ez is not plain, we remove z to get 21-9-10-2,5. Thus
+all edges are plain. If ez 6= ex we remove y to get 21-12-5-5. If ez = ex , removing y makes ex at least
+2-degenerated. If it is not 4-degenerated, we get 21-12-5-3, and at least an additional -2 by Claim 7
+or Claim 5. So the only case left is when removing y makes ex 4-degenerated. Observe that removing
+z makes e at least 2-degenerated, and again by counting we achieve our contradiction if it is less than
+4-degenerated. But this would mean that ex intersects e on at least three vertices, against Claim 6. 
+
+Claim 11 If xy is an edge of G, both x and y have degree 3 and are contained in plain edges.
+
+Proof. We consider two edges e, f intersecting on x, y. If x has degree two and y has degree three,
+removing y gives -1. If they both have degree two, by Claim 2, e or f is non plain. We assume that e is
+non plain and thus special. Observe that f must be plain, otherwise we remove x which gives 21-3-20.
+Let z be the vertex of e \ f with degree at least 2. If z has degree 3, removing z gives at least 21-9,5-10-3,
+since f becomes at least 2-degenerated. So z has degree two. If the other edge ez of z is plain or special,
+we are done by removing x: the sum is 21-5,5-15-0,5. So ez is 1-degenerated. In particular removing
+z makes f at least 2-degenerated, but not 4-degenerated (since |ez ∩ f | < 2), and in this case the sum
+is 21-2,5-15-3 and an additional -2 by Claim 7. So both x and y have degree three, with additional
+(distinct) edges ex and ey . If e is special, by Claim 3, f , ex and ey are plain, and we remove x to obtain
+21-9,5-10-2,5. So both e and f are plain. If ex is plain and not ey , removing y gives 21-9-10-2,5. Suppose
+that ex and ey are special, removing x gives 21-9,5-10-0,5 and ey is now at least 2-degenerated. The
+only case to check is when it becomes 4-degenerated. This means that ex and ey intersect on two outside
+vertices uv with degree 2, which is impossible since uv would be an edge of G, and thus u, v have degree
+3. If ex is special and ey is 1-degenerated, removing y gives 21-9-10-0,5, and ex is now 2-degenerated,
+in all -0,5. So both ex and ey are 1-degenerated, removing x makes ey 2-degenerated, so we have sum
+21-9-10 and an additional -2 by Claim 7. 
+
+   In particular, we suppose from now on that there are no special edges. When e, f intersect on two
+vertices x, y, and ex is the other edge incident to x, we say that ex is an external edge of {e, f }.
+
+Claim 12 If g is an external edge of {e, f } and g is an external edge of {e0 , f 0 }, we have {e, f } = {e0 , f 0 }.
+
+Proof. Suppose that e, f intersect on two vertices x, y, with external edges ex , ey and e0 , f 0 intersect on
+two vertices x0 , y 0 , with external edges e0x , e0y , with the additional condition that e0x = ex . Here ex plays
+the role of g. Let us prove first that all these edges are distinct. If e = e0 , we must have x = x0 , and thus
+f = f 0 , and we have our conclusion. If e0y = e, we remove x0 , y and obtain 42-24-20. If ey = e0y , we also
+remove x0 , y with the same result. So all these edges are distinct. If ey is not overlapping, removing x, y 0
+gives 42-24-15-3. So both ey , e0y are overlapping. So ey intersects some edge h on two vertices u, v with
+external edges eu , ev . If all the edges defined so far are distinct, we remove u, x, y 0 to get 63-36-25-2,5.
+If the edge eu was already defined, this was ex , e0 , f 0 or e0y , thus removing v, x, y 0 and deleting all the
+edges leave x0 , y, u isolated, which gives 63-36-30, unless another edge was already defined. If this was
+h, removing x, y 0 would leave ey at least 2-degenerated, with a sum of 42-24-15-3. So ev was already
+defined. If eu = e0y , we remove x0 , y, and thus h, eu become non plain (since ev is deleted), so 42-24-15-5.
+So, e0y is distinct from eu , ev . Removing x0 , y gives 42-24-15-5, since h, e0y become non plain. So, only
+the edge h was already defined, and this was e0y otherwise we remove x0 , y to get 42-24-15-5. But in this
+case, we remove y, y 0 , in order to get 42-24-10-8 (since eu , ev become at least special, and ex at least
+2-degenerated.) 
+
+                                                         5
+Claim 13 There is no vertex of degree two.
+Proof. Let x be a vertex of degree 2. It is contained in a non plain, and thus 1-degenerated, edge e and
+in another edge ex . If e contains one vertex y with degree three (incident to two other plain edges, by
+Claim 3), the edge ex is not plain, otherwise we remove y to obtain 21-9-10-2,5. Thus ex is 1-degenerated.
+If removing y leaves ex 2 or 3-degenerated, we are done. So ex becomes 4-degenerated. Since ex is not
+special, this means that every edge incident to y intersect ex on one vertex - but in this case we remove x,
+and the two other edges of y become 1-degenerated, in all 21-2-15-6. Thus e contains a vertex of degree
+1 and three vertices of degree 2.
+    - If there are plain and degenerated edges intersecting e, we pick a vertex z of e which is in two
+1-degenerated edges. Removing z creates a degenerated edge, and either creates another 1-degenerated
+or special edge, or creates a 2-degenerated edge. The sum is at least 21-2-15-2,5, with an additional -2
+or -2,5 depending if the third edge incident with e is plain or 1-degenerated.
+    - If all the edges intersecting e are 1-degenerated edges, observe that this property spread over all
+the vertices of the connected component C of x in the hypergraph H. That is, every edge of C is 1-
+degenerated and the degree of every vertex of C is at most two. Suppose now that there are a vertices of
+degree 2, then C contains 2a/3 edges, and thus 2a/3 vertices of degree 1. Only considering the vertices
+of degree 2 (and shrinking the edges), we obtain a 3-uniform hypergraph with a vertices and 2a/3 edges.
+Thus, by Theorem 1, there exists a transversal T with 5a/12 vertices. The gain is 105a/12−25a/3−2a/3,
+in all −a/4.
+    - If all the vertices of e have degree 2, and all the edges intersecting e are plain. Let x, y, z be the
+vertices of e with degree 2, and ex , ey , ez their other (distinct) incident plain edges. If ex and ey do not
+intersect another edge on two vertices, removing z gives 21-5-10-6. If ex intersects another edge f on
+two vertices u, v. By Claim 8, u, v cannot be in all the edges ex , ey , ez , so we assume that u ∈  / ey . By
+Claim 11, removing u gives 21-12-5-2,5 and makes e at least 2-degenerated, but not 4-degenerated since
+u∈ / ey , so -0,5. 
+Claim 14 An edge is not both external and overlapping.
+Proof. We suppose that all the degrees are 3 or 1, and two edges e and f intersect on two vertices x, y
+incident with other edges ex , ey . Moreover, ex intersect an edge g on two vertices u, v. with additional
+edges eu and ev . Let us prove first that all the edges defined so far are distinct. Clearly e, f, g are distinct.
+By Claim 12, the only case when two edges could be the same is g = ey . Let us call z the vertex of g
+distinct from y, u, v. Removing z, x gives 42-24-15-5 since it leaves eu and ev degenerated.
+    All these edges are now distinct, and consequently, if ev does not intersect an edge on two vertices,
+we conclude by removing u, y with a sum of 42-24-15-3. So ev intersects another edge h on two vertices
+a, b, each of them with external edges ea , eb .
+    Observe that if all these edges are distinct, removing a, u, y will give 63-36-25-2,5.
+    So, some of these edges are the same. If h was already defined, removing v, y gives 42-24-15-5 since
+ea and eb become degenerated, or, if ea or eb were defined, a or b becomes isolated. The only case left, by
+Claim 12, could be ea = e. But, we remove y, v to obtain 42-24-15-5 since h, eu become degenerated. 
+Claim 15 There are no overlapping edges.
+Proof. Let two edges e and f intersecting on two vertices x, y incident with other edges ex , ey . Let z be
+a vertex of ex which is not a vertex of e, f, ey . If none of the three edges incident to z is overlapping, we
+split z into three vertices of degree 1, which gives +10-9, and remove x, which is 21-9-10-3. So let ez , fz
+be the other edges incident to z. Note that ez ∩ fz = {z} by Claim 12. Suppose that ez intersect an edge
+g on two vertices u, v incident with other edges eu , ev . If all these edges are distinct, we remove u, x, with
+-24 (edges) -10 (vertices) and -8,5 (ey , ev become 1-degenerated and fz becomes at least special). Thus,
+some of these edges must be the same. By Claim 12 and Claim 14, the only case is g = e, and we can
+conclude by removing z, y since we get 42-24-15-6. 
+
+                                                        6
+Claim 16 All the edges are plain.
+
+Proof. Let e be a non plain, and thus 1-degenerated edge. The other vertices have degree 3 and must be
+incident to other plain edges. Let x, y, z be the vertices of e with degree 3, and ex , fx , ey , fy , ez , fz , be the
+edges incident to x, y, z different from e. They are all distinct since e is not special. Since ex , fx , ey , fy
+do not intersect another edge on two vertices, we split x and y (+8) and remove z which gives 21-9-20. 
+
+    Finally, H is a 3-uniform and 3-regular hypergraph with no overlapping edges. We now obtain a
+contradiction as follows. Let x ∈ V (H) be arbitrary. Let Hx be a hypergraph with vertex set N (x) (i.e.
+all vertices which lie in an edge containing x, but x 6∈ N (x)), and edge set {V (e)∩N (x) : |V (e)∩N (x)| ≥ 2}
+(i.e. all edges which contain at least 2 vertices from N (x), are restricted to N (x)).
+    All edges in Hx have size 2, because of the following. Clearly every edge has size at least 2, so assume,
+for the sake of contradiction, that e is an edge in Hx of size at least 3. By Claim 15, we see that |V (e)| = 3
+in Hx . Let e0 be the edge in H, with the property that V (e) ⊂ V (e0 ), and let w be the unique vertex
+in V (e0 ) − N (x). Now we delete x, w, which gives 42-24-10-9, since the remaining vertices of e now have
+degree one and thus their incident edges become degenerated.
+    So we can think of Hx as a graph. Now Hx is a graph with 9 vertices and 3 vertex disjoint cycles of
+length 3, because of the following. By Claim 15, we get that V (Hx ) = 9. If there was an independent
+set X in Hx of size at least 4, we would delete x, which gives 21-12-5 and split the vertices of X, each
+one for a -1. So Hx is a graph on 9 vertices with stability at most 3 and maximum degree 2, only three
+disjoint 3-circuits can achieve this.
+    Now let e ∈ E(H) be an edge such that |V (e) ∩ N (x)| = 2 and let y ∈ V (e) − N (x) be arbitrary. Let
+w1 ∈ V (H) belong to a 3-cycle in Hx , which does not contain the edge (V (e) ∩ N (x)), and let w2 ∈ V (H)
+belong to a 3-cycle in Hx , which does not contain the edge (V (e)∩N (x)) or the vertex w1 . Now, we delete
+x, y, for a sum of 42-24-10-6, since the vertices in V (e) ∩ N (x) now have degree one, and in particular
+their incident edges become degenerated. To achieve the bound, split the vertices w1 and w2 , each for a
+-1. 
+
+    Another way of proving the 21|T | ≤ 5n + 4m formula is to allow edges of size 3 and 2. Let H1 be the
+hypergraph, with vertices {x1 , x2 , x3 , x4 , x5 } and edges {{x1 , x2 , x3 }, {x1 , x4 , x5 }, {x2 , x3 , x4 , x5 }}, and
+let H2 be the hypergraph with vertices {x1 , x2 } and one edge {x1 , x2 }. For a hypergraph, H, where all
+edges have size at least 2 and at most 4, let ei (H) denote the number of edges in H of size i (i = 2, 3, 4).
+Let h1 (H) be the number of components of H, which are isomorphic to H1 , and let h2 (H) be the number
+of components of H, which are isomorphic to H2 .
+
+Theorem 4 There exists a transversal, T of H such that
+
+                      21|T | ≤ 5|V (H)| + 10e2 (H) + 6e3 (H) + 4e4 (H) + h1 (H) + h2 (H)
+
+   The proof of the above theorem is however quite technical and of equal length to the proof Theorem 3,
+so we omit it from this paper.
+
+
+3     Asymptotics
+Our goal in this section is to bound the value of ck . The next upper bound can also be derived from
+a result of Johnson and Lovász: τ (H) ≤ (1 + ln(d))τ ∗ (H) where H is a hypergraph, τ (H), τ ∗ (H) are
+respectively the transversality and the fractional transversality of H and d is the maximum degree of H,
+see [8].
+
+Theorem 5 ck ≤ 1+ln(k)
+                  k
+
+
+                                                            7
+                                                                                            P
+Proof. Let H be a k-uniform hypergraph, with n edges and n vertices. Define S(G) = x∈V (G) d(x), for
+all hypergraphs G, and note that S(H) = kn. Let H 0 be a k-uniform hypergraph with S(H 0 ) ≤ in, where
+i is an integer. We will now show that there exists a set X, such that |X| ≤ ik   n
+                                                                                    and S(H 0 \ X) ≤ (i − 1)n.
+If S(H 0 ) > (i − 1)n, then there exists a vertex x in H 0 , such that d(x) ≥ i. Now deleting this vertex (and
+edges incident with it) makes the sum S drop by d(x)k ≥ ik. So by keep deleting such vertices until the
+                                               n
+sum is at most (i − 1)n, we delete at most ik     vertices.
+     By the above we note that there exists a transversal of size at most the following.
+                                          Pk       n
+                                                               Pk
+                                               i=1 ki     = nk i=1 1i
+                                                          ≤ nk (1 + ln(k))
+                                                          = n 1+ln(k)
+                                                                  k
+
+   This completes the proof. 
+
+Theorem 6 For any ε > 0, ck > (1−ε)ln(k)
+                                  k      for sufficiently large k.
+
+Proof. Let 1 > ε > 0 be arbitrary. We will now show that ck > (1−ε)ln(k)
+                                                                       k     , for all sufficiently large k. If e is
+the base of the natural logarithm, then given ε, there exists a constant Aε , such that (1−α−1 )α > (1−ε)/e,
+when α ≥ Aε . Furthermore (1 − α−1 )α < 1/e is true for all α ≥ 1. We will often use the above, without
+explicitly stating it.
+   By the above we let a be some number such that the following holds.
+
+                e−1 e−(ε/2)/(1−ε)   < (1 − a−1 )a
+            ⇓
+                          (ε/2)−1               a−1
+                                                      
+                            1−ε     <    aln     a
+            ⇓
+                                                                a−1
+                                                                      
+                  (ε/2 − 1)ln(k) < (1 − ε)ln(k)aln               a
+            ⇓
+                                                          a−1
+                   1 − k −(1−ε/2)   > 1 − e[(1−ε)ln(k)aln( a )]                               (A)
+   Given a we let k be large enough such that the following holds.
+
+                     (1 − ε)(ln(k))(ln(ak)) − k ε/2       < 0                                (B)
+    This can clearly be done as k ε/2 grows faster than any poly-log function. We will now show that a
+random hypergraph on n = ak vertices and with n edges, all of size k, has probability strictly less than
+1, of having a transversal of size z = n (1−ε)ln(k)
+                                                k        . So there must exist k-uniform hypergraphs on n = ak
+vertices and with n edges, which do not have any transversal of size z. This would prove the theorem.
+    Let H be a hypergraph, with n = ak vertices and with n edges, all chosen at random (an edge may
+be chosen several times). Let H1 , H2 , . . . , Hn denote the edges. Let Z be z vertices chosen at random
+(a vertex may be picked several times). There are nz possible ways of choosing Z. The probability that
+Z ∩ Hi = ∅ is clearly [(n − k)/n]z , as each vertex in Z has probability (n − k)/n of not lying in Hi . So the
+probability that Z ∩ Hi 6= ∅ for all i = 1, 2, . . . , n, is the following. Since the Hi are chosen independently,
+we have:
+                                                                                 z n
+                                                                             n−k
+                            P (Z ∩ Hi 6= ∅, i = 1, 2, . . . , n) = 1 −
+                                                                               n
+    Let Z contain all possible Z’s (i.e. |Z| = nz , and Z ∈ Z if and only if Z contains exactly z elements,
+some of which may be identical). As Z ∈ Z was chosen with equal probability, namely 1/nz , we get the
+following.
+
+
+                                                            8
+                        1
+                            P                                                                n
+                                                                                          n−k z
+                       nz   Z∈Z P (Z ∩ Hi 6= ∅,   i = 1, 2, . . . , n)   =           1−    n
+                 ⇓
+                                                                                              a−1 z ak
+                                                                                                  
+                                                                                 (ak)z 1 −
+                            P
+                            Z∈Z P (Z ∩ Hi 6= ∅,   i = 1, 2, . . . , n)   =                     a
+                 ⇓
+                                                                                      z ak
+                      P (H has a transversal of size at most z) ≤ (ak)z 1 − a−1     a
+                             z ak
+   Let γ = (ak)z     1 − a−1
+                           a        , and recall that z = a(1 − ε)ln(k), which implies the following (by (A)
+and (B)):
+
+                                                                         a−1 a(1−ε)ln(k)
+                                                                             
+                   ln(γ)    = a(1 − ε)ln(k)ln(ak) + akln(1
+                                                        −                 a              ) 
+                                                                          a(1−ε)ln(k)ln( a−1
+                                                                                          a )
+                            = a(1 − ε)ln(k)ln(ak) + akln 1 − e
+                                                               k −(1−ε/2)
+                                                                                      
+                            <   a(1 − ε)ln(k)ln(ak) + akln 1 −                                         
+                                                                                            k(1−ε/2)
+                                                       ak
+                            = a(1 − ε)ln(k)ln(ak) + k(1−ε/2) ln           1 − k −(1−ε/2)
+                            < a(1 − ε)ln(k)ln(ak) + ak 1−1+ε/2 ln(e−1 )
+                            = a(1 − ε)ln(k)ln(ak) − ak ε/2
+                            < 0
+    Therefore the probability that H contains a transversal is strictly less than 1, and the proof is com-
+plete. 
+    Note that in the above proof if ε = 0.6, then ck ≥ 0.4×ln(k)
+                                                              k    , when a = 2.8 and k ≥ 4800000 (simply
+insert these values in the proof). It is not difficult to check that γ < 1 for all smaller values of k in the
+proof as well (using a computer). Therefore the following is true.
+
+Corollary 3 ck > 0.4×ln(k)
+                     k     , for all k ≥ 2.
+
+    Furthermore the previous results imply the following.
+                   ck
+Corollary 4 lim ln(k)/k = 1.
+              k→∞
+
+
+4     A general formula?
+Let k > 1 be a fixed integer. The set Ak of pairs a, b such that every k-uniform hypergraphs with
+n vertices and m edges has a transversal with at most an + bm vertices has been studied by Chvátal
+and McDiarmid in [5]. This closed convex set has infinitely many extreme points. They described the
+two last (with largest b) extreme points of Ak , for all k. They also prove that the three last points
+(a, b) of A3 are (0, 1), (1/4, 1/4), (1/3, 1/6). Our proof gives in fact that the three last points of A4
+are (0, 1), (1/6, 1/3), (5/21, 4/21). The two first points are from [5]. The last one belongs to A4 as we
+have seen. We just have to check that it is extreme. To see that, observe that the hypergraph on
+{1, 2, 3, 4, 5, 6}, with edge set {1234, 3456, 5612} is sharp for (1/6, 1/3) and (5/21, 4/21). Moreover, the
+complement of the Fano plane is not sharp for (1/6, 1/3) and sharp for (5/21, 4/21). Thus, (5/21, 4/21)
+is an extreme point of A4 . In [3] was proved that (2/9, 2/9) ∈ A4 . This can be easily derived from our
+bound since (2/9, 2/9) = 2/9(1/6, 1/3) + 7/9(5/21, 4/21). The full description of Ak , for k ≥ 3, seems a
+very hard problem. However, Chvátal and McDiarmid conjecture that for every ε > 0, Ak has finitely
+many elements for which a > ε.
+    We would like to concentrate on the following question: Is there an element (or more) of Ak which
+gives the constant ck ? Precisely, is it always possible to find (a, b) ∈ Ak for which a + b = ck ? As we have
+
+
+                                                         9
+calculated so far, there is such a pair in A2 , A3 and A4 . But we do not see any reason why this should
+be the case for larger values of k.
+    Finally, we will make a guess concerning the value of c5 . Consider the non zero quadratic residues
+modulo 11, that is Q = {1, 3, 4, 5, 9}. And form the hypergraph on {0, . . . , 10} which edges are the sets
+Q + i, where i = 0..10. It is not hard to check, by enumeration, that every subset on three vertices
+avoid one edge, and consequently, that the minimum transversal of this hypergraph has 4 vertices. Thus
+4/11 ≤ c5 , and we conjecture that equality holds.
+
+Acknowledgement. We thank Odile Favaron for introducing us the problem. This collaboration started
+during the graph conference held in Odense, organised by Joergen Bang-Jensen and Bjarne Toft.
+
+
+
+References
+     [1] N. Alon, Transversal numbers of uniform hypergraphs, Graphs Combin., 6 (1990), 1–4.
+     [2] D. Archdeacon, J. Ellis-Monaghan, D. Fisher, D. Froncek, P.C.B. Lam, S. Seager, B. Wei, R.
+         Yuster, Some remarks on domination, J. Graph Theory, 46 (2004), 207–210.
+     [3] G.J. Chang and F.C. Lai, An upper bound for the transversal numbers of 4-uniform hypergraphs,
+         J. Combin. Theory Ser. B, 50 (1990), 129–133.
+     [4] P.C.B. Lam and B. Wei, On the total domination number of graphs, preprint.
+     [5] V. Chvátal and C. McDiarmid, Small transversals in hypergraphs, Combinatorica, 12 (1992),
+         19–26.
+     [6] O. Favaron, M. Henning, C. Mynhart and J. Puech, Total domination in graphs with minimum
+         degree three, J. Graph Theory, 34 (2000), 9–19.
+     [7] D. Fisher, Fractional dominations and fractional total dominations of graph complements, Dis-
+         crete Appl. Math., 122 (2002), 283–291.
+     [8] A. Schrijver, Combinatorial optimization. Polyhedra and efficiency, Springer-Verlag, Berlin, 2003.
+     [9] P.D. Seymour, On the two-colouring of hypergraphs, Quart. J. Math. Oxford Ser. (2), 25 (1974),
+         303–312.
+
+
+
+
+                                                    10
+

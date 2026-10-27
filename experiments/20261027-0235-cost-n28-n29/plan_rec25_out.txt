@@ -1,0 +1,27 @@
+TARGET rec25 tops [(25, 23, 11, 4)] cells visited 147 missing 26
+(5, 3, 1, 3) direct 
+(8, 4, 2, 3) direct 
+(9, 7, 3, 3) direct 
+(11, 5, 3, 3) direct 
+(12, 8, 4, 3) direct 
+(13, 11, 5, 3) recurse 
+(15, 9, 5, 3) direct 
+(16, 9, 6, 4) direct 
+(16, 12, 6, 3) recurse 
+(17, 13, 7, 4) recurse 
+(17, 15, 7, 3) recurse 
+(18, 10, 6, 3) direct 
+(19, 10, 7, 4) direct 
+(19, 13, 7, 3) recurse 
+(20, 14, 8, 4) recurse 
+(20, 16, 8, 3) recurse 
+(21, 11, 7, 3) recurse 
+(21, 18, 9, 4) recurse 
+(21, 19, 9, 3) recurse 
+(22, 11, 8, 4) recurse 
+(22, 14, 8, 3) recurse 
+(23, 15, 9, 4) recurse 
+(23, 17, 9, 3) recurse 
+(24, 19, 10, 4) recurse 
+(24, 20, 10, 3) recurse 
+(25, 23, 11, 4) recurse top

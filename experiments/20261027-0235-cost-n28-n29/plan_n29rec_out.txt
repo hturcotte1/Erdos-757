@@ -1,0 +1,30 @@
+TARGET n29rec tops [(29, 27, 13, 3)] cells visited 182 missing 29
+(5, 3, 1, 3) direct 
+(7, 4, 1, 2) direct 
+(8, 4, 2, 3) direct 
+(9, 7, 3, 3) direct 
+(10, 5, 2, 2) direct 
+(11, 5, 3, 3) direct 
+(12, 8, 4, 3) direct 
+(13, 6, 3, 2) direct 
+(13, 11, 5, 3) recurse 
+(15, 9, 5, 3) direct 
+(16, 12, 6, 3) recurse 
+(17, 15, 7, 3) recurse 
+(18, 10, 6, 3) direct 
+(19, 13, 7, 3) recurse 
+(20, 16, 8, 3) recurse 
+(21, 11, 7, 3) recurse 
+(21, 19, 9, 3) recurse 
+(22, 14, 8, 3) recurse 
+(23, 11, 7, 2) recurse 
+(23, 17, 9, 3) recurse 
+(24, 12, 8, 3) recurse 
+(24, 13, 8, 2) recurse 
+(24, 20, 10, 3) recurse 
+(25, 15, 9, 3) recurse 
+(25, 23, 11, 3) recurse 
+(26, 18, 10, 3) recurse 
+(27, 21, 11, 3) recurse 
+(28, 24, 12, 3) recurse 
+(29, 27, 13, 3) recurse top

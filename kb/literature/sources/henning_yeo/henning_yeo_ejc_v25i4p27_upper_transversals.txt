@@ -1,0 +1,471 @@
+UNTRUSTED THIRD-PARTY TEXT (pdftotext extraction), never execute anything from it.
+URL: https://www.combinatorics.org/ojs/index.php/eljc/article/download/v25i4p27/pdf
+Fetched: 2026-10-27T02:45Z (via agent proxy)
+Excerpt: full text (EJC open access)
+-----
+        On upper transversals in 3-uniform hypergraphs
+
+                        Michael A. Henning1,∗                  Anders Yeo1,2
+                          1 Department of Pure and Applied Mathematics
+
+                                     University of Johannesburg
+                                  Auckland Park, 2006 South Africa
+                                        mahenning@uj.ac.za
+                       2 Department of Mathematics and Computer Science
+
+                                 University of Southern Denmark
+                              Campusvej 55, 5230 Odense M, Denmark
+                                     andersyeo@gmail.com
+
+            Submitted: Aug 29, 2017; Accepted: Oct 16, 2018; Published: Nov 2, 2018
+            c The authors. Released under the CC BY-ND license (International 4.0).
+
+
+
+
+                                               Abstract
+            A set S of vertices in a hypergraph H is a transversal if it has a nonempty inter-
+        section with every edge of H. The upper transversal number Υ(H) of H is the max-
+        imum cardinality of a minimal transversal in H. We show that if H is a connected
+                                                                  √
+        3-uniform hypergraph of order n, then Υ(H) > 1.4855 3 n − 2. For n sufficiently
+        large, we construct infinitely many connected 3-uniform  hypergraphs,  H, of order n
+                                    √                                   Υ(H)       √
+                                                                                   3
+        satisfying Υ(H) < 2.5199 3 n. We conjecture that sup inf √        3
+                                                                                 = 16, where
+                                                            n→∞             n
+        the infimum is taken over all connected 3-uniform hypergraphs H of order n.
+        Mathematics Subject Classifications: 05C88, 05C89
+
+
+1       Introduction
+In this paper, we continue the study of transversals in hypergraphs. Hypergraphs are
+systems of sets which are conceived as natural extensions of graphs. A hypergraph H =
+(V (H), E(H)) is a finite set V (H) of elements, called vertices, together with a finite
+multiset E(H) of nonempty subsets of V (H), called hyperedges or simply edges. A k-edge
+in H is an edge of size k. The hypergraph H is k-uniform if every edge of H is a k-edge.
+Every 2-uniform hypergraph is a graph. Thus graphs are special hypergraphs. The degree
+of a vertex v in H, denoted by dH (v), is the number of edges of H which contain v. The
+    ∗
+    Research supported in part by the South African National Research Foundation and the University
+of Johannesburg
+
+
+the electronic journal of combinatorics 25(4) (2018), #P4.27                                     1
+minimum and maximum degrees among the vertices of H is denoted by δ(H) and ∆(H),
+respectively.
+    A subset T of vertices in a hypergraph H is a transversal (also called hitting set or
+vertex cover or blocking set in many papers) if T has a nonempty intersection with every
+edge of H. A vertex hits or covers an edge if it belongs to that edge. The transversal
+number τ (H) of H is the minimum size of a transversal in H, while the upper transversal
+number Υ(H) of H is the maximum cardinality of a minimal transversal in H. In hy-
+pergraph theory the concept of transversal is fundamental and well studied. The major
+monograph [1] of hypergraph theory gives a detailed introduction to this topic. Transver-
+sals in hypergraphs are well studied in the literature (see, for example, [3, 4, 11, 12, 13]
+for recent results and further references).
+    A set S of vertices in a graph G is a dominating set of G if each vertex in V (G) \ S
+has a neighbor in S. A set is independent if no two vertices in it are adjacent. An
+independent dominating set of G is a set that is both dominating and independent in G.
+The independent domination number of G, denoted by i(G), is the minimum cardinality
+of an independent dominating set. Domination is well studied in graph theory and we
+refer the reader to the monographs [9, 10] which detail and survey many results on the
+topic. A survey of known results on independent domination in graphs can be found in [8].
+
+
+2    Main Results
+We have two immediate aims in this paper. First to provide a sharp lower bound on the
+upper transversal number of graphs. Secondly to present a lower bound on the upper
+transversal number of 3-uniform hypergraphs, and to show that this bound is a sense
+asymptotically best possible. More precisely, we prove the following results, where we use
+the notation nH = |V (H)| to denote the order of H. Proofs of Theorem 1 and Theorem 2
+are given in Section 3 and Section 4, respectively.
+
+Theorem 1. If H is a connected graph with δ(H) ⩾ δ, then
+                                        p
+                              Υ(H) ⩾ 2 δnH − 2δ,
+
+and this bound is sharp.
+
+Theorem 2. If H is a connected 3-uniform hypergraph, then
+                              r
+                                  nH               √
+                      Υ(H) > 3         − 2 > 1.4855 3 nH − 2.
+                                 0.305
+Further, there exist infinitely many connected 3-uniform hypergraphs H of sufficiently
+large order nH satisfying
+                                     p3              √
+                              Υ(H) < 16 · nH < 2.52 3 nH .
+
+
+
+the electronic journal of combinatorics 25(4) (2018), #P4.27                              2
+3    Proof of Theorem 1
+Recall that a transversal in a graph is a set of vertices covering all the edges of the graph,
+where a vertex covers an edge if it is incident with it. Theorem 1 can be restated as
+follows.
+                                                                                     √
+Theorem 1. If G is a connected graph of order n with δ(G) ⩾ δ, then Υ(G) ⩾ 2 δn−2δ,
+and this bound is sharp.
+
+   In order to prove Theorem 1, we first establish a relationship between the upper
+transversal number and independent domination number of a graph.
+Theorem 3. If G is an isolate-free graph on n vertices, then i(G) + Υ(G) = n.
+Proof. Let G be an isolate-free graph. Let S be an independent dominating set in G
+of minimum cardinality, and so |S| = i(G). Let T = V (G) \ S and note that T is a
+transversal in G as S is an independent set. Since every vertex in T has a neighbor in S,
+we furthermore note that T is a minimal transversal, which implies that Υ(G) ⩾ |T | =
+n − |S| = n − i(G).
+     Conversely, let T be a minimal transversal in G of maximum cardinality, and so
+|T | = Υ(G). Let S = V (G)\T and note that S is an independent set as T is a transversal.
+Since T is a minimal transversal, every vertex in T has a neighbor in S, implying that
+S is an independent dominating set in G. Therefore, i(G) ⩽ |S| = n − |T | = n − Υ(G).
+Consequently, i(G) + Υ(G) = n.
+
+    Favaron [5] was the first to prove the following upper bound on the independent
+domination of a graph√with no isolated vertex: If G is an isolate-free graph of order n,
+then i(G) ⩽ n + 2 − 2 n. We remark that this result also follows from a result due to
+Bollobás and Cockayne [2] (and was also proved in [6]). Sun and Wang [14] proved the
+following more general result, which was originally posed as a conjecture by Favaron [5]
+and was proved for δ = 2 by Glebov and Kostochka [7].
+                                                                                   √
+Theorem 4. ([14]) If G is a graph of order n with δ(G) ⩾ δ, then i(G) ⩽ n + 2δ − 2 δn.
+    Theorem 1 is an immediate consequence of Theorem 3 and Theorem 4. That this
+bound is sharp, follows from a result of Favaron [5] who showed that for every positive
+integer δ, the bound in Theorem 4 is attained for infinitely many graphs. The same
+graphs achieve equality in the bound for Theorem 1. For example, for c ⩾ 2, let Gc be
+the connected graph constructed as follows. Let Fc be the complete graph of order c, and
+so Fc ∼
+      = Kc . For every vertex v of Fc , add c − 1 new vertices v1 , . . . , vc−1 and add the c − 1
+edges vvi for all i ∈ [c − 1]. Let G = Gc denote the resulting graph of order n = c2 . We
+note that all the new vertices added to Fc have degree 1 in Gc . Every transversal in Gc
+must contain all except possibly one vertex of Fc in order to cover all the edges of Fc . If a
+minimal transversal in Gc contains exactly c − 1 vertices of Fc , say all vertices of Fc except
+for v, then the transversal contains exactly c − 1 vertices not in Fc , namely v1 , . . . , vc−1 ,
+in order to cover the edges vvi for all i ∈ [c − 1]. Such a minimal transversal therefore has
+
+the electronic journal of combinatorics 25(4) (2018), #P4.27                                    3
+size exactly 2(c − 1). If a minimal transversal in Gc contains all c vertices of Fc , then it
+contains no other vertex of Gc and therefore has size exactly c. Therefore,√the connected
+graph G of order n = c2 satisfies Υ(G) = max{2(c − 1), c} = 2(c − 1) = 2 n − 2, noting
+that c ⩾ 2. Thus, the bound of Theorem 1 when δ = 1 is sharp. For every δ ⩾ 2 one can
+similarly show that Theorem 1 is tight.
+    As a special case of Theorem 1, if H is a connected 2-uniform hypergraph   of order n ⩾
+                   √                                         √          q
+                                                                           1
+2, then Υ(H) ⩾ 2 n − 2. When n ⩾ 3, we observe that 2 n − 2 ⩾ 2 n. Further, we
+                                            q
+                                               1
+observe that when n = 2, Υ(H) = 1 =            2
+                                                 n. Thus, as an immediate consequence of
+                                                                       q
+Theorem 1 we observe that if H is a connected graph, then Υ(H) ⩾ 12 nH .
+
+4    Proof of Theorem 2
+We first prove the lower bound in Theorem 2.
+                                                                            q
+                                                                                n
+Theorem 5. If H is a connected 3-uniform hypergraph, then Υ(H) > 3 0.305
+                                                                     H
+                                                                         − 2.
+
+Proof. Let H be a connected 3-uniform hypergraph of order nH and let T be a minimal
+transversal of maximum size. Let T = {t1 , t2 , . . . , tc }, and so Υ(H) = |T | = c. For all i
+and j where 1 ⩽ i < j ⩽ c and for all k ∈ [c], define Zi,j , Ek and Yk as follows.
+
+                          Zi,j = {v ∈ V (H) \ T | {ti , tj , v} ∈ E(H)}
+                          Ek = {e ∈ E(H) | V (e) ∩ T = {tk }}
+                          Yk = V (Ek ) \ {tk }.
+
+    We note that Yk ⊆ V (H) \ T for each k ∈ [c]. Let Q ⊆ V (T ) be a minimum set
+of vertices in T that covers all edges that are completely within T (i.e., all edges e with
+V (e) ⊆ V (T )). Possibly, Q = ∅. Let q = |Q|. Renaming vertices of T if necessary, we
+may assume that Q = {t1 , . . . , tq }. Let
+
+                             I = {(i, j) | 1 ⩽ i < j ⩽ c}
+                             Iq = {(i, j) | 1 ⩽ i ⩽ q and i < j ⩽ c}
+                            I>q = {(i, j) | q + 1 ⩽ i < j ⩽ c}.
+    We note that I = Iq ∪ I>q . We proceed further with the following claims.
+Claim 6. |Zi,j | ⩽ c − q for all (i, j) ∈ I.
+Proof. Suppose, to the contrary, that |Zi,j | > c − q for some i and j, where 1 ⩽ i < j ⩽ c.
+Let R = V (H) \ {ti , tj }. Clearly, R is a transversal in H as it contains all vertices in
+H except two and H is 3-uniform. Let R0 be obtained from R by removing vertices
+until we get a minimal transversal in H. We note that Zi,j ⊆ R0 since each vertex
+z ∈ Zi,j is needed in order to cover the edge {ti , tj , z}. Further, R0 contains at least q
+vertices from T in order to cover the edges that are contained entirely within T . Hence,
+Υ(H) ⩾ |R0 | ⩾ |Zi,j | + q > c, contradicting the fact that Υ(H) = c.
+
+the electronic journal of combinatorics 25(4) (2018), #P4.27                                 4
+                   S
+Claim 7.                    Zi,j ⩽ c − q.
+                (i,j)∈I>q
+
+Proof. Suppose, to the contrary, that
+                                     [
+                                  |                         Zi,j | > c − q.
+                                                (i,j)∈I>q
+
+Let R = V (H) \ {tq+1 , . . . , tc }. By definition of the set Q, every edge of H intersects
+{tq+1 , . . . , tc } in at most two vertices, implying that R is a transversal in H. Let R0 be
+obtained from R by removing vertices from R until we get a minimal transversal in H.
+We note that                                  [
+                                                  Zi,j ⊆ R0
+                                                   (i,j)∈I>q
+
+since each vertex z ∈ Zi,j where q + 1 ⩽ i < j ⩽ c is needed in order to cover the edge
+{ti , tj , z}. Further, R0 contains at least q vertices from Q in order to cover the edges that
+are contained entirely within T . Hence,
+                                                   [
+                              Υ(H) ⩾ |R0 | ⩾ |           Zi,j | + q > c,
+                                                             (i,j)∈I>q
+
+contradicting the fact that Υ(H) = c.
+
+                                       c
+                                           − c−q
+                  S                               
+Claim 8.                  Zi,j ⩽       2      2
+                                                        (c − q) + (c − q).
+                (i,j)∈I
+
+Proof. As observed
+                 c
+                             I = Iq ∪ I>q . By Claim 6, |Zi,j | ⩽ c − q for all (i, j) ∈ Iq .
+                    earlier,
+                        c−q
+Since there are 2 − 2 pairs (i, j) ∈ Iq where 1 ⩽ i ⩽ q and i < j ⩽ c, we note by
+Claim 6 and Claim 7 that
+                                                              
+      [              [              [               c      c−q
+           Zi,j ⩽          Zi,j +        Zi,j ⩽        −             (c − q) + (c − q).
+                                                    2         2
+      (i,j)∈I               (i,j)∈Iq          (i,j)∈I>q
+
+Claim 9. |Yi | ⩽ ( c−q
+                    2
+                       + 1)2 for all i ∈ [c].
+Proof. Suppose, to the contrary, that |Yi | > ((c − q)/2 + 1)2 for some i ∈ [c]. Let H 0 be
+the graph with vertex set V (H 0 ) = Yi and with edge set E(H 0 ) = {e \ {tp  i } | e ∈ Ei }. By
+                                                 0      0              0
+Theorem 1, there is a minimal transversal T in H , such that |T | ⩾ 2( |Yi | − 1). Let
+R0 = T 0 ∪ (T \ {ti }) and note that R0 is a transversal in H. Let R00 be obtained from R0 by
+removing vertices from R0 until we get a minimal transversal in H. In order to cover the
+edges Ei , we must have T 0 ⊆ R00 , noting that T 0 is a minimal transversal in H 0 . Further,
+R0 contains at least q vertices from T \ {ti } in order to cover the edges that are contained
+entirely within T . Therefore,
+                                                          s                     
+                                                                        2
+                                    p                          c−q
+     Υ(H) ⩾ |R00 | ⩾ |T 0 | + q ⩾ 2( |Yi | − 1) + q > 2             + 1 − 1 + q = c
+                                                                 2
+
+the electronic journal of combinatorics 25(4) (2018), #P4.27                                  5
+contradicting the fact that Υ(H) = c.
+
+      Since T is a transversal in H, we note that
+                                                                           !
+                                            [                     c
+                                                                  [
+                            V (H) = T ∪        Zi,j  ∪                Yi       .   (1)
+                                                        (i,j)∈I   i=1
+
+
+   Let β be defined such that (c − q) = βc. We note that 0 ⩽ β ⩽ 1. By Equation (1)
+and by Claim 8 and 9, we therefore get the following.
+                           X             X
+             nH ⩽ |T | +       |Zi,j | +   |Yi |
+                                   i,j                   i
+                                  c          c−q
+                                          (c − q) + (c − q) + c( c−q
+                                                  
+                      ⩽ c+        2
+                                         −    2                   2
+                                                                     + 1)2
+                                             
+                      ⩽ c + c(c−1)
+                               2
+                                   − βc(βc−1)
+                                         2
+                                                βc + βc + c( βc
+                                                             2
+                                                                + 1)2
+                                                                             2 2
+                      = c + 12 (c2 − c − β 2 c2 + βc) βc + βc + c( β 4c + βc + 1)
+                                  3    2
+                                                                
+                                                          β2
+                      = c3 β2 − β2 + β4 + c2 −β     2
+                                                        + 2
+                                                             +  β   + c(2 + β)
+                         3
+                                                            2
+                                                               
+                      = c4 (−2β 3 + β 2 + 2β) + c2 β2 + β2 + c(2 + β).
+Let
+                                         f (β) = −2β 3 + β 2 + 2β.
+                                                                             √
+   The maximum value of f (β) when 0 ⩽ β ⩽ 1 is obtained     √ when β = (1 + 13)/6,
+                 0           2
+noting   0 = f (β) = −6β + 2β + 2 implies β = (1 ± 13)/6. Therefore, f (β) ⩽
+  √ that
+f 1+6 13 < 1.22 for all 0 ⩽ β ⩽ 1, implying by our earlier observations that
+                                                          
+                         c3     3    2          2 β     β2
+               nH ⩽ 4 (−2β + β + 2β) + c 2 + 2 + c(2 + β)
+                          3
+                    < c4 (1.22) + c2 12 + 12 + c(2 + 1)
+                                            
+
+                          = 0.305c3 + c2 + 3c
+                    < 0.305(c + 2)3 ,
+                  q
+                     nH
+and so Υ(H) = c > 3 0.305 − 2. This completes the proof of Theorem 5.
+
+                     q
+                         1
+   We remark that 3 0.305    > 1.48559, and so as a consequence of Theorem 5, if H is
+                                                                       √
+a connected 3-uniform hypergraph of orderqn ⩾ 3, then Υ(H) > 1.4855 3 n − 2. When
+                                √
+n ⩾ 17, we observe that 1.4855 3 n − 2 > 3 13 n. Further, we observe that when n = 3,
+             q                                           q
+              3 1
+Υ(H) = 1 =      3
+                  n, while for 4 ⩽ n ⩽ 16, Υ(H) ⩾ 2 > 3 13 n. Thus, as an immediate
+consequence of Theorem 5, we observe that if H is a connected 3-uniform hypergraph,
+
+the electronic journal of combinatorics 25(4) (2018), #P4.27                           6
+               q
+                 n
+then Υ(H) ⩾ 3 3H . We show next that the lower bound in Theorem 5 is asymptotically
+best possible.
+Proposition 10. For all n ⩾ 3, there exists a connected 3-uniform hypergraph H = Hn
+of order nH = 12 (n3 − n2 + 2n) such that
+
+                              3
+                              p                                       2n2 − n + 1
+                   Υ(H) =       16(1 − n ) · nH      where    n =                .
+                                                                      n3 − n2 + 2n
+Proof. For each n ⩾ 3, let Hn be the connected 3-uniform hypergraph constructed as
+follows.    Let Fn be the complete 3-uniform hypergraph on n vertices, and so Fn has
+ n
+   
+ 3
+     hyperedges      corresponding to the 3-element subsets of V (Fn ). Thus, every set of
+three vertices in Fn belongs to a 3-edge of Fn . Let S = V (Fn ). For every pair of
+vertices, {x, y}, in S add n new vertices, v1xy , v2xy , . . . , vnxy to Fn and add the n hyperedges
+{x, y, v1xy }, {x, y, v2xy }, . . . , {x, y, vnxy }. Let H = Hn denote the resulting hypergraph of
+order
+                                                      n2 (n − 1)
+                             
+                              n                                        1
+                   nH =             n + |V (Fn )| =              + n = (n3 − n2 + 2n).
+                               2                           2           2
+    We note that all the new vertices added to Fn have degree 1 in Hn . Every transversal
+in Hn must contain all n vertices in Fn , except for possibly two vertices in order to cover
+all the edges in Fn . Every minimal transversal in Hn contains either exactly n − 1 vertices
+of S (and no other vertex in Hn ) or exactly n − 2 vertices of S, say all vertices of S except
+for the vertices x and y, and exactly n vertices not in S, namely v1xy , v2xy , . . . , vnxy , in order
+to cover the edges {x, y, v1xy }, {x, y, v2xy }, . . . , {x, y, vnxy }, implying that
+
+                                Υ(Hn ) = (|S| − 2) + n = 2(n − 1).
+                               −n+1 2
+  Therefore, letting n = n2n
+                            3 −n2 +2n , we note that the connected 3-uniform hypergraph
+
+H = Hn satisfies
+
+                             Υ(H) = 2(n − 1)
+                                     3
+                                    p
+                                  = 8 · (n − 1)3
+                                    s
+                                     3    (n − 1)3
+                                  = 16 ·            · nH
+                                             2nH
+                                    s                       
+                                     3     n3 − 3n2 + 3n − 1
+                                  = 16                          · nH
+                                              n3 − n2 + 2n
+                                    s                      
+                                     3          2n2 − n + 1
+                                  = 16 1 − 3                  · nH
+                                               n − n2 + 2n
+                                     3
+                                    p
+                                  = 16(1 − n ) · nH .
+
+   Using the notation introduced in the statement of Proposition 10, we note that 23 =
+3 > 4 > 5 > · · · and that n → 0 as n → ∞. In particular, we note that given any
+
+the electronic journal of combinatorics 25(4) (2018), #P4.27                                         7
+ > 0, we can choose n sufficiently large so that n < , implying by Proposition 10 that
+the connected 3-uniform hypergraph H = Hn satisfies
+                           3
+                         p                             p3
+                             16(1 − ) · nH < Υ(H) < 16 · nH
+
+
+5    Closing Conjectures
+We pose the following conjecture. As observed earlier, Conjecture 11 is true for k ∈ {2, 3}.
+However, we have yet to settle the conjecture for k ⩾ 4.
+                                                                                     r
+                                                                                       n
+Conjecture 11. For k ⩾ 2, if H is a connected k-uniform hypergraph then Υ(H) ⩾ k H .
+                                                                                         k
+    Let Hn denote the class of all connected 3-uniform hypergraphs of order n. As observed
+earlier, Proposition 10 implies that for n sufficiently large there exist hypergraphs H ∈ Hn
+such that
+                                     Υ(H) p     3
+                                      √     > 16(1 − )
+                                      3
+                                        n
+for any given  > 0. We close with the following conjecture that we have yet to settle.
+                                         √
+                                   
+                              Υ(H)        3
+Conjecture 12. sup       inf √        = 16.
+                  n→∞   H∈H n
+                                3
+                                  n
+
+
+
+References
+ [1] C. Berge, Hypergraphs – Combinatorics of Finite Sets. North-Holland, 1989.
+ [2] B. Bollobás and E. J. Cockayne. Graph-theoretic parameters concerning domination,
+     independence, and irredundance. J. Graph Theory, 3:241–249, 1979.
+ [3] Cs. Bujtás, M. A. Henning, and Zs. Tuza. Transversals and domination in uniform
+     hypergraphs. European J. Combin., 33:62–71, 2012.
+ [4] Cs. Bujtás, M. A. Henning, Zs. Tuza, and A. Yeo. Total transversals and total
+     domination in uniform hypergraphs. Electron. J. Combin., 21(2) #P2.24, 2014.
+ [5] O. Favaron. Two relations between the parameters of independence and irredundance.
+     Discrete Math., 70:17–20, 1988.
+ [6] J. Gimbel and P. D. Vestergaard. Inequalities for total matchings of graphs. Ars
+     Combin., 39:109–119, 1995.
+ [7] N. I. Glebov and A. V. Kostochka. On the independent domination number of graphs
+     with given minimum degree. Discrete Math., 118:261–266, 1998.
+ [8] W. Goddard and M. A. Henning. Independent domination in graphs: A survey and
+     recent results. Discrete Math., 313:839–854, 2013.
+
+
+the electronic journal of combinatorics 25(4) (2018), #P4.27                              8
+ [9] T. W. Haynes, S. T. Hedetniemi, P. J. Slater (eds). Fundamentals of Domination in
+     Graphs, Marcel Dekker, Inc. New York, 1998.
+[10] T. W. Haynes, S. T. Hedetniemi, P. J. Slater (eds). Domination in Graphs: Advanced
+     Topics, Marcel Dekker, Inc. New York, 1998.
+[11] M. A. Henning and C. Löwenstein. A characterization of the hypergraphs that achieve
+     equality in the Chvátal-McDiarmid Theorem. Discrete Math., 323:69–75, 2014.
+[12] M. A. Henning and A. Yeo. Hypergraphs with large transversal number. Discrete
+     Math., 313:959–966, 2013.
+[13] Z. Lonc and K. Warno. Minimum size transversals in uniform hypergraphs. Discrete
+     Math., 313:2798–2815, 2013.
+[14] L. Sun and J, Wang. An upper bound for the independent domination number. J.
+     Combin. Theory, Ser. B, 76:240–246, 1999.
+
+
+
+
+the electronic journal of combinatorics 25(4) (2018), #P4.27                            9
+
