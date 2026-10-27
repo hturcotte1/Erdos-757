@@ -1,0 +1,10 @@
+ap_8 {'adjacent_pairs': 8, 'fold_inC': 8, 'folds': 12, 'folds_cotrans': 12, 'folds_hostC': 12, 'folds_with_F7': 0, 'graphs': 1, 'graphs_inC': 1} FAILURES: 0
+ap_10 {'adjacent_pairs': 8, 'fold_inC': 4, 'folds': 16, 'folds_cotrans': 16, 'folds_hostC': 16, 'folds_with_F7': 2, 'graphs': 1, 'graphs_inC': 1} FAILURES: 0
+ap_11 {'adjacent_pairs': 9, 'fold_inC': 6, 'folds': 15, 'folds_cotrans': 15, 'folds_hostC': 15, 'folds_with_F7': 2, 'graphs': 1, 'graphs_inC': 1} FAILURES: 0
+ap_12 {'adjacent_pairs': 6, 'fold_inC': 6, 'folds': 14, 'folds_cotrans': 14, 'folds_hostC': 14, 'folds_with_F7': 3, 'graphs': 1, 'graphs_inC': 1, 'min_blocking_sat_size_10': 2, 'min_blocking_sat_size_8': 1, 'p3_blocked': 3, 'some_blocking_sat_of_size_10': 2, 'some_blocking_sat_of_size_8': 1, 'some_blocking_sat_of_size_9': 1} FAILURES: 0
+ap_14 {'adjacent_pairs': 13, 'fold_inC': 3, 'folds': 15, 'folds_cotrans': 15, 'folds_hostC': 15, 'folds_with_F7': 0, 'graphs': 1, 'graphs_inC': 1} FAILURES: 0
+ap_12b {'adjacent_pairs': 8, 'folds': 8, 'folds_cotrans': 8, 'folds_hostC': 8, 'folds_with_F7': 1, 'graphs': 1, 'graphs_inC': 1} FAILURES: 0
+ap_12c {'adjacent_pairs': 8, 'folds': 8, 'folds_cotrans': 8, 'folds_hostC': 8, 'folds_with_F7': 1, 'graphs': 1, 'graphs_inC': 1} FAILURES: 0
+ap_fib12 {'adjacent_pairs': 7, 'fold_inC': 5, 'folds': 5, 'folds_cotrans': 5, 'folds_hostC': 5, 'folds_with_F7': 0, 'graphs': 1, 'graphs_inC': 1} FAILURES: 0
+ap_glue_8_10 {'adjacent_pairs': 16, 'fold_inC': 12, 'folds': 28, 'folds_cotrans': 28, 'folds_hostC': 28, 'folds_with_F7': 2, 'graphs': 1, 'graphs_inC': 1} FAILURES: 0
+ap_TOTAL {'adjacent_pairs': 596, 'fold_inC': 946, 'folds': 1428, 'folds_cotrans': 1391, 'folds_hostC': 1428, 'folds_noncotrans_dtau+0': 15, 'folds_noncotrans_dtau-1': 22, 'folds_with_F7': 31, 'graphs': 143, 'graphs_inC': 143, 'min_blocking_sat_size_10': 2, 'min_blocking_sat_size_8': 1, 'p3_blocked': 3, 'some_blocking_sat_of_size_10': 2, 'some_blocking_sat_of_size_8': 1, 'some_blocking_sat_of_size_9': 1} FAILURES: 0

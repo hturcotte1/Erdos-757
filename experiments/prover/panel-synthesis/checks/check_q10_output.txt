@@ -1,0 +1,3 @@
+degrees [2, 2, 2, 2, 2, 2, 2, 2, 2, 3] tau 4 slack 0
+Q10 realizable as sub-hypergraph of a (4,5)-set: False
+all 6-edge subsets realizable: True

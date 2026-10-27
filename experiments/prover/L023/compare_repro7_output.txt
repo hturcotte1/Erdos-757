@@ -1,0 +1,5 @@
+EQUAL cell_11_5_3_D3.txt recomputed 4 stored 4
+EQUAL cell_21_11_7_D3.txt recomputed 562 stored 562
+EQUAL cell_5_3_1_D3.txt recomputed 0 stored 0
+EQUAL cell_8_4_2_D3.txt recomputed 3 stored 3
+SUMMARY recomputed lists compared 4 equal 4 different 0

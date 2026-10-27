@@ -50,7 +50,7 @@ def ext_sets(E, NG, TP, d):
             if (S >> v) & 1: B[v] |= 1 << i
     pairs = [(a, b) for a, b in itertools.combinations(range(NG), 2) if deg[a] <= d - 1 and deg[b] <= d - 1 and (a, b) not in inside]
     kill = {p: ALL & ~(B[p[0]] | B[p[1]]) for p in pairs}
-    res = set()
+    res = set(); killers = {}
     def free(chosen, used, k, start_pairs):
         if k == 0: res.add(frozenset(chosen)); return
         for i, p in enumerate(start_pairs):
@@ -60,15 +60,19 @@ def ext_sets(E, NG, TP, d):
         if R == 0:
             free(chosen, used, d - len(chosen), pairs); return
         if len(chosen) == d: return
-        low = R & -R; i0 = low.bit_length() - 1; S0 = C[i0]
-        for p in pairs:
+        low = R & -R; i0 = low.bit_length() - 1
+        kp = killers.get(i0)
+        if kp is None:
+            S0 = C[i0]; kp = killers[i0] = [p for p in pairs if not (S0 >> p[0]) & 1 and not (S0 >> p[1]) & 1]
+        for p in kp:
             a, b = p
-            if (S0 >> a) & 1 or (S0 >> b) & 1 or (used >> a) & 1 or (used >> b) & 1: continue
+            if (used >> a) & 1 or (used >> b) & 1: continue
             rec(chosen + [p], used | (1 << a) | (1 << b), R & ~kill[p])
     rec([], 0, ALL)
     return res, K, len(pairs)
 if __name__ == '__main__':
     fin, fout, NG, TP, d = sys.argv[1], sys.argv[2], int(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5])
+    import os; VERBOSE = os.environ.get('VERBOSE') == '1'
     lines = [l.split() for l in open(fin) if l.strip()]
     rng = sys.argv[6] if len(sys.argv) > 6 else '0:%d' % len(lines)
     lo, hi = map(int, rng.split(':'))
@@ -91,5 +95,6 @@ if __name__ == '__main__':
         theirs = hits.get(i, set())
         if mine == theirs: eq += 1
         else: df += 1; print('DIFFERENT input', i, 'mine', len(mine), 'ext_d', len(theirs), flush=True)
+        if VERBOSE: print('INPUT %d covers %d pairs %d extensions %d %s' % (i, K, P, len(mine), 'EQUAL' if mine == theirs else 'DIFFERENT'), flush=True)
         tot += len(mine)
     print('SUMMARY compared %d equal %d different %d extensions(own) %d max_covers %d secs %.1f' % (eq + df, eq, df, tot, maxK, time.time() - t0))

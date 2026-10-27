@@ -1,0 +1,1 @@
+SUMMARY members of C(24,20,10,3) obtained as X_i - v: 0, found in the stored list: 0 (list size 2781)

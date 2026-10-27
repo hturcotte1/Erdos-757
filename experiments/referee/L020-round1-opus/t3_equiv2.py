@@ -6,11 +6,48 @@ sys.path.insert(0, '/home/user/Erdos-757/experiments/referee/L020-round1-opus')
 import hg
 from roles_check import read_cell
 from t3_equiv import union, prep, star
+
+
+def star_product(n, es, vs_of, P):
+    """(*) evaluated directly from the definition: no minimum transversal of G (= union of minimum
+    transversals of the components) meets all three pairs."""
+    pats = []
+    for vs in vs_of:
+        S = set(vs)
+        ce = [e for e in es if e[0] in S]
+        nn, cer, idx = hg.relabel(vs, ce)
+        tc = hg.tau_bb(cer)
+        met = set()
+        for T in hg.all_min_transversals(cer, tc):
+            mask = 0
+            for j, p in enumerate(P):
+                if any(x in S and (T >> idx[x]) & 1 for x in p):
+                    mask |= 1 << j
+            met.add(mask)
+        pats.append(met)
+    reach = {0}
+    for met in pats:
+        reach = {a | b for a in reach for b in met}
+    return 7 not in reach
 I = '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness/inputs/'
 pool = []
 for c in ['3_1_1', '6_3_2', '8_5_3', '10_7_4', '9_4_3', '10_8_4', '12_10_5', '13_9_5', '15_11_6']:
     for n, m, t, es in read_cell(I + 'cell_%s.txt' % c)[:30]:
         pool.append((c, n, es))
+# targeted pools (components that carry the needed configurations), to make the 'condition true' cases frequent
+from roles_check import analyse
+def has(cfg):
+    out = []
+    for c, n, es in pool:
+        t = hg.tau_bb(es)
+        TL, d, NC, b_any, e_cfg, f_cfg, B = analyse(n, es, t)
+        if (cfg == 'b' and b_any) or (cfg == 'e' and e_cfg) or (cfg == 'f' and f_cfg) or (cfg == 'nc' and NC):
+            out.append((c, n, es))
+    return out
+POOLS = {k: has(k) for k in ('b', 'e', 'f', 'nc')}
+print('targeted pools:', {k: len(v) for k, v in POOLS.items()}, flush=True)
+FIRST = {'b': 'b', 'e': 'e', 'f': 'f', 'i2-1': 'e', 'i2-2': 'e', 'i2-3': 'e', 'i2-4': 'nc', 'i3': 'e'}
+SECOND = {'b': 'b', 'e': 'e', 'f': 'nc', 'i2-1': None, 'i2-2': None, 'i2-3': 'nc', 'i2-4': 'nc', 'i3': None}
 random.seed(int(sys.argv[1]))
 NPER = int(sys.argv[2])
 res = {}
@@ -21,7 +58,7 @@ while any(res.get(p, [0, 0])[0] + res.get(p, [0, 0])[1] < NPER for p in pats) an
     pat = random.choice([p for p in pats if res.get(p, [0, 0])[0] + res.get(p, [0, 0])[1] < NPER])
     r = 3 if pat == 'i3' else 2
     iso = 1 if pat.startswith('i') else 0
-    parts = [random.choice(pool) for _ in range(r)]
+    parts = [random.choice(POOLS[FIRST[pat]])] + [random.choice(POOLS[SECOND[pat]]) if SECOND[pat] else random.choice(pool)] + [random.choice(pool) for _ in range(r - 2)]
     n, es, vs_of, ys = union([(p[1], p[2]) for p in parts], iso)
     t, B, d, share = prep(n, es, vs_of)
     if not all(B[x] for vs in vs_of for x in vs):
@@ -84,11 +121,14 @@ while any(res.get(p, [0, 0])[0] + res.get(p, [0, 0])[1] < NPER for p in pats) an
                 P = [(a, b), (c, dd), (y, f)]
     if P is None:
         continue
-    lhs = star(n, es, P, t)
+    lhs = star_product(n, es, vs_of, P)
+    if tries % 7 == 0:
+        assert lhs == star(n, es, P, t), 'product and tau(G+w) evaluations of (*) disagree'
+        res.setdefault('crosschecked', [0, 0])[0] += 1
     k = res.setdefault(pat, [0, 0])
     k[0 if lhs else 1] += 1
     if not lhs:
         print('COUNTEREXAMPLE condition true but (*) false', pat, [p[0] for p in parts], P, flush=True)
 print('tries', tries, 'pattern: [condition true and (*) true, condition true but (*) FALSE]')
-for p in pats:
+for p in pats + ['crosschecked']:
     print(' ', p, res.get(p))

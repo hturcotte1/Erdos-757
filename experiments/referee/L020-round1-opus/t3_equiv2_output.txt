@@ -1,0 +1,11 @@
+targeted pools: {'b': 6, 'e': 14, 'f': 1, 'nc': 100}
+tries 505 pattern: [condition true and (*) true, condition true but (*) FALSE]
+  b [60, 0]
+  e [60, 0]
+  f [60, 0]
+  i2-1 [60, 0]
+  i2-2 [60, 0]
+  i2-3 [60, 0]
+  i2-4 [60, 0]
+  i3 [60, 0]
+  crosschecked [67, 0]

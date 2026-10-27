@@ -1,0 +1,2 @@
+bf_18_13_7.json graphs with 29 vertices 48 distinct classes among the 45 hit 27 not among the 45 0
+bf_25_19_10_sample.json graphs with 29 vertices 4 distinct classes among the 45 hit 4 not among the 45 0

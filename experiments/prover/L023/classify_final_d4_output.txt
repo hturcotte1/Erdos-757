@@ -1,0 +1,1 @@
+SUMMARY {"extensions": 15032, "tau_rechecked": 752, "P3_violated": 2217, "F7": 12643, "member_of_C(25,23,11,4)": 172} classes_found 6 stored_list_classes 6 each_found_class_in_list True each_list_class_found True

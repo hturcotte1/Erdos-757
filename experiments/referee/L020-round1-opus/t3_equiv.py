@@ -57,100 +57,101 @@ def star(n, es, P, t):
     return hg.tau_bb(es2) == t + 1
 
 
-res = {}
-def record(pat, lhs, rhs):
-    k = res.setdefault(pat, [0, 0, 0])  # agree-true, agree-false, disagree
-    if lhs == rhs:
-        k[0 if lhs else 1] += 1
-    else:
-        k[2] += 1
-        print('DISAGREE', pat)
+if __name__ == '__main__':
+    res = {}
+    def record(pat, lhs, rhs):
+        k = res.setdefault(pat, [0, 0, 0])  # agree-true, agree-false, disagree
+        if lhs == rhs:
+            k[0 if lhs else 1] += 1
+        else:
+            k[2] += 1
+            print('DISAGREE', pat)
 
 
-def pick(lst, k):
-    return random.sample(lst, k) if len(lst) >= k else None
+    def pick(lst, k):
+        return random.sample(lst, k) if len(lst) >= k else None
 
 
-trials = 0
-while min([sum(v) for v in res.values()] + [0]) < N_PER or len(res) < 8:
-    trials += 1
-    if trials > 60000:
-        break
-    pat = random.choice(['b', 'e', 'f', 'i2-1', 'i2-2', 'i2-3', 'i2-4', 'i3'])
-    if pat in res and sum(res[pat]) >= N_PER:
-        continue
-    r = 3 if pat == 'i3' else 2
-    iso = 1 if pat.startswith('i') else 0
-    parts = [random.choice(pool) for _ in range(r)]
-    n, es, vs_of, ys = union(parts, iso)
-    t, B, d, share = prep(n, es, vs_of)
-    def fc_ok():
-        return all(B[x] for vs in vs_of for x in vs)
-    if not fc_ok():
-        continue
-    low = [[x for x in vs if d[x] <= 2] for vs in vs_of]
-    def nc(x, y):
-        return d[x] <= 2 and d[y] <= 2 and (B[x] & B[y]) == 0
-    def inside_ok(p):
-        return tuple(sorted(p)) not in share
-    P = None
-    if pat == 'b':
-        X = pick(low[0], 3); Y = pick(low[1], 3)
-        if not X or not Y: continue
-        P = [(X[i], Y[i]) for i in range(3)]
-        cond = all(nc(a, b) for a, b in itertools.combinations(X, 2)) and all(nc(a, b) for a, b in itertools.combinations(Y, 2))
-    elif pat == 'e':
-        A = pick(low[0], 3); C = pick(low[1], 3)
-        if not A or not C: continue
-        a, b, e = A; c, dd, f = C
-        if not inside_ok((a, b)) or not inside_ok((c, dd)): continue
-        P = [(a, b), (c, dd), (e, f)]
-        cond = nc(e, a) and nc(e, b) and nc(f, c) and nc(f, dd)
-    elif pat == 'f':
-        A = pick(low[0], 4); D = pick(low[1], 2)
-        if not A or not D: continue
-        a, b, c, e = A; dd, f = D
-        if not inside_ok((a, b)): continue
-        P = [(a, b), (c, dd), (e, f)]
-        cond = nc(a, c) and nc(a, e) and nc(b, c) and nc(b, e) and nc(dd, f)
-    else:
-        y = ys[0]
-        if pat == 'i2-1':
-            A = pick(low[0], 3); C = pick(low[1], 2)
+    trials = 0
+    while min([sum(v) for v in res.values()] + [0]) < N_PER or len(res) < 8:
+        trials += 1
+        if trials > 60000:
+            break
+        pat = random.choice(['b', 'e', 'f', 'i2-1', 'i2-2', 'i2-3', 'i2-4', 'i3'])
+        if pat in res and sum(res[pat]) >= N_PER:
+            continue
+        r = 3 if pat == 'i3' else 2
+        iso = 1 if pat.startswith('i') else 0
+        parts = [random.choice(pool) for _ in range(r)]
+        n, es, vs_of, ys = union(parts, iso)
+        t, B, d, share = prep(n, es, vs_of)
+        def fc_ok():
+            return all(B[x] for vs in vs_of for x in vs)
+        if not fc_ok():
+            continue
+        low = [[x for x in vs if d[x] <= 2] for vs in vs_of]
+        def nc(x, y):
+            return d[x] <= 2 and d[y] <= 2 and (B[x] & B[y]) == 0
+        def inside_ok(p):
+            return tuple(sorted(p)) not in share
+        P = None
+        if pat == 'b':
+            X = pick(low[0], 3); Y = pick(low[1], 3)
+            if not X or not Y: continue
+            P = [(X[i], Y[i]) for i in range(3)]
+            cond = all(nc(a, b) for a, b in itertools.combinations(X, 2)) and all(nc(a, b) for a, b in itertools.combinations(Y, 2))
+        elif pat == 'e':
+            A = pick(low[0], 3); C = pick(low[1], 3)
             if not A or not C: continue
-            a, b, f = A; c, dd = C
+            a, b, e = A; c, dd, f = C
             if not inside_ok((a, b)) or not inside_ok((c, dd)): continue
-            P = [(a, b), (c, dd), (y, f)]
-            cond = nc(a, f) and nc(b, f)
-        elif pat == 'i2-2':
-            A = pick(low[0], 4); D = pick(low[1], 1)
+            P = [(a, b), (c, dd), (e, f)]
+            cond = nc(e, a) and nc(e, b) and nc(f, c) and nc(f, dd)
+        elif pat == 'f':
+            A = pick(low[0], 4); D = pick(low[1], 2)
             if not A or not D: continue
-            a, b, c, f = A; dd = D[0]
+            a, b, c, e = A; dd, f = D
             if not inside_ok((a, b)): continue
-            P = [(a, b), (c, dd), (y, f)]
-            cond = nc(a, f) and nc(b, f)
-        elif pat == 'i2-3':
-            A = pick(low[0], 3); D = pick(low[1], 2)
-            if not A or not D: continue
-            a, b, c = A; dd, f = D
-            if not inside_ok((a, b)): continue
-            P = [(a, b), (c, dd), (y, f)]
-            cond = nc(a, c) and nc(b, c) and nc(dd, f)
-        elif pat == 'i2-4':
-            A = pick(low[0], 3); D = pick(low[1], 2)
-            if not A or not D: continue
-            a, c, f = A; b, dd = D
-            P = [(a, b), (c, dd), (y, f)]
-            cond = nc(f, a) and nc(f, c) and nc(b, dd)
-        elif pat == 'i3':
-            A = pick(low[0], 3); C = pick(low[1], 1); D = pick(low[2], 1)
-            if not A or not C or not D: continue
-            a, b, f = A; c = C[0]; dd = D[0]
-            if not inside_ok((a, b)): continue
-            P = [(a, b), (c, dd), (y, f)]
-            cond = nc(a, f) and nc(b, f)
-    lhs = star(n, es, P, t)
-    record(pat, lhs, cond)
-print('trials', trials, 'pattern: [agree with (*) true, agree with (*) false, DISAGREE]')
-for k in sorted(res):
-    print(' ', k, res[k])
+            P = [(a, b), (c, dd), (e, f)]
+            cond = nc(a, c) and nc(a, e) and nc(b, c) and nc(b, e) and nc(dd, f)
+        else:
+            y = ys[0]
+            if pat == 'i2-1':
+                A = pick(low[0], 3); C = pick(low[1], 2)
+                if not A or not C: continue
+                a, b, f = A; c, dd = C
+                if not inside_ok((a, b)) or not inside_ok((c, dd)): continue
+                P = [(a, b), (c, dd), (y, f)]
+                cond = nc(a, f) and nc(b, f)
+            elif pat == 'i2-2':
+                A = pick(low[0], 4); D = pick(low[1], 1)
+                if not A or not D: continue
+                a, b, c, f = A; dd = D[0]
+                if not inside_ok((a, b)): continue
+                P = [(a, b), (c, dd), (y, f)]
+                cond = nc(a, f) and nc(b, f)
+            elif pat == 'i2-3':
+                A = pick(low[0], 3); D = pick(low[1], 2)
+                if not A or not D: continue
+                a, b, c = A; dd, f = D
+                if not inside_ok((a, b)): continue
+                P = [(a, b), (c, dd), (y, f)]
+                cond = nc(a, c) and nc(b, c) and nc(dd, f)
+            elif pat == 'i2-4':
+                A = pick(low[0], 3); D = pick(low[1], 2)
+                if not A or not D: continue
+                a, c, f = A; b, dd = D
+                P = [(a, b), (c, dd), (y, f)]
+                cond = nc(f, a) and nc(f, c) and nc(b, dd)
+            elif pat == 'i3':
+                A = pick(low[0], 3); C = pick(low[1], 1); D = pick(low[2], 1)
+                if not A or not C or not D: continue
+                a, b, f = A; c = C[0]; dd = D[0]
+                if not inside_ok((a, b)): continue
+                P = [(a, b), (c, dd), (y, f)]
+                cond = nc(a, f) and nc(b, f)
+        lhs = star(n, es, P, t)
+        record(pat, lhs, cond)
+    print('trials', trials, 'pattern: [agree with (*) true, agree with (*) false, DISAGREE]')
+    for k in sorted(res):
+        print(' ', k, res[k])

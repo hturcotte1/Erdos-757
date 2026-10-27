@@ -1,0 +1,19 @@
+THM5 cell 10_7_4 {'adjacent': 47, 'fold_inC': 64, 'folds': 113, 'folds_cotrans': 113, 'graphs': 5}
+THM5 cell 10_8_4 {'adjacent': 421, 'blockmin_6': 3, 'blockmin_7': 16, 'blockmin_8': 11, 'fold_inC': 137, 'folds': 755, 'folds_cotrans': 755, 'graphs': 62}
+THM5 cell 14_12_6 {'adjacent': 127, 'blockmin_9': 8, 'fold_inC': 62, 'folds': 165, 'folds_cotrans': 165, 'graphs': 11}
+THM5 cell 12_10_5 {'adjacent': 407, 'blockmin_7': 2, 'blockmin_8': 1, 'blockmin_9': 1, 'fold_inC': 416, 'folds': 1069, 'folds_cotrans': 1069, 'graphs': 60}
+THM5 cell 13_9_5 {'adjacent': 337, 'fold_inC': 755, 'folds': 1175, 'folds_cotrans': 1175, 'graphs': 40}
+THM5 cell 15_11_6 {'adjacent': 440, 'fold_inC': 438, 'folds': 880, 'folds_cotrans': 880, 'graphs': 30}
+THM5 cell 17_13_7 {'adjacent': 92, 'fold_inC': 64, 'folds': 196, 'folds_cotrans': 196, 'graphs': 6}
+THM5 random {'adjacent': 2708, 'blockmin_6': 1, 'blockmin_7': 2, 'fold_inC': 1188, 'folds': 3168, 'folds_cotrans': 2856, 'folds_noncotrans': 312, 'graphs': 400}
+THM3 cell 10_7_4 {'graphs': 5, 'pairpairs': 899, 'slack': 0}
+THM3 cell 14_12_6 {'graphs': 11, 'pairpairs': 12035, 'slack': 0}
+THM3 cell 17_13_7 {'graphs': 6, 'pairpairs': 9000, 'slack': 0}
+THM3 cell 12_10_5 {'graphs': 40, 'pairpairs': 6000, 'slack': 1}
+THM3 cell 15_11_6 {'graphs': 30, 'pairpairs': 4500, 'slack': 1}
+THM3 cell 6_3_2 {'graphs': 1, 'pairpairs': 6, 'slack': 2, 'uncovered': 3, 'uncovered_gadget_notC': 3}
+THM3 cell 9_4_3 {'graphs': 1, 'pairpairs': 168, 'slack': 2}
+THM3 cell 13_9_5 {'graphs': 20, 'pairpairs': 2000, 'slack': 2}
+THM3 cell 8_5_3 {'graphs': 2, 'pairpairs': 90, 'slack': 1}
+CELL 23_21_10: classes 699 with all degrees in {2,3}: 0
+exit 0

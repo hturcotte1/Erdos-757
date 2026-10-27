@@ -1,0 +1,1 @@
+SET B12 n=12 m=10 REALIZABLE {"labellings": 485, "SINGULAR": 0, "NONINJ": 97, "NOTWS": 275, "NONLIN": 0, "APSET": 0, "REAL": 113} true_labelling REAL solution_equals_normalized_set True

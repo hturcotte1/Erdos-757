@@ -1,0 +1,7 @@
+Part A1: 8-line subsets of AG(2,3) in L' violating I11: 0 invariant classes 0
+Part A2: random violators found 771 ; invariant classes overall 2
+violator [[0, 2, 5], [0, 3, 8], [0, 6, 7], [1, 4, 7], [1, 5, 8], [2, 3, 4], [2, 6, 8], [3, 5, 6]] tau 4 slack -1 degrees [2, 2, 2, 3, 3, 3, 3, 3, 3]
+violator [[0, 1, 8], [0, 2, 5], [0, 6, 7], [1, 3, 4], [2, 4, 6], [2, 7, 8], [3, 5, 6], [4, 5, 7]] tau 4 slack -1 degrees [2, 2, 2, 3, 3, 3, 3, 3, 3]
+Part B {'instances': 12, 'lemma7_instances': 124, 'random_violators': 771}
+Part C {'F_samples_slack<=1': 1763, 'gadgets_in_Lp': 66865, 'gadget_not_in_Lp': 11524} invariant classes of F sampled 2
+FAILURES: 0

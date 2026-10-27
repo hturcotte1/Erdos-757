@@ -1,0 +1,1 @@
+C006: 21 points, 19 APs; isomorphic to class 43 of cell(21,19,9,4): True

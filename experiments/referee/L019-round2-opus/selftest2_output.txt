@@ -1,0 +1,4 @@
+F7: copies 1 tau 3 slack -2 linear True P3 True
+AG(2,3): lines 12 F7 copies 36 P3 False
+Fano: F7 copies 0
+random 300: tau mismatches 0 P3 mismatches 0

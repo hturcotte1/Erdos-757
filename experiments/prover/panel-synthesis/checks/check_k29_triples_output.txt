@@ -1,0 +1,8 @@
+n 29 m 23 maxdeg 3 mindeg 2 connected True deg2 18 deg3 11
+linear True
+F7-free True
+P3 True
+tau 12 slack 1
+min transversals 19502
+pairs not inside an edge 337
+triples checked 4078620 uncovered 6 uncovered and admissible 0

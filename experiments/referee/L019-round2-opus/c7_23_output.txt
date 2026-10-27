@@ -1,0 +1,2 @@
+23_21_10 classes 699 classes with all degrees in {2,3}: 0 {'has_deg>=4': 699, 'has_deg<=1': 699}
+3_1_1 classes 1 classes with all degrees in {2,3}: 0 {'has_deg<=1': 1}
