@@ -17,7 +17,7 @@ pieces plus v); Proposition 3 (two-vertex pendant: |X| <= 2 unless the boundary 
 whenever the boundary is nonempty; empty boundary: |X| in {2,3,4}). Computer-assisted: Theorem 4, pattern (a) (H - v connected
 at a degree-3 vertex) never occurs in a minimal counterexample to KT^{L*}: Lemma 2 leaves 12 type triples of non-rich pieces,
 and the exhaustive search finds 359 Claim-B configurations, of which the 206 in C_3 are themselves pieces of L* (P = 0) and
-none has n >= 24. Remaining: GAP R1 (G2 residue), GAP R2 (cases beta, delta of Lemma A+), GAP R3 (E1-hub lemma, KT form).
+none has n >= 24. Theorem 4 is not used in Theorem 6 (under (AH) and n >= 25 its conclusion is immediate) and is kept as an independent check. Remaining: GAP R1 (G2 residue), GAP R2 (cases beta, delta of Lemma A+), GAP R3 (E1-hub lemma, KT form).
 
 ## Files and commands (run from this folder; Python 3; exact integers; one process at a time; nice -n 10; each under timeout)
 | script | command | output | what it shows |
@@ -36,7 +36,9 @@ none has n >= 24. Remaining: GAP R1 (G2 residue), GAP R2 (cases beta, delta of L
 | sanity24.py | `timeout 3000 nice -n 10 python3 sanity24.py > sanity24_output.txt` | sanity24_output.txt | S1: the judge's 186 E1-hubs recomputed with own code: tau(H) = tau(G') + 2, A(H) = A(G') - 16, P(H) = 0 exactly for all; S2: 400 non-b-configuration triples: tau(H) = tau(G') + 1, A(H) = A(G') + 116; S3: 4,693 two-vertex and 1,094 one-vertex pendant additions to 102 stored graphs all in C_3 |
 
 Inputs: experiments/prover/L021/closure_results.json (the 32 pieces), stored refereed cell lists in experiments/prover/L017/out/
-(extracted from the L012-L016 tarballs; read-only). L021's kt.py is not imported.
+(extracted from the L012-L016 tarballs; read-only). Imports: hyp24.py and all scripts except pieces_info.py are self-contained; pieces_info.py (only) imports `tau_masks`, `masks`, `min_transversals`, `A_value` from L021's kt.py (experiments/prover/L021) to print the basic piece data. All C1 data (n, m, tau, W, degrees, (L1), richness) were recomputed independently with their own code by both round-1 referees.
+
+Re-running pattern_a3.py: `python3 pattern_a3.py <mode> [start] [output.json]`; the optional third argument is the output JSON path (default: the evidence file of record `pattern_a3_<mode>_results.json`). To re-run WITHOUT overwriting the evidence, pass a scratch path, e.g. `timeout 7000 nice -n 10 python3 pattern_a3.py poor 0 /path/to/scratch_poor.json`.
 
 ## Search method of pattern_a3.py (complete)
 Configuration: three disjoint pieces, g = {g1,g2,g3} (one vertex per piece, piece-degree <= 2, up to the automorphisms of each
@@ -58,7 +60,7 @@ minimum transversals (via clause patterns).
 - W2 (GAP R2; finite in principle). Case (beta) of Lemma A+: H = {v} u F_v u F_w with F_v, F_w pieces, |F_w| >= |F_v| >= 8, w a
   vertex of F_v of piece-degree 3 that is not a co-vertex of v, v in F_w, all three edges at v and all components of
   H - v - V(F_v) inside F_w, n <= 31. Case (delta): H covered by v and the pieces F_v, F_w, F_{w'} (w, w' co-vertices of v of
-  H-degree 3 on different edges at v), n <= 46. Enumerate the overlap patterns of the two (three) pieces, require (AH)
+  H-degree 3 on different edges at v), n <= 46. The proofs of (beta) and (delta) give E(H) = E(F_v) u E(F_w) (resp. the union of the edge sets of three pieces), so this is a finite gluing enumeration of two (three) pieces of L*: enumerate the overlap patterns, require (AH)
   (Lemma 1: unique special component at every degree-3 vertex, met by all three edges, Claim B), and compute P.
 - W3 (GAP R3). The falsifier experiments/falsify/kt-star-e1hub/ (running when this was written) tests the E1-hub mechanism.
 

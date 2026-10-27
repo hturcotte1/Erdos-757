@@ -185,5 +185,6 @@ TYPES = TYPES[start:]
 if start: mode = mode + '_from%d' % start
 print('mode', mode, 'types', TYPES, flush=True)
 tot, out = run(TYPES, mode)
-json.dump(dict(totals=tot, configs=out), open(f'/home/user/Erdos-757/experiments/prover/L024/pattern_a3_{mode}_results.json', 'w'))
+outpath = sys.argv[3] if len(sys.argv) > 3 else f'/home/user/Erdos-757/experiments/prover/L024/pattern_a3_{mode}_results.json'  # default = evidence of record; pass another path to re-run without overwriting it
+json.dump(dict(totals=tot, configs=out), open(outpath, 'w'))
 print('done', f'[{time.time()-t0:.0f}s]')
