@@ -1,0 +1,82 @@
+(3, 1, 1) A -16 D 3 count 1 complete True nsrc 20 
+(6, 3, 2) A 3 D 3 count 1 complete True nsrc 15 
+(8, 5, 3) A -5 D 4 count 2 complete True nsrc 20 DISAGREE
+(9, 4, 3) A -13 D 3 count 1 complete True nsrc 15 
+(10, 7, 4) A -13 D 4 count 4 complete True nsrc 20 DISAGREE
+(11, 6, 4) A -21 D 4 count 0 complete True nsrc 17 
+(11, 7, 4) A 14 D 3 count 35 complete True nsrc 14 
+(12, 6, 4) A 6 D 3 count 4 complete True nsrc 12 
+(12, 10, 5) A 14 D 4 count 149 complete True nsrc 20 DISAGREE
+(13, 8, 5) A -29 D 4 count 0 complete True nsrc 17 
+(13, 9, 5) A 6 D 3 count 84 complete True nsrc 15 DISAGREE
+(14, 7, 5) A -37 D 3 count 0 complete True nsrc 17 
+(14, 8, 5) A -2 D 3 count 9 complete True nsrc 14 
+(14, 12, 6) A 6 D 3 count 2 complete True nsrc 15 DISAGREE
+(15, 7, 5) A -10 D 3 count 2 complete True nsrc 12 
+(15, 11, 6) A -2 D 4 count 19 complete True nsrc 20 DISAGREE
+(16, 9, 6) A -45 D 3 count 0 complete True nsrc 15 
+(16, 10, 6) A -10 D 3 count 16 complete True nsrc 15 DISAGREE
+(17, 8, 6) A -53 D 4 count 0 complete True nsrc 15 
+(17, 9, 6) A -18 D 3 count 0 complete True nsrc 14 
+(17, 13, 7) A -10 D 3 count 6 complete True nsrc 13 DISAGREE
+(18, 9, 6) A 9 D 3 count 22 complete True nsrc 11 
+(18, 12, 7) A -18 D 4 count 0 complete True nsrc 18 
+(19, 10, 7) A -61 D 3 count 0 complete True nsrc 15 
+(19, 11, 7) A -26 D 3 count 0 complete True nsrc 14 
+(19, 12, 7) A 9 D 3 count 833 complete True nsrc 11 
+(20, 10, 7) A -34 D 3 count 0 complete True nsrc 10 
+(20, 11, 7) A 1 D 3 count 45 complete True nsrc 12 
+(20, 14, 8) A -26 D 3 count 0 complete True nsrc 12 
+(20, 15, 8) A 9 D 3 count 953 complete True nsrc 8 DISAGREE
+(21, 10, 7) A -7 D 3 count 5 complete True nsrc 8 
+(21, 13, 8) A -34 D 4 count 0 complete True nsrc 13 
+(21, 14, 8) A 1 D 3 count 299 complete True nsrc 9 
+(21, 18, 9) A 9 D 3 count 0 complete True nsrc 8 
+(22, 11, 8) A -77 D 3 count 0 complete True nsrc 11 
+(22, 12, 8) A -42 D 3 count 0 complete True nsrc 8 
+(22, 13, 8) A -7 D 3 count 85 complete True nsrc 8 
+(22, 17, 9) A 1 D 4 count 37 complete True nsrc 11 DISAGREE
+(23, 11, 8) A -50 D 3 count 0 complete True nsrc 8 
+(23, 12, 8) A -15 D 3 count 0 complete True nsrc 8 
+(23, 13, 9) A -112 D 2 count 0 complete True nsrc 4 
+(23, 14, 9) A -77 D 3 count 0 complete True nsrc 4 
+(23, 15, 9) A -42 D 3 count 0 complete True nsrc 10 
+(23, 16, 9) A -7 D 3 count 178 complete True nsrc 5 DISAGREE
+(23, 20, 10) A 1 D 3 count 0 complete True nsrc 4 
+(24, 12, 8) A 12 D 3 count 129 complete True nsrc 5 
+(24, 12, 9) A -120 D 2 count 0 complete True nsrc 4 
+(24, 13, 9) A -85 D 3 count 0 complete True nsrc 4 
+(24, 14, 9) A -50 D 3 count 0 complete True nsrc 8 
+(24, 15, 9) A -15 D 3 count 0 complete True nsrc 7 
+(24, 18, 10) A -42 D 3 count 0 complete True nsrc 4 
+(24, 19, 10) A -7 D 3 count 0 complete True nsrc 7 
+(25, 12, 9) A -93 D 3 count 0 complete True nsrc 11 
+(25, 13, 9) A -58 D 3 count 0 complete True nsrc 7 
+(25, 14, 9) A -23 D 3 count 0 complete True nsrc 6 
+(25, 15, 9) A 12 D 3 count 6849 complete True nsrc 5 
+(25, 16, 10) A -85 D 2 count 0 complete True nsrc 4 
+(25, 17, 10) A -50 D 3 count 0 complete True nsrc 4 
+(25, 18, 10) A -15 D 3 count 0 complete True nsrc 4 
+(25, 22, 11) A -7 D 3 count 0 complete True nsrc 4 
+(26, 13, 9) A -31 D 3 count 0 complete True nsrc 5 
+(26, 14, 9) A 4 D 2 count 3 complete True nsrc 3 
+(26, 14, 10) A -128 D 2 count 0 complete True nsrc 4 
+(26, 15, 10) A -93 D 3 count 0 complete True nsrc 4 
+(26, 16, 10) A -58 D 4 count 0 complete True nsrc 9 
+(26, 17, 10) A -23 D 3 count 0 complete True nsrc 3 
+(26, 21, 11) A -15 D 3 count 0 complete True nsrc 4 
+(27, 13, 10) A -136 D 2 count 0 complete True nsrc 3 
+(27, 14, 10) A -101 D 3 count 0 complete True nsrc 3 
+(27, 15, 10) A -66 D 3 count 0 complete True nsrc 6 
+(27, 16, 10) A -31 D 3 count 0 complete True nsrc 5 
+(27, 18, 11) A -93 D 2 count 0 complete True nsrc 3 
+(27, 19, 11) A -58 D 3 count 0 complete True nsrc 3 
+(27, 20, 11) A -23 D 3 count 0 complete True nsrc 5 
+(28, 14, 10) A -74 D 2 count 0 complete True nsrc 2 
+(28, 17, 11) A -101 D 2 count 0 complete True nsrc 3 
+(28, 18, 11) A -66 D 3 count 0 complete True nsrc 3 
+(28, 19, 11) A -31 D 3 count 0 complete True nsrc 2 
+(28, 23, 12) A -23 D 3 count 0 complete True nsrc 3 
+(29, 15, 11) A -144 D 2 count 0 complete True nsrc 2 
+(29, 16, 11) A -109 D 3 count 0 complete True nsrc 2 
+(29, 22, 12) A -31 D 3 count 0 complete True nsrc 2 

@@ -1,0 +1,2 @@
+class 5: tight sets 37 (sizes [3, 8, 9, 10, 11, 12, 13, 14]); non-realizable tight sets 25; smallest size 8: [(6, 7, 8, 9, 10, 11, 12, 13)]
+class 7: tight sets 37 (sizes [3, 8, 9, 10, 11, 12, 13, 14]); non-realizable tight sets 25; smallest size 8: [(6, 7, 8, 9, 10, 11, 12, 13)]

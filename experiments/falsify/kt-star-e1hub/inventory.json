@@ -1,0 +1,5190 @@
+{
+ "(3, 1, 1)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_3_1_1_D3.txt",
+  "D": 3,
+  "count": 1,
+  "complete": true,
+  "A": -16,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_3_1_1_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_3_1_1_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_3_1_1_D4.txt",
+    4,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_3_1_1_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_3_1_1_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_3_1_1_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_3_1_1_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_3_1_1_D4.txt",
+    4,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_3_1_1_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_3_1_1_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_3_1_1_D4.txt",
+    4,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_3_1_1_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_3_1_1_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_3_1_1_D4.txt",
+    4,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_3_1_1_D5.txt",
+    5,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_3_1_1_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_3_1_1_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_3_1_1_D4.txt",
+    4,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_3_1_1_D5.txt",
+    5,
+    1,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_3_1_1.txt",
+    null,
+    1,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(6, 3, 2)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_6_3_2_D3.txt",
+  "D": 3,
+  "count": 1,
+  "complete": true,
+  "A": 3,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_6_3_2_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_6_3_2_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_6_3_2_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_6_3_2_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_6_3_2_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_6_3_2_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_6_3_2_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_6_3_2_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_6_3_2_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_6_3_2_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_6_3_2_D4.txt",
+    4,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_6_3_2_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_6_3_2_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_6_3_2_D4.txt",
+    4,
+    1,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_6_3_2.txt",
+    null,
+    1,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(8, 5, 3)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_8_5_3_D4.txt",
+  "D": 4,
+  "count": 2,
+  "complete": true,
+  "A": -5,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_8_5_3_D4.txt",
+    4,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_8_5_3_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_8_5_3_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_8_5_3_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_8_5_3_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_8_5_3_D4.txt",
+    4,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_8_5_3_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_8_5_3_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_8_5_3_D4.txt",
+    4,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_8_5_3_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_8_5_3_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_8_5_3_D4.txt",
+    4,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_8_5_3_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_8_5_3_D5.txt",
+    5,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_8_5_3_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_8_5_3_D4.txt",
+    4,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_8_5_3_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_8_5_3_D5.txt",
+    5,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_8_5_3_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_8_5_3.txt",
+    null,
+    1,
+    true
+   ]
+  ],
+  "disagree": true
+ },
+ "(9, 4, 3)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_9_4_3_D3.txt",
+  "D": 3,
+  "count": 1,
+  "complete": true,
+  "A": -13,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_9_4_3_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_9_4_3_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_9_4_3_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_9_4_3_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_9_4_3_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_9_4_3_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_9_4_3_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_9_4_3_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_9_4_3_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_9_4_3_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_9_4_3_D4.txt",
+    4,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_9_4_3_D3.txt",
+    3,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_9_4_3_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_9_4_3_D4.txt",
+    4,
+    1,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_9_4_3.txt",
+    null,
+    1,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(10, 7, 4)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_10_7_4_D4.txt",
+  "D": 4,
+  "count": 4,
+  "complete": true,
+  "A": -13,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_10_7_4_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_10_7_4_D4.txt",
+    4,
+    4,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_10_7_4_D3.txt",
+    3,
+    4,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_10_7_4_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_10_7_4_D3.txt",
+    3,
+    4,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_10_7_4_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_10_7_4_D4.txt",
+    4,
+    4,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_10_7_4_D3.txt",
+    3,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_10_7_4_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_10_7_4_D4.txt",
+    4,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_10_7_4_D3.txt",
+    3,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_10_7_4_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_10_7_4_D5.txt",
+    5,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_10_7_4_D4.txt",
+    4,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_10_7_4_D3.txt",
+    3,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_10_7_4_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_10_7_4_D5.txt",
+    5,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_10_7_4_D4.txt",
+    4,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_10_7_4_D3.txt",
+    3,
+    4,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_10_7_4.txt",
+    null,
+    1,
+    true
+   ]
+  ],
+  "disagree": true
+ },
+ "(11, 6, 4)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_11_6_4_D4.txt",
+  "D": 4,
+  "count": 0,
+  "complete": true,
+  "A": -21,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_11_6_4_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_11_6_4_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_11_6_4_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_11_6_4_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_11_6_4_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_11_6_4_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_11_6_4_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_11_6_4_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_11_6_4_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_11_6_4_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_11_6_4_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_11_6_4_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_11_6_4_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_11_6_4_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_11_6_4_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_11_6_4_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_11_6_4_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(11, 7, 4)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_11_7_4_D3.txt",
+  "D": 3,
+  "count": 35,
+  "complete": true,
+  "A": 14,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_11_7_4_D3.txt",
+    3,
+    35,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_11_7_4_D2.txt",
+    2,
+    4,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_11_7_4_D3.txt",
+    3,
+    35,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_11_7_4_D2.txt",
+    2,
+    4,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_11_7_4_D3.txt",
+    3,
+    35,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_11_7_4_D2.txt",
+    2,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_11_7_4_D3.txt",
+    3,
+    35,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_11_7_4_D2.txt",
+    2,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_11_7_4_D4.txt",
+    4,
+    35,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_11_7_4_D3.txt",
+    3,
+    35,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_11_7_4_D2.txt",
+    2,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_11_7_4_D4.txt",
+    4,
+    35,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_11_7_4_D3.txt",
+    3,
+    35,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_11_7_4_D2.txt",
+    2,
+    4,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(12, 6, 4)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_12_6_4_D3.txt",
+  "D": 3,
+  "count": 4,
+  "complete": true,
+  "A": 6,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_12_6_4_D3.txt",
+    3,
+    4,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_12_6_4_D2.txt",
+    2,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_12_6_4_D3.txt",
+    3,
+    4,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_12_6_4_D2.txt",
+    2,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_12_6_4_D3.txt",
+    3,
+    4,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_12_6_4_D2.txt",
+    2,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_12_6_4_D3.txt",
+    3,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_12_6_4_D2.txt",
+    2,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_12_6_4_D3.txt",
+    3,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_12_6_4_D2.txt",
+    2,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_12_6_4_D3.txt",
+    3,
+    4,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_12_6_4_D2.txt",
+    2,
+    2,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(12, 10, 5)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_12_10_5_D4.txt",
+  "D": 4,
+  "count": 149,
+  "complete": true,
+  "A": 14,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_12_10_5_D4.txt",
+    4,
+    149,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_12_10_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_12_10_5_D3.txt",
+    3,
+    149,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_12_10_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_12_10_5_D3.txt",
+    3,
+    149,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_12_10_5_D4.txt",
+    4,
+    149,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_12_10_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_12_10_5_D3.txt",
+    3,
+    149,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_12_10_5_D4.txt",
+    4,
+    149,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_12_10_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_12_10_5_D3.txt",
+    3,
+    149,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_12_10_5_D5.txt",
+    5,
+    149,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_12_10_5_D4.txt",
+    4,
+    149,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_12_10_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_12_10_5_D3.txt",
+    3,
+    149,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_12_10_5_D5.txt",
+    5,
+    149,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_12_10_5_D4.txt",
+    4,
+    149,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_12_10_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_12_10_5_D3.txt",
+    3,
+    149,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_12_10_5.txt",
+    null,
+    1,
+    true
+   ]
+  ],
+  "disagree": true
+ },
+ "(13, 8, 5)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_13_8_5_D4.txt",
+  "D": 4,
+  "count": 0,
+  "complete": true,
+  "A": -29,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_13_8_5_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_13_8_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_13_8_5_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_13_8_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_13_8_5_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_13_8_5_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_13_8_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_13_8_5_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_13_8_5_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_13_8_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_13_8_5_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_13_8_5_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_13_8_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_13_8_5_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_13_8_5_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_13_8_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_13_8_5_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(13, 9, 5)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_13_9_5_D3.txt",
+  "D": 3,
+  "count": 84,
+  "complete": true,
+  "A": 6,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_13_9_5_D3.txt",
+    3,
+    84,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_13_9_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_13_9_5_D3.txt",
+    3,
+    84,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_13_9_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_13_9_5_D3.txt",
+    3,
+    84,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_13_9_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_13_9_5_D3.txt",
+    3,
+    84,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_13_9_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_13_9_5_D3.txt",
+    3,
+    84,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_13_9_5_D4.txt",
+    4,
+    84,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_13_9_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_13_9_5_D3.txt",
+    3,
+    84,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_13_9_5_D4.txt",
+    4,
+    84,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_13_9_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_13_9_5.txt",
+    null,
+    1,
+    true
+   ]
+  ],
+  "disagree": true
+ },
+ "(14, 7, 5)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_14_7_5_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -37,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_14_7_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_14_7_5_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_14_7_5_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_14_7_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_14_7_5_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_14_7_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_14_7_5_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_14_7_5_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_14_7_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_14_7_5_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_14_7_5_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_14_7_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_14_7_5_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_14_7_5_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_14_7_5_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_14_7_5_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_14_7_5_D4.txt",
+    4,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(14, 8, 5)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_14_8_5_D3.txt",
+  "D": 3,
+  "count": 9,
+  "complete": true,
+  "A": -2,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_14_8_5_D3.txt",
+    3,
+    9,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_14_8_5_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_14_8_5_D3.txt",
+    3,
+    9,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_14_8_5_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_14_8_5_D3.txt",
+    3,
+    9,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_14_8_5_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_14_8_5_D3.txt",
+    3,
+    9,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_14_8_5_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_14_8_5_D4.txt",
+    4,
+    9,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_14_8_5_D3.txt",
+    3,
+    9,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_14_8_5_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_14_8_5_D4.txt",
+    4,
+    9,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_14_8_5_D3.txt",
+    3,
+    9,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_14_8_5_D2.txt",
+    2,
+    1,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(14, 12, 6)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_14_12_6_D3.txt",
+  "D": 3,
+  "count": 2,
+  "complete": true,
+  "A": 6,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_14_12_6_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_14_12_6_D4.txt",
+    4,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_14_12_6_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_14_12_6_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_14_12_6_D4.txt",
+    4,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_14_12_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_14_12_6_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_14_12_6_D4.txt",
+    4,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_14_12_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_14_12_6_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_14_12_6_D4.txt",
+    4,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_14_12_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_14_12_6_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_14_12_6_D4.txt",
+    4,
+    2,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_14_12_6.txt",
+    null,
+    0,
+    true
+   ]
+  ],
+  "disagree": true
+ },
+ "(15, 7, 5)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_15_7_5_D3.txt",
+  "D": 3,
+  "count": 2,
+  "complete": true,
+  "A": -10,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_15_7_5_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_15_7_5_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_15_7_5_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_15_7_5_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_15_7_5_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_15_7_5_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_15_7_5_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_15_7_5_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_15_7_5_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_15_7_5_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_15_7_5_D3.txt",
+    3,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_15_7_5_D2.txt",
+    2,
+    1,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(15, 11, 6)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_15_11_6_D4.txt",
+  "D": 4,
+  "count": 19,
+  "complete": true,
+  "A": -2,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_15_11_6_D4.txt",
+    4,
+    19,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_15_11_6_D3.txt",
+    3,
+    19,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_15_11_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_15_11_6_D3.txt",
+    3,
+    19,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_15_11_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_15_11_6_D4.txt",
+    4,
+    19,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_15_11_6_D3.txt",
+    3,
+    19,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_15_11_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_15_11_6_D4.txt",
+    4,
+    19,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_15_11_6_D3.txt",
+    3,
+    19,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_15_11_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_15_11_6_D5.txt",
+    5,
+    19,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_15_11_6_D4.txt",
+    4,
+    19,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_15_11_6_D3.txt",
+    3,
+    19,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_15_11_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_15_11_6_D5.txt",
+    5,
+    19,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_15_11_6_D4.txt",
+    4,
+    19,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_15_11_6_D3.txt",
+    3,
+    19,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_15_11_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_15_11_6.txt",
+    null,
+    1,
+    true
+   ]
+  ],
+  "disagree": true
+ },
+ "(16, 9, 6)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_16_9_6_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -45,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_16_9_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_16_9_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_16_9_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_16_9_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_16_9_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_16_9_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_16_9_6_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_16_9_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_16_9_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_16_9_6_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_16_9_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_16_9_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_16_9_6_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_16_9_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_16_9_6_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(16, 10, 6)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_16_10_6_D3.txt",
+  "D": 3,
+  "count": 16,
+  "complete": true,
+  "A": -10,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_16_10_6_D3.txt",
+    3,
+    16,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_16_10_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_16_10_6_D3.txt",
+    3,
+    16,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_16_10_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_16_10_6_D3.txt",
+    3,
+    16,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_16_10_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_16_10_6_D3.txt",
+    3,
+    16,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_16_10_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_16_10_6_D3.txt",
+    3,
+    16,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_16_10_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_16_10_6_D4.txt",
+    4,
+    16,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_16_10_6_D3.txt",
+    3,
+    16,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_16_10_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_16_10_6_D4.txt",
+    4,
+    16,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_16_10_6.txt",
+    null,
+    1,
+    true
+   ]
+  ],
+  "disagree": true
+ },
+ "(17, 8, 6)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_17_8_6_D4.txt",
+  "D": 4,
+  "count": 0,
+  "complete": true,
+  "A": -53,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_17_8_6_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_17_8_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_17_8_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_17_8_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_17_8_6_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_17_8_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_17_8_6_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_17_8_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_17_8_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_17_8_6_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_17_8_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_17_8_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_17_8_6_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_17_8_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_17_8_6_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(17, 9, 6)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_17_9_6_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -18,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_17_9_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_17_9_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_17_9_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_17_9_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_17_9_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_17_9_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_17_9_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_17_9_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_17_9_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_17_9_6_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_17_9_6_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_17_9_6_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_17_9_6_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_17_9_6_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(17, 13, 7)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_17_13_7_D3.txt",
+  "D": 3,
+  "count": 6,
+  "complete": true,
+  "A": -10,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_17_13_7_D3.txt",
+    3,
+    6,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_17_13_7_D3.txt",
+    3,
+    6,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_17_13_7_D3.txt",
+    3,
+    6,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_17_13_7_D3.txt",
+    3,
+    6,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_17_13_7_D4.txt",
+    4,
+    6,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_17_13_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_17_13_7_D3.txt",
+    3,
+    6,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_17_13_7_D4.txt",
+    4,
+    6,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_17_13_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_17_13_7_D3.txt",
+    3,
+    6,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_17_13_7_D4.txt",
+    4,
+    6,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_17_13_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_17_13_7.txt",
+    null,
+    1,
+    true
+   ]
+  ],
+  "disagree": true
+ },
+ "(18, 9, 6)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_18_9_6_D3.txt",
+  "D": 3,
+  "count": 22,
+  "complete": true,
+  "A": 9,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_18_9_6_D2.txt",
+    2,
+    5,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_18_9_6_D3.txt",
+    3,
+    22,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_18_9_6_D2.txt",
+    2,
+    5,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_18_9_6_D3.txt",
+    3,
+    22,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_18_9_6_D2.txt",
+    2,
+    5,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_18_9_6_D2.txt",
+    2,
+    5,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_18_9_6_D3.txt",
+    3,
+    22,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_18_9_6_D2.txt",
+    2,
+    5,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_18_9_6_D3.txt",
+    3,
+    22,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_18_9_6_D2.txt",
+    2,
+    5,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_18_9_6_D3.txt",
+    3,
+    22,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(18, 12, 7)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_18_12_7_D4.txt",
+  "D": 4,
+  "count": 0,
+  "complete": true,
+  "A": -18,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_18_12_7_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_18_12_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_18_12_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_18_12_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_18_12_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_18_12_7_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_18_12_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_18_12_7_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_18_12_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_18_12_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_18_12_7_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_18_12_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_18_12_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_18_12_7_D5.txt",
+    5,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_18_12_7_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_18_12_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_18_12_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_18_12_7_D5.txt",
+    5,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(19, 10, 7)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_19_10_7_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -61,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_19_10_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_19_10_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_19_10_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_19_10_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_19_10_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_19_10_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_19_10_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_19_10_7_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_19_10_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_19_10_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_19_10_7_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_19_10_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_19_10_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_19_10_7_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_19_10_7_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(19, 11, 7)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_19_11_7_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -26,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_19_11_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_19_11_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_19_11_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_19_11_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_19_11_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_19_11_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_19_11_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_19_11_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_19_11_7_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_19_11_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_19_11_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_19_11_7_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_19_11_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_19_11_7_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(19, 12, 7)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_19_12_7_D3.txt",
+  "D": 3,
+  "count": 833,
+  "complete": true,
+  "A": 9,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_19_12_7_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_19_12_7_D3.txt",
+    3,
+    833,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_19_12_7_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_19_12_7_D3.txt",
+    3,
+    833,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_19_12_7_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_19_12_7_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_19_12_7_D3.txt",
+    3,
+    833,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_19_12_7_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_19_12_7_D3.txt",
+    3,
+    833,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_19_12_7_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_19_12_7_D3.txt",
+    3,
+    833,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(20, 10, 7)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_20_10_7_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -34,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_20_10_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_20_10_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_20_10_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_20_10_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_20_10_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_20_10_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_20_10_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_20_10_7_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_20_10_7_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_20_10_7_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(20, 11, 7)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_20_11_7_D3.txt",
+  "D": 3,
+  "count": 45,
+  "complete": true,
+  "A": 1,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_20_11_7_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L014/cells/cell_20_11_7_D3.txt",
+    3,
+    45,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_20_11_7_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_20_11_7_D3.txt",
+    3,
+    45,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_20_11_7_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_20_11_7_D3.txt",
+    3,
+    45,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_20_11_7_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_20_11_7_D3.txt",
+    3,
+    45,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_20_11_7_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_20_11_7_D3.txt",
+    3,
+    45,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_20_11_7_D2.txt",
+    2,
+    1,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_20_11_7_D3.txt",
+    3,
+    45,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(20, 14, 8)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_20_14_8_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -26,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_20_14_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_20_14_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_20_14_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_20_14_8_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_20_14_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_20_14_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_20_14_8_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_20_14_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_20_14_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_20_14_8_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_20_14_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_20_14_8_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(20, 15, 8)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_20_15_8_D3.txt",
+  "D": 3,
+  "count": 953,
+  "complete": true,
+  "A": 9,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_20_15_8_D3.txt",
+    3,
+    953,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_20_15_8_D3.txt",
+    3,
+    953,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_20_15_8_D3.txt",
+    3,
+    953,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_20_15_8_D4.txt",
+    4,
+    953,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_20_15_8_D3.txt",
+    3,
+    953,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_20_15_8_D4.txt",
+    4,
+    953,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_20_15_8_D3.txt",
+    3,
+    953,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_20_15_8.txt",
+    null,
+    1,
+    true
+   ]
+  ],
+  "disagree": true
+ },
+ "(21, 10, 7)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_21_10_7_D3.txt",
+  "D": 3,
+  "count": 5,
+  "complete": true,
+  "A": -7,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_21_10_7_D2.txt",
+    2,
+    2,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_21_10_7_D3.txt",
+    3,
+    5,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_21_10_7_D2.txt",
+    2,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_21_10_7_D3.txt",
+    3,
+    5,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_21_10_7_D2.txt",
+    2,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_21_10_7_D3.txt",
+    3,
+    5,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_21_10_7_D2.txt",
+    2,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_21_10_7_D3.txt",
+    3,
+    5,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(21, 13, 8)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_21_13_8_D4.txt",
+  "D": 4,
+  "count": 0,
+  "complete": true,
+  "A": -34,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_21_13_8_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_21_13_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_21_13_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_21_13_8_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_21_13_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_21_13_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_21_13_8_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_21_13_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_21_13_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_21_13_8_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_21_13_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_21_13_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_21_13_8_D4.txt",
+    4,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(21, 14, 8)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_21_14_8_D3.txt",
+  "D": 3,
+  "count": 299,
+  "complete": true,
+  "A": 1,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_21_14_8_D3.txt",
+    3,
+    299,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_21_14_8_D3.txt",
+    3,
+    299,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_21_14_8_D3.txt",
+    3,
+    299,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_21_14_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_21_14_8_D3.txt",
+    3,
+    299,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_21_14_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_21_14_8_D3.txt",
+    3,
+    299,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_21_14_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_21_14_8_D3.txt",
+    3,
+    299,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(21, 18, 9)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_21_18_9_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": 9,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_21_18_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_21_18_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_21_18_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_21_18_9_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_21_18_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_21_18_9_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_21_18_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_21_18_9_D4.txt",
+    4,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(22, 11, 8)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_22_11_8_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -77,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_22_11_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_22_11_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_22_11_8_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_22_11_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_22_11_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_22_11_8_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_22_11_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_22_11_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_22_11_8_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_22_11_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_22_11_8_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(22, 12, 8)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_22_12_8_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -42,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_22_12_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_22_12_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_22_12_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_22_12_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_22_12_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_22_12_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_22_12_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_22_12_8_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(22, 13, 8)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_22_13_8_D3.txt",
+  "D": 3,
+  "count": 85,
+  "complete": true,
+  "A": -7,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_22_13_8_D3.txt",
+    3,
+    85,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_22_13_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_22_13_8_D3.txt",
+    3,
+    85,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_22_13_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_22_13_8_D3.txt",
+    3,
+    85,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_22_13_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_22_13_8_D3.txt",
+    3,
+    85,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_22_13_8_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(22, 17, 9)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L014/cells/cell_22_17_9_D4.txt",
+  "D": 4,
+  "count": 37,
+  "complete": true,
+  "A": 1,
+  "sources": [
+   [
+    "prover/L017/out/L014/cells/cell_22_17_9_D4.txt",
+    4,
+    37,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_22_17_9_D3.txt",
+    3,
+    37,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_22_17_9_D4.txt",
+    4,
+    37,
+    true
+   ],
+   [
+    "prover/L017/out/L012/cells/cell_22_17_9_D3.txt",
+    3,
+    37,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_22_17_9_D4.txt",
+    4,
+    37,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_22_17_9_D3.txt",
+    3,
+    37,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_22_17_9_D4.txt",
+    4,
+    37,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_22_17_9_D3.txt",
+    3,
+    37,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_22_17_9_D4.txt",
+    4,
+    37,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_22_17_9_D3.txt",
+    3,
+    37,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_22_17_9.txt",
+    null,
+    0,
+    true
+   ]
+  ],
+  "disagree": true
+ },
+ "(23, 11, 8)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_11_8_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -50,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_23_11_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_23_11_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_23_11_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_23_11_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_23_11_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_23_11_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_23_11_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_23_11_8_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(23, 12, 8)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_12_8_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -15,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_23_12_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_23_12_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_23_12_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_23_12_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_23_12_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_23_12_8_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_23_12_8_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_23_12_8_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(23, 13, 9)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_13_9_D2.txt",
+  "D": 2,
+  "count": 0,
+  "complete": true,
+  "A": -112,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_23_13_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_23_13_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_23_13_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_23_13_9_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(23, 14, 9)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_14_9_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -77,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_23_14_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_23_14_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_23_14_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_23_14_9_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(23, 15, 9)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_15_9_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -42,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_23_15_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_23_15_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_23_15_9_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_23_15_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_23_15_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_23_15_9_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_23_15_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_23_15_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_23_15_9_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_23_15_9_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(23, 16, 9)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_16_9_D3.txt",
+  "D": 3,
+  "count": 178,
+  "complete": true,
+  "A": -7,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_23_16_9_D3.txt",
+    3,
+    178,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_23_16_9_D3.txt",
+    3,
+    178,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_23_16_9_D3.txt",
+    3,
+    178,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_23_16_9_D3.txt",
+    3,
+    178,
+    true
+   ],
+   [
+    "20261027-0300-transversal-richness/inputs/cell_23_16_9.txt",
+    null,
+    1,
+    true
+   ]
+  ],
+  "disagree": true
+ },
+ "(23, 20, 10)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_23_20_10_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": 1,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_23_20_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_23_20_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_23_20_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_23_20_10_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(24, 12, 8)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_24_12_8_D3.txt",
+  "D": 3,
+  "count": 129,
+  "complete": true,
+  "A": 12,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_24_12_8_D2.txt",
+    2,
+    14,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_24_12_8_D3.txt",
+    3,
+    129,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_24_12_8_D2.txt",
+    2,
+    14,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_24_12_8_D3.txt",
+    3,
+    129,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_24_12_8_D2.txt",
+    2,
+    14,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(24, 12, 9)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_24_12_9_D2.txt",
+  "D": 2,
+  "count": 0,
+  "complete": true,
+  "A": -120,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_24_12_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_24_12_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_24_12_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_24_12_9_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(24, 13, 9)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_24_13_9_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -85,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_24_13_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_24_13_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_24_13_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_24_13_9_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(24, 14, 9)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_24_14_9_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -50,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_24_14_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_24_14_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_24_14_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_24_14_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_24_14_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_24_14_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_24_14_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_24_14_9_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(24, 15, 9)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_24_15_9_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -15,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_24_15_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_24_15_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_24_15_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_24_15_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_24_15_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_24_15_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_24_15_9_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(24, 18, 10)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_24_18_10_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -42,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_24_18_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_24_18_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_24_18_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_24_18_10_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(24, 19, 10)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_24_19_10_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -7,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_24_19_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_24_19_10_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_24_19_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_24_19_10_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_24_19_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_24_19_10_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_24_19_10_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(25, 12, 9)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_25_12_9_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -93,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_25_12_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "prover/L017/out/L013/cells/cell_25_12_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_12_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_12_9_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_12_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_12_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_12_9_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_12_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_25_12_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_25_12_9_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_25_12_9_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(25, 13, 9)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_13_9_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -58,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_25_13_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_13_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_13_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_13_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_13_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_25_13_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_25_13_9_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(25, 14, 9)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_14_9_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -23,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_14_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_14_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_14_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_14_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_25_14_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_25_14_9_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(25, 15, 9)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_15_9_D3.txt",
+  "D": 3,
+  "count": 6849,
+  "complete": true,
+  "A": 12,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_15_9_D2.txt",
+    2,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_15_9_D3.txt",
+    3,
+    6849,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_15_9_D2.txt",
+    2,
+    2,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_25_15_9_D3.txt",
+    3,
+    6849,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_25_15_9_D2.txt",
+    2,
+    2,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(25, 16, 10)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_25_16_10_D2.txt",
+  "D": 2,
+  "count": 0,
+  "complete": true,
+  "A": -85,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_25_16_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_16_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_16_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_25_16_10_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(25, 17, 10)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_25_17_10_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -50,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_25_17_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_17_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_17_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_25_17_10_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(25, 18, 10)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_25_18_10_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -15,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_25_18_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_18_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_18_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_25_18_10_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(25, 22, 11)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_25_22_11_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -7,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_25_22_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_25_22_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_22_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_25_22_11_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(26, 13, 9)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_26_13_9_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -31,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_26_13_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_26_13_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_26_13_9_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_26_13_9_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_26_13_9_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(26, 14, 9)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_26_14_9_D2.txt",
+  "D": 2,
+  "count": 3,
+  "complete": true,
+  "A": 4,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_26_14_9_D2.txt",
+    2,
+    3,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_26_14_9_D2.txt",
+    2,
+    3,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_26_14_9_D2.txt",
+    2,
+    3,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(26, 14, 10)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_26_14_10_D2.txt",
+  "D": 2,
+  "count": 0,
+  "complete": true,
+  "A": -128,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_26_14_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_26_14_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_26_14_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_26_14_10_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(26, 15, 10)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_26_15_10_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -93,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_26_15_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_26_15_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_26_15_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_26_15_10_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(26, 16, 10)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_26_16_10_D4.txt",
+  "D": 4,
+  "count": 0,
+  "complete": true,
+  "A": -58,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_26_16_10_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_26_16_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_26_16_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_26_16_10_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_26_16_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_26_16_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_26_16_10_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_26_16_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_26_16_10_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(26, 17, 10)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_26_17_10_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -23,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_26_17_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_26_17_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_26_17_10_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(26, 21, 11)": {
+  "file": "/home/user/Erdos-757/experiments/prover/L017/out/L013/cells/cell_26_21_11_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -15,
+  "sources": [
+   [
+    "prover/L017/out/L013/cells/cell_26_21_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_26_21_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_26_21_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_26_21_11_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(27, 13, 10)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_13_10_D2.txt",
+  "D": 2,
+  "count": 0,
+  "complete": true,
+  "A": -136,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_13_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_27_13_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_27_13_10_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(27, 14, 10)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_14_10_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -101,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_14_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_27_14_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_27_14_10_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(27, 15, 10)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_15_10_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -66,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_15_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_15_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_27_15_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_27_15_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_27_15_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_27_15_10_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(27, 16, 10)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_27_16_10_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -31,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_16_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_27_16_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_27_16_10_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_27_16_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_27_16_10_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(27, 18, 11)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_18_11_D2.txt",
+  "D": 2,
+  "count": 0,
+  "complete": true,
+  "A": -93,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_18_11_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_27_18_11_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_27_18_11_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(27, 19, 11)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_19_11_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -58,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_19_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_27_19_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_27_19_11_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(27, 20, 11)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_20_11_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -23,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_27_20_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_27_20_11_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_27_20_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_27_20_11_D4.txt",
+    4,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_27_20_11_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(28, 14, 10)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_28_14_10_D2.txt",
+  "D": 2,
+  "count": 0,
+  "complete": true,
+  "A": -74,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_28_14_10_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_28_14_10_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(28, 17, 11)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_28_17_11_D2.txt",
+  "D": 2,
+  "count": 0,
+  "complete": true,
+  "A": -101,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_28_17_11_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_28_17_11_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_28_17_11_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(28, 18, 11)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_28_18_11_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -66,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_28_18_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_28_18_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_28_18_11_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(28, 19, 11)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_28_19_11_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -31,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_28_19_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_28_19_11_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(28, 23, 12)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_28_23_12_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -23,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_chk/cell_28_23_12_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_28_23_12_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_28_23_12_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(29, 15, 11)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_29_15_11_D2.txt",
+  "D": 2,
+  "count": 0,
+  "complete": true,
+  "A": -144,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_29_15_11_D2.txt",
+    2,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_29_15_11_D2.txt",
+    2,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(29, 16, 11)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_29_16_11_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -109,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_29_16_11_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_29_16_11_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ },
+ "(29, 22, 12)": {
+  "file": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_29_22_12_D3.txt",
+  "D": 3,
+  "count": 0,
+  "complete": true,
+  "A": -31,
+  "sources": [
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_29_22_12_D3.txt",
+    3,
+    0,
+    true
+   ],
+   [
+    "20261027-0340-induction-n28-n29-f25/out/cells/cell_29_22_12_D3.txt",
+    3,
+    0,
+    true
+   ]
+  ],
+  "disagree": false
+ }
+}

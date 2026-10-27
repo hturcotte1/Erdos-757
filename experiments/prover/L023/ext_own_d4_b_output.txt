@@ -1,0 +1,9 @@
+INPUT 55 covers 5613 pairs 177 extensions 250 EQUAL
+INPUT 56 covers 5613 pairs 176 extensions 248 EQUAL
+INPUT 57 covers 5613 pairs 176 extensions 248 EQUAL
+INPUT 58 covers 5256 pairs 189 extensions 264 EQUAL
+INPUT 59 covers 5163 pairs 189 extensions 270 EQUAL
+INPUT 60 covers 5328 pairs 189 extensions 266 EQUAL
+INPUT 61 covers 5328 pairs 190 extensions 268 EQUAL
+INPUT 62 covers 5256 pairs 189 extensions 264 EQUAL
+INPUT 63 covers 5163 pairs 190 extensions 272 EQUAL
