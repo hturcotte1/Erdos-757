@@ -1,0 +1,1 @@
+yield fit coef [ 5.362 -0.562  1.612 -0.073] rms ln resid 0.92 N 27

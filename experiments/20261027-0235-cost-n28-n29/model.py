@@ -23,7 +23,8 @@ def yield_(n, s, D):
     if D == 2: f = min(f, 0.5)
     return min(f, 50.0)
 NPI = {2: 300.0, 3: 1.0e4, 4: 3.0e4}      # ext_d search nodes per input (central); measured 4e2-1e5, median-ish 1e4 for D=3
-DIRECT_EST = {(18, 10, 6, 3): (5000, 1500)}   # (classes, core-seconds) [heuristic]
+DIRECT_EST = {(18, 10, 6, 3): (5000, 1500)}   # direct enumeration; plus interpolation overrides on the saturated (m=n-2) chain: counts 65771 (13), 949522 (15), ? (17), 29898 (19), ? (21), 0 (23)
+OVERRIDE = {(17, 15, 7, 3): 2.0e5, (21, 19, 9, 3): 3.0e3, (25, 23, 11, 3): 2.0}   # classes [heuristic interpolation]; cost still inputs*npi   # (classes, core-seconds) [heuristic]
 def ncomb(c, kk):
     r = 1.0
     for i in range(kk): r *= (c + i) / (i + 1)
@@ -35,6 +36,7 @@ def evaluate(seen, mult_y=1.0, mult_npi=1.0, rate=1.0e6, d2_sec=0.05):
         if k in est: return est[k]
         n, m, t, D = k; v = seen[k]; s = 3 * n + 2 * m - 11 * t
         if k in DIRECT_EST: est[k] = DIRECT_EST[k][0]; cost[k] = DIRECT_EST[k][1]; return est[k]
+        ov = OVERRIDE.get(k)
         inputs = 0.0
         for b in v['branches']:
             for dec in b['decs']:
@@ -45,6 +47,7 @@ def evaluate(seen, mult_y=1.0, mult_npi=1.0, rate=1.0e6, d2_sec=0.05):
         if D == 2: cost[k] = inputs * d2_sec
         else: cost[k] = inputs * NPI[D] * mult_npi / rate * 1.2
         est[k] = 0.0 if s < 0 else inputs * yield_(n, s, D) * mult_y
+        if ov is not None: est[k] = ov * (mult_y if mult_y != 1 else 1)
         return est[k]
     for k in seen:
         if k not in KNOWN: cls(k)

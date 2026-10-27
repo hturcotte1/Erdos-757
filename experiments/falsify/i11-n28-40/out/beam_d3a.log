@@ -18,3 +18,5 @@
 23 parents 78 kids 39 -> n+1 {'pool': 244, 'minslack': 0, 'hist': {1: 192, 4: 38, 3: 8, 0: 4, 2: 2}} t=3s
 24 parents 238 kids 12 -> n+1 {'pool': 292, 'minslack': 1, 'hist': {2: 224, 1: 68}} t=9s
 25 parents 200 kids 6 -> n+1 {'pool': 206, 'minslack': 0, 'hist': {0: 110, 2: 92, 1: 2, 6: 2}} t=24s
+26 parents 202 kids 64 -> n+1 {'pool': 638, 'minslack': 0, 'hist': {1: 442, 4: 89, 3: 56, 0: 44, 2: 7}} t=34s
+27 parents 289 kids 12 -> n+1 {'pool': 356, 'minslack': 1, 'hist': {1: 186, 2: 158, 3: 12}} t=70s
