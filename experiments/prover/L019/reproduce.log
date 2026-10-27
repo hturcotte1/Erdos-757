@@ -1,5 +1,4 @@
-reproduce.sh, original run (2026-10-27): the steps C1-C7 and the first three C8 runs completed; the fourth C8 run (cell_26_22_11) exceeded the old 1800 s timeout (timeout exit status 124) and `set -e` aborted the script before the final `exit 0`.
-The earlier content of this log ("exit 0") was misleading and has been replaced; the script did NOT finish with exit status 0.
+reproduce.sh, original run (2026-10-27): steps C1-C7 and the first three C8 runs completed; the stored nbhd_cover_output.txt lacked the (26,22,11) line. The cause is NOT recorded (the earlier 'exit 0' log, commit 02d63ff 05:22 UTC, predates nbhd_cover.py itself, 05:30 UTC; the timeout explanation given in the 06:55 revision was a reconstruction and is withdrawn). Every recorded completed run of that step took 5 to 8.5 minutes.
 Round-1 fix: the C8 timeout is now 5400 s; the (26,22,11) C8 line was regenerated separately (see the bottom of this log once appended).
 
 C8 re-run for cell_26_22_11 only (one process, nice -n 10, timeout 5400): started Tue Oct 27 06:54:23 UTC 2026, finished Tue Oct 27 06:59:17 UTC 2026, exit status 0 (about 5 minutes on a quieter machine; the original run was evidently slowed by machine load).
