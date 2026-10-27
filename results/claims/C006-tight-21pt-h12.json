@@ -1,0 +1,43 @@
+{
+ "id": "C006-tight-21pt-h12",
+ "type": "construction",
+ "set": [
+  0,
+  210,
+  396,
+  420,
+  444,
+  792,
+  888,
+  1374,
+  1566,
+  1581,
+  1596,
+  1758,
+  1935,
+  1941,
+  2231,
+  2301,
+  2304,
+  2375,
+  2449,
+  2521,
+  2667
+ ],
+ "notes": "realized (21,19,9) class from cell_21_19_9_D4 via exact rexact (midpoint-labelling search); 21 points h=12 (equals 4/7, not a record); found 2026-10-27",
+ "claimed_h": 12,
+ "witness_sidon_subset": [
+  0,
+  210,
+  396,
+  444,
+  1374,
+  1566,
+  1581,
+  1935,
+  1941,
+  2231,
+  2375,
+  2449
+ ]
+}

@@ -27,5 +27,68 @@
   "connected_hits": 480,
   "classes": 72,
   "filt": "SUMMARY tag=HIT NV=32 total=480 bad_labels=0 linear=480 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=480 survivors_connected=480 wrong_tau_dropped=0 connected_all=480 tau_range=[-1,-1] maxdeg_max=4"
+ },
+ "c": {
+  "dec": [
+   [
+    3,
+    1,
+    1
+   ],
+   [
+    14,
+    12,
+    6
+   ],
+   [
+    14,
+    12,
+    6
+   ]
+  ],
+  "inputs": 66,
+  "hits_in_C": 0,
+  "ext": {
+   "graphs": 66,
+   "bad_tau": 0,
+   "tg_too_small": 0,
+   "searched": 66,
+   "max_min_covers": 75843,
+   "nodes": 520800867,
+   "hits_F7free": 84,
+   "hits_in_C": 0
+  },
+  "connected_hits": 0,
+  "classes": 0,
+  "filt": null
+ },
+ "a": {
+  "dec": [
+   [
+    21,
+    18,
+    9
+   ],
+   [
+    10,
+    7,
+    4
+   ]
+  ],
+  "inputs": 60,
+  "hits_in_C": 408,
+  "ext": {
+   "graphs": 60,
+   "bad_tau": 0,
+   "tg_too_small": 0,
+   "searched": 60,
+   "max_min_covers": 65485,
+   "nodes": 436880930,
+   "hits_F7free": 3105,
+   "hits_in_C": 408
+  },
+  "connected_hits": 408,
+  "classes": 72,
+  "filt": "SUMMARY tag=HIT NV=32 total=408 bad_labels=0 linear=408 contain_F7=0 P3_violated=0 F7free_and_P3_violated=0 survivors=408 survivors_connected=408 wrong_tau_dropped=0 connected_all=408 tau_range=[-1,-1] maxdeg_max=4"
  }
 }
