@@ -44,6 +44,7 @@ configurations have realizable labellings, and the relevant pieces (m <= n-4) ar
 | test_ef_exhaustive.py | `python3 test_ef_exhaustive.py` | test_ef_exhaustive.txt | identities of Steps 2.2-2.3 wherever (*) holds (C6) |
 | local_configs.py | `python3 local_configs.py` | local_configs.txt | local configurations of (b), (f) with an E_1 side realizable; F7 not (C5) |
 | minimal_obstruction_10_7_4.py | `python3 minimal_obstruction_10_7_4.py` | minimal_obstruction_10_7_4.txt | Q10 = (10,7,4)#0 is a minimal non-realizable configuration (C7) |
+| independence_stress.py | `python3 independence_stress.py 1 3000` | independence_stress.txt | Theorem 1(b) on 3,000 random ordered midpoint patterns: 0 dependent (C8) |
 | run_final_checks.sh | `bash run_final_checks.sh` | the files above, run sequentially | final reruns of C2-C5 |
 
 Inputs: experiments/20261027-0300-transversal-richness/inputs/cell_*.txt (stored class lists, from the refereed tarballs of
