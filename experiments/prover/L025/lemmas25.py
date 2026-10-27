@@ -57,6 +57,35 @@ def graphs(specs):
                 n0 = 1 + max(max(e) for e in E)
                 yield p.split('/')[-1], Hyp(E, range(n0))
 
+def p3_fast(E, V):
+    """(P3) e(S) <= |S|-2 for all S with |S| >= 2  <=>  for every pair {x,y} the edges have an SDR in V minus {x,y}.
+    One SDR of all edges is computed first; for each pair only the (at most two) edges represented by x or y are re-routed."""
+    E = [tuple(e) for e in E]
+    V = sorted(set(V) | set(v for e in E for v in e))
+    def aug(f, banned, owner, visited):
+        for v in E[f]:
+            if v in banned or v in visited:
+                continue
+            visited.add(v)
+            if v not in owner or aug(owner[v], banned, owner, visited):
+                owner[v] = f
+                return True
+        return False
+    owner = {}
+    for i in range(len(E)):
+        if not aug(i, set(), owner, set()):
+            return False
+    for x, y in combinations(V, 2):
+        ow = dict(owner)
+        freed = [ow.pop(u) for u in (x, y) if u in ow]
+        for f in freed:
+            if not aug(f, {x, y}, ow, set()):
+                return False
+    return True
+
+def inC(h):
+    return linear(h.E) and (not has_f7(h.E)) and p3_fast(h.E, h.V)
+
 def mt_hit(h, bits_all, bits_any_list):
     """is there a min transversal containing all of bits_all and meeting every mask in bits_any_list"""
     for T in h.min_transversals():
@@ -103,7 +132,7 @@ def main():
         for (a, b, c) in trs[:K]:
             E2, V2 = oplus(E, V, a, b, c); h2 = Hyp(E2, V2)
             two = any(bin(T & bm(h, (a, b, c))).count('1') >= 2 for T in MT)
-            ok = (h2.in_C() == (frozenset((a, b, c)) not in edges)) and h2.tau() == tau + (1 if two else 2)
+            ok = (inC(h2) == (frozenset((a, b, c)) not in edges)) and h2.tau() == tau + (1 if two else 2)
             st['L1'] += 1
             if not ok: bad.append(('L1', cell, E, (a, b, c)))
             for (p, q, r) in ((a, b, c), (a, c, b), (b, c, a)):
@@ -114,7 +143,7 @@ def main():
                 h3 = Hyp(E3, V + [N, N + 1])
                 pred = tau + (0 if mt_hit(h, h.bit(r), [bm(h, (p, q))]) else 1)
                 st['L2'] += 1
-                if not (h3.in_C() and h3.tau() == pred): bad.append(('L2', cell, E, (p, q, r)))
+                if not (inC(h3) and h3.tau() == pred): bad.append(('L2', cell, E, (p, q, r)))
         # ---- NC pairs (any degrees) and the pair / identification lemmas
         ncp = [frozenset(p) for p in combinations(V, 2) if frozenset(p) not in cp]
         ncs = set(ncp)
@@ -129,7 +158,7 @@ def main():
                     E3, V3 = identify(E, V, x, y); h3 = Hyp(E3, V3)
                     st['L6'] += 1
                     if not (h3.tau() == tau and h3.slack() == s - 3): bad.append(('L6', cell, E, (x, y)))
-                    if h3.in_C(): st['L6_inC'] += 1
+                    if inC(h3): st['L6_inC'] += 1
         # ---- configurations (r; p, q) with {p,r},{q,r} NC
         for r in V:
             part = [u for u in V if u != r and frozenset((u, r)) in ncs]
@@ -140,7 +169,7 @@ def main():
                     E4, V4 = delete(E, V, {r}); E4 = E4 + [tuple(sorted((N, p, q)))]
                     h4 = Hyp(E4, V4 + [N])
                     st['L3'] += 1
-                    if not (h4.in_C() and h4.tau() == tau and h4.slack() == s + 2 - 2 * h.deg[r]):
+                    if not (inC(h4) and h4.tau() == tau and h4.slack() == s + 2 - 2 * h.deg[r]):
                         bad.append(('L3', cell, E, (r, p, q)))
                 # L7 move: r of degree 1 co-transversal; p,q partners
                 if h.deg[r] == 1 and cot(r):
@@ -152,7 +181,7 @@ def main():
                         h5 = Hyp(E5, V5)
                         st['L7'] += 1
                         if h5.tau() != tau: bad.append(('L7', cell, E, (r, r1, p, q)))
-                        if h5.in_C(): st['L7_inC'] += 1
+                        if inC(h5): st['L7_inC'] += 1
         # ---- L4 / L9 on b-configurations (pairwise NC triples of low-degree vertices, not an edge)
         for t in combinations(low, 3):
             if not all(frozenset(pq) in ncs for pq in combinations(t, 2)):
@@ -190,7 +219,7 @@ def main():
             h6 = Hyp(E6, V)
             st['L8'] += 1
             if h6.tau() != tau + 1: bad.append(('L8', cell, E, Y))
-            if all(frozenset(pq) not in h.sig for pq in combinations(Y, 2)) and h6.in_C():
+            if all(frozenset(pq) not in h.sig for pq in combinations(Y, 2)) and inC(h6):
                 st['L8_inC'] += 1
                 if 3 * h.n + 2 * (h.m + 1) - 11 * (tau + 1) < 0:
                     bad.append(('L8-I11', cell, E, Y))
