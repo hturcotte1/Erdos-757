@@ -1,0 +1,8 @@
+violator cells n=30 (s in {-1,-2}): [(30, 15, 11, -1), (30, 20, 12, -2), (30, 26, 13, -1)]
+  H-v cell (29, 12, 10) slack 1 connected possible (n<=2m+1): False | max vertices of a disconnected G with r<=3 comps: 27
+  H-v cell (29, 17, 11) slack 0 connected possible (n<=2m+1): True | max vertices of a disconnected G with r<=3 comps: 37
+  H-v cell (29, 23, 12) slack 1 connected possible (n<=2m+1): True | max vertices of a disconnected G with r<=3 comps: 49
+connected slack-1 cells with 27 vertices: [(27, 15, 10, 1)]
+connected tight cells with 27 vertices: [(27, 20, 11, 0)]
+connected tight cells n<=26: [(3, 1, 1), (10, 7, 4), (13, 8, 5), (14, 12, 6), (16, 9, 6), (17, 13, 7), (19, 10, 7), (20, 14, 8), (21, 18, 9), (22, 11, 8), (23, 15, 9), (24, 19, 10), (25, 12, 9), (25, 23, 11), (26, 16, 10)]
+connected slack-1 cells n<=26: [(8, 5, 3), (11, 6, 4), (12, 10, 5), (14, 7, 5), (15, 11, 6), (17, 8, 6), (18, 12, 7), (19, 16, 8), (21, 13, 8), (22, 17, 9), (23, 21, 10), (24, 14, 9), (25, 18, 10), (26, 22, 11)]

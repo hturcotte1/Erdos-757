@@ -3,3 +3,7 @@
 14_12_6 slack 0 {'classes_D3': 2, 'role_b>0': [], 'role_f1>0': [], 'role_e>0': [], 'pendants_hist': {0: 2}, 'noncot_pairs': 0} 0s
 17_13_7 slack 0 {'classes_D3': 6, 'role_b>0': [], 'role_f1>0': [], 'role_e>0': [], 'pendants_hist': {0: 6}, 'noncot_pairs': 0} 0s
 8_5_3 slack 1 {'classes_D3': 2, 'role_b>0': [], 'role_f1>0': [], 'role_e>0': [0, 1], 'pendants_hist': {1: 1, 2: 1}, 'noncot_pairs': 10} 0s
+12_10_5 slack 1 {'classes_D3': 149, 'role_b>0': [], 'role_f1>0': [], 'role_e>0': [], 'pendants_hist': {0: 112, 1: 37}, 'noncot_pairs': 83} 0s
+15_11_6 slack 1 {'classes_D3': 19, 'role_b>0': [], 'role_f1>0': [], 'role_e>0': [], 'pendants_hist': {1: 8, 0: 9, 2: 2}, 'noncot_pairs': 33} 0s
+26_22_11 slack 1 {'classes_D3': 36, 'role_b>0': [], 'role_f1>0': [], 'role_e>0': [], 'pendants_hist': {0: 36}, 'noncot_pairs': 0} 15s
+19_16_8 slack 1 {'classes_D3': 227, 'role_b>0': [], 'role_f1>0': [], 'role_e>0': [], 'pendants_hist': {0: 221, 1: 6}, 'noncot_pairs': 24} 5s
