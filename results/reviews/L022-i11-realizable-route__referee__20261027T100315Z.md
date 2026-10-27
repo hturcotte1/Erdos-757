@@ -137,3 +137,26 @@ Part D (midpoint counter-case p+q=a+b always): fails 0
 ## Independence statement
 
 I read both round-1 reviews (as permitted) to get the item list, then checked every item myself against the certificate text, the knowledge base and the stored data. My scripts (wdiff.py, check_step15_14.py) are new, written for this review. They import nothing from e757/, judge/, experiments/prover/ or the round-1 referee folders, and they use exact integer and Fraction arithmetic. The only code from earlier work I looked at is referee #1's check_small_configs.py, which I read but did not run, to confirm what its count covers. I did not modify the certificate or any file outside experiments/referee/L022-round2/ and this review.
+
+## Round 2 re-check (commit 4c32ca5, checked 2026-10-27 10:07 UTC)
+
+**What I checked.**
+- I ran `git show 4c32ca5`. The working tree and HEAD are identical to 4c32ca5 for the certificate.
+- I produced a word-level diff against 510ae65 (experiments/referee/L022-round2/wdiff_r2_out.txt). Exactly 6 lines changed (4, 7, 161, 169, 177, 184), and no theorem statement or proof step was touched.
+
+**Item by item.**
+- **F1 (l.7): fixed.** L020 is now described as "(K69; it REFUTES Conjecture T'' and gives the structure of near-tight graphs at a degree-3 vertex)". That matches K69 and L020 Theorems 1 and 3. L021 is now "not used here", which is correct.
+- **F2 (l.169, GAP 1): fixed.** GAP 1 now says T'' is refuted by L020 Theorem 1 (K69). It also says "L020 Corollary 5 states the replacement hypotheses C1-big and R-big", which matches K69.
+- **F3 (l.177): fixed.** The sentence now reads "None of GAP 1-3 is a finite statement ... (GAP 4 was finite and is closed by the unrefereed computation cited there)".
+- **F4: substantively addressed.**
+  - N4 (l.184) now reads "DONE, unrefereed": cell(25,23,11,3) empty and 6 non-realizable classes in cell(25,23,11,4). This matches the counts I verified above.
+  - W7 (l.161) gained the note "the 6 classes of cell(25,23,11,4) are also non-realizable, each containing the 8-point obstruction Q_8 of L023; unrefereed".
+  - I checked that note independently with check_q8.py (out_q8.txt; exact RREF; no imports from e757, judge or prover code). Q_8 has 95 injective midpoint labellings and all 95 are dead: 60 force a parallelogram and 35 force equal points, which matches L023's 35/60/0. Q_8 occurs as a sub-hypergraph of each of the 6 classes, with 4 ordered occurrences each, again matching L023. Since R is closed under sub-hypergraphs (Theorem 1(e)), each class is non-realizable.
+
+**Cosmetic leftovers.** None of these is required.
+- W7's first sentence still reads "(outside the uncomputed cell (25,23,11))". This is harmless given the appended note, and the count of 13 classes stays right.
+- The STATUS line ends in "edge.; round-2 items".
+- The line-7 phrase "as targets" now sits next to a refutation.
+- F5 (the Tags line) is not applied; it was optional.
+
+Final verdict: ACCEPT. All round-1 and round-2 items are applied correctly; L022 is a correct PARTIAL certificate (Theorems 1, 2, 4 and Corollary 3 proved; Corollary 3', Theorem 5 and Corollary 6 computational; GAPs 1-3 open; GAP 4 closed by an unrefereed computation, L023 pending).
