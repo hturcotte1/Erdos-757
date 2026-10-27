@@ -1,0 +1,11 @@
+{
+ "raw": 489,
+ "unique": 373,
+ "connected": 284,
+ "connected_cells": {
+  "(0, 17, 13, 7)": 10,
+  "(1, 15, 11, 6)": 11,
+  "(1, 19, 16, 8)": 263
+ },
+ "disconnected_component_types": null
+}
