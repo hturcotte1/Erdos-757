@@ -43,3 +43,13 @@ cell(14,12,6,4) have 8 vertices) and `h8.py` (`h8_output.txt`: the configuration
 (95 labellings), contained in every X_i, and in none of the 2,910 census patterns, A_base, C006, C25).
 `q8_ag23.py` (`q8_ag23_output.txt`): Q8 is isomorphic to the six lines of AG(2,3) through two points a, b other than ab, on the 8 points other than the third point of ab.
 `q8_falsify.py` (`q8_falsify_output.txt`): none of the 7 judged claim sets and 100 explicit realizable 21-point sets contains Q8.
+`solver_check.py` (`solver_check_output.txt`): realize_sdr's exact solver equals sympy's exact LUsolve on 120 random labellings of X_0 and all 95 of Q8.
+
+Process notes. (1) At 07:57:46-49 UTC a git operation in the shared working tree (a "live scratch" commit/pull of another agent) replaced
+the tracked output files `ext_own_d3_r*.txt` while the three ext_own processes were writing them; the processes kept writing to the
+deleted inodes. Their complete output was recovered through `/proc/PID/fd/1` (`tail -c +1 -f --pid=PID /proc/PID/fd/1`, followers
+started at 08:04 UTC) and copied back into `ext_own_d3_r857_5715.txt`, `ext_own_d3_r5715_10572.txt`, `ext_own_d3_r10572_15429.txt`.
+(2) The process of `ext_own.py ... 0:67` (degree-4 inputs) ended after input 22 without a summary line; inputs 23-66 were run again in
+the processes b-f (`ext_own_d4_{b,c,d,e,f}_output.txt`). (3) The reproductions `repro3/` (`run_cells.py 21,19,9,3`) and `repro7/`
+(`run_cells.py 17,15,7,3`) were stopped by the prover at 08:08 UTC (machine load 25-28) in the extension steps of (20,16,8,3) and
+(17,15,7,3); every list they had finished is compared in `compare_repro3_output.txt`, `compare_repro7_output.txt`.

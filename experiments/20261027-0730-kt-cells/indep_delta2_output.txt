@@ -1,0 +1,1 @@
+H with m=15, n=24, tau=9, Delta<=2: graphs G with 15 vertices, 21 edges, Delta<=3 generated 65451; classes with nu=6: 0

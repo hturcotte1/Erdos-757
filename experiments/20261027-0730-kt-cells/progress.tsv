@@ -1,0 +1,5 @@
+cell	classes	inputs	nodes	seconds	decompositions(per branch)	list provenance	export
+(25,14,9,3)	0	661	49619374	60.0	d=2,tp=8,S'=8:104dec/371in; d=3,tp=8,S'=6:42dec/290in	OWN out/cells (own run, own CELLDIR)	lists/cell_25_14_9_D3.txt
+(26,17,10,3)	0	11558	655329931	620.6	d=2,tp=9,S'=6:92dec/57in; d=3,tp=9,S'=4:49dec/11501in	OWN out/cells (own run, own CELLDIR)	lists/cell_26_17_10_D3.txt
+(27,13,9,3)	18	232	19471826	1282.5	d=2,tp=8,S'=12:100dec/190in; d=2,tp=9,S'=1:4dec/1in; d=3,tp=8,S'=10:26dec/41in	OWN out/cells (own run, own CELLDIR)	lists/cell_27_13_9_D3.txt
+(27,20,11,3)	0	3865	102464486	155.0	d=3,tp=10,S'=2:23dec/3865in	OWN out/cells (own run, own CELLDIR)	lists/cell_27_20_11_D3.txt

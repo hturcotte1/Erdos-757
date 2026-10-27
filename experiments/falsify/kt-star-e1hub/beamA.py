@@ -24,16 +24,16 @@ def conn(gl):
         for v in e[1:]: par[f(v)] = f(e[0])
     return len(set(v for e in es for v in e)) == n and len(set(f(v) for v in range(n))) == 1
 pool = collections.defaultdict(dict)
-def add_seed(n, E):
-    # tau via python (small) for seeds
-    sys.path.insert(0, '/home/user/Erdos-757/experiments/prover/L021'); import kt
-    t = kt.tau_masks(kt.masks(E)); pool[n]['s%d' % len(pool[n])] = (A_of(n, len(E), t), len(E), t, line(n, E))
-for n, E in pieces: add_seed(n, E)
+sys.path.insert(0, '/home/user/Erdos-757/experiments/prover/L021'); import kt
+PT = [p['tau'] for p in R['pieces']]
+def add_seed(n, E, t):
+    pool[n]['s%d' % len(pool[n])] = (A_of(n, len(E), t), len(E), t, line(n, E))
+for (n, E), t in zip(pieces, PT): add_seed(n, E, t)
 # unions of two pieces
 for i in range(len(pieces)):
     for j in range(i, len(pieces)):
         n1, E1 = pieces[i]; n2, E2 = pieces[j]
-        add_seed(n1 + n2, E1 + [tuple(v + n1 for v in e) for e in E2])
+        add_seed(n1 + n2, E1 + [tuple(v + n1 for v in e) for e in E2], PT[i] + PT[j])
 out = open('out_beamA_%s.txt' % tag, 'w'); seen_rep = set()
 t0 = time.time()
 for n in range(3, NMAX):

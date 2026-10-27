@@ -76,3 +76,29 @@ def induced(n, edges, U):
     """induced subgraph on vertex set U (iterable), relabelled 0..|U|-1"""
     U = sorted(U); idx = {x: i for i, x in enumerate(U)}
     return len(U), [tuple(idx[x] for x in e) for e in edges if all(x in idx for x in e)]
+
+def p3_ok_v(n, em, v):
+    """P3 for a graph whose induced subgraph on V - {v} has every component satisfying P3 and v is the only 'hub':
+    every violating S contains v, so it suffices to test the pairs {v, x} (Hall form of P3)."""
+    m = len(em)
+    if m > n - 2: return False
+    for b in range(n):
+        if b == v: continue
+        ex = ~((1 << v) | (1 << b))
+        match = {}
+        def aug(e, seen):
+            x = em[e] & ex
+            while x:
+                bt = x & -x; x ^= bt
+                if bt in seen: continue
+                seen.add(bt)
+                if bt not in match or aug(match[bt], seen):
+                    match[bt] = e; return True
+            return False
+        for e in range(m):
+            if not aug(e, set()): return False
+    return True
+
+def in_C_v(n, edges, v):
+    em = masks(edges)
+    return is_linear(em) and not has_F7(em) and p3_ok_v(n, em, v)

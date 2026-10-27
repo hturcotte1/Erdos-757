@@ -1,0 +1,7 @@
+cell_20_11_7_D3.txt {"graphs": 45, "smallA": 45, "bconf": 0, "hubs_inC": 0, "Pneg": 0, "tau_formula_fail": 0, "inC_fail": 0, "lemma5_fail": 0, "nonco_vertex": 0, "folds": 0, "fold_fail": 0, "AH": []}
+cell_21_10_7_D3.txt {"graphs": 5, "smallA": 5, "bconf": 0, "hubs_inC": 0, "Pneg": 0, "tau_formula_fail": 0, "inC_fail": 0, "lemma5_fail": 0, "nonco_vertex": 0, "folds": 0, "fold_fail": 0, "AH": []}
+cell_22_17_9_D3.txt {"graphs": 37, "smallA": 37, "bconf": 0, "hubs_inC": 0, "Pneg": 0, "tau_formula_fail": 0, "inC_fail": 0, "lemma5_fail": 0, "nonco_vertex": 0, "folds": 0, "fold_fail": 0, "AH": []}
+cell_22_13_8_D3.txt {"graphs": 85, "smallA": 85, "bconf": 0, "hubs_inC": 0, "Pneg": 0, "tau_formula_fail": 0, "inC_fail": 0, "lemma5_fail": 0, "nonco_vertex": 0, "folds": 0, "fold_fail": 0, "AH": []}
+cell_23_16_9_D3.txt {"graphs": 178, "smallA": 178, "bconf": 0, "hubs_inC": 0, "Pneg": 0, "tau_formula_fail": 0, "inC_fail": 0, "lemma5_fail": 0, "nonco_vertex": 0, "folds": 0, "fold_fail": 0, "AH": []}
+cell_21_14_8_D3.txt {"graphs": 299, "smallA": 299, "bconf": 0, "hubs_inC": 0, "Pneg": 0, "tau_formula_fail": 0, "inC_fail": 0, "lemma5_fail": 0, "nonco_vertex": 0, "folds": 0, "fold_fail": 0, "AH": []}
+cell_20_15_8_D3.txt {"graphs": 953, "smallA": 953, "bconf": 0, "hubs_inC": 0, "Pneg": 0, "tau_formula_fail": 0, "inC_fail": 0, "lemma5_fail": 0, "nonco_vertex": 0, "folds": 0, "fold_fail": 0, "AH": []}

@@ -20,3 +20,29 @@ Fibonacci n=15: n=15 m=12 tau=5 A=165 (4,5)=True; induced subgraphs tested 1: Th
 Fibonacci n=16: n=16 m=13 tau=6 A=95 (4,5)=True; induced subgraphs tested 1: Thm2 violations 0; KT tested on 1 with Delta<=3: violations 0, min P 95
 Fibonacci n=17: n=17 m=14 tau=6 A=157 (4,5)=None; induced subgraphs tested 1: Thm2 violations 0; KT tested on 1 with Delta<=3: violations 0, min P 157
 Fibonacci n=18: n=18 m=15 tau=6 A=219 (4,5)=None; induced subgraphs tested 1: Thm2 violations 0; KT tested on 1 with Delta<=3: violations 0, min P 219
+Fibonacci n=19: n=19 m=16 tau=7 A=149 (4,5)=None; induced subgraphs tested 1: Thm2 violations 0; KT tested on 1 with Delta<=3: violations 0, min P 149
+Fibonacci n=20: n=20 m=17 tau=7 A=211 (4,5)=None; induced subgraphs tested 1: Thm2 violations 0; KT tested on 1 with Delta<=3: violations 0, min P 211
+Fibonacci n=21: n=21 m=18 tau=8 A=141 (4,5)=None; induced subgraphs tested 1: Thm2 violations 0; KT tested on 1 with Delta<=3: violations 0, min P 141
+Fibonacci n=22: n=22 m=19 tau=8 A=203 (4,5)=None; induced subgraphs tested 1: Thm2 violations 0; KT tested on 1 with Delta<=3: violations 0, min P 203
+hypertree k=0 trial 0: n=3 m=1 tau=1 A=-16 (3k-16=-16) DEF=16 (16-3k=16) P=0
+hypertree k=0 trial 1: n=3 m=1 tau=1 A=-16 (3k-16=-16) DEF=16 (16-3k=16) P=0
+hypertree k=0 trial 2: n=3 m=1 tau=1 A=-16 (3k-16=-16) DEF=16 (16-3k=16) P=0
+hypertree k=1 trial 0: n=9 m=4 tau=3 A=-13 (3k-16=-13) DEF=13 (16-3k=13) P=0
+hypertree k=1 trial 1: n=9 m=4 tau=3 A=-13 (3k-16=-13) DEF=13 (16-3k=13) P=0
+hypertree k=1 trial 2: n=9 m=4 tau=3 A=-13 (3k-16=-13) DEF=13 (16-3k=13) P=0
+hypertree k=2 trial 0: n=15 m=7 tau=5 A=-10 (3k-16=-10) DEF=10 (16-3k=10) P=0
+hypertree k=2 trial 1: n=15 m=7 tau=5 A=-10 (3k-16=-10) DEF=10 (16-3k=10) P=0
+hypertree k=2 trial 2: n=15 m=7 tau=5 A=-10 (3k-16=-10) DEF=10 (16-3k=10) P=0
+hypertree k=3 trial 0: n=21 m=10 tau=7 A=-7 (3k-16=-7) DEF=7 (16-3k=7) P=0
+hypertree k=3 trial 1: n=21 m=10 tau=7 A=-7 (3k-16=-7) DEF=7 (16-3k=7) P=0
+hypertree k=3 trial 2: n=21 m=10 tau=7 A=-7 (3k-16=-7) DEF=7 (16-3k=7) P=0
+hypertree k=4 trial 0: n=27 m=13 tau=9 A=-4 (3k-16=-4) DEF=4 (16-3k=4) P=0
+hypertree k=4 trial 1: n=27 m=13 tau=9 A=-4 (3k-16=-4) DEF=4 (16-3k=4) P=0
+hypertree k=4 trial 2: n=27 m=13 tau=9 A=-4 (3k-16=-4) DEF=4 (16-3k=4) P=0
+hypertree k=5 trial 0: n=33 m=16 tau=11 A=-1 (3k-16=-1) DEF=1 (16-3k=1) P=0
+hypertree k=5 trial 1: n=33 m=16 tau=11 A=-1 (3k-16=-1) DEF=1 (16-3k=1) P=0
+hypertree k=5 trial 2: n=33 m=16 tau=11 A=-1 (3k-16=-1) DEF=1 (16-3k=1) P=0
+hypertree k=6 trial 0: n=39 m=19 tau=13 A=2 (3k-16=2) DEF=0 (16-3k=-2) P=2
+hypertree k=6 trial 1: n=39 m=19 tau=13 A=2 (3k-16=2) DEF=0 (16-3k=-2) P=2
+hypertree k=6 trial 2: n=39 m=19 tau=13 A=2 (3k-16=2) DEF=0 (16-3k=-2) P=2
+F7: tau 3 A -32 DEF 0

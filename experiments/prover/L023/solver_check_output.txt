@@ -1,0 +1,4 @@
+X_0: 120 labellings (of 55236) solved by both, identical solutions and classifications
+Q8: 95 labellings (of 95) solved by both, identical solutions and classifications
+X_3: 60 labellings (of 53740) solved by both, identical solutions and classifications
+X_5: 60 labellings (of 54260) solved by both, identical solutions and classifications

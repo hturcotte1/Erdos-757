@@ -1,0 +1,4 @@
+hypertree shapes T (4 edges, 9 nodes): 4
+classes (blocks+connectors, Delta<=3): 18
+engine classes: 18
+engine classes matched to independent list: 18 of 18 ; independent list size 18

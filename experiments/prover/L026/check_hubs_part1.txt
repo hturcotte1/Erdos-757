@@ -1,0 +1,28 @@
+  hub (6, 3, 2) abc (0, 1, 2) degs (1, 1, 1) adjacent pairs 0 A(H) -13 DEF(H) 13 P(H) 0 non-co-transversal among a,b,c: []
+  hub (6, 3, 2) abc (0, 1, 3) degs (1, 1, 2) adjacent pairs 2 A(H) -13 DEF(H) 13 P(H) 0 non-co-transversal among a,b,c: []
+  hub (6, 3, 2) abc (0, 2, 4) degs (1, 1, 2) adjacent pairs 2 A(H) -13 DEF(H) 13 P(H) 0 non-co-transversal among a,b,c: []
+  hub (6, 3, 2) abc (1, 2, 5) degs (1, 1, 2) adjacent pairs 2 A(H) -13 DEF(H) 13 P(H) 0 non-co-transversal among a,b,c: []
+cell_6_3_2_D3.txt {"graphs": 1, "smallA": 1, "bconf": 4, "hubs_inC": 4, "Pneg": 0, "tau_formula_fail": 0, "inC_fail": 0, "lemma5_fail": 0, "nonco_vertex": 0, "folds": 6, "fold_fail": 0, "AH": [-13]}
+  hub (11, 7, 4) abc (0, 1, 2) degs (1, 1, 1) adjacent pairs 1 A(H) -2 DEF(H) 2 P(H) 0 non-co-transversal among a,b,c: []
+  hub (11, 7, 4) abc (0, 1, 2) degs (1, 1, 1) adjacent pairs 1 A(H) -2 DEF(H) 2 P(H) 0 non-co-transversal among a,b,c: []
+  hub (11, 7, 4) abc (0, 1, 2) degs (1, 1, 1) adjacent pairs 1 A(H) -2 DEF(H) 2 P(H) 0 non-co-transversal among a,b,c: []
+  hub (11, 7, 4) abc (0, 1, 3) degs (1, 1, 2) adjacent pairs 2 A(H) -2 DEF(H) 2 P(H) 0 non-co-transversal among a,b,c: []
+  hub (11, 7, 4) abc (0, 1, 5) degs (1, 1, 2) adjacent pairs 2 A(H) -2 DEF(H) 2 P(H) 0 non-co-transversal among a,b,c: []
+  hub (11, 7, 4) abc (0, 2, 3) degs (1, 1, 2) adjacent pairs 2 A(H) -2 DEF(H) 2 P(H) 0 non-co-transversal among a,b,c: []
+  hub (11, 7, 4) abc (2, 3, 7) degs (1, 1, 2) adjacent pairs 2 A(H) -2 DEF(H) 2 P(H) 0 non-co-transversal among a,b,c: []
+  hub (11, 7, 4) abc (1, 2, 7) degs (1, 1, 2) adjacent pairs 2 A(H) -2 DEF(H) 2 P(H) 0 non-co-transversal among a,b,c: []
+  hub (11, 7, 4) abc (0, 1, 5) degs (1, 1, 2) adjacent pairs 2 A(H) -2 DEF(H) 2 P(H) 0 non-co-transversal among a,b,c: []
+  hub (11, 7, 4) abc (1, 2, 8) degs (1, 1, 2) adjacent pairs 2 A(H) -2 DEF(H) 2 P(H) 0 non-co-transversal among a,b,c: []
+cell_11_7_4_D3.txt {"graphs": 35, "smallA": 35, "bconf": 10, "hubs_inC": 10, "Pneg": 0, "tau_formula_fail": 0, "inC_fail": 0, "lemma5_fail": 0, "nonco_vertex": 0, "folds": 13, "fold_fail": 0, "AH": [-2]}
+  hub (12, 6, 4) abc (4, 5, 8) degs (1, 1, 2) adjacent pairs 0 A(H) -10 DEF(H) 10 P(H) 0 non-co-transversal among a,b,c: []
+  hub (12, 6, 4) abc (4, 5, 11) degs (1, 1, 2) adjacent pairs 2 A(H) -10 DEF(H) 10 P(H) 0 non-co-transversal among a,b,c: []
+  hub (12, 6, 4) abc (4, 8, 9) degs (1, 2, 2) adjacent pairs 2 A(H) -10 DEF(H) 10 P(H) 0 non-co-transversal among a,b,c: []
+  hub (12, 6, 4) abc (5, 8, 10) degs (1, 2, 2) adjacent pairs 2 A(H) -10 DEF(H) 10 P(H) 0 non-co-transversal among a,b,c: []
+  hub (12, 6, 4) abc (0, 1, 2) degs (1, 1, 1) adjacent pairs 0 A(H) -10 DEF(H) 10 P(H) 0 non-co-transversal among a,b,c: []
+  hub (12, 6, 4) abc (0, 2, 9) degs (1, 1, 2) adjacent pairs 2 A(H) -10 DEF(H) 10 P(H) 0 non-co-transversal among a,b,c: []
+  hub (12, 6, 4) abc (1, 2, 10) degs (1, 1, 2) adjacent pairs 2 A(H) -10 DEF(H) 10 P(H) 0 non-co-transversal among a,b,c: []
+cell_12_6_4_D3.txt {"graphs": 4, "smallA": 4, "bconf": 7, "hubs_inC": 7, "Pneg": 0, "tau_formula_fail": 0, "inC_fail": 0, "lemma5_fail": 0, "nonco_vertex": 0, "folds": 11, "fold_fail": 0, "AH": [-10]}
+  hub (13, 9, 5) abc (0, 1, 2) degs (1, 1, 2) adjacent pairs 2 A(H) -10 DEF(H) 10 P(H) 0 non-co-transversal among a,b,c: []
+  hub (13, 9, 5) abc (0, 1, 2) degs (1, 1, 2) adjacent pairs 2 A(H) -10 DEF(H) 10 P(H) 0 non-co-transversal among a,b,c: []
+  hub (13, 9, 5) abc (0, 1, 2) degs (1, 1, 2) adjacent pairs 2 A(H) -10 DEF(H) 10 P(H) 0 non-co-transversal among a,b,c: []
+cell_13_9_5_D3.txt {"graphs": 84, "smallA": 84, "bconf": 3, "hubs_inC": 3, "Pneg": 0, "tau_formula_fail": 0, "inC_fail": 0, "lemma5_fail": 0, "nonco_vertex": 0, "folds": 3, "fold_fail": 0, "AH": [-10]}

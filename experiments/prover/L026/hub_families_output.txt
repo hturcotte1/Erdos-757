@@ -1,0 +1,24 @@
+  G' (6, 3, 2) abc (0, 1, 2) DEF(H) 13 optimal families (v in a member, xyz in a member, names): [(True, True, ('(10,7,4)#3',))]
+  G' (6, 3, 2) abc (0, 1, 3) DEF(H) 13 optimal families (v in a member, xyz in a member, names): [(True, True, ('(10,7,4)#1',))]
+  G' (6, 3, 2) abc (0, 2, 4) DEF(H) 13 optimal families (v in a member, xyz in a member, names): [(True, True, ('(10,7,4)#1',))]
+  G' (6, 3, 2) abc (1, 2, 5) DEF(H) 13 optimal families (v in a member, xyz in a member, names): [(True, True, ('(10,7,4)#1',))]
+cell_6_3_2_D3.txt {('some optimal family has a member containing v', True): 4, ('every optimal family has a member containing v', True): 4}
+  G' (11, 7, 4) abc (0, 1, 2) DEF(H) 2 optimal families (v in a member, xyz in a member, names): [(True, True, ('(15,11,6)#17',))]
+  G' (11, 7, 4) abc (0, 1, 2) DEF(H) 2 optimal families (v in a member, xyz in a member, names): [(True, True, ('(15,11,6)#15',))]
+  G' (11, 7, 4) abc (0, 1, 2) DEF(H) 2 optimal families (v in a member, xyz in a member, names): [(True, True, ('(15,11,6)#16',))]
+  G' (11, 7, 4) abc (0, 1, 3) DEF(H) 2 optimal families (v in a member, xyz in a member, names): [(True, True, ('(15,11,6)#15',))]
+cell_11_7_4_D3.txt {('some optimal family has a member containing v', True): 10, ('every optimal family has a member containing v', True): 10}
+  G' (12, 6, 4) abc (4, 5, 8) DEF(H) 10 optimal families (v in a member, xyz in a member, names): [(True, True, ('(10,7,4)#3', '(3,1,1)#0', '(3,1,1)#0'))]
+  G' (12, 6, 4) abc (4, 5, 11) DEF(H) 10 optimal families (v in a member, xyz in a member, names): [(True, True, ('(10,7,4)#1', '(3,1,1)#0', '(3,1,1)#0'))]
+  G' (12, 6, 4) abc (4, 8, 9) DEF(H) 10 optimal families (v in a member, xyz in a member, names): [(True, True, ('(10,7,4)#1', '(3,1,1)#0', '(3,1,1)#0'))]
+  G' (12, 6, 4) abc (5, 8, 10) DEF(H) 10 optimal families (v in a member, xyz in a member, names): [(True, True, ('(10,7,4)#1', '(3,1,1)#0', '(3,1,1)#0'))]
+cell_12_6_4_D3.txt {('some optimal family has a member containing v', True): 7, ('every optimal family has a member containing v', True): 7}
+  G' (13, 9, 5) abc (0, 1, 2) DEF(H) 10 optimal families (v in a member, xyz in a member, names): [(True, True, ('(17,13,7)#5',))]
+  G' (13, 9, 5) abc (0, 1, 2) DEF(H) 10 optimal families (v in a member, xyz in a member, names): [(True, True, ('(17,13,7)#4',))]
+  G' (13, 9, 5) abc (0, 1, 2) DEF(H) 10 optimal families (v in a member, xyz in a member, names): [(True, True, ('(17,13,7)#3',))]
+cell_13_9_5_D3.txt {('some optimal family has a member containing v', True): 3, ('every optimal family has a member containing v', True): 3}
+  G' (18, 9, 6) abc (8, 9, 10) DEF(H) 7 optimal families (v in a member, xyz in a member, names): [(True, True, ('(10,7,4)#3', '(3,1,1)#0', '(3,1,1)#0', '(3,1,1)#0', '(3,1,1)#0'))]
+  G' (18, 9, 6) abc (8, 10, 15) DEF(H) 7 optimal families (v in a member, xyz in a member, names): [(True, True, ('(10,7,4)#1', '(3,1,1)#0', '(3,1,1)#0', '(3,1,1)#0', '(3,1,1)#0'))]
+  G' (18, 9, 6) abc (9, 10, 16) DEF(H) 7 optimal families (v in a member, xyz in a member, names): [(True, True, ('(10,7,4)#1', '(3,1,1)#0', '(3,1,1)#0', '(3,1,1)#0', '(3,1,1)#0'))]
+  G' (18, 9, 6) abc (8, 9, 10) DEF(H) 7 optimal families (v in a member, xyz in a member, names): [(True, True, ('(10,7,4)#1', '(3,1,1)#0', '(3,1,1)#0', '(3,1,1)#0', '(3,1,1)#0'))]
+cell_18_9_6_D3.txt {('some optimal family has a member containing v', True): 27, ('every optimal family has a member containing v', True): 27}

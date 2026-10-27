@@ -40,23 +40,23 @@
 (23,12,8) s=5 A=-15  ->  refereed L017/out D3 0 classes
 (23,15,9) s=0 A=-42  ->  refereed L017/out D3 0 classes
 (23,16,9) s=2 A=-7  ->  refereed L017/out D3 178 classes
-(24,12,8) s=8 A=12  ->  OWN out/cells D3 129 classes
+(24,12,8) s=8 A=12  ->  seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md) D3 129 classes
 (24,14,9) s=1 A=-50  ->  refereed L017/out D3 0 classes
 (24,15,9) s=3 A=-15  ->  refereed L017/out D3 0 classes
 (24,19,10) s=0 A=-7  ->  refereed L017/out D3 0 classes
 (25,12,9) s=0 A=-93  ->  refereed L017/out D3 0 classes
 (25,13,9) s=2 A=-58  ->  refereed L017/out D3 0 classes
-(25,14,9) s=4 A=-23  ->  seed cells_ref (computed-from-refereed, 0340 worker) D3 0 classes
-(25,15,9) s=6 A=12  ->  OWN out/cells D3 6849 classes
+(25,14,9) s=4 A=-23  ->  OWN (computed in this folder) D3 0 classes
+(25,15,9) s=6 A=12  ->  seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md) D3 6849 classes
 (25,18,10) s=1 A=-15  ->  refereed L017/out D3 0 classes
-(26,13,9) s=5 A=-31  ->  OWN out/cells D3 0 classes
+(26,13,9) s=5 A=-31  ->  seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md) D3 0 classes
 (26,14,9) s=7 A=4  ->  NOT STORED
 (26,16,10) s=0 A=-58  ->  refereed L017/out D3 0 classes
-(26,17,10) s=2 A=-23  ->  seed cells_ref (computed-from-refereed, 0340 worker) D3 0 classes
+(26,17,10) s=2 A=-23  ->  OWN (computed in this folder) D3 0 classes
 (26,18,10) s=4 A=12  ->  NOT STORED
-(27,13,9) s=8 A=-4  ->  NOT STORED
-(27,15,10) s=1 A=-66  ->  OWN out/cells D3 0 classes
-(27,16,10) s=3 A=-31  ->  OWN out/cells D3 0 classes
+(27,13,9) s=8 A=-4  ->  OWN (computed in this folder) D3 18 classes
+(27,15,10) s=1 A=-66  ->  seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md) D3 0 classes
+(27,16,10) s=3 A=-31  ->  seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md) D3 0 classes
 (27,17,10) s=5 A=4  ->  NOT STORED
-(27,20,11) s=0 A=-23  ->  seed cells_ref (computed-from-refereed, 0340 worker) D3 0 classes
+(27,20,11) s=0 A=-23  ->  OWN (computed in this folder) D3 0 classes
 (27,21,11) s=2 A=12  ->  NOT STORED

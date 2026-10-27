@@ -1,0 +1,12 @@
+dual of (8,5,3)#0 is K4 with one edge subdivided: True
+N=1: 1 connected subcubic G  [0s]
+N=2: 1 connected subcubic G  [0s]
+N=3: 2 connected subcubic G  [0s]
+N=4: 6 connected subcubic G  [0s]
+N=5: 10 connected subcubic G  [0s]
+N=6: 29 connected subcubic G  [1s]
+N=7: 64 connected subcubic G  [3s]
+N=8: 194 connected subcubic G  [14s]
+N=9: 531 connected subcubic G  [24s]
+theorem6_check NMAX=9: 838 graphs, A<0 in 5, KT failures 0, equality 5, min(A+DEF) 0, Tutte-Berge bound 6.2 checked on 307 graphs
+EXIT 0

@@ -1,0 +1,37 @@
+(3,1,1)#0 tau 1 W 16 role_b 1 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 3
+(8,5,3)#0 tau 3 W 5 role_b 0 role_c 0 role_e 2 role_f1 0 non-co-transversal pairs (all vertices) 5
+(8,5,3)#1 tau 3 W 5 role_b 0 role_c 0 role_e 3 role_f1 0 non-co-transversal pairs (all vertices) 6
+(10,7,4)#0 tau 4 W 13 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+(10,7,4)#1 tau 4 W 13 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 2
+(10,7,4)#2 tau 4 W 13 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 2
+(10,7,4)#3 tau 4 W 13 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+(15,11,6)#0 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 3
+(15,11,6)#1 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 3
+(15,11,6)#2 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 3
+(15,11,6)#3 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 2
+(15,11,6)#4 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+(15,11,6)#5 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+(15,11,6)#6 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 3
+(15,11,6)#7 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 3
+(15,11,6)#8 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 3
+(15,11,6)#9 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 3
+(15,11,6)#10 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 3
+(15,11,6)#11 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 4
+(15,11,6)#12 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 4
+(15,11,6)#13 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 2
+(15,11,6)#14 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+(15,11,6)#15 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+(15,11,6)#16 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+(15,11,6)#17 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+(15,11,6)#18 tau 6 W 2 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 2
+(17,13,7)#0 tau 7 W 10 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+(17,13,7)#1 tau 7 W 10 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+(17,13,7)#2 tau 7 W 10 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+(17,13,7)#3 tau 7 W 10 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+(17,13,7)#4 tau 7 W 10 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+(17,13,7)#5 tau 7 W 10 role_b 0 role_c 0 role_e 0 role_f1 0 non-co-transversal pairs (all vertices) 0
+role_b>0: ['(3,1,1)#0']
+role_c>0: []
+role_e>0: ['(8,5,3)#0', '(8,5,3)#1']
+role_f1>0: []
+EXIT 0

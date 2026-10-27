@@ -1,0 +1,19 @@
+graph 0: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 1: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 2: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 3: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 4: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 5: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 6: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 7: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 8: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 9: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 10: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 11: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 12: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 13: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 14: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 15: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 16: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+graph 17: A=-4 DEF(kt)=4 DEF(brute)=4 copies=13 P=0
+mismatches 0 of 18

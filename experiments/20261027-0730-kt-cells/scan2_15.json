@@ -467,7 +467,7 @@
 "tau": 8,
 "s": 8,
 "A": 12,
-"src": "OWN out/cells",
+"src": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
 "D": 3,
 "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_12_8_D3.txt",
 "classes": 129
@@ -533,9 +533,9 @@
 "tau": 9,
 "s": 4,
 "A": -23,
-"src": "seed cells_ref (computed-from-refereed, 0340 worker)",
+"src": "OWN (computed in this folder)",
 "D": 3,
-"path": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_25_14_9_D3.txt",
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_14_9_D3.txt",
 "classes": 0
 },
 {
@@ -544,7 +544,7 @@
 "tau": 9,
 "s": 6,
 "A": 12,
-"src": "OWN out/cells",
+"src": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
 "D": 3,
 "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_25_15_9_D3.txt",
 "classes": 6849
@@ -566,7 +566,7 @@
 "tau": 9,
 "s": 5,
 "A": -31,
-"src": "OWN out/cells",
+"src": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
 "D": 3,
 "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_13_9_D3.txt",
 "classes": 0
@@ -596,9 +596,9 @@
 "tau": 10,
 "s": 2,
 "A": -23,
-"src": "seed cells_ref (computed-from-refereed, 0340 worker)",
+"src": "OWN (computed in this folder)",
 "D": 3,
-"path": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_26_17_10_D3.txt",
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_26_17_10_D3.txt",
 "classes": 0
 },
 {
@@ -615,7 +615,10 @@
 "tau": 9,
 "s": 8,
 "A": -4,
-"src": null
+"src": "OWN (computed in this folder)",
+"D": 3,
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_13_9_D3.txt",
+"classes": 18
 },
 {
 "n": 27,
@@ -623,7 +626,7 @@
 "tau": 10,
 "s": 1,
 "A": -66,
-"src": "OWN out/cells",
+"src": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
 "D": 3,
 "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_15_10_D3.txt",
 "classes": 0
@@ -634,7 +637,7 @@
 "tau": 10,
 "s": 3,
 "A": -31,
-"src": "OWN out/cells",
+"src": "seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)",
 "D": 3,
 "path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_16_10_D3.txt",
 "classes": 0
@@ -653,9 +656,9 @@
 "tau": 11,
 "s": 0,
 "A": -23,
-"src": "seed cells_ref (computed-from-refereed, 0340 worker)",
+"src": "OWN (computed in this folder)",
 "D": 3,
-"path": "/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells_ref/cell_27_20_11_D3.txt",
+"path": "/home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_27_20_11_D3.txt",
 "classes": 0
 },
 {

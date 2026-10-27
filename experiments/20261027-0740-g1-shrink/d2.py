@@ -74,7 +74,7 @@ def canonical_B(Sname, P1, P2, ts, inc):
 def def_cached(Sname, P1, P2, ts, inc, nn_expected):
     nn, ee, key = canonical_B(Sname, P1, P2, ts, inc)
     assert nn == nn_expected
-    if key not in DEFCACHE: DEFCACHE[key] = deficiency(nn, ee, PIECES, proper=True)
+    if key not in DEFCACHE: DEFCACHE[key] = deficiency(nn, ee, PIECES, proper=False)
     return DEFCACHE[key]
 
 def heavy(S1, S2, ts, stats, mode='I'):
@@ -135,7 +135,7 @@ def heavy(S1, S2, ts, stats, mode='I'):
                     vs = ved[x][1]
                     if any((y in V1 and Sname in ('both', 'F1')) or (y in V2 and Sname in ('both', 'F2')) for y in vs) and all((y == v) or (y in base) for y in vs): nmeet += 1
                 if AB + max(0, Wsum - 35 * nmeet) >= 0: continue
-                if exact: PB = AB + deficiency(nn, ee, PIECES, proper=True)
+                if exact: PB = AB + deficiency(nn, ee, PIECES, proper=False)
                 else: PB = AB + def_cached(Sname, P1, P2, ts, inc, nn)
                 kill_K = PB < 0
             if not (kill_I or kill_K): continue
@@ -151,12 +151,12 @@ def heavy(S1, S2, ts, stats, mode='I'):
                 if len({edge_of[x] for x in g}) < 3: continue
                 idx = {x: i for i, x in enumerate(Uv)}
                 ee2 = ee + [tuple(idx[x] for x in g)]
-                if not in_C(nn, ee2): continue
+                if not in_C_v(nn, ee2, Uv.index(v)): continue
                 tau2 = tau_masks(masks(ee2))
                 if slack(nn, len(ee2), tau2) >= 0: killI_all = False
-                if A_value(nn, len(ee2), tau2) + deficiency(nn, ee2, PIECES, proper=True) >= 0: killK_all = False
+                if A_value(nn, len(ee2), tau2) + deficiency(nn, ee2, PIECES, proper=False) >= 0: killK_all = False
             if not (killI_all or killK_all): continue
-            if inC is None: inC = in_C(n, edges)
+            if inC is None: inC = in_C_v(n, edges, v)
             info = dict(S=Sname, J=J, n=nn, m=len(ee), tau=tauB, s=sB, A=AB, P=PB, killI=killI_all, killKT=killK_all, inC=inC)
             return info
     return None
@@ -168,7 +168,7 @@ def run_pair(S1, S2, store_limit=2000, verbose=True, do_c=True):
     n12 = S1.P.n + S2.P.n + 1
     N = len(types)
     cnt = dict(types=N, claimB=0, candidates=0, killed_I11_or_KT=0, killed_I11=0, killed_KT_only=0, notC_among_unkilled=0, survive_C=0)
-    kills = []; surv_examples = []
+    kills = []; surv = []
     s1, s2 = S1.s, S2.s
     for i in range(N):
         ti = types[i]
@@ -209,8 +209,10 @@ def run_pair(S1, S2, store_limit=2000, verbose=True, do_c=True):
                 r = heavy(S1, S2, ts, cnt, 'I') or heavy(S1, S2, ts, cnt, 'K')
                 if not r and do_c:
                     nF, eF, _ = build_full(S1, S2, ts)
-                    if not in_C(nF, eF): cnt['notC_among_unkilled'] += 1
-                    else: cnt['survive_C'] += 1
+                    if not in_C_v(nF, eF, S1.P.n + S2.P.n): cnt['notC_among_unkilled'] += 1
+                    else:
+                        cnt['survive_C'] += 1
+                        surv.append([[list(t['a']), list(t['b'])] for t in ts])
                 if r:
                     cnt['killed_I11_or_KT'] += 1
                     cnt['killed_I11' if r['killI'] else 'killed_KT_only'] += 1
@@ -218,18 +220,19 @@ def run_pair(S1, S2, store_limit=2000, verbose=True, do_c=True):
                         kills.append(dict(types=[[list(t['a']), list(t['b'])] for t in ts], **r))
     cnt['time_s'] = round(time.time() - t0, 1)
     if verbose: print(S1.P.name, S2.P.name, cnt, flush=True)
-    return cnt, kills
+    return cnt, kills, surv
 
 if __name__ == '__main__':
+    import gzip
     sides = [Side(P) for P in PIECES]
     if sys.argv[1] == 'all':
-        maxn = int(sys.argv[2]) if len(sys.argv) > 2 else 7
-        out = {}
-        for i in range(maxn):
-            for j in range(i, maxn):
-                c, k = run_pair(sides[i], sides[j])
-                out[sides[i].P.name + ' x ' + sides[j].P.name] = dict(counts=c, kills=k)
-        json.dump(out, open('d2_results_small.json', 'w'))
+        lo = int(sys.argv[2]) if len(sys.argv) > 2 else 0
+        hi = int(sys.argv[3]) if len(sys.argv) > 3 else len(sides)
+        with gzip.open('d2_patterns_%d_%d.jsonl.gz' % (lo, hi), 'wt') as f:
+            for i in range(lo, hi):
+                for j in range(i, len(sides)):
+                    c, k, sv = run_pair(sides[i], sides[j])
+                    f.write(json.dumps(dict(F1=sides[i].P.name, F2=sides[j].P.name, counts=c, kills=k, survivors=sv)) + '\n'); f.flush()
     else:
         i, j = int(sys.argv[1]), int(sys.argv[2])
         run_pair(sides[i], sides[j])

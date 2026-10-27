@@ -16,8 +16,12 @@ for lab, root in ROOTS:
             mm = pat.match(f)
             if mm:
                 n, m, t, D = map(int, mm.groups())
+                pth = os.path.join(dp, f)
+                if lab == 'OWN out/cells' and os.path.islink(pth): lab2 = 'seed (symlink into 0340 out/cells_ref: refereed or computed by the 0340 worker; see PROVENANCE.md)'
+                elif lab == 'OWN out/cells': lab2 = 'OWN (computed in this folder)'
+                else: lab2 = lab
                 if D >= 3:
-                    stored.setdefault((n, m, t), []).append((lab, D, os.path.join(dp, f)))
+                    stored.setdefault((n, m, t), []).append((lab2, D, pth))
 def count(p): return sum(1 for l in open(p) if l.startswith('FOUND'))
 rows = []
 for n in range(3, 28):
