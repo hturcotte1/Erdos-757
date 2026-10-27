@@ -1,0 +1,12 @@
+{'inputs': 20, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [0s]
+{'inputs': 40, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [0s]
+{'inputs': 60, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [1s]
+{'inputs': 80, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [2s]
+{'inputs': 100, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [3s]
+{'inputs': 120, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [3s]
+{'inputs': 140, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [5s]
+{'inputs': 160, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [8s]
+{'inputs': 180, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [11s]
+{'inputs': 200, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [14s]
+{'inputs': 220, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'notinT': 0} [18s]
+FINAL {'inputs': 228, 'bconf_labelled': 0, 'new_classes': 0, 'inC': 0, 'minP': None, 'hits': 0, 'by_cell': {}, 'notinT': 0}

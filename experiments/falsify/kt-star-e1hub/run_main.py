@@ -44,6 +44,7 @@ for ck in cells:
             rec.update(r)
             if not r['inC']: continue
             st['hub_inC'] += 1
+            out.write(json.dumps(dict(type='H', src=ck, G=g, abc=(a,b,c), n=r['n'], m=r['m'], tau=r['tau'], A=r['A'], DEF=r['DEF'], DEFp=r['DEFp'], P=r['P'], Pp=r['Pp'], piece=r['piece'], H=E2)) + '\n')
             key = '(%d,%d,%d)' % (r['n'], r['m'], r['tau'])
             st['hubs_by_cell'][key] = st['hubs_by_cell'].get(key, 0) + 1
             if st['minP'] is None or r['P'] < st['minP']: st['minP'] = r['P']

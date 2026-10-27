@@ -1,0 +1,22 @@
+degree-3 instances in the pool: 4111
+cell_26_22_11.txt class 10 v=16: pattern a, components [(25, 19, 10)], iso [] -> OK
+cell_26_22_11.txt class 18 v=13: pattern a, components [(25, 19, 10)], iso [] -> OK
+cell_26_22_11.txt class 10 v=12: pattern a, components [(25, 19, 10)], iso [] -> OK
+cell_19_16_8.txt class 362 v=17: pattern a, components [(18, 13, 7)], iso [] -> OK
+cell_19_16_8.txt class 358 v=14: pattern a, components [(18, 13, 7)], iso [] -> OK
+cell_26_22_11.txt class 24 v=12: pattern a, components [(25, 19, 10)], iso [] -> OK
+cell_19_16_8.txt class 359 v=17: pattern a, components [(18, 13, 7)], iso [] -> OK
+cell_12_10_5.txt class 172 v=9: pattern a, components [(11, 7, 4)], iso [] -> OK
+cell_26_22_11.txt class 6 v=25: pattern f, components [(15, 12, 6), (10, 7, 4)], iso [] -> OK
+cell_19_16_8.txt class 455 v=17: pattern a, components [(18, 13, 7)], iso [] -> OK
+cell_19_16_8.txt class 320 v=13: pattern e, components [(8, 5, 3), (10, 8, 4)], iso [] -> OK
+cell_12_10_5.txt class 164 v=10: pattern a, components [(11, 7, 4)], iso [] -> OK
+cell_12_10_5.txt class 65 v=6: pattern a, components [(11, 7, 4)], iso [] -> OK
+cell_19_16_8.txt class 879 v=11: pattern a, components [(18, 13, 7)], iso [] -> OK
+cell_26_22_11.txt class 10 v=21: pattern a, components [(25, 19, 10)], iso [] -> OK
+cell_19_16_8.txt class 334 v=12: pattern a, components [(18, 13, 7)], iso [] -> OK
+cell_12_10_5.txt class 23 v=7: pattern a, components [(11, 7, 4)], iso [] -> OK
+cell_12_10_5.txt class 94 v=10: pattern a, components [(11, 7, 4)], iso [] -> OK
+cell_12_10_5.txt class 90 v=8: pattern a, components [(11, 7, 4)], iso [] -> OK
+cell_12_10_5.txt class 51 v=9: pattern a, components [(11, 7, 4)], iso [] -> OK
+histogram {'a': 18, 'f': 1, 'e': 1} FAILS 0 (4s)

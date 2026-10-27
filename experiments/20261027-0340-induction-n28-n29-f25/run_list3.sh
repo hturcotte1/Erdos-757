@@ -6,7 +6,7 @@ export CELLDIR=$PWD/out/cells ENGINELOG=$PWD/out/engine.log WORKDIR=$PWD/out/wor
 for k in "$@"; do
   # reuse files that appeared meanwhile (concurrent d4 worker)
   flock out/seed.lock python3 seed.py >> out/seed.log 2>&1
-  df -h . | tail -1 | awk '{print $4}' | sed 's/G//' | awk '{ if ($1+0 < 3.0) exit 1 }' || { echo "DISK LOW, stopping before $k" | tee -a out/run_$TAG.log; exit 9; }
+  df -h . | tail -1 | awk '{print $4}' | sed 's/G//' | awk '{ if ($1+0 < 1.2) exit 1 }' || { echo "DISK LOW, stopping before $k" | tee -a out/run_$TAG.log; exit 9; }
   echo "$(date -u +%FT%TZ) START $k" >> out/run_$TAG.log
   nice -n 5 timeout ${CELL_TIMEOUT:-10800} python3 src/run1.py $k >> out/run_$TAG.log 2>&1
   rc=$?

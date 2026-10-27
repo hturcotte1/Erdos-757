@@ -1,0 +1,1 @@
+(1) atlas connected subcubic graphs: 113 ; negative theta: [(1, 0, -16, False), (5, 7, -5, True)]

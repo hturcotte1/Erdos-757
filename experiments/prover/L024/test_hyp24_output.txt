@@ -1,0 +1,4 @@
+random tests 3000 mismatches 0
+F7 detected: True
+pieces in C_3: 32 of 32
+pieces with Delta <= 2: ['(3,1,1)#0', '(8,5,3)#0']

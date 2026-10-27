@@ -41,3 +41,5 @@ Test: `python3 -m pytest -q tests/test_c25_witness.py` (3 passed).
 Added (Proposition 6 of the certificate): `core14.py` (`core14_output.txt`: the smallest non-realizable tight pieces of classes 5 and 7 of
 cell(14,12,6,4) have 8 vertices) and `h8.py` (`h8_output.txt`: the configuration Q8 (called H8 in the script) is in C, not realizable
 (95 labellings), contained in every X_i, and in none of the 2,910 census patterns, A_base, C006, C25).
+`q8_ag23.py` (`q8_ag23_output.txt`): Q8 is isomorphic to the six lines of AG(2,3) through two points a, b other than ab, on the 8 points other than the third point of ab.
+`q8_falsify.py` (`q8_falsify_output.txt`): none of the 7 judged claim sets and 100 explicit realizable 21-point sets contains Q8.

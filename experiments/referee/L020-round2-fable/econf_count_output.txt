@@ -1,0 +1,30 @@
+(8,5,3) class: e-configs 2 [(0, 1, 3), (0, 2, 3)]
+(8,5,3) class: e-configs 3 [(0, 1, 2), (1, 0, 5), (1, 0, 6)]
+(20,15,8) class 61: 1 e-config(s) [(0, 1, 12)]  (4s)
+(20,15,8) class 69: 1 e-config(s) [(0, 1, 12)]  (5s)
+(20,15,8) class 70: 1 e-config(s) [(0, 1, 13)]  (5s)
+(20,15,8) class 92: 1 e-config(s) [(0, 1, 8)]  (6s)
+(20,15,8) class 93: 1 e-config(s) [(0, 1, 8)]  (6s)
+(20,15,8) class 94: 1 e-config(s) [(0, 1, 12)]  (7s)
+(20,15,8) class 95: 1 e-config(s) [(0, 1, 7)]  (7s)
+(20,15,8) class 96: 1 e-config(s) [(0, 1, 11)]  (7s)
+(20,15,8) class 97: 1 e-config(s) [(0, 1, 7)]  (7s)
+(20,15,8) class 221: 1 e-config(s) [(12, 5, 10)]  (16s)
+(20,15,8) class 243: 1 e-config(s) [(12, 2, 10)]  (18s)
+(20,15,8) class 244: 1 e-config(s) [(8, 0, 6)]  (18s)
+(20,15,8) class 733: 1 e-config(s) [(0, 11, 12)]  (54s)
+(20,15,8) class 734: 1 e-config(s) [(0, 9, 10)]  (54s)
+(20,15,8) class 735: 1 e-config(s) [(0, 10, 11)]  (54s)
+(20,15,8) class 736: 1 e-config(s) [(0, 11, 12)]  (54s)
+(20,15,8) class 737: 1 e-config(s) [(0, 11, 12)]  (54s)
+(20,15,8) class 738: 1 e-config(s) [(0, 10, 12)]  (54s)
+(20,15,8) class 903: 1 e-config(s) [(13, 5, 11)]  (65s)
+(20,15,8) class 904: 1 e-config(s) [(9, 5, 7)]  (65s)
+(20,15,8) class 905: 1 e-config(s) [(8, 3, 7)]  (65s)
+(20,15,8) class 911: 1 e-config(s) [(10, 1, 14)]  (66s)
+(20,15,8) class 937: 1 e-config(s) [(9, 3, 6)]  (68s)
+(20,15,8) class 938: 1 e-config(s) [(11, 3, 7)]  (68s)
+(20,15,8): classes 953 with an e-configuration 24 total e-configs 24
+gluings 120 not (in C, Delta<=3, tau 12, connected): 0 distinct invariants 45
+stored 45 classes: distinct invariants 45 | equal to the gluing invariant set: True
+done 87s

@@ -1,0 +1,1 @@
+AG(2,3) piece: 6 lines on 8 points; isomorphic to Q8: True

@@ -1,0 +1,4 @@
+K29 in C: True | tau 12
+F7: linear True has_F7 True in_C False
+Pasch (6 vertices, 4 edges) p3: True
+7 edges on 7 vertices p3: False

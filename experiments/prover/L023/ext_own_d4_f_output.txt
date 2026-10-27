@@ -1,0 +1,2 @@
+INPUT 23 covers 4795 pairs 190 extensions 295 EQUAL
+SUMMARY compared 1 equal 1 different 0 extensions(own) 295 max_covers 4795 secs 38.3

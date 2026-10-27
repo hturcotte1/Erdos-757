@@ -1,0 +1,63 @@
+(a) role counts (strict / conservative)
+(3,1,1)#0 strict b,c,e,f1 = (1, 0, 0, 0)  conservative = (1, 0, 3, 0)
+(8,5,3)#0 strict b,c,e,f1 = (0, 0, 2, 0)  conservative = (0, 0, 3, 0)
+(8,5,3)#1 strict b,c,e,f1 = (0, 0, 3, 0)  conservative = (0, 0, 4, 0)
+(10,7,4)#0 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(10,7,4)#1 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 1, 0)
+(10,7,4)#2 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 1, 0)
+(10,7,4)#3 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(15,11,6)#0 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(15,11,6)#1 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(15,11,6)#2 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(15,11,6)#3 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(15,11,6)#4 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(15,11,6)#5 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(15,11,6)#6 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 1, 0)
+(15,11,6)#7 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 1, 0)
+(15,11,6)#8 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 1, 0)
+(15,11,6)#9 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 1, 0)
+(15,11,6)#10 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 1, 0)
+(15,11,6)#11 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 1, 0)
+(15,11,6)#12 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 1, 0)
+(15,11,6)#13 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(15,11,6)#14 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(15,11,6)#15 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(15,11,6)#16 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(15,11,6)#17 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(15,11,6)#18 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(17,13,7)#0 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(17,13,7)#1 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(17,13,7)#2 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(17,13,7)#3 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(17,13,7)#4 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(17,13,7)#5 strict b,c,e,f1 = (0, 0, 0, 0)  conservative = (0, 0, 0, 0)
+(b) direct brute force over pairs of pieces with <= 10 vertices
+(3,1,1)#0 + (3,1,1)#0 configs 6 tau-raising 6 in C_3 0
+(3,1,1)#0 + (8,5,3)#0 configs 2119 tau-raising 15 in C_3 0
+(3,1,1)#0 + (8,5,3)#1 configs 1267 tau-raising 13 in C_3 0
+(3,1,1)#0 + (10,7,4)#0 configs 5399 tau-raising 0 in C_3 0
+(3,1,1)#0 + (10,7,4)#1 configs 3146 tau-raising 0 in C_3 0
+(3,1,1)#0 + (10,7,4)#2 configs 3144 tau-raising 0 in C_3 0
+(3,1,1)#0 + (10,7,4)#3 configs 5400 tau-raising 0 in C_3 0
+(8,5,3)#0 + (8,5,3)#0 configs 51068 tau-raising 34 in C_3 4
+(8,5,3)#0 + (8,5,3)#1 configs 34596 tau-raising 34 in C_3 6
+(8,5,3)#0 + (10,7,4)#0 configs 88419 tau-raising 15 in C_3 0
+(8,5,3)#0 + (10,7,4)#1 configs 59806 tau-raising 15 in C_3 0
+(8,5,3)#0 + (10,7,4)#2 configs 59804 tau-raising 15 in C_3 0
+(8,5,3)#0 + (10,7,4)#3 configs 88420 tau-raising 15 in C_3 0
+(8,5,3)#1 + (8,5,3)#1 configs 23384 tau-raising 35 in C_3 9
+(8,5,3)#1 + (10,7,4)#0 configs 61797 tau-raising 13 in C_3 0
+(8,5,3)#1 + (10,7,4)#1 configs 41474 tau-raising 13 in C_3 0
+(8,5,3)#1 + (10,7,4)#2 configs 41472 tau-raising 13 in C_3 0
+(8,5,3)#1 + (10,7,4)#3 configs 61798 tau-raising 13 in C_3 0
+(10,7,4)#0 + (10,7,4)#0 configs 145411 tau-raising 0 in C_3 0
+(10,7,4)#0 + (10,7,4)#1 configs 101356 tau-raising 0 in C_3 0
+(10,7,4)#0 + (10,7,4)#2 configs 101354 tau-raising 0 in C_3 0
+(10,7,4)#0 + (10,7,4)#3 configs 145412 tau-raising 0 in C_3 0
+(10,7,4)#1 + (10,7,4)#1 configs 69864 tau-raising 0 in C_3 0
+(10,7,4)#1 + (10,7,4)#2 configs 69862 tau-raising 0 in C_3 0
+(10,7,4)#1 + (10,7,4)#3 configs 101357 tau-raising 0 in C_3 0
+(10,7,4)#2 + (10,7,4)#2 configs 69860 tau-raising 0 in C_3 0
+(10,7,4)#2 + (10,7,4)#3 configs 101355 tau-raising 0 in C_3 0
+(10,7,4)#3 + (10,7,4)#3 configs 145413 tau-raising 0 in C_3 0
+total tau-raising 249 in C_3 19 NOT isomorphic to a piece: 0 []

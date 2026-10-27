@@ -1,0 +1,8 @@
+C001-ext15-m11-example.json n=15 APs=11 contains Q8: False
+C002-ext15-m12-example.json n=15 APs=12 contains Q8: False
+C003-reader-5-9-K6.json n=65 APs=63 contains Q8: False
+C004-lemmaE-SK5-E1.json n=58 APs=55 contains Q8: False
+C005-lemmaE-SK6-E1.json n=67 APs=64 contains Q8: False
+C006-tight-21pt-h12.json n=21 APs=19 contains Q8: False
+C007-c25-witness-f25.json n=25 APs=20 contains Q8: False
+SUMMARY sets 107 containing Q8 0

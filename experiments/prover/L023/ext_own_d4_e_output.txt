@@ -1,1 +1,10 @@
 INPUT 24 covers 5040 pairs 190 extensions 293 EQUAL
+INPUT 25 covers 5005 pairs 190 extensions 293 EQUAL
+INPUT 26 covers 4865 pairs 204 extensions 309 EQUAL
+INPUT 27 covers 5565 pairs 177 extensions 319 EQUAL
+INPUT 28 covers 5145 pairs 176 extensions 277 EQUAL
+INPUT 29 covers 5565 pairs 176 extensions 317 EQUAL
+INPUT 30 covers 4865 pairs 204 extensions 309 EQUAL
+INPUT 31 covers 5250 pairs 177 extensions 279 EQUAL
+INPUT 32 covers 5215 pairs 177 extensions 273 EQUAL
+SUMMARY compared 9 equal 9 different 0 extensions(own) 2669 max_covers 5565 secs 271.2

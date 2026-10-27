@@ -1,0 +1,4 @@
+cell_19_16_8.txt: Delta<=3 classes 227, with an NC pair 18  (13s)
+cell_22_17_9.txt: Delta<=3 classes 37, with an NC pair 37  (20s)
+cell_26_22_11.txt: Delta<=3 classes 36, with an NC pair 0  (38s)
+graphs 300 NC pairs 71 types {(1, 2, 1): 41, (2, 2, 1): 30} FAILS 0
