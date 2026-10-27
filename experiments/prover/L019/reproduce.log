@@ -1,1 +1,3 @@
-exit 0
+reproduce.sh, original run (2026-10-27): the steps C1-C7 and the first three C8 runs completed; the fourth C8 run (cell_26_22_11) exceeded the old 1800 s timeout (timeout exit status 124) and `set -e` aborted the script before the final `exit 0`.
+The earlier content of this log ("exit 0") was misleading and has been replaced; the script did NOT finish with exit status 0.
+Round-1 fix: the C8 timeout is now 5400 s; the (26,22,11) C8 line was regenerated separately (see the bottom of this log once appended).
