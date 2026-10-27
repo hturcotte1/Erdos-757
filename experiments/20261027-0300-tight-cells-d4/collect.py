@@ -1,7 +1,7 @@
 """Collect results.json from out/cells (INFO lines) and gzip the class lists of the new cells."""
 import os, json, re, gzip, glob, tarfile
 H = os.path.dirname(os.path.abspath(__file__)); C = os.path.join(H, 'out', 'cells'); S = os.path.join(H, 'cells_seed')
-TARGETS = ['17_13_7_D4', '20_14_8_D4', '21_18_9_D4', '24_19_10_D4', '27_20_11_D3']
+TARGETS = ['17_13_7_D4', '20_14_8_D4', '21_18_9_D4', '24_19_10_D4', '27_20_11_D3', '27_20_11_D4']
 def info(fn):
     n = 0; inf = None
     for l in open(fn):
