@@ -13,3 +13,4 @@ glue32_b class 11 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SID
 glue32_b class 12 NOT-REALIZABLE labellings 0 dims {} nodes 4399 {'EQ': 194, 'SIDON': 860, 'NONLIN': 0} 93.1 s
 glue32_b class 13 NOT-REALIZABLE labellings 0 dims {} nodes 4399 {'EQ': 194, 'SIDON': 860, 'NONLIN': 0} 79.8 s
 glue32_b class 14 NOT-REALIZABLE labellings 0 dims {} nodes 4399 {'EQ': 194, 'SIDON': 860, 'NONLIN': 0} 82.3 s
+glue32_b class 15 NOT-REALIZABLE labellings 0 dims {} nodes 4399 {'EQ': 194, 'SIDON': 860, 'NONLIN': 0} 72.2 s
