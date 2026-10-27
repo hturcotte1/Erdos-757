@@ -27,7 +27,7 @@ for c in 10_7_4 14_12_6 17_13_7 12_10_5 15_11_6 19_16_8 22_17_9 26_22_11 10_8_4 
   timeout 1800 nice -n 10 python3 blocked_and_6b.py $D/cell_$c.txt 100000            >> blocked_and_6b_output.txt
 done
 timeout 900 nice -n 10 python3 fold_reasons_graph.py $D/cell_10_8_4.txt 39,40,60       > fold_reasons_10_8_4_output.txt
-# C8 timeout raised to 5400 s after round 1; recorded completed runs of the (26,22,11) step took 5 to 8.5 minutes.
+# C8 timeout raised to 5400 s after round 1; the (26,22,11) step, timed alone once, took 4 min 54 s.
 for c in 17_13_7 15_11_6 22_17_9 26_22_11; do
   timeout 5400 nice -n 10 python3 nbhd_cover.py $D/cell_$c.txt 100000                 >> nbhd_cover_output.txt
 done
