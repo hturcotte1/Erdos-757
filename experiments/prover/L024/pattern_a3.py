@@ -180,6 +180,9 @@ else:
         if 0 in (x, y) or 3 in (x, y): TYPES.append((E1, T(x), T(y)))
     for x, y, z in itertools.combinations_with_replacement(range(4), 3):
         if {x, y, z} & {0, 3}: TYPES.append((T(x), T(y), T(z)))
+start = int(sys.argv[2]) if len(sys.argv) > 2 else 0
+TYPES = TYPES[start:]
+if start: mode = mode + '_from%d' % start
 print('mode', mode, 'types', TYPES, flush=True)
 tot, out = run(TYPES, mode)
 json.dump(dict(totals=tot, configs=out), open(f'/home/user/Erdos-757/experiments/prover/L024/pattern_a3_{mode}_results.json', 'w'))
