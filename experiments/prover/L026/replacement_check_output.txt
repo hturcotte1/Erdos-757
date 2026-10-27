@@ -1,0 +1,8 @@
+cell_6_3_2_D3.txt {'hubs': 4, 'deg2': 3, 'nonadj': 3, 'M_inC3': 3, 'id_ok': 3, 'id_fail': 0, 'tauQ_ok': 3, 'tauQ_fail': 0}
+cell_11_7_4_D3.txt {'hubs': 14, 'deg2': 10, 'nonadj': 10, 'M_inC3': 10, 'id_ok': 10, 'id_fail': 0, 'tauQ_ok': 10, 'tauQ_fail': 0}
+cell_12_6_4_D3.txt {'hubs': 21, 'deg2': 18, 'nonadj': 16, 'M_inC3': 16, 'id_ok': 16, 'id_fail': 0, 'tauQ_ok': 18, 'tauQ_fail': 0}
+cell_13_9_5_D3.txt {'hubs': 24, 'deg2': 21, 'nonadj': 19, 'M_inC3': 19, 'id_ok': 19, 'id_fail': 0, 'tauQ_ok': 21, 'tauQ_fail': 0}
+cell_18_9_6_D3.txt {'hubs': 51, 'deg2': 57, 'nonadj': 44, 'M_inC3': 44, 'id_ok': 44, 'id_fail': 0, 'tauQ_ok': 57, 'tauQ_fail': 0}
+cell_19_12_7_D3.txt {'hubs': 186, 'deg2': 214, 'nonadj': 163, 'M_inC3': 163, 'id_ok': 163, 'id_fail': 0, 'tauQ_ok': 214, 'tauQ_fail': 0}
+cell_24_12_8_D3.txt {'hubs': 311, 'deg2': 385, 'nonadj': 281, 'M_inC3': 281, 'id_ok': 281, 'id_fail': 0, 'tauQ_ok': 385, 'tauQ_fail': 0}
+TOTAL {'hubs': 311, 'deg2': 385, 'nonadj': 281, 'M_inC3': 281, 'id_ok': 281, 'id_fail': 0, 'tauQ_ok': 385, 'tauQ_fail': 0}
