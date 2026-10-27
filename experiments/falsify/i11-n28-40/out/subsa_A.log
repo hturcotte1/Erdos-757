@@ -1,0 +1,7 @@
+{'base': 'C003', 'N': 65, 'size': 28, 'evals': 120000, 'best_slack': 0}
+{'base': 'C003', 'N': 65, 'size': 29, 'evals': 120000, 'best_slack': 1}
+{'base': 'C003', 'N': 65, 'size': 30, 'evals': 120000, 'best_slack': 0}
+{'base': 'C003', 'N': 65, 'size': 31, 'evals': 120000, 'best_slack': 3}
+{'base': 'C003', 'N': 65, 'size': 32, 'evals': 120000, 'best_slack': 1}
+{'base': 'C003', 'N': 65, 'size': 33, 'evals': 120000, 'best_slack': 0}
+{'base': 'C003', 'N': 65, 'size': 34, 'evals': 120000, 'best_slack': 0}

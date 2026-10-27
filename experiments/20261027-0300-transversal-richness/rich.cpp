@@ -84,10 +84,10 @@ int main() {
         auto code = [&](int a, int b, int c) { int t; if (a > b) { t = a; a = b; b = t; } if (b > c) { t = b; b = c; c = t; } if (a > b) { t = a; a = b; b = t; } return (a * 32 + b) * 32 + c; };
         for (int i = 0; i < m; i++) tab[code(ev[i][0], ev[i][1], ev[i][2])] = true;
         auto hasF7 = [&](int NE, int (*E)[3]) -> bool {
-            vector<vector<int>> at(n + 1);
-            for (int i = 0; i < NE; i++) for (int k = 0; k < 3; k++) at[E[i][k]].push_back(i);
+            static int at[40][12]; static int atc[40]; for (int c = 0; c <= n; c++) atc[c] = 0;
+            for (int i = 0; i < NE; i++) for (int k = 0; k < 3; k++) { int c = E[i][k]; if (atc[c] < 12) at[c][atc[c]++] = i; }
             for (int c = 0; c <= n; c++) {
-                int d = at[c].size(); if (d < 3) continue;
+                int d = atc[c]; if (d < 3) continue;
                 for (int i = 0; i < d; i++) for (int j = i + 1; j < d; j++) for (int l = j + 1; l < d; l++) {
                     int pr[3][2]; int ids[3] = {at[c][i], at[c][j], at[c][l]};
                     for (int t = 0; t < 3; t++) { int q = 0; for (int k = 0; k < 3; k++) if (E[ids[t]][k] != c) pr[t][q++] = E[ids[t]][k]; }
@@ -106,6 +106,7 @@ int main() {
         // tab must also contain new edges when testing: handled by temporarily setting
         long ntrip = 0, ncov = 0, nlin = 0, nadm = 0, nadm_unc = 0;
         long adm_R2 = 0, adm_R2_unc = 0, adm_R1 = 0, adm_R1_unc = 0;   // R2: all six have d_F == 2; R1: all six have d_F >= 2
+        long adm_mincov = 1L << 40; long adm_thin = 0; double adm_minratio = 2.0;
         long uncA = 0, uncBonly = 0; long uncA_size[40] = {0}, uncB_size[40] = {0};
         long unc_total = 0, unc_combo[8] = {0}; long unc_P_only_size[40] = {0}; long unc_P_size[40] = {0};
         long nonadm_total = 0, nonadm_L = 0, nonadm_P = 0;
@@ -142,7 +143,10 @@ int main() {
                 if (!adm) nonadm_total++;
                 int vv[6] = {pa[p1], pb[p1], pa[p2], pb[p2], pa[p3], pb[p3]};
                 bool r2 = true, r1 = true; for (int t = 0; t < 6; t++) { if (deg[vv[t]] != 2) r2 = false; if (deg[vv[t]] < 2) r1 = false; }
-                if (adm) { nadm++; if (r2) adm_R2++; if (r1) adm_R1++; if (!cov) { nadm_unc++; if (r2) adm_R2_unc++; if (r1) adm_R1_unc++; if (adm_unc_list.size() < 20) adm_unc_list.push_back({vv[0], vv[1], vv[2], vv[3], vv[4], vv[5]}); } }
+                if (adm) {
+                    long cc = 0; for (int w = 0; w < W; w++) cc += __builtin_popcountll(acc[w] & mb[p3][w]);
+                    if (cc < adm_mincov) adm_mincov = cc; if (cc <= 2) adm_thin++; if ((double)cc / nT < adm_minratio) adm_minratio = (double)cc / nT;
+                    nadm++; if (r2) adm_R2++; if (r1) adm_R1++; if (!cov) { nadm_unc++; if (r2) adm_R2_unc++; if (r1) adm_R1_unc++; if (adm_unc_list.size() < 20) adm_unc_list.push_back({vv[0], vv[1], vv[2], vv[3], vv[4], vv[5]}); } }
                 if (!cov) {
                     unc_total++; int combo = (lin ? 0 : 1) | (f7 ? 2 : 0) | (p3ok ? 0 : 4); unc_combo[combo]++;
                     if (!p3ok) {
@@ -160,6 +164,7 @@ int main() {
         printf("],\"p2fail\":["); for (int k = 0; k < 12; k++) printf("%s%ld", k ? "," : "", p2fail[k]);
         printf("],\"pp_all\":%ld,\"pp_all_cov\":%ld,\"pp_good\":%ld,\"pp_good_cov\":%ld", pp_all, pp_all_cov, pp_good, pp_good_cov);
         printf(",\"ntrip\":%ld,\"ncov\":%ld,\"nlin\":%ld,\"nadm\":%ld,\"nadm_unc\":%ld,\"adm_R2\":%ld,\"adm_R2_unc\":%ld,\"adm_R1\":%ld,\"adm_R1_unc\":%ld", ntrip, ncov, nlin, nadm, nadm_unc, adm_R2, adm_R2_unc, adm_R1, adm_R1_unc);
+        printf(",\"adm_mincov\":%ld,\"adm_thin\":%ld,\"adm_minratio\":%.5f", nadm ? adm_mincov : -1L, adm_thin, nadm ? adm_minratio : -1.0);
         printf(",\"unc_total\":%ld,\"unc_combo\":[", unc_total); for (int k = 0; k < 8; k++) printf("%s%ld", k ? "," : "", unc_combo[k]);
         printf("],\"unc_P_size\":{"); bool fs = true; for (int k = 0; k < 40; k++) if (unc_P_size[k]) { printf("%s\"%d\":%ld", fs ? "" : ",", k, unc_P_size[k]); fs = false; }
         printf("},\"unc_P_only_size\":{"); fs = true; for (int k = 0; k < 40; k++) if (unc_P_only_size[k]) { printf("%s\"%d\":%ld", fs ? "" : ",", k, unc_P_only_size[k]); fs = false; }

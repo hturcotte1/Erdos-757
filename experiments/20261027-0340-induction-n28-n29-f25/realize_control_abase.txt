@@ -1,0 +1,2 @@
+STAT graph=1 assignments=1596 singular=0 liftfail=0 distinct=1413 realizations=948
+TOTAL graphs=1 assignments=1596 singular=0 liftfail=0 distinct=1413 realizations=948 realizable_graphs=1

@@ -25,6 +25,11 @@ def read(p):
     return found, done
 prov = json.load(open(os.path.join(HERE, 'provenance.json'))) if os.path.exists(os.path.join(HERE, 'provenance.json')) else {}
 newc = 0; conflicts = []
+for p in sorted(glob.glob(OUT + '/cell_*.txt')):
+    k = key_of(p); ks = '%d,%d,%d,%d' % k
+    if ks not in prov:
+        found, done = read(p)
+        if done: prov[ks] = dict(classes=len(found), md5=hashlib.md5('\n'.join(sorted(found)).encode()).hexdigest(), first='COMPUTED HERE (this folder)', firstpath=os.path.relpath(p, HERE), agree=[], disagree=[])
 for label, files in SRC:
     for p in sorted(files):
         k = key_of(p)

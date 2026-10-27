@@ -1,0 +1,9 @@
+{'base': 'C003', 'N': 65, 'size': 28, 'evals': 150000, 'best_slack': 4}
+{'base': 'C003', 'N': 65, 'size': 29, 'evals': 150000, 'best_slack': 5}
+{'base': 'C003', 'N': 65, 'size': 30, 'evals': 150000, 'best_slack': 7}
+{'base': 'C003', 'N': 65, 'size': 31, 'evals': 150000, 'best_slack': 6}
+{'base': 'C003', 'N': 65, 'size': 32, 'evals': 150000, 'best_slack': 7}
+{'base': 'C003', 'N': 65, 'size': 33, 'evals': 150000, 'best_slack': 9}
+{'base': 'C003', 'N': 65, 'size': 34, 'evals': 150000, 'best_slack': 12}
+{'base': 'C003', 'N': 65, 'size': 35, 'evals': 150000, 'best_slack': 4}
+{'base': 'C003', 'N': 65, 'size': 36, 'evals': 150000, 'best_slack': 5}

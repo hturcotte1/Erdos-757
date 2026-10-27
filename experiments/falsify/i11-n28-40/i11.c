@@ -209,17 +209,22 @@ static void subsa_mode(const char *file, int size, long iters, u64 seed, double 
     int inset[200] = {0}, in[200], out[200], nin = 0, nout = 0;
     /* random start: grow a connected-ish subset by BFS from random vertex */
     int order[200]; for (int i = 0; i < N; i++) order[i] = i; for (int i = N - 1; i > 0; i--) { int j = rndint(i + 1); int t = order[i]; order[i] = order[j]; order[j] = t; }
-    for (int i = 0; i < size; i++) inset[order[i]] = 1;
+    if (REQCONN) { int q[200], qh = 0, qt = 0, vis[200] = {0}; int s0 = order[0]; q[qt++] = s0; vis[s0] = 1; int cnt_ = 0;
+        while (qh < qt && cnt_ < size) { int v = q[qh++]; inset[v] = 1; cnt_++; for (int i = 0; i < M; i++) for (int j = 0; j < 3; j++) if (tri[i][j] == v) for (int k = 0; k < 3; k++) { int u = tri[i][k]; if (!vis[u]) { vis[u] = 1; q[qt++] = u; } } }
+        for (int i = 0; cnt_ < size && i < N; i++) if (!inset[order[i]]) { inset[order[i]] = 1; cnt_++; } }
+    else for (int i = 0; i < size; i++) inset[order[i]] = 1;
     #define BUILD(h, tauvar, slv) { int map[200]; int k = 0; for (int v = 0; v < N; v++) map[v] = inset[v] ? k++ : -1; (h).n = size; (h).m = 0; \
         for (int i = 0; i < M; i++) if (inset[tri[i][0]] && inset[tri[i][1]] && inset[tri[i][2]]) (h).e[(h).m++] = vmask(map[tri[i][0]], map[tri[i][1]], map[tri[i][2]]); \
         tauvar = tau_of(&(h), 2, 0, NULL); slv = slack_of(&(h), tauvar); }
-    G h; int tau, sl; BUILD(h, tau, sl); int best = sl; static long hist[HSZ]; long evals = 0;
+    G h; int tau, sl; BUILD(h, tau, sl); int best = 9999; long evals = 0; static long hist[HSZ];
+    #define PEN(hh) ({ int iso_; int nc_ = components(&(hh), &iso_); (REQCONN && (nc_ != 1 || iso_)) ? 8 * (nc_ - 1 + iso_) + 4 : 0; })
+    int pen = PEN(h); int obj = sl + pen; if (!pen) best = sl;
     for (long it = 0; it < iters; it++) {
         double T = T0 * pow(T1 / T0, (double)it / iters);
         nin = nout = 0; for (int v = 0; v < N; v++) { if (inset[v]) in[nin++] = v; else out[nout++] = v; }
         int a = in[rndint(nin)], b = out[rndint(nout)]; inset[a] = 0; inset[b] = 1;
-        G h2; int t2, s2; BUILD(h2, t2, s2); evals++;
-        if (s2 <= sl || rnd01() < exp((double)(sl - s2) / T)) { sl = s2; tau = t2; h = h2; if (sl + HOFF >= 0 && sl + HOFF < HSZ) hist[sl + HOFF]++; if (sl < best) best = sl; report_low(&h, tau, sl, "sub"); }
+        G h2; int t2, s2; BUILD(h2, t2, s2); evals++; int p2 = PEN(h2); int o2 = s2 + p2;
+        if (o2 <= obj || rnd01() < exp((double)(obj - o2) / T)) { obj = o2; sl = s2; tau = t2; h = h2; pen = p2; if (!pen) { if (sl + HOFF >= 0 && sl + HOFF < HSZ) hist[sl + HOFF]++; if (sl < best) best = sl; report_low(&h, tau, sl, "sub"); } }
         else { inset[a] = 1; inset[b] = 0; }
     }
     printf("SUBSA base=%s size=%d evals=%ld best_slack=%d hist", file, size, evals, best); for (int s = 0; s < HSZ; s++) if (hist[s]) printf(" %d:%ld", s - HOFF, hist[s]); printf("\n");

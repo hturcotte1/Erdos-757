@@ -56,7 +56,7 @@ def multisets(lib,total,maxparts=8):
     rec(0,total,[])
     return out
 
-def search_union(lib,idxs,max_nodes=None):
+def search_union(lib,idxs,max_nodes=None,kmax=4,extend=True):
     comps=[lib[i] for i in idxs]
     off=[];o=0
     for c in comps: off.append(o); o+=c.n
@@ -98,29 +98,41 @@ def search_union(lib,idxs,max_nodes=None):
                 tot+=(-1)**(r+1)*joint(vs)
         return tot
     found=[]; nodes=0
+    ncomp=len(comps)
+    def groups_after(S):
+        par=list(range(ncomp))
+        def f(x):
+            while par[x]!=x:
+                par[x]=par[par[x]]; x=par[x]
+            return x
+        for i in S:
+            u,w=pairs[i]; par[f(comp_of[u])]=f(comp_of[w])
+        return len({f(x) for x in range(ncomp)})
     def dfs(start,S,usedv,k_rem):
         nonlocal nodes
         nodes+=1
         if max_nodes and nodes>max_nodes: raise RuntimeError('node limit')
+        g=groups_after(S)
+        if g-1>k_rem: return
         cv=cover(S) if S else 0
         if cv==total and S:
-            found.append(list(S)); return
+            found.append(list(S))
+            return    # supersets of a cover are covers too; they are produced separately by extension
         if k_rem==0: return
-        # bound: k_rem more pairs can add at most sum of next k_rem probabilities (pairs sorted desc)
         for i in range(start,P):
-            if cv+k_rem*pc[i]<total: break   # sorted desc: later pairs have smaller pc
+            if cv+k_rem*pc[i]<total: break
             u,w=pairs[i]
             if u in usedv or w in usedv: continue
             usedv.add(u);usedv.add(w); S.append(i)
             dfs(i+1,S,usedv,k_rem-1)
             S.pop(); usedv.discard(u);usedv.discard(w)
-    dfs(0,[],set(),4)
+    dfs(0,[],set(),kmax)
     # build K for each found covering set (size<=4); extend to 4 pairs if needed (any extra admissible pair)
     results=[]
     for S in found:
         base=[pairs[i] for i in S]
         ext_opts=[base]
-        if len(base)<4:
+        if extend and len(base)<4:
             ext_opts=[]
             usedv={x for p in base for x in p}
             cand=[p for p in pairs if p[0] not in usedv and p[1] not in usedv]
@@ -130,7 +142,7 @@ def search_union(lib,idxs,max_nodes=None):
                 ext_opts.append(base+list(extra))
         for prs in ext_opts:
             results.append(prs)
-    return results,(comps,off,NQ,nodes)
+    return results,(comps,off,NQ,nodes,[len(S) for S in found])
 
 def build_K(comps,off,NQ,prs):
     edges=[]

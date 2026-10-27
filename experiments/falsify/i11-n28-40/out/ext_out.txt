@@ -1,0 +1,89 @@
+EXTEND inputs=2385 extensions=3162430
+CELL 16 14 minslack 10 hist 10:6396
+CELL 17 14 minslack 2 hist 2:86 13:1837
+CELL 18 14 minslack 5 hist 5:16 16:111
+CELL 20 16 minslack 4 hist 4:462
+CELL 20 17 minslack 6 hist 6:1236
+CELL 20 18 minslack 8 hist 8:139767
+CELL 21 16 minslack 7 hist 7:6889
+CELL 21 17 minslack 9 hist 9:7049
+CELL 21 18 minslack 11 hist 11:107338
+CELL 22 16 minslack 10 hist 10:1824
+CELL 22 17 minslack 12 hist 12:1986
+CELL 22 18 minslack 3 hist 3:42 14:24329
+CELL 22 19 minslack 5 hist 5:13897
+CELL 22 20 minslack 7 hist 7:105195
+CELL 23 16 minslack 2 hist 2:7 13:223
+CELL 23 17 minslack 4 hist 4:6 15:244
+CELL 23 18 minslack 6 hist 6:144 17:1974
+CELL 23 19 minslack 8 hist 8:49881
+CELL 23 20 minslack 10 hist 10:112646
+CELL 24 19 minslack 11 hist 11:12348
+CELL 24 20 minslack 13 hist 13:25276
+CELL 24 21 minslack 4 hist 4:30379
+CELL 24 22 minslack 6 hist 6:2348
+CELL 25 19 minslack 3 hist 3:36 14:1334
+CELL 25 20 minslack 5 hist 5:55 16:2408
+CELL 25 21 minslack 7 hist 7:71539
+CELL 25 22 minslack 9 hist 9:626
+CELL 25 23 minslack 11 hist 11:116635
+CELL 26 20 minslack 8 hist 8:22498
+CELL 26 21 minslack 10 hist 10:24305
+CELL 26 22 minslack 12 hist 12:71
+CELL 26 23 minslack 14 hist 14:24213
+CELL 26 24 minslack 5 hist 5:18570
+CELL 27 20 minslack 11 hist 11:4258
+CELL 27 21 minslack 2 hist 2:51 13:3252
+CELL 27 23 minslack 6 hist 6:45 17:2166
+CELL 27 24 minslack 8 hist 8:85476
+CELL 27 25 minslack 10 hist 10:558632
+CELL 28 20 minslack 14 hist 14:414
+CELL 28 21 minslack 16 hist 16:179
+CELL 28 24 minslack 11 hist 11:17265
+CELL 28 25 minslack 13 hist 13:120096
+CELL 28 26 minslack 4 hist 4:86972
+CELL 29 24 minslack 3 hist 3:52 14:1562
+CELL 29 25 minslack 5 hist 5:1882 16:11768
+CELL 29 26 minslack 7 hist 7:123213
+CELL 30 25 minslack 8 hist 8:131087
+CELL 30 26 minslack 10 hist 10:21150
+CELL 31 25 minslack 11 hist 11:21264
+CELL 31 26 minslack 2 hist 2:59 13:1649
+CELL 31 27 minslack 4 hist 4:2401
+CELL 31 29 minslack 8 hist 8:1983
+CELL 32 25 minslack 14 hist 14:1771
+CELL 32 26 minslack 5 hist 5:2905
+CELL 32 27 minslack 7 hist 7:161922
+CELL 32 28 minslack 9 hist 9:2432
+CELL 32 29 minslack 11 hist 11:381
+CELL 32 30 minslack 13 hist 13:358
+CELL 33 26 minslack 8 hist 8:421
+CELL 33 27 minslack 10 hist 10:23882
+CELL 33 28 minslack 12 hist 12:373
+CELL 33 29 minslack 14 hist 14:31
+CELL 33 30 minslack 16 hist 16:30
+CELL 33 31 minslack 7 hist 7:2578
+CELL 34 26 minslack 11 hist 11:32
+CELL 34 27 minslack 13 hist 13:1837
+CELL 34 28 minslack 15 hist 15:30
+CELL 34 29 minslack 6 hist 6:3510
+CELL 34 30 minslack 8 hist 8:192517
+CELL 34 31 minslack 10 hist 10:438
+CELL 35 29 minslack 9 hist 9:477
+CELL 35 30 minslack 11 hist 11:30839
+CELL 35 31 minslack 13 hist 13:33
+CELL 36 29 minslack 12 hist 12:34
+CELL 36 30 minslack 14 hist 14:2468
+CELL 36 31 minslack 5 hist 5:4314
+CELL 36 32 minslack 7 hist 7:238606
+CELL 37 30 minslack 6 hist 6:1 17:34
+CELL 37 31 minslack 8 hist 8:540
+CELL 37 32 minslack 10 hist 10:30672
+CELL 38 31 minslack 11 hist 11:36
+CELL 38 32 minslack 13 hist 13:2083
+CELL 38 33 minslack 4 hist 4:19958
+CELL 38 35 minslack 8 hist 8:266957
+CELL 39 33 minslack 7 hist 7:2347
+CELL 39 35 minslack 11 hist 11:32257
+CELL 40 33 minslack 10 hist 10:149
+CELL 40 35 minslack 14 hist 14:2075

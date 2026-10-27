@@ -1,0 +1,35 @@
+pieces [(3, 1, 0), (3, 1, 0), (10, 7, 0), (14, 12, 0), (8, 5, 1), (8, 5, 1), (12, 10, 1)]
+seeds 437
+6 parents 3 kids 0 -> n+1 {'pool': 0, 'minslack': None, 'hist': {}} t=0s
+8 parents 2 kids 0 -> n+1 {'pool': 4, 'minslack': None, 'hist': {}} t=0s
+9 parents 4 kids 0 -> n+1 {'pool': 1, 'minslack': 0, 'hist': {0: 1}} t=0s
+10 parents 1 kids 0 -> n+1 {'pool': 4, 'minslack': None, 'hist': {}} t=0s
+11 parents 4 kids 0 -> n+1 {'pool': 6, 'minslack': 1, 'hist': {1: 1}} t=0s
+12 parents 6 kids 0 -> n+1 {'pool': 2, 'minslack': None, 'hist': {}} t=0s
+13 parents 2 kids 0 -> n+1 {'pool': 7, 'minslack': 0, 'hist': {0: 1}} t=0s
+14 parents 7 kids 0 -> n+1 {'pool': 8, 'minslack': None, 'hist': {}} t=0s
+15 parents 8 kids 0 -> n+1 {'pool': 6, 'minslack': None, 'hist': {}} t=0s
+16 parents 6 kids 6 -> n+1 {'pool': 16, 'minslack': 0, 'hist': {0: 6}} t=0s
+17 parents 16 kids 0 -> n+1 {'pool': 5, 'minslack': None, 'hist': {}} t=0s
+18 parents 5 kids 0 -> n+1 {'pool': 10, 'minslack': None, 'hist': {}} t=0s
+19 parents 10 kids 6 -> n+1 {'pool': 22, 'minslack': None, 'hist': {}} t=0s
+20 parents 22 kids 0 -> n+1 {'pool': 18, 'minslack': 5, 'hist': {5: 5, 7: 3, 9: 2}} t=0s
+21 parents 18 kids 955 -> n+1 {'pool': 973, 'minslack': 3, 'hist': {7: 504, 5: 227, 3: 225}} t=1s
+22 parents 417 kids 6 -> n+1 {'pool': 22, 'minslack': 6, 'hist': {6: 6}} t=2s
+23 parents 22 kids 238 -> n+1 {'pool': 257, 'minslack': 2, 'hist': {4: 226, 2: 14}} t=2s
+24 parents 217 kids 12 -> n+1 {'pool': 30, 'minslack': None, 'hist': {}} t=3s
+25 parents 30 kids 6 -> n+1 {'pool': 25, 'minslack': 6, 'hist': {6: 1}} t=5s
+26 parents 25 kids 38 -> n+1 {'pool': 58, 'minslack': 4, 'hist': {4: 32}} t=6s
+27 parents 58 kids 12 -> n+1 {'pool': 27, 'minslack': None, 'hist': {}} t=9s
+28 parents 27 kids 6 -> n+1 {'pool': 26, 'minslack': None, 'hist': {}} t=12s
+29 parents 26 kids 6 -> n+1 {'pool': 30, 'minslack': None, 'hist': {}} t=14s
+30 parents 30 kids 1 -> n+1 {'pool': 25, 'minslack': None, 'hist': {}} t=18s
+31 parents 25 kids 0 -> n+1 {'pool': 17, 'minslack': None, 'hist': {}} t=18s
+32 parents 17 kids 0 -> n+1 {'pool': 20, 'minslack': None, 'hist': {}} t=18s
+33 parents 20 kids 0 -> n+1 {'pool': 26, 'minslack': None, 'hist': {}} t=18s
+34 parents 26 kids 0 -> n+1 {'pool': 15, 'minslack': 11, 'hist': {11: 1}} t=18s
+35 parents 15 kids 49 -> n+1 {'pool': 74, 'minslack': 7, 'hist': {9: 47, 7: 2}} t=18s
+36 parents 74 kids 0 -> n+1 {'pool': 20, 'minslack': None, 'hist': {}} t=18s
+37 parents 20 kids 0 -> n+1 {'pool': 26, 'minslack': None, 'hist': {}} t=18s
+38 parents 26 kids 0 -> n+1 {'pool': 14, 'minslack': None, 'hist': {}} t=18s
+39 parents 14 kids 0 -> n+1 {'pool': 0, 'minslack': None, 'hist': {}} t=18s

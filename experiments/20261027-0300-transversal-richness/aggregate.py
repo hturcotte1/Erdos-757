@@ -32,6 +32,7 @@ for k, mt in sorted(meta.items(), key=lambda kv: (kv[1]['slack'], kv[1]['n'])):
         triples=S('ntrip'), triples_coverable=S('ncov'), triples_linear=S('nlin'), triples_admissible=S('nadm'), admissible_uncoverable=S('nadm_unc'),
         classes_with_admissible=sum(1 for r in rows if r['nadm']), classes_with_admissible_uncoverable=sum(1 for r in rows if r['nadm_unc']),
         adm_R2=S('adm_R2'), adm_R2_unc=S('adm_R2_unc'), adm_R1=S('adm_R1'), adm_R1_unc=S('adm_R1_unc'),
+        adm_min_cover_count=min([r['adm_mincov'] for r in rows if r['adm_mincov']>=0] or [None]) if any(r['adm_mincov']>=0 for r in rows) else None, adm_thin_le2=S('adm_thin'), adm_min_cover_ratio=min([r['adm_minratio'] for r in rows if r['adm_minratio']>=0] or [None]) if any(r['adm_minratio']>=0 for r in rows) else None,
         uncoverable_total=S('unc_total'), uncoverable_nonadm_by_combo={'L,F,P bits (1=nonlinear,2=F7,4=P3 violated)': {str(i): unc_combo[i] for i in range(8) if unc_combo[i]}},
         uncoverable_P_violating_minS=dict(sorted(sz.items())), uncoverable_P_only_minS=dict(sorted(szo.items())),
         uncoverable_violates_A=uA, uncoverable_violates_B_only=uB, A_minS=dict(sorted(sA.items())), B_only_minS=dict(sorted(sB.items())),

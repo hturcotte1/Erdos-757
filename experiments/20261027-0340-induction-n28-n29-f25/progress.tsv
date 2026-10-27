@@ -1,0 +1,4 @@
+cell	classes	inputs	nodes	seconds	bad_tau	hits_in_C	route	utc
+(26,13,9,2)	0	130	223513	0.3	0	2771	recurse	2026-10-27T03:12:59Z
+(27,15,10,2)	0	47	23617	0.2	0	0	recurse	2026-10-27T03:13:11Z
+(28,17,11,2)	0	0	0	0.0	0	0	recurse	2026-10-27T03:13:23Z
