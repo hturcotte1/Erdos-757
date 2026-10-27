@@ -8,3 +8,4 @@ poor ('(3,1,1)#0', '(10,7,4)#1', '(10,7,4)#1') N 23 g-orbits 25 configs 0 runnin
 poor ('(3,1,1)#0', '(10,7,4)#1', '(10,7,4)#2') N 23 g-orbits 30 configs 0 running {'type_triples': 7, 'g_choices': 76, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0} [22s]
 poor ('(3,1,1)#0', '(10,7,4)#2', '(10,7,4)#2') N 23 g-orbits 36 configs 0 running {'type_triples': 8, 'g_choices': 112, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0} [26s]
 poor ('(10,7,4)#1', '(10,7,4)#1', '(10,7,4)#1') N 30 g-orbits 125 configs 0 running {'type_triples': 9, 'g_choices': 237, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0} [73s]
+poor ('(10,7,4)#1', '(10,7,4)#1', '(10,7,4)#2') N 30 g-orbits 150 configs 0 running {'type_triples': 10, 'g_choices': 387, 'configs': 359, 'claimE': 206, 'inC3': 206, 'inC3_claimE': 206, 'tau_ok': 206, 'Pneg': 0} [131s]
