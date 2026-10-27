@@ -1,0 +1,4 @@
+{"cell":[24,19,10,3],"classes":0,"route":"recurse (L013/L014 streamed engine, byte-identical engine.py, ext_d = L014 MAXP256 binary)",
+ "branch":{"d":3,"tp":9,"Sp":2,"decompositions":12,"inputs":3773,"bad_tau":0,"nodes":29007573,"hits_F7free":1380,"hits_in_C":252,"connected_hits":0},
+ "secs_wall":95.4,"matches_L013":"inputs, F7-free hits, hits in C and nodes identical to L013 C9 / L013 INFO line",
+ "covered_by_accepted_certificate":"L013 (K57), Step 6.3 and C9, referee-reproduced with an independent engine"}
