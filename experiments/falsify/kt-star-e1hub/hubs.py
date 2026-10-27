@@ -2,7 +2,7 @@
 """E1-hub falsifier library (re-implementation; uses L021 kt.py only for min-transversal enumeration, A, and DEF;
 class-C membership by the L014 verifier pyverify.py; independent tau check by CP-SAT).
 Vertices 0..n-1, edges = 3-tuples.  Hub: new v,x,y,z and edges {x,y,z},{v,x,a},{v,y,b},{v,z,c}."""
-import sys, json, itertools, time
+import sys, json, itertools, time, os
 sys.path.insert(0, '/home/user/Erdos-757/experiments/prover/L021')
 sys.path.insert(0, '/home/user/Erdos-757/experiments/20261027-0300-transversal-richness')
 import kt, pyverify
@@ -51,7 +51,7 @@ def bconfigs(n, E, t):
             while c_mask:
                 cb = c_mask & -c_mask; c_mask ^= cb
                 c = cb.bit_length() - 1
-                if frozenset((a, b, c)) in Es: continue
+                if frozenset((a, b, c)) in Es and not os.environ.get('EDGEOK'): continue
                 out.append((a, b, c))
     notin = [x for x in low if not (inT >> x) & 1]
     return out, len(T), notin
