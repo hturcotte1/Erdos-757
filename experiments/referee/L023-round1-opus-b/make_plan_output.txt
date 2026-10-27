@@ -1,0 +1,22 @@
+DEC [(1, 0, 0), (1, 0, 0), (3, 1, 1), (14, 12, 6)] inputs 2 selected 2
+DEC [(1, 0, 0), (1, 0, 0), (17, 13, 7)] inputs 6 selected 6
+DEC [(1, 0, 0), (3, 1, 1), (15, 12, 6)] inputs 10617 selected 300
+DEC [(1, 0, 0), (6, 3, 2), (12, 10, 5)] inputs 149 selected 149
+DEC [(1, 0, 0), (8, 5, 3), (10, 8, 4)] inputs 126 selected 126
+DEC [(1, 0, 0), (8, 6, 3), (10, 7, 4)] inputs 12 selected 12
+DEC [(1, 0, 0), (18, 13, 7)] inputs 2544 selected 300
+DEC [(3, 1, 1), (3, 1, 1), (13, 11, 5)] inputs 65771 selected 300
+DEC [(3, 1, 1), (4, 2, 1), (12, 10, 5)] inputs 0
+DEC [(3, 1, 1), (6, 4, 2), (10, 8, 4)] inputs 63 selected 63
+DEC [(3, 1, 1), (8, 6, 3), (8, 6, 3)] inputs 6 selected 6
+DEC [(3, 1, 1), (16, 12, 6)] inputs 540610 selected 300
+DEC [(4, 2, 1), (15, 11, 6)] inputs 0
+DEC [(6, 3, 2), (13, 10, 5)] inputs 6683 selected 300
+DEC [(6, 4, 2), (13, 9, 5)] inputs 84 selected 84
+DEC [(7, 3, 2), (12, 10, 5)] inputs 149 selected 149
+DEC [(8, 5, 3), (11, 8, 4)] inputs 942 selected 942
+DEC [(8, 6, 3), (11, 7, 4)] inputs 105 selected 105
+DEC [(9, 5, 3), (10, 8, 4)] inputs 378 selected 378
+DEC [(9, 6, 3), (10, 7, 4)] inputs 84 selected 84
+DEC [(19, 13, 7)] inputs 192957 selected 300
+TOTAL inputs 821288 selected 3906

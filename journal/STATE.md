@@ -1,7 +1,7 @@
 # STATE (overwrite at every checkpoint; keep under 60 lines)
 
 Status: RUN 2026-10-27 (user, 02:17 UTC): 'continue with /goal and work non-stop until 4 pm MST tomorrow; try to find a significant result'. Target: a proof of c* >= 6/11 (I11 in general, goal clause B) or another significant result. Hard stop 2026-10-28 22:00 UTC (4 pm MDT); finalize (FINAL_REPORT section, STATE, tests, status, PR to main) by 21:30 UTC. GOAL.md protected; GOAL_MET YES already via clauses A (C003, a COMMUNITY construction: anonymous reader, Erdős Problem a Day, 19 Oct 2026, verified here, not ours; say so everywhere) and C.
-Last updated (UTC): 2026-10-27 10:55
+Last updated (UTC): 2026-10-27 10:59
 Clock: journal/START_TIME_UTC = 2026-10-13T23:06:40Z; budget 72 h exhausted long ago (status.sh takes 1 h+, re-judges C003-C005: run in background with timeout 14000 nice 19).
 
 ## Best verified results (details: results/LEDGER.md, kb/known_results.md K30-K63)

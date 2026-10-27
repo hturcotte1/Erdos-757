@@ -1,0 +1,1 @@
+p3 vs brute force: agree 1390 disagree 0; violating (P3) 507
