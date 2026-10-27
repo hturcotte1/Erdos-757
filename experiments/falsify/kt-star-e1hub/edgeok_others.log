@@ -1,0 +1,52 @@
+H records written 0
+(3, 1, 1) {'type': 'cell', 'cell': '(3, 1, 1)', 'A': -16, 'D': 3, 'graphs': 1, 'nonconnected': 0, 'bconf_labelled': 1, 'graphs_with_bconf': 1, 'notinT_low_vertices': 0, 'hub_classes_new': 1, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [0s]
+H records written 2
+(6, 3, 2) {'type': 'cell', 'cell': '(6, 3, 2)', 'A': 3, 'D': 3, 'graphs': 1, 'nonconnected': 0, 'bconf_labelled': 4, 'graphs_with_bconf': 1, 'notinT_low_vertices': 0, 'hub_classes_new': 2, 'hub_inC': 2, 'hubs_by_cell': {'(10,7,4)': 2}, 'minP': 0, 'minPp_nonpiece': None} [1s]
+H records written 2
+(8, 5, 3) {'type': 'cell', 'cell': '(8, 5, 3)', 'A': -5, 'D': 4, 'graphs': 2, 'nonconnected': 0, 'bconf_labelled': 0, 'graphs_with_bconf': 0, 'notinT_low_vertices': 0, 'hub_classes_new': 0, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [1s]
+H records written 2
+(9, 4, 3) {'type': 'cell', 'cell': '(9, 4, 3)', 'A': -13, 'D': 3, 'graphs': 1, 'nonconnected': 0, 'bconf_labelled': 3, 'graphs_with_bconf': 1, 'notinT_low_vertices': 0, 'hub_classes_new': 1, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [1s]
+H records written 2
+(10, 7, 4) {'type': 'cell', 'cell': '(10, 7, 4)', 'A': -13, 'D': 4, 'graphs': 4, 'nonconnected': 0, 'bconf_labelled': 0, 'graphs_with_bconf': 0, 'notinT_low_vertices': 0, 'hub_classes_new': 0, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [1s]
+H records written 11
+(11, 7, 4) {'type': 'cell', 'cell': '(11, 7, 4)', 'A': 14, 'D': 3, 'graphs': 35, 'nonconnected': 0, 'bconf_labelled': 22, 'graphs_with_bconf': 19, 'notinT_low_vertices': 0, 'hub_classes_new': 21, 'hub_inC': 9, 'hubs_by_cell': {'(15,11,6)': 9}, 'minP': 0, 'minPp_nonpiece': None} [2s]
+H records written 16
+(12, 6, 4) {'type': 'cell', 'cell': '(12, 6, 4)', 'A': 6, 'D': 3, 'graphs': 4, 'nonconnected': 0, 'bconf_labelled': 18, 'graphs_with_bconf': 4, 'notinT_low_vertices': 0, 'hub_classes_new': 11, 'hub_inC': 5, 'hubs_by_cell': {'(16,10,6)': 5}, 'minP': 0, 'minPp_nonpiece': 0} [2s]
+H records written 16
+(12, 10, 5) {'type': 'cell', 'cell': '(12, 10, 5)', 'A': 14, 'D': 4, 'graphs': 149, 'nonconnected': 0, 'bconf_labelled': 0, 'graphs_with_bconf': 0, 'notinT_low_vertices': 0, 'hub_classes_new': 0, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [2s]
+H records written 19
+(13, 9, 5) {'type': 'cell', 'cell': '(13, 9, 5)', 'A': 6, 'D': 3, 'graphs': 84, 'nonconnected': 0, 'bconf_labelled': 32, 'graphs_with_bconf': 32, 'notinT_low_vertices': 0, 'hub_classes_new': 32, 'hub_inC': 3, 'hubs_by_cell': {'(17,13,7)': 3}, 'minP': 0, 'minPp_nonpiece': None} [3s]
+H records written 19
+(14, 8, 5) {'type': 'cell', 'cell': '(14, 8, 5)', 'A': -2, 'D': 3, 'graphs': 9, 'nonconnected': 0, 'bconf_labelled': 18, 'graphs_with_bconf': 9, 'notinT_low_vertices': 0, 'hub_classes_new': 9, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [3s]
+H records written 19
+(14, 12, 6) {'type': 'cell', 'cell': '(14, 12, 6)', 'A': 6, 'D': 3, 'graphs': 2, 'nonconnected': 0, 'bconf_labelled': 0, 'graphs_with_bconf': 0, 'notinT_low_vertices': 0, 'hub_classes_new': 0, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [3s]
+H records written 19
+(15, 7, 5) {'type': 'cell', 'cell': '(15, 7, 5)', 'A': -10, 'D': 3, 'graphs': 2, 'nonconnected': 0, 'bconf_labelled': 9, 'graphs_with_bconf': 2, 'notinT_low_vertices': 0, 'hub_classes_new': 3, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [3s]
+H records written 19
+(15, 11, 6) {'type': 'cell', 'cell': '(15, 11, 6)', 'A': -2, 'D': 4, 'graphs': 19, 'nonconnected': 0, 'bconf_labelled': 0, 'graphs_with_bconf': 0, 'notinT_low_vertices': 0, 'hub_classes_new': 0, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [3s]
+H records written 19
+(16, 10, 6) {'type': 'cell', 'cell': '(16, 10, 6)', 'A': -10, 'D': 3, 'graphs': 16, 'nonconnected': 0, 'bconf_labelled': 32, 'graphs_with_bconf': 16, 'notinT_low_vertices': 0, 'hub_classes_new': 16, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [3s]
+H records written 19
+(17, 13, 7) {'type': 'cell', 'cell': '(17, 13, 7)', 'A': -10, 'D': 3, 'graphs': 6, 'nonconnected': 0, 'bconf_labelled': 0, 'graphs_with_bconf': 0, 'notinT_low_vertices': 0, 'hub_classes_new': 0, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [3s]
+H records written 40
+(18, 9, 6) {'type': 'cell', 'cell': '(18, 9, 6)', 'A': 9, 'D': 3, 'graphs': 22, 'nonconnected': 0, 'bconf_labelled': 124, 'graphs_with_bconf': 22, 'notinT_low_vertices': 0, 'hub_classes_new': 78, 'hub_inC': 21, 'hubs_by_cell': {'(22,13,8)': 21}, 'minP': 0, 'minPp_nonpiece': 0} [4s]
+H records written 130
+(19, 12, 7) {'type': 'cell', 'cell': '(19, 12, 7)', 'A': 9, 'D': 3, 'graphs': 833, 'nonconnected': 0, 'bconf_labelled': 1991, 'graphs_with_bconf': 833, 'notinT_low_vertices': 0, 'hub_classes_new': 1284, 'hub_inC': 90, 'hubs_by_cell': {'(23,16,9)': 90}, 'minP': 0, 'minPp_nonpiece': 0} [24s]
+H records written 130
+(20, 11, 7) {'type': 'cell', 'cell': '(20, 11, 7)', 'A': 1, 'D': 3, 'graphs': 45, 'nonconnected': 0, 'bconf_labelled': 171, 'graphs_with_bconf': 45, 'notinT_low_vertices': 0, 'hub_classes_new': 90, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [24s]
+H records written 130
+(20, 15, 8) {'type': 'cell', 'cell': '(20, 15, 8)', 'A': 9, 'D': 3, 'graphs': 953, 'nonconnected': 0, 'bconf_labelled': 165, 'graphs_with_bconf': 159, 'notinT_low_vertices': 0, 'hub_classes_new': 159, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [36s]
+H records written 130
+(21, 10, 7) {'type': 'cell', 'cell': '(21, 10, 7)', 'A': -7, 'D': 3, 'graphs': 5, 'nonconnected': 0, 'bconf_labelled': 31, 'graphs_with_bconf': 5, 'notinT_low_vertices': 0, 'hub_classes_new': 13, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [36s]
+H records written 130
+(21, 14, 8) {'type': 'cell', 'cell': '(21, 14, 8)', 'A': 1, 'D': 3, 'graphs': 299, 'nonconnected': 0, 'bconf_labelled': 454, 'graphs_with_bconf': 299, 'notinT_low_vertices': 0, 'hub_classes_new': 299, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [42s]
+H records written 130
+(22, 13, 8) {'type': 'cell', 'cell': '(22, 13, 8)', 'A': -7, 'D': 3, 'graphs': 85, 'nonconnected': 0, 'bconf_labelled': 324, 'graphs_with_bconf': 85, 'notinT_low_vertices': 0, 'hub_classes_new': 172, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [45s]
+H records written 130
+(22, 17, 9) {'type': 'cell', 'cell': '(22, 17, 9)', 'A': 1, 'D': 4, 'graphs': 37, 'nonconnected': 0, 'bconf_labelled': 0, 'graphs_with_bconf': 0, 'notinT_low_vertices': 0, 'hub_classes_new': 0, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [46s]
+H records written 130
+(23, 16, 9) {'type': 'cell', 'cell': '(23, 16, 9)', 'A': -7, 'D': 3, 'graphs': 178, 'nonconnected': 0, 'bconf_labelled': 220, 'graphs_with_bconf': 178, 'notinT_low_vertices': 0, 'hub_classes_new': 178, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [53s]
+H records written 228
+(24, 12, 8) {'type': 'cell', 'cell': '(24, 12, 8)', 'A': 12, 'D': 3, 'graphs': 129, 'nonconnected': 0, 'bconf_labelled': 908, 'graphs_with_bconf': 129, 'notinT_low_vertices': 0, 'hub_classes_new': 572, 'hub_inC': 98, 'hubs_by_cell': {'(28,16,10)': 98}, 'minP': 0, 'minPp_nonpiece': 0} [67s]
+H records written 228
+(26, 14, 9) {'type': 'cell', 'cell': '(26, 14, 9)', 'A': 4, 'D': 2, 'graphs': 3, 'nonconnected': 0, 'bconf_labelled': 18, 'graphs_with_bconf': 3, 'notinT_low_vertices': 0, 'hub_classes_new': 10, 'hub_inC': 0, 'hubs_by_cell': {}, 'minP': None, 'minPp_nonpiece': None} [67s]

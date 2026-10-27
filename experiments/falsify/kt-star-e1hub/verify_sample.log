@@ -1,0 +1,17 @@
+OK {'n': 29, 'm': 19, 'tau': 11, 'A': -4, 'DEF': 4, 'ncopies': 25, 'P': 0} [7.1s]
+OK {'n': 29, 'm': 19, 'tau': 11, 'A': -4, 'DEF': 4, 'ncopies': 26, 'P': 0} [8.4s]
+OK {'n': 29, 'm': 19, 'tau': 11, 'A': -4, 'DEF': 4, 'ncopies': 25, 'P': 0} [5.3s]
+OK {'n': 29, 'm': 19, 'tau': 11, 'A': -4, 'DEF': 4, 'ncopies': 25, 'P': 0} [7.9s]
+OK {'n': 29, 'm': 19, 'tau': 11, 'A': -4, 'DEF': 4, 'ncopies': 26, 'P': 0} [9.7s]
+verified 5 of 5
+OK {'n': 22, 'm': 13, 'tau': 8, 'A': -7, 'DEF': 7, 'ncopies': 16, 'P': 0} [3.3s]
+OK {'n': 23, 'm': 16, 'tau': 9, 'A': -7, 'DEF': 7, 'ncopies': 20, 'P': 0} [4.5s]
+OK {'n': 28, 'm': 16, 'tau': 10, 'A': -4, 'DEF': 4, 'ncopies': 19, 'P': 0} [4.0s]
+OK {'n': 22, 'm': 13, 'tau': 8, 'A': -7, 'DEF': 7, 'ncopies': 16, 'P': 0} [3.7s]
+verified 4 of 4
+verified 0 of 0
+OK {'n': 30, 'm': 22, 'tau': 12, 'A': -4, 'DEF': 4, 'ncopies': 29, 'P': 0} [14.4s]
+OK {'n': 30, 'm': 22, 'tau': 12, 'A': -4, 'DEF': 4, 'ncopies': 29, 'P': 0} [17.2s]
+OK {'n': 30, 'm': 22, 'tau': 12, 'A': -4, 'DEF': 4, 'ncopies': 29, 'P': 0} [14.7s]
+OK {'n': 30, 'm': 22, 'tau': 12, 'A': -4, 'DEF': 4, 'ncopies': 32, 'P': 0} [14.8s]
+verified 4 of 4

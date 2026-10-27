@@ -1,0 +1,548 @@
+{
+ "main": {
+  "cells": {
+   "(3, 1, 1)": {
+    "A": -16,
+    "D": 3,
+    "graphs": 1,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(6, 3, 2)": {
+    "A": 3,
+    "D": 3,
+    "graphs": 1,
+    "bconf_labelled": 4,
+    "graphs_with_bconf": 1,
+    "hub_classes_new": 2,
+    "hub_inC": 2,
+    "hubs_by_cell": {
+     "(10,7,4)": 2
+    },
+    "minP": 0,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(8, 5, 3)": {
+    "A": -5,
+    "D": 4,
+    "graphs": 2,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(9, 4, 3)": {
+    "A": -13,
+    "D": 3,
+    "graphs": 1,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(10, 7, 4)": {
+    "A": -13,
+    "D": 4,
+    "graphs": 4,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(11, 7, 4)": {
+    "A": 14,
+    "D": 3,
+    "graphs": 35,
+    "bconf_labelled": 10,
+    "graphs_with_bconf": 10,
+    "hub_classes_new": 9,
+    "hub_inC": 9,
+    "hubs_by_cell": {
+     "(15,11,6)": 9
+    },
+    "minP": 0,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(12, 6, 4)": {
+    "A": 6,
+    "D": 3,
+    "graphs": 4,
+    "bconf_labelled": 7,
+    "graphs_with_bconf": 2,
+    "hub_classes_new": 5,
+    "hub_inC": 5,
+    "hubs_by_cell": {
+     "(16,10,6)": 5
+    },
+    "minP": 0,
+    "minPp_nonpiece": 0,
+    "notinT_low_vertices": 0
+   },
+   "(12, 10, 5)": {
+    "A": 14,
+    "D": 4,
+    "graphs": 149,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(13, 9, 5)": {
+    "A": 6,
+    "D": 3,
+    "graphs": 84,
+    "bconf_labelled": 3,
+    "graphs_with_bconf": 3,
+    "hub_classes_new": 3,
+    "hub_inC": 3,
+    "hubs_by_cell": {
+     "(17,13,7)": 3
+    },
+    "minP": 0,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(14, 8, 5)": {
+    "A": -2,
+    "D": 3,
+    "graphs": 9,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(14, 12, 6)": {
+    "A": 6,
+    "D": 3,
+    "graphs": 2,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(15, 7, 5)": {
+    "A": -10,
+    "D": 3,
+    "graphs": 2,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(15, 11, 6)": {
+    "A": -2,
+    "D": 4,
+    "graphs": 19,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(16, 10, 6)": {
+    "A": -10,
+    "D": 3,
+    "graphs": 16,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(17, 13, 7)": {
+    "A": -10,
+    "D": 3,
+    "graphs": 6,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(18, 9, 6)": {
+    "A": 9,
+    "D": 3,
+    "graphs": 22,
+    "bconf_labelled": 27,
+    "graphs_with_bconf": 9,
+    "hub_classes_new": 21,
+    "hub_inC": 21,
+    "hubs_by_cell": {
+     "(22,13,8)": 21
+    },
+    "minP": 0,
+    "minPp_nonpiece": 0,
+    "notinT_low_vertices": 0
+   },
+   "(19, 12, 7)": {
+    "A": 9,
+    "D": 3,
+    "graphs": 833,
+    "bconf_labelled": 135,
+    "graphs_with_bconf": 55,
+    "hub_classes_new": 90,
+    "hub_inC": 90,
+    "hubs_by_cell": {
+     "(23,16,9)": 90
+    },
+    "minP": 0,
+    "minPp_nonpiece": 0,
+    "notinT_low_vertices": 0
+   },
+   "(20, 11, 7)": {
+    "A": 1,
+    "D": 3,
+    "graphs": 45,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(20, 15, 8)": {
+    "A": 9,
+    "D": 3,
+    "graphs": 953,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(21, 10, 7)": {
+    "A": -7,
+    "D": 3,
+    "graphs": 5,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(21, 14, 8)": {
+    "A": 1,
+    "D": 3,
+    "graphs": 299,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(22, 13, 8)": {
+    "A": -7,
+    "D": 3,
+    "graphs": 85,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(22, 17, 9)": {
+    "A": 1,
+    "D": 4,
+    "graphs": 37,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(23, 16, 9)": {
+    "A": -7,
+    "D": 3,
+    "graphs": 178,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   },
+   "(24, 12, 8)": {
+    "A": 12,
+    "D": 3,
+    "graphs": 129,
+    "bconf_labelled": 125,
+    "graphs_with_bconf": 42,
+    "hub_classes_new": 98,
+    "hub_inC": 98,
+    "hubs_by_cell": {
+     "(28,16,10)": 98
+    },
+    "minP": 0,
+    "minPp_nonpiece": 0,
+    "notinT_low_vertices": 0
+   },
+   "(25, 15, 9)": {
+    "A": 12,
+    "D": 3,
+    "graphs": 6849,
+    "bconf_labelled": 1526,
+    "graphs_with_bconf": 554,
+    "hub_classes_new": 1172,
+    "hub_inC": 1172,
+    "hubs_by_cell": {
+     "(29,19,11)": 1172
+    },
+    "minP": 0,
+    "minPp_nonpiece": 0,
+    "notinT_low_vertices": 0
+   },
+   "(26, 14, 9)": {
+    "A": 4,
+    "D": 2,
+    "graphs": 3,
+    "bconf_labelled": 0,
+    "graphs_with_bconf": 0,
+    "hub_classes_new": 0,
+    "hub_inC": 0,
+    "hubs_by_cell": {},
+    "minP": null,
+    "minPp_nonpiece": null,
+    "notinT_low_vertices": 0
+   }
+  },
+  "total_graphs": 9773,
+  "total_bconf": 1837,
+  "total_hub_classes_in_C3": 1400,
+  "min_P": 0,
+  "hits": 0,
+  "empty_or_zero_graph_cells": [
+   "(11, 6, 4)",
+   "(13, 8, 5)",
+   "(14, 7, 5)",
+   "(16, 9, 6)",
+   "(17, 8, 6)",
+   "(17, 9, 6)",
+   "(18, 12, 7)",
+   "(19, 10, 7)",
+   "(19, 11, 7)",
+   "(20, 10, 7)",
+   "(20, 14, 8)",
+   "(21, 13, 8)",
+   "(21, 18, 9)",
+   "(22, 11, 8)",
+   "(22, 12, 8)",
+   "(23, 11, 8)",
+   "(23, 12, 8)",
+   "(23, 13, 9)",
+   "(23, 14, 9)",
+   "(23, 15, 9)",
+   "(23, 20, 10)",
+   "(24, 12, 9)",
+   "(24, 13, 9)",
+   "(24, 14, 9)",
+   "(24, 15, 9)",
+   "(24, 18, 10)",
+   "(24, 19, 10)",
+   "(25, 12, 9)",
+   "(25, 13, 9)",
+   "(25, 14, 9)",
+   "(25, 16, 10)",
+   "(25, 17, 10)",
+   "(25, 18, 10)",
+   "(25, 22, 11)",
+   "(26, 13, 9)",
+   "(26, 14, 10)",
+   "(26, 15, 10)",
+   "(26, 16, 10)",
+   "(26, 17, 10)",
+   "(26, 21, 11)",
+   "(27, 13, 10)",
+   "(27, 14, 10)",
+   "(27, 15, 10)",
+   "(27, 16, 10)",
+   "(27, 18, 11)",
+   "(27, 19, 11)",
+   "(27, 20, 11)",
+   "(28, 14, 10)",
+   "(28, 17, 11)",
+   "(28, 18, 11)",
+   "(28, 19, 11)",
+   "(28, 23, 12)",
+   "(29, 15, 11)",
+   "(29, 16, 11)",
+   "(29, 22, 12)"
+  ]
+ },
+ "iterate_level2": [
+  {
+   "inputs": 228,
+   "bconf_labelled": 0,
+   "new_classes": 0,
+   "inC": 0,
+   "minP": null,
+   "hits": 0,
+   "by_cell": {},
+   "notinT": 0
+  },
+  {
+   "inputs": 782,
+   "bconf_labelled": 0,
+   "new_classes": 0,
+   "inC": 0,
+   "minP": null,
+   "hits": 0,
+   "by_cell": {},
+   "notinT": 0
+  },
+  {
+   "inputs": 1827,
+   "bconf_labelled": 0,
+   "new_classes": 0,
+   "inC": 0,
+   "minP": null,
+   "hits": 0,
+   "by_cell": {},
+   "notinT": 0
+  }
+ ],
+ "fhub": {
+  "pieces": 32,
+  "G": 1108,
+  "pairs": 18594,
+  "built": 18594,
+  "inC": 228,
+  "newclasses": 2000,
+  "minP": 0,
+  "hits": 0
+ },
+ "unions_vext": [
+  {
+   "stats": {
+    "kids_L1": 15755,
+    "disconnected": 15201,
+    "conn_A<0_L1": 554,
+    "classes_n>=25": 554,
+    "evaluated": 554
+   },
+   "minP": 0,
+   "pool": 380,
+   "parents": 30000
+  },
+  {
+   "stats": {
+    "kids_L1": 25154,
+    "disconnected": 24086,
+    "conn_A<0_L1": 1068,
+    "classes_n>=25": 1068,
+    "evaluated": 1068
+   },
+   "minP": 0,
+   "pool": 380,
+   "parents": 72423
+  }
+ ],
+ "union_small": "see union_small.log",
+ "verdict": {
+  "falsifier": "HOLDS-ON-DATA",
+  "KT_star": "HOLDS (no irreducible piece found outside L*)",
+  "KT_Lstar": "HOLDS (min P = 0 over every evaluated hub)"
+ },
+ "hubs_global": {
+  "distinct_hub_classes": 1273,
+  "by_cell": {
+   "(10,7,4)": 2,
+   "(15,11,6)": 9,
+   "(16,10,6)": 5,
+   "(17,13,7)": 3,
+   "(22,13,8)": 21,
+   "(23,16,9)": 90,
+   "(28,16,10)": 98,
+   "(29,19,11)": 1045
+  },
+  "minP": {
+   "(10,7,4)": 0,
+   "(15,11,6)": 0,
+   "(16,10,6)": 0,
+   "(17,13,7)": 0,
+   "(22,13,8)": 0,
+   "(23,16,9)": 0,
+   "(28,16,10)": 0,
+   "(29,19,11)": 0
+  },
+  "hubs_in_Lstar": {
+   "(10,7,4)": 2,
+   "(15,11,6)": 9,
+   "(17,13,7)": 3
+  },
+  "counterexamples": 0
+ },
+ "main_25_15_9_full_run_logs": "main_25_15_9.run1.log: 6849 classes, 1526 b-configs, 1045 hub classes in C_3, minP 0 (two independent full runs agreed; parts files carry the H records)",
+ "edgeok": "run_main.py with EDGEOK=1 (triples {a,b,c} that are edges allowed) on all cells except (25,15,9): extra labelled triples (up to 1991 at (19,12,7)) but identical hub-in-C_3 counts: edge triples never give a member of C_3",
+ "union_cases": {
+  "stored_classes_with_low_vertex_in_no_min_transversal_A_le_31": "only (7,3,2) A=30",
+  "consequence": "connected unions G1+G2(+G3) need >=2 such vertices (k=3) or a vertex in no min transversal plus a non-co pair (k=2); only (7,3,2)+E_1 is possible with A<=15; result: P in {0,14} and connected hubs have P=0 (union_small.log)"
+ },
+ "verification": {
+  "independent_tau_and_DEF_samples": "verify_sample.log: 17 hubs, all n,m,tau,A,DEF equal",
+  "f7_brute": "f7_brute_check.log: 100 kept hubs F7-free by exhaustive 5-edge search"
+ }
+}

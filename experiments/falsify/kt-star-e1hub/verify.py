@@ -53,7 +53,7 @@ def f7_brute(E):
         from collections import Counter
         c = Counter(x for e in es for x in e)
         if sorted(c.values()) != [2, 2, 2, 2, 2, 2, 3]: continue
-        if all(len(a & b) <= 1 for a, b in itertools.combinations(es, 2)) and sum(len(a & b) for a, b in itertools.combinations(es, 2)) == 7: return True
+        if all(len(a & b) <= 1 for a, b in itertools.combinations(es, 2)) and sum(len(a & b) for a, b in itertools.combinations(es, 2)) == 9: return True
     return False
 def check(rec, brute_f7=False):
     n = rec['n']; E = [tuple(e) for e in rec['H']]
@@ -71,7 +71,7 @@ if __name__ == '__main__':
     for fn in sys.argv[3:]:
         for l in open(fn):
             d = json.loads(l)
-            if d.get('type') in ('H', 'FH'): recs.append(d)
+            if d.get('type') in ('H', 'FH', 'UV'): recs.append(d)
     if mode == 'hits':
         recs = [r for r in recs if r['P'] < 0 or (r['piece'] is None and r['Pp'] < 0)]
     else:

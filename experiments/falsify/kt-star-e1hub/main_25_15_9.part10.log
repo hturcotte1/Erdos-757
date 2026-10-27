@@ -1,2 +1,2 @@
 H records written 95
-(25, 15, 9) {'type': 'cell', 'cell': '(25, 15, 9)', 'A': 12, 'D': 3, 'graphs': 570, 'nonconnected': 0, 'bconf_labelled': 123, 'graphs_with_bconf': 41, 'notinT_low_vertices': 0, 'hub_classes_new': 95, 'hub_inC': 95, 'hubs_by_cell': {'(29,19,11)': 95}, 'minP': 0, 'minPp_nonpiece': 0} [39s]
+(25, 15, 9) {'type': 'cell', 'cell': '(25, 15, 9)', 'A': 12, 'D': 3, 'graphs': 570, 'nonconnected': 0, 'bconf_labelled': 123, 'graphs_with_bconf': 41, 'notinT_low_vertices': 0, 'hub_classes_new': 95, 'hub_inC': 95, 'hubs_by_cell': {'(29,19,11)': 95}, 'minP': 0, 'minPp_nonpiece': 0} [43s]
