@@ -3,3 +3,5 @@ progress 100000 69
 progress 150000 98
 progress 200000 130
 progress 250000 159
+progress 300000 184
+LIST /home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells/cell_20_16_8_D3.txt graphs 314639 distinct_forms 314639 duplicates 0 max_leaves 64 INFO_lines 1 secs 196
