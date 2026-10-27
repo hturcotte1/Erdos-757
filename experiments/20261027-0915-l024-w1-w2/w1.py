@@ -16,7 +16,7 @@ def bits(x):
         x ^= b
 
 class Setup:
-    def __init__(self, Ps, need2=True):
+    def __init__(self, Ps, need2=True, nc_only=False):
         self.Ps = Ps; self.k = k = len(Ps)
         self.offs = []; o = 0
         for P in Ps: self.offs.append(o); o += P['n']
@@ -43,6 +43,16 @@ class Setup:
         for e in self.E0:
             for a, b in itertools.combinations(e, 2): covered.add((a, b))
         usable = [x for x in range(N) if self.d0[x] <= 2]
+        if nc_only:
+            # NC-vertex filter (Lemma NC in README): under Claim B + Claim E every vertex of a star edge lies in a pair of vertices of
+            # its piece that is contained in no minimum transversal.
+            ncv = set()
+            for i, P in enumerate(Ps):
+                for x in range(P['n']):
+                    for y in range(P['n']):
+                        if x != y and not any((T >> x & 1) and (T >> y & 1) for T in P['mts']):
+                            ncv.add(x + self.offs[i]); break
+            usable = [x for x in usable if x in ncv]
         cands = []
         for a, b, c in itertools.combinations(usable, 3):
             if (a, b) in covered or (a, c) in covered or (b, c) in covered: continue
@@ -256,6 +266,7 @@ def process(S, sols, pieces, stats, out):
 if __name__ == '__main__':
     k = int(sys.argv[1]); part = int(sys.argv[2]); nparts = int(sys.argv[3])
     nmin = int(sys.argv[4]) if len(sys.argv) > 4 else 25
+    ncmode = len(sys.argv) > 5 and sys.argv[5] == 'nc'
     t0 = time.time()
     pieces = load_pieces(); byname = {P['name']: P for P in pieces}
     T = types(k, pieces, nmin)
@@ -265,11 +276,11 @@ if __name__ == '__main__':
     per_type = []
     keys = ['nodes', 'claimB', 'connected', 'claimE', 'inC3', 'inC3_claimE', 'tau_eq_sum_plus1', 'tau_other', 'A_nonneg', 'A_neg',
             'A_neg_Pnonneg', 'Pneg', 'Pneg_claimE']
-    print(f'k={k} part {part}/{nparts} types {len(mine)} of {len(T)} nmin {nmin}', flush=True)
+    print(f'k={k} part {part}/{nparts} types {len(mine)} of {len(T)} nmin {nmin} ncmode {ncmode}', flush=True)
     for ti, names in enumerate(mine):
         ts = time.time()
         Ps = [byname[nm] for nm in names]
-        S = Setup(Ps)
+        S = Setup(Ps, nc_only=ncmode)
         stats = {kk: 0 for kk in keys}
         sols = search(S, stats)
         out = []
@@ -279,5 +290,5 @@ if __name__ == '__main__':
         allout += out
         print(ti, names, 'N', S.N, 'cands', S.nc, stats, f'{time.time()-ts:.0f}s total {time.time()-t0:.0f}s', flush=True)
         json.dump(dict(k=k, part=part, nparts=nparts, nmin=nmin, done_types=ti + 1, of=len(mine), totals=tot, per_type=per_type, configs=allout),
-                  open(f'/home/user/Erdos-757/experiments/20261027-0915-l024-w1-w2/w1_k{k}_p{part}of{nparts}_n{nmin}.json', 'w'))
+                  open(f'/home/user/Erdos-757/experiments/20261027-0915-l024-w1-w2/w1_k{k}_p{part}of{nparts}_n{nmin}{"_nc" if ncmode else ""}.json', 'w'))
     print('TOTAL', tot, f'{time.time()-t0:.0f}s', flush=True)

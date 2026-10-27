@@ -4,3 +4,4 @@ cell_10_8_4.txt {'classes': 65, 'L1': 614, 'L2': 1258, 'L3': 111, 'L4': 12, 'L4_
 cell_13_9_5.txt {'classes': 149, 'L1': 1454, 'L2': 3106, 'L3': 128, 'L4': 21, 'L4_drop1': 18, 'L5': 548, 'L6': 28, 'L6_inC': 0, 'L7': 154, 'L7_inC': 0, 'L8': 0, 'L8_inC': 0, 'L9': 7, 'bconf': 7} failures 0 time 9.3s
 cell_16_10_6.txt {'classes': 165, 'L1': 1614, 'L2': 3492, 'L3': 128, 'L4': 21, 'L4_drop1': 18, 'L5': 666, 'L6': 28, 'L6_inC': 0, 'L7': 154, 'L7_inC': 0, 'L8': 0, 'L8_inC': 0, 'L9': 7, 'bconf': 7} failures 0 time 10.5s
 cell_23_16_9.txt {'classes': 343, 'L1': 3394, 'L2': 8114, 'L3': 128, 'L4': 21, 'L4_drop1': 18, 'L5': 1700, 'L6': 28, 'L6_inC': 0, 'L7': 154, 'L7_inC': 0, 'L8': 0, 'L8_inC': 0, 'L9': 7, 'bconf': 7} failures 0 time 97.2s
+cell_20_15_8.txt {'classes': 1296, 'L1': 12924, 'L2': 31808, 'L3': 164, 'L4': 21, 'L4_drop1': 18, 'L5': 4180, 'L6': 28, 'L6_inC': 0, 'L7': 208, 'L7_inC': 0, 'L8': 0, 'L8_inC': 0, 'L9': 7, 'bconf': 7} failures 0 time 332.5s

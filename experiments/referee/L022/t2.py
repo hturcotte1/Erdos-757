@@ -308,4 +308,5 @@ def main():
             st['fails'] += 1; print('FAIL', pat, n, H, fails)
     print(st)
 
-main()
+if __name__ == '__main__':
+    main()

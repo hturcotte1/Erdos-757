@@ -1,0 +1,13 @@
+mode rich10 all_g False type triples 25
+17 ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#0') {'g_choices': 2, 'configs': 8, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0, 'claimE': 0, 'claimE_and_rich': 0} cells [] iso [] elapsed 1
+17 ('(3,1,1)#0', '(3,1,1)#0', '(10,7,4)#3') {'g_choices': 3, 'configs': 12, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0, 'claimE': 0, 'claimE_and_rich': 0} cells [] iso [] elapsed 1
+24 ('(3,1,1)#0', '(10,7,4)#0', '(10,7,4)#0') {'g_choices': 4, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 2
+24 ('(3,1,1)#0', '(10,7,4)#0', '(10,7,4)#1') {'g_choices': 10, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 2
+24 ('(3,1,1)#0', '(10,7,4)#0', '(10,7,4)#2') {'g_choices': 12, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 3
+24 ('(3,1,1)#0', '(10,7,4)#0', '(10,7,4)#3') {'g_choices': 6, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 4
+24 ('(3,1,1)#0', '(10,7,4)#1', '(10,7,4)#3') {'g_choices': 15, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 5
+24 ('(3,1,1)#0', '(10,7,4)#2', '(10,7,4)#3') {'g_choices': 18, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 7
+24 ('(3,1,1)#0', '(10,7,4)#3', '(10,7,4)#3') {'g_choices': 9, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 8
+31 ('(10,7,4)#0', '(10,7,4)#0', '(10,7,4)#0') {'g_choices': 8, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 37
+31 ('(10,7,4)#0', '(10,7,4)#0', '(10,7,4)#1') {'g_choices': 20, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 85
+31 ('(10,7,4)#0', '(10,7,4)#0', '(10,7,4)#2') {'g_choices': 24, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 138

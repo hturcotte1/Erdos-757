@@ -1,0 +1,2 @@
+Theorem 4 O1-O7 (+rank=m): sets 305 failures 0
+Theorem 1(d) gluing: 60/60 random generic gluings are (4,5)-sets with H(C) = H(A) + H(B)

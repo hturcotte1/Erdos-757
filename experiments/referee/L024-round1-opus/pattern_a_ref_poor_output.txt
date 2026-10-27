@@ -10,3 +10,6 @@ mode poor all_g False type triples 12
 31 ('(10,7,4)#1', '(10,7,4)#1', '(10,7,4)#1') {'g_choices': 125, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 162
 31 ('(10,7,4)#1', '(10,7,4)#1', '(10,7,4)#2') {'g_choices': 150, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 309
 31 ('(10,7,4)#1', '(10,7,4)#2', '(10,7,4)#2') {'g_choices': 180, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 456
+31 ('(10,7,4)#2', '(10,7,4)#2', '(10,7,4)#2') {'g_choices': 216, 'configs': 0, 'inC3': 0, 'tau_ok': 0, 'in_Lstar': 0, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0} cells [] iso [] elapsed 614
+TOTAL {'g_choices': 783, 'configs': 359, 'inC3': 206, 'tau_ok': 206, 'in_Lstar': 206, 'not_in_Lstar_inC3': 0, 'need2_zero_events': 0}
+EXIT 0

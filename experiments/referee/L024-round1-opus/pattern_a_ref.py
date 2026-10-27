@@ -169,6 +169,20 @@ def run_type(types, all_g=False):
             stats['configs'] += 1
             inc3 = in_C3(nH, EH)
             rec = dict(types=types, g=list(gE), pairs=trip, inC3=inc3)
+            # Claim E on subfamilies of X_v = {F1,F2,F3} with E*_H = {g, e1, e2, e3}
+            pmask = [sum(1 << x for x in range(offs[i], offs[i] + P[types[i]][0])) for i in range(3)]
+            Estar = [gmask] + [(1 << a) | (1 << b) for a, b in trip]
+            cE = True
+            for r in (1, 2, 3):
+                for Y in combinations(range(3), r):
+                    vy = 0
+                    for i in Y:
+                        vy |= pmask[i]
+                    if sum(1 for e in Estar if e & vy) < r + 1:
+                        cE = False
+            rec['claimE'] = cE
+            stats['claimE'] = stats.get('claimE', 0) + cE
+            stats['claimE_and_rich'] = stats.get('claimE_and_rich', 0) + (cE and any(t in RICH for t in types))
             if inc3:
                 stats['inC3'] += 1
                 t = tau_bb(nH, EH)

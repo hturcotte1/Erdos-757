@@ -1,0 +1,9 @@
+b_E1_core n 7 m 4 realizable realizable labellings 30 prunes {'EQ': 0, 'SIDON': 5, 'NONLIN': 0}
+   example labelling (a,mid,c): [(1, 0, 4), (0, 2, 5), (0, 6, 3), (5, 4, 6)]
+b_E1_with_pendant_edges_at_x n 13 m 7 realizable realizable labellings 495 prunes {'EQ': 0, 'SIDON': 5, 'NONLIN': 0}
+   example labelling (a,mid,c): [(1, 0, 4), (0, 2, 5), (0, 6, 3), (5, 4, 6), (7, 1, 8), (2, 9, 10), (11, 3, 12)]
+b_E1_x_share_one_edge n 11 m 7 realizable realizable labellings 334 prunes {'EQ': 0, 'SIDON': 7, 'NONLIN': 0}
+   example labelling (a,mid,c): [(1, 0, 4), (0, 2, 5), (0, 6, 3), (5, 4, 6), (2, 1, 7), (8, 3, 9), (8, 7, 10)]
+f_E1_core n 8 m 4 realizable realizable labellings 41 prunes {'EQ': 0, 'SIDON': 3, 'NONLIN': 0}
+   example labelling (a,mid,c): [(1, 0, 2), (0, 3, 5), (0, 4, 6), (6, 5, 7)]
+F7 n 7 m 5 NOT realizable realizable labellings 0 prunes {'EQ': 27, 'SIDON': 29, 'NONLIN': 0}
