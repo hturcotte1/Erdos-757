@@ -1,0 +1,3424 @@
+{
+"10,5,2,2": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_10_5_2_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"10,5,3,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 4,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_10_5_3_D2.txt",
+"md5": "1dce03761c498b4cd01bd648e6a4d9c7"
+},
+"10,5,3,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 6,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_10_5_3_D3.txt",
+"md5": "522518d7fe63c198e3ef00370062d926"
+},
+"10,6,3,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 5,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_10_6_3_D2.txt",
+"md5": "a2871a3141ca56e54f34d2be3fe49c50"
+},
+"10,6,3,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 43,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_10_6_3_D3.txt",
+"md5": "4e1e1247b09955ab47be6c829318b5a4"
+},
+"10,7,3,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_10_7_3_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"10,7,4,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_10_7_4_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"10,7,4,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 4,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_10_7_4_D3.txt",
+"md5": "b42e160dc38dfff9eb8b8405140394c4"
+},
+"10,7,4,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 5,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_10_7_4_D4.txt",
+"md5": "13af180e9cdc1dbc6faf4111005240ce"
+},
+"10,8,3,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_10_8_3_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"10,8,4,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_10_8_4_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"10,8,4,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 63,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_10_8_4_D3.txt",
+"md5": "e0784499cd30b76ef54a0c44de44f364"
+},
+"11,5,3,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_11_5_3_D2.txt",
+"md5": "01e20351fec7beaa2f861e920bf5b998"
+},
+"11,5,3,3": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 4,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_11_5_3_D3.txt",
+"md5": "a89b66807c45dff25cf88907fb2918b6"
+},
+"11,6,3,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 9,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_11_6_3_D2.txt",
+"md5": "12a908a16cdf67f426e5ee0b714ba70e"
+},
+"11,6,4,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_11_6_4_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"11,6,4,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_11_6_4_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"11,6,4,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_11_6_4_D4.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"11,7,3,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_11_7_3_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"11,7,4,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 4,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_11_7_4_D2.txt",
+"md5": "fd8ef19f2307d8e5ecc7603c7f3c53e9"
+},
+"11,7,4,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 35,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_11_7_4_D3.txt",
+"md5": "95e0cc9eca9622e230092a8ee1ef0262"
+},
+"11,8,4,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_11_8_4_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"11,8,4,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 471,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_11_8_4_D3.txt",
+"md5": "7a0b58a0f47729ed1c585a4bb73d54a4"
+},
+"11,9,4,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_11_9_4_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"11,9,4,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1216,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_11_9_4_D3.txt",
+"md5": "569363c90ce815816b79287a62ed5f63"
+},
+"12,10,5,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_12_10_5_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"12,10,5,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 149,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_12_10_5_D3.txt",
+"md5": "5c38b5f6f79f56bc5d663c2a5079b5f6"
+},
+"12,10,5,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 221,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_12_10_5_D4.txt",
+"md5": "656ee8eaaf08a8e19bafb32c7822b727"
+},
+"12,6,3,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 7,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_12_6_3_D2.txt",
+"md5": "5c50715ba0c0f8c61a19fa0c6158f2d5"
+},
+"12,6,4,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_12_6_4_D2.txt",
+"md5": "dbf65e8aa6338c88540d9b4c1466fbad"
+},
+"12,6,4,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 4,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_12_6_4_D3.txt",
+"md5": "c80576a653681108773bd2d32ad4a2fe"
+},
+"12,7,3,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_12_7_3_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"12,7,4,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 15,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_12_7_4_D2.txt",
+"md5": "93f760a2bef61f38975f4294ac0d7f84"
+},
+"12,7,4,3": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 97,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_12_7_4_D3.txt",
+"md5": "cf18b2528d2041b090f411c7fd551bbd"
+},
+"12,8,4,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 5,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_12_8_4_D2.txt",
+"md5": "ec638d1848b7fe972558a1042e4817ce"
+},
+"12,8,4,3": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1391,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_12_8_4_D3.txt",
+"md5": "f8236d9d699a7f9725faaa66ff01b28e"
+},
+"12,9,4,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_12_9_4_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"13,10,5,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_13_10_5_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"13,10,5,3": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 6683,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_13_10_5_D3.txt",
+"md5": "db8a51a6c0ec727437ead3cdb316c8c8"
+},
+"13,11,5,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_13_11_5_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"13,11,5,3": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 65771,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_13_11_5_D3.txt",
+"md5": "ff7bd0429270d2113f1464b711198d71"
+},
+"13,6,3,2": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_13_6_3_D2.txt",
+"md5": "283ced23573d08b29fd34b5f73f4a83a"
+},
+"13,6,4,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_13_6_4_D2.txt",
+"md5": "175e6e35973014725944deeb3d263d82"
+},
+"13,6,4,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 3,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_13_6_4_D3.txt",
+"md5": "06dfc78a90a1e32b34d2ddaa2a15d356"
+},
+"13,7,4,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 22,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_13_7_4_D2.txt",
+"md5": "ea26b6f62df5d52e875a5619f1796e91"
+},
+"13,7,4,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 104,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_13_7_4_D3.txt",
+"md5": "017ac375d07a2c0bab415905dbe08138"
+},
+"13,8,4,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 23,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_13_8_4_D2.txt",
+"md5": "26a61e32fb536dc5ba5fae7077d463cf"
+},
+"13,8,5,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_13_8_5_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"13,8,5,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_13_8_5_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"13,8,5,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_13_8_5_D4.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"13,9,4,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_13_9_4_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"13,9,5,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_13_9_5_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"13,9,5,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 84,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_13_9_5_D3.txt",
+"md5": "15d69a0473d420c765f9d2543672add7"
+},
+"14,10,5,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_14_10_5_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"14,10,5,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 45229,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_14_10_5_D3.txt",
+"md5": "0d7a57419a380cd2d5e1bd7a12b67306"
+},
+"14,11,5,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_14_11_5_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"14,12,6,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_14_12_6_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"14,12,6,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_14_12_6_D3.txt",
+"md5": "c92786933195a240944b7f4bcabd0e9f"
+},
+"14,12,6,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 11,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_14_12_6_D4.txt",
+"md5": "6afac6018edda52c986496bae7877e7e"
+},
+"14,7,4,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 17,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_14_7_4_D2.txt",
+"md5": "61641360ad1a4ad8111ebf133528c57f"
+},
+"14,7,5,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_14_7_5_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"14,7,5,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_14_7_5_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"14,7,5,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_14_7_5_D4.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"14,8,4,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 53,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_14_8_4_D2.txt",
+"md5": "03a8d73358ac5e33167636464959bc50"
+},
+"14,8,5,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_14_8_5_D2.txt",
+"md5": "adf645057cc33e0fe03faaa2c9417199"
+},
+"14,8,5,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 9,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_14_8_5_D3.txt",
+"md5": "ebd37591aef33d86cab773f5c245033a"
+},
+"14,9,5,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 19,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_14_9_5_D2.txt",
+"md5": "c8645faaa6b913b63240169cbd9c237d"
+},
+"14,9,5,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1060,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_14_9_5_D3.txt",
+"md5": "00ce2f4ea96e72e28298a8dad1fd6344"
+},
+"15,10,5,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 19,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_15_10_5_D2.txt",
+"md5": "4ae4cb6f5cb7ddb92243f651f27e88b0"
+},
+"15,11,6,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_15_11_6_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"15,11,6,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 19,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_15_11_6_D3.txt",
+"md5": "2153154180fccaf2364a9f5024a62e6c"
+},
+"15,11,6,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 30,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_15_11_6_D4.txt",
+"md5": "3b19b0f320c087106b8b6ec84c57bfe3"
+},
+"15,12,6,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_15_12_6_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"15,12,6,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 10617,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_15_12_6_D3.txt",
+"md5": "ab827cd728d177c6bc41ca2b9dbcb6ea"
+},
+"15,13,6,3": {
+"agree": [
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 949522,
+"disagree": [],
+"first": "20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"firstpath": "../20261017-2150-i11-n27/out/cells/cell_15_13_6_D3.txt",
+"md5": "244da4c3c80de49ead6cf896e8945cfd"
+},
+"15,7,4,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 5,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_15_7_4_D2.txt",
+"md5": "12ffdd5758d91e1f9702549c43dacdbb"
+},
+"15,7,5,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_15_7_5_D2.txt",
+"md5": "6a0d6bf9edee430d1fd9ca85a9fe38c0"
+},
+"15,7,5,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_15_7_5_D3.txt",
+"md5": "85527344ca876039e11d4fa206e76608"
+},
+"15,8,4,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 52,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_15_8_4_D2.txt",
+"md5": "b01cd2a049743e7fca73ee741bbe298e"
+},
+"15,8,5,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 11,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_15_8_5_D2.txt",
+"md5": "85ea31cb47c9055a0f6f6d1f49a9dd29"
+},
+"15,8,5,3": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 59,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_15_8_5_D3.txt",
+"md5": "91e425a3d68dbdf658c324e35674118f"
+},
+"15,9,5,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 91,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_15_9_5_D2.txt",
+"md5": "719f4b4b376012751908f33c23988d8d"
+},
+"15,9,5,3": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 3026,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_15_9_5_D3.txt",
+"md5": "8246755d5c4b8e0556f8189454b9d15e"
+},
+"16,10,5,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 132,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_16_10_5_D2.txt",
+"md5": "f60803e0e07a4e24b1ab738d92d15cf3"
+},
+"16,10,6,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_16_10_6_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"16,10,6,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 16,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_16_10_6_D3.txt",
+"md5": "b0e07d24d5c819ef57c9f870e1494aeb"
+},
+"16,11,6,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_16_11_6_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"16,11,6,3": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 3238,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_16_11_6_D3.txt",
+"md5": "2c4ea4bd840995b08a2eeac5231c6e4d"
+},
+"16,12,6,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_16_12_6_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"16,8,5,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 14,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_16_8_5_D2.txt",
+"md5": "1422c25e9d03629bf2dbf757013d461d"
+},
+"16,8,5,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 55,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_16_8_5_D3.txt",
+"md5": "3c301f2f9655b8963b54c9d75d8765a7"
+},
+"16,9,5,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 166,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_16_9_5_D2.txt",
+"md5": "fa4ee610230e7be056e56daa956d963f"
+},
+"16,9,6,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_16_9_6_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"16,9,6,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_16_9_6_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"16,9,6,4": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_16_9_6_D4.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"17,10,6,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 6,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_17_10_6_D2.txt",
+"md5": "f1ca2fed2ef8f78115adde32f82fefe5"
+},
+"17,10,6,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 339,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_17_10_6_D3.txt",
+"md5": "a63c59948885eb9dcbfc5c965b6f2801"
+},
+"17,11,6,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 114,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_17_11_6_D2.txt",
+"md5": "301373946ee481494071a81a06fb3a5d"
+},
+"17,11,6,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 45669,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_17_11_6_D3.txt",
+"md5": "a5735617356a68cc2d9122335ec1eed5"
+},
+"17,12,6,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_17_12_6_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"17,13,7,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_17_13_7_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"17,13,7,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 6,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_17_13_7_D3.txt",
+"md5": "a27894293124c7bc6e052416f3c6335a"
+},
+"17,13,7,4": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 10,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_17_13_7_D4.txt",
+"md5": "d5bbaeab34aeca96ff45d3266af7a374"
+},
+"17,14,7,3": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1708,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_17_14_7_D3.txt",
+"md5": "341b94cb06b2ebceec464e2d68f7349c"
+},
+"17,8,5,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 7,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_17_8_5_D2.txt",
+"md5": "3a6b0fd7fd139f1b141fc18f5a55ba08"
+},
+"17,8,6,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_17_8_6_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"17,8,6,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_17_8_6_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"17,8,6,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_17_8_6_D4.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"17,9,5,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 157,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_17_9_5_D2.txt",
+"md5": "9607a2fd84c019188a78b92ab3452064"
+},
+"17,9,6,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_17_9_6_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"17,9,6,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_17_9_6_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"18,10,6,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 67,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_18_10_6_D2.txt",
+"md5": "428c4df518cded0aaf9f36a2865505e3"
+},
+"18,11,6,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 671,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_18_11_6_D2.txt",
+"md5": "185a2610c34de5493adffb63eb93b86b"
+},
+"18,12,7,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_18_12_7_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"18,12,7,3": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_18_12_7_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"18,12,7,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_18_12_7_D4.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"18,13,7,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_18_13_7_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"18,13,7,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2544,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_18_13_7_D3.txt",
+"md5": "01c15f8055ab6fa13468adae793c51a7"
+},
+"18,14,7,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 799342,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_18_14_7_D3.txt",
+"md5": "1da2ad14cbe44163159b587e977baebb"
+},
+"18,9,5,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 75,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_18_9_5_D2.txt",
+"md5": "1bb2f2a3a1d66934c8399e1da50e44af"
+},
+"18,9,6,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 5,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_18_9_6_D2.txt",
+"md5": "fab8b44c04cfdc81d789fc43ef6e4933"
+},
+"18,9,6,3": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 22,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_18_9_6_D3.txt",
+"md5": "4113617520e8416a3aefcfdcd815789c"
+},
+"19,10,6,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 128,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_19_10_6_D2.txt",
+"md5": "ae6740cb4393587826a274c6c511fc5c"
+},
+"19,10,7,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_19_10_7_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"19,10,7,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_19_10_7_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"19,10,7,4": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_19_10_7_D4.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"19,11,6,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1492,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_19_11_6_D2.txt",
+"md5": "9c028bde02b2af011f51b518b442d448"
+},
+"19,11,7,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_19_11_7_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"19,11,7,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_19_11_7_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"19,12,7,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_19_12_7_D2.txt",
+"md5": "9b657e8bae6805ad4b135da4040e51f4"
+},
+"19,12,7,3": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 833,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_19_12_7_D3.txt",
+"md5": "0a39910809ad593180bdcb21a82adb7d"
+},
+"19,13,7,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_19_13_7_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"19,16,8,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 227,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_19_16_8_D3.txt",
+"md5": "4adae20bf71e39101bed37bcf0c262ca"
+},
+"19,16,8,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 956,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_19_16_8_D4.txt",
+"md5": "04f50ad87250ee3851e2af04a0ddb056"
+},
+"19,17,8,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 29898,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_19_17_8_D3.txt",
+"md5": "8e012af3807a14f937cab6b44de4b1e3"
+},
+"19,9,6,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 4,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_19_9_6_D2.txt",
+"md5": "80ffc1929ff9e46322184bf1129ab623"
+},
+"19,9,6,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 13,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_19_9_6_D3.txt",
+"md5": "70390316e6a6b40b6dc410894a0cab9b"
+},
+"20,10,6,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 94,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_20_10_6_D2.txt",
+"md5": "c3eb5f03a774097cd7e1a4a743a54e67"
+},
+"20,10,7,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_20_10_7_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"20,10,7,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_20_10_7_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"20,11,7,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_20_11_7_D2.txt",
+"md5": "5588d86423668c4d5b47440898edc73c"
+},
+"20,11,7,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 45,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_20_11_7_D3.txt",
+"md5": "9a08172459c4bce6461fb00eec850be9"
+},
+"20,12,7,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 38,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_20_12_7_D2.txt",
+"md5": "cc2780f21fdb09cfc4b33cf628448112"
+},
+"20,12,7,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 15465,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_20_12_7_D3.txt",
+"md5": "904d28d7f88fb719ca72ffb1fdc4de43"
+},
+"20,13,7,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 839,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_20_13_7_D2.txt",
+"md5": "1dd836c5648aaacd811889d2a6f71f5b"
+},
+"20,14,8,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_20_14_8_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"20,14,8,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_20_14_8_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"20,14,8,4": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_20_14_8_D4.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"20,15,8,3": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 953,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_20_15_8_D3.txt",
+"md5": "2e515d2c716ee91712763ca9db1da825"
+},
+"21,10,6,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 24,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_21_10_6_D2.txt",
+"md5": "faa3850918dbe3a1f5ed9e54cf7be5ed"
+},
+"21,10,7,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_21_10_7_D2.txt",
+"md5": "8726be478da5cd7150e8fdb1ebe8e281"
+},
+"21,10,7,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 5,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_21_10_7_D3.txt",
+"md5": "e5ddb1d00dbb582d2b299980430b69db"
+},
+"21,11,7,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 36,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_21_11_7_D2.txt",
+"md5": "55cb671abc753922c507d6e6f2830158"
+},
+"21,11,7,3": {
+"agree": [],
+"classes": 562,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_21_11_7_D3.txt",
+"md5": "6fa626f673a082f4949d280ac74d3620"
+},
+"21,12,7,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 474,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_21_12_7_D2.txt",
+"md5": "343dd069bda712fb3a37240d96810f71"
+},
+"21,13,8,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_21_13_8_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"21,13,8,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_21_13_8_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"21,13,8,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_21_13_8_D4.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"21,14,8,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_21_14_8_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"21,14,8,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 299,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_21_14_8_D3.txt",
+"md5": "9ddc278cfc02cea89be047d98d32156f"
+},
+"21,15,8,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 232759,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_21_15_8_D3.txt",
+"md5": "e7832281b6e3ea2bed3e084d5e9878e7"
+},
+"21,18,9,3": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_21_18_9_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"21,18,9,4": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 12,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_21_18_9_D4.txt",
+"md5": "c6cad9db145622fedd10d0f8481490c0"
+},
+"22,11,7,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 52,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_22_11_7_D2.txt",
+"md5": "2a468986701a13d369de08c46e23e080"
+},
+"22,11,8,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_22_11_8_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"22,11,8,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_22_11_8_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"22,11,8,4": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_22_11_8_D4.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"22,12,7,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1238,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_22_12_7_D2.txt",
+"md5": "c92c0c9e62cc46c26900bb4697b3183d"
+},
+"22,12,8,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_22_12_8_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"22,12,8,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_22_12_8_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"22,13,8,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_22_13_8_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"22,13,8,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 85,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_22_13_8_D3.txt",
+"md5": "3d3933ecd8d738c629ffb62296f183ed"
+},
+"22,14,8,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 6,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_22_14_8_D2.txt",
+"md5": "73c2f822d9d35783bb966d51f28fda4d"
+},
+"22,17,9,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 37,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_22_17_9_D3.txt",
+"md5": "9e2931394de3bd11d985890a94e79744"
+},
+"22,17,9,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 95,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_22_17_9_D4.txt",
+"md5": "57df7740663576a7c7f34390601f227e"
+},
+"22,18,9,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 94513,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_22_18_9_D3.txt",
+"md5": "e2d3a545abf7b801b31a8ed628e0008c"
+},
+"23,11,7,2": {
+"agree": [],
+"classes": 21,
+"disagree": [],
+"first": "20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)",
+"firstpath": "../20261027-0300-tight-cells-d4/out/cells/cell_23_11_7_D2.txt",
+"md5": "e9b4b7aff2b5c3e1e155b276b6bbd448"
+},
+"23,11,8,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_23_11_8_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"23,11,8,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_23_11_8_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"23,12,8,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_23_12_8_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"23,12,8,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_23_12_8_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"23,13,8,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 12,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_23_13_8_D2.txt",
+"md5": "24d8316b012da63ca8b6de672b5a766b"
+},
+"23,13,8,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2693,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_23_13_8_D3.txt",
+"md5": "cf87cc5c148a36eab307b1a5d80973c2"
+},
+"23,13,9,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_23_13_9_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"23,14,8,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 263,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_23_14_8_D2.txt",
+"md5": "a3651778e775c0bf072d0fda5fddafe9"
+},
+"23,14,9,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_23_14_9_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"23,15,9,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_23_15_9_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"23,15,9,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_23_15_9_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"23,15,9,4": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_23_15_9_D4.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"23,16,9,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 178,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_23_16_9_D3.txt",
+"md5": "c4f88162ae84d8a22326cc23d97612ca"
+},
+"23,20,10,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_23_20_10_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"23,21,10,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_23_21_10_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"23,21,10,4": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 699,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_23_21_10_D4.txt",
+"md5": "062410a133e375d6c8da52a95a42c00b"
+},
+"24,12,8,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 14,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_24_12_8_D2.txt",
+"md5": "4ecfa86e87184f335abb90fbc35aa0d8"
+},
+"24,12,9,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_24_12_9_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"24,13,8,2": {
+"agree": [],
+"classes": 288,
+"disagree": [],
+"first": "20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)",
+"firstpath": "../20261027-0300-tight-cells-d4/out/cells/cell_24_13_8_D2.txt",
+"md5": "f8a83d4161344dc4d21ed33a01b2eed6"
+},
+"24,13,9,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_24_13_9_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"24,14,9,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_24_14_9_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"24,14,9,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_24_14_9_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"24,15,9,2": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_24_15_9_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"24,15,9,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_24_15_9_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"24,16,9,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 39568,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runF/cell_24_16_9_D3.txt",
+"md5": "7f9466da935c4e5914bca0698900b975"
+},
+"24,18,10,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_24_18_10_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"24,19,10,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_24_19_10_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"24,19,10,4": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)",
+"firstpath": "../20261027-0300-tight-cells-d4/out/cells/cell_24_19_10_D4.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"25,12,9,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_25_12_9_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"25,12,9,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_25_12_9_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"25,13,9,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_25_13_9_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"25,13,9,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_25_13_9_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"25,14,9,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_25_14_9_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"25,14,9,3": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)",
+"firstpath": "../20261027-0300-tight-cells-d4/out/cells/cell_25_14_9_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"25,15,9,2": {
+"agree": [],
+"classes": 2,
+"disagree": [],
+"first": "20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)",
+"firstpath": "../20261027-0300-tight-cells-d4/out/cells/cell_25_15_9_D2.txt",
+"md5": "e3be72e86600097531852b052faa71f0"
+},
+"25,16,10,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_25_16_10_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"25,17,10,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_25_17_10_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"25,18,10,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_25_18_10_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"25,19,10,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 35645,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runF/cell_25_19_10_D3.txt",
+"md5": "b5db3fd8242aef21210035d1d8750ca2"
+},
+"25,22,11,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_25_22_11_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"26,14,10,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_26_14_10_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"26,15,10,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_26_15_10_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"26,16,10,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_26_16_10_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"26,16,10,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_26_16_10_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"26,21,11,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_26_21_11_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"26,22,11,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 36,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runB2/cell_26_22_11_D3.txt",
+"md5": "c3821b559c0eae6181b731c6886e1aa6"
+},
+"27,13,10,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_27_13_10_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"27,14,10,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_27_14_10_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"27,18,11,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_27_18_11_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"27,19,11,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_27_19_11_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"27,25,12,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runB2/cell_27_25_12_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"3,1,1,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_3_1_1_D2.txt",
+"md5": "94b92e0239d9dcc6dbf53026452aa59b"
+},
+"3,1,1,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_3_1_1_D3.txt",
+"md5": "94b92e0239d9dcc6dbf53026452aa59b"
+},
+"3,1,1,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_3_1_1_D4.txt",
+"md5": "94b92e0239d9dcc6dbf53026452aa59b"
+},
+"4,2,1,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_4_2_1_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"4,2,1,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_4_2_1_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"5,2,1,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_5_2_1_D2.txt",
+"md5": "cb448ca1cebdb7ea396d83b200e9e303"
+},
+"5,2,1,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_5_2_1_D3.txt",
+"md5": "cb448ca1cebdb7ea396d83b200e9e303"
+},
+"5,3,1,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_5_3_1_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"5,3,1,3": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_5_3_1_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"6,3,1,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_6_3_1_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"6,3,2,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_6_3_2_D2.txt",
+"md5": "5aa3c43bd9ec9692dfc728368bb42231"
+},
+"6,3,2,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_6_3_2_D3.txt",
+"md5": "5aa3c43bd9ec9692dfc728368bb42231"
+},
+"6,4,1,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_6_4_1_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"6,4,2,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_6_4_2_D2.txt",
+"md5": "2d02a656e9a2f1ca17485f3c928aeacf"
+},
+"6,4,2,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_6_4_2_D3.txt",
+"md5": "2d02a656e9a2f1ca17485f3c928aeacf"
+},
+"7,3,1,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_7_3_1_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"7,3,2,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_7_3_2_D2.txt",
+"md5": "157754950c7cf86362675085a157a1d7"
+},
+"7,3,2,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_7_3_2_D3.txt",
+"md5": "157754950c7cf86362675085a157a1d7"
+},
+"7,4,1,2": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_7_4_1_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"7,4,2,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_7_4_2_D2.txt",
+"md5": "8741e481e290cd0ab886c186fcb9c422"
+},
+"7,4,2,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_7_4_2_D3.txt",
+"md5": "45225ba9357ba8e4c26f8f6e56e056c8"
+},
+"7,5,2,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_7_5_2_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"7,5,2,3": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L014 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L014/cells/cell_7_5_2_D3.txt",
+"md5": "abbe6f0439151d60d767894a1a915767"
+},
+"8,4,2,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_8_4_2_D2.txt",
+"md5": "d14de8a96361d2b0563348874949a618"
+},
+"8,4,2,3": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 3,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_8_4_2_D3.txt",
+"md5": "1a9faed30a4b088ba274224bbf356612"
+},
+"8,5,2,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_8_5_2_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"8,5,3,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_8_5_3_D2.txt",
+"md5": "843e38f5d4e8ce93956611eb063de3fa"
+},
+"8,5,3,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_8_5_3_D3.txt",
+"md5": "13f2fc874fe3c5c24407e61415c195e9"
+},
+"8,5,3,4": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_8_5_3_D4.txt",
+"md5": "13f2fc874fe3c5c24407e61415c195e9"
+},
+"8,6,2,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_8_6_2_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"8,6,3,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_8_6_3_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"8,6,3,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 3,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_8_6_3_D3.txt",
+"md5": "08118a75a8d9cec78b4dfe8346c71c40"
+},
+"9,4,2,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_9_4_2_D2.txt",
+"md5": "0503e59742c2879cecbc38dbc4abef2c"
+},
+"9,4,3,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_9_4_3_D2.txt",
+"md5": "f0e61eff795e2da5ff6ccf67df5c0af1"
+},
+"9,4,3,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 1,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_9_4_3_D3.txt",
+"md5": "f0e61eff795e2da5ff6ccf67df5c0af1"
+},
+"9,5,2,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_9_5_2_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"9,5,3,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 3,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_9_5_3_D2.txt",
+"md5": "cb20b3bf024b5778dbb9e6b9b19f1e76"
+},
+"9,5,3,3": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 6,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_9_5_3_D3.txt",
+"md5": "a703055374cd297361a0059bf36dcd84"
+},
+"9,6,2,2": {
+"agree": [
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L016 cells_new.tar.gz (refereed)",
+"firstpath": "seedsrc/L016/cells_new/runA/cell_9_6_2_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"9,6,3,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 2,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_9_6_3_D2.txt",
+"md5": "5b4489719ac13316ce2336da2582bddf"
+},
+"9,6,3,3": {
+"agree": [
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 21,
+"disagree": [],
+"first": "L013 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L013/cells/cell_9_6_3_D3.txt",
+"md5": "1049e79702e09453a40b53770832c7c5"
+},
+"9,7,3,2": {
+"agree": [
+"L013 cells.tar.gz (refereed)",
+"L014 cells.tar.gz (refereed)",
+"20261017-2150-i11-n27 (worker, L016 cross-checked)",
+"20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 0,
+"disagree": [],
+"first": "L012 cells.tar.gz (refereed)",
+"firstpath": "seedsrc/L012/cells/cell_9_7_3_D2.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
+"9,7,3,3": {
+"agree": [
+"20261027-0300-tight-cells-d4 (concurrent worker, unrefereed)"
+],
+"classes": 24,
+"disagree": [],
+"first": "20261027-0235-cost-n28-n29 (cost study, unrefereed)",
+"firstpath": "../20261027-0235-cost-n28-n29/out/cells/cell_9_7_3_D3.txt",
+"md5": "7e285d64749ef2a35242cd9409b94ad0"
+}
+}

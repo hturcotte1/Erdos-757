@@ -85,3 +85,19 @@ GROW n=33 m=28 K=4 tried=630 ok=630 minslack=23 hist 23:108 34:522
 GROW n=33 m=29 K=4 tried=607 ok=607 minslack=25 hist 25:292 36:315
 GROW n=33 m=30 K=4 tried=622 ok=622 minslack=16 hist 16:1 27:521 38:100
 GROW n=33 m=31 K=4 tried=632 ok=632 minslack=18 hist 18:9 29:613 40:10
+GROW n=34 m=17 K=4 tried=617 ok=617 minslack=15 hist 15:70 26:438 37:108 48:1
+GROW n=34 m=18 K=4 tried=618 ok=618 minslack=17 hist 17:59 28:477 39:81 50:1
+GROW n=34 m=19 K=4 tried=610 ok=610 minslack=19 hist 19:63 30:468 41:79
+GROW n=34 m=20 K=4 tried=635 ok=635 minslack=21 hist 21:80 32:517 43:38
+GROW n=34 m=21 K=4 tried=610 ok=610 minslack=23 hist 23:111 34:485 45:14
+GROW n=34 m=22 K=4 tried=603 ok=603 minslack=25 hist 25:142 36:457 47:4
+GROW n=34 m=23 K=4 tried=665 ok=665 minslack=27 hist 27:281 38:383 49:1
+GROW n=34 m=24 K=4 tried=659 ok=659 minslack=18 hist 18:1 29:456 40:202
+GROW n=34 m=25 K=4 tried=612 ok=612 minslack=20 hist 20:1 31:535 42:76
+GROW n=34 m=26 K=4 tried=590 ok=590 minslack=22 hist 22:11 33:558 44:21
+GROW n=34 m=27 K=4 tried=648 ok=648 minslack=24 hist 24:76 35:570 46:2
+GROW n=34 m=28 K=4 tried=667 ok=667 minslack=26 hist 26:216 37:451
+GROW n=34 m=29 K=4 tried=654 ok=654 minslack=28 hist 28:482 39:172
+GROW n=34 m=30 K=4 tried=606 ok=606 minslack=30 hist 30:576 41:30
+GROW n=34 m=31 K=4 tried=602 ok=602 minslack=21 hist 21:11 32:587 43:4
+GROW n=34 m=32 K=4 tried=604 ok=604 minslack=23 hist 23:97 34:507
