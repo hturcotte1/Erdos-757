@@ -888,7 +888,7 @@ The only external inputs are:
 ## What remains
 **GAP: Conjecture PT (the pendant-triple lemma) is not proved.** This is the only GAP of this certificate. By Theorem D it is exactly what remains of pattern (b), in either of these forms:
 - PT-I: no connected slack-1 member of $\mathcal C$ with $\Delta\le3$ and $(\mathrm H_{n+3})$ has a pendant b-configuration;
-- PT-II: no slack-8 member of $\mathcal C$ with $(\mathrm H_{n+6})$ has three disjoint pairs satisfying (i) and (ii).
+- PT-II: no connected slack-8 member of $\mathcal C$ with $\Delta\le3$ and $(\mathrm H_{n+6})$ has three pairs $A,B,C$ as in Form II (pairwise disjoint, none inside an edge, of degree $\le2$) satisfying (i) and (ii).
 
 PT is not a finite computation: nothing proved here bounds $n$ from above. Every counterexample has the rigid structure listed in Part D (Theorem P, Lemma Q, Proposition J). The two sub-cases are:
 - (R1a) $S_0=V(G'')$: saturated, $n(H)\equiv5\pmod{11}$, $n(H)\in\{38,49,60,\dots\}$ given Remark B.5 ($n(H)\ge31$);

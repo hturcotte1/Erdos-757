@@ -1,0 +1,6 @@
+n 25 distinct True equals claim file set True
+C25 == A_base u (10^9+7919*B11): True B11 [0, 2009010, 2901878, 3392944, 3459949, 3705482, 3750000, 3794746, 3884010, 4018020, 7500000]
+4-subsets 12650 with < 5 distinct differences 0
+witness subset size 15 subset of C25 True Sidon True
+CP-SAT conflicts 20 status OPTIMAL max Sidon 15 bound 15 solution Sidon True
+brute force: 16-subsets 2042975 Sidon among them 0 secs 25

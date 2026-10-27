@@ -211,7 +211,7 @@ def last_edge_bits(S, edges):
         res &= m
     return res
 
-def search(S, stats, c1range=None):
+def search(S, stats, c1range=None, seeds=None):
     K = S.k + 1
     sols = set()
     full_bits = S.all_c
@@ -265,6 +265,23 @@ def search(S, stats, c1range=None):
             rec(chosen, nb, used_cnt, lowmask)
             chosen.pop()
             for x in e: used_cnt[x] -= 1
+    if seeds is not None:
+        # seeded search: every solution contains one of the seed pairs (Lemma NC, witness pair at a fixed piece); the level argument
+        # (some remaining edge avoids a union meeting the chosen edges) works from any chosen subset.
+        for (c1, c2) in seeds:
+            used = [0] * S.N
+            nb = S.all_c & ~S.incompat[c1] & ~S.incompat[c2] & ~(1 << c1) & ~(1 << c2)
+            ok = True
+            for c in (c1, c2):
+                for x in S.cands[c]:
+                    used[x] += 1
+                    if used[x] > S.cap[x]: ok = False
+            if not ok: continue
+            for x in range(S.N):
+                if used[x] >= S.cap[x]: nb &= ~S.cw[x]
+            if S.k + 1 == 2: continue
+            rec([c1, c2], nb, used, 0)
+        return sols
     # e1 = minimum-index edge of the solution
     for c1 in (range(S.nc) if c1range is None else c1range):
         e = S.cands[c1]
@@ -275,6 +292,26 @@ def search(S, stats, c1range=None):
             if used[x] >= S.cap[x]: nb &= ~S.cw[x]
         rec([c1], nb, used, 0)
     return sols
+
+def witness_seeds(S):
+    """pairs (c,d) of candidate edges meeting a fixed piece i0 whose traces there are disjoint with all cross pairs non-co-transversal
+    (Lemma NC witness pair); i0 = the piece giving the fewest seeds."""
+    best = None
+    for i0 in range(S.k):
+        tr = []
+        for ci, e in enumerate(S.cands):
+            A = tuple(x for x in e if S.piece_of[x] == i0)
+            if A: tr.append((ci, A))
+        seeds = []
+        for a in range(len(tr)):
+            ca, A = tr[a]
+            for b in range(a + 1, len(tr)):
+                cb, B = tr[b]
+                if S.incompat[ca] >> cb & 1: continue
+                if set(A) & set(B): continue
+                if all(y in S.ncnb.get(x, ()) for x in A for y in B): seeds.append((ca, cb))
+        if best is None or len(seeds) < len(best[1]): best = (i0, seeds)
+    return best
 
 def connected(S, edges):
     par = list(range(S.N))
@@ -341,11 +378,12 @@ if __name__ == '__main__':
     T = types(k, pieces, nmin)
     mine = [t for i, t in enumerate(T) if i % nparts == part]
     rev = len(sys.argv) > 6 and sys.argv[6] == 'rev'
+    seeded = len(sys.argv) > 7 and sys.argv[7] == 'seed'
     if rev: mine = mine[::-1]
     tot = {}
     allout = []
     per_type = []
-    keys = ['nodes', 'claimB', 'connected', 'claimE', 'inC3', 'inC3_claimE', 'tau_eq_sum_plus1', 'tau_other', 'A_nonneg', 'A_neg',
+    keys = ['seeds', 'nodes', 'claimB', 'connected', 'claimE', 'inC3', 'inC3_claimE', 'tau_eq_sum_plus1', 'tau_other', 'A_nonneg', 'A_neg',
             'A_neg_Pnonneg', 'Pneg', 'Pneg_claimE']
     print(f'k={k} part {part}/{nparts} types {len(mine)} of {len(T)} nmin {nmin} ncmode {ncmode}', flush=True)
     for ti, names in enumerate(mine):
@@ -353,7 +391,12 @@ if __name__ == '__main__':
         Ps = [byname[nm] for nm in names]
         S = Setup(Ps, nc_only=ncmode)
         stats = {kk: 0 for kk in keys}
-        sols = search(S, stats)
+        if ncmode and seeded:
+            i0, seeds = witness_seeds(S)
+            sols = search(S, stats, seeds=seeds)
+            stats['seeds'] = len(seeds)
+        else:
+            sols = search(S, stats)
         out = []
         process(S, sols, pieces, stats, out)
         per_type.append(dict(types=names, ncands=S.nc, stats=stats, sec=round(time.time() - ts, 1)))
@@ -361,5 +404,5 @@ if __name__ == '__main__':
         allout += out
         print(ti, names, 'N', S.N, 'cands', S.nc, stats, f'{time.time()-ts:.0f}s total {time.time()-t0:.0f}s', flush=True)
         json.dump(dict(k=k, part=part, nparts=nparts, nmin=nmin, done_types=ti + 1, of=len(mine), totals=tot, per_type=per_type, configs=allout),
-                  open(f'/home/user/Erdos-757/experiments/20261027-0915-l024-w1-w2/w1_k{k}_p{part}of{nparts}_n{nmin}{"_nc" if ncmode else ""}{"_rev" if rev else ""}.json', 'w'))
+                  open(f'/home/user/Erdos-757/experiments/20261027-0915-l024-w1-w2/w1_k{k}_p{part}of{nparts}_n{nmin}{"_nc" if ncmode else ""}{"_rev" if rev else ""}{"_seed" if seeded else ""}.json', 'w'))
     print('TOTAL', tot, f'{time.time()-t0:.0f}s', flush=True)

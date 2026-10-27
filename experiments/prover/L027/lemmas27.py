@@ -12,6 +12,7 @@ from hyp27 import (tau, min_transversals, tau_and_mts, popc, degrees, is_linear,
                    adjacent, induced_minus, emask)
 
 random.seed(int(sys.argv[1]) if len(sys.argv) > 1 else 1)
+rng2 = random.Random(1000 + (int(sys.argv[1]) if len(sys.argv) > 1 else 1))
 NBASE = int(sys.argv[2]) if len(sys.argv) > 2 else 200
 cnt = {}
 fail = {}
@@ -33,6 +34,31 @@ def random_C(n, m, tries=200):
         while len(edges) < m and att < 400:
             att += 1
             e = tuple(sorted(random.sample(range(n), 3)))
+            ps = list(combinations(e, 2))
+            if any(p in pairs for p in ps):
+                continue
+            cand = edges + [e]
+            if has_F7(n, cand) or p3_violations(n, cand):
+                continue
+            edges = cand
+            pairs.update(ps)
+        if len(edges) == m:
+            return edges
+    return None
+
+
+def random_C_rng(rng, n, m, tries=200):
+    if m == 0:
+        return []
+    if n < 3:
+        return None
+    for _ in range(tries):
+        edges = []
+        pairs = set()
+        att = 0
+        while len(edges) < m and att < 400:
+            att += 1
+            e = tuple(sorted(rng.sample(range(n), 3)))
             ps = list(combinations(e, 2))
             if any(p in pairs for p in ps):
                 continue
@@ -239,6 +265,57 @@ def test_graph(n, edges):
         if popc(S1 & S2) >= 2:
             U = S1 | S2
             ok('tight union', e_inside(edges, U) == popc(U) - 2)
+    # ---- extra tests (separate random stream rng2, so the counts above are unchanged) ----
+    # A12(b)-(d): largest tight set S_X containing a pair X; leaving edges; edges at vertices
+    for S in tsets[:20]:
+        vs = [u for u in range(n) if S >> u & 1]
+        ok('A12(d) every vertex of a tight set lies in an edge inside it',
+           all(any((emask(e) & S) == emask(e) and t in e for e in edges) for t in vs))
+        X = (1 << vs[0]) | (1 << vs[1])
+        SX = 0
+        for S2 in tsets:
+            if (S2 & X) == X:
+                SX |= S2
+        ok('A12(b) S_X tight', e_inside(edges, SX) == popc(SX) - 2)
+        ok('A12(c) edges with >=2 vertices in S_X lie inside S_X',
+           all(popc(emask(e) & SX) != 2 for e in edges))
+    # Lemma Q identity: H = H1 + H2 + {p,q,c}
+    H2 = None
+    for _ in range(20):
+        n2 = rng2.randint(1, 7)
+        m2 = rng2.randint(0, max(0, n2 - 2))
+        e2 = random_C_rng(rng2, n2, m2)
+        if e2 is not None:
+            H2 = (n2, e2)
+            break
+    if H2 is not None:
+        n2, e2 = H2
+        nonadj = [(p, q) for (p, q) in combinations(V, 2) if not adjacent(edges, p, q)]
+        if nonadj:
+            p, q = rng2.choice(nonadj)
+            c = rng2.randrange(n2)
+            sh = [tuple(sorted((u + n, w + n, z + n))) for (u, w, z) in e2]
+            Hq = edges + sh + [tuple(sorted((p, q, c + n)))]
+            tH = tau(n + n2, Hq)
+            t2, Ts2 = min_transversals(n2, e2)
+            ok('LemmaQ tau(H) in {t1+t2, t1+t2+1}', tH in (t + t2, t + t2 + 1))
+            sH = slack(n + n2, len(Hq), tH)
+            s1 = s
+            s2 = slack(n2, len(e2), t2)
+            if tH == t + t2:
+                ok('LemmaQ first value: s(H) = s1+s2+2', sH == s1 + s2 + 2)
+            else:
+                miss1 = all(not (T >> p & 1 or T >> q & 1) for T in Ts)
+                avoid2 = all(not (T >> c & 1) for T in Ts2)
+                ok('LemmaQ second value: {p,q} missed by all min T of H1 and c avoided in H2', miss1 and avoid2)
+                Hs = edges + [tuple(sorted((p, q, n)))]
+                ts = tau(n + 1, Hs)
+                ok('LemmaQ tau(H#) = t1+1', ts == t + 1)
+                n3, e3, _ = induced_minus(n2, e2, {c})
+                s3 = slack(n3, len(e3), tau(n3, e3))
+                dc = sum(1 for e in e2 if c in e)
+                ok('LemmaQ identity s(H) = s(H#) + s(H2-c) + 2 d(c)',
+                   sH == slack(n + 1, len(Hs), ts) + s3 + 2 * dc)
 
 
 nb = 0
