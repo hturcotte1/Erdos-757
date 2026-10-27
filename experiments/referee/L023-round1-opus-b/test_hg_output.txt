@@ -1,0 +1,6 @@
+canon on first 1500 stored (20,16,8,3) graphs: 0.9 ms each, max leaves 16, distinct forms 1500
+relabelling invariance failures on 300 graphs: 0
+p3 vs brute force: agree 400 disagree 0 (violating 1)
+F7 detected: True relabelled with pendant edge: True Fano minus... grid 3x3 lines (no F7): False
+tau == 8 on the first 200 stored graphs: failures 0
+tau and min covers vs brute force (100 random 9-vertex 3-graphs): failures 0
