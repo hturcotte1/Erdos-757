@@ -2220,6 +2220,26 @@
    "25": {
     "pool_connected": 143,
     "min_connected_slack": 5
+   },
+   "26": {
+    "pool_connected": 16375,
+    "min_connected_slack": 1
+   },
+   "27": {
+    "pool_connected": 120,
+    "min_connected_slack": 6
+   },
+   "28": {
+    "pool_connected": 489,
+    "min_connected_slack": 2
+   },
+   "29": {
+    "pool_connected": 151,
+    "min_connected_slack": 3
+   },
+   "30": {
+    "pool_connected": 149,
+    "min_connected_slack": 6
    }
   },
   "d5j": {
@@ -2278,6 +2298,58 @@
    "27": {
     "pool_connected": 120,
     "min_connected_slack": 6
+   },
+   "28": {
+    "pool_connected": 255,
+    "min_connected_slack": 2
+   },
+   "29": {
+    "pool_connected": 151,
+    "min_connected_slack": 3
+   },
+   "30": {
+    "pool_connected": 149,
+    "min_connected_slack": 6
+   },
+   "31": {
+    "pool_connected": 116,
+    "min_connected_slack": 2
+   },
+   "32": {
+    "pool_connected": 182,
+    "min_connected_slack": 3
+   },
+   "33": {
+    "pool_connected": 133,
+    "min_connected_slack": 5
+   },
+   "34": {
+    "pool_connected": 238,
+    "min_connected_slack": 4
+   },
+   "35": {
+    "pool_connected": 147,
+    "min_connected_slack": 9
+   },
+   "36": {
+    "pool_connected": 240,
+    "min_connected_slack": 3
+   },
+   "37": {
+    "pool_connected": 252,
+    "min_connected_slack": 10
+   },
+   "38": {
+    "pool_connected": 248,
+    "min_connected_slack": 2
+   },
+   "39": {
+    "pool_connected": 253,
+    "min_connected_slack": 11
+   },
+   "40": {
+    "pool_connected": 14,
+    "min_connected_slack": 12
    }
   },
   "mutF": {
