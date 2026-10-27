@@ -1,0 +1,2 @@
+(B) Theorem 1: closure form = brute force on 80 census graphs (5 <= n <= 9) and 300 random linear Delta<=3 3-graphs
+exit 0

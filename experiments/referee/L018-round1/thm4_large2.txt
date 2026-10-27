@@ -8,3 +8,4 @@ Tutte12cage: g=12  H: n=191 m=127 maxdeg=2 pendants=1 linear=True connected=True
    r=1: |B_r(p)|=3 |K_r|=3 boundary=4 binary-hypertree=True  max value over Z in B_r(p): -1
    r=2: |B_r(p)|=7 |K_r|=7 boundary=8 binary-hypertree=True  max value over Z in B_r(p): -1
    r=3: |B_r(p)|=15 |K_r|=15 boundary=16 binary-hypertree=True  max value over Z in B_r(p): -1
+   r=4: |B_r(p)|=31 |K_r|=31 boundary=32 binary-hypertree=True  max value over Z in B_r(p): -1

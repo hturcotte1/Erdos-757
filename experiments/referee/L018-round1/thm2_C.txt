@@ -1,0 +1,2 @@
+(C) Theorem 7: 8823 (H,S) instances from census graphs n <= 11 (S = degree-3 set and random S); special case on 195 graphs: all hold
+exit 0

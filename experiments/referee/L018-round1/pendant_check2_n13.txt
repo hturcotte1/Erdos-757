@@ -1,0 +1,2 @@
+n=13 [(('P-tree-2', 'irreducible2', 'reducible3'), 76), (('P-tree-2', 'reducible2', 'reducible3'), 34), (('P-tri-2', 'irreducible2', 'reducible3'), 367), (('other', 'reducible2', 'reducible3'), 313270)]
+violations: 0

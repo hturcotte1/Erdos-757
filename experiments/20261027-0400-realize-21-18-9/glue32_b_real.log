@@ -1,2 +1,15 @@
 glue32_b class 0 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 22.7 s
 glue32_b class 1 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 22.6 s
+glue32_b class 2 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 29.1 s
+glue32_b class 3 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 24.1 s
+glue32_b class 4 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 22.5 s
+glue32_b class 5 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 22.5 s
+glue32_b class 6 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 22.2 s
+glue32_b class 7 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 23.6 s
+glue32_b class 8 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 22.7 s
+glue32_b class 9 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 25.7 s
+glue32_b class 10 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 28.0 s
+glue32_b class 11 NOT-REALIZABLE labellings 0 dims {} nodes 1129 {'EQ': 99, 'SIDON': 232, 'NONLIN': 0} 24.4 s
+glue32_b class 12 NOT-REALIZABLE labellings 0 dims {} nodes 4399 {'EQ': 194, 'SIDON': 860, 'NONLIN': 0} 93.1 s
+glue32_b class 13 NOT-REALIZABLE labellings 0 dims {} nodes 4399 {'EQ': 194, 'SIDON': 860, 'NONLIN': 0} 79.8 s
+glue32_b class 14 NOT-REALIZABLE labellings 0 dims {} nodes 4399 {'EQ': 194, 'SIDON': 860, 'NONLIN': 0} 82.3 s

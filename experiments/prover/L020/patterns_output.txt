@@ -1,0 +1,70 @@
+cell_10_7_4.txt done {'K': 4, 'v': 6} fails so far 0
+cell_14_12_6.txt done {'K': 6, 'v': 22} fails so far 0
+cell_17_13_7.txt done {'K': 12, 'v': 52} fails so far 0
+cell_8_5_3.txt done {'K': 14, 'v': 53} fails so far 0
+cell_12_10_5.txt done {'K': 163, 'v': 984} fails so far 0
+cell_15_11_6.txt done {'K': 182, 'v': 1053} fails so far 0
+cell_22_17_9.txt done {'K': 219, 'v': 1331} fails so far 0
+cell_19_16_8.txt done {'K': 446, 'v': 3607} fails so far 0
+cell_26_22_11.txt done {'K': 482, 'v': 4111} fails so far 0
+   K 482
+   b: components slacks [0, 2] 6
+   b: components slacks [0, 3] 139
+   cells a [(11, 7, 4, 3)] 882
+   cells a [(13, 9, 5, 2)] 16
+   cells a [(14, 8, 5, 3)] 23
+   cells a [(16, 10, 6, 2)] 8
+   cells a [(18, 13, 7, 3)] 1844
+   cells a [(21, 14, 8, 3)] 112
+   cells a [(25, 19, 10, 3)] 336
+   cells a [(9, 4, 3, 2)] 2
+   cells b [(3, 1, 1, 0), (11, 7, 4, 3)] 10
+   cells b [(3, 1, 1, 0), (13, 9, 5, 2)] 4
+   cells b [(3, 1, 1, 0), (15, 12, 6, 3)] 76
+   cells b [(3, 1, 1, 0), (18, 13, 7, 3)] 26
+   cells b [(3, 1, 1, 0), (22, 18, 9, 3)] 24
+   cells b [(3, 1, 1, 0), (6, 3, 2, 2)] 2
+   cells b [(3, 1, 1, 0), (8, 6, 3, 3)] 3
+   cells e [(6, 3, 2, 2), (8, 5, 3, 1)] 9
+   cells e [(8, 5, 3, 1), (10, 8, 4, 2)] 90
+   cells e [(8, 5, 3, 1), (13, 9, 5, 2)] 42
+   cells e [(8, 5, 3, 1), (17, 14, 7, 2)] 36
+   cells e [(8, 5, 3, 1), (8, 5, 3, 1)] 6
+   cells f [(10, 7, 4, 0), (11, 7, 4, 3)] 9
+   cells f [(10, 7, 4, 0), (15, 12, 6, 3)] 36
+   cells f [(3, 1, 1, 0), (11, 7, 4, 3)] 3
+   cells f [(3, 1, 1, 0), (15, 12, 6, 3)] 6
+   cells f [(3, 1, 1, 0), (18, 13, 7, 3)] 6
+   cells f [(3, 1, 1, 0), (6, 3, 2, 2)] 2
+   cells f [(3, 1, 1, 0), (8, 6, 3, 3)] 7
+   cells f [(6, 3, 2, 2), (10, 7, 4, 0)] 12
+   cells f [(6, 3, 2, 2), (12, 10, 5, 1)] 227
+   cells f [(6, 3, 2, 2), (15, 11, 6, 1)] 74
+   cells f [(6, 3, 2, 2), (19, 16, 8, 1)] 72
+   cells f [(6, 3, 2, 2), (8, 5, 3, 1)] 19
+   cells f [(8, 6, 3, 3), (10, 7, 4, 0)] 33
+   cells iso-r1 [(10, 7, 4, 0)] 39
+   cells iso-r2 [(10, 7, 4, 0), (10, 7, 4, 0)] 9
+   cells iso-r2 [(3, 1, 1, 0), (10, 7, 4, 0)] 5
+   cells iso-r2 [(3, 1, 1, 0), (3, 1, 1, 0)] 1
+   e: components [(6, 3, 2, 2), (8, 5, 3, 1)] 9
+   e: components [(8, 5, 3, 1), (10, 8, 4, 2)] 90
+   e: components [(8, 5, 3, 1), (13, 9, 5, 2)] 42
+   e: components [(8, 5, 3, 1), (17, 14, 7, 2)] 36
+   e: components [(8, 5, 3, 1), (8, 5, 3, 1)] 6
+   f: slack F1 2, F2 cell (10, 7, 4, 0) 12
+   f: slack F1 2, F2 cell (12, 10, 5, 1) 227
+   f: slack F1 2, F2 cell (15, 11, 6, 1) 74
+   f: slack F1 2, F2 cell (19, 16, 8, 1) 72
+   f: slack F1 2, F2 cell (3, 1, 1, 0) 2
+   f: slack F1 2, F2 cell (8, 5, 3, 1) 19
+   f: slack F1 3, F2 cell (10, 7, 4, 0) 78
+   f: slack F1 3, F2 cell (3, 1, 1, 0) 22
+   pattern a 3223
+   pattern b 145
+   pattern e 183
+   pattern f 506
+   pattern iso-r1 39
+   pattern iso-r2 15
+   v 4111
+FAILS 0 []

@@ -17,6 +17,7 @@ lists experiments/20261027-0300-transversal-richness/inputs/cell_*.txt (format: 
 | fold_allblocked.py, fold_pergraph.py | C4/C5: degree-2 vertices / graphs with all folds blocked | fold_allblocked_output.txt, fold_pergraph_output.txt |
 | fold_reasons_graph.py | C6: fold-by-fold blocking reasons for chosen classes | fold_reasons_graph_output.txt, fold_reasons_10_8_4_output.txt |
 | blocked_and_6b.py | C7: classes satisfying Theorem 6(b) at every degree-2 vertex and with all folds blocked | blocked_and_6b_output.txt |
+| nbhd_cover.py | C8: cover number of the closed neighbourhood of v for uncoverable data triples (Remark 10.3) | nbhd_cover_output.txt |
 | unc_detail.py | exploratory: local structure of the uncoverable linear triples of a cell | (not used in the certificate) |
 
 Conclusions (all [verified-here as computations, not refereed], illustrative only):
