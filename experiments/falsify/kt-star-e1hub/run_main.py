@@ -5,7 +5,8 @@ import sys, json, time, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import hubs, kt
 inv = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'inventory.json')))
-out = open(sys.argv[1], 'a')
+out = open(sys.argv[1], 'a', buffering=1)
+nwrit = 0
 keys = sys.argv[2:]
 cells = sorted(inv, key=lambda k: eval(k))
 if keys != ['all']:
@@ -44,6 +45,7 @@ for ck in cells:
             rec.update(r)
             if not r['inC']: continue
             st['hub_inC'] += 1
+            nwrit += 1
             out.write(json.dumps(dict(type='H', src=ck, G=g, abc=(a,b,c), n=r['n'], m=r['m'], tau=r['tau'], A=r['A'], DEF=r['DEF'], DEFp=r['DEFp'], P=r['P'], Pp=r['Pp'], piece=r['piece'], H=E2)) + '\n'); out.flush()
             key = '(%d,%d,%d)' % (r['n'], r['m'], r['tau'])
             st['hubs_by_cell'][key] = st['hubs_by_cell'].get(key, 0) + 1
@@ -52,5 +54,6 @@ for ck in cells:
             if r['P'] < 0 or (r['piece'] is None and r['Pp'] < 0):
                 st['hits'].append(dict(G=g, abc=(a, b, c), H=E2, **r))
                 print('HIT', ck, a, b, c, r, flush=True)
-    out.write(json.dumps(st) + '\n'); out.flush()
+    out.write(json.dumps(st) + '\n'); out.flush(); os.fsync(out.fileno())
+    print('H records written', nwrit)
     print(ck, {k: v for k, v in st.items() if k not in ('hits', 'file')}, '[%.0fs]' % (time.time() - t0), flush=True)

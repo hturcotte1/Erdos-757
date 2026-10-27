@@ -1,7 +1,7 @@
 # L023 work folder: f(25) = 15 (certificate results/proofs/L023-f25-equals-15.md)
 
 Question: is there a 25-point (4,5)-set with h = 14 (a record, 14/25 < 4/7)? Answer: no (modulo the GAP of Step 2.7 of the
-certificate: 7-17 unrefereed lists of the maximum-degree-3 subtree that were not recomputed here), and C25 (claim C007) has h = 15.
+certificate: 5 unrefereed lists of the maximum-degree-3 subtree, (24,20,10,3), (23,17,9,3), (21,19,9,3), (20,16,8,3), (17,15,7,3), that were not recomputed here), and C25 (claim C007) has h = 15.
 All runs: `nice -n 10`, one engine process (NPROC=1), `timeout` on every command; machine shared (load 11-14).
 Tags: everything here is [verified-here] as an UNREFEREED computation unless stated.
 
@@ -16,7 +16,7 @@ Tags: everything here is [verified-here] as an UNREFEREED computation unless sta
 | `topcell/gen_inputs.py` (L014's), `topcell/in_d3.txt`, `topcell/in_d4.txt` (not committed) | `CELLDIR=$PWD/cells python3 gen_inputs.py 25 23 11 4 inputs_25_23_11_4.txt inputs_25_23_11_4.tags` (in topcell/), then `head -15429` / `tail -67` | the inputs of the two branches |
 | `topcell/noprune_d3.txt`, `topcell/noprune_d4.txt` (not committed) | `./bin/ext_d 24 10 11 3 2 noprune < in_d3.txt`, `./bin/ext_d 24 10 11 4 3 noprune < in_d4.txt` | all extensions with tau >= 11, no F7 pruning, no (P3) test: 2,928 and 15,032 |
 | `classify_final.py`, `classify_final_d3_output.txt`, `classify_final_d4_output.txt` | `python3 classify_final.py topcell/noprune_d3.txt 3 topcell/cells/cell_25_23_11_D3.txt 10` (and `... noprune_d4.txt 4 ...D4.txt 20`) | own classification (verify_c.py): d=3: 0 members of C; d=4: the members of C reduce (networkx) to exactly the 6 stored classes |
-| `ext_own.py`, `ext_own_d4_output.txt`, `ext_own_d3_sample_output.txt`, `ext_own_d3_sample.txt` | `python3 ext_own.py topcell/in_d4.txt topcell/noprune_d4.txt 24 10 4 0:67`; `python3 ext_own.py topcell/in_d3.txt topcell/noprune_d3.txt 24 10 3 0:0 ext_own_d3_sample.txt` | own extension enumerator (no code of ext_d) = ext_d noprune, input by input |
+| `ext_own.py`, `ext_own_d4_output.txt`, `ext_own_d3_sample_output.txt`, `ext_own_d3_sample.txt` | `python3 ext_own.py topcell/in_d4.txt topcell/noprune_d4.txt 24 10 4 0:67`; `python3 ext_own.py topcell/in_d3.txt topcell/noprune_d3.txt 24 10 3 0:0 ext_own_d3_sample.txt` | own extension enumerator (no code of ext_d) = ext_d noprune, input by input; degree-4 inputs in `ext_own_d4_output.txt` (0-22) and `ext_own_d4_{b,c,d,e,f}_output.txt`: all 67 EQUAL, 15,032 extensions |
 | `verify_c.py`, `verify_c_unit_tests_output.txt` | `python3 verify_c.py` | own membership verifier for C (linear, F7, (P3) by Lemma P = matchings, connected, tau) and its unit tests |
 | `verify_six.py`, `verify_six_output.txt` | `python3 verify_six.py cell_25_23_11_D4.txt` | the 6 classes: in C, connected, tau = 11, Delta = 4, degree sequences, X - w types, tau(X - v) = 10, pairwise non-isomorphic |
 | `cell_25_23_11_D4.txt` (copy, git-ignored name), `six_classes_25_23_11_D4.json` (tracked) | | the 6 classes |
@@ -29,7 +29,7 @@ Tags: everything here is [verified-here] as an UNREFEREED computation unless sta
 | `ctl_json.py`, `ctl_14_12_6_output.txt` | `python3 ctl_json.py ../../20261027-0400-realize-21-18-9/results_ctl_14_12_6.json` | agreement with rexact on the 11 classes of cell(14,12,6,4), including the numbers of realizable labellings |
 | `sub14.py`, `sub14_output.txt` | `python3 sub14.py` | every X_i contains a (14,12,6) piece of class 5 or 7 of cell(14,12,6,4), both NOT-REALIZABLE (second proof of Theorem 3) |
 | `check_refereed_146.py`, `check_refereed_146_output.txt` | `python3 check_refereed_146.py` | the 146 refereed lists used by the run are identical to the refereed tarballs |
-| `ext_own_d3_full_output.txt`, `ext_own_d3_part2_output.txt` | `VERBOSE=1 python3 ext_own.py topcell/in_d3.txt topcell/noprune_d3.txt 24 10 3 0:15429` (stopped after input 769), `... 770:15429` (timeout 500 s) | own extension enumerator on degree-3 inputs 0-856: 857 EQUAL |
+| `ext_own_d3_full_output.txt`, `ext_own_d3_part2_output.txt` | `VERBOSE=1 python3 ext_own.py topcell/in_d3.txt topcell/noprune_d3.txt 24 10 3 0:15429` (stopped after input 769), `... 770:15429` (timeout 500 s) | own extension enumerator on degree-3 inputs 0-856: 857 EQUAL; with `ext_own_d3_r857_5715.txt`, `ext_own_d3_r5715_10572.txt`, `ext_own_d3_r10572_15429.txt` (ranges 857:5715, 5715:10572, 10572:15429): all 15,429 degree-3 inputs EQUAL, 2,928 extensions |
 | `audit_lists.py`, `audit_lists_output.txt` | `python3 audit_lists.py topcell/cells/cell_21_19_9_D3.txt 21 19 9 3` etc. | soundness audit of three unrefereed lists: 0 problems |
 | `ctl_b12.py`, `ctl_b12_output.txt`, `c006_class.py`, `c006_class_output.txt`, `ctl_21_19_9_output.txt` | `python3 ctl_b12.py`; `python3 c006_class.py`; `python3 ctl_realize.py list ../../20261027-0340-induction-n28-n29-f25/lists/cell_21_19_9_D4.txt ../../20261027-0400-realize-21-18-9/out_21_19_9_full.txt 43,0,1,5` | further controls: B12 realized; C006 = class 43; classes 43, 0, 1, 5 of cell(21,19,9,4) agree with rexact_c |
 | `posctl_24_20_10.py`, `posctl_24_20_10_output.txt` | `python3 posctl_24_20_10.py` | attempted positive control for cell(24,20,10,3) via X_i - v: vacuous (no X_i - v is connected with Delta <= 3) |

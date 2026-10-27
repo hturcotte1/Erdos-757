@@ -13,7 +13,7 @@ seen_in = hubs.Registry()
 for fn in ins:
     for l in open(fn):
         d = json.loads(l)
-        if d.get('type') != 'H': continue
+        if d.get('type') not in ('H','UV','FH'): continue
         n, E, t = d['n'], [tuple(e) for e in d['H']], d['tau']
         if n > MAXN: continue
         rec, new = seen_in.lookup(n, E)   # dedupe inputs across files
@@ -33,7 +33,7 @@ for fn in ins:
             key = '(%d,%d,%d)' % (r['n'], r['m'], r['tau'])
             stats['by_cell'][key] = stats['by_cell'].get(key, 0) + 1
             if stats['minP'] is None or r['P'] < stats['minP']: stats['minP'] = r['P']
-            out.write(json.dumps(dict(type='H', src=d['src'] + '>iter', G=E, abc=(a, b, c), n=r['n'], m=r['m'], tau=r['tau'], A=r['A'], DEF=r['DEF'], DEFp=r['DEFp'], P=r['P'], Pp=r['Pp'], piece=r['piece'], H=E2)) + '\n'); out.flush()
+            out.write(json.dumps(dict(type='H', src=d.get('src', d.get('cell', d['type'])) + '>iter', G=E, abc=(a, b, c), n=r['n'], m=r['m'], tau=r['tau'], A=r['A'], DEF=r['DEF'], DEFp=r['DEFp'], P=r['P'], Pp=r['Pp'], piece=r['piece'], H=E2)) + '\n'); out.flush()
             if r['P'] < 0 or (r['piece'] is None and r['Pp'] < 0):
                 stats['hits'] += 1
                 print('HIT', r, E2, flush=True)

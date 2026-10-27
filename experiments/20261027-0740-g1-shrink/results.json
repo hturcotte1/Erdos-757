@@ -308,252 +308,252 @@
    "pairs": 32
   },
   "(8,5,3)#0": {
-   "claimB": 29113,
+   "claimB": 30976,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 29113,
-   "pairs": 30
+   "survive_C": 30976,
+   "pairs": 32
   },
   "(8,5,3)#1": {
-   "claimB": 1448,
+   "claimB": 31259,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1448,
-   "pairs": 2
+   "survive_C": 31259,
+   "pairs": 32
   },
   "(10,7,4)#0": {
-   "claimB": 687,
+   "claimB": 5259,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 687,
-   "pairs": 2
+   "survive_C": 5259,
+   "pairs": 32
   },
   "(10,7,4)#1": {
-   "claimB": 896,
+   "claimB": 12532,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 896,
-   "pairs": 2
+   "survive_C": 12532,
+   "pairs": 32
   },
   "(10,7,4)#2": {
-   "claimB": 896,
+   "claimB": 12532,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 896,
-   "pairs": 2
+   "survive_C": 12532,
+   "pairs": 32
   },
   "(10,7,4)#3": {
-   "claimB": 687,
+   "claimB": 5259,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 687,
-   "pairs": 2
+   "survive_C": 5259,
+   "pairs": 32
   },
   "(15,11,6)#0": {
-   "claimB": 1345,
+   "claimB": 17160,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1345,
-   "pairs": 2
+   "survive_C": 17160,
+   "pairs": 32
   },
   "(15,11,6)#1": {
-   "claimB": 1355,
+   "claimB": 17215,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1355,
-   "pairs": 2
+   "survive_C": 17215,
+   "pairs": 32
   },
   "(15,11,6)#2": {
-   "claimB": 1355,
+   "claimB": 17215,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1355,
-   "pairs": 2
+   "survive_C": 17215,
+   "pairs": 32
   },
   "(15,11,6)#3": {
-   "claimB": 1480,
+   "claimB": 18626,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1480,
-   "pairs": 2
+   "survive_C": 18626,
+   "pairs": 32
   },
   "(15,11,6)#4": {
-   "claimB": 1116,
+   "claimB": 8112,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1116,
-   "pairs": 2
+   "survive_C": 8112,
+   "pairs": 32
   },
   "(15,11,6)#5": {
-   "claimB": 1126,
+   "claimB": 8167,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1126,
-   "pairs": 2
+   "survive_C": 8167,
+   "pairs": 32
   },
   "(15,11,6)#6": {
-   "claimB": 1532,
+   "claimB": 22177,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1532,
-   "pairs": 2
+   "survive_C": 22177,
+   "pairs": 32
   },
   "(15,11,6)#7": {
-   "claimB": 1522,
+   "claimB": 22122,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1522,
-   "pairs": 2
+   "survive_C": 22122,
+   "pairs": 32
   },
   "(15,11,6)#8": {
-   "claimB": 1542,
+   "claimB": 22232,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1542,
-   "pairs": 2
+   "survive_C": 22232,
+   "pairs": 32
   },
   "(15,11,6)#9": {
-   "claimB": 1542,
+   "claimB": 22232,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1542,
-   "pairs": 2
+   "survive_C": 22232,
+   "pairs": 32
   },
   "(15,11,6)#10": {
-   "claimB": 1532,
+   "claimB": 22177,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1532,
-   "pairs": 2
+   "survive_C": 22177,
+   "pairs": 32
   },
   "(15,11,6)#11": {
-   "claimB": 1376,
+   "claimB": 20316,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1376,
-   "pairs": 2
+   "survive_C": 20316,
+   "pairs": 32
   },
   "(15,11,6)#12": {
-   "claimB": 1386,
+   "claimB": 20371,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1386,
-   "pairs": 2
+   "survive_C": 20371,
+   "pairs": 32
   },
   "(15,11,6)#13": {
-   "claimB": 1490,
+   "claimB": 18681,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1490,
-   "pairs": 2
+   "survive_C": 18681,
+   "pairs": 32
   },
   "(15,11,6)#14": {
-   "claimB": 1126,
+   "claimB": 8167,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1126,
-   "pairs": 2
+   "survive_C": 8167,
+   "pairs": 32
   },
   "(15,11,6)#15": {
-   "claimB": 1136,
+   "claimB": 8222,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1136,
-   "pairs": 2
+   "survive_C": 8222,
+   "pairs": 32
   },
   "(15,11,6)#16": {
-   "claimB": 1136,
+   "claimB": 8222,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1136,
-   "pairs": 2
+   "survive_C": 8222,
+   "pairs": 32
   },
   "(15,11,6)#17": {
-   "claimB": 1136,
+   "claimB": 8222,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1136,
-   "pairs": 2
+   "survive_C": 8222,
+   "pairs": 32
   },
   "(15,11,6)#18": {
-   "claimB": 1490,
+   "claimB": 18681,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1490,
-   "pairs": 2
+   "survive_C": 18681,
+   "pairs": 32
   },
   "(17,13,7)#0": {
-   "claimB": 1156,
+   "claimB": 8332,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1156,
-   "pairs": 2
+   "survive_C": 8332,
+   "pairs": 32
   },
   "(17,13,7)#1": {
-   "claimB": 1146,
+   "claimB": 8277,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1146,
-   "pairs": 2
+   "survive_C": 8277,
+   "pairs": 32
   },
   "(17,13,7)#2": {
-   "claimB": 1166,
+   "claimB": 8387,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1166,
-   "pairs": 2
+   "survive_C": 8387,
+   "pairs": 32
   },
   "(17,13,7)#3": {
-   "claimB": 1166,
+   "claimB": 8387,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 1166,
-   "pairs": 2
+   "survive_C": 8387,
+   "pairs": 32
   },
   "(17,13,7)#4": {
-   "claimB": 231,
+   "claimB": 8387,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 231,
-   "pairs": 1
+   "survive_C": 8387,
+   "pairs": 32
   },
   "(17,13,7)#5": {
-   "claimB": 228,
+   "claimB": 8332,
    "killed_I11": 0,
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
-   "survive_C": 228,
-   "pairs": 1
+   "survive_C": 8332,
+   "pairs": 32
   }
  },
  "D2_per_pair": {
@@ -983,6 +983,3275 @@
    "killed_KT_only": 0,
    "notC_among_unkilled": 0,
    "survive_C": 935
+  },
+  "(8,5,3)#0 x (17,13,7)#4": {
+   "claimB": 935,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 935
+  },
+  "(8,5,3)#0 x (17,13,7)#5": {
+   "claimB": 928,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 928
+  },
+  "(8,5,3)#1 x (8,5,3)#1": {
+   "claimB": 1071,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1071
+  },
+  "(8,5,3)#1 x (10,7,4)#0": {
+   "claimB": 573,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 573
+  },
+  "(8,5,3)#1 x (10,7,4)#1": {
+   "claimB": 704,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 704
+  },
+  "(8,5,3)#1 x (10,7,4)#2": {
+   "claimB": 704,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 704
+  },
+  "(8,5,3)#1 x (10,7,4)#3": {
+   "claimB": 573,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 573
+  },
+  "(8,5,3)#1 x (15,11,6)#0": {
+   "claimB": 1063,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1063
+  },
+  "(8,5,3)#1 x (15,11,6)#1": {
+   "claimB": 1071,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1071
+  },
+  "(8,5,3)#1 x (15,11,6)#2": {
+   "claimB": 1071,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1071
+  },
+  "(8,5,3)#1 x (15,11,6)#3": {
+   "claimB": 1170,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1170
+  },
+  "(8,5,3)#1 x (15,11,6)#4": {
+   "claimB": 924,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 924
+  },
+  "(8,5,3)#1 x (15,11,6)#5": {
+   "claimB": 932,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 932
+  },
+  "(8,5,3)#1 x (15,11,6)#6": {
+   "claimB": 1189,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1189
+  },
+  "(8,5,3)#1 x (15,11,6)#7": {
+   "claimB": 1181,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1181
+  },
+  "(8,5,3)#1 x (15,11,6)#8": {
+   "claimB": 1197,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1197
+  },
+  "(8,5,3)#1 x (15,11,6)#9": {
+   "claimB": 1197,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1197
+  },
+  "(8,5,3)#1 x (15,11,6)#10": {
+   "claimB": 1189,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1189
+  },
+  "(8,5,3)#1 x (15,11,6)#11": {
+   "claimB": 1067,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1067
+  },
+  "(8,5,3)#1 x (15,11,6)#12": {
+   "claimB": 1075,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1075
+  },
+  "(8,5,3)#1 x (15,11,6)#13": {
+   "claimB": 1178,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1178
+  },
+  "(8,5,3)#1 x (15,11,6)#14": {
+   "claimB": 932,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 932
+  },
+  "(8,5,3)#1 x (15,11,6)#15": {
+   "claimB": 940,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 940
+  },
+  "(8,5,3)#1 x (15,11,6)#16": {
+   "claimB": 940,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 940
+  },
+  "(8,5,3)#1 x (15,11,6)#17": {
+   "claimB": 940,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 940
+  },
+  "(8,5,3)#1 x (15,11,6)#18": {
+   "claimB": 1178,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 1178
+  },
+  "(8,5,3)#1 x (17,13,7)#0": {
+   "claimB": 956,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 956
+  },
+  "(8,5,3)#1 x (17,13,7)#1": {
+   "claimB": 948,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 948
+  },
+  "(8,5,3)#1 x (17,13,7)#2": {
+   "claimB": 964,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 964
+  },
+  "(8,5,3)#1 x (17,13,7)#3": {
+   "claimB": 964,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 964
+  },
+  "(8,5,3)#1 x (17,13,7)#4": {
+   "claimB": 964,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 964
+  },
+  "(8,5,3)#1 x (17,13,7)#5": {
+   "claimB": 956,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 956
+  },
+  "(10,7,4)#0 x (10,7,4)#0": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#0 x (10,7,4)#1": {
+   "claimB": 168,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 168
+  },
+  "(10,7,4)#0 x (10,7,4)#2": {
+   "claimB": 168,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 168
+  },
+  "(10,7,4)#0 x (10,7,4)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#0 x (15,11,6)#0": {
+   "claimB": 222,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 222
+  },
+  "(10,7,4)#0 x (15,11,6)#1": {
+   "claimB": 222,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 222
+  },
+  "(10,7,4)#0 x (15,11,6)#2": {
+   "claimB": 222,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 222
+  },
+  "(10,7,4)#0 x (15,11,6)#3": {
+   "claimB": 240,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 240
+  },
+  "(10,7,4)#0 x (15,11,6)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#0 x (15,11,6)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#0 x (15,11,6)#6": {
+   "claimB": 333,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 333
+  },
+  "(10,7,4)#0 x (15,11,6)#7": {
+   "claimB": 333,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 333
+  },
+  "(10,7,4)#0 x (15,11,6)#8": {
+   "claimB": 333,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 333
+  },
+  "(10,7,4)#0 x (15,11,6)#9": {
+   "claimB": 333,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 333
+  },
+  "(10,7,4)#0 x (15,11,6)#10": {
+   "claimB": 333,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 333
+  },
+  "(10,7,4)#0 x (15,11,6)#11": {
+   "claimB": 306,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 306
+  },
+  "(10,7,4)#0 x (15,11,6)#12": {
+   "claimB": 306,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 306
+  },
+  "(10,7,4)#0 x (15,11,6)#13": {
+   "claimB": 240,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 240
+  },
+  "(10,7,4)#0 x (15,11,6)#14": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#0 x (15,11,6)#15": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#0 x (15,11,6)#16": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#0 x (15,11,6)#17": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#0 x (15,11,6)#18": {
+   "claimB": 240,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 240
+  },
+  "(10,7,4)#0 x (17,13,7)#0": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#0 x (17,13,7)#1": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#0 x (17,13,7)#2": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#0 x (17,13,7)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#0 x (17,13,7)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#0 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#1 x (10,7,4)#1": {
+   "claimB": 320,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 320
+  },
+  "(10,7,4)#1 x (10,7,4)#2": {
+   "claimB": 320,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 320
+  },
+  "(10,7,4)#1 x (10,7,4)#3": {
+   "claimB": 168,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 168
+  },
+  "(10,7,4)#1 x (15,11,6)#0": {
+   "claimB": 454,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 454
+  },
+  "(10,7,4)#1 x (15,11,6)#1": {
+   "claimB": 456,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 456
+  },
+  "(10,7,4)#1 x (15,11,6)#2": {
+   "claimB": 456,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 456
+  },
+  "(10,7,4)#1 x (15,11,6)#3": {
+   "claimB": 496,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 496
+  },
+  "(10,7,4)#1 x (15,11,6)#4": {
+   "claimB": 264,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 264
+  },
+  "(10,7,4)#1 x (15,11,6)#5": {
+   "claimB": 266,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 266
+  },
+  "(10,7,4)#1 x (15,11,6)#6": {
+   "claimB": 566,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 566
+  },
+  "(10,7,4)#1 x (15,11,6)#7": {
+   "claimB": 564,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 564
+  },
+  "(10,7,4)#1 x (15,11,6)#8": {
+   "claimB": 568,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 568
+  },
+  "(10,7,4)#1 x (15,11,6)#9": {
+   "claimB": 568,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 568
+  },
+  "(10,7,4)#1 x (15,11,6)#10": {
+   "claimB": 566,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 566
+  },
+  "(10,7,4)#1 x (15,11,6)#11": {
+   "claimB": 514,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 514
+  },
+  "(10,7,4)#1 x (15,11,6)#12": {
+   "claimB": 516,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 516
+  },
+  "(10,7,4)#1 x (15,11,6)#13": {
+   "claimB": 498,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 498
+  },
+  "(10,7,4)#1 x (15,11,6)#14": {
+   "claimB": 266,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 266
+  },
+  "(10,7,4)#1 x (15,11,6)#15": {
+   "claimB": 268,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 268
+  },
+  "(10,7,4)#1 x (15,11,6)#16": {
+   "claimB": 268,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 268
+  },
+  "(10,7,4)#1 x (15,11,6)#17": {
+   "claimB": 268,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 268
+  },
+  "(10,7,4)#1 x (15,11,6)#18": {
+   "claimB": 498,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 498
+  },
+  "(10,7,4)#1 x (17,13,7)#0": {
+   "claimB": 272,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 272
+  },
+  "(10,7,4)#1 x (17,13,7)#1": {
+   "claimB": 270,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 270
+  },
+  "(10,7,4)#1 x (17,13,7)#2": {
+   "claimB": 274,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 274
+  },
+  "(10,7,4)#1 x (17,13,7)#3": {
+   "claimB": 274,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 274
+  },
+  "(10,7,4)#1 x (17,13,7)#4": {
+   "claimB": 274,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 274
+  },
+  "(10,7,4)#1 x (17,13,7)#5": {
+   "claimB": 272,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 272
+  },
+  "(10,7,4)#2 x (10,7,4)#2": {
+   "claimB": 320,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 320
+  },
+  "(10,7,4)#2 x (10,7,4)#3": {
+   "claimB": 168,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 168
+  },
+  "(10,7,4)#2 x (15,11,6)#0": {
+   "claimB": 454,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 454
+  },
+  "(10,7,4)#2 x (15,11,6)#1": {
+   "claimB": 456,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 456
+  },
+  "(10,7,4)#2 x (15,11,6)#2": {
+   "claimB": 456,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 456
+  },
+  "(10,7,4)#2 x (15,11,6)#3": {
+   "claimB": 496,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 496
+  },
+  "(10,7,4)#2 x (15,11,6)#4": {
+   "claimB": 264,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 264
+  },
+  "(10,7,4)#2 x (15,11,6)#5": {
+   "claimB": 266,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 266
+  },
+  "(10,7,4)#2 x (15,11,6)#6": {
+   "claimB": 566,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 566
+  },
+  "(10,7,4)#2 x (15,11,6)#7": {
+   "claimB": 564,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 564
+  },
+  "(10,7,4)#2 x (15,11,6)#8": {
+   "claimB": 568,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 568
+  },
+  "(10,7,4)#2 x (15,11,6)#9": {
+   "claimB": 568,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 568
+  },
+  "(10,7,4)#2 x (15,11,6)#10": {
+   "claimB": 566,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 566
+  },
+  "(10,7,4)#2 x (15,11,6)#11": {
+   "claimB": 514,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 514
+  },
+  "(10,7,4)#2 x (15,11,6)#12": {
+   "claimB": 516,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 516
+  },
+  "(10,7,4)#2 x (15,11,6)#13": {
+   "claimB": 498,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 498
+  },
+  "(10,7,4)#2 x (15,11,6)#14": {
+   "claimB": 266,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 266
+  },
+  "(10,7,4)#2 x (15,11,6)#15": {
+   "claimB": 268,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 268
+  },
+  "(10,7,4)#2 x (15,11,6)#16": {
+   "claimB": 268,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 268
+  },
+  "(10,7,4)#2 x (15,11,6)#17": {
+   "claimB": 268,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 268
+  },
+  "(10,7,4)#2 x (15,11,6)#18": {
+   "claimB": 498,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 498
+  },
+  "(10,7,4)#2 x (17,13,7)#0": {
+   "claimB": 272,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 272
+  },
+  "(10,7,4)#2 x (17,13,7)#1": {
+   "claimB": 270,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 270
+  },
+  "(10,7,4)#2 x (17,13,7)#2": {
+   "claimB": 274,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 274
+  },
+  "(10,7,4)#2 x (17,13,7)#3": {
+   "claimB": 274,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 274
+  },
+  "(10,7,4)#2 x (17,13,7)#4": {
+   "claimB": 274,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 274
+  },
+  "(10,7,4)#2 x (17,13,7)#5": {
+   "claimB": 272,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 272
+  },
+  "(10,7,4)#3 x (10,7,4)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#3 x (15,11,6)#0": {
+   "claimB": 222,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 222
+  },
+  "(10,7,4)#3 x (15,11,6)#1": {
+   "claimB": 222,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 222
+  },
+  "(10,7,4)#3 x (15,11,6)#2": {
+   "claimB": 222,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 222
+  },
+  "(10,7,4)#3 x (15,11,6)#3": {
+   "claimB": 240,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 240
+  },
+  "(10,7,4)#3 x (15,11,6)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#3 x (15,11,6)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#3 x (15,11,6)#6": {
+   "claimB": 333,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 333
+  },
+  "(10,7,4)#3 x (15,11,6)#7": {
+   "claimB": 333,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 333
+  },
+  "(10,7,4)#3 x (15,11,6)#8": {
+   "claimB": 333,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 333
+  },
+  "(10,7,4)#3 x (15,11,6)#9": {
+   "claimB": 333,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 333
+  },
+  "(10,7,4)#3 x (15,11,6)#10": {
+   "claimB": 333,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 333
+  },
+  "(10,7,4)#3 x (15,11,6)#11": {
+   "claimB": 306,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 306
+  },
+  "(10,7,4)#3 x (15,11,6)#12": {
+   "claimB": 306,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 306
+  },
+  "(10,7,4)#3 x (15,11,6)#13": {
+   "claimB": 240,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 240
+  },
+  "(10,7,4)#3 x (15,11,6)#14": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#3 x (15,11,6)#15": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#3 x (15,11,6)#16": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#3 x (15,11,6)#17": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#3 x (15,11,6)#18": {
+   "claimB": 240,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 240
+  },
+  "(10,7,4)#3 x (17,13,7)#0": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#3 x (17,13,7)#1": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#3 x (17,13,7)#2": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#3 x (17,13,7)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#3 x (17,13,7)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(10,7,4)#3 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#0 x (15,11,6)#0": {
+   "claimB": 624,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 624
+  },
+  "(15,11,6)#0 x (15,11,6)#1": {
+   "claimB": 626,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 626
+  },
+  "(15,11,6)#0 x (15,11,6)#2": {
+   "claimB": 626,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 626
+  },
+  "(15,11,6)#0 x (15,11,6)#3": {
+   "claimB": 678,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 678
+  },
+  "(15,11,6)#0 x (15,11,6)#4": {
+   "claimB": 336,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 336
+  },
+  "(15,11,6)#0 x (15,11,6)#5": {
+   "claimB": 338,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 338
+  },
+  "(15,11,6)#0 x (15,11,6)#6": {
+   "claimB": 788,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 788
+  },
+  "(15,11,6)#0 x (15,11,6)#7": {
+   "claimB": 786,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 786
+  },
+  "(15,11,6)#0 x (15,11,6)#8": {
+   "claimB": 790,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 790
+  },
+  "(15,11,6)#0 x (15,11,6)#9": {
+   "claimB": 790,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 790
+  },
+  "(15,11,6)#0 x (15,11,6)#10": {
+   "claimB": 788,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 788
+  },
+  "(15,11,6)#0 x (15,11,6)#11": {
+   "claimB": 721,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 721
+  },
+  "(15,11,6)#0 x (15,11,6)#12": {
+   "claimB": 723,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 723
+  },
+  "(15,11,6)#0 x (15,11,6)#13": {
+   "claimB": 680,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 680
+  },
+  "(15,11,6)#0 x (15,11,6)#14": {
+   "claimB": 338,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 338
+  },
+  "(15,11,6)#0 x (15,11,6)#15": {
+   "claimB": 340,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 340
+  },
+  "(15,11,6)#0 x (15,11,6)#16": {
+   "claimB": 340,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 340
+  },
+  "(15,11,6)#0 x (15,11,6)#17": {
+   "claimB": 340,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 340
+  },
+  "(15,11,6)#0 x (15,11,6)#18": {
+   "claimB": 680,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 680
+  },
+  "(15,11,6)#0 x (17,13,7)#0": {
+   "claimB": 344,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 344
+  },
+  "(15,11,6)#0 x (17,13,7)#1": {
+   "claimB": 342,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 342
+  },
+  "(15,11,6)#0 x (17,13,7)#2": {
+   "claimB": 346,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 346
+  },
+  "(15,11,6)#0 x (17,13,7)#3": {
+   "claimB": 346,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 346
+  },
+  "(15,11,6)#0 x (17,13,7)#4": {
+   "claimB": 346,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 346
+  },
+  "(15,11,6)#0 x (17,13,7)#5": {
+   "claimB": 344,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 344
+  },
+  "(15,11,6)#1 x (15,11,6)#1": {
+   "claimB": 628,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 628
+  },
+  "(15,11,6)#1 x (15,11,6)#2": {
+   "claimB": 628,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 628
+  },
+  "(15,11,6)#1 x (15,11,6)#3": {
+   "claimB": 680,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 680
+  },
+  "(15,11,6)#1 x (15,11,6)#4": {
+   "claimB": 336,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 336
+  },
+  "(15,11,6)#1 x (15,11,6)#5": {
+   "claimB": 338,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 338
+  },
+  "(15,11,6)#1 x (15,11,6)#6": {
+   "claimB": 791,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 791
+  },
+  "(15,11,6)#1 x (15,11,6)#7": {
+   "claimB": 789,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 789
+  },
+  "(15,11,6)#1 x (15,11,6)#8": {
+   "claimB": 793,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 793
+  },
+  "(15,11,6)#1 x (15,11,6)#9": {
+   "claimB": 793,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 793
+  },
+  "(15,11,6)#1 x (15,11,6)#10": {
+   "claimB": 791,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 791
+  },
+  "(15,11,6)#1 x (15,11,6)#11": {
+   "claimB": 724,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 724
+  },
+  "(15,11,6)#1 x (15,11,6)#12": {
+   "claimB": 726,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 726
+  },
+  "(15,11,6)#1 x (15,11,6)#13": {
+   "claimB": 682,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 682
+  },
+  "(15,11,6)#1 x (15,11,6)#14": {
+   "claimB": 338,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 338
+  },
+  "(15,11,6)#1 x (15,11,6)#15": {
+   "claimB": 340,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 340
+  },
+  "(15,11,6)#1 x (15,11,6)#16": {
+   "claimB": 340,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 340
+  },
+  "(15,11,6)#1 x (15,11,6)#17": {
+   "claimB": 340,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 340
+  },
+  "(15,11,6)#1 x (15,11,6)#18": {
+   "claimB": 682,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 682
+  },
+  "(15,11,6)#1 x (17,13,7)#0": {
+   "claimB": 344,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 344
+  },
+  "(15,11,6)#1 x (17,13,7)#1": {
+   "claimB": 342,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 342
+  },
+  "(15,11,6)#1 x (17,13,7)#2": {
+   "claimB": 346,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 346
+  },
+  "(15,11,6)#1 x (17,13,7)#3": {
+   "claimB": 346,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 346
+  },
+  "(15,11,6)#1 x (17,13,7)#4": {
+   "claimB": 346,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 346
+  },
+  "(15,11,6)#1 x (17,13,7)#5": {
+   "claimB": 344,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 344
+  },
+  "(15,11,6)#2 x (15,11,6)#2": {
+   "claimB": 628,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 628
+  },
+  "(15,11,6)#2 x (15,11,6)#3": {
+   "claimB": 680,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 680
+  },
+  "(15,11,6)#2 x (15,11,6)#4": {
+   "claimB": 336,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 336
+  },
+  "(15,11,6)#2 x (15,11,6)#5": {
+   "claimB": 338,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 338
+  },
+  "(15,11,6)#2 x (15,11,6)#6": {
+   "claimB": 791,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 791
+  },
+  "(15,11,6)#2 x (15,11,6)#7": {
+   "claimB": 789,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 789
+  },
+  "(15,11,6)#2 x (15,11,6)#8": {
+   "claimB": 793,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 793
+  },
+  "(15,11,6)#2 x (15,11,6)#9": {
+   "claimB": 793,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 793
+  },
+  "(15,11,6)#2 x (15,11,6)#10": {
+   "claimB": 791,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 791
+  },
+  "(15,11,6)#2 x (15,11,6)#11": {
+   "claimB": 724,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 724
+  },
+  "(15,11,6)#2 x (15,11,6)#12": {
+   "claimB": 726,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 726
+  },
+  "(15,11,6)#2 x (15,11,6)#13": {
+   "claimB": 682,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 682
+  },
+  "(15,11,6)#2 x (15,11,6)#14": {
+   "claimB": 338,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 338
+  },
+  "(15,11,6)#2 x (15,11,6)#15": {
+   "claimB": 340,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 340
+  },
+  "(15,11,6)#2 x (15,11,6)#16": {
+   "claimB": 340,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 340
+  },
+  "(15,11,6)#2 x (15,11,6)#17": {
+   "claimB": 340,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 340
+  },
+  "(15,11,6)#2 x (15,11,6)#18": {
+   "claimB": 682,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 682
+  },
+  "(15,11,6)#2 x (17,13,7)#0": {
+   "claimB": 344,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 344
+  },
+  "(15,11,6)#2 x (17,13,7)#1": {
+   "claimB": 342,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 342
+  },
+  "(15,11,6)#2 x (17,13,7)#2": {
+   "claimB": 346,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 346
+  },
+  "(15,11,6)#2 x (17,13,7)#3": {
+   "claimB": 346,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 346
+  },
+  "(15,11,6)#2 x (17,13,7)#4": {
+   "claimB": 346,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 346
+  },
+  "(15,11,6)#2 x (17,13,7)#5": {
+   "claimB": 344,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 344
+  },
+  "(15,11,6)#3 x (15,11,6)#3": {
+   "claimB": 736,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 736
+  },
+  "(15,11,6)#3 x (15,11,6)#4": {
+   "claimB": 360,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 360
+  },
+  "(15,11,6)#3 x (15,11,6)#5": {
+   "claimB": 362,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 362
+  },
+  "(15,11,6)#3 x (15,11,6)#6": {
+   "claimB": 858,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 858
+  },
+  "(15,11,6)#3 x (15,11,6)#7": {
+   "claimB": 856,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 856
+  },
+  "(15,11,6)#3 x (15,11,6)#8": {
+   "claimB": 860,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 860
+  },
+  "(15,11,6)#3 x (15,11,6)#9": {
+   "claimB": 860,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 860
+  },
+  "(15,11,6)#3 x (15,11,6)#10": {
+   "claimB": 858,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 858
+  },
+  "(15,11,6)#3 x (15,11,6)#11": {
+   "claimB": 786,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 786
+  },
+  "(15,11,6)#3 x (15,11,6)#12": {
+   "claimB": 788,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 788
+  },
+  "(15,11,6)#3 x (15,11,6)#13": {
+   "claimB": 738,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 738
+  },
+  "(15,11,6)#3 x (15,11,6)#14": {
+   "claimB": 362,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 362
+  },
+  "(15,11,6)#3 x (15,11,6)#15": {
+   "claimB": 364,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 364
+  },
+  "(15,11,6)#3 x (15,11,6)#16": {
+   "claimB": 364,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 364
+  },
+  "(15,11,6)#3 x (15,11,6)#17": {
+   "claimB": 364,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 364
+  },
+  "(15,11,6)#3 x (15,11,6)#18": {
+   "claimB": 738,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 738
+  },
+  "(15,11,6)#3 x (17,13,7)#0": {
+   "claimB": 368,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 368
+  },
+  "(15,11,6)#3 x (17,13,7)#1": {
+   "claimB": 366,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 366
+  },
+  "(15,11,6)#3 x (17,13,7)#2": {
+   "claimB": 370,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 370
+  },
+  "(15,11,6)#3 x (17,13,7)#3": {
+   "claimB": 370,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 370
+  },
+  "(15,11,6)#3 x (17,13,7)#4": {
+   "claimB": 370,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 370
+  },
+  "(15,11,6)#3 x (17,13,7)#5": {
+   "claimB": 368,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 368
+  },
+  "(15,11,6)#4 x (15,11,6)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#4 x (15,11,6)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#4 x (15,11,6)#6": {
+   "claimB": 504,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 504
+  },
+  "(15,11,6)#4 x (15,11,6)#7": {
+   "claimB": 504,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 504
+  },
+  "(15,11,6)#4 x (15,11,6)#8": {
+   "claimB": 504,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 504
+  },
+  "(15,11,6)#4 x (15,11,6)#9": {
+   "claimB": 504,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 504
+  },
+  "(15,11,6)#4 x (15,11,6)#10": {
+   "claimB": 504,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 504
+  },
+  "(15,11,6)#4 x (15,11,6)#11": {
+   "claimB": 468,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 468
+  },
+  "(15,11,6)#4 x (15,11,6)#12": {
+   "claimB": 468,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 468
+  },
+  "(15,11,6)#4 x (15,11,6)#13": {
+   "claimB": 360,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 360
+  },
+  "(15,11,6)#4 x (15,11,6)#14": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#4 x (15,11,6)#15": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#4 x (15,11,6)#16": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#4 x (15,11,6)#17": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#4 x (15,11,6)#18": {
+   "claimB": 360,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 360
+  },
+  "(15,11,6)#4 x (17,13,7)#0": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#4 x (17,13,7)#1": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#4 x (17,13,7)#2": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#4 x (17,13,7)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#4 x (17,13,7)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#4 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#5 x (15,11,6)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#5 x (15,11,6)#6": {
+   "claimB": 507,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 507
+  },
+  "(15,11,6)#5 x (15,11,6)#7": {
+   "claimB": 507,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 507
+  },
+  "(15,11,6)#5 x (15,11,6)#8": {
+   "claimB": 507,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 507
+  },
+  "(15,11,6)#5 x (15,11,6)#9": {
+   "claimB": 507,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 507
+  },
+  "(15,11,6)#5 x (15,11,6)#10": {
+   "claimB": 507,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 507
+  },
+  "(15,11,6)#5 x (15,11,6)#11": {
+   "claimB": 471,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 471
+  },
+  "(15,11,6)#5 x (15,11,6)#12": {
+   "claimB": 471,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 471
+  },
+  "(15,11,6)#5 x (15,11,6)#13": {
+   "claimB": 362,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 362
+  },
+  "(15,11,6)#5 x (15,11,6)#14": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#5 x (15,11,6)#15": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#5 x (15,11,6)#16": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#5 x (15,11,6)#17": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#5 x (15,11,6)#18": {
+   "claimB": 362,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 362
+  },
+  "(15,11,6)#5 x (17,13,7)#0": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#5 x (17,13,7)#1": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#5 x (17,13,7)#2": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#5 x (17,13,7)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#5 x (17,13,7)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#5 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#6 x (15,11,6)#6": {
+   "claimB": 960,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 960
+  },
+  "(15,11,6)#6 x (15,11,6)#7": {
+   "claimB": 957,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 957
+  },
+  "(15,11,6)#6 x (15,11,6)#8": {
+   "claimB": 963,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 963
+  },
+  "(15,11,6)#6 x (15,11,6)#9": {
+   "claimB": 963,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 963
+  },
+  "(15,11,6)#6 x (15,11,6)#10": {
+   "claimB": 960,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 960
+  },
+  "(15,11,6)#6 x (15,11,6)#11": {
+   "claimB": 876,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 876
+  },
+  "(15,11,6)#6 x (15,11,6)#12": {
+   "claimB": 879,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 879
+  },
+  "(15,11,6)#6 x (15,11,6)#13": {
+   "claimB": 861,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 861
+  },
+  "(15,11,6)#6 x (15,11,6)#14": {
+   "claimB": 507,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 507
+  },
+  "(15,11,6)#6 x (15,11,6)#15": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#6 x (15,11,6)#16": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#6 x (15,11,6)#17": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#6 x (15,11,6)#18": {
+   "claimB": 861,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 861
+  },
+  "(15,11,6)#6 x (17,13,7)#0": {
+   "claimB": 516,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 516
+  },
+  "(15,11,6)#6 x (17,13,7)#1": {
+   "claimB": 513,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 513
+  },
+  "(15,11,6)#6 x (17,13,7)#2": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#6 x (17,13,7)#3": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#6 x (17,13,7)#4": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#6 x (17,13,7)#5": {
+   "claimB": 516,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 516
+  },
+  "(15,11,6)#7 x (15,11,6)#7": {
+   "claimB": 954,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 954
+  },
+  "(15,11,6)#7 x (15,11,6)#8": {
+   "claimB": 960,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 960
+  },
+  "(15,11,6)#7 x (15,11,6)#9": {
+   "claimB": 960,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 960
+  },
+  "(15,11,6)#7 x (15,11,6)#10": {
+   "claimB": 957,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 957
+  },
+  "(15,11,6)#7 x (15,11,6)#11": {
+   "claimB": 873,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 873
+  },
+  "(15,11,6)#7 x (15,11,6)#12": {
+   "claimB": 876,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 876
+  },
+  "(15,11,6)#7 x (15,11,6)#13": {
+   "claimB": 859,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 859
+  },
+  "(15,11,6)#7 x (15,11,6)#14": {
+   "claimB": 507,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 507
+  },
+  "(15,11,6)#7 x (15,11,6)#15": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#7 x (15,11,6)#16": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#7 x (15,11,6)#17": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#7 x (15,11,6)#18": {
+   "claimB": 859,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 859
+  },
+  "(15,11,6)#7 x (17,13,7)#0": {
+   "claimB": 516,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 516
+  },
+  "(15,11,6)#7 x (17,13,7)#1": {
+   "claimB": 513,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 513
+  },
+  "(15,11,6)#7 x (17,13,7)#2": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#7 x (17,13,7)#3": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#7 x (17,13,7)#4": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#7 x (17,13,7)#5": {
+   "claimB": 516,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 516
+  },
+  "(15,11,6)#8 x (15,11,6)#8": {
+   "claimB": 966,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 966
+  },
+  "(15,11,6)#8 x (15,11,6)#9": {
+   "claimB": 966,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 966
+  },
+  "(15,11,6)#8 x (15,11,6)#10": {
+   "claimB": 963,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 963
+  },
+  "(15,11,6)#8 x (15,11,6)#11": {
+   "claimB": 879,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 879
+  },
+  "(15,11,6)#8 x (15,11,6)#12": {
+   "claimB": 882,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 882
+  },
+  "(15,11,6)#8 x (15,11,6)#13": {
+   "claimB": 863,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 863
+  },
+  "(15,11,6)#8 x (15,11,6)#14": {
+   "claimB": 507,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 507
+  },
+  "(15,11,6)#8 x (15,11,6)#15": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#8 x (15,11,6)#16": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#8 x (15,11,6)#17": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#8 x (15,11,6)#18": {
+   "claimB": 863,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 863
+  },
+  "(15,11,6)#8 x (17,13,7)#0": {
+   "claimB": 516,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 516
+  },
+  "(15,11,6)#8 x (17,13,7)#1": {
+   "claimB": 513,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 513
+  },
+  "(15,11,6)#8 x (17,13,7)#2": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#8 x (17,13,7)#3": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#8 x (17,13,7)#4": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#8 x (17,13,7)#5": {
+   "claimB": 516,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 516
+  },
+  "(15,11,6)#9 x (15,11,6)#9": {
+   "claimB": 966,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 966
+  },
+  "(15,11,6)#9 x (15,11,6)#10": {
+   "claimB": 963,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 963
+  },
+  "(15,11,6)#9 x (15,11,6)#11": {
+   "claimB": 879,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 879
+  },
+  "(15,11,6)#9 x (15,11,6)#12": {
+   "claimB": 882,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 882
+  },
+  "(15,11,6)#9 x (15,11,6)#13": {
+   "claimB": 863,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 863
+  },
+  "(15,11,6)#9 x (15,11,6)#14": {
+   "claimB": 507,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 507
+  },
+  "(15,11,6)#9 x (15,11,6)#15": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#9 x (15,11,6)#16": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#9 x (15,11,6)#17": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#9 x (15,11,6)#18": {
+   "claimB": 863,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 863
+  },
+  "(15,11,6)#9 x (17,13,7)#0": {
+   "claimB": 516,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 516
+  },
+  "(15,11,6)#9 x (17,13,7)#1": {
+   "claimB": 513,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 513
+  },
+  "(15,11,6)#9 x (17,13,7)#2": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#9 x (17,13,7)#3": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#9 x (17,13,7)#4": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#9 x (17,13,7)#5": {
+   "claimB": 516,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 516
+  },
+  "(15,11,6)#10 x (15,11,6)#10": {
+   "claimB": 960,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 960
+  },
+  "(15,11,6)#10 x (15,11,6)#11": {
+   "claimB": 876,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 876
+  },
+  "(15,11,6)#10 x (15,11,6)#12": {
+   "claimB": 879,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 879
+  },
+  "(15,11,6)#10 x (15,11,6)#13": {
+   "claimB": 861,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 861
+  },
+  "(15,11,6)#10 x (15,11,6)#14": {
+   "claimB": 507,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 507
+  },
+  "(15,11,6)#10 x (15,11,6)#15": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#10 x (15,11,6)#16": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#10 x (15,11,6)#17": {
+   "claimB": 510,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 510
+  },
+  "(15,11,6)#10 x (15,11,6)#18": {
+   "claimB": 861,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 861
+  },
+  "(15,11,6)#10 x (17,13,7)#0": {
+   "claimB": 516,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 516
+  },
+  "(15,11,6)#10 x (17,13,7)#1": {
+   "claimB": 513,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 513
+  },
+  "(15,11,6)#10 x (17,13,7)#2": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#10 x (17,13,7)#3": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#10 x (17,13,7)#4": {
+   "claimB": 519,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 519
+  },
+  "(15,11,6)#10 x (17,13,7)#5": {
+   "claimB": 516,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 516
+  },
+  "(15,11,6)#11 x (15,11,6)#11": {
+   "claimB": 798,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 798
+  },
+  "(15,11,6)#11 x (15,11,6)#12": {
+   "claimB": 801,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 801
+  },
+  "(15,11,6)#11 x (15,11,6)#13": {
+   "claimB": 789,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 789
+  },
+  "(15,11,6)#11 x (15,11,6)#14": {
+   "claimB": 471,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 471
+  },
+  "(15,11,6)#11 x (15,11,6)#15": {
+   "claimB": 474,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 474
+  },
+  "(15,11,6)#11 x (15,11,6)#16": {
+   "claimB": 474,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 474
+  },
+  "(15,11,6)#11 x (15,11,6)#17": {
+   "claimB": 474,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 474
+  },
+  "(15,11,6)#11 x (15,11,6)#18": {
+   "claimB": 789,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 789
+  },
+  "(15,11,6)#11 x (17,13,7)#0": {
+   "claimB": 480,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 480
+  },
+  "(15,11,6)#11 x (17,13,7)#1": {
+   "claimB": 477,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 477
+  },
+  "(15,11,6)#11 x (17,13,7)#2": {
+   "claimB": 483,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 483
+  },
+  "(15,11,6)#11 x (17,13,7)#3": {
+   "claimB": 483,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 483
+  },
+  "(15,11,6)#11 x (17,13,7)#4": {
+   "claimB": 483,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 483
+  },
+  "(15,11,6)#11 x (17,13,7)#5": {
+   "claimB": 480,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 480
+  },
+  "(15,11,6)#12 x (15,11,6)#12": {
+   "claimB": 804,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 804
+  },
+  "(15,11,6)#12 x (15,11,6)#13": {
+   "claimB": 791,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 791
+  },
+  "(15,11,6)#12 x (15,11,6)#14": {
+   "claimB": 471,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 471
+  },
+  "(15,11,6)#12 x (15,11,6)#15": {
+   "claimB": 474,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 474
+  },
+  "(15,11,6)#12 x (15,11,6)#16": {
+   "claimB": 474,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 474
+  },
+  "(15,11,6)#12 x (15,11,6)#17": {
+   "claimB": 474,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 474
+  },
+  "(15,11,6)#12 x (15,11,6)#18": {
+   "claimB": 791,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 791
+  },
+  "(15,11,6)#12 x (17,13,7)#0": {
+   "claimB": 480,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 480
+  },
+  "(15,11,6)#12 x (17,13,7)#1": {
+   "claimB": 477,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 477
+  },
+  "(15,11,6)#12 x (17,13,7)#2": {
+   "claimB": 483,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 483
+  },
+  "(15,11,6)#12 x (17,13,7)#3": {
+   "claimB": 483,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 483
+  },
+  "(15,11,6)#12 x (17,13,7)#4": {
+   "claimB": 483,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 483
+  },
+  "(15,11,6)#12 x (17,13,7)#5": {
+   "claimB": 480,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 480
+  },
+  "(15,11,6)#13 x (15,11,6)#13": {
+   "claimB": 740,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 740
+  },
+  "(15,11,6)#13 x (15,11,6)#14": {
+   "claimB": 362,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 362
+  },
+  "(15,11,6)#13 x (15,11,6)#15": {
+   "claimB": 364,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 364
+  },
+  "(15,11,6)#13 x (15,11,6)#16": {
+   "claimB": 364,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 364
+  },
+  "(15,11,6)#13 x (15,11,6)#17": {
+   "claimB": 364,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 364
+  },
+  "(15,11,6)#13 x (15,11,6)#18": {
+   "claimB": 740,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 740
+  },
+  "(15,11,6)#13 x (17,13,7)#0": {
+   "claimB": 368,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 368
+  },
+  "(15,11,6)#13 x (17,13,7)#1": {
+   "claimB": 366,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 366
+  },
+  "(15,11,6)#13 x (17,13,7)#2": {
+   "claimB": 370,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 370
+  },
+  "(15,11,6)#13 x (17,13,7)#3": {
+   "claimB": 370,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 370
+  },
+  "(15,11,6)#13 x (17,13,7)#4": {
+   "claimB": 370,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 370
+  },
+  "(15,11,6)#13 x (17,13,7)#5": {
+   "claimB": 368,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 368
+  },
+  "(15,11,6)#14 x (15,11,6)#14": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#14 x (15,11,6)#15": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#14 x (15,11,6)#16": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#14 x (15,11,6)#17": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#14 x (15,11,6)#18": {
+   "claimB": 362,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 362
+  },
+  "(15,11,6)#14 x (17,13,7)#0": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#14 x (17,13,7)#1": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#14 x (17,13,7)#2": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#14 x (17,13,7)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#14 x (17,13,7)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#14 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#15 x (15,11,6)#15": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#15 x (15,11,6)#16": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#15 x (15,11,6)#17": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#15 x (15,11,6)#18": {
+   "claimB": 364,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 364
+  },
+  "(15,11,6)#15 x (17,13,7)#0": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#15 x (17,13,7)#1": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#15 x (17,13,7)#2": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#15 x (17,13,7)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#15 x (17,13,7)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#15 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#16 x (15,11,6)#16": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#16 x (15,11,6)#17": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#16 x (15,11,6)#18": {
+   "claimB": 364,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 364
+  },
+  "(15,11,6)#16 x (17,13,7)#0": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#16 x (17,13,7)#1": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#16 x (17,13,7)#2": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#16 x (17,13,7)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#16 x (17,13,7)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#16 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#17 x (15,11,6)#17": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#17 x (15,11,6)#18": {
+   "claimB": 364,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 364
+  },
+  "(15,11,6)#17 x (17,13,7)#0": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#17 x (17,13,7)#1": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#17 x (17,13,7)#2": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#17 x (17,13,7)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#17 x (17,13,7)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#17 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(15,11,6)#18 x (15,11,6)#18": {
+   "claimB": 740,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 740
+  },
+  "(15,11,6)#18 x (17,13,7)#0": {
+   "claimB": 368,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 368
+  },
+  "(15,11,6)#18 x (17,13,7)#1": {
+   "claimB": 366,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 366
+  },
+  "(15,11,6)#18 x (17,13,7)#2": {
+   "claimB": 370,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 370
+  },
+  "(15,11,6)#18 x (17,13,7)#3": {
+   "claimB": 370,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 370
+  },
+  "(15,11,6)#18 x (17,13,7)#4": {
+   "claimB": 370,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 370
+  },
+  "(15,11,6)#18 x (17,13,7)#5": {
+   "claimB": 368,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 368
+  },
+  "(17,13,7)#0 x (17,13,7)#0": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#0 x (17,13,7)#1": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#0 x (17,13,7)#2": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#0 x (17,13,7)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#0 x (17,13,7)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#0 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#1 x (17,13,7)#1": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#1 x (17,13,7)#2": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#1 x (17,13,7)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#1 x (17,13,7)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#1 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#2 x (17,13,7)#2": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#2 x (17,13,7)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#2 x (17,13,7)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#2 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#3 x (17,13,7)#3": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#3 x (17,13,7)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#3 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#4 x (17,13,7)#4": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#4 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
+  },
+  "(17,13,7)#5 x (17,13,7)#5": {
+   "claimB": 0,
+   "killed_I11": 0,
+   "killed_KT_only": 0,
+   "notC_among_unkilled": 0,
+   "survive_C": 0
   }
  },
  "D1_profile": {
@@ -1011,10 +4280,10 @@
   ]
  },
  "D2_profile_outer": {
-  "3": 3111,
-  "2": 27014,
-  "1": 6889,
-  "0": 10
+  "3": 17479,
+  "2": 204841,
+  "1": 16639,
+  "0": 19
  },
  "D2_min_full_slack": {
   "s": 0,
@@ -1049,11 +4318,11 @@
   ]
  },
  "D2_TOTAL_over_pairs": {
-  "claimB": 37030,
+  "claimB": 238984,
   "killed_I11": 6,
   "killed_KT_only": 0,
   "notC_among_unkilled": 0,
-  "survive_C": 37024
+  "survive_C": 238978
  },
- "D2_pairs_done": 61
+ "D2_pairs_done": 528
 }
