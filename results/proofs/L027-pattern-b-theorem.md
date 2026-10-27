@@ -1,7 +1,11 @@
-# L027: Pattern (b) in I11 minimal counterexamples: a pattern-(b) vertex is the centre of a pendant E1-hub over a connected slack-1 graph, and excluding pattern (b) is equivalent to the pendant-triple lemma PT
-CLAIM-TYPE: lemma (partial; a reduction). No bound on $c_*$ and no value of $f(n)$ is claimed. Proved by hand: the exact effect of the compression operations on $(n,m,\tau,s)$ (Part A); every pairwise non-co-transversal non-edge triple of a connected member of $\mathcal C$ with slack $\le1$ is a pendant triple and forces slack 1, given I11 up to $n(G)+2$ vertices (Theorem B); in a minimal counterexample $H$ to I11 on $\mathcal C$ a vertex of degree 3 with pattern (b) exists only if $s(H)=-1$ and $H=G'\oplus(a,b,c)$ with $G'$ connected of slack 1 and $\{a,b,c\}$ a pendant b-configuration of $G'$, and then the rigid structure of Theorem P and Lemma Q holds (Theorem C); the pendant-triple lemma PT in two equivalent forms, and the equivalence "PT $\iff$ no minimal counterexample has a vertex with pattern (b) $\iff$ no minimal counterexample has an E1-hub" (Theorem D); the constraint J1 (Proposition J). NOT proved: PT itself. This is the only GAP.
+# L027: Pattern (b) in I11 minimal counterexamples: a pattern-(b) vertex is the centre of a pendant E1-hub over a connected slack-1 graph, and excluding pattern (b) is equivalent to the pendant-triple lemma PT (claimed in L028)
+CLAIM-TYPE: lemma (partial; a reduction). No bound on $c_*$ and no value of $f(n)$ is claimed. Proved by hand: the exact effect of the compression operations on $(n,m,\tau,s)$ (Part A); every pairwise non-co-transversal non-edge triple of a connected member of $\mathcal C$ with slack $\le1$ is a pendant triple and forces slack 1, given I11 up to $n(G)+2$ vertices (Theorem B); in a minimal counterexample $H$ to I11 on $\mathcal C$ a vertex of degree 3 with pattern (b) exists only if $s(H)=-1$ and $H=G'\oplus(a,b,c)$ with $G'$ connected of slack 1 and $\{a,b,c\}$ a pendant b-configuration of $G'$, and then the rigid structure of Theorem P and Lemma Q holds (Theorem C); the pendant-triple lemma PT in two equivalent forms, and the equivalence "PT $\iff$ no minimal counterexample has a vertex with pattern (b) $\iff$ no minimal counterexample has an E1-hub" (Theorem D); the constraint J1 (Proposition J). NOT proved here: PT itself. PT is claimed, in a stronger form, by L028 Theorem 1 (unrefereed, under referee). Conditional on it, Corollary D.3 holds: no minimal counterexample to I11 on $\mathcal C$ has a vertex with pattern (b) or an E1-hub, so every vertex of degree 3 has pattern (a) or (f). That corollary depends only on L028 Theorem 1, this certificate and accepted certificates, not on L025 or L026. This certificate has no GAP of its own.
 TYPE: lemma (hand proofs) + computation (sanity checks only). No proof step depends on a computation. Remark B.5 is a computational remark and is not used in any proof.
-STATUS: submitted 2026-10-27 11:50 UTC; unrefereed. Written by the prover for experiments/prover/e1hub-synthesis/SYNTHESIS.md Section 5, step 1. It consolidates the proved parts of L025 (Lemmas 1-9, Theorem 10, Remark 10.4, Corollary 11, Theorem 12, Lemma 13) and of L026 (Theorem 13, Corollary 14). I re-verified every step of them line by line and reproduce them in full, with one fix: the tight-set definition now requires $|S|\ge3$, as the judge asked (SYNTHESIS.md Section 1, L025 point 1). New here: Lemmas A10-A12; the self-contained connectivity proof in Corollary C.2; Theorem D; Proposition J (the judge's J1, now proved); and Theorem D(5) (the hypotheses "connected" and "$\Delta\le3$" of PT are redundant). Folder: experiments/prover/L027/.
+STATUS: submitted 2026-10-27 11:10 UTC; unrefereed. Written by the prover for experiments/prover/e1hub-synthesis/SYNTHESIS.md Section 5, step 1. It consolidates the proved parts of L025 (Lemmas 1-9, Theorem 10, Remark 10.4, Corollary 11, Theorem 12, Lemma 13) and of L026 (Theorem 13, Corollary 14). I re-verified every step of them line by line and reproduce them in full, with one fix: the tight-set definition now requires $|S|\ge3$, as the judge asked (SYNTHESIS.md Section 1, L025 point 1). New here: Lemmas A10-A12; the self-contained connectivity proof in Corollary C.2; Theorem D; Proposition J (the judge's J1, now proved); and Theorem D(5) (the hypotheses "connected" and "$\Delta\le3$" of PT are redundant). Before submission (11:00 UTC) the coordinator reported L028 (committed 865692a; unrefereed; two referees launched), which claims a hand proof of PT. Accordingly:
+  - PT is cited as claimed in L028 instead of being an open GAP;
+  - L028 Theorem 1 and Corollaries 2-4 are quoted verbatim (their proofs are not reproduced);
+  - the conditional Corollary D.3 is added;
+  - E1 gained the Lemma Q and Lemma A12(b)-(d) tests. Folder: experiments/prover/L027/.
 DEPENDS ON:
 - L017 (results/proofs/L017-i11-minimal-counterexample-structure.md) [verified-here, ACCEPTED x2, K64]. Used: the definitions of a minimal counterexample and of the seven patterns at a vertex of degree 3 (Theorem 4(iii)), of which only pattern (b) is used. Nothing else from L017 is load-bearing. The facts of L017 Step 0, Theorem 1(a),(b),(c), Theorem 2(U) and Theorem 4(i),(ii),(iv)(b) that the proofs need are re-proved here (Step 0, 0.8, Step 5.1). L017 Theorem 4(iii) (the Hall condition) is quoted in Corollary C.2 only as an alternative to the direct proof given there.
 - L018 (results/proofs/L018-red-universality.md) [ACCEPTED as a partial certificate, K67]. Theorem 6(b′) (patterns (c1), (c2), (d) do not occur), used only in Corollary C.3.
@@ -11,6 +15,7 @@ DEPENDS ON:
 - L022 (results/proofs/L022-i11-realizable-route.md) [ACCEPTED as a partial certificate, K72]. Theorem 2(v) is re-proved in Step 5.2. Theorem 2(i), (ii), (iii) are used only in Corollary C.3.
 - L016 [verified-here, ACCEPTED x3, K61] (I11 on $\mathcal C$ for $n\le27$). Used only in Remark B.5 and in the Sanity checks.
 - L025 (results/proofs/L025-e1hub-lemma-i11-form.md) and L026 (results/proofs/L026-e1hub-lemma-kt-form.md) [derived-here, unrefereed; checked line by line by the panel judge, SYNTHESIS.md Section 1]. They are the sources of Parts A, B, P, C. Every step taken from them was re-verified here and is reproduced in full, so neither is a dependency.
+- L028 (results/proofs/L028-pendant-triple-lemma.md, committed 865692a) [derived-here, unrefereed; two referees launched]. Theorem 1 (the pendant-triple lemma PT, in a stronger form) is used ONLY in Corollary D.3 and Remark D.1, which are labelled as conditional on it. Its statements are quoted in Part D; its proof is not reproduced here. Nothing else in this certificate depends on L028.
 - experiments/prover/e1hub-synthesis/SYNTHESIS.md [panel judge, unrefereed]. Source of the statements of PT, its residual and gadget forms (Section 3), the combined Pattern-(b) theorem (Section 4.3) and the constraint J1 (Section 3). All are proved or stated here.
 - Not used: KT and the potential of L021, realizability, the stored cell lists (except in the Sanity checks), Conjectures T, T′, T″, RU, C1, P2, P2′, P2⁺.
 
@@ -298,7 +303,7 @@ Conversely, by Theorem C(1), every vertex of degree 3 with pattern (b) is the ce
 
 ### Part D. The residual: the pendant-triple lemma PT
 
-**Conjecture PT (pendant-triple lemma) [conjecture].**
+**Statement PT (pendant-triple lemma) [not proved here; claimed, in a stronger form, by L028 Theorem 1, unrefereed, under referee].**
 - *Form I.* Let $G\in\mathcal C$ be connected with $\Delta(G)\le3$ and $s(G)=1$, and suppose $(\mathrm H_{n(G)+3})$. Then $G$ has no pendant b-configuration. That is, no three vertices of $G$-degree 1, lying in three different edges, are pairwise NC.
 - *Form II (residual form).* Let $G''\in\mathcal C$ be connected with $\Delta(G'')\le3$ and $s(G'')=8$, and suppose $(\mathrm H_{n(G'')+6})$. Then there are no three pairwise disjoint 2-sets $A,B,C\subseteq V(G'')$ such that:
   - none of them lies inside an edge of $G''$;
@@ -345,6 +350,27 @@ In particular, **PT (for all $N$) holds if and only if no minimal counterexample
 
 On the computations of Remark B.5 (unrefereed), $n(H)\ge31$. Nothing proved here bounds $n(H)$ from above.
 
+L028 (unrefereed) claims that no such configuration exists. By its Step 6 (its Remark 5), the case $S_0\ne V(G'')$ is void and the six attachment vertices have $G''$-degree 2. Its Step 7 then excludes the remaining saturated case.
+
+**L028 (quoted verbatim; unrefereed, under referee).** In L028's notation $C$ is the class $\mathcal C$ and $(\mathrm H_{<N})$ is $(\mathrm H_{N-1})$.
+- *L028 Theorem 1 (the pendant-triple lemma PT).* "Let $G\in C$ be connected with $\Delta(G)\le3$ and $s(G)\le1$, and suppose $(\mathrm H_{<n(G)})$. Then $G$ has no pendant b-configuration."
+- *L028 Corollary 2 (residual form).* "Let $G''\in C$ be connected with $\Delta(G'')\le3$ and $s(G'')\le8$, let $A,B,C$ be pairwise disjoint 2-sets of vertices of $G''$-degree $\le2$, none of them inside an edge of $G''$, such that (i) no minimum transversal of $G''$ meets $A\cup B\cup C$ and (ii) no $(\tau(G'')+1)$-transversal of $G''$ meets all of $A$, $B$ and $C$. Then some member of $C$ with at most $n(G'')+3$ vertices violates I11. In particular, under I11 for all members of $C$ with at most $n(G'')+3$ vertices (weaker than the hypothesis "fewer than $n(G'')+7$" of SYNTHESIS.md Section 3) no such $G''$ exists."
+- *L028 Corollary 3 (the I11 form of the E1-hub lemma; uses L025 Theorem 10).* "Let $G\in C$ be connected with $\Delta(G)\le3$ and $s(G)\le1$, and suppose every member of $C$ with at most $n(G)+2$ vertices satisfies I11. Then $G$ has no b-configuration: for any three vertices $a,b,c$ of $G$-degree $\le2$ with $\{a,b,c\}\notin E(G)$, some minimum transversal of $G$ contains two of them; equivalently (L025 Lemma 1) the hub $G\oplus(a,b,c)$ satisfies I11."
+- *L028 Corollary 4 (minimal counterexamples; uses L025 Theorem 10, Corollary 11(b), L026 Corollary 14 and L022 Theorem 2).* "Let $H$ be a minimal counterexample to I11 on $C$ (a member of $C$ with $s(H)<0$ all of whose members of $C$ with fewer vertices satisfy I11). Then (a) $H$ has no E1-hub $(v;x,y,z;a,b,c)$ (edges $\{x,y,z\},\{v,x,a\},\{v,y,b\},\{v,z,c\}$, $d_H(x)=d_H(y)=d_H(z)=2$); (b) no vertex of degree 3 of $H$ has pattern (b) of L017 Theorem 4(iii); (c) hence (L022 Theorem 2(i),(ii)) for every vertex $v$ of degree 3, $H-v$ is connected (pattern (a)) or the pattern at $v$ is (f) (with $s(H)=-1$ and the structure of L022 Theorem 2(iii),(iv))."
+
+L028 Theorem 1 implies PT-I($N$) for every $N$: its hypotheses (connected, $\Delta\le3$, $s(G)\le1$, $(\mathrm H_{n(G)-1})$) are weaker than those of Form I (connected, $\Delta\le3$, $s(G)=1$, $(\mathrm H_{n(G)+3})$). L028 Corollary 2 likewise implies PT-II($N$).
+
+**Corollary D.3 (conditional on L028 Theorem 1; a second route to L028 Corollaries 3 and 4 that does not use L025 or L026).** Assume L028 Theorem 1. Then:
+(a) PT-I($N$) and PT-II($N$) hold for every $N$.
+(b) (*The I11 form of the E1-hub lemma, without a degree condition on the triple.*) Let $G\in\mathcal C$ be connected with $\Delta(G)\le3$, $s(G)\le1$ and $(\mathrm H_{n(G)+2})$. Then any three vertices $a,b,c$ with $\{a,b,c\}\notin E(G)$ include two that lie in a common minimum transversal, and $s(G\oplus(a,b,c))=s(G)+9$.
+(c) Let $H$ be a minimal counterexample to I11 on $\mathcal C$. Then:
+   - $H$ has no E1-hub, and no vertex of degree 3 of $H$ has pattern (b);
+   - every vertex of degree 3 has pattern (a) or pattern (f), by L022 Theorem 2(i),(ii) [K72];
+   - pattern (f) occurs only if $s(H)=-1$, with the structure of L022 Theorem 2(iii),(iv);
+   - if $s(H)=-2$, every vertex of degree 3 has pattern (a). This last item is Corollary C.3 and does not need L028.
+
+Corollary D.3 depends on L028 Theorem 1 [unrefereed], on Theorems B, C, D and Corollary C.2 of this certificate, and on the accepted L017 (definitions) and L022 Theorem 2 [K72]. It does not depend on L025, L026, or L028 Corollaries 2-4.
+
 **Remark D.2 (the KT form is not treated).** The KT form of the E1-hub lemma (L026 GAP A; SYNTHESIS.md Sections 4.1, 4.2) is outside this certificate. Its residual on the L024 route is the KT analogue PT-KT of PT (SYNTHESIS.md Section 3), and nothing here proves it.
 - The $\tau$ statements and membership criteria of Lemmas A1-A11 hold for every graph satisfying their hypotheses, so they give exact changes of any linear potential in $(n,m,\tau)$, for instance $27n+35m-132\tau$ (SYNTHESIS.md Section 4.2).
 - Theorems B, P and C use $s(G)\le1$ and I11 itself at the sizes listed in Step 7, so they do not transfer to the KT potential.
@@ -352,7 +378,9 @@ On the computations of Remark B.5 (unrefereed), $n(H)\ge31$. Nothing proved here
 Tags:
 - Part A, Theorems B, B′, P, C, D, Corollaries B.3, C.2, C.3, Lemma Q and Proposition J are **[derived-here]**: hand proofs below, unrefereed. The proofs of the parts taken from L025 and L026 were re-verified here.
 - Remark B.5 is **[verified-here as computations, unrefereed]**, and so are the Sanity checks E1-E7. They are tests of the statements, not proof steps.
-- Conjecture PT, and I11 itself, are **[conjecture]**.
+- PT is not proved here. It is claimed by L028 Theorem 1 **[derived-here, unrefereed, under referee]**.
+- Corollary D.3 is **[derived-here]**, conditional on L028 Theorem 1.
+- I11 itself is **[conjecture]**.
 
 ## Proof
 
@@ -856,6 +884,25 @@ So the pattern is (a). $\square$
 4. *Item 4.* By A10, $K_u$ has a tight set $S\supseteq Y\cup Z$ or an $F_7$-configuration of the stated shape. A tight set of $K_u$ is a tight set of $G''$ not containing $u$ (edges inside $S\not\ni u$ are the same in $K_u$ and $G''$). The edges of $K_u$ are the edges of $G''-u$.
 5. *Item 5.* $Y\cup Z\subseteq S_0\setminus\{u\}$ and $|S_0\setminus\{u\}|\ge5$. The number of edges inside $S_0\setminus u$ is $|S_0|-2-d$, where $d\in\{1,2\}$ by P(j). So $S_0\setminus u$ is tight iff $d=1$. $\square$
 
+6.5 *Corollary D.3 (conditional on L028 Theorem 1).*
+1. *(a), Form I.* Let $G$ satisfy the hypotheses of PT-I($N$): connected, $\Delta(G)\le3$, $s(G)=1$, $(\mathrm H_{N+3})$. These imply the hypotheses of L028 Theorem 1 ($s(G)\le1$, $(\mathrm H_{<N})$), which says that $G$ has no pendant b-configuration. So PT-I($N$) holds.
+2. *(a), Form II.* PT-II($N$) follows by Theorem D, (1) $\Rightarrow$ (2), applied with $N+3$ in place of $N$.
+3. *(b).* Let $\{a,b,c\}\notin E(G)$, and suppose no minimum transversal contains two of $a,b,c$, i.e. they are pairwise NC.
+   - Theorem B (connected, $s(G)\le1$, $(\mathrm H_{n(G)+2})$) shows that $\{a,b,c\}$ is a pendant b-configuration.
+   - L028 Theorem 1 (connected, $\Delta(G)\le3$, $s(G)\le1$, $(\mathrm H_{<n(G)})$, implied by $(\mathrm H_{n(G)+2})$) excludes it.
+   - The value $s(G\oplus(a,b,c))=s(G)+9$ is Lemma A1.
+   - No degree bound on $a,b,c$ is needed, because Theorem B does not assume one (Step 2.5).
+4. *(c), no pattern (b).* Suppose some vertex $v$ of degree 3 had pattern (b).
+   - By Theorem C(1), (2), $G'=F_2$ is a connected member of $\mathcal C$ with $\Delta(G')\le3$, $s(G')=1$ and the pendant b-configuration $\{y_1,y_2,y_3\}$.
+   - $(\mathrm H_{<n(G')})$ holds, because $n(G')=n(H)-4$ and $H$ is a minimal counterexample.
+   - So L028 Theorem 1 gives a contradiction. Hence no vertex of degree 3 has pattern (b).
+   - An E1-hub would have a pattern-(b) centre (Corollary C.2), so there is none.
+5. *(c), the remaining patterns.* Now let $v$ be any vertex of degree 3.
+   - Its pattern is one of the seven patterns of L017 Theorem 4(iii).
+   - L022 Theorem 2(i) excludes (c1), (c2), (d), and Theorem 2(ii) excludes (e) (ACCEPTED, K72). Pattern (b) is excluded by item 4. So the pattern at $v$ is (a) or (f).
+   - In pattern (f), $s(H)=-1$ by L022 Theorem 2(iii).
+   - The case $s(H)=-2$ is Corollary C.3. $\square$
+
 ### Step 7. No circularity
 In every statement, I11 is used only through an explicit hypothesis $(\mathrm H_N)$. In the stand-alone statements (Theorems B, B′, P, Proposition J) $N$ may exceed the number of vertices of the graph studied: Theorem B uses $N=n(G)+2$. This is a hypothesis, not an induction on $G$. In every application to a minimal counterexample $H$ (Lemma Q, Theorem C, Corollaries C.2, C.3, Theorem D), every graph to which I11 is applied has at most $n(H)-1$ vertices, as listed below.
 - **Theorem B.** I11 is used on members of $\mathcal C$ with at most these numbers of vertices:
@@ -880,30 +927,33 @@ In every statement, I11 is used only through an explicit hypothesis $(\mathrm H_
   - Proposition J (at most $n(H)-7$);
   - $H_1,H_2,H_2-c,H^\#$ in Lemma Q ($|V_1|+1\le n(H)-1$).
 - **Theorem D.** I11 is used only through $(\mathrm H_{N+3})$ and the minimality of $H$ ($N+4$ vertices).
+- **Corollary D.3.** Besides the uses above, L028 Theorem 1 is applied to $G$ (in (a), (b), with $(\mathrm H_{<n(G)})$) and to $G'$ (in (c), with $(\mathrm H_{<n(G')})$, $n(G')=n(H)-4$). L028 lists its own uses of I11, all on members of $\mathcal C$ with at most $n(G)-1$ vertices (its section "Hypotheses used").
 
 The only external inputs are:
 - L017's definitions (minimal counterexample, pattern (b));
-- L022 Theorem 2 and L018 Theorem 6(b′), in Corollary C.3 only.
+- L022 Theorem 2 and L018 Theorem 6(b′), in Corollaries C.3 and D.3 only;
+- L028 Theorem 1 [unrefereed], in Corollary D.3 and Remark D.1 only.
 
 ## What remains
-**GAP: Conjecture PT (the pendant-triple lemma) is not proved.** This is the only GAP of this certificate. By Theorem D it is exactly what remains of pattern (b), in either of these forms:
+**No GAP in this certificate.** Every theorem, lemma, proposition and corollary stated here is proved by hand, with one exception: Corollary D.3, which is explicitly conditional on L028 Theorem 1.
+
+**PT is not proved here.** By Theorem D, PT is exactly what remains of pattern (b), in either of these forms:
 - PT-I: no connected slack-1 member of $\mathcal C$ with $\Delta\le3$ and $(\mathrm H_{n+3})$ has a pendant b-configuration;
 - PT-II: no connected slack-8 member of $\mathcal C$ with $\Delta\le3$ and $(\mathrm H_{n+6})$ has three pairs $A,B,C$ as in Form II (pairwise disjoint, none inside an edge, of degree $\le2$) satisfying (i) and (ii).
 
-PT is not a finite computation: nothing proved here bounds $n$ from above. Every counterexample has the rigid structure listed in Part D (Theorem P, Lemma Q, Proposition J). The two sub-cases are:
-- (R1a) $S_0=V(G'')$: saturated, $n(H)\equiv5\pmod{11}$, $n(H)\in\{38,49,60,\dots\}$ given Remark B.5 ($n(H)\ge31$);
-- (R1b) $S_0\ne V(G'')$, with at least two leaving edges.
+PT is claimed, in a stronger form, by **L028 Theorem 1** (committed 865692a; unrefereed; two referees launched). Until L028 is accepted, PT and Corollary D.3 are not part of the accepted record. Two notes on how L028 relates to this certificate:
+- The prover of L027 read L028's Steps 6 and 7 and found no error; this is not a referee check. Step 6 is the degree budget $\sum_{t\in S}(3-d_{G''[S]}(t))=6$ on the saturated set containing $W$, which forces $S_0=V(G'')$ and $G''$-degree 2 on $W$. Step 7 is the graph $Q=(G''-a_1-w)+$ a pendant edge on the third pair, with slack $\le s(G'')-9$.
+- In the language of Theorem P, L028's Step 6 makes sub-case (R1b) ($S_0\ne V(G'')$) void, and Step 7 excludes the saturated sub-case (R1a).
 
-A sufficient condition is Conjecture P2⁺ [conjecture]: a connected slack-1 member of $\mathcal C$ with $\Delta\le3$ has at most two vertices of degree 1. Suggested next steps are in SYNTHESIS.md Section 5, steps 2, 3 and 6:
-- a falsifier for PT-II at $24\le n(G'')\le40$;
-- an attack on R1a/R1b through $S_0$, J1 and the folds of $H$;
-- the P2⁺ census at $n=27..30$.
+**What remains for I11.** Suppose L028 is accepted. By Corollary D.3, a minimal counterexample $H$ to I11 on $\mathcal C$ then has pattern (a) or (f) at every vertex of degree 3, and pattern (a) everywhere if $s(H)=-2$. What is still open:
+- pattern (a) (C1-big; panel SYNTHESIS §0.3), which is the core of I11;
+- pattern (f), with $s(H)=-1$ and the structure of L022 Theorem 2(iii),(iv).
 
-Completing PT closes pattern (b) of the I11 induction. It does not close pattern (a) (C1-big, panel SYNTHESIS §0.3), which is the core of I11.
+Excluding pattern (b) does not prove I11.
 
 ## Computer-verified steps
 No proof step depends on a computation. Everything below tests the statements on data. All runs are in experiments/prover/L027/: Python 3, exact integer and bitmask arithmetic, own code `hyp27.py` (no import of e757/, judge/ or L0xx code), except E2 and E3, which re-run the panel judge's own `checks.py` unmodified. Each run used `nice -n 10`, one process and `timeout`.
-- **E1 (Part A and J1 identities on random members of $\mathcal C$).** Command: `cd experiments/prover/L027 && timeout 1800 nice -n 10 python3 lemmas27.py 1 3000`, giving lemmas27_output.txt (exit 0, 4 min 44 s).
+- **E1 (Part A and J1 identities on random members of $\mathcal C$).** Command: `cd experiments/prover/L027 && timeout 1800 nice -n 10 python3 lemmas27.py 1 3000`, giving lemmas27_output.txt (exit 0, 6 min 21 s). The Lemma Q and A12(b)-(d) tests use a separate random stream, so the other counts are identical to those of the first full run.
   - The base graphs were 3,000 random members of $\mathcal C$ with $5\le n\le11$, $1\le m\le n-2$, built edge by edge with exact linearity, $F_7$ and (P3) checks.
   - Every applicable configuration was tested, with **0 failures**. The counts:
     - A1: membership and $\tau$ on 12,000 triples;
@@ -917,8 +967,9 @@ No proof step depends on a computation. Everything below tests the statements on
     - A9: 64,455 (drop-1 slack, 45,841);
     - A10: $\tau$ 6,458; linearity, the "iff" membership criterion and the exact $F_7$ shape 2,751 each;
     - A11: $\tau\in\{\tau''+2,\tau''+3,\tau''+4\}$ and "$=\tau''+4$ iff (i) and (ii)", 1,640;
-    - A12(a): 7,902.
-  - *Shows:* the exact statements of Part A, including both "iff" membership criteria and the gadget formula, hold on every tested configuration. A first run had stated the A11 range as $\{\tau''+3,\tau''+4\}$; it found the case $\tau''+2$ (a minimum transversal meeting all three pairs), and the statement and test were corrected before the proof was written.
+    - A12(a): 7,902; A12(b)-(d): 11,605 each;
+    - Lemma Q: $\tau(H)\in\{\tau_1+\tau_2,\tau_1+\tau_2+1\}$ 3,000; first value ($s(H)=s(H_1)+s(H_2)+2$) 2,160; second value (both avoidance conditions, $\tau(H^\#)=\tau(H_1)+1$, and the identity $s(H)=s(H^\#)+s(H_2-c)+2d_{H_2}(c)$) 840 each.
+  - *Shows:* the exact statements of Part A, including both "iff" membership criteria, the gadget formula and the arithmetic of Lemma Q, hold on every tested configuration. A first run had stated the A11 range as $\{\tau''+3,\tau''+4\}$; it found the case $\tau''+2$ (a minimum transversal meeting all three pairs), and the statement and test were corrected before the proof was written.
 - **E2 (judge's S2 re-run).** `bash run_s2_s3.sh` (first half), giving S2_rerun_output.txt, which is identical to experiments/prover/e1hub-synthesis/checks/S2_output.txt.
   - The ten stored near-tight lists with $\Delta\le3$ were used: L012 cells $(3,1,1)$, $(8,5,3)$, $(10,7,4)$, $(12,10,5)$, $(14,12,6)$, $(15,11,6)$, $(17,13,7)$, $(19,16,8)$, $(22,17,9)$; L016 runB2 $(26,22,11)$; 483 classes in all.
   - Degree-1 histograms: $(8,5,3)$ $\{1{:}1,2{:}1\}$; $(12,10,5)$ $\{0{:}112,1{:}37\}$; $(15,11,6)$ $\{0{:}9,1{:}8,2{:}2\}$; $(19,16,8)$ $\{0{:}221,1{:}6\}$; $(22,17,9)$ $\{0{:}18,1{:}19\}$; $(26,22,11)$ $\{0{:}36\}$; the tight cells have at most one vertex of degree 1, except $E_1$ (three).
@@ -948,4 +999,4 @@ No proof step depends on a computation. Everything below tests the statements on
 - **E7 (Remark B.5 consistency).** By E2-E4, no stored near-tight graph with at most 26 vertices has a b-configuration. This agrees with the computational bound $n(H)\ge31$ for a pattern-(b) vertex and with L022 Corollary 3′.
 
 ## Falsifier report
-No separate falsifier run for this consolidation. Every lemma of Part A and the identities behind J1 and the gadget form are tested in E1 on 3,000 random members of $\mathcal C$, and the hypothetical objects of Theorems P and D do not occur in the stored data (E2-E4). A falsifier for PT itself (SYNTHESIS.md Section 5, step 2) is the recommended next computation; it is not part of this certificate.
+No separate falsifier run for this consolidation. Every lemma of Part A and the identities behind J1 and the gadget form are tested in E1 on 3,000 random members of $\mathcal C$, and the hypothetical objects of Theorems P and D do not occur in the stored data (E2-E4). A falsifier for PT itself (SYNTHESIS.md Section 5, step 2) would now test L028 Theorem 1; it is not part of this certificate.
