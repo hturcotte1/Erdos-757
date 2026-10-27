@@ -1,0 +1,4 @@
+classes 45 distinct WL invariants 45
+WL-collision groups: []
+colliding pairs proved non-isomorphic by exhaustive backtracking: 0  isomorphic pairs: []
+self-test (random relabelling recognised as isomorphic): failures 0

@@ -1,0 +1,2 @@
+class 0: tau 12, #min transversals 19502, all vertices covered True, #deg<=2 vertices 18, NC pairs 0, direct-search mismatches 0, #pairs not inside an edge 337, pair-pair failures 0, uncovered triples 6, uncovered with K+v in C 0 [], secs 5.1
+TOTAL K+v in C among uncovered triples: 0
