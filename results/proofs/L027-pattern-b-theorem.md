@@ -294,7 +294,7 @@ Every use of I11 in the proof is for a member of $\mathcal C$ with at most $n(H)
 
 Conversely, by Theorem C(1), every vertex of degree 3 with pattern (b) is the centre of an E1-hub.
 
-**Corollary C.3 (slack $-2$; = the last sentence of L026 Corollary 14).** If $s(H)=-2$ for a minimal counterexample $H$, then $H-v$ is connected for every vertex $v$ of degree 3 (pattern (a)). This uses L022 Theorem 2(i)-(iii) [K72] or L018 Theorem 6(b′) [K67].
+**Corollary C.3 (slack $-2$; = the last sentence of L026 Corollary 14).** If $s(H)=-2$ for a minimal counterexample $H$, then $H-v$ is connected for every vertex $v$ of degree 3 (pattern (a)). This uses L022 Theorem 2(i)-(iii) [K72]; its part (i) is also L018 Theorem 6(b′) [K67].
 
 ### Part D. The residual: the pendant-triple lemma PT
 
@@ -857,7 +857,7 @@ So the pattern is (a). $\square$
 5. *Item 5.* $Y\cup Z\subseteq S_0\setminus\{u\}$ and $|S_0\setminus\{u\}|\ge5$. The number of edges inside $S_0\setminus u$ is $|S_0|-2-d$, where $d\in\{1,2\}$ by P(j). So $S_0\setminus u$ is tight iff $d=1$. $\square$
 
 ### Step 7. No circularity
-In every statement, I11 is used only through an explicit hypothesis $(\mathrm H_N)$.
+In every statement, I11 is used only through an explicit hypothesis $(\mathrm H_N)$. In the stand-alone statements (Theorems B, B′, P, Proposition J) $N$ may exceed the number of vertices of the graph studied: Theorem B uses $N=n(G)+2$. This is a hypothesis, not an induction on $G$. In every application to a minimal counterexample $H$ (Lemma Q, Theorem C, Corollaries C.2, C.3, Theorem D), every graph to which I11 is applied has at most $n(H)-1$ vertices, as listed below.
 - **Theorem B.** I11 is used on members of $\mathcal C$ with at most these numbers of vertices:
   - $n(G)+2$ (fold, 2.7);
   - $n(G)$ (pendant replacement, 2.2);
@@ -926,7 +926,7 @@ No proof step depends on a computation. Everything below tests the statements on
 - **E3 (judge's S3 re-run).** `bash run_s2_s3.sh` (second half), giving S3_rerun_output.txt, which is identical to S3_output.txt of the judge.
   - The stored slack-8 lists were used: $(5,2,1,3)$ (L014) and $(9,7,3)$ [empty], $(12,8,4)$, $(15,9,5)$, $(18,10,6)$, $(21,11,7)$ (L013, $\Delta\le2$), $(24,12,8)$ (L016 runA, $\Delta\le2$).
   - Result: **0 candidate triples $(A,B,C)$ of disjoint non-edge pairs of avoided vertices of degree $\le2$, and 0 hits.**
-  - The PT-II configuration does not come near the stored slack-8 data: these classes have at most one avoided vertex (judge's diagnostic).
+  - The PT-II configuration does not come near the stored slack-8 data. The classes of the $\Delta\le2$ lists have at most one avoided vertex (judge's diagnostic, SYNTHESIS.md Appendix). The single $(5,2,1)$ class (two edges sharing a vertex) has four avoided vertices, too few for three disjoint pairs.
 - **E4 (census of pairwise NC non-edge triples).** `bash run_census27.sh`, giving census27_output.txt (own code census27.py, exhaustive minimum-transversal enumeration).
   - It covers the same ten near-tight lists, with no degree restriction on the triple.
   - Result: **0 pairwise NC non-edge triples in every list** (the only pairwise NC triple of $E_1$ is its edge).

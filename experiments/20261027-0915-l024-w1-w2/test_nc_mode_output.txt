@@ -1,0 +1,4 @@
+['(3,1,1)#0', 'E1+E1'] cands 27 ncands 0 ClaimB 0 B&E brute 0 B&E nc-search 0 MATCH 0s
+['(3,1,1)#0', '(3,1,1)#0', '(3,1,1)#0'] cands 27 ncands 27 ClaimB 0 B&E brute 0 B&E nc-search 0 MATCH 0s
+['E1+E1', 'E1+E1'] cands 108 ncands 0 ClaimB 0 B&E brute 0 B&E nc-search 0 MATCH 3s
+['(3,1,1)#0', '(8,5,3)#0'] cands 39 ncands 6 ClaimB 0 B&E brute 0 B&E nc-search 0 MATCH 0s
