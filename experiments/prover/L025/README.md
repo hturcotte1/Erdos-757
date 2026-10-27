@@ -33,7 +33,7 @@ always stay in $C$ and kill every non-pendant case.
   `p3_fast` (one SDR, then per pair only the two displaced edges are re-routed).
 - `p3check.py`: C1, cross-check of `p3_fast` against `hyp25.p3`.
 - `w1_pendant.py`: W1, pendant b-configurations built on stored classes (consistency test of Theorem 10 and Remark 10.3).
-- `run_c2.sh`, `run_w1.sh`: the exact command sequences of the runs (sequential, `timeout`, `nice -n 10`).
+- `run_c2.sh`, `run_w1.sh`, `run_w1b.sh`: the exact command sequences of the runs (sequential, `timeout`, `nice -n 10`).
 - `pendants.py` → `pendants_output.txt`: number of degree-1 vertices in the stored near-tight classes (evidence for Conjecture P2$^+$).
 - `census.py`, `census2.py`, `census_one.py`: C3, b-configurations and NC-pair types in stored lists.
 - `lemma_tests.py` (with test_crit_output.txt, test_nc_near_output.txt): earlier exploratory tests from the first session
@@ -48,15 +48,19 @@ Run from this folder.
 - C2 (slack-2 lists; run by `run_c2.sh`, per-cell cumulative counters): `python3 lemmas25.py file:<inputs>/cell_6_3_2.txt ... --hubsample 10`
   → `lemmas_slack2_output.txt`: cells (6,3,2), (9,4,3), (10,8,4), (13,9,5), (16,10,6), (23,16,9), (20,15,8): 1,296 classes,
   L1 12,924, L2 31,808, L3 164, L4 21, L5 4,180, L6 28 (none in C), L7 208 (none in C), b-configurations 7, failures 0.
-  The process stopped without output while on (17,14,7) (no traceback; cause unknown, probably killed externally); that cell
-  is re-run by `run_w1.sh` → `lemmas_slack2_17_14_7_output.txt`.
+  Its output for the last cell (17,14,7) and the TOTAL line were lost (the tracked output file was replaced under the
+  running process by another agent's `git pull --rebase --autostash`); that cell was re-run by `run_w1.sh` →
+  `lemmas_slack2_17_14_7_output.txt`: 1,708 classes, L1 17,080, L2 39,112, L3 102, L5 1,411, L6 48 (none in C),
+  L7 102 (none in C), no b-configuration, failures 0. Later runs (`run_w1b.sh`) write to a scratch folder outside the
+  repository and are copied here afterwards.
 - C2 (higher-slack L013 cells; `run_c2.sh`): (11,6,4) [empty file], (12,6,4), (13,6,4), (11,7,4), (14,7,5), (15,8,5), (18,9,6),
   (19,12,7), (12,7,4), (13,8,5), all D3 → `lemmas_highslack_output.txt`: 1,053 classes, L1 10,530, L2 25,939, L3 6,826,
   L4 3,201 (2,303 with $\tau(G-a-b-c)=\tau-1$, all with $s\ge2|\partial|-2$), L5 12,444, L6 812 (707 in C, all at slack $\ge3$),
   L7 8,192 (3,817 in C), L8 0 (no three avoided vertices in these cells), 1,122 b-configurations checked against R1-R3 and
   the fold rule, failures 0.
-- C2 (slack-8/9 cells, for Lemma 6; `run_w1.sh`) → `lemmas_slack89_output.txt`.
-- W1 (`run_w1.sh`): `python3 w1_pendant.py <13 cells of slack 7, 8, 9>` → `w1_output.txt`.
+- C2 (slack-8/9 cells (5,2,1), (7,5,2), (10,6,3), (13,7,4), (16,8,5), (19,9,6), for Lemma 6, which needs three avoided
+  vertices; `run_w1b.sh`) → `lemmas_slack89_output.txt`.
+- W1 (`run_w1b.sh`): `python3 w1_pendant.py <13 cells of slack 9, 8, 7>` → `w1_output.txt`.
 - C3: `python3 census.py` → `census_near_output.txt`; `python3 census2.py n m t 4` for the slack-2 cells →
   `census2_slack2_small_output.txt`, `census2_slack2_big_output.txt`.
 
