@@ -630,3 +630,6 @@ cell_22_17_9_D3.txt #29 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role
 cell_22_17_9_D3.txt #30 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
 cell_22_17_9_D3.txt #31 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
 cell_22_17_9_D3.txt #32 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #33 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #34 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
+cell_22_17_9_D3.txt #35 (n,m,tau,s)=(22,17,9,1) antiV2=[(2, 2, 1)] role_b=0 role_c=0 role_e=0 role_f1=0 role_f2=1 U-fail=[] pairlemma-fail=[]
