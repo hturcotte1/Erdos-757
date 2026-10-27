@@ -1,0 +1,1 @@
+graphs 2704611 with a free vertex y outside the maximizer Z*: 0
