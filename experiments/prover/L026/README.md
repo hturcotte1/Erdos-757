@@ -22,10 +22,11 @@ or reduce it to a finite computation; examine the I11 form structurally.
   a hub triangle), with a blocked replacement edge when both its edges leave K; corner pattern only in the
   empty cell (24,19,10); if a degree-2 outer vertex has non-adjacent partners then n(H) <= 73 (Theorem
   12(i), via the replacement M = Q + w + {w,a,b}, A(M) = A(C_hub) - 19, and Claim E); otherwise the outer
-  triple has shape (j1) (all outer degrees 1) or (j2) (Theorem 12(j)).
-- NOT proved: GAP A (KT form in shapes (j1), (j2)), GAP B (I11 form with s(G) = 1; L025, written in
-  parallel, reduces it further to pendant triples). Neither is reduced to a finite computation; the finite
-  family A1 (n(H) <= 73) is stated, not computed.
+  triple is pendant (all outer degrees 1, pairwise non-adjacent; Theorem 12(j),(k)), and then
+  tau(G' - {a,b,c}) = tau(G') - 2 with the six neighbours avoided.
+- NOT proved: GAP A (KT form, pendant case), GAP B (I11 form with s(G) = 1; L025, written in parallel,
+  reduces it to pendant triples too). Neither is reduced to a finite computation; the finite family A1
+  (n(H) <= 73) is stated, not computed.
 - Overlap: Lemma 11 = L025 Lemma 4 and Theorem 13 is contained in L025 Corollary 11(a); found independently.
 
 ## Files and exact commands (all run with nice -n 10, one process, under timeout; own code only)
@@ -44,7 +45,7 @@ or reduce it to a finite computation; examine the I11 form structurally.
 | C10 hub triangles | `timeout 300 nice -n 10 python3 hubtriangle_check.py > hubtriangle_check_output.txt` (here) | hubtriangle_check_output.txt | no member of L* has a hub triangle (TOTAL 0); positive controls find them in the triangle, (12,6,4), (18,9,6) |
 | A_base | `timeout 300 nice -n 10 python3 abase_check.py > abase_check_output.txt` (here) | abase_check_output.txt | tight, 143 min transversals, no NC pair, no b-triple |
 | C11 replacement identities | `cd /home/user/Erdos-757/experiments/prover/L017/out && timeout 2400 nice -n 10 python3 /home/user/Erdos-757/experiments/prover/L026/replacement_check.py <the 7 cells of C7>` | replacement_check_output.txt | 385 degree-2 outer vertices: tau(C_hub) - tau(Q) rule ok; 281 replacements M in C_3 with A(M) = A(C_hub) - 19 |
-| C12 shape (j1) | `cd /home/user/Erdos-757/experiments/prover/L017/out && timeout 1800 nice -n 10 python3 /home/user/Erdos-757/experiments/prover/L026/j1_check.py <the 7 cells of C7>` | j1_check_output.txt | 37 (j1) hubs: bounds on tau(R) ok; 34 disjoint with tau drop 2 and W avoided; 3 shared with R an (8,5,3) piece |
+| C12 degree-1 outer triples | `cd /home/user/Erdos-757/experiments/prover/L017/out && timeout 1800 nice -n 10 python3 /home/user/Erdos-757/experiments/prover/L026/j1_check.py <the 7 cells of C7>` | j1_check_output.txt | 37 (j1) hubs: bounds on tau(R) ok; 34 disjoint with tau drop 2 and W avoided; 3 shared with R an (8,5,3) piece |
 | C9 Lemma 9 | `cd /home/user/Erdos-757/experiments/prover/L017/out && timeout 3000 nice -n 10 python3 /home/user/Erdos-757/experiments/prover/L026/lemma9_check.py $(cat ../../panel-synthesis/checks/probe_cells.txt) /home/user/Erdos-757/experiments/20261027-0730-kt-cells/out/cells/cell_24_12_8_D3.txt` | lemma9_check_output.txt | 2,920 connected graphs, 327 with DEF > 0, 0 failures |
 
 Inputs are read-only: the refereed tarball extracts in experiments/prover/L017/out/ (L012-L016 lists), the

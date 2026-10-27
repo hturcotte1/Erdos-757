@@ -8,3 +8,4 @@ cell_7_4_2_D3.txt classes 2 pendant b-configurations 1 (slack, connected, |W|=6)
 cell_10_5_3_D3.txt classes 6 pendant b-configurations 0 (slack, connected, |W|=6): count {} unexpected 0 time 0.0s
 cell_11_9_4_D3.txt classes 1216 pendant b-configurations 0 (slack, connected, |W|=6): count {} unexpected 0 time 0.5s
 cell_13_6_4_D3.txt classes 3 pendant b-configurations 0 (slack, connected, |W|=6): count {} unexpected 0 time 0.0s
+exit 143
