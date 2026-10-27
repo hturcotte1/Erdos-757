@@ -1,0 +1,3 @@
+17_13_7 classes 6 uncoverable linear triples 24 F7 copies per triple {3: 24} {'copy uses 2 of the 3 new edges': 56, 'copy uses 3 of the 3 new edges': 16} min |S'| (S' contains the six vertices, |S'|-e<=3): {7: 24}
+15_11_6 classes 4 uncoverable linear triples 24 F7 copies per triple {1: 8, 3: 16} {'copy uses 2 of the 3 new edges': 48, 'copy uses 3 of the 3 new edges': 8} min |S'| (S' contains the six vertices, |S'|-e<=3): {8: 8, 7: 16}
+22_17_9 classes 2 uncoverable linear triples 8 F7 copies per triple {3: 8} {'copy uses 3 of the 3 new edges': 8, 'copy uses 2 of the 3 new edges': 16} min |S'| (S' contains the six vertices, |S'|-e<=3): {7: 8}

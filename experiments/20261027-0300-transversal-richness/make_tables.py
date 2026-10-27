@@ -15,13 +15,17 @@ out.append('\n### Table 2: triples of three disjoint pairs, extension F+v (v adj
 out.append('| slack | cell | triples | admissible (F+v in C) | admissible and uncoverable | adm. with all six d_F=2 (R2): count / uncoverable | adm. with all six d_F>=2 (R1): count / uncoverable | min #min-transversals covering an admissible triple | uncoverable triples (all non-admissible unless col 5>0) |')
 out.append('|---|---|---|---|---|---|---|---|---|')
 for k, r in cells:
+    if not r['triples_computed']:
+        out.append('| %d | (%d,%d,%d) | not computed (m>n-4: S=V(F+v) violates e(S)<=|S|-2 for every triple) | - | - | - | - | - | - |' % (r['slack'], r['n'], r['m'], r['tau'])); continue
     out.append('| %d | (%d,%d,%d) | %d | %d | %d | %d / %d | %d / %d | %s | %d |' % (r['slack'], r['n'], r['m'], r['tau'], r['triples'], r['triples_admissible'], r['admissible_uncoverable'], r['adm_R2'], r['adm_R2_unc'], r['adm_R1'], r['adm_R1_unc'], r['adm_min_cover_count'], r['uncoverable_total']))
 out.append('\n### Table 3: uncoverable triples that are NOT admissible: violated class-C condition (a triple can violate several)\n')
 out.append('bits: N = some pair lies inside an edge of F (non-linear), F = F7 appears in F+v (counted for every triple, linear or not), P = e(S) <= |S|-2 violated. "A" = P-violation by a set S containing two of the pairs and tight in F (|S\'|-e = 2); "B" = P-violation only through a set containing all six vertices with |S\'|-e <= 3. minS = size |S| (including v) of the smallest violating S.\n')
-out.append('| slack | cell | uncoverable | N only-P/ N+P / F+P / N+F+P / P only / other | P violated (A / B-only) | min violating |S| histogram (B-only) |')
+out.append('| slack | cell | uncoverable | violated conditions (counts) | P violated (A / B-only) | min violating |S| histogram (B-only) |')
 out.append('|---|---|---|---|---|---|')
 nm = {1: 'N', 2: 'F', 3: 'NF', 4: 'P', 5: 'NP', 6: 'FP', 7: 'NFP', 0: 'ok'}
 for k, r in cells:
+    if not r['triples_computed']:
+        out.append('| %d | (%d,%d,%d) | not computed | - | - | - |' % (r['slack'], r['n'], r['m'], r['tau'])); continue
     c = r['uncoverable_nonadm_by_combo']['L,F,P bits (1=nonlinear,2=F7,4=P3 violated)']
     out.append('| %d | (%d,%d,%d) | %d | %s | %d / %d | %s |' % (r['slack'], r['n'], r['m'], r['tau'], r['uncoverable_total'], ', '.join('%s:%d' % (nm[int(i)], v) for i, v in sorted(c.items())) or '-', r['uncoverable_violates_A'], r['uncoverable_violates_B_only'], ', '.join('%s:%d' % (a, b) for a, b in r['B_only_minS'].items()) or '-'))
 out.append('\n### Table 4: P2 failures by key = d_x + d_y - [x,y share an edge], summed over the classes of each slack (pairs failing / pairs)\n')

@@ -4,7 +4,7 @@ meta = json.load(open(os.path.join(here, 'cells.json')))
 res = {}
 for k, mt in sorted(meta.items(), key=lambda kv: (kv[1]['slack'], kv[1]['n'])):
     f = os.path.join(here, 'outputs', 'cell_%s.jsonl' % k)
-    if not os.path.exists(f): continue
+    if not os.path.exists(f) or open(f).read(11) == 'placeholder': continue
     rows = [json.loads(l) for l in open(f)]
     n, m, tau, s = mt['n'], mt['m'], mt['tau'], mt['slack']
     nT = [r['nT'] for r in rows]
@@ -33,6 +33,7 @@ for k, mt in sorted(meta.items(), key=lambda kv: (kv[1]['slack'], kv[1]['n'])):
         classes_with_admissible=sum(1 for r in rows if r['nadm']), classes_with_admissible_uncoverable=sum(1 for r in rows if r['nadm_unc']),
         adm_R2=S('adm_R2'), adm_R2_unc=S('adm_R2_unc'), adm_R1=S('adm_R1'), adm_R1_unc=S('adm_R1_unc'),
         adm_min_cover_count=min([r['adm_mincov'] for r in rows if r['adm_mincov']>=0] or [None]) if any(r['adm_mincov']>=0 for r in rows) else None, adm_thin_le2=S('adm_thin'), adm_min_cover_ratio=min([r['adm_minratio'] for r in rows if r['adm_minratio']>=0] or [None]) if any(r['adm_minratio']>=0 for r in rows) else None,
+        triples_computed=(S('ntrip')>0 or n<6),
         uncoverable_total=S('unc_total'), uncoverable_nonadm_by_combo={'L,F,P bits (1=nonlinear,2=F7,4=P3 violated)': {str(i): unc_combo[i] for i in range(8) if unc_combo[i]}},
         uncoverable_P_violating_minS=dict(sorted(sz.items())), uncoverable_P_only_minS=dict(sorted(szo.items())),
         uncoverable_violates_A=uA, uncoverable_violates_B_only=uB, A_minS=dict(sorted(sA.items())), B_only_minS=dict(sorted(sB.items())),

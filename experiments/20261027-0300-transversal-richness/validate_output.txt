@@ -1,0 +1,7 @@
+9_4_3 ok nT 19 ntrip 1260 adm 360 unc 144
+6_3_2 ok nT 6 ntrip 15 adm 0 unc 15
+8_5_3 ok nT 13 ntrip 420 adm 0 unc 33
+8_5_3 ok nT 14 ntrip 420 adm 0 unc 29
+10_8_4 ok nT 21 ntrip 3150 adm 0 unc 23
+10_8_4 ok nT 21 ntrip 3150 adm 0 unc 21
+15_11_6 ok nT 154 ntrip 75075 adm 23095 unc 9
