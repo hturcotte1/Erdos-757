@@ -29,6 +29,8 @@ def load(name):
 def has_cover(edges, k):
     """exact: is there a vertex set of size <= k meeting every edge (edges: list of frozensets, may be of size < 3)?"""
     edges = [e for e in edges]
+    if k < 0:
+        return False
     if not edges:
         return True
     if k <= 0:
@@ -153,6 +155,8 @@ def comp_lib():
 def partB(trials, seed):
     rng = random.Random(seed)
     lib = comp_lib()
+    if os.environ.get('SMALL'):
+        lib = [c for c in lib if c[3] <= 10]
     tight = [c for c in lib if c[1] == 0]; slack1 = [c for c in lib if c[1] == 1]
     small_tight = [c for c in tight if c[3] <= 10]
     stats = {}; fails = []

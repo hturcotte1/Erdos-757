@@ -1,0 +1,8 @@
+n=5 [(('other', 'reducible2', 'reducible3'), 4)]
+n=6 [(('other', 'reducible2', 'reducible3'), 3)]
+n=7 [(('other', 'reducible2', 'reducible3'), 17)]
+n=8 [(('other', 'reducible2', 'reducible3'), 26)]
+n=9 [(('P-tri-2', 'irreducible2', 'reducible3'), 1), (('other', 'reducible2', 'reducible3'), 121)]
+n=10 [(('P-tri-2', 'irreducible2', 'reducible3'), 6), (('other', 'reducible2', 'reducible3'), 581)]
+n=11 [(('P-tree-2', 'irreducible2', 'reducible3'), 2), (('P-tree-2', 'reducible2', 'reducible3'), 2), (('P-tri-2', 'irreducible2', 'reducible3'), 16), (('other', 'reducible2', 'reducible3'), 3969)]
+violations: 0

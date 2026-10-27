@@ -2010,6 +2010,22 @@
 "firstpath": "seedsrc/L013/cells/cell_20_15_8_D3.txt",
 "md5": "2e515d2c716ee91712763ca9db1da825"
 },
+"20,15,8,4": {
+"agree": [],
+"classes": 2610,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_20_15_8_D4.txt",
+"md5": "37a5ad3bc30931c2915274f67ad55fe4"
+},
+"20,16,8,3": {
+"agree": [],
+"classes": 314639,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_20_16_8_D3.txt",
+"md5": "f7b78be50e4834fcb0b2d5dd7e9bfccb"
+},
 "21,10,6,2": {
 "agree": [
 "20261017-2150-i11-n27 (worker, L016 cross-checked)",

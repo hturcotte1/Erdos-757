@@ -1,0 +1,4 @@
+(10,7,4) class 0 tau 4 non-co-transversal pairs []
+(10,7,4) class 1 tau 4 non-co-transversal pairs [(0, 1), (0, 2)]
+(10,7,4) class 2 tau 4 non-co-transversal pairs [(0, 1), (0, 2)]
+(10,7,4) class 3 tau 4 non-co-transversal pairs []

@@ -1,0 +1,1 @@
+graphs 16335 CH violations 0 11nu>=3M violations 0 CH-equality counts by nu {1: 17, 2: 7, 3: 31, 4: 2}

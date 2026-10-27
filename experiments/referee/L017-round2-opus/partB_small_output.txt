@@ -1,0 +1,14 @@
+PART B: extensions tested: 3000 attempts 3091
+    ('a', 1) count,star,(agree) [789, 209, 789]
+    ('b', 2) count,star,(agree) [368, 24, 368]
+    ('c1', 2) count,star,(agree) [206, 0, 206]
+    ('c2', 2) count,star,(agree) [35, 0, 35]
+    ('d', 3) count,star,(agree) [17, 0, 17]
+    ('e', 2) count,star,(agree) [146, 0, 146]
+    ('f', 2) count,star,(agree) [553, 0, 553]
+    ('nondeficient', 3) count,star,(agree) [886, 0]
+PART B failures: 0 []
+
+real	0m43.384s
+user	0m14.403s
+sys	0m0.021s

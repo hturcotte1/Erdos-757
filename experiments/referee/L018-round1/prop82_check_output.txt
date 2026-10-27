@@ -1,0 +1,19 @@
+selected (9<=n<=14, slack<=5): 17 Counter({(12, 10, 5, 1): 8, (13, 10, 5, 4): 7, (11, 7, 4, 3): 1, (13, 9, 5, 2): 1})
+n=11 m=7 tau=4 slack=3 min|Z|=7 #minRedZ=56 H-Z structures (edges, isolated, vertices): {(1, 1, 4): 56} exact(g=0)=True
+n=12 m=10 tau=5 slack=1 min|Z|=6 #minRedZ=7 H-Z structures (edges, isolated, vertices): {(2, 0, 6): 7} exact(g=0)=True
+n=12 m=10 tau=5 slack=1 min|Z|=6 #minRedZ=6 H-Z structures (edges, isolated, vertices): {(2, 0, 6): 6} exact(g=0)=True
+n=12 m=10 tau=5 slack=1 min|Z|=6 #minRedZ=6 H-Z structures (edges, isolated, vertices): {(2, 0, 6): 6} exact(g=0)=True
+n=12 m=10 tau=5 slack=1 min|Z|=6 #minRedZ=6 H-Z structures (edges, isolated, vertices): {(2, 0, 6): 6} exact(g=0)=True
+n=12 m=10 tau=5 slack=1 min|Z|=6 #minRedZ=4 H-Z structures (edges, isolated, vertices): {(2, 0, 6): 4} exact(g=0)=True
+n=12 m=10 tau=5 slack=1 min|Z|=6 #minRedZ=4 H-Z structures (edges, isolated, vertices): {(2, 0, 6): 4} exact(g=0)=True
+n=12 m=10 tau=5 slack=1 min|Z|=9 #minRedZ=10 H-Z structures (edges, isolated, vertices): {(1, 0, 3): 10} exact(g=0)=True
+n=12 m=10 tau=5 slack=1 min|Z|=6 #minRedZ=12 H-Z structures (edges, isolated, vertices): {(2, 0, 6): 12} exact(g=0)=True
+n=13 m=10 tau=5 slack=4 min|Z|=7 #minRedZ=4 H-Z structures (edges, isolated, vertices): {(3, 0, 6): 4} exact(g=0)=True
+n=13 m=10 tau=5 slack=4 min|Z|=7 #minRedZ=1 H-Z structures (edges, isolated, vertices): {(3, 0, 6): 1} exact(g=0)=True
+n=13 m=10 tau=5 slack=4 min|Z|=9 #minRedZ=100 H-Z structures (edges, isolated, vertices): {(1, 1, 4): 100} exact(g=0)=True
+n=13 m=10 tau=5 slack=4 min|Z|=7 #minRedZ=4 H-Z structures (edges, isolated, vertices): {(3, 0, 6): 4} exact(g=0)=True
+n=13 m=10 tau=5 slack=4 min|Z|=6 #minRedZ=7 H-Z structures (edges, isolated, vertices): {(2, 1, 7): 7} exact(g=0)=True
+n=13 m=10 tau=5 slack=4 min|Z|=9 #minRedZ=100 H-Z structures (edges, isolated, vertices): {(1, 1, 4): 100} exact(g=0)=True
+n=13 m=10 tau=5 slack=4 min|Z|=7 #minRedZ=5 H-Z structures (edges, isolated, vertices): {(3, 0, 6): 5} exact(g=0)=True
+n=13 m=9 tau=5 slack=2 min|Z|=7 #minRedZ=6 H-Z structures (edges, isolated, vertices): {(3, 0, 6): 3, (2, 0, 6): 3} exact(g=0)=True
+summary (n, m, slack, min|Z|): [((11, 7, 3, 7), 1), ((12, 10, 1, 6), 7), ((12, 10, 1, 9), 1), ((13, 9, 2, 7), 1), ((13, 10, 4, 6), 1), ((13, 10, 4, 7), 4), ((13, 10, 4, 9), 2)]

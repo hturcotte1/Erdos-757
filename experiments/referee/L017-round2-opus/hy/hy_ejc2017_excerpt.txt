@@ -1,0 +1,28 @@
+# Excerpt (lines 200-212, 243-249, 484-488) of pdftotext -layout kb/literature/papers/henning_yeo_ejc_2017.pdf (Henning-Yeo, EJC 24(2) P2.50)
+
+3.1    The Family Hk
+Definition 5. Let Hk be the class of all connected, linear, k-uniform hypergraphs with
+maximum degree 2.
+    For a hypergraph H ∈ Hk we define a graph GH as follows. Let the vertices of GH be
+the edges of H and let the edges of GH correspond to the n2 (H) vertices of degree 2 in
+H: if a vertex of H is contained in the edges e and f of H, then the corresponding edge
+of the multigraph GH joins vertices e and f of GH . Thus, V (GH ) = E(H) and for every
+v ∈ V2 (H), contained in the two edges e and f , add an edge between e and f in GH . By
+the linearity of H, the multigraph GH is indeed a graph, called the dual graph of H. Since
+H is k-uniform and ∆(H) = 2, the maximum degree, ∆(GH ), in GH is at most k. Since
+H is connected, so too is GH . By construction, n(GH ) = m(H) and m(GH ) = n2 (H).
+We note that if H ∈ Hk is 2-regular, then the dual graph, GH , of H is k-regular.
+...
+Observation 8. If H ∈ Hk and GH is the dual graph of H, then α0 (GH ) = α2 (H).
+
+    The following result is well-known (see, for example, [7]). However, since it is central
+to our discussions, we give a short proof for completeness.
+
+Proposition 9. If H ∈ Hk and GH is the dual graph of H, then α0 (GH ) = |E(H)|−τ (H).
+
+...
+Theorem 14. For k ⩾ 3 an odd integer, if H ∈ Hk , then
+
+                                     (k − 2)(k + 1)n + (k − 1)2 m + k − 1
+                         τ (H) ⩽                                          .
+                                                  k(k 2 − 3)

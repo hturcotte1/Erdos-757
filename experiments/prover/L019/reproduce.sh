@@ -22,3 +22,8 @@ for c in 10_7_4 14_12_6 17_13_7 12_10_5 15_11_6 22_17_9 26_22_11; do
 done
 # C6: the two (14,12,6) classes with Delta = 3: every fold at every degree-2 vertex is blocked by adjacency/common neighbour
 timeout 900 nice -n 10 python3 fold_reasons_graph.py $D/cell_14_12_6.txt 4,8         > fold_reasons_graph_output.txt
+# C7: graphs with degrees in {2,3} satisfying Theorem 6(b) at every degree-2 vertex and having every fold blocked
+for c in 10_7_4 14_12_6 17_13_7 12_10_5 15_11_6 19_16_8 22_17_9 26_22_11 10_8_4 13_9_5 16_10_6 17_14_7 20_15_8 23_16_9 8_5_3 9_4_3 6_3_2; do
+  timeout 1800 nice -n 10 python3 blocked_and_6b.py $D/cell_$c.txt 100000            >> blocked_and_6b_output.txt
+done
+timeout 900 nice -n 10 python3 fold_reasons_graph.py $D/cell_10_8_4.txt 39,40,60       > fold_reasons_10_8_4_output.txt

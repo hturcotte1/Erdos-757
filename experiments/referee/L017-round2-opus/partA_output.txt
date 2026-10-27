@@ -1,0 +1,4 @@
+PART A: tight Delta<=3 graphs checked: 13
+   non-co-transversal pair type ('cell_10_7_4_D3.txt', (1, 2, 1)) 4
+   non-co-transversal pair type ('cell_3_1_1_D3.txt', (1, 1, 1)) 3
+PART A failures: 0 []
