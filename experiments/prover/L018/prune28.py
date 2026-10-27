@@ -9,7 +9,8 @@ assuming I11 on C for all n < N0, every member X of a violator cell (N0, m, t) (
 Lists every violator cell, every (d=3) decomposition of X - w allowed by (R1)-(R4), and marks (R5).  Component cells are looked up
 in the cell directories given (read only).  Exact integer arithmetic; decompositions by the slack-sum generator (as decomp22.gen1)."""
 import sys, os, glob
-CELLDIRS = ['/home/user/Erdos-757/experiments/20261027-0300-tight-cells-d4/out/cells',
+CELLDIRS = ['/home/user/Erdos-757/experiments/prover/L018/cells13/cells',   # refereed L013 lists (extracted from ../L013/cells.tar.gz), searched first
+            '/home/user/Erdos-757/experiments/20261027-0300-tight-cells-d4/out/cells',
             '/home/user/Erdos-757/experiments/20261027-0340-induction-n28-n29-f25/out/cells',
             '/home/user/Erdos-757/experiments/20261027-0235-cost-n28-n29/out/cells',
             '/home/user/Erdos-757/experiments/20261017-2150-i11-n27/out/cells']
@@ -17,7 +18,8 @@ def known(n, m, t, D=3):
     for d in CELLDIRS:
         f = os.path.join(d, 'cell_%d_%d_%d_D%d.txt' % (n, m, t, D))
         if os.path.exists(f):
-            return sum(1 for l in open(f) if l.startswith('FOUND'))
+            src = 'L013' if 'L018/cells13' in d else 'unrefereed:' + d.split('/experiments/')[1].split('/')[0]
+            return '%d %s' % (sum(1 for l in open(f) if l.startswith('FOUND')), src)
     return None
 def conn_cells(nmax):
     for n in range(3, nmax + 1):
@@ -54,6 +56,6 @@ for N0 in [int(a) for a in sys.argv[1:]] or [28, 29]:
                 if s == -2 and all(c in TIGHT_KNOWN for c in dec):
                     tags.append('VOID by (R5)')
                 cnts = [known(*c) for c in dec]
-                if any(c == 0 for c in cnts): tags.append('VOID: empty component cell')
+                if any(c is not None and c.split()[0] == '0' for c in cnts): tags.append('VOID: empty component cell')
                 st = ' + '.join('%s[%s]' % (c, '?' if k is None else k) for c, k in zip(dec, cnts))
                 print('     ', st, '  ', '; '.join(tags) if tags else 'REMAINS')

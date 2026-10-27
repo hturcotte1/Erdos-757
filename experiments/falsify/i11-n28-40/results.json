@@ -2188,6 +2188,96 @@
    "17": {
     "pool_connected": 25,
     "min_connected_slack": 0
+   },
+   "18": {
+    "pool_connected": 102,
+    "min_connected_slack": null
+   },
+   "19": {
+    "pool_connected": 284,
+    "min_connected_slack": 1
+   },
+   "20": {
+    "pool_connected": 90,
+    "min_connected_slack": 2
+   },
+   "21": {
+    "pool_connected": 165,
+    "min_connected_slack": 0
+   },
+   "22": {
+    "pool_connected": 9337,
+    "min_connected_slack": 1
+   },
+   "23": {
+    "pool_connected": 234,
+    "min_connected_slack": 1
+   },
+   "24": {
+    "pool_connected": 23460,
+    "min_connected_slack": 2
+   },
+   "25": {
+    "pool_connected": 143,
+    "min_connected_slack": 5
+   }
+  },
+  "d5j": {
+   "14": {
+    "pool_connected": 15,
+    "min_connected_slack": 0
+   },
+   "15": {
+    "pool_connected": 93,
+    "min_connected_slack": 1
+   },
+   "16": {
+    "pool_connected": 10,
+    "min_connected_slack": null
+   },
+   "17": {
+    "pool_connected": 25,
+    "min_connected_slack": 0
+   },
+   "18": {
+    "pool_connected": 102,
+    "min_connected_slack": null
+   },
+   "19": {
+    "pool_connected": 198,
+    "min_connected_slack": 1
+   },
+   "20": {
+    "pool_connected": 90,
+    "min_connected_slack": 2
+   },
+   "21": {
+    "pool_connected": 165,
+    "min_connected_slack": 0
+   },
+   "22": {
+    "pool_connected": 9328,
+    "min_connected_slack": 1
+   },
+   "23": {
+    "pool_connected": 182,
+    "min_connected_slack": 1
+   },
+   "24": {
+    "pool_connected": 3102,
+    "min_connected_slack": 2
+   },
+   "25": {
+    "pool_connected": 109,
+    "min_connected_slack": 5
+   },
+   "26": {
+    "pool_connected": 11315,
+    "min_connected_slack": 3
+   },
+   "27": {
+    "pool_connected": 120,
+    "min_connected_slack": 6
    }
   },
   "mutF": {
@@ -2277,8 +2367,164 @@
    }
   }
  },
- "sa_cells": "partial: see out/sa_cellsA.log",
- "sa_polish": [],
+ "sa_cells": [
+  {
+   "n": 28,
+   "m": 16,
+   "lo": 11,
+   "best_slack": 17,
+   "tau": 9,
+   "evals": 100658
+  },
+  {
+   "n": 28,
+   "m": 17,
+   "lo": 11,
+   "best_slack": 8,
+   "tau": 10,
+   "evals": 116073
+  },
+  {
+   "n": 28,
+   "m": 18,
+   "lo": 11,
+   "best_slack": 10,
+   "tau": 10,
+   "evals": 129236
+  },
+  {
+   "n": 28,
+   "m": 22,
+   "lo": 12,
+   "best_slack": 18,
+   "tau": 10,
+   "evals": 151400
+  },
+  {
+   "n": 28,
+   "m": 23,
+   "lo": 12,
+   "best_slack": 9,
+   "tau": 11,
+   "evals": 150488
+  },
+  {
+   "n": 29,
+   "m": 14,
+   "lo": 11,
+   "best_slack": 16,
+   "tau": 9,
+   "evals": 37347
+  },
+  {
+   "n": 29,
+   "m": 15,
+   "lo": 11,
+   "best_slack": 18,
+   "tau": 9,
+   "evals": 67385
+  },
+  {
+   "n": 29,
+   "m": 16,
+   "lo": 11,
+   "best_slack": 9,
+   "tau": 10,
+   "evals": 89681
+  }
+ ],
+ "sa_polish": [
+  {
+   "n": 28,
+   "m0": 25,
+   "start_slack": 2,
+   "best_slack": 2,
+   "m": 25,
+   "tau": 12,
+   "visits_le1": 0
+  },
+  {
+   "n": 29,
+   "m0": 24,
+   "start_slack": 3,
+   "best_slack": 3,
+   "m": 24,
+   "tau": 12,
+   "visits_le1": 0
+  },
+  {
+   "n": 29,
+   "m0": 25,
+   "start_slack": 5,
+   "best_slack": 5,
+   "m": 25,
+   "tau": 12,
+   "visits_le1": 0
+  },
+  {
+   "n": 30,
+   "m0": 24,
+   "start_slack": 6,
+   "best_slack": 6,
+   "m": 24,
+   "tau": 12,
+   "visits_le1": 0
+  },
+  {
+   "n": 31,
+   "m0": 26,
+   "start_slack": 2,
+   "best_slack": 2,
+   "m": 26,
+   "tau": 13,
+   "visits_le1": 0
+  },
+  {
+   "n": 31,
+   "m0": 28,
+   "start_slack": 6,
+   "best_slack": 6,
+   "m": 28,
+   "tau": 13,
+   "visits_le1": 0
+  },
+  {
+   "n": 31,
+   "m0": 29,
+   "start_slack": 8,
+   "best_slack": 6,
+   "m": 28,
+   "tau": 13,
+   "visits_le1": 0
+  },
+  {
+   "n": 31,
+   "m0": 25,
+   "start_slack": 11,
+   "best_slack": 11,
+   "m": 25,
+   "tau": 12,
+   "visits_le1": 0
+  },
+  {
+   "n": 32,
+   "m0": 25,
+   "start_slack": 3,
+   "best_slack": 3,
+   "m": 25,
+   "tau": 13,
+   "visits_le1": 0
+  },
+  {
+   "n": 32,
+   "m0": 26,
+   "start_slack": 5,
+   "best_slack": 5,
+   "m": 26,
+   "tau": 13,
+   "visits_le1": 0
+  }
+ ],
  "subsa": [
   {
    "base": "C003",

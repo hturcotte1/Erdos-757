@@ -13,7 +13,7 @@ def upd(n, meth, s):
 for n, s in R['glue']['min_connected_slack_by_n'].items(): upd(int(n), 'gluing', s)
 for n, s in R['extend_min_slack_by_n'].items(): upd(int(n), 'glue+1edge', s)
 for run, d in R['beam'].items():
-    if run.startswith('mut') or run.startswith('t3'): continue
+    if run.startswith('mut') or run in ('t3', 'd3a'): continue
     for n, v in d.items(): upd(int(n), 'beam', v['min_connected_slack'])
 for d in conn: upd(d['n'], 'beam', d['slack'])
 for x in R['subsa']:
@@ -52,7 +52,7 @@ P("| D | beam search over exact tau-raising vertex extensions (vext), degree cap
 sm = [x for x in R['subsa'] if x['best_slack'] < 9999]
 P("| E | simulated annealing over induced vertex subsets of size 28..40 of the (4,5)-set hypergraphs S_3..S_8 (reader family), C003, C004, C005 and A+A+12 (disjoint union), connected subsets only | sizes 28..40 | %d runs x 150,000 SA steps (each step an exact tau) | %d |" % (len(R['subsa']), min(x['best_slack'] for x in sm)))
 sc = R['sa_cells'] if isinstance(R['sa_cells'], list) else []
-P("| F | SA over edge moves per window cell (n,m) (class C kept incrementally, connected, objective 11 tau - 2m - lambda log #max independent sets) | n=28..29 only (5 cells, killed to free CPU) + n=14 calibration | 5 cells x 350,000 moves | 9 (n=28), 16 (n=29): much weaker than B/D |")
+P("| F | SA over edge moves per window cell (n,m) (class C kept incrementally, connected, objective 11 tau - 2m - lambda log #max independent sets) | n=28..29 only (%d cells, killed to free CPU) + n=14 calibration | %d cells x 350,000 moves | %s: much weaker than B/D |" % (len(sc), len(sc), ", ".join("(%d,%d):%d" % (x['n'], x['m'], x['best_slack']) for x in sc)))
 sp = R['sa_polish']
 P("| G | SA polishing of the best gluing graphs (m within +-2, degree cap 5) | n=28..32 | %d runs x 700,000 moves | no improvement over the start (%s) |" % (len(sp), ", ".join("%d:%d" % (x['n'], x['best_slack']) for x in sp[:6])))
 rl = R.get('real', {}).get('real_main.json', {})
@@ -60,13 +60,14 @@ P("| H | realizable (4,5)-sets: random/greedy one-point extensions (new point in
 P("| I | random saturated C-graphs (m=n-2) from growth with a random midpoint assignment, solved exactly (e757.saturated) and checked as (4,5)-sets | n=10,12,14,16,20 | 4,000 each | realized: %s |" % ", ".join("n=%s: %d" % (n, v['realized']) for n, v in rr.items()))
 P("")
 P("## 3. Minimum slack of CONNECTED graphs found, by n and method\n")
-meths = ['growth', 'gluing', 'glue+1edge', 'beam', 'subset-SA', 'SA-cells', 'SA-polish', 'real-walk']
+meths = ['growth', 'gluing', 'glue+1edge', 'beam', 'subset-SA', 'SA-cells', 'SA-polish']
 P("| n | " + " | ".join(meths) + " | overall min |\n|" + "---|" * (len(meths) + 2))
 for n in range(14, 41):
     row = [str(best[n].get(m, '')) for m in meths]
     vals = [best[n][m] for m in meths if m in best[n]]
     P("| %d | %s | %s |" % (n, " | ".join(row), min(vals) if vals else ''))
-P("\n(the beam column also includes the slack<=1 connected graphs of section 5; for n < 28 the table is shown for context; blank = no connected graph found by that method.)\n")
+P("\nRealizable one-point-extension walks (row H) are not in this table because their slack was recorded without a connectivity filter (their start sets are disjoint unions, so most of their graphs are disconnected); their minima by n are in results.json ('real'); the smallest is 2 at n=33, every other n >= 5.\n")
+P("(the beam column is the minimum over the pool statistics of the beam runs, whose pools were seeded with the best gluing graphs, hence it is <= the gluing column by construction, and over the connected slack<=1 graphs of section 5; for n < 28 the table is shown for context; blank = no connected graph found by that method.)\n")
 P("## 4. Beam search (exact vertex extension) details\n")
 P("Operator: given a parent graph G in C and the set of all its maximum independent sets, `vext` enumerates every set of d <= 4 disjoint pairs {a_i,b_i} (degrees < cap) such that every maximum independent set contains some pair; adding a new vertex v with edges {v,a_i,b_i} then raises tau by exactly 1 (tau(G+v) = tau(G)+1) and changes the slack by 2d - 8 (d=1: -6, d=2: -4, d=3: -2, d=4: 0).  Non-raising additions change the slack by 2d+3 > 0 and are not generated.  Children are tested for class C and for tau by the DP.  Pools per n are kept (dedupe by colour-refinement fingerprint); parents are drawn from graphs with slack <= 7 (connected) and slack <= 1 (disconnected unions of tight pieces).\n")
 P("Runs (log files out/beam_*.log, stats out/beam_*_stats.json): d3a-d3c (degree cap 3), d5a-d5e (cap 5, pieces+gluing seeds), d5f-d5i (cap 5, d up to 4, extra connected pieces).  Per-level lines show parents / children / pool size / minimum slack.  Runs d5f/d5g/d5h were stopped when the time limit per level made them too slow; d5i is the one reported for depth.\n")

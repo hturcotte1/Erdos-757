@@ -1,0 +1,199 @@
+L013 cell (23, 13, 9, 2) s=-4: EMPTY by D<=2: Lemma M (no computation needed)
+L013 cell (23, 14, 9, 3) s=-2: engine branch d=2 is void by Lemma M (Delta(X)=2)
+L013 cell (23, 14, 9, 3) s=-2: branch d=3 tp=8 S'=0: 5 decompositions of (22,11)
+    r=1 [(22, 11, 8)] inputs=0 r<=3
+    r=2 [(3, 1, 1), (19, 10, 7)] inputs=0 r<=3
+    r=3 [(3, 1, 1), (3, 1, 1), (16, 9, 6)] inputs=0 r<=3
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (13, 8, 5)] inputs=0 r>=4: void by Theorem 4(iii)
+    r=5 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (10, 7, 4)] inputs=4 r>=4: void by Theorem 4(iii)
+L013 cell (23, 20, 10, 3) s=-1: branch d=3 tp=9 S'=1: 4 decompositions of (22,17)
+    r=1 [(22, 17, 9)] inputs=37 r<=3
+    r=2 [(10, 7, 4), (12, 10, 5)] inputs=596 r<=3
+    r=2 [(8, 5, 3), (14, 12, 6)] inputs=4 r<=3
+    r=2 [(3, 1, 1), (19, 16, 8)] inputs=227 r<=3
+L013 cell (24, 12, 9, 2) s=-3: EMPTY by D<=2: Lemma M (no computation needed)
+L013 cell (24, 13, 9, 3) s=-1: engine branch d=2 is void by Lemma M (Delta(X)=2)
+L013 cell (24, 13, 9, 3) s=-1: branch d=3 tp=8 S'=1: 4 decompositions of (23,10)
+    r=3 [(3, 1, 1), (3, 1, 1), (17, 8, 6)] inputs=0 r<=3
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (14, 7, 5)] inputs=0 r>=4: void by Theorem 4(iii)
+    r=5 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (11, 6, 4)] inputs=0 r>=4: void by Theorem 4(iii)
+    r=6 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (8, 5, 3)] inputs=2 r>=4: void by Theorem 4(iii)
+L013 cell (24, 18, 10, 3) s=-2: branch d=3 tp=9 S'=0: 6 decompositions of (23,15)
+    r=1 [(23, 15, 9)] inputs=0 r<=3
+    r=2 [(10, 7, 4), (13, 8, 5)] inputs=0 r<=3
+    r=2 [(3, 1, 1), (20, 14, 8)] inputs=0 r<=3
+    r=3 [(3, 1, 1), (10, 7, 4), (10, 7, 4)] inputs=10 r<=3
+    r=3 [(3, 1, 1), (3, 1, 1), (17, 13, 7)] inputs=6 r<=3
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (14, 12, 6)] inputs=2 r>=4: void by Theorem 4(iii)
+L013 cell (25, 16, 10, 2) s=-3: EMPTY by D<=2: Lemma M (no computation needed)
+L013 cell (25, 17, 10, 3) s=-1: branch d=3 tp=9 S'=1: 11 decompositions of (24,14)
+    r=1 [(24, 14, 9)] inputs=0 r<=3
+    r=2 [(11, 6, 4), (13, 8, 5)] inputs=0 r<=3
+    r=2 [(10, 7, 4), (14, 7, 5)] inputs=0 r<=3
+    r=2 [(8, 5, 3), (16, 9, 6)] inputs=0 r<=3
+    r=2 [(3, 1, 1), (21, 13, 8)] inputs=0 r<=3
+    r=3 [(3, 1, 1), (10, 7, 4), (11, 6, 4)] inputs=0 r<=3
+    r=3 [(3, 1, 1), (8, 5, 3), (13, 8, 5)] inputs=0 r<=3
+    r=3 [(3, 1, 1), (3, 1, 1), (18, 12, 7)] inputs=0 r<=3
+    r=4 [(3, 1, 1), (3, 1, 1), (8, 5, 3), (10, 7, 4)] inputs=8 r>=4: void by Theorem 4(iii)
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (15, 11, 6)] inputs=19 r>=4: void by Theorem 4(iii)
+    r=5 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (12, 10, 5)] inputs=149 r>=4: void by Theorem 4(iii)
+L013 cell (25, 22, 11, 3) s=-2: branch d=3 tp=10 S'=0: 3 decompositions of (24,19)
+    r=1 [(24, 19, 10)] inputs=0 r<=3
+    r=2 [(10, 7, 4), (14, 12, 6)] inputs=8 r<=3
+    r=2 [(3, 1, 1), (21, 18, 9)] inputs=0 r<=3
+L013 cell (26, 14, 10, 2) s=-4: EMPTY by D<=2: Lemma M (no computation needed)
+L013 cell (26, 15, 10, 3) s=-2: engine branch d=2 is void by Lemma M (Delta(X)=2)
+L013 cell (26, 15, 10, 3) s=-2: branch d=3 tp=9 S'=0: 6 decompositions of (25,12)
+    r=1 [(25, 12, 9)] inputs=0 r<=3
+    r=2 [(3, 1, 1), (22, 11, 8)] inputs=0 r<=3
+    r=3 [(3, 1, 1), (3, 1, 1), (19, 10, 7)] inputs=0 r<=3
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (16, 9, 6)] inputs=0 r>=4: void by Theorem 4(iii)
+    r=5 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (13, 8, 5)] inputs=0 r>=4: void by Theorem 4(iii)
+    r=6 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (10, 7, 4)] inputs=4 r>=4: void by Theorem 4(iii)
+L013 cell (26, 21, 11, 3) s=-1: branch d=3 tp=10 S'=1: 9 decompositions of (25,18)
+    r=1 [(25, 18, 10)] inputs=0 r<=3
+    r=2 [(12, 10, 5), (13, 8, 5)] inputs=0 r<=3
+    r=2 [(11, 6, 4), (14, 12, 6)] inputs=0 r<=3
+    r=2 [(10, 7, 4), (15, 11, 6)] inputs=76 r<=3
+    r=2 [(8, 5, 3), (17, 13, 7)] inputs=12 r<=3
+    r=2 [(3, 1, 1), (22, 17, 9)] inputs=37 r<=3
+    r=3 [(3, 1, 1), (10, 7, 4), (12, 10, 5)] inputs=596 r<=3
+    r=3 [(3, 1, 1), (8, 5, 3), (14, 12, 6)] inputs=4 r<=3
+    r=3 [(3, 1, 1), (3, 1, 1), (19, 16, 8)] inputs=227 r<=3
+L016 cell (27, 13, 10, 2) s=-3: EMPTY by D<=2: Lemma M (no computation needed)
+L016 cell (27, 18, 11, 2) s=-4: EMPTY by D<=2: Lemma M (no computation needed)
+L016 cell (27, 14, 10, 3) s=-1: engine branch d=2 is void by Lemma M (Delta(X)=2)
+L016 cell (27, 14, 10, 3) s=-1: branch d=3 tp=9 S'=1: 4 decompositions of (26,11)
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (17, 8, 6)] inputs=0 r>=4: void by Theorem 4(iii)
+    r=5 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (14, 7, 5)] inputs=0 r>=4: void by Theorem 4(iii)
+    r=6 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (11, 6, 4)] inputs=0 r>=4: void by Theorem 4(iii)
+    r=7 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (8, 5, 3)] inputs=2 r>=4: void by Theorem 4(iii)
+L016 cell (27, 19, 11, 3) s=-2: branch d=3 tp=10 S'=0: 9 decompositions of (26,16)
+    r=1 [(26, 16, 10)] inputs=0 r<=3
+    r=2 [(13, 8, 5), (13, 8, 5)] inputs=0 r<=3
+    r=2 [(10, 7, 4), (16, 9, 6)] inputs=0 r<=3
+    r=2 [(3, 1, 1), (23, 15, 9)] inputs=0 r<=3
+    r=3 [(3, 1, 1), (10, 7, 4), (13, 8, 5)] inputs=0 r<=3
+    r=3 [(3, 1, 1), (3, 1, 1), (20, 14, 8)] inputs=0 r<=3
+    r=4 [(3, 1, 1), (3, 1, 1), (10, 7, 4), (10, 7, 4)] inputs=10 r>=4: void by Theorem 4(iii)
+    r=4 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (17, 13, 7)] inputs=6 r>=4: void by Theorem 4(iii)
+    r=5 [(3, 1, 1), (3, 1, 1), (3, 1, 1), (3, 1, 1), (14, 12, 6)] inputs=2 r>=4: void by Theorem 4(iii)
+L016 cell (27, 25, 12, 3) s=-1: branch d=3 tp=11 S'=1: 3 decompositions of (26,22)
+    r=1 [(26, 22, 11)] inputs=36 r<=3
+    r=2 [(12, 10, 5), (14, 12, 6)] inputs=298 r<=3
+    r=2 [(3, 1, 1), (23, 21, 10)] inputs=0 r<=3
+TOTALS: {'empty_by_T1M': 6, 'decs': 64, 'decs_r1': 9, 'decs_r2': 23, 'decs_r3': 13, 'decs_r4': 19, 'used_r4': 11, 'inputs_r4': 208, 'used_r1': 2, 'inputs_r1': 73, 'used_r2': 8, 'inputs_r2': 1258, 'used_r3': 5, 'inputs_r3': 843}
+VERDICTS (after Theorem 1 + Lemma M + Theorem 4(iii), using the stored class counts):
+    (23, 13, 9, 2) empty without computation
+    (23, 14, 9, 3) empty given the stored lists (all r<=3 decompositions have 0 inputs)
+    (23, 20, 10, 3) needs the extension step: 864 inputs from r<=3 decompositions
+    (24, 12, 9, 2) empty without computation
+    (24, 13, 9, 3) empty given the stored lists (all r<=3 decompositions have 0 inputs)
+    (24, 18, 10, 3) needs the extension step: 16 inputs from r<=3 decompositions
+    (25, 16, 10, 2) empty without computation
+    (25, 17, 10, 3) empty given the stored lists (all r<=3 decompositions have 0 inputs)
+    (25, 22, 11, 3) needs the extension step: 8 inputs from r<=3 decompositions
+    (26, 14, 10, 2) empty without computation
+    (26, 15, 10, 3) empty given the stored lists (all r<=3 decompositions have 0 inputs)
+    (26, 21, 11, 3) needs the extension step: 952 inputs from r<=3 decompositions
+    (27, 13, 10, 2) empty without computation
+    (27, 18, 11, 2) empty without computation
+    (27, 14, 10, 3) empty given the stored lists (all r<=3 decompositions have 0 inputs)
+    (27, 19, 11, 3) empty given the stored lists (all r<=3 decompositions have 0 inputs)
+    (27, 25, 12, 3) needs the extension step: 334 inputs from r<=3 decompositions
+TIGHT CONNECTED CELLS (3n+2m = 11 tau, ceil((n-1)/2) <= m <= n-2, tau <= m, 17 tau <= 5n+3m), n <= 30:
+    (3,1,1): stored Delta<=3 classes = 1
+    (10,7,4): stored Delta<=3 classes = 4
+    (13,8,5): stored Delta<=3 classes = 0
+    (14,12,6): stored Delta<=3 classes = 2
+    (16,9,6): stored Delta<=3 classes = 0
+    (17,13,7): stored Delta<=3 classes = 6
+    (19,10,7): stored Delta<=3 classes = 0
+    (20,14,8): stored Delta<=3 classes = 0
+    (21,18,9): stored Delta<=3 classes = 0
+    (22,11,8): stored Delta<=3 classes = 0
+    (23,15,9): stored Delta<=3 classes = 0
+    (24,19,10): stored Delta<=3 classes = 0
+    (25,12,9): stored Delta<=3 classes = 0
+    (25,23,11): stored Delta<=3 classes = not computed
+    (26,16,10): stored Delta<=3 classes = 0
+    (27,20,11): stored Delta<=3 classes = not computed
+    (28,24,12): stored Delta<=3 classes = not computed
+    (29,17,11): stored Delta<=3 classes = not computed
+    (30,21,12): stored Delta<=3 classes = not computed
+SLACK-1 CONNECTED CELLS (3n+2m-11 tau = 1, same constraints), n <= 27:
+    (8,5,3): stored Delta<=3 classes = 2
+    (11,6,4): stored Delta<=3 classes = 0
+    (12,10,5): stored Delta<=3 classes = 149
+    (14,7,5): stored Delta<=3 classes = 0
+    (15,11,6): stored Delta<=3 classes = 19
+    (17,8,6): stored Delta<=3 classes = 0
+    (18,12,7): stored Delta<=3 classes = 0
+    (19,16,8): stored Delta<=3 classes = 227
+    (21,13,8): stored Delta<=3 classes = 0
+    (22,17,9): stored Delta<=3 classes = 37
+    (23,21,10): stored Delta<=3 classes = 0
+    (24,14,9): stored Delta<=3 classes = 0
+    (25,18,10): stored Delta<=3 classes = 0
+    (26,22,11): stored Delta<=3 classes = 36
+    (27,15,10): stored Delta<=3 classes = not computed
+VIOLATOR CELLS n = 28..30 with s in {-1,-2} (connected, m <= n-2, HY) and their d=3 decompositions:
+    (28,18,11) s=-1: 16 decompositions of (27,15) with total slack 1, 10 of them with r<=3:
+        r=1 [(27, 15, 10)]  stored Delta<=3 counts ['NC']
+        r=2 [(13, 8, 5), (14, 7, 5)]  stored Delta<=3 counts [0, 0]
+        r=2 [(11, 6, 4), (16, 9, 6)]  stored Delta<=3 counts [0, 0]
+        r=2 [(10, 7, 4), (17, 8, 6)]  stored Delta<=3 counts [4, 0]
+        r=2 [(8, 5, 3), (19, 10, 7)]  stored Delta<=3 counts [2, 0]
+        r=2 [(3, 1, 1), (24, 14, 9)]  stored Delta<=3 counts [1, 0]
+        r=3 [(3, 1, 1), (11, 6, 4), (13, 8, 5)]  stored Delta<=3 counts [1, 0, 0]
+        r=3 [(3, 1, 1), (10, 7, 4), (14, 7, 5)]  stored Delta<=3 counts [1, 4, 0]
+        r=3 [(3, 1, 1), (8, 5, 3), (16, 9, 6)]  stored Delta<=3 counts [1, 2, 0]
+        r=3 [(3, 1, 1), (3, 1, 1), (21, 13, 8)]  stored Delta<=3 counts [1, 1, 0]
+    (28,23,12) s=-2: 6 decompositions of (27,20) with total slack 0, 6 of them with r<=3:
+        r=1 [(27, 20, 11)]  stored Delta<=3 counts ['NC']
+        r=2 [(13, 8, 5), (14, 12, 6)]  stored Delta<=3 counts [0, 2]
+        r=2 [(10, 7, 4), (17, 13, 7)]  stored Delta<=3 counts [4, 6]
+        r=2 [(3, 1, 1), (24, 19, 10)]  stored Delta<=3 counts [1, 0]
+        r=3 [(3, 1, 1), (10, 7, 4), (14, 12, 6)]  stored Delta<=3 counts [1, 4, 2]
+        r=3 [(3, 1, 1), (3, 1, 1), (21, 18, 9)]  stored Delta<=3 counts [1, 1, 0]
+    (29,16,11) s=-2: 6 decompositions of (28,13) with total slack 0, 2 of them with r<=3:
+        r=2 [(3, 1, 1), (25, 12, 9)]  stored Delta<=3 counts [1, 0]
+        r=3 [(3, 1, 1), (3, 1, 1), (22, 11, 8)]  stored Delta<=3 counts [1, 1, 0]
+    (29,22,12) s=-1: 17 decompositions of (28,19) with total slack 1, 14 of them with r<=3:
+        r=1 [(28, 19, 11)]  stored Delta<=3 counts ['NC']
+        r=2 [(14, 7, 5), (14, 12, 6)]  stored Delta<=3 counts [0, 2]
+        r=2 [(13, 8, 5), (15, 11, 6)]  stored Delta<=3 counts [0, 19]
+        r=2 [(12, 10, 5), (16, 9, 6)]  stored Delta<=3 counts [149, 0]
+        r=2 [(11, 6, 4), (17, 13, 7)]  stored Delta<=3 counts [0, 6]
+        r=2 [(10, 7, 4), (18, 12, 7)]  stored Delta<=3 counts [4, 0]
+        r=2 [(8, 5, 3), (20, 14, 8)]  stored Delta<=3 counts [2, 0]
+        r=3 [(8, 5, 3), (10, 7, 4), (10, 7, 4)]  stored Delta<=3 counts [2, 4, 4]
+        r=2 [(3, 1, 1), (25, 18, 10)]  stored Delta<=3 counts [1, 0]
+        r=3 [(3, 1, 1), (12, 10, 5), (13, 8, 5)]  stored Delta<=3 counts [1, 149, 0]
+        r=3 [(3, 1, 1), (11, 6, 4), (14, 12, 6)]  stored Delta<=3 counts [1, 0, 2]
+        r=3 [(3, 1, 1), (10, 7, 4), (15, 11, 6)]  stored Delta<=3 counts [1, 4, 19]
+        r=3 [(3, 1, 1), (8, 5, 3), (17, 13, 7)]  stored Delta<=3 counts [1, 2, 6]
+        r=3 [(3, 1, 1), (3, 1, 1), (22, 17, 9)]  stored Delta<=3 counts [1, 1, 37]
+    (29,27,13) s=-2: 3 decompositions of (28,24) with total slack 0, 3 of them with r<=3:
+        r=1 [(28, 24, 12)]  stored Delta<=3 counts ['NC']
+        r=2 [(14, 12, 6), (14, 12, 6)]  stored Delta<=3 counts [2, 2]
+        r=2 [(3, 1, 1), (25, 23, 11)]  stored Delta<=3 counts [1, 'NC']
+    (30,15,11) s=-1: 4 decompositions of (29,12) with total slack 1, 0 of them with r<=3:
+    (30,20,12) s=-2: 12 decompositions of (29,17) with total slack 0, 7 of them with r<=3:
+        r=1 [(29, 17, 11)]  stored Delta<=3 counts ['NC']
+        r=2 [(13, 8, 5), (16, 9, 6)]  stored Delta<=3 counts [0, 0]
+        r=2 [(10, 7, 4), (19, 10, 7)]  stored Delta<=3 counts [4, 0]
+        r=2 [(3, 1, 1), (26, 16, 10)]  stored Delta<=3 counts [1, 0]
+        r=3 [(3, 1, 1), (13, 8, 5), (13, 8, 5)]  stored Delta<=3 counts [1, 0, 0]
+        r=3 [(3, 1, 1), (10, 7, 4), (16, 9, 6)]  stored Delta<=3 counts [1, 4, 0]
+        r=3 [(3, 1, 1), (3, 1, 1), (23, 15, 9)]  stored Delta<=3 counts [1, 1, 0]
+    (30,26,13) s=-1: 8 decompositions of (29,23) with total slack 1, 8 of them with r<=3:
+        r=1 [(29, 23, 12)]  stored Delta<=3 counts ['NC']
+        r=2 [(14, 12, 6), (15, 11, 6)]  stored Delta<=3 counts [2, 19]
+        r=2 [(12, 10, 5), (17, 13, 7)]  stored Delta<=3 counts [149, 6]
+        r=2 [(10, 7, 4), (19, 16, 8)]  stored Delta<=3 counts [4, 227]
+        r=2 [(8, 5, 3), (21, 18, 9)]  stored Delta<=3 counts [2, 0]
+        r=2 [(3, 1, 1), (26, 22, 11)]  stored Delta<=3 counts [1, 36]
+        r=3 [(3, 1, 1), (12, 10, 5), (14, 12, 6)]  stored Delta<=3 counts [1, 149, 2]
+        r=3 [(3, 1, 1), (3, 1, 1), (23, 21, 10)]  stored Delta<=3 counts [1, 1, 0]

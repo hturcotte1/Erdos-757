@@ -1,0 +1,15 @@
+n,m=10 7 pseed=0.0: RESULT n=10 m=7 samples=20000 grown=289 growfail=0 bestTau=4 minSlack=0 hist=2:151 3:19075 4:774 
+n,m=10 7 pseed=0.6: RESULT n=10 m=7 samples=20000 grown=290 growfail=303 bestTau=4 minSlack=0 hist=2:147 3:19004 4:849 
+n,m=14 12 pseed=0.0: RESULT n=14 m=12 samples=20000 grown=236 growfail=0 bestTau=5 minSlack=11 hist=3:6 4:4913 5:15081 
+n,m=14 12 pseed=0.6: RESULT n=14 m=12 samples=20000 grown=236 growfail=67 bestTau=6 minSlack=0 hist=3:3 4:4714 5:15251 6:32 
+n,m=17 13 pseed=0.0: RESULT n=17 m=13 samples=20000 grown=174 growfail=0 bestTau=6 minSlack=11 hist=4:472 5:13891 6:5637 
+n,m=17 13 pseed=0.6: RESULT n=17 m=13 samples=20000 grown=176 growfail=30 bestTau=7 minSlack=0 hist=4:435 5:13396 6:6148 7:21 
+n,m=12 10 pseed=0.0: RESULT n=12 m=10 samples=20000 grown=285 growfail=0 bestTau=5 minSlack=1 hist=3:655 4:19224 5:121 
+n,m=12 10 pseed=0.6: RESULT n=12 m=10 samples=20000 grown=285 growfail=106 bestTau=5 minSlack=1 hist=3:579 4:18816 5:605 
+n,m=15 11 pseed=0.0: RESULT n=15 m=11 samples=20000 grown=191 growfail=0 bestTau=5 minSlack=12 hist=3:30 4:6248 5:13722 
+n,m=15 11 pseed=0.6: RESULT n=15 m=11 samples=20000 grown=190 growfail=154 bestTau=6 minSlack=1 hist=3:33 4:6247 5:13657 6:63 
+n,m=19 16 pseed=0.0: RESULT n=19 m=16 samples=20000 grown=167 growfail=0 bestTau=7 minSlack=12 hist=4:3 5:1467 6:16510 7:2020 
+n,m=19 16 pseed=0.6: RESULT n=19 m=16 samples=20000 grown=165 growfail=10 bestTau=8 minSlack=1 hist=5:1409 6:16149 7:2393 8:49 
+n,m=22 17 pseed=0.0: RESULT n=22 m=17 samples=20000 grown=147 growfail=0 bestTau=8 minSlack=12 hist=5:89 6:5792 7:14005 8:114 
+n,m=22 17 pseed=0.6: RESULT n=22 m=17 samples=20000 grown=146 growfail=27 bestTau=9 minSlack=1 hist=5:72 6:5299 7:13939 8:641 9:49 
+MISCDONE

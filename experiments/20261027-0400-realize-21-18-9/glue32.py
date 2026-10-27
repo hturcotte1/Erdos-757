@@ -7,7 +7,7 @@ os.environ['CELLDIR'] = os.path.join(os.path.dirname(os.path.abspath(__file__)),
 os.environ['ENGINELOG'] = '/dev/null'; os.environ['NPROC'] = '1'
 sys.path.insert(0, SRC)
 import engine
-decs = {'a': [(21, 18, 9), (10, 7, 4)], 'b': [(17, 13, 7), (14, 12, 6)], 'c': [(3, 1, 1), (14, 12, 6), (14, 12, 6)]}
+decs = {'b': [(17, 13, 7), (14, 12, 6)], 'c': [(3, 1, 1), (14, 12, 6), (14, 12, 6)], 'a': [(21, 18, 9), (10, 7, 4)]}
 out = {}
 n, m, t, d = 32, 29, 14, 4
 for name, dec in decs.items():
@@ -36,6 +36,7 @@ for name, dec in decs.items():
     reps = engine.dedupe(keep, n) if keep else []
     print(name, 'connected hits', len(keep), 'classes', len(reps), filt_summary, flush=True)
     out[name] = dict(dec=dec, inputs=len(inputs), hits_in_C=len(hits), ext=tot, connected_hits=len(keep), classes=len(reps), filt=filt_summary)
+    json.dump(out, open('glue32_results.json','w'), indent=1)
     with open('glue32_classes_%s.txt' % name, 'w') as fh:
         for es in reps: fh.write('FOUND: ' + ' '.join('(%d,%d,%d)' % e for e in es) + '\n')
-json.dump(out, open('glue32_results.json', 'w'), indent=1)
+

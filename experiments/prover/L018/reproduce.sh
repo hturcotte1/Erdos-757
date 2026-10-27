@@ -6,8 +6,7 @@
 set -e
 cd "$(dirname "$0")"
 mkdir -p cells13
-tar xzf ../L013/cells.tar.gz -C cells13 cells/cell_17_13_7_D3.txt cells/cell_10_7_4_D3.txt cells/cell_14_12_6_D3.txt \
-    cells/cell_12_10_5_D3.txt cells/cell_8_5_3_D3.txt cells/cell_15_11_6_D3.txt cells/cell_19_16_8_D3.txt cells/cell_22_17_9_D3.txt cells/cell_13_8_5_D3.txt
+tar xzf ../L013/cells.tar.gz -C cells13   # all 167 refereed L013 cell lists (4 MB)
 N="nice -n 10 timeout 3600"
 # C1: Theorem 3 (pendant catalogue)
 $N python3 localconf.py 1 1 > out_root1_R1.txt
@@ -36,4 +35,6 @@ $N python3 localconf.py 2 1 > out_root2_R1.txt
 $N python3 localconf.py 3 1 > out_root3_R1.txt
 # C8: Theorem 8 data
 $N python3 tight_glue.py > tight_glue_output.txt
+# C9: Corollary 10.1 / Remark 10.2 (reads cells13/ first, then the unrefereed cell directories named in prune28.py)
+$N python3 prune28.py 28 29 > prune28_output.txt
 echo done

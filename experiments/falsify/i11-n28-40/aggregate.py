@@ -29,8 +29,11 @@ R['beam'] = {}
 for f in sorted(glob.glob('out/beam_*_stats.json')):
     d = json.load(open(f)); R['beam'][os.path.basename(f)[5:-11]] = {n: dict(pool_connected=v['pool'], min_connected_slack=v['minslack']) for n, v in d.items() if int(n) >= 14}
 # ---- SA ----
-R['sa_cells'] = [json.loads(json.dumps(x)) for f in glob.glob('out/sa_cells*.json') for x in json.load(open(f))] if glob.glob('out/sa_cells*.json') else 'partial: see out/sa_cellsA.log'
-R['sa_polish'] = [x for f in glob.glob('out/sa2_*.json') for x in json.load(open(f))]
+R['sa_cells'] = []
+for l in open('out/sa_cellsA.log'):
+    p = l.split()
+    if len(p) >= 9 and p[2] == 'lo': R['sa_cells'].append(dict(n=int(p[0]), m=int(p[1]), lo=int(p[3]), best_slack=int(p[5]), tau=int(p[7]), evals=int(p[9])))
+R['sa_polish'] = [eval(l) for l in open('out/sa2_polA.log') if l.startswith('{')]
 R['subsa'] = [x for f in glob.glob('out/subsa_*.json') for x in json.load(open(f))]
 for f in glob.glob('out/real_*.json'): R.setdefault('real', {})[os.path.basename(f)] = json.load(open(f))
 json.dump(R, open('results.json', 'w'), indent=1, default=str)

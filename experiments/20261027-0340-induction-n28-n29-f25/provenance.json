@@ -3034,6 +3034,14 @@
 "firstpath": "out/cells/cell_28_18_11_D3.txt",
 "md5": "d41d8cd98f00b204e9800998ecf8427e"
 },
+"28,19,11,3": {
+"agree": [],
+"classes": 0,
+"disagree": [],
+"first": "COMPUTED HERE (this folder)",
+"firstpath": "out/cells/cell_28_19_11_D3.txt",
+"md5": "d41d8cd98f00b204e9800998ecf8427e"
+},
 "28,23,12,3": {
 "agree": [],
 "classes": 0,

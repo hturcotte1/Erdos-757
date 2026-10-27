@@ -7,7 +7,8 @@ def load(fn):
         E = [tuple(map(int, t)) for t in re.findall(r'\((\d+),(\d+),(\d+)\)', line)]
         G.append(E)
     return G
-for fn in sorted(glob.glob('cells13/cells/*.txt')):
+NAMES = ['10_7_4', '12_10_5', '13_8_5', '14_12_6', '15_11_6', '17_13_7', '19_16_8', '22_17_9', '8_5_3']
+for fn in ['cells13/cells/cell_%s_D3.txt' % c for c in NAMES]:
     G = load(fn)
     cnt = collections.Counter()
     for E in G:

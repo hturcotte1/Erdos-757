@@ -1,0 +1,47 @@
+{
+ "0": {
+  "graphs_sampled": 31,
+  "graphs_with_universal_vertex": 0,
+  "universal_vertices_total": 0
+ },
+ "1": {
+  "graphs_sampled": 214,
+  "graphs_with_universal_vertex": 0,
+  "universal_vertices_total": 0
+ },
+ "2": {
+  "graphs_sampled": 180,
+  "graphs_with_universal_vertex": 0,
+  "universal_vertices_total": 0
+ },
+ "3": {
+  "graphs_sampled": 172,
+  "graphs_with_universal_vertex": 0,
+  "universal_vertices_total": 0
+ },
+ "4": {
+  "graphs_sampled": 141,
+  "graphs_with_universal_vertex": 0,
+  "universal_vertices_total": 0
+ },
+ "5": {
+  "graphs_sampled": 228,
+  "graphs_with_universal_vertex": 5,
+  "universal_vertices_total": 5
+ },
+ "6": {
+  "graphs_sampled": 156,
+  "graphs_with_universal_vertex": 14,
+  "universal_vertices_total": 16
+ },
+ "7": {
+  "graphs_sampled": 256,
+  "graphs_with_universal_vertex": 26,
+  "universal_vertices_total": 32
+ },
+ "8": {
+  "graphs_sampled": 87,
+  "graphs_with_universal_vertex": 5,
+  "universal_vertices_total": 11
+ }
+}
